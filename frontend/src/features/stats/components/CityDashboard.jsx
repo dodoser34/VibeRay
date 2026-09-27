@@ -7,6 +7,7 @@ import { formatSigned, percentOf } from '@/shared/lib/formatNumber';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { BarList } from '@/shared/ui/charts/BarList';
 import texts from '@/texts/stats.json';
+import { DistrictCompare } from './DistrictCompare';
 import { DistrictTable } from './DistrictTable';
 import { MoodChart } from './MoodChart';
 import { MoodDistribution } from './MoodDistribution';
@@ -149,6 +150,17 @@ export function CityDashboard({
               onOpen={onOpenDistrict}
             />
           </Block>
+
+          {stats.districts.length > 1 && (
+            <Block title={texts.districtCompare.title}>
+              <DistrictCompare
+                period={period}
+                rows={stats.districts}
+                names={names}
+                onHover={onHoverDistrict}
+              />
+            </Block>
+          )}
 
           {stats.categories.length > 0 && (
             <Block title={t.categoriesTitle}>

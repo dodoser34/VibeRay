@@ -8,6 +8,7 @@
       "avatar_url": "preset:3",
       "home_district": "center",
       "role": "user"
-    }
+    },
+    "reports": ["in_progress", "confirmed", "new", "resolved", "confirmed"]
   }
 ]

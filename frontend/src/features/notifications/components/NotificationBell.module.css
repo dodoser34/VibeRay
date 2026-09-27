@@ -1,0 +1,71 @@
+.root {
+  position: relative;
+  pointer-events: auto;
+}
+
+/* Круглая кнопка в стиле капсулы таб-бара: стекло, тонкая рамка, нейтральная тень */
+.button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 2.875rem;
+  height: 2.875rem;
+  border-radius: 50%;
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  box-shadow:
+    var(--shadow-panel),
+    inset 0 1px 0 var(--color-glass-highlight);
+  backdrop-filter: blur(var(--blur-glass));
+  color: var(--color-text);
+  transition:
+    border-color var(--dur-fast),
+    background-color var(--dur-fast);
+}
+
+.button:hover,
+.button[data-open] {
+  border-color: var(--color-glass-highlight);
+  background: var(--color-glass-strong);
+}
+
+.button svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.badge {
+  position: absolute;
+  top: -0.125rem;
+  right: -0.125rem;
+  display: grid;
+  place-items: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding-inline: 0.3125rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  border: 2px solid var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--fs-3xs);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.popover {
+  position: absolute;
+  top: calc(100% + var(--space-3));
+  right: 0;
+  width: min(24rem, calc(100vw - 2 * var(--space-4)));
+  max-height: min(34rem, calc(100dvh - var(--tabbar-height) - 3 * var(--space-5)));
+  display: grid;
+  border-radius: var(--radius-xl);
+  background: var(--color-glass-solid);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-panel);
+  overflow: hidden;
+}

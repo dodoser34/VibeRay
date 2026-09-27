@@ -54,6 +54,7 @@ export const city = {
   name: cityInfo.name,
   center: cityInfo.center,
   bbox: cityInfo.bbox,
+  timezone: cityInfo.timezone,
   // Слои OpenStreetMap (ODbL): реки и водоёмы, улицы с привязкой к району.
   water: JSON.parse(waterRaw),
   streets: JSON.parse(streetsRaw),
@@ -302,6 +303,9 @@ export function districtStats(slug, period) {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 3)
     .map(([category, count]) => ({ category, count }));
+  // Все категории за выбранный период — для сравнения районов на дашборде.
+  const periodByCategory = {};
+  inPeriod.forEach((p) => (periodByCategory[p.category] = (periodByCategory[p.category] ?? 0) + 1));
 
   return {
     district: slug,
@@ -314,6 +318,9 @@ export function districtStats(slug, period) {
       by_status: byStatus,
     },
     top_categories: topCategories,
+    categories: Object.entries(periodByCategory)
+      .sort((a, b) => b[1] - a[1])
+      .map(([category, count]) => ({ category, count })),
     series,
     recent_problems: [...inDistrict]
       .sort((a, b) => new Date(b.created_at) - new Date(a.created_at))

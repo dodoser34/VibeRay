@@ -1,9 +1,13 @@
 import { useEffect, useId, useRef, useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router';
-import { useTransitionNavigate } from '@/app/transitions/useTransition';
+import { Link, useLocation } from 'react-router';
+import { usePageNavigate } from '@/app/transitions/useTransition';
 import { useAuth } from '@/features/auth';
+import { NotificationsPanel, useNotifications } from '@/features/notifications';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { format } from '@/shared/lib/format';
 import { Avatar } from '@/shared/ui/Avatar';
+import { Modal } from '@/shared/ui/Modal';
+import notificationTexts from '@/texts/notifications.json';
 import nav from '@/texts/nav.json';
 import styles from './MobileNav.module.css';
 
@@ -32,8 +36,9 @@ function activeKey(pathname) {
 export function MobileNav() {
   const { user, logout } = useAuth();
   const { pathname } = useLocation();
-  const navigate = useNavigate();
-  const go = useTransitionNavigate();
+  const openPage = usePageNavigate();
+  const { unread, markRead } = useNotifications();
+  const [notificationsOpen, setNotificationsOpen] = useState(false);
   const menuId = useId();
   const barRef = useRef(null);
   const menuRef = useRef(null);
@@ -93,13 +98,16 @@ export function MobileNav() {
     };
   }, [open]);
 
-  // Внутри карты (карта ↔ дашборд) страница остаётся — без бумажного перехода.
   const follow = (to) => (event) => {
     event.preventDefault();
     setOpenOn(null);
-    if (to === pathname) return;
-    if (pathname.startsWith('/map') && to.startsWith('/map')) navigate(to);
-    else go(to);
+    if (to !== pathname) openPage(to);
+  };
+
+  // Увиденное в шторке отмечается прочитанным, когда её закрывают.
+  const closeNotifications = () => {
+    setNotificationsOpen(false);
+    if (unread) markRead();
   };
 
   return (
@@ -118,7 +126,13 @@ export function MobileNav() {
           className={styles.menuButton}
           aria-expanded={open}
           aria-controls={menuId}
-          aria-label={open ? nav.menu.close : nav.menu.open}
+          aria-label={
+            open
+              ? nav.menu.close
+              : unread
+                ? format(nav.menu.openUnread, { count: unread })
+                : nav.menu.open
+          }
           onClick={() => setOpenOn(open ? null : pathname)}
         >
           <span className={styles.burger} aria-hidden="true">
@@ -126,6 +140,7 @@ export function MobileNav() {
             <span />
             <span />
           </span>
+          {unread > 0 && !open && <span className={styles.badge} aria-hidden="true" />}
         </button>
       </header>
 
@@ -155,6 +170,20 @@ export function MobileNav() {
                   }}
                 >
                   {nav.tabs.logout.label}
+                </button>
+                <button
+                  type="button"
+                  className={styles.notifications}
+                  onClick={() => {
+                    setOpenOn(null);
+                    setNotificationsOpen(true);
+                  }}
+                >
+                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                    <path d="M12 21a2.5 2.5 0 0 0 2.5-2.5h-5A2.5 2.5 0 0 0 12 21zM5 16.5h14l-1.8-2.4V10a5.2 5.2 0 0 0-10.4 0v4.1z" />
+                  </svg>
+                  <span>{notificationTexts.title}</span>
+                  {unread > 0 && <span className={styles.count}>{unread}</span>}
                 </button>
               </>
             ) : (
@@ -200,6 +229,13 @@ export function MobileNav() {
             {nav.menu.footer}
           </p>
         </div>
+      )}
+      {notificationsOpen && (
+        <Modal title={notificationTexts.title} onClose={closeNotifications}>
+          <div className={styles.sheetList}>
+            <NotificationsPanel compact onNavigate={openPage} onDone={closeNotifications} />
+          </div>
+        </Modal>
       )}
     </>
   );

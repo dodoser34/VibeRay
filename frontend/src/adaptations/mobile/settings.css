@@ -9,21 +9,22 @@
     padding: var(--space-5) var(--space-4);
   }
 
-  /* Все четыре раздела видны сразу: равные доли полосы и короткие подписи, без прокрутки вбок */
+  /* Все разделы видны сразу: равные доли полосы и короткие подписи, без прокрутки вбок */
   :root [data-ui='settings-nav'] {
     overflow-x: visible;
+    padding-inline: var(--space-2);
   }
 
   :root [data-ui='settings-nav'] ul {
     grid-auto-flow: row;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     width: 100%;
   }
 
   :root [data-ui='settings-nav'] a {
     justify-content: center;
-    padding-inline: var(--space-1);
-    font-size: var(--fs-sm);
+    padding-inline: 0.125rem;
+    font-size: var(--fs-xs);
   }
 
   :root [data-ui='settings-nav'] a::before {

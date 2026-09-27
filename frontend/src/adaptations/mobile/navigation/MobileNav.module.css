@@ -18,6 +18,7 @@
 
 .logo,
 .menuButton {
+  position: relative;
   display: grid;
   place-items: center;
   width: var(--touch-target);
@@ -243,4 +244,58 @@
   color: var(--color-text-faint);
   font-size: var(--fs-xs);
   text-align: center;
+}
+
+/* Точка на кнопке меню: есть непрочитанные уведомления */
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: var(--color-accent-bright);
+  border: 2px solid var(--color-bg-raised);
+}
+
+/* Строка «Уведомления» во всю ширину блока аккаунта */
+.notifications {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: var(--touch-target);
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.notifications svg {
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.count {
+  margin-left: auto;
+  min-width: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  font-size: var(--fs-2xs);
+  font-weight: 800;
+  text-align: center;
+}
+
+.sheetList {
+  display: grid;
+  max-height: 62dvh;
+  margin: 0 calc(var(--space-2) * -1);
 }

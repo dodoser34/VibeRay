@@ -29,17 +29,31 @@ import {
   isDistrict,
   problems,
 } from './generate';
+import {
+  addConfirmations,
+  claimProblem,
+  forgetUser,
+  isAuthor,
+  markRead,
+  notificationsOf,
+  problemsOf,
+  seedReports,
+  simulateNeighbours,
+  syncAuthor,
+  withHistory,
+} from './community';
 import { format } from '@/shared/lib/format';
 import demoAccounts from '../accounts.json';
 import demo from '../content.json';
 import errors from '@/texts/errors.json';
 
-const accounts = new Map(demoAccounts.map((account) => [account.user.email, account]));
+const accounts = new Map(
+  demoAccounts.map(({ password, user }) => [user.email, { password, user }]),
+);
+demoAccounts.forEach(({ user, reports = [] }) => seedReports(user, reports));
 const sessions = new Map(); // токен → email
 const supportRequests = [];
 const confirmations = new Map(); // id проблемы → Set id пользователей
-const authors = new Map(); // id проблемы → id автора: смена ника и аватара видна в его сообщениях
-const AUTO_CONFIRM_THRESHOLD = 3; // ARCHITECTURE.md 6.2
 const MAP_RECENT_MS = 30 * 24 * 3_600_000; // решённые проблемы остаются на карте 30 дней
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -71,13 +85,23 @@ function nicknameTaken(nickname, exceptId) {
   );
 }
 
-// Автор в сообщениях о проблемах — всегда актуальный публичный профиль (UserPublic).
-function syncAuthor(user) {
-  problems
-    .filter((problem) => authors.get(problem.id) === user.id)
-    .forEach((problem) => {
-      problem.author = { nickname: user.nickname, avatar_url: user.avatar_url };
-    });
+// Без входа — просто проблема; для вошедшего ещё и его отношение к ней.
+function viewOf(problem, token) {
+  const email = sessions.get(token);
+  const user = email && accounts.get(email)?.user;
+  const view = withHistory(problem);
+  if (!user) return view;
+  return {
+    ...view,
+    is_mine: isAuthor(problem, user),
+    confirmed_by_me: Boolean(confirmations.get(problem.id)?.has(user.id)),
+  };
+}
+
+function findProblem(id) {
+  const problem = problems.find((p) => p.id === id);
+  if (!problem) fail(404, 'problem_not_found');
+  return problem;
 }
 
 function checkPeriod(period) {
@@ -185,6 +209,17 @@ const routes = [
       if (account.password !== body.password) fail(403, 'wrong_password');
       accounts.delete(account.user.email);
       [...sessions].forEach(([key, email]) => email === account.user.email && sessions.delete(key));
+      forgetUser(account.user);
+      return null;
+    },
+  ],
+  ['GET', /^\/users\/me\/problems$/, ({ token }) => problemsOf(currentUser(token))],
+  ['GET', /^\/users\/me\/notifications$/, ({ token }) => notificationsOf(currentUser(token))],
+  [
+    'POST',
+    /^\/users\/me\/notifications\/read$/,
+    ({ body, token }) => {
+      markRead(currentUser(token), body?.ids);
       return null;
     },
   ],
@@ -229,17 +264,14 @@ const routes = [
     /^\/problems\/([\w-]+)\/confirm$/,
     ({ params, token }) => {
       const user = currentUser(token);
-      const problem = problems.find((p) => p.id === params[0]);
-      if (!problem) fail(404, 'problem_not_found');
+      const problem = findProblem(params[0]);
+      if (isAuthor(problem, user)) fail(409, 'own_problem');
       const confirmedBy = confirmations.get(problem.id) ?? new Set();
       if (confirmedBy.has(user.id)) fail(409, 'already_confirmed');
       confirmedBy.add(user.id);
       confirmations.set(problem.id, confirmedBy);
-      problem.confirmations_count += 1;
-      if (problem.status === 'new' && problem.confirmations_count >= AUTO_CONFIRM_THRESHOLD) {
-        problem.status = 'confirmed';
-      }
-      return problem;
+      addConfirmations(problem, 1);
+      return viewOf(problem, token);
     },
   ],
   [
@@ -274,8 +306,9 @@ const routes = [
         location,
         photos: photos.map((photo) => ({ url: URL.createObjectURL(photo) })),
       });
-      authors.set(problem.id, user.id);
-      return problem;
+      claimProblem(problem, user);
+      simulateNeighbours(problem);
+      return viewOf(problem, token);
     },
   ],
   [
@@ -319,6 +352,7 @@ const routes = [
       ],
     }),
   ],
+  ['GET', /^\/problems\/([\w-]+)$/, ({ params, token }) => viewOf(findProblem(params[0]), token)],
   [
     'GET',
     /^\/problems$/,

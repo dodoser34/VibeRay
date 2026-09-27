@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router';
 import { useAuth } from '@/features/auth';
+import { NotificationBell } from '@/features/notifications';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
 import { Avatar } from '@/shared/ui/Avatar';
-import { useTransitionNavigate } from '../transitions/useTransition';
+import { usePageNavigate, useTransitionNavigate } from '../transitions/useTransition';
 import nav from '@/texts/nav.json';
 import styles from './TabBar.module.css';
 
@@ -24,6 +25,7 @@ export function TabBar() {
   const { user, logout } = useAuth();
   const { pathname } = useLocation();
   const go = useTransitionNavigate();
+  const openPage = usePageNavigate();
   const rootRef = useRef(null);
   const navRef = useRef(null);
   const trackRef = useRef(null);
@@ -195,7 +197,12 @@ export function TabBar() {
             const content = (
               <>
                 {item.avatar && <Avatar src={item.avatar} size={22} />}
-                <span className={styles.label}>{item.label}</span>
+                <span
+                  className={styles.label}
+                  data-ui={item.key === 'me' ? 'tabbar-nickname' : undefined}
+                >
+                  {item.label}
+                </span>
                 {item.short && (
                   <span className={styles.short} aria-hidden="true">
                     {item.short}
@@ -231,6 +238,12 @@ export function TabBar() {
           })}
         </div>
       </nav>
+
+      {user && (
+        <div className={styles.aside} data-ui="tabbar-aside">
+          <NotificationBell onNavigate={openPage} />
+        </div>
+      )}
     </header>
   );
 }

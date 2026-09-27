@@ -1,5 +1,7 @@
 import { useEffect, useImperativeHandle, useRef } from 'react';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
+import { format } from '@/shared/lib/format';
+import { plural } from '@/shared/lib/plural';
 import { MapScene } from '../scene/MapScene';
 import texts from '@/texts/map.json';
 import styles from './MapCanvas.module.css';
@@ -12,6 +14,8 @@ export function MapCanvas({
   layer,
   overlay = null,
   selectedSlug,
+  selectedProblemId = null,
+  hour,
   onHover,
   onSelectDistrict,
   onSelectProblem,
@@ -32,6 +36,10 @@ export function MapCanvas({
     const scene = new MapScene(canvasRef.current, containerRef.current, {
       labelClassName: styles.label,
       labelValueClassName: styles.labelValue,
+      clusterClassName: styles.cluster,
+      clusterCountClassName: styles.clusterCount,
+      describeCluster: (count) =>
+        format(texts.cluster, { count, problems: plural(count, texts.clusterForms) }),
       onHover: (hit) => callbacksRef.current.onHover?.(hit),
       onSelectDistrict: (slug) => callbacksRef.current.onSelectDistrict?.(slug),
       onSelectProblem: (problem) => callbacksRef.current.onSelectProblem?.(problem),
@@ -70,6 +78,14 @@ export function MapCanvas({
   useEffect(() => {
     sceneRef.current.selectDistrict(selectedSlug ?? null);
   }, [selectedSlug]);
+
+  useEffect(() => {
+    sceneRef.current.setSelectedProblem(selectedProblemId);
+  }, [selectedProblemId]);
+
+  useEffect(() => {
+    if (hour !== undefined) sceneRef.current.setHour(hour);
+  }, [hour]);
 
   // «Сообщить о проблеме»: в режиме выбора места клик по району ставит метку в эту точку.
   useEffect(() => {

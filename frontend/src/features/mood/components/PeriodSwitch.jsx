@@ -4,7 +4,12 @@ import { MOOD_PERIODS } from '@/shared/config/periods';
 import texts from '@/texts/mood.json';
 import styles from './PeriodSwitch.module.css';
 
-export function PeriodSwitch({ value, onChange, options = MOOD_PERIODS }) {
+export function PeriodSwitch({
+  value,
+  onChange,
+  options = MOOD_PERIODS,
+  label = texts.periodLabel,
+}) {
   const rootRef = useRef(null);
   const thumbRef = useRef(null);
 
@@ -33,7 +38,7 @@ export function PeriodSwitch({ value, onChange, options = MOOD_PERIODS }) {
       ref={rootRef}
       className={styles.root}
       role="radiogroup"
-      aria-label={texts.periodLabel}
+      aria-label={label}
       data-ui="period-switch"
     >
       <span ref={thumbRef} className={styles.thumb} aria-hidden="true" />

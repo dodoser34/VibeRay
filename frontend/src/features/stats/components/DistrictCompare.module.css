@@ -1,0 +1,289 @@
+.root {
+  display: grid;
+  gap: var(--space-4);
+  container-type: inline-size;
+}
+
+.hint {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+}
+
+/* Два выбора района и кнопка «поменять местами» между ними */
+.pickers {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.pickers > :nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2.75rem;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-glass-border);
+  border-bottom: 2px solid var(--tone);
+  transition: border-color var(--dur-fast);
+}
+
+.picker:hover {
+  border-color: var(--color-glass-highlight);
+  border-bottom-color: var(--tone);
+}
+
+.picker:has(:focus-visible) {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.swatch {
+  flex: none;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: var(--tone);
+}
+
+.select {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding-right: 1.25rem;
+  appearance: none;
+  background: none;
+  border: 0;
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  outline: none;
+}
+
+.select option {
+  background: var(--color-bg-raised);
+  color: var(--color-text);
+}
+
+.chevron {
+  position: absolute;
+  right: var(--space-3);
+  width: 0.875rem;
+  height: 0.875rem;
+  fill: none;
+  stroke: var(--color-text-muted);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.swap {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-text);
+  transition:
+    border-color var(--dur-fast),
+    transform var(--dur-base) var(--ease-out);
+}
+
+.swap:hover {
+  border-color: var(--color-accent);
+  transform: rotate(180deg);
+}
+
+.swap svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--tone) 9%, var(--color-bg-raised));
+  border: 1px solid color-mix(in srgb, var(--tone) 40%, transparent);
+}
+
+.cardText {
+  display: grid;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.cardName {
+  overflow: hidden;
+  color: var(--color-text-muted);
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardScore {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-variant-numeric: tabular-nums;
+}
+
+.cardMood {
+  overflow: hidden;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: var(--fs-2xs);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardMeta {
+  color: var(--color-text-faint);
+  font-size: var(--fs-3xs);
+}
+
+.verdict {
+  justify-self: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-text);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-align: center;
+}
+
+.section {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.sectionTitle {
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tooltipRow {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.tooltipRow::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--tone);
+}
+
+.skeleton {
+  height: 11.25rem;
+  border-radius: var(--radius-md);
+  background: var(--color-glass);
+}
+
+/* Зеркальные полосы: район A растёт влево от подписи, район B — вправо */
+.butterfly {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr) minmax(6.5rem, auto) minmax(0, 1fr) 1.75rem;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-2xs);
+}
+
+.count {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.track {
+  display: flex;
+  height: 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass);
+  overflow: hidden;
+}
+
+.track[data-side='a'] {
+  justify-content: flex-end;
+}
+
+.bar {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--tone);
+  transform-origin: left;
+  transition: transform 0.9s var(--ease-out);
+}
+
+.track[data-side='a'] .bar {
+  transform-origin: right;
+}
+
+.category {
+  color: var(--color-text);
+  text-align: center;
+}
+
+@container (max-width: 26rem) {
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .row {
+    grid-template-columns: 1.5rem minmax(0, 1fr) minmax(5rem, auto) minmax(0, 1fr) 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar,
+  .swap {
+    transition: none;
+  }
+}

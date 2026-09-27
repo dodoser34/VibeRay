@@ -33,6 +33,7 @@ export function MapFab({ actions, onRecenter, hidden = false }) {
           <button
             type="button"
             className={styles.main}
+            data-onboarding="actions"
             aria-label={texts.fab.open}
             aria-haspopup="dialog"
             onClick={() => setOpen(true)}

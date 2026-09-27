@@ -45,8 +45,10 @@
 | `/map/:citySlug/stats?period=month\|year\|all` | `MapPage view="stats"` | Дашборд статистики города (раздел 6.4): та же 3D-карта, районы окрашены по выбранному показателю, справа — панель статистики. Вход и выход — кнопка слева внизу карты; по умолчанию период «год» |
 | `/about` | `AboutPage` | О проекте |
 | `/support` | `SupportPage` | Центр поддержки: поиск по ответам, категории, частые вопросы, обращение, статус сервиса |
-| `/map/:citySlug/problem/:problemId` | — | *план:* прямая ссылка на проблему (сейчас карточка открывается без смены URL) |
-| `/settings` | `SettingsPage` | Настройки своего профиля: публичный профиль (аватар — пресет или своё фото, никнейм, предпросмотр «как тебя видят»), свой район, email и смена пароля, выход и удаление аккаунта. Только для вошедших, гостя уводит на `/login`. Вход — аватар в таб-баре, на телефоне — пункт меню |
+| `/map/:citySlug/problem/:problemId` | `MapPage` | Прямая ссылка на проблему: карта открывается со слоем «Проблемы», камера летит к метке, справа — карточка с историей статусов и кнопкой «Поделиться». Выбор метки на карте тоже меняет адрес. Несуществующая проблема — панель «Проблема не найдена» |
+| `/settings` | `SettingsPage` | Настройки своего профиля: публичный профиль (аватар — пресет или своё фото, никнейм, предпросмотр «как тебя видят»), «Мои сообщения» (свои проблемы со статусами, фильтр, ссылки на карту; `#settings-reports` открывает страницу сразу на них), свой район, email и смена пароля, выход и удаление аккаунта. Только для вошедших, гостя уводит на `/login`. Вход — аватар в таб-баре, на телефоне — пункт меню |
+
+| `*` | `NotFoundPage` | 404 в стиле бумажной карты: «Этот район ещё не нанесён на карту», показывает ненайденный адрес, ведёт на карту, главную и в поддержку |
 
 Карта не размонтируется при переходах между районами, проблемами и дашбордом — меняется только состояние, панели и положение камеры.
 Переходы между страницами — через `app/transitions` (`useTransitionNavigate`, `useNavigationInterceptor`, `useTransitionReady`). По умолчанию играет переход «бумажная карта-оригами» (`shared/animations/MapFoldTransition.js`): сложенная карта вылетает из места клика и разворачивается на весь экран → страница меняется под ней, падает пин и рисуется маршрут к названию новой страницы, пока та грузится (страница держит переход через `useTransitionReady(ready)`, максимум 6 с; карта города ждёт данные города и настроений) → карта складывается и улетает к пункту таб-бара, новая страница проявляется. Если у страницы есть своя анимация выхода (главная «влетает» камерой в город), играет она. Переключение «Вход ↔ Регистрация» на главной — без перехода (это одна страница). Вступительные анимации страниц (подложка и пазл главной, 3D-город, полёт камеры и рост районов на карте, панели карты, первый экран поддержки) ждут «ворот входа» (`shared/animations/pageEntrance.js`, хук `usePageEntered`): под бумажной картой новая страница уже смонтирована и грузится, а вступление стартует в момент, когда карта начинает складываться. При прямом заходе на страницу ворота открыты сразу.
@@ -84,7 +86,8 @@ VibeRay/
 │       ├── main.jsx                   # точка входа: AuthProvider + RouterProvider
 │       ├── data/                      # ВСЕ демо-данные для работы без бэкенда (data/README.md, раздел 7.1):
 │       │                              #   cities/kostanay (снимок OSM), accounts.json (демо-вход), content.json,
-│       │                              #   api/handler.js (фейковый API), api/generate.js (демо-статистика)
+│       │                              #   api/handler.js (фейковый API), api/generate.js (демо-статистика),
+│       │                              #   api/community.js (авторы, история статусов, уведомления, «соседи» в демо)
 │       ├── adaptations/               # адаптации под устройства (раздел 9.1, adaptations/README.md):
 │       │                              #   core/ (брейкпоинты, useViewport, качество 3D, rootScale),
 │       │                              #   desktop/{full-hd,2k,4k}/, tablet/, touch/, mobile/ — только отличия;
@@ -103,6 +106,7 @@ VibeRay/
 │       │   │                          #   MapFilters — фильтры для левой панели, строки планшета и шторки
 │       │   ├── AboutPage/             # история идеи (StoryExperience) + «Как это работает» (StoryGuide)
 │       │   ├── SettingsPage/          # настройки профиля: гость → /login, районы для «своего района», выход/удаление
+│       │   ├── NotFoundPage/          # 404: иллюстрация «бумажная карта с неразмеченным районом» (NotFoundMap)
 │       │   └── SupportPage/           # собирает SupportCenter из features/support
 │       ├── features/
 │       │   ├── auth/
@@ -111,8 +115,10 @@ VibeRay/
 │       │   ├── hero/
 │       │   │   ├── scene/             # HeroScene.js — 3D-город главного экрана
 │       │   │   └── components/        # HeroCanvas.jsx, FrontLayer.jsx (передний слой с S-краем)
+│       │   ├── notifications/         # уведомления: NotificationsProvider (опрос), NotificationBell (таб-бар),
+│       │   │                          #   NotificationsPanel + NotificationList (панель и шторка телефона)
 │       │   ├── settings/              # настройки профиля: SettingsCenter (навигация по разделам) и разделы ProfileSection
-│       │   │                          #   (+ AvatarPicker), DistrictSection, SecuritySection, AccountSection (+ DeleteAccountDialog);
+│       │   │                          #   (+ AvatarPicker), MyReportsSection (+ ReportItem), DistrictSection, SecuritySection, AccountSection (+ DeleteAccountDialog);
 │       │   │                          #   SaveBar — «Сохранить / Отменить» и итог; hooks/useSaveAction
 │       │   ├── support/               # центр поддержки: content.js (категории, FAQ), lib/searchHelp.js (поиск по ответам),
 │       │   │                          #   components/ SupportCenter, HelpSearch, HelpCategories (3D-наклон), FaqList,
@@ -132,8 +138,10 @@ VibeRay/
 │       │   │   ├── scene/             # чистый Three.js, без React
 │       │   │   │   ├── SceneRuntime.js    # renderer, тон-маппинг, цикл рендера, resize, dispose — общий для всех сцен
 │       │   │   │   ├── MapScene.js        # сцена полноэкранной карты
-│       │   │   │   ├── DistrictsLayer.js  # районы-плиты, цвет по настроению (и на карте, и на главном экране)
-│       │   │   │   ├── ProblemsLayer.js   # пины проблем (InstancedMesh)
+│       │   │   │   ├── DistrictsLayer.js  # районы-плиты, цвет по настроению (и на карте, и на главном экране), окна на крышах
+│       │   │   │   ├── ProblemsLayer.js   # пины проблем (InstancedMesh) и их кластеры в экранных пикселях
+│       │   │   │   ├── ClusterLabels.js   # значки кластеров: число и кольцо статусов, клик — приближение
+│       │   │   │   ├── dayCycle.js        # свет по времени суток: цвет, сила, направление, фон, окна
 │       │   │   │   ├── CityBackdrop.js    # улицы OSM вокруг районов, Тобол и водоёмы
 │       │   │   │   ├── Picker.js          # raycasting: hover/click + точка попадания
 │       │   │   │   ├── PlacementMarker.js # пин новой проблемы: «призрак» под курсором и выбранная точка
@@ -143,7 +151,8 @@ VibeRay/
 │       │   │   ├── hooks/             # useCityData
 │       │   │   └── index.js
 │       │   ├── mood/                  # MoodFace, MoodLegend, MoodPicker, PeriodSwitch, DistrictRanking
-│       │   ├── problems/              # ProblemCard, ProblemListItem, StatusChip, ReportProblem, CategoryIcon
+│       │   ├── problems/              # ProblemCard (ссылка «Поделиться»), StatusTimeline (путь статусов с датами),
+│       │   │                          #   ProblemListItem, StatusChip, ReportProblem, CategoryIcon
 │       │   └── stats/                 # статистика: DistrictPanel (карточка района), CityDashboard (дашборд города:
 │       │                              #   KPI, MoodChart, YearsTable, DistrictTable, категории, статусы), MetricLegend,
 │       │                              #   Breakdown / MoodDistribution / StatusBreakdown, hooks/ useDistrictStats, useCityStats,
@@ -151,15 +160,17 @@ VibeRay/
 │       ├── shared/
 │       │   ├── api/
 │       │   │   ├── client.js          # fetch, токен в памяти, ApiError, переключатель демо-режима
-│       │   │   └── endpoints/         # auth, users, cities, districts, problems, support
-│       │   ├── ui/                    # Avatar, Button, TextField, Modal;
-│       │   │                          #   charts/ — TimeSeriesChart (линия + столбики, подсказка), StackedBar, BarList, AnimatedNumber
+│       │   │   └── endpoints/         # auth, users (профиль, свои проблемы, уведомления), cities, districts, problems, support
+│       │   ├── ui/                    # Avatar, Button (в т.ч. danger), TextField, Modal, CoachMarks (пошаговые подсказки);
+│       │   │                          #   charts/ — TimeSeriesChart (линия + столбики, подсказка), CompareChart (несколько линий),
+│       │   │                          #   curve.js (монотонная кривая), StackedBar, BarList, AnimatedNumber
 │       │   ├── animations/            # gsapSetup.js (плагины, reduced motion), presets.js, SiteBackground.js (фон),
 │       │   │                          #   MapFoldTransition.js + .css (переход между страницами), pageEntrance.js (ворота входа), puzzlePieces.js,
 │       │   │                          #   useFlipList.js (строки таблиц плавно едут на новое место при сортировке),
 │       │   │                          #   revealOnScroll.js (блоки всплывают при появлении на экране — IntersectionObserver)
-│       │   ├── hooks/                 # useRequest, useReducedMotion, usePageEntered, useElementWidth, useRevealed
+│       │   ├── hooks/                 # useRequest, useReducedMotion, usePageEntered, useElementWidth, useRevealed, useShare
 │       │   ├── lib/                   # geoProjection, cssVar, format ({name} в текстах), formatDate, formatNumber, plural, random,
+│       │   │                          #   cityTime (время по часовому поясу города), localFlag (флаги в localStorage),
 │       │   │                          #   passwordStrength, imageTools
 │       │   └── config/                # moods, periods, problemCategories, problemStatuses, support, validation
 │       ├── texts/                     # весь текст интерфейса — JSON по разделам (подробно — texts/README.md):
@@ -275,6 +286,9 @@ VibeRay/
 
 ### problem_status_changes
 `id`, `problem_id`, `from_status`, `to_status`, `changed_by` (FK users, null = система), `created_at` — история для прозрачности и статистики.
+
+### notifications
+`id`, `user_id` FK, `kind` (`confirmations` | `status`), `problem_id` FK, `status` (для `status` — новый статус), `count` (для `confirmations` — сколько подтверждений стало), `created_at`, `read_at` (null — не прочитано). Создаётся сервером: автору проблемы — когда её подтверждают соседи и когда меняется статус. Видно только самому пользователю.
 
 ### support_requests
 | Поле | Тип | Примечание |
@@ -461,17 +475,20 @@ in_progress ──(модератор)──▶ resolved
 | PUT | `/users/me/avatar` | авториз. | своё фото: multipart `avatar` — JPEG/PNG/WebP ≤ 10 МБ (EXIF удаляется на клиенте и повторно на сервере) → `UserPrivate` |
 | POST | `/users/me/password` | авториз. | смена пароля: `current_password`, `new_password` (правила раздела 8) → 204. Ошибки: `wrong_password` (403), `weak_password`. Сервер отзывает остальные refresh-сессии пользователя |
 | DELETE | `/users/me` | авториз. | удалить аккаунт: тело `{password}` → 204, ошибка `wrong_password` (403). Удаляются профиль и сессии; отметки настроения остаются в агрегатах без привязки к пользователю |
+| GET | `/users/me/problems` | авториз. | свои сообщения о проблемах, новые первыми, с `history` |
+| GET | `/users/me/notifications` | авториз. | `{unread, items: [{id, kind, problem_id, status, count, created_at, read, problem: {id, category, district, district_name, status}}]}`, новые первыми. Фронтенд опрашивает раз в 20 с и при возврате на вкладку |
+| POST | `/users/me/notifications/read` | авториз. | `{ids?}` — отметить прочитанными (без `ids` — все) → 204 |
 | GET | `/users/{nickname}` | все | `UserPublic`: только nickname + avatar_url |
 | GET | `/cities` | все | список городов |
-| GET | `/cities/{slug}` | все | город + `districts`, `water`, `streets` (GeoJSON FeatureCollection) |
+| GET | `/cities/{slug}` | все | город (`timezone` — для времени суток на карте) + `districts`, `water`, `streets` (GeoJSON FeatureCollection) |
 | GET | `/cities/{slug}/moods?period=` | все | настроение всех районов за период (для раскраски карты) |
 | GET | `/cities/{slug}/stats?period=` | все | дашборд статистики города (раздел 6.4) |
 | POST | `/districts/{id}/mood` | авториз. | поставить отметку настроения |
-| GET | `/districts/{id}/stats?period=` | все | статистика района |
+| GET | `/districts/{id}/stats?period=` | все | статистика района; `categories` — все категории проблем за период (для сравнения районов на дашборде) |
 | GET | `/problems?city=&district=&category=&status=&bbox=` | все | проблемы для карты (лёгкая схема). Без `status` — только актуальные: нерешённые и сообщённые за последние 30 дней (иначе карта тонет в пинах за годы); с `status` — все с этим статусом |
 | POST | `/problems` | авториз. | создать. multipart: `category`, `lon`, `lat`, `description` (10–1000 символов), `photos` — до 3 файлов JPEG/PNG/WebP ≤ 10 МБ. Район определяется сервером по точке; точка вне районов — 422 `outside_city` |
-| GET | `/problems/{id}` | все | полная карточка |
-| POST | `/problems/{id}/confirm` | авториз. | подтвердить |
+| GET | `/problems/{id}` | все | полная карточка + `history` (`[{status, changed_at}]` из `problem_status_changes`); для вошедшего ещё `is_mine` и `confirmed_by_me` |
+| POST | `/problems/{id}/confirm` | авториз. | подтвердить → полная карточка; своё сообщение — 409 `own_problem`, повторно — 409 `already_confirmed`. Автор получает уведомление |
 | DELETE | `/problems/{id}/confirm` | авториз. | снять подтверждение |
 | PATCH | `/problems/{id}/status` | модератор | сменить статус |
 | POST | `/support/requests` | все | обращение в поддержку. multipart: `topic`, `email`, `message` (10–2000 символов), `files` — до 3 файлов JPEG/PNG/WebP/PDF ≤ 10 МБ → `{id: "S-0001", topic, created_at}`. Для авторизованного пользователя запрос привязывается к аккаунту |
@@ -483,9 +500,10 @@ in_progress ──(модератор)──▶ resolved
 ### 7.1 Демо-режим: фронтенд без бэкенда
 - Все запросы идут через `shared/api/client.js`. Пока `VITE_USE_MOCKS` не равен `false` (по умолчанию), их обслуживает фейковый API `src/data/api/handler.js` прямо в браузере — с задержкой, валидацией и кодами ошибок как у настоящего API.
 - **Все демо-данные — только в `frontend/src/data/`** (см. `data/README.md`): снимок геоданных Костаная `cities/kostanay/*` (копия `backend/data/cities/kostanay/*`), демо-пользователи `accounts.json`, демо-содержимое `content.json` (описания тестовых проблем, ники, названия сервисов), генератор статистики `api/generate.js`. В компонентах, страницах и `shared/` демо-данных нет.
-- Реализованы: `auth/register|login|logout`, `GET /cities/{slug}`, `GET /cities/{slug}/moods`, `GET /cities/{slug}/stats`, `GET /districts/{id}/stats`, `POST /districts/{id}/mood`, `GET /problems`, `POST /problems`, `POST /problems/{id}/confirm`, `PATCH /users/me`, `PUT /users/me/avatar`, `POST /users/me/password`, `DELETE /users/me`, `POST /support/requests`, `GET /status` (в моках все сервисы «работают»). Идентификатор района в моках = его `slug`.
+- Реализованы: `auth/register|login|logout`, `GET /cities/{slug}`, `GET /cities/{slug}/moods`, `GET /cities/{slug}/stats`, `GET /districts/{id}/stats`, `POST /districts/{id}/mood`, `GET /problems`, `POST /problems`, `POST /problems/{id}/confirm`, `GET /problems/{id}`, `PATCH /users/me`, `PUT /users/me/avatar`, `POST /users/me/password`, `DELETE /users/me`, `GET /users/me/problems`, `GET /users/me/notifications`, `POST /users/me/notifications/read`, `POST /support/requests`, `GET /status` (в моках все сервисы «работают»). Идентификатор района в моках = его `slug`.
 - Демо-аккаунт: `demo@viberay.kz` / `demo12345`. Данные живут до перезагрузки страницы.
 - История для дашборда: город «работает» с января 2023 года; ~1 100 старых сообщений о проблемах (число растёт вместе с жителями, всё старше года решено) и 64 за последний месяц. У Аэропорта за день почти нет отметок — демонстрация порога приватности.
+- Сообщество в демо (`data/api/community.js`): у демо-пользователя уже есть 5 сообщений разных статусов (`accounts.json` → `reports`) с историей и уведомлениями; история статусов остальных проблем восстанавливается из текущего статуса. Когда вошедший отправляет новую проблему, «соседи» подтверждают её через ~25 и ~70 с — приходят уведомления, а на 3 подтверждениях статус становится «подтверждена».
 - Состояние фейкового API живёт в памяти вкладки: после перезагрузки новые отметки, проблемы и аккаунты пропадают.
 - Когда появится FastAPI: `VITE_USE_MOCKS=false` в `frontend/.env`; если демо больше не нужно — удалить `src/data/`, ветку демо-режима в `client.js` и подсказку демо-входа в `LoginForm.jsx`.
 
@@ -529,7 +547,10 @@ in_progress ──(модератор)──▶ resolved
 - **Подписи районов:** `CSS2DRenderer`; точка подписи — «самая глубокая» точка полигона (`labelPoint`), а не центроид, иначе у вытянутых районов подпись уезжает наружу.
 - **Фон:** `CityBackdrop` — реальные улицы OSM вокруг районов (`LineSegments`), Тобол (плоские ленты по линиям OSM) и водоёмы (`ShapeGeometry`), мягко освещённая «земля» (`--scene-ground`).
 - **Улицы на районах:** улицы OSM внутри района рисуются тонкими линиями по верху его плиты (`DistrictsLayer.addStreets`) — районы выглядят как город, а не как гладкие блоки.
-- **Маркеры проблем:** два `InstancedMesh` (стержни + головки), цвет по статусу, новые пульсируют; клик → карточка проблемы.
+- **Маркеры проблем:** два `InstancedMesh` (стержни + головки), цвет по статусу, новые пульсируют; клик → карточка проблемы (её адрес `/map/:city/problem/:id`).
+- **Кластеры меток:** метки ближе 70 px на экране (× масштаб интерфейса) жадно собираются в кластер; пересчёт — только когда камера сдвинулась (не чаще 160 мс). Метки кластера слетаются в его центр и исчезают, при приближении разлетаются по местам (плавное догоняние цели, а не скачок). Значок кластера — DOM-кнопка (`ClusterLabels`, CSS2D): число и кольцо из долей статусов (`conic-gradient` по токенам статусов); клик приближает камеру. Открытая проблема в кластер не прячется; подписи районов под значками прячутся (`resolveLabelOverlaps`).
+- **Время суток:** свет, фон и туман следуют часу в городе — по его часовому поясу (`city.timezone`, `shared/lib/cityTime.js`), а не посетителя; `?time=HH:MM` показывает карту в другое время. Ключевые моменты (`dayCycle.js`): ночь — тихий холодный свет, рассвет и закат — мягче и чуть теплее, день — нейтральный `--scene-light`; солнце идёт с востока на запад. Вечером и ночью на крышах загораются окна (`DistrictsLayer.addWindows`: крошечные квадраты `--scene-window`, число — по площади района и `renderQuality().detail`), изредка какое-то окно гаснет или зажигается. Подпись «Костанай · вечер, 19:40» — справа внизу (в раскладке с боковыми панелями).
+- **Подсказки при первом визите** (`shared/ui/CoachMarks.jsx`): затемнение с вырезом вокруг цели (SVG-маска), вырез переезжает между шагами, карточка встаёт с той стороны, где больше места (на телефоне — у верхнего или нижнего края). Три шага: район → «Отметить настроение» → «Сообщить о проблеме» (на телефоне — кнопка «+»). Показываются один раз (`localStorage`), повторить — «Как пользоваться картой» в панели фильтров.
 - **Цвета сцены** берутся из CSS-токенов через `shared/lib/cssVar.js` — одна палитра для CSS и WebGL.
 - **Выбор:** `Raycaster` в `Picker.js`, события передаются в React через колбэки.
 - **Камера:** перспективная, ограниченный наклон и зум; перелёт к району — `gsap.to(camera.position / target)`.

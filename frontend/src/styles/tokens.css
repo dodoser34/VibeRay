@@ -55,6 +55,10 @@
   --district-11: #b087ab;
   --district-12: #949cad;
 
+  /* Сравнение двух районов на дашборде: район A и район B (линии, полосы, отметки) */
+  --compare-a: #6aa7a0;
+  --compare-b: #c98f5a;
+
   /* Статусы проблем */
   --status-new: #6b95b8;
   --status-confirmed: #a8742e;
@@ -69,6 +73,12 @@
   --scene-fog: #0b110d;
   --scene-ground: #111913;
   --scene-light: #f3f1ea; /* нейтральный белый свет: плиты сохраняют свой оттенок */
+  /* Время суток на карте: свет мягче утром и вечером, приглушённо-холодный ночью (без неона) */
+  --scene-light-dawn: #eee2cf;
+  --scene-light-dusk: #ead9c4;
+  --scene-light-night: #b4bdca;
+  --scene-bg-night: #070b09;
+  --scene-window: #cdb27c;
   --scene-district-edge: #c8d3c4;
   --scene-street-on-district: #0b110d;
   --scene-dust: #7c8c7e;
@@ -107,6 +117,7 @@
   /* Типографика */
   --font-display: 'Unbounded', 'Manrope', system-ui, sans-serif;
   --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
   /* Размеры в rem: корневой шрифт растёт на экранах 2K / 4K (src/adaptations), и весь интерфейс
      пропорционально растёт вместе с ним, а не растягивается. */
   --fs-3xs: 0.625rem; /* 10 px — деления осей, юридические строки */

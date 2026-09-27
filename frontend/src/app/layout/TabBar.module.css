@@ -30,6 +30,15 @@
   pointer-events: auto;
 }
 
+/* Правый край шапки — напротив логотипа: колокольчик уведомлений */
+.aside {
+  position: absolute;
+  right: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
 .logoBg {
   fill: var(--color-bg-raised);
   stroke: var(--color-glass-border);

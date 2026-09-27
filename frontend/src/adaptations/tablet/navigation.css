@@ -3,4 +3,13 @@
   :root [data-ui='tabbar-brand'] {
     display: none;
   }
+
+  /* Колокольчик ближе к краю, длинный ник короче — капсула и колокольчик не сходятся на 768 px */
+  :root [data-ui='tabbar-aside'] {
+    right: var(--space-3);
+  }
+
+  :root [data-ui='tabbar-nickname'] {
+    max-width: 8ch;
+  }
 }

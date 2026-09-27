@@ -173,6 +173,50 @@
 }
 
 /* Требование лицензии OpenStreetMap (ODbL): видно на экране любого размера */
+/* Время суток в городе — справа внизу, напротив кнопки статистики; свет на карте ему следует */
+.clock {
+  position: absolute;
+  right: var(--space-5);
+  bottom: var(--space-6);
+  z-index: var(--z-panel);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2.5rem;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(var(--blur-glass));
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.clock svg {
+  flex: none;
+  fill: none;
+  stroke: var(--color-alert);
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: clock-icon var(--dur-slow) var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clock svg {
+    animation: none;
+  }
+}
+
+@keyframes clock-icon {
+  from {
+    opacity: 0;
+    transform: translateY(4px) rotate(-20deg);
+  }
+}
+
 .attribution {
   position: absolute;
   right: var(--space-3);

@@ -1,16 +1,18 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useLocation } from 'react-router';
 import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { revealOnScroll } from '@/shared/animations/revealOnScroll';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { AccountSection } from './AccountSection';
 import { DistrictSection } from './DistrictSection';
+import { MyReportsSection } from './MyReportsSection';
 import { ProfileSection } from './ProfileSection';
 import { SecuritySection } from './SecuritySection';
 import texts from '@/texts/settings.json';
 import styles from './SettingsCenter.module.css';
 
-const SECTIONS = ['profile', 'district', 'security', 'account'].map((key) => ({
+const SECTIONS = ['profile', 'reports', 'district', 'security', 'account'].map((key) => ({
   key,
   id: `settings-${key}`,
   label: texts.sections[key],
@@ -19,11 +21,22 @@ const SECTIONS = ['profile', 'district', 'security', 'account'].map((key) => ({
 
 // Страница настроек: навигация по разделам (подсвечивает раздел, который сейчас на экране)
 // и сами разделы. districts: [{ slug, name }] или null, пока город грузится.
-export function SettingsCenter({ districts, onLogout, onDeleted }) {
+export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
   const rootRef = useRef(null);
   const reduced = useReducedMotion();
   const entered = usePageEntered();
   const [active, setActive] = useState(SECTIONS[0].id);
+  const names = useMemo(
+    () => Object.fromEntries((districts ?? []).map((d) => [d.slug, d.name])),
+    [districts],
+  );
+
+  const { hash } = useLocation();
+
+  // Ссылка на раздел (/settings#settings-reports — из уведомлений) открывает страницу сразу на нём.
+  useEffect(() => {
+    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView({ block: 'start' });
+  }, [hash]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -98,9 +111,10 @@ export function SettingsCenter({ districts, onLogout, onDeleted }) {
 
         <div className={styles.sections}>
           <ProfileSection id={SECTIONS[0].id} />
-          <DistrictSection id={SECTIONS[1].id} districts={districts} />
-          <SecuritySection id={SECTIONS[2].id} />
-          <AccountSection id={SECTIONS[3].id} onLogout={onLogout} onDeleted={onDeleted} />
+          <MyReportsSection id={SECTIONS[1].id} names={names} onNavigate={onNavigate} />
+          <DistrictSection id={SECTIONS[2].id} districts={districts} />
+          <SecuritySection id={SECTIONS[3].id} />
+          <AccountSection id={SECTIONS[4].id} onLogout={onLogout} onDeleted={onDeleted} />
         </div>
       </div>
     </div>

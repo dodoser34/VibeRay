@@ -33,6 +33,11 @@ export function SettingsPage() {
   };
 
   return (
-    <SettingsCenter districts={districts} onLogout={leave(logout)} onDeleted={leave(endSession)} />
+    <SettingsCenter
+      districts={districts}
+      onNavigate={go}
+      onLogout={leave(logout)}
+      onDeleted={leave(endSession)}
+    />
   );
 }

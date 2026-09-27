@@ -7,6 +7,7 @@ import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { format } from '@/shared/lib/format';
 import { formatTime } from '@/shared/lib/formatDate';
 import texts from '@/texts/map.json';
+import { Button } from '@/shared/ui/Button';
 import styles from './MapFilters.module.css';
 
 const LAYERS = ['districts', 'mood', 'problems'];
@@ -59,6 +60,7 @@ export function MapFilters({
   selectedSlug,
   onSelectDistrict,
   updatedAt,
+  onHelp,
 }) {
   const isStats = view === 'stats';
   return (
@@ -128,6 +130,11 @@ export function MapFilters({
         <br />
         {texts.districtsSource}
       </p>
+      {onHelp && (
+        <Button variant="text" onClick={onHelp} data-ui="map-tour-replay">
+          {texts.tour.replay}
+        </Button>
+      )}
     </>
   );
 }

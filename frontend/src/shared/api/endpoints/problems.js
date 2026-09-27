@@ -4,6 +4,11 @@ export function getProblems({ city, district, category, status } = {}) {
   return request('GET', '/problems', { query: { city, district, category, status } });
 }
 
+// Полная карточка: история статусов, а для вошедшего — is_mine и confirmed_by_me.
+export function getProblem(problemId) {
+  return request('GET', `/problems/${problemId}`);
+}
+
 export function confirmProblem(problemId) {
   return request('POST', `/problems/${problemId}/confirm`);
 }

@@ -1,0 +1,14 @@
+/* 404 на планшетах стоя и телефонах: иллюстрация сверху, текст под ней. */
+@media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
+  :root [data-ui='not-found'] {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: center;
+    gap: var(--space-5);
+  }
+
+  :root [data-ui='not-found-art'] {
+    order: -1;
+    width: min(100%, 30rem);
+    justify-self: center;
+  }
+}

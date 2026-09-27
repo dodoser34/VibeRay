@@ -4,12 +4,17 @@ import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { gsap } from '@/shared/animations/gsapSetup';
 import { cssVar } from '@/shared/lib/cssVar';
-import { labelPoint } from '@/shared/lib/geoProjection';
+import { labelPoint, pointInRing } from '@/shared/lib/geoProjection';
+import { createRandom, hashString } from '@/shared/lib/random';
 import { colorForAggregate, colorForDistrict, colorForNoData, colorForScore } from './moodColor';
 
 const LIFT = 0.14;
 const HOVER_DURATION = 0.45;
 const EDGE_OPACITY = 0.85;
+const WINDOW_SIZE = 0.03; // км: крошечный квадрат света на крыше
+const WINDOWS_PER_KM2 = 30;
+const MAX_WINDOWS = 160;
+const WINDOW_OPACITY = 0.78;
 
 // Выдавленные плиты районов. Три режима цвета: 'districts' — у каждого района свой пастельный цвет
 // (легко различать), 'mood' — цвет по общему настроению жителей, 'scores' — любая метрика дашборда
@@ -132,6 +137,7 @@ export class DistrictsLayer {
       material,
       lineMaterial,
       anchor: new THREE.Vector2(lx, -ly),
+      polygons,
       height: this.baseHeight,
       // Площадь (км²): при столкновении подписей большие районы сохраняют свою.
       area: shapes.reduce(
@@ -140,6 +146,84 @@ export class DistrictsLayer {
       ),
     });
     item.scale.y = this.baseHeight;
+  }
+
+  // Окна на крышах: загораются вечером и ночью (setWindows). В районах побольше — больше окон;
+  // detail (renderQuality) уменьшает их число на слабых устройствах. Квадраты лежат плашмя на верхней
+  // грани плиты, поэтому вместе с ней растут по высоте.
+  addWindows({ detail = 1 } = {}) {
+    this.windowMaterial = new THREE.MeshBasicMaterial({
+      color: new THREE.Color(cssVar('--scene-window')),
+      transparent: true,
+      opacity: 0,
+      depthWrite: false,
+    });
+    const geometry = new THREE.PlaneGeometry(WINDOW_SIZE, WINDOW_SIZE);
+    geometry.rotateX(-Math.PI / 2);
+    const dummy = new THREE.Object3D();
+    this.items.forEach((item) => {
+      const count = Math.min(MAX_WINDOWS, Math.round(item.area * WINDOWS_PER_KM2 * detail));
+      if (!count) return;
+      const rand = createRandom(hashString(`windows:${item.slug}`));
+      const rings = item.polygons;
+      const xs = rings.flatMap(([outer]) => outer.map((p) => p[0]));
+      const ys = rings.flatMap(([outer]) => outer.map((p) => p[1]));
+      const [minX, maxX, minY, maxY] = [
+        Math.min(...xs),
+        Math.max(...xs),
+        Math.min(...ys),
+        Math.max(...ys),
+      ];
+      const inside = (point) =>
+        rings.some(
+          ([outer, ...holes]) =>
+            pointInRing(point, outer) && !holes.some((hole) => pointInRing(point, hole)),
+        );
+      const mesh = new THREE.InstancedMesh(geometry, this.windowMaterial, count);
+      let placed = 0;
+      for (let attempt = 0; placed < count && attempt < count * 12; attempt++) {
+        const point = [minX + rand() * (maxX - minX), minY + rand() * (maxY - minY)];
+        if (!inside(point)) continue;
+        dummy.position.set(point[0], 1.007, -point[1]);
+        dummy.updateMatrix();
+        mesh.setMatrixAt(placed, dummy.matrix);
+        placed += 1;
+      }
+      mesh.count = placed;
+      mesh.userData.lit = new Uint8Array(placed).fill(1);
+      item.windows = mesh;
+      item.group.add(mesh);
+    });
+    this.windowGeometry = geometry;
+  }
+
+  setWindows(level, duration = 1.5) {
+    if (!this.windowMaterial) return;
+    gsap.to(this.windowMaterial, {
+      opacity: level * WINDOW_OPACITY,
+      duration,
+      ease: 'power2.inOut',
+      overwrite: 'auto',
+    });
+  }
+
+  // Живой город: время от времени в паре случайных окон гаснет или загорается свет.
+  twinkle(rand = Math.random) {
+    if (!this.windowMaterial || this.windowMaterial.opacity < 0.05) return;
+    const items = [...this.items.values()].filter((item) => item.windows);
+    const dummy = new THREE.Object3D();
+    for (let n = 0; n < 3; n++) {
+      const mesh = items[Math.floor(rand() * items.length)]?.windows;
+      if (!mesh) continue;
+      const i = Math.floor(rand() * mesh.count);
+      mesh.getMatrixAt(i, dummy.matrix);
+      dummy.matrix.decompose(dummy.position, dummy.quaternion, dummy.scale);
+      mesh.userData.lit[i] ^= 1;
+      dummy.scale.setScalar(mesh.userData.lit[i] ? 1 : 0.001);
+      dummy.updateMatrix();
+      mesh.setMatrixAt(i, dummy.matrix);
+      mesh.instanceMatrix.needsUpdate = true;
+    }
   }
 
   setResolution(width, height) {
@@ -301,6 +385,9 @@ export class DistrictsLayer {
       item.lineMaterial.dispose();
     });
     this.streetMaterial?.dispose();
+    if (this.windowMaterial) gsap.killTweensOf(this.windowMaterial);
+    this.windowMaterial?.dispose();
+    this.windowGeometry?.dispose();
     this.group.removeFromParent();
   }
 }

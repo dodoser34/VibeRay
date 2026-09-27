@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router';
 import { AuthProvider } from '@/features/auth';
+import { NotificationsProvider } from '@/features/notifications';
 import { trackInputModality } from '@/app/inputModality';
 import { router } from '@/app/router';
 import '@/shared/animations/gsapSetup';
@@ -16,7 +17,9 @@ trackInputModality();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
-      <RouterProvider router={router} />
+      <NotificationsProvider>
+        <RouterProvider router={router} />
+      </NotificationsProvider>
     </AuthProvider>
   </StrictMode>,
 );

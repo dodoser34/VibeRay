@@ -1,0 +1,93 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dim {
+  fill: var(--color-overlay);
+}
+
+/* Слот двигается (x/y), карточка внутри — появляется: у каждого свой transform */
+.cardSlot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min(21rem, calc(100vw - 2rem));
+}
+
+.card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-xl);
+  background: var(--color-glass-solid);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-panel);
+}
+
+.progress {
+  color: var(--color-accent-bright);
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: var(--fs-lg);
+  line-height: 1.2;
+}
+
+.text {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.55;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+.dots {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.dots span {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-highlight);
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out);
+}
+
+.dots span[data-active] {
+  background: var(--color-accent-bright);
+  transform: scale(1.5);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dots span {
+    transition: none;
+  }
+}

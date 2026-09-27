@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { gsap } from '@/shared/animations/gsapSetup';
 import { CSS2DObject, CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import { createProjection, createUnprojection } from '@/shared/lib/geoProjection';
 import { cssVar } from '@/shared/lib/cssVar';
@@ -7,6 +8,8 @@ import { DistrictsLayer } from './DistrictsLayer';
 import { ProblemsLayer } from './ProblemsLayer';
 import { CityBackdrop } from './CityBackdrop';
 import { CameraRig } from './cameraRig';
+import { ClusterLabels } from './ClusterLabels';
+import { lightingAt } from './dayCycle';
 import { Picker } from './Picker';
 import { PlacementMarker } from './PlacementMarker';
 
@@ -18,13 +21,23 @@ const FOG = { near: 18, far: 42 };
 const MAX_DISTANCE = 26;
 const LABEL_CHECK_MS = 150; // как часто разбираются налезающие подписи
 const LABEL_GAP = 4; // px между двумя подписями, которые обе остаются
+const TWINKLE_MS = 1400; // как часто в городе гаснет или загорается пара окон
 
 // Полноэкранная карта города. React общается с ней только через эти публичные методы.
 export class MapScene {
   constructor(
     canvas,
     container,
-    { labelClassName, labelValueClassName, onHover, onSelectDistrict, onSelectProblem },
+    {
+      labelClassName,
+      labelValueClassName,
+      clusterClassName,
+      clusterCountClassName,
+      describeCluster,
+      onHover,
+      onSelectDistrict,
+      onSelectProblem,
+    },
   ) {
     this.runtime = new SceneRuntime(canvas, container, {
       fov: 38,
@@ -34,6 +47,12 @@ export class MapScene {
     const { scene, camera } = this.runtime;
     this.labelClassName = labelClassName;
     this.labelValueClassName = labelValueClassName;
+    this.clusterOptions = {
+      className: clusterClassName,
+      countClassName: clusterCountClassName,
+      describe: describeCluster,
+      onSelect: (center) => this.zoomToCluster(center),
+    };
     this.callbacks = { onHover, onSelectDistrict, onSelectProblem };
     this.labels = new Map();
     this.layer = 'districts';
@@ -43,17 +62,16 @@ export class MapScene {
     this.marker = new PlacementMarker();
     scene.add(this.marker.group);
 
-    // Мягкий дневной свет: пастельные плиты читаются через свет, а не через свечение.
-    scene.add(
-      new THREE.HemisphereLight(
-        new THREE.Color(cssVar('--scene-light')),
-        new THREE.Color(cssVar('--scene-ground')),
-        1.7,
-      ),
+    // Мягкий свет: пастельные плиты читаются через свет, а не через свечение. Цвет, сила и
+    // направление следуют времени суток в городе (setHour).
+    this.hemi = new THREE.HemisphereLight(
+      new THREE.Color(cssVar('--scene-light')),
+      new THREE.Color(cssVar('--scene-ground')),
+      1.7,
     );
-    const key = new THREE.DirectionalLight(new THREE.Color(cssVar('--scene-light')), 2.1);
-    key.position.set(-6, 12, 8);
-    scene.add(key);
+    this.key = new THREE.DirectionalLight(new THREE.Color(cssVar('--scene-light')), 2.1);
+    this.key.position.set(-6, 12, 8);
+    scene.add(this.hemi, this.key);
 
     this.rig = new CameraRig(camera, canvas, { home: HOME_OFFSET });
 
@@ -84,9 +102,15 @@ export class MapScene {
       this.updateHome();
     });
     this.labelCheck = 0;
-    this.runtime.onTick((time) => {
+    this.twinkleAt = 0;
+    this.runtime.onTick((time, delta) => {
+      if (time * 1000 - this.twinkleAt > TWINKLE_MS) {
+        this.twinkleAt = time * 1000;
+        this.districts?.twinkle();
+      }
       this.rig.update();
-      this.problems?.update(time);
+      this.updateClusters(time, delta);
+      this.problems?.update(time, delta);
       this.labelRenderer.render(scene, camera);
       if (time * 1000 - this.labelCheck > LABEL_CHECK_MS) {
         this.labelCheck = time * 1000;
@@ -108,7 +132,10 @@ export class MapScene {
       colorMode: this.colorModeFor(this.layer),
       streets: city.streets,
     });
+    this.districts.addWindows({ detail: this.runtime.quality.detail });
+    if (this.hour !== undefined) this.setHour(this.hour, { immediate: true });
     this.problems = new ProblemsLayer(this.project);
+    this.clusterLabels = new ClusterLabels(this.problems.group, this.clusterOptions);
     this.pinsShown = false;
     this.problems.group.visible = false;
     this.problems.group.scale.y = 0.001;
@@ -124,7 +151,12 @@ export class MapScene {
     this.frame = { center, scale: Math.max(1, Math.max(size.x, size.z) / HOME_EXTENT) };
     this.updateHome();
     this.introTimelines = [
-      this.rig.intro({ from: center.clone().add(INTRO_OFFSET), duration: 2.2 }),
+      this.rig
+        .intro({ from: center.clone().add(INTRO_OFFSET), duration: 2.2 })
+        .eventCallback('onComplete', () => {
+          this.rig.controls.enabled = true;
+          this.flushPendingProblem();
+        }),
       this.districts.animateIn({ delay: 0.25 }),
     ];
     if (!this.started) this.introTimelines.forEach((timeline) => timeline.pause());
@@ -162,6 +194,7 @@ export class MapScene {
       const chip = document.createElement('span');
       chip.className = this.labelClassName;
       chip.dataset.ui = 'map-label';
+      chip.dataset.slug = slug;
       const value = document.createElement('span');
       value.className = this.labelValueClassName;
       chip.append(name, value);
@@ -193,6 +226,8 @@ export class MapScene {
   setProblems(problems) {
     this.problemList = problems;
     this.problems?.setProblems(problems, (slug) => this.districts.heightOf(slug));
+    if (this.selectedProblemId) this.problems?.setFocus(this.selectedProblemId);
+    this.flushPendingProblem();
   }
 
   // Слои: 'districts' (цвета районов), 'mood' (цвет по настроению), 'problems' (метки сверху).
@@ -218,6 +253,7 @@ export class MapScene {
     this.districts.setScores(this.overlay?.scores);
     this.districts.setColorMode(this.overlay ? 'scores' : this.colorModeFor(this.layer));
     if (pins !== this.pinsShown) this.problems.setVisible(pins);
+    if (!pins) this.clusterLabels.clear();
     this.pinsShown = pins;
     this.districts.setDimmed(pins);
     this.labels.forEach((label, slug) => {
@@ -284,12 +320,87 @@ export class MapScene {
     this.districts?.flash(slug);
   }
 
+  // Время суток в городе (час дробью): свет, фон, туман и окна плавно переходят к нему.
+  setHour(hour, { immediate = false } = {}) {
+    const first = this.hour === undefined;
+    this.hour = hour;
+    const light = lightingAt(hour);
+    const duration = immediate || first ? 0 : 2;
+    const { scene } = this.runtime;
+    const tweens = [
+      [this.hemi.color, light.color],
+      [this.key.color, light.color],
+      [scene.background, light.background],
+      [scene.fog.color, light.background],
+    ];
+    tweens.forEach(([target, color]) =>
+      gsap.to(target, { r: color.r, g: color.g, b: color.b, duration, overwrite: 'auto' }),
+    );
+    gsap.to(this.hemi, { intensity: light.hemiIntensity, duration, overwrite: 'auto' });
+    gsap.to(this.key, { intensity: light.keyIntensity, duration, overwrite: 'auto' });
+    gsap.to(this.key.position, {
+      x: light.position.x,
+      y: light.position.y,
+      z: light.position.z,
+      duration,
+      overwrite: 'auto',
+    });
+    this.districts?.setWindows(light.windows, duration);
+  }
+
+  // Кластеры пересчитываются, только пока метки видны и камера или данные изменились.
+  updateClusters(time, delta) {
+    if (!this.problems || !this.pinsShown) return;
+    const { width, height } = this.runtime.size;
+    const changed = this.problems.recluster(this.runtime.camera, width, height, time * 1000);
+    if (changed) {
+      this.clusterLabels.sync(this.problems.clusters, (center, target) =>
+        this.problems.anchorOf(center, target),
+      );
+    }
+    this.clusterLabels.update(delta);
+  }
+
+  // Нажатие на кластер: камера подлетает ближе, и его метки разлетаются по местам.
+  zoomToCluster(center) {
+    const { camera } = this.runtime;
+    const target = this.problems.group.localToWorld(center.clone());
+    const distance = camera.position.distanceTo(this.rig.controls.target);
+    this.rig.flyTo(target, {
+      distance: Math.max(3.6, distance * 0.45),
+      polar: this.rig.controls.getPolarAngle(),
+      duration: 1.1,
+    });
+  }
+
+  setSelectedProblem(problemId) {
+    this.problems?.setFocus(problemId);
+    this.selectedProblemId = problemId;
+  }
+
+  // Перелёт к метке. По прямой ссылке карта ещё грузится: ждём город, метку и конец вступления.
   focusProblem(problem) {
-    if (!problem || !this.problems) return;
+    if (!problem) return;
+    const ready = this.problems?.has(problem.id) && this.started && !this.introRunning();
+    if (!ready) {
+      this.pendingProblem = problem;
+      return;
+    }
+    this.pendingProblem = null;
     this.rig.flyTo(this.problems.worldPositionOf(problem), {
       distance: 6 * this.zoomFactor(),
       polar: 0.7,
     });
+  }
+
+  // Идёт (или ещё ждёт старта) перелёт камеры вступления — перелёт к метке его бы оборвал.
+  introRunning() {
+    const flight = this.introTimelines?.[0];
+    return Boolean(flight && (flight.isActive() || flight.paused()));
+  }
+
+  flushPendingProblem() {
+    if (this.pendingProblem) this.focusProblem(this.pendingProblem);
   }
 
   handleHover(hit) {
@@ -306,7 +417,16 @@ export class MapScene {
     const { camera } = this.runtime;
     const { width, height } = this.runtime.size;
     const point = new THREE.Vector3();
-    const placed = [];
+    // Кластеры меток важнее подписей районов: подпись под значком кластера прячется.
+    const origin = this.runtime.container.getBoundingClientRect();
+    const placed = this.pinsShown
+      ? this.clusterLabels.boxes().map((box) => ({
+          left: box.left - origin.left,
+          right: box.right - origin.left,
+          top: box.top - origin.top,
+          bottom: box.bottom - origin.top,
+        }))
+      : [];
     [...this.labels]
       .map(([slug, label]) => {
         const { chip } = label.userData;
@@ -372,10 +492,20 @@ export class MapScene {
 
   dispose() {
     this.introTimelines?.forEach((timeline) => timeline.kill());
+    gsap.killTweensOf([
+      this.hemi,
+      this.key,
+      this.hemi.color,
+      this.key.color,
+      this.key.position,
+      this.runtime.scene.background,
+      this.runtime.scene.fog.color,
+    ]);
     clearTimeout(this.pendingSelect);
     this.picker.dispose();
     this.rig.dispose();
     this.districts?.dispose();
+    this.clusterLabels?.dispose();
     this.problems?.dispose();
     this.marker.dispose();
     this.backdrop?.dispose();

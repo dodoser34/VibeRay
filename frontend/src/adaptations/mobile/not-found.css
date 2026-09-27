@@ -1,0 +1,7 @@
+/* 404 на телефонах: кнопки во всю ширину, под большой палец */
+@media (max-width: 767px) {
+  :root [data-ui='not-found-actions'] {
+    display: grid;
+    width: 100%;
+  }
+}

@@ -18,7 +18,8 @@ const PAGES = [
   { test: (p) => p === '/register', label: nav.pageNames.register, tab: 'register' },
   { test: () => true, label: nav.pageNames.home, tab: null },
 ];
-const pageOf = (path) => PAGES.find((page) => page.test(path));
+// Якорь и параметры адреса (/settings#settings-reports) не меняют страницу назначения.
+const pageOf = (path) => PAGES.find((page) => page.test(path.split(/[?#]/)[0]));
 const HOLD_LIMIT = 6000; // не держать карту на экране дольше этого, даже если страница зависла
 const POINTER_FRESH = 800; // мс: клик не старше этого — точка, откуда вылетает сложенная карта
 

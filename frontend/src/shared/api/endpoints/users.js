@@ -24,3 +24,18 @@ export function changePassword({ currentPassword, newPassword }) {
 export function deleteAccount({ password }) {
   return request('DELETE', '/users/me', { body: { password } });
 }
+
+// Свои сообщения о проблемах, новые первыми, с историей статусов.
+export function getMyProblems() {
+  return request('GET', '/users/me/problems');
+}
+
+// → { unread, items: [{ id, kind: 'confirmations' | 'status', problem, status, count, created_at, read }] }
+export function getNotifications() {
+  return request('GET', '/users/me/notifications');
+}
+
+// Без ids — все уведомления пользователя.
+export function markNotificationsRead(ids) {
+  return request('POST', '/users/me/notifications/read', { body: ids ? { ids } : {} });
+}
