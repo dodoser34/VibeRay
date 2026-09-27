@@ -1,0 +1,108 @@
+.layout {
+  container-type: inline-size;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-6);
+}
+
+/* Предпросмотр публичной карточки — ровно то, что видят другие */
+.card {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  padding: var(--space-5) var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-raised);
+  border: 1px dashed var(--color-glass-highlight);
+  text-align: center;
+}
+
+.cardLabel {
+  margin-bottom: var(--space-2);
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cardName {
+  max-width: 100%;
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardMeta {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.lock {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: var(--space-2);
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+}
+
+.lock svg {
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+}
+
+.fields {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.footer {
+  grid-column: 1 / -1;
+}
+
+/* Узкий раздел (телефон, узкая колонка): карточка предпросмотра — над полями и горизонтальная
+   (аватар слева), чтобы поля были видны уже на первом экране */
+@container (max-width: 34rem) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+  }
+
+  .card {
+    grid-template-columns: auto minmax(0, 1fr);
+    justify-items: start;
+    column-gap: var(--space-4);
+    row-gap: var(--space-1);
+    padding: var(--space-4);
+    text-align: left;
+  }
+
+  .cardLabel {
+    grid-column: 1 / -1;
+    margin-bottom: var(--space-2);
+  }
+
+  .cardAvatar {
+    grid-row: span 3;
+  }
+
+  .cardName,
+  .cardMeta,
+  .lock {
+    grid-column: 2;
+  }
+
+  .lock {
+    margin-top: 0;
+  }
+}

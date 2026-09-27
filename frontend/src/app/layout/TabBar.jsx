@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router';
 import { useAuth } from '@/features/auth';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
+import { format } from '@/shared/lib/format';
 import { Avatar } from '@/shared/ui/Avatar';
 import { useTransitionNavigate } from '../transitions/useTransition';
 import nav from '@/texts/nav.json';
@@ -15,6 +16,7 @@ function activeKeyFor(pathname) {
   if (pathname === '/register') return 'register';
   if (pathname === '/about') return 'about';
   if (pathname === '/support') return 'support';
+  if (pathname === '/settings') return 'me';
   return 'login';
 }
 
@@ -38,7 +40,14 @@ export function TabBar() {
   const items = [
     ...(user
       ? [
-          { key: 'me', label: user.nickname, avatar: user.avatar_url, to: `/map/${DEFAULT_CITY}` },
+          {
+            key: 'me',
+            label: user.nickname,
+            avatar: user.avatar_url,
+            to: '/settings',
+            title: nav.tabs.settings.title,
+            ariaLabel: format(nav.tabs.settings.label, { nickname: user.nickname }),
+          },
           { key: 'logout', ...nav.tabs.logout, action: logout },
         ]
       : [
@@ -212,6 +221,8 @@ export function TabBar() {
                 data-key={item.key}
                 className={className}
                 aria-current={activeKey === item.key ? 'page' : undefined}
+                title={item.title}
+                aria-label={item.ariaLabel}
                 onClick={handleClick(item)}
               >
                 {content}

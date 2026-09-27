@@ -1,0 +1,42 @@
+.rows {
+  display: grid;
+  gap: var(--space-3);
+  container-type: inline-size;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-glass-border);
+}
+
+.row[data-danger] {
+  border-color: var(--color-danger);
+}
+
+.text {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.rowTitle {
+  font-size: var(--fs-md);
+}
+
+.rowText {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+}
+
+/* Узкий раздел: кнопка — под описанием, во всю ширину строки */
+@container (max-width: 30rem) {
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

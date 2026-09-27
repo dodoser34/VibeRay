@@ -13,6 +13,7 @@ const PAGES = [
   { test: (p) => p.startsWith('/map'), label: nav.pageNames.map, tab: 'map' },
   { test: (p) => p === '/about', label: nav.pageNames.about, tab: 'about' },
   { test: (p) => p === '/support', label: nav.pageNames.support, tab: 'support' },
+  { test: (p) => p === '/settings', label: nav.pageNames.settings, tab: 'me' },
   { test: (p) => p === '/login', label: nav.pageNames.login, tab: 'login' },
   { test: (p) => p === '/register', label: nav.pageNames.register, tab: 'register' },
   { test: () => true, label: nav.pageNames.home, tab: null },

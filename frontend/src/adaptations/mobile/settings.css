@@ -1,0 +1,51 @@
+/* Настройки на телефонах: страница начинается под плавающими кнопками, разделы плотнее. */
+@media (max-width: 767px) {
+  :root [data-ui='settings-page'] {
+    padding-top: calc(var(--tabbar-height) + var(--safe-top) + var(--space-6));
+    padding-bottom: var(--space-7);
+  }
+
+  :root [data-ui='settings-section'] {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  /* Все четыре раздела видны сразу: равные доли полосы и короткие подписи, без прокрутки вбок */
+  :root [data-ui='settings-nav'] {
+    overflow-x: visible;
+  }
+
+  :root [data-ui='settings-nav'] ul {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  :root [data-ui='settings-nav'] a {
+    justify-content: center;
+    padding-inline: var(--space-1);
+    font-size: var(--fs-sm);
+  }
+
+  :root [data-ui='settings-nav'] a::before {
+    display: none;
+  }
+
+  /* Полная подпись остаётся для экранных чтецов */
+  :root [data-ui='settings-nav-full'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  :root [data-ui='settings-nav-short'] {
+    display: inline;
+  }
+
+  /* Кнопки «Сохранить / Отменить» — во всю ширину, под палец */
+  :root [data-ui='settings-savebar'] > button {
+    flex: 1 1 auto;
+  }
+}

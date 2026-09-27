@@ -3,6 +3,7 @@ import { HomePage } from '@/pages/HomePage/HomePage';
 import { MapPage } from '@/pages/MapPage/MapPage';
 import { AboutPage } from '@/pages/AboutPage/AboutPage';
 import { SupportPage } from '@/pages/SupportPage/SupportPage';
+import { SettingsPage } from '@/pages/SettingsPage/SettingsPage';
 import { App } from './App';
 
 export const router = createBrowserRouter(
@@ -22,6 +23,7 @@ export const router = createBrowserRouter(
         { path: '/map/:citySlug/stats', element: <MapPage view="stats" /> },
         { path: '/about', element: <AboutPage /> },
         { path: '/support', element: <SupportPage /> },
+        { path: '/settings', element: <SettingsPage /> },
         { path: '*', element: <Navigate to="/" replace /> },
       ],
     },

@@ -23,12 +23,20 @@ export function AuthProvider({ children }) {
     [startSession],
   );
 
-  const logout = useCallback(async () => {
-    await authApi.logout().catch(() => null);
+  // Без запроса к серверу: после удаления аккаунта сессии на сервере уже нет.
+  const endSession = useCallback(() => {
     setAccessToken(null);
     setUser(null);
   }, []);
 
-  const value = useMemo(() => ({ user, login, register, logout }), [user, login, register, logout]);
+  const logout = useCallback(async () => {
+    await authApi.logout().catch(() => null);
+    endSession();
+  }, [endSession]);
+
+  const value = useMemo(
+    () => ({ user, login, register, logout, updateUser: setUser, endSession }),
+    [user, login, register, logout, endSession],
+  );
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

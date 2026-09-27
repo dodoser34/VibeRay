@@ -66,6 +66,18 @@
   border-color: var(--color-glass-highlight);
 }
 
+/* Необратимые действия (удаление аккаунта): тёмно-красный, без свечения */
+.danger {
+  background: var(--color-glass);
+  border: 1px solid var(--color-danger);
+  color: var(--color-error);
+}
+
+.danger:hover:not(:disabled) {
+  background: var(--color-danger);
+  color: var(--color-text);
+}
+
 .text {
   height: auto;
   padding: 0;

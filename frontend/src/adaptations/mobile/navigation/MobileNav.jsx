@@ -14,6 +14,7 @@ const ICONS = {
   stats: <path d="M4 20h16M7 16v-5M12 16V7M17 16v-8" />,
   about: <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 11v6M12 7.5v.5" />,
   support: <path d="M4 12a8 8 0 0 1 16 0v4a2 2 0 0 1-2 2h-1v-6h3M4 12v4a2 2 0 0 0 2 2h1v-6H4" />,
+  settings: <path d="M4 7h9M17 7h3M15 5v4M4 17h3M11 17h9M9 15v4" />,
 };
 
 function activeKey(pathname) {
@@ -21,6 +22,7 @@ function activeKey(pathname) {
   if (pathname.startsWith('/map')) return 'map';
   if (pathname === '/about') return 'about';
   if (pathname === '/support') return 'support';
+  if (pathname === '/settings') return 'settings';
   return null;
 }
 
@@ -46,6 +48,7 @@ export function MobileNav() {
     { key: 'stats', to: `/map/${CITY}/stats`, label: nav.menu.stats },
     { key: 'about', to: '/about', label: nav.tabs.about.label },
     { key: 'support', to: '/support', label: nav.tabs.support.label },
+    ...(user ? [{ key: 'settings', to: '/settings', label: nav.menu.settings }] : []),
   ];
 
   useGSAP(

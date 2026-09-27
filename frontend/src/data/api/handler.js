@@ -38,6 +38,7 @@ const accounts = new Map(demoAccounts.map((account) => [account.user.email, acco
 const sessions = new Map(); // токен → email
 const supportRequests = [];
 const confirmations = new Map(); // id проблемы → Set id пользователей
+const authors = new Map(); // id проблемы → id автора: смена ника и аватара видна в его сообщениях
 const AUTO_CONFIRM_THRESHOLD = 3; // ARCHITECTURE.md 6.2
 const MAP_RECENT_MS = 30 * 24 * 3_600_000; // решённые проблемы остаются на карте 30 дней
 
@@ -54,10 +55,29 @@ function issueSession(email) {
   return { access_token: token, user: accounts.get(email).user };
 }
 
-function currentUser(token) {
+function currentAccount(token) {
   const email = sessions.get(token);
   if (!email) fail(401, 'unauthorized');
-  return accounts.get(email).user;
+  return accounts.get(email);
+}
+
+function currentUser(token) {
+  return currentAccount(token).user;
+}
+
+function nicknameTaken(nickname, exceptId) {
+  return [...accounts.values()].some(
+    ({ user }) => user.id !== exceptId && user.nickname.toLowerCase() === nickname.toLowerCase(),
+  );
+}
+
+// Автор в сообщениях о проблемах — всегда актуальный публичный профиль (UserPublic).
+function syncAuthor(user) {
+  problems
+    .filter((problem) => authors.get(problem.id) === user.id)
+    .forEach((problem) => {
+      problem.author = { nickname: user.nickname, avatar_url: user.avatar_url };
+    });
 }
 
 function checkPeriod(period) {
@@ -76,10 +96,7 @@ const routes = [
       if (accounts.has(email)) fail(409, 'email_taken');
       const password = evaluatePassword(body.password ?? '', { email, nickname: body.nickname });
       if (!password.acceptable) fail(422, 'weak_password');
-      const nicknameTaken = [...accounts.values()].some(
-        (a) => a.user.nickname.toLowerCase() === body.nickname.toLowerCase(),
-      );
-      if (nicknameTaken) fail(409, 'nickname_taken');
+      if (nicknameTaken(body.nickname)) fail(409, 'nickname_taken');
       accounts.set(email, {
         password: body.password,
         user: {
@@ -109,6 +126,65 @@ const routes = [
     /^\/auth\/logout$/,
     ({ token }) => {
       sessions.delete(token);
+      return null;
+    },
+  ],
+  [
+    'PATCH',
+    /^\/users\/me$/,
+    ({ body, token }) => {
+      const user = currentUser(token);
+      if (body.nickname !== undefined) {
+        if (!NICKNAME_PATTERN.test(body.nickname)) fail(422, 'invalid_nickname');
+        if (nicknameTaken(body.nickname, user.id)) fail(409, 'nickname_taken');
+      }
+      if (body.avatar_url !== undefined && !/^preset:\d+$/.test(body.avatar_url)) {
+        fail(422, 'invalid_avatar');
+      }
+      if (body.home_district && !isDistrict(body.home_district)) {
+        fail(404, 'district_not_found');
+      }
+      if (body.nickname !== undefined) user.nickname = body.nickname;
+      if (body.avatar_url !== undefined) user.avatar_url = body.avatar_url;
+      if (body.home_district !== undefined) user.home_district = body.home_district;
+      syncAuthor(user);
+      return user;
+    },
+  ],
+  [
+    'PUT',
+    /^\/users\/me\/avatar$/,
+    ({ body, token }) => {
+      const user = currentUser(token);
+      const photo = body.get('avatar');
+      if (!photo || !PHOTO_TYPES.includes(photo.type) || photo.size > PHOTO_MAX_BYTES) {
+        fail(422, 'invalid_photo');
+      }
+      user.avatar_url = URL.createObjectURL(photo);
+      syncAuthor(user);
+      return user;
+    },
+  ],
+  [
+    'POST',
+    /^\/users\/me\/password$/,
+    ({ body, token }) => {
+      const account = currentAccount(token);
+      if (account.password !== body.current_password) fail(403, 'wrong_password');
+      const check = evaluatePassword(body.new_password ?? '', account.user);
+      if (!check.acceptable) fail(422, 'weak_password');
+      account.password = body.new_password;
+      return null;
+    },
+  ],
+  [
+    'DELETE',
+    /^\/users\/me$/,
+    ({ body, token }) => {
+      const account = currentAccount(token);
+      if (account.password !== body.password) fail(403, 'wrong_password');
+      accounts.delete(account.user.email);
+      [...sessions].forEach(([key, email]) => email === account.user.email && sessions.delete(key));
       return null;
     },
   ],
@@ -190,7 +266,7 @@ const routes = [
       ) {
         fail(422, 'invalid_photo');
       }
-      return addProblem({
+      const problem = addProblem({
         author: user,
         district,
         category,
@@ -198,6 +274,8 @@ const routes = [
         location,
         photos: photos.map((photo) => ({ url: URL.createObjectURL(photo) })),
       });
+      authors.set(problem.id, user.id);
+      return problem;
     },
   ],
   [

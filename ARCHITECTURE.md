@@ -46,7 +46,7 @@
 | `/about` | `AboutPage` | О проекте |
 | `/support` | `SupportPage` | Центр поддержки: поиск по ответам, категории, частые вопросы, обращение, статус сервиса |
 | `/map/:citySlug/problem/:problemId` | — | *план:* прямая ссылка на проблему (сейчас карточка открывается без смены URL) |
-| `/profile` | — | *план:* свой профиль |
+| `/settings` | `SettingsPage` | Настройки своего профиля: публичный профиль (аватар — пресет или своё фото, никнейм, предпросмотр «как тебя видят»), свой район, email и смена пароля, выход и удаление аккаунта. Только для вошедших, гостя уводит на `/login`. Вход — аватар в таб-баре, на телефоне — пункт меню |
 
 Карта не размонтируется при переходах между районами, проблемами и дашбордом — меняется только состояние, панели и положение камеры.
 Переходы между страницами — через `app/transitions` (`useTransitionNavigate`, `useNavigationInterceptor`, `useTransitionReady`). По умолчанию играет переход «бумажная карта-оригами» (`shared/animations/MapFoldTransition.js`): сложенная карта вылетает из места клика и разворачивается на весь экран → страница меняется под ней, падает пин и рисуется маршрут к названию новой страницы, пока та грузится (страница держит переход через `useTransitionReady(ready)`, максимум 6 с; карта города ждёт данные города и настроений) → карта складывается и улетает к пункту таб-бара, новая страница проявляется. Если у страницы есть своя анимация выхода (главная «влетает» камерой в город), играет она. Переключение «Вход ↔ Регистрация» на главной — без перехода (это одна страница). Вступительные анимации страниц (подложка и пазл главной, 3D-город, полёт камеры и рост районов на карте, панели карты, первый экран поддержки) ждут «ворот входа» (`shared/animations/pageEntrance.js`, хук `usePageEntered`): под бумажной картой новая страница уже смонтирована и грузится, а вступление стартует в момент, когда карта начинает складываться. При прямом заходе на страницу ворота открыты сразу.
@@ -102,6 +102,7 @@ VibeRay/
 │       │   ├── MapPage/               # карта: боковые панели или шторка (телефон, планшет стоя),
 │       │   │                          #   MapFilters — фильтры для левой панели, строки планшета и шторки
 │       │   ├── AboutPage/             # история идеи (StoryExperience) + «Как это работает» (StoryGuide)
+│       │   ├── SettingsPage/          # настройки профиля: гость → /login, районы для «своего района», выход/удаление
 │       │   └── SupportPage/           # собирает SupportCenter из features/support
 │       ├── features/
 │       │   ├── auth/
@@ -110,6 +111,9 @@ VibeRay/
 │       │   ├── hero/
 │       │   │   ├── scene/             # HeroScene.js — 3D-город главного экрана
 │       │   │   └── components/        # HeroCanvas.jsx, FrontLayer.jsx (передний слой с S-краем)
+│       │   ├── settings/              # настройки профиля: SettingsCenter (навигация по разделам) и разделы ProfileSection
+│       │   │                          #   (+ AvatarPicker), DistrictSection, SecuritySection, AccountSection (+ DeleteAccountDialog);
+│       │   │                          #   SaveBar — «Сохранить / Отменить» и итог; hooks/useSaveAction
 │       │   ├── support/               # центр поддержки: content.js (категории, FAQ), lib/searchHelp.js (поиск по ответам),
 │       │   │                          #   components/ SupportCenter, HelpSearch, HelpCategories (3D-наклон), FaqList,
 │       │   │                          #   SupportRequestForm (обращение + файлы), ServiceStatus
@@ -147,7 +151,7 @@ VibeRay/
 │       ├── shared/
 │       │   ├── api/
 │       │   │   ├── client.js          # fetch, токен в памяти, ApiError, переключатель демо-режима
-│       │   │   └── endpoints/         # auth, cities, districts, problems, support
+│       │   │   └── endpoints/         # auth, users, cities, districts, problems, support
 │       │   ├── ui/                    # Avatar, Button, TextField, Modal;
 │       │   │                          #   charts/ — TimeSeriesChart (линия + столбики, подсказка), StackedBar, BarList, AnimatedNumber
 │       │   ├── animations/            # gsapSetup.js (плагины, reduced motion), presets.js, SiteBackground.js (фон),
@@ -159,7 +163,7 @@ VibeRay/
 │       │   │                          #   passwordStrength, imageTools
 │       │   └── config/                # moods, periods, problemCategories, problemStatuses, support, validation
 │       ├── texts/                     # весь текст интерфейса — JSON по разделам (подробно — texts/README.md):
-│       │                              #   nav, home, auth, map, mood, problems, stats, about, support,
+│       │                              #   nav, home, auth, map, mood, problems, stats, about, support, settings,
 │       │                              #   dictionaries (подписи кодов), transition, common, errors
 │       └── styles/
 │           ├── tokens.css             # цвета, шрифты, отступы, радиусы, длительности, цвета 3D-сцены
@@ -453,8 +457,10 @@ in_progress ──(модератор)──▶ resolved
 | POST | `/auth/refresh` | cookie | ротация токенов |
 | POST | `/auth/logout` | авториз. | отзыв refresh-сессии |
 | GET | `/users/me` | авториз. | свой профиль (`UserPrivate`, включает email) |
-| PATCH | `/users/me` | авториз. | смена никнейма |
-| PUT | `/users/me/avatar` | авториз. | загрузка аватара (multipart) |
+| PATCH | `/users/me` | авториз. | изменить профиль: `nickname`, `avatar_url` (только пресет `preset:N`), `home_district` (slug или `null`) — меняются только переданные поля → `UserPrivate`. Ошибки: `invalid_nickname`, `nickname_taken`, `invalid_avatar`, `district_not_found` |
+| PUT | `/users/me/avatar` | авториз. | своё фото: multipart `avatar` — JPEG/PNG/WebP ≤ 10 МБ (EXIF удаляется на клиенте и повторно на сервере) → `UserPrivate` |
+| POST | `/users/me/password` | авториз. | смена пароля: `current_password`, `new_password` (правила раздела 8) → 204. Ошибки: `wrong_password` (403), `weak_password`. Сервер отзывает остальные refresh-сессии пользователя |
+| DELETE | `/users/me` | авториз. | удалить аккаунт: тело `{password}` → 204, ошибка `wrong_password` (403). Удаляются профиль и сессии; отметки настроения остаются в агрегатах без привязки к пользователю |
 | GET | `/users/{nickname}` | все | `UserPublic`: только nickname + avatar_url |
 | GET | `/cities` | все | список городов |
 | GET | `/cities/{slug}` | все | город + `districts`, `water`, `streets` (GeoJSON FeatureCollection) |
@@ -477,7 +483,7 @@ in_progress ──(модератор)──▶ resolved
 ### 7.1 Демо-режим: фронтенд без бэкенда
 - Все запросы идут через `shared/api/client.js`. Пока `VITE_USE_MOCKS` не равен `false` (по умолчанию), их обслуживает фейковый API `src/data/api/handler.js` прямо в браузере — с задержкой, валидацией и кодами ошибок как у настоящего API.
 - **Все демо-данные — только в `frontend/src/data/`** (см. `data/README.md`): снимок геоданных Костаная `cities/kostanay/*` (копия `backend/data/cities/kostanay/*`), демо-пользователи `accounts.json`, демо-содержимое `content.json` (описания тестовых проблем, ники, названия сервисов), генератор статистики `api/generate.js`. В компонентах, страницах и `shared/` демо-данных нет.
-- Реализованы: `auth/register|login|logout`, `GET /cities/{slug}`, `GET /cities/{slug}/moods`, `GET /cities/{slug}/stats`, `GET /districts/{id}/stats`, `POST /districts/{id}/mood`, `GET /problems`, `POST /problems`, `POST /problems/{id}/confirm`, `POST /support/requests`, `GET /status` (в моках все сервисы «работают»). Идентификатор района в моках = его `slug`.
+- Реализованы: `auth/register|login|logout`, `GET /cities/{slug}`, `GET /cities/{slug}/moods`, `GET /cities/{slug}/stats`, `GET /districts/{id}/stats`, `POST /districts/{id}/mood`, `GET /problems`, `POST /problems`, `POST /problems/{id}/confirm`, `PATCH /users/me`, `PUT /users/me/avatar`, `POST /users/me/password`, `DELETE /users/me`, `POST /support/requests`, `GET /status` (в моках все сервисы «работают»). Идентификатор района в моках = его `slug`.
 - Демо-аккаунт: `demo@viberay.kz` / `demo12345`. Данные живут до перезагрузки страницы.
 - История для дашборда: город «работает» с января 2023 года; ~1 100 старых сообщений о проблемах (число растёт вместе с жителями, всё старше года решено) и 64 за последний месяц. У Аэропорта за день почти нет отметок — демонстрация порога приватности.
 - Состояние фейкового API живёт в памяти вкладки: после перезагрузки новые отметки, проблемы и аккаунты пропадают.
@@ -635,8 +641,7 @@ in_progress ──(модератор)──▶ resolved
 - Размер данных улиц: `streets.geojson` ≈ 550 КБ — когда появится бэкенд, отдавать отдельным запросом или упрощать.
 - Модерация новых проблем (спам, дубли рядом) и лимит частоты сообщений — на бэкенде.
 - **Контакты поддержки:** настоящих email / Telegram пока нет — на странице поддержки только форма обращения.
-- **Удаление аккаунта:** в FAQ поддержки сказано «удалим по обращению», а в API удаления нет — подтвердить или переформулировать; нужен ли эндпоинт `DELETE /users/me`.
-- **Профиль:** смены никнейма, аватара и «своего района» в интерфейсе нет (в API есть `PATCH /users/me` и `PUT /users/me/avatar`) — FAQ пока направляет в поддержку.
+- **Удаление аккаунта на бэкенде:** что показывать автором проблем удалённого пользователя (например, «Бывший житель») и как обезличивать его отметки настроения (`user_id → null` или отдельная таблица агрегатов) — решить при реализации `DELETE /users/me`.
 - **Число районов:** в тексте везде «15 районов», а в перечне CLAUDE.md 14 названий и счётчик на «О проекте» (из данных) показывает 14 — сверить данные и тексты.
 - **Статус сервиса:** в моках всё «работает»; на бэкенде нужны настоящие проверки для `GET /status`.
 
