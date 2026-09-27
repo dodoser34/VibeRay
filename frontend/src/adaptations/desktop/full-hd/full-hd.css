@@ -1,0 +1,10 @@
+/* Full HD — 1920–2559 px. Базовая композиция сайта рассчитана на этот диапазон: корень 16 px, у
+   карты шире панели, у текстовых страниц — колонка. */
+@media (min-width: 1920px) {
+  :root {
+    --map-panel-left: 20rem;
+    --map-panel-right: 28.5rem;
+    --map-panel-wide: 36rem;
+    --content-max: 80rem;
+  }
+}

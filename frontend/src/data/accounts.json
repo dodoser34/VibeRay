@@ -1,0 +1,13 @@
+[
+  {
+    "password": "demo12345",
+    "user": {
+      "id": "u-demo",
+      "email": "demo@viberay.kz",
+      "nickname": "Жительница",
+      "avatar_url": "preset:3",
+      "home_district": "center",
+      "role": "user"
+    }
+  }
+]

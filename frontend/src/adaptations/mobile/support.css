@@ -1,0 +1,38 @@
+/* Поддержка на телефонах: одна колонка, поиск — первое под плавающей навигацией, темы — список
+   крупных карточек под палец, у ответов — место для большого пальца. */
+@media (max-width: 767px) {
+  :root [data-ui='support-page'] {
+    padding-top: calc(var(--tabbar-height) + var(--safe-top) + var(--space-6));
+    padding-bottom: var(--space-7);
+  }
+
+  :root [data-ui='help-field'] {
+    height: 3.625rem;
+  }
+
+  /* 16 px — чтобы iOS не увеличивал страницу при фокусе на поле */
+  :root [data-ui='help-input'] {
+    font-size: var(--fs-md);
+  }
+
+  :root [data-ui='help-results'] {
+    top: 4.125rem;
+  }
+
+  :root [data-ui='help-grid'] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :root [data-ui='help-card'] {
+    padding: var(--space-5);
+  }
+
+  :root [data-ui='faq-question'] {
+    min-height: var(--touch-target);
+    padding: var(--space-4);
+  }
+
+  :root [data-ui='faq-answer'] {
+    padding: 0 var(--space-4) var(--space-4);
+  }
+}

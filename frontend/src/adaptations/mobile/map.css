@@ -1,0 +1,7 @@
+/* Карта на телефонах: подписи районов мельче, чтобы соседние меньше налезали друг на друга */
+@media (max-width: 767px) {
+  :root [data-ui='map-label'] {
+    padding: 2px 0.5rem;
+    font-size: var(--fs-3xs);
+  }
+}

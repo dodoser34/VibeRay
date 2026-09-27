@@ -1,0 +1,513 @@
+.guide {
+  --guide-width: 73.75rem;
+  --line: var(--color-glass-border);
+
+  display: grid;
+  gap: clamp(6rem, 14vw, 11.25rem);
+  padding: clamp(6rem, 12vw, 10rem) var(--space-4) calc(var(--space-8) * 2);
+}
+
+.guide > * {
+  width: min(var(--guide-width), 100%);
+  margin: 0 auto;
+}
+
+/* Вступление */
+
+.intro {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.kicker,
+.ctaKicker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-accent-bright);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.kicker::before {
+  content: '';
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.title {
+  max-width: 15ch;
+  font-size: clamp(2.4rem, 1rem + 5vw, 5.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.accent {
+  color: var(--color-accent-bright);
+  font-style: normal;
+}
+
+.lead {
+  max-width: 56ch;
+  color: var(--color-text-muted);
+  font-size: var(--fs-lg);
+  line-height: 1.5;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: var(--space-6);
+  border-top: 1px solid var(--line);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-5) 0 0;
+}
+
+.stat + .stat {
+  padding-left: var(--space-5);
+  border-left: 1px solid var(--line);
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.statLabel {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+/* Шаги с живой картой */
+
+.flow {
+  /* Высота закреплённой карты: помещается вместе с таб-баром на любой экран ноутбука. */
+  --map-h: min(60dvh, 33.75rem);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(var(--space-6), 5vw, 5.5rem);
+  align-items: start;
+}
+
+/* Широкие экраны: карта и шаги — две колонки сетки .flow. На компактных экранах stage
+   превращается в один закреплённый кадр (adaptations/tablet/about.css). */
+.stage {
+  display: contents;
+}
+
+.mapColumn {
+  position: sticky;
+  /* По центру видимой области под таб-баром (карта + полоса прогресса). */
+  top: calc((100dvh + var(--tabbar-height) - var(--map-h) - var(--space-5)) / 2);
+  display: grid;
+  gap: var(--space-4);
+  justify-self: center;
+  width: min(100%, calc(var(--map-h) * 0.8));
+}
+
+.mapFrame {
+  position: relative;
+  height: var(--map-h);
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background: radial-gradient(circle at 50% 45%, var(--color-bg-raised), var(--color-bg-deep) 75%);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-panel);
+}
+
+.map {
+  position: absolute;
+  inset: 6%;
+  width: 88%;
+  height: 88%;
+}
+
+.district {
+  fill: var(--fill-district);
+  stroke: var(--scene-district-edge);
+  stroke-width: 0.045;
+  stroke-opacity: 0.7;
+  fill-rule: evenodd;
+  opacity: 0.32;
+  transition:
+    fill var(--dur-slow) var(--ease-out),
+    opacity var(--dur-slow) var(--ease-out),
+    stroke-width var(--dur-base) var(--ease-out);
+}
+
+.district[data-focus] {
+  opacity: 1;
+  stroke-width: 0.12;
+  stroke-opacity: 1;
+}
+
+.mapFrame[data-step='1'] .district,
+.mapFrame[data-step='2'] .district,
+.mapFrame[data-step='3'] .district {
+  fill: var(--fill-mood);
+  opacity: 1;
+  stroke-width: 0.045;
+  stroke-opacity: 0.7;
+}
+
+.mapFrame[data-step='2'] .district {
+  opacity: 0.55;
+}
+
+.mapFrame[data-step='3'] .district {
+  opacity: 0.4;
+}
+
+.pin {
+  pointer-events: none;
+}
+
+.pinBody {
+  opacity: 0;
+  transform: translateY(-2.5px);
+  transition:
+    opacity var(--dur-base) var(--ease-out) var(--delay),
+    transform var(--dur-slow) cubic-bezier(0.34, 1.56, 0.64, 1) var(--delay);
+}
+
+.mapFrame[data-step='2'] .pinBody,
+.mapFrame[data-step='3'] .pinBody {
+  opacity: 1;
+  transform: none;
+}
+
+.mapFrame[data-step='3'] .pinBody {
+  opacity: 0.45;
+}
+
+.pinStem {
+  stroke: var(--pin);
+  stroke-width: 0.05;
+}
+
+.pinHead {
+  fill: var(--pin);
+  stroke: var(--color-bg-deep);
+  stroke-width: 0.03;
+}
+
+.pinRing {
+  fill: none;
+  stroke: var(--pin);
+  stroke-width: 0.03;
+  opacity: 0.5;
+}
+
+.mapLabel {
+  position: absolute;
+  top: var(--space-5);
+  left: var(--space-5);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--line);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  transition:
+    opacity var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+}
+
+.mapDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--color-accent-bright);
+}
+
+.mapFrame:not([data-step='0']) .mapLabel {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.trend {
+  position: absolute;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  left: var(--space-5);
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity var(--dur-base) var(--ease-out),
+    transform var(--dur-slow) var(--ease-out);
+}
+
+.mapFrame[data-step='3'] .trend {
+  opacity: 1;
+  transform: none;
+}
+
+.trendTabs {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.trendTab {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.trendTab[data-active] {
+  color: var(--color-text);
+  background: var(--color-accent-soft);
+}
+
+.trendChart {
+  width: 100%;
+  height: 4.5rem;
+  overflow: visible;
+}
+
+.trendLine {
+  fill: none;
+  stroke: var(--mood-excellent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1.4s var(--ease-in-out) 0.2s;
+}
+
+.mapFrame[data-step='3'] .trendLine {
+  stroke-dashoffset: 0;
+}
+
+.progress {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+}
+
+.progressItem {
+  height: 0.1875rem;
+  border-radius: var(--radius-pill);
+  background: var(--line);
+  transition: background var(--dur-base) var(--ease-out);
+}
+
+.progressItem[data-done] {
+  background: var(--color-accent-bright);
+}
+
+.steps {
+  display: grid;
+  gap: 24vh;
+  /* Первая и последняя карточки доходят до середины экрана, где переключаются шаги. */
+  padding: 30vh 0 34vh;
+}
+
+.step {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  background: var(--color-glass);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(var(--blur-glass));
+  opacity: 0.4;
+  transform: scale(0.97);
+  transition:
+    opacity var(--dur-slow) var(--ease-out),
+    transform var(--dur-slow) var(--ease-out),
+    border-color var(--dur-slow) var(--ease-out);
+}
+
+.step[data-active] {
+  opacity: 1;
+  transform: none;
+  border-color: var(--color-accent);
+}
+
+.stepNumber {
+  color: var(--color-accent-bright);
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  line-height: 1;
+}
+
+.stepTitle {
+  font-size: var(--fs-xl);
+  line-height: 1.15;
+}
+
+.stepText {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.chips,
+.statuses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.chip,
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--line);
+  font-size: var(--fs-xs);
+}
+
+.chip::before,
+.status::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--chip);
+}
+
+/* Приватность */
+
+.privacy {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.sectionTitle {
+  font-size: var(--fs-2xl);
+  line-height: 1.1;
+}
+
+.privacyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.privacyCard {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  background: var(--color-glass);
+  border: 1px solid var(--line);
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out);
+}
+
+.privacyCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+}
+
+.privacyIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  fill: none;
+  stroke: var(--color-accent-bright);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.privacyTitle {
+  font-size: var(--fs-lg);
+}
+
+.privacyText {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+
+/* Финальный призыв */
+
+.cta {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  padding: clamp(var(--space-7), 8vw, 7.5rem) var(--space-5);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 0%, var(--color-accent-soft), transparent 70%), var(--color-glass);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-panel);
+}
+
+.ctaTitle {
+  max-width: 18ch;
+  font-size: clamp(2rem, 1rem + 3.6vw, 4rem);
+  line-height: 1.05;
+}
+
+.story {
+  width: min(45rem, 100%);
+  margin-top: var(--space-5);
+  text-align: left;
+}
+
+.storySummary {
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-align: center;
+  list-style-position: inside;
+  transition: color var(--dur-fast);
+}
+
+.storySummary:hover {
+  color: var(--color-text);
+}
+
+.storyText {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .district,
+  .pinBody,
+  .trend,
+  .trendLine,
+  .step,
+  .mapLabel,
+  .privacyCard {
+    transition: none;
+  }
+}

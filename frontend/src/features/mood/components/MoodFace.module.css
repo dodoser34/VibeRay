@@ -1,0 +1,19 @@
+.root {
+  flex: none;
+}
+
+.disc {
+  fill: var(--face-color);
+}
+
+.eye {
+  fill: var(--color-bg);
+}
+
+.line {
+  fill: none;
+  stroke: var(--color-bg);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

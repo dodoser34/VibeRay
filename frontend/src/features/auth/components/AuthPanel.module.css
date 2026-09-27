@@ -1,0 +1,35 @@
+.root {
+  width: 100%;
+  max-width: 27.5rem;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-6);
+}
+
+/* Поверхность карточки на своём слое, чтобы растягиваться (transform), пока формы меняются. */
+.bg {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-xl);
+  background: var(--color-glass-solid);
+  border: 1px solid var(--color-glass-border);
+  box-shadow:
+    var(--shadow-panel),
+    inset 0 1px 0 var(--color-glass-highlight);
+}
+
+.pane {
+  position: relative;
+}
+
+/* Кусочки пазла поверхности карточки (только первое появление, см. AuthPanel). */
+.puzzle path {
+  fill: var(--color-bg-raised);
+  stroke: var(--color-text-faint);
+  stroke-opacity: 0.55;
+  stroke-width: 1.2;
+}

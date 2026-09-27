@@ -1,0 +1,14 @@
+.root {
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.glyph {
+  fill: none;
+  stroke: var(--color-bg);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.85;
+}

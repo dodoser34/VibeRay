@@ -1,0 +1,173 @@
+/* Десктоп: страница выше экрана; прокрутка ведёт полёт камеры (ScrollTrigger). */
+.page {
+  position: relative;
+  height: 220vh;
+}
+
+.stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.sceneLayer,
+.frontLayer {
+  position: absolute;
+  inset: 0;
+}
+
+.frontLayer {
+  z-index: var(--z-front-layer);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: var(--z-panel);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: calc(var(--tabbar-height) + var(--space-6)) 6vw var(--space-6);
+  pointer-events: none;
+}
+
+.column {
+  display: grid;
+  gap: var(--space-5);
+  width: min(27.5rem, 40vw);
+  pointer-events: auto;
+}
+
+.intro {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.liveDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--mood-excellent);
+  box-shadow: 0 0 0 0 var(--mood-excellent);
+  animation: live 2s var(--ease-out) infinite;
+}
+
+@keyframes live {
+  70% {
+    box-shadow: 0 0 0 8px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.title {
+  font-size: var(--fs-xl);
+}
+
+.lead {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.scrollHint {
+  position: absolute;
+  left: 50%;
+  bottom: var(--space-5);
+  z-index: var(--z-panel);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  transform: translateX(-50%);
+  transition: color var(--dur-base) var(--ease-out);
+}
+
+.scrollHint:hover {
+  color: var(--color-text);
+}
+
+.mouse {
+  position: relative;
+  flex: none;
+  width: 1.125rem;
+  height: 1.75rem;
+  border: 2px solid currentColor;
+  border-radius: 0.5625rem;
+}
+
+/* Колёсико центрируется равными отступами (без полупиксельных сдвигов), поэтому стоит ровно
+   посередине. */
+.mouse::after {
+  content: '';
+  position: absolute;
+  top: 0.3125rem;
+  left: 0;
+  right: 0;
+  width: 2px;
+  height: 0.375rem;
+  margin: 0 auto;
+  border-radius: 1px;
+  background: currentColor;
+  animation: wheel 1.6s var(--ease-in-out) infinite;
+}
+
+@keyframes wheel {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(9px);
+    opacity: 0;
+  }
+}
+
+.pin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-overlay);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.pinShape {
+  fill: var(--color-accent);
+  stroke: var(--color-accent-bright);
+  stroke-width: 2;
+}
+
+.pinAvatar {
+  position: absolute;
+  top: 0.5625rem;
+  left: 0.6875rem;
+}
+
+.fade {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  background: var(--color-bg);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Показывается только в раскладке в одну колонку (adaptations/tablet, adaptations/mobile) */
+.mapCta {
+  display: none;
+}

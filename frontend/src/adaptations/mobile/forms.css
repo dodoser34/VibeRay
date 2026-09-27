@@ -1,0 +1,24 @@
+/* Вход, регистрация и выбор настроения на телефонах */
+@media (max-width: 767px) {
+  :root [data-ui='auth-card'] {
+    padding: var(--space-5);
+  }
+}
+
+/* Две кнопки карточки района на узких телефонах встают друг под друга, чтобы не обрезать подписи */
+@media (max-width: 420px) {
+  :root [data-ui='district-actions'] {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  :root [data-ui='password-checks'] {
+    grid-template-columns: 1fr;
+  }
+
+  /* Семь настроений: по три в ряд, чтобы лица и подписи были удобны для пальца */
+  :root [data-ui='mood-grid'] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

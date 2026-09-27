@@ -1,0 +1,123 @@
+.faq {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-5);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.filter {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  transition:
+    color var(--dur-fast),
+    border-color var(--dur-fast),
+    background-color var(--dur-fast);
+}
+
+.filter:hover {
+  color: var(--color-text);
+}
+
+.filter[aria-pressed='true'] {
+  color: var(--color-text);
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-2);
+}
+
+.item {
+  border-radius: var(--radius-lg);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  scroll-margin-top: calc(var(--tabbar-height) + var(--space-7));
+  transition:
+    border-color var(--dur-base) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out);
+}
+
+.item:hover,
+.item[data-open] {
+  border-color: var(--color-accent);
+}
+
+.item[data-open] {
+  background-color: var(--color-glass-strong);
+}
+
+.heading {
+  font-size: inherit;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: 100%;
+  padding: var(--space-5) var(--space-6);
+  color: var(--color-text);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Плюс, который превращается в минус. */
+.plus {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+}
+
+.plus::before,
+.plus::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.75rem;
+  height: 2px;
+  margin: -1px 0 0 -6px;
+  border-radius: 2px;
+  background: var(--color-accent-bright);
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.plus::after {
+  transform: rotate(90deg);
+}
+
+.item[data-open] .plus::after {
+  transform: rotate(0deg);
+}
+
+.answer {
+  max-width: 70ch;
+  overflow-wrap: anywhere;
+  padding: 0 var(--space-6) var(--space-5);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  animation: reveal var(--dur-base) var(--ease-out);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}

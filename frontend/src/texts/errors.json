@@ -1,0 +1,28 @@
+{
+  "api": {
+    "unauthorized": "Войдите, чтобы продолжить",
+    "invalid_period": "Неизвестный период",
+    "invalid_email": "Проверьте email",
+    "invalid_nickname": "Никнейм: 3–24 символа, буквы, цифры и _",
+    "email_taken": "Этот email уже зарегистрирован",
+    "weak_password": "Пароль недостаточно надёжный",
+    "nickname_taken": "Такой никнейм уже занят",
+    "invalid_credentials": "Неверный email или пароль",
+    "city_not_found": "Город не найден",
+    "district_not_found": "Район не найден",
+    "invalid_mood": "Неизвестное настроение",
+    "problem_not_found": "Проблема не найдена",
+    "already_confirmed": "Вы уже подтвердили эту проблему",
+    "invalid_category": "Выберите тип проблемы",
+    "outside_city": "Точка должна быть внутри районов города",
+    "invalid_description": "Описание — от 10 до 1000 символов",
+    "too_many_photos": "Не больше 3 фото",
+    "invalid_photo": "Фото: JPEG, PNG или WebP до 10 МБ",
+    "invalid_topic": "Выберите тему обращения",
+    "invalid_reply_email": "Проверьте email для ответа",
+    "invalid_message": "Сообщение — от 10 до 2000 символов",
+    "too_many_files": "Не больше 3 файлов",
+    "invalid_file": "Файлы: JPEG, PNG, WebP или PDF до 10 МБ",
+    "not_found": "Mock: нет обработчика для {method} {path}"
+  }
+}

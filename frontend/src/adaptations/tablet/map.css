@@ -1,0 +1,51 @@
+/* Планшеты в альбомной ориентации (1024–1199 px): боковая панель остаётся, но левая панель
+   оставила бы карте полоску посередине — фильтры становятся панелью в одну строку (период +
+   слой); список районов и легенда здесь второстепенны (рейтинг в правой панели перечисляет
+   районы). */
+@media (min-width: 1024px) and (max-width: 1199px) and (orientation: landscape) {
+  :root [data-ui='map-panel-left'] {
+    right: auto;
+    width: auto;
+    max-height: none;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    overflow: visible;
+  }
+
+  :root [data-ui='map-filters-heading'],
+  :root [data-ui='map-filters-legend'],
+  :root [data-ui='map-filters-footnote'] {
+    display: none;
+  }
+}
+
+/* Раскладка со шторкой (телефоны и планшеты стоя, adaptations/mobile/sheet): строка лицензии и
+   уведомления едут над шторкой; панели заполняют её видимую часть. */
+@media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
+  :root [data-ui='map-attribution'] {
+    right: auto;
+    left: var(--space-3);
+    bottom: calc(var(--sheet-inset, 6rem) + var(--space-1));
+    max-width: 60vw;
+  }
+
+  /* Шторка закрывает карту: строка лицензии уехала бы вверх к верхним кнопкам */
+  :root [data-ui='map-page'][data-sheet-snap='full'] [data-ui='map-attribution'] {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  :root [data-ui='map-toast'] {
+    bottom: calc(var(--sheet-inset, 6rem) + var(--space-4));
+    width: max-content;
+    max-width: calc(100vw - 2 * var(--space-4));
+    text-align: center;
+  }
+
+  :root [data-ui='map-detail'] {
+    max-height: 100%;
+    min-height: 0;
+  }
+}

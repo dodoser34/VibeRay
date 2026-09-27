@@ -1,0 +1,49 @@
+{
+  "moods": {
+    "excellent": "Отлично",
+    "good": "Хорошо",
+    "normal": "Нормально",
+    "anxious": "Тревога",
+    "bad": "Плохо",
+    "angry": "Злость",
+    "very_bad": "Очень плохо"
+  },
+  "periods": {
+    "day": "День",
+    "week": "Неделя",
+    "month": "Месяц",
+    "year": "Год",
+    "all": "Все годы"
+  },
+  "problemCategories": {
+    "garbage": "Мусор",
+    "traffic": "Пробки",
+    "roads": "Плохие дороги",
+    "lighting": "Освещение",
+    "noise": "Шум",
+    "drunkenness": "Пьянство",
+    "public_transport": "Общественный транспорт",
+    "parks": "Состояние парков",
+    "other": "Другое"
+  },
+  "problemStatuses": {
+    "new": "Новая",
+    "confirmed": "Подтверждена",
+    "in_progress": "В работе",
+    "resolved": "Решена"
+  },
+  "supportTopics": {
+    "account": "Аккаунт",
+    "map": "Карта",
+    "mood": "Настроение",
+    "problems": "Проблемы",
+    "security": "Безопасность",
+    "technical": "Техническая проблема",
+    "other": "Другое"
+  },
+  "serviceStates": {
+    "operational": "Работает",
+    "degraded": "Работает с перебоями",
+    "down": "Не работает"
+  }
+}

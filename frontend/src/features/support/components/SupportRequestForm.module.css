@@ -1,0 +1,274 @@
+.form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.topics {
+  display: grid;
+  gap: var(--space-2);
+  padding: 0;
+  border: 0;
+}
+
+.legend {
+  margin-bottom: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.topicList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.topic {
+  cursor: pointer;
+}
+
+.topicLabel {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  transition:
+    color var(--dur-fast),
+    border-color var(--dur-fast),
+    background-color var(--dur-fast);
+}
+
+.topic:hover .topicLabel {
+  color: var(--color-text);
+}
+
+.topic input:checked + .topicLabel {
+  color: var(--color-text);
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+}
+
+.topic input:focus-visible + .topicLabel {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.textareaWrap {
+  position: relative;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.textareaLabel {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.textarea {
+  min-height: 8.25rem;
+  padding: var(--space-4);
+  padding-bottom: var(--space-6);
+  border-radius: var(--radius-md);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-text);
+  font: inherit;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color var(--dur-fast);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.textarea::placeholder {
+  color: var(--color-text-faint);
+}
+
+.counter {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-3);
+  color: var(--color-text-faint);
+  font-size: var(--fs-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.files {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  animation: appear var(--dur-base) var(--ease-out);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+.thumb,
+.docIcon {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: none;
+  border-radius: var(--radius-sm);
+}
+
+.thumb {
+  object-fit: cover;
+}
+
+.docIcon {
+  display: grid;
+  place-items: center;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-bright);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+.fileInfo {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+
+.fileName {
+  overflow: hidden;
+  font-size: var(--fs-sm);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fileSize {
+  color: var(--color-text-faint);
+  font-size: var(--fs-xs);
+}
+
+.removeFile {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  flex: none;
+  border-radius: 50%;
+  color: var(--color-text-muted);
+}
+
+.removeFile:hover {
+  background: var(--color-glass-strong);
+  color: var(--color-text);
+}
+
+.removeFile svg {
+  width: 0.625rem;
+  height: 0.625rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.attach {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-glass-border);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  transition:
+    color var(--dur-fast),
+    border-color var(--dur-fast);
+}
+
+.attach:hover {
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.attach svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.note {
+  color: var(--color-text-faint);
+  font-size: var(--fs-xs);
+}
+
+.error {
+  color: var(--color-error);
+  font-size: var(--fs-sm);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.done {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.check {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+  animation: pop var(--dur-slow) var(--ease-out);
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+
+.check svg {
+  width: 1.875rem;
+  height: 1.875rem;
+  fill: none;
+  stroke: var(--color-accent-bright);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.doneTitle {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+}
+
+.doneText {
+  margin-bottom: var(--space-3);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}

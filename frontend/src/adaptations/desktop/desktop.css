@@ -1,0 +1,13 @@
+/* Ноутбуки — 1200–1919 px: полная композиция, у нижней границы чуть плотнее. */
+@media (max-width: 1439px) {
+  :root {
+    --map-panel-wide: 30rem;
+  }
+}
+
+/* Панель действий карты не заходит на кнопку статистики */
+@media (max-width: 1279px) {
+  :root [data-ui='map-guest-note'] {
+    display: none;
+  }
+}

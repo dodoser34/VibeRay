@@ -1,0 +1,14 @@
+{
+  "close": "Закрыть",
+  "time": {
+    "justNow": "только что",
+    "minutesAgo": "{minutes} мин назад",
+    "hoursAgo": "{hours} ч назад"
+  },
+  "photo": {
+    "wrongType": "Подойдут только JPEG, PNG или WebP",
+    "tooBig": "Фото больше 10 МБ",
+    "processFailed": "Не удалось обработать фото"
+  },
+  "serverUnavailable": "Сервер недоступен, попробуйте позже"
+}

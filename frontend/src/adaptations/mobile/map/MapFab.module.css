@@ -1,0 +1,101 @@
+/* Правый край, едет вместе с верхом шторки (--sheet-inset задаёт страница карты) */
+.stack {
+  position: absolute;
+  right: var(--space-4);
+  bottom: calc(var(--sheet-inset, 6rem) + var(--space-3));
+  z-index: var(--z-panel);
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  transition: opacity var(--dur-base) var(--ease-out);
+}
+
+.stack[data-hidden] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.round,
+.main {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: var(--shadow-panel);
+}
+
+.round {
+  width: var(--touch-target);
+  height: var(--touch-target);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-text);
+  backdrop-filter: blur(var(--blur-glass));
+}
+
+.main {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.main:active,
+.round:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.actions {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.action {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  min-height: 4rem;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  text-align: left;
+}
+
+.action[data-primary] {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+}
+
+.actionIcon {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--color-glass-strong);
+}
+
+.actionText {
+  display: grid;
+  gap: 2px;
+}
+
+.actionLabel {
+  font-size: var(--fs-md);
+  font-weight: 600;
+}
+
+.actionHint {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}

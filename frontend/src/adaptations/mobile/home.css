@@ -1,0 +1,20 @@
+/* Главная на телефонах: город занимает чуть меньше половины экрана, чтобы заголовок и кнопка
+   «Открыть карту города» были видны без прокрутки; кнопка во всю ширину. */
+@media (max-width: 767px) {
+  :root [data-ui='home-scene'] {
+    height: 46svh;
+    min-height: 17rem;
+  }
+
+  :root [data-ui='home-content'] {
+    padding: 0 var(--space-4) calc(var(--space-6) + var(--safe-bottom));
+  }
+
+  :root [data-ui='home-column'] {
+    margin-top: -2.5rem;
+  }
+
+  :root [data-ui='home-map-cta'] {
+    justify-self: stretch;
+  }
+}

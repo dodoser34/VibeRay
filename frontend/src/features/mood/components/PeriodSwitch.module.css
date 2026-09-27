@@ -1,0 +1,37 @@
+/* Занимает всю данную ширину; варианты делят её поровну, чтобы после последнего не оставалось
+   пустоты, когда панель растягивает переключатель */
+.root {
+  position: relative;
+  display: flex;
+  padding: 0.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+}
+
+.thumb {
+  position: absolute;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  left: 0;
+  width: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  box-shadow: var(--shadow-soft);
+}
+
+.option {
+  position: relative;
+  flex: 1 1 0;
+  white-space: nowrap;
+  padding: 0.375rem var(--space-4);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  transition: color var(--dur-base) var(--ease-out);
+}
+
+.option[aria-checked='true'] {
+  color: var(--color-text);
+}

@@ -1,0 +1,56 @@
+.card {
+  display: grid;
+  gap: var(--space-4);
+  width: min(21.25rem, 86vw);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(var(--blur-glass));
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.nick {
+  font-weight: 600;
+}
+
+.place {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.question {
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+}
+
+.moods {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-2);
+}
+
+.mood {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2) 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-3xs);
+  text-align: center;
+}
+
+.picked {
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid var(--color-accent-bright);
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-soft);
+}

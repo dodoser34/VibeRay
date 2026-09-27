@@ -1,0 +1,62 @@
+.sheet {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-panel);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  /* Непрозрачная: подписи районов и метки под шторкой не должны просвечивать */
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-glass-border);
+  border-bottom: 0;
+  box-shadow: var(--shadow-panel);
+  touch-action: none;
+  will-change: transform;
+}
+
+/* Только видимая часть: панели внутри прокручиваются в ней и держат нижние кнопки на экране */
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Широкая невидимая зона касания вокруг маленькой ручки */
+.handle {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 100%;
+  height: 2.5rem;
+  cursor: grab;
+}
+
+.grip {
+  width: 2.5rem;
+  height: 0.3125rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-highlight);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0 var(--space-4) calc(var(--space-3) + var(--safe-bottom));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+/* Свёрнута: заголовок — это сводка, ниже ничего не прокручивается в зону видимости */
+.sheet[data-snap='peek'] .body {
+  overflow: hidden;
+}
+
+/* Заголовки панелей в шторке двигают её: браузер не должен вместо этого прокручивать содержимое */
+.body :global([data-sheet-drag]) {
+  touch-action: none;
+  cursor: grab;
+}

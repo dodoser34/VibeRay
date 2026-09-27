@@ -1,0 +1,283 @@
+.center {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(5.5rem, 11vw, 9rem);
+  width: min(var(--content-max), 100%);
+  margin: 0 auto;
+  padding: calc(var(--tabbar-height) + clamp(3.5rem, 9vw, 7rem)) var(--space-4) var(--space-8);
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-accent-bright);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.kicker::before {
+  content: '';
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+}
+
+/* Шапка */
+
+.hero {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-7);
+}
+
+.heroText {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-5);
+}
+
+.title {
+  font-size: clamp(2.6rem, 1rem + 5.2vw, 5.4rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  max-width: 44ch;
+  color: var(--color-text-muted);
+  font-size: var(--fs-lg);
+  line-height: 1.5;
+}
+
+.searchSlot {
+  width: 100%;
+  margin-top: var(--space-3);
+}
+
+/* Декоративная 3D-колода карточек продукта */
+
+.deckStage {
+  perspective: 1100px;
+}
+
+.deck {
+  position: relative;
+  height: 23.75rem;
+  transform-style: preserve-3d;
+}
+
+.deckCard {
+  position: absolute;
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  width: 78%;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-panel);
+  animation: float 7s var(--ease-in-out) infinite alternate;
+}
+
+.deckBack {
+  top: 0;
+  right: 0;
+  transform: translateZ(-120px) rotateZ(4deg);
+  animation-delay: -2s;
+}
+
+.deckMiddle {
+  top: 34%;
+  left: 0;
+  transform: translateZ(-50px) rotateZ(-3deg);
+  animation-delay: -4s;
+}
+
+.deckFront {
+  bottom: 0;
+  right: 6%;
+  transform: translateZ(40px) rotateZ(1.5deg);
+  border-color: var(--color-accent);
+}
+
+@keyframes float {
+  to {
+    translate: 0 -14px;
+  }
+}
+
+.deckKicker {
+  color: var(--color-text-faint);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.deckStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 600;
+}
+
+.deckDot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: var(--status-resolved);
+}
+
+.deckMoods {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.deckMoods i {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--mood);
+}
+
+.deckQuestion {
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  line-height: 1.3;
+}
+
+.deckLine {
+  height: 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-border);
+}
+
+.deckLineShort {
+  width: 60%;
+}
+
+/* Секции */
+
+.section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-6);
+  scroll-margin-top: calc(var(--tabbar-height) + var(--space-6));
+}
+
+.sectionHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.sectionTitle {
+  font-size: clamp(1.8rem, 1rem + 2.2vw, 2.8rem);
+  line-height: 1.1;
+}
+
+.sectionText {
+  color: var(--color-text-muted);
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+.cta {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: var(--space-4);
+  padding: clamp(var(--space-6), 5vw, var(--space-8));
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 0% 0%, var(--color-accent-soft), transparent 60%), var(--color-glass);
+  border: 1px solid var(--color-accent);
+  box-shadow: var(--shadow-panel);
+}
+
+.ctaTitle {
+  max-width: 18ch;
+  font-size: clamp(1.8rem, 1rem + 2.4vw, 3rem);
+  line-height: 1.08;
+}
+
+.ctaText {
+  max-width: 46ch;
+  margin-bottom: var(--space-2);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Футер */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-glass-border);
+}
+
+.contacts {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-2);
+  max-width: 48ch;
+}
+
+.footerTitle {
+  font-weight: 700;
+}
+
+.footerText {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+
+.footerAction {
+  color: var(--color-accent-bright);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.footerAction:hover {
+  text-decoration: underline;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+}
+
+.link {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  transition: color var(--dur-fast);
+}
+
+.link:hover {
+  color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .deckCard {
+    animation: none;
+  }
+}

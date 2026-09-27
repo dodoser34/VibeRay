@@ -1,0 +1,57 @@
+.root {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.scale {
+  height: 0.5rem;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(
+    90deg,
+    var(--mood-very-bad),
+    var(--mood-bad),
+    var(--mood-normal),
+    var(--mood-good),
+    var(--mood-excellent)
+  );
+}
+
+/* Мало сообщений — хорошая новость: та же шкала, прочитанная наоборот */
+.scale[data-metric='problems'] {
+  background: linear-gradient(
+    90deg,
+    var(--mood-excellent),
+    var(--mood-good),
+    var(--mood-normal),
+    var(--mood-bad),
+    var(--mood-very-bad)
+  );
+}
+
+.ends {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.none {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 0.1875rem;
+  background: var(--mood-none);
+}
+
+.note {
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+  line-height: 1.5;
+}

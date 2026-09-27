@@ -1,0 +1,166 @@
+:root {
+  /* Палитра: тёмный приглушённый лесной зелёный — ~70 % тёмные поверхности, ~20 % текст, ~10 %
+     зелёный. Глубокий, но не светящийся: зелёный с насыщенностью 45–60 %, светлотой 25–40 % */
+
+  /* Поверхности */
+  --color-bg: #0b110d;
+  --color-bg-deep: #070b08;
+  --color-bg-raised: #141d17;
+  --color-glass: rgba(20, 29, 23, 0.62);
+  --color-glass-strong: rgba(20, 29, 23, 0.92);
+  --color-glass-solid: rgba(17, 25, 20, 0.97);
+  --color-overlay: rgba(4, 7, 5, 0.6);
+  --color-glass-border: #24332a;
+  --color-glass-highlight: rgba(200, 211, 196, 0.14);
+  --color-street: #24332a;
+  --bg-contour: #1d2b22; /* изолинии анимированного фона сайта */
+
+  /* Текст — с оттенком фона, никогда не чисто белый */
+  --color-text: #c8d3c4;
+  --color-text-muted: #7c8c7e;
+  --color-text-faint: #637266;
+
+  /* Акцент — насыщенный, но тусклый зелёный; янтарь и красный — точечно */
+  --color-accent: #2f7a4a;
+  --color-accent-bright: #3e9160;
+  --color-accent-soft: rgba(47, 122, 74, 0.2);
+  --color-focus: #3e9160;
+  --color-alert: #a8742e;
+  --color-danger: #7a2e2a;
+  --color-error: #c4675c; /* читаемый вариант --color-danger для текста */
+  --color-success: #3e9160;
+  --color-river: #4d8aa0;
+
+  /* Шкала настроения (главная цветовая шкала продукта) — приглушена под тёмно-зелёный */
+  --mood-excellent: #5aa67f;
+  --mood-good: #95ae68;
+  --mood-normal: #c7b466;
+  --mood-anxious: #c99a62;
+  --mood-bad: #c47b5d;
+  --mood-angry: #b85f59;
+  --mood-very-bad: #9a5a74;
+  --mood-none: #5f6b62;
+
+  /* Цвета районов (districts.geojson → palette). У соседних районов цвета не совпадают */
+  --district-1: #c9b562;
+  --district-2: #c07f98;
+  --district-3: #a88669;
+  --district-4: #6b95b8;
+  --district-5: #67a37f;
+  --district-6: #c98f5a;
+  --district-7: #bf6d64;
+  --district-8: #8f7fb5;
+  --district-9: #6aa7a0;
+  --district-10: #9fae63;
+  --district-11: #b087ab;
+  --district-12: #949cad;
+
+  /* Статусы проблем */
+  --status-new: #6b95b8;
+  --status-confirmed: #a8742e;
+  --status-in-progress: #8f7fb5;
+  --status-resolved: #3e9160;
+
+  /* 3D-сцена */
+  --scene-bg: #0b110d;
+  --color-layer-front: #141d17;
+  --color-layer-edge: #0e1510;
+  --color-layer-shadow: rgba(0, 0, 0, 0.55);
+  --scene-fog: #0b110d;
+  --scene-ground: #111913;
+  --scene-light: #f3f1ea; /* нейтральный белый свет: плиты сохраняют свой оттенок */
+  --scene-district-edge: #c8d3c4;
+  --scene-street-on-district: #0b110d;
+  --scene-dust: #7c8c7e;
+
+  /* История «О проекте»: комната июльской ночи */
+  --story-wall: #101812;
+  --story-desk: #2a2622;
+  --story-monitor: #16191a;
+  --story-screen: #0e1511;
+  --story-sky: #132019;
+  --story-skyline: #0a100c;
+  --story-window-light: #8a7550;
+  --story-tail-light: #7a3a32;
+  --story-paper: #b9b2a0;
+  --story-note: #c2ae66;
+  --story-plant: #3f6b4c;
+  --story-pot: #5e4a3c;
+  --story-fabric: #18231d;
+  --story-metal: #3a3f3d;
+  --story-book-a: #5b4636;
+  --story-book-b: #34483c;
+  --story-book-c: #6b5b3a;
+
+  /* Переход «бумажная карта»: RGB-тройки для rgba()-теней на сгибах (нейтральные, без свечения) */
+  --rgb-fold-shade: 0, 0, 0;
+  --rgb-fold-light: 200, 211, 196;
+
+  /* Полосы прокрутки: тонкая таблетка на прозрачной дорожке; зелёная только под указателем */
+  --scrollbar-size: 10px;
+  --scrollbar-size-inner: 8px;
+  --scrollbar-thumb: #2c3d32;
+  --scrollbar-thumb-hover: var(--color-accent);
+  --scrollbar-thumb-active: var(--color-accent-bright);
+  --scrollbar-track: transparent;
+
+  /* Типографика */
+  --font-display: 'Unbounded', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Размеры в rem: корневой шрифт растёт на экранах 2K / 4K (src/adaptations), и весь интерфейс
+     пропорционально растёт вместе с ним, а не растягивается. */
+  --fs-3xs: 0.625rem; /* 10 px — деления осей, юридические строки */
+  --fs-2xs: 0.6875rem; /* 11 px — подписи */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: clamp(1.5rem, 1.25rem + 0.9vw, 1.75rem);
+  --fs-2xl: clamp(2rem, 1.2rem + 2.6vw, 3.25rem);
+
+  /* Отступы */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* Радиусы */
+  --radius-sm: 0.625rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-pill: 999px;
+
+  /* Эффекты */
+  --blur-glass: 1.125rem;
+  --shadow-panel: 0 24px 60px -20px rgba(0, 0, 0, 0.55);
+  --shadow-soft: 0 6px 18px -8px rgba(0, 0, 0, 0.5);
+
+  /* Движение */
+  --dur-fast: 0.18s;
+  --dur-base: 0.35s;
+  --dur-slow: 0.8s;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Раскладка */
+  --tabbar-height: 3.5rem;
+  --safe-top: env(safe-area-inset-top, 0px); /* вырезы и полосы жестов телефонов */
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --touch-target: 2.75rem; /* 44 px: самый маленький элемент, в который палец попадает уверенно */
+  --content-max: 73.75rem; /* 1180 px: текстовые страницы (поддержка, о проекте) */
+  --map-panel-left: 18.75rem;
+  --map-panel-right: 27.5rem;
+  --map-panel-wide: 33.75rem; /* дашборд города */
+  --z-background: -1;
+  --z-scene: 0;
+  --z-front-layer: 1;
+  --z-panel: 2;
+  --z-tabbar: 10;
+  --z-overlay: 20;
+  --z-transition: 30;
+}

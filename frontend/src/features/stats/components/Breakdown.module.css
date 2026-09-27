@@ -1,0 +1,40 @@
+.root {
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* Легенда в две колонки под полоской */
+.legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.375rem var(--space-4);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+  font-size: var(--fs-xs);
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: none;
+  border-radius: 50%;
+}
+
+.label {
+  overflow: hidden;
+  color: var(--color-text-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.value {
+  margin-left: auto;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}

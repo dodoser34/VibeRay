@@ -1,0 +1,45 @@
+.stack {
+  position: relative;
+  width: min(26.25rem, 80vw);
+  aspect-ratio: 4 / 3;
+  perspective: 1200px;
+  container-type: inline-size;
+}
+
+.sheet {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-lg);
+  background: var(--color-glass-solid);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-panel);
+  transform-origin: 50% 0;
+}
+
+.ring {
+  position: absolute;
+  top: var(--space-4);
+  left: 50%;
+  width: 40%;
+  height: 0.625rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-border);
+  transform: translateX(-50%);
+}
+
+.label {
+  max-width: 100%;
+  padding: 0 var(--space-5);
+  font-family: var(--font-display);
+  font-size: min(var(--fs-2xl), 9cqi);
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.sheet[data-final] .label {
+  color: var(--color-accent-bright);
+}

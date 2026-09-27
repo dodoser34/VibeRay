@@ -1,0 +1,41 @@
+/* Сенсорные экраны (палец, а не мышь) любой ширины: каждый элемент управления не меньше 44 px,
+   мелкие переключатели крупнее, на наведение не полагаемся. */
+@media (pointer: coarse) {
+  :root [data-ui='map-choice'] {
+    min-height: var(--touch-target);
+    font-size: var(--fs-sm);
+  }
+
+  :root [data-ui='period-option'] {
+    min-height: var(--touch-target);
+    padding-inline: var(--space-4);
+  }
+
+  :root [data-ui='button-sm'] {
+    height: var(--touch-target);
+  }
+
+  :root [data-ui='panel-close'] {
+    width: var(--touch-target);
+    height: var(--touch-target);
+  }
+
+  :root [data-ui='password-toggle'] {
+    width: var(--touch-target);
+    height: var(--touch-target);
+  }
+
+  :root [data-ui='tabbar-logo'] {
+    min-width: var(--touch-target);
+    min-height: var(--touch-target);
+  }
+
+  :root [data-ui='button-text'],
+  :root [data-ui='help-chip'] {
+    min-height: var(--touch-target);
+  }
+
+  :root [data-ui='table-sort'] {
+    min-height: var(--touch-target);
+  }
+}

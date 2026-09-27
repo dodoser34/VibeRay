@@ -1,0 +1,27 @@
+/* Адаптации сайта под устройства. Подключаются последними в main.jsx: эти правила перекрывают
+   базовые (десктопные) стили компонентов. Порядок: большие экраны → планшеты → телефоны, чтобы
+   правило телефона побеждало правило планшета для того же элемента. */
+@import './desktop/desktop.css';
+@import './desktop/full-hd/full-hd.css';
+@import './desktop/2k/2k.css';
+@import './desktop/4k/4k.css';
+@import './desktop/home.css';
+
+@import './tablet/tablet.css';
+@import './tablet/navigation.css';
+@import './tablet/home.css';
+@import './tablet/map.css';
+@import './tablet/stats.css';
+@import './tablet/support.css';
+@import './tablet/about.css';
+
+@import './touch/touch.css';
+
+@import './mobile/mobile.css';
+@import './mobile/home.css';
+@import './mobile/map.css';
+@import './mobile/stats.css';
+@import './mobile/forms.css';
+@import './mobile/modal.css';
+@import './mobile/support.css';
+@import './mobile/about.css';

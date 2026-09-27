@@ -1,0 +1,229 @@
+/* Переход между страницами «бумажная карта-оригами» (MapFoldTransition.js). Имена классов
+   создаются в JS, поэтому это глобальная таблица стилей. Класс читает цвета из этих переменных
+   на оверлее — все они ссылаются на токены дизайна. */
+.vr-mt {
+  --color-paper: var(--color-bg-raised);
+  --color-paper-2: var(--scene-ground);
+  --color-border: var(--color-glass-border);
+  --color-isoline: var(--bg-contour);
+  --color-accent-hover: var(--color-accent-bright);
+  --color-text-2: var(--color-text-muted);
+  --color-pin: var(--status-new);
+  --color-pin-rim: var(--color-text);
+  --color-route: var(--color-text);
+  --color-shade: var(--rgb-fold-shade);
+  --color-light: var(--rgb-fold-light);
+  --vr-font-display: var(--font-display);
+  --vr-font-text: var(--font-body);
+
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-transition);
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+  contain: strict;
+}
+
+.vr-mt.is-active {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.vr-mt__stage {
+  position: absolute;
+  inset: 0;
+}
+
+.vr-mt__flyer,
+.vr-mt__sheet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.vr-mt__hinge {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.vr-mt__hinge--col {
+  transform-origin: 0 50%;
+}
+
+.vr-mt__hinge--row {
+  transform-origin: 50% 0;
+}
+
+.vr-mt__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+}
+
+.vr-mt__front,
+.vr-mt__back {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.vr-mt__front canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.vr-mt__back {
+  transform: rotateY(180deg);
+  background: var(--color-paper-2);
+}
+
+.vr-mt__shade {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.vr-mt__shade--x {
+  background: linear-gradient(90deg, rgba(var(--color-shade), 0.85), rgba(var(--color-shade), 0.3));
+}
+
+.vr-mt__shade--y {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--color-shade), 0.85),
+    rgba(var(--color-shade), 0.3)
+  );
+}
+
+.vr-mt__shade--light {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--color-light), 0.09),
+    rgba(var(--color-light), 0.02)
+  );
+}
+
+.vr-mt__shade--back {
+  background: rgba(var(--color-shade), 0.85);
+}
+
+/* Нейтральная (чёрная) тень под летящим свёртком — без цветного свечения. */
+.vr-mt__shadow {
+  position: absolute;
+  box-shadow:
+    0 22px 44px rgba(var(--color-shade), 0.55),
+    0 6px 12px rgba(var(--color-shade), 0.35);
+  transform: translateZ(-2px);
+}
+
+.vr-mt__fx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.vr-mt__hl-poly {
+  fill-opacity: 1;
+  opacity: 0;
+}
+
+.vr-mt__route-case {
+  fill: none;
+  stroke: var(--color-paper);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.vr-mt__route-dash {
+  fill: none;
+  stroke: var(--color-route);
+  stroke-width: 2.6;
+  stroke-dasharray: 6 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.vr-mt__dest-ring {
+  fill: var(--color-paper);
+  stroke: var(--color-accent-hover);
+  stroke-width: 2;
+}
+
+.vr-mt__dest-dot {
+  fill: var(--color-text);
+}
+
+.vr-mt__ring {
+  fill: none;
+  stroke: var(--color-text);
+  stroke-width: 1.5;
+  opacity: 0;
+}
+
+.vr-mt__pin-shadow {
+  fill: rgb(var(--color-shade));
+  opacity: 0;
+}
+
+.vr-mt__pin-head {
+  fill: var(--color-pin);
+  stroke: var(--color-pin-rim);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.vr-mt__pin-eye {
+  fill: var(--color-bg);
+}
+
+.vr-mt__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  pointer-events: none;
+}
+
+.vr-mt__label-cap,
+.vr-mt__label-name {
+  display: flex;
+  white-space: nowrap;
+}
+
+.vr-mt__cch {
+  color: var(--color-text-2);
+  font: 600 10px/1 var(--vr-font-text);
+  letter-spacing: 0.2em;
+}
+
+.vr-mt__ch {
+  color: var(--color-text);
+  font: 600 var(--vr-label-size, 24px) / 1 var(--vr-font-display);
+  letter-spacing: 0.06em;
+}
+
+.vr-mt__och {
+  color: var(--color-pin);
+  font: 600 11px/1 var(--vr-font-text);
+  letter-spacing: 0.14em;
+}
+
+.vr-mt__label-rule {
+  height: 1px;
+  background: var(--color-text-2);
+  transform-origin: 0 50%;
+}

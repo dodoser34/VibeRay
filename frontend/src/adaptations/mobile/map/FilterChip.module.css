@@ -1,0 +1,64 @@
+.chip {
+  position: absolute;
+  z-index: var(--z-panel);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  max-width: calc(100vw - 2 * (var(--space-3) + var(--touch-target) + var(--space-2)));
+  min-height: var(--touch-target);
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(var(--blur-glass));
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+/* Телефоны: между плавающими кнопками логотипа и меню */
+@media (max-width: 767px) {
+  .chip {
+    top: calc(var(--space-3) + var(--safe-top));
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Планшеты стоя: под таб-баром, слева */
+@media (min-width: 768px) {
+  .chip {
+    top: calc(var(--space-4) + var(--tabbar-height) + var(--space-4));
+    left: var(--space-5);
+  }
+}
+
+.summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.icon,
+.caret {
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon {
+  color: var(--color-accent-bright);
+}
+
+.caret {
+  color: var(--color-text-muted);
+}
+
+.filters {
+  display: grid;
+  gap: var(--space-5);
+}

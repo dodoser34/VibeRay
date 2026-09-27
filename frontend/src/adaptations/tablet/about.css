@@ -1,0 +1,157 @@
+/* «О проекте»: история и «как это работает» на планшетах стоя и телефонах. Плавающие подписи
+   истории уходят вниз; две колонки сжали бы и карту, и текст до нечитаемости. */
+@media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
+  /* По центру с равными полями (left + right + auto-поля), не шире строки для чтения */
+  :root [data-ui='story-caption'] {
+    right: var(--space-4);
+    left: var(--space-4);
+    bottom: 6rem;
+    max-width: 32.5rem;
+    margin-inline: auto;
+    font-size: var(--fs-md);
+  }
+
+  :root [data-ui='story-mood-slot'] {
+    top: auto;
+    right: 50%;
+    bottom: 12.5rem;
+    transform: translateX(50%);
+  }
+
+  :root [data-ui='story-stamp'] {
+    top: calc(var(--tabbar-height) + var(--space-5));
+    right: var(--space-4);
+  }
+
+  /* Интерфейс на мониторе оставляет две панели, которые рассказывают историю */
+  :root [data-ui='story-ui-profile'],
+  :root [data-ui='story-ui-stats'] {
+    display: none;
+  }
+
+  :root [data-ui='story-ui-district'] {
+    width: min(70vw, 22rem);
+  }
+
+  :root [data-ui='story-ui-problem'] {
+    top: auto;
+    bottom: 12%;
+    width: min(70vw, 22rem);
+  }
+
+  :root [data-ui='guide-stats'] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  :root [data-ui='guide-stat']:nth-child(3) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  /* Один закреплённый кадр вместо карточек, которые прокручивались поверх карты (они её
+     закрывали): карта сверху, активная карточка под ней. Секция высокая только для того, чтобы у
+     каждого шага был свой отрезок прокрутки — StoryGuide выбирает шаг по прогрессу прокрутки
+     секции. */
+  :root [data-ui='guide-flow'] {
+    display: block;
+    height: calc(100svh + var(--steps) * 55svh);
+  }
+
+  :root [data-ui='guide-stage'] {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    height: 100dvh;
+    padding: calc(var(--tabbar-height) + var(--safe-top) + var(--space-5)) 0
+      calc(var(--space-4) + var(--safe-bottom));
+  }
+
+  :root [data-ui='guide-map-column'] {
+    position: static;
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    min-height: 0;
+    width: 100%;
+  }
+
+  :root [data-ui='guide-map-column'] > :first-child {
+    flex: 1 1 0;
+    height: auto;
+    min-height: 8rem;
+  }
+
+  /* Все карточки в одной ячейке, поэтому кадр держит высоту самой высокой и не прыгает между
+     шагами; показана только активная */
+  :root [data-ui='guide-steps'] {
+    display: grid;
+    flex: none;
+    gap: 0;
+    padding: 0;
+  }
+
+  :root [data-ui='guide-step'] {
+    grid-area: 1 / 1;
+    align-content: start;
+    padding: var(--space-5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.75rem);
+    transition:
+      opacity var(--dur-base) var(--ease-out),
+      transform var(--dur-slow) var(--ease-out),
+      visibility 0s linear var(--dur-base);
+  }
+
+  :root [data-ui='guide-step'][data-active] {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition:
+      opacity var(--dur-base) var(--ease-out),
+      transform var(--dur-slow) var(--ease-out),
+      visibility 0s;
+  }
+
+  :root [data-ui='guide-privacy-grid'] {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Низкие телефоны (iPhone SE, 8): карта над карточкой должна оставаться читаемой — текст
+   карточки мельче, чипы-легенда скрыты (цвета и метки видны на самой карте). */
+@media ((max-width: 1023px) or ((orientation: portrait) and (max-width: 1199px))) and (max-height: 760px) {
+  :root [data-ui='guide-stage'] {
+    gap: var(--space-3);
+    padding-top: calc(var(--tabbar-height) + var(--safe-top) + var(--space-3));
+  }
+
+  :root [data-ui='guide-step'] {
+    gap: var(--space-2);
+    padding: var(--space-4);
+  }
+
+  :root [data-ui='guide-step'] h3 {
+    font-size: var(--fs-lg);
+  }
+
+  :root [data-ui='guide-step'] p {
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+}
+
+@media ((max-width: 1023px) or ((orientation: portrait) and (max-width: 1199px))) and (max-height: 700px) {
+  :root [data-ui='guide-step'] ul {
+    display: none;
+  }
+}
+@media ((max-width: 1023px) or ((orientation: portrait) and (max-width: 1199px))) and (prefers-reduced-motion: reduce) {
+  :root [data-ui='guide-step'],
+  :root [data-ui='guide-step'][data-active] {
+    transform: none;
+    transition: none;
+  }
+}

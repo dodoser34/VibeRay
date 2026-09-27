@@ -1,0 +1,16 @@
+/* «О проекте» на телефонах: подпись истории не заходит на полосу жестов внизу */
+@media (max-width: 767px) {
+  /* Над подсказкой «листай — история начинается» в самом низу */
+  :root [data-ui='story-caption'] {
+    bottom: calc(4.25rem + var(--safe-bottom));
+  }
+
+  :root [data-ui='story-mood-slot'] {
+    bottom: calc(12rem + var(--safe-bottom));
+  }
+
+  /* Карточка проблемы интерфейса на мониторе стоит над подписью, а не на ней */
+  :root [data-ui='story-ui-problem'] {
+    bottom: calc(11.5rem + var(--safe-bottom));
+  }
+}

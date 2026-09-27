@@ -1,0 +1,13 @@
+/* Главная на низких экранах ноутбуков (раскладка «рядом», но высота ≤ 820 px): карточка входа
+   видна целиком — уступают подзаголовок и подсказка прокрутки. */
+@media (min-width: 1024px) and (max-height: 820px) and (orientation: landscape) {
+  :root [data-ui='home-lead'],
+  :root [data-ui='home-scroll-hint'] {
+    display: none;
+  }
+
+  :root [data-ui='home-content'] {
+    padding-top: calc(var(--tabbar-height) + var(--space-5));
+    padding-bottom: var(--space-3);
+  }
+}

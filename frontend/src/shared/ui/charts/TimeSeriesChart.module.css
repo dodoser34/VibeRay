@@ -1,0 +1,126 @@
+.root {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.svg {
+  display: block;
+  overflow: visible;
+  outline: none;
+  touch-action: pan-y;
+  cursor: crosshair;
+}
+
+.svg:focus-visible {
+  border-radius: var(--radius-sm);
+  outline: 2px solid var(--color-focus);
+  outline-offset: 0.25rem;
+}
+
+.grid,
+.zero {
+  stroke: var(--color-glass-border);
+  shape-rendering: crispEdges;
+}
+
+.zero {
+  stroke-dasharray: 3 4;
+}
+
+.baseline {
+  stroke: var(--color-glass-border);
+  shape-rendering: crispEdges;
+}
+
+.yTick,
+.xTick {
+  fill: var(--color-text-faint);
+  font-family: var(--font-body);
+  font-size: var(--fs-3xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.line {
+  fill: none;
+  stroke: var(--color-accent-bright);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.areaTop {
+  stop-color: var(--color-accent);
+  stop-opacity: 0.32;
+}
+
+.areaBottom {
+  stop-color: var(--color-accent);
+  stop-opacity: 0;
+}
+
+.bar {
+  fill: var(--status-new);
+  opacity: 0.5;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.bar[data-active] {
+  opacity: 0.95;
+}
+
+.cursor {
+  pointer-events: none;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.guide {
+  stroke: var(--color-glass-highlight);
+  stroke-dasharray: 2 3;
+}
+
+.dot {
+  fill: var(--color-bg-raised);
+  stroke: var(--color-accent-bright);
+  stroke-width: 2;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+/* Внутри графика, рядом с курсором: прокручиваемая панель его не обрезает */
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  gap: 2px;
+  min-width: 9.375rem;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-glass-solid);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-soft);
+  color: var(--color-text-muted);
+  font-size: var(--fs-2xs);
+  line-height: 1.45;
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translateX(calc(var(--x) + 14px));
+  transition: transform var(--dur-fast) var(--ease-out);
+  animation: tooltip-in var(--dur-fast) var(--ease-out);
+}
+
+.tooltip[data-side='left'] {
+  transform: translateX(calc(var(--x) - 100% - 14px));
+}
+
+.tooltip strong {
+  color: var(--color-text);
+  font-size: var(--fs-xs);
+}
+
+@keyframes tooltip-in {
+  from {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,45 @@
+/* Главная на планшетах стоя и телефонах (< 1024 px): без раскладки «рядом» и без пролёта при
+   прокрутке. Страница читается сверху вниз — 3D-город, заголовок с «Открыть карту города»
+   (главное действие в одно касание), затем вход. Бумажный передний слой — украшение только для
+   широких экранов. */
+@media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
+  :root [data-ui='home-page'] {
+    height: auto;
+  }
+
+  :root [data-ui='home-stage'] {
+    position: relative;
+    height: auto;
+    overflow: visible;
+  }
+
+  /* Город растворяется в странице (маска, чтобы сквозь неё был виден живой фон, без полосы) */
+  :root [data-ui='home-scene'] {
+    position: relative;
+    height: 58svh;
+    min-height: 22rem;
+    mask-image: linear-gradient(to bottom, black 68%, transparent);
+  }
+
+  :root [data-ui='home-front'],
+  :root [data-ui='home-scroll-hint'] {
+    display: none;
+  }
+
+  :root [data-ui='home-content'] {
+    height: auto;
+    padding: 0 var(--space-5) var(--space-7);
+  }
+
+  :root [data-ui='home-column'] {
+    width: 100%;
+    max-width: 32rem;
+    margin: -3rem auto 0;
+  }
+
+  :root [data-ui='home-map-cta'] {
+    display: inline-flex;
+    justify-self: start;
+    margin-top: var(--space-2);
+  }
+}

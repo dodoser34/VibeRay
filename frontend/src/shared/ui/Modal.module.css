@@ -1,0 +1,59 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  background: var(--color-overlay);
+  backdrop-filter: blur(6px);
+}
+
+.panel {
+  width: 100%;
+  max-width: var(--modal-width);
+  max-height: calc(100dvh - 2 * var(--space-4));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(var(--blur-glass));
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.title {
+  font-size: var(--fs-lg);
+}
+
+.close {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  transition: border-color var(--dur-base) var(--ease-out);
+}
+
+.close:hover {
+  border-color: var(--color-glass-highlight);
+}
+
+.close svg {
+  stroke: var(--color-text);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}

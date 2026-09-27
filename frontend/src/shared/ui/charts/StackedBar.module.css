@@ -1,0 +1,35 @@
+.root {
+  position: relative;
+  height: var(--height);
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass);
+}
+
+.segment,
+.divider {
+  position: absolute;
+  inset: 0;
+  transform-origin: left;
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+
+.segment {
+  transform: translateX(calc(var(--offset) * 100%)) scaleX(var(--share));
+  transition-delay: calc(var(--i) * 40ms);
+}
+
+.divider {
+  transform: translateX(calc(var(--offset) * 100%));
+}
+
+/* Разрез 2 px между соседними частями цветом панели */
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 2px;
+  background: var(--color-bg-raised);
+}
