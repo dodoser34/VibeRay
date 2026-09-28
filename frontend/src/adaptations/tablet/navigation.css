@@ -13,3 +13,24 @@
     max-width: 8ch;
   }
 }
+
+/* Планшет стоя: справа от капсулы — язык и колокольчик, поэтому вкладки — короткими подписями
+   (полная подпись остаётся для экранных чтецов) */
+@media (max-width: 1023px) {
+  :root [data-ui='tabbar-label'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  :root [data-ui='tabbar-short'] {
+    display: inline;
+  }
+
+  :root [data-ui='tabbar-item'] {
+    padding-inline: var(--space-3);
+  }
+}

@@ -1,5 +1,5 @@
 import { PHOTO_MAX_BYTES, PHOTO_TYPES } from '@/shared/config/validation';
-import common from '@/texts/common.json';
+import common from '@/texts/ru/common.json';
 
 const MAX_SIDE = 1600;
 const QUALITY = 0.85;

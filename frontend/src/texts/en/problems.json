@@ -1,0 +1,52 @@
+{
+  "card": {
+    "label": "Problem",
+    "close": "Close",
+    "photoAlt": "Photo of the problem",
+    "statusLabel": "Status",
+    "confirm": "I see this problem too",
+    "confirmed": "Thank you! Your confirmation has been counted.",
+    "share": "Share link",
+    "shareTitle": "{category} · {district} — VibeRay",
+    "copied": "Link copied",
+    "shareFailed": "Couldn't copy the link",
+    "mine": "Your report",
+    "mineNote": "This is your report: your neighbours confirm it. You'll get a notification when its status changes.",
+    "confirmedByMe": "You confirmed",
+    "confirmations": "{count} {people}",
+    "confirmationsForms": ["confirmation", "confirmations", "confirmations"],
+    "notFound": "The link is out of date or the problem was removed. The city's other problems are on the map.",
+    "notFoundTitle": "Problem not found",
+    "backToMap": "Back to the whole map",
+    "rejectedTitle": "Report rejected",
+    "rejectedNote": "A moderator rejected this report. Only you can see it: it isn't on the map or in the statistics.",
+    "openOriginal": "Open the original problem"
+  },
+  "listItem": {
+    "confirmations": "confirmations: {count}"
+  },
+  "report": {
+    "steps": {
+      "category": "What happened?",
+      "place": "Where is it?",
+      "details": "Details"
+    },
+    "kicker": "New problem · step {step} of {total}",
+    "cancel": "Cancel",
+    "categoryLabel": "Type of problem",
+    "placeLead": "Tap the spot on the map where the problem is. To move the point, just tap somewhere else.",
+    "placeWaiting": "No point chosen yet",
+    "placeNote": "Check the pins nearby: if this problem is already there, confirm it instead.",
+    "descriptionLabel": "Describe the problem",
+    "descriptionPlaceholder": "For example: the rubbish hasn't been collected for two days, the bins are overflowing",
+    "descriptionTooShort": "Describe the problem in at least {min} characters",
+    "photoAlt": "Photo of the problem",
+    "removePhoto": "Remove photo",
+    "addPhoto": "Photo",
+    "tooManyPhotos": "You can add no more than {max} photos",
+    "photosNote": "Up to {max} photos. Location tags and camera data are removed before sending.",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Send"
+  }
+}

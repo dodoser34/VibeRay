@@ -6,8 +6,9 @@ import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
 import { Avatar } from '@/shared/ui/Avatar';
+import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
 import { usePageNavigate, useTransitionNavigate } from '../transitions/useTransition';
-import nav from '@/texts/nav.json';
+import nav from '@/texts/ru/nav.json';
 import styles from './TabBar.module.css';
 
 const DEFAULT_CITY = 'kostanay';
@@ -152,7 +153,8 @@ export function TabBar() {
           { x: 0, scale: 1, autoAlpha: 1, duration: 0.75, ease: 'back.out(1.3)' },
           1.5,
         )
-        .from('[data-logo]', { x: -24, autoAlpha: 0, duration: 0.8, ease: 'expo.out' }, 1.3);
+        .from('[data-logo]', { x: -24, autoAlpha: 0, duration: 0.8, ease: 'expo.out' }, 1.3)
+        .from('[data-aside]', { x: 24, autoAlpha: 0, duration: 0.8, ease: 'expo.out' }, 1.3);
     },
     { scope: rootRef },
   );
@@ -199,12 +201,12 @@ export function TabBar() {
                 {item.avatar && <Avatar src={item.avatar} size={22} />}
                 <span
                   className={styles.label}
-                  data-ui={item.key === 'me' ? 'tabbar-nickname' : undefined}
+                  data-ui={item.key === 'me' ? 'tabbar-nickname' : item.short && 'tabbar-label'}
                 >
                   {item.label}
                 </span>
                 {item.short && (
-                  <span className={styles.short} aria-hidden="true">
+                  <span className={styles.short} aria-hidden="true" data-ui="tabbar-short">
                     {item.short}
                   </span>
                 )}
@@ -216,6 +218,7 @@ export function TabBar() {
                 key={item.key}
                 type="button"
                 data-key={item.key}
+                data-ui="tabbar-item"
                 className={className}
                 onClick={handleClick(item)}
               >
@@ -226,6 +229,7 @@ export function TabBar() {
                 key={item.key}
                 to={item.to}
                 data-key={item.key}
+                data-ui="tabbar-item"
                 className={className}
                 aria-current={activeKey === item.key ? 'page' : undefined}
                 title={item.title}
@@ -239,11 +243,10 @@ export function TabBar() {
         </div>
       </nav>
 
-      {user && (
-        <div className={styles.aside} data-ui="tabbar-aside">
-          <NotificationBell onNavigate={openPage} />
-        </div>
-      )}
+      <div className={styles.aside} data-ui="tabbar-aside" data-aside>
+        <LanguageSwitch />
+        {user && <NotificationBell onNavigate={openPage} />}
+      </div>
     </header>
   );
 }

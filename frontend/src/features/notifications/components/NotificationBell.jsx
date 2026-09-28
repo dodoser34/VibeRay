@@ -4,7 +4,7 @@ import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
 import { useNotifications } from '../model/useNotifications';
 import { NotificationsPanel } from './NotificationsPanel';
-import texts from '@/texts/notifications.json';
+import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationBell.module.css';
 
 // Колокольчик в шапке (планшет и десктоп). Новое уведомление — колокольчик качнётся, счётчик

@@ -1,0 +1,114 @@
+{
+  "canvasLabel": "3D map of the city's districts. Hover over a district to see its name, click to open its statistics.",
+  "filtersLabel": "Map filters",
+  "cityFallback": "City",
+  "heading": "Mood map",
+  "period": "Period",
+  "layer": "Layer",
+  "layerLabel": "Map layer",
+  "layers": {
+    "districts": "Districts",
+    "mood": "Mood",
+    "problems": "Problems"
+  },
+  "legendTitles": {
+    "districts": "City districts",
+    "mood": "District mood",
+    "problems": "Problem status"
+  },
+  "updatedAt": "Data updated at {time}",
+  "loading": "Loading data…",
+  "districtsSource": "Districts follow OpenStreetMap neighbourhoods.",
+  "overview": {
+    "kicker": "All districts",
+    "title": "Where it feels best right now",
+    "hint": "Click a district on the map or in the list."
+  },
+  "actions": {
+    "guestNote": "You're viewing the city as a guest",
+    "markMood": "Mark your mood",
+    "reportProblem": "Report a problem",
+    "login": "Sign in"
+  },
+  "authReasons": {
+    "mood": "Sign in to mark your district's mood. Your mark is anonymous.",
+    "problem": "Sign in to report a problem — it's how we keep spam out.",
+    "confirm": "Only registered residents can confirm problems."
+  },
+  "authModal": {
+    "title": "You need an account",
+    "register": "Sign up",
+    "login": "Sign in to your account"
+  },
+  "toasts": {
+    "moodSaved": "Thank you! “{mood}” counted for {district}.",
+    "problemSent": "Problem sent. Once 3 residents confirm it, it becomes “Confirmed”."
+  },
+  "attribution": {
+    "prefix": "Districts, streets and water: ©",
+    "osm": "OpenStreetMap contributors"
+  },
+  "statsLink": {
+    "open": "City statistics",
+    "back": "Back to the map",
+    "openLabel": "Open city statistics for a month, a year and all years"
+  },
+  "stats": {
+    "heading": "City statistics",
+    "metric": "On the map",
+    "metricLabel": "What to show on the map",
+    "metrics": {
+      "mood": "Mood",
+      "problems": "Problems"
+    },
+    "legend": "Scale"
+  },
+  "sheet": {
+    "label": "Map panel",
+    "toggle": "Expand or collapse the panel"
+  },
+  "filters": {
+    "chipLabel": "Map filters: {summary}",
+    "title": "What to show on the map",
+    "districtsHint": "Tap a district on the map to open it."
+  },
+  "fab": {
+    "open": "Map actions",
+    "title": "What would you like to do?",
+    "recenter": "Show the whole city",
+    "markMoodHint": "Anonymous, for one district",
+    "reportHint": "A point on the map, a description and photos",
+    "statsHint": "For a month, a year and all years"
+  },
+  "tour": {
+    "progress": "Tip {current} of {total}",
+    "skip": "Skip",
+    "next": "Next",
+    "done": "Got it, to the map",
+    "replay": "How to use the map",
+    "district": {
+      "title": "Pick a district",
+      "text": "Click any district to see its mood, problems and trends. You can rotate and zoom the map."
+    },
+    "mood": {
+      "title": "Mark your mood",
+      "text": "How do you feel in your district today? One tap and your voice joins the district's overall colour. Nobody sees individual marks.",
+      "textCompact": "Tap “+” and choose “Mark your mood”: one tap and your voice joins the district's overall colour."
+    },
+    "report": {
+      "title": "Report a problem",
+      "text": "Rubbish, a pothole, a dark yard — put a point on the map and add a photo. Neighbours will confirm it, and you'll be notified when work starts.",
+      "textCompact": "Also under “+”: “Report a problem” — a point on the map and a photo. You'll be notified when work starts."
+    }
+  },
+  "cluster": "{count} {problems} nearby — zoom in",
+  "clusterForms": ["problem", "problems", "problems"],
+  "daytime": {
+    "morning": "morning",
+    "day": "daytime",
+    "evening": "evening",
+    "night": "night",
+    "caption": "{city} · {phase}, {time}",
+    "title": "The light on the map matches the city right now"
+  }
+}

@@ -115,7 +115,9 @@ export class HeroScene {
       roughness: 0.8,
       colorMode: 'districts',
       streets: city.streets,
-      streetOpacity: 0.18,
+      // Город на главной маленький: дворовые проезды слились бы в шум
+      streetOpacity: 0.65,
+      streetKinds: ['major', 'secondary', 'tertiary', 'local', 'rail'],
     });
 
     // Вписываем город в CITY_RADIUS и центрируем.

@@ -1,7 +1,7 @@
 import { MoodFace } from '@/features/mood';
 import { MOODS } from '@/shared/config/moods';
 import { Avatar } from '@/shared/ui/Avatar';
-import about from '@/texts/about.json';
+import about from '@/texts/ru/about.json';
 import styles from './StoryMoodCard.module.css';
 
 const texts = about.story.moodCard;

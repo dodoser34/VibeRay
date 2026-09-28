@@ -5,7 +5,7 @@ import { MapFoldTransition } from '@/shared/animations/MapFoldTransition';
 import { holdPageEntrance, releasePageEntrance } from '@/shared/animations/pageEntrance';
 import '@/shared/animations/MapFoldTransition.css';
 import { TransitionContext } from './TransitionContext';
-import nav from '@/texts/nav.json';
+import nav from '@/texts/ru/nav.json';
 
 // Главная, вход и регистрация — одна страница: переключение между ними анимирует карточку-пропуск.
 const HOME_PATHS = ['/', '/login', '/register'];

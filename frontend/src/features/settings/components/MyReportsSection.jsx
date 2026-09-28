@@ -8,15 +8,15 @@ import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { Button } from '@/shared/ui/Button';
 import { ReportItem } from './ReportItem';
 import { SettingsSection } from './SettingsSection';
-import texts from '@/texts/settings.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './MyReportsSection.module.css';
 
 const t = texts.reports;
-const FILTERS = ['all', 'active', 'resolved'].map((code) => ({ code, label: t.filters[code] }));
 const matches = {
   all: () => true,
-  active: (problem) => problem.status !== 'resolved',
+  active: (problem) => !['resolved', 'rejected'].includes(problem.status),
   resolved: (problem) => problem.status === 'resolved',
+  rejected: (problem) => problem.status === 'rejected',
 };
 
 // Свои сообщения о проблемах: сводка, фильтр и список со статусами. names: slug района → название.
@@ -28,16 +28,19 @@ export function MyReportsSection({ id, names, onNavigate }) {
 
   const summary = useMemo(() => {
     if (!list) return null;
-    const resolved = list.filter(matches.resolved).length;
     return {
       total: list.length,
-      active: list.length - resolved,
-      resolved,
+      active: list.filter(matches.active).length,
+      resolved: list.filter(matches.resolved).length,
       confirmations: list.reduce((sum, problem) => sum + problem.confirmations_count, 0),
     };
   }, [list]);
 
   const shown = list?.filter(matches[filter]) ?? [];
+  // «Отклонённые» — только если такие сообщения есть
+  const filters = ['all', 'active', 'resolved', 'rejected']
+    .filter((code) => code !== 'rejected' || list?.some(matches.rejected))
+    .map((code) => ({ code, label: t.filters[code] }));
 
   return (
     <SettingsSection id={id} title={texts.sections.reports} lead={t.lead}>
@@ -97,7 +100,7 @@ export function MyReportsSection({ id, names, onNavigate }) {
               <PeriodSwitch
                 value={filter}
                 onChange={setFilter}
-                options={FILTERS}
+                options={filters}
                 label={t.filterLabel}
               />
             </div>

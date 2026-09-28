@@ -1,0 +1,102 @@
+{
+  "kicker": "Settings",
+  "title": "Your profile",
+  "lead": "How your neighbours see you, which district is yours and how your account is protected.",
+  "navLabel": "Settings sections",
+  "sections": {
+    "profile": "Profile",
+    "reports": "My reports",
+    "district": "My district",
+    "security": "Security",
+    "account": "Account"
+  },
+  "sectionsShort": {
+    "profile": "Profile",
+    "reports": "Reports",
+    "district": "District",
+    "security": "Security",
+    "account": "Account"
+  },
+  "saved": "Saved",
+  "profile": {
+    "lead": "This is all other residents see about you: in problem reports and in the menu.",
+    "previewLabel": "How others see you",
+    "previewMeta": "Kostanay resident",
+    "public": "Only your avatar and nickname are public",
+    "avatarLegend": "Avatar",
+    "avatarOption": "Avatar {number}",
+    "upload": "My own photo",
+    "uploadHint": "JPEG, PNG or WebP up to 10 MB. Location tags and camera data are removed right on your phone.",
+    "uploaded": "Your photo",
+    "nicknameHint": "3–24 characters: letters, digits and _",
+    "save": "Save profile",
+    "reset": "Cancel"
+  },
+  "reports": {
+    "lead": "Problems you've reported: where they stand now and how many neighbours confirmed them.",
+    "filterLabel": "Which reports to show",
+    "filters": {
+      "all": "All",
+      "active": "Active",
+      "resolved": "Resolved",
+      "rejected": "Rejected"
+    },
+    "summary": {
+      "total": ["report", "reports", "reports"],
+      "active": "in progress or waiting",
+      "resolved": "resolved",
+      "confirmations": [
+        "confirmation from neighbours",
+        "confirmations from neighbours",
+        "confirmations from neighbours"
+      ]
+    },
+    "listLabel": "My problem reports",
+    "statusLabel": "Status",
+    "confirmations": ["confirmation", "confirmations", "confirmations"],
+    "openOnMap": "On the map",
+    "share": "Copy link",
+    "copied": "Link copied",
+    "loading": "Loading your reports…",
+    "emptyTitle": "You haven't reported any problems yet",
+    "emptyText": "Spotted a pothole, a dark yard or rubbish? Put a point on the map — your neighbours will confirm it, and here you'll watch the problem move towards “resolved”.",
+    "emptyFilter": "Nothing in this group yet.",
+    "report": "Report a problem",
+    "rejectedReason": "Reason: {reason}"
+  },
+  "district": {
+    "lead": "The map opens on it first. Nobody else sees it.",
+    "legend": "Choose your district",
+    "none": "Not chosen",
+    "loading": "Loading districts…",
+    "save": "Save district"
+  },
+  "security": {
+    "lead": "The password changes immediately. Your other devices will need to sign in again.",
+    "emailLabel": "Sign-in email",
+    "emailPrivate": "Only you can see it",
+    "passwordTitle": "Change password",
+    "current": "Current password",
+    "next": "New password",
+    "repeat": "Repeat the new password",
+    "same": "The new password is the same as the current one",
+    "save": "Change password",
+    "changed": "Password changed"
+  },
+  "account": {
+    "lead": "Language, signing out and deleting your account.",
+    "languageTitle": "Interface language",
+    "languageText": "Russian or English. Your choice is remembered in this browser.",
+    "logoutTitle": "Sign out",
+    "logoutText": "On this device. Your marks and reports will stay.",
+    "logout": "Sign out",
+    "deleteTitle": "Delete account",
+    "deleteText": "Permanently: your profile and sign-in. Your mood marks stay in the district statistics, no longer linked to you.",
+    "delete": "Delete account",
+    "confirmTitle": "Delete your account?",
+    "confirmText": "This can't be undone. Enter your password to confirm.",
+    "confirmPassword": "Password",
+    "confirm": "Delete permanently",
+    "cancel": "Cancel"
+  }
+}

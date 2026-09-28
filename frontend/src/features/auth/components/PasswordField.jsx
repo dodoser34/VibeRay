@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TextField } from '@/shared/ui/TextField';
-import auth from '@/texts/auth.json';
+import auth from '@/texts/ru/auth.json';
 import styles from './PasswordField.module.css';
 
 export function PasswordField(props) {

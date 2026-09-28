@@ -8,7 +8,7 @@ import { plural } from '@/shared/lib/plural';
 import { Button } from '@/shared/ui/Button';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { BarList } from '@/shared/ui/charts/BarList';
-import texts from '@/texts/stats.json';
+import texts from '@/texts/ru/stats.json';
 import { MoodChart } from './MoodChart';
 import { MoodDistribution } from './MoodDistribution';
 import { StatusBreakdown } from './StatusBreakdown';

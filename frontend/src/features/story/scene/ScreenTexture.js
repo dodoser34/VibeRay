@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { cssVar } from '@/shared/lib/cssVar';
-import about from '@/texts/about.json';
+import about from '@/texts/ru/about.json';
 import { SCREEN_QUESTION } from '../content';
 
 const W = 1600;

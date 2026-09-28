@@ -4,9 +4,10 @@ import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { gsap } from '@/shared/animations/gsapSetup';
 import { cssVar } from '@/shared/lib/cssVar';
-import { labelPoint, pointInRing } from '@/shared/lib/geoProjection';
+import { labelPoint, pointInPolygon } from '@/shared/lib/geoProjection';
 import { createRandom, hashString } from '@/shared/lib/random';
 import { colorForAggregate, colorForDistrict, colorForNoData, colorForScore } from './moodColor';
+import { ROAD_CLASSES, roadLines, segmentsByKind } from './roadStyles';
 
 const LIFT = 0.14;
 const HOVER_DURATION = 0.45;
@@ -33,7 +34,8 @@ export class DistrictsLayer {
       roughness = 0.7,
       colorMode = 'districts',
       streets = null,
-      streetOpacity = 0.28,
+      streetOpacity = 1,
+      streetKinds = null,
     } = {},
   ) {
     this.group = new THREE.Group();
@@ -53,30 +55,38 @@ export class DistrictsLayer {
     this.introDone = false;
 
     features.forEach((feature) => this.addDistrict(feature, project, lineWidth));
-    if (streets) this.addStreets(streets.features, project, streetOpacity);
+    this.streetMaterials = [];
+    if (streets) this.addStreets(streets.features, project, streetOpacity, streetKinds);
   }
 
-  // Настоящие улицы (OSM) поверх каждой плиты, чтобы районы читались как город, а не плоские блоки.
-  addStreets(features, project, opacity) {
-    this.streetMaterial = new THREE.LineBasicMaterial({
-      color: new THREE.Color(cssVar('--scene-street-on-district')),
-      transparent: true,
-      opacity,
-    });
+  // Настоящие улицы (OSM) поверх каждой плиты, чтобы районы читались как город, а не плоские блоки:
+  // тёмные линии по иерархии дорог (магистрали толще и заметнее, дворовые проезды — едва видны).
+  // opacity — общий множитель (на главной улицы тише), kinds — какие классы рисовать (null — все).
+  // Линии лежат на верхней грани плиты (y ≈ 1) и растут вместе с ней; у объектов userData.street —
+  // история на «О проекте» прорисовывает их по прогрессу.
+  addStreets(features, project, opacity, kinds) {
+    const color = new THREE.Color(cssVar('--scene-street-on-district'));
     const bySlug = new Map();
-    features.forEach(({ properties, geometry }) => {
-      if (!this.items.has(properties.district)) return;
-      const list = bySlug.get(properties.district) ?? [];
-      const pts = geometry.coordinates.map(project);
-      for (let i = 0; i < pts.length - 1; i++) {
-        list.push(pts[i][0], 1.004, -pts[i][1], pts[i + 1][0], 1.004, -pts[i + 1][1]);
-      }
-      bySlug.set(properties.district, list);
+    features.forEach((feature) => {
+      const { district, kind } = feature.properties;
+      if (!this.items.has(district) || (kinds && !kinds.includes(kind))) return;
+      bySlug.set(district, [...(bySlug.get(district) ?? []), feature]);
     });
-    bySlug.forEach((positions, slug) => {
-      const geometry = new THREE.BufferGeometry();
-      geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
-      this.items.get(slug).group.add(new THREE.LineSegments(geometry, this.streetMaterial));
+    bySlug.forEach((list, slug) => {
+      const byKind = segmentsByKind(list, project, 0);
+      ROAD_CLASSES.forEach((style, i) => {
+        const positions = byKind.get(style.kind);
+        if (!positions?.length) return;
+        const { object, material, fat } = roadLines(positions, style, {
+          color,
+          opacity: style.slab * opacity,
+        });
+        object.position.y = 1.004 + i * 0.0005;
+        object.userData.street = true;
+        if (fat) this.lineMaterials.push(material);
+        this.streetMaterials.push(material);
+        this.items.get(slug).group.add(object);
+      });
     });
   }
 
@@ -174,11 +184,7 @@ export class DistrictsLayer {
         Math.min(...ys),
         Math.max(...ys),
       ];
-      const inside = (point) =>
-        rings.some(
-          ([outer, ...holes]) =>
-            pointInRing(point, outer) && !holes.some((hole) => pointInRing(point, hole)),
-        );
+      const inside = (point) => rings.some((polygon) => pointInPolygon(point, polygon));
       const mesh = new THREE.InstancedMesh(geometry, this.windowMaterial, count);
       let placed = 0;
       for (let attempt = 0; placed < count && attempt < count * 12; attempt++) {
@@ -384,7 +390,7 @@ export class DistrictsLayer {
       item.material.dispose();
       item.lineMaterial.dispose();
     });
-    this.streetMaterial?.dispose();
+    this.streetMaterials.forEach((material) => material.dispose());
     if (this.windowMaterial) gsap.killTweensOf(this.windowMaterial);
     this.windowMaterial?.dispose();
     this.windowGeometry?.dispose();

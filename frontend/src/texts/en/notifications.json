@@ -1,0 +1,20 @@
+{
+  "bell": "Notifications",
+  "bellUnread": "Notifications: {count} new",
+  "title": "Notifications",
+  "readAll": "Mark all as read",
+  "empty": "All quiet for now. When neighbours confirm your problem or its status changes, a notification will appear here.",
+  "emptyTitle": "No news",
+  "loading": "Loading notifications…",
+  "allReports": "All my reports",
+  "unread": "New",
+  "kinds": {
+    "confirmations": "{count} {people} confirmed your “{category}” problem",
+    "confirmed": "Neighbours confirmed the “{category}” problem",
+    "in_progress": "Work has started on the “{category}” problem",
+    "resolved": "The “{category}” problem is resolved — thanks for reporting it",
+    "rejected": "Your “{category}” report was rejected: {reason}"
+  },
+  "people": ["resident", "residents", "residents"],
+  "meta": "{district} · {time}"
+}

@@ -6,9 +6,10 @@ import { NotificationsPanel, useNotifications } from '@/features/notifications';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { format } from '@/shared/lib/format';
 import { Avatar } from '@/shared/ui/Avatar';
+import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
 import { Modal } from '@/shared/ui/Modal';
-import notificationTexts from '@/texts/notifications.json';
-import nav from '@/texts/nav.json';
+import notificationTexts from '@/texts/ru/notifications.json';
+import nav from '@/texts/ru/nav.json';
 import styles from './MobileNav.module.css';
 
 const CITY = 'kostanay';
@@ -225,9 +226,10 @@ export function MobileNav() {
             </ul>
           </nav>
 
-          <p className={styles.footer} data-menu-item>
-            {nav.menu.footer}
-          </p>
+          <div className={styles.footer} data-menu-item>
+            <LanguageSwitch />
+            <p>{nav.menu.footer}</p>
+          </div>
         </div>
       )}
       {notificationsOpen && (

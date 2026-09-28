@@ -1,0 +1,56 @@
+{
+  "brand": "VibeRay",
+  "logoLabel": "VibeRay — home",
+  "navLabel": "Main navigation",
+  "tabs": {
+    "login": {
+      "label": "Sign in",
+      "short": "Sign in"
+    },
+    "register": {
+      "label": "Sign up",
+      "short": "Sign up"
+    },
+    "settings": {
+      "title": "Profile settings",
+      "label": "{nickname} — profile settings"
+    },
+    "logout": {
+      "label": "Sign out",
+      "short": "Sign out"
+    },
+    "map": {
+      "label": "City map",
+      "short": "Map"
+    },
+    "about": {
+      "label": "About",
+      "short": "About"
+    },
+    "support": {
+      "label": "Support",
+      "short": "Help"
+    }
+  },
+  "pageNames": {
+    "map": "City map",
+    "about": "About",
+    "support": "Support",
+    "login": "Sign in",
+    "register": "Sign up",
+    "home": "Home",
+    "settings": "Settings"
+  },
+  "menu": {
+    "open": "Open menu",
+    "close": "Close menu",
+    "title": "Menu",
+    "stats": "City statistics",
+    "guestTitle": "You're viewing the city as a guest",
+    "guestText": "Sign in to share your mood and report problems.",
+    "signedIn": "Signed in",
+    "footer": "VibeRay · Kostanay",
+    "settings": "Profile settings",
+    "openUnread": "Open menu · new notifications: {count}"
+  }
+}

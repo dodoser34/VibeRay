@@ -8,7 +8,7 @@ import { useAuth } from '../model/useAuth';
 import { PasswordField } from './PasswordField';
 import { format } from '@/shared/lib/format';
 import demoAccounts from '@/data/accounts.json';
-import auth from '@/texts/auth.json';
+import auth from '@/texts/ru/auth.json';
 import styles from './PassForms.module.css';
 
 // Подсказка демо-входа видна только в демо-режиме (без бэкенда).

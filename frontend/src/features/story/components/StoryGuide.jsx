@@ -9,7 +9,7 @@ import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/Button';
 import { FULL_STORY } from '../content';
 import { GuideMap } from './GuideMap';
-import about from '@/texts/about.json';
+import about from '@/texts/ru/about.json';
 import styles from './StoryGuide.module.css';
 
 const CITY = 'kostanay';
@@ -37,7 +37,7 @@ export function StoryGuide({ onOpenMap }) {
   const { city, moods, problems } = useCityData(CITY, 'week');
 
   const stats = [
-    { value: city.data?.districts.features.length ?? 15, label: texts.stats.districts },
+    { value: city.data?.districts.features.length ?? 18, label: texts.stats.districts },
     { value: MOODS.length, label: texts.stats.moods },
     { value: PROBLEM_CATEGORIES.length, label: texts.stats.categories },
     { value: PROBLEM_STATUSES.length, label: texts.stats.statuses },

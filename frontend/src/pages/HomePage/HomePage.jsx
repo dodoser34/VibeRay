@@ -9,7 +9,7 @@ import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Button } from '@/shared/ui/Button';
-import home from '@/texts/home.json';
+import home from '@/texts/ru/home.json';
 import styles from './HomePage.module.css';
 
 const CITY = 'kostanay';

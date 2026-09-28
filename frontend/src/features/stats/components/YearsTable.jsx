@@ -4,7 +4,7 @@ import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { moodCodeForScore } from '@/shared/config/moods';
 import { formatNumber, formatSigned } from '@/shared/lib/formatNumber';
 import { useRevealed } from '@/shared/hooks/useRevealed';
-import texts from '@/texts/stats.json';
+import texts from '@/texts/ru/stats.json';
 import { groupByYear } from '../lib/seriesLabels';
 import styles from './YearsTable.module.css';
 

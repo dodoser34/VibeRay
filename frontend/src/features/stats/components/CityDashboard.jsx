@@ -6,7 +6,7 @@ import { formatFullDate } from '@/shared/lib/formatDate';
 import { formatSigned, percentOf } from '@/shared/lib/formatNumber';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { BarList } from '@/shared/ui/charts/BarList';
-import texts from '@/texts/stats.json';
+import texts from '@/texts/ru/stats.json';
 import { DistrictCompare } from './DistrictCompare';
 import { DistrictTable } from './DistrictTable';
 import { MoodChart } from './MoodChart';

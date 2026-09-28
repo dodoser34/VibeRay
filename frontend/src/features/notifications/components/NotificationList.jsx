@@ -3,7 +3,8 @@ import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
 import { format } from '@/shared/lib/format';
 import { formatRelative } from '@/shared/lib/formatDate';
 import { plural } from '@/shared/lib/plural';
-import texts from '@/texts/notifications.json';
+import dictionaries from '@/texts/ru/dictionaries.json';
+import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationList.module.css';
 
 const ICONS = {
@@ -17,6 +18,7 @@ const ICONS = {
     <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3.5 17.5l3 3 5.8-5.8a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z" />
   ),
   resolved: <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8 12.5l2.7 2.7L16.5 9.5" />,
+  rejected: <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM5.6 5.6l12.8 12.8" />,
 };
 
 function describe(item) {
@@ -35,7 +37,10 @@ function describe(item) {
   return {
     key: item.status,
     color: STATUS_BY_CODE[item.status].colorVar,
-    text: format(texts.kinds[item.status], { category }),
+    text: format(texts.kinds[item.status], {
+      category,
+      reason: dictionaries.rejectionReasons[item.problem.rejection_reason]?.toLowerCase(),
+    }),
   };
 }
 

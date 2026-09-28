@@ -2,7 +2,7 @@ import { useEffect, useId, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { BREAKPOINTS } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
-import common from '@/texts/common.json';
+import common from '@/texts/ru/common.json';
 import styles from './Modal.module.css';
 
 export function Modal({ title, onClose, children, width = 460 }) {

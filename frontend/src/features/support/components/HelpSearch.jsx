@@ -1,7 +1,7 @@
 import { useId, useState } from 'react';
 import { useViewport } from '@/adaptations/core';
 import { POPULAR_QUERIES } from '../content';
-import texts from '@/texts/support.json';
+import texts from '@/texts/ru/support.json';
 import styles from './HelpSearch.module.css';
 
 // Большое поле поиска с мгновенными ответами из FAQ (combobox: работают стрелки и Enter).

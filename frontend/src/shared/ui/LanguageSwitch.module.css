@@ -1,0 +1,53 @@
+/* Стеклянная капсула в стиле таб-бара: два сегмента, выбранный — мягкой заливкой акцента */
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  box-shadow:
+    var(--shadow-panel),
+    inset 0 1px 0 var(--color-glass-highlight);
+  backdrop-filter: blur(var(--blur-glass));
+  pointer-events: auto;
+}
+
+.option {
+  min-width: 2.25rem;
+  height: 2.25rem;
+  padding: 0 var(--space-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: none;
+  color: var(--color-text-muted);
+  font-family: inherit;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition:
+    color var(--dur-fast),
+    background-color var(--dur-fast),
+    border-color var(--dur-fast);
+}
+
+.option:hover {
+  color: var(--color-text);
+}
+
+.option[aria-pressed='true'] {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+  cursor: default;
+}
+
+/* Полные названия (настройки): шире сегменты, обычный регистр */
+.root[data-full] .option {
+  padding: 0 var(--space-4);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0;
+}

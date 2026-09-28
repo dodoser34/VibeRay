@@ -239,11 +239,24 @@
   stroke-linejoin: round;
 }
 
+/* Низ меню: язык интерфейса и подпись; кнопки языка — тач-цели не меньше 44 px */
 .footer {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
   margin-top: auto;
   color: var(--color-text-faint);
   font-size: var(--fs-xs);
   text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer [data-ui='language-switch'] button {
+  min-width: 3.5rem;
+  height: 2.75rem;
 }
 
 /* Точка на кнопке меню: есть непрочитанные уведомления */

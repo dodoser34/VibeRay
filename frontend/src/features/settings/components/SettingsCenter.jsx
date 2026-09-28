@@ -9,7 +9,7 @@ import { DistrictSection } from './DistrictSection';
 import { MyReportsSection } from './MyReportsSection';
 import { ProfileSection } from './ProfileSection';
 import { SecuritySection } from './SecuritySection';
-import texts from '@/texts/settings.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './SettingsCenter.module.css';
 
 const SECTIONS = ['profile', 'reports', 'district', 'security', 'account'].map((key) => ({

@@ -4,7 +4,7 @@ import streetsRaw from '../cities/kostanay/streets.geojson?raw';
 import cityInfo from '../cities/kostanay/city.json';
 import { MOODS, MOOD_BY_CODE } from '@/shared/config/moods';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
-import { largestRing, pointInRing } from '@/shared/lib/geoProjection';
+import { largestPolygon, pointInPolygon } from '@/shared/lib/geoProjection';
 import { createRandom, hashString } from '@/shared/lib/random';
 import { format } from '@/shared/lib/format';
 import demo from '../content.json';
@@ -33,6 +33,10 @@ const BASE_SCORE = {
   ksk: 0.2,
   zelenstroy: 0.7,
   'uzkaya-koleya': -0.9,
+  tobyl: 0.5,
+  zarechnoe: 0.1,
+  michurinskoe: -0.1,
+  altynsarino: 0.3,
 };
 
 // Интервалы ряда динамики (ARCHITECTURE.md 6.3) и типичное число отметок на район; для `all` — 14
@@ -45,13 +49,14 @@ const PERIODS = {
   all: { unit: 'month', sample: 14000 },
 };
 
-const DESCRIPTIONS = demo.problemDescriptions;
+const DESCRIPTIONS = demo.ru.problemDescriptions;
 
 const userMarks = []; // { userId, district, mood, at }
 
 export const city = {
   slug: cityInfo.slug,
   name: cityInfo.name,
+  name_en: cityInfo.name_en,
   center: cityInfo.center,
   bbox: cityInfo.bbox,
   timezone: cityInfo.timezone,
@@ -123,6 +128,9 @@ function trendOf(series) {
   return round2(mean(scored.slice(-3)) - mean(scored.slice(0, 3)));
 }
 
+// Отклонённые модератором сообщения не входят в статистику (ARCHITECTURE.md 6.2).
+const published = () => problems.filter((p) => p.status !== 'rejected');
+
 function problemsIn(list, start, end) {
   return list.filter((p) => {
     const t = new Date(p.created_at).getTime();
@@ -141,7 +149,7 @@ function seriesFor(slug, period) {
   // Аэропорт ночью тихий: демонстрация порога приватности за день.
   const quiet = slug === 'aeroport' && period === 'day';
   const perBucket = quiet ? 0.15 : sampleFor(period, buckets) / buckets.length;
-  const inDistrict = problems.filter((p) => p.district === slug);
+  const inDistrict = published().filter((p) => p.district === slug);
   const now = Date.now();
 
   return buckets.map(([start, end], i) => {
@@ -206,7 +214,8 @@ export function cityMoods(period) {
 }
 
 function randomPointIn(feature, rand) {
-  const ring = largestRing(feature.geometry.coordinates);
+  const polygon = largestPolygon(feature.geometry.coordinates);
+  const [ring] = polygon;
   const xs = ring.map((p) => p[0]);
   const ys = ring.map((p) => p[1]);
   const [minX, maxX, minY, maxY] = [
@@ -217,7 +226,7 @@ function randomPointIn(feature, rand) {
   ];
   for (let attempt = 0; attempt < 200; attempt++) {
     const point = [minX + rand() * (maxX - minX), minY + rand() * (maxY - minY)];
-    if (pointInRing(point, ring)) return point;
+    if (pointInPolygon(point, polygon)) return point;
   }
   return ring[0];
 }
@@ -246,7 +255,7 @@ function makeProblem(rand, id, statuses, createdAt, avatar) {
     confirmations_count: confirmations,
     created_at: new Date(createdAt(rand)).toISOString(),
     author: {
-      nickname: format(demo.residentNickname, { number: 100 + Math.floor(rand() * 900) }),
+      nickname: format(demo.ru.residentNickname, { number: 100 + Math.floor(rand() * 900) }),
       avatar_url: `preset:${avatar}`,
     },
   };
@@ -291,7 +300,7 @@ export const problems = (() => {
 export function districtStats(slug, period) {
   const series = seriesFor(slug, period);
   const since = bucketsFor(period)[0][0];
-  const inDistrict = problems.filter((p) => p.district === slug);
+  const inDistrict = published().filter((p) => p.district === slug);
   const inPeriod = problemsIn(inDistrict, since, Infinity);
 
   const byStatus = { new: 0, confirmed: 0, in_progress: 0, resolved: 0 };
@@ -332,7 +341,7 @@ export function districtStats(slug, period) {
 export function cityStats(period) {
   const buckets = bucketsFor(period);
   const since = buckets[0][0];
-  const inPeriod = problemsIn(problems, since, Infinity);
+  const inPeriod = problemsIn(published(), since, Infinity);
 
   const rows = districtSlugs.map((slug) => {
     const series = seriesFor(slug, period);
@@ -421,10 +430,7 @@ export function isDistrict(slug) {
 // Район, в который попадает точка (на сервере это PostGIS ST_Contains).
 export function districtAt(location) {
   const feature = city.districts.features.find((f) =>
-    f.geometry.coordinates.some(
-      ([outer, ...holes]) =>
-        pointInRing(location, outer) && !holes.some((hole) => pointInRing(location, hole)),
-    ),
+    f.geometry.coordinates.some((polygon) => pointInPolygon(location, polygon)),
   );
   return feature?.properties.slug ?? null;
 }

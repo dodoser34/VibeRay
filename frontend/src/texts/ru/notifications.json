@@ -12,7 +12,8 @@
     "confirmations": "Твою проблему «{category}» подтвердили {count} {people}",
     "confirmed": "Проблема «{category}» подтверждена соседями",
     "in_progress": "Проблему «{category}» взяли в работу",
-    "resolved": "Проблема «{category}» решена — спасибо, что сообщил"
+    "resolved": "Проблема «{category}» решена — спасибо, что сообщил",
+    "rejected": "Сообщение «{category}» отклонено: {reason}"
   },
   "people": ["житель", "жителя", "жителей"],
   "meta": "{district} · {time}"

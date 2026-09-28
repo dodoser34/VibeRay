@@ -8,8 +8,8 @@ import { useSaveAction } from '../hooks/useSaveAction';
 import { AvatarPicker } from './AvatarPicker';
 import { SaveBar } from './SaveBar';
 import { SettingsSection } from './SettingsSection';
-import auth from '@/texts/auth.json';
-import texts from '@/texts/settings.json';
+import auth from '@/texts/ru/auth.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './ProfileSection.module.css';
 
 const isPreset = (src) => /^preset:\d+$/.test(src ?? '');

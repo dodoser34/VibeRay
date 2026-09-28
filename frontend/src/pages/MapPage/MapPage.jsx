@@ -33,8 +33,8 @@ import { Button } from '@/shared/ui/Button';
 import { CoachMarks } from '@/shared/ui/CoachMarks';
 import { Modal } from '@/shared/ui/Modal';
 import { format } from '@/shared/lib/format';
-import problemTexts from '@/texts/problems.json';
-import texts from '@/texts/map.json';
+import problemTexts from '@/texts/ru/problems.json';
+import texts from '@/texts/ru/map.json';
 import { MapFilters } from './MapFilters';
 import styles from './MapPage.module.css';
 

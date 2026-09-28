@@ -1,0 +1,252 @@
+{
+  "hero": {
+    "kicker": "VibeRay Support",
+    "title": "How can we help?",
+    "lead": "Find the answer to your question or contact the support team."
+  },
+  "deck": {
+    "statusKicker": "Problem status",
+    "statusValue": "Resolved",
+    "moodKicker": "District mood",
+    "answerKicker": "Support answer",
+    "answerQuestion": "How do I add a problem to the map?"
+  },
+  "search": {
+    "placeholder": "For example: how to change a mood mark",
+    "label": "Search the answers",
+    "clear": "Clear search",
+    "resultsLabel": "Answers found",
+    "empty": "No ready answer found.",
+    "askSupport": "Ask support",
+    "popularLabel": "Popular searches:",
+    "placeholderShort": "Search the answers"
+  },
+  "popularQueries": ["Sign-up", "Profile", "Map", "Mood", "Problems", "Security"],
+  "categoriesSection": {
+    "title": "Help topics",
+    "text": "Choose a topic and we'll show only the answers about it."
+  },
+  "answersCount": ["answer", "answers", "answers"],
+  "categories": {
+    "account": {
+      "title": "Account",
+      "text": "Sign-up, sign-in, profile and settings"
+    },
+    "map": {
+      "title": "Map",
+      "text": "Districts, streets and using the map"
+    },
+    "mood": {
+      "title": "Mood",
+      "text": "Marks, changing them and the district colour"
+    },
+    "problems": {
+      "title": "Problems",
+      "text": "How to report a problem and what happens to it"
+    },
+    "security": {
+      "title": "Security",
+      "text": "Privacy and your data"
+    },
+    "technical": {
+      "title": "Technical support",
+      "text": "Site errors, map loading and browsers"
+    }
+  },
+  "faqSection": {
+    "title": "Frequently asked questions",
+    "filterLabel": "Question topic",
+    "all": "All"
+  },
+  "faq": [
+    {
+      "id": "register",
+      "category": "account",
+      "question": "How do I sign up?",
+      "answer": "Click “Sign up” in the top menu. Five short steps: email, password, nickname, avatar and, if you like, your district. You can view the map without an account — you need one to mark your mood and report problems.",
+      "keywords": "sign up register account sign in create log in"
+    },
+    {
+      "id": "profile",
+      "category": "account",
+      "question": "How do I change my profile?",
+      "answer": "Click your avatar in the tab bar (on a phone — “Profile settings” in the menu). There you can choose an avatar or upload your own photo and change your nickname. Only these are visible to other residents. The email can't be changed, but support can help you move your account.",
+      "keywords": "profile nickname avatar name photo email settings"
+    },
+    {
+      "id": "home-district",
+      "category": "account",
+      "question": "How do I change my chosen district?",
+      "answer": "Any district opens on the map with one tap. “Your district” only decides which district the map shows first, and nobody else sees it. You can change it in your profile settings, in the “My district” section.",
+      "keywords": "district my chosen change switch profile map"
+    },
+    {
+      "id": "delete-account",
+      "category": "account",
+      "question": "How do I delete my account?",
+      "answer": "In your profile settings, go to “Account” → “Delete account” and confirm with your password. If you can't sign in, write to support with the topic “Account” from the email your account is registered with. Your mood marks are never shown individually anyway.",
+      "keywords": "delete account profile removal data"
+    },
+    {
+      "id": "missing-object",
+      "category": "map",
+      "question": "Why is something missing from the map?",
+      "answer": "The map shows districts, streets and water from OpenStreetMap data. Individual buildings, shops and organisations aren't marked on it. If a street is missing or a district border looks wrong, write to us with the topic “Map”.",
+      "keywords": "map object missing building street border district openstreetmap"
+    },
+    {
+      "id": "districts",
+      "category": "map",
+      "question": "How are the districts on the map drawn?",
+      "answer": "Kostanay is divided into real residential districts based on OpenStreetMap data: their borders follow main roads, the railway and the Tobol river. Click a district to open its mood, problems and statistics.",
+      "keywords": "map districts neighbourhoods borders city"
+    },
+    {
+      "id": "who-sees-mood",
+      "category": "mood",
+      "question": "Who can see my mood?",
+      "answer": "Nobody. Individual marks are never shown to anyone — the map only shows a district's overall mood, and only once it has at least five marks.",
+      "keywords": "mood see privacy anonymous mark"
+    },
+    {
+      "id": "change-mood",
+      "category": "mood",
+      "question": "Can I change my mood mark?",
+      "answer": "Yes: a new mark in the same district within three hours replaces the previous one. That way one person can't skew a district's colour.",
+      "keywords": "mood change mark replace fix"
+    },
+    {
+      "id": "mood-color",
+      "category": "mood",
+      "question": "How is a district's colour worked out?",
+      "answer": "From residents' marks over the chosen period — a day, a week or a month. If there are fewer than five marks, the district stays grey: that way nobody can guess who marked what.",
+      "keywords": "mood colour color district statistics period"
+    },
+    {
+      "id": "add-problem",
+      "category": "problems",
+      "question": "How do I add a problem to the map?",
+      "answer": "On the map, click “Report a problem”: choose the type, put a point, describe the problem (10 to 1000 characters) and add up to three photos if you like. You need an account for this.",
+      "keywords": "problem add report map point photo rubbish roads"
+    },
+    {
+      "id": "problem-status",
+      "category": "problems",
+      "question": "How does a problem become “confirmed”?",
+      "answer": "When three different residents confirm it. After that a moderator moves it to “in progress” and “resolved” — the status is shown on the problem card. Spam and duplicates are rejected by the moderator.",
+      "keywords": "problem status confirm confirmed resolved in progress"
+    },
+    {
+      "id": "rejected",
+      "category": "problems",
+      "question": "Why was my report rejected?",
+      "answer": "A moderator rejects spam and advertising, duplicates — when the same problem nearby has already been reported — and things that aren't about the city. A rejected report disappears from the map and the statistics, but you'll still see it in “My reports” with the reason; for a duplicate there's also a link to the original problem — confirm it, that speeds up the fix.",
+      "keywords": "problem rejected moderation spam duplicate repeat"
+    },
+    {
+      "id": "edit-problem",
+      "category": "problems",
+      "question": "Can I edit or delete my problem report?",
+      "answer": "Reports can't be edited yet. Write to us with the topic “Problems” and describe which point needs to be fixed or removed.",
+      "keywords": "problem edit delete change report mistake"
+    },
+    {
+      "id": "public-data",
+      "category": "security",
+      "question": "What data about me can others see?",
+      "answer": "Only your avatar and nickname. Your email, “your district” and individual mood marks are never shown to anyone.",
+      "keywords": "security data privacy visible email"
+    },
+    {
+      "id": "photos",
+      "category": "security",
+      "question": "What happens to my photos?",
+      "answer": "Location tags and camera data are removed on your device, before sending, and the server checks this again.",
+      "keywords": "security photo location tag exif data"
+    },
+    {
+      "id": "password",
+      "category": "security",
+      "question": "How is my password stored?",
+      "answer": "We don't store passwords — only their hash (argon2). Even we have no way of finding out your password.",
+      "keywords": "security password storage account hacking"
+    },
+    {
+      "id": "site-broken",
+      "category": "technical",
+      "question": "What should I do if the site isn't working properly?",
+      "answer": "Reload the page. The map needs a modern browser with WebGL — a recent Chrome, Firefox, Safari or Edge with hardware acceleration turned on. Didn't help? Write to us with the topic “Technical issue” and attach a screenshot.",
+      "keywords": "error site not working map not loading slow browser webgl"
+    },
+    {
+      "id": "mobile",
+      "category": "technical",
+      "question": "Does the site work on a phone?",
+      "answer": "Yes, VibeRay adapts to phone screens. For the 3D map the phone's browser also needs WebGL support — modern browsers have it.",
+      "keywords": "phone mobile smartphone browser"
+    },
+    {
+      "id": "language",
+      "category": "technical",
+      "question": "How do I switch the site language?",
+      "answer": "The RU / EN buttons are in the top right corner, on a phone — at the bottom of the menu, and also in your profile settings, in the “Account” section. Your choice is remembered in the browser.",
+      "keywords": "language english russian switch interface"
+    }
+  ],
+  "cta": {
+    "kicker": "Didn't find the answer?",
+    "title": "Write to us — we'll sort it out together",
+    "text": "Couldn't find what you need? Tell us about your problem and we'll do our best to help.",
+    "button": "Contact support"
+  },
+  "footer": {
+    "title": "Contact support",
+    "text": "The fastest way is the request form: the reply will come to the email you give. No account needed.",
+    "openForm": "Open the request form",
+    "linksLabel": "Useful links",
+    "links": {
+      "map": "City map",
+      "about": "About",
+      "login": "Sign in",
+      "register": "Sign up"
+    }
+  },
+  "status": {
+    "checking": "Checking…",
+    "failed": "Couldn't get the status",
+    "allGood": "All systems operational",
+    "issues": "Some disruptions",
+    "checkedAt": "Checked at {time}",
+    "refresh": "Refresh"
+  },
+  "form": {
+    "title": "Contact support",
+    "topicLegend": "Topic",
+    "emailLabel": "Email for our reply",
+    "emailHint": "Only the support team can see it",
+    "messageLabel": "What happened?",
+    "messagePlaceholder": "Describe what you were doing and what went wrong. If it's a bug — which browser you use.",
+    "attach": "Attach a screenshot or file",
+    "removeFile": "Remove file {name}",
+    "fileBadge": "PDF",
+    "filesNote": "Up to {max} files: JPEG, PNG, WebP or PDF up to 10 MB. Location tags and camera data are removed from images.",
+    "sizeKb": "{size} KB",
+    "sizeMb": "{size} MB",
+    "cancel": "Cancel",
+    "submit": "Send",
+    "errors": {
+      "topic": "Choose a topic",
+      "email": "Enter the email we should reply to",
+      "message": "Describe the problem — at least {min} characters",
+      "tooManyFiles": "You can attach no more than {max} files",
+      "fileType": "JPEG, PNG, WebP or PDF will do",
+      "fileSize": "The file is larger than 10 MB"
+    },
+    "done": {
+      "title": "Request sent",
+      "number": "Request number: {id}",
+      "text": "We'll reply to {email}. If you want to add something, mention the number in a new request.",
+      "close": "Done"
+    }
+  }
+}

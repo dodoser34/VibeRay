@@ -1,0 +1,55 @@
+{
+  "moods": {
+    "excellent": "Excellent",
+    "good": "Good",
+    "normal": "Okay",
+    "anxious": "Anxious",
+    "bad": "Bad",
+    "angry": "Angry",
+    "very_bad": "Very bad"
+  },
+  "periods": {
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "year": "Year",
+    "all": "All years"
+  },
+  "problemCategories": {
+    "garbage": "Rubbish",
+    "traffic": "Traffic jams",
+    "roads": "Bad roads",
+    "lighting": "Street lighting",
+    "noise": "Noise",
+    "drunkenness": "Public drinking",
+    "public_transport": "Public transport",
+    "parks": "Parks upkeep",
+    "other": "Other"
+  },
+  "problemStatuses": {
+    "new": "New",
+    "confirmed": "Confirmed",
+    "in_progress": "In progress",
+    "resolved": "Resolved",
+    "rejected": "Rejected"
+  },
+  "rejectionReasons": {
+    "spam": "Spam or advertising",
+    "duplicate": "Duplicate — this problem has already been reported",
+    "offtopic": "Not a city problem"
+  },
+  "supportTopics": {
+    "account": "Account",
+    "map": "Map",
+    "mood": "Mood",
+    "problems": "Problems",
+    "security": "Security",
+    "technical": "Technical issue",
+    "other": "Other"
+  },
+  "serviceStates": {
+    "operational": "Operational",
+    "degraded": "Degraded",
+    "down": "Down"
+  }
+}

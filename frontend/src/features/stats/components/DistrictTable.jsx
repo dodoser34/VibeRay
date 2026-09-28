@@ -5,9 +5,10 @@ import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
 import { format } from '@/shared/lib/format';
 import { formatNumber, formatSigned, percentOf } from '@/shared/lib/formatNumber';
+import { getLocale } from '@/shared/lib/language';
 import { plural } from '@/shared/lib/plural';
 import { useRevealed } from '@/shared/hooks/useRevealed';
-import texts from '@/texts/stats.json';
+import texts from '@/texts/ru/stats.json';
 import styles from './DistrictTable.module.css';
 
 const SAME_SCORE = 0.1; // меньшие изменения читаются как «без изменений» (оценки −2…+2)
@@ -30,7 +31,7 @@ function sortRows(rows, { key, dir }) {
   return [...rows].sort((a, b) => {
     const [va, vb] = [get(a), get(b)];
     if (va === null || vb === null) return va === vb ? 0 : va === null ? 1 : -1; // районы без данных — в конце
-    if (typeof va === 'string') return sign * va.localeCompare(vb, 'ru');
+    if (typeof va === 'string') return sign * va.localeCompare(vb, getLocale());
     return sign * (va - vb);
   });
 }

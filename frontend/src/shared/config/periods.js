@@ -1,4 +1,4 @@
-import dictionaries from '@/texts/dictionaries.json';
+import dictionaries from '@/texts/ru/dictionaries.json';
 
 // Коды должны совпадать с backend/app/models/enums.py (StatsPeriod).
 export const PERIOD_CODES = ['day', 'week', 'month', 'year', 'all'];

@@ -16,7 +16,7 @@ import { Button } from '@/shared/ui/Button';
 import { Modal } from '@/shared/ui/Modal';
 import { TextField } from '@/shared/ui/TextField';
 import { format } from '@/shared/lib/format';
-import supportTexts from '@/texts/support.json';
+import supportTexts from '@/texts/ru/support.json';
 import styles from './SupportRequestForm.module.css';
 
 const texts = supportTexts.form;

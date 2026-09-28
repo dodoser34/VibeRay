@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import { checkPhoto, preparePhoto } from '@/shared/lib/imageTools';
 import { format } from '@/shared/lib/format';
 import { Avatar, AVATAR_PRESETS } from '@/shared/ui/Avatar';
-import texts from '@/texts/settings.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './AvatarPicker.module.css';
 
 const PRESETS = AVATAR_PRESETS.map((_, i) => `preset:${i}`);

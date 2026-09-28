@@ -35,9 +35,18 @@ export function ringArea(ring) {
 }
 
 export function largestRing(multiPolygon) {
-  return multiPolygon
-    .map((polygon) => polygon[0])
-    .reduce((best, ring) => (ringArea(ring) > ringArea(best) ? ring : best));
+  return largestPolygon(multiPolygon)[0];
+}
+
+// Самый большой полигон MultiPolygon целиком: [внешнее кольцо, ...дыры (вода)].
+export function largestPolygon(multiPolygon) {
+  return multiPolygon.reduce((best, polygon) =>
+    ringArea(polygon[0]) > ringArea(best[0]) ? polygon : best,
+  );
+}
+
+export function pointInPolygon(point, [outer, ...holes]) {
+  return pointInRing(point, outer) && !holes.some((hole) => pointInRing(point, hole));
 }
 
 function distanceToSegment([px, py], [ax, ay], [bx, by]) {
@@ -51,7 +60,8 @@ function distanceToSegment([px, py], [ax, ay], [bx, by]) {
 // центроида никогда не выпадает за пределы длинных или вогнутых районов — используется для подписей
 // и меток.
 export function labelPoint(multiPolygon, resolution = 28) {
-  const ring = largestRing(multiPolygon);
+  const polygon = largestPolygon(multiPolygon);
+  const [ring] = polygon;
   const xs = ring.map((p) => p[0]);
   const ys = ring.map((p) => p[1]);
   const minX = Math.min(...xs);
@@ -63,11 +73,13 @@ export function labelPoint(multiPolygon, resolution = 28) {
   for (let i = 0; i <= resolution; i++) {
     for (let j = 0; j <= resolution; j++) {
       const point = [minX + i * stepX, minY + j * stepY];
-      if (!pointInRing(point, ring)) continue;
+      if (!pointInPolygon(point, polygon)) continue;
       let distance = Infinity;
-      for (let k = 0; k < ring.length - 1; k++) {
-        distance = Math.min(distance, distanceToSegment(point, ring[k], ring[k + 1]));
-      }
+      polygon.forEach((edge) => {
+        for (let k = 0; k < edge.length - 1; k++) {
+          distance = Math.min(distance, distanceToSegment(point, edge[k], edge[k + 1]));
+        }
+      });
       if (distance > bestDistance) {
         bestDistance = distance;
         best = point;

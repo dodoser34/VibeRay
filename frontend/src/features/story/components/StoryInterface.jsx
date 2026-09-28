@@ -1,6 +1,6 @@
 import { MoodFace } from '@/features/mood';
 import { Avatar } from '@/shared/ui/Avatar';
-import about from '@/texts/about.json';
+import about from '@/texts/ru/about.json';
 import styles from './StoryInterface.module.css';
 
 const texts = about.story.interface;

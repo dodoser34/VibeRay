@@ -4,11 +4,11 @@
     "user": {
       "id": "u-demo",
       "email": "demo@viberay.kz",
-      "nickname": "Жительница",
+      "nickname": "Алексеевич",
       "avatar_url": "preset:3",
       "home_district": "center",
       "role": "user"
     },
-    "reports": ["in_progress", "confirmed", "new", "resolved", "confirmed"]
+    "reports": ["in_progress", "confirmed", "new", "rejected", "resolved", "confirmed"]
   }
 ]

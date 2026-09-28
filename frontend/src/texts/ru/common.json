@@ -10,5 +10,16 @@
     "tooBig": "Фото больше 10 МБ",
     "processFailed": "Не удалось обработать фото"
   },
-  "serverUnavailable": "Сервер недоступен, попробуйте позже"
+  "serverUnavailable": "Сервер недоступен, попробуйте позже",
+  "language": {
+    "label": "Язык интерфейса",
+    "names": {
+      "ru": "Русский",
+      "en": "English"
+    },
+    "short": {
+      "ru": "RU",
+      "en": "EN"
+    }
+  }
 }

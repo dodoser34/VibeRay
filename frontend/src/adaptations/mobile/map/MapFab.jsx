@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Modal } from '@/shared/ui/Modal';
-import texts from '@/texts/map.json';
+import texts from '@/texts/ru/map.json';
 import styles from './MapFab.module.css';
 
 // Плавающие кнопки над картой на телефонах и планшетах стоя, прямо над шторкой: «весь город» (после

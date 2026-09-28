@@ -1,6 +1,6 @@
 import { useNotifications } from '../model/useNotifications';
 import { NotificationList } from './NotificationList';
-import texts from '@/texts/notifications.json';
+import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationsPanel.module.css';
 
 const CITY = 'kostanay';

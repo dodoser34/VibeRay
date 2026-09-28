@@ -3,7 +3,7 @@ import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { format } from '@/shared/lib/format';
 import { plural } from '@/shared/lib/plural';
 import { MapScene } from '../scene/MapScene';
-import texts from '@/texts/map.json';
+import texts from '@/texts/ru/map.json';
 import styles from './MapCanvas.module.css';
 
 export function MapCanvas({

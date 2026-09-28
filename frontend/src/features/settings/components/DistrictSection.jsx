@@ -4,7 +4,7 @@ import { updateProfile } from '@/shared/api/endpoints/users';
 import { useSaveAction } from '../hooks/useSaveAction';
 import { SaveBar } from './SaveBar';
 import { SettingsSection } from './SettingsSection';
-import texts from '@/texts/settings.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './DistrictSection.module.css';
 
 // «Свой район» приватный: он только выбирает, какой район карта откроет первым.

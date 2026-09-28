@@ -1,0 +1,142 @@
+{
+  "story": {
+    "stamp": "July · 10 p.m.",
+    "hint": "Scroll — the story is about to begin",
+    "openMap": "Open the city map",
+    "chapters": {
+      "evening": {
+        "text": "An ordinary July evening. I was sitting at my computer, wondering what I could come up with."
+      },
+      "search": {
+        "text": "Websites, apps, interfaces — it had all been done somewhere before. I wanted to make something about people."
+      },
+      "city": {
+        "text": "Every day we walk the same streets. And each of us sees our district in our own way."
+      },
+      "mood": {
+        "text": "What if people could mark how they feel — right on the city map?"
+      },
+      "problems": {
+        "text": "And show real problems: rubbish, potholes, traffic jams, dark yards."
+      },
+      "living": {
+        "phrase": "What if people had a way to show how they see their city?"
+      },
+      "diploma": {},
+      "product": {
+        "text": "The idea became a project: a map, districts, mood, problems and statistics — all in one service."
+      },
+      "final": {
+        "phrase": "Sometimes a big idea starts with a simple question.",
+        "question": "“What interesting thing could I come up with?”"
+      }
+    },
+    "calendar": [
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June"
+    ],
+    "moodCard": {
+      "nickname": "Resident",
+      "place": "Centre · now",
+      "question": "How are you feeling?"
+    },
+    "interface": {
+      "districtKicker": "Kostanay district",
+      "districtName": "Centre",
+      "districtMood": "Good",
+      "profileName": "Resident",
+      "profilePrivacy": "Public: only your avatar and nickname",
+      "problemKicker": "Problem · Roads",
+      "problemTitle": "A deep pothole at the crossroads",
+      "problemStatus": "Confirmed",
+      "problemConfirmations": "12 confirmations",
+      "statsKicker": "Mood this week"
+    }
+  },
+  "screen": {
+    "question": "What interesting thing could I make?",
+    "appName": "Notes",
+    "menu": ["File", "Edit", "View", "Window"],
+    "date": "July, Fri  22:00",
+    "fileName": "Idea.txt",
+    "folders": ["Studies", "Projects", "Games", "Photos", "Music", "Social"],
+    "ideas": {
+      "shop": "Online shop",
+      "habits": "Habit tracker",
+      "game": "Mobile game",
+      "studyNetwork": "Study social network",
+      "finance": "Finance"
+    }
+  },
+  "guide": {
+    "kicker": "How it works",
+    "titleStart": "VibeRay — a city you can",
+    "titleAccent": "See",
+    "lead": "A map of Kostanay: residents mark their mood and real problems, and the city shows what each district is living through right now.",
+    "stats": {
+      "districts": "districts on the map",
+      "moods": "shades of mood",
+      "categories": "problem categories",
+      "statuses": "steps to “Problem fixed”"
+    },
+    "stepsLabel": "Four steps",
+    "steps": [
+      {
+        "title": "Pick your district",
+        "text": "Kostanay and its suburbs are divided into 18 real districts — from the Centre to Tobyl across the river. Tap yours and see right away how it's feeling."
+      },
+      {
+        "title": "Mark your mood",
+        "text": "One tap and the district gets your vote. The marks add up to its overall colour: from calm green to worried red."
+      },
+      {
+        "title": "Report a problem",
+        "text": "Rubbish, potholes, a dark yard — put a point on the map and add a photo. Neighbours confirm it, and the problem makes its way to “resolved”."
+      },
+      {
+        "title": "Watch the city change",
+        "text": "Statistics for a day, a week and a month — and on the dashboard for a year and all years — show where things are getting better and where the city needs help."
+      }
+    ],
+    "privacyTitle": "Honest about privacy",
+    "privacy": {
+      "mask": {
+        "title": "Only a nickname and avatar",
+        "text": "Your email and the rest of your profile are visible to nobody but you."
+      },
+      "crowd": {
+        "title": "Your vote joins the common colour",
+        "text": "Individual mood marks are never shown. A district's colour appears only once there are enough marks."
+      },
+      "photo": {
+        "title": "Photos without location tags",
+        "text": "Hidden data is removed from photos — coordinates and the phone model."
+      }
+    },
+    "ctaKicker": "Kostanay is already on the map",
+    "ctaTitle": "What's your mood today?",
+    "openMap": "Open the city map",
+    "fullStorySummary": "Read the whole story"
+  },
+  "fullStory": [
+    "It all started on an ordinary July evening. It was about ten o'clock. I was sitting at my computer, thinking about what interesting and unusual thing I could come up with. I didn't want to build just another website or app for the sake of it — I wanted something genuinely connected to people and their everyday lives.",
+    "At some point I started thinking about the city. Every day people spend time in different districts, walk the same streets, travel to work or classes, meet friends and run into all kinds of problems. And each person sees their district in their own way.",
+    "For one person a district is a calm and pleasant place; for another it's inconvenient or troubled. Someone keeps noticing rubbish, bad roads or traffic jams, while someone else notices the lack of street lighting, parking or other infrastructure.",
+    "And then the thought came: what if there were a map where people themselves could tell what's happening in their districts? The city is divided into districts and neighbourhoods. A user picks the place where they usually are and marks their mood. And real problems too: rubbish, a traffic jam, a bad road, darkness. That way the map shows not only where the districts are, but the state of the city through its residents' eyes.",
+    "I told my friends and classmates about the idea. One of them said it could make an interesting graduation project. Back then I didn't yet know that this is exactly what would happen.",
+    "My fourth year began, and I had to choose a thesis topic. I remembered that summer idea: instead of inventing something specially for the thesis, I could finally bring an existing idea to life.",
+    "Over time the idea grew: what the interface should be like, how the map should look, how to mark moods and problems, how to present the data. The main goal became a space where residents themselves show how they see their city. An ordinary map shows streets and buildings. This one also shows what people feel, which problems they notice and how they see the place where they live.",
+    "In the long run, the collected data will help follow how districts change: which problems come up most often, where residents mark negative moods more often, and which places feel comfortable.",
+    "And the most interesting part: it didn't start with a university assignment or with thoughts of a thesis, but with an ordinary July evening and a question — “What interesting and unusual thing could I come up with?”"
+  ]
+}

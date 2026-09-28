@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { format } from '@/shared/lib/format';
-import auth from '@/texts/auth.json';
+import auth from '@/texts/ru/auth.json';
 import styles from './PasswordStrength.module.css';
 
 const SEGMENTS = 4;

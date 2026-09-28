@@ -3,7 +3,13 @@ import { CityBackdrop, colorForAggregate, colorForDistrict, DistrictsLayer } fro
 import { MOOD_BY_CODE, MOODS } from '@/shared/config/moods';
 import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
 import { cssVar } from '@/shared/lib/cssVar';
-import { createProjection, largestRing, pointInRing, ringArea } from '@/shared/lib/geoProjection';
+import {
+  createProjection,
+  largestPolygon,
+  largestRing,
+  pointInPolygon,
+  ringArea,
+} from '@/shared/lib/geoProjection';
 import { createRandom } from '@/shared/lib/random';
 import { LinkNetwork, PulseField } from './storyEffects';
 
@@ -82,8 +88,14 @@ export class CityStage {
       });
       item.districtColor = colorForDistrict(item.palette);
       item.moodColor = colorForAggregate(moods.districts[item.slug]);
-      item.streets = item.group.children.find((child) => child.isLineSegments) ?? null;
-      item.streetCount = item.streets?.geometry.attributes.position.count ?? 0;
+      item.streets = item.group.children
+        .filter((child) => child.userData.street)
+        .map((object) => ({
+          object,
+          total: object.isLineSegments2
+            ? object.geometry.attributes.instanceStart.count
+            : object.geometry.attributes.position.count / 2,
+        }));
     });
 
     this.addPeople(city.districts.features, moods.districts);
@@ -100,7 +112,8 @@ export class CityStage {
     const total = areas.reduce((a, b) => a + b, 0);
     this.people = [];
     features.forEach((feature, fi) => {
-      const ring = largestRing(feature.geometry.coordinates);
+      const polygon = largestPolygon(feature.geometry.coordinates);
+      const [ring] = polygon;
       const xs = ring.map((p) => p[0]);
       const ys = ring.map((p) => p[1]);
       const box = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
@@ -108,7 +121,7 @@ export class CityStage {
       const distribution = aggregates[feature.properties.slug]?.distribution;
       for (let n = 0, guard = 0; n < count && guard < count * 40; guard++) {
         const lonlat = [box[0] + rand() * (box[1] - box[0]), box[2] + rand() * (box[3] - box[2])];
-        if (!pointInRing(lonlat, ring)) continue;
+        if (!pointInPolygon(lonlat, polygon)) continue;
         const [x, y] = this.project(lonlat);
         this.people.push({
           x,
@@ -205,10 +218,12 @@ export class CityStage {
       item.group.scale.y = Math.max(0.02, item.height * backOut(grow));
       item.material.opacity = this.districts.baseOpacity * p.appear;
       item.lineMaterial.opacity = 0.85 * p.appear;
-      if (item.streets) {
-        const shown = Math.floor(item.streetCount * staggered(p.streets, i, n, 0.5));
-        item.streets.geometry.setDrawRange(0, shown - (shown % 2));
-      }
+      const drawn = staggered(p.streets, i, n, 0.5);
+      item.streets.forEach(({ object, total }) => {
+        const shown = Math.floor(total * drawn);
+        if (object.isLineSegments2) object.geometry.instanceCount = shown;
+        else object.geometry.setDrawRange(0, shown * 2);
+      });
       color.copy(item.districtColor).lerp(item.moodColor, p.moodMix);
       item.material.color.copy(color);
       item.material.emissive.copy(color);
@@ -266,6 +281,7 @@ export class CityStage {
 
   setResolution(width, height) {
     this.districts.setResolution(width, height);
+    this.backdrop.setResolution(width, height);
   }
 
   dispose() {

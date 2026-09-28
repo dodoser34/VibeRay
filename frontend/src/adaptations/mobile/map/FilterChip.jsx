@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { format } from '@/shared/lib/format';
 import { Modal } from '@/shared/ui/Modal';
-import texts from '@/texts/map.json';
+import texts from '@/texts/ru/map.json';
 import styles from './FilterChip.module.css';
 
 // Фильтры карты, свёрнутые в один чип над картой («День · Настроение ▾»); полные настройки

@@ -5,8 +5,8 @@ import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import { useSaveAction } from '../hooks/useSaveAction';
 import { SaveBar } from './SaveBar';
 import { SettingsSection } from './SettingsSection';
-import auth from '@/texts/auth.json';
-import texts from '@/texts/settings.json';
+import auth from '@/texts/ru/auth.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './SecuritySection.module.css';
 
 const EMPTY = { current: '', next: '', repeat: '' };

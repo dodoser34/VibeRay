@@ -1,13 +1,16 @@
-import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
+import { PROBLEM_STATUSES, REJECTED_STATUS } from '@/shared/config/problemStatuses';
 import { formatDate } from '@/shared/lib/formatDate';
 import { useRevealed } from '@/shared/hooks/useRevealed';
 import styles from './StatusTimeline.module.css';
 
 // Путь проблемы «новая → подтверждена → в работе → решена»: пройденные шаги цветом своего статуса,
 // с датой перехода (history), текущий — с тихим кольцом. Полоса дорастает до текущего шага.
+// Отклонённое сообщение сошло с пути: «новая → отклонена».
 export function StatusTimeline({ status, history = [], label, compact = false }) {
   const revealed = useRevealed();
-  const current = PROBLEM_STATUSES.findIndex((s) => s.code === status);
+  const steps =
+    status === REJECTED_STATUS.code ? [PROBLEM_STATUSES[0], REJECTED_STATUS] : PROBLEM_STATUSES;
+  const current = steps.findIndex((s) => s.code === status);
   const dateOf = (code) => history.find((step) => step.status === code)?.changed_at;
 
   return (
@@ -16,9 +19,13 @@ export function StatusTimeline({ status, history = [], label, compact = false })
         className={styles.timeline}
         aria-label={label}
         data-compact={compact || undefined}
-        style={{ '--progress': revealed ? current / (PROBLEM_STATUSES.length - 1) : 0 }}
+        style={{
+          '--steps': steps.length,
+          '--track-end': `var(${steps.at(-1).colorVar})`,
+          '--progress': revealed ? current / (steps.length - 1) : 0,
+        }}
       >
-        {PROBLEM_STATUSES.map((step, i) => {
+        {steps.map((step, i) => {
           const date = i <= current ? dateOf(step.code) : null;
           return (
             <li

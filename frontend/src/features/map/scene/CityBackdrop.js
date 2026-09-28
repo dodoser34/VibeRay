@@ -1,17 +1,21 @@
 import * as THREE from 'three';
 import { cssVar } from '@/shared/lib/cssVar';
+import { groundColor, ROAD_CLASSES, roadLines, segmentsByKind } from './roadStyles';
 
 const GROUND_TEXTURE_SIZE = 512;
-const RIVER_WIDTH_KM = 0.09;
-const WATER_Y = 0.012;
+const WATER_Y = 0.002; // ниже дорог: мосты через Тобол рисуются поверх воды
+const ROAD_Y = 0.004;
+const ROAD_STEP = 0.0006; // классы поважнее — чуть выше, чтобы ложиться поверх
 
-// Окрестности города из OpenStreetMap: мягкая земля, настоящие улицы вне районов, река Тобол и
-// водоёмы. Улицы внутри районов рисуются на самих плитах (DistrictsLayer), поэтому здесь берутся
-// только отрезки с `district === null`.
+// Окрестности города из OpenStreetMap — плоская схема без адресов: мягкая земля, дороги вне районов
+// по иерархии (магистрали толще, дворовые проезды тоньше и бледнее, железная дорога пунктиром), река
+// Тобол и водоёмы по настоящим берегам (с островами). Улицы внутри районов рисуются на самих плитах (DistrictsLayer), поэтому здесь
+// берутся только отрезки с `district === null`.
 export class CityBackdrop {
   constructor(project, { water, streets } = {}, { size = 40 } = {}) {
     this.group = new THREE.Group();
     this.project = project;
+    this.lineMaterials = [];
 
     const ground = new THREE.Mesh(
       new THREE.PlaneGeometry(size, size),
@@ -29,31 +33,25 @@ export class CityBackdrop {
     if (water) this.addWater(water.features);
   }
 
-  toWorld([lon, lat], y) {
-    const [x, north] = this.project([lon, lat]);
-    return new THREE.Vector3(x, y, -north);
+  addStreets(features) {
+    const byKind = segmentsByKind(features, this.project, 0);
+    ROAD_CLASSES.forEach((style, i) => {
+      const positions = byKind.get(style.kind);
+      if (!positions?.length) return;
+      const { object, material, fat } = roadLines(positions, style, {
+        color: groundColor(style),
+        opacity: style.ground[1],
+      });
+      object.position.y = ROAD_Y + i * ROAD_STEP;
+      object.renderOrder = i;
+      if (fat) this.lineMaterials.push(material);
+      this.group.add(object);
+    });
   }
 
-  addStreets(features) {
-    const positions = [];
-    features.forEach(({ geometry }) => {
-      const pts = geometry.coordinates.map((c) => this.project(c));
-      for (let i = 0; i < pts.length - 1; i++) {
-        positions.push(pts[i][0], 0.004, -pts[i][1], pts[i + 1][0], 0.004, -pts[i + 1][1]);
-      }
-    });
-    const geometry = new THREE.BufferGeometry();
-    geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
-    this.group.add(
-      new THREE.LineSegments(
-        geometry,
-        new THREE.LineBasicMaterial({
-          color: cssVar('--color-street'),
-          transparent: true,
-          opacity: 0.9,
-        }),
-      ),
-    );
+  // Толстым линиям нужен размер экрана (LineMaterial считает толщину в пикселях).
+  setResolution(width, height) {
+    this.lineMaterials.forEach((material) => material.resolution.set(width, height));
   }
 
   addWater(features) {
@@ -63,33 +61,20 @@ export class CityBackdrop {
       metalness: 0.05,
       side: THREE.DoubleSide,
     });
-
+    const toVector = (c) => new THREE.Vector2(...this.project(c));
     const shapes = features
       .filter((f) => f.geometry.type === 'Polygon')
       .map(({ geometry }) => {
-        const [outer] = geometry.coordinates;
-        return new THREE.Shape(outer.map((c) => new THREE.Vector2(...this.project(c))));
+        const [outer, ...islands] = geometry.coordinates;
+        const shape = new THREE.Shape(outer.map(toVector));
+        islands.forEach((ring) => shape.holes.push(new THREE.Path(ring.map(toVector))));
+        return shape;
       });
-    if (shapes.length) {
-      const lakes = new THREE.Mesh(new THREE.ShapeGeometry(shapes), material);
-      lakes.rotation.x = -Math.PI / 2;
-      lakes.position.y = WATER_Y;
-      this.group.add(lakes);
-    }
-
-    // Реки: плоские ленты (сплющенная труба сверху читается как спокойная полоса воды).
-    features
-      .filter((f) => f.geometry.type === 'LineString' && f.geometry.coordinates.length > 1)
-      .forEach(({ geometry }) => {
-        const points = geometry.coordinates.map((c) => this.toWorld(c, WATER_Y));
-        const curve = new THREE.CatmullRomCurve3(points, false, 'centripetal');
-        const ribbon = new THREE.Mesh(
-          new THREE.TubeGeometry(curve, Math.max(8, points.length * 3), RIVER_WIDTH_KM / 2, 6),
-          material,
-        );
-        ribbon.scale.y = 0.08;
-        this.group.add(ribbon);
-      });
+    if (!shapes.length) return;
+    const water = new THREE.Mesh(new THREE.ShapeGeometry(shapes), material);
+    water.rotation.x = -Math.PI / 2;
+    water.position.y = WATER_Y;
+    this.group.add(water);
   }
 
   dispose() {

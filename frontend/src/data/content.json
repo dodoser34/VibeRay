@@ -1,20 +1,42 @@
 {
-  "residentNickname": "житель_{number}",
-  "problemDescriptions": {
-    "garbage": "Переполненные контейнеры во дворе, мусор не вывозят несколько дней.",
-    "traffic": "Каждый вечер большая пробка на перекрёстке, светофор не справляется.",
-    "roads": "Глубокие ямы на проезжей части, после дождя их не видно.",
-    "lighting": "Не горят фонари вдоль тротуара, вечером очень темно.",
-    "noise": "Громкая музыка по ночам из соседнего заведения.",
-    "drunkenness": "Компании распивают алкоголь на детской площадке.",
-    "public_transport": "Автобус ходит с интервалом больше 30 минут в час пик.",
-    "parks": "Сломанные скамейки и не работает полив в сквере.",
-    "other": "Бродячие собаки возле школы."
+  "ru": {
+    "residentNickname": "житель_{number}",
+    "problemDescriptions": {
+      "garbage": "Переполненные контейнеры во дворе, мусор не вывозят несколько дней.",
+      "traffic": "Каждый вечер большая пробка на перекрёстке, светофор не справляется.",
+      "roads": "Глубокие ямы на проезжей части, после дождя их не видно.",
+      "lighting": "Не горят фонари вдоль тротуара, вечером очень темно.",
+      "noise": "Громкая музыка по ночам из соседнего заведения.",
+      "drunkenness": "Компании распивают алкоголь на детской площадке.",
+      "public_transport": "Автобус ходит с интервалом больше 30 минут в час пик.",
+      "parks": "Сломанные скамейки и не работает полив в сквере.",
+      "other": "Бродячие собаки возле школы."
+    },
+    "services": {
+      "site": "Основной сайт",
+      "map": "Карта",
+      "auth": "Авторизация",
+      "support": "Система обращений"
+    }
   },
-  "services": {
-    "site": "Основной сайт",
-    "map": "Карта",
-    "auth": "Авторизация",
-    "support": "Система обращений"
+  "en": {
+    "residentNickname": "житель_{number}",
+    "problemDescriptions": {
+      "garbage": "The bins in the yard are overflowing — nobody has collected the rubbish for several days.",
+      "traffic": "A big jam at the crossroads every evening; the traffic lights can't cope.",
+      "roads": "Deep potholes on the road — after rain you can't see them at all.",
+      "lighting": "The street lights along the pavement are out; it's very dark in the evening.",
+      "noise": "Loud music at night from the bar next door.",
+      "drunkenness": "Groups drinking alcohol on the children's playground.",
+      "public_transport": "At rush hour the bus runs more than 30 minutes apart.",
+      "parks": "Broken benches in the square, and the sprinklers don't work.",
+      "other": "Stray dogs near the school."
+    },
+    "services": {
+      "site": "Main website",
+      "map": "Map",
+      "auth": "Sign-in",
+      "support": "Support requests"
+    }
   }
 }

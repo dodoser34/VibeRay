@@ -11,7 +11,7 @@ import { checkPhoto, preparePhoto } from '@/shared/lib/imageTools';
 import { Button } from '@/shared/ui/Button';
 import { CategoryIcon } from './CategoryIcon';
 import { format } from '@/shared/lib/format';
-import problemTexts from '@/texts/problems.json';
+import problemTexts from '@/texts/ru/problems.json';
 import styles from './ReportProblem.module.css';
 
 const texts = problemTexts.report;

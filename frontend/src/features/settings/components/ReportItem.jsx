@@ -3,9 +3,11 @@ import { CategoryIcon, StatusTimeline } from '@/features/problems';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
 import { useShare } from '@/shared/hooks/useShare';
+import { format } from '@/shared/lib/format';
 import { formatDate } from '@/shared/lib/formatDate';
 import { plural } from '@/shared/lib/plural';
-import texts from '@/texts/settings.json';
+import dictionaries from '@/texts/ru/dictionaries.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './ReportItem.module.css';
 
 const CITY = 'kostanay';
@@ -47,6 +49,13 @@ export function ReportItem({ problem, districtName, index, onOpen }) {
           </a>
         </h3>
         <p className={styles.text}>{problem.description}</p>
+        {problem.rejection_reason && (
+          <p className={styles.reason}>
+            {format(texts.reports.rejectedReason, {
+              reason: dictionaries.rejectionReasons[problem.rejection_reason],
+            })}
+          </p>
+        )}
         <div className={styles.timeline}>
           <StatusTimeline
             status={problem.status}

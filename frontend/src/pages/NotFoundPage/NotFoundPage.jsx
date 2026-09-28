@@ -5,7 +5,7 @@ import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/Button';
-import texts from '@/texts/notFound.json';
+import texts from '@/texts/ru/notFound.json';
 import { NotFoundMap } from './NotFoundMap';
 import styles from './NotFoundPage.module.css';
 

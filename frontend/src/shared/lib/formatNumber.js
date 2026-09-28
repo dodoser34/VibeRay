@@ -1,4 +1,6 @@
-const integerFormat = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 0 });
+import { getLocale } from './language';
+
+const integerFormat = new Intl.NumberFormat(getLocale(), { maximumFractionDigits: 0 });
 
 // 14000 → «14 000»
 export function formatNumber(value) {

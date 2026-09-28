@@ -1,0 +1,32 @@
+{
+  "api": {
+    "unauthorized": "Sign in to continue",
+    "invalid_period": "Unknown period",
+    "invalid_email": "Check your email",
+    "invalid_nickname": "Nickname: 3–24 characters — letters, digits and _",
+    "email_taken": "This email is already registered",
+    "weak_password": "The password isn't strong enough",
+    "nickname_taken": "This nickname is already taken",
+    "invalid_credentials": "Wrong email or password",
+    "wrong_password": "Wrong current password",
+    "city_not_found": "City not found",
+    "district_not_found": "District not found",
+    "invalid_mood": "Unknown mood",
+    "problem_not_found": "Problem not found",
+    "already_confirmed": "You've already confirmed this problem",
+    "own_problem": "This is your report — your neighbours can confirm it",
+    "invalid_category": "Choose the type of problem",
+    "outside_city": "The point must be inside the city's districts",
+    "invalid_description": "The description must be 10 to 1000 characters",
+    "too_many_photos": "No more than 3 photos",
+    "invalid_photo": "Photos: JPEG, PNG or WebP up to 10 MB",
+    "invalid_avatar": "Choose one of the ready-made avatars or upload a photo",
+    "invalid_topic": "Choose a topic",
+    "invalid_reply_email": "Check the email for our reply",
+    "invalid_message": "The message must be 10 to 2000 characters",
+    "too_many_files": "No more than 3 files",
+    "invalid_file": "Files: JPEG, PNG, WebP or PDF up to 10 MB",
+    "not_found": "Mock: no handler for {method} {path}",
+    "problem_rejected": "A moderator rejected this report — it can't be confirmed."
+  }
+}

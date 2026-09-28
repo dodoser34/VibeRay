@@ -6,7 +6,7 @@ import { STATS_PERIODS } from '@/shared/config/periods';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { format } from '@/shared/lib/format';
 import { formatTime } from '@/shared/lib/formatDate';
-import texts from '@/texts/map.json';
+import texts from '@/texts/ru/map.json';
 import { Button } from '@/shared/ui/Button';
 import styles from './MapFilters.module.css';
 

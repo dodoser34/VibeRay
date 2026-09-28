@@ -3,8 +3,8 @@ import { PasswordField } from '@/features/auth';
 import { deleteAccount } from '@/shared/api/endpoints/users';
 import { Button } from '@/shared/ui/Button';
 import { Modal } from '@/shared/ui/Modal';
-import auth from '@/texts/auth.json';
-import texts from '@/texts/settings.json';
+import auth from '@/texts/ru/auth.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './DeleteAccountDialog.module.css';
 
 // Удаление необратимо: пароль ещё раз, пока идёт запрос — диалог не закрыть.

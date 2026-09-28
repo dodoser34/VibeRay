@@ -1,7 +1,7 @@
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { format } from '@/shared/lib/format';
 import { percentOf } from '@/shared/lib/formatNumber';
-import texts from '@/texts/stats.json';
+import texts from '@/texts/ru/stats.json';
 import { Breakdown } from './Breakdown';
 
 export function StatusBreakdown({ byStatus, total, label = texts.statusesLabel }) {

@@ -1,3 +1,5 @@
+// Первым: язык интерфейса подставляется в тексты до того, как их прочитают остальные модули
+import '@/shared/lib/language';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router';

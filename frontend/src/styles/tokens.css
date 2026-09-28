@@ -64,6 +64,7 @@
   --status-confirmed: #a8742e;
   --status-in-progress: #8f7fb5;
   --status-resolved: #3e9160;
+  --status-rejected: #6f6a62; /* отклонена модератором: приглушённый серый, не тревожный */
 
   /* 3D-сцена */
   --scene-bg: #0b110d;
@@ -81,6 +82,11 @@
   --scene-window: #cdb27c;
   --scene-district-edge: #c8d3c4;
   --scene-street-on-district: #0b110d;
+  /* Схема дорог вокруг районов: магистрали светлее, дворовые проезды почти сливаются с землёй */
+  --scene-road-major: #3d4b41;
+  --scene-road: #24332a;
+  --scene-road-service: #1b271f;
+  --scene-rail: #55595a;
   --scene-dust: #7c8c7e;
 
   /* История «О проекте»: комната июльской ночи */

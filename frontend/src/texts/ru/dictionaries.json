@@ -30,7 +30,13 @@
     "new": "Новая",
     "confirmed": "Подтверждена",
     "in_progress": "В работе",
-    "resolved": "Решена"
+    "resolved": "Решена",
+    "rejected": "Отклонена"
+  },
+  "rejectionReasons": {
+    "spam": "Спам или реклама",
+    "duplicate": "Дубль — об этой проблеме уже сообщили",
+    "offtopic": "Не городская проблема"
   },
   "supportTopics": {
     "account": "Аккаунт",

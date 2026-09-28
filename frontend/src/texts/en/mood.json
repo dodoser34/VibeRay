@@ -1,0 +1,11 @@
+{
+  "picker": {
+    "title": "How are you feeling?",
+    "districtLabel": "District",
+    "chooseDistrictFirst": "Choose a district first",
+    "privacy": "Your mark is anonymous: the map only shows the district's overall mood. A new mark in the same district within 3 hours replaces the previous one."
+  },
+  "legendNoData": "Too few marks",
+  "noData": "No data",
+  "periodLabel": "Period"
+}

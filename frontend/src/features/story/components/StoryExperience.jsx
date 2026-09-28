@@ -8,7 +8,7 @@ import { StoryScene } from '../scene/StoryScene';
 import { StoryCalendar } from './StoryCalendar';
 import { StoryInterface } from './StoryInterface';
 import { StoryMoodCard } from './StoryMoodCard';
-import about from '@/texts/about.json';
+import about from '@/texts/ru/about.json';
 import styles from './StoryExperience.module.css';
 
 const CITY = 'kostanay';

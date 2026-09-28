@@ -3,8 +3,11 @@
 // каждая граница режется на дуги между узлами (точками, где меняется набор районов по обе стороны);
 // каждая дуга сглаживается один раз — Дуглас–Пекер убирает ступеньки, срезание углов Чайкина
 // скругляет остальное — и оба района получают ровно одну и ту же дугу.
+// Берега не сглаживаются: плитки вырезаны по воде OSM, и край у реки и озёр должен совпадать с водой.
 
 const METERS_PER_DEGREE = 111_320;
+const SHORE_M = 2;
+const SHORE_CELL_M = 200;
 
 const keyOf = ([lon, lat]) => `${lon.toFixed(7)},${lat.toFixed(7)}`;
 const edgeKey = (a, b) => (a < b ? `${a}|${b}` : `${b}|${a}`);
@@ -42,6 +45,44 @@ function douglasPeucker(points, tolerance, toMeters) {
   return points.filter((_, i) => keep[i]);
 }
 
+function distanceToSegment([px, py], [ax, ay], [bx, by]) {
+  const dx = bx - ax;
+  const dy = by - ay;
+  const t = Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy || 1)));
+  return Math.hypot(px - (ax + t * dx), py - (ay + t * dy));
+}
+
+// Проверка «точка лежит на берегу»: рёбра контуров воды разложены по ячейкам сетки.
+function shoreTest(water, toMeters) {
+  const cells = new Map();
+  const cellKey = (x, y) => `${Math.floor(x / SHORE_CELL_M)},${Math.floor(y / SHORE_CELL_M)}`;
+  water?.features.forEach(({ geometry }) => {
+    if (geometry.type !== 'Polygon') return;
+    geometry.coordinates.forEach((ring) => {
+      for (let i = 0; i < ring.length - 1; i++) {
+        const a = toMeters(ring[i]);
+        const b = toMeters(ring[i + 1]);
+        const x0 = Math.floor(Math.min(a[0], b[0]) / SHORE_CELL_M);
+        const x1 = Math.floor(Math.max(a[0], b[0]) / SHORE_CELL_M);
+        const y0 = Math.floor(Math.min(a[1], b[1]) / SHORE_CELL_M);
+        const y1 = Math.floor(Math.max(a[1], b[1]) / SHORE_CELL_M);
+        for (let x = x0; x <= x1; x++) {
+          for (let y = y0; y <= y1; y++) {
+            const key = `${x},${y}`;
+            if (!cells.has(key)) cells.set(key, []);
+            cells.get(key).push([a, b]);
+          }
+        }
+      }
+    });
+  });
+  return (point) => {
+    const p = toMeters(point);
+    const edges = cells.get(cellKey(p[0], p[1])) ?? [];
+    return edges.some(([a, b]) => distanceToSegment(p, a, b) < SHORE_M);
+  };
+}
+
 // Срезание углов с закреплёнными концами (концы общие с другими дугами).
 function chaikin(points, iterations) {
   let result = points;
@@ -59,7 +100,8 @@ function chaikin(points, iterations) {
   return result;
 }
 
-export function smoothBoundaries(collection, { tolerance = 16, iterations = 2 } = {}) {
+// water — FeatureCollection воды города: рёбра вдоль неё остаются как есть.
+export function smoothBoundaries(collection, { water, tolerance = 16, iterations = 2 } = {}) {
   const rings = [];
   collection.features.forEach((feature, f) =>
     feature.geometry.coordinates.forEach((polygon, p) =>
@@ -71,11 +113,13 @@ export function smoothBoundaries(collection, { tolerance = 16, iterations = 2 } 
   const lat = rings[0].points[0][1];
   const kx = METERS_PER_DEGREE * Math.cos((lat * Math.PI) / 180);
   const toMeters = ([lon, la]) => [lon * kx, la * METERS_PER_DEGREE];
+  const onShore = shoreTest(water, toMeters);
 
   // Какие кольца используют каждое ребро — граница двух районов используется обоими.
   const edgeRings = new Map();
   rings.forEach((ring, index) => {
     ring.keys = ring.points.map(keyOf);
+    ring.shore = ring.points.map(onShore);
     ring.keys.forEach((key, i) => {
       const edge = edgeKey(key, ring.keys[(i + 1) % ring.keys.length]);
       if (!edgeRings.has(edge)) edgeRings.set(edge, new Set());
@@ -84,12 +128,14 @@ export function smoothBoundaries(collection, { tolerance = 16, iterations = 2 } 
   });
   const sideOf = (ring, i) => {
     const n = ring.keys.length;
-    const edge = edgeKey(ring.keys[(i + n) % n], ring.keys[(i + 1 + n) % n]);
-    return [...edgeRings.get(edge)].sort().join(',');
+    const [a, b] = [(i + n) % n, (i + 1 + n) % n];
+    const shore = ring.shore[a] && ring.shore[b] ? '~' : '';
+    return [...edgeRings.get(edgeKey(ring.keys[a], ring.keys[b]))].sort().join(',') + shore;
   };
 
   const arcs = new Map(); // каноническая дуга → сглаженные точки в каноническом порядке
-  const smoothArc = (points, keys) => {
+  const smoothArc = (points, keys, shore) => {
+    if (shore) return points;
     const forward = keys.join(';');
     const backward = [...keys].reverse().join(';');
     const reversed = backward < forward;
@@ -119,6 +165,7 @@ export function smoothBoundaries(collection, { tolerance = 16, iterations = 2 } 
       const arc = smoothArc(
         indices.map((i) => ring.points[i]),
         indices.map((i) => ring.keys[i]),
+        sideOf(ring, start).endsWith('~'),
       );
       out.push(...arc.slice(0, -1));
     });

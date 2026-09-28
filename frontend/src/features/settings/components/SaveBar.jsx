@@ -1,5 +1,5 @@
 import { Button } from '@/shared/ui/Button';
-import texts from '@/texts/settings.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './SaveBar.module.css';
 
 // Кнопки формы раздела и итог сохранения. Пока ничего не изменено, сохранять нечего.

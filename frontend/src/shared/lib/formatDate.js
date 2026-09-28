@@ -1,21 +1,22 @@
-import common from '@/texts/common.json';
+import common from '@/texts/ru/common.json';
 import { format } from './format';
+import { getLocale } from './language';
 
-const timeFormat = new Intl.DateTimeFormat('ru-RU', { hour: '2-digit', minute: '2-digit' });
-const dateFormat = new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'short' });
-const longDateFormat = new Intl.DateTimeFormat('ru-RU', {
+const timeFormat = new Intl.DateTimeFormat(getLocale(), { hour: '2-digit', minute: '2-digit' });
+const dateFormat = new Intl.DateTimeFormat(getLocale(), { day: 'numeric', month: 'short' });
+const longDateFormat = new Intl.DateTimeFormat(getLocale(), {
   weekday: 'short',
   day: 'numeric',
   month: 'long',
 });
-const fullDateFormat = new Intl.DateTimeFormat('ru-RU', {
+const fullDateFormat = new Intl.DateTimeFormat(getLocale(), {
   day: 'numeric',
   month: 'long',
   year: 'numeric',
 });
-const weekdayFormat = new Intl.DateTimeFormat('ru-RU', { weekday: 'short' });
-const monthFormat = new Intl.DateTimeFormat('ru-RU', { month: 'short' });
-const monthNameFormat = new Intl.DateTimeFormat('ru-RU', { month: 'long' });
+const weekdayFormat = new Intl.DateTimeFormat(getLocale(), { weekday: 'short' });
+const monthFormat = new Intl.DateTimeFormat(getLocale(), { month: 'short' });
+const monthNameFormat = new Intl.DateTimeFormat(getLocale(), { month: 'long' });
 
 const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
 

@@ -1,7 +1,7 @@
-import about from '@/texts/about.json';
+import about from '@/texts/ru/about.json';
 
 // История идеи для страницы «О проекте». Одна глава = CHAPTER единиц шкалы = один экран прокрутки.
-// Тексты лежат в src/texts/about.json; здесь — только порядок глав.
+// Тексты лежат в src/texts/{ru,en}/about.json; здесь — только порядок глав.
 export const CHAPTER = 10;
 
 const CHAPTER_IDS = [

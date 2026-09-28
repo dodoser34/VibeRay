@@ -12,7 +12,7 @@ import { HelpCategories } from './HelpCategories';
 import { HelpSearch } from './HelpSearch';
 import { ServiceStatus } from './ServiceStatus';
 import { SupportRequestForm } from './SupportRequestForm';
-import texts from '@/texts/support.json';
+import texts from '@/texts/ru/support.json';
 import styles from './SupportCenter.module.css';
 
 const LINKS = [

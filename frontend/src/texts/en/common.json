@@ -1,0 +1,25 @@
+{
+  "close": "Close",
+  "time": {
+    "justNow": "just now",
+    "minutesAgo": "{minutes} min ago",
+    "hoursAgo": "{hours} h ago"
+  },
+  "photo": {
+    "wrongType": "Only JPEG, PNG or WebP will do",
+    "tooBig": "The photo is larger than 10 MB",
+    "processFailed": "Couldn't process the photo"
+  },
+  "serverUnavailable": "The server is unavailable, please try again later",
+  "language": {
+    "label": "Interface language",
+    "names": {
+      "ru": "Русский",
+      "en": "English"
+    },
+    "short": {
+      "ru": "RU",
+      "en": "EN"
+    }
+  }
+}

@@ -1,24 +1,27 @@
 import { useState } from 'react';
-import { useHref } from 'react-router';
+import { useHref, useNavigate } from 'react-router';
 import { confirmProblem } from '@/shared/api/endpoints/problems';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
-import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
+import { REJECTED_STATUS, STATUS_BY_CODE } from '@/shared/config/problemStatuses';
 import { useShare } from '@/shared/hooks/useShare';
 import { format } from '@/shared/lib/format';
 import { formatDate } from '@/shared/lib/formatDate';
 import { plural } from '@/shared/lib/plural';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Button } from '@/shared/ui/Button';
+import dictionaries from '@/texts/ru/dictionaries.json';
 import { CategoryIcon } from './CategoryIcon';
 import { StatusChip } from './StatusChip';
 import { StatusTimeline } from './StatusTimeline';
-import problemTexts from '@/texts/problems.json';
+import problemTexts from '@/texts/ru/problems.json';
 import styles from './ProblemCard.module.css';
 
 const texts = problemTexts.card;
 
 // Карточка проблемы на карте. У неё свой адрес (/map/:city/problem/:id) — им можно поделиться,
 // чтобы соседи подтвердили. Своё сообщение подтвердить нельзя, уже подтверждённое — второй раз тоже.
+// Отклонённое модератором сообщение открывает только автор: вместо подтверждения — причина и, для
+// дубля, ссылка на исходную проблему.
 export function ProblemCard({
   problem,
   citySlug,
@@ -32,6 +35,8 @@ export function ProblemCard({
   const [message, setMessage] = useState('');
   const { state: shareState, share } = useShare();
   const href = useHref(`/map/${citySlug}/problem/${problem.id}`);
+  const navigate = useNavigate();
+  const rejected = problem.status === REJECTED_STATUS.code;
   const category = CATEGORY_BY_CODE[problem.category].label;
 
   const handleConfirm = async () => {
@@ -144,7 +149,24 @@ export function ProblemCard({
         </span>
       </footer>
 
-      {problem.is_mine ? (
+      {rejected ? (
+        <section className={styles.rejected} aria-label={texts.rejectedTitle}>
+          <h4 className={styles.rejectedTitle}>{texts.rejectedTitle}</h4>
+          <p className={styles.rejectedReason}>
+            {dictionaries.rejectionReasons[problem.rejection_reason]}
+          </p>
+          <p className={styles.rejectedNote}>{texts.rejectedNote}</p>
+          {problem.duplicate_of && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => navigate(`/map/${citySlug}/problem/${problem.duplicate_of}`)}
+            >
+              {texts.openOriginal}
+            </Button>
+          )}
+        </section>
+      ) : problem.is_mine ? (
         <p className={styles.note}>{texts.mineNote}</p>
       ) : (
         <Button

@@ -1,4 +1,5 @@
-import common from '@/texts/common.json';
+import { getLanguage } from '@/shared/lib/language';
+import common from '@/texts/ru/common.json';
 
 // Демо-режим (по умолчанию, в том числе на GitHub Pages): запросы обслуживает фейковый API из
 // src/data/api — бэкенд не нужен. С бэкендом: VITE_USE_MOCKS=false в frontend/.env, запросы идут на
@@ -23,7 +24,7 @@ export class ApiError extends Error {
 export async function request(method, path, { body, query } = {}) {
   if (USE_MOCKS) {
     const { handleMock } = await import('@/data/api/handler.js');
-    return handleMock(method, path, { body, query, token: accessToken });
+    return handleMock(method, path, { body, query, token: accessToken, language: getLanguage() });
   }
 
   const url = new URL(API_PREFIX + path, window.location.origin);
@@ -36,6 +37,7 @@ export async function request(method, path, { body, query } = {}) {
     method,
     credentials: 'include',
     headers: {
+      'Accept-Language': getLanguage(),
       ...(body && !isForm ? { 'Content-Type': 'application/json' } : {}),
       ...(accessToken ? { Authorization: `Bearer ${accessToken}` } : {}),
     },

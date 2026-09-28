@@ -1,5 +1,5 @@
 import { MOOD_BY_CODE } from '@/shared/config/moods';
-import texts from '@/texts/mood.json';
+import texts from '@/texts/ru/mood.json';
 import styles from './MoodFace.module.css';
 
 const MOUTHS = {

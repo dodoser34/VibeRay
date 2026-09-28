@@ -26,6 +26,7 @@
     "invalid_message": "Сообщение — от 10 до 2000 символов",
     "too_many_files": "Не больше 3 файлов",
     "invalid_file": "Файлы: JPEG, PNG, WebP или PDF до 10 МБ",
-    "not_found": "Mock: нет обработчика для {method} {path}"
+    "not_found": "Mock: нет обработчика для {method} {path}",
+    "problem_rejected": "Это сообщение отклонено модератором — подтвердить его нельзя."
   }
 }

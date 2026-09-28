@@ -1,6 +1,6 @@
-import support from '@/texts/support.json';
+import support from '@/texts/ru/support.json';
 
-// Содержимое помощи. Тексты (вопросы, ответы, темы) лежат в src/texts/support.json; ответы следуют
+// Содержимое помощи. Тексты (вопросы, ответы, темы) лежат в src/texts/{ru,en}/support.json; ответы следуют
 // правилам продукта из ARCHITECTURE.md (разделы 5–8) — меняйте их вместе с правилами.
 
 export const POPULAR_QUERIES = support.popularQueries;

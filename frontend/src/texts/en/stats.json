@@ -1,0 +1,152 @@
+{
+  "periods": {
+    "day": "over the last day",
+    "week": "over the last week",
+    "month": "over the last month",
+    "year": "over the last year",
+    "all": "over all years"
+  },
+  "marks": ["mark", "marks", "marks"],
+  "fewMarks": "Not enough marks yet",
+  "fewMarksNote": "The mood appears after 5 marks — that's how we protect residents' privacy.",
+  "moodMeta": "{count} {marks} {period} · mostly “{mood}”",
+  "distributionLabel": "Mood distribution",
+  "kicker": "Kostanay district",
+  "close": "Close district",
+  "loading": "Loading",
+  "tiles": {
+    "active": "active problems",
+    "new": "new {period}",
+    "resolved": "resolved"
+  },
+  "dynamics": "Trends {period}",
+  "chartLabel": "Mood and new problems {period}",
+  "chartLegend": {
+    "mood": "mood",
+    "problems": "new problems"
+  },
+  "topCategories": "Main problems",
+  "recent": "Latest reports",
+  "markMood": "Mark your mood",
+  "reportProblem": "Report a problem",
+  "facts": {
+    "area": "≈ {area} km²",
+    "areaTitle": "District area",
+    "rank": "{rank} of {total} by mood",
+    "rankTitle": "Rank among the city's districts"
+  },
+  "compare": {
+    "above": "Above the city average by {delta}",
+    "below": "Below the city average by {delta}",
+    "same": "On par with the city average"
+  },
+  "trend": {
+    "up": "↑ {delta} {period}",
+    "down": "↓ {delta} {period}",
+    "flat": "no change {period}",
+    "title": "How the mood changed"
+  },
+  "distributionTitle": "What the mood is made of",
+  "share": "{percent}%",
+  "tilesTotal": "reports in total",
+  "statusesTitle": "Problem statuses",
+  "statusesLabel": "District problems by status",
+  "categoryShare": "{count} · {percent}%",
+  "noProblems": "No problems have been reported in this district yet.",
+  "chartHint": "Hover over or tap the chart",
+  "chart": {
+    "mood": "Mood {score} · {mood}",
+    "hidden": "Mood hidden: fewer than 5 marks",
+    "marks": "{count} {marks}",
+    "problems": "{count} {problems}",
+    "problemForms": ["new problem", "new problems", "new problems"]
+  },
+  "dashboard": {
+    "kicker": "Statistics · {city}",
+    "title": "How the city lived {period}",
+    "since": "Data since {date}",
+    "kpi": {
+      "mood": "The city's average mood is “{mood}”",
+      "marks": "mood marks",
+      "reported": "problem reports",
+      "resolved": "problems resolved",
+      "trend": {
+        "up": "↑ {delta} over the period",
+        "down": "↓ {delta} over the period",
+        "flat": "no noticeable change"
+      }
+    },
+    "yearsTitle": "By year",
+    "districtsTitle": "Districts",
+    "districtsHint": "Click a column heading to sort, or a row to show the district on the map.",
+    "categoriesTitle": "Problem categories",
+    "privacy": "Individual marks are never shown to anyone: only district and city averages, and only when there are at least 5 marks.",
+    "statusesLabel": "City problems by status",
+    "close": "Close city statistics"
+  },
+  "table": {
+    "caption": "City districts: mood, trend and problems for the period",
+    "columns": {
+      "rank": "Rank",
+      "name": "District",
+      "mood": "Mood",
+      "trend": "Trend",
+      "problems": "Problems",
+      "resolved": "Resolved"
+    },
+    "marks": "{count} {marks}",
+    "open": "Open district →",
+    "noData": "—",
+    "fewMarks": "Too few marks: mood hidden",
+    "trend": {
+      "up": "↑ {delta}",
+      "down": "↓ {delta}",
+      "flat": "≈ 0"
+    }
+  },
+  "years": {
+    "caption": "City statistics by year",
+    "columns": {
+      "year": "Year",
+      "mood": "Mood",
+      "marks": "Marks",
+      "problems": "Problems"
+    },
+    "current": "in progress"
+  },
+  "metrics": {
+    "mood": {
+      "low": "−2 · worse",
+      "high": "better · +2",
+      "note": "District colour: average mood {period}."
+    },
+    "problems": {
+      "low": "{min} · fewest",
+      "high": "most · {max}",
+      "note": "District colour: how many problems were reported {period}, compared with other districts."
+    },
+    "noData": "Too few marks — mood hidden",
+    "height": "Height: number of marks."
+  },
+  "districtCompare": {
+    "title": "Compare districts",
+    "hint": "Choose two districts to see their mood for the period on one chart and how their problems differ.",
+    "pickA": "First district",
+    "pickB": "Second district",
+    "swap": "Swap districts",
+    "loading": "Calculating…",
+    "marks": "{count} {marks}",
+    "reported": "{count} {problems}",
+    "problemForms": ["report", "reports", "reports"],
+    "better": "{district} is calmer by {delta}",
+    "equal": "The districts are doing about the same",
+    "fewMarks": "Too few marks to compare the mood",
+    "chartTitle": "Mood {period}",
+    "chartLabel": "Mood of two districts {period}",
+    "categoriesTitle": "Problems by category",
+    "categoriesLabel": "How many problem reports of each category the two districts have",
+    "noProblems": "Neither district had any problem reports for the period.",
+    "tooltipValue": "{district}: {score}",
+    "tooltipHidden": "{district}: too few marks"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "kicker": "Error 404",
+  "title": "This district isn't on the map yet",
+  "lead": "The link leads to where the map runs out: there is no such page, or the address has a typo.",
+  "pathLabel": "Address",
+  "openMap": "Open the city map",
+  "home": "Home",
+  "support": "Think there should be a page here?",
+  "supportLink": "Write to us",
+  "artLabel": "A folded paper map: at its edge, an unmapped district and a pin with a question mark"
+}

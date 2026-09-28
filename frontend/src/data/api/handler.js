@@ -44,8 +44,8 @@ import {
 } from './community';
 import { format } from '@/shared/lib/format';
 import demoAccounts from '../accounts.json';
-import demo from '../content.json';
-import errors from '@/texts/errors.json';
+import { demoContent, localizeDemo, nameOf, setResponseLanguage } from './locale';
+import errors from '@/texts/ru/errors.json';
 
 const accounts = new Map(
   demoAccounts.map(({ password, user }) => [user.email, { password, user }]),
@@ -58,7 +58,7 @@ const MAP_RECENT_MS = 30 * 24 * 3_600_000; // решённые проблемы 
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// Сообщения берутся из src/texts/errors.json по ключу (ключ — код ошибки, если не задан другой).
+// Сообщения берутся из src/texts/{ru,en}/errors.json по ключу (ключ — код ошибки, если не задан другой).
 function fail(status, code, messageKey = code, values = {}) {
   throw new ApiError(status, code, format(errors.api[messageKey], values));
 }
@@ -98,9 +98,13 @@ function viewOf(problem, token) {
   };
 }
 
-function findProblem(id) {
+// Отклонённое модератором сообщение существует только для автора: остальным — 404.
+function findProblem(id, token) {
   const problem = problems.find((p) => p.id === id);
-  if (!problem) fail(404, 'problem_not_found');
+  const email = sessions.get(token);
+  const user = email && accounts.get(email)?.user;
+  const hidden = problem?.status === 'rejected' && !(user && isAuthor(problem, user));
+  if (!problem || hidden) fail(404, 'problem_not_found');
   return problem;
 }
 
@@ -228,7 +232,17 @@ const routes = [
     /^\/cities\/([\w-]+)$/,
     ({ params }) => {
       if (params[0] !== city.slug) fail(404, 'city_not_found');
-      return city;
+      return {
+        ...city,
+        name: nameOf(city),
+        districts: {
+          ...city.districts,
+          features: city.districts.features.map((feature) => ({
+            ...feature,
+            properties: { ...feature.properties, name: nameOf(feature.properties) },
+          })),
+        },
+      };
     },
   ],
   ['GET', /^\/cities\/([\w-]+)\/moods$/, ({ query }) => cityMoods(checkPeriod(query.period))],
@@ -264,8 +278,9 @@ const routes = [
     /^\/problems\/([\w-]+)\/confirm$/,
     ({ params, token }) => {
       const user = currentUser(token);
-      const problem = findProblem(params[0]);
+      const problem = findProblem(params[0], token);
       if (isAuthor(problem, user)) fail(409, 'own_problem');
+      if (problem.status === 'rejected') fail(409, 'problem_rejected');
       const confirmedBy = confirmations.get(problem.id) ?? new Set();
       if (confirmedBy.has(user.id)) fail(409, 'already_confirmed');
       confirmedBy.add(user.id);
@@ -344,21 +359,25 @@ const routes = [
     /^\/status$/,
     () => ({
       checked_at: new Date().toISOString(),
-      services: [
-        { code: 'site', label: demo.services.site, state: 'operational' },
-        { code: 'map', label: demo.services.map, state: 'operational' },
-        { code: 'auth', label: demo.services.auth, state: 'operational' },
-        { code: 'support', label: demo.services.support, state: 'operational' },
-      ],
+      services: ['site', 'map', 'auth', 'support'].map((code) => ({
+        code,
+        label: demoContent().services[code],
+        state: 'operational',
+      })),
     }),
   ],
-  ['GET', /^\/problems\/([\w-]+)$/, ({ params, token }) => viewOf(findProblem(params[0]), token)],
+  [
+    'GET',
+    /^\/problems\/([\w-]+)$/,
+    ({ params, token }) => viewOf(findProblem(params[0], token), token),
+  ],
   [
     'GET',
     /^\/problems$/,
     ({ query }) =>
       problems.filter(
         (p) =>
+          p.status !== 'rejected' &&
           (!query.district || p.district === query.district) &&
           (!query.category || p.category === query.category) &&
           (query.status
@@ -369,11 +388,14 @@ const routes = [
   ],
 ];
 
-export async function handleMock(method, path, { body, query = {}, token }) {
+export async function handleMock(method, path, { body, query = {}, token, language }) {
   await wait(250 + Math.random() * 350);
+  setResponseLanguage(language);
   for (const [routeMethod, pattern, handler] of routes) {
     const match = method === routeMethod && path.match(pattern);
-    if (match) return structuredClone(handler({ params: match.slice(1), body, query, token }));
+    if (match) {
+      return localizeDemo(structuredClone(handler({ params: match.slice(1), body, query, token })));
+    }
   }
   return fail(404, 'not_found', 'not_found', { method, path });
 }

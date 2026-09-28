@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Button } from '@/shared/ui/Button';
+import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
 import { DeleteAccountDialog } from './DeleteAccountDialog';
 import { SettingsSection } from './SettingsSection';
-import texts from '@/texts/settings.json';
+import texts from '@/texts/ru/settings.json';
 import styles from './AccountSection.module.css';
 
 // onLogout и onDeleted решает страница: сначала уводит с настроек, потом закрывает сессию.
@@ -18,6 +19,13 @@ export function AccountSection({ id, onLogout, onDeleted }) {
   return (
     <SettingsSection id={id} title={texts.sections.account} lead={texts.account.lead}>
       <div className={styles.rows} data-ui="settings-account">
+        <div className={styles.row}>
+          <div className={styles.text}>
+            <h3 className={styles.rowTitle}>{texts.account.languageTitle}</h3>
+            <p className={styles.rowText}>{texts.account.languageText}</p>
+          </div>
+          <LanguageSwitch full />
+        </div>
         <div className={styles.row}>
           <div className={styles.text}>
             <h3 className={styles.rowTitle}>{texts.account.logoutTitle}</h3>

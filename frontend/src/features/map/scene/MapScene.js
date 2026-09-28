@@ -97,6 +97,7 @@ export class MapScene {
     this.viewInset = 0;
     this.runtime.onResize((width, height) => {
       this.districts?.setResolution(width, height);
+      this.backdrop?.setResolution(width, height);
       this.labelRenderer.setSize(width, height);
       this.setViewInset(this.viewInset);
       this.updateHome();
@@ -142,6 +143,7 @@ export class MapScene {
     this.runtime.scene.add(this.backdrop.group, this.districts.group, this.problems.group);
     const { width, height } = this.runtime.size;
     this.districts.setResolution(width, height);
+    this.backdrop.setResolution(width, height);
     this.createLabels(city.districts.features);
 
     const box = new THREE.Box3().setFromObject(this.districts.group);
