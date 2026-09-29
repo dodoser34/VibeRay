@@ -1,6 +1,6 @@
-import districtsRaw from '../cities/kostanay/districts.geojson?raw';
-import waterRaw from '../cities/kostanay/water.geojson?raw';
-import streetsRaw from '../cities/kostanay/streets.geojson?raw';
+import districtsGeo from '../cities/kostanay/districts.geojson';
+import water from '../cities/kostanay/water.geojson';
+import streets from '../cities/kostanay/streets.geojson';
 import cityInfo from '../cities/kostanay/city.json';
 import { MOODS, MOOD_BY_CODE } from '@/shared/config/moods';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
@@ -15,8 +15,6 @@ const YEAR = 365.25 * DAY;
 const MIN_SAMPLE = 5; // порог приватности, ARCHITECTURE.md 6.1
 // Демо-история: город в VibeRay с января 2023 года.
 const HISTORY_START = new Date(2023, 0, 1).getTime();
-
-const districtsGeo = JSON.parse(districtsRaw);
 
 const BASE_SCORE = {
   center: 0.9,
@@ -61,8 +59,8 @@ export const city = {
   bbox: cityInfo.bbox,
   timezone: cityInfo.timezone,
   // Слои OpenStreetMap (ODbL): реки и водоёмы, улицы с привязкой к району.
-  water: JSON.parse(waterRaw),
-  streets: JSON.parse(streetsRaw),
+  water,
+  streets,
   districts: {
     type: 'FeatureCollection',
     features: districtsGeo.features.map((feature) => ({
@@ -81,7 +79,7 @@ function clamp(value, min, max) {
 const round2 = (value) => Math.round(value * 100) / 100;
 
 // [start, end) каждого интервала, от старых к новым. Часы и дни выровнены по часам (последний
-// интервал — текущий, незавершённый); месяцы — календарные (как date_trunc в SQL).
+// интервал — текущий, незавершённый); месяцы — календарные.
 function bucketsFor(period, now = Date.now()) {
   const cfg = PERIODS[period];
   if (cfg.unit !== 'month') {
@@ -427,7 +425,7 @@ export function isDistrict(slug) {
   return districtSlugs.includes(slug);
 }
 
-// Район, в который попадает точка (на сервере это PostGIS ST_Contains).
+// Район, в который попадает точка (на сервере — та же проверка «точка внутри полигона района»).
 export function districtAt(location) {
   const feature = city.districts.features.find((f) =>
     f.geometry.coordinates.some((polygon) => pointInPolygon(location, polygon)),

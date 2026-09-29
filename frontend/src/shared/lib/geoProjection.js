@@ -16,7 +16,7 @@ export function createUnprojection([centerLon, centerLat]) {
   return ([x, y]) => [centerLon + (x * 1000) / kx, centerLat + (y * 1000) / METERS_PER_DEGREE];
 }
 
-export function pointInRing([x, y], ring) {
+function pointInRing([x, y], ring) {
   let inside = false;
   for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
     const [xi, yi] = ring[i];

@@ -4,7 +4,7 @@
 Документ живой: при любом изменении структуры, данных, API или ключевых решений он обновляется в том же изменении.
 Журнал решений — [docs/DECISIONS.md](docs/DECISIONS.md), журнал изменений — [docs/CHANGELOG.md](docs/CHANGELOG.md).
 
-**Последнее обновление:** 2026-09-27 · **Статус:** фронтенд — главный экран, авторизация, 3D-карта, «О проекте», поддержка и переходы между страницами работают в демо-режиме на данных из `frontend/src/data` (раздел 7.1) и публикуются на GitHub Pages (7.2); бэкенда пока нет.
+**Последнее обновление:** 2026-09-27 · **Статус:** фронтенд — главный экран, авторизация, 3D-карта, «О проекте», поддержка и переходы между страницами работают в демо-режиме на данных из `frontend/src/demo-data` (раздел 7.1) и публикуются на GitHub Pages (7.2); бэкенда пока нет.
 
 ---
 
@@ -22,16 +22,17 @@
                                        │ HTTPS, JSON, /api/v1
 ┌──────────────────────────────────────▼──────────────────────────┐
 │  FastAPI                                                        │
-│   api/v1 (роутеры) → services (логика) → models (SQLAlchemy)    │
+│   api/v1 (роутеры) → services (логика) → models (данные)        │
 │   media/ (фото проблем, аватары — без EXIF)                     │
 └──────────────────────────────────────┬──────────────────────────┘
                                        │
-                         PostgreSQL 16 + PostGIS
+                  База данных — ещё не выбрана
 ```
 
 - Фронтенд — SPA. Карта рисуется полностью на Three.js из GeoJSON районов (без тайловых картографических сервисов).
 - Бэкенд — REST API без состояния; авторизация через JWT.
-- Геометрия и геозапросы (в каком районе точка, проблемы в области) — на стороне PostGIS.
+- Геометрия и геозапросы (в каком районе точка, проблемы в области) — на стороне сервера. **База данных пока
+  не выбрана** (выбор пользователя): модель данных ниже — логическая, без привязки к конкретной СУБД.
 
 ---
 
@@ -59,9 +60,9 @@
 
 ```
 VibeRay/
+├── README.md                          # главный README: что это, что используется и где, как запустить
 ├── CLAUDE.md
 ├── ARCHITECTURE.md
-├── docker-compose.yml                 # db: postgis/postgis:16
 ├── .gitignore
 │
 ├── docs/
@@ -76,18 +77,20 @@ VibeRay/
 ├── frontend/
 │   ├── index.html
 │   ├── package.json
-│   ├── vite.config.js                 # алиас @, base из VITE_BASE (подпапка GitHub Pages), proxy /api → localhost:8000
+│   ├── vite.config.js                 # алиас @, base из VITE_BASE (подпапка GitHub Pages), proxy /api → localhost:8000,
+│   │                                  #   плагин geojson (геоданные сжимаются при сборке)
 │   ├── eslint.config.js
-│   ├── .prettierrc
+│   ├── .prettierrc                    # Prettier; .geojson читается как JSON
 │   ├── public/
 │   │   ├── favicon.svg
 │   │   └── models/story-room.glb      # комната истории «О проекте» (экспорт из Blender)
 │   └── src/
 │       ├── main.jsx                   # точка входа: AuthProvider + RouterProvider
-│       ├── data/                      # ВСЕ демо-данные для работы без бэкенда (data/README.md, раздел 7.1):
+│       ├── demo-data/                 # ВСЕ демо-данные для работы без бэкенда (demo-data/README.md, раздел 7.1):
 │       │                              #   cities/kostanay (снимок OSM), accounts.json (демо-вход), content.json,
 │       │                              #   api/handler.js (фейковый API), api/generate.js (демо-статистика),
-│       │                              #   api/community.js (авторы, история статусов, уведомления, «соседи» в демо)
+│       │                              #   api/community.js (авторы, история статусов, уведомления, «соседи» и модерация в демо),
+│       │                              #   api/locale.js (язык ответа: названия районов, подписи, тексты демо-проблем)
 │       ├── adaptations/               # адаптации под устройства (раздел 9.1, adaptations/README.md):
 │       │                              #   core/ (брейкпоинты, useViewport, качество 3D, rootScale),
 │       │                              #   desktop/{full-hd,2k,4k}/, tablet/, touch/, mobile/ — только отличия;
@@ -99,12 +102,15 @@ VibeRay/
 │       │   ├── inputModality.js       # html[data-input]: рамка фокуса только для клавиатуры
 │       │   ├── layout/TabBar.jsx      # плавающий таб-бар (планшет и десктоп)
 │       │   ├── layout/AnimatedBackground.jsx # живой фон сайта под всеми страницами (кроме карты)
-│       │   └── transitions/           # навигация с переходом «бумажная карта» и анимацией выхода страницы
+│       │   └── transitions/           # навигация с переходом «бумажная карта» и анимацией выхода страницы:
+│       │                              #   TransitionProvider, TransitionContext, useTransition.js (useTransitionNavigate,
+│       │                              #   usePageNavigate, useNavigationInterceptor, useTransitionReady)
 │       ├── pages/
 │       │   ├── HomePage/              # сцена + передний слой + панель входа, скролл-полёт в карту
 │       │   ├── MapPage/               # карта: боковые панели или шторка (телефон, планшет стоя),
 │       │   │                          #   MapFilters — фильтры для левой панели, строки планшета и шторки;
-│       │   │                          #   PanelToggle — язычок, прячущий боковую панель за край экрана
+│       │   │                          #   PanelToggle — язычок, прячущий боковую панель за край экрана; heightScale.js — пределы
+│       │   │                          #   множителя высоты районов (ползунок в фильтрах)
 │       │   ├── AboutPage/             # история идеи (StoryExperience) + «Как это работает» (StoryGuide)
 │       │   ├── SettingsPage/          # настройки профиля: гость → /login, районы для «своего района», выход/удаление
 │       │   ├── NotFoundPage/          # 404: иллюстрация «бумажная карта с неразмеченным районом» (NotFoundMap)
@@ -112,13 +118,16 @@ VibeRay/
 │       ├── features/
 │       │   ├── auth/
 │       │   │   ├── model/             # AuthContext, AuthProvider, useAuth
-│       │   │   └── components/        # AuthPanel, LoginForm, RegisterFlow, PasswordField, PasswordStrength
+│       │   │   └── components/        # AuthPanel, LoginForm, RegisterFlow, PasswordField, PasswordStrength;
+│       │   │                          #   PassForms.module.css — общие стили форм входа и регистрации на карточке-пропуске
 │       │   ├── hero/
 │       │   │   ├── scene/             # HeroScene.js — 3D-город главного экрана
+│       │   │   ├── lib/               # sheetTexture.js — текстура переднего листа (стилизованный план города)
 │       │   │   └── components/        # HeroCanvas.jsx, FrontLayer.jsx (передний слой с S-краем)
 │       │   ├── notifications/         # уведомления: NotificationsProvider (опрос), NotificationBell (таб-бар),
-│       │   │                          #   NotificationsPanel + NotificationList (панель и шторка телефона)
-│       │   ├── settings/              # настройки профиля: SettingsCenter (навигация по разделам) и разделы ProfileSection
+│       │   │                          #   NotificationsPanel + NotificationList (панель и шторка телефона); model/ NotificationsProvider,
+│       │                              #   NotificationsContext, useNotifications
+│       │   ├── settings/              # настройки профиля: SettingsCenter (навигация по разделам), SettingsSection (рамка раздела) и разделы ProfileSection
 │       │   │                          #   (+ AvatarPicker), MyReportsSection (+ ReportItem), DistrictSection, SecuritySection, AccountSection (+ DeleteAccountDialog);
 │       │   │                          #   SaveBar — «Сохранить / Отменить» и итог; hooks/useSaveAction
 │       │   ├── support/               # центр поддержки: content.js (категории, FAQ), lib/searchHelp.js (поиск по ответам),
@@ -144,6 +153,7 @@ VibeRay/
 │       │   │   │   ├── ClusterLabels.js   # значки кластеров: число и кольцо статусов, клик — приближение
 │       │   │   │   ├── dayCycle.js        # свет по времени суток: цвет, сила, направление, фон, окна
 │       │   │   │   ├── CityBackdrop.js    # улицы OSM вокруг районов, Тобол и водоёмы
+│       │   │   │   ├── roadStyles.js      # классы дорог схемы (толщина, цвет) и построение их линий
 │       │   │   │   ├── Picker.js          # raycasting: hover/click + точка попадания
 │       │   │   │   ├── PlacementMarker.js # пин новой проблемы: «призрак» под курсором и выбранная точка
 │       │   │   │   ├── cameraRig.js       # OrbitControls + перелёты камеры через GSAP
@@ -155,7 +165,7 @@ VibeRay/
 │       │   ├── problems/              # ProblemCard (ссылка «Поделиться»), StatusTimeline (путь статусов с датами),
 │       │   │                          #   ProblemListItem, StatusChip, ReportProblem, CategoryIcon
 │       │   └── stats/                 # статистика: DistrictPanel (карточка района), CityDashboard (дашборд города:
-│       │                              #   KPI, MoodChart, YearsTable, DistrictTable, категории, статусы), MetricLegend,
+│       │                              #   KPI, MoodChart, YearsTable, DistrictTable, DistrictCompare, категории, статусы), MetricLegend,
 │       │                              #   Breakdown / MoodDistribution / StatusBreakdown, hooks/ useDistrictStats, useCityStats,
 │       │                              #   lib/ seriesLabels (подписи осей, группировка по годам), mapOverlay (показатель → цвет района)
 │       ├── shared/
@@ -174,7 +184,8 @@ VibeRay/
 │       │   ├── hooks/                 # useRequest, useReducedMotion, usePageEntered, useElementWidth, useRevealed, useShare,
 │       │   │                          #   useLanguage (текущий язык, перерисовка при смене)
 │       │   ├── lib/                   # geoProjection, cssVar, format ({name} в текстах), formatDate, formatNumber, plural, random,
-│       │   │                          #   cityTime (время по часовому поясу города), localFlag (флаги в localStorage),
+│       │   │                          #   cityTime (время по часовому поясу города), localFlag (флаги и числа в localStorage),
+│       │   │                          #   smoothBoundaries (сглаживание контуров районов, кроме берегов),
 │       │   │                          #   language (язык интерфейса: тексты нужного языка на месте, локаль, смена на лету),
 │       │   │                          #   passwordStrength, imageTools
 │       │   └── config/                # moods, periods, problemCategories, problemStatuses, support, validation,
@@ -191,16 +202,14 @@ VibeRay/
 │
 └── backend/
     ├── scripts/build_streets.py       # схема дорог города из OSM (Overpass) → streets.geojson для бэкенда и демо
-    ├── pyproject.toml
-    ├── alembic.ini
+    ├── requirements.txt           # зависимости API (версии закреплены)
+    ├── requirements-dev.txt       # + тесты и линтер: pytest, pytest-asyncio, httpx, ruff
     ├── .env.example
-    ├── alembic/
-    │   └── versions/
     ├── app/
     │   ├── main.py                    # создание FastAPI, CORS, подключение роутеров, static /media
     │   ├── core/
     │   │   ├── config.py              # Settings (pydantic-settings)
-    │   │   ├── database.py            # async engine, sessionmaker
+    │   │   ├── database.py            # подключение к БД (после выбора БД)
     │   │   ├── security.py            # argon2, выпуск/проверка JWT
     │   │   └── deps.py                # get_db, get_current_user, require_role
     │   ├── models/
@@ -232,7 +241,7 @@ VibeRay/
     │   └── cities/
     │       └── kostanay/
     │           ├── city.json          # название, центр, bbox, описание источника районов
-    │           ├── districts.geojson  # 15 районов из OSM (EPSG:4326): slug, name, palette 1–12
+    │           ├── districts.geojson  # 18 районов из OSM (EPSG:4326): slug, name, name_en, palette 1–12
     │           ├── water.geojson      # Тобол и водоёмы (OSM, ODbL)
     │           └── streets.geojson    # улицы (OSM, ODbL), у каждой — район или null
     ├── media/                         # загрузки (в .gitignore)
@@ -241,9 +250,10 @@ VibeRay/
 
 ---
 
-## 4. Модель данных (PostgreSQL + PostGIS)
+## 4. Модель данных (логическая)
 
-Все `id` — UUID. Все даты — `timestamptz` в UTC. Геометрия — SRID 4326.
+База данных ещё не выбрана — ниже таблицы и поля без привязки к СУБД. Все `id` — UUID. Все даты — с часовым
+поясом, в UTC. Геометрия — WGS 84 (EPSG:4326).
 
 ### users
 | Поле | Тип | Примечание |
@@ -256,14 +266,14 @@ VibeRay/
 | home_district_id | FK districts, null | «свой район» — какой район открывать на карте первым; **приватное**, не показывается никому |
 | role | enum `user / moderator / admin` | |
 | is_active | bool | |
-| created_at | timestamptz | |
+| created_at | дата-время (UTC) | |
 
 ### refresh_sessions
 `id`, `user_id` FK, `token_hash`, `expires_at`, `revoked_at`, `created_at` — для ротации и отзыва refresh-токенов.
 
 ### cities / districts
 - **cities:** `id`, `slug` (`kostanay`), `name`, `center` Point, `bbox` Polygon.
-- **districts:** `id`, `city_id` FK, `slug`, `name`, `geom` MultiPolygon (GIST-индекс).
+- **districts:** `id`, `city_id` FK, `slug`, `name`, `geom` MultiPolygon (пространственный индекс).
 
 ### mood_marks
 | Поле | Тип | Примечание |
@@ -272,22 +282,22 @@ VibeRay/
 | user_id | FK users | нужен только для дедупликации, наружу не отдаётся |
 | district_id | FK districts | |
 | mood | enum Mood | |
-| created_at | timestamptz | индекс `(district_id, created_at)` |
+| created_at | дата-время (UTC) | индекс `(district_id, created_at)` |
 
 ### problems
 | Поле | Тип | Примечание |
 |------|-----|-----------|
 | id | uuid PK | |
 | author_id | FK users | |
-| district_id | FK districts | определяется сервером по точке (`ST_Contains`) |
+| district_id | FK districts | определяется сервером по точке (точка внутри полигона района) |
 | category | enum ProblemCategory | |
 | description | text, ≤ 1000 | |
-| location | Point | GIST-индекс |
+| location | Point | пространственный индекс |
 | status | enum ProblemStatus | |
 | confirmations_count | int | денормализация для быстрой выдачи |
 | rejection_reason | enum RejectionReason, null | только для `rejected` |
 | duplicate_of_id | FK problems, null | для `rejection_reason = duplicate` — исходная проблема |
-| created_at / updated_at / resolved_at | timestamptz | |
+| created_at / updated_at / resolved_at | дата-время (UTC) | |
 
 ### problem_photos
 `id`, `problem_id` FK, `path`, `width`, `height`, `created_at`. До **3 фото** на проблему.
@@ -310,7 +320,7 @@ VibeRay/
 | email | varchar | почта для ответа; **приватное**, видит только поддержка |
 | topic | enum SupportTopic | |
 | message | text, 10–2000 | |
-| created_at | timestamptz | |
+| created_at | дата-время (UTC) | |
 
 ### support_attachments
 `id`, `request_id` FK, `path`, `content_type`, `size`, `created_at`. До **3 файлов**: JPEG/PNG/WebP (EXIF удаляется) или PDF, каждый ≤ 10 МБ.
@@ -484,7 +494,7 @@ new | confirmed ──(модератор: спам, дубль, не по те�
 - настроение за период (см. 6.1);
 - число проблем по статусам;
 - топ-3 категории проблем;
-- динамика: настроение, число отметок и новые проблемы по интервалам — `day` → 24 часовых точки, `week` → 7 дневных, `month` → 30 дневных, `year` → 12 календарных месяцев, `all` → каждый месяц с запуска города. Интервалы выровнены по часам / суткам / месяцам (`date_trunc`), последний — текущий, незаконченный. Считается SQL-запросами с `date_trunc`; при росте нагрузки — материализованные представления (см. «Открытые вопросы»).
+- динамика: настроение, число отметок и новые проблемы по интервалам — `day` → 24 часовых точки, `week` → 7 дневных, `month` → 30 дневных, `year` → 12 календарных месяцев, `all` → каждый месяц с запуска города. Интервалы выровнены по часам / суткам / календарным месяцам, последний — текущий, незаконченный. При росте нагрузки — предрасчёт или кеш (см. «Открытые вопросы»).
 - **Порог приватности действует и на точки динамики:** если в интервале меньше 5 отметок, `score` точки — `null` (линия графика прерывается, число отметок видно).
 
 **Панель района на карте** (`features/stats/DistrictPanel`, ширина 440 px) показывает эти данные и ещё то, что фронтенд считает сам из уже загруженных данных города, без отдельных запросов: место района по настроению среди районов с достаточным числом отметок, отличие от среднего по городу (порог «на уровне» — 0,1 балла), тренд за период (среднее трёх последних точек минус трёх первых), площадь района (км², по геометрии OSM — `multiPolygonAreaKm2` в `shared/lib/geoProjection.js`), доли всех 7 настроений, разбивку проблем по статусам и долю каждой категории.
@@ -543,15 +553,15 @@ new | confirmed ──(модератор: спам, дубль, не по те�
 Автор проблемы в ответах — всегда `UserPublic`.
 
 ### 7.1 Демо-режим: фронтенд без бэкенда
-- Все запросы идут через `shared/api/client.js`. Пока `VITE_USE_MOCKS` не равен `false` (по умолчанию), их обслуживает фейковый API `src/data/api/handler.js` прямо в браузере — с задержкой, валидацией и кодами ошибок как у настоящего API.
-- **Все демо-данные — только в `frontend/src/data/`** (см. `data/README.md`): снимок геоданных Костаная `cities/kostanay/*` (копия `backend/data/cities/kostanay/*`), демо-пользователи `accounts.json`, демо-содержимое `content.json` (описания тестовых проблем, ники, названия сервисов), генератор статистики `api/generate.js`. В компонентах, страницах и `shared/` демо-данных нет.
+- Все запросы идут через `shared/api/client.js`. Пока `VITE_USE_MOCKS` не равен `false` (по умолчанию), их обслуживает фейковый API `src/demo-data/api/handler.js` прямо в браузере — с задержкой, валидацией и кодами ошибок как у настоящего API.
+- **Все демо-данные — только в `frontend/src/demo-data/`** (см. `demo-data/README.md`): снимок геоданных Костаная `cities/kostanay/*` (копия `backend/data/cities/kostanay/*`), демо-пользователи `accounts.json`, демо-содержимое `content.json` (описания тестовых проблем, ники, названия сервисов), генератор статистики `api/generate.js`. В компонентах, страницах и `shared/` демо-данных нет.
 - Реализованы: `auth/register|login|logout`, `GET /cities/{slug}`, `GET /cities/{slug}/moods`, `GET /cities/{slug}/stats`, `GET /districts/{id}/stats`, `POST /districts/{id}/mood`, `GET /problems`, `POST /problems`, `POST /problems/{id}/confirm`, `GET /problems/{id}`, `PATCH /users/me`, `PUT /users/me/avatar`, `POST /users/me/password`, `DELETE /users/me`, `GET /users/me/problems`, `GET /users/me/notifications`, `POST /users/me/notifications/read`, `POST /support/requests`, `GET /status` (в моках все сервисы «работают»). Идентификатор района в моках = его `slug`.
 - Демо-аккаунт: `demo@viberay.kz` / `demo12345`. Данные живут до перезагрузки страницы.
 - История для дашборда: город «работает» с января 2023 года; ~1 100 старых сообщений о проблемах (число растёт вместе с жителями, всё старше года решено) и 64 за последний месяц. У Аэропорта за день почти нет отметок — демонстрация порога приватности.
-- Сообщество в демо (`data/api/community.js`): у демо-пользователя уже есть 6 сообщений разных статусов (одно — отклонённый дубль) (`accounts.json` → `reports`) с историей и уведомлениями; история статусов остальных проблем восстанавливается из текущего статуса. Когда вошедший отправляет новую проблему, «соседи» подтверждают её через ~25 и ~70 с — приходят уведомления, а на 3 подтверждениях статус становится «подтверждена». Если новое сообщение той же категории оказалось в 80 м от нерешённой проблемы, через ~40 с «модератор» отклоняет его как дубль со ссылкой на исходную.
-- Язык в демо: фейковый API получает язык запроса и отдаёт названия районов, подписи сервисов и тексты демо-проблем на нём (`data/api/locale.js`, `content.json` → `ru` / `en`).
+- Сообщество в демо (`demo-data/api/community.js`): у демо-пользователя уже есть 6 сообщений разных статусов (одно — отклонённый дубль) (`accounts.json` → `reports`) с историей и уведомлениями; история статусов остальных проблем восстанавливается из текущего статуса. Когда вошедший отправляет новую проблему, «соседи» подтверждают её через ~25 и ~70 с — приходят уведомления, а на 3 подтверждениях статус становится «подтверждена». Если новое сообщение той же категории оказалось в 80 м от нерешённой проблемы, через ~40 с «модератор» отклоняет его как дубль со ссылкой на исходную.
+- Язык в демо: фейковый API получает язык запроса и отдаёт названия районов, подписи сервисов и тексты демо-проблем на нём (`demo-data/api/locale.js`, `content.json` → `ru` / `en`).
 - Состояние фейкового API живёт в памяти вкладки: после перезагрузки новые отметки, проблемы и аккаунты пропадают.
-- Когда появится FastAPI: `VITE_USE_MOCKS=false` в `frontend/.env`; если демо больше не нужно — удалить `src/data/`, ветку демо-режима в `client.js` и подсказку демо-входа в `LoginForm.jsx`.
+- Когда появится FastAPI: `VITE_USE_MOCKS=false` в `frontend/.env`; если демо больше не нужно — удалить `src/demo-data/`, ветку демо-режима в `client.js` и подсказку демо-входа в `LoginForm.jsx`.
 
 ### 7.2 Публикация на GitHub Pages
 - Workflow `.github/workflows/deploy-pages.yml`: на каждый `push` в `main` (и вручную) — `npm ci`, `npm run lint`, `npm run build`, публикация `frontend/dist` через `actions/deploy-pages`. В настройках репозитория: Settings → Pages → Source: **GitHub Actions**.
@@ -723,21 +733,23 @@ new | confirmed ──(модератор: спам, дубль, не по те�
 | Пакет | Назначение |
 |-------|-----------|
 | fastapi, uvicorn[standard] | API-сервер |
-| sqlalchemy[asyncio], asyncpg, alembic | БД и миграции |
-| geoalchemy2 | PostGIS-типы |
 | pydantic, pydantic-settings, email-validator | схемы, конфиг |
 | pyjwt, argon2-cffi | авторизация |
 | python-multipart, pillow | загрузка и обработка фото |
 | pytest, pytest-asyncio, httpx, ruff | тесты и линтинг (dev) |
 
-Добавление любого пакета вне этих списков — только после согласования (см. CLAUDE.md, раздел 2).
+Версии бэкенда закреплены в `backend/requirements.txt` (запуск) и `backend/requirements-dev.txt` (+ тесты и
+линтер); фронтенда — в `frontend/package.json` и `package-lock.json`. Добавление любого пакета вне этих списков —
+только после согласования (см. CLAUDE.md, раздел 2).
 
 ---
 
 ## 11. Открытые вопросы
 - Кто переводит проблемы в `in_progress` и `resolved`: только модераторы или также представители акимата (отдельная роль)?
 - Показывать автора проблемы или разрешить анонимную публикацию.
-- Кеширование статистики (материализованные представления / Redis) — когда понадобится. Дашборд «все годы» считает помесячную динамику по всем районам — первый кандидат на кеширование.
+- **База данных** — ещё не выбрана; от выбора зависят драйвер, ORM, миграции и геозапросы (пакеты добавятся в
+  `backend/requirements.txt` после выбора).
+- Кеширование статистики (предрасчёт / Redis) — когда понадобится. Дашборд «все годы» считает помесячную динамику по всем районам — первый кандидат на кеширование.
 - **Динамика «за день» и приватность:** почасовые точки с малым числом отметок скрываются (порог 5, раздел 6.3). В районе с 40–50 отметками в день большинство часов окажется пустым — возможно, для «дня» нужны интервалы по 3 часа.
 - **«Решено за 30 дней» на карте:** в моках «актуальность» решённой проблемы считается по дате сообщения; на бэкенде — брать дату перехода в `resolved` из `problem_status_changes`.
 - Хранилище фото в продакшене (локальный диск / S3-совместимое).

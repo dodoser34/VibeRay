@@ -1,0 +1,27 @@
+# Зависимости бэкенда VibeRay (утверждённый стек — CLAUDE.md, раздел 2; ARCHITECTURE.md, раздел 10).
+# Версии закреплены точно, чтобы у всех собиралось одно и то же. Новый пакет — только после
+# согласования и с записью в ARCHITECTURE.md.
+#
+#   python -m venv .venv
+#   pip install -r requirements.txt          # только запуск API
+#   pip install -r requirements-dev.txt      # запуск + тесты и линтер
+#
+# Python 3.12+. Скриптам в scripts/ (build_streets.py) пакеты не нужны — только стандартная библиотека.
+# База данных ещё не выбрана: драйвер, ORM и миграции добавятся сюда после выбора.
+
+# API-сервер
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+
+# Схемы и конфиг
+pydantic==2.13.5
+pydantic-settings==2.15.0
+email-validator==2.3.0
+
+# Авторизация: токены и хеши паролей
+pyjwt==2.15.1
+argon2-cffi==25.1.0
+
+# Загрузка и обработка фото (multipart, ресайз, удаление EXIF)
+python-multipart==0.0.32
+pillow==12.3.0

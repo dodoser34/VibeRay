@@ -2,7 +2,7 @@ import { getLanguage } from '@/shared/lib/language';
 import common from '@/texts/ru/common.json';
 
 // Демо-режим (по умолчанию, в том числе на GitHub Pages): запросы обслуживает фейковый API из
-// src/data/api — бэкенд не нужен. С бэкендом: VITE_USE_MOCKS=false в frontend/.env, запросы идут на
+// src/demo-data/api — бэкенд не нужен. С бэкендом: VITE_USE_MOCKS=false в frontend/.env, запросы идут на
 // /api/v1.
 export const USE_MOCKS = import.meta.env.VITE_USE_MOCKS !== 'false';
 const API_PREFIX = '/api/v1';
@@ -23,7 +23,7 @@ export class ApiError extends Error {
 
 export async function request(method, path, { body, query } = {}) {
   if (USE_MOCKS) {
-    const { handleMock } = await import('@/data/api/handler.js');
+    const { handleMock } = await import('@/demo-data/api/handler.js');
     return handleMock(method, path, { body, query, token: accessToken, language: getLanguage() });
   }
 

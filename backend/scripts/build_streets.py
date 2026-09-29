@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OVERPASS = 'https://overpass-api.de/api/interpreter'
 USER_AGENT = 'VibeRay/0.1 (city mood map; data build script)'
 MARGIN_DEG = 0.02  # запас вокруг города, чтобы подложка не обрывалась у края районов
+PRINT_WIDTH = 100  # как printWidth в frontend/.prettierrc
 
 KIND = {
     'motorway': 'major',
@@ -189,6 +190,40 @@ def build(osm: dict, districts: Districts, lat0: float) -> dict:
     return result
 
 
+def pretty(value: object, indent: int = 0, prefix: int = 0) -> str:
+    """JSON в том же виде, что даёт Prettier фронтенда (отступ 2, ширина 100).
+
+    Файл сразу проходит `npx prettier --check`, а в сборку сайта всё равно попадает сжатым
+    (плагин geojson в frontend/vite.config.js).
+    """
+    pad = '  ' * indent
+    if isinstance(value, dict):
+        if not value:
+            return '{}'
+        keys = [json.dumps(key, ensure_ascii=False) for key in value]
+        parts = [
+            f'{key}: {pretty(item, indent + 1, len(key) + 2)}'
+            for key, item in zip(keys, value.values(), strict=True)
+        ]
+        inline = '{ ' + ', '.join(parts) + ' }'
+        if '\n' not in inline and len(pad) + prefix + len(inline) + 1 <= PRINT_WIDTH:
+            return inline
+        return '{\n' + ',\n'.join(f'{pad}  {part}' for part in parts) + f'\n{pad}}}'
+    if isinstance(value, list):
+        if not value:
+            return '[]'
+        # Prettier всегда переносит список из нескольких списков/объектов (например, точек линии)
+        nested = len(value) > 1 and len({type(item) for item in value}) == 1
+        nested = nested and all(isinstance(item, list | dict) and len(item) > 1 for item in value)
+        parts = [pretty(item, indent + 1) for item in value]
+        inline = '[' + ', '.join(parts) + ']'
+        fits = '\n' not in inline and len(pad) + prefix + len(inline) + 1 <= PRINT_WIDTH
+        if fits and not nested:
+            return inline
+        return '[\n' + ',\n'.join(f'{pad}  {part}' for part in parts) + f'\n{pad}]'
+    return json.dumps(value, ensure_ascii=False)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     parser.add_argument('city', help='slug города, например kostanay')
@@ -196,7 +231,7 @@ def main() -> None:
     args = parser.parse_args()
 
     backend_dir = ROOT / 'backend' / 'data' / 'cities' / args.city
-    frontend_dir = ROOT / 'frontend' / 'src' / 'data' / 'cities' / args.city
+    frontend_dir = ROOT / 'frontend' / 'src' / 'demo-data' / 'cities' / args.city
     city = json.loads((backend_dir / 'city.json').read_text(encoding='utf-8'))
     districts = Districts(json.loads((backend_dir / 'districts.geojson').read_text('utf-8')))
     osm = (
@@ -204,7 +239,7 @@ def main() -> None:
     )
 
     streets = build(osm, districts, lat0=city['center'][1])
-    text = json.dumps(streets, ensure_ascii=False, separators=(',', ':'))
+    text = pretty(streets) + '\n'
     for directory in (backend_dir, frontend_dir):
         (directory / 'streets.geojson').write_text(text, encoding='utf-8')
 

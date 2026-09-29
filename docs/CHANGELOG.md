@@ -13,6 +13,52 @@
 
 ## 2026-09-29
 
+### Папка `demo-data` и читаемые геоданные
+
+- `frontend/src/data` переименована в `frontend/src/demo-data`: по имени видно, что там демо-режим. Ссылки в коде,
+  скрипте дорог, workflow публикации и документации обновлены.
+- Геоданные Костаная (районы, улицы, вода, `city.json`) в обеих копиях — фронтенда и `backend/data` — теперь
+  отформатированы с отступами, как весь код, а не одной строкой. Prettier проверяет и их (`.prettierignore`
+  больше не нужен). Скрипт `build_streets.py` сразу пишет файл в этом же виде.
+- Размер сайта не изменился: при сборке плагин в `vite.config.js` сжимает `.geojson` обратно.
+
+Файлы: `frontend/src/demo-data/**`, `frontend/vite.config.js`, `frontend/.prettierrc`, `backend/data/cities/kostanay/*`,
+`backend/scripts/build_streets.py`, `shared/api/client.js`, `features/auth/components/LoginForm.jsx`,
+`.github/workflows/deploy-pages.yml`, документация.
+
+### База данных и Docker убраны из планов до выбора
+
+- Из документации и зависимостей убраны PostgreSQL/PostGIS, SQLAlchemy, Alembic, GeoAlchemy2, asyncpg и
+  Docker (`docker-compose.yml`): база данных ещё не выбрана. Модель данных в ARCHITECTURE.md оставлена
+  логической — без привязки к СУБД. На сайт это не влияет: он работает в демо-режиме.
+
+Файлы: `backend/requirements.txt`, `README.md`, `ARCHITECTURE.md`, `CLAUDE.md`, комментарии в
+`frontend/src/data/api/generate.js`.
+
+### Главный README
+
+- В корне репозитория — `README.md`: что умеет сайт, быстрый старт, какие программы и библиотеки нужны и где
+  каждая используется, структура папок, демо-режим, публикация, ссылки на остальную документацию.
+
+Файлы: `README.md`, `ARCHITECTURE.md` (дерево папок).
+
+### Аудит проекта и requirements
+
+- Проверено: все файлы фронтенда используются (нет недостижимых модулей), CSS-классы модулей и правила адаптаций
+  ссылаются на существующие элементы, все ключи текстов используются, токены из `tokens.css` задействованы,
+  нет `console.log`/TODO, слои соблюдены (`shared/` не импортирует `features/`, между features — только через
+  `index.js`, запросы — только через `shared/api`), имена файлов по правилам.
+- Убрано лишнее: неиспользуемый экспорт `pointInRing`, папка сборки `frontend/dist`. Причины отклонения
+  теперь в `shared/config` (как статусы и категории), а не читаются из текстов в трёх местах; пределы ползунка
+  высоты — в отдельном `pages/MapPage/heightScale.js`, а не экспортом из файла компонента.
+- В `ARCHITECTURE.md` в дерево папок дописаны файлы, которых там не было.
+- Созданы `backend/requirements.txt` и `backend/requirements-dev.txt` с утверждённым стеком бэкенда (версии
+  закреплены); команды в `CLAUDE.md` обновлены.
+
+Файлы: `backend/requirements*.txt`, `shared/config/problemStatuses.js`, `shared/lib/geoProjection.js`,
+`features/{notifications,problems,settings}/…` (подписи причин), `pages/MapPage/{heightScale.js,MapFilters.jsx,
+MapPage.jsx}`, `ARCHITECTURE.md`, `CLAUDE.md`.
+
 ### Высота районов — по настроению, с множителем
 
 - Плиты районов на карте теперь разной высоты по настроению: чем лучше настроение, тем выше район (раньше высота

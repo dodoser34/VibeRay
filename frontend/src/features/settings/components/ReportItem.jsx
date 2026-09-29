@@ -1,12 +1,11 @@
 import { useHref } from 'react-router';
 import { CategoryIcon, StatusTimeline } from '@/features/problems';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
-import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
+import { REJECTION_REASON_BY_CODE, STATUS_BY_CODE } from '@/shared/config/problemStatuses';
 import { useShare } from '@/shared/hooks/useShare';
 import { format } from '@/shared/lib/format';
 import { formatDate } from '@/shared/lib/formatDate';
 import { plural } from '@/shared/lib/plural';
-import dictionaries from '@/texts/ru/dictionaries.json';
 import texts from '@/texts/ru/settings.json';
 import styles from './ReportItem.module.css';
 
@@ -52,7 +51,7 @@ export function ReportItem({ problem, districtName, index, onOpen }) {
         {problem.rejection_reason && (
           <p className={styles.reason}>
             {format(texts.reports.rejectedReason, {
-              reason: dictionaries.rejectionReasons[problem.rejection_reason],
+              reason: REJECTION_REASON_BY_CODE[problem.rejection_reason]?.label,
             })}
           </p>
         )}

@@ -8,10 +8,10 @@ import { format } from '@/shared/lib/format';
 import { formatTime } from '@/shared/lib/formatDate';
 import texts from '@/texts/ru/map.json';
 import { Button } from '@/shared/ui/Button';
+import { HEIGHT_SCALE } from './heightScale';
 import styles from './MapFilters.module.css';
 
 const LAYERS = ['districts', 'mood', 'problems'];
-export const HEIGHT_SCALE = { min: 0, max: 4, step: 0.5, initial: 2 };
 const METRICS = ['mood', 'problems'];
 
 function Choice({ options, value, onChange, label }) {

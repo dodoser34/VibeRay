@@ -7,7 +7,7 @@ import { TextField } from '@/shared/ui/TextField';
 import { useAuth } from '../model/useAuth';
 import { PasswordField } from './PasswordField';
 import { format } from '@/shared/lib/format';
-import demoAccounts from '@/data/accounts.json';
+import demoAccounts from '@/demo-data/accounts.json';
 import auth from '@/texts/ru/auth.json';
 import styles from './PassForms.module.css';
 

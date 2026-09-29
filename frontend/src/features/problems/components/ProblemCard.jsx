@@ -2,14 +2,17 @@ import { useState } from 'react';
 import { useHref, useNavigate } from 'react-router';
 import { confirmProblem } from '@/shared/api/endpoints/problems';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
-import { REJECTED_STATUS, STATUS_BY_CODE } from '@/shared/config/problemStatuses';
+import {
+  REJECTED_STATUS,
+  REJECTION_REASON_BY_CODE,
+  STATUS_BY_CODE,
+} from '@/shared/config/problemStatuses';
 import { useShare } from '@/shared/hooks/useShare';
 import { format } from '@/shared/lib/format';
 import { formatDate } from '@/shared/lib/formatDate';
 import { plural } from '@/shared/lib/plural';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Button } from '@/shared/ui/Button';
-import dictionaries from '@/texts/ru/dictionaries.json';
 import { CategoryIcon } from './CategoryIcon';
 import { StatusChip } from './StatusChip';
 import { StatusTimeline } from './StatusTimeline';
@@ -153,7 +156,7 @@ export function ProblemCard({
         <section className={styles.rejected} aria-label={texts.rejectedTitle}>
           <h4 className={styles.rejectedTitle}>{texts.rejectedTitle}</h4>
           <p className={styles.rejectedReason}>
-            {dictionaries.rejectionReasons[problem.rejection_reason]}
+            {REJECTION_REASON_BY_CODE[problem.rejection_reason]?.label}
           </p>
           <p className={styles.rejectedNote}>{texts.rejectedNote}</p>
           {problem.duplicate_of && (

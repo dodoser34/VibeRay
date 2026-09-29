@@ -1,9 +1,8 @@
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
-import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
+import { REJECTION_REASON_BY_CODE, STATUS_BY_CODE } from '@/shared/config/problemStatuses';
 import { format } from '@/shared/lib/format';
 import { formatRelative } from '@/shared/lib/formatDate';
 import { plural } from '@/shared/lib/plural';
-import dictionaries from '@/texts/ru/dictionaries.json';
 import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationList.module.css';
 
@@ -39,7 +38,7 @@ function describe(item) {
     color: STATUS_BY_CODE[item.status].colorVar,
     text: format(texts.kinds[item.status], {
       category,
-      reason: dictionaries.rejectionReasons[item.problem.rejection_reason]?.toLowerCase(),
+      reason: REJECTION_REASON_BY_CODE[item.problem.rejection_reason]?.label.toLowerCase(),
     }),
   };
 }

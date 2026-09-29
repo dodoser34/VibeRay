@@ -36,7 +36,8 @@ import { format } from '@/shared/lib/format';
 import problemTexts from '@/texts/ru/problems.json';
 import texts from '@/texts/ru/map.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import { HEIGHT_SCALE, MapFilters } from './MapFilters';
+import { HEIGHT_SCALE } from './heightScale';
+import { MapFilters } from './MapFilters';
 import { PanelToggle } from './PanelToggle';
 import styles from './MapPage.module.css';
 

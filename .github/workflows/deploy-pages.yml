@@ -1,5 +1,5 @@
 # Сборка фронтенда и публикация на GitHub Pages. Бэкенд не нужен: сайт работает в демо-режиме
-# на данных из frontend/src/data (ARCHITECTURE.md, раздел 7.1).
+# на данных из frontend/src/demo-data (ARCHITECTURE.md, раздел 7.1).
 name: Deploy frontend to GitHub Pages
 
 on:

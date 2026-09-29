@@ -20,7 +20,14 @@ export const [REJECTED_STATUS] = withLabels(
   dictionaries.problemStatuses,
 );
 
-export const REJECTION_REASONS = ['spam', 'duplicate', 'offtopic'];
+export const REJECTION_REASONS = withLabels(
+  [{ code: 'spam' }, { code: 'duplicate' }, { code: 'offtopic' }],
+  dictionaries.rejectionReasons,
+);
+
+export const REJECTION_REASON_BY_CODE = Object.fromEntries(
+  REJECTION_REASONS.map((r) => [r.code, r]),
+);
 
 export const STATUS_BY_CODE = Object.fromEntries(
   [...PROBLEM_STATUSES, REJECTED_STATUS].map((s) => [s.code, s]),
