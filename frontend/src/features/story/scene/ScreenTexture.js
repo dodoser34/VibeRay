@@ -1,18 +1,19 @@
 import * as THREE from 'three';
 import { cssVar } from '@/shared/lib/cssVar';
 import about from '@/texts/ru/about.json';
-import { SCREEN_QUESTION } from '../content';
+import { getLanguage } from '@/shared/lib/language';
+import { story } from '../content';
 
 const W = 1600;
 const H = 900;
 const EDITOR = { x: 330, y: 130, w: 940, h: 560 };
 const screen = about.screen;
 const IDEAS = [
-  { title: screen.ideas.shop, kind: 'site' },
-  { title: screen.ideas.habits, kind: 'chart' },
-  { title: screen.ideas.game, kind: 'app' },
-  { title: screen.ideas.studyNetwork, kind: 'site' },
-  { title: screen.ideas.finance, kind: 'chart' },
+  { key: 'shop', kind: 'site' },
+  { key: 'habits', kind: 'chart' },
+  { key: 'game', kind: 'app' },
+  { key: 'studyNetwork', kind: 'site' },
+  { key: 'finance', kind: 'chart' },
 ];
 
 const DOCK = [
@@ -24,7 +25,6 @@ const DOCK = [
   '--district-9',
   '--color-text-muted',
 ];
-const FOLDERS = screen.folders;
 
 // Экран монитора как живой холст: спокойный рабочий стол с пустым «idea.txt» в редакторе; поверх
 // всплывают карточки идей и зачёркиваются; затем с кареткой печатается вопрос.
@@ -53,6 +53,7 @@ export class ScreenTexture {
     };
     this.display = cssVar('--font-display');
     this.body = cssVar('--font-body');
+    this.language = getLanguage();
     this.desktop = this.paintDesktop();
     this.lastKey = '';
   }
@@ -60,7 +61,13 @@ export class ScreenTexture {
   // ideas: 0..1 — мелькание карточек; typed: 0..1 — доля напечатанного вопроса; mapIn: 0..1 — карта
   // города занимает экран (монтажный переход в 3D-город); time — для каретки.
   update({ ideas, typed, mapIn }, time) {
-    const chars = Math.round(typed * SCREEN_QUESTION.length);
+    // Язык сменили на лету — рабочий стол с подписями папок рисуется заново.
+    if (this.language !== getLanguage()) {
+      this.language = getLanguage();
+      this.desktop = this.paintDesktop();
+      this.lastKey = '';
+    }
+    const chars = Math.round(typed * story.screenQuestion.length);
     const caretOn = Math.floor(time * 2) % 2 === 0;
     const key = `${ideas.toFixed(3)}|${chars}|${caretOn}|${mapIn.toFixed(3)}`;
     if (key === this.lastKey) return;
@@ -193,7 +200,7 @@ export class ScreenTexture {
     ctx.fill();
     ctx.lineCap = 'butt';
 
-    FOLDERS.forEach((name, i) => {
+    screen.folders.forEach((name, i) => {
       const y = 90 + i * 120;
       ctx.fillStyle = c.accent;
       ctx.globalAlpha = 0.55;
@@ -279,8 +286,16 @@ export class ScreenTexture {
     for (let n = 1; n <= 9; n++) ctx.fillText(String(n), x + 28, y + 37 + n * 50);
     ctx.fillStyle = c.line;
     ctx.fillRect(x + 66, y + 50, 2, h - 50);
-    const text = SCREEN_QUESTION.slice(0, chars);
+    const text = story.screenQuestion.slice(0, chars);
+    // Кегль подбирается по всей фразе (на английском она длиннее), чтобы строка с кареткой не
+    // выходила за окно редактора и не менялась по ходу печати.
     ctx.font = `600 40px ${this.display}`;
+    const room = w - 96 - 40;
+    const size = Math.min(
+      40,
+      Math.floor((40 * room) / ctx.measureText(story.screenQuestion).width),
+    );
+    ctx.font = `600 ${size}px ${this.display}`;
     ctx.fillStyle = c.text;
     const tx = x + 96;
     const ty = y + 87;
@@ -318,9 +333,13 @@ export class ScreenTexture {
     ctx.fill();
     ctx.stroke();
     ctx.fillStyle = c.text;
+    const title = screen.ideas[idea.key];
     ctx.font = `600 22px ${this.body}`;
+    // Длинное название (на другом языке) уменьшается, чтобы не выходить за карточку.
+    const size = Math.min(22, Math.floor((22 * (w - 40)) / ctx.measureText(title).width));
+    ctx.font = `600 ${size}px ${this.body}`;
     ctx.textBaseline = 'alphabetic';
-    ctx.fillText(idea.title, 20, 38);
+    ctx.fillText(title, 20, 38);
     ctx.fillStyle = c.line;
     if (idea.kind === 'site') {
       ctx.fillRect(20, 60, w - 40, 36);
@@ -339,7 +358,7 @@ export class ScreenTexture {
     }
     // отклонено: зачёркивание через весь заголовок на середине строчных букв
     if (local > 1) {
-      const titleWidth = ctx.measureText(idea.title).width;
+      const titleWidth = ctx.measureText(title).width;
       ctx.strokeStyle = c.red;
       ctx.lineWidth = 3;
       ctx.lineCap = 'round';

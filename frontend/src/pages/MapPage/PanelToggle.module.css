@@ -1,0 +1,74 @@
+/* Круглая стеклянная кнопка за внешним краем панели, у её верхнего угла. Стрелка показывает, куда
+   уедет панель; у спрятанной панели — разворачивается к центру экрана. */
+.toggle {
+  position: absolute;
+  top: var(--space-4);
+  display: grid;
+  place-items: center;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  padding: 0;
+  border-radius: 50%;
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  box-shadow:
+    var(--shadow-panel),
+    inset 0 1px 0 var(--color-glass-highlight);
+  backdrop-filter: blur(var(--blur-glass));
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition:
+    color var(--dur-fast),
+    border-color var(--dur-fast),
+    translate var(--dur-slow) var(--ease-out);
+}
+
+.toggle:hover {
+  color: var(--color-text);
+  border-color: var(--color-glass-highlight);
+}
+
+.toggle svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: rotate var(--dur-slow) var(--ease-out);
+}
+
+.toggle[data-side='left'] {
+  left: calc(100% + var(--space-2));
+}
+
+.toggle[data-side='right'] {
+  right: calc(100% + var(--space-2));
+}
+
+.toggle[data-side='right'] svg {
+  rotate: 180deg;
+}
+
+/* Панель уехала за край на свою ширину и отступ — язычок встаёт у края экрана */
+.toggle[data-side='left'][aria-expanded='false'] {
+  translate: var(--space-5) 0;
+}
+
+.toggle[data-side='right'][aria-expanded='false'] {
+  translate: calc(-1 * var(--space-5)) 0;
+}
+
+.toggle[data-side='left'][aria-expanded='false'] svg {
+  rotate: 180deg;
+}
+
+.toggle[data-side='right'][aria-expanded='false'] svg {
+  rotate: 0deg;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle,
+  .toggle svg {
+    transition: none;
+  }
+}

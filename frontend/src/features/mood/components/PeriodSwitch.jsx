@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef } from 'react';
 import { gsap } from '@/shared/animations/gsapSetup';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { MOOD_PERIODS } from '@/shared/config/periods';
 import texts from '@/texts/ru/mood.json';
 import styles from './PeriodSwitch.module.css';
@@ -10,11 +11,13 @@ export function PeriodSwitch({
   options = MOOD_PERIODS,
   label = texts.periodLabel,
 }) {
+  const language = useLanguage();
   const rootRef = useRef(null);
   const thumbRef = useRef(null);
 
   // Подсветка едет к выбранному варианту; когда переключатель меняет ширину (панель шире, окно
-  // изменилось, догрузились шрифты), она без анимации встаёт на новое место варианта.
+  // изменилось, догрузились шрифты), она без анимации встаёт на новое место варианта; при смене языка
+  // — переезжает под подпись новой ширины.
   useLayoutEffect(() => {
     const place = (duration) => {
       const active = rootRef.current.querySelector('[aria-checked="true"]');
@@ -31,7 +34,7 @@ export function PeriodSwitch({
     const observer = new ResizeObserver(() => place(0));
     observer.observe(rootRef.current);
     return () => observer.disconnect();
-  }, [value, options]);
+  }, [value, options, language]);
 
   return (
     <div

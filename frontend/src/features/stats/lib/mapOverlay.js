@@ -35,7 +35,7 @@ export function reportedRange(stats) {
   return { min: Math.min(...counts), max: Math.max(...counts) };
 }
 
-// Агрегаты настроения в том виде, который ждёт карта (высота плиты = число отметок).
+// Агрегаты настроения в том виде, который ждёт карта (цвет и высота плиты — по настроению).
 export function statsMoods(stats) {
   if (!stats) return null;
   return {

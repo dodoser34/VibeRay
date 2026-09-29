@@ -6,11 +6,14 @@ import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/Button';
 import texts from '@/texts/ru/notFound.json';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { NotFoundMap } from './NotFoundMap';
 import styles from './NotFoundPage.module.css';
 
 // Неизвестный адрес: вместо молчаливого переброса на главную — объяснение и дорога обратно.
 export function NotFoundPage() {
+  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
+  const language = useLanguage();
   const rootRef = useRef(null);
   const { pathname } = useLocation();
   const go = useTransitionNavigate();
@@ -52,7 +55,7 @@ export function NotFoundPage() {
         <p className={styles.kicker} data-rise>
           {texts.kicker}
         </p>
-        <h1 className={styles.title} data-title>
+        <h1 key={language} className={styles.title} data-title>
           {texts.title}
         </h1>
         <p className={styles.lead} data-rise>

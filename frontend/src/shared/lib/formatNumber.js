@@ -1,10 +1,14 @@
 import { getLocale } from './language';
 
-const integerFormat = new Intl.NumberFormat(getLocale(), { maximumFractionDigits: 0 });
+const integerFormats = new Map();
 
 // 14000 → «14 000»
 export function formatNumber(value) {
-  return integerFormat.format(Math.round(value));
+  const locale = getLocale();
+  if (!integerFormats.has(locale)) {
+    integerFormats.set(locale, new Intl.NumberFormat(locale, { maximumFractionDigits: 0 }));
+  }
+  return integerFormats.get(locale).format(Math.round(value));
 }
 
 // Оценки настроения и их изменения: «+1.2», «−0.4», «0.0».

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router';
 import { useAuth } from '@/features/auth';
 import { NotificationBell } from '@/features/notifications';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
 import { Avatar } from '@/shared/ui/Avatar';
@@ -24,6 +25,7 @@ function activeKeyFor(pathname) {
 
 export function TabBar() {
   const { user, logout } = useAuth();
+  const language = useLanguage();
   const { pathname } = useLocation();
   const go = useTransitionNavigate();
   const openPage = usePageNavigate();
@@ -159,9 +161,10 @@ export function TabBar() {
     { scope: rootRef },
   );
 
+  // На другом языке вкладки другой ширины — подсветка переезжает под новую.
   useLayoutEffect(() => {
     if (!introRef.current) movePill(activeKey, 0.55);
-  }, [activeKey, user, movePill]);
+  }, [activeKey, user, language, movePill]);
 
   // Подсветка сразу едет к нажатой вкладке, пока играет переход; если перехода не было (шёл
   // другой), она возвращается к текущей странице.

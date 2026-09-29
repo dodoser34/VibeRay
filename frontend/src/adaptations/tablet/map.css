@@ -14,8 +14,14 @@
     overflow: visible;
   }
 
+  /* Фильтры в одну строку: обёртка прокрутки не нужна, её содержимое встаёт в строку панели */
+  :root [data-ui='map-panel-left-body'] {
+    display: contents;
+  }
+
   :root [data-ui='map-filters-heading'],
   :root [data-ui='map-filters-legend'],
+  :root [data-ui='map-filters-height-hint'],
   :root [data-ui='map-filters-footnote'] {
     display: none;
   }

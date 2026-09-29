@@ -3,12 +3,13 @@ import { useCityData } from '@/features/map';
 import { gsap, ScrollTrigger, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/Button';
-import { CHAPTER, CHAPTERS, STAMP } from '../content';
+import { CHAPTER, CHAPTERS, story } from '../content';
 import { StoryScene } from '../scene/StoryScene';
 import { StoryCalendar } from './StoryCalendar';
 import { StoryInterface } from './StoryInterface';
 import { StoryMoodCard } from './StoryMoodCard';
 import about from '@/texts/ru/about.json';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryExperience.module.css';
 
 const CITY = 'kostanay';
@@ -24,12 +25,17 @@ const FINAL = CHAPTERS.length - 1;
 // привязанная к прокрутке. При reduced motion закрепления нет — финальный кадр и история обычным
 // текстом.
 export function StoryExperience({ onOpenMap }) {
+  const language = useLanguage();
   const rootRef = useRef(null);
   const stageRef = useRef(null);
   const canvasRef = useRef(null);
   const sceneRef = useRef(null);
+  // Прокрутка до перестройки шкалы: при перестройке закрепление снимается, страница на миг
+  // становится короче, и браузер сбрасывает прокрутку назад.
+  const scrollRef = useRef(null);
   const reduced = useReducedMotion();
   const { city, moods, problems } = useCityData(CITY, 'week');
+  const timelineDeps = [city.data, moods.data, problems.data, reduced, language];
 
   // Layout-эффект: сцена должна существовать до того, как useGSAP (тоже layout-эффект) построит
   // шкалу.
@@ -41,6 +47,16 @@ export function StoryExperience({ onOpenMap }) {
       sceneRef.current = null;
     };
   }, []);
+
+  // Очистки эффектов идут в порядке объявления: этот запоминает прокрутку раньше, чем useGSAP ниже
+  // снимет закрепление.
+  useLayoutEffect(
+    () => () => {
+      scrollRef.current = window.scrollY;
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- те же зависимости, что у шкалы
+    timelineDeps,
+  );
 
   useGSAP(
     () => {
@@ -142,7 +158,7 @@ export function StoryExperience({ onOpenMap }) {
       tl.to(stageRef.current, { '--stage-fade': '35%', duration: 2.5 }, at(FINAL, 7.5));
       tl.to({}, { duration: 0.01 }, at(CHAPTERS.length));
 
-      ScrollTrigger.create({
+      const trigger = ScrollTrigger.create({
         trigger: stageRef.current,
         start: 'top top',
         end: `+=${CHAPTERS.length * 100}%`,
@@ -153,10 +169,17 @@ export function StoryExperience({ onOpenMap }) {
       // Закрепление появляется только после загрузки данных города и добавляет 900 % прокрутки:
       // триггеры ниже по странице (гид) должны пересчитать свои позиции.
       ScrollTrigger.refresh();
+      // Перестройка на месте (новые данные, смена языка): тот же кадр истории, без отскока прокрутки.
+      if (scrollRef.current !== null) {
+        window.scrollTo({ top: scrollRef.current, behavior: 'instant' });
+        trigger.update();
+        tl.progress(trigger.progress);
+      }
     },
     {
       scope: rootRef,
-      dependencies: [city.data, moods.data, problems.data, reduced],
+      // language: фразы, разобранные на слова, пересоздаются на новом языке — шкалу строим заново.
+      dependencies: timelineDeps,
       revertOnUpdate: true,
     },
   );
@@ -170,7 +193,7 @@ export function StoryExperience({ onOpenMap }) {
 
         <div className={styles.overlay}>
           <p className={styles.stamp} data-story="stamp" data-ui="story-stamp">
-            {STAMP}
+            {story.stamp}
           </p>
           {CHAPTERS.map(
             (chapter, i) =>
@@ -188,7 +211,7 @@ export function StoryExperience({ onOpenMap }) {
               ),
           )}
           <div className={styles.center}>
-            <p className={styles.phrase} data-story="phrase-living" data-later>
+            <p key={language} className={styles.phrase} data-story="phrase-living" data-later>
               {living.phrase}
             </p>
           </div>
@@ -200,7 +223,7 @@ export function StoryExperience({ onOpenMap }) {
           </div>
           <StoryInterface />
           <div className={`${styles.center} ${styles.finale}`}>
-            <p className={styles.phrase} data-story="final-phrase" data-later>
+            <p key={language} className={styles.phrase} data-story="final-phrase" data-later>
               {final.phrase}
             </p>
             <p className={styles.question} data-story="final-question" data-later>
@@ -221,7 +244,7 @@ export function StoryExperience({ onOpenMap }) {
 
       {reduced && (
         <ol className={styles.staticStory}>
-          <li className={styles.staticItem}>{STAMP}</li>
+          <li className={styles.staticItem}>{story.stamp}</li>
           {CHAPTERS.map((chapter) =>
             [chapter.text, chapter.phrase, chapter.question].filter(Boolean).map((line) => (
               <li key={line} className={styles.staticItem}>

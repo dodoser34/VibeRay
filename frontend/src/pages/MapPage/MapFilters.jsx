@@ -11,6 +11,7 @@ import { Button } from '@/shared/ui/Button';
 import styles from './MapFilters.module.css';
 
 const LAYERS = ['districts', 'mood', 'problems'];
+export const HEIGHT_SCALE = { min: 0, max: 4, step: 0.5, initial: 2 };
 const METRICS = ['mood', 'problems'];
 
 function Choice({ options, value, onChange, label }) {
@@ -38,6 +39,35 @@ function Choice({ options, value, onChange, label }) {
   );
 }
 
+// Множитель высоты районов: 0 — плоская карта, дальше — во сколько раз вытянуть разницу настроений.
+function HeightScale({ value, onChange, withHint }) {
+  const shown = value === 0 ? texts.heightScale.flat : format(texts.heightScale.value, { value });
+  return (
+    <div className={styles.group} data-ui="map-filters-height">
+      <label className={styles.heightHead}>
+        <span className={styles.groupLabel}>{texts.heightScale.label}</span>
+        <output className={styles.heightValue}>{shown}</output>
+        <input
+          type="range"
+          className={styles.range}
+          min={HEIGHT_SCALE.min}
+          max={HEIGHT_SCALE.max}
+          step={HEIGHT_SCALE.step}
+          value={value}
+          aria-valuetext={shown}
+          style={{ '--fill': `${(value / HEIGHT_SCALE.max) * 100}%` }}
+          onChange={(event) => onChange(Number(event.target.value))}
+        />
+      </label>
+      {withHint && (
+        <p className={styles.hint} data-ui="map-filters-height-hint">
+          {texts.heightScale.hint}
+        </p>
+      )}
+    </div>
+  );
+}
+
 // Что показывает карта. Те же элементы живут в левой панели десктопа, в панели инструментов
 // планшета в альбомной ориентации (только переключатели) и в шторке фильтров телефона (без
 // заголовка).
@@ -55,6 +85,8 @@ export function MapFilters({
   onStatsPeriod,
   metric,
   onMetric,
+  heightScale,
+  onHeightScale,
   range,
   districts,
   selectedSlug,
@@ -100,7 +132,9 @@ export function MapFilters({
         )}
       </div>
 
-      <div className={styles.group} data-ui="map-filters-legend">
+      <HeightScale value={heightScale} onChange={onHeightScale} withHint={!isStats} />
+
+      <div className={`${styles.group} ${styles.legend}`} data-ui="map-filters-legend">
         <span className={styles.groupLabel}>
           {isStats ? texts.stats.legend : texts.legendTitles[layer]}
         </span>

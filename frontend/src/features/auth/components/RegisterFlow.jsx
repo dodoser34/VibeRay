@@ -15,25 +15,56 @@ import styles from './PassForms.module.css';
 const texts = auth.register;
 
 const STEPS = [
-  { key: 'account', label: texts.steps.account },
-  { key: 'password', label: texts.steps.password },
-  { key: 'nickname', label: texts.steps.nickname },
-  { key: 'avatar', label: texts.steps.avatar },
-  { key: 'district', label: texts.steps.district },
+  {
+    key: 'account',
+    get label() {
+      return texts.steps.account;
+    },
+  },
+  {
+    key: 'password',
+    get label() {
+      return texts.steps.password;
+    },
+  },
+  {
+    key: 'nickname',
+    get label() {
+      return texts.steps.nickname;
+    },
+  },
+  {
+    key: 'avatar',
+    get label() {
+      return texts.steps.avatar;
+    },
+  },
+  {
+    key: 'district',
+    get label() {
+      return texts.steps.district;
+    },
+  },
 ];
 const STEP = Object.fromEntries(STEPS.map((s, i) => [s.key, i]));
 // Заполняет шаг email (тело шага держит одну высоту на всех шагах, чтобы карточка не прыгала).
 const PERKS = [
   {
-    text: texts.perks.mood,
+    get text() {
+      return texts.perks.mood;
+    },
     icon: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM8.5 14.5c1.9 1.6 5.1 1.6 7 0M9 9.5h.01M15 9.5h.01',
   },
   {
-    text: texts.perks.problems,
+    get text() {
+      return texts.perks.problems;
+    },
     icon: 'M12 21s-6.5-5.4-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.6 12 21 12 21Zm0-13.5v3.5M12 14h.01',
   },
   {
-    text: texts.perks.privacy,
+    get text() {
+      return texts.perks.privacy;
+    },
     icon: 'M6 11V8a6 6 0 0 1 12 0v3M5 11h14v10H5z',
   },
 ];

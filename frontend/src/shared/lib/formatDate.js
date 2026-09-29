@@ -2,57 +2,59 @@ import common from '@/texts/ru/common.json';
 import { format } from './format';
 import { getLocale } from './language';
 
-const timeFormat = new Intl.DateTimeFormat(getLocale(), { hour: '2-digit', minute: '2-digit' });
-const dateFormat = new Intl.DateTimeFormat(getLocale(), { day: 'numeric', month: 'short' });
-const longDateFormat = new Intl.DateTimeFormat(getLocale(), {
-  weekday: 'short',
-  day: 'numeric',
-  month: 'long',
-});
-const fullDateFormat = new Intl.DateTimeFormat(getLocale(), {
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric',
-});
-const weekdayFormat = new Intl.DateTimeFormat(getLocale(), { weekday: 'short' });
-const monthFormat = new Intl.DateTimeFormat(getLocale(), { month: 'short' });
-const monthNameFormat = new Intl.DateTimeFormat(getLocale(), { month: 'long' });
+const OPTIONS = {
+  time: { hour: '2-digit', minute: '2-digit' },
+  date: { day: 'numeric', month: 'short' },
+  longDate: { weekday: 'short', day: 'numeric', month: 'long' },
+  fullDate: { day: 'numeric', month: 'long', year: 'numeric' },
+  weekday: { weekday: 'short' },
+  month: { month: 'short' },
+  monthName: { month: 'long' },
+};
+const cache = new Map();
+
+// Форматтеры — на языке интерфейса в момент вызова (язык можно сменить без перезагрузки).
+function formatter(kind) {
+  const key = `${getLocale()}:${kind}`;
+  if (!cache.has(key)) cache.set(key, new Intl.DateTimeFormat(getLocale(), OPTIONS[kind]));
+  return cache.get(key);
+}
 
 const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
 
 export function formatTime(date) {
-  return timeFormat.format(new Date(date));
+  return formatter('time').format(new Date(date));
 }
 
 // «12 сент.»
 export function formatDate(date) {
-  return dateFormat.format(new Date(date));
+  return formatter('date').format(new Date(date));
 }
 
 // «Пт, 12 сентября»
 export function formatLongDate(date) {
-  return capitalize(longDateFormat.format(new Date(date)));
+  return capitalize(formatter('longDate').format(new Date(date)));
 }
 
 // «1 октября 2025 г.»
 export function formatFullDate(date) {
-  return fullDateFormat.format(new Date(date));
+  return formatter('fullDate').format(new Date(date));
 }
 
 // «пт»
 export function formatWeekday(date) {
-  return weekdayFormat.format(new Date(date));
+  return formatter('weekday').format(new Date(date));
 }
 
 // «сент.»
 export function formatMonth(date) {
-  return monthFormat.format(new Date(date));
+  return formatter('month').format(new Date(date));
 }
 
 // «Сентябрь 2026»
 export function formatMonthYear(date) {
   const value = new Date(date);
-  return `${capitalize(monthNameFormat.format(value))} ${value.getFullYear()}`;
+  return `${capitalize(formatter('monthName').format(value))} ${value.getFullYear()}`;
 }
 
 export function formatRelative(date) {

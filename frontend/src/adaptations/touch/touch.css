@@ -15,6 +15,11 @@
     height: var(--touch-target);
   }
 
+  /* Ползунок высоты районов: полоса для пальца — на всю высоту тач-цели */
+  :root [data-ui='map-filters-height'] input[type='range'] {
+    height: var(--touch-target);
+  }
+
   :root [data-ui='panel-close'],
   :root [data-ui='panel-tool'] {
     width: var(--touch-target);

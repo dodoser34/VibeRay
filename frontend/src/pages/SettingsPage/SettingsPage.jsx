@@ -5,10 +5,13 @@ import { useAuth } from '@/features/auth';
 import { SettingsCenter } from '@/features/settings';
 import { getCity } from '@/shared/api/endpoints/cities';
 import { useRequest } from '@/shared/hooks/useRequest';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 
 const CITY = 'kostanay';
 
 export function SettingsPage() {
+  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
+  useLanguage();
   const { user, logout, endSession } = useAuth();
   const go = useTransitionNavigate();
   const city = useRequest(user ? `city:${CITY}` : null, () => getCity(CITY));

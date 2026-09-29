@@ -10,18 +10,24 @@ import { MyReportsSection } from './MyReportsSection';
 import { ProfileSection } from './ProfileSection';
 import { SecuritySection } from './SecuritySection';
 import texts from '@/texts/ru/settings.json';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SettingsCenter.module.css';
 
 const SECTIONS = ['profile', 'reports', 'district', 'security', 'account'].map((key) => ({
   key,
   id: `settings-${key}`,
-  label: texts.sections[key],
-  short: texts.sectionsShort[key],
+  get label() {
+    return texts.sections[key];
+  },
+  get short() {
+    return texts.sectionsShort[key];
+  },
 }));
 
 // Страница настроек: навигация по разделам (подсвечивает раздел, который сейчас на экране)
 // и сами разделы. districts: [{ slug, name }] или null, пока город грузится.
 export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
+  const language = useLanguage();
   const rootRef = useRef(null);
   const reduced = useReducedMotion();
   const entered = usePageEntered();
@@ -79,7 +85,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
         <p className={styles.kicker} data-hero>
           {texts.kicker}
         </p>
-        <h1 className={styles.title} data-title>
+        <h1 key={language} className={styles.title} data-title>
           {texts.title}
         </h1>
         <p className={styles.lead} data-hero>

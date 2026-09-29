@@ -189,7 +189,7 @@
       "id": "language",
       "category": "technical",
       "question": "How do I switch the site language?",
-      "answer": "The RU / EN buttons are in the top right corner, on a phone — at the bottom of the menu, and also in your profile settings, in the “Account” section. Your choice is remembered in the browser.",
+      "answer": "The language flags are in the top right corner, on a phone — at the bottom of the menu, and also in your profile settings, in the “Account” section. The language changes instantly, without reloading the page, and is remembered in the browser.",
       "keywords": "language english russian switch interface"
     }
   ],

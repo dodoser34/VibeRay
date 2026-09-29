@@ -16,10 +16,28 @@ const CHAPTER_IDS = [
   'final',
 ];
 
-export const CHAPTERS = CHAPTER_IDS.map((id) => ({ id, ...about.story.chapters[id] }));
+// Тексты глав читаются при каждом обращении: язык можно сменить на лету (shared/lib/language.js).
+export const CHAPTERS = CHAPTER_IDS.map((id) => ({
+  id,
+  get text() {
+    return about.story.chapters[id].text;
+  },
+  get phrase() {
+    return about.story.chapters[id].phrase;
+  },
+  get question() {
+    return about.story.chapters[id].question;
+  },
+}));
 
-export const STAMP = about.story.stamp;
-export const SCREEN_QUESTION = about.screen.question;
+export const story = {
+  get stamp() {
+    return about.story.stamp;
+  },
+  get screenQuestion() {
+    return about.screen.question;
+  },
+};
 export const CALENDAR = about.story.calendar;
 
 // Полная история автора, показывается под ссылкой «прочитать всю историю».

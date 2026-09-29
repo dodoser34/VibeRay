@@ -26,17 +26,46 @@
     var(--shadow-panel),
     inset 0 1px 0 var(--color-glass-highlight);
   backdrop-filter: blur(var(--blur-glass));
+  transition: translate var(--dur-slow) var(--ease-out);
 }
 
 .left {
   left: var(--space-5);
   width: var(--map-panel-left);
+}
+
+/* Прокручивается содержимое, а не сама панель: язычок за её краем не должен обрезаться. Своя
+   максимальная высота (как у панели, минус рамка) — чтобы, как раньше, ужимался длинный список
+   районов, а не появлялась прокрутка всей панели. */
+.leftBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  min-height: 0;
+  max-height: calc(100vh - var(--panel-top) - var(--controls-space) - 2px);
+  max-height: calc(100dvh - var(--panel-top) - var(--controls-space) - 2px);
+  margin: calc(-1 * var(--space-5));
+  padding: var(--space-5);
+  border-radius: inherit;
   overflow: hidden auto;
 }
 
 .right {
   right: var(--space-5);
   width: var(--map-panel-right);
+}
+
+.rightBody {
+  display: contents;
+}
+
+/* Скрытая панель уезжает за край экрана на свою ширину и отступ; у края остаётся язычок */
+.left[data-hidden] {
+  translate: calc(-100% - var(--space-5) - 1px) 0;
+}
+
+.right[data-hidden] {
+  translate: calc(100% + var(--space-5) + 1px) 0;
 }
 
 /* Дашборду города нужно место для таблицы */
@@ -207,6 +236,10 @@
 @media (prefers-reduced-motion: reduce) {
   .clock svg {
     animation: none;
+  }
+
+  .panel {
+    transition: none;
   }
 }
 

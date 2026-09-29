@@ -10,13 +10,55 @@ import nav from '@/texts/ru/nav.json';
 // Главная, вход и регистрация — одна страница: переключение между ними анимирует карточку-пропуск.
 const HOME_PATHS = ['/', '/login', '/register'];
 const PAGES = [
-  { test: (p) => p.startsWith('/map'), label: nav.pageNames.map, tab: 'map' },
-  { test: (p) => p === '/about', label: nav.pageNames.about, tab: 'about' },
-  { test: (p) => p === '/support', label: nav.pageNames.support, tab: 'support' },
-  { test: (p) => p === '/settings', label: nav.pageNames.settings, tab: 'me' },
-  { test: (p) => p === '/login', label: nav.pageNames.login, tab: 'login' },
-  { test: (p) => p === '/register', label: nav.pageNames.register, tab: 'register' },
-  { test: () => true, label: nav.pageNames.home, tab: null },
+  {
+    test: (p) => p.startsWith('/map'),
+    get label() {
+      return nav.pageNames.map;
+    },
+    tab: 'map',
+  },
+  {
+    test: (p) => p === '/about',
+    get label() {
+      return nav.pageNames.about;
+    },
+    tab: 'about',
+  },
+  {
+    test: (p) => p === '/support',
+    get label() {
+      return nav.pageNames.support;
+    },
+    tab: 'support',
+  },
+  {
+    test: (p) => p === '/settings',
+    get label() {
+      return nav.pageNames.settings;
+    },
+    tab: 'me',
+  },
+  {
+    test: (p) => p === '/login',
+    get label() {
+      return nav.pageNames.login;
+    },
+    tab: 'login',
+  },
+  {
+    test: (p) => p === '/register',
+    get label() {
+      return nav.pageNames.register;
+    },
+    tab: 'register',
+  },
+  {
+    test: () => true,
+    get label() {
+      return nav.pageNames.home;
+    },
+    tab: null,
+  },
 ];
 // Якорь и параметры адреса (/settings#settings-reports) не меняют страницу назначения.
 const pageOf = (path) => PAGES.find((page) => page.test(path.split(/[?#]/)[0]));

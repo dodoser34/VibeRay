@@ -13,6 +13,7 @@ export function MapCanvas({
   problems,
   layer,
   overlay = null,
+  heightScale = 1,
   selectedSlug,
   selectedProblemId = null,
   hour,
@@ -74,6 +75,10 @@ export function MapCanvas({
   useEffect(() => {
     sceneRef.current.setOverlay(overlay);
   }, [overlay]);
+
+  useEffect(() => {
+    sceneRef.current.setHeightScale(heightScale);
+  }, [heightScale]);
 
   useEffect(() => {
     sceneRef.current.selectDistrict(selectedSlug ?? null);

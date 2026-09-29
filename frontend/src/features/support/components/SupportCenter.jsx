@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { revealOnScroll } from '@/shared/animations/revealOnScroll';
@@ -13,17 +13,39 @@ import { HelpSearch } from './HelpSearch';
 import { ServiceStatus } from './ServiceStatus';
 import { SupportRequestForm } from './SupportRequestForm';
 import texts from '@/texts/ru/support.json';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SupportCenter.module.css';
 
 const LINKS = [
-  { to: '/map/kostanay', label: texts.footer.links.map },
-  { to: '/about', label: texts.footer.links.about },
-  { to: '/login', label: texts.footer.links.login },
-  { to: '/register', label: texts.footer.links.register },
+  {
+    to: '/map/kostanay',
+    get label() {
+      return texts.footer.links.map;
+    },
+  },
+  {
+    to: '/about',
+    get label() {
+      return texts.footer.links.about;
+    },
+  },
+  {
+    to: '/login',
+    get label() {
+      return texts.footer.links.login;
+    },
+  },
+  {
+    to: '/register',
+    get label() {
+      return texts.footer.links.register;
+    },
+  },
 ];
 
 // Страница поддержки: поиск → темы → ответы → «не нашли?» → статус сервисов → контакты.
 export function SupportCenter({ onNavigate }) {
+  const language = useLanguage();
   const rootRef = useRef(null);
   const faqRef = useRef(null);
   const reduced = useReducedMotion();
@@ -33,7 +55,8 @@ export function SupportCenter({ onNavigate }) {
   const [openId, setOpenId] = useState(null);
   const [form, setForm] = useState(null); // { topic }, пока открыта форма обращения
 
-  const results = useMemo(() => searchHelp(FAQ, query), [query]);
+  // Без useMemo: поиск дешёвый, а ответы FAQ меняются на месте при смене языка.
+  const results = searchHelp(FAQ, query);
 
   // Цель может появиться только после отрисовки отфильтрованного списка: сначала коммит, потом
   // прокрутка.
@@ -106,7 +129,7 @@ export function SupportCenter({ onNavigate }) {
           <p className={styles.kicker} data-hero>
             {texts.hero.kicker}
           </p>
-          <h1 className={styles.title} data-title>
+          <h1 key={language} className={styles.title} data-title>
             {texts.hero.title}
           </h1>
           <p className={styles.lead} data-hero>

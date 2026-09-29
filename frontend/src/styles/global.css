@@ -24,6 +24,12 @@ h3 {
   letter-spacing: -0.01em;
 }
 
+/* Смена языка на лету: текст размывается и проявляется уже на новом языке
+   (shared/animations/languageTransition.js) */
+[data-language-text] {
+  filter: blur(var(--language-blur, 0px));
+}
+
 :focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 0.1875rem;

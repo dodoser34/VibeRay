@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useAuth } from '@/features/auth';
 import { getNotifications, markNotificationsRead } from '@/shared/api/endpoints/users';
+import { subscribeLanguage, trackLanguageWork } from '@/shared/lib/language';
 import { NotificationsContext } from './NotificationsContext';
 
 // Пока нет push-канала, уведомления опрашиваются: раз в POLL_MS и сразу при возврате на вкладку.
@@ -35,9 +36,12 @@ export function NotificationsProvider({ children }) {
     const timer = setInterval(refresh, POLL_MS);
     const onVisible = () => document.visibilityState === 'visible' && refresh();
     document.addEventListener('visibilitychange', onVisible);
+    // Названия районов в уведомлениях приходят с сервера — на новом языке запрашиваем заново.
+    const unsubscribe = subscribeLanguage(() => trackLanguageWork(refresh()));
     return () => {
       clearInterval(timer);
       document.removeEventListener('visibilitychange', onVisible);
+      unsubscribe();
     };
   }, [userId, refresh]);
 

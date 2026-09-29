@@ -11,6 +11,12 @@
     "mood": "Mood",
     "problems": "Problems"
   },
+  "heightScale": {
+    "label": "District height",
+    "value": "×{value}",
+    "flat": "flat",
+    "hint": "The better a district's mood, the taller it stands"
+  },
   "legendTitles": {
     "districts": "City districts",
     "mood": "District mood",
@@ -66,6 +72,12 @@
   "sheet": {
     "label": "Map panel",
     "toggle": "Expand or collapse the panel"
+  },
+  "panels": {
+    "hideLeft": "Hide filters",
+    "showLeft": "Show filters",
+    "hideRight": "Hide the right panel",
+    "showRight": "Show the right panel"
   },
   "filters": {
     "chipLabel": "Map filters: {summary}",

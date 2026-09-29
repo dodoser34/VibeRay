@@ -39,9 +39,15 @@ const CATEGORY_META = [
   },
 ];
 
+// Названия тем читаются при обращении: язык можно сменить на лету.
 export const HELP_CATEGORIES = CATEGORY_META.map((meta) => ({
   ...meta,
-  ...support.categories[meta.code],
+  get title() {
+    return support.categories[meta.code].title;
+  },
+  get text() {
+    return support.categories[meta.code].text;
+  },
 }));
 
 export const FAQ = support.faq;

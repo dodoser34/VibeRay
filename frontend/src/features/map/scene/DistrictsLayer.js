@@ -22,6 +22,9 @@ const WINDOW_OPACITY = 0.78;
 // города на шкале настроения (setScores). Светлые границы между районами читаются как улицы и
 // разделяют соседей похожего цвета. Используется полной картой и сценой главной. Координаты слоя: x
 // — восток, y — вверх, z — юг (1 единица = 1 км до масштаба родителя).
+// Высота плиты — то же значение, что и цвет: настроение района (или метрика дашборда) на шкале
+// −2…+2, чем лучше — тем выше; heightScale — множитель высоты (0 — плоская карта). Районы, где
+// отметок мало, остаются низкими.
 export class DistrictsLayer {
   constructor(
     features,
@@ -44,6 +47,7 @@ export class DistrictsLayer {
     this.lineMaterials = [];
     this.baseHeight = baseHeight;
     this.heightRange = heightRange;
+    this.heightScale = 1;
     this.baseOpacity = opacity;
     this.roughness = roughness;
     this.colorMode = colorMode;
@@ -259,29 +263,46 @@ export class DistrictsLayer {
     if (mode === this.colorMode) return;
     this.colorMode = mode;
     this.applyColors(0.7);
+    this.updateHeights(0.9);
   }
 
   setScores(scores) {
     this.scores = scores ?? {};
-    if (this.colorMode === 'scores') this.applyColors(0.7);
+    if (this.colorMode === 'scores') {
+      this.applyColors(0.7);
+      this.updateHeights(0.9);
+    }
   }
 
-  // Агрегаты настроения задают высоту плит (активность), а в режиме 'mood' — и цвет.
+  setHeightScale(scale) {
+    this.heightScale = scale;
+    this.updateHeights(0.7);
+  }
+
+  // Агрегаты настроения задают высоту плит, а в режиме 'mood' — и цвет.
   setData(aggregates, { animate = true } = {}) {
     this.aggregates = aggregates;
-    const maxSample = Math.max(1, ...Object.values(aggregates).map((a) => a.sample_size ?? 0));
     const duration = animate ? 0.9 : 0;
+    this.updateHeights(duration);
+    this.applyColors(duration);
+  }
+
+  // Значение района на шкале −2…+2: метрика дашборда или настроение; null — мало отметок.
+  scoreOf(slug) {
+    if (this.colorMode === 'scores') return this.scores[slug] ?? null;
+    const aggregate = this.aggregates[slug];
+    return aggregate && !aggregate.insufficient_data ? aggregate.score : null;
+  }
+
+  updateHeights(duration) {
     this.items.forEach((item) => {
-      const aggregate = aggregates[item.slug];
-      const activity = aggregate?.insufficient_data
-        ? 0
-        : Math.sqrt((aggregate?.sample_size ?? 0) / maxSample);
-      item.height = this.baseHeight + this.heightRange * activity;
+      const score = this.scoreOf(item.slug);
+      const level = score === null ? 0 : (Math.max(-2, Math.min(2, score)) + 2) / 4;
+      item.height = this.baseHeight + this.heightRange * this.heightScale * level;
       if (this.introDone) {
         gsap.to(item.group.scale, { y: item.height, duration, ease: 'power3.out' });
       }
     });
-    this.applyColors(duration);
   }
 
   animateIn({ delay = 0, stagger = 0.09 } = {}) {

@@ -14,8 +14,8 @@ import styles from './DistrictCompare.module.css';
 
 const t = texts.districtCompare;
 const SIDES = [
-  { key: 'a', colorVar: '--compare-a', label: t.pickA },
-  { key: 'b', colorVar: '--compare-b', label: t.pickB },
+  { key: 'a', colorVar: '--compare-a', labelKey: 'pickA' },
+  { key: 'b', colorVar: '--compare-b', labelKey: 'pickB' },
 ];
 const SAME_SCORE = 0.1;
 const MAX_CATEGORIES = 6;
@@ -123,7 +123,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
             onPointerEnter={() => onHover?.(picked[side.key])}
             onPointerLeave={() => onHover?.(null)}
           >
-            <span className="visually-hidden">{side.label}</span>
+            <span className="visually-hidden">{t[side.labelKey]}</span>
             <span className={styles.swatch} aria-hidden="true" />
             <select
               className={styles.select}

@@ -1,20 +1,23 @@
 import dictionaries from '@/texts/ru/dictionaries.json';
+import { withLabels } from './withLabels';
 
 // Коды должны совпадать с backend/app/models/enums.py (Mood).
-export const MOODS = [
-  {
-    code: 'excellent',
-    label: dictionaries.moods.excellent,
-    score: 2,
-    colorVar: '--mood-excellent',
-  },
-  { code: 'good', label: dictionaries.moods.good, score: 1, colorVar: '--mood-good' },
-  { code: 'normal', label: dictionaries.moods.normal, score: 0, colorVar: '--mood-normal' },
-  { code: 'anxious', label: dictionaries.moods.anxious, score: -1, colorVar: '--mood-anxious' },
-  { code: 'bad', label: dictionaries.moods.bad, score: -1, colorVar: '--mood-bad' },
-  { code: 'angry', label: dictionaries.moods.angry, score: -2, colorVar: '--mood-angry' },
-  { code: 'very_bad', label: dictionaries.moods.very_bad, score: -2, colorVar: '--mood-very-bad' },
-];
+export const MOODS = withLabels(
+  [
+    {
+      code: 'excellent',
+      score: 2,
+      colorVar: '--mood-excellent',
+    },
+    { code: 'good', score: 1, colorVar: '--mood-good' },
+    { code: 'normal', score: 0, colorVar: '--mood-normal' },
+    { code: 'anxious', score: -1, colorVar: '--mood-anxious' },
+    { code: 'bad', score: -1, colorVar: '--mood-bad' },
+    { code: 'angry', score: -2, colorVar: '--mood-angry' },
+    { code: 'very_bad', score: -2, colorVar: '--mood-very-bad' },
+  ],
+  dictionaries.moods,
+);
 
 export const MOOD_BY_CODE = Object.fromEntries(MOODS.map((mood) => [mood.code, mood]));
 

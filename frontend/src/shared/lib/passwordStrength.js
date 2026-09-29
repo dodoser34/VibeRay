@@ -38,10 +38,30 @@ const COMMON_PASSWORDS = new Set([
 ]);
 
 const LEVELS = [
-  { label: labels.levels[0], colorVar: '--mood-angry' },
-  { label: labels.levels[1], colorVar: '--mood-anxious' },
-  { label: labels.levels[2], colorVar: '--mood-good' },
-  { label: labels.levels[3], colorVar: '--mood-excellent' },
+  {
+    get label() {
+      return labels.levels[0];
+    },
+    colorVar: '--mood-angry',
+  },
+  {
+    get label() {
+      return labels.levels[1];
+    },
+    colorVar: '--mood-anxious',
+  },
+  {
+    get label() {
+      return labels.levels[2];
+    },
+    colorVar: '--mood-good',
+  },
+  {
+    get label() {
+      return labels.levels[3];
+    },
+    colorVar: '--mood-excellent',
+  },
 ];
 
 function isTrivial(password) {

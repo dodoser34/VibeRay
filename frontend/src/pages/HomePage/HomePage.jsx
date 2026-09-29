@@ -10,12 +10,15 @@ import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Button } from '@/shared/ui/Button';
 import home from '@/texts/ru/home.json';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './HomePage.module.css';
 
 const CITY = 'kostanay';
 const FALLBACK_DISTRICT = 'center';
 
 export function HomePage() {
+  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
+  useLanguage();
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const go = useTransitionNavigate();

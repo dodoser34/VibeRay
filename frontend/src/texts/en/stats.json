@@ -126,7 +126,7 @@
       "note": "District colour: how many problems were reported {period}, compared with other districts."
     },
     "noData": "Too few marks — mood hidden",
-    "height": "Height: number of marks."
+    "height": "Height shows the same value: the better, the taller."
   },
   "districtCompare": {
     "title": "Compare districts",

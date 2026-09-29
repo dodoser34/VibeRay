@@ -28,18 +28,25 @@ import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { cityClock, dayPhase, parseClock } from '@/shared/lib/cityTime';
 import { multiPolygonAreaKm2 } from '@/shared/lib/geoProjection';
-import { readFlag, writeFlag } from '@/shared/lib/localFlag';
+import { readFlag, readNumber, writeFlag, writeNumber } from '@/shared/lib/localFlag';
 import { Button } from '@/shared/ui/Button';
 import { CoachMarks } from '@/shared/ui/CoachMarks';
 import { Modal } from '@/shared/ui/Modal';
 import { format } from '@/shared/lib/format';
 import problemTexts from '@/texts/ru/problems.json';
 import texts from '@/texts/ru/map.json';
-import { MapFilters } from './MapFilters';
+import { useLanguage } from '@/shared/hooks/useLanguage';
+import { HEIGHT_SCALE, MapFilters } from './MapFilters';
+import { PanelToggle } from './PanelToggle';
 import styles from './MapPage.module.css';
 
 const TOAST_MS = 3200;
 const TOUR_KEY = 'viberay:tour:map';
+// Скрытые боковые панели запоминаются: левая — всегда, правая — если её скрыли на общем обзоре.
+const LEFT_HIDDEN_KEY = 'viberay:map:left-hidden';
+const RIGHT_HIDDEN_KEY = 'viberay:map:right-hidden';
+const OVERVIEW_KEY = 'overview::';
+const HEIGHT_SCALE_KEY = 'viberay:map:height-scale';
 const TOUR_DELAY_MS = 3000; // после пролёта камеры и роста районов
 
 // Где открывается шторка для каждого содержимого (телефоны, планшеты стоя). Пока ставится новая
@@ -95,6 +102,8 @@ function PinIcon() {
 // на телефонах и планшетах стоя карта занимает экран — фильтры сворачиваются в чип, действия — в
 // кнопку «+», каждая панель открывается в шторке.
 export function MapPage({ view = 'map' }) {
+  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
+  useLanguage();
   const { citySlug, districtSlug, problemId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -126,6 +135,19 @@ export function MapPage({ view = 'map' }) {
   // Положение шторки, выбранное пользователем, запоминается для того содержимого, при котором его
   // выбрали.
   const [sheetChoice, setSheetChoice] = useState({ key: null, snap: null });
+  const [leftHidden, setLeftHidden] = useState(() => readFlag(LEFT_HIDDEN_KEY));
+  const [heightScale, setHeightScale] = useState(() =>
+    Math.min(HEIGHT_SCALE.max, Math.max(0, readNumber(HEIGHT_SCALE_KEY, HEIGHT_SCALE.initial))),
+  );
+  const changeHeightScale = (value) => {
+    writeNumber(HEIGHT_SCALE_KEY, value);
+    setHeightScale(value);
+  };
+  // Правая панель скрыта для того содержимого, при котором её скрыли: выбор района или проблемы
+  // открывает её снова, а возврат к обзору — снова прячет.
+  const [rightHiddenOn, setRightHiddenOn] = useState(() =>
+    readFlag(RIGHT_HIDDEN_KEY) ? OVERVIEW_KEY : null,
+  );
 
   const requestedPeriod = searchParams.get('period');
   const statsPeriod = STATS_PERIODS.some((p) => p.code === requestedPeriod)
@@ -274,6 +296,17 @@ export function MapPage({ view = 'map' }) {
           : 'overview';
   const contentKey = `${content}:${districtSlug ?? ''}:${problem?.id ?? ''}`;
   const sheetSnap = sheetChoice.key === contentKey ? sheetChoice.snap : SHEET_SNAP[content];
+  const rightHidden = rightHiddenOn === contentKey;
+
+  const toggleLeft = () => {
+    writeFlag(LEFT_HIDDEN_KEY, !leftHidden);
+    setLeftHidden(!leftHidden);
+  };
+  const toggleRight = () => {
+    const next = rightHidden ? null : contentKey;
+    writeFlag(RIGHT_HIDDEN_KEY, next === OVERVIEW_KEY);
+    setRightHiddenOn(next);
+  };
   const unit = 16 * rootScale();
 
   // Панели выезжают, когда страница видна (после перехода страницы, если он был).
@@ -281,12 +314,15 @@ export function MapPage({ view = 'map' }) {
     () => {
       if (!entered) return;
       gsap.to(fadeRef.current, { autoAlpha: 0, duration: 0.9, ease: 'power2.out' });
+      // clearProps: GSAP оставляет в стиле `translate: none`, а скрытую панель за край экрана
+      // уводит CSS-свойство translate.
       gsap.from('[data-panel="left"]', {
         x: -60,
         autoAlpha: 0,
         duration: 1,
         ease: 'expo.out',
         delay: 0.9,
+        clearProps: 'all',
       });
       gsap.from('[data-panel="right"]', {
         x: 60,
@@ -294,6 +330,7 @@ export function MapPage({ view = 'map' }) {
         duration: 1,
         ease: 'expo.out',
         delay: 1.05,
+        clearProps: 'all',
       });
       // clearProps: после анимации элементами снова управляет CSS («+» прячется, пока сообщают о
       // проблеме, чип центрируется своим transform).
@@ -315,7 +352,7 @@ export function MapPage({ view = 'map' }) {
       if (viewRef.current === view) return;
       viewRef.current = view;
       gsap.fromTo(
-        '[data-panel="left"] > *, [data-panel="right"] > *',
+        '[data-panel] > [data-panel-body] > *',
         { autoAlpha: 0, y: 16 },
         { autoAlpha: 1, y: 0, duration: 0.55, stagger: 0.05, ease: 'power3.out' },
       );
@@ -448,6 +485,8 @@ export function MapPage({ view = 'map' }) {
       onStatsPeriod={setStatsPeriod}
       metric={metric}
       onMetric={setMetric}
+      heightScale={heightScale}
+      onHeightScale={changeHeightScale}
       range={cityStats.data ? reportedRange(cityStats.data) : undefined}
       districts={districts}
       selectedSlug={districtSlug}
@@ -587,6 +626,7 @@ export function MapPage({ view = 'map' }) {
         problems={mapProblems}
         layer={layer}
         overlay={overlay}
+        heightScale={heightScale}
         selectedSlug={isStats ? focus : districtSlug}
         selectedProblemId={problem?.id ?? null}
         hour={clock?.hour}
@@ -623,17 +663,48 @@ export function MapPage({ view = 'map' }) {
             className={`${styles.panel} ${styles.left}`}
             data-panel="left"
             data-ui="map-panel-left"
+            data-hidden={leftHidden || undefined}
             aria-label={texts.filtersLabel}
           >
-            {filters}
+            <div
+              id="map-panel-left"
+              className={styles.leftBody}
+              data-panel-body
+              data-ui="map-panel-left-body"
+              inert={leftHidden || undefined}
+            >
+              {filters}
+            </div>
+            <PanelToggle
+              side="left"
+              hidden={leftHidden}
+              controls="map-panel-left"
+              label={leftHidden ? texts.panels.showLeft : texts.panels.hideLeft}
+              onToggle={toggleLeft}
+            />
           </aside>
 
           <aside
             className={`${styles.panel} ${styles.right} ${isStats ? styles.wide : ''}`}
             data-panel="right"
+            data-hidden={rightHidden || undefined}
             aria-live="polite"
           >
-            {detail}
+            <div
+              id="map-panel-right"
+              className={styles.rightBody}
+              data-panel-body
+              inert={rightHidden || undefined}
+            >
+              {detail}
+            </div>
+            <PanelToggle
+              side="right"
+              hidden={rightHidden}
+              controls="map-panel-right"
+              label={rightHidden ? texts.panels.showRight : texts.panels.hideRight}
+              onToggle={toggleRight}
+            />
           </aside>
 
           {!report && (

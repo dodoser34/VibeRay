@@ -17,9 +17,24 @@ import styles from './ReportProblem.module.css';
 const texts = problemTexts.report;
 
 const STEPS = [
-  { key: 'category', title: texts.steps.category },
-  { key: 'place', title: texts.steps.place },
-  { key: 'details', title: texts.steps.details },
+  {
+    key: 'category',
+    get title() {
+      return texts.steps.category;
+    },
+  },
+  {
+    key: 'place',
+    get title() {
+      return texts.steps.place;
+    },
+  },
+  {
+    key: 'details',
+    get title() {
+      return texts.steps.details;
+    },
+  },
 ];
 
 // «Сообщить о проблеме»: тип → точка на карте → описание и фото → отправка. onStepChange('category'

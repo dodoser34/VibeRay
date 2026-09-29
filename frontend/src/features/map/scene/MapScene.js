@@ -121,19 +121,24 @@ export class MapScene {
   }
 
   setCity(city) {
-    if (this.citySlug === city.slug) return;
+    // Тот же город пришёл заново (смена языка): меняются только подписи районов.
+    if (this.citySlug === city.slug) {
+      this.renameLabels(city.districts.features);
+      return;
+    }
     this.citySlug = city.slug;
     this.project = createProjection(city.center);
     this.unproject = createUnprojection(city.center);
     this.backdrop = new CityBackdrop(this.project, { water: city.water, streets: city.streets });
     this.districts = new DistrictsLayer(city.districts.features, this.project, {
       baseHeight: 0.22,
-      heightRange: 0.5,
+      heightRange: 0.55,
       lineWidth: 2,
       colorMode: this.colorModeFor(this.layer),
       streets: city.streets,
     });
     this.districts.addWindows({ detail: this.runtime.quality.detail });
+    if (this.heightScale !== undefined) this.districts.setHeightScale(this.heightScale);
     if (this.hour !== undefined) this.setHour(this.hour, { immediate: true });
     this.problems = new ProblemsLayer(this.project);
     this.clusterLabels = new ClusterLabels(this.problems.group, this.clusterOptions);
@@ -189,6 +194,13 @@ export class MapScene {
     this.afterIntro = null;
   }
 
+  renameLabels(features) {
+    features.forEach(({ properties: { slug, name } }) => {
+      const chip = this.labels.get(slug)?.userData.chip;
+      if (chip) chip.firstChild.nodeValue = name;
+    });
+  }
+
   createLabels(features) {
     features.forEach(({ properties: { slug, name } }) => {
       // CSS2DRenderer управляет transform внешнего элемента, поэтому стили — на внутреннем чипе.
@@ -215,6 +227,15 @@ export class MapScene {
       const anchor = this.districts.getLocalAnchor(slug);
       label.position.set(anchor.x, anchor.y + 0.35, anchor.z);
     });
+  }
+
+  // Множитель высоты районов (шкала в фильтрах): подписи и метки проблем встают на новые крыши.
+  setHeightScale(scale) {
+    this.heightScale = scale;
+    if (!this.districts) return;
+    this.districts.setHeightScale(scale);
+    this.placeLabels();
+    if (this.problemList) this.setProblems(this.problemList);
   }
 
   setMoods(moods) {
@@ -254,6 +275,7 @@ export class MapScene {
     const pins = !this.overlay && this.layer === 'problems';
     this.districts.setScores(this.overlay?.scores);
     this.districts.setColorMode(this.overlay ? 'scores' : this.colorModeFor(this.layer));
+    this.placeLabels();
     if (pins !== this.pinsShown) this.problems.setVisible(pins);
     if (!pins) this.clusterLabels.clear();
     this.pinsShown = pins;

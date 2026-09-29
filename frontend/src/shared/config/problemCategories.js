@@ -1,16 +1,20 @@
 import dictionaries from '@/texts/ru/dictionaries.json';
+import { withLabels } from './withLabels';
 
 // Коды должны совпадать с backend/app/models/enums.py (ProblemCategory).
-export const PROBLEM_CATEGORIES = [
-  { code: 'garbage', label: dictionaries.problemCategories.garbage },
-  { code: 'traffic', label: dictionaries.problemCategories.traffic },
-  { code: 'roads', label: dictionaries.problemCategories.roads },
-  { code: 'lighting', label: dictionaries.problemCategories.lighting },
-  { code: 'noise', label: dictionaries.problemCategories.noise },
-  { code: 'drunkenness', label: dictionaries.problemCategories.drunkenness },
-  { code: 'public_transport', label: dictionaries.problemCategories.public_transport },
-  { code: 'parks', label: dictionaries.problemCategories.parks },
-  { code: 'other', label: dictionaries.problemCategories.other },
-];
+export const PROBLEM_CATEGORIES = withLabels(
+  [
+    { code: 'garbage' },
+    { code: 'traffic' },
+    { code: 'roads' },
+    { code: 'lighting' },
+    { code: 'noise' },
+    { code: 'drunkenness' },
+    { code: 'public_transport' },
+    { code: 'parks' },
+    { code: 'other' },
+  ],
+  dictionaries.problemCategories,
+);
 
 export const CATEGORY_BY_CODE = Object.fromEntries(PROBLEM_CATEGORIES.map((c) => [c.code, c]));

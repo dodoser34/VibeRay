@@ -10,6 +10,7 @@ import { Button } from '@/shared/ui/Button';
 import { FULL_STORY } from '../content';
 import { GuideMap } from './GuideMap';
 import about from '@/texts/ru/about.json';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryGuide.module.css';
 
 const CITY = 'kostanay';
@@ -17,7 +18,15 @@ const CITY = 'kostanay';
 const texts = about.guide;
 const STEPS = texts.steps;
 // Ключ иконки → texts.privacy[key] (заголовок и текст).
-const PRIVACY = ['mask', 'crowd', 'photo'].map((icon) => ({ icon, ...texts.privacy[icon] }));
+const PRIVACY = ['mask', 'crowd', 'photo'].map((icon) => ({
+  icon,
+  get title() {
+    return texts.privacy[icon].title;
+  },
+  get text() {
+    return texts.privacy[icon].text;
+  },
+}));
 
 const ICONS = {
   mask: 'M4 12c0-4 3.6-7 8-7s8 3 8 7-3.6 7-8 7-8-3-8-7Zm4.5-1.5h2M13.5 10.5h2M9 15c1.8 1.2 4.2 1.2 6 0',
@@ -29,6 +38,7 @@ const ICONS = {
 // «Как это работает» после истории: живой 2D-Костанай, который следует за шагами при прокрутке,
 // цифры продукта, обещания приватности и финальный призыв открыть карту.
 export function StoryGuide({ onOpenMap }) {
+  const language = useLanguage();
   const rootRef = useRef(null);
   const flowRef = useRef(null);
   const [step, setStep] = useState(0);
@@ -110,7 +120,7 @@ export function StoryGuide({ onOpenMap }) {
     <div ref={rootRef} className={styles.guide}>
       <header className={styles.intro}>
         <p className={styles.kicker}>{texts.kicker}</p>
-        <h2 className={styles.title} data-split>
+        <h2 key={language} className={styles.title} data-split>
           {texts.titleStart} <em className={styles.accent}>{texts.titleAccent}</em>
         </h2>
         <p className={styles.lead} data-rise>
@@ -193,7 +203,7 @@ export function StoryGuide({ onOpenMap }) {
       </section>
 
       <section className={styles.privacy} aria-labelledby="privacy-title">
-        <h2 id="privacy-title" className={styles.sectionTitle} data-split>
+        <h2 key={language} id="privacy-title" className={styles.sectionTitle} data-split>
           {texts.privacyTitle}
         </h2>
         <ul className={styles.privacyGrid} data-ui="guide-privacy-grid">
