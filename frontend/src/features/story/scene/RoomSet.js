@@ -20,7 +20,7 @@ RectAreaLightUniformsLib.init();
 // уменьшенная улица: двор, дорога, фонари, машины, пятиэтажки и девятиэтажки, небо. Материалы названы
 // по токенам дизайна («tok--story-desk-matte»); именованные меши и материалы получают живые или
 // нарисованные текстуры: Screen, Sky, WallMap, DeskTop, PhoneScreen, корешки «spine-*».
-const MODEL_URL = `${import.meta.env.BASE_URL}models/story-room.glb`;
+const MODEL_URL = `${import.meta.env.BASE_URL}models/story-room_street.glb`;
 export const SCREEN_CENTER = new THREE.Vector3(0, 1.08, -0.13);
 // Середина комнаты: сюда смотрит солнце (луна), вокруг неё строится карта теней.
 const ROOM_CENTER = new THREE.Vector3(0.5, 0.7, -0.2);
