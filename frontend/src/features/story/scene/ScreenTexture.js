@@ -29,7 +29,8 @@ const DOCK = [
 // Экран монитора как живой холст: спокойный рабочий стол с пустым «idea.txt» в редакторе; поверх
 // всплывают карточки идей и зачёркиваются; затем с кареткой печатается вопрос.
 export class ScreenTexture {
-  constructor() {
+  constructor({ daylight = false } = {}) {
+    this.daylight = daylight;
     this.canvas = document.createElement('canvas');
     this.canvas.width = W;
     this.canvas.height = H;
@@ -166,7 +167,7 @@ export class ScreenTexture {
     });
 
     // зона статуса справа налево: дата, батарея, wi-fi — всё по центру строки
-    const date = screen.date;
+    const date = this.daylight ? screen.dateDaylight : screen.date;
     let right = W - 28;
     ctx.textAlign = 'right';
     ctx.fillText(date, right, BAR_MID);

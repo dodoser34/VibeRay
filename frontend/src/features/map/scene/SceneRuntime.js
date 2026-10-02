@@ -4,11 +4,12 @@ import { cssVar } from '@/shared/lib/cssVar';
 
 // Общий рендерер и цикл отрисовки для всех Three.js-сцен сайта (без постобработки: спокойный вид).
 export class SceneRuntime {
-  // transparent: сквозь пустые части сцены виден анимированный фон страницы.
+  // transparent: сквозь пустые части сцены виден анимированный фон страницы; shadows: карта теней
+  // (мягкие PCF-тени, нужны комнате истории).
   constructor(
     canvas,
     container,
-    { fov = 40, fogNear = 20, fogFar = 60, transparent = false } = {},
+    { fov = 40, fogNear = 20, fogFar = 60, transparent = false, shadows = false } = {},
   ) {
     this.container = container;
     // Плотность пикселей, сглаживание и детализация сцены зависят от устройства (adaptations/core).
@@ -24,6 +25,10 @@ export class SceneRuntime {
     // их).
     this.renderer.toneMapping = THREE.NeutralToneMapping;
     this.renderer.toneMappingExposure = 1;
+    if (shadows) {
+      this.renderer.shadowMap.enabled = true;
+      this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    }
 
     this.scene = new THREE.Scene();
     if (!transparent) this.scene.background = new THREE.Color(cssVar('--scene-bg'));

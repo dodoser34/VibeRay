@@ -148,11 +148,21 @@ export class SiteBackground {
     document.addEventListener('visibilitychange', this.onVisibility);
     this.motionQuery.addEventListener('change', this.onMotionPref);
 
+    this.readColors();
+    this.resize();
+  }
+
+  readColors() {
     this.colors = Object.fromEntries(
       Object.entries(COLOR_TOKENS).map(([key, token]) => [key, parseColor(cssVar(token))]),
     );
     this.grain = this.makeGrain();
-    this.resize();
+  }
+
+  // Тема сменилась: цвета токенов — заново; неподвижный кадр перерисовывается сразу.
+  refreshTheme() {
+    this.readColors();
+    if (this.running && this.isStatic) this.renderStatic();
   }
 
   get isStatic() {

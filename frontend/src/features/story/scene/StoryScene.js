@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { SceneRuntime } from '@/features/map';
 import { cssVar } from '@/shared/lib/cssVar';
 import { createProjection } from '@/shared/lib/geoProjection';
@@ -7,10 +8,16 @@ import { CITY_PARAMS, CityStage } from './CityStage';
 import { RoomSet, SCREEN_CENTER } from './RoomSet';
 
 const FOV = 38;
+// Общий план комнаты шире (видно всю комнату: стол, компьютер, корзину); к нырку в монитор угол
+// плавно сужается до FOV, чтобы карта на экране совпала с первым кадром города.
+const ROOM_FOV = 50;
 // Куда «приземляется» история, когда район показывают крупно.
 const FOCUS_DISTRICT = 'center';
 // Первый кадр города смотрит строго вниз с этой высоты (км); карта на мониторе в той же рамке.
 const TOP_VIEW_HEIGHT = 30;
+// Туман: в комнате он даёт дымку дальним домам за окном, над городом — прежняя глубина.
+const FOG_ROOM = [30, 130];
+const FOG_CITY = [80, 160];
 // Ближняя плоскость: сантиметры в комнате (камера влетает в экран), метры над городом — далёкая
 // ближняя плоскость сохраняет точность глубины, поэтому улицы на крышах не мерцают.
 const NEAR_ROOM = 0.02;
@@ -24,20 +31,44 @@ const at = (chapter, offset = 0) => chapter * CHAPTER + offset;
 // камеры и меняются одной привязанной к прокрутке шкалой GSAP, поэтому история играет вперёд и
 // назад вместе с прокруткой.
 export class StoryScene {
-  constructor(canvas, container) {
+  // daylight: комната днём (светлая тема) или ночью (тёмная) — RoomSet.
+  constructor(canvas, container, { daylight = false } = {}) {
     this.runtime = new SceneRuntime(canvas, container, {
       fov: FOV,
-      fogNear: 80,
-      fogFar: 160,
+      fogNear: FOG_CITY[0],
+      fogFar: FOG_CITY[1],
       transparent: true,
+      shadows: true,
     });
-    this.room = new RoomSet();
+    this.room = new RoomSet({ daylight, quality: this.runtime.quality });
+    // Мягкое окружение для отражений в комнате (только для неё: город освещён своим светом).
+    const pmrem = new THREE.PMREMGenerator(this.runtime.renderer);
+    const environment = new RoomEnvironment();
+    this.environment = pmrem.fromScene(environment, 0.04).texture;
+    environment.dispose();
+    pmrem.dispose();
+    this.inCity = null;
     this.runtime.scene.add(this.room.group);
-    this.room.load().catch((error) => console.error('Story room model failed to load', error));
+    // Готовность к показу: модель загружена, шейдеры скомпилированы заранее (первый кадр без
+    // рывка) и первый кадр отрисован. Ошибка загрузки тоже завершает ожидание — страница не зависнет.
+    const { renderer, scene, camera } = this.runtime;
+    this.ready = this.room
+      .load()
+      .then(() => renderer.compileAsync(scene, camera))
+      .then(
+        () =>
+          new Promise((resolve) => {
+            const off = this.runtime.onTick(() => {
+              off();
+              resolve();
+            });
+          }),
+      )
+      .catch((error) => console.error('Story room model failed to load', error));
 
-    this.params = { world: 0, ideas: 0, typed: 0, mapIn: 0, ...CITY_PARAMS };
-    this.cam = new THREE.Vector3(1.9, 1.55, 2.3);
-    this.look = new THREE.Vector3(0.25, 1.15, -0.35);
+    this.params = { world: 0, ideas: 0, typed: 0, mapIn: 0, fov: ROOM_FOV, ...CITY_PARAMS };
+    this.cam = new THREE.Vector3(2.3, 1.65, 2.75);
+    this.look = new THREE.Vector3(0.25, 1.0, -0.35);
     this.lastKey = '';
 
     this.runtime.onResize((width, height) => {
@@ -55,7 +86,7 @@ export class StoryScene {
     lights.add(
       new THREE.HemisphereLight(
         new THREE.Color(cssVar('--scene-light')),
-        new THREE.Color(cssVar('--scene-ground')),
+        new THREE.Color(cssVar('--story-wall')),
         1.6,
       ),
     );
@@ -90,6 +121,7 @@ export class StoryScene {
 
     // 1. Июльская ночь: наезд на монитор.
     shot(at(0), 9, [0.55, 1.2, 1.05], [0.05, SCREEN_CENTER.y, SCREEN_CENTER.z]);
+    tl.to(p, { fov: FOV, duration: 6, ease: 'power1.inOut' }, at(0, 3));
     // 2. Идеи мелькают и зачёркиваются, печатается вопрос, карта города занимает экран, камера
     // ныряет в неё.
     shot(at(1), 5, [0, SCREEN_CENTER.y, 0.5], screen);
@@ -153,9 +185,17 @@ export class StoryScene {
     const inCity = p.world >= 0.5 && this.city;
     this.room.group.visible = !inCity;
     if (this.city) this.city.group.visible = Boolean(inCity);
+    if (this.inCity !== Boolean(inCity)) {
+      this.inCity = Boolean(inCity);
+      const { scene } = runtime;
+      scene.environment = inCity ? null : this.environment;
+      scene.environmentIntensity = this.room.variant.environment;
+      [scene.fog.near, scene.fog.far] = inCity ? FOG_CITY : FOG_ROOM;
+    }
     const near = inCity ? NEAR_CITY : NEAR_ROOM;
-    if (camera.near !== near) {
+    if (camera.near !== near || camera.fov !== p.fov) {
       camera.near = near;
+      camera.fov = p.fov;
       camera.updateProjectionMatrix();
     }
     if (inCity) {
@@ -176,6 +216,7 @@ export class StoryScene {
   dispose() {
     this.city?.dispose();
     this.room.dispose();
+    this.environment.dispose();
     this.runtime.dispose();
   }
 }

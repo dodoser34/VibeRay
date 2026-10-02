@@ -33,4 +33,12 @@
   :root [data-ui='tabbar-item'] {
     padding-inline: var(--space-3);
   }
+
+  :root [data-ui='tabbar-theme'] {
+    display: none;
+  }
+
+  :root [data-ui='tabbar-theme-lead'] {
+    display: block;
+  }
 }

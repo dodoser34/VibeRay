@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
+import { useTheme } from '@/shared/hooks/useTheme';
 import { createSheetTexture, TILE } from '../lib/sheetTexture';
 import styles from './FrontLayer.module.css';
 
@@ -57,8 +58,10 @@ export function FrontLayer({ className = '' }) {
   const entered = usePageEntered();
   const uid = useId().replace(/:/g, '');
   const clipId = `flow-${uid}`;
-  // Текстура листа в виде бумажной карты: рисуется один раз при монтировании (бесшовный тайл).
+  // Текстура листа в виде бумажной карты: бесшовный тайл, рисуется при монтировании и заново при
+  // смене темы (цвета — из токенов).
   const [texture, setTexture] = useState(null);
+  const theme = useTheme();
 
   useEffect(() => {
     let url = null;
@@ -72,7 +75,7 @@ export function FrontLayer({ className = '' }) {
       alive = false;
       if (url) URL.revokeObjectURL(url);
     };
-  }, []);
+  }, [theme]);
 
   useGSAP(
     () => {

@@ -1,9 +1,10 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useCityData } from '@/features/map';
 import { gsap, ScrollTrigger, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/Button';
-import { CHAPTER, CHAPTERS, story } from '../content';
+import { useTheme } from '@/shared/hooks/useTheme';
+import { CHAPTER, CHAPTERS, isDaylight, story } from '../content';
 import { StoryScene } from '../scene/StoryScene';
 import { StoryCalendar } from './StoryCalendar';
 import { StoryInterface } from './StoryInterface';
@@ -24,29 +25,44 @@ const FINAL = CHAPTERS.length - 1;
 // «Как родилась идея»: закреплённая 3D-сцена, вся история которой — одна временная шкала,
 // привязанная к прокрутке. При reduced motion закрепления нет — финальный кадр и история обычным
 // текстом.
-export function StoryExperience({ onOpenMap }) {
+// onReady — вызывается один раз, когда комната загружена и данные города на месте: переход между
+// страницами держит экран закрытым до этого момента (AboutPage).
+export function StoryExperience({ onOpenMap, onReady }) {
   const language = useLanguage();
+  // Тема выбирает вариант истории: ночь в тёмной, день в светлой (content.js, RoomSet).
+  const theme = useTheme();
   const rootRef = useRef(null);
   const stageRef = useRef(null);
   const canvasRef = useRef(null);
   const sceneRef = useRef(null);
+  const [sceneReady, setSceneReady] = useState(false);
   // Прокрутка до перестройки шкалы: при перестройке закрепление снимается, страница на миг
   // становится короче, и браузер сбрасывает прокрутку назад.
   const scrollRef = useRef(null);
   const reduced = useReducedMotion();
   const { city, moods, problems } = useCityData(CITY, 'week');
-  const timelineDeps = [city.data, moods.data, problems.data, reduced, language];
+  const timelineDeps = [city.data, moods.data, problems.data, reduced, language, theme];
 
   // Layout-эффект: сцена должна существовать до того, как useGSAP (тоже layout-эффект) построит
   // шкалу.
   useLayoutEffect(() => {
-    const scene = new StoryScene(canvasRef.current, stageRef.current);
+    // Смена темы пересобирает сцену в другом варианте комнаты, шкала строится заново (theme в
+    // timelineDeps) — кадр истории сохраняется.
+    const scene = new StoryScene(canvasRef.current, stageRef.current, { daylight: isDaylight() });
     sceneRef.current = scene;
+    let alive = true;
+    scene.ready.then(() => alive && setSceneReady(true));
     return () => {
+      alive = false;
       scene.dispose();
       sceneRef.current = null;
     };
-  }, []);
+  }, [theme]);
+
+  const ready = sceneReady && Boolean(city.data && moods.data && problems.data);
+  useEffect(() => {
+    if (ready) onReady?.();
+  }, [ready, onReady]);
 
   // Очистки эффектов идут в порядке объявления: этот запоминает прокрутку раньше, чем useGSAP ниже
   // снимет закрепление.
@@ -178,7 +194,8 @@ export function StoryExperience({ onOpenMap }) {
     },
     {
       scope: rootRef,
-      // language: фразы, разобранные на слова, пересоздаются на новом языке — шкалу строим заново.
+      // language: фразы, разобранные на слова, пересоздаются на новом языке; theme: новая сцена —
+      // шкалу строим заново.
       dependencies: timelineDeps,
       revertOnUpdate: true,
     },

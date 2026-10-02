@@ -17,5 +17,14 @@
       "ru": "Русский",
       "en": "English"
     }
+  },
+  "theme": {
+    "label": "Colour theme",
+    "toLight": "Switch to the light theme",
+    "toDark": "Switch to the dark theme",
+    "names": {
+      "dark": "Dark",
+      "light": "Light"
+    }
   }
 }

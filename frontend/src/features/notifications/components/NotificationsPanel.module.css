@@ -55,7 +55,8 @@
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: 0 var(--space-2);
+  /* Запас снизу: последнее уведомление не упирается в край прокрутки */
+  padding: 0 var(--space-2) var(--space-3);
 }
 
 .state {

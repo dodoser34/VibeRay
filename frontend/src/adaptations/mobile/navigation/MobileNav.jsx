@@ -7,6 +7,7 @@ import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { format } from '@/shared/lib/format';
 import { Avatar } from '@/shared/ui/Avatar';
 import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
+import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
 import { Modal } from '@/shared/ui/Modal';
 import notificationTexts from '@/texts/ru/notifications.json';
 import nav from '@/texts/ru/nav.json';
@@ -227,7 +228,10 @@ export function MobileNav() {
           </nav>
 
           <div className={styles.footer} data-menu-item>
-            <LanguageSwitch />
+            <div className={styles.footerControls}>
+              <ThemeSwitch />
+              <LanguageSwitch />
+            </div>
             <p>{nav.menu.footer}</p>
           </div>
         </div>

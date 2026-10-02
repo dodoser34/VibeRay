@@ -59,23 +59,38 @@ export class HeroScene {
 
   addLights() {
     const { scene } = this.runtime;
-    scene.add(
-      new THREE.HemisphereLight(
-        new THREE.Color(cssVar('--scene-light')),
-        new THREE.Color(cssVar('--scene-ground')),
-        1.3,
-      ),
-    );
-    const key = new THREE.DirectionalLight(new THREE.Color(cssVar('--scene-light')), 2);
+    this.hemi = new THREE.HemisphereLight(undefined, undefined, 1.3);
+    const key = new THREE.DirectionalLight(undefined, 2);
     key.position.set(-2.5, 3, 3.5);
-    const rim = new THREE.DirectionalLight(new THREE.Color(cssVar('--color-accent-bright')), 1.1);
+    const rim = new THREE.DirectionalLight(undefined, 1.1);
     rim.position.set(2.5, 2, -2.5);
-    const rimLeft = new THREE.DirectionalLight(new THREE.Color(cssVar('--color-river')), 0.6);
+    const rimLeft = new THREE.DirectionalLight(undefined, 0.6);
     rimLeft.position.set(-2.8, 1.5, -2);
     // Мягкий заполняющий свет над городом; ненадолго светлеет на событиях районов.
-    this.mapLight = new THREE.PointLight(new THREE.Color(cssVar('--scene-light')), 0.6, 3.5, 1.5);
+    this.mapLight = new THREE.PointLight(undefined, 0.6, 3.5, 1.5);
     this.mapLight.position.set(0, 1.4, 0.6);
-    scene.add(key, rim, rimLeft, this.mapLight);
+    // Свет → токен цвета: при смене темы цвета перечитываются (refreshTheme).
+    this.lightTokens = [
+      [this.hemi, '--scene-light'],
+      [key, '--scene-light'],
+      [rim, '--color-accent-bright'],
+      [rimLeft, '--color-river'],
+      [this.mapLight, '--scene-light'],
+    ];
+    this.paintLights();
+    scene.add(this.hemi, key, rim, rimLeft, this.mapLight);
+  }
+
+  paintLights() {
+    this.lightTokens.forEach(([light, token]) => light.color.set(cssVar(token)));
+    this.hemi.groundColor.set(cssVar('--scene-ground'));
+  }
+
+  // Тема сменилась: свет, пыль и плиты районов — в цветах новой темы.
+  refreshTheme() {
+    this.paintLights();
+    this.particles?.material.color.set(cssVar('--scene-dust'));
+    this.districts?.refreshTheme();
   }
 
   addParticles() {

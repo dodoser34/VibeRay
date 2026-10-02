@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router';
 import { SiteBackground } from '@/shared/animations/SiteBackground';
+import { subscribeTheme } from '@/shared/lib/theme';
 import styles from './AnimatedBackground.module.css';
 
 // Кнопки и панели сохраняют свои клики; клик в любом другом месте пускает волну по изолиниям.
@@ -19,7 +20,9 @@ export function AnimatedBackground() {
       if (!event.target.closest(INTERACTIVE)) background.ripple(event.clientX, event.clientY);
     };
     window.addEventListener('pointerdown', onPointerDown);
+    const unsubscribe = subscribeTheme(() => background.refreshTheme());
     return () => {
+      unsubscribe();
       window.removeEventListener('pointerdown', onPointerDown);
       background.dispose();
       backgroundRef.current = null;

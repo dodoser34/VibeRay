@@ -47,13 +47,13 @@
 
 .primary {
   background: var(--color-accent);
-  color: var(--color-text);
+  color: var(--color-on-accent);
   box-shadow: var(--shadow-soft);
 }
 
 .primary:hover:not(:disabled) {
   background: var(--color-accent-bright);
-  color: var(--color-bg);
+  color: var(--color-on-accent-hover);
 }
 
 .ghost {

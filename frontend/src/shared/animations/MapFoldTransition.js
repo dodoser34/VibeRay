@@ -143,6 +143,12 @@ export class MapFoldTransition {
   }
 
   // ─── Публичный API ───────────────────────────────────────
+  // Тема сменилась: бумажная карта перерисовывается в цветах новой темы (во время перехода — после).
+  refreshTheme() {
+    if (this._state === 'idle') this._ready = this._layout();
+    else this._dirty = true;
+  }
+
   async cover({ x, y, label = '', from: fromLabel = '', targetRect = null } = {}) {
     if (this._state === 'disposed') return;
     if (this._state === 'covering' || this._state === 'covered') return this._coverPromise;

@@ -1,85 +1,219 @@
 import * as THREE from 'three';
 import { cssVar } from '@/shared/lib/cssVar';
+import { getLanguage } from '@/shared/lib/language';
+import about from '@/texts/ru/about.json';
 
 function seeded(seed) {
   let s = seed;
   return () => (s = (s * 16807) % 2147483647) / 2147483647;
 }
 
+// Шрифт уменьшается, пока строка не влезет в max пикселей: надписи не выходят за край холста ни на
+// одном языке.
+function fitFont(ctx, text, weight, size, family, max) {
+  let px = size;
+  ctx.font = `${weight} ${px}px ${family}`;
+  while (ctx.measureText(text).width > max && px > 10) {
+    px -= 2;
+    ctx.font = `${weight} ${px}px ${family}`;
+  }
+}
+
 function canvasTexture(width, height, paint) {
   const canvas = document.createElement('canvas');
   canvas.width = width;
   canvas.height = height;
-  paint(canvas.getContext('2d'), width, height);
+  const ctx = canvas.getContext('2d');
+  paint(ctx, width, height);
   const texture = new THREE.CanvasTexture(canvas);
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 4;
+  // Текстуры с надписями перерисовываются при смене языка (RoomSet.update).
+  texture.userData.repaint = () => {
+    ctx.clearRect(0, 0, width, height);
+    paint(ctx, width, height);
+    texture.needsUpdate = true;
+  };
   return texture;
 }
 
-// Ночной город за окном: небо с бледной луной и несколькими звёздами, три слоя зданий (дальние в
-// дымке), горящие окна и огни машин вдоль улицы. Без свечения — плоские цвета.
-export function nightCityTexture() {
-  return canvasTexture(1400, 875, (ctx, W, H) => {
-    const rnd = seeded(7);
+// Небо над улицей за окном. UV плоскости неба в модели покрывают только видимую из окна часть
+// (верх холста — высоко над крышами, низ — горизонт), поэтому облака, звёзды и луна рисуются в
+// средней полосе холста. Днём — облака, ночью — звёзды и бледная луна; без свечения.
+export function skyTexture({ daylight }) {
+  return canvasTexture(2048, 1024, (ctx, W, H) => {
+    const rnd = seeded(daylight ? 3 : 7);
     const sky = ctx.createLinearGradient(0, 0, 0, H);
-    sky.addColorStop(0, cssVar('--color-bg-deep'));
-    sky.addColorStop(0.7, cssVar('--story-sky'));
-    sky.addColorStop(1, cssVar('--story-sky'));
+    sky.addColorStop(0, cssVar('--story-sky-top'));
+    sky.addColorStop(0.85, cssVar('--story-sky'));
     ctx.fillStyle = sky;
     ctx.fillRect(0, 0, W, H);
-
-    ctx.fillStyle = cssVar('--color-text');
-    for (let i = 0; i < 60; i++) {
-      ctx.globalAlpha = 0.15 + rnd() * 0.35;
-      ctx.fillRect(rnd() * W, rnd() * H * 0.45, 1.6, 1.6);
-    }
-    ctx.globalAlpha = 0.55;
-    ctx.beginPath();
-    ctx.arc(W * 0.8, H * 0.16, 26, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.globalAlpha = 1;
-
-    const layers = [
-      { top: 0.42, min: 0.12, max: 0.3, alpha: 0.45, lit: 0.08, win: 5 },
-      { top: 0.5, min: 0.15, max: 0.38, alpha: 0.75, lit: 0.13, win: 7 },
-      { top: 0.6, min: 0.2, max: 0.42, alpha: 1, lit: 0.18, win: 9 },
-    ];
-    layers.forEach((layer) => {
-      for (let x = -20; x < W;) {
-        const w = 50 + rnd() * 120;
-        const h = H * (layer.min + rnd() * (layer.max - layer.min));
-        const y = H * layer.top + (H * 0.4 - h) * 0.4;
-        ctx.globalAlpha = layer.alpha;
-        ctx.fillStyle = cssVar('--story-skyline');
-        ctx.fillRect(x, y, w, H - y);
-        if (rnd() < 0.3) ctx.fillRect(x + w * 0.4, y - 18, 3, 18); // антенна
-        ctx.fillStyle = cssVar('--story-window-light');
-        const step = layer.win * 2.4;
-        for (let wy = y + 10; wy < H - 60; wy += step) {
-          for (let wx = x + 6; wx < x + w - 8; wx += step * 0.8) {
-            if (rnd() < layer.lit) {
-              ctx.globalAlpha = layer.alpha * (0.35 + rnd() * 0.5);
-              ctx.fillRect(wx, wy, layer.win * 0.7, layer.win);
-            }
-          }
+    if (daylight) {
+      ctx.fillStyle = cssVar('--story-cloud');
+      for (let i = 0; i < 16; i++) {
+        const cx = W * (0.25 + rnd() * 0.55);
+        const cy = H * (0.18 + rnd() * 0.5);
+        const size = 30 + rnd() * 50;
+        ctx.globalAlpha = 0.35 + rnd() * 0.35;
+        for (let k = 0; k < 5; k++) {
+          ctx.beginPath();
+          ctx.ellipse(
+            cx + (k - 2) * size * 0.7,
+            cy - (k % 2) * size * 0.25,
+            size,
+            size * 0.42,
+            0,
+            0,
+            Math.PI * 2,
+          );
+          ctx.fill();
         }
-        x += w + 2 + rnd() * 10;
       }
-    });
-
-    // улица с цепочкой фар и задних огней
-    ctx.globalAlpha = 1;
-    ctx.fillStyle = cssVar('--color-bg-deep');
-    ctx.fillRect(0, H - 60, W, 60);
-    for (let i = 0; i < 26; i++) {
-      const x = rnd() * W;
-      const lane = rnd() < 0.5;
-      ctx.fillStyle = cssVar(lane ? '--story-window-light' : '--story-tail-light');
-      ctx.globalAlpha = 0.5 + rnd() * 0.4;
-      ctx.fillRect(x, H - (lane ? 40 : 24), 5, 3);
-      ctx.fillRect(x + 9, H - (lane ? 40 : 24), 5, 3);
+    } else {
+      ctx.fillStyle = cssVar('--color-text');
+      for (let i = 0; i < 260; i++) {
+        ctx.globalAlpha = 0.2 + rnd() * 0.5;
+        const r = rnd() < 0.1 ? 2.2 : 1.3;
+        ctx.fillRect(W * (0.2 + rnd() * 0.6), H * rnd() * 0.65, r, r);
+      }
+      ctx.globalAlpha = 0.85;
+      ctx.fillStyle = cssVar('--story-paper');
+      ctx.beginPath();
+      ctx.arc(W * 0.47, H * 0.4, 26, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 0.18;
+      ctx.fillStyle = cssVar('--story-sky');
+      [
+        [-8, -6, 7],
+        [9, 5, 5],
+        [-2, 11, 4],
+      ].forEach(([dx, dy, r]) => {
+        ctx.beginPath();
+        ctx.arc(W * 0.47 + dx, H * 0.4 + dy, r, 0, Math.PI * 2);
+        ctx.fill();
+      });
     }
+    ctx.globalAlpha = 1;
+  });
+}
+
+// Корешки книг на полке, стилизованные по изданиям (без обложек и логотипов): манга «Атака на
+// титанов» (Азбука) — светлый корешок, тёмная плашка с номером тома; Стивен Кинг (АСТ) — тёмный
+// корешок, имя автора и название цветом книги. Русские корешки читаются снизу вверх, английские —
+// сверху вниз.
+const SPINES = {
+  titan: { background: '--story-spine-titan', ink: '--story-monitor', band: '--story-monitor' },
+  it: { background: '--story-spine-king', ink: '--story-paper', accent: '--mood-angry' },
+  'green-mile': { background: '--story-spine-king', ink: '--story-paper', accent: '--story-plant' },
+  shawshank: { background: '--story-spine-king', ink: '--story-paper', accent: '--color-river' },
+};
+const KING_TITLES = { it: 'it', 'green-mile': 'greenMile', shawshank: 'shawshank' };
+
+export function spineTexture(key) {
+  const [series, volume] = key.startsWith('titan-') ? ['titan', key.slice(6)] : [key, null];
+  const style = SPINES[series];
+  return canvasTexture(96, 736, (ctx, W, H) => {
+    const shelf = about.room.shelf;
+    const display = cssVar('--font-display');
+    const body = cssVar('--font-body');
+    ctx.fillStyle = cssVar(style.background);
+    ctx.fillRect(0, 0, W, H);
+    // Текст вдоль корешка: поворот холста, x — вдоль книги, y — поперёк.
+    const along = (draw) => {
+      ctx.save();
+      if (getLanguage() === 'ru') {
+        ctx.translate(0, H);
+        ctx.rotate(-Math.PI / 2);
+      } else {
+        ctx.translate(W, 0);
+        ctx.rotate(Math.PI / 2);
+      }
+      draw(H, W);
+      ctx.restore();
+    };
+    ctx.textBaseline = 'middle';
+    if (volume) {
+      ctx.fillStyle = cssVar(style.band);
+      ctx.fillRect(0, 0, W, 120);
+      ctx.fillStyle = cssVar(style.background);
+      ctx.font = `700 52px ${display}`;
+      ctx.textAlign = 'center';
+      ctx.fillText(volume, W / 2, 62);
+      along((L, T) => {
+        const ru = getLanguage() === 'ru';
+        ctx.fillStyle = cssVar(style.ink);
+        ctx.textAlign = ru ? 'right' : 'left';
+        fitFont(ctx, shelf.titan.toUpperCase(), 700, 40, display, 430);
+        ctx.fillText(shelf.titan.toUpperCase(), ru ? L - 150 : 150, T / 2);
+        ctx.textAlign = ru ? 'left' : 'right';
+        ctx.font = `600 22px ${body}`;
+        ctx.globalAlpha = 0.75;
+        ctx.fillText(shelf.isayama, ru ? 40 : L - 40, T / 2);
+        ctx.globalAlpha = 1;
+      });
+      return;
+    }
+    // Имя автора — у верха книги, название — ниже, цветом книги.
+    along((L, T) => {
+      const ru = getLanguage() === 'ru';
+      ctx.fillStyle = cssVar(style.ink);
+      ctx.textAlign = ru ? 'right' : 'left';
+      ctx.font = `600 24px ${body}`;
+      ctx.fillText(shelf.king.toUpperCase(), ru ? L - 40 : 40, T / 2);
+      ctx.fillStyle = cssVar(style.accent);
+      ctx.textAlign = ru ? 'left' : 'right';
+      const title = shelf[KING_TITLES[series]].toUpperCase();
+      fitFont(ctx, title, 700, 44, display, L - 300);
+      ctx.fillText(title, ru ? 40 : L - 40, T / 2);
+    });
+  });
+}
+
+// Экран телефона на столе. Ночью он горит: экран блокировки с крупным временем и датой (светлый
+// текст на тёмном, без свечения). Днём экран погашен. Верх холста — верх телефона (к окну).
+export function phoneTexture({ daylight }) {
+  return canvasTexture(288, 608, (ctx, W, H) => {
+    if (daylight) {
+      const off = ctx.createLinearGradient(0, 0, W, H);
+      off.addColorStop(0, cssVar('--story-monitor'));
+      off.addColorStop(0.55, cssVar('--story-glass'));
+      off.addColorStop(1, cssVar('--story-monitor'));
+      ctx.fillStyle = off;
+      ctx.fillRect(0, 0, W, H);
+      ctx.fillStyle = cssVar('--story-monitor');
+      ctx.globalAlpha = 0.75;
+      ctx.fillRect(0, 0, W, H);
+      ctx.globalAlpha = 1;
+      return;
+    }
+    const phone = about.room.phone;
+    const wallpaper = ctx.createLinearGradient(0, 0, 0, H);
+    wallpaper.addColorStop(0, cssVar('--color-bg-raised'));
+    wallpaper.addColorStop(1, cssVar('--color-accent'));
+    ctx.fillStyle = wallpaper;
+    ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = cssVar('--color-bg-deep');
+    ctx.globalAlpha = 0.35;
+    ctx.fillRect(0, 0, W, H);
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = cssVar('--color-text');
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'alphabetic';
+    const inner = W - 56;
+    fitFont(ctx, phone.date, 500, 22, cssVar('--font-body'), inner);
+    ctx.fillText(phone.date, W / 2, 120);
+    fitFont(ctx, phone.time, 600, 72, cssVar('--font-display'), inner);
+    ctx.fillText(phone.time, W / 2, 205);
+    ctx.globalAlpha = 0.7;
+    [
+      [58, H - 70],
+      [W - 58, H - 70],
+    ].forEach(([x, y]) => {
+      ctx.beginPath();
+      ctx.arc(x, y, 20, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    ctx.fillRect(W / 2 - 46, H - 28, 92, 5);
     ctx.globalAlpha = 1;
   });
 }

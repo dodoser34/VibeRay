@@ -1,6 +1,10 @@
 {
   "story": {
     "stamp": "July · 10 p.m.",
+    "daylight": {
+      "stamp": "July · 2 p.m.",
+      "evening": "An ordinary July afternoon. I was sitting at my computer, wondering what I could come up with."
+    },
     "hint": "Scroll — the story is about to begin",
     "openMap": "Open the city map",
     "chapters": {
@@ -68,6 +72,7 @@
     "appName": "Notes",
     "menu": ["File", "Edit", "View", "Window"],
     "date": "July, Fri  22:00",
+    "dateDaylight": "July, Fri  14:00",
     "fileName": "Idea.txt",
     "folders": ["Studies", "Projects", "Games", "Photos", "Music", "Social"],
     "ideas": {
@@ -76,6 +81,20 @@
       "game": "Mobile game",
       "studyNetwork": "Study social network",
       "finance": "Finance"
+    }
+  },
+  "room": {
+    "shelf": {
+      "titan": "Attack on Titan",
+      "isayama": "H. Isayama",
+      "king": "Stephen King",
+      "it": "It",
+      "greenMile": "The Green Mile",
+      "shawshank": "Shawshank Redemption"
+    },
+    "phone": {
+      "time": "22:00",
+      "date": "Friday, July 14"
     }
   },
   "guide": {

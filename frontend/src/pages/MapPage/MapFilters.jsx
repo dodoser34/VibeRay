@@ -1,9 +1,12 @@
+import { useLayoutEffect, useRef } from 'react';
 import { DistrictLegend } from '@/features/map';
 import { MoodLegend, PeriodSwitch } from '@/features/mood';
 import { StatusChip } from '@/features/problems';
 import { MetricLegend } from '@/features/stats';
 import { STATS_PERIODS } from '@/shared/config/periods';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
+import { gsap } from '@/shared/animations/gsapSetup';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { format } from '@/shared/lib/format';
 import { formatTime } from '@/shared/lib/formatDate';
 import texts from '@/texts/ru/map.json';
@@ -14,14 +17,43 @@ import styles from './MapFilters.module.css';
 const LAYERS = ['districts', 'mood', 'problems'];
 const METRICS = ['mood', 'problems'];
 
+// Переключатель-кнопки (слой, показатель): рамка выбора переезжает к нажатой кнопке, кнопка
+// чуть проседает под пальцем. При смене ширины (панель, язык) рамка встаёт на место без анимации.
 function Choice({ options, value, onChange, label }) {
+  const rootRef = useRef(null);
+  const thumbRef = useRef(null);
+  const language = useLanguage();
+
+  useLayoutEffect(() => {
+    const place = (duration) => {
+      const active = rootRef.current.querySelector('[aria-checked="true"]');
+      if (!active) return;
+      gsap.to(thumbRef.current, {
+        x: active.offsetLeft,
+        y: active.offsetTop,
+        width: active.offsetWidth,
+        height: active.offsetHeight,
+        autoAlpha: 1,
+        duration,
+        ease: 'power3.out',
+        overwrite: 'auto',
+      });
+    };
+    place(0.45);
+    const observer = new ResizeObserver(() => place(0));
+    observer.observe(rootRef.current);
+    return () => observer.disconnect();
+  }, [value, language]);
+
   return (
     <div
+      ref={rootRef}
       className={styles.choices}
       style={{ '--count': options.length }}
       role="radiogroup"
       aria-label={label}
     >
+      <span ref={thumbRef} className={styles.choiceThumb} aria-hidden="true" />
       {options.map(([code, text]) => (
         <button
           key={code}
@@ -138,25 +170,28 @@ export function MapFilters({
         <span className={styles.groupLabel}>
           {isStats ? texts.stats.legend : texts.legendTitles[layer]}
         </span>
-        {isStats && <MetricLegend metric={metric} period={statsPeriod} range={range} />}
-        {!isStats && layer === 'districts' && !sheet && (
-          <DistrictLegend
-            districts={districts}
-            selectedSlug={selectedSlug}
-            onSelect={onSelectDistrict}
-          />
-        )}
-        {!isStats && layer === 'districts' && sheet && (
-          <p className={styles.hint}>{texts.filters.districtsHint}</p>
-        )}
-        {!isStats && layer === 'mood' && <MoodLegend />}
-        {!isStats && layer === 'problems' && (
-          <div className={styles.statuses}>
-            {PROBLEM_STATUSES.map((s) => (
-              <StatusChip key={s.code} status={s.code} />
-            ))}
-          </div>
-        )}
+        {/* key: при смене слоя или показателя легенда появляется заново — мягко поднимается */}
+        <div key={isStats ? `stats:${metric}` : layer} className={styles.legendBody}>
+          {isStats && <MetricLegend metric={metric} period={statsPeriod} range={range} />}
+          {!isStats && layer === 'districts' && !sheet && (
+            <DistrictLegend
+              districts={districts}
+              selectedSlug={selectedSlug}
+              onSelect={onSelectDistrict}
+            />
+          )}
+          {!isStats && layer === 'districts' && sheet && (
+            <p className={styles.hint}>{texts.filters.districtsHint}</p>
+          )}
+          {!isStats && layer === 'mood' && <MoodLegend />}
+          {!isStats && layer === 'problems' && (
+            <div className={styles.statuses}>
+              {PROBLEM_STATUSES.map((s) => (
+                <StatusChip key={s.code} status={s.code} />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       <p className={styles.footnote} data-ui="map-filters-footnote">

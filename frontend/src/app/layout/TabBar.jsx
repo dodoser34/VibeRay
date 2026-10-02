@@ -8,6 +8,7 @@ import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
 import { Avatar } from '@/shared/ui/Avatar';
 import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
+import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
 import { usePageNavigate, useTransitionNavigate } from '../transitions/useTransition';
 import nav from '@/texts/ru/nav.json';
 import styles from './TabBar.module.css';
@@ -194,6 +195,10 @@ export function TabBar() {
         </svg>
         <span data-ui="tabbar-brand">{nav.brand}</span>
       </Link>
+      {/* На планшете стоя справа нет места — там тема встаёт рядом с логотипом (adaptations/tablet) */}
+      <div className={styles.leadTheme} data-ui="tabbar-theme-lead">
+        <ThemeSwitch />
+      </div>
 
       <nav ref={navRef} className={styles.nav} aria-label={nav.navLabel}>
         <div ref={trackRef} className={styles.track}>
@@ -247,6 +252,9 @@ export function TabBar() {
       </nav>
 
       <div className={styles.aside} data-ui="tabbar-aside" data-aside>
+        <span className={styles.asideTheme} data-ui="tabbar-theme">
+          <ThemeSwitch />
+        </span>
         <LanguageSwitch />
         {user && <NotificationBell onNavigate={openPage} />}
       </div>

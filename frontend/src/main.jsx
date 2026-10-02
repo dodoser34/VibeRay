@@ -1,5 +1,6 @@
 // Первым: язык интерфейса подставляется в тексты до того, как их прочитают остальные модули
 import '@/shared/lib/language';
+import '@/shared/lib/theme';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router';
@@ -9,6 +10,8 @@ import { trackInputModality } from '@/app/inputModality';
 import { router } from '@/app/router';
 import '@/shared/animations/gsapSetup';
 import '@/styles/tokens.css';
+import '@/styles/themes/dark.css';
+import '@/styles/themes/light.css';
 import '@/styles/reset.css';
 import '@/styles/global.css';
 // Последними: адаптации стилей компонентов под устройства (src/adaptations/README.md)

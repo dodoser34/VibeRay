@@ -1,0 +1,91 @@
+/* Круглая стеклянная кнопка в стиле колокольчика и переключателя языка */
+.toggle {
+  display: grid;
+  place-items: center;
+  width: 2.875rem;
+  height: 2.875rem;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  box-shadow:
+    var(--shadow-panel),
+    inset 0 1px 0 var(--color-glass-highlight);
+  backdrop-filter: blur(var(--blur-glass));
+  color: var(--color-text);
+  cursor: pointer;
+  pointer-events: auto;
+  transition:
+    border-color var(--dur-fast),
+    background-color var(--dur-fast);
+}
+
+.toggle:hover {
+  border-color: var(--color-glass-highlight);
+  background: var(--color-glass-strong);
+}
+
+.icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Иконка мягко поворачивается при смене темы */
+.toggle .icon {
+  animation: icon-in var(--dur-slow) var(--ease-out);
+}
+
+@keyframes icon-in {
+  from {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.6);
+  }
+}
+
+/* Настройки: два варианта с названиями, выбранный — в рамке акцента */
+.group {
+  display: inline-flex;
+  gap: 2px;
+  padding: 0.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+}
+
+.option {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 2.25rem;
+  padding: 0 var(--space-4) 0 var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    color var(--dur-fast),
+    border-color var(--dur-fast),
+    background-color var(--dur-fast);
+}
+
+.option:hover {
+  color: var(--color-text);
+}
+
+.option[aria-pressed='true'] {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+  color: var(--color-text);
+  cursor: default;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle .icon {
+    animation: none;
+  }
+}

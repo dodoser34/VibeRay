@@ -1,0 +1,156 @@
+/* Тёмная тема (по умолчанию): лесная ночь — тёмный приглушённый зелёный. Все цветовые токены
+   темы; размеры, шрифты и движение — в ../tokens.css. Светлая тема переопределяет те же имена. */
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Палитра: тёмный приглушённый лесной зелёный — ~70 % тёмные поверхности, ~20 % текст, ~10 %
+     зелёный. Глубокий, но не светящийся: зелёный с насыщенностью 45–60 %, светлотой 25–40 % */
+
+  /* Поверхности */
+  --color-bg: #0b110d;
+  --color-bg-deep: #070b08;
+  --color-bg-raised: #141d17;
+  --color-glass: rgba(20, 29, 23, 0.62);
+  --color-glass-strong: rgba(20, 29, 23, 0.92);
+  --color-glass-solid: rgba(17, 25, 20, 0.97);
+  --color-overlay: rgba(4, 7, 5, 0.6);
+  --color-glass-border: #24332a;
+  --color-glass-highlight: rgba(200, 211, 196, 0.14);
+  --color-street: #24332a;
+  --bg-contour: #1d2b22; /* изолинии анимированного фона сайта */
+
+  /* Текст — с оттенком фона, никогда не чисто белый */
+  --color-text: #c8d3c4;
+  --color-text-muted: #7c8c7e;
+  --color-text-faint: #637266;
+
+  /* Акцент — насыщенный, но тусклый зелёный; янтарь и красный — точечно */
+  --color-accent: #2f7a4a;
+  --color-accent-bright: #3e9160;
+  --color-accent-soft: rgba(47, 122, 74, 0.2);
+  --color-focus: #3e9160;
+  --color-alert: #a8742e;
+  --color-danger: #7a2e2a;
+  --color-error: #c4675c; /* читаемый вариант --color-danger для текста */
+  --color-success: #3e9160;
+  --color-river: #4d8aa0;
+
+  /* Шкала настроения (главная цветовая шкала продукта) — приглушена под тёмно-зелёный */
+  --mood-excellent: #5aa67f;
+  --mood-good: #95ae68;
+  --mood-normal: #c7b466;
+  --mood-anxious: #c99a62;
+  --mood-bad: #c47b5d;
+  --mood-angry: #b85f59;
+  --mood-very-bad: #9a5a74;
+  --mood-none: #5f6b62;
+
+  /* Цвета районов (districts.geojson → palette). У соседних районов цвета не совпадают */
+  --district-1: #c9b562;
+  --district-2: #c07f98;
+  --district-3: #a88669;
+  --district-4: #6b95b8;
+  --district-5: #67a37f;
+  --district-6: #c98f5a;
+  --district-7: #bf6d64;
+  --district-8: #8f7fb5;
+  --district-9: #6aa7a0;
+  --district-10: #9fae63;
+  --district-11: #b087ab;
+  --district-12: #949cad;
+
+  /* Сравнение двух районов на дашборде: район A и район B (линии, полосы, отметки) */
+  --compare-a: #6aa7a0;
+  --compare-b: #c98f5a;
+
+  /* Статусы проблем */
+  --status-new: #6b95b8;
+  --status-confirmed: #a8742e;
+  --status-in-progress: #8f7fb5;
+  --status-resolved: #3e9160;
+  --status-rejected: #6f6a62; /* отклонена модератором: приглушённый серый, не тревожный */
+
+  /* 3D-сцена */
+  --scene-bg: #0b110d;
+  --color-layer-front: #141d17;
+  --color-layer-edge: #0e1510;
+  --color-layer-shadow: rgba(0, 0, 0, 0.55);
+  --scene-fog: #0b110d;
+  --scene-ground: #111913;
+  --scene-light: #f3f1ea; /* нейтральный белый свет: плиты сохраняют свой оттенок */
+  /* Время суток на карте: свет мягче утром и вечером, приглушённо-холодный ночью (без неона) */
+  --scene-light-dawn: #eee2cf;
+  --scene-light-dusk: #ead9c4;
+  --scene-light-night: #b4bdca;
+  --scene-bg-night: #070b09;
+  --scene-window: #cdb27c;
+  --scene-district-edge: #c8d3c4;
+  --scene-street-on-district: #0b110d;
+  /* Схема дорог вокруг районов: магистрали светлее, дворовые проезды почти сливаются с землёй */
+  --scene-road-major: #3d4b41;
+  --scene-road: #24332a;
+  --scene-road-service: #1b271f;
+  --scene-rail: #55595a;
+  --scene-dust: #7c8c7e;
+
+  /* История «О проекте»: комната (public/models/story-room.glb) июльской ночью — та же модель, что днём
+     в светлой теме; улица за окном, системный блок, корешки книг */
+  --story-wall: #101812;
+  --story-desk: #2a2622;
+  --story-monitor: #16191a;
+  --story-monitor-frame: #16191a; /* оконная рама */
+  --story-screen: #0e1511;
+  --story-sky-top: #070b08;
+  --story-sky: #132019;
+  --story-skyline: #0a100c;
+  --story-window-light: #8a7550;
+  --story-sun: #8a7550;
+  --story-cloud: #1a2620;
+  --story-paper: #b9b2a0;
+  --story-note: #c2ae66;
+  --story-plant: #3f6b4c;
+  --story-pot: #5e4a3c;
+  --story-fabric: #18231d;
+  --story-metal: #3a3f3d;
+  --story-book-a: #5b4636;
+  --story-book-b: #34483c;
+  --story-book-c: #6b5b3a;
+
+  --story-house-a: #3a3a33;
+  --story-house-b: #33393a;
+  --story-house-c: #3d382c;
+  --story-roof: #23272a;
+  --story-glass: #151c1e;
+  --story-road: #1a1d1c;
+  --story-paving: #2b2e2b;
+  --story-grass: #142018;
+  --story-tree: #1a2c1f;
+  --story-tree-light: #22362a;
+  --story-birch: #8a887f;
+  --story-trunk: #2a231c;
+  --story-lamp: #3a3a35;
+  --story-car-a: #3a201d;
+  --story-car-b: #1e2733;
+  --story-car-c: #4a4a46;
+  --story-pcb: #12201a;
+  --story-pc-case: #232726;
+  --story-spine-titan: #a8a28f;
+  --story-spine-king: #121314;
+  /* Текст на заливке акцента (кнопки, бейджи): светлый; при наведении — тёмный на ярком зелёном */
+  --color-on-accent: #c8d3c4;
+  --color-on-accent-hover: #0b110d;
+
+  /* Переход «бумажная карта»: RGB-тройки для rgba()-теней и бликов на сгибах (без свечения) */
+  --rgb-fold-shade: 0, 0, 0;
+  --rgb-fold-light: 200, 211, 196;
+
+  /* Полосы прокрутки */
+  --scrollbar-thumb: #2c3d32;
+  --scrollbar-thumb-hover: var(--color-accent);
+  --scrollbar-thumb-active: var(--color-accent-bright);
+
+  /* Тени — нейтральные, без цвета акцента */
+  --shadow-panel: 0 24px 60px -20px rgba(0, 0, 0, 0.55);
+  --shadow-soft: 0 6px 18px -8px rgba(0, 0, 0, 0.5);
+}

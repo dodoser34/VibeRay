@@ -1,4 +1,5 @@
 import { useEffect, useImperativeHandle, useRef } from 'react';
+import { subscribeTheme } from '@/shared/lib/theme';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { HeroScene } from '../scene/HeroScene';
 import styles from './HeroCanvas.module.css';
@@ -26,6 +27,8 @@ export function HeroCanvas({ ref, city, moods, stacked = false }) {
   useEffect(() => {
     if (city) sceneRef.current.setCity(city);
   }, [city]);
+
+  useEffect(() => subscribeTheme(() => sceneRef.current?.refreshTheme()), []);
 
   useEffect(() => {
     if (moods) sceneRef.current.setMoods(moods);

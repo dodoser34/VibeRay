@@ -21,9 +21,23 @@
   min-height: 0;
 }
 
-.legend > :last-child {
+.legendBody {
   min-height: 0;
   overflow: hidden auto;
+  animation: legend-in var(--dur-base) var(--ease-out);
+}
+
+@keyframes legend-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .legendBody {
+    animation: none;
+  }
 }
 
 .heightHead {
@@ -108,9 +122,23 @@
 }
 
 .choices {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(var(--count), 1fr);
   gap: var(--space-2);
+}
+
+/* Рамка выбора поверх кнопок: прозрачная заливка акцента, текст под ней читается */
+.choiceThumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-accent-bright);
+  background: var(--color-accent-soft);
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .choice {
@@ -125,13 +153,27 @@
   white-space: nowrap;
   transition:
     border-color var(--dur-base) var(--ease-out),
-    color var(--dur-base) var(--ease-out);
+    color var(--dur-base) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+
+.choice:hover {
+  color: var(--color-text);
+  border-color: var(--color-glass-highlight);
+}
+
+.choice:active {
+  transform: scale(0.96);
 }
 
 .choice[aria-checked='true'] {
-  border-color: var(--color-accent-bright);
-  background: var(--color-accent-soft);
   color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .choice {
+    transition: none;
+  }
 }
 
 .statuses {

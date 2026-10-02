@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/shared/ui/Button';
 import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
+import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
 import { DeleteAccountDialog } from './DeleteAccountDialog';
 import { SettingsSection } from './SettingsSection';
 import texts from '@/texts/ru/settings.json';
@@ -25,6 +26,13 @@ export function AccountSection({ id, onLogout, onDeleted }) {
             <p className={styles.rowText}>{texts.account.languageText}</p>
           </div>
           <LanguageSwitch full />
+        </div>
+        <div className={styles.row}>
+          <div className={styles.text}>
+            <h3 className={styles.rowTitle}>{texts.account.themeTitle}</h3>
+            <p className={styles.rowText}>{texts.account.themeText}</p>
+          </div>
+          <ThemeSwitch full />
         </div>
         <div className={styles.row}>
           <div className={styles.text}>

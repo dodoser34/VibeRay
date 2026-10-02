@@ -251,6 +251,16 @@ export class DistrictsLayer {
 
   // Новая смена цвета заменяет идущую (overwrite): например, настроения приходят чуть раньше оценок
   // дашборда, и более длинная первая анимация не должна закончиться последней.
+  // Тема сменилась: границы, улицы на крышах, окна и сами плиты — в цветах новой темы.
+  refreshTheme() {
+    const edge = new THREE.Color(cssVar('--scene-district-edge'));
+    this.items.forEach((item) => item.lineMaterial.color.copy(edge));
+    const street = new THREE.Color(cssVar('--scene-street-on-district'));
+    this.streetMaterials.forEach((material) => material.color.copy(street));
+    this.windowMaterial?.color.set(cssVar('--scene-window'));
+    this.applyColors(0.6);
+  }
+
   applyColors(duration) {
     this.items.forEach((item) => {
       const { r, g, b } = this.colorOf(item);

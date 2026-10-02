@@ -56,6 +56,8 @@
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  /* Запас снизу: последняя карточка не упирается в край прокрутки и не выглядит обрезанной */
+  padding-bottom: var(--space-3);
   padding-right: var(--space-2);
   transition: opacity var(--dur-base) var(--ease-out);
 }
@@ -67,10 +69,11 @@
 .skeleton {
   height: 26.25rem;
   border-radius: var(--radius-md);
+  /* Блик — цветом подсветки темы (светлый на тёмной, тёмно-зелёный на светлой): виден в обеих */
   background: linear-gradient(
     90deg,
     var(--color-glass),
-    var(--color-glass-strong),
+    var(--color-glass-highlight),
     var(--color-glass)
   );
   background-size: 200% 100%;

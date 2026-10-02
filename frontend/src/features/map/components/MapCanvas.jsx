@@ -2,6 +2,7 @@ import { useEffect, useImperativeHandle, useRef } from 'react';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { format } from '@/shared/lib/format';
 import { plural } from '@/shared/lib/plural';
+import { subscribeTheme } from '@/shared/lib/theme';
 import { MapScene } from '../scene/MapScene';
 import texts from '@/texts/ru/map.json';
 import styles from './MapCanvas.module.css';
@@ -55,6 +56,9 @@ export function MapCanvas({
   useEffect(() => {
     if (entered) sceneRef.current.startIntro();
   }, [entered]);
+
+  // Тема сменилась — сцена перекрашивается на месте, без перестройки и вступления.
+  useEffect(() => subscribeTheme(() => sceneRef.current?.refreshTheme()), []);
 
   useEffect(() => {
     if (city) sceneRef.current.setCity(city);

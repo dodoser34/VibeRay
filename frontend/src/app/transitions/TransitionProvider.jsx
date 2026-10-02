@@ -6,6 +6,7 @@ import { holdPageEntrance, releasePageEntrance } from '@/shared/animations/pageE
 import '@/shared/animations/MapFoldTransition.css';
 import { TransitionContext } from './TransitionContext';
 import nav from '@/texts/ru/nav.json';
+import { subscribeTheme } from '@/shared/lib/theme';
 
 // Главная, вход и регистрация — одна страница: переключение между ними анимирует карточку-пропуск.
 const HOME_PATHS = ['/', '/login', '/register'];
@@ -83,11 +84,14 @@ export function TransitionProvider({ children }) {
     pathRef.current = pathname;
   }, [pathname]);
 
-  // Бумажная карта рисуется один раз, после загрузки страницы (её цвета берутся из стилей).
+  // Бумажная карта рисуется один раз, после загрузки страницы (её цвета берутся из стилей), и заново
+  // при смене темы.
   const ensureMap = useCallback(() => {
     mapRef.current ??= new MapFoldTransition({ gsap, zIndex: 'var(--z-transition)' });
     return mapRef.current;
   }, []);
+
+  useEffect(() => subscribeTheme(() => mapRef.current?.refreshTheme()), []);
 
   useEffect(() => {
     const onPointer = (event) => {

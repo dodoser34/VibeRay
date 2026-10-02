@@ -129,6 +129,7 @@ export class MapScene {
     this.citySlug = city.slug;
     this.project = createProjection(city.center);
     this.unproject = createUnprojection(city.center);
+    this.city = city;
     this.backdrop = new CityBackdrop(this.project, { water: city.water, streets: city.streets });
     this.districts = new DistrictsLayer(city.districts.features, this.project, {
       baseHeight: 0.22,
@@ -345,6 +346,27 @@ export class MapScene {
   }
 
   // Время суток в городе (час дробью): свет, фон, туман и окна плавно переходят к нему.
+  // Тема сменилась (токены уже перечитаны): свет, фон и туман, земля с дорогами и водой, плиты —
+  // в цветах новой темы. Камера, выбор и слои остаются как были.
+  refreshTheme() {
+    this.hemi.groundColor.set(cssVar('--scene-ground'));
+    if (this.hour !== undefined) this.setHour(this.hour, { immediate: true });
+    else {
+      this.runtime.scene.background.set(cssVar('--scene-bg'));
+      this.runtime.scene.fog.color.set(cssVar('--scene-fog'));
+    }
+    if (!this.city) return;
+    this.backdrop.dispose();
+    this.backdrop = new CityBackdrop(this.project, {
+      water: this.city.water,
+      streets: this.city.streets,
+    });
+    this.runtime.scene.add(this.backdrop.group);
+    const { width, height } = this.runtime.size;
+    this.backdrop.setResolution(width, height);
+    this.districts.refreshTheme();
+  }
+
   setHour(hour, { immediate = false } = {}) {
     const first = this.hour === undefined;
     this.hour = hour;
