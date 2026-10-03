@@ -91,13 +91,14 @@ VibeRay/
 │       │                              #   api/community.js (авторы, история статусов, уведомления, «соседи» и модерация в демо),
 │       │                              #   api/locale.js (язык ответа: названия районов, подписи, тексты демо-проблем)
 │       ├── adaptations/               # адаптации под устройства (раздел 9.1, adaptations/README.md):
-│       │                              #   core/ (брейкпоинты, useViewport, качество 3D, rootScale),
+│       │                              #   core/ (брейкпоинты, useViewport, качество 3D, rootScale, режим графики — graphicsMode,
+│       │                              #   useGraphicsMode / useLiteGraphics),
 │       │                              #   desktop/{full-hd,2k,4k}/, tablet/, touch/, mobile/ — только отличия;
 │       │                              #   mobile/navigation (MobileNav), mobile/sheet (BottomSheet),
 │       │                              #   mobile/map (FilterChip, MapFab); index.css подключается последним
 │       ├── app/
 │       │   ├── App.jsx                # оболочка: AnimatedBackground + TabBar (на телефоне MobileNav) + Outlet
-│       │   ├── router.jsx
+│       │   ├── router.jsx             # маршруты; страницы грузятся по требованию (lazy), prefetchPages — фоновая подгрузка
 │       │   ├── inputModality.js       # html[data-input]: рамка фокуса только для клавиатуры
 │       │   ├── layout/TabBar.jsx      # плавающий таб-бар (планшет и десктоп)
 │       │   ├── layout/AnimatedBackground.jsx # живой фон сайта под всеми страницами (кроме карты)
@@ -120,9 +121,10 @@ VibeRay/
 │       │   │   └── components/        # AuthPanel, LoginForm, RegisterFlow, PasswordField, PasswordStrength;
 │       │   │                          #   PassForms.module.css — общие стили форм входа и регистрации на карточке-пропуске
 │       │   ├── hero/
-│       │   │   ├── scene/             # HeroScene.js — 3D-город главного экрана
+│       │   │   ├── scene/             # HeroScene.js — 3D-город главного экрана (грузится отдельно, с three.js)
 │       │   │   ├── lib/               # sheetTexture.js — текстура переднего листа (стилизованный план города)
-│       │   │   └── components/        # HeroCanvas.jsx, FrontLayer.jsx (передний слой с S-краем)
+│       │   │   └── components/        # HeroCanvas (выбор по режиму графики): Hero3D (3D-сцена) или HeroMap (2D-карта,
+│       │   │                          #   тот же интерфейс); FrontLayer.jsx (передний слой с S-краем)
 │       │   ├── notifications/         # уведомления: NotificationsProvider (опрос), NotificationBell (таб-бар),
 │       │   │                          #   NotificationsPanel + NotificationList (панель и шторка телефона); model/ NotificationsProvider,
 │       │                              #   NotificationsContext, useNotifications
@@ -134,13 +136,15 @@ VibeRay/
 │       │   │                          #   SupportRequestForm (обращение + файлы), ServiceStatus
 │       │   ├── story/                 # «Как появилась идея» — история на прокрутке для страницы «О проекте»
 │       │   │   ├── content.js         # порядок глав истории (тексты — в texts/{ru,en}/about.json)
-│       │   │   ├── scene/             # StoryScene (камера + таймлайн), RoomSet (грузит ночную или дневную комнату из public/models;
+│       │   │   ├── scene/             # StoryScene (камера + таймлайн; грузится отдельно, с three.js), LiteStage (лёгкая версия:
+│       │   │   │                      #   тот же интерфейс, анимирует StoryIllustration), RoomSet (комната из public/models;
 │       │   │   │                      #   цвета материалов — по токенам из имён «tok--…», на меш Screen — живой ScreenTexture),
 │       │   │   │                      #   roomTextures (небо за окном, корешки книг, экран телефона, карта на стене, дерево),
 │       │   │   │                      #   CityStage (окрестности и Тобол, улицы, рост районов волной, жители,
 │       │   │   │                      #   кольца настроения, падающие пины, дуги связей — всё от прогресса прокрутки),
 │       │   │   │                      #   storyEffects (PulseField — плоские кольца, LinkNetwork — дуги с прорисовкой)
-│       │   │   └── components/        # StoryExperience (закреплённая сцена + один scrub-таймлайн), StoryGuide + GuideMap
+│       │   │   └── components/        # StoryExperience (закреплённая сцена + один scrub-таймлайн), StoryIllustration
+│       │   │                          #   (плоская комната и 2D-карта для лёгкого режима), StoryGuide + GuideMap
 │       │   │                          #   («Как это работает»: 2D-карта Костаная меняется по шагам), StoryMoodCard,
 │       │   │                          #   StoryCalendar, StoryInterface
 │       │   ├── map/
@@ -172,6 +176,7 @@ VibeRay/
 │       │   │   ├── client.js          # fetch, токен в памяти, ApiError, переключатель демо-режима
 │       │   │   └── endpoints/         # auth, users (профиль, свои проблемы, уведомления), cities, districts, problems, support
 │       │   ├── ui/                    # Avatar, Button (в т.ч. danger), TextField, Modal, CoachMarks (пошаговые подсказки),
+│       │   │                          #   ThemeSwitch, OptionGroup (выбор одного варианта: тема, графика в настройках),
 │       │   │                          #   LanguageSwitch (флаги языков: шапка, меню телефона, настройки; flags/*.svg);
 │       │   │                          #   charts/ — TimeSeriesChart (линия + столбики, подсказка), CompareChart (несколько линий),
 │       │   │                          #   curve.js (монотонная кривая), StackedBar, BarList, AnimatedNumber
@@ -181,6 +186,7 @@ VibeRay/
 │       │   │                          #   revealOnScroll.js (блоки всплывают при появлении на экране — IntersectionObserver),
 │       │   │                          #   languageTransition.js (смена языка: текст размывается и проявляется)
 │       │   ├── hooks/                 # useRequest, useReducedMotion, usePageEntered, useElementWidth, useRevealed, useShare,
+│       │   │                          #   useCityOutline (контуры районов для 2D-карт: гид, лёгкая история, лёгкий герой),
 │       │   │                          #   useLanguage (текущий язык, перерисовка при смене)
 │       │   ├── lib/                   # geoProjection, cssVar, format ({name} в текстах), formatDate, formatNumber, plural, random,
 │       │   │                          #   cityTime (время по часовому поясу города), localFlag (флаги и числа в localStorage),
@@ -760,6 +766,29 @@ new | confirmed ──(модератор: спам, дубль, не по те�
     на страницу сцену закрывает завеса цвета фона, которая растворяется после готовности.
   - Исходники — `BLENDER/Scene_room_street.blend` и скрипты генерации `BLENDER/build_street.py`,
     `build_details.py` (локально, папка в `.gitignore`).
+
+### 9.5 Производительность и лёгкая графика
+
+- **Сборка** (`vite.config.js`): three.js, React (+ роутер) и GSAP — отдельными файлами (`codeSplitting.groups`),
+  они меняются редко и остаются в кэше браузера между обновлениями сайта. Страницы ленивые (`router.jsx`, `lazy`):
+  «Поддержка» и «Настройки» не качают three.js; переход ждёт загрузки страницы (`await navigate`), пока экран
+  закрыт «бумажной картой». После загрузки, когда браузер свободен, остальные страницы подгружаются фоном
+  (`prefetchPages`) — но не на медленной сети и не в лёгком режиме. В `package.json` перечислены модули с побочными
+  эффектами (`sideEffects`: стили, язык, тема, регистрация плагинов GSAP) — сборщик выкидывает неиспользуемые
+  реэкспорты, поэтому `useCityData` из `features/map` не тянет за собой 3D-сцену.
+- **3D-сцены грузятся отдельно:** `StoryScene` («О проекте») и `HeroScene` (главная) — динамическим импортом,
+  вместе с three.js; модель комнаты — только в полном режиме.
+- **Режим графики** (`adaptations/core/graphicsMode.js`): «авто», «полная» или «лёгкая» — выбор в настройках
+  (раздел «Аккаунт», `OptionGroup`), хранится в `localStorage` (`viberay.graphics`). В «авто» лёгкая графика
+  включается сама при экономии трафика или медленной сети (`navigator.connection`: 2G/3G), при памяти ≤ 2 ГБ или
+  ≤ 2 ядрах, без WebGL2, а также если сцена упала или 3D-комната не загрузилась за 12 с (`fallBackToLite`, до
+  перезагрузки). Компоненты узнают режим через `useLiteGraphics()`.
+- **Лёгкая графика вместо сцен:** история «О проекте» — `StoryIllustration` (плоская комната на токенах темы — день и
+  ночь меняются сами — и 2D-карта Костаная) + `LiteStage` с тем же интерфейсом, что у 3D-сцены (`ready`, `setCity`,
+  `buildTimeline`, `dispose`), поэтому подписи, карточки и шкала прокрутки общие; герой главной — `HeroMap` (2D-карта
+  с цветами настроения, тот же интерфейс, что у `Hero3D`). Цвет настроения для 2D — `moodFill()` (`features/map`):
+  CSS `color-mix` соседних токенов шкалы, без three.js. Карта города (`/map`) остаётся 3D — это основная функция; на
+  слабых устройствах её облегчает `renderQuality()`.
 
 ## 10. Зависимости
 

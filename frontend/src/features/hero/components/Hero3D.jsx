@@ -1,53 +1,64 @@
-import { useEffect, useImperativeHandle, useRef } from 'react';
+import { useEffect, useImperativeHandle, useRef, useState } from 'react';
+import { fallBackToLite } from '@/adaptations/core';
 import { subscribeTheme } from '@/shared/lib/theme';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
-import { HeroScene } from '../scene/HeroScene';
-import styles from './HeroCanvas.module.css';
+import styles from './Hero3D.module.css';
 
+// 3D-город героя. Сцена (и three.js) грузится отдельно — в лёгком режиме графики не скачивается.
 // stacked: страница в одну колонку (телефоны, планшеты стоя) — город стоит посередине.
-export function HeroCanvas({ ref, city, moods, stacked = false }) {
+export function Hero3D({ ref, city, moods, stacked = false }) {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
-  const sceneRef = useRef(null);
+  const [scene, setScene] = useState(null);
   const entered = usePageEntered();
 
   useEffect(() => {
-    const scene = new HeroScene(canvasRef.current, containerRef.current);
-    sceneRef.current = scene;
+    let alive = true;
+    let current = null;
+    import('../scene/HeroScene')
+      .then(({ HeroScene }) => {
+        if (!alive) return;
+        current = new HeroScene(canvasRef.current, containerRef.current);
+        setScene(current);
+      })
+      .catch((error) => {
+        console.error('Hero scene failed, switching to light graphics', error);
+        fallBackToLite();
+      });
     return () => {
-      scene.dispose();
-      sceneRef.current = null;
+      alive = false;
+      current?.dispose();
     };
   }, []);
 
   useEffect(() => {
-    if (entered) sceneRef.current.startIntro();
-  }, [entered]);
+    if (scene && entered) scene.startIntro();
+  }, [scene, entered]);
 
   useEffect(() => {
-    if (city) sceneRef.current.setCity(city);
-  }, [city]);
+    if (scene && city) scene.setCity(city);
+  }, [scene, city]);
 
-  useEffect(() => subscribeTheme(() => sceneRef.current?.refreshTheme()), []);
-
-  useEffect(() => {
-    if (moods) sceneRef.current.setMoods(moods);
-  }, [moods]);
+  useEffect(() => subscribeTheme(() => scene?.refreshTheme()), [scene]);
 
   useEffect(() => {
-    sceneRef.current.setStacked(stacked);
-  }, [stacked]);
+    if (scene && moods) scene.setMoods(moods);
+  }, [scene, moods]);
+
+  useEffect(() => {
+    scene?.setStacked(stacked);
+  }, [scene, stacked]);
 
   useImperativeHandle(
     ref,
     () => ({
-      flyIntoCity: (options) => sceneRef.current?.flyIntoCity(options),
-      setFlyProgress: (progress) => sceneRef.current?.setFlyProgress(progress),
-      highlightDistrict: (slug) => sceneRef.current?.highlightDistrict(slug),
-      flashDistrict: (slug) => sceneRef.current?.flashDistrict(slug),
-      districtScreenPosition: (slug) => sceneRef.current?.districtScreenPosition(slug) ?? null,
+      flyIntoCity: (options) => scene?.flyIntoCity(options),
+      setFlyProgress: (progress) => scene?.setFlyProgress(progress),
+      highlightDistrict: (slug) => scene?.highlightDistrict(slug),
+      flashDistrict: (slug) => scene?.flashDistrict(slug),
+      districtScreenPosition: (slug) => scene?.districtScreenPosition(slug) ?? null,
     }),
-    [],
+    [scene],
   );
 
   return (

@@ -1,11 +1,8 @@
-import { useMemo } from 'react';
-import { colorForAggregate } from '@/features/map';
+import { moodFill } from '@/features/map';
 import { MOOD_PERIODS } from '@/shared/config/periods';
-import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
-import { createProjection } from '@/shared/lib/geoProjection';
+import { useCityOutline } from '@/shared/hooks/useCityOutline';
 import styles from './StoryGuide.module.css';
 
-const PADDING_KM = 0.6;
 const PINS = 36;
 const FOCUS = 'center';
 // Декоративная линия тренда для шага «статистика» (не настоящие данные). viewBox близок к реальным
@@ -16,45 +13,7 @@ const TREND = 'M4 60 C 36 54, 54 68, 90 50 S 144 32, 180 40 S 240 14, 296 11';
 // Костанай в 2D (те же районы OSM, что на 3D-карте). `step` переключает, что показывает карта: 0 —
 // районы, один выбран; 1 — цвета настроения; 2 — метки проблем; 3 — тренд поверх.
 export function GuideMap({ city, moods, problems, step }) {
-  const map = useMemo(() => {
-    if (!city) return null;
-    const project = createProjection(city.center);
-    const toSvg = (lonlat) => {
-      const [x, y] = project(lonlat);
-      return [x, -y];
-    };
-    const xs = [];
-    const ys = [];
-    const districts = city.districts.features.map(({ properties, geometry }) => {
-      const d = geometry.coordinates
-        .flatMap((polygon) =>
-          polygon.map((ring) => {
-            const points = ring.map((c) => {
-              const [x, y] = toSvg(c);
-              xs.push(x);
-              ys.push(y);
-              return `${x.toFixed(3)} ${y.toFixed(3)}`;
-            });
-            return `M${points.join('L')}Z`;
-          }),
-        )
-        .join('');
-      return { slug: properties.slug, name: properties.name, palette: properties.palette, d };
-    });
-    const minX = Math.min(...xs) - PADDING_KM;
-    const minY = Math.min(...ys) - PADDING_KM;
-    const viewBox = [
-      minX,
-      minY,
-      Math.max(...xs) - minX + PADDING_KM,
-      Math.max(...ys) - minY + PADDING_KM,
-    ];
-    const pins = (problems ?? []).slice(0, PINS).map((problem, i) => {
-      const [x, y] = toSvg(problem.location);
-      return { id: problem.id ?? i, x, y, colorVar: STATUS_BY_CODE[problem.status].colorVar };
-    });
-    return { districts, viewBox, pins };
-  }, [city, problems]);
+  const map = useCityOutline(city, problems, PINS);
 
   if (!map) return <div className={styles.mapFrame} aria-hidden="true" />;
   const [, , width] = map.viewBox;
@@ -71,7 +30,7 @@ export function GuideMap({ city, moods, problems, step }) {
             data-focus={district.slug === FOCUS || undefined}
             style={{
               '--fill-district': `var(--district-${district.palette})`,
-              '--fill-mood': colorForAggregate(moods?.districts[district.slug]).getStyle(),
+              '--fill-mood': moodFill(moods?.districts[district.slug]),
             }}
           />
         ))}

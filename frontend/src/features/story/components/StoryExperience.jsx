@@ -1,11 +1,13 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { fallBackToLite, useLiteGraphics } from '@/adaptations/core';
 import { useCityData } from '@/features/map';
 import { gsap, ScrollTrigger, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/Button';
 import { useTheme } from '@/shared/hooks/useTheme';
 import { CHAPTER, CHAPTERS, isDaylight, story } from '../content';
-import { StoryScene } from '../scene/StoryScene';
+import { LiteStage } from '../scene/LiteStage';
+import { StoryIllustration } from './StoryIllustration';
 import { StoryCalendar } from './StoryCalendar';
 import { StoryInterface } from './StoryInterface';
 import { StoryMoodCard } from './StoryMoodCard';
@@ -21,12 +23,15 @@ const DIPLOMA = CHAPTERS.findIndex((c) => c.id === 'diploma');
 const PRODUCT = CHAPTERS.findIndex((c) => c.id === 'product');
 const MOOD = CHAPTERS.findIndex((c) => c.id === 'mood');
 const FINAL = CHAPTERS.length - 1;
+// Не дождались 3D-комнату за это время — показываем лёгкую графику (медленная сеть, слабое устройство).
+const LOAD_LIMIT = 12000;
 
-// «Как родилась идея»: закреплённая 3D-сцена, вся история которой — одна временная шкала,
-// привязанная к прокрутке. При reduced motion закрепления нет — финальный кадр и история обычным
-// текстом.
-// onReady — вызывается один раз, когда комната загружена и данные города на месте: переход между
-// страницами держит экран закрытым до этого момента (AboutPage).
+// «Как родилась идея»: закреплённая сцена, вся история которой — одна временная шкала, привязанная
+// к прокрутке. Сцена — 3D-комната (StoryScene, грузится отдельно вместе с three.js) или, в лёгком
+// режиме графики, плоская иллюстрация (LiteStage + StoryIllustration) с тем же интерфейсом. При
+// reduced motion закрепления нет — финальный кадр и история обычным текстом.
+// onReady — вызывается, когда сцена готова и данные города на месте: переход между страницами
+// держит экран закрытым до этого момента (AboutPage).
 export function StoryExperience({ onOpenMap, onReady }) {
   const language = useLanguage();
   // Тема выбирает вариант истории: ночь в тёмной, день в светлой (content.js, RoomSet).
@@ -34,30 +39,52 @@ export function StoryExperience({ onOpenMap, onReady }) {
   const rootRef = useRef(null);
   const stageRef = useRef(null);
   const canvasRef = useRef(null);
-  const sceneRef = useRef(null);
+  const illustrationRef = useRef(null);
+  const lite = useLiteGraphics();
+  const [scene, setScene] = useState(null);
   const [sceneReady, setSceneReady] = useState(false);
   // Прокрутка до перестройки шкалы: при перестройке закрепление снимается, страница на миг
   // становится короче, и браузер сбрасывает прокрутку назад.
   const scrollRef = useRef(null);
   const reduced = useReducedMotion();
   const { city, moods, problems } = useCityData(CITY, 'week');
-  const timelineDeps = [city.data, moods.data, problems.data, reduced, language, theme];
+  const timelineDeps = [scene, city.data, moods.data, problems.data, reduced, language];
 
-  // Layout-эффект: сцена должна существовать до того, как useGSAP (тоже layout-эффект) построит
-  // шкалу.
-  useLayoutEffect(() => {
-    // Смена темы пересобирает сцену в другом варианте комнаты, шкала строится заново (theme в
-    // timelineDeps) — кадр истории сохраняется.
-    const scene = new StoryScene(canvasRef.current, stageRef.current, { daylight: isDaylight() });
-    sceneRef.current = scene;
+  // Тема выбирает вариант 3D-комнаты (день или ночь) — сцена создаётся заново, шкала тоже (scene в
+  // timelineDeps), кадр истории сохраняется. 3D-сцена приходит асинхронно, лёгкая — сразу.
+  useEffect(() => {
     let alive = true;
-    scene.ready.then(() => alive && setSceneReady(true));
+    let current = null;
+    let timer = null;
+    const create = lite
+      ? Promise.resolve(new LiteStage(illustrationRef.current))
+      : import('../scene/StoryScene').then(
+          ({ StoryScene }) =>
+            new StoryScene(canvasRef.current, stageRef.current, { daylight: isDaylight() }),
+        );
+    create
+      .then((next) => {
+        if (!alive) return next.dispose();
+        current = next;
+        setScene(next);
+        if (!lite) timer = setTimeout(fallBackToLite, LOAD_LIMIT);
+        return next.ready.then(() => {
+          clearTimeout(timer);
+          if (alive) setSceneReady(true);
+        });
+      })
+      .catch((error) => {
+        console.error('Story scene failed, switching to light graphics', error);
+        fallBackToLite();
+      });
     return () => {
       alive = false;
-      scene.dispose();
-      sceneRef.current = null;
+      clearTimeout(timer);
+      current?.dispose();
+      setScene(null);
+      setSceneReady(false);
     };
-  }, [theme]);
+  }, [lite, theme]);
 
   const ready = sceneReady && Boolean(city.data && moods.data && problems.data);
   useEffect(() => {
@@ -76,7 +103,6 @@ export function StoryExperience({ onOpenMap, onReady }) {
 
   useGSAP(
     () => {
-      const scene = sceneRef.current;
       if (!scene || !city.data || !moods.data || !problems.data) return;
       scene.setCity(city.data, moods.data, problems.data);
       const tl = gsap.timeline({ paused: true, defaults: { ease: 'none' } });
@@ -194,8 +220,8 @@ export function StoryExperience({ onOpenMap, onReady }) {
     },
     {
       scope: rootRef,
-      // language: фразы, разобранные на слова, пересоздаются на новом языке; theme: новая сцена —
-      // шкалу строим заново.
+      // scene: новая сцена (тема, режим графики); language: фразы, разобранные на слова,
+      // пересоздаются на новом языке — шкалу строим заново.
       dependencies: timelineDeps,
       revertOnUpdate: true,
     },
@@ -206,7 +232,21 @@ export function StoryExperience({ onOpenMap, onReady }) {
   return (
     <section ref={rootRef} className={styles.story} data-static={reduced || undefined}>
       <div ref={stageRef} className={styles.stage}>
-        <canvas ref={canvasRef} className={styles.canvas} data-story="canvas" aria-hidden="true" />
+        {lite ? (
+          <StoryIllustration
+            ref={illustrationRef}
+            city={city.data}
+            moods={moods.data}
+            problems={problems.data}
+          />
+        ) : (
+          <canvas
+            ref={canvasRef}
+            className={styles.canvas}
+            data-story="canvas"
+            aria-hidden="true"
+          />
+        )}
 
         <div className={styles.overlay}>
           <p className={styles.stamp} data-story="stamp" data-ui="story-stamp">

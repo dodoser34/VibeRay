@@ -1,0 +1,236 @@
+/* Лёгкая версия истории: плоская комната и 2D-карта. Только токены темы — день и ночь меняются
+   вместе с темой (тёмная тема: горят окна, звёзды, луна и лампа). */
+/* Фон — как у 3D-города: его видно, когда комната ушла и осталась карта. */
+.root {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--scene-bg);
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* SVG не растягивается по inset, поэтому размеры заданы явно: под шапкой, с полями */
+.layer[data-lite='map'] {
+  top: calc(var(--tabbar-height) + var(--space-4));
+  left: var(--space-6);
+  width: calc(100% - 2 * var(--space-6));
+  height: calc(100% - var(--tabbar-height) - var(--space-4) - var(--space-6));
+  visibility: hidden;
+}
+
+.skyTop {
+  stop-color: var(--story-sky-top);
+}
+
+.skyLow {
+  stop-color: var(--story-sky);
+}
+
+.wall {
+  fill: var(--story-wall);
+}
+
+.floor {
+  fill: color-mix(in srgb, var(--story-desk) 40%, var(--story-wall));
+}
+
+.baseboard,
+.sill,
+.radiator,
+.paper {
+  fill: var(--story-paper);
+}
+
+.celestial {
+  fill: var(--story-sun);
+}
+
+.star {
+  fill: var(--color-text);
+  opacity: 0;
+}
+
+.skyline {
+  fill: var(--story-skyline);
+  opacity: 0.6;
+}
+
+.house-a {
+  fill: var(--story-house-a);
+}
+
+.house-b {
+  fill: var(--story-house-b);
+}
+
+.house-c {
+  fill: var(--story-house-c);
+}
+
+.pane,
+.lit {
+  fill: var(--story-glass);
+}
+
+.trunk {
+  fill: var(--story-trunk);
+}
+
+.crown {
+  fill: var(--story-tree);
+}
+
+.frame {
+  fill: var(--story-monitor-frame);
+}
+
+.curtain {
+  fill: var(--story-fabric);
+}
+
+.rod,
+.lampArm {
+  fill: var(--story-metal);
+  stroke: var(--story-metal);
+}
+
+.lampArm {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+rect.lampArm {
+  fill: var(--story-metal);
+  stroke: none;
+}
+
+.lampShade {
+  fill: var(--story-metal);
+}
+
+.lampLight {
+  fill: var(--story-window-light);
+  opacity: 0;
+}
+
+.shelf,
+.desk,
+.pedestal {
+  fill: var(--story-desk);
+}
+
+.drawer {
+  fill: color-mix(in srgb, var(--story-desk) 80%, var(--story-wall));
+}
+
+.deskLeg,
+.chairLeg {
+  fill: var(--story-metal);
+}
+
+.spine-titan {
+  fill: var(--story-spine-titan);
+}
+
+.spine-king {
+  fill: var(--story-spine-king);
+}
+
+.mapLines {
+  fill: none;
+  stroke: var(--story-desk);
+  stroke-width: 2;
+  opacity: 0.5;
+}
+
+.monitor,
+.keyboard,
+.phone {
+  fill: var(--story-monitor);
+}
+
+.screen {
+  fill: var(--color-bg-raised);
+}
+
+.screenBar {
+  fill: var(--color-bg-deep);
+}
+
+.question {
+  fill: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mug {
+  fill: var(--story-paper);
+}
+
+.pot {
+  fill: var(--story-pot);
+}
+
+.leaf {
+  fill: var(--story-plant);
+}
+
+.pc {
+  fill: var(--story-pc-case);
+}
+
+.pcGlass {
+  fill: var(--story-pcb);
+}
+
+.pcAccent {
+  fill: var(--color-accent);
+}
+
+.chair {
+  fill: var(--story-fabric);
+}
+
+/* Ночь (тёмная тема): горят окна домов и лампа, видны звёзды, вместо солнца — луна */
+:global([data-theme='dark']) .lit {
+  fill: var(--story-window-light);
+}
+
+:global([data-theme='dark']) .star {
+  opacity: 0.7;
+}
+
+:global([data-theme='dark']) .celestial {
+  fill: var(--story-paper);
+}
+
+:global([data-theme='dark']) .lampLight {
+  opacity: 0.22;
+}
+
+/* 2D-карта: районы своим цветом, на главе «настроения» — цветом настроения */
+.district {
+  fill: var(--fill-district);
+  stroke: var(--scene-district-edge);
+  stroke-width: 0.06;
+  transition: fill var(--dur-slow) var(--ease-out);
+}
+
+.layer[data-step='mood'] .district {
+  fill: var(--fill-mood);
+}
+
+.pin {
+  fill: var(--pin);
+  stroke: var(--scene-district-edge);
+  stroke-width: 0.04;
+}

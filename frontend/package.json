@@ -3,6 +3,12 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "sideEffects": [
+    "*.css",
+    "./src/shared/lib/language.js",
+    "./src/shared/lib/theme.js",
+    "./src/shared/animations/gsapSetup.js"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",

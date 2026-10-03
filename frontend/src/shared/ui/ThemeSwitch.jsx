@@ -1,6 +1,7 @@
 import { changeTheme } from '@/shared/animations/themeTransition';
 import { useTheme } from '@/shared/hooks/useTheme';
 import common from '@/texts/ru/common.json';
+import { OptionGroup } from './OptionGroup';
 import styles from './ThemeSwitch.module.css';
 
 // Переключатель темы: солнце и луна. Компактный (шапка, меню телефона) — одна кнопка, которая
@@ -9,20 +10,16 @@ export function ThemeSwitch({ full = false }) {
   const theme = useTheme();
   if (full) {
     return (
-      <div className={styles.group} role="group" aria-label={common.theme.label}>
-        {['dark', 'light'].map((code) => (
-          <button
-            key={code}
-            type="button"
-            className={styles.option}
-            aria-pressed={code === theme}
-            onClick={() => changeTheme(code)}
-          >
-            <Icon theme={code} />
-            {common.theme.names[code]}
-          </button>
-        ))}
-      </div>
+      <OptionGroup
+        label={common.theme.label}
+        value={theme}
+        onChange={changeTheme}
+        options={['dark', 'light'].map((code) => ({
+          code,
+          label: common.theme.names[code],
+          icon: <Icon theme={code} />,
+        }))}
+      />
     );
   }
   const next = theme === 'dark' ? 'light' : 'dark';

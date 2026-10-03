@@ -84,11 +84,18 @@
     "changed": "Password changed"
   },
   "account": {
-    "lead": "Language, theme, signing out and deleting your account.",
+    "lead": "Language, theme, graphics, signing out and deleting your account.",
     "languageTitle": "Interface language",
     "languageText": "Russian or English. Your choice is remembered in this browser.",
     "themeTitle": "Colour theme",
     "themeText": "Dark is a forest night, light is the city by day. Your choice is remembered in this browser.",
+    "graphicsTitle": "Graphics",
+    "graphicsText": "Auto switches to light graphics instead of 3D scenes on a slow connection or a weak device. The choice is saved in this browser.",
+    "graphicsModes": {
+      "auto": "Auto",
+      "full": "Full",
+      "lite": "Light"
+    },
     "logoutTitle": "Sign out",
     "logoutText": "On this device. Your marks and reports will stay.",
     "logout": "Sign out",

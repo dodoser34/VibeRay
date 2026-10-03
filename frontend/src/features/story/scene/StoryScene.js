@@ -50,7 +50,7 @@ export class StoryScene {
     this.inCity = null;
     this.runtime.scene.add(this.room.group);
     // Готовность к показу: модель загружена, шейдеры скомпилированы заранее (первый кадр без
-    // рывка) и первый кадр отрисован. Ошибка загрузки тоже завершает ожидание — страница не зависнет.
+    // рывка) и первый кадр отрисован. Ошибку загрузки обрабатывает StoryExperience (лёгкая графика).
     const { renderer, scene, camera } = this.runtime;
     this.ready = this.room
       .load()
@@ -63,8 +63,7 @@ export class StoryScene {
               resolve();
             });
           }),
-      )
-      .catch((error) => console.error('Story room model failed to load', error));
+      );
 
     this.params = { world: 0, ideas: 0, typed: 0, mapIn: 0, fov: ROOM_FOV, ...CITY_PARAMS };
     this.cam = new THREE.Vector3(2.3, 1.65, 2.75);

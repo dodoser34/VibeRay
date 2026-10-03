@@ -25,6 +25,21 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    rolldownOptions: {
+      output: {
+        // Библиотеки — отдельными файлами: меняются редко и остаются в кэше браузера между
+        // обновлениями сайта; three.js грузится только страницами с 3D.
+        codeSplitting: {
+          groups: [
+            { name: 'three', test: /node_modules\/three\// },
+            { name: 'react', test: /node_modules\/(react|react-dom|react-router|scheduler)\// },
+            { name: 'gsap', test: /node_modules\/(gsap|@gsap)\// },
+          ],
+        },
+      },
+    },
+  },
   server: {
     port: Number(process.env.PORT) || 5173,
     // Для режима с бэкендом (VITE_USE_MOCKS=false): запросы /api уходят на локальный FastAPI.

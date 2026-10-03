@@ -137,7 +137,7 @@ export function TransitionProvider({ children }) {
         const samePage = HOME_PATHS.includes(from) && HOME_PATHS.includes(to);
         if (custom || samePage) {
           await custom;
-          navigate(to);
+          await navigate(to);
           return;
         }
 
@@ -158,7 +158,8 @@ export function TransitionProvider({ children }) {
         });
         // Новая страница монтируется под картой; её появление ждёт, пока карта начнёт складываться.
         holdPageEntrance();
-        navigate(to);
+        // Страница могла ещё не загрузиться (маршруты ленивые): ждём её, пока карта закрывает экран.
+        await navigate(to);
         window.scrollTo(0, 0);
         // Даём новому маршруту отрисоваться и зарегистрировать ожидания, затем ждём их (с
         // ограничением).

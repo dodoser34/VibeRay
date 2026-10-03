@@ -1,0 +1,37 @@
+.root {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-scene);
+  pointer-events: none;
+}
+
+/* Город справа от колонки с текстом; в одну колонку — посередине (как 3D-сцена) */
+.map {
+  position: absolute;
+  top: 14%;
+  right: 5%;
+  width: 50%;
+  height: 74%;
+  transform-origin: 50% 50%;
+}
+
+.map[data-stacked] {
+  top: 18%;
+  right: 8%;
+  width: 84%;
+  height: 60%;
+}
+
+.district {
+  fill: var(--fill);
+  stroke: var(--scene-district-edge);
+  stroke-width: 0.06;
+  transition:
+    fill var(--dur-slow) var(--ease-out),
+    stroke-width var(--dur-fast);
+}
+
+.district[data-active] {
+  stroke: var(--color-text);
+  stroke-width: 0.14;
+}
