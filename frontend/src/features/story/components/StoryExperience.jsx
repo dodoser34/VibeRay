@@ -257,6 +257,9 @@ export function StoryExperience({ onOpenMap, onReady }) {
           </p>
         </div>
         <div className={styles.fade} data-story="fade" aria-hidden="true" />
+        {/* Завеса до готовности комнаты: при прямом входе на страницу (без перехода) модель не
+            появляется по частям. */}
+        <div className={styles.veil} data-hidden={ready || undefined} aria-hidden="true" />
       </div>
 
       {reduced && (

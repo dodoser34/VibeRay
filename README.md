@@ -119,7 +119,7 @@ VibeRay/
 ├── docs/                   # DECISIONS.md — журнал решений, CHANGELOG.md — журнал изменений, 3d/ — .blend
 ├── .github/workflows/      # deploy-pages.yml — сборка и публикация сайта
 ├── frontend/               # React + Vite + Three.js + GSAP
-│   ├── public/             # favicon, 3D-модель комнаты с улицей (models/story-room.glb)
+│   ├── public/             # favicon, 3D-модель комнаты с улицей (models/story-room_street.glb)
 │   └── src/
 │       ├── main.jsx        # точка входа (первым подключается язык интерфейса)
 │       ├── app/            # оболочка, маршруты, таб-бар, переходы между страницами

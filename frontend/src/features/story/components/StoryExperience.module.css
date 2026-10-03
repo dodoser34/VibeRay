@@ -113,6 +113,19 @@
   text-align: center;
 }
 
+.veil {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-overlay);
+  background: var(--color-bg);
+  pointer-events: none;
+  transition: opacity var(--dur-slow) var(--ease-out);
+}
+
+.veil[data-hidden] {
+  opacity: 0;
+}
+
 .fade {
   position: absolute;
   inset: 0;
