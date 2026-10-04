@@ -1,5 +1,8 @@
 {
   "close": "Закрыть",
+  "meta": {
+    "description": "VibeRay — живая 3D-карта настроения и проблем Костаная"
+  },
   "time": {
     "justNow": "только что",
     "minutesAgo": "{minutes} мин назад",
@@ -15,7 +18,9 @@
     "label": "Язык интерфейса",
     "names": {
       "ru": "Русский",
-      "en": "English"
+      "kk": "Қазақша",
+      "en": "English",
+      "de": "Deutsch"
     }
   },
   "theme": {

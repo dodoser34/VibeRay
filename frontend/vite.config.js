@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { languagePages } from './plugins/languagePages.js';
 
 // Геоданные городов (.geojson) хранятся отформатированными для чтения, а в сборку попадают сжатыми —
 // как обычный JSON-модуль, без отступов.
@@ -19,7 +20,15 @@ function geojson() {
 export default defineConfig({
   // На GitHub Pages сайт живёт в подпапке (/<репозиторий>/) — её передаёт workflow деплоя.
   base: process.env.VITE_BASE || '/',
-  plugins: [geojson(), react()],
+  plugins: [
+    geojson(),
+    react(),
+    // SITE_URL — адрес сайта с подпапкой (передаёт workflow деплоя): для hreflang и sitemap.xml.
+    languagePages({
+      root: fileURLToPath(new URL('.', import.meta.url)),
+      siteUrl: process.env.SITE_URL,
+    }),
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

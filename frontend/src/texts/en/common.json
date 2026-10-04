@@ -1,5 +1,8 @@
 {
   "close": "Close",
+  "meta": {
+    "description": "VibeRay — a living 3D map of the mood and problems of Kostanay"
+  },
   "time": {
     "justNow": "just now",
     "minutesAgo": "{minutes} min ago",
@@ -15,7 +18,9 @@
     "label": "Interface language",
     "names": {
       "ru": "Русский",
-      "en": "English"
+      "kk": "Қазақша",
+      "en": "English",
+      "de": "Deutsch"
     }
   },
   "theme": {

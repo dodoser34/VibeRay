@@ -3,6 +3,7 @@ import { useViewport } from '@/adaptations/core';
 import { POPULAR_QUERIES } from '../content';
 import texts from '@/texts/ru/support.json';
 import styles from './HelpSearch.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 // Большое поле поиска с мгновенными ответами из FAQ (combobox: работают стрелки и Enter).
 export function HelpSearch({ query, onQueryChange, results, onPick, onWrite }) {
@@ -29,9 +30,7 @@ export function HelpSearch({ query, onQueryChange, results, onPick, onWrite }) {
   return (
     <div className={styles.search}>
       <div className={styles.field} data-open={open || undefined} data-ui="help-field">
-        <svg className={styles.icon} viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm5-2 4 4" />
-        </svg>
+        <Icon name="search" className={styles.icon} />
         <input
           className={styles.input}
           data-ui="help-input"
@@ -58,9 +57,7 @@ export function HelpSearch({ query, onQueryChange, results, onPick, onWrite }) {
             onClick={() => onQueryChange('')}
             aria-label={texts.search.clear}
           >
-            <svg viewBox="0 0 16 16" aria-hidden="true">
-              <path d="M3 3l10 10M13 3L3 13" />
-            </svg>
+            <Icon name="close" />
           </button>
         )}
       </div>

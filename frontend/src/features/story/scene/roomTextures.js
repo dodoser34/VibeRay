@@ -108,6 +108,8 @@ const SPINES = {
   shawshank: { background: '--story-spine-king', ink: '--story-paper', accent: '--color-river' },
 };
 const KING_TITLES = { it: 'it', 'green-mile': 'greenMile', shawshank: 'shawshank' };
+// Корешок читается снизу вверх (русская, казахская и немецкая традиция) или сверху вниз (английская).
+const readsUp = () => getLanguage() !== 'en';
 
 export function spineTexture(key) {
   const [series, volume] = key.startsWith('titan-') ? ['titan', key.slice(6)] : [key, null];
@@ -121,7 +123,7 @@ export function spineTexture(key) {
     // Текст вдоль корешка: поворот холста, x — вдоль книги, y — поперёк.
     const along = (draw) => {
       ctx.save();
-      if (getLanguage() === 'ru') {
+      if (readsUp()) {
         ctx.translate(0, H);
         ctx.rotate(-Math.PI / 2);
       } else {
@@ -140,31 +142,31 @@ export function spineTexture(key) {
       ctx.textAlign = 'center';
       ctx.fillText(volume, W / 2, 62);
       along((L, T) => {
-        const ru = getLanguage() === 'ru';
+        const up = readsUp();
         ctx.fillStyle = cssVar(style.ink);
-        ctx.textAlign = ru ? 'right' : 'left';
+        ctx.textAlign = up ? 'right' : 'left';
         fitFont(ctx, shelf.titan.toUpperCase(), 700, 40, display, 430);
-        ctx.fillText(shelf.titan.toUpperCase(), ru ? L - 150 : 150, T / 2);
-        ctx.textAlign = ru ? 'left' : 'right';
+        ctx.fillText(shelf.titan.toUpperCase(), up ? L - 150 : 150, T / 2);
+        ctx.textAlign = up ? 'left' : 'right';
         ctx.font = `600 22px ${body}`;
         ctx.globalAlpha = 0.75;
-        ctx.fillText(shelf.isayama, ru ? 40 : L - 40, T / 2);
+        ctx.fillText(shelf.isayama, up ? 40 : L - 40, T / 2);
         ctx.globalAlpha = 1;
       });
       return;
     }
     // Имя автора — у верха книги, название — ниже, цветом книги.
     along((L, T) => {
-      const ru = getLanguage() === 'ru';
+      const up = readsUp();
       ctx.fillStyle = cssVar(style.ink);
-      ctx.textAlign = ru ? 'right' : 'left';
+      ctx.textAlign = up ? 'right' : 'left';
       ctx.font = `600 24px ${body}`;
-      ctx.fillText(shelf.king.toUpperCase(), ru ? L - 40 : 40, T / 2);
+      ctx.fillText(shelf.king.toUpperCase(), up ? L - 40 : 40, T / 2);
       ctx.fillStyle = cssVar(style.accent);
-      ctx.textAlign = ru ? 'left' : 'right';
+      ctx.textAlign = up ? 'left' : 'right';
       const title = shelf[KING_TITLES[series]].toUpperCase();
       fitFont(ctx, title, 700, 44, display, L - 300);
-      ctx.fillText(title, ru ? 40 : L - 40, T / 2);
+      ctx.fillText(title, up ? 40 : L - 40, T / 2);
     });
   });
 }

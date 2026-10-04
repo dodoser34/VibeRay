@@ -189,8 +189,8 @@
       "id": "language",
       "category": "technical",
       "question": "How do I switch the site language?",
-      "answer": "The language flags are in the top right corner, on a phone — at the bottom of the menu, and also in your profile settings, in the “Account” section. The language changes instantly, without reloading the page, and is remembered in the browser.",
-      "keywords": "language english russian switch interface"
+      "answer": "The language flags are in the top right corner, at the bottom of the menu on a phone, and in your profile settings under “Account”. The language changes at once, without reloading the page. Each language has its own address (English, for example, is /en/), so a shared link opens in the same language.",
+      "keywords": "language english russian kazakh german switch interface"
     }
   ],
   "cta": {

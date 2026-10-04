@@ -1,10 +1,12 @@
 import { useEffect, useId, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router';
+import { Link } from 'react-router';
 import { usePageNavigate } from '@/app/transitions/useTransition';
 import { useAuth } from '@/features/auth';
 import { NotificationsPanel, useNotifications } from '@/features/notifications';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { usePagePath } from '@/shared/hooks/usePagePath';
 import { format } from '@/shared/lib/format';
+import { localizePath } from '@/shared/lib/language';
 import { Avatar } from '@/shared/ui/Avatar';
 import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
 import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
@@ -12,15 +14,17 @@ import { Modal } from '@/shared/ui/Modal';
 import notificationTexts from '@/texts/ru/notifications.json';
 import nav from '@/texts/ru/nav.json';
 import styles from './MobileNav.module.css';
+import { LogoMark } from '@/shared/ui/LogoMark';
+import { Icon } from '@/shared/ui/Icon';
 
 const CITY = 'kostanay';
 
 const ICONS = {
-  map: <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14" />,
-  stats: <path d="M4 20h16M7 16v-5M12 16V7M17 16v-8" />,
-  about: <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 11v6M12 7.5v.5" />,
-  support: <path d="M4 12a8 8 0 0 1 16 0v4a2 2 0 0 1-2 2h-1v-6h3M4 12v4a2 2 0 0 0 2 2h1v-6H4" />,
-  settings: <path d="M4 7h9M17 7h3M15 5v4M4 17h3M11 17h9M9 15v4" />,
+  map: 'map',
+  stats: 'chart',
+  about: 'info',
+  support: 'headset',
+  settings: 'sliders',
 };
 
 function activeKey(pathname) {
@@ -37,7 +41,7 @@ function activeKey(pathname) {
 // Главное действие страницы остаётся на экране (карта, «Открыть карту»).
 export function MobileNav() {
   const { user, logout } = useAuth();
-  const { pathname } = useLocation();
+  const pathname = usePagePath();
   const openPage = usePageNavigate();
   const { unread, markRead } = useNotifications();
   const [notificationsOpen, setNotificationsOpen] = useState(false);
@@ -115,12 +119,13 @@ export function MobileNav() {
   return (
     <>
       <header ref={barRef} className={styles.bar} data-open={open || undefined}>
-        <Link to="/" className={styles.logo} aria-label={nav.logoLabel} onClick={follow('/')}>
-          <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
-            <rect width="32" height="32" rx="9" className={styles.logoBg} />
-            <path d="M7 10l9 14 9-14" className={styles.logoMark} />
-            <circle cx="16" cy="9" r="2.4" className={styles.logoDot} />
-          </svg>
+        <Link
+          to={localizePath('/')}
+          className={styles.logo}
+          aria-label={nav.logoLabel}
+          onClick={follow('/')}
+        >
+          <LogoMark />
         </Link>
         <button
           ref={buttonRef}
@@ -181,9 +186,7 @@ export function MobileNav() {
                     setNotificationsOpen(true);
                   }}
                 >
-                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-                    <path d="M12 21a2.5 2.5 0 0 0 2.5-2.5h-5A2.5 2.5 0 0 0 12 21zM5 16.5h14l-1.8-2.4V10a5.2 5.2 0 0 0-10.4 0v4.1z" />
-                  </svg>
+                  <Icon name="bell" size={20} />
                   <span>{notificationTexts.title}</span>
                   {unread > 0 && <span className={styles.count}>{unread}</span>}
                 </button>
@@ -193,10 +196,18 @@ export function MobileNav() {
                 <p className={styles.guestTitle}>{nav.menu.guestTitle}</p>
                 <p className={styles.caption}>{nav.menu.guestText}</p>
                 <div className={styles.authButtons}>
-                  <Link to="/login" className={styles.primary} onClick={follow('/login')}>
+                  <Link
+                    to={localizePath('/login')}
+                    className={styles.primary}
+                    onClick={follow('/login')}
+                  >
                     {nav.tabs.login.label}
                   </Link>
-                  <Link to="/register" className={styles.secondary} onClick={follow('/register')}>
+                  <Link
+                    to={localizePath('/register')}
+                    className={styles.secondary}
+                    onClick={follow('/register')}
+                  >
                     {nav.tabs.register.label}
                   </Link>
                 </div>
@@ -209,18 +220,14 @@ export function MobileNav() {
               {items.map((item) => (
                 <li key={item.key} data-menu-item>
                   <Link
-                    to={item.to}
+                    to={localizePath(item.to)}
                     className={styles.item}
                     aria-current={current === item.key ? 'page' : undefined}
                     onClick={follow(item.to)}
                   >
-                    <svg viewBox="0 0 24 24" className={styles.icon} aria-hidden="true">
-                      {ICONS[item.key]}
-                    </svg>
+                    <Icon name={ICONS[item.key]} className={styles.icon} />
                     <span>{item.label}</span>
-                    <svg viewBox="0 0 16 16" className={styles.chevron} aria-hidden="true">
-                      <path d="M6 3l5 5-5 5" />
-                    </svg>
+                    <Icon name="chevron-right" className={styles.chevron} />
                   </Link>
                 </li>
               ))}

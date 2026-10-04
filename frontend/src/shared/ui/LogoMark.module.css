@@ -1,0 +1,38 @@
+/* Знак VibeRay — только зелёная палитра темы: светлое небо, два оттенка домов, окна, обводка */
+.mark {
+  display: block;
+  flex-shrink: 0;
+}
+
+.frame {
+  fill: var(--color-bg-raised);
+  stroke: var(--color-glass-border);
+  stroke-width: 1;
+}
+
+.sky {
+  fill: color-mix(in srgb, var(--mood-excellent) 15%, var(--color-bg-raised));
+}
+
+.tower-a {
+  fill: var(--color-accent);
+}
+
+.tower-b {
+  fill: var(--color-accent-bright);
+}
+
+.window {
+  fill: color-mix(in srgb, var(--mood-excellent) 55%, var(--color-bg-raised));
+}
+
+.outline {
+  fill: none;
+  stroke: var(--color-accent-bright);
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+}
+
+.dot {
+  fill: var(--mood-excellent);
+}

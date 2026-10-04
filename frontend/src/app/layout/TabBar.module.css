@@ -39,44 +39,34 @@
   gap: var(--space-2);
 }
 
-/* Светлая тема: тёмный логотип не теряется над тёмными блоками (ночная история «О проекте») —
-   под ним светло-зелёная стеклянная плашка, как у кнопок шапки */
-:global([data-theme='light']) .logo {
-  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-1);
-  margin-left: calc(-1 * var(--space-1));
+/* Плашка логотипа по меркам меню навигации (.nav и .item): тот же внутренний отступ, знак — круг
+   высотой с кнопку меню, вписанный в скругление плашки; та же высота, стекло и тень. */
+.logo {
+  padding: 0.3125rem var(--space-4) 0.3125rem 0.3125rem;
   border-radius: var(--radius-pill);
   background: var(--color-glass);
   border: 1px solid var(--color-glass-border);
+  box-shadow:
+    var(--shadow-panel),
+    inset 0 1px 0 var(--color-glass-highlight);
   backdrop-filter: blur(var(--blur-glass));
+}
+
+.logo svg {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /* Тема рядом с логотипом — только на планшете стоя (adaptations/tablet/navigation.css) */
 .leadTheme {
   position: absolute;
-  left: calc(var(--space-5) + 2.5rem);
+  left: calc(var(--space-5) + 3.25rem + var(--space-2));
   display: none;
   pointer-events: auto;
 }
 
 .asideTheme {
   display: contents;
-}
-
-.logoBg {
-  fill: var(--color-bg-raised);
-  stroke: var(--color-glass-border);
-}
-
-.logoMark {
-  fill: none;
-  stroke: var(--color-accent-bright);
-  stroke-width: 3.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.logoDot {
-  fill: var(--mood-excellent);
 }
 
 .nav {

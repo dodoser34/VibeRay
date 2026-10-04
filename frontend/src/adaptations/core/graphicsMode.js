@@ -2,23 +2,16 @@
 // истории «О проекте»). Пользователь выбирает в настройках «авто», «полная» или «лёгкая»; в «авто»
 // лёгкая включается сама на медленной сети, при экономии трафика, на слабом устройстве, без WebGL2
 // или если сцена не успела загрузиться (fallBackToLite).
+import { createListeners } from '@/shared/lib/listeners';
+import { readChoice, writeValue } from '@/shared/lib/localFlag';
+
 export const GRAPHICS_MODES = ['auto', 'full', 'lite'];
 const STORAGE_KEY = 'viberay.graphics';
 const SLOW_NETWORKS = ['slow-2g', '2g', '3g'];
 
-const listeners = new Set();
+const listeners = createListeners();
 let fellBack = false;
-
-function readStored() {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    return GRAPHICS_MODES.includes(stored) ? stored : 'auto';
-  } catch {
-    return 'auto';
-  }
-}
-
-let mode = readStored();
+let mode = readChoice(STORAGE_KEY, GRAPHICS_MODES) ?? 'auto';
 
 let webgl2 = null;
 function supportsWebGL2() {
@@ -53,26 +46,17 @@ export function canPrefetch() {
   return !connection?.saveData && !SLOW_NETWORKS.includes(connection?.effectiveType);
 }
 
-export function subscribeGraphics(listener) {
-  listeners.add(listener);
-  return () => listeners.delete(listener);
-}
-
-const notify = () => listeners.forEach((listener) => listener());
+export const subscribeGraphics = listeners.subscribe;
 
 export function setGraphicsMode(next) {
   mode = next;
-  try {
-    localStorage.setItem(STORAGE_KEY, next);
-  } catch {
-    // Без хранилища выбор действует до перезагрузки.
-  }
-  notify();
+  writeValue(STORAGE_KEY, next);
+  listeners.notify();
 }
 
 // Сцена не загрузилась вовремя или упала: в режиме «авто» до перезагрузки показываем лёгкую графику.
 export function fallBackToLite() {
   if (fellBack) return;
   fellBack = true;
-  notify();
+  listeners.notify();
 }

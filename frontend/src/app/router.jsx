@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router';
+import { LANGUAGES, localizePath } from '@/shared/lib/language';
 import { App } from './App';
 
 // Страницы грузятся по требованию: на «Поддержку» не нужно качать three.js и сцену карты.
@@ -25,26 +26,33 @@ export function prefetchPages() {
   Object.values(PAGES).forEach((load) => load());
 }
 
+// Одни и те же страницы на каждом языке: русский — без префикса, остальные — /kk, /en, /de
+// (shared/lib/language.js). Маршруты одной глубины, поэтому при смене языка страница не
+// монтируется заново — меняются только адрес и тексты.
+const pagesFor = (prefix) => [
+  // Один экземпляр HomePage на все три пути, чтобы карточка-пропуск переворачивалась, а не
+  // монтировалась заново.
+  {
+    path: prefix || '/',
+    ...page('home', 'HomePage'),
+    children: [{ path: 'login' }, { path: 'register' }],
+  },
+  { path: `${prefix}/map/:citySlug`, ...page('map', 'MapPage') },
+  { path: `${prefix}/map/:citySlug/district/:districtSlug`, ...page('map', 'MapPage') },
+  { path: `${prefix}/map/:citySlug/problem/:problemId`, ...page('map', 'MapPage') },
+  { path: `${prefix}/map/:citySlug/stats`, ...page('map', 'MapPage', { view: 'stats' }) },
+  { path: `${prefix}/about`, ...page('about', 'AboutPage') },
+  { path: `${prefix}/support`, ...page('support', 'SupportPage') },
+  { path: `${prefix}/settings`, ...page('settings', 'SettingsPage') },
+];
+
 export const router = createBrowserRouter(
   [
     {
       element: <App />,
       hydrateFallbackElement: null,
       children: [
-        // Один экземпляр HomePage на все три пути, чтобы карточка-пропуск переворачивалась, а не
-        // монтировалась заново.
-        {
-          path: '/',
-          ...page('home', 'HomePage'),
-          children: [{ path: 'login' }, { path: 'register' }],
-        },
-        { path: '/map/:citySlug', ...page('map', 'MapPage') },
-        { path: '/map/:citySlug/district/:districtSlug', ...page('map', 'MapPage') },
-        { path: '/map/:citySlug/problem/:problemId', ...page('map', 'MapPage') },
-        { path: '/map/:citySlug/stats', ...page('map', 'MapPage', { view: 'stats' }) },
-        { path: '/about', ...page('about', 'AboutPage') },
-        { path: '/support', ...page('support', 'SupportPage') },
-        { path: '/settings', ...page('settings', 'SettingsPage') },
+        ...LANGUAGES.flatMap((code) => pagesFor(localizePath('', code))),
         { path: '*', ...page('notFound', 'NotFoundPage') },
       ],
     },

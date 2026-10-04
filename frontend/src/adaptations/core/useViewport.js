@@ -18,16 +18,18 @@ function snapshot() {
   const width = window.innerWidth;
   const compact = isCompact(width, window.innerHeight);
   const coarse = window.matchMedia(COARSE_POINTER).matches;
-  return `${tierFor(width)}|${compact ? 'compact' : 'wide'}|${coarse ? 'coarse' : 'fine'}`;
+  const orientation = window.innerHeight > width ? 'portrait' : 'landscape';
+  return `${tierFor(width)}|${compact ? 'compact' : 'wide'}|${coarse ? 'coarse' : 'fine'}|${orientation}`;
 }
 
 // Уровень устройства для компонентов, которые меняют структуру, а не только стили (мобильное меню
-// вместо таб-бара; `compact`: шторка вместо боковых панелей, главная в одну колонку).
+// вместо таб-бара; `compact`: шторка вместо боковых панелей, главная в одну колонку; `portrait`:
+// экран выше, чем шире — по нему перестраиваются кадры, рассчитанные под пропорции экрана).
 export function useViewport() {
-  const [tier, layout, pointer] = useSyncExternalStore(
+  const [tier, layout, pointer, orientation] = useSyncExternalStore(
     subscribe,
     snapshot,
-    () => 'desktop|wide|fine',
+    () => 'desktop|wide|fine|landscape',
   ).split('|');
   return {
     tier,
@@ -36,5 +38,6 @@ export function useViewport() {
     isDesktop: tier !== 'mobile' && tier !== 'tablet',
     compact: layout === 'compact',
     coarse: pointer === 'coarse',
+    portrait: orientation === 'portrait',
   };
 }

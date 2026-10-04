@@ -3,6 +3,7 @@ import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { format } from '@/shared/lib/format';
 import auth from '@/texts/ru/auth.json';
 import styles from './PasswordStrength.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const SEGMENTS = 4;
 
@@ -37,9 +38,7 @@ export function PasswordStrength({ result }) {
       <ul className={styles.checks} data-ui="password-checks">
         {result.checks.map((check) => (
           <li key={check.id} data-check data-ok={check.ok} data-required={check.required}>
-            <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-              {check.ok ? <path d="M3 8.5l3 3 7-7" /> : <path d="M4 4l8 8M12 4l-8 8" />}
-            </svg>
+            <Icon name={check.ok ? 'check' : 'close'} size={12} />
             {check.label}
             <span className="visually-hidden">
               {check.ok ? auth.passwordStrength.done : auth.passwordStrength.notDone}

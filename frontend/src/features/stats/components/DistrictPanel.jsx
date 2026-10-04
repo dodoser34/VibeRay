@@ -13,6 +13,7 @@ import { MoodChart } from './MoodChart';
 import { MoodDistribution } from './MoodDistribution';
 import { StatusBreakdown } from './StatusBreakdown';
 import styles from './DistrictPanel.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const PERIOD_LABEL = texts.periods;
 // Разница меньше этой читается как «так же» (оценки в диапазоне −2…+2).
@@ -125,9 +126,7 @@ export function DistrictPanel({
           onClick={onClose}
           aria-label={texts.close}
         >
-          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-            <path d="M3 3l10 10M13 3L3 13" />
-          </svg>
+          <Icon name="close" size={14} />
         </button>
       </header>
 

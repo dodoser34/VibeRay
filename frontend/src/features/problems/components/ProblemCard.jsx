@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useHref, useNavigate } from 'react-router';
+import { useHref } from 'react-router';
 import { confirmProblem } from '@/shared/api/endpoints/problems';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import {
@@ -7,9 +7,11 @@ import {
   REJECTION_REASON_BY_CODE,
   STATUS_BY_CODE,
 } from '@/shared/config/problemStatuses';
+import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { useShare } from '@/shared/hooks/useShare';
 import { format } from '@/shared/lib/format';
 import { formatDate } from '@/shared/lib/formatDate';
+import { localizePath } from '@/shared/lib/language';
 import { plural } from '@/shared/lib/plural';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Button } from '@/shared/ui/Button';
@@ -18,6 +20,7 @@ import { StatusChip } from './StatusChip';
 import { StatusTimeline } from './StatusTimeline';
 import problemTexts from '@/texts/ru/problems.json';
 import styles from './ProblemCard.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const texts = problemTexts.card;
 
@@ -37,8 +40,8 @@ export function ProblemCard({
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const { state: shareState, share } = useShare();
-  const href = useHref(`/map/${citySlug}/problem/${problem.id}`);
-  const navigate = useNavigate();
+  const href = useHref(localizePath(`/map/${citySlug}/problem/${problem.id}`));
+  const navigate = useLocalizedNavigate();
   const rejected = problem.status === REJECTED_STATUS.code;
   const category = CATEGORY_BY_CODE[problem.category].label;
 
@@ -86,9 +89,7 @@ export function ProblemCard({
             title={texts.share}
             data-ui="panel-tool"
           >
-            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-              <path d="M6.5 9.5l3-3M7 4.5l1.3-1.3a2.8 2.8 0 0 1 4 4L11 8.5M9 11.5l-1.3 1.3a2.8 2.8 0 0 1-4-4L5 7.5" />
-            </svg>
+            <Icon name="link" size={14} />
           </button>
           <button
             type="button"
@@ -97,9 +98,7 @@ export function ProblemCard({
             onClick={onClose}
             aria-label={texts.close}
           >
-            <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-              <path d="M3 3l10 10M13 3L3 13" />
-            </svg>
+            <Icon name="close" size={12} />
           </button>
           {shareState !== 'idle' && (
             <span className={styles.shareNote} role="status" data-state={shareState}>
@@ -142,9 +141,7 @@ export function ProblemCard({
           </span>
         </span>
         <span className={styles.count}>
-          <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-            <path d="M3 8.5l3 3 7-7" />
-          </svg>
+          <Icon name="check" size={12} />
           {format(texts.confirmations, {
             count,
             people: plural(count, texts.confirmationsForms),

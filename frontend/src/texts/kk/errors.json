@@ -1,0 +1,32 @@
+{
+  "api": {
+    "unauthorized": "Жалғастыру үшін кіріңіз",
+    "invalid_period": "Белгісіз кезең",
+    "invalid_email": "Email-ді тексеріңіз",
+    "invalid_nickname": "Лақап ат: 3–24 таңба, әріптер, сандар және _",
+    "email_taken": "Бұл email тіркеліп қойған",
+    "weak_password": "Құпиясөз жеткілікті сенімді емес",
+    "nickname_taken": "Бұл лақап ат бос емес",
+    "invalid_credentials": "Email немесе құпиясөз қате",
+    "wrong_password": "Ағымдағы құпиясөз қате",
+    "city_not_found": "Қала табылмады",
+    "district_not_found": "Аудан табылмады",
+    "invalid_mood": "Белгісіз көңіл күй",
+    "problem_not_found": "Мәселе табылмады",
+    "already_confirmed": "Сіз бұл мәселені растап қойғансыз",
+    "own_problem": "Бұл сіздің хабарламаңыз — оны көршілер растай алады",
+    "invalid_category": "Мәселе түрін таңдаңыз",
+    "outside_city": "Нүкте қала аудандарының ішінде болуы керек",
+    "invalid_description": "Сипаттама — 10-нан 1000 таңбаға дейін",
+    "too_many_photos": "3 фотодан көп емес",
+    "invalid_photo": "Фото: 10 МБ-қа дейінгі JPEG, PNG немесе WebP",
+    "invalid_avatar": "Дайын аватарлардың бірін таңдаңыз немесе фото жүктеңіз",
+    "invalid_topic": "Өтініш тақырыбын таңдаңыз",
+    "invalid_reply_email": "Жауапқа арналған email-ді тексеріңіз",
+    "invalid_message": "Хабарлама — 10-нан 2000 таңбаға дейін",
+    "too_many_files": "3 файлдан көп емес",
+    "invalid_file": "Файлдар: 10 МБ-қа дейінгі JPEG, PNG, WebP немесе PDF",
+    "not_found": "Mock: {method} {path} үшін өңдеуші жоқ",
+    "problem_rejected": "Бұл хабарламаны модератор қабылдамады — оны растауға болмайды."
+  }
+}

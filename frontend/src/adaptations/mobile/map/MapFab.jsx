@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Modal } from '@/shared/ui/Modal';
 import texts from '@/texts/ru/map.json';
 import styles from './MapFab.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 // Плавающие кнопки над картой на телефонах и планшетах стоя, прямо над шторкой: «весь город» (после
 // щипков и поворотов город легко потерять) и главная «+», которая открывает действия — отметить
@@ -19,15 +20,7 @@ export function MapFab({ actions, onRecenter, hidden = false }) {
           aria-label={texts.fab.recenter}
           onClick={onRecenter}
         >
-          <svg
-            viewBox="0 0 24 24"
-            width="20"
-            height="20"
-            aria-hidden="true"
-            className={styles.icon}
-          >
-            <path d="M12 3v3M12 18v3M3 12h3M18 12h3M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-          </svg>
+          <Icon name="recenter" size={20} className={styles.icon} />
         </button>
         {actions.length > 0 && (
           <button
@@ -38,15 +31,7 @@ export function MapFab({ actions, onRecenter, hidden = false }) {
             aria-haspopup="dialog"
             onClick={() => setOpen(true)}
           >
-            <svg
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              aria-hidden="true"
-              className={styles.icon}
-            >
-              <path d="M12 5v14M5 12h14" />
-            </svg>
+            <Icon name="plus" size={24} className={styles.icon} />
           </button>
         )}
       </div>

@@ -2,6 +2,7 @@ import { useNotifications } from '../model/useNotifications';
 import { NotificationList } from './NotificationList';
 import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationsPanel.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const CITY = 'kostanay';
 
@@ -37,9 +38,7 @@ export function NotificationsPanel({ onNavigate, onDone, headingId, compact = fa
           <p className={styles.state}>{texts.loading}</p>
         ) : items.length === 0 ? (
           <div className={styles.empty}>
-            <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">
-              <path d="M24 40a4 4 0 0 0 4-4h-8a4 4 0 0 0 4 4zM12 32h24l-3-4v-8a9 9 0 0 0-18 0v8z" />
-            </svg>
+            <Icon name="bell-large" size={48} />
             <p className={styles.emptyTitle}>{texts.emptyTitle}</p>
             <p className={styles.state}>{texts.empty}</p>
           </div>
@@ -58,9 +57,7 @@ export function NotificationsPanel({ onNavigate, onDone, headingId, compact = fa
           }}
         >
           {texts.allReports}
-          <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-            <path d="M6 3l5 5-5 5" />
-          </svg>
+          <Icon name="chevron-right" size={12} />
         </button>
       </footer>
     </div>

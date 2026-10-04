@@ -11,6 +11,7 @@ import texts from '@/texts/ru/stats.json';
 import { useDistrictStats } from '../hooks/useDistrictStats';
 import { seriesPointTitle, seriesTick } from '../lib/seriesLabels';
 import styles from './DistrictCompare.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const t = texts.districtCompare;
 const SIDES = [
@@ -140,9 +141,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
                 </option>
               ))}
             </select>
-            <svg className={styles.chevron} viewBox="0 0 16 16" aria-hidden="true">
-              <path d="M4 6l4 4 4-4" />
-            </svg>
+            <Icon name="chevron-down" className={styles.chevron} />
           </label>
         ))}
         <button
@@ -152,9 +151,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
           title={t.swap}
           onClick={() => setPicked((p) => ({ a: p.b, b: p.a }))}
         >
-          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-            <path d="M3 5h9l-2.5-2.5M13 11H4l2.5 2.5" />
-          </svg>
+          <Icon name="swap" size={16} />
         </button>
       </div>
 

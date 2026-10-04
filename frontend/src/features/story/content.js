@@ -4,6 +4,8 @@ import { getTheme } from '@/shared/lib/theme';
 // История идеи для страницы «О проекте». Одна глава = CHAPTER единиц шкалы = один экран прокрутки.
 // Тексты лежат в src/texts/{ru,en}/about.json; здесь — только порядок глав.
 export const CHAPTER = 10;
+// Позиция на шкале прокрутки: глава и смещение внутри неё (в тех же единицах).
+export const at = (chapter, offset = 0) => chapter * CHAPTER + offset;
 
 const CHAPTER_IDS = [
   'evening',

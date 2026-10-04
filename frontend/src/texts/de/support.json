@@ -1,0 +1,252 @@
+{
+  "hero": {
+    "kicker": "VibeRay-Support",
+    "title": "Wie können wir helfen?",
+    "lead": "Finde eine Antwort auf deine Frage oder wende dich an den Support."
+  },
+  "deck": {
+    "statusKicker": "Status des Problems",
+    "statusValue": "Gelöst",
+    "moodKicker": "Stimmung im Viertel",
+    "answerKicker": "Antwort des Supports",
+    "answerQuestion": "Wie füge ich ein Problem zur Karte hinzu?"
+  },
+  "search": {
+    "placeholder": "Zum Beispiel: Stimmungsmarkierung ändern",
+    "label": "In den Antworten suchen",
+    "clear": "Suche leeren",
+    "resultsLabel": "Gefundene Antworten",
+    "empty": "Keine passende Antwort gefunden.",
+    "askSupport": "Den Support fragen",
+    "popularLabel": "Oft gesucht:",
+    "placeholderShort": "In den Antworten suchen"
+  },
+  "popularQueries": ["Registrierung", "Profil", "Karte", "Stimmung", "Probleme", "Sicherheit"],
+  "categoriesSection": {
+    "title": "Hilfethemen",
+    "text": "Wähle ein Thema — wir zeigen nur die Antworten dazu."
+  },
+  "answersCount": ["Antwort", "Antworten", "Antworten"],
+  "categories": {
+    "account": {
+      "title": "Konto",
+      "text": "Registrierung, Anmeldung, Profil und Einstellungen"
+    },
+    "map": {
+      "title": "Karte",
+      "text": "Viertel, Straßen und Arbeit mit der Karte"
+    },
+    "mood": {
+      "title": "Stimmung",
+      "text": "Markierungen, ihre Änderung und die Farbe des Viertels"
+    },
+    "problems": {
+      "title": "Probleme",
+      "text": "Wie man ein Problem meldet und was danach passiert"
+    },
+    "security": {
+      "title": "Sicherheit",
+      "text": "Datenschutz und deine Daten"
+    },
+    "technical": {
+      "title": "Technischer Support",
+      "text": "Fehler auf der Website, Laden der Karte und Browser"
+    }
+  },
+  "faqSection": {
+    "title": "Häufige Fragen",
+    "filterLabel": "Thema der Fragen",
+    "all": "Alle"
+  },
+  "faq": [
+    {
+      "id": "register",
+      "category": "account",
+      "question": "Wie registriere ich mich?",
+      "answer": "Tippe oben im Menü auf „Registrieren“. Fünf kurze Schritte: E-Mail, Passwort, Nickname, Avatar und, wenn du willst, dein Viertel. Die Karte kannst du auch ohne Konto ansehen — es wird gebraucht, um die Stimmung zu markieren und Probleme zu melden.",
+      "keywords": "registrierung registrieren konto anmelden erstellen login"
+    },
+    {
+      "id": "profile",
+      "category": "account",
+      "question": "Wie ändere ich meine Profildaten?",
+      "answer": "Tippe auf deinen Avatar in der Tab-Leiste (auf dem Handy: „Profileinstellungen“ im Menü). Dort kannst du einen Avatar wählen oder ein eigenes Foto hochladen und deinen Nickname ändern. Andere Bewohner sehen nur diese. Die E-Mail-Adresse lässt sich nicht ändern, aber der Support hilft, das Konto umzuziehen.",
+      "keywords": "profil nickname avatar name foto e-mail einstellungen"
+    },
+    {
+      "id": "home-district",
+      "category": "account",
+      "question": "Wie ändere ich mein gewähltes Viertel?",
+      "answer": "Jedes Viertel öffnet sich auf der Karte mit einem Tipp. „Dein Viertel“ bestimmt nur, welches Viertel die Karte zuerst zeigt, und ist für niemanden sichtbar. Ändern kannst du es in den Profileinstellungen unter „Mein Viertel“.",
+      "keywords": "viertel eigenes gewähltes wechseln ändern profil karte"
+    },
+    {
+      "id": "delete-account",
+      "category": "account",
+      "question": "Wie lösche ich mein Konto?",
+      "answer": "In den Profileinstellungen unter „Konto“ → „Konto löschen“, dann mit dem Passwort bestätigen. Wenn du dich nicht anmelden kannst, schreib dem Support mit dem Thema „Konto“ von der E-Mail-Adresse, mit der das Konto registriert ist. Deine Stimmungsmarkierungen werden ohnehin nirgends einzeln gezeigt.",
+      "keywords": "löschen konto profil löschung daten"
+    },
+    {
+      "id": "missing-object",
+      "category": "map",
+      "question": "Warum fehlt ein Objekt auf der Karte?",
+      "answer": "Die Karte zeigt Viertel, Straßen und Gewässer nach den Daten von OpenStreetMap. Einzelne Gebäude, Geschäfte und Einrichtungen sind darauf nicht markiert. Wenn eine Straße fehlt oder eine Viertelgrenze falsch aussieht, schreib uns mit dem Thema „Karte“.",
+      "keywords": "karte objekt fehlt gebäude straße grenze viertel openstreetmap"
+    },
+    {
+      "id": "districts",
+      "category": "map",
+      "question": "Wie sind die Viertel auf der Karte aufgeteilt?",
+      "answer": "Kostanai ist nach den Daten von OpenStreetMap in echte Wohnviertel geteilt: Ihre Grenzen verlaufen entlang der Hauptstraßen, der Eisenbahn und des Tobol. Tippe auf ein Viertel — dann siehst du seine Stimmung, Probleme und Statistik.",
+      "keywords": "karte viertel bezirke grenzen stadt"
+    },
+    {
+      "id": "who-sees-mood",
+      "category": "mood",
+      "question": "Wer kann meine Stimmung sehen?",
+      "answer": "Niemand. Einzelne Markierungen werden niemandem gezeigt — auf der Karte ist nur die Gesamtstimmung des Viertels zu sehen, und auch nur, wenn dort mindestens fünf Markierungen zusammengekommen sind.",
+      "keywords": "stimmung sieht datenschutz anonym markierung"
+    },
+    {
+      "id": "change-mood",
+      "category": "mood",
+      "question": "Kann ich meine Stimmungsmarkierung ändern?",
+      "answer": "Ja: Eine neue Markierung im selben Viertel innerhalb von drei Stunden ersetzt die vorherige. So kann ein Einzelner die Farbe des Viertels nicht „manipulieren“.",
+      "keywords": "stimmung ändern markierung ersetzen korrigieren"
+    },
+    {
+      "id": "mood-color",
+      "category": "mood",
+      "question": "Wie entsteht die Farbe eines Viertels?",
+      "answer": "Aus den Markierungen der Bewohner im gewählten Zeitraum — Tag, Woche oder Monat. Bei weniger als fünf Markierungen bleibt das Viertel grau: So lässt sich nicht erraten, wer was markiert hat.",
+      "keywords": "stimmung farbe viertel statistik zeitraum"
+    },
+    {
+      "id": "add-problem",
+      "category": "problems",
+      "question": "Wie füge ich ein Problem zur Karte hinzu?",
+      "answer": "Tippe auf der Karte auf „Problem melden“: Wähle die Art, setze einen Punkt, beschreibe das Problem (10 bis 1000 Zeichen) und füge auf Wunsch bis zu drei Fotos hinzu. Dafür brauchst du ein Konto.",
+      "keywords": "problem hinzufügen melden karte punkt foto müll straßen"
+    },
+    {
+      "id": "problem-status",
+      "category": "problems",
+      "question": "Wann gilt ein Problem als „bestätigt“?",
+      "answer": "Sobald drei verschiedene Bewohner es bestätigt haben. Danach setzt die Moderation es auf „in Arbeit“ und „gelöst“ — der Status steht auf der Karte des Problems. Spam und Duplikate lehnt die Moderation ab.",
+      "keywords": "problem status bestätigen bestätigt gelöst in arbeit"
+    },
+    {
+      "id": "rejected",
+      "category": "problems",
+      "question": "Warum wurde meine Meldung abgelehnt?",
+      "answer": "Die Moderation lehnt Spam und Werbung ab, Duplikate — wenn dasselbe Problem in der Nähe schon gemeldet wurde — und alles, was nichts mit der Stadt zu tun hat. Eine abgelehnte Meldung verschwindet von der Karte und aus der Statistik, aber du siehst sie mit dem Grund unter „Meine Meldungen“; bei einem Duplikat steht dort auch ein Link zum ursprünglichen Problem — bestätige es, das beschleunigt die Lösung.",
+      "keywords": "problem abgelehnt moderation spam duplikat wiederholung"
+    },
+    {
+      "id": "edit-problem",
+      "category": "problems",
+      "question": "Kann ich meine Problemmeldung ändern oder löschen?",
+      "answer": "Meldungen lassen sich noch nicht bearbeiten. Schreib uns mit dem Thema „Probleme“ und beschreibe, welcher Punkt korrigiert oder entfernt werden soll.",
+      "keywords": "problem ändern löschen bearbeiten meldung fehler"
+    },
+    {
+      "id": "public-data",
+      "category": "security",
+      "question": "Welche Daten über mich sehen andere?",
+      "answer": "Nur Avatar und Nickname. E-Mail, „dein Viertel“ und einzelne Stimmungsmarkierungen werden niemandem gezeigt.",
+      "keywords": "sicherheit daten datenschutz sichtbar e-mail"
+    },
+    {
+      "id": "photos",
+      "category": "security",
+      "question": "Was passiert mit meinen Fotos?",
+      "answer": "Standort und Kameradaten werden schon auf deinem Gerät vor dem Senden entfernt, und der Server prüft das noch einmal.",
+      "keywords": "sicherheit foto standort exif daten"
+    },
+    {
+      "id": "password",
+      "category": "security",
+      "question": "Wie wird mein Passwort gespeichert?",
+      "answer": "Wir speichern keine Passwörter — nur ihren Hash (argon2). Selbst wir haben keine Möglichkeit, dein Passwort herauszufinden.",
+      "keywords": "sicherheit passwort speicherung konto hack"
+    },
+    {
+      "id": "site-broken",
+      "category": "technical",
+      "question": "Was tun, wenn die Website nicht richtig funktioniert?",
+      "answer": "Lade die Seite neu. Die Karte braucht einen modernen Browser mit WebGL — ein aktuelles Chrome, Firefox, Safari oder Edge mit eingeschalteter Hardwarebeschleunigung. Hat nicht geholfen? Schreib uns mit dem Thema „Technisches Problem“ und füge einen Screenshot an.",
+      "keywords": "fehler website funktioniert nicht karte lädt nicht langsam browser webgl"
+    },
+    {
+      "id": "mobile",
+      "category": "technical",
+      "question": "Funktioniert die Website auf dem Handy?",
+      "answer": "Ja, VibeRay passt sich dem Handybildschirm an. Für die 3D-Karte braucht auch der Handybrowser WebGL — moderne Browser unterstützen es.",
+      "keywords": "handy mobil smartphone browser"
+    },
+    {
+      "id": "language",
+      "category": "technical",
+      "question": "Wie ändere ich die Sprache der Website?",
+      "answer": "Die Sprachflaggen findest du oben rechts, auf dem Handy unten im Menü und außerdem in den Profileinstellungen unter „Konto“. Die Sprache wechselt sofort, ohne die Seite neu zu laden. Jede Sprache hat ihre eigene Adresse (Deutsch zum Beispiel /de/), deshalb öffnet sich ein geteilter Link in derselben Sprache.",
+      "keywords": "sprache deutsch englisch russisch kasachisch wechseln oberfläche"
+    }
+  ],
+  "cta": {
+    "kicker": "Keine Antwort gefunden?",
+    "title": "Schreib uns — wir finden gemeinsam eine Lösung",
+    "text": "Du hast nicht gefunden, was du suchst? Erzähl uns von deinem Problem, wir versuchen zu helfen.",
+    "button": "An den Support schreiben"
+  },
+  "footer": {
+    "title": "Support kontaktieren",
+    "text": "Am schnellsten über das Kontaktformular: Die Antwort kommt an die angegebene E-Mail-Adresse. Auch ohne Konto möglich.",
+    "openForm": "Kontaktformular öffnen",
+    "linksLabel": "Nützliche Links",
+    "links": {
+      "map": "Stadtkarte",
+      "about": "Über das Projekt",
+      "login": "Anmelden",
+      "register": "Registrieren"
+    }
+  },
+  "status": {
+    "checking": "Wird geprüft…",
+    "failed": "Status konnte nicht abgerufen werden",
+    "allGood": "Alle Systeme laufen",
+    "issues": "Es gibt Störungen",
+    "checkedAt": "Geprüft um {time}",
+    "refresh": "Aktualisieren"
+  },
+  "form": {
+    "title": "An den Support schreiben",
+    "topicLegend": "Thema der Anfrage",
+    "emailLabel": "E-Mail für die Antwort",
+    "emailHint": "Nur für das Support-Team sichtbar",
+    "messageLabel": "Was ist passiert?",
+    "messagePlaceholder": "Beschreibe, was du gemacht hast und was schiefgelaufen ist. Bei einem Fehler: in welchem Browser.",
+    "attach": "Screenshot oder Datei anhängen",
+    "removeFile": "Datei {name} entfernen",
+    "fileBadge": "PDF",
+    "filesNote": "Bis zu {max} Dateien: JPEG, PNG, WebP oder PDF bis 10 MB. Aus Bildern werden Standort und Kameradaten entfernt.",
+    "sizeKb": "{size} KB",
+    "sizeMb": "{size} MB",
+    "cancel": "Abbrechen",
+    "submit": "Senden",
+    "errors": {
+      "topic": "Wähle ein Thema",
+      "email": "Gib die E-Mail-Adresse für die Antwort an",
+      "message": "Beschreibe das Problem — mindestens {min} Zeichen",
+      "tooManyFiles": "Höchstens {max} Dateien möglich",
+      "fileType": "JPEG, PNG, WebP oder PDF sind möglich",
+      "fileSize": "Die Datei ist größer als 10 MB"
+    },
+    "done": {
+      "title": "Anfrage gesendet",
+      "number": "Nummer der Anfrage: {id}",
+      "text": "Wir antworten an {email}. Wenn du etwas ergänzen möchtest, gib die Nummer in einer neuen Anfrage an.",
+      "close": "Fertig"
+    }
+  }
+}

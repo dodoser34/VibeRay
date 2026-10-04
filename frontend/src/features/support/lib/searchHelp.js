@@ -1,6 +1,7 @@
 const normalize = (text) => text.toLowerCase().replace(/ё/g, 'е');
-const words = (text) => normalize(text).match(/[a-zа-я0-9]+/g) ?? [];
-// В русском окончания меняются («район», «района», «районы»): сравниваем по основе.
+const words = (text) => normalize(text).match(/[\p{L}\p{N}]+/gu) ?? [];
+// Окончания меняются («район», «района»; «аудан», «ауданы»; «Viertel», «Vierteln»): сравниваем по
+// основе.
 const stem = (word) => (word.length > 4 ? word.slice(0, word.length - 2) : word);
 
 // Ранжирует записи FAQ по числу слов запроса, которые в них есть (слова вопроса считаются дважды).

@@ -2,6 +2,8 @@
   "slug": "kostanay",
   "name": "Костанай",
   "name_en": "Kostanay",
+  "name_kk": "Қостанай",
+  "name_de": "Kostanai",
   "center": [63.6305, 53.21072],
   "bbox": [63.5273, 53.13513, 63.7616, 53.2851],
   "timezone": "Asia/Qostanay",

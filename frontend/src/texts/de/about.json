@@ -1,0 +1,161 @@
+{
+  "story": {
+    "stamp": "Juli · 22:00",
+    "daylight": {
+      "stamp": "Juli · 14:00",
+      "evening": "Ein ganz normaler Julitag. Ich saß am Computer und überlegte, was ich mir ausdenken könnte."
+    },
+    "hint": "Scrolle — die Geschichte beginnt",
+    "openMap": "Stadtkarte öffnen",
+    "chapters": {
+      "evening": {
+        "text": "Ein ganz normaler Juliabend. Ich saß am Computer und überlegte, was ich mir ausdenken könnte."
+      },
+      "search": {
+        "text": "Websites, Apps, Oberflächen — das alles gab es irgendwo schon. Ich wollte etwas über Menschen machen."
+      },
+      "city": {
+        "text": "Jeden Tag gehen wir dieselben Straßen entlang. Und jeder sieht sein Viertel auf seine Weise."
+      },
+      "mood": {
+        "text": "Was, wenn man direkt auf der Stadtkarte markieren könnte, wie man sich fühlt?"
+      },
+      "problems": {
+        "text": "Und echte Probleme zeigen: Müll, Schlaglöcher, Staus, einen dunklen Hof."
+      },
+      "living": {
+        "phrase": "Was, wenn Menschen zeigen könnten, wie sie ihre Stadt sehen?"
+      },
+      "diploma": {},
+      "product": {
+        "text": "Aus der Idee wurde ein Projekt: Karte, Viertel, Stimmung, Probleme und Statistik — in einem Dienst."
+      },
+      "final": {
+        "phrase": "Manchmal beginnt eine große Idee mit einer einfachen Frage.",
+        "question": "„Was könnte ich mir Interessantes ausdenken?“"
+      }
+    },
+    "calendar": [
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Dezember",
+      "Januar",
+      "Februar",
+      "März",
+      "April",
+      "Mai",
+      "Juni"
+    ],
+    "moodCard": {
+      "nickname": "Bewohner",
+      "place": "Zentrum · jetzt",
+      "question": "Wie fühlst du dich?"
+    },
+    "interface": {
+      "districtKicker": "Viertel von Kostanai",
+      "districtName": "Zentrum",
+      "districtMood": "Gut",
+      "profileName": "Bewohner",
+      "profilePrivacy": "Öffentlich sind nur Avatar und Nickname",
+      "problemKicker": "Problem · Straßen",
+      "problemTitle": "Tiefes Schlagloch an der Kreuzung",
+      "problemStatus": "Bestätigt",
+      "problemConfirmations": "12 Bestätigungen",
+      "statsKicker": "Stimmung der Woche"
+    }
+  },
+  "screen": {
+    "question": "Was denke ich mir Spannendes aus?",
+    "appName": "Notizen",
+    "menu": ["Ablage", "Bearbeiten", "Ansicht", "Fenster"],
+    "date": "Juli, Fr.  22:00",
+    "dateDaylight": "Juli, Fr.  14:00",
+    "fileName": "Idee.txt",
+    "folders": ["Studium", "Projekte", "Spiele", "Fotos", "Musik", "Social Media"],
+    "ideas": {
+      "shop": "Onlineshop",
+      "habits": "Gewohnheitstracker",
+      "game": "Handyspiel",
+      "studyNetwork": "Lernnetzwerk",
+      "finance": "Finanzen"
+    }
+  },
+  "room": {
+    "shelf": {
+      "titan": "Attack on Titan",
+      "isayama": "H. Isayama",
+      "king": "Stephen King",
+      "it": "Es",
+      "greenMile": "The Green Mile",
+      "shawshank": "Die Verurteilten"
+    },
+    "phone": {
+      "time": "22:00",
+      "date": "Freitag, 14. Juli"
+    }
+  },
+  "guide": {
+    "kicker": "So funktioniert es",
+    "titleStart": "VibeRay — eine Stadt, die man",
+    "titleAccent": "Sehen kann",
+    "lead": "Die Karte von Kostanai: Bewohner markieren ihre Stimmung und echte Probleme, und die Stadt zeigt, was jedes Viertel gerade bewegt.",
+    "stats": {
+      "districts": "Viertel auf der Karte",
+      "moods": "Stimmungsnuancen",
+      "categories": "Problemkategorien",
+      "statuses": "Schritte bis zur „Lösung“"
+    },
+    "stepsLabel": "Vier Schritte",
+    "steps": [
+      {
+        "title": "Wähle dein Viertel",
+        "text": "Kostanai ist mit seinen Vororten in 18 echte Viertel geteilt — vom Zentrum bis nach Tobyl jenseits des Flusses. Tippe auf deins und sieh sofort, wie es ihm geht."
+      },
+      {
+        "title": "Markiere deine Stimmung",
+        "text": "Ein Tipp — und das Viertel bekommt deine Stimme. Aus den Markierungen entsteht seine Gesamtfarbe: von ruhigem Grün bis zu besorgtem Rot."
+      },
+      {
+        "title": "Melde ein Problem",
+        "text": "Müll, Schlaglöcher, ein dunkler Hof — setze einen Punkt auf der Karte und füge ein Foto hinzu. Nachbarn bestätigen es, und das Problem geht seinen Weg bis „gelöst“."
+      },
+      {
+        "title": "Verfolge, wie sich die Stadt verändert",
+        "text": "Die Statistik für Tag, Woche und Monat, im Dashboard auch für das Jahr und alle Jahre, zeigt, wo es besser wird und wo die Stadt Hilfe braucht."
+      }
+    ],
+    "privacyTitle": "Ehrlich zum Datenschutz",
+    "privacy": {
+      "mask": {
+        "title": "Nur Nickname und Avatar",
+        "text": "E-Mail und die übrigen Profildaten sieht niemand außer dir."
+      },
+      "crowd": {
+        "title": "Deine Stimme steckt in der Gesamtfarbe",
+        "text": "Einzelne Stimmungsmarkierungen werden nicht gezeigt. Die Farbe eines Viertels erscheint erst, wenn es genug Markierungen gibt."
+      },
+      "photo": {
+        "title": "Fotos ohne Standort",
+        "text": "Aus den Bildern werden technische Daten entfernt — Koordinaten und Handymodell."
+      }
+    },
+    "ctaKicker": "Kostanai ist schon auf der Karte",
+    "ctaTitle": "Wie ist deine Stimmung heute?",
+    "openMap": "Stadtkarte öffnen",
+    "fullStorySummary": "Die ganze Geschichte lesen"
+  },
+  "fullStory": [
+    "Alles begann an einem ganz normalen Juliabend. Es war gegen zehn Uhr. Ich saß am Computer und dachte darüber nach, was man sich Interessantes und Ungewöhnliches ausdenken könnte. Ich wollte nicht einfach noch eine Website oder App um des Projekts willen bauen, sondern etwas, das wirklich mit Menschen und ihrem Alltag zu tun hat.",
+    "Irgendwann begann ich, über die Stadt nachzudenken. Jeden Tag sind Menschen in verschiedenen Vierteln unterwegs, gehen dieselben Straßen entlang, fahren zur Arbeit oder zum Studium, treffen Freunde und stoßen auf alle möglichen Probleme. Dabei nimmt jeder sein Viertel auf seine eigene Weise wahr.",
+    "Für den einen ist ein Viertel ein ruhiger, angenehmer Ort, für den anderen unbequem oder problematisch. Der eine bemerkt ständig Müll, schlechte Straßen oder Staus, der andere achtet darauf, dass Beleuchtung, Parkplätze oder andere Infrastruktur fehlen.",
+    "Da kam mir der Gedanke: Was, wenn man eine Karte baut, auf der Menschen selbst erzählen, was in ihren Vierteln passiert? Die Stadt ist in Viertel und Mikrobezirke geteilt. Man wählt den Ort, an dem man sich meistens aufhält, und markiert seine Stimmung. Und dazu echte Probleme: Müll, einen Stau, eine schlechte Straße, Dunkelheit. So zeigt die Karte nicht nur, wo die Viertel liegen, sondern auch, wie es der Stadt aus Sicht ihrer Bewohner geht.",
+    "Ich erzählte Freunden und Kommilitonen von der Idee. Einer von ihnen meinte, daraus könnte eine interessante Abschlussarbeit werden. Damals wusste ich noch nicht, dass es genau so kommen würde.",
+    "Das vierte Studienjahr begann, und ich musste ein Thema für die Abschlussarbeit wählen. Da erinnerte ich mich an die Idee aus dem Sommer: Statt mir etwas extra für die Abschlussarbeit auszudenken, konnte ich endlich eine Idee umsetzen, die schon da war.",
+    "Mit der Zeit entwickelte sich die Idee weiter: Wie soll die Oberfläche aussehen, wie die Karte, wie markiert man Stimmung und Probleme, wie zeigt man die Daten? Das Hauptziel wurde ein Ort, an dem die Bewohner selbst zeigen, wie sie ihre Stadt sehen. Eine normale Karte zeigt Straßen und Gebäude. Diese zeigt auch, was Menschen fühlen, welche Probleme sie bemerken und wie sie den Ort sehen, an dem sie leben.",
+    "Künftig helfen die gesammelten Daten, Veränderungen in den Vierteln zu beobachten: welche Probleme sich am häufigsten wiederholen, wo Bewohner öfter Negatives markieren und welche Orte als angenehm empfunden werden.",
+    "Und das Spannendste: Alles begann nicht mit einer Aufgabe der Uni und nicht mit dem Gedanken an eine Abschlussarbeit, sondern mit einem ganz normalen Juliabend und der Frage: „Was könnte ich mir Interessantes und Ungewöhnliches ausdenken?“"
+  ]
+}

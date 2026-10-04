@@ -1,0 +1,35 @@
+{
+  "close": "Жабу",
+  "meta": {
+    "description": "VibeRay — Қостанайдың көңіл күйі мен мәселелерінің тірі 3D-картасы"
+  },
+  "time": {
+    "justNow": "дәл қазір",
+    "minutesAgo": "{minutes} мин бұрын",
+    "hoursAgo": "{hours} сағ бұрын"
+  },
+  "photo": {
+    "wrongType": "Тек JPEG, PNG немесе WebP жарайды",
+    "tooBig": "Фото 10 МБ-тан үлкен",
+    "processFailed": "Фотоны өңдеу мүмкін болмады"
+  },
+  "serverUnavailable": "Сервер қолжетімсіз, кейінірек қайталап көріңіз",
+  "language": {
+    "label": "Интерфейс тілі",
+    "names": {
+      "ru": "Русский",
+      "kk": "Қазақша",
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+  "theme": {
+    "label": "Безендіру тақырыбы",
+    "toLight": "Ашық тақырыпты қосу",
+    "toDark": "Қараңғы тақырыпты қосу",
+    "names": {
+      "dark": "Қараңғы",
+      "light": "Ашық"
+    }
+  }
+}

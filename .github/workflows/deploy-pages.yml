@@ -44,10 +44,10 @@ jobs:
           # Подпапка сайта на Pages: /<репозиторий>/ (или / для <user>.github.io)
           VITE_BASE: ${{ steps.pages.outputs.base_path }}/
           VITE_USE_MOCKS: 'true'
-
-      # Pages не знает о маршрутах SPA: на прямую ссылку вроде /map/kostanay он отдаёт 404.html,
-      # поэтому 404.html — копия index.html, и маршрут открывает уже само приложение.
-      - run: cp dist/index.html dist/404.html
+          # Адрес сайта для ссылок на переводы (hreflang) и sitemap.xml. Сборка сама кладёт страницу
+          # на каждом языке (/en/about/index.html …) и 404.html — копию приложения для остальных
+          # адресов SPA (plugins/languagePages.js).
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
 
       - uses: actions/upload-pages-artifact@v5
         with:

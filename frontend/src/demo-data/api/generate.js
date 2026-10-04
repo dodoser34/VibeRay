@@ -55,6 +55,8 @@ export const city = {
   slug: cityInfo.slug,
   name: cityInfo.name,
   name_en: cityInfo.name_en,
+  name_kk: cityInfo.name_kk,
+  name_de: cityInfo.name_de,
   center: cityInfo.center,
   bbox: cityInfo.bbox,
   timezone: cityInfo.timezone,

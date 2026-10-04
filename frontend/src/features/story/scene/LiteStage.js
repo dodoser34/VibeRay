@@ -1,9 +1,14 @@
 import { gsap } from '@/shared/animations/gsapSetup';
-import { CHAPTER } from '../content';
+import { at } from '../content';
 
-const at = (chapter, offset = 0) => chapter * CHAPTER + offset;
 // Центр экрана монитора в координатах иллюстрации (StoryIllustration, viewBox 1600×900).
 const SCREEN = '780 437';
+// Комната нарисована в кадре 1600×900 и обрезается по экрану (slice). Окно редактора с вопросом
+// (240 + поля) должно целиком помещаться в кадр, пока вопрос читают.
+const ROOM = { width: 1600, height: 900 };
+const READ_AREA = { width: 300, height: 220 };
+const READ_ZOOM = 1.9;
+const SCREEN_ZOOM = 5.5;
 
 // Лёгкая версия сцены истории — тот же интерфейс, что у StoryScene (ready, setCity, buildTimeline,
 // dispose), но анимирует плоскую иллюстрацию (StoryIllustration): наезд на монитор, вопрос на
@@ -17,6 +22,17 @@ export class LiteStage {
   // Карту рисует React из тех же данных — сцене ничего строить не нужно.
   setCity() {}
 
+  // Наезд, при котором окно с вопросом ещё целиком в кадре: на широком экране — READ_ZOOM, на
+  // узком (телефон стоя) видна лишь середина комнаты, и наезд меньше. Шкалу перестраивают при
+  // повороте экрана (StoryExperience), поэтому размер читается при построении.
+  readZoom() {
+    const { clientWidth: width, clientHeight: height } = this.root;
+    if (!width || !height) return READ_ZOOM;
+    const cover = Math.max(width / ROOM.width, height / ROOM.height);
+    const fit = Math.min(width / cover / READ_AREA.width, height / cover / READ_AREA.height);
+    return Math.max(1, Math.min(READ_ZOOM, fit));
+  }
+
   buildTimeline(tl) {
     const q = gsap.utils.selector(this.root);
     const one = (name) => q(`[data-lite="${name}"]`);
@@ -26,13 +42,13 @@ export class LiteStage {
     tl.fromTo(
       one('zoom'),
       { scale: 1 },
-      { scale: 1.9, svgOrigin: SCREEN, duration: 9, ease: 'power2.inOut' },
+      { scale: this.readZoom(), svgOrigin: SCREEN, duration: 9, ease: 'power2.inOut' },
       at(0),
     );
     tl.fromTo(one('question'), { autoAlpha: 0 }, { autoAlpha: 1, duration: 2.4 }, at(1, 5));
     tl.to(
       one('zoom'),
-      { scale: 5.5, svgOrigin: SCREEN, duration: 4.3, ease: 'power2.in' },
+      { scale: SCREEN_ZOOM, svgOrigin: SCREEN, duration: 4.3, ease: 'power2.in' },
       at(1, 5.5),
     );
 

@@ -12,6 +12,7 @@ import { GuideMap } from './GuideMap';
 import about from '@/texts/ru/about.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryGuide.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const CITY = 'kostanay';
 
@@ -29,10 +30,9 @@ const PRIVACY = ['mask', 'crowd', 'photo'].map((icon) => ({
 }));
 
 const ICONS = {
-  mask: 'M4 12c0-4 3.6-7 8-7s8 3 8 7-3.6 7-8 7-8-3-8-7Zm4.5-1.5h2M13.5 10.5h2M9 15c1.8 1.2 4.2 1.2 6 0',
-  crowd:
-    'M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM2 20c0-3 2.7-5 6-5s6 2 6 5M14 15.3c.6-.2 1.3-.3 2-.3 3.3 0 6 2 6 5',
-  photo: 'M4 8h3l2-3h6l2 3h3v11H4V8Zm8 8.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM3 3l18 18',
+  mask: 'mask',
+  crowd: 'crowd',
+  photo: 'photo-off',
 };
 
 // «Как это работает» после истории: живой 2D-Костанай, который следует за шагами при прокрутке,
@@ -209,9 +209,7 @@ export function StoryGuide({ onOpenMap }) {
         <ul className={styles.privacyGrid} data-ui="guide-privacy-grid">
           {PRIVACY.map((item) => (
             <li key={item.title} className={styles.privacyCard} data-rise>
-              <svg className={styles.privacyIcon} viewBox="0 0 24 24" aria-hidden="true">
-                <path d={ICONS[item.icon]} />
-              </svg>
+              <Icon name={ICONS[item.icon]} className={styles.privacyIcon} />
               <h3 className={styles.privacyTitle}>{item.title}</h3>
               <p className={styles.privacyText}>{item.text}</p>
             </li>

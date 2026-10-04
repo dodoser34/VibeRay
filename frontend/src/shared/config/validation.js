@@ -1,5 +1,6 @@
 // Повторяет правила бэкенда (ARCHITECTURE.md, разделы 4 и 8).
-export const NICKNAME_PATTERN = /^[a-zA-Z0-9_а-яА-ЯёЁ]{3,24}$/;
+// Буквы: латиница с немецкими ä ö ü ß, кириллица с казахскими ә ғ қ ң ө ұ ү һ і.
+export const NICKNAME_PATTERN = /^[a-zA-ZäöüßÄÖÜ0-9_а-яА-ЯёЁәғқңөұүһіӘҒҚҢӨҰҮҺІ]{3,24}$/;
 export const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export const PASSWORD_MIN_LENGTH = 8;
 

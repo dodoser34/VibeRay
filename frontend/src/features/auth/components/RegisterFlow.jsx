@@ -11,6 +11,7 @@ import { PasswordStrength } from './PasswordStrength';
 import { format } from '@/shared/lib/format';
 import auth from '@/texts/ru/auth.json';
 import styles from './PassForms.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const texts = auth.register;
 
@@ -53,19 +54,19 @@ const PERKS = [
     get text() {
       return texts.perks.mood;
     },
-    icon: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM8.5 14.5c1.9 1.6 5.1 1.6 7 0M9 9.5h.01M15 9.5h.01',
+    icon: 'smile',
   },
   {
     get text() {
       return texts.perks.problems;
     },
-    icon: 'M12 21s-6.5-5.4-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.6 12 21 12 21Zm0-13.5v3.5M12 14h.01',
+    icon: 'pin-alert',
   },
   {
     get text() {
       return texts.perks.privacy;
     },
-    icon: 'M6 11V8a6 6 0 0 1 12 0v3M5 11h14v10H5z',
+    icon: 'padlock',
   },
 ];
 // Готовые ники для шага ника (все подходят под NICKNAME_PATTERN).
@@ -210,9 +211,7 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
             </span>
           </div>
           <span className={styles.lock} title={texts.previewPrivacyTitle}>
-            <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-              <path d="M4 7V5a4 4 0 0 1 8 0v2M3 7h10v7H3z" />
-            </svg>
+            <Icon name="lock" size={12} />
             {texts.previewPrivacy}
           </span>
         </div>
@@ -247,9 +246,7 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
             <ul className={styles.perks} aria-label={texts.perksLabel}>
               {PERKS.map((perk) => (
                 <li key={perk.text} className={styles.perk}>
-                  <svg className={styles.perkIcon} viewBox="0 0 24 24" aria-hidden="true">
-                    <path d={perk.icon} />
-                  </svg>
+                  <Icon name={perk.icon} className={styles.perkIcon} />
                   {perk.text}
                 </li>
               ))}

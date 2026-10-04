@@ -6,6 +6,7 @@ import { SettingsCenter } from '@/features/settings';
 import { getCity } from '@/shared/api/endpoints/cities';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { useLanguage } from '@/shared/hooks/useLanguage';
+import { localizePath } from '@/shared/lib/language';
 
 const CITY = 'kostanay';
 
@@ -27,7 +28,7 @@ export function SettingsPage() {
   );
 
   // Гостю настраивать нечего — сначала вход.
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user) return <Navigate to={localizePath('/login')} replace />;
 
   // Сначала уходим с настроек, потом закрываем сессию: иначе страница успела бы увести гостя на вход.
   const leave = (close) => async () => {

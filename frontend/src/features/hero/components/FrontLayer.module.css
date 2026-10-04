@@ -6,7 +6,6 @@
   z-index: var(--z-front-layer);
   pointer-events: none;
   overflow: visible;
-  /* нейтральная тень от листа на нижний слой с городом */
   filter: drop-shadow(0 18px 28px var(--color-layer-shadow));
 }
 

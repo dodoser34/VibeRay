@@ -1,4 +1,6 @@
-/* Таб-бар на планшетах: у логотипа остаётся только знак, пять вкладок помещаются в 768 px */
+/* Таб-бар на планшетах: у логотипа остаётся только знак, а справа от капсулы — четыре флага языка и
+   колокольчик. Поэтому вкладки — короткими подписями (полная подпись остаётся для экранных чтецов),
+   а тема — рядом с логотипом. Так всё помещается от 768 px с ником в капсуле. */
 @media (max-width: 1199px) {
   :root [data-ui='tabbar-brand'] {
     display: none;
@@ -12,11 +14,7 @@
   :root [data-ui='tabbar-nickname'] {
     max-width: 8ch;
   }
-}
 
-/* Планшет стоя: справа от капсулы — язык и колокольчик, поэтому вкладки — короткими подписями
-   (полная подпись остаётся для экранных чтецов) */
-@media (max-width: 1023px) {
   :root [data-ui='tabbar-label'] {
     position: absolute;
     width: 1px;
@@ -40,5 +38,22 @@
 
   :root [data-ui='tabbar-theme-lead'] {
     display: block;
+  }
+
+  /* Без названия плашка логотипа — круг; переключатель темы стоит сразу за ней (TabBar.module.css) */
+  :root [data-ui='tabbar-logo'] {
+    padding-right: 0.3125rem;
+  }
+}
+
+/* Планшет стоя: четыре флага не помещаются рядом с капсулой — виден флаг текущего языка, остальные
+   раскрываются влево поверх капсулы при наведении или по нажатию на него (data-open, с клавиатуры —
+   Enter): LanguageSwitch */
+@media (max-width: 1023px) {
+  :root
+    [data-ui='tabbar-aside']
+    [data-ui='language-switch']:not([data-open], :hover)
+    [data-ui='language-option']:not([aria-pressed='true']) {
+    display: none;
   }
 }

@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router';
 import { useNavigationInterceptor, useTransitionNavigate } from '@/app/transitions/useTransition';
 import { useViewport, WIDE_QUERY } from '@/adaptations/core';
 import { AuthPanel } from '@/features/auth';
 import { FrontLayer, HeroCanvas } from '@/features/hero';
 import { useCityData } from '@/features/map';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
+import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
+import { usePagePath } from '@/shared/hooks/usePagePath';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Button } from '@/shared/ui/Button';
 import home from '@/texts/ru/home.json';
@@ -19,8 +20,8 @@ const FALLBACK_DISTRICT = 'center';
 export function HomePage() {
   // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
   useLanguage();
-  const { pathname } = useLocation();
-  const navigate = useNavigate();
+  const pathname = usePagePath();
+  const navigate = useLocalizedNavigate();
   const go = useTransitionNavigate();
   const mode = pathname === '/register' ? 'register' : 'login';
   const { city, moods } = useCityData(CITY, 'day');

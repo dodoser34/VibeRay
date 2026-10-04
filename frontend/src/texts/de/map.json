@@ -1,0 +1,126 @@
+{
+  "canvasLabel": "3D-Karte der Stadtviertel. Fahre über ein Viertel, um seinen Namen zu sehen, klicke, um seine Statistik zu öffnen.",
+  "filtersLabel": "Kartenfilter",
+  "cityFallback": "Stadt",
+  "heading": "Stimmungskarte",
+  "period": "Zeitraum",
+  "layer": "Ebene",
+  "layerLabel": "Kartenebene",
+  "layers": {
+    "districts": "Viertel",
+    "mood": "Stimmung",
+    "problems": "Probleme"
+  },
+  "heightScale": {
+    "label": "Höhe der Viertel",
+    "value": "×{value}",
+    "flat": "flach",
+    "hint": "Je besser die Stimmung im Viertel, desto höher ist es"
+  },
+  "legendTitles": {
+    "districts": "Stadtviertel",
+    "mood": "Stimmung im Viertel",
+    "problems": "Status des Problems"
+  },
+  "updatedAt": "Daten aktualisiert um {time}",
+  "loading": "Daten werden geladen…",
+  "districtsSource": "Viertel nach den Mikrobezirken von OpenStreetMap.",
+  "overview": {
+    "kicker": "Alle Viertel",
+    "title": "Wo es gerade am besten ist",
+    "hint": "Tippe auf ein Viertel auf der Karte oder in der Liste."
+  },
+  "actions": {
+    "guestNote": "Du siehst die Stadt als Gast",
+    "markMood": "Stimmung markieren",
+    "reportProblem": "Problem melden",
+    "login": "Anmelden"
+  },
+  "authReasons": {
+    "mood": "Melde dich an, um die Stimmung im Viertel zu markieren. Die Markierung ist anonym.",
+    "problem": "Melde dich an, um ein Problem zu melden — so schützen wir uns vor Spam.",
+    "confirm": "Probleme bestätigen können nur registrierte Bewohner."
+  },
+  "authModal": {
+    "title": "Konto erforderlich",
+    "register": "Registrieren",
+    "login": "Anmelden"
+  },
+  "toasts": {
+    "moodSaved": "Danke! „{mood}“ wurde gezählt: {district}.",
+    "problemSent": "Das Problem wurde gesendet. Nach 3 Bestätigungen von Bewohnern gilt es als „Bestätigt“."
+  },
+  "attribution": {
+    "prefix": "Viertel, Straßen und Gewässer: ©",
+    "osm": "OpenStreetMap-Mitwirkende"
+  },
+  "statsLink": {
+    "open": "Stadtstatistik",
+    "back": "Zurück zur Karte",
+    "openLabel": "Stadtstatistik für Monat, Jahr und alle Jahre öffnen"
+  },
+  "stats": {
+    "heading": "Stadtstatistik",
+    "metric": "Auf der Karte",
+    "metricLabel": "Was auf der Karte gezeigt wird",
+    "metrics": {
+      "mood": "Stimmung",
+      "problems": "Probleme"
+    },
+    "legend": "Skala"
+  },
+  "sheet": {
+    "label": "Kartenpanel",
+    "toggle": "Panel aus- oder einklappen"
+  },
+  "panels": {
+    "hideLeft": "Filter ausblenden",
+    "showLeft": "Filter einblenden",
+    "hideRight": "Rechtes Panel ausblenden",
+    "showRight": "Rechtes Panel einblenden"
+  },
+  "filters": {
+    "chipLabel": "Kartenfilter: {summary}",
+    "title": "Was auf der Karte gezeigt wird",
+    "districtsHint": "Tippe auf ein Viertel auf der Karte, um es zu öffnen."
+  },
+  "fab": {
+    "open": "Aktionen auf der Karte",
+    "title": "Was möchtest du tun?",
+    "recenter": "Ganze Stadt zeigen",
+    "markMoodHint": "Anonym, für ein Viertel",
+    "reportHint": "Punkt auf der Karte, Beschreibung und Foto",
+    "statsHint": "Für Monat, Jahr und alle Jahre"
+  },
+  "tour": {
+    "progress": "Hinweis {current} von {total}",
+    "skip": "Überspringen",
+    "next": "Weiter",
+    "done": "Verstanden, zur Karte",
+    "replay": "So funktioniert die Karte",
+    "district": {
+      "title": "Wähle ein Viertel",
+      "text": "Tippe auf ein beliebiges Viertel — dann siehst du seine Stimmung, Probleme und Entwicklung. Die Karte lässt sich drehen und zoomen."
+    },
+    "mood": {
+      "title": "Markiere deine Stimmung",
+      "text": "Wie geht es dir heute in deinem Viertel? Ein Tipp — und deine Stimme fließt in die Gesamtfarbe des Viertels ein. Einzelne Markierungen sieht niemand.",
+      "textCompact": "Tippe auf „+“ und wähle „Stimmung markieren“: ein Tipp — und deine Stimme fließt in die Farbe des Viertels ein."
+    },
+    "report": {
+      "title": "Melde ein Problem",
+      "text": "Müll, ein Schlagloch, ein dunkler Hof — setze einen Punkt auf der Karte und füge ein Foto hinzu. Nachbarn bestätigen es, und du wirst benachrichtigt, sobald es bearbeitet wird.",
+      "textCompact": "Ebenfalls unter „+“: „Problem melden“ — Punkt auf der Karte und Foto. Sobald das Problem bearbeitet wird, bekommst du eine Benachrichtigung."
+    }
+  },
+  "cluster": "{count} {problems} in der Nähe — heranzoomen",
+  "clusterForms": ["Problem", "Probleme", "Probleme"],
+  "daytime": {
+    "morning": "Morgen",
+    "day": "Tag",
+    "evening": "Abend",
+    "night": "Nacht",
+    "caption": "{city} · {phase}, {time}",
+    "title": "Das Licht auf der Karte entspricht der Tageszeit in der Stadt"
+  }
+}

@@ -1,4 +1,6 @@
 import { clearCssVarCache } from './cssVar';
+import { createListeners } from './listeners';
+import { readChoice, writeValue } from './localFlag';
 
 // Тема оформления: тёмная (по умолчанию) или светлая. Цвета — токены в src/styles/themes/; тема —
 // атрибут data-theme на <html>. Модуль импортируется в main.jsx до отрисовки, чтобы страница сразу
@@ -8,13 +10,10 @@ import { clearCssVarCache } from './cssVar';
 export const THEMES = ['dark', 'light'];
 const STORAGE_KEY = 'viberay.theme';
 
+// Сохранённый выбор, иначе — по настройке системы.
 function detect() {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (THEMES.includes(saved)) return saved;
-  } catch {
-    // хранилище недоступно — по настройке системы
-  }
+  const saved = readChoice(STORAGE_KEY, THEMES);
+  if (saved) return saved;
   return window.matchMedia?.('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
 }
 
@@ -32,26 +31,19 @@ function paint(next) {
 let theme = detect();
 paint(theme);
 
-const listeners = new Set();
+const listeners = createListeners();
 
 export function getTheme() {
   return theme;
 }
 
-export function subscribeTheme(listener) {
-  listeners.add(listener);
-  return () => listeners.delete(listener);
-}
+export const subscribeTheme = listeners.subscribe;
 
 export function applyTheme(next) {
   if (next === theme || !THEMES.includes(next)) return;
   theme = next;
   clearCssVarCache();
   paint(next);
-  try {
-    localStorage.setItem(STORAGE_KEY, next);
-  } catch {
-    // без хранилища выбор живёт до перезагрузки
-  }
-  listeners.forEach((listener) => listener());
+  writeValue(STORAGE_KEY, next);
+  listeners.notify();
 }

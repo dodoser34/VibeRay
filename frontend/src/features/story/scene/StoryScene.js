@@ -3,7 +3,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { SceneRuntime } from '@/features/map';
 import { cssVar } from '@/shared/lib/cssVar';
 import { createProjection } from '@/shared/lib/geoProjection';
-import { CHAPTER } from '../content';
+import { at } from '../content';
 import { CITY_PARAMS, CityStage } from './CityStage';
 import { RoomSet, SCREEN_CENTER } from './RoomSet';
 
@@ -25,7 +25,6 @@ const NEAR_CITY = 0.5;
 // В конце нырка камера видит ~63 % высоты монитора, поэтому карта на мониторе рисуется во столько
 // же раз меньше, чтобы точно совпасть с первым кадром города.
 const SCREEN_MAP_SCALE = 1.6;
-const at = (chapter, offset = 0) => chapter * CHAPTER + offset;
 
 // Сцена истории, управляемая прокруткой. Все анимируемые значения живут в `params` и векторах
 // камеры и меняются одной привязанной к прокрутке шкалой GSAP, поэтому история играет вперёд и

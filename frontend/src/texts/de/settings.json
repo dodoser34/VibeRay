@@ -1,0 +1,111 @@
+{
+  "kicker": "Einstellungen",
+  "title": "Dein Profil",
+  "lead": "Wie dich deine Nachbarn sehen, welches Viertel deins ist und wie dein Konto geschützt ist.",
+  "navLabel": "Bereiche der Einstellungen",
+  "sections": {
+    "profile": "Profil",
+    "reports": "Meine Meldungen",
+    "district": "Mein Viertel",
+    "security": "Sicherheit",
+    "account": "Konto"
+  },
+  "sectionsShort": {
+    "profile": "Profil",
+    "reports": "Meldungen",
+    "district": "Viertel",
+    "security": "Schutz",
+    "account": "Konto"
+  },
+  "saved": "Gespeichert",
+  "profile": {
+    "lead": "Das ist alles, was andere Bewohner von dir sehen: in Problemmeldungen und im Menü.",
+    "previewLabel": "So sehen dich andere",
+    "previewMeta": "Bewohner von Kostanai",
+    "public": "Öffentlich sind nur Avatar und Nickname",
+    "avatarLegend": "Avatar",
+    "avatarOption": "Avatar {number}",
+    "upload": "Eigenes Foto",
+    "uploadHint": "JPEG, PNG oder WebP bis 10 MB. Standort und Kameradaten werden schon auf dem Handy entfernt.",
+    "uploaded": "Dein Foto",
+    "nicknameHint": "3–24 Zeichen: Buchstaben, Ziffern und _",
+    "save": "Profil speichern",
+    "reset": "Verwerfen"
+  },
+  "reports": {
+    "lead": "Probleme, die du gemeldet hast: was gerade mit ihnen passiert und wie viele Nachbarn sie bestätigt haben.",
+    "filterLabel": "Welche Meldungen angezeigt werden",
+    "filters": {
+      "all": "Alle",
+      "active": "Aktiv",
+      "resolved": "Gelöst",
+      "rejected": "Abgelehnt"
+    },
+    "summary": {
+      "total": ["Meldung", "Meldungen", "Meldungen"],
+      "active": "in Arbeit und offen",
+      "resolved": "gelöst",
+      "confirmations": [
+        "Bestätigung von Nachbarn",
+        "Bestätigungen von Nachbarn",
+        "Bestätigungen von Nachbarn"
+      ]
+    },
+    "listLabel": "Meine Problemmeldungen",
+    "statusLabel": "Status",
+    "confirmations": ["Bestätigung", "Bestätigungen", "Bestätigungen"],
+    "openOnMap": "Auf der Karte",
+    "share": "Link kopieren",
+    "copied": "Link kopiert",
+    "loading": "Deine Meldungen werden geladen…",
+    "emptyTitle": "Du hast noch keine Probleme gemeldet",
+    "emptyText": "Ein Schlagloch, ein dunkler Hof oder Müll entdeckt? Setze einen Punkt auf der Karte — Nachbarn bestätigen es, und hier siehst du, wie das Problem auf „gelöst“ zugeht.",
+    "emptyFilter": "In dieser Gruppe ist noch nichts.",
+    "report": "Problem melden",
+    "rejectedReason": "Grund: {reason}"
+  },
+  "district": {
+    "lead": "Die Karte öffnet sich zuerst dort. Wird niemandem gezeigt.",
+    "legend": "Wähle dein Viertel",
+    "none": "Nicht gewählt",
+    "loading": "Viertel werden geladen…",
+    "save": "Viertel speichern"
+  },
+  "security": {
+    "lead": "Das Passwort ändert sich sofort. Auf anderen Geräten musst du dich neu anmelden.",
+    "emailLabel": "E-Mail für die Anmeldung",
+    "emailPrivate": "Nur für dich sichtbar",
+    "passwordTitle": "Passwort ändern",
+    "current": "Aktuelles Passwort",
+    "next": "Neues Passwort",
+    "repeat": "Neues Passwort wiederholen",
+    "same": "Das neue Passwort ist dasselbe wie das aktuelle",
+    "save": "Passwort ändern",
+    "changed": "Passwort geändert"
+  },
+  "account": {
+    "lead": "Sprache, Farbschema, Grafik, Abmelden und Konto löschen.",
+    "languageTitle": "Sprache der Oberfläche",
+    "languageText": "Russisch, Kasachisch, Englisch oder Deutsch. Jede Sprache hat ihre eigene Seitenadresse, die Wahl wird in diesem Browser gespeichert.",
+    "themeTitle": "Farbschema",
+    "themeText": "Dunkel — Waldnacht, hell — die Stadt am Tag. Die Wahl wird in diesem Browser gespeichert.",
+    "graphicsTitle": "Grafik",
+    "graphicsText": "Auto — bei langsamem Internet und schwachem Gerät schaltet sich statt der 3D-Szenen von selbst die leichte Grafik ein. Die Wahl wird in diesem Browser gespeichert.",
+    "graphicsModes": {
+      "auto": "Auto",
+      "full": "Voll",
+      "lite": "Leicht"
+    },
+    "logoutTitle": "Abmelden",
+    "logoutText": "Auf diesem Gerät. Deine Markierungen und Meldungen bleiben erhalten.",
+    "logout": "Abmelden",
+    "deleteTitle": "Konto löschen",
+    "deleteText": "Für immer: Profil und Anmeldung. Deine Stimmungsmarkierungen bleiben ohne Bezug zu dir in der Statistik der Viertel.",
+    "delete": "Konto löschen",
+    "confirmTitle": "Konto löschen?",
+    "confirmText": "Das lässt sich nicht rückgängig machen. Gib zur Bestätigung dein Passwort ein.",
+    "confirmPassword": "Passwort",
+    "confirm": "Endgültig löschen",
+    "cancel": "Abbrechen"
+  }
+}

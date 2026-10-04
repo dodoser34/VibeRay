@@ -1,0 +1,55 @@
+{
+  "moods": {
+    "excellent": "Super",
+    "good": "Gut",
+    "normal": "Normal",
+    "anxious": "Unruhe",
+    "bad": "Schlecht",
+    "angry": "Wut",
+    "very_bad": "Sehr schlecht"
+  },
+  "periods": {
+    "day": "Tag",
+    "week": "Woche",
+    "month": "Monat",
+    "year": "Jahr",
+    "all": "Alle Jahre"
+  },
+  "problemCategories": {
+    "garbage": "Müll",
+    "traffic": "Staus",
+    "roads": "Schlechte Straßen",
+    "lighting": "Beleuchtung",
+    "noise": "Lärm",
+    "drunkenness": "Trinkgelage",
+    "public_transport": "Nahverkehr",
+    "parks": "Zustand der Parks",
+    "other": "Sonstiges"
+  },
+  "problemStatuses": {
+    "new": "Neu",
+    "confirmed": "Bestätigt",
+    "in_progress": "In Arbeit",
+    "resolved": "Gelöst",
+    "rejected": "Abgelehnt"
+  },
+  "rejectionReasons": {
+    "spam": "Spam oder Werbung",
+    "duplicate": "Duplikat — dieses Problem wurde schon gemeldet",
+    "offtopic": "Kein städtisches Problem"
+  },
+  "supportTopics": {
+    "account": "Konto",
+    "map": "Karte",
+    "mood": "Stimmung",
+    "problems": "Probleme",
+    "security": "Sicherheit",
+    "technical": "Technisches Problem",
+    "other": "Sonstiges"
+  },
+  "serviceStates": {
+    "operational": "In Betrieb",
+    "degraded": "Mit Störungen",
+    "down": "Ausgefallen"
+  }
+}

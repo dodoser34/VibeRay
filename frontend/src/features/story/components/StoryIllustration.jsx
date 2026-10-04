@@ -1,7 +1,8 @@
-import { useId } from 'react';
+import { useId, useLayoutEffect, useRef } from 'react';
 import { moodFill } from '@/features/map';
 import about from '@/texts/ru/about.json';
 import { useCityOutline } from '@/shared/hooks/useCityOutline';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryIllustration.module.css';
 
 // Дома за окном: x, ширина, высота (в координатах окна), оттенок фасада.
@@ -13,12 +14,48 @@ const HOUSES = [
   [500, 70, 140, 'b'],
 ];
 const TREES = [40, 150, 270, 360, 470, 540];
+// Иконки дока на мониторе — те же цвета, что у дока в 3D-комнате (ScreenTexture).
+const DOCK = [
+  '--color-accent',
+  '--color-river',
+  '--mood-normal',
+  '--mood-bad',
+  '--district-8',
+  '--district-9',
+];
+// Ширина строки вопроса в окне редактора на мониторе (окно — 240, по 10 с краёв).
+const QUESTION_WIDTH = 220;
 const SPINES = ['titan', 'titan', 'titan', 'titan', 'titan', 'titan', 'king', 'king', 'king'];
 
 // Лёгкая версия истории «О проекте» (слабое устройство, медленная сеть): плоская иллюстрация той же
 // комнаты и 2D-карта Костаная вместо WebGL. Цвета — токены --story-* темы, поэтому день и ночь
 // меняются вместе с темой без перерисовки. Анимирует LiteStage (scene/LiteStage.js) по data-lite.
 export function StoryIllustration({ ref, city, moods, problems }) {
+  const language = useLanguage();
+  const questionRef = useRef(null);
+
+  // Вопрос на экране не шире окна редактора на любом языке: шрифт уменьшается под ширину. Меряем
+  // после загрузки шрифта и заново при смене языка.
+  useLayoutEffect(() => {
+    const text = questionRef.current;
+    if (!text) return undefined;
+    let alive = true;
+    const fit = () => {
+      if (!alive) return;
+      text.style.fontSize = '';
+      const width = text.getComputedTextLength();
+      if (width > QUESTION_WIDTH) {
+        const size = parseFloat(getComputedStyle(text).fontSize);
+        text.style.fontSize = `${(size * QUESTION_WIDTH) / width}px`;
+      }
+    };
+    fit();
+    document.fonts?.ready.then(fit);
+    return () => {
+      alive = false;
+    };
+  }, [language]);
+
   const id = useId();
   const outline = useCityOutline(city, problems);
   const sky = `${id}-sky`;
@@ -102,8 +139,13 @@ export function StoryIllustration({ ref, city, moods, problems }) {
               rx="6"
             />
           ))}
-          <rect className={styles.curtain} x="800" y="120" width="70" height="590" />
-          <rect className={styles.curtain} x="1410" y="120" width="70" height="590" />
+          {/* Шторы подхвачены у подоконника: не свисают за монитор и стол */}
+          {[800, 1410].map((x) => (
+            <g key={x}>
+              <path className={styles.curtain} d={`M${x} 120h70v300l-14 72h-42l-14-72z`} />
+              <rect className={styles.tieback} x={x - 2} y="404" width="74" height="9" rx="4" />
+            </g>
+          ))}
           <rect className={styles.rod} x="780" y="112" width="720" height="8" rx="4" />
 
           {/* полка с книгами и карта на стене */}
@@ -135,15 +177,45 @@ export function StoryIllustration({ ref, city, moods, problems }) {
           <rect className={styles.monitor} x="600" y="330" width="360" height="215" rx="10" />
           <rect className={styles.screen} x="614" y="344" width="332" height="187" rx="4" />
           <rect className={styles.screenBar} x="614" y="344" width="332" height="16" />
+          {/* Рабочий стол, как на мониторе 3D-комнаты: папки, окно редактора, док */}
+          {[0, 1, 2, 3].map((k) => (
+            <g key={k} transform={`translate(626 ${372 + k * 34})`}>
+              <rect className={styles.folder} y="3" width="24" height="17" rx="2" />
+              <rect className={styles.folder} width="10" height="5" rx="1.5" />
+            </g>
+          ))}
+          <rect className={styles.editor} x="660" y="374" width="240" height="114" rx="6" />
+          <rect className={styles.editorBar} x="660" y="374" width="240" height="14" rx="6" />
+          {['--mood-angry', '--mood-normal', '--mood-excellent'].map((token, k) => (
+            <circle
+              key={token}
+              cx={671 + k * 10}
+              cy="381"
+              r="3"
+              style={{ fill: `var(${token})` }}
+            />
+          ))}
           <g data-lite="question">
-            <text className={styles.question} x="780" y="445" textAnchor="middle">
+            <text ref={questionRef} className={styles.question} x="780" y="438" textAnchor="middle">
               {about.screen.question}
             </text>
           </g>
-          <rect className={styles.monitor} x="765" y="545" width="30" height="20" />
-          <rect className={styles.monitor} x="720" y="562" width="120" height="8" rx="3" />
-          <rect className={styles.keyboard} x="650" y="548" width="160" height="16" rx="4" />
-          <rect className={styles.keyboard} x="840" y="552" width="26" height="12" rx="6" />
+          <rect className={styles.editor} x="702" y="504" width="156" height="20" rx="8" />
+          {DOCK.map((token, k) => (
+            <rect
+              key={token}
+              x={708 + k * 25}
+              y="506"
+              width="16"
+              height="16"
+              rx="4"
+              style={{ fill: `var(${token})` }}
+            />
+          ))}
+          <rect className={styles.monitor} x="768" y="545" width="24" height="17" />
+          <rect className={styles.monitor} x="730" y="562" width="100" height="8" rx="3" />
+          <rect className={styles.keyboard} x="560" y="562" width="150" height="8" rx="3" />
+          <rect className={styles.keyboard} x="846" y="562" width="22" height="8" rx="4" />
 
           <path className={styles.lampLight} d="M470 330 L390 570 L600 570 Z" />
           <path className={styles.lampArm} d="M455 565 L430 420 L480 330" />
@@ -165,11 +237,23 @@ export function StoryIllustration({ ref, city, moods, problems }) {
           <circle className={styles.pcAccent} cx="1060" cy="660" r="12" />
           <rect className={styles.pcAccent} x="1030" y="700" width="80" height="6" />
 
-          {/* кресло */}
-          <path className={styles.chair} d="M205 500h105l-10 130h-85z" />
-          <rect className={styles.chair} x="180" y="610" width="170" height="40" rx="12" />
-          <rect className={styles.chairLeg} x="258" y="650" width="14" height="90" />
-          <path className={styles.chairLeg} d="M190 760h150l-10 14h-130z" />
+          {/* Офисное кресло спинкой к зрителю, перед левой частью стола: стойка кресла стоит ровно
+              перед левой ножкой стола и закрывает её. */}
+          <g transform="translate(28 0)">
+            <path className={styles.chairLeg} d="M250 800h160l-12 12h-136z" />
+            {[258, 296, 364, 402].map((x) => (
+              <circle key={x} className={styles.wheel} cx={x} cy="816" r="9" />
+            ))}
+            <rect className={styles.chairLeg} x="322" y="680" width="16" height="122" rx="4" />
+            <rect className={styles.chairLeg} x="318" y="640" width="24" height="40" rx="4" />
+            <rect className={styles.chair} x="238" y="662" width="184" height="34" rx="14" />
+            <rect className={styles.chairLeg} x="236" y="616" width="12" height="52" rx="4" />
+            <rect className={styles.chairLeg} x="412" y="616" width="12" height="52" rx="4" />
+            <rect className={styles.chairArm} x="226" y="608" width="36" height="12" rx="6" />
+            <rect className={styles.chairArm} x="398" y="608" width="36" height="12" rx="6" />
+            <rect className={styles.chair} x="254" y="468" width="152" height="182" rx="28" />
+            <rect className={styles.chairPanel} x="274" y="490" width="112" height="134" rx="18" />
+          </g>
         </g>
       </svg>
 
@@ -177,6 +261,7 @@ export function StoryIllustration({ ref, city, moods, problems }) {
         <svg
           className={styles.layer}
           data-lite="map"
+          data-ui="story-lite-map"
           viewBox={outline.viewBox.join(' ')}
           preserveAspectRatio="xMidYMid meet"
         >

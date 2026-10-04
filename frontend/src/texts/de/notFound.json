@@ -1,0 +1,11 @@
+{
+  "kicker": "Fehler 404",
+  "title": "Dieses Viertel ist noch nicht kartiert",
+  "lead": "Der Link führt dorthin, wo die Karte endet: Diese Seite gibt es nicht, oder die Adresse enthält einen Tippfehler.",
+  "pathLabel": "Adresse",
+  "openMap": "Stadtkarte öffnen",
+  "home": "Zur Startseite",
+  "support": "Hier sollte eine Seite sein?",
+  "supportLink": "Schreib uns",
+  "artLabel": "Gefaltete Papierkarte: an ihrem Rand ein unmarkiertes Viertel und eine Markierung mit Fragezeichen"
+}

@@ -1,6 +1,6 @@
 // Флаги и значения удобства одного посетителя («подсказки уже показаны», «панель скрыта», множитель
-// высоты районов). Хранилище
-// может быть недоступно (приватный режим, запрет сайта) — тогда флаг просто не запоминается.
+// высоты районов, выбранные тема, язык и графика). Хранилище может быть недоступно (приватный режим,
+// запрет сайта) — тогда значение просто не запоминается и действует до перезагрузки.
 export function readFlag(key) {
   try {
     return window.localStorage.getItem(key) === '1';
@@ -29,6 +29,21 @@ export function readNumber(key, fallback) {
 }
 
 export function writeNumber(key, value) {
+  writeValue(key, value);
+}
+
+// Сохранённый выбор из списка допустимых (тема, язык, режим графики); null — нет, испорчен или
+// хранилище недоступно.
+export function readChoice(key, allowed) {
+  try {
+    const value = window.localStorage.getItem(key);
+    return allowed.includes(value) ? value : null;
+  } catch {
+    return null;
+  }
+}
+
+export function writeValue(key, value) {
   try {
     window.localStorage.setItem(key, String(value));
   } catch {

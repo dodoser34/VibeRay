@@ -13,6 +13,7 @@ import { CategoryIcon } from './CategoryIcon';
 import { format } from '@/shared/lib/format';
 import problemTexts from '@/texts/ru/problems.json';
 import styles from './ReportProblem.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const texts = problemTexts.report;
 
@@ -155,9 +156,7 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
           onClick={onClose}
           aria-label={texts.cancel}
         >
-          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-            <path d="M3 3l10 10M13 3L3 13" />
-          </svg>
+          <Icon name="close" size={14} />
         </button>
       </header>
 
@@ -233,9 +232,7 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
                     onClick={() => removePhoto(photo.id)}
                     aria-label={texts.removePhoto}
                   >
-                    <svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true">
-                      <path d="M3 3l10 10M13 3L3 13" />
-                    </svg>
+                    <Icon name="close" size={10} />
                   </button>
                 </div>
               ))}
@@ -245,10 +242,7 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
                   className={styles.addPhoto}
                   onClick={() => fileRef.current.click()}
                 >
-                  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-                    <path d="M4 8h3l2-3h6l2 3h3v11H4z" />
-                    <circle cx="12" cy="13" r="3.5" />
-                  </svg>
+                  <Icon name="camera" size={22} />
                   <span>{texts.addPhoto}</span>
                 </button>
               )}

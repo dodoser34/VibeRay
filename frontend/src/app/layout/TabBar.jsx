@@ -1,12 +1,15 @@
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router';
+import { Link } from 'react-router';
 import { useAuth } from '@/features/auth';
 import { NotificationBell } from '@/features/notifications';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { useLanguage } from '@/shared/hooks/useLanguage';
+import { usePagePath } from '@/shared/hooks/usePagePath';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
+import { localizePath } from '@/shared/lib/language';
 import { Avatar } from '@/shared/ui/Avatar';
+import { LogoMark } from '@/shared/ui/LogoMark';
 import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
 import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
 import { usePageNavigate, useTransitionNavigate } from '../transitions/useTransition';
@@ -27,7 +30,7 @@ function activeKeyFor(pathname) {
 export function TabBar() {
   const { user, logout } = useAuth();
   const language = useLanguage();
-  const { pathname } = useLocation();
+  const pathname = usePagePath();
   const go = useTransitionNavigate();
   const openPage = usePageNavigate();
   const rootRef = useRef(null);
@@ -182,17 +185,13 @@ export function TabBar() {
   return (
     <header ref={rootRef} className={styles.root}>
       <Link
-        to="/"
+        to={localizePath('/')}
         className={styles.logo}
         aria-label={nav.logoLabel}
         data-logo
         data-ui="tabbar-logo"
       >
-        <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
-          <rect width="32" height="32" rx="9" className={styles.logoBg} />
-          <path d="M7 10l9 14 9-14" className={styles.logoMark} />
-          <circle cx="16" cy="9" r="2.4" className={styles.logoDot} />
-        </svg>
+        <LogoMark framed />
         <span data-ui="tabbar-brand">{nav.brand}</span>
       </Link>
       {/* На планшете стоя справа нет места — там тема встаёт рядом с логотипом (adaptations/tablet) */}
@@ -235,7 +234,7 @@ export function TabBar() {
             ) : (
               <Link
                 key={item.key}
-                to={item.to}
+                to={localizePath(item.to)}
                 data-key={item.key}
                 data-ui="tabbar-item"
                 className={className}

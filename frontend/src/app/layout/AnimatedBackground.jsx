@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router';
+import { usePagePath } from '@/shared/hooks/usePagePath';
 import { SiteBackground } from '@/shared/animations/SiteBackground';
 import { subscribeTheme } from '@/shared/lib/theme';
 import styles from './AnimatedBackground.module.css';
@@ -11,7 +11,7 @@ export function AnimatedBackground() {
   const canvasRef = useRef(null);
   const backgroundRef = useRef(null);
   // Полноэкранная карта полностью закрывает фон — анимировать его там незачем.
-  const active = !useLocation().pathname.startsWith('/map');
+  const active = !usePagePath().startsWith('/map');
 
   useEffect(() => {
     const background = new SiteBackground(canvasRef.current);

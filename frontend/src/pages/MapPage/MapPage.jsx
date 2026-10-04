@@ -1,5 +1,5 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { useNavigate, useParams, useSearchParams } from 'react-router';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useParams, useSearchParams } from 'react-router';
 import { useTransitionNavigate, useTransitionReady } from '@/app/transitions/useTransition';
 import { rootScale, useViewport } from '@/adaptations/core';
 import { FilterChip } from '@/adaptations/mobile/map/FilterChip';
@@ -25,10 +25,9 @@ import { moodCodeForScore, MOOD_BY_CODE } from '@/shared/config/moods';
 import { DEFAULT_STATS_PERIOD, MOOD_PERIODS, STATS_PERIODS } from '@/shared/config/periods';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
+import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { cityClock, dayPhase, parseClock } from '@/shared/lib/cityTime';
-import { multiPolygonAreaKm2 } from '@/shared/lib/geoProjection';
-import { readFlag, readNumber, writeFlag, writeNumber } from '@/shared/lib/localFlag';
+import { dayPhase } from '@/shared/lib/cityTime';
 import { Button } from '@/shared/ui/Button';
 import { CoachMarks } from '@/shared/ui/CoachMarks';
 import { Modal } from '@/shared/ui/Modal';
@@ -36,19 +35,19 @@ import { format } from '@/shared/lib/format';
 import problemTexts from '@/texts/ru/problems.json';
 import texts from '@/texts/ru/map.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import { HEIGHT_SCALE } from './heightScale';
+import { districtFactsFor, panelContent, resolveOpenProblem } from './mapState';
 import { MapFilters } from './MapFilters';
 import { PanelToggle } from './PanelToggle';
+import { useCityClock } from './useCityClock';
+import { useFollowTooltip } from './useFollowTooltip';
+import { useHeightScale } from './useHeightScale';
+import { useMapTour } from './useMapTour';
+import { usePanelVisibility } from './usePanelVisibility';
+import { useToast } from './useToast';
 import styles from './MapPage.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const TOAST_MS = 3200;
-const TOUR_KEY = 'viberay:tour:map';
-// Скрытые боковые панели запоминаются: левая — всегда, правая — если её скрыли на общем обзоре.
-const LEFT_HIDDEN_KEY = 'viberay:map:left-hidden';
-const RIGHT_HIDDEN_KEY = 'viberay:map:right-hidden';
-const OVERVIEW_KEY = 'overview::';
-const HEIGHT_SCALE_KEY = 'viberay:map:height-scale';
-const TOUR_DELAY_MS = 3000; // после пролёта камеры и роста районов
 
 // Где открывается шторка для каждого содержимого (телефоны, планшеты стоя). Пока ставится новая
 // проблема, шторка опускается низко, чтобы карта была свободна для пальца.
@@ -63,37 +62,23 @@ const SHEET_SNAP = {
 };
 
 function StatsIcon() {
-  return (
-    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" className={styles.icon}>
-      <path d="M2.5 13.5h11M4.5 11V7.5M8 11V4M11.5 11V6" />
-    </svg>
-  );
+  return <Icon name="stats" size={16} className={styles.icon} />;
 }
 
 function BackIcon() {
-  return (
-    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" className={styles.icon}>
-      <path d="M9.5 3.5 5 8l4.5 4.5" />
-    </svg>
-  );
+  return <Icon name="chevron-left" size={16} className={styles.icon} />;
 }
 
 // Солнце днём, восход утром, закат вечером, луна ночью — у подписи времени суток.
 const PHASE_ICONS = {
-  morning: <path d="M3 17h18M7 17a5 5 0 0 1 10 0M12 5v3M5.6 9.6l1.8 1.8M18.4 9.6l-1.8 1.8" />,
-  day: (
-    <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4" />
-  ),
-  evening: <path d="M3 17h18M7 17a5 5 0 0 1 10 0M12 11V5l-2.5 2.5M12 5l2.5 2.5" />,
-  night: <path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z" />,
+  morning: 'sunrise',
+  day: 'sun',
+  evening: 'sunset',
+  night: 'moon',
 };
 
 function PinIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" className={styles.icon}>
-      <path d="M12 21s-6-5.6-6-11a6 6 0 0 1 12 0c0 5.4-6 11-6 11zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-    </svg>
-  );
+  return <Icon name="pin" size={22} className={styles.icon} />;
 }
 
 // Одна страница, два вида одной 3D-карты (карта никогда не монтируется заново): вид «map»
@@ -107,7 +92,7 @@ export function MapPage({ view = 'map' }) {
   useLanguage();
   const { citySlug, districtSlug, problemId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
-  const navigate = useNavigate();
+  const navigate = useLocalizedNavigate();
   const go = useTransitionNavigate();
   const { user } = useAuth();
   const { compact: sheetLayout, isMobile } = useViewport();
@@ -124,31 +109,11 @@ export function MapPage({ view = 'map' }) {
   const [reportStep, setReportStep] = useState('category');
   const [placement, setPlacement] = useState(null); // { district, location }, выбранные на карте
   const [authReason, setAuthReason] = useState(null);
-  const [toast, setToast] = useState(null);
-  const [tourOpen, setTourOpen] = useState(false);
-  // Часы города: свет на карте и подпись обновляются раз в минуту. ?time=21:30 — посмотреть карту
-  // в другое время суток (удобно для проверки дизайна).
-  const [now, setNow] = useState(() => Date.now());
-  useEffect(() => {
-    const timer = setInterval(() => setNow(Date.now()), 60_000);
-    return () => clearInterval(timer);
-  }, []);
+  const [toast, setToast] = useToast(TOAST_MS);
   // Положение шторки, выбранное пользователем, запоминается для того содержимого, при котором его
   // выбрали.
   const [sheetChoice, setSheetChoice] = useState({ key: null, snap: null });
-  const [leftHidden, setLeftHidden] = useState(() => readFlag(LEFT_HIDDEN_KEY));
-  const [heightScale, setHeightScale] = useState(() =>
-    Math.min(HEIGHT_SCALE.max, Math.max(0, readNumber(HEIGHT_SCALE_KEY, HEIGHT_SCALE.initial))),
-  );
-  const changeHeightScale = (value) => {
-    writeNumber(HEIGHT_SCALE_KEY, value);
-    setHeightScale(value);
-  };
-  // Правая панель скрыта для того содержимого, при котором её скрыли: выбор района или проблемы
-  // открывает её снова, а возврат к обзору — снова прячет.
-  const [rightHiddenOn, setRightHiddenOn] = useState(() =>
-    readFlag(RIGHT_HIDDEN_KEY) ? OVERVIEW_KEY : null,
-  );
+  const [heightScale, changeHeightScale] = useHeightScale();
 
   const requestedPeriod = searchParams.get('period');
   const statsPeriod = STATS_PERIODS.some((p) => p.code === requestedPeriod)
@@ -156,9 +121,7 @@ export function MapPage({ view = 'map' }) {
     : DEFAULT_STATS_PERIOD;
 
   const { city, moods, problems } = useCityData(citySlug, period);
-  const clock =
-    parseClock(searchParams.get('time')) ??
-    (city.data?.timezone ? cityClock(city.data.timezone, new Date(now)) : null);
+  const clock = useCityClock(city.data?.timezone, searchParams.get('time'));
   const phase = clock ? dayPhase(clock.hour) : null;
   // Переход страницы ждёт город и его настроения, прежде чем сложиться.
   useTransitionReady(Boolean(city.data && moods.data));
@@ -171,20 +134,17 @@ export function MapPage({ view = 'map' }) {
     !isStats && problemId ? `problem:${problemId}:${user?.id ?? 'guest'}` : null,
     () => getProblem(problemId),
   );
-  const problem =
-    isStats || !problemId
-      ? null
-      : problemUpdate?.id === problemId
-        ? problemUpdate
-        : linked.data?.id === problemId
-          ? linked.data
-          : (problems.data?.find((p) => p.id === problemId) ?? null);
+  const problem = resolveOpenProblem({
+    isStats,
+    problemId,
+    problemUpdate,
+    linked: linked.data,
+    problems: problems.data,
+  });
   const cityStats = useCityStats(isStats ? citySlug : null, statsPeriod);
 
   const pageRef = useRef(null);
   const mapRef = useRef(null);
-  const tooltipRef = useRef(null);
-  const pointerRef = useRef({ x: 0, y: 0 });
   const fadeRef = useRef(null);
   const viewRef = useRef(view);
 
@@ -212,24 +172,10 @@ export function MapPage({ view = 'map' }) {
   const statsMoodData = useMemo(() => statsMoods(cityStats.data), [cityStats.data]);
   const mapMoods = isStats ? (statsMoodData ?? moods.data) : moods.data;
 
-  // Факты для панели района, которым нужен весь город: место по настроению, среднее по городу,
-  // площадь.
-  const districtFacts = useMemo(() => {
-    if (!districtSlug || !city.data) return null;
-    const ranked = Object.entries(moods.data?.districts ?? {})
-      .filter(([, aggregate]) => aggregate && !aggregate.insufficient_data)
-      .sort((a, b) => b[1].score - a[1].score);
-    const rank = ranked.findIndex(([slug]) => slug === districtSlug) + 1;
-    const feature = city.data.districts.features.find((f) => f.properties.slug === districtSlug);
-    return {
-      rank: rank || null,
-      rankTotal: ranked.length,
-      cityAverage: ranked.length
-        ? ranked.reduce((sum, [, aggregate]) => sum + aggregate.score, 0) / ranked.length
-        : null,
-      areaKm2: feature ? multiPolygonAreaKm2(feature.geometry.coordinates, city.data.center) : null,
-    };
-  }, [districtSlug, city.data, moods.data]);
+  const districtFacts = useMemo(
+    () => districtFactsFor(districtSlug, city.data, moods.data),
+    [districtSlug, city.data, moods.data],
+  );
 
   // Решённая давно проблема уже не на карте, но по прямой ссылке её метка должна появиться.
   const mapProblems = useMemo(() => {
@@ -253,61 +199,22 @@ export function MapPage({ view = 'map' }) {
   const problemMissing = Boolean(problemId && !problem && linked.error);
 
   // Подсказки при первом визите: когда карта уже показалась, а посетитель ещё ничего не открыл.
-  const tourReady = entered && Boolean(city.data && moods.data) && !isStats && !problemId;
-  useEffect(() => {
-    if (!tourReady || readFlag(TOUR_KEY)) return undefined;
-    const timer = setTimeout(() => setTourOpen(true), TOUR_DELAY_MS);
-    return () => clearTimeout(timer);
-  }, [tourReady]);
+  const { tourOpen, tourSteps, openTour, finishTour } = useMapTour({
+    ready: entered && Boolean(city.data && moods.data) && !isStats && !problemId,
+    homeDistrict: user?.home_district,
+    compact: sheetLayout,
+  });
 
-  const finishTour = () => {
-    writeFlag(TOUR_KEY);
-    setTourOpen(false);
-  };
-
-  const tourSteps = [
-    {
-      target: `[data-ui="map-label"][data-slug="${user?.home_district ?? 'center'}"]`,
-      padding: 26,
-      round: true,
-      ...texts.tour.district,
-    },
-    {
-      target: '[data-onboarding="mood"], [data-onboarding="actions"]',
-      round: true,
-      title: texts.tour.mood.title,
-      text: sheetLayout ? texts.tour.mood.textCompact : texts.tour.mood.text,
-    },
-    {
-      target: '[data-onboarding="report"], [data-onboarding="actions"]',
-      round: true,
-      title: texts.tour.report.title,
-      text: sheetLayout ? texts.tour.report.textCompact : texts.tour.report.text,
-    },
-  ];
-
-  const content = isStats
-    ? 'stats'
-    : report
-      ? `report:${reportStep}`
-      : problem || problemMissing
-        ? 'problem'
-        : district
-          ? 'district'
-          : 'overview';
+  const content = panelContent({
+    isStats,
+    report,
+    reportStep,
+    showsProblem: Boolean(problem || problemMissing),
+    district,
+  });
   const contentKey = `${content}:${districtSlug ?? ''}:${problem?.id ?? ''}`;
   const sheetSnap = sheetChoice.key === contentKey ? sheetChoice.snap : SHEET_SNAP[content];
-  const rightHidden = rightHiddenOn === contentKey;
-
-  const toggleLeft = () => {
-    writeFlag(LEFT_HIDDEN_KEY, !leftHidden);
-    setLeftHidden(!leftHidden);
-  };
-  const toggleRight = () => {
-    const next = rightHidden ? null : contentKey;
-    writeFlag(RIGHT_HIDDEN_KEY, next === OVERVIEW_KEY);
-    setRightHiddenOn(next);
-  };
+  const { leftHidden, rightHidden, toggleLeft, toggleRight } = usePanelVisibility(contentKey);
   const unit = 16 * rootScale();
 
   // Панели выезжают, когда страница видна (после перехода страницы, если он был).
@@ -366,24 +273,7 @@ export function MapPage({ view = 'map' }) {
     if (!sheetLayout) mapRef.current?.setViewInset(0);
   }, [sheetLayout]);
 
-  useEffect(() => {
-    if (!toast) return undefined;
-    const timer = setTimeout(() => setToast(null), TOAST_MS);
-    return () => clearTimeout(timer);
-  }, [toast]);
-
-  const placeTooltip = () => {
-    const { x, y } = pointerRef.current;
-    if (tooltipRef.current)
-      tooltipRef.current.style.transform = `translate(${x + 16}px, ${y + 16}px)`;
-  };
-
-  const moveTooltip = (event) => {
-    pointerRef.current = { x: event.clientX, y: event.clientY };
-    placeTooltip();
-  };
-
-  useLayoutEffect(placeTooltip, [hover]);
+  const { tooltipRef, onPointerMove } = useFollowTooltip(hover);
 
   // Шторка сообщает свою видимую высоту: центр камеры и плавающие кнопки следуют за ней.
   const onSheetInset = (visible) => {
@@ -493,7 +383,7 @@ export function MapPage({ view = 'map' }) {
       selectedSlug={districtSlug}
       onSelectDistrict={selectDistrict}
       updatedAt={updatedAt}
-      onHelp={isStats ? undefined : () => setTourOpen(true)}
+      onHelp={isStats ? undefined : openTour}
     />
   );
 
@@ -618,7 +508,7 @@ export function MapPage({ view = 'map' }) {
       data-layout={sheetLayout ? 'sheet' : 'panels'}
       data-ui="map-page"
       data-sheet-snap={sheetLayout ? sheetSnap : undefined}
-      onPointerMove={moveTooltip}
+      onPointerMove={onPointerMove}
     >
       <MapCanvas
         ref={mapRef}
@@ -804,9 +694,7 @@ export function MapPage({ view = 'map' }) {
 
       {clock && !sheetLayout && (
         <p className={styles.clock} data-panel="corner" title={texts.daytime.title}>
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" key={phase}>
-            {PHASE_ICONS[phase]}
-          </svg>
+          <Icon name={PHASE_ICONS[phase]} size={16} key={phase} />
           {format(texts.daytime.caption, {
             city: city.data?.name ?? texts.cityFallback,
             phase: texts.daytime[phase],

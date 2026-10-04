@@ -6,6 +6,7 @@ import { useNotifications } from '../model/useNotifications';
 import { NotificationsPanel } from './NotificationsPanel';
 import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationBell.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 // Колокольчик в шапке (планшет и десктоп). Новое уведомление — колокольчик качнётся, счётчик
 // подпрыгнет. Панель раскрывается под кнопкой; при закрытии увиденное отмечается прочитанным.
@@ -91,9 +92,7 @@ export function NotificationBell({ onNavigate }) {
         data-open={open || undefined}
         onClick={() => (open ? close() : setOpen(true))}
       >
-        <svg ref={iconRef} viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <path d="M12 21a2.5 2.5 0 0 0 2.5-2.5h-5A2.5 2.5 0 0 0 12 21zM5 16.5h14l-1.8-2.4V10a5.2 5.2 0 0 0-10.4 0v4.1z" />
-        </svg>
+        <Icon name="bell" size={20} ref={iconRef} />
         {unread > 0 && (
           <span className={styles.badge} data-badge aria-hidden="true">
             {unread > 9 ? '9+' : unread}

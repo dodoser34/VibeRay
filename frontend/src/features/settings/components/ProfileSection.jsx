@@ -11,6 +11,7 @@ import { SettingsSection } from './SettingsSection';
 import auth from '@/texts/ru/auth.json';
 import texts from '@/texts/ru/settings.json';
 import styles from './ProfileSection.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const isPreset = (src) => /^preset:\d+$/.test(src ?? '');
 const NICKNAME_ERRORS = ['nickname_taken', 'invalid_nickname'];
@@ -74,9 +75,7 @@ export function ProfileSection({ id }) {
             <p className={styles.cardName}>{nickname || user.nickname}</p>
             <p className={styles.cardMeta}>{texts.profile.previewMeta}</p>
             <p className={styles.lock}>
-              <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-                <path d="M4 7V5a4 4 0 0 1 8 0v2M3 7h10v7H3z" />
-              </svg>
+              <Icon name="lock" size={12} />
               {texts.profile.public}
             </p>
           </figure>

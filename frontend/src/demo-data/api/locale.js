@@ -11,8 +11,13 @@ export function setResponseLanguage(language) {
 
 export const demoContent = () => content[current];
 
+// Своего названия на языке нет — немецкий берёт английское (латиница), казахский — местное.
+const NAME_FALLBACK = { de: 'en' };
+
 export const nameOf = (properties) =>
-  (current !== 'ru' && properties[`name_${current}`]) || properties.name;
+  (current !== 'ru' &&
+    (properties[`name_${current}`] ?? properties[`name_${NAME_FALLBACK[current]}`])) ||
+  properties.name;
 
 // Демо-проблемы хранят русский текст из content.json; в ответе он заменяется текстом на языке
 // запроса. Обход всего ответа — только ради демо.

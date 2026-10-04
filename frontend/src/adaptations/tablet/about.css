@@ -18,6 +18,12 @@
     transform: translateX(50%);
   }
 
+  /* 2D-карта лёгкой графики — над карточкой настроения и подписью, а не под ними (svg в селекторе
+     перебивает размеры слоя из модуля иллюстрации) */
+  :root svg[data-ui='story-lite-map'] {
+    height: calc(100% - var(--tabbar-height) - var(--space-4) - 26rem);
+  }
+
   :root [data-ui='story-stamp'] {
     top: calc(var(--tabbar-height) + var(--space-5));
     right: var(--space-4);

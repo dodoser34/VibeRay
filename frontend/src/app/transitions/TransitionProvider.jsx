@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
-import { useLocation, useNavigate } from 'react-router';
 import { gsap } from '@/shared/animations/gsapSetup';
 import { MapFoldTransition } from '@/shared/animations/MapFoldTransition';
 import { holdPageEntrance, releasePageEntrance } from '@/shared/animations/pageEntrance';
 import '@/shared/animations/MapFoldTransition.css';
+import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
+import { usePagePath } from '@/shared/hooks/usePagePath';
 import { TransitionContext } from './TransitionContext';
 import nav from '@/texts/ru/nav.json';
 import { subscribeTheme } from '@/shared/lib/theme';
@@ -72,8 +73,8 @@ const POINTER_FRESH = 800; // мс: клик не старше этого — т
 // например, пролёт камеры в город); иначе экран закрывает переход «бумажная карта», маршрут
 // меняется под ней, карта ждёт загрузки новой страницы (useTransitionReady) и складывается.
 export function TransitionProvider({ children }) {
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
+  const navigate = useLocalizedNavigate();
+  const pathname = usePagePath();
   const pathRef = useRef(pathname);
   const interceptorRef = useRef(null);
   const busyRef = useRef(false);

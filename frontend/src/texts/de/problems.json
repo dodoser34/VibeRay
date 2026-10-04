@@ -1,0 +1,52 @@
+{
+  "card": {
+    "label": "Problem",
+    "close": "Schließen",
+    "photoAlt": "Foto des Problems",
+    "statusLabel": "Status",
+    "confirm": "Sehe ich auch",
+    "confirmed": "Danke! Deine Bestätigung wurde gezählt.",
+    "share": "Link teilen",
+    "shareTitle": "{category} · {district} — VibeRay",
+    "copied": "Link kopiert",
+    "shareFailed": "Der Link konnte nicht kopiert werden",
+    "mine": "Deine Meldung",
+    "mineNote": "Das ist deine Meldung: Nachbarn bestätigen sie. Wenn sich der Status ändert, bekommst du eine Benachrichtigung.",
+    "confirmedByMe": "Du hast bestätigt",
+    "confirmations": "{count} {people}",
+    "confirmationsForms": ["Bestätigung", "Bestätigungen", "Bestätigungen"],
+    "notFound": "Der Link ist veraltet oder das Problem wurde gelöscht. Die übrigen Probleme der Stadt findest du auf der Karte.",
+    "notFoundTitle": "Problem nicht gefunden",
+    "backToMap": "Zur ganzen Karte",
+    "rejectedTitle": "Meldung abgelehnt",
+    "rejectedNote": "Die Moderation hat diese Meldung abgelehnt. Nur du siehst sie: Auf der Karte und in der Statistik erscheint sie nicht.",
+    "openOriginal": "Ursprüngliches Problem öffnen"
+  },
+  "listItem": {
+    "confirmations": "Bestätigungen: {count}"
+  },
+  "report": {
+    "steps": {
+      "category": "Was ist passiert?",
+      "place": "Wo ist das?",
+      "details": "Details"
+    },
+    "kicker": "Neues Problem · Schritt {step} von {total}",
+    "cancel": "Abbrechen",
+    "categoryLabel": "Art des Problems",
+    "placeLead": "Tippe auf der Karte auf die Stelle, an der das Problem ist. Den Punkt kannst du versetzen, indem du einfach woanders tippst.",
+    "placeWaiting": "Noch kein Punkt gewählt",
+    "placeNote": "Sieh dir die Markierungen in der Nähe an: Wenn es dieses Problem schon gibt, bestätige es lieber.",
+    "descriptionLabel": "Beschreibe das Problem",
+    "descriptionPlaceholder": "Zum Beispiel: Der Müll wird seit zwei Tagen nicht abgeholt, die Container quellen über",
+    "descriptionTooShort": "Beschreibe das Problem mit mindestens {min} Zeichen",
+    "photoAlt": "Foto des Problems",
+    "removePhoto": "Foto entfernen",
+    "addPhoto": "Foto",
+    "tooManyPhotos": "Höchstens {max} Fotos möglich",
+    "photosNote": "Bis zu {max} Fotos. Vor dem Senden werden Standort und Kameradaten entfernt.",
+    "back": "Zurück",
+    "next": "Weiter",
+    "submit": "Senden"
+  }
+}

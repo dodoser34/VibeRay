@@ -1,5 +1,6 @@
 import { useCallback, useContext, useEffect, useLayoutEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router';
+import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
+import { usePagePath } from '@/shared/hooks/usePagePath';
 import { TransitionContext } from './TransitionContext';
 
 export function useTransitionNavigate() {
@@ -10,8 +11,8 @@ export function useTransitionNavigate() {
 // меняется, поэтому бумажный переход не нужен — только смена адреса.
 export function usePageNavigate() {
   const go = useTransitionNavigate();
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
+  const navigate = useLocalizedNavigate();
+  const pathname = usePagePath();
   return useCallback(
     (to) => (pathname.startsWith('/map') && to.startsWith('/map') ? navigate(to) : go(to)),
     [pathname, navigate, go],

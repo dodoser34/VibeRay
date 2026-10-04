@@ -4,6 +4,7 @@ import { format } from '@/shared/lib/format';
 import { Avatar, AVATAR_PRESETS } from '@/shared/ui/Avatar';
 import texts from '@/texts/ru/settings.json';
 import styles from './AvatarPicker.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const PRESETS = AVATAR_PRESETS.map((_, i) => `preset:${i}`);
 
@@ -59,9 +60,7 @@ export function AvatarPicker({ value, customSrc, onChange, onUpload }) {
           aria-busy={busy || undefined}
           disabled={busy}
         >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 8h3l2-3h6l2 3h3v11H4V8Zm8 8.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" />
-          </svg>
+          <Icon name="camera" />
           <span>{texts.profile.upload}</span>
         </button>
       </div>

@@ -8,6 +8,7 @@ import { SettingsSection } from './SettingsSection';
 import auth from '@/texts/ru/auth.json';
 import texts from '@/texts/ru/settings.json';
 import styles from './SecuritySection.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const EMPTY = { current: '', next: '', repeat: '' };
 // Ошибки API, которые показываются у своего поля, а не под кнопкой.
@@ -55,9 +56,7 @@ export function SecuritySection({ id }) {
         <span className={styles.emailLabel}>{texts.security.emailLabel}</span>
         <span className={styles.emailValue}>{user.email}</span>
         <span className={styles.private}>
-          <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-            <path d="M4 7V5a4 4 0 0 1 8 0v2M3 7h10v7H3z" />
-          </svg>
+          <Icon name="lock" size={12} />
           {texts.security.emailPrivate}
         </span>
       </div>

@@ -1,0 +1,32 @@
+{
+  "api": {
+    "unauthorized": "Melde dich an, um fortzufahren",
+    "invalid_period": "Unbekannter Zeitraum",
+    "invalid_email": "Prüfe die E-Mail-Adresse",
+    "invalid_nickname": "Nickname: 3–24 Zeichen, Buchstaben, Ziffern und _",
+    "email_taken": "Diese E-Mail-Adresse ist bereits registriert",
+    "weak_password": "Das Passwort ist nicht sicher genug",
+    "nickname_taken": "Dieser Nickname ist bereits vergeben",
+    "invalid_credentials": "E-Mail oder Passwort ist falsch",
+    "wrong_password": "Das aktuelle Passwort ist falsch",
+    "city_not_found": "Stadt nicht gefunden",
+    "district_not_found": "Viertel nicht gefunden",
+    "invalid_mood": "Unbekannte Stimmung",
+    "problem_not_found": "Problem nicht gefunden",
+    "already_confirmed": "Du hast dieses Problem bereits bestätigt",
+    "own_problem": "Das ist deine eigene Meldung — bestätigen können sie die Nachbarn",
+    "invalid_category": "Wähle die Art des Problems",
+    "outside_city": "Der Punkt muss innerhalb der Stadtviertel liegen",
+    "invalid_description": "Beschreibung: 10 bis 1000 Zeichen",
+    "too_many_photos": "Höchstens 3 Fotos",
+    "invalid_photo": "Foto: JPEG, PNG oder WebP bis 10 MB",
+    "invalid_avatar": "Wähle einen der fertigen Avatare oder lade ein Foto hoch",
+    "invalid_topic": "Wähle ein Thema für deine Anfrage",
+    "invalid_reply_email": "Prüfe die E-Mail-Adresse für die Antwort",
+    "invalid_message": "Nachricht: 10 bis 2000 Zeichen",
+    "too_many_files": "Höchstens 3 Dateien",
+    "invalid_file": "Dateien: JPEG, PNG, WebP oder PDF bis 10 MB",
+    "not_found": "Mock: kein Handler für {method} {path}",
+    "problem_rejected": "Diese Meldung wurde von der Moderation abgelehnt — sie kann nicht bestätigt werden."
+  }
+}

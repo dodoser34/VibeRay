@@ -1,0 +1,20 @@
+{
+  "bell": "Benachrichtigungen",
+  "bellUnread": "Benachrichtigungen: {count} neu",
+  "title": "Benachrichtigungen",
+  "readAll": "Alle gelesen",
+  "empty": "Noch ist es ruhig. Sobald Nachbarn dein Problem bestätigen oder sich sein Status ändert, erscheint hier eine Benachrichtigung.",
+  "emptyTitle": "Keine Neuigkeiten",
+  "loading": "Benachrichtigungen werden geladen…",
+  "allReports": "Alle meine Meldungen",
+  "unread": "Neu",
+  "kinds": {
+    "confirmations": "{count} {people} haben dein Problem „{category}“ bestätigt",
+    "confirmed": "Das Problem „{category}“ wurde von Nachbarn bestätigt",
+    "in_progress": "Das Problem „{category}“ wird bearbeitet",
+    "resolved": "Das Problem „{category}“ ist gelöst — danke für deine Meldung",
+    "rejected": "Die Meldung „{category}“ wurde abgelehnt: {reason}"
+  },
+  "people": ["Bewohner", "Bewohner", "Bewohner"],
+  "meta": "{district} · {time}"
+}

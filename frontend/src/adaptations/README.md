@@ -49,7 +49,7 @@ adaptations/
 ├── index.css            # подключает все файлы уровней; импортируется ПОСЛЕДНИМ в main.jsx
 ├── core/                # логика — можно импортировать из любого слоя (как shared/)
 │   ├── breakpoints.js   # уровни, usesSheet(width) — где карта использует шторку
-│   ├── useViewport.js   # хук: tier, isMobile, sheet, coarse — для смены СТРУКТУРЫ, не стилей
+│   ├── useViewport.js   # хук: tier, isMobile, compact, coarse, portrait — для смены СТРУКТУРЫ, не стилей
 │   ├── renderQuality.js # качество WebGL/canvas: плотность пикселей, бюджет пикселей, частицы, детализация
 │   └── rootScale.js     # во сколько раз интерфейс крупнее базового (2K/4K)
 ├── desktop/

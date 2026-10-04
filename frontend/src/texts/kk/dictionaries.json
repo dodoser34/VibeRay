@@ -1,0 +1,55 @@
+{
+  "moods": {
+    "excellent": "Керемет",
+    "good": "Жақсы",
+    "normal": "Қалыпты",
+    "anxious": "Алаңдау",
+    "bad": "Нашар",
+    "angry": "Ашу",
+    "very_bad": "Өте нашар"
+  },
+  "periods": {
+    "day": "Күн",
+    "week": "Апта",
+    "month": "Ай",
+    "year": "Жыл",
+    "all": "Барлық жылдар"
+  },
+  "problemCategories": {
+    "garbage": "Қоқыс",
+    "traffic": "Кептеліс",
+    "roads": "Нашар жолдар",
+    "lighting": "Жарықтандыру",
+    "noise": "Шу",
+    "drunkenness": "Маскүнемдік",
+    "public_transport": "Қоғамдық көлік",
+    "parks": "Саябақтардың жағдайы",
+    "other": "Басқа"
+  },
+  "problemStatuses": {
+    "new": "Жаңа",
+    "confirmed": "Расталды",
+    "in_progress": "Жұмыста",
+    "resolved": "Шешілді",
+    "rejected": "Қабылданбады"
+  },
+  "rejectionReasons": {
+    "spam": "Спам немесе жарнама",
+    "duplicate": "Қайталама — бұл мәселе туралы бұрын хабарланған",
+    "offtopic": "Қалалық мәселе емес"
+  },
+  "supportTopics": {
+    "account": "Аккаунт",
+    "map": "Карта",
+    "mood": "Көңіл күй",
+    "problems": "Мәселелер",
+    "security": "Қауіпсіздік",
+    "technical": "Техникалық ақау",
+    "other": "Басқа"
+  },
+  "serviceStates": {
+    "operational": "Жұмыс істеп тұр",
+    "degraded": "Үзіліспен жұмыс істейді",
+    "down": "Жұмыс істемейді"
+  }
+}

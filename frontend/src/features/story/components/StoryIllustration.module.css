@@ -168,8 +168,24 @@ rect.lampArm {
 .question {
   fill: var(--color-text);
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
+}
+
+.folder {
+  fill: var(--mood-normal);
+}
+
+.editor {
+  fill: var(--color-bg-deep);
+}
+
+.editorBar {
+  fill: var(--color-glass-border);
+}
+
+.tieback {
+  fill: var(--story-metal);
 }
 
 .mug {
@@ -198,6 +214,16 @@ rect.lampArm {
 
 .chair {
   fill: var(--story-fabric);
+}
+
+/* Мягкая вставка спинки и подлокотники — чуть светлее обивки */
+.chairPanel,
+.chairArm {
+  fill: color-mix(in srgb, var(--story-fabric) 82%, var(--color-text));
+}
+
+.wheel {
+  fill: var(--story-monitor);
 }
 
 /* Ночь (тёмная тема): горят окна домов и лампа, видны звёзды, вместо солнца — луна */

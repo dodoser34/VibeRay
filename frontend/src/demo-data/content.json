@@ -19,6 +19,26 @@
       "support": "Система обращений"
     }
   },
+  "kk": {
+    "residentNickname": "житель_{number}",
+    "problemDescriptions": {
+      "garbage": "Аулада контейнерлер толып кетті, қоқыс бірнеше күн бойы шығарылмайды.",
+      "traffic": "Күн сайын кешке қиылыста үлкен кептеліс, бағдаршам үлгермейді.",
+      "roads": "Жолдың жүрілетін бөлігінде терең шұңқырлар, жаңбырдан кейін олар көрінбейді.",
+      "lighting": "Тротуар бойындағы шамдар жанбайды, кешке өте қараңғы.",
+      "noise": "Түнде көрші мекемеден қатты музыка естіледі.",
+      "drunkenness": "Балалар алаңында топ-топ болып ішімдік ішеді.",
+      "public_transport": "Қарбалас уақытта автобус 30 минуттан астам аралықпен жүреді.",
+      "parks": "Скверде орындықтар сынған, суару жұмыс істемейді.",
+      "other": "Мектеп маңында қаңғыбас иттер жүр."
+    },
+    "services": {
+      "site": "Негізгі сайт",
+      "map": "Карта",
+      "auth": "Авторизация",
+      "support": "Өтініштер жүйесі"
+    }
+  },
   "en": {
     "residentNickname": "житель_{number}",
     "problemDescriptions": {
@@ -37,6 +57,26 @@
       "map": "Map",
       "auth": "Sign-in",
       "support": "Support requests"
+    }
+  },
+  "de": {
+    "residentNickname": "житель_{number}",
+    "problemDescriptions": {
+      "garbage": "Die Container im Hof quellen über, der Müll wird seit mehreren Tagen nicht abgeholt.",
+      "traffic": "Jeden Abend ein großer Stau an der Kreuzung, die Ampel kommt nicht hinterher.",
+      "roads": "Tiefe Schlaglöcher auf der Fahrbahn — nach Regen sieht man sie nicht.",
+      "lighting": "Die Laternen am Gehweg sind aus, abends ist es sehr dunkel.",
+      "noise": "Nachts laute Musik aus dem Lokal nebenan.",
+      "drunkenness": "Gruppen trinken Alkohol auf dem Kinderspielplatz.",
+      "public_transport": "Zur Hauptverkehrszeit fährt der Bus nur alle 30 Minuten oder seltener.",
+      "parks": "Kaputte Bänke im Park, und die Bewässerung funktioniert nicht.",
+      "other": "Streunende Hunde in der Nähe der Schule."
+    },
+    "services": {
+      "site": "Hauptseite",
+      "map": "Karte",
+      "auth": "Anmeldung",
+      "support": "Supportanfragen"
     }
   }
 }

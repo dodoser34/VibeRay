@@ -1,0 +1,11 @@
+{
+  "picker": {
+    "title": "Wie ist die Stimmung?",
+    "districtLabel": "Viertel",
+    "chooseDistrictFirst": "Wähle zuerst ein Viertel",
+    "privacy": "Die Markierung ist anonym: Auf der Karte ist nur die Gesamtstimmung des Viertels zu sehen. Eine neue Markierung im selben Viertel innerhalb von 3 Stunden ersetzt die vorherige."
+  },
+  "legendNoData": "Zu wenige Markierungen",
+  "noData": "Keine Daten",
+  "periodLabel": "Zeitraum"
+}

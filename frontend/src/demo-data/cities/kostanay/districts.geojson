@@ -3,7 +3,14 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "slug": "center", "name": "Центр", "name_en": "Centre", "palette": 3 },
+      "properties": {
+        "slug": "center",
+        "name": "Центр",
+        "name_en": "Centre",
+        "name_kk": "Орталық",
+        "name_de": "Zentrum",
+        "palette": 3
+      },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1854,7 +1861,14 @@
     },
     {
       "type": "Feature",
-      "properties": { "slug": "aeroport", "name": "Аэропорт", "name_en": "Airport", "palette": 9 },
+      "properties": {
+        "slug": "aeroport",
+        "name": "Аэропорт",
+        "name_en": "Airport",
+        "name_kk": "Әуежай",
+        "name_de": "Flughafen",
+        "palette": 9
+      },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [

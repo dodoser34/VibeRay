@@ -1,0 +1,35 @@
+{
+  "close": "Schließen",
+  "meta": {
+    "description": "VibeRay — die lebendige 3D-Karte der Stimmung und Probleme von Kostanai"
+  },
+  "time": {
+    "justNow": "gerade eben",
+    "minutesAgo": "vor {minutes} Min.",
+    "hoursAgo": "vor {hours} Std."
+  },
+  "photo": {
+    "wrongType": "Nur JPEG, PNG oder WebP sind möglich",
+    "tooBig": "Das Foto ist größer als 10 MB",
+    "processFailed": "Das Foto konnte nicht verarbeitet werden"
+  },
+  "serverUnavailable": "Der Server ist nicht erreichbar, bitte versuche es später noch einmal",
+  "language": {
+    "label": "Sprache der Oberfläche",
+    "names": {
+      "ru": "Русский",
+      "kk": "Қазақша",
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+  "theme": {
+    "label": "Farbschema",
+    "toLight": "Helles Farbschema einschalten",
+    "toDark": "Dunkles Farbschema einschalten",
+    "names": {
+      "dark": "Dunkel",
+      "light": "Hell"
+    }
+  }
+}

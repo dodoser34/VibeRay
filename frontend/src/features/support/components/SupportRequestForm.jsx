@@ -18,6 +18,7 @@ import { TextField } from '@/shared/ui/TextField';
 import { format } from '@/shared/lib/format';
 import supportTexts from '@/texts/ru/support.json';
 import styles from './SupportRequestForm.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const texts = supportTexts.form;
 
@@ -119,9 +120,7 @@ export function SupportRequestForm({ initialTopic, onClose }) {
       <Modal title={texts.done.title} onClose={onClose} width={480}>
         <div className={styles.done}>
           <span className={styles.check} aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="m5 12.5 4.5 4.5L19 7.5" />
-            </svg>
+            <Icon name="done" />
           </span>
           <p className={styles.doneTitle}>{format(texts.done.number, { id: status.id })}</p>
           <p className={styles.doneText}>{format(texts.done.text, { email: email.trim() })}</p>
@@ -200,17 +199,13 @@ export function SupportRequestForm({ initialTopic, onClose }) {
                 onClick={() => removeFile(i)}
                 aria-label={format(texts.removeFile, { name: item.file.name })}
               >
-                <svg viewBox="0 0 16 16" aria-hidden="true">
-                  <path d="M3 3l10 10M13 3L3 13" />
-                </svg>
+                <Icon name="close" />
               </button>
             </div>
           ))}
           {files.length < SUPPORT_MAX_FILES && (
             <button type="button" className={styles.attach} onClick={() => fileRef.current.click()}>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m20 11.5-8 8a5 5 0 0 1-7-7l8.5-8.5a3.3 3.3 0 0 1 4.7 4.7L9.7 17.2a1.7 1.7 0 0 1-2.4-2.4L15 7.2" />
-              </svg>
+              <Icon name="paperclip" />
               {texts.attach}
             </button>
           )}

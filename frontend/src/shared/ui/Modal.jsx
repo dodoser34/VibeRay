@@ -4,6 +4,7 @@ import { BREAKPOINTS } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import common from '@/texts/ru/common.json';
 import styles from './Modal.module.css';
+import { Icon } from './Icon';
 
 export function Modal({ title, onClose, children, width = 460 }) {
   const titleId = useId();
@@ -70,9 +71,7 @@ export function Modal({ title, onClose, children, width = 460 }) {
             onClick={onClose}
             aria-label={common.close}
           >
-            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-              <path d="M3 3l10 10M13 3L3 13" />
-            </svg>
+            <Icon name="close" size={14} />
           </button>
         </header>
         {children}

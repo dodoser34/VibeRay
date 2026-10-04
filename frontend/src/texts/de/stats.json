@@ -1,0 +1,152 @@
+{
+  "periods": {
+    "day": "am letzten Tag",
+    "week": "in der letzten Woche",
+    "month": "im letzten Monat",
+    "year": "im letzten Jahr",
+    "all": "über alle Jahre"
+  },
+  "marks": ["Markierung", "Markierungen", "Markierungen"],
+  "fewMarks": "Noch zu wenige Markierungen",
+  "fewMarksNote": "Die Stimmung erscheint ab 5 Markierungen — so schützen wir die Privatsphäre der Bewohner.",
+  "moodMeta": "{count} {marks} {period} · meist „{mood}“",
+  "distributionLabel": "Verteilung der Stimmungen",
+  "kicker": "Viertel von Kostanai",
+  "close": "Viertel schließen",
+  "loading": "Wird geladen",
+  "tiles": {
+    "active": "aktive Probleme",
+    "new": "neu {period}",
+    "resolved": "gelöst"
+  },
+  "dynamics": "Entwicklung {period}",
+  "chartLabel": "Stimmung und neue Probleme {period}",
+  "chartLegend": {
+    "mood": "Stimmung",
+    "problems": "neue Probleme"
+  },
+  "topCategories": "Häufigste Probleme",
+  "recent": "Neueste Meldungen",
+  "markMood": "Stimmung markieren",
+  "reportProblem": "Problem melden",
+  "facts": {
+    "area": "≈ {area} km²",
+    "areaTitle": "Fläche des Viertels",
+    "rank": "Platz {rank} von {total} nach Stimmung",
+    "rankTitle": "Platz unter den Vierteln der Stadt"
+  },
+  "compare": {
+    "above": "{delta} über dem Stadtdurchschnitt",
+    "below": "{delta} unter dem Stadtdurchschnitt",
+    "same": "Auf dem Niveau des Stadtdurchschnitts"
+  },
+  "trend": {
+    "up": "↑ {delta} {period}",
+    "down": "↓ {delta} {period}",
+    "flat": "unverändert {period}",
+    "title": "Wie sich die Stimmung verändert hat"
+  },
+  "distributionTitle": "Woraus sich die Stimmung zusammensetzt",
+  "share": "{percent} %",
+  "tilesTotal": "Meldungen insgesamt",
+  "statusesTitle": "Status der Probleme",
+  "statusesLabel": "Probleme des Viertels nach Status",
+  "categoryShare": "{count} · {percent} %",
+  "noProblems": "Im Viertel gibt es noch keine Problemmeldungen.",
+  "chartHint": "Fahre über das Diagramm oder tippe darauf",
+  "chart": {
+    "mood": "Stimmung {score} · {mood}",
+    "hidden": "Stimmung verborgen: weniger als 5 Markierungen",
+    "marks": "{count} {marks}",
+    "problems": "{count} {problems}",
+    "problemForms": ["neues Problem", "neue Probleme", "neue Probleme"]
+  },
+  "dashboard": {
+    "kicker": "Statistik · {city}",
+    "title": "Wie die Stadt {period} lebte",
+    "since": "Daten seit {date}",
+    "kpi": {
+      "mood": "Durchschnittliche Stimmung der Stadt — „{mood}“",
+      "marks": "Stimmungsmarkierungen",
+      "reported": "Problemmeldungen",
+      "resolved": "Probleme gelöst",
+      "trend": {
+        "up": "↑ {delta} im Zeitraum",
+        "down": "↓ {delta} im Zeitraum",
+        "flat": "ohne deutliche Veränderung"
+      }
+    },
+    "yearsTitle": "Nach Jahren",
+    "districtsTitle": "Viertel",
+    "districtsHint": "Klicke auf eine Spaltenüberschrift zum Sortieren, auf eine Zeile, um das Viertel auf der Karte zu zeigen.",
+    "categoriesTitle": "Problemkategorien",
+    "privacy": "Einzelne Markierungen sieht niemand: nur Durchschnitte für Viertel und Stadt und nur ab 5 Markierungen.",
+    "statusesLabel": "Probleme der Stadt nach Status",
+    "close": "Stadtstatistik schließen"
+  },
+  "table": {
+    "caption": "Stadtviertel: Stimmung, Trend und Probleme im Zeitraum",
+    "columns": {
+      "rank": "Platz",
+      "name": "Viertel",
+      "mood": "Stimmung",
+      "trend": "Trend",
+      "problems": "Probleme",
+      "resolved": "Gelöst"
+    },
+    "marks": "{count} {marks}",
+    "open": "Viertel öffnen →",
+    "noData": "—",
+    "fewMarks": "Zu wenige Markierungen: Stimmung verborgen",
+    "trend": {
+      "up": "↑ {delta}",
+      "down": "↓ {delta}",
+      "flat": "≈ 0"
+    }
+  },
+  "years": {
+    "caption": "Stadtstatistik nach Jahren",
+    "columns": {
+      "year": "Jahr",
+      "mood": "Stimmung",
+      "marks": "Markierungen",
+      "problems": "Probleme"
+    },
+    "current": "läuft gerade"
+  },
+  "metrics": {
+    "mood": {
+      "low": "−2 · schlechter",
+      "high": "besser · +2",
+      "note": "Farbe des Viertels: durchschnittliche Stimmung {period}."
+    },
+    "problems": {
+      "low": "{min} · am wenigsten",
+      "high": "am meisten · {max}",
+      "note": "Farbe des Viertels: wie viele Probleme {period} gemeldet wurden, verglichen mit anderen Vierteln."
+    },
+    "noData": "Zu wenige Markierungen — Stimmung verborgen",
+    "height": "Die Höhe zeigt denselben Wert: je besser, desto höher."
+  },
+  "districtCompare": {
+    "title": "Viertel vergleichen",
+    "hint": "Wähle zwei Viertel — ihre Stimmung im Zeitraum in einem Diagramm und der Unterschied bei den Problemen.",
+    "pickA": "Erstes Viertel",
+    "pickB": "Zweites Viertel",
+    "swap": "Viertel tauschen",
+    "loading": "Wird berechnet…",
+    "marks": "{count} {marks}",
+    "reported": "{count} {problems}",
+    "problemForms": ["Meldung", "Meldungen", "Meldungen"],
+    "better": "{district} ist um {delta} entspannter",
+    "equal": "Beide Viertel leben ungefähr gleich",
+    "fewMarks": "Zu wenige Markierungen für einen Stimmungsvergleich",
+    "chartTitle": "Stimmung {period}",
+    "chartLabel": "Stimmung zweier Viertel {period}",
+    "categoriesTitle": "Probleme nach Kategorien",
+    "categoriesLabel": "Wie viele Problemmeldungen jeder Kategorie es in beiden Vierteln gibt",
+    "noProblems": "In beiden Vierteln gab es im Zeitraum keine Problemmeldungen.",
+    "tooltipValue": "{district}: {score}",
+    "tooltipHidden": "{district}: zu wenige Markierungen"
+  }
+}

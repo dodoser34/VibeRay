@@ -1,0 +1,56 @@
+{
+  "brand": "VibeRay",
+  "logoLabel": "VibeRay — zur Startseite",
+  "navLabel": "Hauptnavigation",
+  "tabs": {
+    "login": {
+      "label": "Anmelden",
+      "short": "Login"
+    },
+    "register": {
+      "label": "Registrieren",
+      "short": "Konto"
+    },
+    "settings": {
+      "title": "Profileinstellungen",
+      "label": "{nickname} — Profileinstellungen"
+    },
+    "logout": {
+      "label": "Abmelden",
+      "short": "Logout"
+    },
+    "map": {
+      "label": "Stadtkarte",
+      "short": "Karte"
+    },
+    "about": {
+      "label": "Über das Projekt",
+      "short": "Projekt"
+    },
+    "support": {
+      "label": "Support",
+      "short": "Hilfe"
+    }
+  },
+  "pageNames": {
+    "map": "Stadtkarte",
+    "about": "Über das Projekt",
+    "support": "Support",
+    "login": "Anmeldung",
+    "register": "Registrierung",
+    "home": "Startseite",
+    "settings": "Einstellungen"
+  },
+  "menu": {
+    "open": "Menü öffnen",
+    "close": "Menü schließen",
+    "title": "Menü",
+    "stats": "Stadtstatistik",
+    "guestTitle": "Du siehst die Stadt als Gast",
+    "guestText": "Melde dich an, um deine Stimmung zu markieren und Probleme zu melden.",
+    "signedIn": "Du bist angemeldet",
+    "footer": "VibeRay · Kostanai",
+    "settings": "Profileinstellungen",
+    "openUnread": "Menü öffnen · neue Benachrichtigungen: {count}"
+  }
+}

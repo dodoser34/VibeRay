@@ -14,6 +14,7 @@ import { MoodDistribution } from './MoodDistribution';
 import { StatusBreakdown } from './StatusBreakdown';
 import { YearsTable } from './YearsTable';
 import styles from './CityDashboard.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const SAME_SCORE = 0.1;
 const t = texts.dashboard;
@@ -111,9 +112,7 @@ export function CityDashboard({
             onClick={onClose}
             aria-label={t.close}
           >
-            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-              <path d="M3 3l10 10M13 3L3 13" />
-            </svg>
+            <Icon name="close" size={14} />
           </button>
         )}
       </header>

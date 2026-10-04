@@ -5,6 +5,7 @@ import { plural } from '@/shared/lib/plural';
 import { FAQ, HELP_CATEGORIES } from '../content';
 import texts from '@/texts/ru/support.json';
 import styles from './HelpCategories.module.css';
+import { Icon } from '@/shared/ui/Icon';
 
 const TILT = 8; // градусов у края карточки
 
@@ -61,17 +62,13 @@ export function HelpCategories({ active, onSelect }) {
               onClick={() => onSelect(active === category.code ? null : category.code)}
             >
               <span className={styles.iconWrap}>
-                <svg className={styles.icon} viewBox="0 0 24 24" aria-hidden="true">
-                  <path d={category.icon} />
-                </svg>
+                <Icon name={category.icon} className={styles.icon} />
               </span>
               <span className={styles.title}>{category.title}</span>
               <span className={styles.text}>{category.text}</span>
               <span className={styles.meta}>
                 {count} {plural(count, texts.answersCount)}
-                <svg className={styles.arrow} viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 12h14m-5-5 5 5-5 5" />
-                </svg>
+                <Icon name="arrow-right" className={styles.arrow} />
               </span>
             </button>
           </li>
