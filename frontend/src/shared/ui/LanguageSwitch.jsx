@@ -3,10 +3,10 @@ import { changeLanguage } from '@/shared/animations/languageTransition';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { LANGUAGES } from '@/shared/lib/language';
 import common from '@/texts/ru/common.json';
-import deFlag from './flags/de.png';
-import gbFlag from './flags/gb.png';
-import kzFlag from './flags/kz.png';
-import ruFlag from './flags/ru.png';
+import deFlag from './flags/de.svg';
+import gbFlag from './flags/gb.svg';
+import kzFlag from './flags/kz.svg';
+import ruFlag from './flags/ru.svg';
 import styles from './LanguageSwitch.module.css';
 
 // Флаг главной страны языка: русский — Россия, казахский — Казахстан, английский — Великобритания

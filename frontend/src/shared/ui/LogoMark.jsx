@@ -3,6 +3,8 @@ import styles from './LogoMark.module.css';
 
 // Буква V знака: толстые плечи, сходящиеся книзу (viewBox 40×40).
 const V_SHAPE = '6,8 13.5,8 20,23 26.5,8 34,8 23.5,33 16.5,33';
+// Буква опущена в круге: широкие плечи сверху тяжелее острого низа, без сдвига знак кажется задранным.
+const V_OFFSET = 2;
 // Многоэтажки внутри V: левый край, ширина, верх, оттенок. Видны только сквозь букву.
 const BUILDINGS = [
   [3, 6, 12, 'a'],
@@ -31,40 +33,42 @@ export function LogoMark({ framed = false }) {
   return (
     <svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true" className={styles.mark}>
       {framed && <circle cx="20" cy="20" r="19.5" className={styles.frame} />}
-      <defs>
-        <clipPath id={clip}>
-          <polygon points={V_SHAPE} />
-        </clipPath>
-      </defs>
-      <g clipPath={`url(#${clip})`}>
-        <rect width="40" height="40" className={styles.sky} />
-        {BUILDINGS.map((building) => {
-          const [left, width, top, tone] = building;
-          return (
-            <g key={left}>
-              <rect
-                x={left}
-                y={top}
-                width={width}
-                height={40 - top}
-                className={styles[`tower-${tone}`]}
-              />
-              {windowsOf(building).map(({ x, y }) => (
+      <g transform={`translate(0 ${V_OFFSET})`}>
+        <defs>
+          <clipPath id={clip}>
+            <polygon points={V_SHAPE} />
+          </clipPath>
+        </defs>
+        <g clipPath={`url(#${clip})`}>
+          <rect width="40" height="40" className={styles.sky} />
+          {BUILDINGS.map((building) => {
+            const [left, width, top, tone] = building;
+            return (
+              <g key={left}>
                 <rect
-                  key={`${x}-${y}`}
-                  x={x}
-                  y={y}
-                  width={WINDOW.width}
-                  height={WINDOW.height}
-                  className={styles.window}
+                  x={left}
+                  y={top}
+                  width={width}
+                  height={40 - top}
+                  className={styles[`tower-${tone}`]}
                 />
-              ))}
-            </g>
-          );
-        })}
+                {windowsOf(building).map(({ x, y }) => (
+                  <rect
+                    key={`${x}-${y}`}
+                    x={x}
+                    y={y}
+                    width={WINDOW.width}
+                    height={WINDOW.height}
+                    className={styles.window}
+                  />
+                ))}
+              </g>
+            );
+          })}
+        </g>
+        <polygon points={V_SHAPE} className={styles.outline} />
+        <circle cx="20" cy="11.5" r="2.7" className={styles.dot} />
       </g>
-      <polygon points={V_SHAPE} className={styles.outline} />
-      <circle cx="20" cy="11.5" r="2.7" className={styles.dot} />
     </svg>
   );
 }
