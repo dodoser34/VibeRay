@@ -1,5 +1,5 @@
 // Первым: язык интерфейса подставляется в тексты до того, как их прочитают остальные модули
-import '@/shared/lib/language';
+import { languageReady } from '@/shared/lib/language';
 import '@/shared/lib/theme';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -32,6 +32,8 @@ window.addEventListener(
   { once: true },
 );
 
+// Страница рисуется, когда тексты языка из адреса на месте (перевод грузится отдельным файлом).
+await languageReady;
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>

@@ -1,6 +1,6 @@
-import { GLYPHS } from './icons/glyphs';
+import { GLYPHS } from './glyphs';
 
-// Иконка по имени из реестра (icons/glyphs.jsx): <Icon name="close" size={14} />.
+// Иконка по имени из реестра (glyphs.jsx): <Icon name="close" size={14} />.
 // Параметры перекрывают значения по умолчанию: size — число в пикселях базового интерфейса (переводится
 // в rem, поэтому на 2K/4K иконка растёт вместе с интерфейсом) или любая CSS-длина; color — цвет
 // обводки (по умолчанию currentColor — цвет текста кнопки; передавайте токен: 'var(--color-accent)');

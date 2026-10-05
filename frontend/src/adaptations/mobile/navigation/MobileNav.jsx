@@ -14,8 +14,8 @@ import { Modal } from '@/shared/ui/Modal';
 import notificationTexts from '@/texts/ru/notifications.json';
 import nav from '@/texts/ru/nav.json';
 import styles from './MobileNav.module.css';
-import { LogoMark } from '@/shared/ui/LogoMark';
-import { Icon } from '@/shared/ui/Icon';
+import { LogoMark } from '@/shared/ui/icons/LogoMark';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const CITY = 'kostanay';
 

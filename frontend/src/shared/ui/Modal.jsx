@@ -4,7 +4,7 @@ import { BREAKPOINTS } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import common from '@/texts/ru/common.json';
 import styles from './Modal.module.css';
-import { Icon } from './Icon';
+import { Icon } from './icons/Icon';
 
 export function Modal({ title, onClose, children, width = 460 }) {
   const titleId = useId();

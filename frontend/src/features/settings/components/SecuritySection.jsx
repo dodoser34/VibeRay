@@ -8,7 +8,7 @@ import { SettingsSection } from './SettingsSection';
 import auth from '@/texts/ru/auth.json';
 import texts from '@/texts/ru/settings.json';
 import styles from './SecuritySection.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const EMPTY = { current: '', next: '', repeat: '' };
 // Ошибки API, которые показываются у своего поля, а не под кнопкой.

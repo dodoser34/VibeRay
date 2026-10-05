@@ -12,7 +12,7 @@ import { GuideMap } from './GuideMap';
 import about from '@/texts/ru/about.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryGuide.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const CITY = 'kostanay';
 

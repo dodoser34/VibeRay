@@ -4,7 +4,7 @@ import { format } from '@/shared/lib/format';
 import { Avatar, AVATAR_PRESETS } from '@/shared/ui/Avatar';
 import texts from '@/texts/ru/settings.json';
 import styles from './AvatarPicker.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const PRESETS = AVATAR_PRESETS.map((_, i) => `preset:${i}`);
 

@@ -13,7 +13,7 @@ import { CategoryIcon } from './CategoryIcon';
 import { format } from '@/shared/lib/format';
 import problemTexts from '@/texts/ru/problems.json';
 import styles from './ReportProblem.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const texts = problemTexts.report;
 

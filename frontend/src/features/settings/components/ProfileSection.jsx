@@ -11,7 +11,7 @@ import { SettingsSection } from './SettingsSection';
 import auth from '@/texts/ru/auth.json';
 import texts from '@/texts/ru/settings.json';
 import styles from './ProfileSection.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const isPreset = (src) => /^preset:\d+$/.test(src ?? '');
 const NICKNAME_ERRORS = ['nickname_taken', 'invalid_nickname'];

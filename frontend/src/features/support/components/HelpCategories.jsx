@@ -5,7 +5,7 @@ import { plural } from '@/shared/lib/plural';
 import { FAQ, HELP_CATEGORIES } from '../content';
 import texts from '@/texts/ru/support.json';
 import styles from './HelpCategories.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const TILT = 8; // градусов у края карточки
 

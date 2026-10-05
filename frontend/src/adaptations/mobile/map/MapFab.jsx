@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Modal } from '@/shared/ui/Modal';
 import texts from '@/texts/ru/map.json';
 import styles from './MapFab.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 // Плавающие кнопки над картой на телефонах и планшетах стоя, прямо над шторкой: «весь город» (после
 // щипков и поворотов город легко потерять) и главная «+», которая открывает действия — отметить

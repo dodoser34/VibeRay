@@ -9,7 +9,7 @@ import { localizePath } from '@/shared/lib/language';
 import { plural } from '@/shared/lib/plural';
 import texts from '@/texts/ru/settings.json';
 import styles from './ReportItem.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const CITY = 'kostanay';
 

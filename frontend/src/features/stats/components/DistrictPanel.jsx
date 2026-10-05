@@ -13,7 +13,7 @@ import { MoodChart } from './MoodChart';
 import { MoodDistribution } from './MoodDistribution';
 import { StatusBreakdown } from './StatusBreakdown';
 import styles from './DistrictPanel.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const PERIOD_LABEL = texts.periods;
 // Разница меньше этой читается как «так же» (оценки в диапазоне −2…+2).

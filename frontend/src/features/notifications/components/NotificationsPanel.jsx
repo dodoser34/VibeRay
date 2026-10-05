@@ -2,7 +2,7 @@ import { useNotifications } from '../model/useNotifications';
 import { NotificationList } from './NotificationList';
 import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationsPanel.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const CITY = 'kostanay';
 

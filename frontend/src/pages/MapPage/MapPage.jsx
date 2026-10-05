@@ -45,7 +45,7 @@ import { useMapTour } from './useMapTour';
 import { usePanelVisibility } from './usePanelVisibility';
 import { useToast } from './useToast';
 import styles from './MapPage.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const TOAST_MS = 3200;
 

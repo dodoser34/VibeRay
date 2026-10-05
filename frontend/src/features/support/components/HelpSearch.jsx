@@ -3,7 +3,7 @@ import { useViewport } from '@/adaptations/core';
 import { POPULAR_QUERIES } from '../content';
 import texts from '@/texts/ru/support.json';
 import styles from './HelpSearch.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 // Большое поле поиска с мгновенными ответами из FAQ (combobox: работают стрелки и Enter).
 export function HelpSearch({ query, onQueryChange, results, onPick, onWrite }) {

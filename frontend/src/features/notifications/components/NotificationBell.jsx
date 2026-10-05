@@ -6,7 +6,7 @@ import { useNotifications } from '../model/useNotifications';
 import { NotificationsPanel } from './NotificationsPanel';
 import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationBell.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 // Колокольчик в шапке (планшет и десктоп). Новое уведомление — колокольчик качнётся, счётчик
 // подпрыгнет. Панель раскрывается под кнопкой; при закрытии увиденное отмечается прочитанным.

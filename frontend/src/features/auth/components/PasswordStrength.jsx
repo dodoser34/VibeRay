@@ -3,7 +3,7 @@ import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { format } from '@/shared/lib/format';
 import auth from '@/texts/ru/auth.json';
 import styles from './PasswordStrength.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const SEGMENTS = 4;
 

@@ -1,5 +1,10 @@
 import { prefersReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { applyLanguage, getLanguage, settleLanguageWork } from '@/shared/lib/language';
+import {
+  applyLanguage,
+  getLanguage,
+  loadLanguage,
+  settleLanguageWork,
+} from '@/shared/lib/language';
 import { gsap } from './gsapSetup';
 
 const MARK = 'data-language-text';
@@ -37,25 +42,31 @@ const nextTask = () => new Promise((resolve) => setTimeout(resolve));
 // остаются как были.
 export async function changeLanguage(next) {
   if (running || next === getLanguage()) return;
-  if (prefersReducedMotion()) {
-    applyLanguage(next);
-    return;
-  }
   running = true;
   const root = document.documentElement;
   try {
+    // Перевод скачивается, пока текст размывается.
+    const loaded = loadLanguage(next);
+    if (prefersReducedMotion()) {
+      await applyLanguage(next);
+      return;
+    }
     markText();
     await gsap.fromTo(
       root,
       { '--language-blur': '0px' },
       { '--language-blur': BLUR, duration: 0.28, ease: 'power2.in' },
     );
-    applyLanguage(next);
+    await loaded;
+    await applyLanguage(next);
     await nextTask();
     await settleLanguageWork(WAIT_FOR_DATA_MS);
     unmarkText();
     markText();
     await gsap.to(root, { '--language-blur': '0px', duration: 0.55, ease: 'power2.out' });
+  } catch (error) {
+    // Перевод не скачался (нет сети) — страница остаётся на прежнем языке.
+    console.error('Language switch failed', error);
   } finally {
     unmarkText();
     root.style.removeProperty('--language-blur');

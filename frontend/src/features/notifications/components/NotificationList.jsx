@@ -5,7 +5,7 @@ import { formatRelative } from '@/shared/lib/formatDate';
 import { plural } from '@/shared/lib/plural';
 import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationList.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const ICONS = {
   confirmations: 'users-check',

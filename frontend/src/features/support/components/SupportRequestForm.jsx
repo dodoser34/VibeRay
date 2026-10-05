@@ -18,7 +18,7 @@ import { TextField } from '@/shared/ui/TextField';
 import { format } from '@/shared/lib/format';
 import supportTexts from '@/texts/ru/support.json';
 import styles from './SupportRequestForm.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const texts = supportTexts.form;
 

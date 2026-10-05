@@ -20,7 +20,7 @@ import { StatusChip } from './StatusChip';
 import { StatusTimeline } from './StatusTimeline';
 import problemTexts from '@/texts/ru/problems.json';
 import styles from './ProblemCard.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const texts = problemTexts.card;
 

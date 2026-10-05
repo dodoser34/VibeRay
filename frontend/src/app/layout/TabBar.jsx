@@ -9,7 +9,7 @@ import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
 import { localizePath } from '@/shared/lib/language';
 import { Avatar } from '@/shared/ui/Avatar';
-import { LogoMark } from '@/shared/ui/LogoMark';
+import { LogoMark } from '@/shared/ui/icons/LogoMark';
 import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
 import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
 import { usePageNavigate, useTransitionNavigate } from '../transitions/useTransition';

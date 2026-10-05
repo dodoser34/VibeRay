@@ -1,9 +1,12 @@
 // Язык интерфейса: русский (src/texts/ru/*.json — основной), казахский, английский или немецкий
-// (src/texts/{kk,en,de}/*.json с теми же ключами). Код везде импортирует русские файлы (`import texts from '@/texts/ru/map.json'`), а этот
-// модуль записывает значения нужного языка прямо в эти объекты — на месте, не меняя ссылок на
-// вложенные объекты и массивы. Он импортируется первым в main.jsx, чтобы язык был выбран до того, как
-// остальные модули прочитают тексты. Смена языка на лету — applyLanguage(): тексты переписываются,
-// подписчики (useLanguage) перерисовывают страницу, запросы к API повторяются на новом языке.
+// (src/texts/{kk,en,de}/*.json с теми же ключами). Код везде импортирует русские файлы
+// (`import texts from '@/texts/ru/map.json'`), а этот модуль записывает значения нужного языка прямо
+// в эти объекты — на месте, не меняя ссылок на вложенные объекты и массивы. Русский встроен в сайт,
+// остальные языки — отдельный файл на язык, который скачивается, только когда язык нужен
+// (translations/<язык>.js). Модуль импортируется первым в main.jsx, а страница
+// рисуется после languageReady — когда тексты языка из адреса на месте. Смена языка на лету —
+// applyLanguage(): перевод догружается, тексты переписываются, подписчики (useLanguage)
+// перерисовывают страницу, запросы к API повторяются на новом языке.
 // Что должно это учитывать: подписи в справочниках — геттеры (shared/config/withLabels.js), тексты не
 // копируются в константы модулей, а элементы, которые SplitText разбирает на слова, получают
 // key={language} — иначе React не сможет обновить их текст.
@@ -60,16 +63,35 @@ const texts = {
   transition,
 };
 const translations = { ru: structuredClone(texts) };
-Object.entries(
-  import.meta.glob(['../../texts/*/*.json', '!../../texts/ru/*.json'], {
-    eager: true,
-    import: 'default',
-  }),
-).forEach(([path, section]) => {
-  const [code, file] = path.split('/').slice(-2);
-  translations[code] ??= {};
-  translations[code][file.slice(0, -'.json'.length)] = section;
-});
+// Перевод каждого языка — один файл сборки (translations/<язык>.js). Новый язык добавляется и сюда.
+const LOADERS = {
+  kk: () => import('./translations/kk.js'),
+  en: () => import('./translations/en.js'),
+  de: () => import('./translations/de.js'),
+};
+const sectionOf = (path) => path.slice(path.lastIndexOf('/') + 1, -'.json'.length);
+const loading = {};
+
+// Перевод языка — один раз; при ошибке сети следующая попытка загрузит заново.
+export function loadLanguage(code) {
+  if (translations[code]) return Promise.resolve();
+  loading[code] ??= LOADERS[code]()
+    .then(({ default: files }) => {
+      translations[code] = Object.fromEntries(
+        Object.entries(files).map(([path, section]) => [sectionOf(path), section]),
+      );
+      if (import.meta.env.DEV) {
+        Object.keys(translations[code])
+          .filter((section) => !(section in texts))
+          .forEach((section) => console.warn(`[texts] ${section}.json не подключён в language.js`));
+      }
+    })
+    .catch((error) => {
+      delete loading[code];
+      throw error;
+    });
+  return loading[code];
+}
 
 const isObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
 
@@ -121,9 +143,24 @@ export function localizePath(path, code = language) {
   return path === '/' ? `/${code}` : `/${code}${path}`;
 }
 
+// Поисковый робот (и автотест) видит адрес как есть: по каждому адресу — ровно его версия, иначе
+// поисковик не проиндексирует русскую.
+const isRobot = () =>
+  navigator.webdriver || /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent);
+
+// Язык браузера посетителя: первый из его списка, который есть на сайте; если ни одного — английский.
+function browserLanguage() {
+  if (isRobot()) return null;
+  const preferred = (navigator.languages?.length ? navigator.languages : [navigator.language])
+    .filter(Boolean)
+    .map((tag) => tag.slice(0, 2).toLowerCase());
+  if (!preferred.length) return null;
+  return preferred.find((code) => LANGUAGES.includes(code)) ?? 'en';
+}
+
 // Язык — из адреса. Старые ссылки с ?lang= переводятся на адрес с префиксом. Адрес без префикса —
-// русская версия, но тот, кто раньше сам выбрал другой язык, попадает на свою версию. Язык браузера
-// не угадываем: поисковый робот должен видеть по каждому адресу ровно ту версию, что в нём указана.
+// русская версия для поисковиков, а человек попадает на свою: язык, который он сам выбирал раньше,
+// иначе — язык его браузера.
 function detect() {
   const url = new URL(window.location.href);
   const path = url.pathname.startsWith(BASE)
@@ -134,7 +171,8 @@ function detect() {
   url.searchParams.delete('lang');
   let next = fromPath;
   if (LANGUAGES.includes(fromQuery)) next = fromQuery;
-  else if (fromPath === DEFAULT_LANGUAGE) next = readChoice(STORAGE_KEY, LANGUAGES) ?? fromPath;
+  else if (fromPath === DEFAULT_LANGUAGE)
+    next = readChoice(STORAGE_KEY, LANGUAGES) ?? browserLanguage() ?? fromPath;
   if (next !== fromPath || fromQuery !== null) {
     url.pathname = BASE + localizePath(stripLanguage(path), next);
     window.history.replaceState(window.history.state, '', url);
@@ -151,16 +189,17 @@ function applyDocument() {
 }
 
 let language = detect();
-if (language !== DEFAULT_LANGUAGE) applyTexts(language);
-applyDocument();
+document.documentElement.lang = language;
 
-if (import.meta.env.DEV) {
-  PREFIXED.forEach((code) =>
-    Object.keys(translations[code] ?? {})
-      .filter((section) => !(section in texts))
-      .forEach((section) => console.warn(`[texts] ${section}.json не подключён в language.js`)),
-  );
-}
+// Тексты языка из адреса на месте — можно рисовать страницу (main.jsx). Не загрузился перевод
+// (нет сети) — страница рисуется по-русски, а не остаётся пустой.
+export const languageReady =
+  language === DEFAULT_LANGUAGE
+    ? Promise.resolve()
+    : loadLanguage(language)
+        .then(() => applyTexts(language))
+        .catch((error) => console.error('Language texts failed to load', error));
+languageReady.then(applyDocument);
 
 const listeners = createListeners();
 let pendingWork = [];
@@ -176,10 +215,11 @@ export function getLocale() {
 
 export const subscribeLanguage = listeners.subscribe;
 
-// Тексты — на новом языке сразу, подписчики перерисовываются. Плавную смену делает
-// shared/animations/languageTransition.js.
-export function applyLanguage(next) {
+// Тексты — на новом языке, как только перевод загружен; подписчики перерисовываются. Плавную смену
+// делает shared/animations/languageTransition.js.
+export async function applyLanguage(next) {
   if (next === language || !LANGUAGES.includes(next)) return;
+  await loadLanguage(next);
   language = next;
   applyTexts(next);
   applyDocument();

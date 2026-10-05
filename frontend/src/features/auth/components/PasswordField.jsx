@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { TextField } from '@/shared/ui/TextField';
 import auth from '@/texts/ru/auth.json';
 import styles from './PasswordField.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 export function PasswordField(props) {
   const [visible, setVisible] = useState(false);

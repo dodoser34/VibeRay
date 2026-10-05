@@ -3,7 +3,7 @@ import { format } from '@/shared/lib/format';
 import { Modal } from '@/shared/ui/Modal';
 import texts from '@/texts/ru/map.json';
 import styles from './FilterChip.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 // Фильтры карты, свёрнутые в один чип над картой («День · Настроение ▾»); полные настройки
 // открываются в шторке. На телефонах чип стоит между логотипом и кнопкой меню, на планшетах стоя —

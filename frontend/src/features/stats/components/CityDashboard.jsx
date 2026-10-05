@@ -14,7 +14,7 @@ import { MoodDistribution } from './MoodDistribution';
 import { StatusBreakdown } from './StatusBreakdown';
 import { YearsTable } from './YearsTable';
 import styles from './CityDashboard.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const SAME_SCORE = 0.1;
 const t = texts.dashboard;

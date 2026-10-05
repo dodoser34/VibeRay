@@ -11,7 +11,7 @@ import { PasswordStrength } from './PasswordStrength';
 import { format } from '@/shared/lib/format';
 import auth from '@/texts/ru/auth.json';
 import styles from './PassForms.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const texts = auth.register;
 

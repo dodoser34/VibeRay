@@ -11,7 +11,7 @@ import texts from '@/texts/ru/stats.json';
 import { useDistrictStats } from '../hooks/useDistrictStats';
 import { seriesPointTitle, seriesTick } from '../lib/seriesLabels';
 import styles from './DistrictCompare.module.css';
-import { Icon } from '@/shared/ui/Icon';
+import { Icon } from '@/shared/ui/icons/Icon';
 
 const t = texts.districtCompare;
 const SIDES = [
