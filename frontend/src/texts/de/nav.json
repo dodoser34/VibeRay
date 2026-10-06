@@ -52,5 +52,26 @@
     "footer": "VibeRay · Kostanai",
     "settings": "Profileinstellungen",
     "openUnread": "Menü öffnen · neue Benachrichtigungen: {count}"
+  },
+  "moderator": {
+    "tabs": {
+      "queue": {
+        "label": "Warteschlange",
+        "short": "Liste"
+      },
+      "map": {
+        "label": "Problemkarte",
+        "short": "Karte"
+      },
+      "city": {
+        "label": "Stadt",
+        "short": "Stadt"
+      },
+      "support": {
+        "label": "Anfragen",
+        "short": "Anfragen"
+      }
+    },
+    "settings": "Einstellungen der Moderation"
   }
 }

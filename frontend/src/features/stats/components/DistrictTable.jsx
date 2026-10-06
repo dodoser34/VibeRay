@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { MoodFace } from '@/features/mood';
-import { useFlipList } from '@/shared/animations/useFlipList';
+import { useFlipList } from '@/shared/animations/effects/useFlipList';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
 import { format } from '@/shared/lib/format';

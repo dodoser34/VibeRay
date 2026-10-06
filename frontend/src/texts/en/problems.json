@@ -20,7 +20,9 @@
     "backToMap": "Back to the whole map",
     "rejectedTitle": "Report rejected",
     "rejectedNote": "A moderator rejected this report. Only you can see it: it isn't on the map or in the statistics.",
-    "openOriginal": "Open the original problem"
+    "openOriginal": "Open the original problem",
+    "anonymous": "Anonymous resident",
+    "anonymousMine": "{nickname} (anonymous)"
   },
   "listItem": {
     "confirmations": "confirmations: {count}"
@@ -47,6 +49,8 @@
     "photosNote": "Up to {max} photos. Location tags and camera data are removed before sending.",
     "back": "Back",
     "next": "Next",
-    "submit": "Send"
+    "submit": "Send",
+    "anonymousLabel": "Post anonymously",
+    "anonymousHint": "Residents will see “Anonymous resident” instead of your nickname and avatar. Moderators can see the author — that’s how we fight spam."
   }
 }

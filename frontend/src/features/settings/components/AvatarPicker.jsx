@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { checkPhoto, preparePhoto } from '@/shared/lib/imageTools';
 import { format } from '@/shared/lib/format';
-import { Avatar, AVATAR_PRESETS } from '@/shared/ui/Avatar';
+import { Avatar, AVATAR_PRESETS } from '@/shared/ui/avatar/Avatar';
 import texts from '@/texts/ru/settings.json';
 import styles from './AvatarPicker.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

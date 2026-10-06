@@ -1,0 +1,42 @@
+[
+  {
+    "topic": "map",
+    "email": "aigerim.s@example.com",
+    "message": "Граница Химика на карте проходит по железной дороге, а наш дом на Каирбекова оказался в Привокзальном. Можно поправить?",
+    "hours_ago": 2,
+    "files_count": 1,
+    "status": "new"
+  },
+  {
+    "topic": "problems",
+    "email": "d.petrov@example.com",
+    "message": "Отметил яму не в том месте — точка встала на соседнюю улицу. Как её перенести или удалить сообщение?",
+    "hours_ago": 7,
+    "files_count": 0,
+    "status": "in_progress"
+  },
+  {
+    "topic": "account",
+    "email": "marat.n@example.com",
+    "message": "Не приходит письмо для смены почты, хотя я жду уже второй день. Помогите перенести аккаунт.",
+    "hours_ago": 20,
+    "files_count": 0,
+    "status": "new"
+  },
+  {
+    "topic": "technical",
+    "email": "olga.kostanay@example.com",
+    "message": "На старом планшете карта грузится очень долго и иногда остаётся пустой. Браузер Chrome, Android 9.",
+    "hours_ago": 30,
+    "files_count": 2,
+    "status": "answered"
+  },
+  {
+    "topic": "mood",
+    "email": "yerlan.t@example.com",
+    "message": "Почему район Аэропорт серый за день? Мы с соседями отмечали настроение утром.",
+    "hours_ago": 52,
+    "files_count": 0,
+    "status": "closed"
+  }
+]

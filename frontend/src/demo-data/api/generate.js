@@ -40,7 +40,8 @@ const BASE_SCORE = {
 // Интервалы ряда динамики (ARCHITECTURE.md 6.3) и типичное число отметок на район; для `all` — 14
 // 000 отметок на год истории.
 const PERIODS = {
-  day: { unit: HOUR, points: 24, sample: 240 },
+  // День — 8 интервалов по 3 часа: в часовом интервале тихого района почти всегда меньше 5 отметок.
+  day: { unit: 3 * HOUR, points: 8, sample: 240 },
   week: { unit: DAY, points: 7, sample: 280 },
   month: { unit: DAY, points: 30, sample: 1150 },
   year: { unit: 'month', points: 12, sample: 14000 },
@@ -80,14 +81,16 @@ function clamp(value, min, max) {
 
 const round2 = (value) => Math.round(value * 100) / 100;
 
-// [start, end) каждого интервала, от старых к новым. Часы и дни выровнены по часам (последний
-// интервал — текущий, незавершённый); месяцы — календарные.
+// [start, end) каждого интервала, от старых к новым. Трёхчасовые интервалы выровнены по 0, 3, 6…
+// часов, дни — по полуночи (последний интервал — текущий, незавершённый); месяцы — календарные.
 function bucketsFor(period, now = Date.now()) {
   const cfg = PERIODS[period];
   if (cfg.unit !== 'month') {
     const base = new Date(now);
-    if (cfg.unit === HOUR) base.setMinutes(0, 0, 0);
-    else base.setHours(0, 0, 0, 0);
+    if (cfg.unit < DAY) {
+      const hours = cfg.unit / HOUR;
+      base.setHours(base.getHours() - (base.getHours() % hours), 0, 0, 0);
+    } else base.setHours(0, 0, 0, 0);
     return Array.from({ length: cfg.points }, (_, i) => {
       const start = base.getTime() - (cfg.points - 1 - i) * cfg.unit;
       return [start, Math.min(start + cfg.unit, now)];
@@ -254,6 +257,8 @@ function makeProblem(rand, id, statuses, createdAt, avatar) {
     location: randomPointIn(feature, rand),
     confirmations_count: confirmations,
     created_at: new Date(createdAt(rand)).toISOString(),
+    // Каждый пятый житель публикует анонимно (по id, чтобы не сдвигать остальные случайные данные).
+    is_anonymous: hashString(`anonymous:${id}`) % 5 === 0,
     author: {
       nickname: format(demo.ru.residentNickname, { number: 100 + Math.floor(rand() * 900) }),
       avatar_url: `preset:${avatar}`,
@@ -435,7 +440,15 @@ export function districtAt(location) {
   return feature?.properties.slug ?? null;
 }
 
-export function addProblem({ author, district, category, description, location, photos }) {
+export function addProblem({
+  author,
+  district,
+  category,
+  description,
+  location,
+  photos,
+  isAnonymous,
+}) {
   const problem = {
     id: `p${problems.length + 1}-${Date.now().toString(36)}`,
     district,
@@ -445,6 +458,7 @@ export function addProblem({ author, district, category, description, location, 
     location,
     confirmations_count: 0,
     created_at: new Date().toISOString(),
+    is_anonymous: isAnonymous,
     author: { nickname: author.nickname, avatar_url: author.avatar_url },
     photos,
   };

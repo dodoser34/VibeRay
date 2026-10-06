@@ -28,8 +28,12 @@ export function seriesTick(series, i, period) {
   }
 }
 
+// Точка «дня» — трёхчасовой интервал (ARCHITECTURE.md 6.3): «09:00–12:00».
+const DAY_STEP_MS = 3 * 3_600_000;
+
 export function seriesPointTitle(t, period) {
-  if (period === 'day') return formatTime(t);
+  if (period === 'day')
+    return `${formatTime(t)}–${formatTime(new Date(t).getTime() + DAY_STEP_MS)}`;
   if (period === 'week' || period === 'month') return formatLongDate(t);
   return formatMonthYear(t);
 }

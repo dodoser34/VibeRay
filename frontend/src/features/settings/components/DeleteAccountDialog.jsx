@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { PasswordField } from '@/features/auth';
 import { deleteAccount } from '@/shared/api/endpoints/users';
-import { Button } from '@/shared/ui/Button';
-import { Modal } from '@/shared/ui/Modal';
+import { Button } from '@/shared/ui/controls/Button';
+import { Modal } from '@/shared/ui/windows/Modal';
 import auth from '@/texts/ru/auth.json';
 import texts from '@/texts/ru/settings.json';
 import styles from './DeleteAccountDialog.module.css';

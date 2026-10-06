@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useAuth } from '@/features/auth';
+import { isModerator } from '@/shared/config/roles';
 import { updateProfile, uploadAvatar } from '@/shared/api/endpoints/users';
 import { NICKNAME_PATTERN } from '@/shared/config/validation';
-import { Avatar } from '@/shared/ui/Avatar';
-import { TextField } from '@/shared/ui/TextField';
+import { Avatar } from '@/shared/ui/avatar/Avatar';
+import { TextField } from '@/shared/ui/controls/TextField';
 import { useSaveAction } from '../hooks/useSaveAction';
 import { AvatarPicker } from './AvatarPicker';
 import { SaveBar } from './SaveBar';
@@ -73,7 +74,9 @@ export function ProfileSection({ id }) {
             <figcaption className={styles.cardLabel}>{texts.profile.previewLabel}</figcaption>
             <Avatar src={avatar} size={88} className={styles.cardAvatar} />
             <p className={styles.cardName}>{nickname || user.nickname}</p>
-            <p className={styles.cardMeta}>{texts.profile.previewMeta}</p>
+            <p className={styles.cardMeta}>
+              {isModerator(user) ? texts.moderator.previewMeta : texts.profile.previewMeta}
+            </p>
             <p className={styles.lock}>
               <Icon name="lock" size={12} />
               {texts.profile.public}

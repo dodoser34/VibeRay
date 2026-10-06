@@ -107,5 +107,11 @@
     "confirmPassword": "Passwort",
     "confirm": "Endgültig löschen",
     "cancel": "Abbrechen"
+  },
+  "moderator": {
+    "title": "Einstellungen der Moderation",
+    "lead": "Profil, Anmeldung, Sprache und Aussehen des Arbeitsplatzes.",
+    "previewMeta": "Moderation",
+    "logoutText": "Auf diesem Gerät."
   }
 }

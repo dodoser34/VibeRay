@@ -8,7 +8,7 @@ import {
   PROBLEM_MAX_PHOTOS,
 } from '@/shared/config/validation';
 import { checkPhoto, preparePhoto } from '@/shared/lib/imageTools';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import { CategoryIcon } from './CategoryIcon';
 import { format } from '@/shared/lib/format';
 import problemTexts from '@/texts/ru/problems.json';
@@ -50,6 +50,7 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
   const [category, setCategory] = useState(null);
   const [description, setDescription] = useState('');
   const [photos, setPhotos] = useState([]); // { id, file, url }
+  const [anonymous, setAnonymous] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -123,6 +124,7 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
         location: placement.location,
         description: text,
         photos: prepared,
+        isAnonymous: anonymous,
       });
       onCreated(problem);
     } catch (e) {
@@ -257,6 +259,18 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
               />
             </div>
             <p className={styles.note}>{format(texts.photosNote, { max: PROBLEM_MAX_PHOTOS })}</p>
+
+            <label className={styles.anonymous}>
+              <input
+                type="checkbox"
+                checked={anonymous}
+                onChange={(e) => setAnonymous(e.target.checked)}
+              />
+              <span>
+                <span className={styles.anonymousLabel}>{texts.anonymousLabel}</span>
+                <span className={styles.note}>{texts.anonymousHint}</span>
+              </span>
+            </label>
           </div>
         )}
       </div>

@@ -27,6 +27,9 @@
     "too_many_files": "Höchstens 3 Dateien",
     "invalid_file": "Dateien: JPEG, PNG, WebP oder PDF bis 10 MB",
     "not_found": "Mock: kein Handler für {method} {path}",
-    "problem_rejected": "Diese Meldung wurde von der Moderation abgelehnt — sie kann nicht bestätigt werden."
+    "problem_rejected": "Diese Meldung wurde von der Moderation abgelehnt — sie kann nicht bestätigt werden.",
+    "forbidden": "Das darf nur die Moderation",
+    "invalid_status_change": "Dieser Statuswechsel ist nicht möglich",
+    "invalid_reason": "Wähle einen Grund für die Ablehnung"
   }
 }

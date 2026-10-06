@@ -1,0 +1,67 @@
+.form {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-deep);
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.reasons legend {
+  width: 100%;
+  margin-bottom: var(--space-2);
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+  font-weight: 600;
+}
+
+.reason {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+  cursor: pointer;
+}
+
+.reason input {
+  accent-color: var(--color-danger);
+}
+
+.duplicate {
+  display: grid;
+  gap: var(--space-1);
+  max-width: 22rem;
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+  font-weight: 600;
+}
+
+.duplicate input {
+  min-height: 2.5rem;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+}
+
+.duplicate small {
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}

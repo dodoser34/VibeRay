@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
-import { Button } from './Button';
+import { Button } from '../controls/Button';
 import styles from './CoachMarks.module.css';
 
 const GAP = 16; // px между вырезом и карточкой

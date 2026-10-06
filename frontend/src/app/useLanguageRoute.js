@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router';
-import { changeLanguage } from '@/shared/animations/languageTransition';
+import { changeLanguage } from '@/shared/animations/languageChange/languageTransition';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import {
   DEFAULT_LANGUAGE,

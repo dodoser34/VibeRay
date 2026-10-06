@@ -13,8 +13,8 @@ import { format } from '@/shared/lib/format';
 import { formatDate } from '@/shared/lib/formatDate';
 import { localizePath } from '@/shared/lib/language';
 import { plural } from '@/shared/lib/plural';
-import { Avatar } from '@/shared/ui/Avatar';
-import { Button } from '@/shared/ui/Button';
+import { Avatar } from '@/shared/ui/avatar/Avatar';
+import { Button } from '@/shared/ui/controls/Button';
 import { CategoryIcon } from './CategoryIcon';
 import { StatusChip } from './StatusChip';
 import { StatusTimeline } from './StatusTimeline';
@@ -65,6 +65,12 @@ export function ProblemCard({
       title: format(texts.shareTitle, { category, district: districtName }),
     });
 
+  // Анонимную проблему жители видят без автора; сам автор видит свой ник с пометкой.
+  const authorLabel = !problem.author
+    ? texts.anonymous
+    : problem.is_anonymous
+      ? format(texts.anonymousMine, { nickname: problem.author.nickname })
+      : problem.author.nickname;
   const count = problem.confirmations_count;
 
   return (
@@ -135,9 +141,15 @@ export function ProblemCard({
 
       <footer className={styles.footer}>
         <span className={styles.author}>
-          <Avatar src={problem.author.avatar_url} size={24} />
+          {problem.author ? (
+            <Avatar src={problem.author.avatar_url} size={24} />
+          ) : (
+            <span className={styles.anonymousAvatar} aria-hidden="true">
+              <Icon name="mask" size={14} />
+            </span>
+          )}
           <span>
-            {problem.author.nickname} · {formatDate(problem.created_at)}
+            {authorLabel} · {formatDate(problem.created_at)}
           </span>
         </span>
         <span className={styles.count}>

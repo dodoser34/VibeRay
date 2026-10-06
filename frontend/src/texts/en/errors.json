@@ -27,6 +27,9 @@
     "too_many_files": "No more than 3 files",
     "invalid_file": "Files: JPEG, PNG, WebP or PDF up to 10 MB",
     "not_found": "Mock: no handler for {method} {path}",
-    "problem_rejected": "A moderator rejected this report — it can't be confirmed."
+    "problem_rejected": "A moderator rejected this report — it can't be confirmed.",
+    "forbidden": "Only a moderator can do this",
+    "invalid_status_change": "This status change isn’t possible",
+    "invalid_reason": "Choose a reason for rejection"
   }
 }

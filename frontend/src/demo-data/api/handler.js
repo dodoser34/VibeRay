@@ -16,7 +16,9 @@ import {
   SUPPORT_MESSAGE_MAX,
   SUPPORT_MESSAGE_MIN,
 } from '@/shared/config/validation';
-import { SUPPORT_TOPIC_BY_CODE } from '@/shared/config/support';
+import { SUPPORT_REQUEST_STATUSES, SUPPORT_TOPIC_BY_CODE } from '@/shared/config/support';
+import { MODERATOR_TRANSITIONS, REJECTION_REASON_BY_CODE } from '@/shared/config/problemStatuses';
+import { isModerator } from '@/shared/config/roles';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import {
   addMoodMark,
@@ -35,6 +37,7 @@ import {
   forgetUser,
   isAuthor,
   markRead,
+  moderate,
   notificationsOf,
   problemsOf,
   seedReports,
@@ -42,8 +45,10 @@ import {
   syncAuthor,
   withHistory,
 } from './community';
+import { isQueueStatus, moderationItem, moderationQueue, moderationSummary } from './moderation';
 import { format } from '@/shared/lib/format';
 import demoAccounts from '../accounts.json';
+import demoSupport from '../support.json';
 import { demoContent, localizeDemo, nameOf, setResponseLanguage } from './locale';
 import errors from '@/texts/ru/errors.json';
 
@@ -52,13 +57,19 @@ const accounts = new Map(
 );
 demoAccounts.forEach(({ user, reports = [] }) => seedReports(user, reports));
 const sessions = new Map(); // токен → email
-const supportRequests = [];
+const HOUR = 3_600_000;
+// Обращения в поддержку, новые первыми; в демо уже есть несколько от жителей.
+const supportRequests = demoSupport.map(({ hours_ago: hoursAgo, ...request }, i) => ({
+  ...request,
+  id: `S-${String(demoSupport.length - i).padStart(4, '0')}`,
+  created_at: new Date(Date.now() - hoursAgo * HOUR).toISOString(),
+}));
 const confirmations = new Map(); // id проблемы → Set id пользователей
 const MAP_RECENT_MS = 30 * 24 * 3_600_000; // решённые проблемы остаются на карте 30 дней
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// Сообщения берутся из src/texts/{ru,en}/errors.json по ключу (ключ — код ошибки, если не задан другой).
+// Сообщения берутся из src/texts/<язык>/errors.json по ключу (ключ — код ошибки, если не задан другой).
 function fail(status, code, messageKey = code, values = {}) {
   throw new ApiError(status, code, format(errors.api[messageKey], values));
 }
@@ -79,6 +90,18 @@ function currentUser(token) {
   return currentAccount(token).user;
 }
 
+function requireModerator(token) {
+  const user = currentUser(token);
+  if (!isModerator(user)) fail(403, 'forbidden');
+  return user;
+}
+
+// Автор анонимной проблемы не уходит наружу: его видят только он сам и модератор.
+function withoutHiddenAuthor(problem, user) {
+  const sees = user && (isAuthor(problem, user) || isModerator(user));
+  return problem.is_anonymous && !sees ? { ...problem, author: null } : problem;
+}
+
 function nicknameTaken(nickname, exceptId) {
   return [...accounts.values()].some(
     ({ user }) => user.id !== exceptId && user.nickname.toLowerCase() === nickname.toLowerCase(),
@@ -89,7 +112,7 @@ function nicknameTaken(nickname, exceptId) {
 function viewOf(problem, token) {
   const email = sessions.get(token);
   const user = email && accounts.get(email)?.user;
-  const view = withHistory(problem);
+  const view = withHistory(withoutHiddenAuthor(problem, user));
   if (!user) return view;
   return {
     ...view,
@@ -320,6 +343,7 @@ const routes = [
         description,
         location,
         photos: photos.map((photo) => ({ url: URL.createObjectURL(photo) })),
+        isAnonymous: body.get('is_anonymous') === 'true',
       });
       claimProblem(problem, user);
       simulateNeighbours(problem);
@@ -350,7 +374,13 @@ const routes = [
         topic,
         created_at: new Date().toISOString(),
       };
-      supportRequests.push({ ...ticket, email, message, files_count: files.length });
+      supportRequests.unshift({
+        ...ticket,
+        email,
+        message,
+        files_count: files.length,
+        status: 'new',
+      });
       return ticket;
     },
   ],
@@ -375,16 +405,79 @@ const routes = [
     'GET',
     /^\/problems$/,
     ({ query }) =>
-      problems.filter(
-        (p) =>
-          p.status !== 'rejected' &&
-          (!query.district || p.district === query.district) &&
-          (!query.category || p.category === query.category) &&
-          (query.status
-            ? p.status === query.status
-            : p.status !== 'resolved' ||
-              Date.now() - new Date(p.created_at).getTime() < MAP_RECENT_MS),
-      ),
+      problems
+        .filter(
+          (p) =>
+            p.status !== 'rejected' &&
+            (!query.district || p.district === query.district) &&
+            (!query.category || p.category === query.category) &&
+            (query.status
+              ? p.status === query.status
+              : p.status !== 'resolved' ||
+                Date.now() - new Date(p.created_at).getTime() < MAP_RECENT_MS),
+        )
+        .map((p) => withoutHiddenAuthor(p, null)),
+  ],
+  [
+    'GET',
+    /^\/moderation\/problems$/,
+    ({ query, token }) => {
+      requireModerator(token);
+      if (!isQueueStatus(query.status ?? 'active')) fail(422, 'invalid_status_change');
+      return moderationQueue(query);
+    },
+  ],
+  [
+    'GET',
+    /^\/moderation\/summary$/,
+    ({ token }) => {
+      requireModerator(token);
+      return moderationSummary(supportRequests);
+    },
+  ],
+  [
+    'PATCH',
+    /^\/problems\/([\w-]+)\/status$/,
+    ({ params, body, token }) => {
+      requireModerator(token);
+      const problem = problems.find((p) => p.id === params[0]);
+      if (!problem) fail(404, 'problem_not_found');
+      if (!MODERATOR_TRANSITIONS[problem.status]?.includes(body.status)) {
+        fail(409, 'invalid_status_change');
+      }
+      let duplicateOf = null;
+      if (body.status === 'rejected') {
+        if (!REJECTION_REASON_BY_CODE[body.reason]) fail(422, 'invalid_reason');
+        if (body.duplicate_of) {
+          duplicateOf = problems.find((p) => p.id === body.duplicate_of && p !== problem);
+          if (!duplicateOf) fail(404, 'problem_not_found');
+        }
+      }
+      moderate(problem, { status: body.status, reason: body.reason, duplicateOf });
+      return moderationItem(problem);
+    },
+  ],
+  [
+    'GET',
+    /^\/moderation\/support-requests$/,
+    ({ token }) => {
+      requireModerator(token);
+      return supportRequests;
+    },
+  ],
+  [
+    'PATCH',
+    /^\/moderation\/support-requests\/([\w-]+)$/,
+    ({ params, body, token }) => {
+      requireModerator(token);
+      const request = supportRequests.find((r) => r.id === params[0]);
+      if (!request) fail(404, 'not_found', 'not_found', { method: 'PATCH', path: params[0] });
+      if (!SUPPORT_REQUEST_STATUSES.some((status) => status.code === body.status)) {
+        fail(422, 'invalid_status_change');
+      }
+      request.status = body.status;
+      return request;
+    },
   ],
 ];
 

@@ -24,6 +24,7 @@ import dictionaries from '@/texts/ru/dictionaries.json';
 import errors from '@/texts/ru/errors.json';
 import home from '@/texts/ru/home.json';
 import map from '@/texts/ru/map.json';
+import moderation from '@/texts/ru/moderation.json';
 import mood from '@/texts/ru/mood.json';
 import nav from '@/texts/ru/nav.json';
 import notFound from '@/texts/ru/notFound.json';
@@ -52,6 +53,7 @@ const texts = {
   errors,
   home,
   map,
+  moderation,
   mood,
   nav,
   notFound,
@@ -216,7 +218,7 @@ export function getLocale() {
 export const subscribeLanguage = listeners.subscribe;
 
 // Тексты — на новом языке, как только перевод загружен; подписчики перерисовываются. Плавную смену
-// делает shared/animations/languageTransition.js.
+// делает shared/animations/languageChange/languageTransition.js.
 export async function applyLanguage(next) {
   if (next === language || !LANGUAGES.includes(next)) return;
   await loadLanguage(next);

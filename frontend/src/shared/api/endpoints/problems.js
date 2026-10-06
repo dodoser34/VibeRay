@@ -13,10 +13,18 @@ export function confirmProblem(problemId) {
   return request('POST', `/problems/${problemId}/confirm`);
 }
 
-// Multipart: поля + до 3 фото (уже перекодированы на клиенте без EXIF).
-export function createProblem({ category, location, description, photos = [] }) {
+// Multipart: поля + до 3 фото (уже перекодированы на клиенте без EXIF). isAnonymous — не показывать
+// жителям ник и аватар автора (модератор его видит).
+export function createProblem({
+  category,
+  location,
+  description,
+  photos = [],
+  isAnonymous = false,
+}) {
   const form = new FormData();
   form.append('category', category);
+  form.append('is_anonymous', String(isAnonymous));
   form.append('lon', String(location[0]));
   form.append('lat', String(location[1]));
   form.append('description', description);

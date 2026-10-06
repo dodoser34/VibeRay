@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { MOODS } from '@/shared/config/moods';
-import { Modal } from '@/shared/ui/Modal';
+import { Modal } from '@/shared/ui/windows/Modal';
 import { MoodFace } from './MoodFace';
 import texts from '@/texts/ru/mood.json';
 import styles from './MoodPicker.module.css';

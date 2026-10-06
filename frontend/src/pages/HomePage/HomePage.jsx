@@ -8,8 +8,9 @@ import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { usePagePath } from '@/shared/hooks/usePagePath';
-import { Avatar } from '@/shared/ui/Avatar';
-import { Button } from '@/shared/ui/Button';
+import { Avatar } from '@/shared/ui/avatar/Avatar';
+import { Button } from '@/shared/ui/controls/Button';
+import { isModerator } from '@/shared/config/roles';
 import home from '@/texts/ru/home.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './HomePage.module.css';
@@ -120,6 +121,11 @@ export function HomePage() {
   );
 
   const celebrate = async (user, how) => {
+    // У модератора свой интерфейс: после входа — сразу в его раздел.
+    if (isModerator(user)) {
+      go('/moderation');
+      return;
+    }
     const slug = user.home_district ?? FALLBACK_DISTRICT;
     heroRef.current?.highlightDistrict(slug);
 

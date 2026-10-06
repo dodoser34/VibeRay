@@ -8,10 +8,11 @@ import { usePagePath } from '@/shared/hooks/usePagePath';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/format';
 import { localizePath } from '@/shared/lib/language';
-import { Avatar } from '@/shared/ui/Avatar';
+import { isModerator } from '@/shared/config/roles';
+import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { LogoMark } from '@/shared/ui/icons/LogoMark';
-import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
-import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
+import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
+import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { usePageNavigate, useTransitionNavigate } from '../transitions/useTransition';
 import nav from '@/texts/ru/nav.json';
 import styles from './TabBar.module.css';
@@ -23,7 +24,9 @@ function activeKeyFor(pathname) {
   if (pathname === '/register') return 'register';
   if (pathname === '/about') return 'about';
   if (pathname === '/support') return 'support';
-  if (pathname === '/settings') return 'me';
+  if (pathname === '/settings' || pathname === '/moderation/settings') return 'me';
+  if (pathname === '/moderation') return 'moderation-queue';
+  if (pathname.startsWith('/moderation/')) return `moderation-${pathname.slice(12)}`;
   return 'login';
 }
 
@@ -46,27 +49,45 @@ export function TabBar() {
     pathRef.current = pathname;
   }, [pathname]);
 
-  const items = [
-    ...(user
-      ? [
-          {
-            key: 'me',
-            label: user.nickname,
-            avatar: user.avatar_url,
-            to: '/settings',
-            title: nav.tabs.settings.title,
-            ariaLabel: format(nav.tabs.settings.label, { nickname: user.nickname }),
-          },
-          { key: 'logout', ...nav.tabs.logout, action: logout },
-        ]
-      : [
-          { key: 'login', ...nav.tabs.login, to: '/login' },
-          { key: 'register', ...nav.tabs.register, to: '/register' },
-        ]),
-    { key: 'map', ...nav.tabs.map, to: `/map/${DEFAULT_CITY}`, accent: true },
-    { key: 'about', ...nav.tabs.about, to: '/about' },
-    { key: 'support', ...nav.tabs.support, to: '/support' },
-  ];
+  // У модератора свой набор вкладок — только его разделы; выход — в его настройках.
+  const items = isModerator(user)
+    ? [
+        {
+          key: 'me',
+          label: user.nickname,
+          avatar: user.avatar_url,
+          to: '/moderation/settings',
+          title: nav.moderator.settings,
+          ariaLabel: nav.moderator.settings,
+        },
+        ...['queue', 'map', 'city', 'support'].map((key) => ({
+          key: `moderation-${key}`,
+          ...nav.moderator.tabs[key],
+          to: key === 'queue' ? '/moderation' : `/moderation/${key}`,
+          accent: key === 'map',
+        })),
+      ]
+    : [
+        ...(user
+          ? [
+              {
+                key: 'me',
+                label: user.nickname,
+                avatar: user.avatar_url,
+                to: '/settings',
+                title: nav.tabs.settings.title,
+                ariaLabel: format(nav.tabs.settings.label, { nickname: user.nickname }),
+              },
+              { key: 'logout', ...nav.tabs.logout, action: logout },
+            ]
+          : [
+              { key: 'login', ...nav.tabs.login, to: '/login' },
+              { key: 'register', ...nav.tabs.register, to: '/register' },
+            ]),
+        { key: 'map', ...nav.tabs.map, to: `/map/${DEFAULT_CITY}`, accent: true },
+        { key: 'about', ...nav.tabs.about, to: '/about' },
+        { key: 'support', ...nav.tabs.support, to: '/support' },
+      ];
 
   const movePill = useCallback((key, duration) => {
     const active = trackRef.current.querySelector(`[data-key="${key}"]`);
@@ -185,7 +206,7 @@ export function TabBar() {
   return (
     <header ref={rootRef} className={styles.root}>
       <Link
-        to={localizePath('/')}
+        to={localizePath(isModerator(user) ? '/moderation' : '/')}
         className={styles.logo}
         aria-label={nav.logoLabel}
         data-logo
@@ -255,7 +276,7 @@ export function TabBar() {
           <ThemeSwitch />
         </span>
         <LanguageSwitch />
-        {user && <NotificationBell onNavigate={openPage} />}
+        {user && !isModerator(user) && <NotificationBell onNavigate={openPage} />}
       </div>
     </header>
   );

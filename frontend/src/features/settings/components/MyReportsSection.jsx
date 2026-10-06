@@ -5,7 +5,7 @@ import { getMyProblems } from '@/shared/api/endpoints/users';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { plural } from '@/shared/lib/plural';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import { ReportItem } from './ReportItem';
 import { SettingsSection } from './SettingsSection';
 import texts from '@/texts/ru/settings.json';

@@ -1,14 +1,25 @@
 [
   {
-    "password": "demo12345",
+    "password": "User12345",
     "user": {
-      "id": "u-demo",
-      "email": "demo@viberay.kz",
-      "nickname": "Dodoser34",
+      "id": "u-user",
+      "email": "user@viberay.kz",
+      "nickname": "Пользователь",
       "avatar_url": "preset:3",
       "home_district": "center",
       "role": "user"
     },
     "reports": ["in_progress", "confirmed", "new", "rejected", "resolved", "confirmed"]
+  },
+  {
+    "password": "Moder12345",
+    "user": {
+      "id": "u-moderator",
+      "email": "moderator@viberay.kz",
+      "nickname": "Модератор",
+      "avatar_url": "preset:6",
+      "home_district": null,
+      "role": "moderator"
+    }
   }
 ]

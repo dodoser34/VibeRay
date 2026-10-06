@@ -9,6 +9,8 @@ const PAGES = {
   about: () => import('@/pages/AboutPage/AboutPage'),
   support: () => import('@/pages/SupportPage/SupportPage'),
   settings: () => import('@/pages/SettingsPage/SettingsPage'),
+  moderation: () => import('@/pages/ModerationPage/ModerationPage'),
+  moderationMap: () => import('@/pages/ModerationMapPage/ModerationMapPage'),
   notFound: () => import('@/pages/NotFoundPage/NotFoundPage'),
 };
 
@@ -44,6 +46,18 @@ const pagesFor = (prefix) => [
   { path: `${prefix}/about`, ...page('about', 'AboutPage') },
   { path: `${prefix}/support`, ...page('support', 'SupportPage') },
   { path: `${prefix}/settings`, ...page('settings', 'SettingsPage') },
+  // Разделы модератора — свой интерфейс (app/useRoleRoute.js); настройки — та же страница настроек.
+  { path: `${prefix}/moderation`, ...page('moderation', 'ModerationPage', { section: 'queue' }) },
+  { path: `${prefix}/moderation/map`, ...page('moderationMap', 'ModerationMapPage') },
+  {
+    path: `${prefix}/moderation/city`,
+    ...page('moderation', 'ModerationPage', { section: 'city' }),
+  },
+  {
+    path: `${prefix}/moderation/support`,
+    ...page('moderation', 'ModerationPage', { section: 'support' }),
+  },
+  { path: `${prefix}/moderation/settings`, ...page('settings', 'SettingsPage') },
 ];
 
 export const router = createBrowserRouter(

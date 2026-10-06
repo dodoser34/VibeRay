@@ -161,6 +161,36 @@
   font-size: var(--fs-2xs);
 }
 
+/* «Скрыть меня»: вместо ника и аватара жители видят «Анонимный житель» */
+.anonymous {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.anonymous input {
+  flex: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.125rem;
+  accent-color: var(--color-accent);
+}
+
+.anonymous > span {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.anonymousLabel {
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
 /* Шаг 3 — подробности */
 .textareaWrap {
   position: relative;

@@ -10,7 +10,7 @@ import { useLanguage } from '@/shared/hooks/useLanguage';
 import { format } from '@/shared/lib/format';
 import { formatTime } from '@/shared/lib/formatDate';
 import texts from '@/texts/ru/map.json';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import { HEIGHT_SCALE } from './heightScale';
 import styles from './MapFilters.module.css';
 

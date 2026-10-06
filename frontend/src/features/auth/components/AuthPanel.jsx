@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { WIDE_QUERY } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
-import { createPuzzle } from '@/shared/animations/puzzlePieces';
+import { createPuzzle } from '@/shared/animations/authPuzzle/puzzlePieces';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { LoginForm } from './LoginForm';

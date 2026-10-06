@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TextField } from '@/shared/ui/TextField';
+import { TextField } from '@/shared/ui/controls/TextField';
 import auth from '@/texts/ru/auth.json';
 import styles from './PasswordField.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

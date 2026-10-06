@@ -51,5 +51,11 @@
     "operational": "Работает",
     "degraded": "Работает с перебоями",
     "down": "Не работает"
+  },
+  "supportRequestStatuses": {
+    "new": "Новое",
+    "in_progress": "В работе",
+    "answered": "Отвечено",
+    "closed": "Закрыто"
   }
 }

@@ -1,4 +1,4 @@
-import { gsap } from './gsapSetup';
+import { gsap } from '../gsapSetup';
 
 // Блоки поднимаются при попадании в зону видимости. Видимость даёт IntersectionObserver, который
 // браузер проверяет вживую: ScrollTrigger рассчитывает позиции заранее, и после изменения высоты

@@ -1,0 +1,33 @@
+/* Модерация на планшете стоя: сводка в два ряда, город — одной колонкой (таблица районов, под ней
+   категории и статусы), панели карты модератора — уже */
+@media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
+  :root [data-ui='moderation-page'] {
+    padding-inline: var(--space-4);
+  }
+
+  :root [data-ui='moderation-kpis'] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  :root [data-ui='moderation-kpis'] > :nth-child(4) {
+    border-left: 0;
+  }
+
+  :root [data-ui='moderation-kpis'] > :nth-child(n + 4) {
+    border-top: 1px solid var(--color-glass-border);
+  }
+
+  :root [data-ui='moderation-city'] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Карта модератора: выбранная проблема — панелью снизу во всю ширину, чтобы не закрывать фильтры */
+  :root [data-ui='moderation-map-detail'] {
+    top: auto;
+    right: var(--space-4);
+    bottom: var(--space-4);
+    left: var(--space-4);
+    width: auto;
+    max-height: 55%;
+  }
+}

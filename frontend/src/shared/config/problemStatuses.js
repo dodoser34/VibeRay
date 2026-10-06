@@ -29,6 +29,20 @@ export const REJECTION_REASON_BY_CODE = Object.fromEntries(
   REJECTION_REASONS.map((r) => [r.code, r]),
 );
 
+// Что модератор может сделать с проблемой в каждом статусе (ARCHITECTURE.md 6.2): вперёд по пути,
+// подтвердить вручную, вернуть на шаг назад (ошибся, проблема вернулась) и восстановить отклонённую.
+export const MODERATOR_TRANSITIONS = {
+  new: ['confirmed', 'in_progress', 'rejected'],
+  confirmed: ['in_progress', 'rejected'],
+  in_progress: ['resolved', 'confirmed'],
+  resolved: ['in_progress'],
+  rejected: ['new'],
+};
+
+// Переходы назад по пути — второстепенные кнопки.
+export const isStepBack = (from, to) =>
+  (from === 'in_progress' && to === 'confirmed') || (from === 'resolved' && to === 'in_progress');
+
 export const STATUS_BY_CODE = Object.fromEntries(
   [...PROBLEM_STATUSES, REJECTED_STATUS].map((s) => [s.code, s]),
 );

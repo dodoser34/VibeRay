@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocation } from 'react-router';
 import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
-import { revealOnScroll } from '@/shared/animations/revealOnScroll';
+import { revealOnScroll } from '@/shared/animations/effects/revealOnScroll';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
+import { useAuth } from '@/features/auth';
+import { isModerator } from '@/shared/config/roles';
 import { AccountSection } from './AccountSection';
 import { DistrictSection } from './DistrictSection';
 import { MyReportsSection } from './MyReportsSection';
@@ -13,6 +15,8 @@ import texts from '@/texts/ru/settings.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SettingsCenter.module.css';
 
+// Модератору свои сообщения и «свой район» не нужны — у него свой интерфейс.
+const MODERATOR_SECTIONS = ['profile', 'security', 'account'];
 const SECTIONS = ['profile', 'reports', 'district', 'security', 'account'].map((key) => ({
   key,
   id: `settings-${key}`,
@@ -31,6 +35,11 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
   const rootRef = useRef(null);
   const reduced = useReducedMotion();
   const entered = usePageEntered();
+  const { user } = useAuth();
+  const moderator = isModerator(user);
+  const sections = moderator
+    ? SECTIONS.filter(({ key }) => MODERATOR_SECTIONS.includes(key))
+    : SECTIONS;
   const [active, setActive] = useState(SECTIONS[0].id);
   const names = useMemo(
     () => Object.fromEntries((districts ?? []).map((d) => [d.slug, d.name])),
@@ -53,9 +62,10 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
       // Раздел считается текущим, когда пересекает полосу чуть выше середины экрана.
       { rootMargin: '-35% 0px -60% 0px' },
     );
-    SECTIONS.forEach(({ id }) => observer.observe(document.getElementById(id)));
+    sections.forEach(({ id }) => observer.observe(document.getElementById(id)));
     return () => observer.disconnect();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- набор разделов меняется только с ролью
+  }, [moderator]);
 
   useGSAP(
     (context, contextSafe) => {
@@ -86,17 +96,17 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
           {texts.kicker}
         </p>
         <h1 key={language} className={styles.title} data-title>
-          {texts.title}
+          {moderator ? texts.moderator.title : texts.title}
         </h1>
         <p className={styles.lead} data-hero>
-          {texts.lead}
+          {moderator ? texts.moderator.lead : texts.lead}
         </p>
       </header>
 
       <div className={styles.layout} data-ui="settings-layout">
         <nav className={styles.nav} aria-label={texts.navLabel} data-ui="settings-nav">
           <ul className={styles.navList}>
-            {SECTIONS.map(({ id, label, short }) => (
+            {sections.map(({ id, label, short }) => (
               <li key={id} data-nav-item>
                 <a
                   href={`#${id}`}
@@ -117,8 +127,10 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
 
         <div className={styles.sections}>
           <ProfileSection id={SECTIONS[0].id} />
-          <MyReportsSection id={SECTIONS[1].id} names={names} onNavigate={onNavigate} />
-          <DistrictSection id={SECTIONS[2].id} districts={districts} />
+          {!moderator && (
+            <MyReportsSection id={SECTIONS[1].id} names={names} onNavigate={onNavigate} />
+          )}
+          {!moderator && <DistrictSection id={SECTIONS[2].id} districts={districts} />}
           <SecuritySection id={SECTIONS[3].id} />
           <AccountSection id={SECTIONS[4].id} onLogout={onLogout} onDeleted={onDeleted} />
         </div>

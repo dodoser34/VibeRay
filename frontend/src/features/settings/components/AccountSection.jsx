@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import { GRAPHICS_MODES, setGraphicsMode, useGraphicsMode } from '@/adaptations/core';
-import { Button } from '@/shared/ui/Button';
-import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
-import { OptionGroup } from '@/shared/ui/OptionGroup';
-import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
+import { Button } from '@/shared/ui/controls/Button';
+import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
+import { OptionGroup } from '@/shared/ui/controls/OptionGroup';
+import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { DeleteAccountDialog } from './DeleteAccountDialog';
 import { SettingsSection } from './SettingsSection';
 import texts from '@/texts/ru/settings.json';
 import styles from './AccountSection.module.css';
 
-// onLogout и onDeleted решает страница: сначала уводит с настроек, потом закрывает сессию.
+// onLogout и onDeleted решает страница: сначала уводит с настроек, потом закрывает сессию. Без
+// onDeleted (модератор) удаления аккаунта нет — модераторов заводит и убирает администратор.
 export function AccountSection({ id, onLogout, onDeleted }) {
   const [confirming, setConfirming] = useState(false);
   const [leaving, setLeaving] = useState(false);
@@ -55,21 +56,25 @@ export function AccountSection({ id, onLogout, onDeleted }) {
         <div className={styles.row}>
           <div className={styles.text}>
             <h3 className={styles.rowTitle}>{texts.account.logoutTitle}</h3>
-            <p className={styles.rowText}>{texts.account.logoutText}</p>
+            <p className={styles.rowText}>
+              {onDeleted ? texts.account.logoutText : texts.moderator.logoutText}
+            </p>
           </div>
           <Button variant="ghost" onClick={logout} loading={leaving}>
             {texts.account.logout}
           </Button>
         </div>
-        <div className={styles.row} data-danger>
-          <div className={styles.text}>
-            <h3 className={styles.rowTitle}>{texts.account.deleteTitle}</h3>
-            <p className={styles.rowText}>{texts.account.deleteText}</p>
+        {onDeleted && (
+          <div className={styles.row} data-danger>
+            <div className={styles.text}>
+              <h3 className={styles.rowTitle}>{texts.account.deleteTitle}</h3>
+              <p className={styles.rowText}>{texts.account.deleteText}</p>
+            </div>
+            <Button variant="danger" onClick={() => setConfirming(true)}>
+              {texts.account.delete}
+            </Button>
           </div>
-          <Button variant="danger" onClick={() => setConfirming(true)}>
-            {texts.account.delete}
-          </Button>
-        </div>
+        )}
       </div>
       {confirming && (
         <DeleteAccountDialog onClose={() => setConfirming(false)} onDeleted={onDeleted} />

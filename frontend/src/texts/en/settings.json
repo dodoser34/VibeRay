@@ -107,5 +107,11 @@
     "confirmPassword": "Password",
     "confirm": "Delete permanently",
     "cancel": "Cancel"
+  },
+  "moderator": {
+    "title": "Moderator settings",
+    "lead": "Profile, sign-in, language and the look of your workspace.",
+    "previewMeta": "Moderator",
+    "logoutText": "On this device."
   }
 }

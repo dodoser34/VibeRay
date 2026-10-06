@@ -5,7 +5,7 @@ import {
   loadLanguage,
   settleLanguageWork,
 } from '@/shared/lib/language';
-import { gsap } from './gsapSetup';
+import { gsap } from '../gsapSetup';
 
 const MARK = 'data-language-text';
 const SKIP = 'script, style, noscript, canvas, textarea, [data-language-static]';

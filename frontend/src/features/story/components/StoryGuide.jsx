@@ -6,7 +6,7 @@ import { MOODS } from '@/shared/config/moods';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import { FULL_STORY } from '../content';
 import { GuideMap } from './GuideMap';
 import about from '@/texts/ru/about.json';

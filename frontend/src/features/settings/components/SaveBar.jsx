@@ -1,4 +1,4 @@
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import texts from '@/texts/ru/settings.json';
 import styles from './SaveBar.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

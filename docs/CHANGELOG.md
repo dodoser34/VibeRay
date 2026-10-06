@@ -11,6 +11,46 @@
 
 ---
 
+## 2026-10-06
+
+### Подпапки элементов интерфейса и анимаций
+
+- `shared/ui` и `shared/animations` разложены по подпапкам: элементы управления (`ui/controls`), окна (`ui/windows`),
+  аватар (`ui/avatar`), иконки (`ui/icons`), флаги (`ui/flags`), графики (`ui/charts`); у каждой анимации своя папка —
+  переход между страницами (`animations/pageTransition`), пазл входа и регистрации (`animations/authPuzzle`),
+  смена языка (`animations/languageChange`), смена темы (`animations/themeChange`), эффекты (`animations/effects`),
+  фон (`animations/background`); ядро анимаций
+  (`gsapSetup.js`, `presets.js`) — в корне. На сайте ничего не изменилось — поправлены пути импорта.
+
+Файлы: `shared/ui/*`, `shared/animations/*`, импорты в 45 файлах.
+
+### Интерфейс модератора
+
+- **Две роли.** Модератор после входа попадает в свой интерфейс (`/moderation/…`), страниц жителей у него нет:
+  - **Очередь** — проблемы с фильтрами (статус, район, категория, порядок) и сводкой сверху (ждут решения,
+    подтверждены неделю и дольше, в работе, решено за неделю, дней до решения, обращения без ответа). Для каждой
+    проблемы — кнопки по её статусу: подтвердить, взять в работу, отметить решённой, отклонить (причина и номер
+    исходной для дубля), снять с работы, вернуть в работу, восстановить отклонённую. Автор получает уведомление.
+  - **Карта** — та же 3D-карта города, но с метками всех открытых проблем, фильтром по статусу и карточкой с
+    действиями модератора по клику.
+  - **Город** — проблемные районы (открыто, ждут решения, новых за неделю, самая старая), категории и статусы.
+  - **Обращения** — обращения из формы поддержки с почтой для ответа, ответ письмом, статус: новое → в работе →
+    отвечено → закрыто.
+  - **Настройки** — профиль, пароль, язык, тема, графика и выход.
+- **Анонимная публикация:** в форме проблемы — галочка «Опубликовать анонимно»; жители видят «Анонимный житель»,
+  модератор видит автора.
+- **График «за день»** — 8 точек по 3 часа: в тихих районах точки реже скрываются порогом приватности; в подсказке
+  точки — интервал «09:00–12:00».
+- Демо-вход модератора на форме входа; тексты — на четырёх языках; адаптации раздела под планшет и телефон.
+
+Файлы: `features/moderation/*`, `pages/{ModerationPage,ModerationMapPage}/*`, `app/useRoleRoute.js` (новые);
+`app/{App,router}.jsx`, `app/layout/TabBar.jsx`, `app/transitions/TransitionProvider.jsx`,
+`adaptations/mobile/navigation/MobileNav.jsx`, `adaptations/{tablet,mobile}/moderation.css`,
+`features/settings/*`, `features/problems/{ProblemCard,ReportProblem}.*`, `features/auth/LoginForm.jsx`,
+`features/stats/lib/seriesLabels.js`, `pages/{HomePage,SettingsPage}/*`, `shared/api/endpoints/{moderation,problems}.js`,
+`shared/config/{roles,problemStatuses,support}.js`, `texts/*/{moderation,nav,auth,problems,settings,errors,dictionaries}.json`,
+`demo-data/{accounts,support}.json`, `demo-data/api/{handler,moderation,community,generate}.js`.
+
 ## 2026-10-05
 
 ### Язык по браузеру и лёгкая загрузка переводов

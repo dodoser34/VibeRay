@@ -1,7 +1,7 @@
-import { changeTheme } from '@/shared/animations/themeTransition';
+import { changeTheme } from '@/shared/animations/themeChange/themeTransition';
 import { useTheme } from '@/shared/hooks/useTheme';
 import common from '@/texts/ru/common.json';
-import { Icon } from './icons/Icon';
+import { Icon } from '../icons/Icon';
 import { OptionGroup } from './OptionGroup';
 import styles from './ThemeSwitch.module.css';
 

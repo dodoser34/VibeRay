@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { usePagePath } from '@/shared/hooks/usePagePath';
-import { SiteBackground } from '@/shared/animations/SiteBackground';
+import { SiteBackground } from '@/shared/animations/background/SiteBackground';
 import { subscribeTheme } from '@/shared/lib/theme';
 import styles from './AnimatedBackground.module.css';
 

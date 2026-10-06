@@ -2,8 +2,8 @@ import { useRef, useState } from 'react';
 import { USE_MOCKS } from '@/shared/api/client';
 import { gsap } from '@/shared/animations/gsapSetup';
 import { EMAIL_PATTERN } from '@/shared/config/validation';
-import { Button } from '@/shared/ui/Button';
-import { TextField } from '@/shared/ui/TextField';
+import { Button } from '@/shared/ui/controls/Button';
+import { TextField } from '@/shared/ui/controls/TextField';
 import { useAuth } from '../model/useAuth';
 import { PasswordField } from './PasswordField';
 import { format } from '@/shared/lib/format';
@@ -11,8 +11,13 @@ import demoAccounts from '@/demo-data/accounts.json';
 import auth from '@/texts/ru/auth.json';
 import styles from './PassForms.module.css';
 
-// Подсказка демо-входа видна только в демо-режиме (без бэкенда).
-const DEMO = { email: demoAccounts[0].user.email, password: demoAccounts[0].password };
+// Подсказка демо-входа видна только в демо-режиме (без бэкенда): житель и модератор.
+const credentials = (role) => {
+  const account = demoAccounts.find(({ user }) => user.role === role);
+  return { email: account.user.email, password: account.password };
+};
+const DEMO = credentials('user');
+const DEMO_MODERATOR = credentials('moderator');
 
 export function LoginForm({ onSuccess, onSwitch }) {
   const { login } = useAuth();
@@ -93,6 +98,11 @@ export function LoginForm({ onSuccess, onSwitch }) {
         <p className={styles.demo} data-part>
           {format(auth.login.demo, DEMO)}{' '}
           <Button variant="text" onClick={() => setValues(DEMO)}>
+            {auth.login.demoFill}
+          </Button>
+          <br />
+          {format(auth.login.demoModerator, DEMO_MODERATOR)}{' '}
+          <Button variant="text" onClick={() => setValues(DEMO_MODERATOR)}>
             {auth.login.demoFill}
           </Button>
         </p>

@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from 'react';
-import { gsap } from './gsapSetup';
+import { gsap } from '../gsapSetup';
 
 // Строки с data-flip="<key>" переезжают на новое место при смене порядка (FLIP): после того как
 // React их переставит, каждая строка начинает с прежнего места на экране и анимируется к нулю.

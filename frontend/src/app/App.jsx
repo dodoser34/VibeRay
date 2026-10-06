@@ -5,11 +5,13 @@ import { AnimatedBackground } from './layout/AnimatedBackground';
 import { TabBar } from './layout/TabBar';
 import { TransitionProvider } from './transitions/TransitionProvider';
 import { useLanguageRoute } from './useLanguageRoute';
+import { useRoleRoute } from './useRoleRoute';
 
 export function App() {
   // Язык — из адреса (/en/…); оболочка (шапка, меню) перерисовывается на новом языке без
   // перезагрузки.
   useLanguageRoute();
+  useRoleRoute();
   const { isMobile } = useViewport();
   return (
     <TransitionProvider>

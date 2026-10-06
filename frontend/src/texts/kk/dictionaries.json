@@ -51,5 +51,11 @@
     "operational": "Жұмыс істеп тұр",
     "degraded": "Үзіліспен жұмыс істейді",
     "down": "Жұмыс істемейді"
+  },
+  "supportRequestStatuses": {
+    "new": "Жаңа",
+    "in_progress": "Жұмыста",
+    "answered": "Жауап берілді",
+    "closed": "Жабылды"
   }
 }

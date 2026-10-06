@@ -1,0 +1,122 @@
+{
+  "kicker": "Moderation",
+  "title": "Arbeitsplatz der Moderation",
+  "lead": "Probleme, die auf eine Entscheidung warten, die Viertel, in denen sie sich häufen, und Anfragen der Bewohner.",
+  "kpiLabel": "Übersicht",
+  "kpi": {
+    "waiting": "warten auf Entscheidung",
+    "stale": "seit einer Woche oder länger bestätigt",
+    "inProgress": "in Arbeit",
+    "resolvedWeek": "in 7 Tagen gelöst",
+    "avgResolution": "Tage im Schnitt bis zur Lösung",
+    "supportNew": "unbeantwortete Anfragen",
+    "noData": "—"
+  },
+  "sections": {
+    "queue": "Problem-Warteschlange",
+    "city": "Stadt",
+    "support": "Anfragen"
+  },
+  "queue": {
+    "filtersLabel": "Filter der Warteschlange",
+    "statusLabel": "Status",
+    "statusActive": "Alle offenen",
+    "district": "Viertel",
+    "allDistricts": "Alle Viertel",
+    "category": "Kategorie",
+    "allCategories": "Alle Kategorien",
+    "sort": "Reihenfolge",
+    "sorts": {
+      "newest": "Neueste zuerst",
+      "oldest": "Älteste zuerst",
+      "confirmations": "Meiste Bestätigungen"
+    },
+    "shown": "{shown} von {total} angezeigt",
+    "loading": "Warteschlange wird geladen…",
+    "empty": "In dieser Auswahl gibt es keine Probleme.",
+    "number": "Nr. {id}",
+    "anonymous": "anonym",
+    "author": "Autor: {nickname}",
+    "confirmations": "Bestätigungen: {count}",
+    "expand": "Details",
+    "collapse": "Einklappen",
+    "openOnMap": "Auf der Karte",
+    "history": "Statusverlauf",
+    "photoAlt": "Foto des Problems",
+    "actions": {
+      "confirmed": "Bestätigen",
+      "in_progress": "In Arbeit nehmen",
+      "resolved": "Als gelöst markieren",
+      "rejected": "Ablehnen",
+      "new": "Wiederherstellen"
+    },
+    "reject": {
+      "legend": "Grund der Ablehnung",
+      "duplicateOf": "Nummer des ursprünglichen Problems",
+      "duplicateHint": "Der Autor bekommt einen Link zum ursprünglichen Problem, um es zu bestätigen.",
+      "confirm": "Ablehnen",
+      "cancel": "Abbrechen",
+      "duplicatePlaceholder": "p12"
+    },
+    "done": {
+      "in_progress": "Nr. {id} ist jetzt in Arbeit — der Autor wird benachrichtigt.",
+      "resolved": "Nr. {id} ist als gelöst markiert — der Autor wird benachrichtigt.",
+      "rejected": "Nr. {id} wurde abgelehnt — der Autor wird mit dem Grund benachrichtigt.",
+      "confirmed": "Nr. {id} ist bestätigt.",
+      "new": "Nr. {id} ist wiederhergestellt — Bewohner sehen es wieder."
+    },
+    "stepActions": {
+      "in_progress_confirmed": "Aus der Arbeit nehmen",
+      "resolved_in_progress": "Wieder öffnen"
+    }
+  },
+  "city": {
+    "districtsTitle": "Problemviertel",
+    "districtsHint": "Viertel nach Zahl der offenen Probleme. Ein offenes Problem, das älter als zwei Wochen ist, ist hervorgehoben. Klicke auf ein Viertel, um seine Warteschlange zu öffnen.",
+    "tableCaption": "Offene Probleme nach Vierteln",
+    "columns": {
+      "name": "Viertel",
+      "open": "Offen",
+      "waiting": "Wartend",
+      "newWeek": "Neu diese Woche",
+      "oldest": "Ältestes",
+      "mood": "Stimmung"
+    },
+    "days": "{count} {forms}",
+    "dayForms": ["Tag", "Tage", "Tage"],
+    "none": "—",
+    "categoriesTitle": "Offene Probleme nach Kategorien",
+    "statusesTitle": "Alle Probleme nach Status",
+    "loading": "Wird berechnet…"
+  },
+  "support": {
+    "title": "Anfragen der Bewohner",
+    "filterLabel": "Welche Anfragen angezeigt werden",
+    "filters": {
+      "open": "Unbeantwortet",
+      "answered": "Beantwortet",
+      "closed": "Geschlossen",
+      "all": "Alle"
+    },
+    "loading": "Anfragen werden geladen…",
+    "empty": "Hier ist nichts.",
+    "reply": "Per E-Mail antworten",
+    "replySubject": "VibeRay: Anfrage {id}",
+    "files": "{count} {forms}",
+    "fileForms": ["Datei", "Dateien", "Dateien"],
+    "statusLabel": "Status der Anfrage {id}"
+  },
+  "leads": {
+    "queue": "Neue und bestätigte Probleme warten auf eine Entscheidung: in Arbeit nehmen, als gelöst markieren oder ablehnen.",
+    "city": "Wo sich offene Probleme häufen und welche Kategorien am häufigsten vorkommen.",
+    "support": "Anfragen aus dem Support-Formular. Die Antwort geht per E-Mail an den Bewohner."
+  },
+  "map": {
+    "title": "Problemkarte",
+    "statusLabel": "Welche Probleme angezeigt werden",
+    "count": "Auf der Karte: {count}",
+    "hint": "Klicke auf eine Markierung, um das Problem mit den Aktionen der Moderation zu öffnen.",
+    "close": "Schließen",
+    "loading": "Probleme werden geladen…"
+  }
+}

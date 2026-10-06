@@ -67,12 +67,12 @@ function notify(userId, { kind, problem, status, count, at = Date.now() }) {
   );
 }
 
-function setStatus(problem, status, at = Date.now()) {
+function setStatus(problem, status, at = Date.now(), notifyAuthor = true) {
   historyOf(problem);
   problem.status = status;
   histories.get(problem.id).push({ status, changed_at: iso(at) });
   const author = authors.get(problem.id);
-  if (author) notify(author, { kind: 'status', problem, status, at });
+  if (author && notifyAuthor) notify(author, { kind: 'status', problem, status, at });
 }
 
 // Модерация: сообщение уходит с карты и из статистики, автор получает уведомление с причиной.
@@ -80,6 +80,29 @@ function reject(problem, reason, duplicateOf, at = Date.now()) {
   problem.rejection_reason = reason;
   if (duplicateOf) problem.duplicate_of = duplicateOf.id;
   setStatus(problem, 'rejected', at);
+}
+
+// Автору сообщают, когда проблему взяли в работу, решили или отклонили; ручное подтверждение, шаг
+// назад и восстановление отклонённой — без уведомления.
+const NOTIFY_ON = ['in_progress', 'resolved'];
+
+// Решение модератора (раздел /moderation): новый статус или отклонение с причиной.
+export function moderate(problem, { status, reason, duplicateOf }) {
+  if (status === 'rejected') {
+    reject(problem, reason, duplicateOf);
+    return;
+  }
+  if (problem.status === 'rejected') {
+    delete problem.rejection_reason;
+    delete problem.duplicate_of;
+  }
+  setStatus(problem, status, Date.now(), NOTIFY_ON.includes(status));
+}
+
+// Когда проблема стала решённой (по истории статусов); null — ещё не решена.
+export function resolvedAt(problem) {
+  const step = historyOf(problem).findLast((item) => item.status === 'resolved');
+  return step ? new Date(step.changed_at).getTime() : null;
 }
 
 function distanceM([lon1, lat1], [lon2, lat2]) {

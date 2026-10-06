@@ -7,10 +7,11 @@ import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { usePagePath } from '@/shared/hooks/usePagePath';
 import { format } from '@/shared/lib/format';
 import { localizePath } from '@/shared/lib/language';
-import { Avatar } from '@/shared/ui/Avatar';
-import { LanguageSwitch } from '@/shared/ui/LanguageSwitch';
-import { ThemeSwitch } from '@/shared/ui/ThemeSwitch';
-import { Modal } from '@/shared/ui/Modal';
+import { isModerator } from '@/shared/config/roles';
+import { Avatar } from '@/shared/ui/avatar/Avatar';
+import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
+import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
+import { Modal } from '@/shared/ui/windows/Modal';
 import notificationTexts from '@/texts/ru/notifications.json';
 import nav from '@/texts/ru/nav.json';
 import styles from './MobileNav.module.css';
@@ -25,6 +26,11 @@ const ICONS = {
   about: 'info',
   support: 'headset',
   settings: 'sliders',
+  'moderation-queue': 'shield',
+  'moderation-map': 'map',
+  'moderation-city': 'chart',
+  'moderation-support': 'headset',
+  'moderation-settings': 'sliders',
 };
 
 function activeKey(pathname) {
@@ -33,6 +39,8 @@ function activeKey(pathname) {
   if (pathname === '/about') return 'about';
   if (pathname === '/support') return 'support';
   if (pathname === '/settings') return 'settings';
+  if (pathname === '/moderation') return 'moderation-queue';
+  if (pathname.startsWith('/moderation/')) return `moderation-${pathname.slice(12)}`;
   return null;
 }
 
@@ -54,13 +62,25 @@ export function MobileNav() {
   const open = openOn === pathname;
   const current = activeKey(pathname);
 
-  const items = [
-    { key: 'map', to: `/map/${CITY}`, label: nav.tabs.map.label },
-    { key: 'stats', to: `/map/${CITY}/stats`, label: nav.menu.stats },
-    { key: 'about', to: '/about', label: nav.tabs.about.label },
-    { key: 'support', to: '/support', label: nav.tabs.support.label },
-    ...(user ? [{ key: 'settings', to: '/settings', label: nav.menu.settings }] : []),
-  ];
+  const moderator = isModerator(user);
+  const home = moderator ? '/moderation' : '/';
+  // У модератора в меню только его разделы (страницы жителей ему не открываются).
+  const items = moderator
+    ? [
+        ...['queue', 'map', 'city', 'support'].map((key) => ({
+          key: `moderation-${key}`,
+          to: key === 'queue' ? '/moderation' : `/moderation/${key}`,
+          label: nav.moderator.tabs[key].label,
+        })),
+        { key: 'moderation-settings', to: '/moderation/settings', label: nav.moderator.settings },
+      ]
+    : [
+        { key: 'map', to: `/map/${CITY}`, label: nav.tabs.map.label },
+        { key: 'stats', to: `/map/${CITY}/stats`, label: nav.menu.stats },
+        { key: 'about', to: '/about', label: nav.tabs.about.label },
+        { key: 'support', to: '/support', label: nav.tabs.support.label },
+        ...(user ? [{ key: 'settings', to: '/settings', label: nav.menu.settings }] : []),
+      ];
 
   useGSAP(
     () => {
@@ -120,10 +140,10 @@ export function MobileNav() {
     <>
       <header ref={barRef} className={styles.bar} data-open={open || undefined}>
         <Link
-          to={localizePath('/')}
+          to={localizePath(home)}
           className={styles.logo}
           aria-label={nav.logoLabel}
-          onClick={follow('/')}
+          onClick={follow(home)}
         >
           <LogoMark />
         </Link>
@@ -178,18 +198,20 @@ export function MobileNav() {
                 >
                   {nav.tabs.logout.label}
                 </button>
-                <button
-                  type="button"
-                  className={styles.notifications}
-                  onClick={() => {
-                    setOpenOn(null);
-                    setNotificationsOpen(true);
-                  }}
-                >
-                  <Icon name="bell" size={20} />
-                  <span>{notificationTexts.title}</span>
-                  {unread > 0 && <span className={styles.count}>{unread}</span>}
-                </button>
+                {!moderator && (
+                  <button
+                    type="button"
+                    className={styles.notifications}
+                    onClick={() => {
+                      setOpenOn(null);
+                      setNotificationsOpen(true);
+                    }}
+                  >
+                    <Icon name="bell" size={20} />
+                    <span>{notificationTexts.title}</span>
+                    {unread > 0 && <span className={styles.count}>{unread}</span>}
+                  </button>
+                )}
               </>
             ) : (
               <>

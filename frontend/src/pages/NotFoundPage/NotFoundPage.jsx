@@ -4,7 +4,7 @@ import { useTransitionNavigate } from '@/app/transitions/useTransition';
 import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import texts from '@/texts/ru/notFound.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { NotFoundMap } from './NotFoundMap';

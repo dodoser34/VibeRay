@@ -5,7 +5,7 @@ import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { format } from '@/shared/lib/format';
 import { formatNumber, formatSigned, percentOf } from '@/shared/lib/formatNumber';
 import { plural } from '@/shared/lib/plural';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { BarList } from '@/shared/ui/charts/BarList';
 import texts from '@/texts/ru/stats.json';

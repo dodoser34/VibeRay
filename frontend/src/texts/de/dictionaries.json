@@ -51,5 +51,11 @@
     "operational": "In Betrieb",
     "degraded": "Mit Störungen",
     "down": "Ausgefallen"
+  },
+  "supportRequestStatuses": {
+    "new": "Neu",
+    "in_progress": "In Arbeit",
+    "answered": "Beantwortet",
+    "closed": "Geschlossen"
   }
 }

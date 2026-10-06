@@ -16,6 +16,7 @@
 @import './tablet/about.css';
 @import './tablet/settings.css';
 @import './tablet/not-found.css';
+@import './tablet/moderation.css';
 
 @import './touch/touch.css';
 
@@ -29,3 +30,4 @@
 @import './mobile/about.css';
 @import './mobile/settings.css';
 @import './mobile/not-found.css';
+@import './mobile/moderation.css';

@@ -17,6 +17,15 @@ export const SUPPORT_TOPICS = withLabels(
 
 export const SUPPORT_TOPIC_BY_CODE = Object.fromEntries(SUPPORT_TOPICS.map((t) => [t.code, t]));
 
+// Состояние обращения для команды поддержки: новое → в работе → отвечено → закрыто. Новое и в работе
+// — «без ответа».
+export const SUPPORT_REQUEST_STATUSES = withLabels(
+  [{ code: 'new' }, { code: 'in_progress' }, { code: 'answered' }, { code: 'closed' }],
+  dictionaries.supportRequestStatuses,
+);
+
+export const OPEN_SUPPORT_STATUSES = ['new', 'in_progress'];
+
 const SERVICE_STATES = withLabels(
   [
     {

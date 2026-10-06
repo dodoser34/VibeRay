@@ -20,7 +20,9 @@
     "backToMap": "Zur ganzen Karte",
     "rejectedTitle": "Meldung abgelehnt",
     "rejectedNote": "Die Moderation hat diese Meldung abgelehnt. Nur du siehst sie: Auf der Karte und in der Statistik erscheint sie nicht.",
-    "openOriginal": "Ursprüngliches Problem öffnen"
+    "openOriginal": "Ursprüngliches Problem öffnen",
+    "anonymous": "Anonymer Bewohner",
+    "anonymousMine": "{nickname} (anonym)"
   },
   "listItem": {
     "confirmations": "Bestätigungen: {count}"
@@ -47,6 +49,8 @@
     "photosNote": "Bis zu {max} Fotos. Vor dem Senden werden Standort und Kameradaten entfernt.",
     "back": "Zurück",
     "next": "Weiter",
-    "submit": "Senden"
+    "submit": "Senden",
+    "anonymousLabel": "Anonym veröffentlichen",
+    "anonymousHint": "Bewohner sehen „Anonymer Bewohner“ statt deines Nicknames und Avatars. Die Moderation sieht den Autor — so schützen wir uns vor Spam."
   }
 }

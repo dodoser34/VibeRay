@@ -5,6 +5,7 @@ import { useAuth } from '@/features/auth';
 import { SettingsCenter } from '@/features/settings';
 import { getCity } from '@/shared/api/endpoints/cities';
 import { useRequest } from '@/shared/hooks/useRequest';
+import { isModerator } from '@/shared/config/roles';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { localizePath } from '@/shared/lib/language';
 
@@ -35,6 +36,11 @@ export function SettingsPage() {
     await go('/');
     await close();
   };
+
+  // Модератор выходит сразу: без сессии его настройки сами уводят на вход.
+  if (isModerator(user)) {
+    return <SettingsCenter districts={districts} onNavigate={go} onLogout={logout} />;
+  }
 
   return (
     <SettingsCenter

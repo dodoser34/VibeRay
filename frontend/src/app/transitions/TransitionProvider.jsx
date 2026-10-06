@@ -1,8 +1,11 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { gsap } from '@/shared/animations/gsapSetup';
-import { MapFoldTransition } from '@/shared/animations/MapFoldTransition';
-import { holdPageEntrance, releasePageEntrance } from '@/shared/animations/pageEntrance';
-import '@/shared/animations/MapFoldTransition.css';
+import { MapFoldTransition } from '@/shared/animations/pageTransition/MapFoldTransition';
+import {
+  holdPageEntrance,
+  releasePageEntrance,
+} from '@/shared/animations/pageTransition/pageEntrance';
+import '@/shared/animations/pageTransition/MapFoldTransition.css';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePagePath } from '@/shared/hooks/usePagePath';
 import { TransitionContext } from './TransitionContext';
@@ -39,6 +42,27 @@ const PAGES = [
       return nav.pageNames.settings;
     },
     tab: 'me',
+  },
+  {
+    test: (p) => p === '/moderation/settings',
+    get label() {
+      return nav.moderator.settings;
+    },
+    tab: 'me',
+  },
+  ...['map', 'city', 'support'].map((key) => ({
+    test: (p) => p === `/moderation/${key}`,
+    get label() {
+      return nav.moderator.tabs[key].label;
+    },
+    tab: `moderation-${key}`,
+  })),
+  {
+    test: (p) => p === '/moderation',
+    get label() {
+      return nav.moderator.tabs.queue.label;
+    },
+    tab: 'moderation-queue',
   },
   {
     test: (p) => p === '/login',

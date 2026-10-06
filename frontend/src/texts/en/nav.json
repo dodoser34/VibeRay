@@ -52,5 +52,26 @@
     "footer": "VibeRay · Kostanay",
     "settings": "Profile settings",
     "openUnread": "Open menu · new notifications: {count}"
+  },
+  "moderator": {
+    "tabs": {
+      "queue": {
+        "label": "Queue",
+        "short": "Queue"
+      },
+      "map": {
+        "label": "Problem map",
+        "short": "Map"
+      },
+      "city": {
+        "label": "City",
+        "short": "City"
+      },
+      "support": {
+        "label": "Requests",
+        "short": "Requests"
+      }
+    },
+    "settings": "Moderator settings"
   }
 }

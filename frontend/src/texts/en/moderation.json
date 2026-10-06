@@ -1,0 +1,122 @@
+{
+  "kicker": "Moderation",
+  "title": "Moderator workspace",
+  "lead": "Problems waiting for a decision, the districts where they pile up, and residents’ requests.",
+  "kpiLabel": "Summary",
+  "kpi": {
+    "waiting": "waiting for a decision",
+    "stale": "confirmed for a week or longer",
+    "inProgress": "in progress",
+    "resolvedWeek": "resolved in 7 days",
+    "avgResolution": "days on average to resolve",
+    "supportNew": "unanswered requests",
+    "noData": "—"
+  },
+  "sections": {
+    "queue": "Problem queue",
+    "city": "City",
+    "support": "Requests"
+  },
+  "queue": {
+    "filtersLabel": "Queue filters",
+    "statusLabel": "Status",
+    "statusActive": "All open",
+    "district": "District",
+    "allDistricts": "All districts",
+    "category": "Category",
+    "allCategories": "All categories",
+    "sort": "Order",
+    "sorts": {
+      "newest": "Newest first",
+      "oldest": "Oldest first",
+      "confirmations": "Most confirmed"
+    },
+    "shown": "Showing {shown} of {total}",
+    "loading": "Loading the queue…",
+    "empty": "No problems match this selection.",
+    "number": "No. {id}",
+    "anonymous": "anonymous",
+    "author": "Author: {nickname}",
+    "confirmations": "confirmations: {count}",
+    "expand": "Details",
+    "collapse": "Collapse",
+    "openOnMap": "On the map",
+    "history": "Status history",
+    "photoAlt": "Photo of the problem",
+    "actions": {
+      "confirmed": "Confirm",
+      "in_progress": "Start work",
+      "resolved": "Mark resolved",
+      "rejected": "Reject",
+      "new": "Restore"
+    },
+    "reject": {
+      "legend": "Reason for rejection",
+      "duplicateOf": "Number of the original problem",
+      "duplicateHint": "The author gets a link to the original problem so they can confirm it.",
+      "confirm": "Reject",
+      "cancel": "Cancel",
+      "duplicatePlaceholder": "p12"
+    },
+    "done": {
+      "in_progress": "No. {id} is now in progress — the author will be notified.",
+      "resolved": "No. {id} is marked resolved — the author will be notified.",
+      "rejected": "No. {id} was rejected — the author will be notified with the reason.",
+      "confirmed": "No. {id} is confirmed.",
+      "new": "No. {id} is restored — residents can see it again."
+    },
+    "stepActions": {
+      "in_progress_confirmed": "Stop work",
+      "resolved_in_progress": "Reopen"
+    }
+  },
+  "city": {
+    "districtsTitle": "Problem districts",
+    "districtsHint": "Districts by number of open problems. An open problem older than two weeks is highlighted. Click a district to open its queue.",
+    "tableCaption": "Open problems by district",
+    "columns": {
+      "name": "District",
+      "open": "Open",
+      "waiting": "Waiting",
+      "newWeek": "New this week",
+      "oldest": "Oldest",
+      "mood": "Mood"
+    },
+    "days": "{count} {forms}",
+    "dayForms": ["day", "days", "days"],
+    "none": "—",
+    "categoriesTitle": "Open problems by category",
+    "statusesTitle": "All problems by status",
+    "loading": "Calculating…"
+  },
+  "support": {
+    "title": "Residents’ requests",
+    "filterLabel": "Which requests to show",
+    "filters": {
+      "open": "Unanswered",
+      "answered": "Answered",
+      "closed": "Closed",
+      "all": "All"
+    },
+    "loading": "Loading requests…",
+    "empty": "Nothing here.",
+    "reply": "Reply by email",
+    "replySubject": "VibeRay: request {id}",
+    "files": "{count} {forms}",
+    "fileForms": ["file", "files", "files"],
+    "statusLabel": "Status of request {id}"
+  },
+  "leads": {
+    "queue": "New and confirmed problems are waiting for a decision: start work, mark resolved or reject.",
+    "city": "Where open problems pile up and which categories come up most.",
+    "support": "Requests from the support form. Reply by email to the resident."
+  },
+  "map": {
+    "title": "Problem map",
+    "statusLabel": "Which problems to show",
+    "count": "On the map: {count}",
+    "hint": "Click a marker to open the problem with moderator actions.",
+    "close": "Close",
+    "loading": "Loading problems…"
+  }
+}

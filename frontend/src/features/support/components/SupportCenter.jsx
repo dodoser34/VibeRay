@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
-import { revealOnScroll } from '@/shared/animations/revealOnScroll';
+import { revealOnScroll } from '@/shared/animations/effects/revealOnScroll';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import { FAQ, HELP_CATEGORIES } from '../content';
 import { searchHelp } from '../lib/searchHelp';
 import { FaqList } from './FaqList';

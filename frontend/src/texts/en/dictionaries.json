@@ -51,5 +51,11 @@
     "operational": "Operational",
     "degraded": "Degraded",
     "down": "Down"
+  },
+  "supportRequestStatuses": {
+    "new": "New",
+    "in_progress": "In progress",
+    "answered": "Answered",
+    "closed": "Closed"
   }
 }

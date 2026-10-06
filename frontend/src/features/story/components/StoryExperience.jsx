@@ -3,7 +3,7 @@ import { fallBackToLite, useLiteGraphics, useViewport } from '@/adaptations/core
 import { useCityData } from '@/features/map';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/controls/Button';
 import { useTheme } from '@/shared/hooks/useTheme';
 import { CHAPTERS, isDaylight, story } from '../content';
 import { LiteStage } from '../scene/LiteStage';

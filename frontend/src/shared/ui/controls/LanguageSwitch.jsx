@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import { changeLanguage } from '@/shared/animations/languageTransition';
+import { changeLanguage } from '@/shared/animations/languageChange/languageTransition';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { LANGUAGES } from '@/shared/lib/language';
 import common from '@/texts/ru/common.json';
-import deFlag from './flags/de.svg';
-import gbFlag from './flags/gb.svg';
-import kzFlag from './flags/kz.svg';
-import ruFlag from './flags/ru.svg';
+import deFlag from '../flags/de.svg';
+import gbFlag from '../flags/gb.svg';
+import kzFlag from '../flags/kz.svg';
+import ruFlag from '../flags/ru.svg';
 import styles from './LanguageSwitch.module.css';
 
 // Флаг главной страны языка: русский — Россия, казахский — Казахстан, английский — Великобритания
