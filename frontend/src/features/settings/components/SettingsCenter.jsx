@@ -11,6 +11,7 @@ import { DistrictSection } from './DistrictSection';
 import { MyReportsSection } from './MyReportsSection';
 import { ProfileSection } from './ProfileSection';
 import { SecuritySection } from './SecuritySection';
+import figure from '../assets/profile-assistant.webp';
 import texts from '@/texts/ru/settings.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SettingsCenter.module.css';
@@ -75,6 +76,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
         .timeline({ defaults: { ease: 'power3.out' } })
         .from(split.words, { yPercent: 110, duration: 0.9, stagger: 0.08 }, 0.1)
         .from('[data-hero]', { y: 20, autoAlpha: 0, duration: 0.7, stagger: 0.08 }, 0.3)
+        .from('[data-figure]', { scale: 0.94, autoAlpha: 0, duration: 1 }, 0.2)
         .from('[data-nav-item]', { x: -16, autoAlpha: 0, duration: 0.6, stagger: 0.06 }, 0.35);
       return revealOnScroll(gsap.utils.toArray('[data-rise]'), { contextSafe, share: 0.08 });
     },
@@ -98,9 +100,13 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
         <h1 key={language} className={styles.title} data-title>
           {moderator ? texts.moderator.title : texts.title}
         </h1>
-        <p className={styles.lead} data-hero>
+        <p className={styles.lead} data-hero data-ui="settings-lead">
           {moderator ? texts.moderator.lead : texts.lead}
         </p>
+        {/* Девушка выглядывает из-за карточки раздела: нижний срез картинки — по её верхнему краю */}
+        <span className={styles.figure} aria-hidden="true" data-figure data-ui="settings-figure">
+          <img src={figure} width="608" height="720" alt="" draggable="false" decoding="async" />
+        </span>
       </header>
 
       <div className={styles.layout} data-ui="settings-layout">

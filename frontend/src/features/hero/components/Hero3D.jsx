@@ -1,69 +1,99 @@
 import { useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { fallBackToLite } from '@/adaptations/core';
-import { subscribeTheme } from '@/shared/lib/theme';
+import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
+import { subscribeTheme } from '@/shared/lib/theme';
+import { RISE, riseDelay } from '../lib/rise';
+import { HeroPortrait } from './HeroPortrait';
 import styles from './Hero3D.module.css';
 
-// 3D-город героя. Сцена (и three.js) грузится отдельно — в лёгком режиме графики не скачивается.
-// stacked: страница в одну колонку (телефоны, планшеты стоя) — город стоит посередине.
-export function Hero3D({ ref, city, moods, stacked = false }) {
+const toLite = (error) => {
+  console.error('Hero scene failed, switching to light graphics', error);
+  fallBackToLite();
+};
+
+// 3D-девушка героя. Сцена, three.js и модель грузятся отдельно — в лёгком режиме графики не
+// скачиваются. Модель тяжёлая, поэтому пока она грузится, на её месте стоит готовый кадр той же
+// сцены (HeroPortrait); загрузилась — кадр плавно сменяется 3D. Появление — выезд снизу последним,
+// после всего вступления главной (onRisen — когда встала на место); оно общее для кадра и холста:
+// они движутся одним слоем и не расходятся, когда бы модель ни пришла.
+// stacked: страница в одну колонку (телефоны, планшеты стоя) — девушка посередине.
+export function Hero3D({ ref, stacked = false, onRisen }) {
+  const rootRef = useRef(null);
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
+  const portraitRef = useRef(null);
   const [scene, setScene] = useState(null);
+  const [ready, setReady] = useState(false);
   const entered = usePageEntered();
 
   useEffect(() => {
     let alive = true;
     let current = null;
-    import('../scene/HeroScene')
-      .then(({ HeroScene }) => {
+    import('../scene/GirlScene')
+      .then(({ GirlScene }) => {
         if (!alive) return;
-        current = new HeroScene(canvasRef.current, containerRef.current);
+        current = new GirlScene(canvasRef.current, containerRef.current, {
+          onReady: () => alive && setReady(true),
+          onError: toLite,
+        });
         setScene(current);
       })
-      .catch((error) => {
-        console.error('Hero scene failed, switching to light graphics', error);
-        fallBackToLite();
-      });
+      .catch(toLite);
     return () => {
       alive = false;
       current?.dispose();
     };
   }, []);
 
-  useEffect(() => {
-    if (scene && entered) scene.startIntro();
-  }, [scene, entered]);
+  useGSAP(
+    () => {
+      gsap.set('[data-lift]', { yPercent: 100 });
+      if (!entered) return;
+      gsap.to('[data-lift]', { yPercent: 0, ...RISE, delay: riseDelay(), onComplete: onRisen });
+    },
+    { scope: rootRef, dependencies: [entered] },
+  );
 
-  useEffect(() => {
-    if (scene && city) scene.setCity(city);
-  }, [scene, city]);
+  useGSAP(
+    () => {
+      if (!ready) return;
+      gsap.to('[data-canvas]', { autoAlpha: 1, duration: 0.9, ease: 'power2.out' });
+      gsap.to('[data-placeholder]', { autoAlpha: 0, duration: 0.9, ease: 'power2.out' });
+    },
+    { scope: rootRef, dependencies: [ready] },
+  );
 
   useEffect(() => subscribeTheme(() => scene?.refreshTheme()), [scene]);
-
-  useEffect(() => {
-    if (scene && moods) scene.setMoods(moods);
-  }, [scene, moods]);
 
   useEffect(() => {
     scene?.setStacked(stacked);
   }, [scene, stacked]);
 
-  useImperativeHandle(
-    ref,
-    () => ({
-      flyIntoCity: (options) => scene?.flyIntoCity(options),
-      setFlyProgress: (progress) => scene?.setFlyProgress(progress),
-      highlightDistrict: (slug) => scene?.highlightDistrict(slug),
-      flashDistrict: (slug) => scene?.flashDistrict(slug),
-      districtScreenPosition: (slug) => scene?.districtScreenPosition(slug) ?? null,
-    }),
-    [scene],
-  );
+  // Пока модели нет, команды страницы (уход за лист, взгляд, подскок, точки руки и головы) выполняет
+  // кадр.
+  useImperativeHandle(ref, () => {
+    const target = () => (ready ? scene : portraitRef.current);
+    return {
+      flyIntoCity: (options) => target()?.flyIntoCity(options),
+      setFlyProgress: (progress) => target()?.setFlyProgress(progress),
+      glance: () => target()?.glance(),
+      cheer: () => target()?.cheer(),
+      catchPoint: () => target()?.catchPoint() ?? null,
+      headPoint: () => target()?.headPoint() ?? null,
+    };
+  }, [scene, ready]);
 
   return (
-    <div ref={containerRef} className={styles.root} aria-hidden="true">
-      <canvas ref={canvasRef} className={styles.canvas} />
+    <div ref={rootRef} className={styles.root} aria-hidden="true">
+      <div className={styles.lift} data-lift>
+        <div className={styles.placeholder} data-placeholder>
+          <HeroPortrait ref={portraitRef} stacked={stacked} entrance={false} />
+        </div>
+        <div ref={containerRef} className={styles.stage}>
+          <canvas ref={canvasRef} className={styles.canvas} data-canvas />
+        </div>
+      </div>
     </div>
   );
 }

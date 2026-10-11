@@ -1,12 +1,14 @@
 .center {
+  --hero-gap: clamp(var(--space-6), 5vw, var(--space-8));
   display: grid;
-  gap: clamp(var(--space-6), 5vw, var(--space-8));
+  gap: var(--hero-gap);
   width: min(var(--content-max), 100%);
   margin: 0 auto;
   padding: calc(var(--tabbar-height) + clamp(3rem, 8vw, 6rem)) var(--space-4) var(--space-8);
 }
 
 .hero {
+  position: relative;
   display: grid;
   justify-items: start;
   gap: var(--space-4);
@@ -41,6 +43,28 @@
   color: var(--color-text-muted);
   font-size: var(--fs-lg);
   line-height: 1.5;
+}
+
+/* Низ картинки стоит ровно на верхнем крае первой карточки; последние пиксели среза растворяются,
+   чтобы не было жёсткой линии. Ореол — на обёртке (тот же токен, что у ассистентки поддержки):
+   так он идёт по контуру фигуры, а маска картинки его не обрезает. */
+.figure {
+  position: absolute;
+  right: 3rem;
+  bottom: calc(var(--hero-gap) * -1);
+  height: 21rem;
+  filter: drop-shadow(0 0 1.25rem var(--halo-figure));
+  transform-origin: 50% 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+.figure img {
+  display: block;
+  width: auto;
+  height: 100%;
+  mask-image: linear-gradient(to top, transparent, black 1.25rem);
+  pointer-events: n
 }
 
 .layout {

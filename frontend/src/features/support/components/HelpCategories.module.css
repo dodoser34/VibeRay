@@ -32,6 +32,11 @@
   color: var(--color-text);
   text-align: left;
   transform-style: preserve-3d;
+  /* Наклонённая карточка — отдельный слой со сглаженными краями: без этого рамка и скругления
+     в наклоне рисуются ступеньками */
+  backface-visibility: hidden;
+  outline: 1px solid transparent;
+  will-change: transform;
   transition:
     border-color var(--dur-base) var(--ease-out),
     background-color var(--dur-base) var(--ease-out);
@@ -66,7 +71,7 @@
 }
 
 .card:hover .iconWrap {
-  transform: translateZ(40px) scale(1.06);
+  transform: translateZ(36px);
 }
 
 .icon {

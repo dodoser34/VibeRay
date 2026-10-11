@@ -1,0 +1,168 @@
+/* Облачка не заходят под таб-бар */
+.root {
+  position: absolute;
+  inset: calc(var(--tabbar-height) + var(--space-3)) 0 0;
+  z-index: var(--z-scene);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Облачко мысли и цепочка кружков к голове: плотное стекло темы с акцентной рамкой — заметно на
+   любом фоне, но без свечения (тень нейтральная) */
+.bubble,
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-glass-strong);
+  border: 2px solid var(--color-accent);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(var(--blur-glass));
+  opacity: 0;
+  visibility: hidden;
+}
+
+.bubble {
+  max-width: 21rem;
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-xl);
+  color: var(--color-text);
+}
+
+.dot {
+  width: calc(0.6rem + var(--dot) * 0.4rem);
+  height: calc(0.6rem + var(--dot) * 0.4rem);
+  border-radius: 50%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-2) var(--space-4);
+}
+
+.text {
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Вопрос и полоса района — картинка под текстом во всю ширину; у остальных — слева от текста */
+.content[data-kind='ask'],
+.content[data-kind='district'] {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.content[data-kind='ask'] > :first-child,
+.content[data-kind='district'] > :first-child {
+  order: 1;
+}
+
+.faces {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.faces > span,
+.joy {
+  display: block;
+}
+
+.solved {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-bright);
+}
+
+/* Решено: галочка и плашка в цвете статуса «решена» */
+.check {
+  position: absolute;
+  right: -0.25rem;
+  bottom: -0.25rem;
+  display: grid;
+  place-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: var(--status-resolved);
+  color: var(--color-bg);
+}
+
+.chip {
+  grid-column: 2;
+  justify-self: start;
+  padding: 0.125rem var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--status-resolved);
+  color: var(--color-bg);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.crowd {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: block;
+  margin-left: -0.5rem;
+  border: 2px solid var(--color-glass-strong);
+  border-radius: 50%;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.count {
+  margin-left: var(--space-2);
+  padding: 0.125rem var(--space-2);
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+.bar {
+  display: flex;
+  gap: 0.125rem;
+  height: 0.625rem;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+}
+
+.segment {
+  display: block;
+  height: 100%;
+}
+
+/* Одна колонка: девушка в узком блоке — облачка компактнее */
+.root[data-stacked] .bubble {
+  max-width: 12.5rem;
+  padding: var(--space-3);
+}
+
+/* Узкое облачко: картинка и текст — друг под другом, у всех видов мысли */
+.root[data-stacked] .content {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-2);
+}
+
+.root[data-stacked] .chip {
+  grid-column: auto;
+}
+
+.root[data-stacked] .text {
+  font-size: var(--fs-sm);
+}

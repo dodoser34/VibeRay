@@ -1,0 +1,27 @@
+.root {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-scene);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Кадр снят с самой 3D-сцены и стоит там же, где модель (GirlScene.layout; числа измерены по
+   кадру сцены): справа от колонки с текстом, низ уходит под край переднего листа; в одну колонку —
+   по центру своего блока. Так смена кадра на 3D незаметна. */
+.portrait {
+  position: absolute;
+  left: 70.7%;
+  top: 58.8%;
+  width: auto;
+  height: 79%;
+  translate: -50% -50%;
+  transform-origin: 50% 100%;
+  user-select: none;
+}
+
+.portrait[data-stacked] {
+  left: 50.8%;
+  top: 55.5%;
+  height: 92%;
+}

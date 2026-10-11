@@ -67,7 +67,7 @@ npm run dev
 |---|---|
 | **react**, **react-dom** 19 | весь интерфейс: страницы `src/pages`, модули `src/features`, UI-кит `src/shared/ui` |
 | **react-router** 8 | маршруты `src/app/router.jsx` (карта, район, проблема, статистика, о проекте, поддержка, настройки, 404) |
-| **three** | 3D: карта `src/features/map/scene`, город на главной `src/features/hero/scene`, история `src/features/story/scene` |
+| **three** | 3D: карта `src/features/map/scene`, девушка на главной `src/features/hero/scene`, история `src/features/story/scene` |
 | **gsap**, **@gsap/react** | анимации: перелёты камеры, появление панелей, переходы страниц, скролл-история (ScrollTrigger), заголовки по словам (SplitText), смена языка; пресеты — `src/shared/animations` |
 | vite 8, @vitejs/plugin-react | сборка и dev-сервер (`frontend/vite.config.js`) |
 | eslint 9 + @eslint/js, eslint-plugin-react, eslint-plugin-react-hooks, globals | проверка кода (`frontend/eslint.config.js`) |

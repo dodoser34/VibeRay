@@ -1,9 +1,21 @@
-/* Поддержка на телефонах: одна колонка, поиск — первое под плавающей навигацией, темы — список
-   крупных карточек под палец, у ответов — место для большого пальца. */
+/* Поддержка на телефонах: одна колонка, над заголовком — небольшая ассистентка, поиск сразу под
+   текстом, темы — список крупных карточек под палец, у ответов — место для большого пальца. */
 @media (max-width: 767px) {
   :root [data-ui='support-page'] {
     padding-top: calc(var(--tabbar-height) + var(--safe-top) + var(--space-6));
     padding-bottom: var(--space-7);
+  }
+
+  :root [data-ui='support-assistant'] {
+    width: 9.5rem;
+  }
+
+  :root [data-ui='support-faq-rail'] {
+    width: 7rem;
+  }
+
+  :root [data-ui='support-faq-title'] {
+    padding-right: 7.5rem;
   }
 
   :root [data-ui='help-field'] {

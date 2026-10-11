@@ -3,5 +3,18 @@
   "title": "How is your district doing?",
   "lead": "Share your mood, report problems and watch your city change",
   "scrollHint": "Scroll — you'll land right in the city",
-  "openMap": "Open the city map"
+  "openMap": "Open the city map",
+  "thoughts": {
+    "mood": "What's my mood today?",
+    "great": "Feels so good!",
+    "roads": "They finally fixed the roads",
+    "garbage": "The trash is finally gone",
+    "lighting": "The yard is lit again",
+    "transport": "The bus came on time",
+    "parks": "The park feels cosy now",
+    "noise": "The nights are quiet at last",
+    "confirm": "The neighbours noticed it too",
+    "district": "Our district is smiling today",
+    "love": "I love our city"
+  }
 }

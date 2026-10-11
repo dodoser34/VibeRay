@@ -4,8 +4,13 @@ import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { revealOnScroll } from '@/shared/animations/effects/revealOnScroll';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
+import { useTheme } from '@/shared/hooks/useTheme';
 import { Button } from '@/shared/ui/controls/Button';
+import assistantDark from '../assets/assistant-dark.webp';
+import assistantLight from '../assets/assistant-light.webp';
+import faqAssistant from '../assets/faq-assistant.webp';
 import { FAQ, HELP_CATEGORIES } from '../content';
+import { useFigurePointer } from '../hooks/useFigurePointer';
 import { searchHelp } from '../lib/searchHelp';
 import { FaqList } from './FaqList';
 import { HelpCategories } from './HelpCategories';
@@ -46,6 +51,7 @@ const LINKS = [
 // Страница поддержки: поиск → темы → ответы → «не нашли?» → статус сервисов → контакты.
 export function SupportCenter({ onNavigate }) {
   const language = useLanguage();
+  const theme = useTheme();
   const rootRef = useRef(null);
   const faqRef = useRef(null);
   const reduced = useReducedMotion();
@@ -54,6 +60,9 @@ export function SupportCenter({ onNavigate }) {
   const [category, setCategory] = useState(null);
   const [openId, setOpenId] = useState(null);
   const [form, setForm] = useState(null); // { topic }, пока открыта форма обращения
+  const faqBodyRef = useRef(null);
+  const faqFigureRef = useRef(null);
+  useFigurePointer(faqFigureRef, faqBodyRef, openId, reduced);
 
   // Без useMemo: поиск дешёвый, а ответы FAQ меняются на месте при смене языка.
   const results = searchHelp(FAQ, query);
@@ -100,7 +109,8 @@ export function SupportCenter({ onNavigate }) {
           '[data-deck-card]',
           { y: 60, rotateX: 30, autoAlpha: 0, duration: 1.1, stagger: 0.12 },
           0.3,
-        );
+        )
+        .from('[data-assistant]', { scale: 0.92, autoAlpha: 0, duration: 1.2 }, 0.2);
       // Секции и футер поднимаются при попадании в зону видимости, при любой высоте экрана.
       const stopReveal = revealOnScroll(gsap.utils.toArray('[data-rise]'), { contextSafe });
 
@@ -147,15 +157,23 @@ export function SupportCenter({ onNavigate }) {
         </div>
 
         <div className={styles.deckStage} aria-hidden="true" data-ui="support-deck">
-          <div className={styles.deck} data-deck>
-            <div className={`${styles.deckCard} ${styles.deckBack}`} data-deck-card>
+          <div className={styles.deck} data-deck data-ui="support-deck-layer">
+            <div
+              className={`${styles.deckCard} ${styles.deckBack}`}
+              data-deck-card
+              data-ui="support-deck-back"
+            >
               <span className={styles.deckKicker}>{texts.deck.statusKicker}</span>
               <span className={styles.deckStatus}>
                 <span className={styles.deckDot} />
                 {texts.deck.statusValue}
               </span>
             </div>
-            <div className={`${styles.deckCard} ${styles.deckMiddle}`} data-deck-card>
+            <div
+              className={`${styles.deckCard} ${styles.deckMiddle}`}
+              data-deck-card
+              data-ui="support-deck-card"
+            >
               <span className={styles.deckKicker}>{texts.deck.moodKicker}</span>
               <span className={styles.deckMoods}>
                 <i style={{ '--mood': 'var(--mood-excellent)' }} />
@@ -165,7 +183,23 @@ export function SupportCenter({ onNavigate }) {
                 <i style={{ '--mood': 'var(--mood-bad)' }} />
               </span>
             </div>
-            <div className={`${styles.deckCard} ${styles.deckFront}`} data-deck-card>
+            {/* Своя картинка на каждую тему; грузится только та, что сейчас нужна. */}
+            <img
+              className={styles.assistant}
+              src={theme === 'dark' ? assistantDark : assistantLight}
+              width="720"
+              height="718"
+              alt=""
+              draggable="false"
+              decoding="async"
+              data-assistant
+              data-ui="support-assistant"
+            />
+            <div
+              className={`${styles.deckCard} ${styles.deckFront}`}
+              data-deck-card
+              data-ui="support-deck-card"
+            >
               <span className={styles.deckKicker}>{texts.deck.answerKicker}</span>
               <span className={styles.deckQuestion}>{texts.deck.answerQuestion}</span>
               <span className={styles.deckLine} />
@@ -189,11 +223,11 @@ export function SupportCenter({ onNavigate }) {
 
       <section ref={faqRef} className={styles.section} aria-labelledby="help-faq">
         <div className={styles.sectionHead} data-rise>
-          <h2 id="help-faq" className={styles.sectionTitle}>
+          <h2 id="help-faq" className={styles.sectionTitle} data-ui="support-faq-title">
             {texts.faqSection.title}
           </h2>
         </div>
-        <div data-rise>
+        <div ref={faqBodyRef} className={styles.faqBody} data-rise data-ui="support-faq-body">
           <FaqList
             category={category}
             onCategoryChange={(code) => {
@@ -203,6 +237,21 @@ export function SupportCenter({ onNavigate }) {
             openId={openId}
             onToggle={setOpenId}
           />
+          {/* Девушка показывает на вопросы, едет рядом со списком и подъезжает к открытому вопросу */}
+          <div className={styles.faqRail} aria-hidden="true" data-ui="support-faq-rail">
+            <img
+              ref={faqFigureRef}
+              className={styles.faqFigure}
+              src={faqAssistant}
+              width="649"
+              height="800"
+              alt=""
+              draggable="false"
+              decoding="async"
+              loading="lazy"
+              data-ui="support-faq-figure"
+            />
+          </div>
         </div>
       </section>
 

@@ -5,6 +5,16 @@
     padding-bottom: var(--space-7);
   }
 
+  /* Девушка стоит рядом с подводкой, под заголовком: подводка уже на ширину картинки, а заголовок
+     остаётся во всю ширину — длинные слова (Einstellungen) не переносятся по буквам */
+  :root [data-ui='settings-figure'] {
+    height: 7.5rem;
+  }
+
+  :root [data-ui='settings-lead'] {
+    padding-right: 6.5rem;
+  }
+
   :root [data-ui='settings-section'] {
     padding: var(--space-5) var(--space-4);
   }

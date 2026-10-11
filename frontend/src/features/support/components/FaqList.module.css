@@ -44,6 +44,7 @@
   border: 1px solid var(--color-glass-border);
   scroll-margin-top: calc(var(--tabbar-height) + var(--space-7));
   transition:
+    opacity var(--dur-base) var(--ease-out),
     border-color var(--dur-base) var(--ease-out),
     background-color var(--dur-base) var(--ease-out);
 }
@@ -55,6 +56,16 @@
 
 .item[data-open] {
   background-color: var(--color-glass-strong);
+}
+
+/* Фокус на открытом вопросе: остальные приглушаются. Наведение возвращает вопрос в полную яркость,
+   но зелёная рамка остаётся только у открытого — иначе кажется, что выбраны два вопроса. */
+.list:has(.item[data-open]) .item:not([data-open], :hover, :focus-within) {
+  opacity: 0.5;
+}
+
+.list:has(.item[data-open]) .item:not([data-open]):hover {
+  border-color: var(--color-glass-border);
 }
 
 .heading {
@@ -74,7 +85,8 @@
   text-align: left;
 }
 
-/* Плюс, который превращается в минус. */
+/* Плюс, который превращается в минус. Палочки центрируются сами (inset + margin: auto): размеры в
+   rem растут на 2K/4K, и сдвиг в пикселях уводил бы плюс от центра. */
 .plus {
   position: relative;
   width: 2rem;
@@ -88,12 +100,11 @@
 .plus::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
+  inset: 0;
   width: 0.75rem;
-  height: 2px;
-  margin: -1px 0 0 -6px;
-  border-radius: 2px;
+  height: 0.125rem;
+  margin: auto;
+  border-radius: 0.125rem;
   background: var(--color-accent-bright);
   transition: transform var(--dur-base) var(--ease-out);
 }

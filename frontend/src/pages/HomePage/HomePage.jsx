@@ -3,11 +3,12 @@ import { useNavigationInterceptor, useTransitionNavigate } from '@/app/transitio
 import { useViewport, WIDE_QUERY } from '@/adaptations/core';
 import { AuthPanel } from '@/features/auth';
 import { FrontLayer, HeroCanvas } from '@/features/hero';
-import { useCityData } from '@/features/map';
+import { getCity } from '@/shared/api/endpoints/cities';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { usePagePath } from '@/shared/hooks/usePagePath';
+import { useRequest } from '@/shared/hooks/useRequest';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
 import { isModerator } from '@/shared/config/roles';
@@ -25,7 +26,8 @@ export function HomePage() {
   const navigate = useLocalizedNavigate();
   const go = useTransitionNavigate();
   const mode = pathname === '/register' ? 'register' : 'login';
-  const { city, moods } = useCityData(CITY, 'day');
+  // Районы — для выбора своего в форме регистрации (тот же кэш, что у карты города).
+  const city = useRequest(`city:${CITY}`, () => getCity(CITY));
   const entered = usePageEntered();
   const { compact } = useViewport();
 
@@ -53,7 +55,7 @@ export function HomePage() {
     window.scrollTo(0, 0);
   }, []);
 
-  // «В город»: интерфейс гаснет, камера опускается на город, затем переход к карте.
+  // «В город»: интерфейс гаснет, девушка уходит за край листа, затем переход к карте.
   const flyIntoCity = useCallback(async () => {
     leavingRef.current = true;
     ScrollTrigger.getAll().forEach((trigger) => trigger.disable(false));
@@ -71,7 +73,7 @@ export function HomePage() {
     useCallback((to) => (to.startsWith('/map') ? flyIntoCity() : null), [flyIntoCity]),
   );
 
-  // Десктоп: прокрутка вниз ведёт тот же полёт камеры, затем открывает карту.
+  // Десктоп: прокрутка вниз ведёт тот же уход, затем открывает карту.
   useGSAP(
     () => {
       const media = gsap.matchMedia();
@@ -127,12 +129,12 @@ export function HomePage() {
       return;
     }
     const slug = user.home_district ?? FALLBACK_DISTRICT;
-    heroRef.current?.highlightDistrict(slug);
 
     if (how === 'register') {
+      // Пропуск жителя превращается в метку с аватаром и летит в руку девушке.
       const card = passRef.current.getBoundingClientRect();
       const sceneRect = sceneLayerRef.current.getBoundingClientRect();
-      const target = heroRef.current?.districtScreenPosition(slug);
+      const target = heroRef.current?.catchPoint();
       const start = { x: card.left + card.width / 2, y: card.top + card.height / 2 };
       const end = target
         ? { x: target.x + sceneRect.left, y: target.y + sceneRect.top }
@@ -167,10 +169,10 @@ export function HomePage() {
           '<',
         )
         .to(pinRef.current, { scale: 0.2, autoAlpha: 0, duration: 0.25, ease: 'power2.in' })
-        .add(() => heroRef.current?.flashDistrict(slug));
+        .add(() => heroRef.current?.cheer());
       await gsap.to({}, { duration: 0.9 });
     } else {
-      heroRef.current?.flashDistrict(slug);
+      heroRef.current?.cheer();
       await gsap.to({}, { duration: 0.6 });
     }
     go(`/map/${CITY}/district/${slug}`);
@@ -180,7 +182,7 @@ export function HomePage() {
     <div ref={pageRef} className={styles.page} data-ui="home-page">
       <div className={styles.stage} data-ui="home-stage">
         <div ref={sceneLayerRef} className={styles.sceneLayer} data-ui="home-scene">
-          <HeroCanvas ref={heroRef} city={city.data} moods={moods.data} stacked={compact} />
+          <HeroCanvas ref={heroRef} stacked={compact} />
         </div>
         <div ref={layerRef} className={styles.frontLayer} data-ui="home-front">
           <FrontLayer />
@@ -214,7 +216,7 @@ export function HomePage() {
               mode={mode}
               onModeChange={(next) => navigate(next === 'register' ? '/register' : '/login')}
               districts={districts}
-              onDistrictPreview={(slug) => heroRef.current?.highlightDistrict(slug)}
+              onDistrictPreview={() => heroRef.current?.glance()}
               onAuthenticated={celebrate}
             />
           </div>

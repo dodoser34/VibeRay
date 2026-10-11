@@ -3,5 +3,18 @@
   "title": "Wie lebt dein Viertel?",
   "lead": "Markiere deine Stimmung, melde Probleme und sieh, wie sich deine Stadt verändert",
   "scrollHint": "Scrolle weiter — unten landest du in der Stadt",
-  "openMap": "Stadtkarte öffnen"
+  "openMap": "Stadtkarte öffnen",
+  "thoughts": {
+    "mood": "Wie ist heute meine Stimmung?",
+    "great": "Wie schön!",
+    "roads": "Endlich sind die Straßen repariert",
+    "garbage": "Endlich ist der Müll weg",
+    "lighting": "Im Hof ist es wieder hell",
+    "transport": "Der Bus kam pünktlich",
+    "parks": "Im Park ist es jetzt gemütlich",
+    "noise": "Nachts ist es endlich ruhig",
+    "confirm": "Die Nachbarn haben es auch bemerkt",
+    "district": "Unser Viertel lächelt heute",
+    "love": "Ich liebe unsere Stadt"
+  }
 }

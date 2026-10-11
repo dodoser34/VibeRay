@@ -7,7 +7,7 @@ import texts from '@/texts/ru/support.json';
 import styles from './HelpCategories.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 
-const TILT = 8; // градусов у края карточки
+const TILT = 5; // градусов у края карточки: сильнее — иконка и текст заметно уезжают от рамки
 
 // Темы помощи — карточки, которые наклоняются в 3D за указателем; клик фильтрует FAQ.
 export function HelpCategories({ active, onSelect }) {

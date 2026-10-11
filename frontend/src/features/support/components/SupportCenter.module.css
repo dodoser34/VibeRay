@@ -107,6 +107,21 @@
   border-color: var(--color-accent);
 }
 
+/* Ассистентка поддержки стоит между карточками: задние (статус, настроение) уходят за неё, а
+   «Ответ поддержки», на который она показывает, — перед ней. Выходит за колонку в правое поле. */
+.assistant {
+  position: absolute;
+  top: -3rem;
+  right: -8.5rem;
+  width: 21rem;
+  height: auto;
+  transform: translateZ(-10px);
+  filter: drop-shadow(0 0 1.25rem var(--halo-figure))
+    drop-shadow(0 1.5rem 2rem var(--shadow-figure));
+  user-select: none;
+  pointer-events: none;
+}
+
 @keyframes float {
   to {
     translate: 0 -14px;
@@ -187,6 +202,32 @@
 
 .sectionText {
   color: var(--color-text-muted);
+}
+
+/* Девушка у списка вопросов стоит в правом поле страницы (база — экраны от 1680 px, где поле
+   широкое) и едет вместе со списком. Ореол — на рельсе: маска картинки его не обрезает. */
+.faqBody {
+  position: relative;
+}
+
+.faqRail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(100% + var(--space-5));
+  width: min(22rem, calc((100vw - 100%) / 2 - 3rem));
+  filter: drop-shadow(0 0 1.25rem var(--halo-figure));
+  pointer-events: none;
+  user-select: none;
+}
+
+.faqFigure {
+  position: sticky;
+  top: calc(var(--tabbar-height) + var(--space-6));
+  display: block;
+  width: 100%;
+  height: auto;
+  mask-image: linear-gradient(to top, transparent, black 3rem);
 }
 
 .bottomGrid {

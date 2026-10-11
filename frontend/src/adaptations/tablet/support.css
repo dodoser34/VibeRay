@@ -1,5 +1,20 @@
+/* Поддержка на планшете лёжа (1024–1199): колонка с колодой узкая, правого поля почти нет —
+   ассистентка не выходит за колонку, а задние карточки отходят от неё влево. */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  :root [data-ui='support-assistant'] {
+    top: -1.5rem;
+    right: 0;
+    width: 14rem;
+  }
+
+  :root [data-ui='support-deck-back'] {
+    right: 22%;
+  }
+}
+
 /* Поддержка на планшетах стоя и телефонах: шапка и пара «напиши нам / статус» идут друг под
-   другом; декоративная колода карточек убрана — здесь главное поиск. */
+   другом. Колода карточек убрана — здесь главное поиск; от неё остаётся только ассистентка,
+   небольшим кругом над заголовком. */
 @media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
   /* minmax(0, …): длинные слова и чипы не должны расширять колонку за край экрана */
   :root [data-ui='support-hero'],
@@ -7,11 +22,54 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
+  :root [data-ui='support-hero'] {
+    gap: var(--space-5);
+  }
+
   :root [data-ui='support-deck'] {
+    order: -1;
+    justify-self: start;
+  }
+
+  :root [data-ui='support-deck-layer'] {
+    height: auto;
+  }
+
+  :root [data-ui='support-deck-back'],
+  :root [data-ui='support-deck-card'] {
     display: none;
+  }
+
+  :root [data-ui='support-assistant'] {
+    position: static;
+    display: block;
+    width: 13rem;
   }
 
   :root [data-ui='help-grid'] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Список вопросов — во всю ширину, девушка стоит справа от заголовка раздела (низ — по началу
+     списка) и показывает на него */
+  :root [data-ui='support-faq-body'] {
+    display: block;
+  }
+
+  :root [data-ui='support-faq-rail'] {
+    position: absolute;
+    top: auto;
+    bottom: 100%;
+    left: auto;
+    right: 0;
+    width: 8rem;
+  }
+
+  :root [data-ui='support-faq-figure'] {
+    position: static;
+  }
+
+  :root [data-ui='support-faq-title'] {
+    padding-right: 9rem;
   }
 }
