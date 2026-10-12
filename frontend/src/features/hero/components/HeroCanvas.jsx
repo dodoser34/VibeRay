@@ -1,18 +1,14 @@
 import { useImperativeHandle, useRef, useState } from 'react';
-import { useLiteGraphics } from '@/adaptations/core';
 import { Hero3D } from './Hero3D';
-import { HeroPortrait } from './HeroPortrait';
 import { HeroThoughts } from './HeroThoughts';
 
-// Девушка героя главной: 3D-сцена или, в лёгком режиме графики (слабое устройство, медленная сеть),
-// готовый кадр той же модели с тем же интерфейсом для страницы (уход за лист, взгляд, подскок).
-// Когда она выехала снизу, вокруг головы начинают всплывать мысли; уход к карте их гасит.
+// Девушка героя главной — всегда 3D-модель максимального качества (другой версии нет, в том числе
+// в лёгком режиме графики). Когда она выехала снизу, вокруг головы начинают всплывать мысли; уход
+// к карте их гасит.
 export function HeroCanvas({ ref, stacked = false }) {
-  const lite = useLiteGraphics();
   const heroRef = useRef(null);
   const thoughtsRef = useRef(null);
   const [risen, setRisen] = useState(false);
-  const Hero = lite ? HeroPortrait : Hero3D;
 
   useImperativeHandle(
     ref,
@@ -34,7 +30,7 @@ export function HeroCanvas({ ref, stacked = false }) {
 
   return (
     <>
-      <Hero ref={heroRef} stacked={stacked} onRisen={() => setRisen(true)} />
+      <Hero3D ref={heroRef} stacked={stacked} onRisen={() => setRisen(true)} />
       <HeroThoughts
         ref={thoughtsRef}
         active={risen}

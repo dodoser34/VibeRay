@@ -35,9 +35,15 @@ export function getGraphicsMode() {
   return mode;
 }
 
+// Решение «авто» принимается один раз — при первом обращении. Оценка сети браузера плавает (пока
+// страница качает модели, она «медленная», потом «быстрая»), и пересчёт на каждой перерисовке
+// подменял бы сцену посреди страницы: лёгкая картинка → 3D после любого клика.
+let weakAtStart = null;
+
 export function isLiteGraphics() {
   if (mode !== 'auto') return mode === 'lite';
-  return fellBack || weakEnvironment();
+  if (weakAtStart === null) weakAtStart = weakEnvironment();
+  return fellBack || weakAtStart;
 }
 
 // Хорошая ли сеть для фоновой подгрузки страниц и моделей.

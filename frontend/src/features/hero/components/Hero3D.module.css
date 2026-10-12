@@ -5,7 +5,6 @@
 }
 
 .lift,
-.placeholder,
 .stage {
   position: absolute;
   inset: 0;
@@ -21,7 +20,7 @@
   cursor: grabbing;
 }
 
-/* Холст проявляется, когда модель загружена (до этого виден готовый кадр) */
+/* Холст проявляется, когда модель загружена */
 .canvas {
   width: 100%;
   height: 100%;

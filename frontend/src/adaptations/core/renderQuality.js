@@ -11,10 +11,6 @@ export function renderQuality(width = window.innerWidth) {
   const cores = navigator.hardwareConcurrency ?? 8;
   const memory = navigator.deviceMemory ?? 8;
   const lowPower = cores <= 4 || memory <= 4;
-  // Без Network Information API (Safari, Firefox) сеть считаем хорошей: медленную там не узнать.
-  const connection = navigator.connection;
-  const fastNetwork =
-    !connection || (connection.effectiveType === '4g' && (connection.downlink ?? 10) >= 8);
   return {
     tier,
     maxPixelRatio: mobile ? 1.5 : tablet ? 1.75 : 2,
@@ -23,9 +19,6 @@ export function renderQuality(width = window.innerWidth) {
     particles: mobile ? 0.45 : tablet ? 0.7 : 1,
     detail: mobile ? (lowPower ? 0.45 : 0.6) : tablet ? 0.8 : 1,
     parallax: !coarse && !mobile,
-    // Исходные модели без упрощения (десятки мегабайт, миллионы граней) — только компьютеру с мышью,
-    // нормальной памятью и быстрой сетью; остальным — облегчённая копия.
-    fullModels: !mobile && !tablet && !coarse && !lowPower && fastNetwork,
   };
 }
 

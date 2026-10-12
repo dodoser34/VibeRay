@@ -6,15 +6,10 @@ import { SceneRuntime } from '@/features/map';
 import { gsap } from '@/shared/animations/gsapSetup';
 import { cssVar } from '@/shared/lib/cssVar';
 
-// Модели — экспорт из Blender (Files/girl_bust_texture.blend), геометрия сжата Draco (декодер —
-// копия из three/examples в public/draco), текстуры — WebP. Полная — исходник без упрощения
-// (≈ 27 МБ, текстуры 8K): при сильном упрощении на стыках волос, кожи и свитера рвалась текстура.
-// Облегчённая (≈ 9,5 МБ) — та же сетка, упрощённая до 35 % (меньше — снова появлялись разрывы), и
-// текстуры 4K; её получают телефоны, планшеты, слабые компьютеры и медленная сеть (renderQuality).
-const MODELS = {
-  full: `${import.meta.env.BASE_URL}models/girl-bust.glb`,
-  medium: `${import.meta.env.BASE_URL}models/girl-bust-medium.glb`,
-};
+// Модель — экспорт из Blender (Files/girl_bust_texture.blend), геометрия сжата Draco (декодер —
+// копия из three/examples в public/draco), текстуры — WebP. Только исходник без упрощения
+// (≈ 27 МБ, текстуры 8K) на всех устройствах: облегчённые копии и кадр-заглушка убраны (DECISIONS).
+const MODEL_URL = `${import.meta.env.BASE_URL}models/girl-bust.glb`;
 const DRACO_PATH = `${import.meta.env.BASE_URL}draco/`;
 
 const MODEL_HEIGHT = 2.4;
@@ -91,9 +86,8 @@ export class GirlScene {
   load(onReady, onError) {
     this.draco = new DRACOLoader().setDecoderPath(DRACO_PATH);
     const loader = new GLTFLoader().setDRACOLoader(this.draco);
-    const url = this.quality.fullModels ? MODELS.full : MODELS.medium;
     loader
-      .loadAsync(url)
+      .loadAsync(MODEL_URL)
       .then(async (gltf) => {
         if (this.disposed) return;
         const model = gltf.scene;
@@ -197,7 +191,6 @@ export class GirlScene {
     if (width && height) this.layout(width, height);
   }
 
-  // Кадр завязан на HeroPortrait.module.css: заглушка стоит там же, где модель в этом кадре.
   layout(width, height) {
     const camera = this.runtime.camera;
     const aspect = width / height;

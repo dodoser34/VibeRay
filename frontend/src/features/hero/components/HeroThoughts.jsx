@@ -51,7 +51,7 @@ const PAD = 12;
 
 // Мысли девушки: облачко с цепочкой кружков от головы всплывает, держится и тает, следующее —
 // с другой стороны. Сменяются по очереди, без перескоков и покачиваний. anchor() — центр и радиус
-// головы в px сцены (Hero3D / HeroPortrait.headPoint). Цикл идёт по реальным таймерам, а не по
+// головы в px сцены (Hero3D.headPoint; пока модель грузится — null, облачко ждёт). Цикл идёт по реальным таймерам, а не по
 // шкале GSAP: при reduced motion GSAP ускорен в 20 раз, и мысли мелькали бы. Уход к карте гасит
 // слой (fade / hide).
 export function HeroThoughts({ ref, active, stacked = false, anchor }) {
@@ -62,7 +62,13 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
   const thought = cycle ? THOUGHTS[(cycle - 1) % THOUGHTS.length] : null;
 
   useEffect(() => {
-    if (!active) return undefined;
+    if (!active) {
+      // Мысли остановлены (героиня сменилась) — показанное облачко тает.
+      const root = rootRef.current;
+      gsap.killTweensOf(root.children);
+      gsap.to(root.children, { autoAlpha: 0, duration: 0.3 });
+      return undefined;
+    }
     let timer = null;
     const next = () => {
       setCycle((value) => value + 1);
