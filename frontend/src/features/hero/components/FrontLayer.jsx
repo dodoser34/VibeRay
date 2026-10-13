@@ -45,6 +45,8 @@ function flowPath(progress, time) {
 }
 
 const FLOW_TIMING = { delay: 0.2, duration: 1.9 };
+// Когда лист заканчивает натекать (с момента открытия страницы): по нему ждут другие вступления.
+export const FRONT_FLOW_END = FLOW_TIMING.delay + FLOW_TIMING.duration;
 
 export function FrontLayer({ className = '' }) {
   const rootRef = useRef(null);

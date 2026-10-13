@@ -62,7 +62,7 @@ const STACKED_BOTTOM = 56;
 // Мысли девушки: облачко с цепочкой кружков от головы всплывает, держится и тает, следующее —
 // с другой стороны. Сменяются по очереди, без перескоков и покачиваний. anchor() — центр и радиус
 // головы в px слоя (HeroGirl.headPoint). Цикл идёт по реальным таймерам, а не по шкале GSAP: при
-// reduced motion GSAP ускорен в 20 раз, и мысли мелькали бы. Уход к карте гасит слой (fade / hide).
+// reduced motion GSAP ускорен в 20 раз, и мысли мелькали бы. Уход к карте гасит слой (fade).
 export function HeroThoughts({ ref, active, stacked = false, anchor }) {
   useLanguage();
   const rootRef = useRef(null);
@@ -219,7 +219,6 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
     ref,
     () => ({
       fade: (progress) => gsap.set(rootRef.current, { autoAlpha: 1 - Math.min(1, progress * 3) }),
-      hide: () => gsap.to(rootRef.current, { autoAlpha: 0, duration: 0.3 }),
     }),
     [],
   );

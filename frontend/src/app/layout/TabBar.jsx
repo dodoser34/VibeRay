@@ -49,7 +49,7 @@ export function TabBar() {
     pathRef.current = pathname;
   }, [pathname]);
 
-  // У модератора свой набор вкладок — только его разделы; выход — в его настройках.
+  // У модератора свой набор вкладок — только его разделы; выход — рядом с профилем, как у жителя.
   const items = isModerator(user)
     ? [
         {
@@ -60,6 +60,7 @@ export function TabBar() {
           title: nav.moderator.settings,
           ariaLabel: nav.moderator.settings,
         },
+        { key: 'logout', ...nav.tabs.logout, action: logout },
         ...['queue', 'map', 'city', 'support'].map((key) => ({
           key: `moderation-${key}`,
           ...nav.moderator.tabs[key],

@@ -1,27 +1,16 @@
 import { useRef, useState } from 'react';
 import { WIDE_QUERY } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
-import { createPuzzle } from '@/shared/animations/authPuzzle/puzzlePieces';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
-import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { LoginForm } from './LoginForm';
 import { RegisterFlow } from './RegisterFlow';
 import styles from './AuthPanel.module.css';
 
-const random = gsap.utils.random;
-// На широких экранах карточка ждёт, пока передний лист дотечёт до неё (FrontLayer).
-const PUZZLE_DELAY = { wide: 1.2, narrow: 0.3 };
-// Куда разлетается и откуда прилетает каждая часть формы: свободный разброс вокруг карточки.
-const SCATTER = {
-  x: () => random(-150, 150),
-  y: () => random(-80, 100),
-  rotation: () => random(-18, 18),
-  scale: 0.85,
-  autoAlpha: 0,
-};
+// На узких экранах переднего листа нет — карточке ждать нечего.
+const NARROW_ENTER_DELAY = 0.3;
 
-// Вход / регистрация. При смене режима текущая форма разлетается по частям, а другая собирается из
-// частей; фон карточки плавно подстраивается под новую высоту.
+// Вход / регистрация. Карточка плавно выдвигается снизу из пустоты; при смене режима текущая форма
+// уходит вверх и гаснет, новая поднимается следом, а фон карточки подстраивается под новую высоту.
 export function AuthPanel({
   ref,
   mode,
@@ -29,39 +18,40 @@ export function AuthPanel({
   districts,
   onDistrictPreview,
   onAuthenticated,
+  wideEnterDelay = NARROW_ENTER_DELAY, // на широких экранах: когда закончится вступление страницы
 }) {
   const rootRef = useRef(null);
   const bgRef = useRef(null);
   const paneRef = useRef(null);
   const prevHeight = useRef(null);
-  const leaving = useRef(null); // анимация разборки текущей формы, если идёт
+  const leaving = useRef(null); // анимация ухода текущей формы, если идёт
   const latestMode = useRef(mode);
   const [shown, setShown] = useState(mode);
-  const reduced = useReducedMotion();
   const entered = usePageEntered();
 
   const parts = () => paneRef.current.querySelectorAll('[data-part]');
 
-  // 1) режим сменили снаружи (таб-бар / ссылки): разбираем текущую форму
+  // 1) режим сменили снаружи (таб-бар / ссылки): текущая форма уходит
   useGSAP(
     () => {
       latestMode.current = mode;
       if (mode === shown) {
-        // переключили обратно, пока форма разлеталась, — собираем её заново
+        // переключили обратно, пока форма уходила, — возвращаем её
         if (leaving.current) {
           leaving.current.kill();
           leaving.current = null;
-          gsap.to(parts(), { x: 0, y: 0, rotation: 0, scale: 1, autoAlpha: 1, duration: 0.5 });
+          gsap.to(parts(), { y: 0, autoAlpha: 1, duration: 0.5, ease: 'power2.out' });
         }
         return;
       }
       if (leaving.current) return;
       prevHeight.current = rootRef.current.querySelector('[data-card]').offsetHeight;
       leaving.current = gsap.to(parts(), {
-        ...SCATTER,
-        duration: 0.4,
-        ease: 'power2.in',
-        stagger: { each: 0.035, from: 'end' },
+        y: -10,
+        autoAlpha: 0,
+        duration: 0.35,
+        ease: 'sine.in',
+        stagger: 0.025,
         onComplete: () => {
           leaving.current = null;
           setShown(latestMode.current);
@@ -71,58 +61,42 @@ export function AuthPanel({
     { dependencies: [mode], scope: rootRef },
   );
 
-  // 2) новая форма в DOM: собираем её из частей. При первом появлении сначала собирается сама
-  // поверхность карточки — из кусочков пазла, летящих из правого нижнего угла.
+  // 2) новая форма в DOM. При первом появлении карточка целиком выдвигается снизу и проявляется,
+  // поля поднимаются следом с небольшим шагом.
   useGSAP(
     () => {
-      // Первое появление под переходом страницы: собираем, когда страница откроется.
-      if (prevHeight.current === null && !entered) return undefined;
+      // Первое появление под переходом страницы: показываем, когда страница откроется.
+      if (prevHeight.current === null && !entered) return;
       const card = rootRef.current.querySelector('[data-card]');
       const timeline = gsap.timeline();
-      let puzzle = null;
-      if (prevHeight.current === null && !reduced) {
+      if (prevHeight.current === null) {
         const wide = window.matchMedia(WIDE_QUERY).matches;
-        puzzle = createPuzzle(card, {
-          cols: 4,
-          rows: 5,
-          radius: parseFloat(getComputedStyle(bgRef.current).borderTopLeftRadius) || 0,
-          className: styles.puzzle,
-        });
-        bgRef.current.after(puzzle.svg); // под формой, выше ничего
-        timeline
-          .set(bgRef.current, { autoAlpha: 0 })
-          .from(
-            puzzle.pieces,
-            {
-              x: () => random(140, 340),
-              y: () => random(90, 280),
-              rotation: () => random(-55, 55),
-              scale: 0.45,
-              autoAlpha: 0,
-              duration: 0.85,
-              ease: 'back.out(1.25)',
-              stagger: { amount: 0.7, from: 'end' },
-            },
-            wide ? PUZZLE_DELAY.wide : PUZZLE_DELAY.narrow,
-          )
-          // Швы исчезают: сплошная поверхность заменяет собранные кусочки.
-          .to(bgRef.current, { autoAlpha: 1, duration: 0.35 })
-          .to(puzzle.svg, { autoAlpha: 0, duration: 0.35, onComplete: puzzle.destroy }, '<');
-      } else if (prevHeight.current === null) {
-        timeline.from(bgRef.current, { autoAlpha: 0, duration: 0.3 });
+        timeline.from(
+          card,
+          {
+            y: 40,
+            scale: 0.98,
+            filter: 'blur(6px)',
+            autoAlpha: 0,
+            transformOrigin: '50% 100%',
+            duration: 1.4,
+            ease: 'power2.out',
+            clearProps: 'transform,filter',
+          },
+          wide ? wideEnterDelay : NARROW_ENTER_DELAY,
+        );
       } else {
         timeline.fromTo(
           bgRef.current,
           { scaleY: prevHeight.current / card.offsetHeight },
-          { scaleY: 1, transformOrigin: '50% 0%', duration: 0.5, ease: 'power3.out' },
+          { scaleY: 1, transformOrigin: '50% 0%', duration: 0.6, ease: 'power2.out' },
         );
       }
       timeline.from(
         parts(),
-        { ...SCATTER, duration: 0.75, ease: 'back.out(1.3)', stagger: 0.06 },
-        prevHeight.current === null ? '-=0.25' : 0.1,
+        { y: 14, autoAlpha: 0, duration: 0.9, ease: 'power2.out', stagger: 0.07 },
+        prevHeight.current === null ? '<0.45' : 0.15,
       );
-      return () => puzzle?.destroy();
     },
     { dependencies: [shown, entered], scope: rootRef },
   );

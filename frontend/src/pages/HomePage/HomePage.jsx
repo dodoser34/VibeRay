@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigationInterceptor, useTransitionNavigate } from '@/app/transitions/useTransition';
 import { useViewport, WIDE_QUERY } from '@/adaptations/core';
 import { AuthPanel } from '@/features/auth';
-import { FrontLayer, HeroCanvas, SHEET_FLY_SHIFT } from '@/features/hero';
+import { FRONT_FLOW_END, FrontLayer, HeroCanvas, SHEET_FLY_SHIFT } from '@/features/hero';
 import { getCity } from '@/shared/api/endpoints/cities';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
@@ -55,22 +55,31 @@ export function HomePage() {
     window.scrollTo(0, 0);
   }, []);
 
-  // «В город»: интерфейс гаснет, девушка уходит за край листа, затем переход к карте.
+  // «В город»: форма гаснет, лист опускается вместе с девушкой (она уходит за его край — как при
+  // прокрутке), затем переход к карте. Лист не гасим: девушка обрезана по его краю.
   const flyIntoCity = useCallback(async () => {
     leavingRef.current = true;
     ScrollTrigger.getAll().forEach((trigger) => trigger.disable(false));
-    gsap.to([columnRef.current, layerRef.current], {
-      autoAlpha: 0,
-      x: -40,
-      duration: 0.5,
-      ease: 'power2.in',
+    gsap.to(columnRef.current, { autoAlpha: 0, x: -40, duration: 0.5, ease: 'power2.in' });
+    const fly = { progress: 0 };
+    await gsap.to(fly, {
+      progress: 1,
+      duration: 1.3,
+      ease: 'power2.inOut',
+      onUpdate: () => {
+        heroRef.current?.setFlyProgress(fly.progress);
+        gsap.set(layerRef.current, { yPercent: fly.progress * SHEET_FLY_SHIFT * 100 });
+      },
     });
-    await heroRef.current?.flyIntoCity({ duration: 1.5 });
     await gsap.to(fadeRef.current, { autoAlpha: 1, duration: 0.35, ease: 'power1.in' });
   }, []);
 
   useNavigationInterceptor(
-    useCallback((to) => (to.startsWith('/map') ? flyIntoCity() : null), [flyIntoCity]),
+    // В раздел модератора уходим так же, как в город: без бумажной карты поверх опускающегося листа.
+    useCallback(
+      (to) => (to.startsWith('/map') || to.startsWith('/moderation') ? flyIntoCity() : null),
+      [flyIntoCity],
+    ),
   );
 
   // Десктоп: прокрутка вниз ведёт тот же уход, затем открывает карту.
@@ -128,6 +137,8 @@ export function HomePage() {
   const celebrate = async (user, how) => {
     // У модератора свой интерфейс: после входа — сразу в его раздел.
     if (isModerator(user)) {
+      heroRef.current?.cheer();
+      await gsap.to({}, { duration: 0.6 });
       go('/moderation');
       return;
     }
@@ -221,6 +232,7 @@ export function HomePage() {
               districts={districts}
               onDistrictPreview={() => heroRef.current?.glance()}
               onAuthenticated={celebrate}
+              wideEnterDelay={FRONT_FLOW_END}
             />
           </div>
         </div>

@@ -12,10 +12,6 @@ export function HeroCanvas({ ref, stacked = false }) {
   useImperativeHandle(
     ref,
     () => ({
-      flyIntoCity: (options) => {
-        thoughtsRef.current?.hide();
-        return heroRef.current?.flyIntoCity(options);
-      },
       setFlyProgress: (progress) => {
         thoughtsRef.current?.fade(progress);
         heroRef.current?.setFlyProgress(progress);

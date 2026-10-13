@@ -25,11 +25,3 @@
 .pane {
   position: relative;
 }
-
-/* Кусочки пазла поверхности карточки (только первое появление, см. AuthPanel). */
-.puzzle path {
-  fill: var(--color-bg-raised);
-  stroke: var(--color-text-faint);
-  stroke-opacity: 0.55;
-  stroke-width: 1.2;
-}

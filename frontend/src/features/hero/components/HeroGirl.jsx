@@ -73,8 +73,6 @@ export function HeroGirl({ ref, stacked = false, onRisen }) {
       };
     };
     return {
-      flyIntoCity: ({ duration = 1.5 } = {}) =>
-        gsap.to(imageRef.current, { yPercent: 70, duration, ease: 'power2.in' }),
       setFlyProgress: (progress) => {
         gsap.set(imageRef.current, { yPercent: progress * 70 });
         // Лист опускается при прокрутке — край обрезки едет вместе с ним.
@@ -132,6 +130,7 @@ export function HeroGirl({ ref, stacked = false, onRisen }) {
         alt=""
         draggable="false"
         decoding="async"
+        fetchPriority="high" // главная картинка первого экрана — грузится раньше остального
       />
     </div>
   );
