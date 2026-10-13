@@ -3,22 +3,18 @@ import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useTheme } from '@/shared/hooks/useTheme';
+import { EDGE, SHEET_H as H, SHEET_W as W } from '../lib/sheetEdge';
 import { createSheetTexture, TILE } from '../lib/sheetTexture';
 import styles from './FrontLayer.module.css';
 
-// S-образная кривая из эскиза как физический слой: левый лист (с пропуском жителя) лежит над
-// 3D-сценой, город — ниже, за его изогнутым краем. viewBox 1440×900; кривая начинается слева
-// сверху, проходит мимо карточки, ныряет под город и уходит за правый край.
-const EDGE =
-  'M 150 0 C 420 30 590 120 640 330 C 690 540 760 720 960 790 C 1120 845 1300 820 1440 760';
+// S-образная кривая из эскиза как физический слой: левый лист (с пропуском жителя) лежит выше,
+// девушка — ниже, за его изогнутым краем (кривая — lib/sheetEdge.js).
 const SHEET = `${EDGE} L 1440 900 L 0 900 L 0 0 Z`;
 // Второй, чуть более низкий край даёт листу видимую толщину (как вырезанная бумага).
 const THICKNESS = `M 150 0 C 428 34 602 126 654 336 C 704 548 774 730 968 802 C 1126 858 1304 834 1440 776 L 1440 900 L 0 900 L 0 0 Z`;
 
 // «Водопад наоборот»: лист натекает из правого нижнего угла к левому верхнему. Фронт потока — линия
 // поперёк этой диагонали, впереди которой бегут струи.
-const W = 1440;
-const H = 900;
 const LENGTH = Math.hypot(W, H);
 const DIR = [-W / LENGTH, -H / LENGTH]; // снизу справа → вверх влево
 const ACROSS = [-DIR[1], DIR[0]];

@@ -67,7 +67,7 @@ npm run dev
 |---|---|
 | **react**, **react-dom** 19 | весь интерфейс: страницы `src/pages`, модули `src/features`, UI-кит `src/shared/ui` |
 | **react-router** 8 | маршруты `src/app/router.jsx` (карта, район, проблема, статистика, о проекте, поддержка, настройки, 404) |
-| **three** | 3D: карта `src/features/map/scene`, девушка на главной `src/features/hero/scene`, история `src/features/story/scene` |
+| **three** | 3D: карта `src/features/map/scene`, комната истории `src/features/story/scene` |
 | **gsap**, **@gsap/react** | анимации: перелёты камеры, появление панелей, переходы страниц, скролл-история (ScrollTrigger), заголовки по словам (SplitText), смена языка; пресеты — `src/shared/animations` |
 | vite 8, @vitejs/plugin-react | сборка и dev-сервер (`frontend/vite.config.js`) |
 | eslint 9 + @eslint/js, eslint-plugin-react, eslint-plugin-react-hooks, globals | проверка кода (`frontend/eslint.config.js`) |
@@ -116,6 +116,7 @@ python backend/scripts/build_streets.py kostanay
 VibeRay/
 ├── README.md               # этот файл
 ├── CLAUDE.md               # правила проекта (локальный, в .gitignore)
+├── AGENTS.md               # те же правила для GPT/Codex (локальный, в .gitignore)
 ├── ARCHITECTURE.md         # архитектура: папки, модель данных, API, алгоритмы, 3D, языки
 ├── docs/                   # DECISIONS.md — журнал решений, CHANGELOG.md — журнал изменений, 3d/ — .blend
 ├── .github/workflows/      # deploy-pages.yml — сборка и публикация сайта
@@ -156,7 +157,8 @@ GitHub Actions.
 ## Документация
 
 - `CLAUDE.md` — правила: стек, запреты, стиль кода, приватность, чек-лист перед завершением задачи
-  (локальный файл, в репозиторий не попадает — см. `.gitignore`).
+  (локальный файл, в репозиторий не попадает — см. `.gitignore`). `AGENTS.md` — те же правила для GPT/Codex
+  и других агентов (тоже локальный); оба файла держатся одинаковыми.
 - [ARCHITECTURE.md](ARCHITECTURE.md) — как всё устроено.
 - [docs/DECISIONS.md](docs/DECISIONS.md) — почему решили именно так.
 - [docs/CHANGELOG.md](docs/CHANGELOG.md) — что и когда менялось на сайте.

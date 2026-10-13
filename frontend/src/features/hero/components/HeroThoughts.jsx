@@ -8,6 +8,7 @@ import { formatNumber } from '@/shared/lib/formatNumber';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Icon } from '@/shared/ui/icons/Icon';
 import home from '@/texts/ru/home.json';
+import { usePointerParallax } from '../hooks/usePointerParallax';
 import styles from './HeroThoughts.module.css';
 
 // Мысли жителя — пять разных видов, идут вперемешку, чтобы соседние облачка не были похожи:
@@ -40,25 +41,34 @@ const DISTRICT_BAR = [
 ];
 // С какой стороны головы всплывает очередная мысль — угол от центра головы (градусы, 0 — вправо,
 // −90 — вверх), стороны чередуются. Широкий экран: справа сверху, слева сверху, справа, над головой
-// (левее и ниже — край переднего листа). Одна колонка: у правого и левого плеча — сбоку от головы
-// места нет, а лицо закрывать нельзя. Облачко растёт от угла, ближнего к голове.
-const SIDES = { wide: [-35, -145, 8, -100], stacked: [55, 125] };
+// (левее — колонка с формой, туда облачко не заходит). Одна колонка: справа от головы, на полосе
+// рядом с девушкой (HeroGirl сдвинута влево). Облачко растёт от угла, ближнего к голове.
+const SIDES = { wide: [-35, -145, 8, -100], stacked: [-15, 25] };
 const SHOW_MS = 3600;
 const SWAP_MS = 700;
 const DOTS = 3;
+// Мысли — передний план: за указателем сдвигаются сильнее девушки, отсюда ощущение глубины.
+const DEPTH = {
+  move: (px, py) => ({ x: px * 22, y: py * 14 }),
+  idle: (t) => ({ x: t * 6 }),
+};
 // Отступ облачка от края сцены, px.
 const PAD = 12;
+// Широкий экран: левее этой доли ширины — колонка с формой, облачко туда не заходит.
+const COLUMN_SHARE = 0.47;
+// Одна колонка: столько px снизу сцены перекрывает заголовок (поднят отрицательным отступом).
+const STACKED_BOTTOM = 56;
 
 // Мысли девушки: облачко с цепочкой кружков от головы всплывает, держится и тает, следующее —
 // с другой стороны. Сменяются по очереди, без перескоков и покачиваний. anchor() — центр и радиус
-// головы в px сцены (Hero3D.headPoint; пока модель грузится — null, облачко ждёт). Цикл идёт по реальным таймерам, а не по
-// шкале GSAP: при reduced motion GSAP ускорен в 20 раз, и мысли мелькали бы. Уход к карте гасит
-// слой (fade / hide).
+// головы в px слоя (HeroGirl.headPoint). Цикл идёт по реальным таймерам, а не по шкале GSAP: при
+// reduced motion GSAP ускорен в 20 раз, и мысли мелькали бы. Уход к карте гасит слой (fade / hide).
 export function HeroThoughts({ ref, active, stacked = false, anchor }) {
   useLanguage();
   const rootRef = useRef(null);
   const bubbleRef = useRef(null);
   const [cycle, setCycle] = useState(0);
+  usePointerParallax(rootRef, DEPTH);
   const thought = cycle ? THOUGHTS[(cycle - 1) % THOUGHTS.length] : null;
 
   useEffect(() => {
@@ -92,25 +102,39 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
       head.y -= root.offsetTop;
 
       const sides = stacked ? SIDES.stacked : SIDES.wide;
-      const angle = (sides[(cycle - 1) % sides.length] * Math.PI) / 180;
-      const dir = { x: Math.cos(angle), y: Math.sin(angle) };
       const w = bubble.offsetWidth;
       const h = bubble.offsetHeight;
-      // Угол облачка, ближний к голове, — на луче от головы; облачко растёт от него наружу.
-      const corner = {
-        x: head.x + dir.x * head.radius * 1.5,
-        y: head.y + dir.y * head.radius * 1.5,
+      const minLeft = stacked ? PAD : root.clientWidth * COLUMN_SHARE;
+      const maxLeft = root.clientWidth - w - PAD;
+      const maxTop = root.clientHeight - h - (stacked ? STACKED_BOTTOM : PAD);
+      // Место облачка для направления от головы: угол облачка, ближний к голове, — на луче, облачко
+      // растёт от него наружу и не выходит за допустимую область. Цена места — насколько облачко
+      // перекрывает голову (квадрат вокруг неё) и насколько его пришлось сдвинуть от луча.
+      const place = (degrees) => {
+        const a = (degrees * Math.PI) / 180;
+        const d = { x: Math.cos(a), y: Math.sin(a) };
+        const corner = { x: head.x + d.x * head.radius * 1.5, y: head.y + d.y * head.radius * 1.5 };
+        const wantLeft = d.x >= 0 ? corner.x : corner.x - w;
+        const wantTop = d.y < 0 ? corner.y - h : corner.y;
+        const left = gsap.utils.clamp(minLeft, Math.max(minLeft, maxLeft), wantLeft);
+        const top = gsap.utils.clamp(PAD, Math.max(PAD, maxTop), wantTop);
+        const r = head.radius * 1.05;
+        const overlapX = Math.max(0, Math.min(left + w, head.x + r) - Math.max(left, head.x - r));
+        const overlapY = Math.max(0, Math.min(top + h, head.y + r) - Math.max(top, head.y - r));
+        const shift = Math.abs(left - wantLeft) + Math.abs(top - wantTop);
+        return { dir: d, corner, left, top, cost: overlapX * overlapY + shift * 0.5 };
       };
-      const left = gsap.utils.clamp(
-        PAD,
-        root.clientWidth - w - PAD,
-        dir.x >= 0 ? corner.x : corner.x - w,
-      );
-      const top = gsap.utils.clamp(
-        PAD,
-        root.clientHeight - h - PAD,
-        dir.y < 0 ? corner.y - h : corner.y,
-      );
+      // Сначала сторона по очереди, затем запасные — зеркальная и над головой; берётся первая
+      // свободная, а если свободных нет — с наименьшим перекрытием.
+      const preferred = sides[(cycle - 1) % sides.length];
+      const options = [
+        preferred,
+        180 - preferred,
+        ...(stacked ? [-45, 50, 0] : [-90, -60, -120]),
+      ].map(place);
+      const { dir, corner, left, top } =
+        options.find((option) => option.cost < 1) ??
+        options.reduce((best, option) => (option.cost < best.cost ? option : best));
       // Кружки — от края головы (у виска, если облачко ниже) к углу облачка, от маленького к
       // большому.
       const from =

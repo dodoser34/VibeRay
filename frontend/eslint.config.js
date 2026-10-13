@@ -4,8 +4,7 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 
 export default [
-  // public/draco — декодер Draco, скопированный из three/examples как есть
-  { ignores: ['dist', 'node_modules', 'public/draco'] },
+  { ignores: ['dist', 'node_modules'] },
   js.configs.recommended,
   react.configs.flat.recommended,
   react.configs.flat['jsx-runtime'],

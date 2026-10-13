@@ -1,8 +1,9 @@
-/* Облачка не заходят под таб-бар */
+/* Облачка не заходят под таб-бар и лежат над передним листом (иначе мысль слева от головы прячется
+   за его изогнутым краем), но под колонкой с формой */
 .root {
   position: absolute;
   inset: calc(var(--tabbar-height) + var(--space-3)) 0 0;
-  z-index: var(--z-scene);
+  z-index: var(--z-panel);
   overflow: hidden;
   pointer-events: none;
 }
@@ -149,8 +150,14 @@
 
 /* Одна колонка: девушка в узком блоке — облачка компактнее */
 .root[data-stacked] .bubble {
-  max-width: 12.5rem;
+  max-width: 9.5rem;
   padding: var(--space-3);
+}
+
+/* Узкое облачко: шкала лиц переносится на вторую строку, а не распирает его */
+.root[data-stacked] .faces {
+  flex-wrap: wrap;
+  gap: var(--space-1);
 }
 
 /* Узкое облачко: картинка и текст — друг под другом, у всех видов мысли */

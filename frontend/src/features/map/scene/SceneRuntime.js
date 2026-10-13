@@ -5,19 +5,11 @@ import { cssVar } from '@/shared/lib/cssVar';
 // Общий рендерер и цикл отрисовки для всех Three.js-сцен сайта (без постобработки: спокойный вид).
 export class SceneRuntime {
   // transparent: сквозь пустые части сцены виден анимированный фон страницы; shadows: карта теней
-  // (мягкие PCF-тени, нужны комнате истории); pauseOffscreen: не рисовать, пока холст прокручен за
-  // край экрана (тяжёлая модель на главной телефона).
+  // (мягкие PCF-тени, нужны комнате истории).
   constructor(
     canvas,
     container,
-    {
-      fov = 40,
-      fogNear = 20,
-      fogFar = 60,
-      transparent = false,
-      shadows = false,
-      pauseOffscreen = false,
-    } = {},
+    { fov = 40, fogNear = 20, fogFar = 60, transparent = false, shadows = false } = {},
   ) {
     this.container = container;
     // Плотность пикселей, сглаживание и детализация сцены зависят от устройства (adaptations/core).
@@ -47,23 +39,13 @@ export class SceneRuntime {
     this.tickers = new Set();
     this.resizers = new Set();
     this.frame = null;
-    this.frameInterval = 0;
-    this.onScreen = true;
     this.startTime = performance.now();
     this.lastTime = this.startTime;
 
     this.resizeObserver = new ResizeObserver(() => this.resize());
     this.resizeObserver.observe(container);
-    this.onVisibilityChange = () => (document.hidden ? this.stop() : this.resume());
+    this.onVisibilityChange = () => (document.hidden ? this.stop() : this.start());
     document.addEventListener('visibilitychange', this.onVisibilityChange);
-    if (pauseOffscreen) {
-      this.intersection = new IntersectionObserver(([entry]) => {
-        this.onScreen = entry.isIntersecting;
-        if (this.onScreen) this.resume();
-        else this.stop();
-      });
-      this.intersection.observe(container);
-    }
 
     this.resize();
     this.start();
@@ -95,29 +77,18 @@ export class SceneRuntime {
     return () => this.resizers.delete(fn);
   }
 
-  // Потолок частоты кадров (0 — без потолка): спокойная сцена может рисоваться реже.
-  setFrameRate(fps) {
-    this.frameInterval = fps ? 1000 / fps : 0;
-  }
-
   start() {
     if (this.frame !== null) return;
     this.lastTime = performance.now();
     const loop = (now) => {
-      this.frame = requestAnimationFrame(loop);
-      // Запас в 2 мс: кадры монитора приходят неровно, без него 30 к/с превращались бы в 20.
-      if (this.frameInterval && now - this.lastTime < this.frameInterval - 2) return;
       const delta = Math.min((now - this.lastTime) / 1000, 0.1);
       this.lastTime = now;
       const elapsed = (now - this.startTime) / 1000;
       this.tickers.forEach((fn) => fn(elapsed, delta));
       this.renderer.render(this.scene, this.camera);
+      this.frame = requestAnimationFrame(loop);
     };
     this.frame = requestAnimationFrame(loop);
-  }
-
-  resume() {
-    if (!document.hidden && this.onScreen) this.start();
   }
 
   stop() {
@@ -135,7 +106,6 @@ export class SceneRuntime {
   dispose() {
     this.stop();
     this.resizeObserver.disconnect();
-    this.intersection?.disconnect();
     document.removeEventListener('visibilitychange', this.onVisibilityChange);
     this.tickers.clear();
     this.resizers.clear();

@@ -1,10 +1,9 @@
 import { useImperativeHandle, useRef, useState } from 'react';
-import { Hero3D } from './Hero3D';
+import { HeroGirl } from './HeroGirl';
 import { HeroThoughts } from './HeroThoughts';
 
-// Девушка героя главной — всегда 3D-модель максимального качества (другой версии нет, в том числе
-// в лёгком режиме графики). Когда она выехала снизу, вокруг головы начинают всплывать мысли; уход
-// к карте их гасит.
+// Девушка героя главной (иллюстрация). Когда она выехала снизу, вокруг головы начинают всплывать
+// мысли; уход к карте их гасит.
 export function HeroCanvas({ ref, stacked = false }) {
   const heroRef = useRef(null);
   const thoughtsRef = useRef(null);
@@ -30,7 +29,7 @@ export function HeroCanvas({ ref, stacked = false }) {
 
   return (
     <>
-      <Hero3D ref={heroRef} stacked={stacked} onRisen={() => setRisen(true)} />
+      <HeroGirl ref={heroRef} stacked={stacked} onRisen={() => setRisen(true)} />
       <HeroThoughts
         ref={thoughtsRef}
         active={risen}

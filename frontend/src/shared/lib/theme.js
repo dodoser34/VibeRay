@@ -7,7 +7,7 @@ import { readChoice, writeValue } from './localFlag';
 // открылась в нужной теме, без вспышки. Смена на лету — applyTheme(): CSS перекрашивается сам, а
 // 3D-сцены и canvas подписаны (useTheme / subscribeTheme) и перечитывают токены.
 
-export const THEMES = ['dark', 'light'];
+const THEMES = ['dark', 'light'];
 const STORAGE_KEY = 'viberay.theme';
 
 // Сохранённый выбор, иначе — по настройке системы.

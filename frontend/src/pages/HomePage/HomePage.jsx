@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigationInterceptor, useTransitionNavigate } from '@/app/transitions/useTransition';
 import { useViewport, WIDE_QUERY } from '@/adaptations/core';
 import { AuthPanel } from '@/features/auth';
-import { FrontLayer, HeroCanvas } from '@/features/hero';
+import { FrontLayer, HeroCanvas, SHEET_FLY_SHIFT } from '@/features/hero';
 import { getCity } from '@/shared/api/endpoints/cities';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
@@ -87,7 +87,10 @@ export function HomePage() {
             if (leavingRef.current) return;
             heroRef.current?.setFlyProgress(progress);
             gsap.set(columnRef.current, { autoAlpha: 1 - progress * 2.4, x: -progress * 90 });
-            gsap.set(layerRef.current, { autoAlpha: 1 - progress * 1.6, yPercent: progress * 30 });
+            gsap.set(layerRef.current, {
+              autoAlpha: 1 - progress * 1.6,
+              yPercent: progress * SHEET_FLY_SHIFT * 100,
+            });
           },
           onLeave: () => {
             if (leavingRef.current) return;
