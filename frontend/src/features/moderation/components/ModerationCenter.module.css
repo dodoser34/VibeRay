@@ -8,6 +8,7 @@
 }
 
 .hero {
+  position: relative;
   display: grid;
   justify-items: start;
   gap: var(--space-3);
@@ -32,6 +33,7 @@
 }
 
 .title {
+  padding-right: 17rem;
   font-size: clamp(2rem, 1rem + 3vw, 3.25rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -44,8 +46,28 @@
   line-height: 1.5;
 }
 
-/* Сводка — одной полосой, цифры крупно */
+/* Девушка с планшетом справа от заголовка. Низ картинки уходит под полосу сводки (она идёт следом и
+   непрозрачна) и ещё до этого растворяется — жёсткого среза не видно. */
+.figure {
+  position: absolute;
+  right: 2rem;
+  bottom: calc(var(--space-6) * -1 - 1.5rem);
+  height: 17rem;
+  transform-origin: 50% 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+.figure img {
+  display: block;
+  width: auto;
+  height: 100%;
+  mask-image: var(--figure-fade);
+}
+
+/* Сводка — одной полосой, цифры крупно; лежит поверх низа девушки */
 .kpis {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   min-height: 5.5rem;

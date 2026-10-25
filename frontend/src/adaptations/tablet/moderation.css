@@ -5,6 +5,17 @@
     padding-inline: var(--space-4);
   }
 
+  /* Девушка меньше, а подводка уже на её ширину — текст не уходит под картинку */
+  :root [data-ui='moderation-figure'] {
+    right: 0;
+    height: 12rem;
+  }
+
+  :root [data-ui='moderation-title'],
+  :root [data-ui='moderation-lead'] {
+    padding-right: 10rem;
+  }
+
   :root [data-ui='moderation-kpis'] {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

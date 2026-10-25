@@ -48,7 +48,8 @@
   },
   "toasts": {
     "moodSaved": "Danke! „{mood}“ wurde gezählt: {district}.",
-    "problemSent": "Das Problem wurde gesendet. Nach 3 Bestätigungen von Bewohnern gilt es als „Bestätigt“."
+    "problemSent": "Das Problem wurde gesendet. Nach 3 Bestätigungen von Bewohnern gilt es als „Bestätigt“.",
+    "problemWithdrawn": "Meldung zurückgezogen."
   },
   "attribution": {
     "prefix": "Viertel, Straßen und Gewässer: ©",

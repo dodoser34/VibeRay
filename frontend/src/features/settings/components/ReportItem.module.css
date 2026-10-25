@@ -169,6 +169,12 @@
   background: var(--color-accent-soft);
 }
 
+.iconButton[data-tone='danger']:hover {
+  border-color: var(--color-danger);
+  background: color-mix(in srgb, var(--color-danger) 16%, transparent);
+  color: var(--color-error);
+}
+
 .action svg,
 .iconButton svg {
   fill: none;

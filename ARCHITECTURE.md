@@ -54,7 +54,7 @@
 | `/moderation/support` | `ModerationPage section="support"` | Обращения жителей: тема, почта для ответа, текст, статус (новое → в работе → отвечено → закрыто) |
 | `/moderation/settings` | `SettingsPage` | Настройки модератора: профиль, безопасность, язык, тема, графика, выход (без «Моих сообщений», «Моего района» и удаления аккаунта) |
 
-| `*` | `NotFoundPage` | 404 в стиле бумажной карты: «Этот район ещё не нанесён на карту», показывает ненайденный адрес, ведёт на карту, главную и в поддержку |
+| `*` | `NotFoundPage` | 404 в стиле бумажной карты, перед ней — девушка со своей картой: «Этот район ещё не нанесён на карту», показывает ненайденный адрес, ведёт на карту, главную и в поддержку |
 
 Карта не размонтируется при переходах между районами, проблемами и дашбордом — меняется только состояние, панели и положение камеры.
 Переходы между страницами — через `app/transitions` (`useTransitionNavigate`, `useNavigationInterceptor`, `useTransitionReady`). По умолчанию играет переход «бумажная карта-оригами» (`shared/animations/pageTransition/MapFoldTransition.js`): сложенная карта вылетает из места клика и разворачивается на весь экран → страница меняется под ней, падает пин и рисуется маршрут к названию новой страницы, пока та грузится (страница держит переход через `useTransitionReady(ready)`, максимум 6 с; карта города ждёт данные города и настроений) → карта складывается и улетает к пункту таб-бара, новая страница проявляется. Если у страницы есть своя анимация выхода (на главной девушка уходит за край листа), играет она. Переключение «Вход ↔ Регистрация» на главной — без перехода (это одна страница). Вступительные анимации страниц (подложка и карточка входа главной, девушка героя, полёт камеры и рост районов на карте, панели карты, первый экран поддержки) ждут «ворот входа» (`shared/animations/pageTransition/pageEntrance.js`, хук `usePageEntered`): под бумажной картой новая страница уже смонтирована и грузится, а вступление стартует в момент, когда карта начинает складываться. При прямом заходе на страницу ворота открыты сразу.
@@ -74,6 +74,9 @@ VibeRay/
 ├── docs/
 │   ├── DECISIONS.md                   # журнал решений: что и почему решили (дата, причина)
 │   ├── CHANGELOG.md                   # журнал изменений: что добавлено и изменено на сайте
+│   ├── IMAGE_PROMPTS.md               # общий промт генерации иллюстраций с одним персонажем (ChatGPT / Codex)
+│   └── art/                           # character-sheet.webp — эталон персонажа; auth-waving.webp — запасная поза;
+│                                      #   incoming/ — сюда кладутся сгенерированные PNG перед переносом в проект
 │
 ├── .claude/launch.json                # запуск dev-сервера из Claude Code (превью)
 ├── .github/workflows/deploy-pages.yml # сборка фронтенда и публикация на GitHub Pages (демо-режим, раздел 7.2)
@@ -89,6 +92,7 @@ VibeRay/
 │   ├── .prettierrc                    # Prettier; .geojson читается как JSON
 │   ├── public/
 │   │   ├── favicon.svg
+│   │   ├── og-image.jpg               # превью ссылки в мессенджерах (Open Graph, 1200 × 630; теги — plugins/languagePages.js)
 │   │   └── models/                    # экспорт из Blender: story-room_street.glb (комната истории «О проекте»)
 │   └── src/
 │       ├── main.jsx                   # точка входа: AuthProvider + RouterProvider
@@ -125,13 +129,15 @@ VibeRay/
 │       │   │                          #   множителя высоты районов (ползунок в фильтрах); хуки страницы — useCityClock (часы
 │       │   │                          #   города), useHeightScale, usePanelVisibility (скрытые панели), useMapTour (подсказки),
 │       │   │                          #   useToast, useFollowTooltip; mapState.js — чистые расчёты (открытая проблема,
-│       │   │                          #   содержимое панели, факты района)
+│       │   │                          #   содержимое панели, факты района); guide.webp — портрет девушки в подсказках тура,
+│       │   │                          #   cheer.webp — девушка с поднятым пальцем в сообщении «проблема отправлена»
 │       │   ├── AboutPage/             # история идеи (StoryExperience) + «Как это работает» (StoryGuide)
 │       │   ├── SettingsPage/          # настройки профиля: гость → /login, районы для «своего района», выход/удаление;
 │       │   │                          #   у модератора — свои разделы (/moderation/settings)
 │       │   ├── ModerationPage/        # разделы модератора: очередь, город, обращения (section)
 │       │   ├── ModerationMapPage/     # карта модератора: город, настроения недели и очередь проблем
 │       │   ├── NotFoundPage/          # 404: иллюстрация «бумажная карта с неразмеченным районом» (NotFoundMap)
+│       │   │                          #   и перед ней girl-map.webp — девушка со своей картой
 │       │   └── SupportPage/           # собирает SupportCenter из features/support
 │       ├── features/
 │       │   ├── auth/
@@ -140,24 +146,26 @@ VibeRay/
 │       │   │                          #   PassForms.module.css — общие стили форм входа и регистрации на карточке-пропуске
 │       │   ├── hero/
 │       │   │   ├── lib/               # sheetTexture.js — текстура переднего листа (стилизованный план города)
-│       │   │   ├── assets/            # girl-1356.webp (исходник) и girl-720.webp — иллюстрация девушки, srcset
+│       │   │   ├── assets/            # girl.webp — иллюстрация девушки, один файл в полном разрешении
 │       │   │   └── components/        # HeroCanvas (девушка + мысли): HeroGirl (иллюстрация, выезд, точки руки и головы),
 │       │   │                          #   HeroThoughts (облачка мыслей); FrontLayer.jsx (передний слой с S-краем)
 │       │   ├── moderation/            # интерфейс модератора: ModerationCenter (сводка + раздел), ProblemQueue (фильтры),
 │       │   │                          #   QueueItem (проблема и действия по статусу), RejectForm (причина, исходная проблема),
-│       │   │                          #   CityOverview (проблемные районы), SupportInbox (обращения), ModerationMap (карта)
+│       │   │                          #   CityOverview (проблемные районы), SupportInbox (обращения), ModerationMap (карта);
+│       │   │                          #   assets/moderator.webp — девушка с планшетом, всегда в шапке рабочего места
 │       │   ├── notifications/         # уведомления: NotificationsProvider (опрос), NotificationBell (таб-бар),
 │       │   │                          #   NotificationsPanel + NotificationList (панель и шторка телефона); model/ NotificationsProvider,
-│       │                              #   NotificationsContext, useNotifications
+│       │                              #   NotificationsContext, useNotifications; assets/empty-tea.webp — пустая панель
 │       │   ├── settings/              # настройки профиля: SettingsCenter (навигация по разделам), SettingsSection (рамка раздела) и разделы ProfileSection
 │       │   │                          #   (+ AvatarPicker), MyReportsSection (+ ReportItem), DistrictSection, SecuritySection, AccountSection (+ DeleteAccountDialog);
 │       │   │                          #   SaveBar — «Сохранить / Отменить» и итог; hooks/useSaveAction
-│       │   │                          #   assets/profile-assistant.webp — иллюстрация в шапке (одна на обе темы)
+│       │   │                          #   assets/profile-assistant.webp — иллюстрация в шапке (одна на обе темы),
+│       │   │                          #   assets/empty-reports.webp — пустые «Мои сообщения»
 │       │   ├── support/               # центр поддержки: content.js (категории, FAQ), lib/searchHelp.js (поиск по ответам),
 │       │   │                          #   hooks/useFigurePointer.js (девушка у вопросов подъезжает к открытому вопросу),
 │       │   │                          #   components/ SupportCenter, HelpSearch, HelpCategories (3D-наклон), FaqList,
 │       │   │                          #   SupportRequestForm (обращение + файлы), ServiceStatus
-│       │   │                          #   assets/ — иллюстрации: assistant-{light,dark}.webp (шапка, по теме), faq-assistant.webp (у вопросов)
+│       │   │                          #   assets/ — иллюстрации: assistant.webp (шапка, одна на обе темы), faq-assistant.webp (у вопросов)
 │       │   ├── story/                 # «Как появилась идея» — история на прокрутке для страницы «О проекте»
 │       │   │   ├── content.js         # порядок глав истории, at() — позиция на шкале (тексты — в texts/{ru,en}/about.json)
 │       │   │   ├── storyTimeline.js   # анимации поверх сцены (подписи, карточки, календарь, панели, финал) — общие
@@ -205,7 +213,8 @@ VibeRay/
 │       │   ├── ui/                    # общие элементы интерфейса, по подпапкам:
 │       │   │   ├── controls/          #   Button (в т.ч. danger), TextField, OptionGroup (выбор одного варианта: тема,
 │       │   │   │                      #   графика), ThemeSwitch, LanguageSwitch (флаги языков: шапка, меню, настройки)
-│       │   │   ├── windows/           #   Modal (окно; на телефоне — шторка), CoachMarks (пошаговые подсказки)
+│       │   │   ├── windows/           #   Modal (окно; на телефоне — шторка), ConfirmDialog (подтверждение необратимого
+│       │   │   │                      #   действия: отозвать сообщение и т. п.), CoachMarks (пошаговые подсказки)
 │       │   │   ├── avatar/            #   Avatar (пресет или своё фото)
 │       │   │   ├── icons/             #   Icon + glyphs.jsx (все иконки интерфейса по имени: <Icon name="close" />),
 │       │   │   │                      #   LogoMark (знак: V с многоэтажками внутри; тот же рисунок в public/favicon.svg)
@@ -537,7 +546,13 @@ rejected ──(модератор: восстановить)──▶ new
 - **Отклонённое сообщение** (`rejected`) видит только автор: его нет в `GET /problems`, в статистике и на карте;
   `GET /problems/{id}` для остальных — 404 `problem_not_found`, подтвердить нельзя — 409 `problem_rejected`. Автор
   получает уведомление с причиной; у дубля в карточке — ссылка на исходную (`duplicate_of`), чтобы подтвердить её.
-- Автор не может подтвердить свою проблему. Подтверждение можно снять, пока статус `new`.
+- Автор не может подтвердить свою проблему. Подтверждение можно снять, пока статус `new` (иначе 409
+  `confirmation_locked`): счётчик уменьшается, статус назад не откатывается.
+- **Автор может отозвать своё сообщение**, пока город за него не взялся — в статусах `new`, `confirmed`,
+  `rejected` (`WITHDRAWABLE_STATUSES`). Сообщение удаляется целиком: с карты, из статистики и очереди модератора,
+  вместе с подтверждениями и уведомлениями о нём. В работе и решённое — уже история района: 409 `problem_in_work`;
+  такое сообщение автор может только **убрать из своего списка** (`DELETE /users/me/problems/{id}`): на карте и в
+  статистике оно остаётся, из «Моих сообщений» исчезает, уведомления о нём больше не приходят.
 - Район проблемы определяется по точке; точка вне границ города — ошибка 422.
 - Каждая смена статуса пишется в `problem_status_changes`.
 
@@ -610,8 +625,10 @@ rejected ──(модератор: восстановить)──▶ new
 | POST | `/users/me/password` | авториз. | смена пароля: `current_password`, `new_password` (правила раздела 8) → 204. Ошибки: `wrong_password` (403), `weak_password`. Сервер отзывает остальные refresh-сессии пользователя |
 | DELETE | `/users/me` | авториз. | удалить аккаунт: тело `{password}` → 204, ошибка `wrong_password` (403). Удаляются профиль и сессии; отметки настроения остаются в агрегатах без привязки к пользователю |
 | GET | `/users/me/problems` | авториз. | свои сообщения о проблемах, новые первыми, с `history` |
+| DELETE | `/users/me/problems/{id}` | автор | убрать своё сообщение из списка (любой статус; на карте остаётся) → 204. Ошибка: `not_author` (403) |
 | GET | `/users/me/notifications` | авториз. | `{unread, items: [{id, kind, problem_id, status, count, created_at, read, problem: {id, category, district, district_name, status}}]}`, новые первыми. Фронтенд опрашивает раз в 20 с и при возврате на вкладку |
 | POST | `/users/me/notifications/read` | авториз. | `{ids?}` — отметить прочитанными (без `ids` — все) → 204 |
+| DELETE | `/users/me/notifications` | авториз. | `{ids?}` — стереть уведомления (без `ids` — все) → 204 |
 | GET | `/users/{nickname}` | все | `UserPublic`: только nickname + avatar_url |
 | GET | `/cities` | все | список городов |
 | GET | `/cities/{slug}` | все | город (`timezone` — для времени суток на карте) + `districts`, `water`, `streets` (GeoJSON FeatureCollection) |
@@ -623,7 +640,8 @@ rejected ──(модератор: восстановить)──▶ new
 | POST | `/problems` | авториз. | создать. multipart: `category`, `lon`, `lat`, `description` (10–1000 символов), `photos` — до 3 файлов JPEG/PNG/WebP ≤ 10 МБ, `is_anonymous` (`true` — скрыть автора от жителей). Район определяется сервером по точке; точка вне районов — 422 `outside_city` |
 | GET | `/problems/{id}` | все | полная карточка + `history` (`[{status, changed_at}]` из `problem_status_changes`); для вошедшего ещё `is_mine` и `confirmed_by_me`; у отклонённой — `rejection_reason`, `duplicate_of` (видна только автору, остальным 404) |
 | POST | `/problems/{id}/confirm` | авториз. | подтвердить → полная карточка; своё сообщение — 409 `own_problem`, повторно — 409 `already_confirmed`. Автор получает уведомление |
-| DELETE | `/problems/{id}/confirm` | авториз. | снять подтверждение |
+| DELETE | `/problems/{id}/confirm` | авториз. | снять своё подтверждение, пока статус `new` → полная карточка. Ошибки: `not_confirmed` (409), `confirmation_locked` (409) |
+| DELETE | `/problems/{id}` | автор | отозвать своё сообщение в статусах `WITHDRAWABLE_STATUSES` (раздел 6.2) → 204. Ошибки: `not_author` (403), `problem_in_work` (409) |
 | PATCH | `/problems/{id}/status` | модератор | сменить статус по `MODERATOR_TRANSITIONS` (раздел 6.2); для `rejected` — `{status, reason, duplicate_of?}` → карточка модератора. Ошибки: `forbidden` (403), `invalid_status_change` (409), `invalid_reason` (422) |
 | GET | `/moderation/problems?status=&district=&category=&sort=` | модератор | очередь: `status` — `active` (новые, подтверждённые, в работе) или код статуса, включая `rejected`; `sort` — `newest` / `oldest` / `confirmations` → `{total, items}` (не больше 100; с автором — и у анонимных, `history`, `district_name`) |
 | GET | `/moderation/summary` | модератор | сводка: `counts` по статусам, `new_today`, `stale_confirmed` (подтверждены ≥ 7 дней), `resolved_week`, `avg_resolution_days` (решённые за 30 дней), `support_new` (обращения без ответа), `districts` (открыто, ждут решения, новых за неделю, самая старая открытая, настроение недели), `categories` (открытые по категориям) |
@@ -640,9 +658,9 @@ rejected ──(модератор: восстановить)──▶ new
 ### 7.1 Демо-режим: фронтенд без бэкенда
 - Все запросы идут через `shared/api/client.js`. Пока `VITE_USE_MOCKS` не равен `false` (по умолчанию), их обслуживает фейковый API `src/demo-data/api/handler.js` прямо в браузере — с задержкой, валидацией и кодами ошибок как у настоящего API.
 - **Все демо-данные — только в `frontend/src/demo-data/`** (см. `demo-data/README.md`): снимок геоданных Костаная `cities/kostanay/*` (копия `backend/data/cities/kostanay/*`), демо-пользователи `accounts.json`, демо-содержимое `content.json` (описания тестовых проблем, ники, названия сервисов), генератор статистики `api/generate.js`. В компонентах, страницах и `shared/` демо-данных нет.
-- Реализованы: `auth/register|login|logout`, `GET /cities/{slug}`, `GET /cities/{slug}/moods`, `GET /cities/{slug}/stats`, `GET /districts/{id}/stats`, `POST /districts/{id}/mood`, `GET /problems`, `POST /problems`, `POST /problems/{id}/confirm`, `GET /problems/{id}`, `PATCH /users/me`, `PUT /users/me/avatar`, `POST /users/me/password`, `DELETE /users/me`, `GET /users/me/problems`, `GET /users/me/notifications`, `POST /users/me/notifications/read`, `POST /support/requests`, `GET /status` (в моках все сервисы «работают»). Идентификатор района в моках = его `slug`.
-- Демо-аккаунты: житель `user@viberay.kz` / `User12345`, модератор `moderator@viberay.kz` / `Moder12345` (обе
-  подсказки — на форме входа). Каждая пятая демо-проблема анонимна; в разделе модератора — пять демо-обращений
+- Реализованы: `auth/register|login|logout`, `GET /cities/{slug}`, `GET /cities/{slug}/moods`, `GET /cities/{slug}/stats`, `GET /districts/{id}/stats`, `POST /districts/{id}/mood`, `GET /problems`, `POST /problems`, `POST /problems/{id}/confirm`, `DELETE /problems/{id}/confirm`, `DELETE /problems/{id}`, `GET /problems/{id}`, `PATCH /users/me`, `PUT /users/me/avatar`, `POST /users/me/password`, `DELETE /users/me`, `GET /users/me/problems`, `DELETE /users/me/problems/{id}`, `GET /users/me/notifications`, `POST /users/me/notifications/read`, `DELETE /users/me/notifications`, `POST /support/requests`, `GET /status` (в моках все сервисы «работают»). Идентификатор района в моках = его `slug`.
+- Демо-аккаунты: житель `emma.wilson@viberay.kz` / `Emma#Kst24`, модератор `sergey.volkov@viberay.kz` / `Sergey#Mod24`, новичок `lukas.becker@viberay.kz` / `Lukas#New24` — житель без сообщений и уведомлений, на нём видны пустые состояния (все
+  три подсказки — на форме входа). Каждая пятая демо-проблема анонимна; в разделе модератора — пять демо-обращений
   (`support.json`). Данные живут до перезагрузки страницы.
 - История для дашборда: город «работает» с января 2023 года; ~1 100 старых сообщений о проблемах (число растёт вместе с жителями, всё старше года решено) и 64 за последний месяц. У Аэропорта за день почти нет отметок — демонстрация порога приватности.
 - Сообщество в демо (`demo-data/api/community.js`): у демо-пользователя уже есть 6 сообщений разных статусов (одно — отклонённый дубль) (`accounts.json` → `reports`) с историей и уведомлениями; история статусов остальных проблем восстанавливается из текущего статуса. Когда вошедший отправляет новую проблему, «соседи» подтверждают её через ~25 и ~70 с — приходят уведомления, а на 3 подтверждениях статус становится «подтверждена». Если новое сообщение той же категории оказалось в 80 м от нерешённой проблемы, через ~40 с «модератор» отклоняет его как дубль со ссылкой на исходную.

@@ -22,7 +22,9 @@
     "rejectedNote": "A moderator rejected this report. Only you can see it: it isn't on the map or in the statistics.",
     "openOriginal": "Open the original problem",
     "anonymous": "Anonymous resident",
-    "anonymousMine": "{nickname} (anonymous)"
+    "anonymousMine": "{nickname} (anonymous)",
+    "unconfirm": "Undo confirmation",
+    "unconfirmed": "Confirmation removed."
   },
   "listItem": {
     "confirmations": "confirmations: {count}"
@@ -52,5 +54,19 @@
     "submit": "Send",
     "anonymousLabel": "Post anonymously",
     "anonymousHint": "Residents will see “Anonymous resident” instead of your nickname and avatar. Moderators can see the author — that’s how we fight spam."
+  },
+  "withdraw": {
+    "action": "Withdraw report",
+    "title": "Withdraw this report?",
+    "text": "It will disappear from the map and the district statistics, and neighbours’ confirmations and notifications about it will be removed. This can’t be undone.",
+    "confirm": "Withdraw",
+    "cancel": "Keep it"
+  },
+  "hide": {
+    "action": "Remove from my reports",
+    "title": "Remove from my reports?",
+    "text": "The city is already working on this problem, so it stays on the map and in the district statistics. It will disappear from your list, and you won’t get notifications about it anymore.",
+    "confirm": "Remove",
+    "cancel": "Keep it"
   }
 }

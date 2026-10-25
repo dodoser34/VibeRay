@@ -44,4 +44,11 @@
   :root [data-ui='table-sort'] {
     min-height: var(--touch-target);
   }
+
+  /* Наведения нет — крестик «стереть уведомление» виден всегда и крупнее под палец */
+  :root [data-ui='notification-remove'] {
+    width: var(--touch-target);
+    height: var(--touch-target);
+    opacity: 1;
+  }
 }

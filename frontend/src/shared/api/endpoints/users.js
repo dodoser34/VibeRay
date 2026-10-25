@@ -30,6 +30,11 @@ export function getMyProblems() {
   return request('GET', '/users/me/problems');
 }
 
+// Убрать своё сообщение из списка (в работе или решённое): на карте оно остаётся → 204.
+export function hideMyProblem(problemId) {
+  return request('DELETE', `/users/me/problems/${problemId}`);
+}
+
 // → { unread, items: [{ id, kind: 'confirmations' | 'status', problem, status, count, created_at, read }] }
 export function getNotifications() {
   return request('GET', '/users/me/notifications');
@@ -38,4 +43,9 @@ export function getNotifications() {
 // Без ids — все уведомления пользователя.
 export function markNotificationsRead(ids) {
   return request('POST', '/users/me/notifications/read', { body: ids ? { ids } : {} });
+}
+
+// Стереть уведомления; без ids — все уведомления пользователя.
+export function deleteNotifications(ids) {
+  return request('DELETE', '/users/me/notifications', { body: ids ? { ids } : {} });
 }

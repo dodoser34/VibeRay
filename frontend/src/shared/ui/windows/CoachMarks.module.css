@@ -33,6 +33,15 @@
   box-shadow: var(--shadow-panel);
 }
 
+.figure {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-glass-border);
+  background: var(--color-bg-raised);
+  user-select: none;
+}
+
 .progress {
   color: var(--color-accent-bright);
   font-size: var(--fs-2xs);

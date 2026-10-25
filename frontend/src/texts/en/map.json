@@ -48,7 +48,8 @@
   },
   "toasts": {
     "moodSaved": "Thank you! “{mood}” counted for {district}.",
-    "problemSent": "Problem sent. Once 3 residents confirm it, it becomes “Confirmed”."
+    "problemSent": "Problem sent. Once 3 residents confirm it, it becomes “Confirmed”.",
+    "problemWithdrawn": "Report withdrawn."
   },
   "attribution": {
     "prefix": "Districts, streets and water: ©",

@@ -22,7 +22,9 @@
     "rejectedNote": "Die Moderation hat diese Meldung abgelehnt. Nur du siehst sie: Auf der Karte und in der Statistik erscheint sie nicht.",
     "openOriginal": "Ursprüngliches Problem öffnen",
     "anonymous": "Anonymer Bewohner",
-    "anonymousMine": "{nickname} (anonym)"
+    "anonymousMine": "{nickname} (anonym)",
+    "unconfirm": "Bestätigung zurücknehmen",
+    "unconfirmed": "Bestätigung zurückgenommen."
   },
   "listItem": {
     "confirmations": "Bestätigungen: {count}"
@@ -52,5 +54,19 @@
     "submit": "Senden",
     "anonymousLabel": "Anonym veröffentlichen",
     "anonymousHint": "Bewohner sehen „Anonymer Bewohner“ statt deines Nicknames und Avatars. Die Moderation sieht den Autor — so schützen wir uns vor Spam."
+  },
+  "withdraw": {
+    "action": "Meldung zurückziehen",
+    "title": "Meldung zurückziehen?",
+    "text": "Sie verschwindet von der Karte und aus der Statistik des Viertels, Bestätigungen der Nachbarn und Benachrichtigungen dazu werden gelöscht. Das lässt sich nicht rückgängig machen.",
+    "confirm": "Zurückziehen",
+    "cancel": "Behalten"
+  },
+  "hide": {
+    "action": "Aus meinen Meldungen entfernen",
+    "title": "Aus meinen Meldungen entfernen?",
+    "text": "Die Stadt arbeitet bereits an diesem Problem, deshalb bleibt es auf der Karte und in der Statistik des Viertels. Aus deiner Liste verschwindet es, Benachrichtigungen dazu kommen nicht mehr.",
+    "confirm": "Entfernen",
+    "cancel": "Behalten"
   }
 }

@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { useHref } from 'react-router';
-import { confirmProblem } from '@/shared/api/endpoints/problems';
+import { confirmProblem, unconfirmProblem, withdrawProblem } from '@/shared/api/endpoints/problems';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import {
   REJECTED_STATUS,
   REJECTION_REASON_BY_CODE,
   STATUS_BY_CODE,
+  WITHDRAWABLE_STATUSES,
 } from '@/shared/config/problemStatuses';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { useShare } from '@/shared/hooks/useShare';
@@ -15,6 +16,7 @@ import { localizePath } from '@/shared/lib/language';
 import { plural } from '@/shared/lib/plural';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
+import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';
 import { CategoryIcon } from './CategoryIcon';
 import { StatusChip } from './StatusChip';
 import { StatusTimeline } from './StatusTimeline';
@@ -27,7 +29,8 @@ const texts = problemTexts.card;
 // Карточка проблемы на карте. У неё свой адрес (/map/:city/problem/:id) — им можно поделиться,
 // чтобы соседи подтвердили. Своё сообщение подтвердить нельзя, уже подтверждённое — второй раз тоже.
 // Отклонённое модератором сообщение открывает только автор: вместо подтверждения — причина и, для
-// дубля, ссылка на исходную проблему.
+// дубля, ссылка на исходную проблему. Своё подтверждение можно снять, пока проблема новая; своё
+// сообщение — отозвать, пока город за него не взялся (onWithdrawn — после удаления на сервере).
 export function ProblemCard({
   problem,
   citySlug,
@@ -35,9 +38,11 @@ export function ProblemCard({
   isGuest,
   onRequireAuth,
   onUpdated,
+  onWithdrawn,
   onClose,
 }) {
   const [loading, setLoading] = useState(false);
+  const [confirming, setConfirming] = useState(false);
   const [message, setMessage] = useState('');
   const { state: shareState, share } = useShare();
   const href = useHref(localizePath(`/map/${citySlug}/problem/${problem.id}`));
@@ -52,6 +57,19 @@ export function ProblemCard({
     try {
       onUpdated(await confirmProblem(problem.id));
       setMessage(texts.confirmed);
+    } catch (error) {
+      setMessage(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleUnconfirm = async () => {
+    setLoading(true);
+    setMessage('');
+    try {
+      onUpdated(await unconfirmProblem(problem.id));
+      setMessage(texts.unconfirmed);
     } catch (error) {
       setMessage(error.message);
     } finally {
@@ -180,21 +198,47 @@ export function ProblemCard({
         </section>
       ) : problem.is_mine ? (
         <p className={styles.note}>{texts.mineNote}</p>
+      ) : problem.confirmed_by_me ? (
+        <div className={styles.confirmedRow}>
+          <p className={styles.confirmedByMe}>
+            <Icon name="check" size={14} />
+            {texts.confirmedByMe}
+          </p>
+          {problem.status === 'new' && (
+            <Button variant="text" size="sm" loading={loading} onClick={handleUnconfirm}>
+              {texts.unconfirm}
+            </Button>
+          )}
+        </div>
       ) : (
-        <Button
-          variant="ghost"
-          block
-          loading={loading}
-          disabled={problem.confirmed_by_me}
-          onClick={handleConfirm}
-        >
-          {problem.confirmed_by_me ? texts.confirmedByMe : texts.confirm}
+        <Button variant="ghost" block loading={loading} onClick={handleConfirm}>
+          {texts.confirm}
+        </Button>
+      )}
+      {problem.is_mine && WITHDRAWABLE_STATUSES.includes(problem.status) && (
+        <Button variant="text" size="sm" onClick={() => setConfirming(true)}>
+          <Icon name="trash" size={14} />
+          {problemTexts.withdraw.action}
         </Button>
       )}
       {message && (
         <p className={styles.message} role="status">
           {message}
         </p>
+      )}
+      {confirming && (
+        <ConfirmDialog
+          title={problemTexts.withdraw.title}
+          text={problemTexts.withdraw.text}
+          confirmLabel={problemTexts.withdraw.confirm}
+          cancelLabel={problemTexts.withdraw.cancel}
+          onConfirm={async () => {
+            await withdrawProblem(problem.id);
+            setConfirming(false);
+            onWithdrawn();
+          }}
+          onClose={() => setConfirming(false)}
+        />
       )}
     </article>
   );

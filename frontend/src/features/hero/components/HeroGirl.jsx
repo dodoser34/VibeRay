@@ -1,8 +1,7 @@
 import { useId, useImperativeHandle, useRef } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
-import girlLarge from '../assets/girl-1356.webp';
-import girlSmall from '../assets/girl-720.webp';
+import girl from '../assets/girl.webp';
 import { usePointerParallax } from '../hooks/usePointerParallax';
 import { RISE, riseDelay } from '../lib/rise';
 import { ABOVE_EDGE, SHEET_FLY_SHIFT } from '../lib/sheetEdge';
@@ -15,11 +14,11 @@ const TILT = {
   idle: (t) => ({ rotationY: t * 3, rotationX: t * -1 }),
 };
 
-// Исходник картинки: 1356 × 1160. Кулак у щеки и центр головы — доли нарисованной картинки;
+// Исходник картинки: 1355 × 1161. Кулак у щеки и центр головы — доли нарисованной картинки;
 // радиус головы — доля её ширины.
-const RATIO = 1356 / 1160;
-const HAND = { x: 0.4, y: 0.45 };
-const HEAD = { x: 0.48, y: 0.29, radius: 0.17 };
+const RATIO = 1355 / 1161;
+const HAND = { x: 0.45, y: 0.49 };
+const HEAD = { x: 0.51, y: 0.3, radius: 0.17 };
 
 // Картинка вписана в свою рамку с сохранением пропорций (object-fit: contain) и прижата к низу —
 // точки считаются по реально нарисованной области, а не по рамке.
@@ -117,16 +116,16 @@ export function HeroGirl({ ref, stacked = false, onRisen }) {
           <path ref={clipRef} d={ABOVE_EDGE} />
         </clipPath>
       </svg>
-      {/* Браузер берёт файл по нарисованной ширине и плотности экрана: 720 — телефонам и ноутбукам,
-          1356 (исходник) — Full HD, 2K, 4K и экранам с высокой плотностью. */}
+      {/* Один файл в полном разрешении на всех экранах: уменьшенная копия на ноутбуках и телефонах
+          выглядела мыльной. */}
       <img
         ref={imageRef}
         className={styles.girl}
         data-ui="home-girl"
         data-stacked={stacked || undefined}
-        src={girlLarge}
-        srcSet={`${girlSmall} 720w, ${girlLarge} 1356w`}
-        sizes={stacked ? '78vw' : '46vw'}
+        src={girl}
+        width="1355"
+        height="1161"
         alt=""
         draggable="false"
         decoding="async"

@@ -112,11 +112,6 @@ export const GLYPHS = {
   ),
   'check-circle': large(path('M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8 12.5l2.7 2.7L16.5 9.5')),
   ban: large(path('M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM5.6 5.6l12.8 12.8')),
-  'bell-large': {
-    viewBox: '0 0 48 48',
-    strokeWidth: 1.6,
-    body: path('M24 40a4 4 0 0 0 4-4h-8a4 4 0 0 0 4 4zM12 32h24l-3-4v-8a9 9 0 0 0-18 0v8z'),
-  },
 
   // Тема и время суток
   sun: large(

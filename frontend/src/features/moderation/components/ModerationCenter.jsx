@@ -6,6 +6,7 @@ import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { formatNumber } from '@/shared/lib/formatNumber';
+import figure from '../assets/moderator.webp';
 import { CityOverview } from './CityOverview';
 import { ProblemQueue } from './ProblemQueue';
 import { SupportInbox } from './SupportInbox';
@@ -17,6 +18,7 @@ const DEFAULT_FILTERS = { status: 'active', district: '', category: '', sort: 'n
 // Разделы рабочего места модератора со сводкой сверху: section — queue (очередь проблем: смена
 // статусов и отклонение), city (где копятся проблемы) или support (обращения жителей). Плотнее,
 // чем страницы жителей: модератор работает со списками.
+// Справа в шапке всегда стоит девушка с планшетом — у рабочего места нет пустых окон.
 // districts: [{ slug, name }] или null, пока город грузится; district — район, с которым открыта
 // очередь (из раздела «Город»); onOpenProblem(id) — проблема на карте модератора;
 // onOpenDistrict(slug) — очередь района.
@@ -42,7 +44,8 @@ export function ModerationCenter({
       gsap
         .timeline({ defaults: { ease: 'power3.out' } })
         .from(split.words, { yPercent: 110, duration: 0.9, stagger: 0.08 }, 0.1)
-        .from('[data-hero]', { y: 16, autoAlpha: 0, duration: 0.6, stagger: 0.06 }, 0.3);
+        .from('[data-hero]', { y: 16, autoAlpha: 0, duration: 0.6, stagger: 0.06 }, 0.3)
+        .from('[data-figure]', { scale: 0.94, autoAlpha: 0, duration: 1 }, 0.2);
     },
     { scope: rootRef, dependencies: [reduced, entered, section], revertOnUpdate: true },
   );
@@ -64,12 +67,21 @@ export function ModerationCenter({
         <p className={styles.kicker} data-hero>
           {texts.kicker}
         </p>
-        <h1 key={`${language}-${section}`} className={styles.title} data-title>
+        <h1
+          key={`${language}-${section}`}
+          className={styles.title}
+          data-title
+          data-ui="moderation-title"
+        >
           {texts.sections[section]}
         </h1>
-        <p className={styles.lead} data-hero>
+        <p className={styles.lead} data-hero data-ui="moderation-lead">
           {texts.leads[section]}
         </p>
+        {/* Девушка выглядывает из-за полосы сводки: нижний срез картинки — под её верхним краем */}
+        <span className={styles.figure} aria-hidden="true" data-figure data-ui="moderation-figure">
+          <img src={figure} width="1254" height="1254" alt="" draggable="false" decoding="async" />
+        </span>
       </header>
 
       <dl className={styles.kpis} aria-label={texts.kpiLabel} data-ui="moderation-kpis" data-hero>

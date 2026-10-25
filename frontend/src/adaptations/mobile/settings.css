@@ -11,6 +11,10 @@
     height: 7.5rem;
   }
 
+  :root [data-ui='settings-title'] {
+    padding-right: 0;
+  }
+
   :root [data-ui='settings-lead'] {
     padding-right: 6.5rem;
   }

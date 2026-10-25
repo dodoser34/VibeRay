@@ -1,4 +1,5 @@
 import { useNotifications } from '../model/useNotifications';
+import emptyFigure from '../assets/empty-tea.webp';
 import { NotificationList } from './NotificationList';
 import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationsPanel.module.css';
@@ -8,9 +9,9 @@ const CITY = 'kostanay';
 
 // Содержимое уведомлений — одно и то же в выпадающей панели колокольчика и в шторке телефона.
 // onNavigate(path) уводит на страницу (с переходом); onDone закрывает панель.
-// compact: заголовок уже даёт окно-шторка, остаётся только «Прочитать все».
+// compact: заголовок уже даёт окно-шторка, остаются только «Прочитать все» и «Очистить».
 export function NotificationsPanel({ onNavigate, onDone, headingId, compact = false }) {
-  const { items, unread, loaded, markRead } = useNotifications();
+  const { items, unread, loaded, markRead, remove } = useNotifications();
 
   const open = (item) => {
     if (!item.read) markRead([item.id]);
@@ -26,10 +27,17 @@ export function NotificationsPanel({ onNavigate, onDone, headingId, compact = fa
             {texts.title}
           </h2>
         )}
-        {unread > 0 && (
-          <button type="button" className={styles.readAll} onClick={() => markRead()}>
-            {texts.readAll}
-          </button>
+        {items.length > 0 && (
+          <div className={styles.headerActions}>
+            {unread > 0 && (
+              <button type="button" className={styles.readAll} onClick={() => markRead()}>
+                {texts.readAll}
+              </button>
+            )}
+            <button type="button" className={styles.readAll} onClick={() => remove()}>
+              {texts.clearAll}
+            </button>
+          </div>
         )}
       </header>
 
@@ -38,12 +46,20 @@ export function NotificationsPanel({ onNavigate, onDone, headingId, compact = fa
           <p className={styles.state}>{texts.loading}</p>
         ) : items.length === 0 ? (
           <div className={styles.empty}>
-            <Icon name="bell-large" size={48} />
+            <img
+              className={styles.emptyArt}
+              src={emptyFigure}
+              width="480"
+              height="480"
+              alt=""
+              draggable="false"
+              decoding="async"
+            />
             <p className={styles.emptyTitle}>{texts.emptyTitle}</p>
             <p className={styles.state}>{texts.empty}</p>
           </div>
         ) : (
-          <NotificationList items={items} onOpen={open} />
+          <NotificationList items={items} onOpen={open} onRemove={(item) => remove([item.id])} />
         )}
       </div>
 

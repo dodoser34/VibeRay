@@ -19,6 +19,7 @@ const MODERATOR_AFTER = 40_000;
 const authors = new Map(); // id проблемы → id автора
 const histories = new Map(); // id проблемы → [{ status, changed_at }] (problem_status_changes)
 const inbox = new Map(); // id пользователя → уведомления, новые первыми
+const hidden = new Map(); // id пользователя → Set id проблем, убранных из «Моих сообщений»
 const timers = new Set();
 let lastNotification = 0;
 
@@ -50,6 +51,7 @@ export const withHistory = (problem) => ({ ...problem, history: historyOf(proble
 export const isAuthor = (problem, user) => authors.get(problem.id) === user.id;
 
 function notify(userId, { kind, problem, status, count, at = Date.now() }) {
+  if (hidden.get(userId)?.has(problem.id)) return;
   const list = inbox.get(userId) ?? [];
   lastNotification = Math.max(at, lastNotification + 1);
   list.unshift({
@@ -234,6 +236,41 @@ export function markRead(user, ids) {
   });
 }
 
+export function removeNotifications(user, ids) {
+  const list = inbox.get(user.id) ?? [];
+  inbox.set(user.id, ids ? list.filter((item) => !ids.includes(item.id)) : []);
+}
+
+// Автор отозвал сообщение: оно уходит с карты, из статистики и очереди модератора, уведомления о нём
+// стираются, у дублей пропадает ссылка на него.
+export function withdrawProblem(problem) {
+  problems.splice(problems.indexOf(problem), 1);
+  authors.delete(problem.id);
+  histories.delete(problem.id);
+  inbox.forEach((list, userId) =>
+    inbox.set(
+      userId,
+      list.filter((item) => item.problem_id !== problem.id),
+    ),
+  );
+  problems.filter((p) => p.duplicate_of === problem.id).forEach((p) => delete p.duplicate_of);
+}
+
+// Сообщение в работе или решённое автор убирает только из своего списка: на карте и в статистике оно
+// остаётся (город уже работает над ним), уведомлений о нём больше нет.
+export function hideFromMine(user, problem) {
+  hidden.set(user.id, (hidden.get(user.id) ?? new Set()).add(problem.id));
+  inbox.set(
+    user.id,
+    (inbox.get(user.id) ?? []).filter((item) => item.problem_id !== problem.id),
+  );
+}
+
+// Житель снял подтверждение: счётчик уменьшается, статус назад не откатывается — переход уже в истории.
+export function removeConfirmation(problem) {
+  problem.confirmations_count = Math.max(0, problem.confirmations_count - 1);
+}
+
 export function forgetUser(user) {
   inbox.delete(user.id);
   [...authors].forEach(
@@ -243,7 +280,9 @@ export function forgetUser(user) {
 
 export function problemsOf(user) {
   return problems
-    .filter((problem) => authors.get(problem.id) === user.id)
+    .filter(
+      (problem) => authors.get(problem.id) === user.id && !hidden.get(user.id)?.has(problem.id),
+    )
     .sort((a, b) => b.created_at.localeCompare(a.created_at))
     .map(withHistory);
 }

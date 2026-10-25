@@ -16,5 +16,7 @@
     "rejected": "Die Meldung „{category}“ wurde abgelehnt: {reason}"
   },
   "people": ["Bewohner", "Bewohner", "Bewohner"],
-  "meta": "{district} · {time}"
+  "meta": "{district} · {time}",
+  "clearAll": "Alle löschen",
+  "remove": "Benachrichtigung löschen"
 }

@@ -16,5 +16,7 @@
     "rejected": "«{category}» хабарламасы қабылданбады: {reason}"
   },
   "people": ["тұрғын", "тұрғын", "тұрғын"],
-  "meta": "{district} · {time}"
+  "meta": "{district} · {time}",
+  "clearAll": "Тазалау",
+  "remove": "Хабарландыруды жою"
 }

@@ -116,8 +116,7 @@
   width: 21rem;
   height: auto;
   transform: translateZ(-10px);
-  filter: drop-shadow(0 0 1.25rem var(--halo-figure))
-    drop-shadow(0 1.5rem 2rem var(--shadow-figure));
+  mask-image: var(--figure-fade);
   user-select: none;
   pointer-events: none;
 }
@@ -216,7 +215,6 @@
   bottom: 0;
   left: calc(100% + var(--space-5));
   width: min(22rem, calc((100vw - 100%) / 2 - 3rem));
-  filter: drop-shadow(0 0 1.25rem var(--halo-figure));
   pointer-events: none;
   user-select: none;
 }
@@ -227,7 +225,7 @@
   display: block;
   width: 100%;
   height: auto;
-  mask-image: linear-gradient(to top, transparent, black 3rem);
+  mask-image: var(--figure-fade);
 }
 
 .bottomGrid {

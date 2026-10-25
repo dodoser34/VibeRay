@@ -7,6 +7,7 @@ import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/controls/Button';
 import texts from '@/texts/ru/notFound.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
+import girlMap from './girl-map.webp';
 import { NotFoundMap } from './NotFoundMap';
 import styles from './NotFoundPage.module.css';
 
@@ -21,7 +22,7 @@ export function NotFoundPage() {
   const reduced = useReducedMotion();
 
   // Карта разворачивается панель за панелью, прорисовываются улицы и река, у края проступает
-  // пустой район, и сверху падает метка с вопросом.
+  // пустой район, сверху падает метка с вопросом — и снизу поднимается девушка со своей картой.
   useGSAP(
     () => {
       if (!entered || reduced) return;
@@ -43,6 +44,7 @@ export function NotFoundPage() {
           { scale: 0.2, autoAlpha: 0, transformOrigin: '50% 50%', duration: 1 },
           1.3,
         )
+        .from('[data-figure]', { yPercent: 18, autoAlpha: 0, duration: 1.1 }, 1.6)
         .from(split.words, { yPercent: 110, duration: 0.9, stagger: 0.06 }, 0.2)
         .from('[data-rise]', { y: 20, autoAlpha: 0, duration: 0.7, stagger: 0.08 }, 0.5);
     },
@@ -82,6 +84,17 @@ export function NotFoundPage() {
       </div>
       <div className={styles.stage} data-ui="not-found-art">
         <NotFoundMap label={texts.artLabel} />
+        <img
+          className={styles.figure}
+          src={girlMap}
+          width="1100"
+          height="1100"
+          alt=""
+          draggable="false"
+          decoding="async"
+          data-figure
+          data-ui="not-found-figure"
+        />
       </div>
     </div>
   );

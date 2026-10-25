@@ -19,6 +19,19 @@
     right: 1.5rem;
     height: 18rem;
   }
+
+  :root [data-ui='settings-title'] {
+    padding-right: 17rem;
+  }
+
+  :root [data-ui='moderation-figure'] {
+    right: 0.5rem;
+    height: 15rem;
+  }
+
+  :root [data-ui='moderation-title'] {
+    padding-right: 13rem;
+  }
 }
 
 /* Панель действий карты не заходит на кнопку статистики */

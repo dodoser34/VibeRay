@@ -1,25 +1,39 @@
+import { useState } from 'react';
 import { useHref } from 'react-router';
 import { CategoryIcon, StatusTimeline } from '@/features/problems';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
-import { REJECTION_REASON_BY_CODE, STATUS_BY_CODE } from '@/shared/config/problemStatuses';
+import { withdrawProblem } from '@/shared/api/endpoints/problems';
+import { hideMyProblem } from '@/shared/api/endpoints/users';
+import {
+  REJECTION_REASON_BY_CODE,
+  STATUS_BY_CODE,
+  WITHDRAWABLE_STATUSES,
+} from '@/shared/config/problemStatuses';
 import { useShare } from '@/shared/hooks/useShare';
 import { format } from '@/shared/lib/format';
 import { formatDate } from '@/shared/lib/formatDate';
 import { localizePath } from '@/shared/lib/language';
 import { plural } from '@/shared/lib/plural';
+import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';
+import problemTexts from '@/texts/ru/problems.json';
 import texts from '@/texts/ru/settings.json';
 import styles from './ReportItem.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 
 const CITY = 'kostanay';
 
-// Одно своё сообщение: что, где, когда, путь статусов и сколько соседей подтвердили.
-export function ReportItem({ problem, districtName, index, onOpen }) {
+// Одно своё сообщение: что, где, когда, путь статусов и сколько соседей подтвердили. Корзина есть у
+// каждого: пока город не взялся за проблему, сообщение отзывается целиком; в работе и решённое —
+// только убирается из списка, на карте остаётся (onWithdrawn — после ответа сервера).
+export function ReportItem({ problem, districtName, index, onOpen, onWithdrawn }) {
+  const [confirming, setConfirming] = useState(false);
   const path = `/map/${CITY}/problem/${problem.id}`;
   const href = useHref(localizePath(path));
   const { state: shareState, share } = useShare();
   const category = CATEGORY_BY_CODE[problem.category].label;
   const count = problem.confirmations_count;
+  const withdrawable = WITHDRAWABLE_STATUSES.includes(problem.status);
+  const removal = withdrawable ? problemTexts.withdraw : problemTexts.hide;
 
   const open = (event) => {
     event.preventDefault();
@@ -88,6 +102,16 @@ export function ReportItem({ problem, districtName, index, onOpen }) {
           >
             <Icon name="link" size={14} />
           </button>
+          <button
+            type="button"
+            className={styles.iconButton}
+            data-tone="danger"
+            aria-label={removal.action}
+            title={removal.action}
+            onClick={() => setConfirming(true)}
+          >
+            <Icon name="trash" size={14} />
+          </button>
           {shareState === 'copied' && (
             <span className={styles.copied} role="status">
               {texts.reports.copied}
@@ -95,6 +119,21 @@ export function ReportItem({ problem, districtName, index, onOpen }) {
           )}
         </div>
       </div>
+
+      {confirming && (
+        <ConfirmDialog
+          title={removal.title}
+          text={removal.text}
+          confirmLabel={removal.confirm}
+          cancelLabel={removal.cancel}
+          onConfirm={async () => {
+            await (withdrawable ? withdrawProblem(problem.id) : hideMyProblem(problem.id));
+            setConfirming(false);
+            onWithdrawn();
+          }}
+          onClose={() => setConfirming(false)}
+        />
+      )}
     </li>
   );
 }

@@ -44,6 +44,8 @@ import { useHeightScale } from './useHeightScale';
 import { useMapTour } from './useMapTour';
 import { usePanelVisibility } from './usePanelVisibility';
 import { useToast } from './useToast';
+import cheerFigure from './cheer.webp';
+import guideFigure from './guide.webp';
 import styles from './MapPage.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 
@@ -331,9 +333,12 @@ export function MapPage({ view = 'map' }) {
     mapRef.current?.flashDistrict(slug);
     moods.reload();
     stats.reload();
-    setToast(
-      format(texts.toasts.moodSaved, { mood: MOOD_BY_CODE[code].label, district: nameOf(slug) }),
-    );
+    setToast({
+      text: format(texts.toasts.moodSaved, {
+        mood: MOOD_BY_CODE[code].label,
+        district: nameOf(slug),
+      }),
+    });
   };
 
   const reportProblem = () => {
@@ -356,7 +361,7 @@ export function MapPage({ view = 'map' }) {
     stats.reload();
     setProblemUpdate(created);
     navigate(`/map/${citySlug}/problem/${created.id}`);
-    setToast(texts.toasts.problemSent);
+    setToast({ text: texts.toasts.problemSent, figure: cheerFigure });
   };
 
   const hoveredMood = hover?.kind === 'district' ? mapMoods?.districts[hover.slug] : null;
@@ -443,6 +448,12 @@ export function MapPage({ view = 'map' }) {
         onUpdated={(updated) => {
           setProblemUpdate(updated);
           problems.reload();
+        }}
+        onWithdrawn={() => {
+          closeProblem();
+          problems.reload();
+          stats.reload();
+          setToast({ text: texts.toasts.problemWithdrawn });
         }}
         onClose={closeProblem}
       />
@@ -684,11 +695,28 @@ export function MapPage({ view = 'map' }) {
         </Modal>
       )}
 
-      {tourOpen && <CoachMarks steps={tourSteps} labels={texts.tour} onFinish={finishTour} />}
+      {tourOpen && (
+        <CoachMarks
+          steps={tourSteps}
+          labels={texts.tour}
+          figure={guideFigure}
+          onFinish={finishTour}
+        />
+      )}
 
       {toast && (
         <p className={styles.toast} role="status" data-ui="map-toast">
-          {toast}
+          {toast.figure && (
+            <img
+              className={styles.toastFigure}
+              src={toast.figure}
+              width="256"
+              height="256"
+              alt=""
+              draggable="false"
+            />
+          )}
+          {toast.text}
         </p>
       )}
 

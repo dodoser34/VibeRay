@@ -6,18 +6,21 @@ import { Button } from '@/shared/ui/controls/Button';
 import { TextField } from '@/shared/ui/controls/TextField';
 import { useAuth } from '../model/useAuth';
 import { PasswordField } from './PasswordField';
-import { format } from '@/shared/lib/format';
 import demoAccounts from '@/demo-data/accounts.json';
 import auth from '@/texts/ru/auth.json';
 import styles from './PassForms.module.css';
 
-// Подсказка демо-входа видна только в демо-режиме (без бэкенда): житель и модератор.
-const credentials = (role) => {
-  const account = demoAccounts.find(({ user }) => user.role === role);
-  return { email: account.user.email, password: account.password };
-};
-const DEMO = credentials('user');
-const DEMO_MODERATOR = credentials('moderator');
+// Подсказка демо-входа видна только в демо-режиме (без бэкенда): житель, модератор и новичок —
+// житель без сообщений и уведомлений, чтобы были видны пустые состояния. label — ключ подписи в
+// texts/<язык>/auth.json (читается при рендере: язык меняется на лету).
+const DEMO_ACCOUNTS = [
+  { id: 'u-user', label: 'demoResident' },
+  { id: 'u-moderator', label: 'demoModerator' },
+  { id: 'u-newbie', label: 'demoNewcomer' },
+].map(({ id, label }) => {
+  const account = demoAccounts.find(({ user }) => user.id === id);
+  return { id, label, email: account.user.email, password: account.password };
+});
 
 export function LoginForm({ onSuccess, onSwitch }) {
   const { login } = useAuth();
@@ -95,17 +98,22 @@ export function LoginForm({ onSuccess, onSwitch }) {
       </div>
 
       {USE_MOCKS && (
-        <p className={styles.demo} data-part>
-          {format(auth.login.demo, DEMO)}{' '}
-          <Button variant="text" onClick={() => setValues(DEMO)}>
-            {auth.login.demoFill}
-          </Button>
-          <br />
-          {format(auth.login.demoModerator, DEMO_MODERATOR)}{' '}
-          <Button variant="text" onClick={() => setValues(DEMO_MODERATOR)}>
-            {auth.login.demoFill}
-          </Button>
-        </p>
+        <div className={styles.demo} data-part>
+          <p className={styles.demoTitle}>{auth.login.demoTitle}</p>
+          <ul className={styles.demoList}>
+            {DEMO_ACCOUNTS.map(({ id, label, email, password }) => (
+              <li key={id} className={styles.demoItem}>
+                <span className={styles.demoRole}>{auth.login[label]}</span>
+                <Button variant="text" onClick={() => setValues({ email, password })}>
+                  {auth.login.demoFill}
+                </Button>
+                <span className={styles.demoCredentials}>
+                  {email} · {password}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
 
       <p className={styles.switch} data-part>

@@ -44,6 +44,51 @@
   font-size: var(--fs-sm);
 }
 
+/* Демо-вход: строка на аккаунт — роль и «Заполнить», под ними почта и пароль */
+.demo {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.demoTitle {
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.demoList {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.demoItem {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: var(--space-3);
+  padding: var(--space-1) 0;
+}
+
+.demoItem + .demoItem {
+  border-top: 1px solid var(--color-glass-border);
+}
+
+.demoRole {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.demoCredentials {
+  grid-column: 1 / -1;
+  overflow-wrap: anywhere;
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+}
+
 /* Живой предпросмотр публичного профиля */
 .preview {
   display: grid;

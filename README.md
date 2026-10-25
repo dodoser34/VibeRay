@@ -34,7 +34,9 @@ npm run dev
 ```
 
 Откройте http://localhost:5173. Бэкенд не нужен: запросы обслуживает фейковый API в браузере
-(`frontend/src/demo-data`). Демо-вход: житель **user@viberay.kz / User12345**, модератор **moderator@viberay.kz / Moder12345** (кнопки «Заполнить» на форме входа).
+(`frontend/src/demo-data`). Демо-вход (вымышленные люди): житель Эмма Уилсон **emma.wilson@viberay.kz / Emma#Kst24**,
+модератор Сергей Волков **sergey.volkov@viberay.kz / Sergey#Mod24**, новичок без сообщений и уведомлений
+Лукас Беккер **lukas.becker@viberay.kz / Lukas#New24** (кнопки «Заполнить» на форме входа).
 
 | Команда (в `frontend/`) | Что делает |
 |---|---|

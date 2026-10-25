@@ -97,7 +97,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
         <p className={styles.kicker} data-hero>
           {texts.kicker}
         </p>
-        <h1 key={language} className={styles.title} data-title>
+        <h1 key={language} className={styles.title} data-title data-ui="settings-title">
           {moderator ? texts.moderator.title : texts.title}
         </h1>
         <p className={styles.lead} data-hero data-ui="settings-lead">
@@ -105,7 +105,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
         </p>
         {/* Девушка выглядывает из-за карточки раздела: нижний срез картинки — по её верхнему краю */}
         <span className={styles.figure} aria-hidden="true" data-figure data-ui="settings-figure">
-          <img src={figure} width="608" height="720" alt="" draggable="false" decoding="async" />
+          <img src={figure} width="1149" height="1368" alt="" draggable="false" decoding="async" />
         </span>
       </header>
 

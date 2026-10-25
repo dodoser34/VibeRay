@@ -16,5 +16,7 @@
     "rejected": "Сообщение «{category}» отклонено: {reason}"
   },
   "people": ["житель", "жителя", "жителей"],
-  "meta": "{district} · {time}"
+  "meta": "{district} · {time}",
+  "clearAll": "Очистить",
+  "remove": "Удалить уведомление"
 }

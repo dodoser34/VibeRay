@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
 
 // Где кончик пальца на картинке faq-assistant.webp — доля её высоты.
-const FINGER = 0.334;
+const FINGER = 0.278;
 
 // Девушка у частых вопросов подъезжает к открытому вопросу и показывает пальцем на его строку;
 // вопрос закрыли — возвращается на место. Пока список прокручивается, догоняет вопрос. Двигается,

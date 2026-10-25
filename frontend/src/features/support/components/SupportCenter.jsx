@@ -4,10 +4,8 @@ import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
 import { revealOnScroll } from '@/shared/animations/effects/revealOnScroll';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { useTheme } from '@/shared/hooks/useTheme';
 import { Button } from '@/shared/ui/controls/Button';
-import assistantDark from '../assets/assistant-dark.webp';
-import assistantLight from '../assets/assistant-light.webp';
+import assistant from '../assets/assistant.webp';
 import faqAssistant from '../assets/faq-assistant.webp';
 import { FAQ, HELP_CATEGORIES } from '../content';
 import { useFigurePointer } from '../hooks/useFigurePointer';
@@ -51,7 +49,6 @@ const LINKS = [
 // Страница поддержки: поиск → темы → ответы → «не нашли?» → статус сервисов → контакты.
 export function SupportCenter({ onNavigate }) {
   const language = useLanguage();
-  const theme = useTheme();
   const rootRef = useRef(null);
   const faqRef = useRef(null);
   const reduced = useReducedMotion();
@@ -183,12 +180,11 @@ export function SupportCenter({ onNavigate }) {
                 <i style={{ '--mood': 'var(--mood-bad)' }} />
               </span>
             </div>
-            {/* Своя картинка на каждую тему; грузится только та, что сейчас нужна. */}
             <img
               className={styles.assistant}
-              src={theme === 'dark' ? assistantDark : assistantLight}
-              width="720"
-              height="718"
+              src={assistant}
+              width="1254"
+              height="1254"
               alt=""
               draggable="false"
               decoding="async"
@@ -243,8 +239,8 @@ export function SupportCenter({ onNavigate }) {
               ref={faqFigureRef}
               className={styles.faqFigure}
               src={faqAssistant}
-              width="649"
-              height="800"
+              width="1122"
+              height="1402"
               alt=""
               draggable="false"
               decoding="async"

@@ -20,6 +20,10 @@ export const [REJECTED_STATUS] = withLabels(
   dictionaries.problemStatuses,
 );
 
+// Автор может отозвать своё сообщение, пока город за него не взялся: в работе и решённое — уже
+// история района (ARCHITECTURE.md 6.2).
+export const WITHDRAWABLE_STATUSES = ['new', 'confirmed', 'rejected'];
+
 export const REJECTION_REASONS = withLabels(
   [{ code: 'spam' }, { code: 'duplicate' }, { code: 'offtopic' }],
   dictionaries.rejectionReasons,

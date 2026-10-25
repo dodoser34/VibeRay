@@ -26,6 +26,11 @@
   font-size: var(--fs-lg);
 }
 
+.headerActions {
+  display: flex;
+  gap: var(--space-3);
+}
+
 .readAll,
 .more {
   display: inline-flex;
@@ -74,11 +79,14 @@
   padding: var(--space-5) var(--space-3);
 }
 
-.empty svg {
-  fill: none;
-  stroke: var(--color-text-faint);
-  stroke-width: 1.6;
-  stroke-linejoin: round;
+.emptyArt {
+  width: 7.5rem;
+  height: auto;
+  /* Девушка выходит из мягкого круга-подложки, низ растворяется — без резкого среза по поясу */
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--figure-backdrop), transparent);
+  mask-image: var(--figure-fade);
+  user-select: none;
 }
 
 .emptyTitle {

@@ -1,10 +1,10 @@
 [
   {
-    "password": "User12345",
+    "password": "Emma#Kst24",
     "user": {
       "id": "u-user",
-      "email": "user@viberay.kz",
-      "nickname": "Пользователь",
+      "email": "emma.wilson@viberay.kz",
+      "nickname": "Emma_Wilson",
       "avatar_url": "preset:3",
       "home_district": "center",
       "role": "user"
@@ -12,14 +12,25 @@
     "reports": ["in_progress", "confirmed", "new", "rejected", "resolved", "confirmed"]
   },
   {
-    "password": "Moder12345",
+    "password": "Sergey#Mod24",
     "user": {
       "id": "u-moderator",
-      "email": "moderator@viberay.kz",
-      "nickname": "Модератор",
+      "email": "sergey.volkov@viberay.kz",
+      "nickname": "Сергей_Волков",
       "avatar_url": "preset:6",
       "home_district": null,
       "role": "moderator"
+    }
+  },
+  {
+    "password": "Lukas#New24",
+    "user": {
+      "id": "u-newbie",
+      "email": "lukas.becker@viberay.kz",
+      "nickname": "Lukas_Becker",
+      "avatar_url": "preset:1",
+      "home_district": "center",
+      "role": "user"
     }
   }
 ]

@@ -60,8 +60,8 @@ function cardPosition(hole, card) {
 // Пошаговые подсказки поверх страницы: затемнение с вырезом вокруг цели, вырез переезжает между
 // шагами, рядом — карточка с текстом. steps: [{ target (CSS-селектор), title, text, padding,
 // round }]. Цели двигаются (камера карты, раскладка) — вырез следит за ними каждый кадр.
-// onFinish('done' | 'skip').
-export function CoachMarks({ steps, labels, onFinish }) {
+// figure — портрет гида в карточке (необязательно). onFinish('done' | 'skip').
+export function CoachMarks({ steps, labels, figure, onFinish }) {
   const [index, setIndex] = useState(0);
   const rootRef = useRef(null);
   const holeRef = useRef(null);
@@ -178,6 +178,16 @@ export function CoachMarks({ steps, labels, onFinish }) {
 
       <div ref={cardRef} className={styles.cardSlot}>
         <div className={styles.card}>
+          {figure && (
+            <img
+              className={styles.figure}
+              src={figure}
+              width="256"
+              height="256"
+              alt=""
+              draggable="false"
+            />
+          )}
           <p className={styles.progress}>
             {format(labels.progress, { current: index + 1, total: steps.length })}
           </p>

@@ -4,7 +4,8 @@ import { dirname, join } from 'node:path';
 // Страницы на каждом языке как отдельные HTML-файлы сборки: /en/about/index.html и т. д. Статический
 // хостинг (GitHub Pages) отдаёт их с кодом 200, а поисковик сразу видит язык страницы, описание и
 // ссылки на переводы (hreflang) — ещё до запуска приложения. Остальные адреса открывает 404.html —
-// копия приложения без ссылок на переводы. С адресом сайта (SITE_URL) — ещё и sitemap.xml.
+// копия приложения без ссылок на переводы. С адресом сайта (SITE_URL) — ещё и sitemap.xml и превью
+// ссылки для мессенджеров и соцсетей (Open Graph: картинка public/og-image.jpg 1200 × 630).
 const DEFAULT_LANGUAGE = 'ru';
 const CITY = 'kostanay';
 const STATIC_PAGES = [
@@ -60,6 +61,15 @@ export function languagePages({ root, siteUrl }) {
               ),
               `<link rel="alternate" hreflang="x-default" href="${urlOf(DEFAULT_LANGUAGE, page)}" data-language-link />`,
               `<link rel="canonical" href="${urlOf(code, page)}" data-language-link />`,
+              '<meta property="og:type" content="website" />',
+              '<meta property="og:site_name" content="VibeRay" />',
+              '<meta property="og:title" content="VibeRay" />',
+              `<meta property="og:description" content="${escape(description)}" />`,
+              `<meta property="og:url" content="${urlOf(code, page)}" />`,
+              `<meta property="og:image" content="${base}/og-image.jpg" />`,
+              '<meta property="og:image:width" content="1200" />',
+              '<meta property="og:image:height" content="630" />',
+              '<meta name="twitter:card" content="summary_large_image" />',
             ]
           : [];
         return template

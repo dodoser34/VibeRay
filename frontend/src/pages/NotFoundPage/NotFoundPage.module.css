@@ -88,8 +88,23 @@
 }
 
 .stage {
+  position: relative;
   display: grid;
   place-items: center;
+  padding-bottom: 12%;
+}
+
+/* Девушка стоит перед сложенной картой у её левого нижнего угла и смотрит вправо — туда, где
+   район без разметки. Низ растворяется, своя карта в руках перекрывает край большой. */
+.figure {
+  position: absolute;
+  left: -8%;
+  bottom: -8%;
+  width: 56%;
+  height: auto;
+  mask-image: var(--figure-fade);
+  user-select: none;
+  pointer-events: none;
 }
 
 /* Иллюстрация */

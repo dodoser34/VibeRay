@@ -17,7 +17,11 @@ import {
   SUPPORT_MESSAGE_MIN,
 } from '@/shared/config/validation';
 import { SUPPORT_REQUEST_STATUSES, SUPPORT_TOPIC_BY_CODE } from '@/shared/config/support';
-import { MODERATOR_TRANSITIONS, REJECTION_REASON_BY_CODE } from '@/shared/config/problemStatuses';
+import {
+  MODERATOR_TRANSITIONS,
+  REJECTION_REASON_BY_CODE,
+  WITHDRAWABLE_STATUSES,
+} from '@/shared/config/problemStatuses';
 import { isModerator } from '@/shared/config/roles';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import {
@@ -35,14 +39,18 @@ import {
   addConfirmations,
   claimProblem,
   forgetUser,
+  hideFromMine,
   isAuthor,
   markRead,
   moderate,
   notificationsOf,
   problemsOf,
+  removeConfirmation,
+  removeNotifications,
   seedReports,
   simulateNeighbours,
   syncAuthor,
+  withdrawProblem,
   withHistory,
 } from './community';
 import { isQueueStatus, moderationItem, moderationQueue, moderationSummary } from './moderation';
@@ -241,12 +249,31 @@ const routes = [
     },
   ],
   ['GET', /^\/users\/me\/problems$/, ({ token }) => problemsOf(currentUser(token))],
+  [
+    'DELETE',
+    /^\/users\/me\/problems\/([\w-]+)$/,
+    ({ params, token }) => {
+      const user = currentUser(token);
+      const problem = findProblem(params[0], token);
+      if (!isAuthor(problem, user)) fail(403, 'not_author');
+      hideFromMine(user, problem);
+      return null;
+    },
+  ],
   ['GET', /^\/users\/me\/notifications$/, ({ token }) => notificationsOf(currentUser(token))],
   [
     'POST',
     /^\/users\/me\/notifications\/read$/,
     ({ body, token }) => {
       markRead(currentUser(token), body?.ids);
+      return null;
+    },
+  ],
+  [
+    'DELETE',
+    /^\/users\/me\/notifications$/,
+    ({ body, token }) => {
+      removeNotifications(currentUser(token), body?.ids);
       return null;
     },
   ],
@@ -310,6 +337,33 @@ const routes = [
       confirmations.set(problem.id, confirmedBy);
       addConfirmations(problem, 1);
       return viewOf(problem, token);
+    },
+  ],
+  [
+    'DELETE',
+    /^\/problems\/([\w-]+)\/confirm$/,
+    ({ params, token }) => {
+      const user = currentUser(token);
+      const problem = findProblem(params[0], token);
+      const confirmedBy = confirmations.get(problem.id);
+      if (!confirmedBy?.has(user.id)) fail(409, 'not_confirmed');
+      if (problem.status !== 'new') fail(409, 'confirmation_locked');
+      confirmedBy.delete(user.id);
+      removeConfirmation(problem);
+      return viewOf(problem, token);
+    },
+  ],
+  [
+    'DELETE',
+    /^\/problems\/([\w-]+)$/,
+    ({ params, token }) => {
+      const user = currentUser(token);
+      const problem = findProblem(params[0], token);
+      if (!isAuthor(problem, user)) fail(403, 'not_author');
+      if (!WITHDRAWABLE_STATUSES.includes(problem.status)) fail(409, 'problem_in_work');
+      withdrawProblem(problem);
+      confirmations.delete(problem.id);
+      return null;
     },
   ],
   [

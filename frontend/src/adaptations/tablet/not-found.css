@@ -11,4 +11,9 @@
     width: min(100%, 30rem);
     justify-self: center;
   }
+
+  /* Левый край экрана близко — девушка не уходит за него */
+  :root [data-ui='not-found-figure'] {
+    left: -2%;
+  }
 }

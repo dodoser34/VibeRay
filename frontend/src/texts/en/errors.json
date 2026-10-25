@@ -30,6 +30,10 @@
     "problem_rejected": "A moderator rejected this report — it can't be confirmed.",
     "forbidden": "Only a moderator can do this",
     "invalid_status_change": "This status change isn’t possible",
-    "invalid_reason": "Choose a reason for rejection"
+    "invalid_reason": "Choose a reason for rejection",
+    "not_author": "Only the author can withdraw this report",
+    "problem_in_work": "This problem is already being worked on or resolved — it can’t be withdrawn",
+    "not_confirmed": "You haven’t confirmed this problem",
+    "confirmation_locked": "This problem is already confirmed — your confirmation can’t be removed"
   }
 }

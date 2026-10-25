@@ -30,6 +30,10 @@
     "problem_rejected": "Diese Meldung wurde von der Moderation abgelehnt — sie kann nicht bestätigt werden.",
     "forbidden": "Das darf nur die Moderation",
     "invalid_status_change": "Dieser Statuswechsel ist nicht möglich",
-    "invalid_reason": "Wähle einen Grund für die Ablehnung"
+    "invalid_reason": "Wähle einen Grund für die Ablehnung",
+    "not_author": "Nur wer die Meldung erstellt hat, kann sie zurückziehen",
+    "problem_in_work": "Das Problem wird bereits bearbeitet oder ist gelöst – zurückziehen geht nicht mehr",
+    "not_confirmed": "Du hast dieses Problem nicht bestätigt",
+    "confirmation_locked": "Das Problem ist bereits bestätigt – die Bestätigung lässt sich nicht zurücknehmen"
   }
 }

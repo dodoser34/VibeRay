@@ -16,5 +16,7 @@
     "rejected": "Your “{category}” report was rejected: {reason}"
   },
   "people": ["resident", "residents", "residents"],
-  "meta": "{district} · {time}"
+  "meta": "{district} · {time}",
+  "clearAll": "Clear all",
+  "remove": "Delete notification"
 }

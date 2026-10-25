@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useAuth } from '@/features/auth';
-import { getNotifications, markNotificationsRead } from '@/shared/api/endpoints/users';
+import {
+  deleteNotifications,
+  getNotifications,
+  markNotificationsRead,
+} from '@/shared/api/endpoints/users';
 import { subscribeLanguage, trackLanguageWork } from '@/shared/lib/language';
 import { NotificationsContext } from './NotificationsContext';
 
@@ -62,6 +66,21 @@ export function NotificationsProvider({ children }) {
     [refresh],
   );
 
+  // Стёртое исчезает с экрана сразу; без ids — все уведомления. Ошибка — вернём список с сервера.
+  const remove = useCallback(
+    async (ids) => {
+      setState((current) => {
+        const items = ids ? current.data.items.filter((item) => !ids.includes(item.id)) : [];
+        return {
+          ...current,
+          data: { items, unread: items.filter((item) => !item.read).length },
+        };
+      });
+      await deleteNotifications(ids).catch(() => refresh());
+    },
+    [refresh],
+  );
+
   const own = state.userId === userId && userId !== null;
   const value = useMemo(
     () => ({
@@ -70,8 +89,9 @@ export function NotificationsProvider({ children }) {
       loaded: own && state.loaded,
       refresh,
       markRead,
+      remove,
     }),
-    [own, state, refresh, markRead],
+    [own, state, refresh, markRead, remove],
   );
 
   return <NotificationsContext.Provider value={value}>{children}</NotificationsContext.Provider>;

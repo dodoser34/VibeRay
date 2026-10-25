@@ -38,8 +38,9 @@ function describe(item) {
   };
 }
 
-// Список уведомлений: новые подсвечены и отмечены точкой. Клик ведёт к проблеме на карте.
-export function NotificationList({ items, onOpen }) {
+// Список уведомлений: новые подсвечены и отмечены точкой. Клик ведёт к проблеме на карте, крестик
+// справа стирает уведомление (на мыши — появляется при наведении, на пальце виден всегда).
+export function NotificationList({ items, onOpen, onRemove }) {
   return (
     <ul className={styles.list}>
       {items
@@ -47,7 +48,7 @@ export function NotificationList({ items, onOpen }) {
         .map((item, i) => {
           const { key, color, text } = describe(item);
           return (
-            <li key={item.id} style={{ '--i': i }}>
+            <li key={item.id} className={styles.row} style={{ '--i': i }}>
               <button
                 type="button"
                 className={styles.item}
@@ -72,6 +73,16 @@ export function NotificationList({ items, onOpen }) {
                     <span className="visually-hidden">{texts.unread}</span>
                   </span>
                 )}
+              </button>
+              <button
+                type="button"
+                className={styles.remove}
+                aria-label={texts.remove}
+                title={texts.remove}
+                onClick={() => onRemove(item)}
+                data-ui="notification-remove"
+              >
+                <Icon name="close" size={12} />
               </button>
             </li>
           );

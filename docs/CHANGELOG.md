@@ -11,6 +11,81 @@
 
 ---
 
+## 2026-10-25
+
+### Удаление и отмена: свои сообщения, подтверждения, уведомления
+
+- Своё сообщение о проблеме можно **отозвать**, пока город за него не взялся (статус «новая», «подтверждена» или
+  «отклонена»): корзина в «Моих сообщениях» и кнопка «Отозвать сообщение» в карточке проблемы на карте. Перед
+  удалением — окно подтверждения; сообщение исчезает с карты, из статистики и очереди модератора вместе с
+  подтверждениями и уведомлениями о нём. Сообщение «в работе» или «решено» корзина **убирает из своего списка**:
+  на карте и в статистике оно остаётся (город уже работает над ним), уведомлений о нём больше нет.
+- Своё подтверждение чужой проблемы можно **снять**, пока она новая: «Отменить подтверждение» в карточке.
+- **Уведомления стираются**: крестик у каждого (на мыши — при наведении, на телефоне виден всегда) и «Очистить» в
+  шапке панели.
+- Модератор: девушка с планшетом теперь **всегда** в шапке рабочего места (очередь, город, обращения) — справа от
+  заголовка, уходит за полосу сводки; в пустой очереди — снова просто текст.
+- Демо-аккаунты стали похожи на настоящих людей (вымышленных, с разными именами): житель Эмма Уилсон,
+  модератор Сергей Волков, новичок Лукас Беккер — почты и пароли в подсказке на форме входа, которая теперь разложена по строкам.
+
+Файлы: `shared/api/endpoints/{problems,users}.js`, `shared/config/problemStatuses.js` (`WITHDRAWABLE_STATUSES`),
+`shared/ui/windows/ConfirmDialog.*`, `features/settings/components/{ReportItem,MyReportsSection}.*`,
+`features/problems/components/ProblemCard.*`, `features/notifications/{model/NotificationsProvider.jsx,components/*}`,
+`features/moderation/{assets/moderator.webp,components/ModerationCenter.*,components/ProblemQueue.*}`,
+`features/auth/components/{LoginForm.jsx,PassForms.module.css}`, `pages/MapPage/MapPage.jsx`,
+`adaptations/{touch/touch.css,desktop/desktop.css,tablet/moderation.css,mobile/moderation.css}`,
+`demo-data/{accounts.json,api/handler.js,api/community.js}`, `texts/*/{auth,errors,map,notifications,problems}.json`.
+
+### Иллюстрации: без теней и прямых краёв
+
+- У девушки на 404, в поддержке, настройках и у модератора убрана тень: маска плавного низа обрезала её по краям
+  картинки, и сверху и по бокам были видны прямые края (особенно в светлой теме). Теперь картинки без эффектов,
+  низ только растворяется.
+- Длинный заголовок («Настройки модератора») переносится, не заходя на девушку; так же — в шапке модератора.
+
+Файлы: `features/{settings,support,moderation}/components/*.module.css`, `pages/NotFoundPage/NotFoundPage.module.css`,
+`features/{settings,moderation}/components/*Center.jsx`, `styles/themes/{dark,light}.css` (удалён `--shadow-figure`),
+`adaptations/{desktop/desktop.css,tablet/settings.css,tablet/moderation.css,mobile/settings.css,mobile/moderation.css}`.
+
+### Иллюстрации: один персонаж на весь сайт
+
+- Все картинки с девушкой заменены на новые: везде одна и та же героиня (зелёные глаза, каштановые волосы,
+  зелёный свитер), в высоком разрешении и на прозрачном фоне.
+- Главная: новая задумчивая девушка; точки руки (куда летит метка) и головы (вокруг неё мысли) пересчитаны.
+- Поддержка: в шапке одна картинка на обе темы вместо двух — без светящихся частиц и нарисованных наушников;
+  у частых вопросов девушка по-прежнему показывает пальцем на открытый вопрос (пересчитан кончик пальца).
+- Настройки: новая картинка «рука на сердце».
+- Новые места: страница 404 (после того как разложится анимированная карта, перед ней снизу поднимается девушка
+  со своей картой и смотрит на неразмеченный район), пустые «Мои сообщения» (фотографирует улицу), пустые
+  уведомления (пьёт чай), портрет-гид в подсказках тура по карте, девушка с поднятым пальцем в сообщении
+  «проблема отправлена», пустая очередь модератора (с планшетом).
+- Нигде нет резкого среза по поясу: низ всех картинок плавно растворяется (маска `--figure-fade` в
+  `styles/tokens.css`), в пустых состояниях девушка выходит из мягкого круга-подложки (`--figure-backdrop`,
+  свой в каждой теме). Убран светлый ореол вокруг девушки (в светлой теме он давал белую кайму) — у всех
+  картинок одна мягкая тень вниз (`--shadow-figure`). Исправлена опечатка `pointer-events: n` у картинки в
+  настройках.
+- Третий демо-вход «Новичок» (`lukas.becker@viberay.kz` / `Lukas#New24`) — житель без сообщений и уведомлений: на
+  нём видны пустые «Мои сообщения» и пустая панель уведомлений с новыми картинками.
+- Превью ссылки в мессенджерах и соцсетях: картинка `og-image.jpg` и теги Open Graph на страницах сборки.
+
+Файлы: `features/hero/{assets/girl.webp,components/HeroGirl.jsx}`, `features/support/{assets,components/SupportCenter.jsx,hooks/useFigurePointer.js}`
+(удалены `assistant-dark.webp`, `assistant-light.webp`), `features/settings/{assets,components/SettingsCenter.jsx,components/MyReportsSection.*}`,
+`features/notifications/{assets,components/NotificationsPanel.*}`, `features/moderation/{assets,components/ProblemQueue.*}`,
+`pages/NotFoundPage/*`, `adaptations/tablet/not-found.css`, `features/hero/components/HeroGirl.module.css`, `styles/tokens.css`, `pages/MapPage/{MapPage.*,guide.webp,cheer.webp}`,
+`shared/ui/windows/CoachMarks.*`, `shared/ui/icons/glyphs.jsx` (удалена неиспользуемая иконка `bell-large`),
+`styles/themes/{dark,light}.css`, `demo-data/{accounts.json,README.md}`, `features/auth/components/LoginForm.jsx`,
+`texts/*/auth.json`, `public/og-image.jpg`, `plugins/languagePages.js`.
+
+### Главная: девушка в одном разрешении
+
+- Девушка на главной теперь всегда грузится одним файлом в полном разрешении (1356×1160). Раньше на
+  ноутбуках и телефонах браузер брал уменьшенную копию 720 px, и картинка выглядела мыльной; копия удалена.
+- Добавлен общий промт для генерации всех иллюстраций сайта с одним персонажем
+  (`docs/IMAGE_PROMPTS.md`) и папка для готовых картинок `docs/art/incoming/`.
+
+Файлы: `features/hero/components/HeroGirl.jsx`, `features/hero/assets/girl.webp` (был `girl-1356.webp`),
+удалён `girl-720.webp`; `docs/IMAGE_PROMPTS.md`, `docs/art/incoming/README.md`.
+
 ## 2026-10-13
 
 ### Картинки: проверка сжатия без потерь

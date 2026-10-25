@@ -6,6 +6,7 @@ import { useRequest } from '@/shared/hooks/useRequest';
 import { plural } from '@/shared/lib/plural';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { Button } from '@/shared/ui/controls/Button';
+import emptyFigure from '../assets/empty-reports.webp';
 import { ReportItem } from './ReportItem';
 import { SettingsSection } from './SettingsSection';
 import texts from '@/texts/ru/settings.json';
@@ -52,17 +53,16 @@ export function MyReportsSection({ id, names, onNavigate }) {
           </div>
         ) : list.length === 0 ? (
           <div className={styles.empty}>
-            <svg className={styles.emptyArt} viewBox="0 0 120 96" aria-hidden="true">
-              <path
-                className={styles.emptyMap}
-                d="M10 26l30-12 40 12 30-12v56l-30 12-40-12-30 12z"
-              />
-              <path className={styles.emptyFold} d="M40 14v56M80 26v56" />
-              <path
-                className={styles.emptyPin}
-                d="M60 62s-12-11-12-21a12 12 0 0 1 24 0c0 10-12 21-12 21zm0-16a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"
-              />
-            </svg>
+            <img
+              className={styles.emptyArt}
+              src={emptyFigure}
+              width="720"
+              height="720"
+              alt=""
+              draggable="false"
+              decoding="async"
+              loading="lazy"
+            />
             <h3 className={styles.emptyTitle}>{t.emptyTitle}</h3>
             <p className={styles.emptyText}>{t.emptyText}</p>
             <Button onClick={() => onNavigate('/map/kostanay')}>{t.report}</Button>
@@ -114,6 +114,7 @@ export function MyReportsSection({ id, names, onNavigate }) {
                     districtName={names[problem.district] ?? ''}
                     index={i}
                     onOpen={onNavigate}
+                    onWithdrawn={reports.reload}
                   />
                 ))}
               </ul>

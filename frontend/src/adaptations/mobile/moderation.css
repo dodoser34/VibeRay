@@ -1,6 +1,18 @@
 /* Модерация на телефоне: сводка в два столбца, фильтры друг под другом, у проблемы статус и
    подтверждения — строкой под текстом, кнопки действий крупнее */
 @media (max-width: 767px) {
+  :root [data-ui='moderation-figure'] {
+    height: 8rem;
+  }
+
+  :root [data-ui='moderation-title'] {
+    padding-right: 0;
+  }
+
+  :root [data-ui='moderation-lead'] {
+    padding-right: 7rem;
+  }
+
   :root [data-ui='moderation-kpis'] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

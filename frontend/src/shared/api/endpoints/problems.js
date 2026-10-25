@@ -13,6 +13,16 @@ export function confirmProblem(problemId) {
   return request('POST', `/problems/${problemId}/confirm`);
 }
 
+// Снять своё подтверждение → полная карточка.
+export function unconfirmProblem(problemId) {
+  return request('DELETE', `/problems/${problemId}/confirm`);
+}
+
+// Автор отзывает своё сообщение (только в статусах WITHDRAWABLE_STATUSES) → 204.
+export function withdrawProblem(problemId) {
+  return request('DELETE', `/problems/${problemId}`);
+}
+
 // Multipart: поля + до 3 фото (уже перекодированы на клиенте без EXIF). isAnonymous — не показывать
 // жителям ник и аватар автора (модератор его видит).
 export function createProblem({
