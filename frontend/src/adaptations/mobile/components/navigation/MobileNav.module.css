@@ -60,14 +60,16 @@
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(var(--blur-glass));
   pointer-events: auto;
+  /* transform кнопок занимает появление шапки (GSAP): нажатие — отдельным свойством scale, иначе
+     CSS-переход на transform подменил бы конечное положение и кнопки застряли бы выше места */
   transition:
     border-color var(--dur-base) var(--ease-out),
-    transform var(--dur-fast) var(--ease-out);
+    scale var(--dur-fast) var(--ease-out);
 }
 
 .logo:active,
 .menuButton:active {
-  transform: scale(0.92);
+  scale: 0.92;
 }
 
 .logo svg {

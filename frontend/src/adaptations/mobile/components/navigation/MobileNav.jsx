@@ -94,14 +94,13 @@ export function MobileNav() {
 
   useGSAP(
     () => {
-      gsap.from(barRef.current.children, {
-        y: -16,
-        autoAlpha: 0,
-        duration: 0.6,
-        stagger: 0.08,
-        ease: 'expo.out',
-        delay: 0.2,
-      });
+      // Конечные значения явно: повторный запуск (StrictMode) не примет недоигранный сдвиг за место
+      // кнопок.
+      gsap.fromTo(
+        barRef.current.children,
+        { y: -16, autoAlpha: 0 },
+        { y: 0, autoAlpha: 1, duration: 0.6, stagger: 0.08, ease: 'expo.out', delay: 0.2 },
+      );
     },
     { scope: barRef },
   );
