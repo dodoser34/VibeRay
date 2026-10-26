@@ -140,14 +140,21 @@ export function HomePage() {
     () => {
       if (!entered) return;
       // Широкие экраны: заголовок лежит на переднем листе, поэтому ждёт, пока лист натечёт.
-      gsap.from('[data-reveal]', {
-        y: 20,
-        autoAlpha: 0,
-        duration: 0.9,
-        ease: 'expo.out',
-        stagger: 0.08,
-        delay: window.matchMedia(WIDE_QUERY).matches ? 1.5 : 0.35,
-      });
+      // Конечные значения — явно: у кнопки «Открыть карту» есть CSS-переход opacity, и from(),
+      // запущенный повторно (StrictMode, смена шлагбаума), прочитал бы ещё не проявленную
+      // прозрачность как конечную — кнопка осталась бы невидимой.
+      gsap.fromTo(
+        '[data-reveal]',
+        { y: 20, autoAlpha: 0 },
+        {
+          y: 0,
+          autoAlpha: 1,
+          duration: 0.9,
+          ease: 'expo.out',
+          stagger: 0.08,
+          delay: window.matchMedia(WIDE_QUERY).matches ? 1.5 : 0.35,
+        },
+      );
     },
     { scope: pageRef, dependencies: [entered] },
   );

@@ -7,15 +7,16 @@
   border-radius: var(--radius-pill);
   font-weight: 600;
   white-space: nowrap;
+  /* transform и opacity кнопок анимирует GSAP (появление форм и страниц): CSS-переход на них
+     тянул бы каждый кадр и подменял конечные значения. Нажатие — отдельным свойством scale. */
   transition:
-    transform var(--dur-fast) var(--ease-out),
+    scale var(--dur-fast) var(--ease-out),
     background-color var(--dur-base) var(--ease-out),
-    box-shadow var(--dur-base) var(--ease-out),
-    opacity var(--dur-base) var(--ease-out);
+    box-shadow var(--dur-base) var(--ease-out);
 }
 
 .root:active:not(:disabled) {
-  transform: scale(0.97);
+  scale: 0.97;
 }
 
 .root:disabled {
