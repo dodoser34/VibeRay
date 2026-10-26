@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 import { groundColor, ROAD_CLASSES, roadLines, segmentsByKind } from './roadStyles';
 
 const GROUND_TEXTURE_SIZE = 512;

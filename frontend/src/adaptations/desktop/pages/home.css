@@ -10,4 +10,15 @@
     padding-top: calc(var(--tabbar-height) + var(--space-5));
     padding-bottom: var(--space-3);
   }
+
+  /* Карточка с демо-входом высокая: на 768 px (ноутбуки, планшеты лёжа) она упиралась в таб-бар
+     и нижний край — отступы внутри плотнее */
+  :root [data-ui='home-column'] {
+    gap: var(--space-4);
+  }
+
+  :root [data-ui='home-column'] [data-ui='auth-card'] {
+    gap: var(--space-4);
+    padding: var(--space-5);
+  }
 }

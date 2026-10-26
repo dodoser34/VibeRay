@@ -1,5 +1,5 @@
 import { pixelRatioFor, renderQuality } from '@/adaptations/core';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 
 // Анимированный фон «ночной город». Один Canvas 2D: дышащий свет, дрейфующие изолинии, пыль,
 // плёночное зерно, параллакс за указателем, волна по изолиниям при клике. Без свечения — изолинии

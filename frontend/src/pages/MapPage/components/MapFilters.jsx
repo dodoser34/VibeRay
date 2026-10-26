@@ -5,13 +5,13 @@ import { StatusChip } from '@/features/problems';
 import { MetricLegend } from '@/features/stats';
 import { STATS_PERIODS } from '@/shared/config/periods';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
-import { gsap } from '@/shared/animations/gsapSetup';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import { format } from '@/shared/lib/format';
-import { formatTime } from '@/shared/lib/formatDate';
+import { format } from '@/shared/lib/i18n/format';
+import { formatTime } from '@/shared/lib/i18n/formatDate';
 import texts from '@/texts/ru/map.json';
 import { Button } from '@/shared/ui/controls/Button';
-import { HEIGHT_SCALE } from './heightScale';
+import { HEIGHT_SCALE } from '../lib/heightScale';
 import styles from './MapFilters.module.css';
 
 const LAYERS = ['districts', 'mood', 'problems'];

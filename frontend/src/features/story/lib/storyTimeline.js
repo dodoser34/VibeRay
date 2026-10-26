@@ -1,5 +1,5 @@
-import { SplitText } from '@/shared/animations/gsapSetup';
-import { at, CHAPTERS } from './content';
+import { SplitText } from '@/shared/animations/core/gsapSetup';
+import { at, CHAPTERS } from './chapters';
 
 export const LIVING = CHAPTERS.findIndex((c) => c.id === 'living');
 export const FINAL = CHAPTERS.length - 1;

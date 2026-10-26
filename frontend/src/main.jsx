@@ -1,15 +1,15 @@
 // Первым: язык интерфейса подставляется в тексты до того, как их прочитают остальные модули
-import { languageReady } from '@/shared/lib/language';
-import '@/shared/lib/theme';
+import { languageReady } from '@/shared/lib/i18n/language';
+import '@/shared/lib/theme/theme';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router';
 import { AuthProvider } from '@/features/auth';
 import { NotificationsProvider } from '@/features/notifications';
-import { trackInputModality } from '@/app/inputModality';
-import { prefetchPages, router } from '@/app/router';
+import { trackInputModality } from '@/app/lib/inputModality';
+import { prefetchPages, router } from '@/app/routing/router';
 import { canPrefetch, isLiteGraphics } from '@/adaptations/core';
-import '@/shared/animations/gsapSetup';
+import '@/shared/animations/core/gsapSetup';
 import '@/styles/tokens.css';
 import '@/styles/themes/dark.css';
 import '@/styles/themes/light.css';

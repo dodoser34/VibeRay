@@ -1,6 +1,6 @@
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
-import { format } from '@/shared/lib/format';
-import { percentOf } from '@/shared/lib/formatNumber';
+import { format } from '@/shared/lib/i18n/format';
+import { percentOf } from '@/shared/lib/i18n/formatNumber';
 import texts from '@/texts/ru/stats.json';
 import { Breakdown } from './Breakdown';
 

@@ -1,10 +1,10 @@
 import { useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { MoodFace } from '@/features/mood';
 import { CategoryIcon } from '@/features/problems';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import { formatNumber } from '@/shared/lib/formatNumber';
+import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Icon } from '@/shared/ui/icons/Icon';
 import home from '@/texts/ru/home.json';

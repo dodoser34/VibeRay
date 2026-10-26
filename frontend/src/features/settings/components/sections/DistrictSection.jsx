@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useAuth } from '@/features/auth';
 import { updateProfile } from '@/shared/api/endpoints/users';
-import { useSaveAction } from '../hooks/useSaveAction';
-import { SaveBar } from './SaveBar';
-import { SettingsSection } from './SettingsSection';
+import { useSaveAction } from '../../hooks/useSaveAction';
+import { SaveBar } from '../SaveBar';
+import { SettingsSection } from '../SettingsSection';
 import texts from '@/texts/ru/settings.json';
 import styles from './DistrictSection.module.css';
 

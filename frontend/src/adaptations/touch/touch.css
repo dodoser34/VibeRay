@@ -1,6 +1,12 @@
 /* Сенсорные экраны (палец, а не мышь) любой ширины: каждый элемент управления не меньше 44 px,
    мелкие переключатели крупнее, на наведение не полагаемся. */
 @media (pointer: coarse) {
+  /* Наведения нет — отклик даёт нажатие: кнопка под пальцем чуть вдавливается. Отдельное
+     свойство scale складывается с transform и не мешает анимациям компонентов. */
+  :root :is(button, [role='button'], [role='radio'], [role='tab']):not(:disabled):active {
+    scale: 0.97;
+  }
+
   :root [data-ui='map-choice'] {
     min-height: var(--touch-target);
     font-size: var(--fs-sm);
@@ -41,7 +47,8 @@
     min-height: var(--touch-target);
   }
 
-  :root [data-ui='table-sort'] {
+  :root [data-ui='table-sort'],
+  :root [data-ui='queue-status'] {
     min-height: var(--touch-target);
   }
 

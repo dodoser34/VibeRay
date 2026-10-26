@@ -1,5 +1,5 @@
 import { useId, useImperativeHandle, useRef } from 'react';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import girl from '../assets/girl.webp';
 import { usePointerParallax } from '../hooks/usePointerParallax';

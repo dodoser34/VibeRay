@@ -1,4 +1,4 @@
-import { getLanguage } from '@/shared/lib/language';
+import { getLanguage } from '@/shared/lib/i18n/language';
 import common from '@/texts/ru/common.json';
 
 // Демо-режим (по умолчанию, в том числе на GitHub Pages): запросы обслуживает фейковый API из

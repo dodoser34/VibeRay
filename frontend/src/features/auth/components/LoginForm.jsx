@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { USE_MOCKS } from '@/shared/api/client';
-import { gsap } from '@/shared/animations/gsapSetup';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import { EMAIL_PATTERN } from '@/shared/config/validation';
 import { Button } from '@/shared/ui/controls/Button';
 import { TextField } from '@/shared/ui/controls/TextField';

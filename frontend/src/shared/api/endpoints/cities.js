@@ -1,4 +1,4 @@
-import { smoothBoundaries } from '@/shared/lib/smoothBoundaries';
+import { smoothBoundaries } from '@/shared/lib/geo/smoothBoundaries';
 import { request } from '../client';
 
 // Контуры районов приходят обведёнными с растра; здесь они один раз сглаживаются для всех видов

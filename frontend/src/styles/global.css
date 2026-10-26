@@ -43,7 +43,7 @@ h3 {
 }
 
 /* Мышь и касание: у только что нажатого элемента нет рамки, что бы браузер ни думал о
-   :focus-visible (app/inputModality.js). У текстовых полей свои стили фокуса. */
+   :focus-visible (app/lib/inputModality.js). У текстовых полей свои стили фокуса. */
 [data-input='pointer'] :focus:not(input, textarea, select) {
   outline: none;
 }

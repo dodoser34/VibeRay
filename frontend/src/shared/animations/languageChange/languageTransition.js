@@ -4,8 +4,8 @@ import {
   getLanguage,
   loadLanguage,
   settleLanguageWork,
-} from '@/shared/lib/language';
-import { gsap } from '../gsapSetup';
+} from '@/shared/lib/i18n/language';
+import { gsap } from '../core/gsapSetup';
 
 const MARK = 'data-language-text';
 const SKIP = 'script, style, noscript, canvas, textarea, [data-language-static]';

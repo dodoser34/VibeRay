@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { cityClock, parseClock } from '@/shared/lib/cityTime';
+import { cityClock, parseClock } from '@/shared/lib/geo/cityTime';
 
 const TICK_MS = 60_000;
 

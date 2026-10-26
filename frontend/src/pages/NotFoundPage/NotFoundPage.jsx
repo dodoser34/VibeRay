@@ -1,14 +1,14 @@
 import { useRef } from 'react';
 import { useLocation } from 'react-router';
 import { useTransitionNavigate } from '@/app/transitions/useTransition';
-import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, SplitText, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/controls/Button';
 import texts from '@/texts/ru/notFound.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import girlMap from './girl-map.webp';
-import { NotFoundMap } from './NotFoundMap';
+import girlMap from './assets/girl-map.webp';
+import { NotFoundMap } from './components/NotFoundMap';
 import styles from './NotFoundPage.module.css';
 
 // Неизвестный адрес: вместо молчаливого переброса на главную — объяснение и дорога обратно.

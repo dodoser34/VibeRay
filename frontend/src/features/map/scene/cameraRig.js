@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { gsap } from '@/shared/animations/gsapSetup';
-import { DURATION, EASE } from '@/shared/animations/presets';
+import { gsap } from '@/shared/animations/core/gsapSetup';
+import { DURATION, EASE } from '@/shared/animations/core/presets';
 
 // Орбитальная камера с ограничениями + перелёты GSAP между обзором города и районом.
 export class CameraRig {
@@ -23,6 +23,11 @@ export class CameraRig {
     });
     camera.position.copy(this.home);
     this.controls.target.copy(this.homeTarget);
+    // Камера стоит в обзоре всего города, и житель её не трогал: при повороте экрана обзор
+    // пересчитывается, и камера переезжает в новый кадр сама (followHome).
+    this.atHome = true;
+    this.onUserMove = () => (this.atHome = false);
+    this.controls.addEventListener('start', this.onUserMove);
   }
 
   setHome(target, position) {
@@ -33,15 +38,22 @@ export class CameraRig {
   flyTo(target, { distance = 7, polar = 0.85, duration = DURATION.camera } = {}) {
     const azimuth = this.controls.getAzimuthalAngle();
     const offset = new THREE.Vector3().setFromSphericalCoords(distance, polar, azimuth);
+    this.atHome = false;
     return this.animate(target.clone(), target.clone().add(offset), duration);
   }
 
   flyHome({ duration = DURATION.camera } = {}) {
+    this.atHome = true;
     return this.animate(this.homeTarget, this.home, duration);
+  }
+
+  followHome() {
+    if (this.atHome) this.flyHome({ duration: DURATION.camera / 2 });
   }
 
   intro({ from, duration = 2.4, delay = 0 }) {
     this.camera.position.copy(from);
+    this.atHome = true;
     return this.animate(this.homeTarget, this.home, duration, delay);
   }
 
@@ -69,6 +81,7 @@ export class CameraRig {
 
   dispose() {
     gsap.killTweensOf([this.controls.target, this.camera.position]);
+    this.controls.removeEventListener('start', this.onUserMove);
     this.controls.dispose();
   }
 }

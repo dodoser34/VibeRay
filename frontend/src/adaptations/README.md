@@ -54,26 +54,38 @@ adaptations/
 │   └── rootScale.js     # во сколько раз интерфейс крупнее базового (2K/4K)
 ├── desktop/
 │   ├── desktop.css      # 1200–1919: узкие ноутбуки
-│   ├── home.css         # главная на низких экранах (≤ 820 px высоты)
+│   ├── pages/home.css   # главная на низких экранах (≤ 820 px высоты)
 │   ├── full-hd/         # токены Full HD
 │   ├── 2k/              # масштаб 2K
 │   └── 4k/              # масштаб 4K
-├── tablet/              # tablet.css (токены), navigation, home, map, stats, support, about
+├── tablet/
+│   ├── tablet.css       # токены планшета
+│   ├── navigation.css   # таб-бар сверху
+│   └── pages/           # home, map, stats, support, about, settings, moderation, not-found
 ├── touch/touch.css      # сенсорные экраны при любой ширине (pointer: coarse): цели не меньше 44 px
 └── mobile/
     ├── mobile.css       # токены телефона (читаемые подписи)
-    ├── home|map|forms|modal|support|about.css
-    ├── navigation/      # MobileNav — логотип и меню вместо таб-бара, полноэкранное меню
-    ├── sheet/           # BottomSheet — шторка с тремя положениями (peek / half / full)
-    └── map/             # FilterChip (фильтры в чипе → шторка), MapFab («+» и «весь город»)
+    ├── forms.css        # вход, регистрация и выбор настроения
+    ├── modal.css        # диалоги — шторкой снизу
+    ├── pages/           # home, map, stats, support, about, settings, moderation, not-found
+    └── components/
+        ├── navigation/  # MobileNav — логотип и меню вместо таб-бара, полноэкранное меню
+        ├── sheet/       # BottomSheet — шторка с тремя положениями (peek / half / full)
+        └── map/         # FilterChip (фильтры в чипе → шторка), MapFab («+» и «весь город»)
 ```
 
 ## Как это подключено
 
 - **Стили уровней** переопределяют стили компонентов через атрибут `data-ui` на элементе:
-  `<aside className={styles.panel} data-ui="map-panel-left">` → в `tablet/map.css`
+  `<aside className={styles.panel} data-ui="map-panel-left">` → в `tablet/pages/map.css`
   `:root [data-ui='map-panel-left'] { … }`. `:root` поднимает специфичность, а подключение
   `index.css` последним — порядок; поэтому правило уровня побеждает базовое.
+- **Телефон лёжа** (`isPhoneLandscape` в `core/breakpoints.js`: ширина < 1024, высота < 500) получает
+  телефонную навигацию (`useViewport().phoneNav`), хотя по ширине это планшет: капсула таб-бара съела бы
+  треть высоты.
+- **Наведение** пишется в модулях как обычно (`:hover`); плагин сборки `plugins/hoverMedia.js` переносит эти
+  правила в `@media (hover: hover)` — на сенсоре они не «залипают» после касания. Отклик на нажатие для
+  сенсора — в `touch/touch.css` (кнопка вдавливается свойством `scale`).
 - **Смена структуры** (другой компонент, а не другие стили) — через `useViewport()`:
   `App` показывает `MobileNav` вместо `TabBar`, `MapPage` — шторку вместо боковых панелей.
 - **3D** берёт качество из `renderQuality()` (`SceneRuntime`, фон сайта, частицы главной, жители в истории).
@@ -82,7 +94,8 @@ adaptations/
 
 - Базовые стили компонента описывают десктоп; медиа-запросов по ширине в модулях компонентов нет —
   они здесь. Исключение — `prefers-reduced-motion` (это настройка доступности, не устройство).
-- Новое отличие для устройства: добавьте элементу `data-ui="область-элемент"` и правило в файл уровня.
+- Новое отличие для устройства: добавьте элементу `data-ui="область-элемент"` и правило в файл уровня
+  (отличие одной страницы — в `pages/<страница>.css` уровня, общее для всех страниц — в корень уровня).
 - Порядок в `index.css`: большие экраны → планшет → сенсор → телефон (правило телефона побеждает).
 - Тач-цели — не меньше `--touch-target` (44 px); поле ввода на телефоне — не меньше 16 px
   (иначе iOS увеличивает страницу при фокусе).

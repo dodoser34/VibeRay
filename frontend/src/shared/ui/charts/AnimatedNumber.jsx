@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
-import { formatNumber } from '@/shared/lib/formatNumber';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 
 // Число, которое досчитывает до нового значения (с нуля в первом кадре).
 export function AnimatedNumber({ value, formatValue = formatNumber, className }) {

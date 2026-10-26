@@ -5,7 +5,7 @@ import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
 import { OptionGroup } from '@/shared/ui/controls/OptionGroup';
 import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { DeleteAccountDialog } from './DeleteAccountDialog';
-import { SettingsSection } from './SettingsSection';
+import { SettingsSection } from '../SettingsSection';
 import texts from '@/texts/ru/settings.json';
 import styles from './AccountSection.module.css';
 

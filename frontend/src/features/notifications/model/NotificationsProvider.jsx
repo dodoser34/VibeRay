@@ -5,7 +5,7 @@ import {
   getNotifications,
   markNotificationsRead,
 } from '@/shared/api/endpoints/users';
-import { subscribeLanguage, trackLanguageWork } from '@/shared/lib/language';
+import { subscribeLanguage, trackLanguageWork } from '@/shared/lib/i18n/language';
 import { NotificationsContext } from './NotificationsContext';
 
 // Пока нет push-канала, уведомления опрашиваются: раз в POLL_MS и сразу при возврате на вкладку.

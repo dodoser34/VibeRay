@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { rootScale } from '@/adaptations/core';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useElementWidth } from '@/shared/hooks/useElementWidth';
 import { curve, runs } from './curve';
 import styles from './CompareChart.module.css';

@@ -5,29 +5,29 @@
 @import './desktop/full-hd/full-hd.css';
 @import './desktop/2k/2k.css';
 @import './desktop/4k/4k.css';
-@import './desktop/home.css';
+@import './desktop/pages/home.css';
 
 @import './tablet/tablet.css';
 @import './tablet/navigation.css';
-@import './tablet/home.css';
-@import './tablet/map.css';
-@import './tablet/stats.css';
-@import './tablet/support.css';
-@import './tablet/about.css';
-@import './tablet/settings.css';
-@import './tablet/not-found.css';
-@import './tablet/moderation.css';
+@import './tablet/pages/home.css';
+@import './tablet/pages/map.css';
+@import './tablet/pages/stats.css';
+@import './tablet/pages/support.css';
+@import './tablet/pages/about.css';
+@import './tablet/pages/settings.css';
+@import './tablet/pages/not-found.css';
+@import './tablet/pages/moderation.css';
 
 @import './touch/touch.css';
 
 @import './mobile/mobile.css';
-@import './mobile/home.css';
-@import './mobile/map.css';
-@import './mobile/stats.css';
+@import './mobile/pages/home.css';
+@import './mobile/pages/map.css';
+@import './mobile/pages/stats.css';
 @import './mobile/forms.css';
 @import './mobile/modal.css';
-@import './mobile/support.css';
-@import './mobile/about.css';
-@import './mobile/settings.css';
-@import './mobile/not-found.css';
-@import './mobile/moderation.css';
+@import './mobile/pages/support.css';
+@import './mobile/pages/about.css';
+@import './mobile/pages/settings.css';
+@import './mobile/pages/not-found.css';
+@import './mobile/pages/moderation.css';

@@ -3,13 +3,13 @@ import { MoodFace } from '@/features/mood';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
 import { useRevealed } from '@/shared/hooks/useRevealed';
-import { format } from '@/shared/lib/format';
-import { formatNumber, formatSigned } from '@/shared/lib/formatNumber';
-import { plural } from '@/shared/lib/plural';
+import { format } from '@/shared/lib/i18n/format';
+import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
+import { plural } from '@/shared/lib/i18n/plural';
 import { CompareChart } from '@/shared/ui/charts/CompareChart';
 import texts from '@/texts/ru/stats.json';
-import { useDistrictStats } from '../hooks/useDistrictStats';
-import { seriesPointTitle, seriesTick } from '../lib/seriesLabels';
+import { useDistrictStats } from '../../hooks/useDistrictStats';
+import { seriesPointTitle, seriesTick } from '../../lib/seriesLabels';
 import styles from './DistrictCompare.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

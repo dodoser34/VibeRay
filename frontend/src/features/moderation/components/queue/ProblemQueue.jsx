@@ -3,8 +3,8 @@ import { getModerationQueue } from '@/shared/api/endpoints/moderation';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
 import { PROBLEM_STATUSES, REJECTED_STATUS } from '@/shared/config/problemStatuses';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { format } from '@/shared/lib/format';
-import { formatNumber } from '@/shared/lib/formatNumber';
+import { format } from '@/shared/lib/i18n/format';
+import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import { QueueItem } from './QueueItem';
 import texts from '@/texts/ru/moderation.json';
 import styles from './ProblemQueue.module.css';
@@ -45,6 +45,7 @@ export function ProblemQueue({ districts, filters, onFiltersChange, onChanged, o
               key={code}
               type="button"
               className={styles.status}
+              data-ui="queue-status"
               aria-pressed={filters.status === code}
               onClick={() => onFiltersChange({ ...filters, status: code })}
             >

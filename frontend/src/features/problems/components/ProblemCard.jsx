@@ -10,10 +10,10 @@ import {
 } from '@/shared/config/problemStatuses';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { useShare } from '@/shared/hooks/useShare';
-import { format } from '@/shared/lib/format';
-import { formatDate } from '@/shared/lib/formatDate';
-import { localizePath } from '@/shared/lib/language';
-import { plural } from '@/shared/lib/plural';
+import { format } from '@/shared/lib/i18n/format';
+import { formatDate } from '@/shared/lib/i18n/formatDate';
+import { localizePath } from '@/shared/lib/i18n/language';
+import { plural } from '@/shared/lib/i18n/plural';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
 import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';

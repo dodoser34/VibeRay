@@ -4,7 +4,7 @@ import { useViewport, WIDE_QUERY } from '@/adaptations/core';
 import { AuthPanel } from '@/features/auth';
 import { FRONT_FLOW_END, FrontLayer, HeroCanvas, SHEET_FLY_SHIFT } from '@/features/hero';
 import { getCity } from '@/shared/api/endpoints/cities';
-import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { usePagePath } from '@/shared/hooks/usePagePath';
@@ -109,6 +109,24 @@ export function HomePage() {
               duration: 0.35,
               onComplete: () => navigate(`/map/${CITY}`),
             });
+          },
+        });
+      });
+      // Одна колонка (телефоны, планшеты стоя): полёта в город по прокрутке нет, зато у сцены
+      // глубина — пока листают к форме входа, девушка с мыслями отстаёт от текста и гаснет.
+      // Условие all совпадает всегда: функция перезапускается при смене любого из остальных.
+      const conditions = { all: 'all', wide: WIDE_QUERY, calm: '(prefers-reduced-motion: reduce)' };
+      media.add(conditions, (context) => {
+        if (context.conditions.wide || context.conditions.calm) return;
+        gsap.to(sceneLayerRef.current, {
+          yPercent: 14,
+          autoAlpha: 0,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: sceneLayerRef.current,
+            start: 'top top',
+            end: 'bottom 25%',
+            scrub: true,
           },
         });
       });

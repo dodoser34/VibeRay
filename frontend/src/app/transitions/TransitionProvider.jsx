@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
-import { gsap } from '@/shared/animations/gsapSetup';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import { MapFoldTransition } from '@/shared/animations/pageTransition/MapFoldTransition';
 import {
   holdPageEntrance,
@@ -10,7 +10,7 @@ import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePagePath } from '@/shared/hooks/usePagePath';
 import { TransitionContext } from './TransitionContext';
 import nav from '@/texts/ru/nav.json';
-import { subscribeTheme } from '@/shared/lib/theme';
+import { subscribeTheme } from '@/shared/lib/theme/theme';
 
 // Главная, вход и регистрация — одна страница: переключение между ними анимирует карточку-пропуск.
 const HOME_PATHS = ['/', '/login', '/register'];

@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { gsap } from '@/shared/animations/gsapSetup';
-import { cssVar } from '@/shared/lib/cssVar';
+import { gsap } from '@/shared/animations/core/gsapSetup';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 
 function createPin(material) {
   const pin = new THREE.Group();

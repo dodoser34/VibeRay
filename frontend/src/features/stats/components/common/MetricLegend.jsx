@@ -1,4 +1,4 @@
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import texts from '@/texts/ru/stats.json';
 import styles from './MetricLegend.module.css';
 

@@ -1,10 +1,10 @@
 import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
-import { format } from '@/shared/lib/format';
-import { formatNumber, formatSigned } from '@/shared/lib/formatNumber';
-import { plural } from '@/shared/lib/plural';
+import { format } from '@/shared/lib/i18n/format';
+import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
+import { plural } from '@/shared/lib/i18n/plural';
 import { TimeSeriesChart } from '@/shared/ui/charts/TimeSeriesChart';
 import texts from '@/texts/ru/stats.json';
-import { seriesPointTitle, seriesTick } from '../lib/seriesLabels';
+import { seriesPointTitle, seriesTick } from '../../lib/seriesLabels';
 import styles from './MoodChart.module.css';
 
 const Y_TICKS = [

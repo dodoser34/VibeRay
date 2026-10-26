@@ -1,4 +1,4 @@
-import { FAQ, HELP_CATEGORIES } from '../content';
+import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
 import texts from '@/texts/ru/support.json';
 import styles from './FaqList.module.css';
 

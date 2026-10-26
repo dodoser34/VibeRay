@@ -10,10 +10,10 @@ import {
   WITHDRAWABLE_STATUSES,
 } from '@/shared/config/problemStatuses';
 import { useShare } from '@/shared/hooks/useShare';
-import { format } from '@/shared/lib/format';
-import { formatDate } from '@/shared/lib/formatDate';
-import { localizePath } from '@/shared/lib/language';
-import { plural } from '@/shared/lib/plural';
+import { format } from '@/shared/lib/i18n/format';
+import { formatDate } from '@/shared/lib/i18n/formatDate';
+import { localizePath } from '@/shared/lib/i18n/language';
+import { plural } from '@/shared/lib/i18n/plural';
 import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';
 import problemTexts from '@/texts/ru/problems.json';
 import texts from '@/texts/ru/settings.json';

@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 
 // Ключевые моменты суток; между ними параметры плавно смешиваются. Свет остаётся почти нейтральным
 // (районы сохраняют свои цвета): утром и вечером он мягче и чуть теплее, ночью — тише и холоднее,

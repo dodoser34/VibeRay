@@ -1,6 +1,6 @@
 import { useId, useState } from 'react';
 import { useViewport } from '@/adaptations/core';
-import { POPULAR_QUERIES } from '../content';
+import { POPULAR_QUERIES } from '../lib/helpContent';
 import texts from '@/texts/ru/support.json';
 import styles from './HelpSearch.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

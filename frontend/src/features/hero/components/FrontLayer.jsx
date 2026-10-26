@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useTheme } from '@/shared/hooks/useTheme';

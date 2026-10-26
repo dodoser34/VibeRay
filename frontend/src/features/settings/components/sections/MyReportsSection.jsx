@@ -3,12 +3,12 @@ import { useAuth } from '@/features/auth';
 import { PeriodSwitch } from '@/features/mood';
 import { getMyProblems } from '@/shared/api/endpoints/users';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { plural } from '@/shared/lib/plural';
+import { plural } from '@/shared/lib/i18n/plural';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { Button } from '@/shared/ui/controls/Button';
-import emptyFigure from '../assets/empty-reports.webp';
+import emptyFigure from '../../assets/empty-reports.webp';
 import { ReportItem } from './ReportItem';
-import { SettingsSection } from './SettingsSection';
+import { SettingsSection } from '../SettingsSection';
 import texts from '@/texts/ru/settings.json';
 import styles from './MyReportsSection.module.css';
 

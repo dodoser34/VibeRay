@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
-import { format } from '@/shared/lib/format';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { format } from '@/shared/lib/i18n/format';
 import auth from '@/texts/ru/auth.json';
 import styles from './PasswordStrength.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

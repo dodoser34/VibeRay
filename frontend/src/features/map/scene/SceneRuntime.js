@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { pixelRatioFor, renderQuality } from '@/adaptations/core';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 
 // Общий рендерер и цикл отрисовки для всех Three.js-сцен сайта (без постобработки: спокойный вид).
 export class SceneRuntime {

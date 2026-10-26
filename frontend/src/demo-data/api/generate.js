@@ -4,9 +4,9 @@ import streets from '../cities/kostanay/streets.geojson';
 import cityInfo from '../cities/kostanay/city.json';
 import { MOODS, MOOD_BY_CODE } from '@/shared/config/moods';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
-import { largestPolygon, pointInPolygon } from '@/shared/lib/geoProjection';
+import { largestPolygon, pointInPolygon } from '@/shared/lib/geo/geoProjection';
 import { createRandom, hashString } from '@/shared/lib/random';
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import demo from '../content.json';
 
 const HOUR = 3_600_000;

@@ -54,7 +54,7 @@ import {
   withHistory,
 } from './community';
 import { isQueueStatus, moderationItem, moderationQueue, moderationSummary } from './moderation';
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import demoAccounts from '../accounts.json';
 import demoSupport from '../support.json';
 import { demoContent, localizeDemo, nameOf, setResponseLanguage } from './locale';

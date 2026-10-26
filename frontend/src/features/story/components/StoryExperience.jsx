@@ -1,13 +1,13 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { fallBackToLite, useLiteGraphics, useViewport } from '@/adaptations/core';
 import { useCityData } from '@/features/map';
-import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/controls/Button';
 import { useTheme } from '@/shared/hooks/useTheme';
-import { CHAPTERS, isDaylight, story } from '../content';
+import { CHAPTERS, isDaylight, story } from '../lib/chapters';
 import { LiteStage } from '../scene/LiteStage';
-import { addOverlayTimeline, FINAL, LIVING } from '../storyTimeline';
+import { addOverlayTimeline, FINAL, LIVING } from '../lib/storyTimeline';
 import { StoryIllustration } from './StoryIllustration';
 import { StoryCalendar } from './StoryCalendar';
 import { StoryInterface } from './StoryInterface';
@@ -28,7 +28,7 @@ const LOAD_LIMIT = 12000;
 // держит экран закрытым до этого момента (AboutPage).
 export function StoryExperience({ onOpenMap, onReady }) {
   const language = useLanguage();
-  // Тема выбирает вариант истории: ночь в тёмной, день в светлой (content.js, RoomSet).
+  // Тема выбирает вариант истории: ночь в тёмной, день в светлой (lib/chapters.js, RoomSet).
   const theme = useTheme();
   const rootRef = useRef(null);
   const stageRef = useRef(null);

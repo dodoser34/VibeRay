@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { MOOD_SCALE, NO_DATA_COLOR_VAR } from '@/shared/config/moods';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 
 export function colorForScore(score) {
   const s = Math.min(2, Math.max(-2, score));

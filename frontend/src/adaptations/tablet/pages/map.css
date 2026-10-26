@@ -3,13 +3,16 @@
    слой); список районов и легенда здесь второстепенны (рейтинг в правой панели перечисляет
    районы). */
 @media (min-width: 1024px) and (max-width: 1199px) and (orientation: landscape) {
+  /* Строка не заходит под правую панель: что не поместилось, переносится во второй ряд */
   :root [data-ui='map-panel-left'] {
     right: auto;
     width: auto;
+    max-width: calc(100% - var(--map-panel-right) - 3 * var(--space-5));
     max-height: none;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-end;
-    gap: var(--space-4);
+    gap: var(--space-3) var(--space-4);
     padding: var(--space-3) var(--space-4);
     overflow: visible;
   }
@@ -33,8 +36,13 @@
   :root [data-ui='map-attribution'] {
     right: auto;
     left: var(--space-3);
-    bottom: calc(var(--sheet-inset, 6rem) + var(--space-1));
-    max-width: 60vw;
+    bottom: calc(var(--sheet-inset, 6rem) + var(--space-2));
+    max-width: calc(100vw - 2 * var(--space-3));
+    padding: 2px var(--space-2);
+    border-radius: var(--radius-pill);
+    /* Строка лежит прямо на карте: подложка отделяет её от подписей районов под ней */
+    background: var(--color-glass);
+    white-space: nowrap;
   }
 
   /* Шторка закрывает карту: строка лицензии уехала бы вверх к верхним кнопкам */

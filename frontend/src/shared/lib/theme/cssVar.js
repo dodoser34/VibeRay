@@ -9,7 +9,7 @@ export function cssVar(name) {
   return cache.get(name);
 }
 
-// Тема сменилась — токены надо читать заново (shared/lib/theme.js).
+// Тема сменилась — токены надо читать заново (shared/lib/theme/theme.js).
 export function clearCssVarCache() {
   cache.clear();
 }

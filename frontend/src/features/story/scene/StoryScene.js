@@ -1,9 +1,9 @@
 import * as THREE from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { SceneRuntime } from '@/features/map';
-import { cssVar } from '@/shared/lib/cssVar';
-import { createProjection } from '@/shared/lib/geoProjection';
-import { at } from '../content';
+import { cssVar } from '@/shared/lib/theme/cssVar';
+import { createProjection } from '@/shared/lib/geo/geoProjection';
+import { at } from '../lib/chapters';
 import { CITY_PARAMS, CityStage } from './CityStage';
 import { RoomSet, SCREEN_CENTER } from './RoomSet';
 
@@ -107,7 +107,7 @@ export class StoryScene {
     });
   }
 
-  // Добавляет анимации сцены в шкалу истории (раскладка глав: ../content.js).
+  // Добавляет анимации сцены в шкалу истории (раскладка глав: ../lib/chapters.js).
   buildTimeline(tl) {
     const { params: p, cam, look } = this;
     const focus = this.city.anchorOf(FOCUS_DISTRICT);

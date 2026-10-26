@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import { rootScale } from '@/adaptations/core';
-import { gsap } from '@/shared/animations/gsapSetup';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 
 const MAX_PROBLEMS = 1000;
 const STEM_HEIGHT = 0.42;

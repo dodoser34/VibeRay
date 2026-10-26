@@ -1,7 +1,7 @@
 import { useEffect, useId, useRef, useState } from 'react';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import { useNotifications } from '../model/useNotifications';
 import { NotificationsPanel } from './NotificationsPanel';
 import texts from '@/texts/ru/notifications.json';

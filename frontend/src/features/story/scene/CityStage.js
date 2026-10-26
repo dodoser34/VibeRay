@@ -2,14 +2,14 @@ import * as THREE from 'three';
 import { CityBackdrop, colorForAggregate, colorForDistrict, DistrictsLayer } from '@/features/map';
 import { MOOD_BY_CODE, MOODS } from '@/shared/config/moods';
 import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 import {
   createProjection,
   largestPolygon,
   largestRing,
   pointInPolygon,
   ringArea,
-} from '@/shared/lib/geoProjection';
+} from '@/shared/lib/geo/geoProjection';
 import { createRandom } from '@/shared/lib/random';
 import { LinkNetwork, PulseField } from './storyEffects';
 

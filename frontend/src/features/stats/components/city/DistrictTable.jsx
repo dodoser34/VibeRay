@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { MoodFace } from '@/features/mood';
 import { useFlipList } from '@/shared/animations/effects/useFlipList';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
-import { format } from '@/shared/lib/format';
-import { formatNumber, formatSigned, percentOf } from '@/shared/lib/formatNumber';
-import { getLocale } from '@/shared/lib/language';
-import { plural } from '@/shared/lib/plural';
+import { format } from '@/shared/lib/i18n/format';
+import { formatNumber, formatSigned, percentOf } from '@/shared/lib/i18n/formatNumber';
+import { getLocale } from '@/shared/lib/i18n/language';
+import { plural } from '@/shared/lib/i18n/plural';
 import { useRevealed } from '@/shared/hooks/useRevealed';
 import texts from '@/texts/ru/stats.json';
 import styles from './DistrictTable.module.css';

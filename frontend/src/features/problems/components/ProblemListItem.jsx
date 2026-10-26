@@ -1,7 +1,7 @@
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
-import { formatRelative } from '@/shared/lib/formatDate';
+import { formatRelative } from '@/shared/lib/i18n/formatDate';
 import { StatusChip } from './StatusChip';
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import texts from '@/texts/ru/problems.json';
 import styles from './ProblemListItem.module.css';
 

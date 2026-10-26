@@ -1,5 +1,5 @@
 import { prefersReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { applyTheme, getTheme } from '@/shared/lib/theme';
+import { applyTheme, getTheme } from '@/shared/lib/theme/theme';
 
 // Смена темы — плавная смена всей страницы: браузер снимает кадр до и после и растворяет один в
 // другом (View Transitions, длительность — в global.css). Где API нет или включено reduced motion —

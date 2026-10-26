@@ -1,5 +1,5 @@
-import { gsap } from '@/shared/animations/gsapSetup';
-import { at } from '../content';
+import { gsap } from '@/shared/animations/core/gsapSetup';
+import { at } from '../lib/chapters';
 
 // Центр экрана монитора в координатах иллюстрации (StoryIllustration, viewBox 1600×900).
 const SCREEN = '780 437';

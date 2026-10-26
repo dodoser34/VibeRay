@@ -1,6 +1,6 @@
 import { useId, useRef, useState } from 'react';
 import { rootScale } from '@/adaptations/core';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useElementWidth } from '@/shared/hooks/useElementWidth';
 import { curve, runs } from './curve';
 import styles from './TimeSeriesChart.module.css';
@@ -223,12 +223,16 @@ export function TimeSeriesChart({
 
           <path ref={areaRef} fill={`url(#${gradientId})`} />
           <path ref={lineRef} className={styles.line} pathLength="1" strokeDasharray="1" />
+          {/* y и height задаёт GSAP; исходные значения нужны, чтобы при откате анимаций (смена
+              данных, размонтирование) столбик вернулся к нулевой высоте, а не к пустому атрибуту. */}
           <g ref={barsRef}>
             {points.map((point, i) => (
               <rect
                 key={i}
                 x={geometry.x(i) - geometry.barWidth / 2}
+                y={geometry.barBottom}
                 width={geometry.barWidth}
+                height={0}
                 rx={Math.min(2, geometry.barWidth / 2)}
                 className={styles.bar}
                 data-active={shown === i || undefined}

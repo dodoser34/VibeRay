@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 
 // Где кончик пальца на картинке faq-assistant.webp — доля её высоты.
 const FINGER = 0.278;

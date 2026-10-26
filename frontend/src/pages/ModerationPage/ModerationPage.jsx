@@ -7,12 +7,12 @@ import { getCity } from '@/shared/api/endpoints/cities';
 import { isModerator } from '@/shared/config/roles';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { localizePath } from '@/shared/lib/language';
+import { localizePath } from '@/shared/lib/i18n/language';
 
 const CITY = 'kostanay';
 
 // Разделы модератора: очередь (/moderation, ?district= — очередь района), город и обращения.
-// Гостя уводит на вход; житель сюда не попадает — его уводит app/useRoleRoute.js.
+// Гостя уводит на вход; житель сюда не попадает — его уводит app/routing/useRoleRoute.js.
 export function ModerationPage({ section }) {
   useLanguage();
   const { user } = useAuth();

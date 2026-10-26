@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
-import { gsap } from '@/shared/animations/gsapSetup';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import styles from './BottomSheet.module.css';
 
 const SNAPS = ['peek', 'half', 'full'];

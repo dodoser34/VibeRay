@@ -1,11 +1,11 @@
 import { useRef } from 'react';
 import { MoodFace } from '@/features/mood';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { moodCodeForScore } from '@/shared/config/moods';
-import { formatNumber, formatSigned } from '@/shared/lib/formatNumber';
+import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
 import { useRevealed } from '@/shared/hooks/useRevealed';
 import texts from '@/texts/ru/stats.json';
-import { groupByYear } from '../lib/seriesLabels';
+import { groupByYear } from '../../lib/seriesLabels';
 import styles from './YearsTable.module.css';
 
 // «Все годы»: строка на каждый календарный год — настроение, отметки и сообщения с полосками для

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { EMAIL_PATTERN, NICKNAME_PATTERN } from '@/shared/config/validation';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import { Avatar, AVATAR_PRESETS } from '@/shared/ui/avatar/Avatar';
@@ -8,7 +8,7 @@ import { TextField } from '@/shared/ui/controls/TextField';
 import { useAuth } from '../model/useAuth';
 import { PasswordField } from './PasswordField';
 import { PasswordStrength } from './PasswordStrength';
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import auth from '@/texts/ru/auth.json';
 import styles from './PassForms.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

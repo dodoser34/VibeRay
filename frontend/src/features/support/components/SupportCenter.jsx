@@ -1,13 +1,13 @@
 import { useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
-import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, SplitText, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { revealOnScroll } from '@/shared/animations/effects/revealOnScroll';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/controls/Button';
 import assistant from '../assets/assistant.webp';
 import faqAssistant from '../assets/faq-assistant.webp';
-import { FAQ, HELP_CATEGORIES } from '../content';
+import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
 import { useFigurePointer } from '../hooks/useFigurePointer';
 import { searchHelp } from '../lib/searchHelp';
 import { FaqList } from './FaqList';

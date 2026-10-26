@@ -1,12 +1,12 @@
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useEffectEvent, useId, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { usePageNavigate } from '@/app/transitions/useTransition';
 import { useAuth } from '@/features/auth';
 import { NotificationsPanel, useNotifications } from '@/features/notifications';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePagePath } from '@/shared/hooks/usePagePath';
-import { format } from '@/shared/lib/format';
-import { localizePath } from '@/shared/lib/language';
+import { format } from '@/shared/lib/i18n/format';
+import { localizePath } from '@/shared/lib/i18n/language';
 import { isModerator } from '@/shared/config/roles';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
@@ -19,6 +19,10 @@ import { LogoMark } from '@/shared/ui/icons/LogoMark';
 import { Icon } from '@/shared/ui/icons/Icon';
 
 const CITY = 'kostanay';
+// Прокрутка: кнопки уезжают, когда страницу листают вниз дальше первого экрана шапки, и
+// возвращаются при любом движении вверх; мелкую дрожь пальца не считаем.
+const HIDE_AFTER = 120;
+const SCROLL_SLACK = 6;
 
 const ICONS = {
   map: 'map',
@@ -61,6 +65,12 @@ export function MobileNav() {
   const [openOn, setOpenOn] = useState(null);
   const open = openOn === pathname;
   const current = activeKey(pathname);
+  // Состояние прокрутки относится к странице, где его получили: новая страница начинает с видимых
+  // кнопок, даже если прошлую пролистали вниз.
+  const [scroll, setScroll] = useState({ path: null, hidden: false, scrolled: false });
+  const scrollHere = scroll.path === pathname;
+  const hidden = scrollHere && scroll.hidden && !open;
+  const scrolled = scrollHere && scroll.scrolled;
 
   const moderator = isModerator(user);
   const home = moderator ? '/moderation' : '/';
@@ -96,17 +106,91 @@ export function MobileNav() {
     { scope: barRef },
   );
 
+  // Страницу листают пальцем: кнопки не должны висеть над текстом — вниз они уезжают, вверх
+  // возвращаются; пока страница прокручена, под ними лежит мягкая подложка (текст под ней гаснет).
+  useEffect(() => {
+    let last = window.scrollY;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const y = window.scrollY;
+      const delta = y - last;
+      if (Math.abs(delta) < SCROLL_SLACK && y > 0) return;
+      last = y;
+      const next = {
+        path: pathname,
+        hidden: delta > 0 && y > HIDE_AFTER,
+        scrolled: y > SCROLL_SLACK,
+      };
+      setScroll((prev) =>
+        prev.path === next.path && prev.hidden === next.hidden && prev.scrolled === next.scrolled
+          ? prev
+          : next,
+      );
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, [pathname]);
+
+  // Липкие элементы страниц (полоса разделов настроек) поднимаются на место уехавших кнопок.
+  useEffect(() => {
+    document.documentElement.toggleAttribute('data-nav-hidden', hidden);
+    return () => document.documentElement.removeAttribute('data-nav-hidden');
+  }, [hidden]);
+
+  // Центр кнопки меню: меню раскрывается из неё кругом и в неё же сворачивается.
+  const menuCircle = (radius) => {
+    const box = buttonRef.current.getBoundingClientRect();
+    const x = box.left + box.width / 2;
+    const y = box.top + box.height / 2;
+    const full = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y),
+    );
+    return `circle(${radius ?? full}px at ${x}px ${y}px)`;
+  };
+
   useGSAP(() => {
     if (!open) return;
-    gsap.from(menuRef.current, { autoAlpha: 0, duration: 0.25 });
+    gsap.fromTo(
+      menuRef.current,
+      { clipPath: menuCircle(buttonRef.current.offsetWidth / 2) },
+      { clipPath: menuCircle(), duration: 0.55, ease: 'power3.inOut', clearProps: 'clipPath' },
+    );
     gsap.from(menuRef.current.querySelectorAll('[data-menu-item]'), {
       y: 18,
       autoAlpha: 0,
       duration: 0.5,
       stagger: 0.045,
       ease: 'expo.out',
+      delay: 0.12,
     });
   }, [open]);
+
+  // Закрыть «на месте» (кнопка, Escape): меню сворачивается обратно в кнопку. Переход на другую
+  // страницу закрывает его сразу — экран всё равно закроет переход.
+  const closeMenu = () => {
+    const menu = menuRef.current;
+    if (!menu) return setOpenOn(null);
+    gsap.killTweensOf(menu);
+    return gsap.fromTo(
+      menu,
+      { clipPath: menuCircle() },
+      {
+        clipPath: menuCircle(buttonRef.current.offsetWidth / 2),
+        duration: 0.4,
+        ease: 'power3.in',
+        onComplete: () => setOpenOn(null),
+      },
+    );
+  };
+  const onEscape = useEffectEvent(closeMenu);
 
   // Пока меню открыто: страница под ним не прокручивается, Escape закрывает меню, фокус начинается
   // внутри.
@@ -115,7 +199,7 @@ export function MobileNav() {
     const button = buttonRef.current;
     document.body.style.overflow = 'hidden';
     menuRef.current.querySelector('a, button')?.focus();
-    const onKey = (event) => event.key === 'Escape' && setOpenOn(null);
+    const onKey = (event) => event.key === 'Escape' && onEscape();
     document.addEventListener('keydown', onKey);
     return () => {
       document.body.style.overflow = '';
@@ -138,7 +222,17 @@ export function MobileNav() {
 
   return (
     <>
-      <header ref={barRef} className={styles.bar} data-open={open || undefined}>
+      <div
+        className={styles.scrim}
+        data-shown={(scrolled && !hidden) || undefined}
+        aria-hidden="true"
+      />
+      <header
+        ref={barRef}
+        className={styles.bar}
+        data-open={open || undefined}
+        data-hidden={hidden || undefined}
+      >
         <Link
           to={localizePath(home)}
           className={styles.logo}
@@ -160,7 +254,7 @@ export function MobileNav() {
                 ? format(nav.menu.openUnread, { count: unread })
                 : nav.menu.open
           }
-          onClick={() => setOpenOn(open ? null : pathname)}
+          onClick={() => (open ? closeMenu() : setOpenOn(pathname))}
         >
           <span className={styles.burger} aria-hidden="true">
             <span />

@@ -6,9 +6,9 @@ import {
   SUPPORT_TOPIC_BY_CODE,
 } from '@/shared/config/support';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { format } from '@/shared/lib/format';
-import { formatRelative } from '@/shared/lib/formatDate';
-import { plural } from '@/shared/lib/plural';
+import { format } from '@/shared/lib/i18n/format';
+import { formatRelative } from '@/shared/lib/i18n/formatDate';
+import { plural } from '@/shared/lib/i18n/plural';
 import { OptionGroup } from '@/shared/ui/controls/OptionGroup';
 import texts from '@/texts/ru/moderation.json';
 import styles from './SupportInbox.module.css';

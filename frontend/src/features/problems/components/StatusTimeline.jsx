@@ -1,5 +1,5 @@
 import { PROBLEM_STATUSES, REJECTED_STATUS } from '@/shared/config/problemStatuses';
-import { formatDate } from '@/shared/lib/formatDate';
+import { formatDate } from '@/shared/lib/i18n/formatDate';
 import { useRevealed } from '@/shared/hooks/useRevealed';
 import styles from './StatusTimeline.module.css';
 

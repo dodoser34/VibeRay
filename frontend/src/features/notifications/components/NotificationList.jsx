@@ -1,8 +1,8 @@
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { REJECTION_REASON_BY_CODE, STATUS_BY_CODE } from '@/shared/config/problemStatuses';
-import { format } from '@/shared/lib/format';
-import { formatRelative } from '@/shared/lib/formatDate';
-import { plural } from '@/shared/lib/plural';
+import { format } from '@/shared/lib/i18n/format';
+import { formatRelative } from '@/shared/lib/i18n/formatDate';
+import { plural } from '@/shared/lib/i18n/plural';
 import texts from '@/texts/ru/notifications.json';
 import styles from './NotificationList.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

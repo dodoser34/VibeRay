@@ -15,7 +15,7 @@ import { preparePhoto } from '@/shared/lib/imageTools';
 import { Button } from '@/shared/ui/controls/Button';
 import { Modal } from '@/shared/ui/windows/Modal';
 import { TextField } from '@/shared/ui/controls/TextField';
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import supportTexts from '@/texts/ru/support.json';
 import styles from './SupportRequestForm.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

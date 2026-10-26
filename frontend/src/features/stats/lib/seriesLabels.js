@@ -5,7 +5,7 @@ import {
   formatMonthYear,
   formatTime,
   formatWeekday,
-} from '@/shared/lib/formatDate';
+} from '@/shared/lib/i18n/formatDate';
 
 // Подпись оси X для точки динамики или null, если точка остаётся без подписи (подписи разнесены
 // так, чтобы не сталкиваться, отсчёт от последней точки).

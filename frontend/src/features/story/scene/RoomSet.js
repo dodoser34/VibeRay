@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RectAreaLightUniformsLib } from 'three/addons/lights/RectAreaLightUniformsLib.js';
-import { cssVar } from '@/shared/lib/cssVar';
-import { getLanguage } from '@/shared/lib/language';
+import { cssVar } from '@/shared/lib/theme/cssVar';
+import { getLanguage } from '@/shared/lib/i18n/language';
 import {
   phoneTexture,
   skyTexture,

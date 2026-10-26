@@ -37,3 +37,11 @@ export function isCompact(width, height) {
 export const WIDE_QUERY = `(min-width: ${BREAKPOINTS.desktop}px), (min-width: ${BREAKPOINTS.tabletWide}px) and (orientation: landscape)`;
 
 export const COARSE_POINTER = '(pointer: coarse)';
+
+// Телефон лёжа: по ширине — планшет, но высоты почти нет (812 × 375, 932 × 430). Капсула таб-бара
+// и шторка съели бы половину экрана, поэтому навигация здесь телефонная: две плавающие кнопки.
+const PHONE_LANDSCAPE_HEIGHT = 500;
+
+export function isPhoneLandscape(width, height) {
+  return width > height && width < BREAKPOINTS.tabletWide && height < PHONE_LANDSCAPE_HEIGHT;
+}

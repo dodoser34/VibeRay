@@ -1,5 +1,5 @@
 import { useId } from 'react';
-import styles from './NotFoundPage.module.css';
+import styles from '../NotFoundPage.module.css';
 
 // Четыре панели карты, сложенной гармошкой: верхние углы чередуются, как у настоящего сгиба.
 const PANELS = [

@@ -1,6 +1,6 @@
 import { clearCssVarCache } from './cssVar';
-import { createListeners } from './listeners';
-import { readChoice, writeValue } from './localFlag';
+import { createListeners } from '../listeners';
+import { readChoice, writeValue } from '../localFlag';
 
 // Тема оформления: тёмная (по умолчанию) или светлая. Цвета — токены в src/styles/themes/; тема —
 // атрибут data-theme на <html>. Модуль импортируется в main.jsx до отрисовки, чтобы страница сразу

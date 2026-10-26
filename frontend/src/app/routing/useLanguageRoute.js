@@ -8,7 +8,7 @@ import {
   languageOfPath,
   localizePath,
   stripLanguage,
-} from '@/shared/lib/language';
+} from '@/shared/lib/i18n/language';
 
 // Адрес → абсолютная ссылка с подпапкой сайта, в том же виде, что у страниц сборки (/en/about/ —
 // plugins/languagePages.js).

@@ -1,8 +1,8 @@
 import * as THREE from 'three';
-import { gsap } from '@/shared/animations/gsapSetup';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import { CSS2DObject, CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
-import { createProjection, createUnprojection } from '@/shared/lib/geoProjection';
-import { cssVar } from '@/shared/lib/cssVar';
+import { createProjection, createUnprojection } from '@/shared/lib/geo/geoProjection';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 import { SceneRuntime } from './SceneRuntime';
 import { DistrictsLayer } from './DistrictsLayer';
 import { ProblemsLayer } from './ProblemsLayer';
@@ -19,6 +19,9 @@ const HOME_EXTENT = 12; // км города в кадре HOME_OFFSET; боль
 const INTRO_OFFSET = new THREE.Vector3(0.2, 3.2, 3.4);
 const FOG = { near: 18, far: 42 };
 const MAX_DISTANCE = 26;
+const FIT_MARGIN = 0.92; // доля кадра (NDC), в которую вписывается город: запас под подписи районов
+const FIT_POINTS = 120;
+const INSET_SETTLE_MS = 200; // шторка столько стоит на месте — обзор пересчитывается под неё // вершин на район для вписывания в кадр — хватает, чтобы не потерять выступы
 const LABEL_CHECK_MS = 150; // как часто разбираются налезающие подписи
 const LABEL_GAP = 4; // px между двумя подписями, которые обе остаются
 const TWINKLE_MS = 1400; // как часто в городе гаснет или загорается пара окон
@@ -100,7 +103,7 @@ export class MapScene {
       this.backdrop?.setResolution(width, height);
       this.labelRenderer.setSize(width, height);
       this.setViewInset(this.viewInset);
-      this.updateHome();
+      this.refitHome();
     });
     this.labelCheck = 0;
     this.twinkleAt = 0;
@@ -152,11 +155,24 @@ export class MapScene {
     this.backdrop.setResolution(width, height);
     this.createLabels(city.districts.features);
 
-    const box = new THREE.Box3().setFromObject(this.districts.group);
-    const center = box.getCenter(new THREE.Vector3());
-    const size = box.getSize(new THREE.Vector3());
+    const size = new THREE.Box3().setFromObject(this.districts.group).getSize(new THREE.Vector3());
+    // Центр обзора и вписывание в кадр — по вершинам самих плит (прореженным): улицы схемы уходят
+    // далеко за город и сдвинули бы центр, а рамка неровного города с пустыми углами отодвинула бы
+    // камеру зря.
+    const corners = this.districts.meshes.flatMap((mesh) => {
+      mesh.updateWorldMatrix(true, false);
+      const positions = mesh.geometry.attributes.position;
+      const stride = Math.max(1, Math.floor(positions.count / FIT_POINTS));
+      const points = [];
+      for (let i = 0; i < positions.count; i += stride) {
+        const point = new THREE.Vector3().fromBufferAttribute(positions, i);
+        points.push(point.applyMatrix4(mesh.matrixWorld));
+      }
+      return points;
+    });
+    const center = new THREE.Box3().setFromPoints(corners).getCenter(new THREE.Vector3());
     center.y = 0;
-    this.frame = { center, scale: Math.max(1, Math.max(size.x, size.z) / HOME_EXTENT) };
+    this.frame = { center, corners, scale: Math.max(1, Math.max(size.x, size.z) / HOME_EXTENT) };
     this.updateHome();
     this.introTimelines = [
       this.rig
@@ -312,10 +328,42 @@ export class MapScene {
 
   // Предел приближения и туман двигаются вместе с обзором: иначе управление снова притянуло бы
   // отъехавшую камеру, а туман проглотил бы город.
+  // Обзор всего города: не ближе задуманного (zoomFactor), но и не уже кадра — на узком портретном
+  // экране (телефон, складной) камера отъезжает, пока все углы рамки города не попадут в кадр.
+  // Пробная камера — копия настоящей (те же пропорции и сдвиг центра под шторку).
+  homeZoom() {
+    const { center, corners, scale } = this.frame;
+    const probe = this.runtime.camera.clone();
+    // Низ кадра закрыт шторкой (та же доля, что у сдвига в setViewInset): по вертикали город
+    // вписывается в видимую над ней часть — её середина в NDC на `covered`, полувысота 1 − covered.
+    const { height } = this.runtime.size;
+    const covered = height ? Math.min(this.viewInset, height * 0.52) / height : 0;
+    const fits = (zoom) => {
+      probe.position.copy(center).addScaledVector(HOME_OFFSET, zoom * scale);
+      probe.lookAt(center);
+      probe.updateMatrixWorld();
+      return corners.every((corner) => {
+        const point = corner.clone().project(probe);
+        return (
+          Math.abs(point.x) <= FIT_MARGIN &&
+          Math.abs(point.y - covered) <= FIT_MARGIN * (1 - covered)
+        );
+      });
+    };
+    let low = 0.5;
+    let high = 6;
+    for (let step = 0; step < 16; step += 1) {
+      const zoom = (low + high) / 2;
+      if (fits(zoom)) high = zoom;
+      else low = zoom;
+    }
+    return Math.max(this.zoomFactor(), high);
+  }
+
   updateHome() {
     if (!this.frame) return;
     const { center, scale } = this.frame;
-    const zoom = this.zoomFactor();
+    const zoom = this.homeZoom();
     this.rig.setHome(center, center.clone().addScaledVector(HOME_OFFSET, zoom * scale));
     this.rig.controls.maxDistance = Math.max(
       MAX_DISTANCE,
@@ -334,6 +382,15 @@ export class MapScene {
     const shift = Math.min(bottom, height * 0.52) / 2;
     if (!width || !height || shift < 1) camera.clearViewOffset();
     else camera.setViewOffset(width, height, 0, shift, width, height);
+    // Шторка остановилась: обзор всего города пересчитывается под видимую над ней часть, и камера,
+    // если стоит в обзоре, мягко переезжает (открыли шторку — город уменьшился и встал над ней).
+    clearTimeout(this.insetSettle);
+    this.insetSettle = setTimeout(() => this.refitHome(), INSET_SETTLE_MS);
+  }
+
+  refitHome() {
+    this.updateHome();
+    if (this.frame && this.started && !this.introRunning()) this.rig.followHome();
   }
 
   // Назад ко всему городу (на сенсорных экранах его легко потерять после щипков и поворотов).
@@ -548,6 +605,7 @@ export class MapScene {
       this.runtime.scene.fog.color,
     ]);
     clearTimeout(this.pendingSelect);
+    clearTimeout(this.insetSettle);
     this.picker.dispose();
     this.rig.dispose();
     this.districts?.dispose();

@@ -1,14 +1,14 @@
 import { useRef, useState } from 'react';
-import { gsap, SplitText, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, SplitText, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { getModerationSummary } from '@/shared/api/endpoints/moderation';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { formatNumber } from '@/shared/lib/formatNumber';
+import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import figure from '../assets/moderator.webp';
 import { CityOverview } from './CityOverview';
-import { ProblemQueue } from './ProblemQueue';
+import { ProblemQueue } from './queue/ProblemQueue';
 import { SupportInbox } from './SupportInbox';
 import texts from '@/texts/ru/moderation.json';
 import styles from './ModerationCenter.module.css';

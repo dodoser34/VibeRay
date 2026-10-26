@@ -3,7 +3,7 @@ import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
 import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
 import { rootScale } from '@/adaptations/core';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 
 // Иерархия дорог схемы (классы — из streets.geojson, по тегам OSM highway/railway), от дворовых
 // проездов к магистралям: каждый следующий рисуется поверх предыдущего. width — толщина в px экрана

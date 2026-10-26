@@ -3,10 +3,10 @@ import { MapCanvas } from '@/features/map';
 import { getModerationQueue } from '@/shared/api/endpoints/moderation';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { format } from '@/shared/lib/format';
-import { formatNumber } from '@/shared/lib/formatNumber';
+import { format } from '@/shared/lib/i18n/format';
+import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import { Icon } from '@/shared/ui/icons/Icon';
-import { QueueItem } from './QueueItem';
+import { QueueItem } from './queue/QueueItem';
 import texts from '@/texts/ru/moderation.json';
 import styles from './ModerationMap.module.css';
 

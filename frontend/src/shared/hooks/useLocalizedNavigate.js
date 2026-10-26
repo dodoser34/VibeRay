@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router';
-import { localizePath } from '@/shared/lib/language';
+import { localizePath } from '@/shared/lib/i18n/language';
 
 // navigate() для путей без префикса языка: navigate('/about') на английской версии ведёт на
 // /en/about. Числа (история) и относительные пути проходят как есть.

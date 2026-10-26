@@ -101,7 +101,7 @@
 }
 
 /* Широкие экраны: карта и шаги — две колонки сетки .flow. На компактных экранах stage
-   превращается в один закреплённый кадр (adaptations/tablet/about.css). */
+   превращается в один закреплённый кадр (adaptations/tablet/pages/about.css). */
 .stage {
   display: contents;
 }

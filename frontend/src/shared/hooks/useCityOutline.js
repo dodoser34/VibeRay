@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
-import { createProjection } from '@/shared/lib/geoProjection';
+import { createProjection } from '@/shared/lib/geo/geoProjection';
 
 const PADDING_KM = 0.6;
 

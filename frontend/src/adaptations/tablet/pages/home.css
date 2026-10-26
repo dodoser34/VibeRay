@@ -37,6 +37,12 @@
     margin: -3rem auto 0;
   }
 
+  /* Карточка входа — во всю колонку: заголовок, подводка и форма идут по одной линии, без
+     пустой полосы справа */
+  :root [data-ui='home-column'] [data-ui='auth-panel'] {
+    max-width: none;
+  }
+
   :root [data-ui='home-map-cta'] {
     display: inline-flex;
     justify-self: start;

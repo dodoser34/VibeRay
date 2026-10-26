@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router';
-import { LANGUAGES, localizePath } from '@/shared/lib/language';
-import { App } from './App';
+import { LANGUAGES, localizePath } from '@/shared/lib/i18n/language';
+import { App } from '../App';
 
 // Страницы грузятся по требованию: на «Поддержку» не нужно качать three.js и сцену карты.
 const PAGES = {
@@ -29,7 +29,7 @@ export function prefetchPages() {
 }
 
 // Одни и те же страницы на каждом языке: русский — без префикса, остальные — /kk, /en, /de
-// (shared/lib/language.js). Маршруты одной глубины, поэтому при смене языка страница не
+// (shared/lib/i18n/language.js). Маршруты одной глубины, поэтому при смене языка страница не
 // монтируется заново — меняются только адрес и тексты.
 const pagesFor = (prefix) => [
   // Один экземпляр HomePage на все три пути, чтобы карточка-пропуск переворачивалась, а не
@@ -46,7 +46,7 @@ const pagesFor = (prefix) => [
   { path: `${prefix}/about`, ...page('about', 'AboutPage') },
   { path: `${prefix}/support`, ...page('support', 'SupportPage') },
   { path: `${prefix}/settings`, ...page('settings', 'SettingsPage') },
-  // Разделы модератора — свой интерфейс (app/useRoleRoute.js); настройки — та же страница настроек.
+  // Разделы модератора — свой интерфейс (app/routing/useRoleRoute.js); настройки — та же страница настроек.
   { path: `${prefix}/moderation`, ...page('moderation', 'ModerationPage', { section: 'queue' }) },
   { path: `${prefix}/moderation/map`, ...page('moderationMap', 'ModerationMapPage') },
   {

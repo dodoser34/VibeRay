@@ -1,4 +1,4 @@
-import { CALENDAR } from '../content';
+import { CALENDAR } from '../lib/chapters';
 import styles from './StoryCalendar.module.css';
 
 // Сцена 7: пролистывается год работы, месяц за месяцем, с июля по июнь.

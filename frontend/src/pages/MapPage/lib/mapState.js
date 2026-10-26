@@ -1,4 +1,4 @@
-import { multiPolygonAreaKm2 } from '@/shared/lib/geoProjection';
+import { multiPolygonAreaKm2 } from '@/shared/lib/geo/geoProjection';
 
 // Чистые расчёты страницы карты (без React): что открыто в панели и факты для панели района.
 

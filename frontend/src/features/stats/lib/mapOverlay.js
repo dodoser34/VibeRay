@@ -1,4 +1,4 @@
-import { formatSigned } from '@/shared/lib/formatNumber';
+import { formatSigned } from '@/shared/lib/i18n/formatNumber';
 
 // Что дашборд выводит на 3D-карту для метрики: цветовую оценку района (−2…+2 на шкале настроения,
 // null — мало данных) и значение для подписи. Сообщения используют ту же шкалу, перевёрнутую и

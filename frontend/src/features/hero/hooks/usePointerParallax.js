@@ -1,5 +1,5 @@
 import { renderQuality } from '@/adaptations/core';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 
 // Параллакс героя главной — имитация объёма: слой плавно следует за указателем. move(px, py)

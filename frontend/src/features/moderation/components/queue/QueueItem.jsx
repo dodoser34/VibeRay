@@ -8,8 +8,8 @@ import {
   REJECTION_REASON_BY_CODE,
   STATUS_BY_CODE,
 } from '@/shared/config/problemStatuses';
-import { format } from '@/shared/lib/format';
-import { formatRelative } from '@/shared/lib/formatDate';
+import { format } from '@/shared/lib/i18n/format';
+import { formatRelative } from '@/shared/lib/i18n/formatDate';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
 import { RejectForm } from './RejectForm';

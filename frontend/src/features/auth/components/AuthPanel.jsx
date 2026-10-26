@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { WIDE_QUERY } from '@/adaptations/core';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { LoginForm } from './LoginForm';
 import { RegisterFlow } from './RegisterFlow';
@@ -102,7 +102,7 @@ export function AuthPanel({
   );
 
   return (
-    <div ref={rootRef} className={styles.root}>
+    <div ref={rootRef} className={styles.root} data-ui="auth-panel">
       <div ref={ref} className={styles.card} data-card data-ui="auth-card">
         <div ref={bgRef} className={styles.bg} aria-hidden="true" />
 

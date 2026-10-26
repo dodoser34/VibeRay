@@ -1,8 +1,8 @@
 import { useId, useLayoutEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import { Button } from '../controls/Button';
 import styles from './CoachMarks.module.css';
 

@@ -2,12 +2,12 @@ import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
 import { Link } from 'react-router';
 import { useAuth } from '@/features/auth';
 import { NotificationBell } from '@/features/notifications';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { usePagePath } from '@/shared/hooks/usePagePath';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { format } from '@/shared/lib/format';
-import { localizePath } from '@/shared/lib/language';
+import { format } from '@/shared/lib/i18n/format';
+import { localizePath } from '@/shared/lib/i18n/language';
 import { isModerator } from '@/shared/config/roles';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { LogoMark } from '@/shared/ui/icons/LogoMark';
@@ -111,7 +111,9 @@ export function TabBar() {
     () => {
       const nav = navRef.current;
       const buttons = [...trackRef.current.querySelectorAll('[data-key]')];
-      const center = buttons.findIndex((button) => button.dataset.key === 'map');
+      // Центр — акцентная кнопка карты (у жителя «map», у модератора «moderation-map»)
+      const accent = buttons.findIndex((button) => button.dataset.accent !== undefined);
+      const center = accent >= 0 ? accent : Math.floor(buttons.length / 2);
       const finish = () => {
         introRef.current = false;
         movePill(activeKeyFor(pathRef.current), 0.45);
@@ -247,6 +249,7 @@ export function TabBar() {
                 key={item.key}
                 type="button"
                 data-key={item.key}
+                data-accent={item.accent || undefined}
                 data-ui="tabbar-item"
                 className={className}
                 onClick={handleClick(item)}
@@ -258,6 +261,7 @@ export function TabBar() {
                 key={item.key}
                 to={localizePath(item.to)}
                 data-key={item.key}
+                data-accent={item.accent || undefined}
                 data-ui="tabbar-item"
                 className={className}
                 aria-current={activeKey === item.key ? 'page' : undefined}

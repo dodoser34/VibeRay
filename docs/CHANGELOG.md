@@ -11,6 +11,71 @@
 
 ---
 
+## 2026-10-26
+
+### Телефоны, планшеты и большие экраны: проверка и доработка
+
+Каждая страница проверена на телефоне стоя (375 × 812, 340 px) и лёжа (812 × 375), планшете стоя
+(768 × 1024) и лёжа (1024 × 768), ноутбуке 1366 × 768, 1440 × 900, Full HD, 2K и 4K.
+
+**Свои анимации для телефона:**
+- Плавающие кнопки «логотип» и «меню» уезжают вверх, пока страницу листают вниз, и возвращаются при
+  прокрутке вверх; под ними появляется мягкая подложка — текст больше не сталкивается с кнопками
+  (`adaptations/mobile/components/navigation/MobileNav.jsx`, `.module.css`).
+- Полоса разделов настроек на телефоне поднимается на место уехавших кнопок (`adaptations/mobile/pages/settings.css`).
+- Меню раскрывается кругом из кнопки и сворачивается обратно в неё (Escape и кнопка-крестик).
+- Главная в одну колонку: пока листают к форме входа, сцена с девушкой отстаёт от текста и гаснет —
+  глубина вместо десктопного полёта в город (`pages/HomePage/HomePage.jsx`).
+- На сенсорных экранах кнопки вдавливаются при нажатии, а эффекты наведения больше не «залипают» после
+  касания (поднятые карточки, подпрыгнувшие смайлики) — новый плагин сборки `frontend/plugins/hoverMedia.js`,
+  `adaptations/touch/touch.css`.
+
+**Карта:**
+- Весь город всегда в кадре: на узком телефоне Заречное и Тобыл больше не обрезаны; обзор вписывается по
+  самим районам и в часть экрана над шторкой (`features/map/scene/MapScene.js`).
+- Открыли шторку наполовину или повернули экран — камера, если её не двигали, мягко переезжает в новый кадр
+  (`features/map/scene/cameraRig.js`).
+- Подпись «© участники OpenStreetMap» над шторкой — на подложке, в одну строку, не смешивается с подписями
+  районов (`adaptations/tablet/pages/map.css`).
+- Планшет лёжа: строка фильтров больше не уходит под панель района — переносится во второй ряд.
+
+**Остальное:**
+- Телефон лёжа получил телефонную навигацию вместо капсулы таб-бара; чип фильтров карты — между кнопками
+  (`adaptations/core/breakpoints.js`, `useViewport.js`, `app/App.jsx`, `FilterChip.module.css`).
+- Планшет стоя: карточка входа на главной во всю колонку, без пустой полосы справа.
+- Ноутбуки и планшеты высотой 768 px: колонка главной больше не упирается в таб-бар и нижний край
+  (`adaptations/desktop/pages/home.css`).
+- Фильтры статусов в очереди модератора — под палец, 44 px (`adaptations/touch/touch.css`).
+- Исправлено: у модератора на планшете и компьютере таб-бар падал при появлении (искал кнопку «map»,
+  а у модератора она «moderation-map») — `app/layout/TabBar.jsx`.
+
+### Графики статистики: без ошибок в консоли
+
+- При смене периода и уходе со статистики консоль больше не сыплет ошибками `<rect> attribute height/y`:
+  GSAP при откате анимаций возвращал столбикам графика пустые `y` и `height`. Теперь у столбиков есть исходные
+  значения (нулевая высота на базовой линии), с них же стартует анимация — внешне ничего не изменилось
+  (`shared/ui/charts/TimeSeriesChart.jsx`).
+
+### Порядок в папках фронтенда
+
+Сайт для пользователя не изменился — переложены файлы, чтобы их было легко найти. Все переносы сделаны через
+`git mv` (история файлов сохранена), импорты переписаны автоматически.
+
+- `app/`: маршруты — в `app/routing/` (router.jsx, useLanguageRoute.js, useRoleRoute.js), `inputModality.js` — в `app/lib/`.
+- `pages/MapPage/`: из 16 файлов в одной папке — `components/` (MapFilters, PanelToggle), `hooks/` (6 хуков страницы),
+  `lib/` (heightScale, mapState), `assets/` (guide.webp, cheer.webp); `pages/NotFoundPage/` — `components/NotFoundMap`,
+  `assets/girl-map.webp`.
+- `features/`: `map/moodFill.js` → `map/lib/`; `story/content.js` → `story/lib/chapters.js`, `story/storyTimeline.js` →
+  `story/lib/`; `support/content.js` → `support/lib/helpContent.js` (два файла `content.js` путались);
+  `stats/components/` разбиты на `city/`, `district/`, `common/`; разделы настроек — в `settings/components/sections/`;
+  очередь модератора — в `moderation/components/queue/`.
+- `shared/`: `lib/` разбит на `i18n/` (language, format, formatDate, formatNumber, plural, translations), `theme/`
+  (theme, cssVar) и `geo/` (geoProjection, smoothBoundaries, cityTime); ядро анимаций — в `animations/core/`
+  (gsapSetup, presets).
+- `adaptations/`: стили отдельных страниц — в `<уровень>/pages/`, мобильные компоненты — в `mobile/components/`.
+- `package.json` (`sideEffects`), ARCHITECTURE.md (раздел 3 и ссылки), README.md, `adaptations/README.md`,
+  `texts/README.md`, комментарии в коде — обновлены под новые пути; в CLAUDE.md и AGENTS.md — правило раскладки модуля.
+
 ## 2026-10-25
 
 ### Удаление и отмена: свои сообщения, подтверждения, уведомления

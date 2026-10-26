@@ -7,7 +7,7 @@ import { getCity } from '@/shared/api/endpoints/cities';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { isModerator } from '@/shared/config/roles';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import { localizePath } from '@/shared/lib/language';
+import { localizePath } from '@/shared/lib/i18n/language';
 
 const CITY = 'kostanay';
 

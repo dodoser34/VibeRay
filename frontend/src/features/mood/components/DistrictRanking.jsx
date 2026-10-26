@@ -1,8 +1,8 @@
 import { useRef } from 'react';
 import { useFlipList } from '@/shared/animations/effects/useFlipList';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
-import { formatSigned } from '@/shared/lib/formatNumber';
+import { formatSigned } from '@/shared/lib/i18n/formatNumber';
 import { useRevealed } from '@/shared/hooks/useRevealed';
 import { MoodFace } from './MoodFace';
 import styles from './DistrictRanking.module.css';

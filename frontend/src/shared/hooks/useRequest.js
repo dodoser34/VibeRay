@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { trackLanguageWork } from '@/shared/lib/language';
+import { trackLanguageWork } from '@/shared/lib/i18n/language';
 import { useLanguage } from './useLanguage';
 
 // Загружает данные по строковому ключу. Пока грузится новый ключ, держит прежние данные, чтобы

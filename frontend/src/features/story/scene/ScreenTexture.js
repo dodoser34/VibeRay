@@ -1,8 +1,8 @@
 import * as THREE from 'three';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 import about from '@/texts/ru/about.json';
-import { getLanguage } from '@/shared/lib/language';
-import { story } from '../content';
+import { getLanguage } from '@/shared/lib/i18n/language';
+import { story } from '../lib/chapters';
 
 const W = 1600;
 const H = 900;

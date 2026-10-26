@@ -13,10 +13,10 @@
 // У каждого языка свой адрес (для поисковиков каждая версия — отдельная страница): русский — без
 // префикса (/map/kostanay), остальные — подкаталогом (/en/map/kostanay). Язык берётся из адреса;
 // маршруты и ссылки работают с путями без префикса, а localizePath() добавляет его
-// (app/useLanguageRoute.js держит адрес и язык согласованными).
+// (app/routing/useLanguageRoute.js держит адрес и язык согласованными).
 
-import { createListeners } from './listeners';
-import { readChoice, writeValue } from './localFlag';
+import { createListeners } from '../listeners';
+import { readChoice, writeValue } from '../localFlag';
 import about from '@/texts/ru/about.json';
 import auth from '@/texts/ru/auth.json';
 import common from '@/texts/ru/common.json';

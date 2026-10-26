@@ -1,8 +1,8 @@
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { PROBLEM_STATUSES, REJECTED_STATUS } from '@/shared/config/problemStatuses';
-import { format } from '@/shared/lib/format';
-import { formatNumber, formatSigned } from '@/shared/lib/formatNumber';
-import { plural } from '@/shared/lib/plural';
+import { format } from '@/shared/lib/i18n/format';
+import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
+import { plural } from '@/shared/lib/i18n/plural';
 import { BarList } from '@/shared/ui/charts/BarList';
 import texts from '@/texts/ru/moderation.json';
 import styles from './CityOverview.module.css';

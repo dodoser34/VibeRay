@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { hoverMedia } from './plugins/hoverMedia.js';
 import { languagePages } from './plugins/languagePages.js';
 
 // Геоданные городов (.geojson) хранятся отформатированными для чтения, а в сборку попадают сжатыми —
@@ -29,6 +30,10 @@ export default defineConfig({
       siteUrl: process.env.SITE_URL,
     }),
   ],
+  css: {
+    // :hover — только на устройствах с наведением (plugins/hoverMedia.js)
+    postcss: { plugins: [hoverMedia()] },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { MOODS } from '@/shared/config/moods';
 import { Modal } from '@/shared/ui/windows/Modal';
 import { MoodFace } from './MoodFace';

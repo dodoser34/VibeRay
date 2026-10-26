@@ -23,10 +23,18 @@
     padding: var(--space-5) var(--space-4);
   }
 
-  /* Все разделы видны сразу: равные доли полосы и короткие подписи, без прокрутки вбок */
+  /* Все разделы видны сразу: равные доли полосы и короткие подписи, без прокрутки вбок. Полоса
+     липнет под плавающими кнопками, а когда они уезжают при прокрутке (MobileNav), поднимается
+     на их место. */
   :root [data-ui='settings-nav'] {
+    top: calc(var(--tabbar-height) + var(--safe-top) + var(--space-3));
     overflow-x: visible;
     padding-inline: var(--space-2);
+    transition: translate var(--dur-base) var(--ease-out);
+  }
+
+  :root[data-nav-hidden] [data-ui='settings-nav'] {
+    translate: 0 calc(-1 * var(--tabbar-height));
   }
 
   :root [data-ui='settings-nav'] ul {

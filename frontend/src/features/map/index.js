@@ -5,4 +5,4 @@ export { SceneRuntime } from './scene/SceneRuntime';
 export { CityBackdrop } from './scene/CityBackdrop';
 export { DistrictsLayer } from './scene/DistrictsLayer';
 export { colorForAggregate, colorForDistrict } from './scene/moodColor';
-export { moodFill } from './moodFill';
+export { moodFill } from './lib/moodFill';

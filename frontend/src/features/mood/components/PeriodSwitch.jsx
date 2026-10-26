@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from 'react';
-import { gsap } from '@/shared/animations/gsapSetup';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { MOOD_PERIODS } from '@/shared/config/periods';
 import texts from '@/texts/ru/mood.json';

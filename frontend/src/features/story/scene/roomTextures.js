@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { cssVar } from '@/shared/lib/cssVar';
-import { getLanguage } from '@/shared/lib/language';
+import { cssVar } from '@/shared/lib/theme/cssVar';
+import { getLanguage } from '@/shared/lib/i18n/language';
 import about from '@/texts/ru/about.json';
 
 function seeded(seed) {

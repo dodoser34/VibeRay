@@ -2,9 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router';
 import { useTransitionNavigate, useTransitionReady } from '@/app/transitions/useTransition';
 import { rootScale, useViewport } from '@/adaptations/core';
-import { FilterChip } from '@/adaptations/mobile/map/FilterChip';
-import { MapFab } from '@/adaptations/mobile/map/MapFab';
-import { BottomSheet } from '@/adaptations/mobile/sheet/BottomSheet';
+import { FilterChip } from '@/adaptations/mobile/components/map/FilterChip';
+import { MapFab } from '@/adaptations/mobile/components/map/MapFab';
+import { BottomSheet } from '@/adaptations/mobile/components/sheet/BottomSheet';
 import { useAuth } from '@/features/auth';
 import { MapCanvas, useCityData } from '@/features/map';
 import { DistrictRanking, MoodFace, MoodPicker } from '@/features/mood';
@@ -20,32 +20,32 @@ import {
 } from '@/features/stats';
 import { postMood } from '@/shared/api/endpoints/districts';
 import { getProblem } from '@/shared/api/endpoints/problems';
-import { gsap, useGSAP } from '@/shared/animations/gsapSetup';
+import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { moodCodeForScore, MOOD_BY_CODE } from '@/shared/config/moods';
 import { DEFAULT_STATS_PERIOD, MOOD_PERIODS, STATS_PERIODS } from '@/shared/config/periods';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { dayPhase } from '@/shared/lib/cityTime';
+import { dayPhase } from '@/shared/lib/geo/cityTime';
 import { Button } from '@/shared/ui/controls/Button';
 import { CoachMarks } from '@/shared/ui/windows/CoachMarks';
 import { Modal } from '@/shared/ui/windows/Modal';
-import { format } from '@/shared/lib/format';
+import { format } from '@/shared/lib/i18n/format';
 import problemTexts from '@/texts/ru/problems.json';
 import texts from '@/texts/ru/map.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import { districtFactsFor, panelContent, resolveOpenProblem } from './mapState';
-import { MapFilters } from './MapFilters';
-import { PanelToggle } from './PanelToggle';
-import { useCityClock } from './useCityClock';
-import { useFollowTooltip } from './useFollowTooltip';
-import { useHeightScale } from './useHeightScale';
-import { useMapTour } from './useMapTour';
-import { usePanelVisibility } from './usePanelVisibility';
-import { useToast } from './useToast';
-import cheerFigure from './cheer.webp';
-import guideFigure from './guide.webp';
+import { districtFactsFor, panelContent, resolveOpenProblem } from './lib/mapState';
+import { MapFilters } from './components/MapFilters';
+import { PanelToggle } from './components/PanelToggle';
+import { useCityClock } from './hooks/useCityClock';
+import { useFollowTooltip } from './hooks/useFollowTooltip';
+import { useHeightScale } from './hooks/useHeightScale';
+import { useMapTour } from './hooks/useMapTour';
+import { usePanelVisibility } from './hooks/usePanelVisibility';
+import { useToast } from './hooks/useToast';
+import cheerFigure from './assets/cheer.webp';
+import guideFigure from './assets/guide.webp';
 import styles from './MapPage.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 
@@ -97,7 +97,7 @@ export function MapPage({ view = 'map' }) {
   const navigate = useLocalizedNavigate();
   const go = useTransitionNavigate();
   const { user } = useAuth();
-  const { compact: sheetLayout, isMobile } = useViewport();
+  const { compact: sheetLayout, phoneNav } = useViewport();
   const isStats = view === 'stats';
   const [period, setPeriod] = useState('day');
   const [layer, setLayer] = useState(problemId ? 'problems' : 'districts');
@@ -554,7 +554,7 @@ export function MapPage({ view = 'map' }) {
             label={texts.sheet.label}
             toggleLabel={texts.sheet.toggle}
             peek={Math.round((content === 'report:place' ? 15 : 6) * unit)}
-            top={Math.round((isMobile ? 4.5 : 5.75) * unit)}
+            top={Math.round((phoneNav ? 4.5 : 5.75) * unit)}
           >
             {detail}
           </BottomSheet>

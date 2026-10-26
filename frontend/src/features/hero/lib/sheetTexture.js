@@ -1,5 +1,5 @@
 import { MOODS } from '@/shared/config/moods';
-import { cssVar } from '@/shared/lib/cssVar';
+import { cssVar } from '@/shared/lib/theme/cssVar';
 import { createRandom } from '@/shared/lib/random';
 
 // Текстура переднего листа на главной: спокойный стилизованный план города — плавно изогнутые
