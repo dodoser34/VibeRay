@@ -18,7 +18,9 @@ h4,
 p,
 figure,
 ul,
-ol {
+ol,
+dl,
+dd {
   margin: 0;
 }
 

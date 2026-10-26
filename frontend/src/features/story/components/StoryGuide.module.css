@@ -64,9 +64,12 @@
   border-top: 1px solid var(--line);
 }
 
+/* Число над подписью и прижато к верху ячейки: подписи в одну и в две строки не ставят числа
+   соседних ячеек лесенкой */
 .stat {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: flex-end;
   gap: var(--space-2);
   padding: var(--space-5) var(--space-5) 0 0;
 }
@@ -77,6 +80,7 @@
 }
 
 .statValue {
+  margin: 0;
   font-family: var(--font-display);
   font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem);
   line-height: 1;

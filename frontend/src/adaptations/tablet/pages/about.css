@@ -36,13 +36,25 @@
   }
 
   :root [data-ui='story-ui-district'] {
-    width: min(70vw, 22rem);
+    width: min(76vw, 22rem);
   }
 
   :root [data-ui='story-ui-problem'] {
     top: auto;
     bottom: 12%;
-    width: min(70vw, 22rem);
+    width: min(76vw, 22rem);
+  }
+
+  /* Финальный кадр истории стоит по центру экрана: когда сцена отпускается, её пустая нижняя часть
+     уезжала вместе с ней, и перед «Как это работает» оставалась полоса пустоты. Раздел наплывает на
+     угасающую сцену — между кнопкой «Открыть карту» и подзаголовком обычный промежуток. */
+  :root [data-ui='guide'] {
+    position: relative;
+    padding-top: 0;
+  }
+
+  :root [data-ui='guide-intro'] {
+    margin-top: -18svh;
   }
 
   :root [data-ui='guide-stats'] {
@@ -58,9 +70,12 @@
      закрывали): карта сверху, активная карточка под ней. Секция высокая только для того, чтобы у
      каждого шага был свой отрезок прокрутки — StoryGuide выбирает шаг по прогрессу прокрутки
      секции. */
+  /* Отступ кадра под шапку нужен, только когда кадр прилип к верху; до этого он складывался с
+     промежутком между секциями в пустую полосу под цифрами — секция подтягивается на его высоту */
   :root [data-ui='guide-flow'] {
     display: block;
     height: calc(100svh + var(--steps) * 55svh);
+    margin-top: calc(-1 * (var(--tabbar-height) + var(--safe-top)));
   }
 
   :root [data-ui='guide-stage'] {

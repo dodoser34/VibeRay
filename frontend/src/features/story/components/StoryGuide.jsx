@@ -117,8 +117,8 @@ export function StoryGuide({ onOpenMap }) {
   );
 
   return (
-    <div ref={rootRef} className={styles.guide}>
-      <header className={styles.intro}>
+    <div ref={rootRef} className={styles.guide} data-ui="guide">
+      <header className={styles.intro} data-ui="guide-intro">
         <p className={styles.kicker}>{texts.kicker}</p>
         <h2 key={language} className={styles.title} data-split>
           {texts.titleStart} <em className={styles.accent}>{texts.titleAccent}</em>

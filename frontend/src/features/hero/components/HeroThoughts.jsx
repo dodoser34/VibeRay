@@ -41,9 +41,10 @@ const DISTRICT_BAR = [
 ];
 // С какой стороны головы всплывает очередная мысль — угол от центра головы (градусы, 0 — вправо,
 // −90 — вверх), стороны чередуются. Широкий экран: справа сверху, слева сверху, справа, над головой
-// (левее — колонка с формой, туда облачко не заходит). Одна колонка: справа от головы, на полосе
-// рядом с девушкой (HeroGirl сдвинута влево). Облачко растёт от угла, ближнего к голове.
-const SIDES = { wide: [-35, -145, 8, -100], stacked: [-15, 25] };
+// (левее — колонка с формой, туда облачко не заходит). Одна колонка: справа над головой — там
+// свободно (девушка сдвинута влево), а сбоку облачко ложилось на щёку и руку. Облачко растёт от
+// угла, ближнего к голове.
+const SIDES = { wide: [-35, -145, 8, -100], stacked: [-40, -60] };
 const SHOW_MS = 3600;
 const SWAP_MS = 700;
 const DOTS = 3;
@@ -58,6 +59,9 @@ const PAD = 12;
 const COLUMN_SHARE = 0.47;
 // Одна колонка: столько px снизу сцены перекрывает заголовок (поднят отрицательным отступом).
 const STACKED_BOTTOM = 56;
+// Одна колонка: плавающие кнопки телефона и таб-бар планшета — облачко не поднимается выше их
+// низа (rem).
+const STACKED_TOP = 4.75;
 
 // Мысли девушки: облачко с цепочкой кружков от головы всплывает, держится и тает, следующее —
 // с другой стороны. Сменяются по очереди, без перескоков и покачиваний. anchor() — центр и радиус
@@ -107,6 +111,13 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
       const minLeft = stacked ? PAD : root.clientWidth * COLUMN_SHARE;
       const maxLeft = root.clientWidth - w - PAD;
       const maxTop = root.clientHeight - h - (stacked ? STACKED_BOTTOM : PAD);
+      const rootTop = root.getBoundingClientRect().top + window.scrollY;
+      const minTop = stacked
+        ? Math.max(
+            PAD,
+            STACKED_TOP * parseFloat(getComputedStyle(document.documentElement).fontSize) - rootTop,
+          )
+        : PAD;
       // Место облачка для направления от головы: угол облачка, ближний к голове, — на луче, облачко
       // растёт от него наружу и не выходит за допустимую область. Цена места — насколько облачко
       // перекрывает голову (квадрат вокруг неё) и насколько его пришлось сдвинуть от луча.
@@ -117,23 +128,26 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
         const wantLeft = d.x >= 0 ? corner.x : corner.x - w;
         const wantTop = d.y < 0 ? corner.y - h : corner.y;
         const left = gsap.utils.clamp(minLeft, Math.max(minLeft, maxLeft), wantLeft);
-        const top = gsap.utils.clamp(PAD, Math.max(PAD, maxTop), wantTop);
+        const top = gsap.utils.clamp(minTop, Math.max(minTop, maxTop), wantTop);
         const r = head.radius * 1.05;
         const overlapX = Math.max(0, Math.min(left + w, head.x + r) - Math.max(left, head.x - r));
         const overlapY = Math.max(0, Math.min(top + h, head.y + r) - Math.max(top, head.y - r));
         const shift = Math.abs(left - wantLeft) + Math.abs(top - wantTop);
-        return { dir: d, corner, left, top, cost: overlapX * overlapY + shift * 0.5 };
+        const overlap = overlapX * overlapY;
+        return { dir: d, corner, left, top, overlap, cost: overlap + shift * 0.5 };
       };
       // Сначала сторона по очереди, затем запасные — зеркальная и над головой; берётся первая
-      // свободная, а если свободных нет — с наименьшим перекрытием.
+      // свободная, а если свободных нет — с наименьшим перекрытием. Одна колонка: над головой облачко
+      // упирается в плавающие кнопки и сдвигается от луча — там свободным считается место, которое
+      // не закрывает голову, иначе сдвиг отправлял облачко сбоку на щёку.
       const preferred = sides[(cycle - 1) % sides.length];
       const options = [
         preferred,
         180 - preferred,
-        ...(stacked ? [-45, 50, 0] : [-90, -60, -120]),
+        ...(stacked ? [-20, 25, 0] : [-90, -60, -120]),
       ].map(place);
       const { dir, corner, left, top } =
-        options.find((option) => option.cost < 1) ??
+        options.find((option) => (stacked ? option.overlap : option.cost) < 1) ??
         options.reduce((best, option) => (option.cost < best.cost ? option : best));
       // Кружки — от края головы (у виска, если облачко ниже) к углу облачка, от маленького к
       // большому.
@@ -236,7 +250,7 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
       <div ref={bubbleRef} className={styles.bubble}>
         {thought && (
           <div key={cycle} className={styles.content} data-kind={thought.kind} data-thought-content>
-            <ThoughtVisual thought={thought} />
+            <ThoughtVisual thought={thought} stacked={stacked} />
             <span className={styles.text}>{home.thoughts[thought.key]}</span>
             {thought.kind === 'solved' && (
               <span className={styles.chip} data-chip>
@@ -250,13 +264,14 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
   );
 }
 
-function ThoughtVisual({ thought }) {
+// Узкое облачко (одна колонка): пять лиц шкалы помещаются в строку только мельче.
+function ThoughtVisual({ thought, stacked }) {
   if (thought.kind === 'ask') {
     return (
       <span className={styles.faces}>
         {ASK_MOODS.map((mood) => (
           <span key={mood} data-face>
-            <MoodFace mood={mood} size={26} label="" />
+            <MoodFace mood={mood} size={stacked ? 20 : 26} label="" />
           </span>
         ))}
       </span>
