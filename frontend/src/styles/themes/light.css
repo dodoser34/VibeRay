@@ -98,6 +98,11 @@
   --story-pc-case: #dfe3dc;
   --story-spine-titan: #e6e0cf;
   --story-spine-king: #1d1f20;
+  /* Изометрическая комната (ПК): тень граней, пол, ковёр, кот */
+  --story-shade: #24382b;
+  --story-floor: #b4966f;
+  --story-rug: #a7bf9d;
+  --story-cat: #c49863;
   /* Текст на заливке акцента — светлый и при наведении */
   --color-on-accent: #eaf5e3;
   --color-on-accent-hover: #eaf5e3;

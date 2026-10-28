@@ -1,90 +1,93 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { fallBackToLite, useLiteGraphics, useViewport } from '@/adaptations/core';
+import { useViewport } from '@/adaptations/core';
 import { useCityData } from '@/features/map';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/core/gsapSetup';
-import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
-import { Button } from '@/shared/ui/controls/Button';
-import { useTheme } from '@/shared/hooks/useTheme';
-import { CHAPTERS, isDaylight, story } from '../lib/chapters';
-import { LiteStage } from '../scene/LiteStage';
-import { addOverlayTimeline, FINAL, LIVING } from '../lib/storyTimeline';
-import { StoryIllustration } from './StoryIllustration';
-import { StoryCalendar } from './StoryCalendar';
-import { StoryInterface } from './StoryInterface';
-import { StoryMoodCard } from './StoryMoodCard';
-import about from '@/texts/ru/about.json';
+import { useCityOutline } from '@/shared/hooks/useCityOutline';
 import { useLanguage } from '@/shared/hooks/useLanguage';
+import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
+import { useTheme } from '@/shared/hooks/useTheme';
+import { CHAPTERS, story } from '../lib/chapters';
+import { planeMatrix } from '../lib/isometric';
+import { addPhoneTimeline } from '../lib/phoneTimeline';
+import { COVER, RoomCamera } from '../lib/roomCamera';
+import { monitorMapBox, SCREEN } from '../lib/roomLayout';
+import { topViewBox } from '../lib/topView';
+import { useBoxSize } from '../hooks/useBoxSize';
+import { addRoomTimeline } from '../lib/roomTimeline';
+import { addOverlayTimeline } from '../lib/storyTimeline';
+import { PhoneStage } from './phone/PhoneStage';
+import { IsometricRoom } from './room/IsometricRoom';
+import { StoryOverlay } from './StoryOverlay';
 import styles from './StoryExperience.module.css';
 
 const CITY = 'kostanay';
-// Не дождались 3D-комнату за это время — показываем лёгкую графику (медленная сеть, слабое устройство).
-const LOAD_LIMIT = 12000;
 
 // «Как родилась идея»: закреплённая сцена, вся история которой — одна временная шкала, привязанная
-// к прокрутке. Сцена — 3D-комната (StoryScene, грузится отдельно вместе с three.js) или, в лёгком
-// режиме графики, плоская иллюстрация (LiteStage + StoryIllustration) с тем же интерфейсом. При
-// reduced motion закрепления нет — финальный кадр и история обычным текстом.
+// к прокрутке. Начало плоское: на ПК — изометрическая комната (наезд на монитор), на телефонах и
+// планшетах — рука достаёт телефон, и история идёт на его экране. С главы «город» — 3D-город
+// (StoryScene, грузится отдельно вместе с three.js): на ПК во весь экран, на телефоне — внутри
+// экрана телефона. При reduced motion закрепления нет — финальный кадр и история обычным текстом.
 // onReady — вызывается, когда сцена готова и данные города на месте: переход между страницами
 // держит экран закрытым до этого момента (AboutPage).
 export function StoryExperience({ onOpenMap, onReady }) {
   const language = useLanguage();
-  // Тема выбирает вариант истории: ночь в тёмной, день в светлой (lib/chapters.js, RoomSet).
+  // Тема перекрашивает 3D-город (цвета читаются при создании) — сцена создаётся заново.
   const theme = useTheme();
   const rootRef = useRef(null);
   const stageRef = useRef(null);
+  const flatRef = useRef(null);
+  const sceneBoxRef = useRef(null);
   const canvasRef = useRef(null);
-  const illustrationRef = useRef(null);
-  const lite = useLiteGraphics();
   const [scene, setScene] = useState(null);
+  const [failed, setFailed] = useState(false);
   const [sceneReady, setSceneReady] = useState(false);
   // Прокрутка до перестройки шкалы: при перестройке закрепление снимается, страница на миг
   // становится короче, и браузер сбрасывает прокрутку назад.
   const scrollRef = useRef(null);
   const reduced = useReducedMotion();
   const { city, moods, problems } = useCityData(CITY, 'week');
-  // Зум плоской комнаты рассчитан под пропорции экрана (LiteStage): при повороте или смене уровня
-  // устройства шкала строится заново. 3D-камера подстраивается под экран сама.
-  const { tier, portrait } = useViewport();
-  const frame = lite ? `${tier}|${portrait}` : null;
-  const timelineDeps = [scene, city.data, moods.data, problems.data, reduced, language, frame];
+  const outline = useCityOutline(city.data, problems.data);
+  const stageSize = useBoxSize(stageRef);
+  // Изометрическая комната — на ПК; телефоны и планшеты получают телефон в руке.
+  const { isDesktop, portrait } = useViewport();
+  const variant = isDesktop ? 'room' : 'phone';
+  const orientation = portrait ? 'portrait' : 'landscape';
+  const dataReady = Boolean(city.data && moods.data && problems.data);
+  const timelineDeps = [scene, failed, dataReady, reduced, language, variant, orientation];
 
-  // Тема выбирает вариант 3D-комнаты (день или ночь) — сцена создаётся заново, шкала тоже (scene в
-  // timelineDeps), кадр истории сохраняется. 3D-сцена приходит асинхронно, лёгкая — сразу.
+  // 3D-город рисуется по размеру своего блока: вся сцена на ПК, экран телефона — на телефоне.
+  // Без WebGL (или если three.js не загрузился) история остаётся плоской: комната и экран телефона
+  // работают, глав с городом нет.
   useEffect(() => {
     let alive = true;
     let current = null;
-    let timer = null;
-    const create = lite
-      ? Promise.resolve(new LiteStage(illustrationRef.current))
-      : import('../scene/StoryScene').then(
-          ({ StoryScene }) =>
-            new StoryScene(canvasRef.current, stageRef.current, { daylight: isDaylight() }),
-        );
-    create
-      .then((next) => {
+    import('../scene/StoryScene')
+      .then(({ StoryScene }) => {
+        const box = variant === 'room' ? stageRef.current : sceneBoxRef.current;
+        const next = new StoryScene(canvasRef.current, box);
         if (!alive) return next.dispose();
         current = next;
         setScene(next);
-        if (!lite) timer = setTimeout(fallBackToLite, LOAD_LIMIT);
         return next.ready.then(() => {
-          clearTimeout(timer);
           if (alive) setSceneReady(true);
         });
       })
       .catch((error) => {
-        console.error('Story scene failed, switching to light graphics', error);
-        fallBackToLite();
+        console.error('Story scene failed, the story stays flat', error);
+        if (!alive) return;
+        setFailed(true);
+        setSceneReady(true);
       });
     return () => {
       alive = false;
-      clearTimeout(timer);
       current?.dispose();
       setScene(null);
+      setFailed(false);
       setSceneReady(false);
     };
-  }, [lite, theme]);
+  }, [theme, variant]);
 
-  const ready = sceneReady && Boolean(city.data && moods.data && problems.data);
+  const ready = sceneReady && dataReady;
   useEffect(() => {
     if (ready) onReady?.();
   }, [ready, onReady]);
@@ -101,16 +104,30 @@ export function StoryExperience({ onOpenMap, onReady }) {
 
   useGSAP(
     () => {
-      if (!scene || !city.data || !moods.data || !problems.data) return;
-      scene.setCity(city.data, moods.data, problems.data);
+      if ((!scene && !failed) || !dataReady) return undefined;
+      scene?.setCity(city.data, moods.data, problems.data);
+      const q = gsap.utils.selector(rootRef);
       const tl = gsap.timeline({ paused: true, defaults: { ease: 'none' } });
-      scene.buildTimeline(tl);
+      let camera = null;
+      if (variant === 'room') {
+        const root = flatRef.current;
+        camera = new RoomCamera(
+          root.querySelector('[data-room="svg"]'),
+          root.querySelector('[data-room="camera"]'),
+          { matrix: planeMatrix('x', SCREEN.corner, SCREEN.scale), size: SCREEN.size },
+          { tilt: reduced ? null : root.querySelector('[data-room="tilt"]') },
+        );
+        addRoomTimeline(tl, { q, camera });
+      } else {
+        addPhoneTimeline(tl, q);
+      }
+      scene?.buildTimeline(tl);
       if (reduced) {
         tl.progress(1);
-        return;
+        return () => camera?.dispose();
       }
 
-      addOverlayTimeline(tl, { q: gsap.utils.selector(rootRef), stage: stageRef.current });
+      addOverlayTimeline(tl, { q, stage: stageRef.current, variant });
 
       const trigger = ScrollTrigger.create({
         trigger: stageRef.current,
@@ -129,87 +146,66 @@ export function StoryExperience({ onOpenMap, onReady }) {
         trigger.update();
         tl.progress(trigger.progress);
       }
+      return () => camera?.dispose();
     },
     {
       scope: rootRef,
-      // scene: новая сцена (тема, режим графики); language: фразы, разобранные на слова,
-      // пересоздаются на новом языке; frame: другой кадр плоской комнаты — шкалу строим заново.
+      // scene: новая сцена (тема, вид устройства); language: фразы, разобранные на слова, и
+      // печатаемый вопрос — на новом языке; variant и orientation — другая разметка сцены.
       dependencies: timelineDeps,
       revertOnUpdate: true,
     },
   );
 
-  const living = CHAPTERS[LIVING];
-  const final = CHAPTERS[FINAL];
+  // При reduced motion история идёт текстом под сценой — оверлей не нужен.
+  const overlay = !reduced && (
+    <StoryOverlay variant={variant} orientation={orientation} onOpenMap={onOpenMap} />
+  );
   return (
-    <section ref={rootRef} className={styles.story} data-static={reduced || undefined}>
+    <section
+      ref={rootRef}
+      className={styles.story}
+      data-variant={variant}
+      data-static={reduced || undefined}
+    >
       <div ref={stageRef} className={styles.stage}>
-        {lite ? (
-          <StoryIllustration
-            ref={illustrationRef}
-            city={city.data}
-            moods={moods.data}
-            problems={problems.data}
-          />
+        {variant === 'room' ? (
+          <>
+            <canvas
+              ref={canvasRef}
+              className={styles.canvas}
+              data-story="canvas"
+              aria-hidden="true"
+            />
+            <IsometricRoom
+              ref={flatRef}
+              outline={outline}
+              mapBox={
+                stageSize &&
+                monitorMapBox(
+                  topViewBox(stageSize.width, stageSize.height),
+                  stageSize.width,
+                  stageSize.height,
+                  COVER,
+                )
+              }
+            />
+            {overlay}
+          </>
         ) : (
-          <canvas
-            ref={canvasRef}
-            className={styles.canvas}
-            data-story="canvas"
-            aria-hidden="true"
-          />
+          <PhoneStage
+            ref={flatRef}
+            screenRef={sceneBoxRef}
+            canvasRef={canvasRef}
+            outline={outline}
+            orientation={orientation}
+            ready={ready}
+            reduced={reduced}
+          >
+            {overlay}
+          </PhoneStage>
         )}
-
-        <div className={styles.overlay}>
-          <p className={styles.stamp} data-story="stamp" data-ui="story-stamp">
-            {story.stamp}
-          </p>
-          {CHAPTERS.map(
-            (chapter, i) =>
-              chapter.text && (
-                <p
-                  key={chapter.id}
-                  className={styles.caption}
-                  data-ui="story-caption"
-                  data-story="caption"
-                  data-index={i}
-                  data-later={i > 0 || undefined}
-                >
-                  {chapter.text}
-                </p>
-              ),
-          )}
-          <div className={styles.center}>
-            <p key={language} className={styles.phrase} data-story="phrase-living" data-later>
-              {living.phrase}
-            </p>
-          </div>
-          <div className={styles.moodSlot} data-ui="story-mood-slot">
-            <StoryMoodCard />
-          </div>
-          <div className={styles.center}>
-            <StoryCalendar />
-          </div>
-          <StoryInterface />
-          <div className={`${styles.center} ${styles.finale}`}>
-            <p key={language} className={styles.phrase} data-story="final-phrase" data-later>
-              {final.phrase}
-            </p>
-            <p className={styles.question} data-story="final-question" data-later>
-              {final.question}
-            </p>
-            <div className={styles.cta} data-story="cta" data-later>
-              <Button size="lg" onClick={onOpenMap}>
-                {about.story.openMap}
-              </Button>
-            </div>
-          </div>
-          <p className={styles.hint} data-story="hint">
-            {about.story.hint}
-          </p>
-        </div>
-        <div className={styles.fade} data-story="fade" aria-hidden="true" />
-        {/* Завеса до готовности комнаты: при прямом входе на страницу (без перехода) модель не
+        {/* Завеса до готовности сцены: при прямом входе на страницу (без перехода) картинка не
             появляется по частям. */}
         <div className={styles.veil} data-hidden={ready || undefined} aria-hidden="true" />
       </div>

@@ -89,13 +89,6 @@
     "languageText": "Russisch, Kasachisch, Englisch oder Deutsch. Jede Sprache hat ihre eigene Seitenadresse, die Wahl wird in diesem Browser gespeichert.",
     "themeTitle": "Farbschema",
     "themeText": "Dunkel — Waldnacht, hell — die Stadt am Tag. Die Wahl wird in diesem Browser gespeichert.",
-    "graphicsTitle": "Grafik",
-    "graphicsText": "Auto — bei langsamem Internet und schwachem Gerät schaltet sich statt der 3D-Szenen von selbst die leichte Grafik ein. Die Wahl wird in diesem Browser gespeichert.",
-    "graphicsModes": {
-      "auto": "Auto",
-      "full": "Voll",
-      "lite": "Leicht"
-    },
     "logoutTitle": "Abmelden",
     "logoutText": "Auf diesem Gerät. Deine Markierungen und Meldungen bleiben erhalten.",
     "logout": "Abmelden",

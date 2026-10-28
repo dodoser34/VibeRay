@@ -59,7 +59,6 @@ npm run dev
 | Node.js 24 LTS + npm | сборка и запуск фронтенда | сейчас |
 | Git | версии, публикация на GitHub Pages | сейчас |
 | Python 3.12+ | бэкенд | когда появится бэкенд |
-| Blender | правка 3D-комнаты для «О проекте» (`.blend`) | только для 3D-модели |
 
 ### Фронтенд — `frontend/package.json`
 
@@ -123,7 +122,7 @@ VibeRay/
 ├── docs/                   # DECISIONS.md — журнал решений, CHANGELOG.md — журнал изменений, 3d/ — .blend
 ├── .github/workflows/      # deploy-pages.yml — сборка и публикация сайта
 ├── frontend/               # React + Vite + Three.js + GSAP
-│   ├── public/             # favicon, 3D-модель комнаты с улицей (models/story-room_street.glb)
+│   ├── public/             # favicon, превью ссылки (og-image.jpg)
 │   └── src/
 │       ├── main.jsx        # точка входа (первым подключается язык интерфейса)
 │       ├── app/            # оболочка, маршруты, таб-бар, переходы между страницами

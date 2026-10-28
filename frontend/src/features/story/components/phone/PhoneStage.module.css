@@ -1,0 +1,459 @@
+/* Телефон в руке (телефоны и планшеты) — фото руки с телефоном (assets/phone-hand.webp, 785 × 1274),
+   экран в нём прозрачный: под фото лежит живой экран истории. --unit — ширина фото: стоя оно
+   занимает высоту сцены, но не шире, чем нужно, чтобы были видны кончики пальцев слева и большой
+   палец справа; лёжа фото повёрнуто на 90° (рука держит правый край). Положение экрана в фото —
+   доли --screen-* (стоя) и те же доли, повёрнутые, лёжа. */
+.stage {
+  --ratio: calc(1274 / 785);
+  --unit: min(
+    108vw,
+    calc((100dvh - var(--tabbar-height) - var(--safe-top) - 1rem) / var(--ratio)),
+    34rem
+  );
+
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.stage[data-orientation='landscape'] {
+  --unit: min(
+    calc(100dvh - var(--safe-top) - var(--safe-bottom) - 1.5rem),
+    calc((100vw - 4rem) / var(--ratio)),
+    26rem
+  );
+}
+
+/* Положение — полями, а не translate: GSAP двигает обёртку своим transform (подъём руки). Стоя фото
+   прижато к низу (запястье растворяется у края) и не уходит левее кончиков пальцев. */
+.lift {
+  position: absolute;
+  bottom: 0;
+  left: max(calc(var(--unit) * -0.01), calc((100vw - var(--unit)) / 2));
+}
+
+/* Лёжа по центру стоит сам телефон: запястье справа уходит к краю экрана */
+.stage[data-orientation='landscape'] .lift {
+  top: 0;
+  right: max(0px, calc((100vw - var(--unit) * var(--ratio)) / 2 - var(--unit) * 0.18));
+  bottom: 0;
+  left: auto;
+  height: fit-content;
+  margin-block: auto;
+}
+
+.device {
+  position: relative;
+  width: var(--unit);
+  height: calc(var(--unit) * var(--ratio));
+  transform-origin: 50% 100%;
+}
+
+.stage[data-orientation='landscape'] .device {
+  width: calc(var(--unit) * var(--ratio));
+  height: var(--unit);
+  transform-origin: 100% 50%;
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: var(--unit);
+  height: calc(var(--unit) * var(--ratio));
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Лёжа: фото повёрнуто против часовой стрелки — запястье уходит вправо */
+.stage[data-orientation='landscape'] .photo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.screen {
+  position: absolute;
+  top: 2.43%;
+  left: 14.01%;
+  width: 59.11%;
+  height: 77.08%;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: calc(var(--unit) * 0.064);
+  background: var(--scene-bg);
+  color: var(--color-text);
+  container-type: inline-size;
+}
+
+.stage[data-orientation='landscape'] .screen {
+  /* Лёжа «остров» камеры на фото — у левого края экрана: содержимое начинается правее него */
+  --island-gap: 2.75rem;
+
+  top: 26.88%;
+  left: 2.43%;
+  width: 77.08%;
+  height: 59.11%;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Строка состояния по бокам от «острова» камеры на фото и полоски глав истории */
+.status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--z-overlay);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  height: 2.1rem;
+  padding: 0 calc(var(--unit) * 0.06);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.statusTime {
+  flex: 1;
+}
+
+.signal {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.125rem;
+  height: 0.625rem;
+}
+
+.signal span {
+  width: 0.1875rem;
+  height: calc(40% + var(--bar) * 20%);
+  border-radius: 0.0625rem;
+  background: currentColor;
+}
+
+.battery {
+  width: 1.25rem;
+  height: 0.625rem;
+  margin-left: var(--space-1);
+  border: 1px solid currentColor;
+  border-radius: 0.1875rem;
+  background: linear-gradient(90deg, currentColor 70%, transparent 70%) content-box;
+  padding: 0.0625rem;
+}
+
+.progress {
+  position: absolute;
+  top: 2.4rem;
+  right: calc(var(--unit) * 0.05);
+  left: calc(var(--unit) * 0.05);
+  z-index: var(--z-overlay);
+  display: flex;
+  gap: 0.25rem;
+  pointer-events: none;
+}
+
+.segment {
+  flex: 1;
+  height: 0.1875rem;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-border);
+}
+
+.segmentFill {
+  display: block;
+  height: 100%;
+  background: var(--color-text);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+/* Экран до 3D-города: блокировка, «Заметки», карта */
+.flat {
+  position: absolute;
+  inset: 0;
+}
+
+.lock,
+.app,
+.map {
+  position: absolute;
+  inset: 0;
+}
+
+.lock {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  padding: 4.5rem var(--space-4) 0;
+  background: linear-gradient(
+    to bottom,
+    var(--story-sky-top),
+    var(--story-sky) 70%,
+    var(--story-tree)
+  );
+  text-align: center;
+}
+
+.lockDate {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.lockTime {
+  font-family: var(--font-display);
+  font-size: min(22cqi, 6rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.notice {
+  display: flex;
+  gap: var(--space-3);
+  width: 100%;
+  margin-top: var(--space-6);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  text-align: left;
+  backdrop-filter: blur(var(--blur-glass));
+}
+
+.noticeIcon {
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background: var(--mood-normal);
+}
+
+.noticeApp {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+.noticeText {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.app {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  padding: 3.25rem var(--space-4) var(--space-4);
+  background: var(--color-bg-deep);
+}
+
+.appTitle {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+}
+
+.ideas {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.idea {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-raised);
+  font-size: var(--fs-sm);
+}
+
+.check {
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1.5px solid var(--color-text-muted);
+  border-radius: var(--radius-pill);
+}
+
+.ideaText {
+  position: relative;
+}
+
+.strike {
+  position: absolute;
+  top: 50%;
+  right: -0.25rem;
+  left: -0.25rem;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--mood-angry);
+}
+
+.note {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-glass-border);
+}
+
+.noteName {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.typing {
+  min-height: 2.6em;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  line-height: 1.3;
+}
+
+.caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: var(--color-accent-bright);
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  background: var(--scene-bg);
+}
+
+.district {
+  fill: var(--fill);
+  stroke: var(--scene-district-edge);
+  stroke-width: 0.06;
+}
+
+/* Телефон лёжа: «Заметки» в две колонки — список идей слева, заметка справа */
+.stage[data-orientation='landscape'] .status,
+.stage[data-orientation='landscape'] .app {
+  padding-left: var(--island-gap);
+}
+
+.stage[data-orientation='landscape'] .progress {
+  left: var(--island-gap);
+}
+
+.stage[data-orientation='landscape'] .app {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.stage[data-orientation='landscape'] .appTitle {
+  display: none;
+}
+
+.stage[data-orientation='landscape'] .app {
+  gap: var(--space-3);
+  padding-top: 2.9rem;
+}
+
+.stage[data-orientation='landscape'] .ideas {
+  gap: 0.25rem;
+}
+
+.stage[data-orientation='landscape'] .idea {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--fs-xs);
+}
+
+.stage[data-orientation='landscape'] .note {
+  padding: var(--space-3);
+}
+
+.stage[data-orientation='landscape'] .typing {
+  font-size: var(--fs-md);
+}
+
+/* Лёжа экран низкий: время мельче, уведомление «Заметок» — справа, чтобы не встречаться с
+   подписью главы слева внизу */
+.stage[data-orientation='landscape'] .lock {
+  justify-items: start;
+  padding: 2.75rem var(--space-5) 0 var(--island-gap);
+  text-align: left;
+}
+
+.stage[data-orientation='landscape'] .lockTime {
+  font-size: min(7cqi, 3rem);
+}
+
+.stage[data-orientation='landscape'] .notice {
+  position: absolute;
+  top: 3.25rem;
+  right: var(--space-4);
+  width: min(34%, 18rem);
+  margin-top: 0;
+}
+
+/* Маленький телефон (экран уже 14rem): блокировка и «Заметки» компактнее, чтобы всё помещалось */
+@container (max-width: 14rem) {
+  .lock {
+    padding-top: 3.25rem;
+  }
+
+  .lockTime {
+    font-size: 19cqi;
+  }
+
+  .notice {
+    margin-top: var(--space-3);
+    padding: var(--space-2);
+  }
+
+  .app {
+    gap: var(--space-2);
+    padding-top: 3rem;
+  }
+
+  .appTitle {
+    font-size: var(--fs-lg);
+  }
+
+  .ideas {
+    gap: var(--space-1);
+  }
+
+  .idea {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--fs-xs);
+  }
+
+  .note {
+    padding: var(--space-3);
+  }
+
+  .typing {
+    font-size: var(--fs-md);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caret {
+    animation: none;
+  }
+}

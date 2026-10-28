@@ -5,8 +5,8 @@ import { createProjection } from '@/shared/lib/geo/geoProjection';
 const PADDING_KM = 0.6;
 
 // Костанай в 2D для SVG: контуры районов (те же районы OSM, что на 3D-карте), рамка viewBox (км) и
-// метки проблем (первые `pinLimit`). Общая основа плоских карт: гид и лёгкая история «О проекте»,
-// лёгкая версия героя главной.
+// метки проблем (первые `pinLimit`). Общая основа плоских карт: гид «Как это работает», карта на
+// стене и на экранах в истории «О проекте».
 export function useCityOutline(city, problems, pinLimit = 36) {
   return useMemo(() => {
     if (!city) return null;

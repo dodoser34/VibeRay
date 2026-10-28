@@ -1,62 +1,6 @@
-/* «О проекте»: история и «как это работает» на планшетах стоя и телефонах. Плавающие подписи
-   истории уходят вниз; две колонки сжали бы и карту, и текст до нечитаемости. */
+/* «О проекте»: «как это работает» на планшетах стоя и телефонах — две колонки сжали бы и карту, и
+   текст до нечитаемости. Сама история здесь идёт на экране телефона в руке (features/story). */
 @media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
-  /* По центру с равными полями (left + right + auto-поля), не шире строки для чтения */
-  :root [data-ui='story-caption'] {
-    right: var(--space-4);
-    left: var(--space-4);
-    bottom: 6rem;
-    max-width: 32.5rem;
-    margin-inline: auto;
-    font-size: var(--fs-md);
-  }
-
-  :root [data-ui='story-mood-slot'] {
-    top: auto;
-    right: 50%;
-    bottom: 12.5rem;
-    transform: translateX(50%);
-  }
-
-  /* 2D-карта лёгкой графики — над карточкой настроения и подписью, а не под ними (svg в селекторе
-     перебивает размеры слоя из модуля иллюстрации) */
-  :root svg[data-ui='story-lite-map'] {
-    height: calc(100% - var(--tabbar-height) - var(--space-4) - 26rem);
-  }
-
-  :root [data-ui='story-stamp'] {
-    top: calc(var(--tabbar-height) + var(--space-5));
-    right: var(--space-4);
-  }
-
-  /* Интерфейс на мониторе оставляет две панели, которые рассказывают историю */
-  :root [data-ui='story-ui-profile'],
-  :root [data-ui='story-ui-stats'] {
-    display: none;
-  }
-
-  :root [data-ui='story-ui-district'] {
-    width: min(76vw, 22rem);
-  }
-
-  :root [data-ui='story-ui-problem'] {
-    top: auto;
-    bottom: 12%;
-    width: min(76vw, 22rem);
-  }
-
-  /* Финальный кадр истории стоит по центру экрана: когда сцена отпускается, её пустая нижняя часть
-     уезжала вместе с ней, и перед «Как это работает» оставалась полоса пустоты. Раздел наплывает на
-     угасающую сцену — между кнопкой «Открыть карту» и подзаголовком обычный промежуток. */
-  :root [data-ui='guide'] {
-    position: relative;
-    padding-top: 0;
-  }
-
-  :root [data-ui='guide-intro'] {
-    margin-top: -18svh;
-  }
-
   :root [data-ui='guide-stats'] {
     grid-template-columns: repeat(2, 1fr);
   }

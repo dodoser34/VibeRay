@@ -70,6 +70,11 @@ export const GLYPHS = {
   // Разделы (меню телефона, темы помощи, плюсы аккаунта)
   map: large(path('M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20V6.5ZM9 4v13.5M15 6.5V20')),
   chart: large(path('M4 20h16M7 16v-5M12 16V7M17 16v-8')),
+  note: large(
+    path(
+      'M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2ZM8.5 8h7M8.5 12h7M8.5 16h4',
+    ),
+  ),
   info: large(path('M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 11v6M12 7.5v.5')),
   headset: large(path('M4 12a8 8 0 0 1 16 0v4a2 2 0 0 1-2 2h-1v-6h3M4 12v4a2 2 0 0 0 2 2h1v-6H4')),
   sliders: large(path('M4 7h9M17 7h3M15 5v4M4 17h3M11 17h9M9 15v4')),

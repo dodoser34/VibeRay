@@ -67,6 +67,12 @@
       "statsKicker": "Stimmung der Woche"
     }
   },
+  "phone": {
+    "time": "22:00",
+    "timeDaylight": "14:00",
+    "date": "Freitag, 14. Juli",
+    "notice": "Eine leere Datei — Zeit, sich etwas auszudenken"
+  },
   "screen": {
     "question": "Was denke ich mir Spannendes aus?",
     "appName": "Notizen",
@@ -81,20 +87,6 @@
       "game": "Handyspiel",
       "studyNetwork": "Lernnetzwerk",
       "finance": "Finanzen"
-    }
-  },
-  "room": {
-    "shelf": {
-      "titan": "Attack on Titan",
-      "isayama": "H. Isayama",
-      "king": "Stephen King",
-      "it": "Es",
-      "greenMile": "The Green Mile",
-      "shawshank": "Die Verurteilten"
-    },
-    "phone": {
-      "time": "22:00",
-      "date": "Freitag, 14. Juli"
     }
   },
   "guide": {

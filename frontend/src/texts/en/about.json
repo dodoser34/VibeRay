@@ -67,6 +67,12 @@
       "statsKicker": "Mood this week"
     }
   },
+  "phone": {
+    "time": "22:00",
+    "timeDaylight": "14:00",
+    "date": "Friday, July 14",
+    "notice": "An empty file — time to come up with something"
+  },
   "screen": {
     "question": "What interesting thing could I make?",
     "appName": "Notes",
@@ -81,20 +87,6 @@
       "game": "Mobile game",
       "studyNetwork": "Study social network",
       "finance": "Finance"
-    }
-  },
-  "room": {
-    "shelf": {
-      "titan": "Attack on Titan",
-      "isayama": "H. Isayama",
-      "king": "Stephen King",
-      "it": "It",
-      "greenMile": "The Green Mile",
-      "shawshank": "Shawshank Redemption"
-    },
-    "phone": {
-      "time": "22:00",
-      "date": "Friday, July 14"
     }
   },
   "guide": {

@@ -1,0 +1,828 @@
+/* Изометрическая комната истории (ПК). Только токены темы: ночь (тёмная тема) и день (светлая)
+   меняются вместе с темой. Объём — заливкой граней (верх светлее, бока темнее, смешивание с
+   --story-shade), без свечений; «свет» лампы и окна — полупрозрачные пятна. Линии не толстеют при
+   наезде камеры (non-scaling-stroke). */
+.root {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  color: var(--color-text);
+}
+
+.tilt {
+  width: 100%;
+  height: 100%;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.svg path,
+.svg polygon,
+.svg rect,
+.svg circle,
+.svg ellipse {
+  vector-effect: non-scaling-stroke;
+}
+
+/* Значки на экране монитора масштабируются вместе с рисунком, иначе на общем плане обводка
+   заливает квадратик целиком */
+.screenIcon path {
+  vector-effect: none;
+}
+
+/* Грани коробок и цилиндров */
+.box > * {
+  stroke: color-mix(in srgb, var(--tone) 72%, var(--story-shade));
+  stroke-width: 0.6;
+  stroke-linejoin: round;
+}
+
+.faceTop {
+  fill: var(--tone);
+}
+
+.faceLeft {
+  fill: color-mix(in srgb, var(--tone) 84%, var(--story-shade));
+}
+
+.faceRight {
+  fill: color-mix(in srgb, var(--tone) 70%, var(--story-shade));
+}
+
+.faceInner {
+  fill: color-mix(in srgb, var(--tone) 45%, var(--story-shade));
+}
+
+.floorShadow {
+  fill: var(--story-shade);
+  opacity: 0.22;
+}
+
+/* Пол, ковёр, свет из окна */
+.plank {
+  fill: none;
+  stroke: color-mix(in srgb, var(--story-floor) 70%, var(--story-shade));
+  stroke-width: 0.8;
+}
+
+.windowLight polygon {
+  fill: var(--story-sun);
+  opacity: 0.32;
+}
+
+.rug {
+  fill: color-mix(in srgb, var(--story-rug) 80%, var(--story-shade));
+}
+
+.rugField {
+  fill: var(--story-rug);
+}
+
+.rugOrnament {
+  fill: color-mix(in srgb, var(--story-rug) 65%, var(--story-paper));
+}
+
+.rugMedallion {
+  fill: color-mix(in srgb, var(--story-rug) 72%, var(--story-pot));
+}
+
+.rugFringe {
+  fill: none;
+  stroke: color-mix(in srgb, var(--story-rug) 70%, var(--story-shade));
+  stroke-width: 1;
+}
+
+/* Улица за окном */
+.skyTop {
+  stop-color: var(--story-sky-top);
+}
+
+.skyLow {
+  stop-color: var(--story-sky);
+}
+
+.star {
+  fill: var(--color-text);
+  opacity: 0;
+}
+
+.celestial {
+  fill: var(--story-sun);
+}
+
+.cloud {
+  fill: var(--story-cloud);
+}
+
+.skyline {
+  fill: var(--story-skyline);
+  opacity: 0.7;
+}
+
+.house-a {
+  fill: var(--story-house-a);
+}
+
+.house-c {
+  fill: var(--story-house-c);
+}
+
+.roof {
+  fill: var(--story-roof);
+}
+
+.pane {
+  fill: var(--story-glass);
+}
+
+.lit {
+  fill: var(--story-glass);
+}
+
+.door {
+  fill: var(--story-roof);
+}
+
+.paving {
+  fill: var(--story-paving);
+}
+
+.road {
+  fill: var(--story-road);
+}
+
+.roadMark {
+  fill: var(--story-paving);
+  opacity: 0.6;
+}
+
+.trunk {
+  fill: var(--story-trunk);
+}
+
+.birch {
+  fill: var(--story-birch);
+}
+
+.crown {
+  fill: var(--story-tree);
+}
+
+.crownLight {
+  fill: var(--story-tree-light);
+}
+
+.streetGlow {
+  fill: var(--story-window-light);
+  opacity: 0;
+}
+
+.lampPole,
+.lampHead {
+  fill: var(--story-lamp);
+}
+
+.wheel {
+  fill: var(--story-monitor);
+}
+
+/* Окно: откосы, стекло, рама, подоконник с цветами */
+.reveal {
+  fill: color-mix(in srgb, var(--story-wall) 60%, var(--story-shade));
+}
+
+.revealSill {
+  fill: color-mix(in srgb, var(--story-wall) 85%, var(--story-paper));
+}
+
+.glass {
+  fill: var(--story-glass);
+  opacity: 0.12;
+}
+
+.frame,
+.handle {
+  fill: var(--story-monitor-frame);
+}
+
+.leaf {
+  fill: var(--story-plant);
+  stroke: color-mix(in srgb, var(--story-plant) 70%, var(--story-shade));
+  stroke-width: 0.6;
+}
+
+.leafDark {
+  fill: color-mix(in srgb, var(--story-plant) 75%, var(--story-shade));
+}
+
+.fin {
+  stroke: color-mix(in srgb, var(--story-paper) 65%, var(--story-shade));
+  stroke-width: 1;
+}
+
+/* Стены: постер, часы, выключатель, шторы */
+.posterFrame {
+  fill: var(--story-monitor);
+}
+
+.posterArt {
+  fill: var(--story-sky);
+}
+
+.posterSun {
+  fill: var(--story-note);
+}
+
+.posterHill {
+  fill: var(--story-tree-light);
+}
+
+.posterHillNear {
+  fill: var(--story-tree);
+}
+
+.clockRim {
+  fill: var(--story-metal);
+}
+
+.clockFace {
+  fill: var(--story-paper);
+}
+
+.clockTick,
+.clockHand {
+  fill: none;
+  stroke: var(--story-monitor);
+  stroke-linecap: round;
+}
+
+.clockTick {
+  stroke-width: 0.8;
+}
+
+.clockHand {
+  stroke-width: 1.6;
+}
+
+.curtain {
+  fill: var(--story-fabric);
+}
+
+.fold {
+  stroke: var(--story-shade);
+  stroke-width: 2;
+  opacity: 0.25;
+}
+
+/* Левая стена: карта, календарь, стикеры */
+.paper {
+  fill: var(--story-paper);
+}
+
+.paperShadow {
+  fill: var(--story-shade);
+  opacity: 0.25;
+}
+
+.mapDistrict {
+  fill: var(--fill);
+  stroke: var(--scene-district-edge);
+  stroke-width: 0.6;
+}
+
+.mapPin,
+.pushPin {
+  fill: var(--mood-angry);
+}
+
+.calendarHead {
+  fill: var(--mood-bad);
+}
+
+.calendarMonth {
+  fill: var(--story-paper);
+  font-family: var(--font-display);
+  font-size: 0.55px;
+  font-weight: 600;
+}
+
+.calendarDay {
+  fill: color-mix(in srgb, var(--story-paper) 75%, var(--story-shade));
+}
+
+.calendarMark {
+  fill: none;
+  stroke: var(--mood-angry);
+  stroke-width: 1.2;
+}
+
+.sticker {
+  fill: var(--story-note);
+}
+
+.scribble {
+  fill: none;
+  stroke: var(--story-shade);
+  stroke-width: 0.8;
+  opacity: 0.6;
+}
+
+/* Стол, тумба, системный блок */
+.drawer {
+  fill: color-mix(in srgb, var(--story-desk) 85%, var(--story-shade));
+  stroke: color-mix(in srgb, var(--story-desk) 60%, var(--story-shade));
+  stroke-width: 0.6;
+}
+
+.drawerHandle {
+  fill: var(--story-metal);
+}
+
+.grain {
+  fill: none;
+  stroke: color-mix(in srgb, var(--story-desk) 75%, var(--story-shade));
+  stroke-width: 0.6;
+  opacity: 0.7;
+}
+
+.cable {
+  fill: none;
+  stroke: var(--story-monitor);
+  stroke-width: 1.6;
+}
+
+.pcPanel {
+  fill: color-mix(in srgb, var(--story-pc-case) 80%, var(--story-shade));
+}
+
+.pcButton {
+  fill: var(--color-accent);
+}
+
+.vent {
+  stroke: var(--story-shade);
+  stroke-width: 1;
+  opacity: 0.6;
+}
+
+.pcGlass {
+  fill: var(--story-pcb);
+}
+
+.pcBoard {
+  fill: color-mix(in srgb, var(--story-pcb) 70%, var(--color-accent));
+}
+
+.fan {
+  fill: var(--story-monitor);
+  stroke: var(--story-metal);
+  stroke-width: 0.8;
+}
+
+.fanBlade {
+  stroke: var(--story-metal);
+  stroke-width: 0.8;
+}
+
+.pcRing {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 0.8;
+}
+
+.pcPort {
+  fill: var(--story-monitor);
+}
+
+.pcRam {
+  fill: var(--story-metal);
+}
+
+.pcGpu {
+  fill: var(--story-monitor);
+  stroke: var(--story-metal);
+  stroke-width: 0.6;
+}
+
+.pcShroud {
+  fill: color-mix(in srgb, var(--story-pc-case) 80%, var(--story-shade));
+}
+
+.pcCable {
+  fill: none;
+  stroke: var(--story-metal);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+}
+
+.pcAccent {
+  fill: var(--color-accent);
+}
+
+/* Лампа: днём выключена, ночью — тёплое пятно на столе и луч из плафона */
+.lampPool {
+  fill: var(--story-window-light);
+  opacity: 0;
+}
+
+.lampArm {
+  fill: none;
+  stroke: var(--story-metal);
+  stroke-width: 3.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lampShade {
+  fill: var(--story-metal);
+  stroke: color-mix(in srgb, var(--story-metal) 70%, var(--story-shade));
+  stroke-width: 0.8;
+}
+
+.lampJoint,
+.finial {
+  fill: var(--story-metal);
+  stroke: color-mix(in srgb, var(--story-metal) 70%, var(--story-shade));
+  stroke-width: 0.8;
+}
+
+.lampRim {
+  fill: color-mix(in srgb, var(--story-metal) 55%, var(--story-shade));
+}
+
+.lampBulb {
+  fill: var(--story-paper);
+}
+
+.key {
+  fill: color-mix(in srgb, var(--story-monitor) 70%, var(--story-paper));
+}
+
+.mousePad {
+  fill: var(--story-fabric);
+}
+
+.notebook {
+  fill: var(--story-paper);
+}
+
+.ruled {
+  stroke: var(--color-river);
+  stroke-width: 0.6;
+  opacity: 0.6;
+}
+
+.notebookShadow {
+  fill: var(--story-shade);
+  opacity: 0.3;
+}
+
+.spiral {
+  fill: none;
+  stroke: var(--story-metal);
+  stroke-width: 1;
+}
+
+.pencilBody {
+  fill: var(--story-note);
+}
+
+.pencilFacet {
+  stroke: color-mix(in srgb, var(--story-note) 70%, var(--story-shade));
+  stroke-width: 0.8;
+}
+
+.pencilWood {
+  fill: color-mix(in srgb, var(--story-paper) 80%, var(--story-desk));
+}
+
+.pencilLead {
+  fill: var(--story-monitor);
+}
+
+.pencilFerrule {
+  fill: var(--story-metal);
+}
+
+.pencilEraser {
+  fill: var(--mood-bad);
+}
+
+.phoneScreen {
+  fill: var(--story-screen);
+}
+
+.mugHandle {
+  fill: none;
+  stroke: var(--story-paper);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+.steam path {
+  fill: none;
+  stroke: var(--story-paper);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  opacity: 0;
+  animation: steam 3.2s ease-in-out infinite;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  40% {
+    opacity: 0.35;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Кресло */
+.chairLeg {
+  fill: none;
+  stroke: var(--story-metal);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.caster {
+  fill: var(--story-monitor);
+}
+
+.casterStem {
+  stroke: var(--story-metal);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+.casterHub {
+  fill: color-mix(in srgb, var(--story-monitor) 70%, var(--story-metal));
+}
+
+.chairPanel {
+  fill: color-mix(in srgb, var(--story-fabric) 82%, var(--color-text));
+}
+
+.stitch {
+  fill: none;
+  stroke: var(--story-fabric);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+}
+
+/* Книжный шкаф */
+.shelfInside {
+  fill: color-mix(in srgb, var(--story-desk) 55%, var(--story-shade));
+}
+
+.shelfShade {
+  fill: var(--story-shade);
+  opacity: 0.35;
+}
+
+.spine,
+.storageBox {
+  fill: var(--tone);
+  stroke: color-mix(in srgb, var(--tone) 70%, var(--story-shade));
+  stroke-width: 0.5;
+}
+
+/* Мелочи на полу */
+.crease {
+  fill: none;
+  stroke: var(--story-shade);
+  stroke-width: 0.8;
+  stroke-linecap: round;
+  opacity: 0.35;
+}
+
+.paperBall {
+  fill: var(--story-paper);
+  stroke: color-mix(in srgb, var(--story-paper) 70%, var(--story-shade));
+  stroke-width: 0.8;
+}
+
+.beanbag {
+  fill: var(--story-book-b);
+  stroke: color-mix(in srgb, var(--story-book-b) 65%, var(--story-shade));
+  stroke-width: 0.8;
+}
+
+.beanbagSide {
+  fill: color-mix(in srgb, var(--story-book-b) 72%, var(--story-shade));
+}
+
+.beanbagSeat {
+  fill: color-mix(in srgb, var(--story-book-b) 85%, var(--story-shade));
+}
+
+.beanbagFold {
+  fill: none;
+  stroke: color-mix(in srgb, var(--story-book-b) 60%, var(--story-shade));
+  stroke-width: 1.2;
+  stroke-linecap: round;
+}
+
+.bookSpine {
+  stroke: color-mix(in srgb, var(--story-paper) 55%, var(--story-shade));
+  stroke-width: 1;
+}
+
+.openBook {
+  fill: var(--story-paper);
+  stroke: color-mix(in srgb, var(--story-paper) 60%, var(--story-shade));
+  stroke-width: 0.6;
+}
+
+.catBody {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: breathe 3.6s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  50% {
+    transform: scale(1.03, 1.06);
+  }
+}
+
+.catFur {
+  fill: var(--story-cat);
+}
+
+.catTail {
+  fill: none;
+  stroke: var(--story-cat);
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.catStripe,
+.catEye {
+  fill: none;
+  stroke: color-mix(in srgb, var(--story-cat) 55%, var(--story-shade));
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+
+/* Экран монитора (рисунок 640 × 360) */
+.wallpaper {
+  fill: var(--story-screen);
+}
+
+.contour {
+  fill: none;
+  stroke: var(--color-glass-border);
+  stroke-width: 0.8;
+}
+
+.menuBar,
+.dock {
+  fill: var(--color-bg-deep);
+  opacity: 0.9;
+}
+
+.menuLogo {
+  fill: var(--color-accent);
+}
+
+.menuApp,
+.menuItem {
+  fill: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 8px;
+}
+
+.menuApp {
+  font-weight: 700;
+}
+
+.folderTab,
+.folder {
+  fill: var(--mood-normal);
+}
+
+.folderLabel {
+  fill: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 7px;
+}
+
+.editor {
+  fill: var(--color-bg-deep);
+  stroke: var(--color-glass-border);
+  stroke-width: 0.8;
+}
+
+.editorBar {
+  fill: var(--color-glass-border);
+}
+
+.editorTitle {
+  fill: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 8px;
+}
+
+.gutter {
+  stroke: var(--color-text-faint);
+  stroke-width: 1;
+}
+
+.typing {
+  fill: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.caret {
+  fill: var(--color-accent-bright);
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+.ideaCard {
+  fill: var(--color-bg-raised);
+  stroke: var(--color-glass-border);
+  stroke-width: 0.8;
+}
+
+.ideaLabel {
+  fill: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 9px;
+}
+
+.strike {
+  fill: none;
+  stroke: var(--mood-angry);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.pointer {
+  fill: var(--color-text);
+  stroke: var(--color-bg-deep);
+  stroke-width: 0.8;
+}
+
+.screenMapBg {
+  fill: var(--scene-bg);
+}
+
+/* Ночь (тёмная тема): луна вместо солнца, звёзды, горят окна домов, фонарь и лампа;
+   свет из окна — лунный, слабее. Облака — только днём. */
+:global([data-theme='dark']) .celestial {
+  fill: var(--story-paper);
+}
+
+:global([data-theme='dark']) .star {
+  opacity: 0.7;
+}
+
+:global([data-theme='dark']) .cloud {
+  display: none;
+}
+
+:global([data-theme='dark']) .lit {
+  fill: var(--story-window-light);
+}
+
+:global([data-theme='dark']) .streetGlow {
+  opacity: 0.25;
+}
+
+:global([data-theme='dark']) .windowLight polygon {
+  fill: var(--scene-light-night);
+  opacity: 0.08;
+}
+
+:global([data-theme='dark']) .lampPool {
+  opacity: 0.28;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .steam path,
+  .catBody,
+  .caret {
+    animation: none;
+  }
+}

@@ -4,7 +4,7 @@ import styles from './StoryCalendar.module.css';
 // Сцена 7: пролистывается год работы, месяц за месяцем, с июля по июнь.
 export function StoryCalendar() {
   return (
-    <div className={styles.stack}>
+    <div className={styles.stack} data-ui="story-calendar">
       {CALENDAR.map((label, i) => (
         <div
           key={label}

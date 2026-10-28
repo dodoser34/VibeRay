@@ -8,7 +8,7 @@ import { AuthProvider } from '@/features/auth';
 import { NotificationsProvider } from '@/features/notifications';
 import { trackInputModality } from '@/app/lib/inputModality';
 import { prefetchPages, router } from '@/app/routing/router';
-import { canPrefetch, isLiteGraphics } from '@/adaptations/core';
+import { canPrefetch } from '@/adaptations/core';
 import '@/shared/animations/core/gsapSetup';
 import '@/styles/tokens.css';
 import '@/styles/themes/dark.css';
@@ -20,12 +20,11 @@ import '@/adaptations/index.css';
 
 trackInputModality();
 
-// После загрузки, когда браузер свободен, — остальные страницы в кэш (не на медленной сети и не в
-// лёгком режиме графики: там 3D-страницы лишняя нагрузка).
+// После загрузки, когда браузер свободен, — остальные страницы в кэш (не на медленной сети).
 window.addEventListener(
   'load',
   () => {
-    if (!canPrefetch() || isLiteGraphics()) return;
+    if (!canPrefetch()) return;
     const idle = window.requestIdleCallback ?? ((fn) => setTimeout(fn, 1500));
     idle(prefetchPages);
   },

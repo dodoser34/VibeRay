@@ -94,10 +94,10 @@
   --scene-rail: #55595a;
   --scene-dust: #7c8c7e;
 
-  /* История «О проекте»: комната (public/models/story-room.glb) июльской ночью — та же модель, что днём
-     в светлой теме; улица за окном, системный блок, корешки книг */
-  --story-wall: #101812;
-  --story-desk: #2a2622;
+  /* История «О проекте»: комната автора июльской ночью (изометрия на ПК, телефон — на телефонах) —
+     та же комната днём в светлой теме; улица за окном, системный блок, корешки книг */
+  --story-wall: #1c2a21;
+  --story-desk: #43382d;
   --story-monitor: #16191a;
   --story-monitor-frame: #16191a; /* оконная рама */
   --story-screen: #0e1511;
@@ -111,11 +111,11 @@
   --story-note: #c2ae66;
   --story-plant: #3f6b4c;
   --story-pot: #5e4a3c;
-  --story-fabric: #18231d;
-  --story-metal: #3a3f3d;
-  --story-book-a: #5b4636;
-  --story-book-b: #34483c;
-  --story-book-c: #6b5b3a;
+  --story-fabric: #2a3b30;
+  --story-metal: #4d5451;
+  --story-book-a: #6b5240;
+  --story-book-b: #3e5546;
+  --story-book-c: #7a6843;
 
   --story-house-a: #3a3a33;
   --story-house-b: #33393a;
@@ -134,9 +134,14 @@
   --story-car-b: #1e2733;
   --story-car-c: #4a4a46;
   --story-pcb: #12201a;
-  --story-pc-case: #232726;
+  --story-pc-case: #303533;
   --story-spine-titan: #a8a28f;
   --story-spine-king: #121314;
+  /* Изометрическая комната (ПК): тень граней, пол, ковёр, кот */
+  --story-shade: #040705;
+  --story-floor: #3a2f25;
+  --story-rug: #34493b;
+  --story-cat: #7a6750;
   /* Текст на заливке акцента (кнопки, бейджи): светлый; при наведении — тёмный на ярком зелёном */
   --color-on-accent: #c8d3c4;
   --color-on-accent-hover: #0b110d;

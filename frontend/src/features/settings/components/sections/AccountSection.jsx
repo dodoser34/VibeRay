@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import { GRAPHICS_MODES, setGraphicsMode, useGraphicsMode } from '@/adaptations/core';
 import { Button } from '@/shared/ui/controls/Button';
 import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
-import { OptionGroup } from '@/shared/ui/controls/OptionGroup';
 import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { DeleteAccountDialog } from './DeleteAccountDialog';
 import { SettingsSection } from '../SettingsSection';
@@ -14,7 +12,6 @@ import styles from './AccountSection.module.css';
 export function AccountSection({ id, onLogout, onDeleted }) {
   const [confirming, setConfirming] = useState(false);
   const [leaving, setLeaving] = useState(false);
-  const graphics = useGraphicsMode();
 
   const logout = async () => {
     setLeaving(true);
@@ -37,21 +34,6 @@ export function AccountSection({ id, onLogout, onDeleted }) {
             <p className={styles.rowText}>{texts.account.themeText}</p>
           </div>
           <ThemeSwitch full />
-        </div>
-        <div className={styles.row}>
-          <div className={styles.text}>
-            <h3 className={styles.rowTitle}>{texts.account.graphicsTitle}</h3>
-            <p className={styles.rowText}>{texts.account.graphicsText}</p>
-          </div>
-          <OptionGroup
-            label={texts.account.graphicsTitle}
-            value={graphics}
-            onChange={setGraphicsMode}
-            options={GRAPHICS_MODES.map((code) => ({
-              code,
-              label: texts.account.graphicsModes[code],
-            }))}
-          />
         </div>
         <div className={styles.row}>
           <div className={styles.text}>

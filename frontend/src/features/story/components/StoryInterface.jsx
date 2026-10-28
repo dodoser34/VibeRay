@@ -11,7 +11,7 @@ const WEEK = [0.2, 0.5, 0.35, 0.7, 0.6, 0.9, 0.8];
 export function StoryInterface() {
   const points = WEEK.map((v, i) => `${(i / (WEEK.length - 1)) * 100},${40 - v * 36}`).join(' ');
   return (
-    <div className={styles.layout}>
+    <div className={styles.layout} data-ui="story-ui">
       <section
         className={`${styles.panel} ${styles.district}`}
         data-ui="story-ui-district"

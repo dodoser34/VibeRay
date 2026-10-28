@@ -25,94 +25,6 @@
   height: 100%;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  z-index: var(--z-panel);
-  pointer-events: none;
-}
-
-/* Появляется позже по шкале прокрутки (и скрыто, пока шкала не построена). */
-.overlay [data-later] {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.stamp {
-  position: absolute;
-  top: calc(var(--tabbar-height) + var(--space-6));
-  right: 6vw;
-  color: var(--color-text-muted);
-  font-family: var(--font-display);
-  font-size: var(--fs-lg);
-  letter-spacing: 0.04em;
-}
-
-.caption {
-  position: absolute;
-  left: 6vw;
-  bottom: 12vh;
-  max-width: min(32.5rem, 88vw);
-  padding: var(--space-4) var(--space-5);
-  border-radius: var(--radius-md);
-  background: var(--color-glass-strong);
-  border: 1px solid var(--color-glass-border);
-  font-size: var(--fs-lg);
-  line-height: 1.45;
-  backdrop-filter: blur(var(--blur-glass));
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.phrase,
-.question {
-  width: min(56.25rem, 88vw);
-  font-family: var(--font-display);
-  line-height: 1.2;
-  text-align: center;
-}
-
-.phrase {
-  font-size: var(--fs-2xl);
-}
-
-.question {
-  color: var(--color-accent-bright);
-  font-size: var(--fs-xl);
-}
-
-.finale {
-  display: grid;
-  justify-items: center;
-  gap: var(--space-5);
-}
-
-.cta {
-  pointer-events: auto;
-}
-
-.moodSlot {
-  position: absolute;
-  top: 50%;
-  right: 7vw;
-  transform: translateY(-50%);
-}
-
-.hint {
-  position: absolute;
-  right: 0;
-  bottom: var(--space-6);
-  left: 0;
-  color: var(--color-text-muted);
-  font-size: var(--fs-xs);
-  text-align: center;
-}
-
 .veil {
   position: absolute;
   inset: 0;
@@ -126,25 +38,18 @@
   opacity: 0;
 }
 
-.fade {
-  position: absolute;
-  inset: 0;
-  z-index: var(--z-overlay);
-  background: var(--color-bg-deep);
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* Reduced motion: неподвижный финальный кадр, история текстом под ним. */
+/* Reduced motion: неподвижный финальный кадр, история текстом под ним. Телефон в руке занимает
+   экран целиком, поэтому его сцена не укорачивается. */
 .story[data-static] .stage {
   --stage-fade: 40%;
 
   height: 70vh;
 }
 
-.story[data-static] .overlay {
-  display: none;
+.story[data-static][data-variant='phone'] .stage {
+  --stage-fade: 0%;
+
+  height: 100dvh;
 }
 
 .staticStory {
