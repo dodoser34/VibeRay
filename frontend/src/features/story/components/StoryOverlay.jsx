@@ -4,13 +4,13 @@ import { useLanguage } from '@/shared/hooks/useLanguage';
 import about from '@/texts/ru/about.json';
 import { CHAPTERS, story } from '../lib/chapters';
 import { FINAL, LIVING } from '../lib/storyTimeline';
-import { StoryCalendar } from './StoryCalendar';
+import { StoryBuild } from './StoryBuild';
 import { StoryInterface } from './StoryInterface';
 import { StoryMoodCard } from './StoryMoodCard';
 import styles from './StoryOverlay.module.css';
 
-// Всё, что идёт поверх сцены истории: подписи глав, карточка настроения, крупные фразы, календарь,
-// панели интерфейса, финал. Анимирует addOverlayTimeline по data-story. variant: 'room' — поверх
+// Всё, что идёт поверх сцены истории: подписи глав, карточка настроения, крупные фразы, план
+// проекта, панели интерфейса, финал. Анимирует addOverlayTimeline по data-story. variant: 'room' — поверх
 // изометрической комнаты на весь экран (ПК), 'phone' — внутри экрана телефона: подписи — сообщения,
 // панели и карточки — по ширине экрана; orientation — как держат телефон.
 export function StoryOverlay({ variant, orientation, onOpenMap }) {
@@ -50,7 +50,7 @@ export function StoryOverlay({ variant, orientation, onOpenMap }) {
         <StoryMoodCard />
       </div>
       <div className={styles.center}>
-        <StoryCalendar />
+        <StoryBuild />
       </div>
       <StoryInterface />
       <div className={`${styles.center} ${styles.finale}`}>

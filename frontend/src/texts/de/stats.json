@@ -11,7 +11,7 @@
   "fewMarksNote": "Die Stimmung erscheint ab 5 Markierungen — so schützen wir die Privatsphäre der Bewohner.",
   "moodMeta": "{count} {marks} {period} · meist „{mood}“",
   "distributionLabel": "Verteilung der Stimmungen",
-  "kicker": "Viertel von Kostanai",
+  "kicker": "Bezirk · {city}",
   "close": "Viertel schließen",
   "loading": "Wird geladen",
   "tiles": {

@@ -32,6 +32,15 @@ export function writeNumber(key, value) {
   writeValue(key, value);
 }
 
+// Строка из хранилища; null — нет или хранилище недоступно.
+export function readValue(key) {
+  try {
+    return window.localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
 // Сохранённый выбор из списка допустимых (тема, язык, режим графики); null — нет, испорчен или
 // хранилище недоступно.
 export function readChoice(key, allowed) {

@@ -11,7 +11,7 @@ import { planeMatrix } from '../lib/isometric';
 import { addPhoneTimeline } from '../lib/phoneTimeline';
 import { COVER, RoomCamera } from '../lib/roomCamera';
 import { monitorMapBox, SCREEN } from '../lib/roomLayout';
-import { topViewBox } from '../lib/topView';
+import { outlineCenter, topViewBox } from '../lib/topView';
 import { useBoxSize } from '../hooks/useBoxSize';
 import { addRoomTimeline } from '../lib/roomTimeline';
 import { addOverlayTimeline } from '../lib/storyTimeline';
@@ -105,7 +105,7 @@ export function StoryExperience({ onOpenMap, onReady }) {
   useGSAP(
     () => {
       if ((!scene && !failed) || !dataReady) return undefined;
-      scene?.setCity(city.data, moods.data, problems.data);
+      scene?.setCity(city.data, moods.data, problems.data, outlineCenter(outline.viewBox));
       const q = gsap.utils.selector(rootRef);
       const tl = gsap.timeline({ paused: true, defaults: { ease: 'none' } });
       let camera = null;
@@ -182,8 +182,9 @@ export function StoryExperience({ onOpenMap, onReady }) {
               outline={outline}
               mapBox={
                 stageSize &&
+                outline &&
                 monitorMapBox(
-                  topViewBox(stageSize.width, stageSize.height),
+                  topViewBox(stageSize.width, stageSize.height, outlineCenter(outline.viewBox)),
                   stageSize.width,
                   stageSize.height,
                   COVER,

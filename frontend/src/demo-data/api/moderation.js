@@ -1,6 +1,12 @@
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
 import { OPEN_SUPPORT_STATUSES } from '@/shared/config/support';
-import { city, cityMoods, problems } from './generate';
+import {
+  HOME_CITY,
+  cityBySlug,
+  cityMoods,
+  cityOfDistrict,
+  problems as allProblems,
+} from './generate';
 import { resolvedAt, withHistory } from './community';
 import { nameOf } from './locale';
 
@@ -25,8 +31,12 @@ const SORTS = {
 };
 
 const ageDays = (problem, now) => (now - new Date(problem.created_at).getTime()) / DAY;
+// Демо-модератор работает с Костанаем: проблемы других городов в его очередь и сводку не попадают.
+const ownProblems = () => allProblems.filter((p) => cityOfDistrict(p.district) === HOME_CITY);
 const districtNames = () =>
-  Object.fromEntries(city.districts.features.map((f) => [f.properties.slug, nameOf(f.properties)]));
+  Object.fromEntries(
+    cityBySlug(HOME_CITY).districts.features.map((f) => [f.properties.slug, nameOf(f.properties)]),
+  );
 
 export const isQueueStatus = (code) => code in QUEUE_STATUSES;
 
@@ -37,7 +47,7 @@ export function moderationItem(problem, names = districtNames()) {
 
 export function moderationQueue({ status = 'active', district, category, sort = 'newest' }) {
   const names = districtNames();
-  const matching = problems
+  const matching = ownProblems()
     .filter(
       (p) =>
         QUEUE_STATUSES[status].includes(p.status) &&
@@ -55,11 +65,11 @@ export function moderationQueue({ status = 'active', district, category, sort = 
 export function moderationSummary(supportRequests) {
   const now = Date.now();
   const names = districtNames();
-  const moods = cityMoods('week').districts;
+  const moods = cityMoods(HOME_CITY, 'week').districts;
   const counts = Object.fromEntries([...ACTIVE, 'resolved', 'rejected'].map((code) => [code, 0]));
-  problems.forEach((p) => (counts[p.status] += 1));
+  ownProblems().forEach((p) => (counts[p.status] += 1));
 
-  const resolvedRecently = problems
+  const resolvedRecently = ownProblems()
     .filter((p) => p.status === 'resolved')
     .map((p) => ({ problem: p, at: resolvedAt(p) }))
     .filter(({ at }) => at && now - at < 30 * DAY);
@@ -67,7 +77,7 @@ export function moderationSummary(supportRequests) {
     ({ problem, at }) => (at - new Date(problem.created_at).getTime()) / DAY,
   );
 
-  const open = problems.filter((p) => ACTIVE.includes(p.status));
+  const open = ownProblems().filter((p) => ACTIVE.includes(p.status));
   const districts = Object.keys(names)
     .map((slug) => {
       const inDistrict = open.filter((p) => p.district === slug);
@@ -77,7 +87,7 @@ export function moderationSummary(supportRequests) {
         name: names[slug],
         open: inDistrict.length,
         waiting: inDistrict.filter((p) => p.status !== 'in_progress').length,
-        new_week: problems.filter((p) => p.district === slug && ageDays(p, now) < 7).length,
+        new_week: ownProblems().filter((p) => p.district === slug && ageDays(p, now) < 7).length,
         oldest_open_days: inDistrict.length
           ? Math.floor(Math.max(...inDistrict.map((p) => ageDays(p, now))))
           : null,
@@ -88,7 +98,7 @@ export function moderationSummary(supportRequests) {
 
   return {
     counts,
-    new_today: problems.filter((p) => ageDays(p, now) < 1).length,
+    new_today: ownProblems().filter((p) => ageDays(p, now) < 1).length,
     stale_confirmed: open.filter((p) => p.status === 'confirmed' && ageDays(p, now) >= STALE_DAYS)
       .length,
     resolved_week: resolvedRecently.filter(({ at }) => now - at < 7 * DAY).length,

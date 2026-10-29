@@ -13,12 +13,12 @@ import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
 import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { Modal } from '@/shared/ui/windows/Modal';
 import notificationTexts from '@/texts/ru/notifications.json';
+import { lastCity } from '@/features/map';
 import nav from '@/texts/ru/nav.json';
 import styles from './MobileNav.module.css';
 import { LogoMark } from '@/shared/ui/icons/LogoMark';
 import { Icon } from '@/shared/ui/icons/Icon';
 
-const CITY = 'kostanay';
 // Прокрутка: кнопки уезжают, когда страницу листают вниз дальше первого экрана шапки, и
 // возвращаются при любом движении вверх; мелкую дрожь пальца не считаем.
 const HIDE_AFTER = 120;
@@ -85,8 +85,8 @@ export function MobileNav() {
         { key: 'moderation-settings', to: '/moderation/settings', label: nav.moderator.settings },
       ]
     : [
-        { key: 'map', to: `/map/${CITY}`, label: nav.tabs.map.label },
-        { key: 'stats', to: `/map/${CITY}/stats`, label: nav.menu.stats },
+        { key: 'map', to: `/map/${lastCity()}`, label: nav.tabs.map.label },
+        { key: 'stats', to: `/map/${lastCity()}/stats`, label: nav.menu.stats },
         { key: 'about', to: '/about', label: nav.tabs.about.label },
         { key: 'support', to: '/support', label: nav.tabs.support.label },
         ...(user ? [{ key: 'settings', to: '/settings', label: nav.menu.settings }] : []),

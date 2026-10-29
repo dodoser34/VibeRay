@@ -26,7 +26,9 @@
       "living": {
         "phrase": "What if people had a way to show how they see their city?"
       },
-      "diploma": {},
+      "build": {
+        "text": "The idea wouldn't let go — so I started building it right during my studies, step by step."
+      },
       "product": {
         "text": "The idea became a project: a map, districts, mood, problems and statistics — all in one service."
       },
@@ -35,20 +37,18 @@
         "question": "“What interesting thing could I come up with?”"
       }
     },
-    "calendar": [
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June"
-    ],
+    "month": "July",
+    "build": {
+      "kicker": "Between classes",
+      "title": "Project plan",
+      "items": [
+        "City map",
+        "Kostanay districts",
+        "Mood marks",
+        "Problems on the map",
+        "District statistics"
+      ]
+    },
     "moodCard": {
       "nickname": "Resident",
       "place": "Centre · now",
@@ -144,10 +144,8 @@
     "At some point I started thinking about the city. Every day people spend time in different districts, walk the same streets, travel to work or classes, meet friends and run into all kinds of problems. And each person sees their district in their own way.",
     "For one person a district is a calm and pleasant place; for another it's inconvenient or troubled. Someone keeps noticing rubbish, bad roads or traffic jams, while someone else notices the lack of street lighting, parking or other infrastructure.",
     "And then the thought came: what if there were a map where people themselves could tell what's happening in their districts? The city is divided into districts and neighbourhoods. A user picks the place where they usually are and marks their mood. And real problems too: rubbish, a traffic jam, a bad road, darkness. That way the map shows not only where the districts are, but the state of the city through its residents' eyes.",
-    "I told my friends and classmates about the idea. One of them said it could make an interesting graduation project. Back then I didn't yet know that this is exactly what would happen.",
-    "My fourth year began, and I had to choose a thesis topic. I remembered that summer idea: instead of inventing something specially for the thesis, I could finally bring an existing idea to life.",
-    "Over time the idea grew: what the interface should be like, how the map should look, how to mark moods and problems, how to present the data. The main goal became a space where residents themselves show how they see their city. An ordinary map shows streets and buildings. This one also shows what people feel, which problems they notice and how they see the place where they live.",
+    "The idea wouldn't let go, and I started building it right during my studies, bit by bit, working out what the interface should be like, how the map should look, how to mark moods and problems, how to present the data. The main goal became a space where residents themselves show how they see their city. An ordinary map shows streets and buildings. This one also shows what people feel, which problems they notice and how they see the place where they live.",
     "In the long run, the collected data will help follow how districts change: which problems come up most often, where residents mark negative moods more often, and which places feel comfortable.",
-    "And the most interesting part: it didn't start with a university assignment or with thoughts of a thesis, but with an ordinary July evening and a question — “What interesting and unusual thing could I come up with?”"
+    "And the most interesting part: it didn’t start with an assignment or a grand plan, but with an ordinary July evening and a question — “What interesting and unusual thing could I come up with?”"
   ]
 }

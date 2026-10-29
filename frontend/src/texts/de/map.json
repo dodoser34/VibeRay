@@ -2,6 +2,8 @@
   "canvasLabel": "3D-Karte der Stadtviertel. Fahre über ein Viertel, um seinen Namen zu sehen, klicke, um seine Statistik zu öffnen.",
   "filtersLabel": "Kartenfilter",
   "cityFallback": "Stadt",
+  "city": "Stadt",
+  "cityLabel": "Stadt wählen",
   "heading": "Stimmungskarte",
   "period": "Zeitraum",
   "layer": "Ebene",
@@ -24,7 +26,7 @@
   },
   "updatedAt": "Daten aktualisiert um {time}",
   "loading": "Daten werden geladen…",
-  "districtsSource": "Viertel nach den Mikrobezirken von OpenStreetMap.",
+  "districtsSource": "Bezirke und Straßen nach OpenStreetMap.",
   "overview": {
     "kicker": "Alle Viertel",
     "title": "Wo es gerade am besten ist",

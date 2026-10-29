@@ -14,7 +14,7 @@ const CHAPTER_IDS = [
   'mood',
   'problems',
   'living',
-  'diploma',
+  'build',
   'product',
   'final',
 ];
@@ -44,8 +44,11 @@ export const story = {
   get screenQuestion() {
     return about.screen.question;
   },
+  // Месяц на настенном календаре в комнате.
+  get month() {
+    return about.story.month;
+  },
 };
-export const CALENDAR = about.story.calendar;
 
 // Полная история автора, показывается под ссылкой «прочитать всю историю».
 export const FULL_STORY = about.fullStory;

@@ -6,7 +6,7 @@ import { FilterChip } from '@/adaptations/mobile/components/map/FilterChip';
 import { MapFab } from '@/adaptations/mobile/components/map/MapFab';
 import { BottomSheet } from '@/adaptations/mobile/components/sheet/BottomSheet';
 import { useAuth } from '@/features/auth';
-import { MapCanvas, useCityData } from '@/features/map';
+import { MapCanvas, rememberCity, useCityData } from '@/features/map';
 import { DistrictRanking, MoodFace, MoodPicker } from '@/features/mood';
 import { ProblemCard, ReportProblem } from '@/features/problems';
 import {
@@ -18,6 +18,7 @@ import {
   useCityStats,
   useDistrictStats,
 } from '@/features/stats';
+import { getCities } from '@/shared/api/endpoints/cities';
 import { postMood } from '@/shared/api/endpoints/districts';
 import { getProblem } from '@/shared/api/endpoints/problems';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
@@ -123,6 +124,10 @@ export function MapPage({ view = 'map' }) {
     : DEFAULT_STATS_PERIOD;
 
   const { city, moods, problems } = useCityData(citySlug, period);
+  const cities = useRequest('cities', getCities);
+  useEffect(() => {
+    if (city.data?.slug) rememberCity(city.data.slug);
+  }, [city.data?.slug]);
   const clock = useCityClock(city.data?.timezone, searchParams.get('time'));
   const phase = clock ? dayPhase(clock.hour) : null;
   // Переход страницы ждёт город и его настроения, прежде чем сложиться.
@@ -305,6 +310,16 @@ export function MapPage({ view = 'map' }) {
     navigate(`/map/${citySlug}`);
   };
 
+  // Другой город: открытые район, проблема и сообщение остаются в прежнем городе, вид (карта или
+  // статистика и её период) сохраняется.
+  const changeCity = (slug) => {
+    if (slug === citySlug) return;
+    setReport(false);
+    setPlacement(null);
+    setFocus(null);
+    navigate(isStats ? `/map/${slug}/stats?${searchParams}` : `/map/${slug}`);
+  };
+
   const openDistrictFromStats = (slug) => {
     setFocus(null);
     mapRef.current?.previewDistrict(null);
@@ -372,6 +387,9 @@ export function MapPage({ view = 'map' }) {
     <MapFilters
       view={view}
       cityName={city.data?.name ?? texts.cityFallback}
+      cities={cities.data}
+      citySlug={citySlug}
+      onCity={changeCity}
       sheet={sheetLayout}
       period={period}
       onPeriod={setPeriod}
@@ -462,6 +480,7 @@ export function MapPage({ view = 'map' }) {
     detail = (
       <DistrictPanel
         district={district}
+        cityName={city.data?.name ?? texts.cityFallback}
         period={period}
         stats={stats.data?.district === districtSlug ? stats.data : null}
         facts={districtFacts}

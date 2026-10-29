@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { SceneRuntime } from '@/features/map';
 import { cssVar } from '@/shared/lib/theme/cssVar';
 import { at } from '../lib/chapters';
-import { FOV, PORTRAIT_SHIFT, TOP_VIEW_HEIGHT, zoomFactor } from '../lib/topView';
+import { FOV, TOP_VIEW_HEIGHT, zoomFactor } from '../lib/topView';
 import { CITY_PARAMS, CityStage } from './CityStage';
 
 // Куда «приземляется» история, когда район показывают крупно.
@@ -35,19 +35,22 @@ export class StoryScene {
     });
 
     this.params = { world: 0, ...CITY_PARAMS };
+    this.center = new THREE.Vector3();
     this.cam = new THREE.Vector3(0, TOP_VIEW_HEIGHT, 0.5);
     this.look = new THREE.Vector3(0, 0, 0);
     this.lastKey = '';
 
-    this.runtime.onResize((width, height) => {
-      this.city?.setResolution(width, height);
-      this.frameFor(width, height);
-    });
+    this.runtime.onResize((width, height) => this.city?.setResolution(width, height));
     this.runtime.onTick(() => this.tick());
   }
 
-  setCity(city, moods, problems) {
+  // center — середина районов на плоской карте [x, y] (км, y — на юг): вокруг неё строятся все кадры,
+  // и первый кадр совпадает с картой на экране (lib/topView.js).
+  setCity(city, moods, problems, [cx, cy] = [0, 0]) {
     if (this.city) return;
+    this.center = new THREE.Vector3(cx, 0, cy);
+    this.look.copy(this.center);
+    this.cam.set(cx, TOP_VIEW_HEIGHT, cy + 0.5);
     this.city = new CityStage(city, moods, problems, { detail: this.runtime.quality.detail });
     this.city.group.visible = false;
     const lights = new THREE.Group();
@@ -71,6 +74,9 @@ export class StoryScene {
   buildTimeline(tl) {
     const { params: p, cam, look } = this;
     const focus = this.city.anchorOf(FOCUS_DISTRICT);
+    const { x: ox, z: oz } = this.center;
+    // Кадры вокруг середины районов (кроме подлёта к району — он в координатах самого района).
+    const around = ([x, y, z]) => [x + ox, y, z + oz];
     const shot = (time, duration, position, target, ease = 'power2.inOut') =>
       tl
         .to(cam, { x: position[0], y: position[1], z: position[2], duration, ease }, time)
@@ -82,12 +88,12 @@ export class StoryScene {
     tl.to(p, { backdrop: 1, duration: 1.8 }, at(2, 0.2));
     tl.to(p, { streets: 1, duration: 3.2 }, at(2, 0.3));
     tl.to(p, { rise: 1, duration: 4.2 }, at(2, 1.8));
-    shot(at(2, 2.5), 6.5, [0, 18, 15.5], [0, 0, 1.2]);
+    shot(at(2, 2.5), 6.5, around([0, 18, 15.5]), around([0, 0, 1.2]));
     tl.to(p, { people: 1, duration: 3.5 }, at(2, 5.5));
 
     // 4. Настроения: каждый житель отмечает настроение — от каждой точки расходится кольцо, районы
     // перекрашиваются.
-    shot(at(3), 9, [-7, 16, 14], [0, 0, 1]);
+    shot(at(3), 9, around([-7, 16, 14]), around([0, 0, 1]));
     tl.to(p, { moodDots: 1, duration: 5 }, at(3, 2));
     tl.to(p, { moodMix: 1, duration: 4.5 }, at(3, 4.5));
 
@@ -96,24 +102,15 @@ export class StoryScene {
     tl.to(p, { problems: 1, duration: 6 }, at(4, 2.5));
 
     // 6. Живая карта: камера поднимается, дуги связывают жителей разных районов.
-    shot(at(5), 8, [-6, 26, 14], [0, 0, 0]);
+    shot(at(5), 8, around([-6, 26, 14]), around([0, 0, 0]));
     tl.to(p, { links: 1, duration: 5.5 }, at(5, 0.3));
-    // 7. «4-й год»: медленный дрейф под календарём.
-    shot(at(6), 10, [-3, 24, 16], [0, 0, 0]);
+    // 7. Начал делать во время учёбы: медленный дрейф под планом проекта.
+    shot(at(6), 10, around([-3, 24, 16]), around([0, 0, 0]));
     // 8. Продукт: вид в три четверти с местом для панелей интерфейса.
-    shot(at(7), 6, [8, 15, 14], [1, 0, 0]);
+    shot(at(7), 6, around([8, 15, 14]), around([1, 0, 0]));
     // Финал: весь город сверху.
-    shot(at(8), 8, [0, TOP_VIEW_HEIGHT, 0.8], [0, 0, 0]);
+    shot(at(8), 8, around([0, TOP_VIEW_HEIGHT, 0.8]), around([0, 0, 0]));
     return tl;
-  }
-
-  // На портретных экранах подписи и карточки истории внизу: центр картинки поднимается в свободную
-  // часть над ними.
-  frameFor(width, height) {
-    const { camera } = this.runtime;
-    if (width < height) {
-      camera.setViewOffset(width, height, 0, height * PORTRAIT_SHIFT, width, height);
-    } else camera.clearViewOffset();
   }
 
   tick() {

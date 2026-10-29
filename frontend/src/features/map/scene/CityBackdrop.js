@@ -23,6 +23,11 @@ export class CityBackdrop {
         map: createGroundTexture(),
         transparent: true,
         depthWrite: false,
+        // Земля рисуется после воды (она прозрачная) и лежит почти вплотную под ней: сдвиг по глубине
+        // не даёт ей проступать сквозь воду, когда камера далеко.
+        polygonOffset: true,
+        polygonOffsetFactor: 4,
+        polygonOffsetUnits: 4,
       }),
     );
     ground.rotation.x = -Math.PI / 2;

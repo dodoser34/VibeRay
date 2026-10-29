@@ -10,6 +10,10 @@ export function getCity(slug) {
   }));
 }
 
+export function getCities() {
+  return request('GET', '/cities');
+}
+
 export function getCityMoods(slug, period) {
   return request('GET', `/cities/${slug}/moods`, { query: { period } });
 }

@@ -26,7 +26,9 @@
       "living": {
         "phrase": "Was, wenn Menschen zeigen könnten, wie sie ihre Stadt sehen?"
       },
-      "diploma": {},
+      "build": {
+        "text": "Die Idee ließ mich nicht los — also fing ich an, sie neben dem Studium Schritt für Schritt umzusetzen."
+      },
       "product": {
         "text": "Aus der Idee wurde ein Projekt: Karte, Viertel, Stimmung, Probleme und Statistik — in einem Dienst."
       },
@@ -35,20 +37,18 @@
         "question": "„Was könnte ich mir Interessantes ausdenken?“"
       }
     },
-    "calendar": [
-      "Juli",
-      "August",
-      "September",
-      "Oktober",
-      "November",
-      "Dezember",
-      "Januar",
-      "Februar",
-      "März",
-      "April",
-      "Mai",
-      "Juni"
-    ],
+    "month": "Juli",
+    "build": {
+      "kicker": "Zwischen den Vorlesungen",
+      "title": "Projektplan",
+      "items": [
+        "Stadtkarte",
+        "Viertel von Kostanay",
+        "Stimmungsmarken",
+        "Probleme auf der Karte",
+        "Statistik der Viertel"
+      ]
+    },
     "moodCard": {
       "nickname": "Bewohner",
       "place": "Zentrum · jetzt",
@@ -144,10 +144,8 @@
     "Irgendwann begann ich, über die Stadt nachzudenken. Jeden Tag sind Menschen in verschiedenen Vierteln unterwegs, gehen dieselben Straßen entlang, fahren zur Arbeit oder zum Studium, treffen Freunde und stoßen auf alle möglichen Probleme. Dabei nimmt jeder sein Viertel auf seine eigene Weise wahr.",
     "Für den einen ist ein Viertel ein ruhiger, angenehmer Ort, für den anderen unbequem oder problematisch. Der eine bemerkt ständig Müll, schlechte Straßen oder Staus, der andere achtet darauf, dass Beleuchtung, Parkplätze oder andere Infrastruktur fehlen.",
     "Da kam mir der Gedanke: Was, wenn man eine Karte baut, auf der Menschen selbst erzählen, was in ihren Vierteln passiert? Die Stadt ist in Viertel und Mikrobezirke geteilt. Man wählt den Ort, an dem man sich meistens aufhält, und markiert seine Stimmung. Und dazu echte Probleme: Müll, einen Stau, eine schlechte Straße, Dunkelheit. So zeigt die Karte nicht nur, wo die Viertel liegen, sondern auch, wie es der Stadt aus Sicht ihrer Bewohner geht.",
-    "Ich erzählte Freunden und Kommilitonen von der Idee. Einer von ihnen meinte, daraus könnte eine interessante Abschlussarbeit werden. Damals wusste ich noch nicht, dass es genau so kommen würde.",
-    "Das vierte Studienjahr begann, und ich musste ein Thema für die Abschlussarbeit wählen. Da erinnerte ich mich an die Idee aus dem Sommer: Statt mir etwas extra für die Abschlussarbeit auszudenken, konnte ich endlich eine Idee umsetzen, die schon da war.",
-    "Mit der Zeit entwickelte sich die Idee weiter: Wie soll die Oberfläche aussehen, wie die Karte, wie markiert man Stimmung und Probleme, wie zeigt man die Daten? Das Hauptziel wurde ein Ort, an dem die Bewohner selbst zeigen, wie sie ihre Stadt sehen. Eine normale Karte zeigt Straßen und Gebäude. Diese zeigt auch, was Menschen fühlen, welche Probleme sie bemerken und wie sie den Ort sehen, an dem sie leben.",
+    "Die Idee ließ mich nicht los, und ich fing an, sie neben dem Studium Stück für Stück umzusetzen: Wie soll die Oberfläche aussehen, wie die Karte, wie markiert man Stimmung und Probleme, wie zeigt man die Daten? Das Hauptziel wurde ein Ort, an dem die Bewohner selbst zeigen, wie sie ihre Stadt sehen. Eine normale Karte zeigt Straßen und Gebäude. Diese zeigt auch, was Menschen fühlen, welche Probleme sie bemerken und wie sie den Ort sehen, an dem sie leben.",
     "Künftig helfen die gesammelten Daten, Veränderungen in den Vierteln zu beobachten: welche Probleme sich am häufigsten wiederholen, wo Bewohner öfter Negatives markieren und welche Orte als angenehm empfunden werden.",
-    "Und das Spannendste: Alles begann nicht mit einer Aufgabe der Uni und nicht mit dem Gedanken an eine Abschlussarbeit, sondern mit einem ganz normalen Juliabend und der Frage: „Was könnte ich mir Interessantes und Ungewöhnliches ausdenken?“"
+    "Und das Spannendste: Alles begann nicht mit einer Aufgabe oder einem großen Plan, sondern mit einem ganz normalen Juliabend und der Frage: „Was könnte ich mir Interessantes und Ungewöhnliches ausdenken?“"
   ]
 }

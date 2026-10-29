@@ -27,12 +27,14 @@ import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import {
   addMoodMark,
   addProblem,
-  city,
+  cityInfos,
   cityMoods,
   cityStats,
+  cityOfDistrict,
   districtAt,
   districtStats,
   isDistrict,
+  loadCity,
   problems,
 } from './generate';
 import {
@@ -130,6 +132,10 @@ function viewOf(problem, token) {
 }
 
 // Отклонённое модератором сообщение существует только для автора: остальным — 404.
+async function cityOrFail(slug) {
+  return (await loadCity(slug)) ?? fail(404, 'city_not_found');
+}
+
 function findProblem(id, token) {
   const problem = problems.find((p) => p.id === id);
   const email = sessions.get(token);
@@ -279,9 +285,20 @@ const routes = [
   ],
   [
     'GET',
+    /^\/cities$/,
+    () =>
+      cityInfos().map((info) => ({
+        slug: info.slug,
+        name: nameOf(info),
+        center: info.center,
+        bbox: info.bbox,
+      })),
+  ],
+  [
+    'GET',
     /^\/cities\/([\w-]+)$/,
-    ({ params }) => {
-      if (params[0] !== city.slug) fail(404, 'city_not_found');
+    async ({ params }) => {
+      const city = await cityOrFail(params[0]);
       return {
         ...city,
         name: nameOf(city),
@@ -295,14 +312,17 @@ const routes = [
       };
     },
   ],
-  ['GET', /^\/cities\/([\w-]+)\/moods$/, ({ query }) => cityMoods(checkPeriod(query.period))],
+  [
+    'GET',
+    /^\/cities\/([\w-]+)\/moods$/,
+    async ({ params, query }) =>
+      cityMoods((await cityOrFail(params[0])).slug, checkPeriod(query.period)),
+  ],
   [
     'GET',
     /^\/cities\/([\w-]+)\/stats$/,
-    ({ params, query }) => {
-      if (params[0] !== city.slug) fail(404, 'city_not_found');
-      return cityStats(checkPeriod(query.period));
-    },
+    async ({ params, query }) =>
+      cityStats((await cityOrFail(params[0])).slug, checkPeriod(query.period)),
   ],
   [
     'GET',
@@ -458,11 +478,13 @@ const routes = [
   [
     'GET',
     /^\/problems$/,
-    ({ query }) =>
-      problems
+    async ({ query }) => {
+      if (query.city) await cityOrFail(query.city);
+      return problems
         .filter(
           (p) =>
             p.status !== 'rejected' &&
+            (!query.city || cityOfDistrict(p.district) === query.city) &&
             (!query.district || p.district === query.district) &&
             (!query.category || p.category === query.category) &&
             (query.status
@@ -470,7 +492,8 @@ const routes = [
               : p.status !== 'resolved' ||
                 Date.now() - new Date(p.created_at).getTime() < MAP_RECENT_MS),
         )
-        .map((p) => withoutHiddenAuthor(p, null)),
+        .map((p) => withoutHiddenAuthor(p, null));
+    },
   ],
   [
     'GET',
@@ -541,7 +564,8 @@ export async function handleMock(method, path, { body, query = {}, token, langua
   for (const [routeMethod, pattern, handler] of routes) {
     const match = method === routeMethod && path.match(pattern);
     if (match) {
-      return localizeDemo(structuredClone(handler({ params: match.slice(1), body, query, token })));
+      const result = await handler({ params: match.slice(1), body, query, token });
+      return localizeDemo(structuredClone(result));
     }
   }
   return fail(404, 'not_found', 'not_found', { method, path });

@@ -1,7 +1,6 @@
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { createRandom, hashString } from '@/shared/lib/random';
-import { city, problems } from './generate';
-import { nameOf } from './locale';
+import { districtName, problems } from './generate';
 
 const ORDER = PROBLEM_STATUSES.map((status) => status.code);
 const AUTO_CONFIRM_THRESHOLD = 3; // ARCHITECTURE.md 6.2
@@ -24,11 +23,6 @@ const timers = new Set();
 let lastNotification = 0;
 
 const iso = (time) => new Date(time).toISOString();
-const districtName = (slug) => {
-  const feature = city.districts.features.find((f) => f.properties.slug === slug);
-  return feature ? nameOf(feature.properties) : '';
-};
-
 // История восстанавливается из текущего статуса: переходы между датой сообщения и сейчас, стабильно
 // для каждой проблемы (на сервере это таблица problem_status_changes).
 function historyOf(problem) {

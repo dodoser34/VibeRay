@@ -1,4 +1,4 @@
-import { CALENDAR } from '../../lib/chapters';
+import { story } from '../../lib/chapters';
 import { IsoBox } from './IsoBox';
 import { IsoCylinder } from './IsoCylinder';
 import { IsoPlane } from './IsoPlane';
@@ -87,7 +87,7 @@ export function DeskWall({ outline }) {
         <rect className={styles.paper} width="3.2" height="4.2" />
         <rect className={styles.calendarHead} width="3.2" height="1" />
         <text className={styles.calendarMonth} x="1.6" y="0.68" textAnchor="middle">
-          {CALENDAR[0]}
+          {story.month}
         </text>
         {Array.from({ length: 35 }, (_, k) => (
           <rect

@@ -2,6 +2,8 @@
   "canvasLabel": "3D map of the city's districts. Hover over a district to see its name, click to open its statistics.",
   "filtersLabel": "Map filters",
   "cityFallback": "City",
+  "city": "City",
+  "cityLabel": "Choose a city",
   "heading": "Mood map",
   "period": "Period",
   "layer": "Layer",
@@ -24,7 +26,7 @@
   },
   "updatedAt": "Data updated at {time}",
   "loading": "Loading data…",
-  "districtsSource": "Districts follow OpenStreetMap neighbourhoods.",
+  "districtsSource": "Districts and streets are based on OpenStreetMap.",
   "overview": {
     "kicker": "All districts",
     "title": "Where it feels best right now",

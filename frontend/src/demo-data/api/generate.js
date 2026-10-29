@@ -1,13 +1,13 @@
-import districtsGeo from '../cities/kostanay/districts.geojson';
-import water from '../cities/kostanay/water.geojson';
-import streets from '../cities/kostanay/streets.geojson';
-import cityInfo from '../cities/kostanay/city.json';
+import homeDistricts from '../cities/kostanay/districts.geojson';
+import homeWater from '../cities/kostanay/water.geojson';
+import homeStreets from '../cities/kostanay/streets.geojson';
 import { MOODS, MOOD_BY_CODE } from '@/shared/config/moods';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
 import { largestPolygon, pointInPolygon } from '@/shared/lib/geo/geoProjection';
 import { createRandom, hashString } from '@/shared/lib/random';
 import { format } from '@/shared/lib/i18n/format';
 import demo from '../content.json';
+import { nameOf } from './locale';
 
 const HOUR = 3_600_000;
 const DAY = 24 * HOUR;
@@ -37,6 +37,11 @@ const BASE_SCORE = {
   altynsarino: 0.3,
 };
 
+// Своя оценка у районов Костаная; районам других городов она выводится из slug (стабильно между
+// загрузками).
+const baseScore = (slug) =>
+  BASE_SCORE[slug] ?? ((hashString(`base:${slug}`) % 200) / 100 - 1) * 0.9;
+
 // Интервалы ряда динамики (ARCHITECTURE.md 6.3) и типичное число отметок на район; для `all` — 14
 // 000 отметок на год истории.
 const PERIODS = {
@@ -52,28 +57,83 @@ const DESCRIPTIONS = demo.ru.problemDescriptions;
 
 const userMarks = []; // { userId, district, mood, at }
 
-export const city = {
-  slug: cityInfo.slug,
-  name: cityInfo.name,
-  name_en: cityInfo.name_en,
-  name_kk: cityInfo.name_kk,
-  name_de: cityInfo.name_de,
-  center: cityInfo.center,
-  bbox: cityInfo.bbox,
-  timezone: cityInfo.timezone,
-  // Слои OpenStreetMap (ODbL): реки и водоёмы, улицы с привязкой к району.
-  water,
-  streets,
-  districts: {
-    type: 'FeatureCollection',
-    features: districtsGeo.features.map((feature) => ({
-      ...feature,
-      id: feature.properties.slug,
-    })),
-  },
-};
+// Сведения о городах (названия, центр, рамка) лёгкие и есть сразу. Геометрия другого города —
+// отдельный файл сборки, он грузится, когда город открывают; Костанай — главный город демо (главная,
+// история, демо-жители и модератор), его данные в сборке сразу.
+export const HOME_CITY = 'kostanay';
+// Главный город — первым в списке городов.
+const CITY_INFO = Object.values(
+  import.meta.glob('../cities/*/city.json', { eager: true, import: 'default' }),
+).sort((a, b) => (b.slug === HOME_CITY) - (a.slug === HOME_CITY));
+const CITY_LAYERS = import.meta.glob(
+  ['../cities/*/{districts,water,streets}.geojson', '!../cities/kostanay/*'],
+  { import: 'default' },
+);
+const LAYER_NAMES = ['districts', 'water', 'streets'];
 
-const districtSlugs = city.districts.features.map((f) => f.properties.slug);
+const cities = new Map(); // slug города → город с геометрией
+const districtCity = new Map(); // slug района → slug города
+export const problems = [];
+
+export const cityInfos = () => CITY_INFO;
+
+function registerCity(info, { districts, water, streets }) {
+  const city = {
+    slug: info.slug,
+    name: info.name,
+    name_en: info.name_en,
+    name_kk: info.name_kk,
+    name_de: info.name_de,
+    center: info.center,
+    bbox: info.bbox,
+    timezone: info.timezone,
+    // Слои OpenStreetMap (ODbL): реки и водоёмы, улицы с привязкой к району.
+    water,
+    streets,
+    districts: {
+      type: 'FeatureCollection',
+      features: districts.features.map((feature) => ({ ...feature, id: feature.properties.slug })),
+    },
+  };
+  cities.set(city.slug, city);
+  city.districts.features.forEach((f) => districtCity.set(f.properties.slug, city.slug));
+  return city;
+}
+
+export const cityBySlug = (slug) => cities.get(slug) ?? null;
+const districtSlugsOf = (slug) => cities.get(slug).districts.features.map((f) => f.properties.slug);
+export const cityOfDistrict = (slug) => districtCity.get(slug) ?? null;
+
+// Город с геометрией; при первом открытии у него появляются свои демо-проблемы. null — такого города
+// нет.
+export async function loadCity(slug) {
+  if (cities.has(slug)) return cities.get(slug);
+  const info = CITY_INFO.find((item) => item.slug === slug);
+  if (!info) return null;
+  const layers = await Promise.all(
+    LAYER_NAMES.map((name) => CITY_LAYERS[`../cities/${slug}/${name}.geojson`]()),
+  );
+  if (cities.has(slug)) return cities.get(slug);
+  const city = registerCity(
+    info,
+    Object.fromEntries(LAYER_NAMES.map((name, i) => [name, layers[i]])),
+  );
+  problems.push(
+    ...seedProblems(city, {
+      prefix: `${slug}-`,
+      recent: 40,
+      history: 600,
+      seeds: [hashString(`recent:${slug}`), hashString(`history:${slug}`)],
+    }),
+  );
+  return city;
+}
+
+export function districtName(slug) {
+  const city = cities.get(districtCity.get(slug));
+  const feature = city?.districts.features.find((f) => f.properties.slug === slug);
+  return feature ? nameOf(feature.properties) : '';
+}
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
@@ -160,7 +220,7 @@ function seriesFor(slug, period) {
       ? Math.sin(((new Date(start).getMonth() - 3) / 12) * Math.PI * 2) * 0.35 // летом добрее
       : Math.sin((i / buckets.length) * Math.PI * 2 + phase) * 0.45;
     const score = clamp(
-      BASE_SCORE[slug] + wave + (drift * (start - now)) / YEAR + (rand() - 0.5) * 0.4,
+      baseScore(slug) + wave + (drift * (start - now)) / YEAR + (rand() - 0.5) * 0.4,
       -2,
       2,
     );
@@ -185,7 +245,7 @@ function aggregate(slug, period, series = seriesFor(slug, period)) {
         1,
         scored.reduce((sum, p) => sum + p.marks, 0),
       )
-    : BASE_SCORE[slug];
+    : baseScore(slug);
   const distribution = distributionFor(score, sample, rand);
 
   const since = bucketsFor(period)[0][0];
@@ -208,11 +268,13 @@ function aggregate(slug, period, series = seriesFor(slug, period)) {
   };
 }
 
-export function cityMoods(period) {
+export function cityMoods(citySlug, period) {
   return {
     period,
     updated_at: new Date().toISOString(),
-    districts: Object.fromEntries(districtSlugs.map((slug) => [slug, aggregate(slug, period)])),
+    districts: Object.fromEntries(
+      districtSlugsOf(citySlug).map((slug) => [slug, aggregate(slug, period)]),
+    ),
   };
 }
 
@@ -243,8 +305,9 @@ function pickWeighted(rand, entries) {
   return entries[entries.length - 1][0];
 }
 
-function makeProblem(rand, id, statuses, createdAt, avatar) {
-  const feature = city.districts.features[Math.floor(rand() * city.districts.features.length)];
+function makeProblem(city, rand, id, statuses, createdAt, avatar) {
+  const { features } = city.districts;
+  const feature = features[Math.floor(rand() * features.length)];
   const category = PROBLEM_CATEGORIES[Math.floor(rand() * PROBLEM_CATEGORIES.length)].code;
   const status = pickWeighted(rand, statuses);
   const confirmations = status === 'new' ? Math.floor(rand() * 3) : 3 + Math.floor(rand() * 40);
@@ -268,13 +331,14 @@ function makeProblem(rand, id, statuses, createdAt, avatar) {
 
 // Последний месяц оживлённый; старые сообщения с 2023 года в основном решены (всё старше года —
 // решено). Сообщений больше с ростом числа жителей, поэтому история смещена к последним годам.
-export const problems = (() => {
+function seedProblems(city, { prefix, recent, history, seeds: [recentSeed, historySeed] }) {
   const now = Date.now();
-  const recentRand = createRandom(20260924);
-  const recent = Array.from({ length: 64 }, (_, i) =>
+  const recentRand = createRandom(recentSeed);
+  const fresh = Array.from({ length: recent }, (_, i) =>
     makeProblem(
+      city,
       recentRand,
-      `p${i + 1}`,
+      `${prefix}p${i + 1}`,
       [
         ['new', 0.35],
         ['confirmed', 0.3],
@@ -285,9 +349,9 @@ export const problems = (() => {
       i % 8,
     ),
   );
-  const historyRand = createRandom(20230101);
+  const historyRand = createRandom(historySeed);
   const historySpan = now - 30 * DAY - HISTORY_START;
-  const history = Array.from({ length: 1100 }, (_, i) => {
+  const old = Array.from({ length: history }, (_, i) => {
     const createdAt = HISTORY_START + historyRand() ** 0.6 * historySpan;
     const statuses =
       now - createdAt > 365 * DAY
@@ -297,10 +361,22 @@ export const problems = (() => {
             ['in_progress', 0.06],
             ['resolved', 0.9],
           ];
-    return makeProblem(historyRand, `h${i + 1}`, statuses, () => createdAt, i % 8);
+    return makeProblem(city, historyRand, `${prefix}h${i + 1}`, statuses, () => createdAt, i % 8);
   });
-  return [...recent, ...history];
-})();
+  return [...fresh, ...old];
+}
+
+// Костанай: те же затравки и номера проблем, что и до появления других городов (на них ссылаются
+// демо-аккаунты).
+problems.push(
+  ...seedProblems(
+    registerCity(
+      CITY_INFO.find((info) => info.slug === HOME_CITY),
+      { districts: homeDistricts, water: homeWater, streets: homeStreets },
+    ),
+    { prefix: '', recent: 64, history: 1100, seeds: [20260924, 20230101] },
+  ),
+);
 
 export function districtStats(slug, period) {
   const series = seriesFor(slug, period);
@@ -343,12 +419,16 @@ export function districtStats(slug, period) {
 }
 
 // Дашборд города: весь город и каждый район за один период (ARCHITECTURE.md 6.4).
-export function cityStats(period) {
+export function cityStats(citySlug, period) {
   const buckets = bucketsFor(period);
   const since = buckets[0][0];
-  const inPeriod = problemsIn(published(), since, Infinity);
+  const inPeriod = problemsIn(
+    published().filter((p) => districtCity.get(p.district) === citySlug),
+    since,
+    Infinity,
+  );
 
-  const rows = districtSlugs.map((slug) => {
+  const rows = districtSlugsOf(citySlug).map((slug) => {
     const series = seriesFor(slug, period);
     const mood = aggregate(slug, period, series);
     const reported = inPeriod.filter((p) => p.district === slug);
@@ -393,7 +473,7 @@ export function cityStats(period) {
   inPeriod.forEach((p) => (byCategory[p.category] = (byCategory[p.category] ?? 0) + 1));
 
   return {
-    city: city.slug,
+    city: citySlug,
     period,
     since: new Date(since).toISOString(),
     updated_at: new Date().toISOString(),
@@ -429,15 +509,18 @@ export function addMoodMark(userId, district, mood) {
 }
 
 export function isDistrict(slug) {
-  return districtSlugs.includes(slug);
+  return districtCity.has(slug);
 }
 
 // Район, в который попадает точка (на сервере — та же проверка «точка внутри полигона района»).
 export function districtAt(location) {
-  const feature = city.districts.features.find((f) =>
-    f.geometry.coordinates.some((polygon) => pointInPolygon(location, polygon)),
-  );
-  return feature?.properties.slug ?? null;
+  for (const city of cities.values()) {
+    const feature = city.districts.features.find((f) =>
+      f.geometry.coordinates.some((polygon) => pointInPolygon(location, polygon)),
+    );
+    if (feature) return feature.properties.slug;
+  }
+  return null;
 }
 
 export function addProblem({

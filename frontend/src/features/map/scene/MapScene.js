@@ -18,6 +18,8 @@ const HOME_OFFSET = new THREE.Vector3(0.3, 14.5, 11);
 const HOME_EXTENT = 12; // км города в кадре HOME_OFFSET; большие города отодвигают камеру
 const INTRO_OFFSET = new THREE.Vector3(0.2, 3.2, 3.4);
 const FOG = { near: 18, far: 42 };
+const CAMERA_NEAR = 0.05;
+const CAMERA_FAR = 200;
 const MAX_DISTANCE = 26;
 const FIT_MARGIN = 0.92; // доля кадра (NDC), в которую вписывается город: запас под подписи районов
 const FIT_POINTS = 120;
@@ -129,6 +131,7 @@ export class MapScene {
       this.renameLabels(city.districts.features);
       return;
     }
+    if (this.citySlug) this.dropCity();
     this.citySlug = city.slug;
     this.project = createProjection(city.center);
     this.unproject = createUnprojection(city.center);
@@ -209,6 +212,23 @@ export class MapScene {
   runAfterIntro() {
     this.afterIntro?.();
     this.afterIntro = null;
+  }
+
+  // Другой город на той же карте: слои, подписи и вступление прежнего города убираются целиком.
+  dropCity() {
+    this.introTimelines?.forEach((timeline) => timeline.kill());
+    this.introTimelines = null;
+    this.afterIntro = null;
+    clearTimeout(this.pendingSelect);
+    this.districts.dispose();
+    this.clusterLabels.dispose();
+    this.problems.dispose();
+    this.backdrop.dispose();
+    this.labels.forEach((label) => {
+      label.element.remove();
+      label.removeFromParent();
+    });
+    this.labels.clear();
   }
 
   renameLabels(features) {
@@ -369,7 +389,15 @@ export class MapScene {
       MAX_DISTANCE,
       HOME_OFFSET.length() * zoom * scale * 1.2,
     );
-    Object.assign(this.runtime.scene.fog, { near: FOG.near * zoom, far: FOG.far * zoom });
+    // Туман отходит вместе с камерой: у большого города (scale > 1) обзор дальше.
+    const reach = zoom * scale;
+    Object.assign(this.runtime.scene.fog, { near: FOG.near * reach, far: FOG.far * reach });
+    // Ближняя и дальняя плоскости — тоже по размеру города: иначе издалека не хватает точности
+    // глубины, и земля пробивается сквозь воду полосами.
+    const { camera } = this.runtime;
+    camera.near = CAMERA_NEAR * scale;
+    camera.far = CAMERA_FAR * scale;
+    camera.updateProjectionMatrix();
   }
 
   // Высота (px) нижней части экрана, закрытой шторкой (телефоны, планшеты стоя): центр вида

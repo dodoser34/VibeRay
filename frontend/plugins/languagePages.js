@@ -7,16 +7,7 @@ import { dirname, join } from 'node:path';
 // копия приложения без ссылок на переводы. С адресом сайта (SITE_URL) — ещё и sitemap.xml и превью
 // ссылки для мессенджеров и соцсетей (Open Graph: картинка public/og-image.jpg 1200 × 630).
 const DEFAULT_LANGUAGE = 'ru';
-const CITY = 'kostanay';
-const STATIC_PAGES = [
-  '',
-  'about',
-  'support',
-  'login',
-  'register',
-  `map/${CITY}`,
-  `map/${CITY}/stats`,
-];
+const STATIC_PAGES = ['', 'about', 'support', 'login', 'register'];
 
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf-8'));
 const escape = (text) => text.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -35,11 +26,16 @@ export function languagePages({ root, siteUrl }) {
         .filter((entry) => entry.isDirectory())
         .map((entry) => entry.name)
         .sort((a, b) => (a === DEFAULT_LANGUAGE ? -1 : b === DEFAULT_LANGUAGE ? 1 : 0));
-      const districts = readJson(join(root, `src/demo-data/cities/${CITY}/districts.geojson`));
-      const pages = [
-        ...STATIC_PAGES,
-        ...districts.features.map(({ properties }) => `map/${CITY}/district/${properties.slug}`),
-      ];
+      // Карта, статистика и районы каждого города из демо-данных.
+      const citiesDir = join(root, 'src/demo-data/cities');
+      const cityPages = readdirSync(citiesDir).flatMap((city) => [
+        `map/${city}`,
+        `map/${city}/stats`,
+        ...readJson(join(citiesDir, city, 'districts.geojson')).features.map(
+          ({ properties }) => `map/${city}/district/${properties.slug}`,
+        ),
+      ]);
+      const pages = [...STATIC_PAGES, ...cityPages];
       const base = siteUrl?.replace(/\/$/, '');
       const pathOf = (code, page) =>
         [code === DEFAULT_LANGUAGE ? '' : code, page].filter(Boolean).join('/');

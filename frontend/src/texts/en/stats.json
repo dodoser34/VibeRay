@@ -11,7 +11,7 @@
   "fewMarksNote": "The mood appears after 5 marks — that's how we protect residents' privacy.",
   "moodMeta": "{count} {marks} {period} · mostly “{mood}”",
   "distributionLabel": "Mood distribution",
-  "kicker": "Kostanay district",
+  "kicker": "District · {city}",
   "close": "Close district",
   "loading": "Loading",
   "tiles": {

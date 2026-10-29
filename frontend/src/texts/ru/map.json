@@ -2,6 +2,8 @@
   "canvasLabel": "3D-карта районов города. Наведите на район, чтобы увидеть название, нажмите, чтобы открыть статистику.",
   "filtersLabel": "Фильтры карты",
   "cityFallback": "Город",
+  "city": "Город",
+  "cityLabel": "Выбор города",
   "heading": "Карта настроения",
   "period": "Период",
   "layer": "Слой",
@@ -24,7 +26,7 @@
   },
   "updatedAt": "Данные обновлены в {time}",
   "loading": "Загружаем данные…",
-  "districtsSource": "Районы — по микрорайонам OpenStreetMap.",
+  "districtsSource": "Районы и улицы — по данным OpenStreetMap.",
   "overview": {
     "kicker": "Все районы",
     "title": "Где сейчас лучше всего",

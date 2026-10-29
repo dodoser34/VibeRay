@@ -19,7 +19,7 @@ const METRICS = ['mood', 'problems'];
 
 // Переключатель-кнопки (слой, показатель): рамка выбора переезжает к нажатой кнопке, кнопка
 // чуть проседает под пальцем. При смене ширины (панель, язык) рамка встаёт на место без анимации.
-function Choice({ options, value, onChange, label }) {
+function Choice({ options, value, onChange, label, columns = options.length }) {
   const rootRef = useRef(null);
   const thumbRef = useRef(null);
   const language = useLanguage();
@@ -49,7 +49,7 @@ function Choice({ options, value, onChange, label }) {
     <div
       ref={rootRef}
       className={styles.choices}
-      style={{ '--count': options.length }}
+      style={{ '--count': columns }}
       role="radiogroup"
       aria-label={label}
     >
@@ -108,6 +108,9 @@ function HeightScale({ value, onChange, withHint }) {
 export function MapFilters({
   view,
   cityName,
+  cities,
+  citySlug,
+  onCity,
   sheet = false,
   period,
   onPeriod,
@@ -133,6 +136,19 @@ export function MapFilters({
         <div data-ui="map-filters-heading">
           <p className={styles.kicker}>{cityName}</p>
           <h1 className={styles.heading}>{isStats ? texts.stats.heading : texts.heading}</h1>
+        </div>
+      )}
+
+      {cities?.length > 1 && (
+        <div className={styles.group}>
+          <span className={styles.groupLabel}>{texts.city}</span>
+          <Choice
+            label={texts.cityLabel}
+            value={citySlug}
+            onChange={onCity}
+            options={cities.map((item) => [item.slug, item.name])}
+            columns={2}
+          />
         </div>
       )}
 

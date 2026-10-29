@@ -34,17 +34,13 @@ export const SCREEN_TIMING = {
 export function addScreenTimeline(tl, q, timing = SCREEN_TIMING.room) {
   const all = (name) => q(`[data-screen="${name}"]`);
 
+  // Идея въезжает сдвигом, без масштаба: масштаб от центра карточки оставлял на мониторе остаточный
+  // сдвиг (центр менялся, когда подпись ужималась по ширине), и карточки наезжали на отметки строк.
   all('idea').forEach((idea, k) => {
     tl.fromTo(
       idea,
-      { autoAlpha: 0, scale: 0.85 },
-      {
-        autoAlpha: 1,
-        scale: 1,
-        transformOrigin: '50% 50%',
-        duration: 0.6,
-        ease: 'back.out(1.7)',
-      },
+      { autoAlpha: 0, x: -10 },
+      { autoAlpha: 1, x: 0, duration: 0.6, ease: 'power2.out' },
       at(1, timing.ideas + k * timing.step),
     );
   });

@@ -3,7 +3,7 @@ import about from '@/texts/ru/about.json';
 import { useRef } from 'react';
 import { useBoxSize } from '../../hooks/useBoxSize';
 import { isDaylight } from '../../lib/chapters';
-import { topViewBox } from '../../lib/topView';
+import { outlineCenter, topViewBox } from '../../lib/topView';
 import styles from './PhoneStage.module.css';
 
 const IDEAS = ['shop', 'habits', 'game', 'studyNetwork', 'finance'];
@@ -61,7 +61,7 @@ export function PhoneScreen({ outline }) {
         <svg
           className={styles.map}
           data-screen="map"
-          viewBox={topViewBox(box.width, box.height).join(' ')}
+          viewBox={topViewBox(box.width, box.height, outlineCenter(outline.viewBox)).join(' ')}
           preserveAspectRatio="none"
         >
           {outline.districts.map((district) => (

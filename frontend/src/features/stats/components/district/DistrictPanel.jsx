@@ -78,6 +78,7 @@ function MoodSummary({ mood, period, cityAverage }) {
 // facts: { rank, rankTotal, cityAverage, areaKm2 } — считает страница карты по всем районам.
 export function DistrictPanel({
   district,
+  cityName,
   period,
   stats,
   facts,
@@ -100,7 +101,7 @@ export function DistrictPanel({
     >
       <header className={styles.header} data-sheet-drag>
         <div>
-          <p className={styles.kicker}>{texts.kicker}</p>
+          <p className={styles.kicker}>{format(texts.kicker, { city: cityName })}</p>
           <h2 id="district-title" className={styles.title}>
             {district.name}
           </h2>

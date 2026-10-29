@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
+import { lastCity } from '@/features/map';
 import { Link } from 'react-router';
 import { useAuth } from '@/features/auth';
 import { NotificationBell } from '@/features/notifications';
@@ -16,8 +17,6 @@ import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { usePageNavigate, useTransitionNavigate } from '../transitions/useTransition';
 import nav from '@/texts/ru/nav.json';
 import styles from './TabBar.module.css';
-
-const DEFAULT_CITY = 'kostanay';
 
 function activeKeyFor(pathname) {
   if (pathname.startsWith('/map')) return 'map';
@@ -85,7 +84,7 @@ export function TabBar() {
               { key: 'login', ...nav.tabs.login, to: '/login' },
               { key: 'register', ...nav.tabs.register, to: '/register' },
             ]),
-        { key: 'map', ...nav.tabs.map, to: `/map/${DEFAULT_CITY}`, accent: true },
+        { key: 'map', ...nav.tabs.map, to: `/map/${lastCity()}`, accent: true },
         { key: 'about', ...nav.tabs.about, to: '/about' },
         { key: 'support', ...nav.tabs.support, to: '/support' },
       ];

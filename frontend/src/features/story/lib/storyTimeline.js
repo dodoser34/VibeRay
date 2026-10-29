@@ -3,20 +3,19 @@ import { at, CHAPTERS } from './chapters';
 
 export const LIVING = CHAPTERS.findIndex((c) => c.id === 'living');
 export const FINAL = CHAPTERS.length - 1;
-const DIPLOMA = CHAPTERS.findIndex((c) => c.id === 'diploma');
+const BUILD = CHAPTERS.findIndex((c) => c.id === 'build');
 const PRODUCT = CHAPTERS.findIndex((c) => c.id === 'product');
 const MOOD = CHAPTERS.findIndex((c) => c.id === 'mood');
 // Глава с «Заметками» на экране (идеи и вопрос).
 const NOTES = CHAPTERS.findIndex((c) => c.id === 'search');
 const PANEL_OFFSET = { left: [-80, 0], right: [80, 0], top: [0, -60], bottom: [0, 60] };
 
-// Анимации поверх сцены (подписи, карточка настроения, крупные фразы, календарь, панели интерфейса,
-// финал). q — селектор внутри блока истории, stage — закреплённая сцена (её нижний край
+// Анимации поверх сцены (подписи, карточка настроения, крупные фразы, план проекта, панели
+// интерфейса, финал). q — селектор внутри блока истории, stage — закреплённая сцена (её нижний край
 // растворяется в конце). variant — как история разворачивается:
 //   'room'  — ПК: подписи всплывают в углу, карточка и панели выезжают к краям большого экрана;
-//   'phone' — телефон в руке, как в приложении: подписи приходят уведомлениями сверху экрана,
-//             карточка настроения — шторка снизу, календарь листается свайпом, панели интерфейса
-//             въезжают экранами справа.
+//   'phone' — телефон в руке, как в приложении: подписи приходят уведомлениями внизу экрана,
+//             карточка настроения — шторка снизу, панели интерфейса въезжают экранами справа.
 export function addOverlayTimeline(tl, { q, stage, variant = 'room' }) {
   const phone = variant === 'phone';
   const one = (name) => q(`[data-story="${name}"]`);
@@ -44,21 +43,20 @@ export function addOverlayTimeline(tl, { q, stage, variant = 'room' }) {
   hide(one('hint'), 0.2);
   hide(one('stamp'), at(0, 8.5));
   // Когда подпись уходит на телефоне: на экране блокировки — до разблокировки, в «Заметках» — до
-  // списка идей, в главах «настроение» и «продукт» — до шторки и панелей, иначе — в конце главы.
+  // списка идей, в главах «настроение», «начал делать» и «продукт» — до шторки, плана и панелей, иначе — в конце главы.
   const captionLeave = (i) => {
     if (i === 0) return at(0, 5.2);
     if (i === NOTES) return at(NOTES, 3);
     if (i === MOOD) return at(MOOD, 3.2);
+    if (i === BUILD) return at(BUILD, 3);
     if (i === PRODUCT) return at(PRODUCT, 2.8);
     return at(i, 8.5);
   };
   q('[data-story="caption"]').forEach((caption) => {
     const i = Number(caption.dataset.index);
     if (phone) {
-      // Уведомление: съезжает сверху и уходит обратно вверх; две первые подписи стоят внизу
-      // экрана и уезжают вниз. Когда уходить — captionLeave.
-      const bottom = i <= NOTES;
-      const away = bottom ? 130 : -130;
+      // Уведомление внизу экрана: въезжает снизу и уезжает вниз. Когда уходить — captionLeave.
+      const away = 130;
       if (i > 0) {
         tl.fromTo(
           caption,
@@ -107,25 +105,28 @@ export function addOverlayTimeline(tl, { q, stage, variant = 'room' }) {
   hide(one('phrase-living'), at(LIVING, 8.5));
   tl.to(one('canvas'), { opacity: 1, duration: 1 }, at(LIVING, 9));
 
-  // 4-й год: карта темнеет, листы календаря перелистываются (на телефоне — свайпом вбок).
-  tl.to(one('canvas'), { opacity: 0.25, duration: 1 }, at(DIPLOMA));
-  const sheets = q('[data-story="sheet"]');
-  // Все месяцы помещаются между 1 и 8.5 главы; последний остаётся до 9.
-  const step = Math.min(1.5, 7.5 / sheets.length);
-  const enter = phone ? { autoAlpha: 0, xPercent: 105, rotate: 6 } : { autoAlpha: 0, rotateX: -80 };
-  const settle = phone ? { xPercent: 0, rotate: 0 } : { rotateX: 0 };
-  const leave = phone ? { xPercent: -105, rotate: -6 } : { rotateX: 80 };
-  sheets.forEach((sheet, k) => {
+  // Начал делать во время учёбы: карта отходит назад, появляется план проекта, пункты отмечаются по
+  // очереди, полоса прогресса растёт вместе с ними. На телефоне план — после того, как ушла подпись.
+  tl.to(one('canvas'), { opacity: 0.3, duration: 1 }, at(BUILD));
+  show(one('build-card'), at(BUILD, phone ? 3.6 : 1.2));
+  const checks = q('[data-story="build-check"]');
+  const [first, gap] = phone ? [4.8, 0.65] : [2.4, 1];
+  checks.forEach((check, k) => {
     tl.fromTo(
-      sheet,
-      enter,
-      { autoAlpha: 1, ...settle, duration: step * 0.6, ease: 'power2.out' },
-      at(DIPLOMA, 1 + k * step),
+      check,
+      { autoAlpha: 0, scale: 0.4 },
+      { autoAlpha: 1, scale: 1, duration: 0.4, ease: 'back.out(2)' },
+      at(BUILD, first + k * gap),
     );
-    const out = k < sheets.length - 1 ? at(DIPLOMA, 1 + (k + 1) * step) : at(DIPLOMA, 9);
-    tl.to(sheet, { autoAlpha: 0, ...leave, duration: step * 0.5, ease: 'power2.in' }, out);
   });
-  tl.to(one('canvas'), { opacity: 1, duration: 1 }, at(DIPLOMA, 9));
+  tl.fromTo(
+    one('build-bar'),
+    { scaleX: 0 },
+    { scaleX: 1, duration: checks.length * gap, ease: 'none' },
+    at(BUILD, first),
+  );
+  hide(one('build-card'), at(BUILD, 8.5));
+  tl.to(one('canvas'), { opacity: 1, duration: 1 }, at(BUILD, 9));
 
   q('[data-story="panel"]').forEach((panel, k) => {
     const [x, y] = phone ? [0, 0] : PANEL_OFFSET[panel.dataset.from];

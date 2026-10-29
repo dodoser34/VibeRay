@@ -87,16 +87,16 @@
 }
 
 /* Телефон: история разворачивается как в приложении. Время показывает экран блокировки, подписи
-   приходят уведомлениями под полосками глав, карточка настроения — шторка снизу, панели интерфейса —
+   приходят уведомлениями внизу экрана (уходят до шторки и панелей), карточка настроения — шторка снизу, панели интерфейса —
    стопка экранов у нижнего края, крупные фразы — мельче. */
 .overlay[data-variant='phone'] .stamp {
   display: none;
 }
 
 .overlay[data-variant='phone'] .caption {
-  top: 3rem;
+  top: auto;
   right: var(--space-4);
-  bottom: auto;
+  bottom: var(--space-4);
   left: var(--space-4);
   display: flex;
   gap: var(--space-3);
@@ -122,13 +122,6 @@
 .appIcon svg {
   width: 1.4rem;
   height: 1.4rem;
-}
-
-/* Первые две подписи — внизу: сверху экран блокировки и список «Заметок» */
-.overlay[data-variant='phone'] .caption[data-index='0'],
-.overlay[data-variant='phone'] .caption[data-index='1'] {
-  top: auto;
-  bottom: var(--space-4);
 }
 
 .overlay[data-variant='phone'] .phrase,
@@ -164,6 +157,13 @@
   border-bottom: 0;
 }
 
+.overlay[data-variant='phone'] [data-ui='story-build'] {
+  --build-padding: var(--space-4);
+  --build-title: var(--fs-sm);
+  --build-item: var(--fs-xs);
+  width: calc(100cqi - 2 * var(--space-5));
+}
+
 /* Ручка шторки */
 .overlay[data-variant='phone'] [data-story='mood-card']::before {
   content: '';
@@ -175,10 +175,6 @@
   border-radius: var(--radius-pill);
   background: var(--color-glass-border);
   translate: -50% 0;
-}
-
-.overlay[data-variant='phone'] [data-ui='story-calendar'] {
-  width: calc(100cqi - 2 * var(--space-6));
 }
 
 /* Панели интерфейса — стопка экранов приложения у нижнего края */
@@ -213,19 +209,20 @@
   display: none;
 }
 
-/* Телефон лёжа: экран широкий и низкий — уведомления и шторка занимают правую половину, панели
-   встают рядом */
+/* Телефон лёжа: экран широкий и низкий — подписи внизу слева (правее «острова» камеры), шторка
+   занимает правую половину, панели встают рядом */
 .overlay[data-variant='phone'][data-orientation='landscape'] .caption {
-  left: auto;
-  width: min(60%, 26rem);
-}
-
-.overlay[data-variant='phone'][data-orientation='landscape'] .caption[data-index='0'],
-.overlay[data-variant='phone'][data-orientation='landscape'] .caption[data-index='1'] {
+  right: auto;
   left: var(--island-gap);
-  width: min(48%, 22rem);
+  width: min(60%, 26rem);
   padding: var(--space-2) var(--space-3);
   font-size: var(--fs-xs);
+}
+
+/* На экране блокировки и в «Заметках» справа стоит уведомление и заметка — подпись уже */
+.overlay[data-variant='phone'][data-orientation='landscape'] .caption[data-index='0'],
+.overlay[data-variant='phone'][data-orientation='landscape'] .caption[data-index='1'] {
+  width: min(48%, 22rem);
 }
 
 .overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-ui'] {
@@ -268,9 +265,16 @@
   }
 }
 
-/* Телефон лёжа: экран низкий — лист календаря по высоте экрана, финал плотнее */
-.overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-calendar'] {
-  width: 44%;
+/* Телефон лёжа: экран низкий — план в две колонки и без подзаголовка, финал плотнее */
+.overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-build'] {
+  --build-padding: var(--space-3) var(--space-4);
+  --build-gap: var(--space-2);
+  --build-columns: 2;
+  width: 84cqi;
+}
+
+.overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-build-kicker'] {
+  display: none;
 }
 
 .overlay[data-variant='phone'][data-orientation='landscape'] .phrase {
