@@ -28,7 +28,6 @@ import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { useRequest } from '@/shared/hooks/useRequest';
-import { dayPhase } from '@/shared/lib/geo/cityTime';
 import { Button } from '@/shared/ui/controls/Button';
 import { CoachMarks } from '@/shared/ui/windows/CoachMarks';
 import { Modal } from '@/shared/ui/windows/Modal';
@@ -39,8 +38,8 @@ import { useLanguage } from '@/shared/hooks/useLanguage';
 import { districtFactsFor, panelContent, resolveOpenProblem } from './lib/mapState';
 import { MapFilters } from './components/MapFilters';
 import { PanelToggle } from './components/PanelToggle';
-import { useCityClock } from './hooks/useCityClock';
 import { useFollowTooltip } from './hooks/useFollowTooltip';
+import { useDistrictsVisible } from './hooks/useDistrictsVisible';
 import { useHeightScale } from './hooks/useHeightScale';
 import { useMapTour } from './hooks/useMapTour';
 import { usePanelVisibility } from './hooks/usePanelVisibility';
@@ -71,14 +70,6 @@ function StatsIcon() {
 function BackIcon() {
   return <Icon name="chevron-left" size={16} className={styles.icon} />;
 }
-
-// Солнце днём, восход утром, закат вечером, луна ночью — у подписи времени суток.
-const PHASE_ICONS = {
-  morning: 'sunrise',
-  day: 'sun',
-  evening: 'sunset',
-  night: 'moon',
-};
 
 function PinIcon() {
   return <Icon name="pin" size={22} className={styles.icon} />;
@@ -117,6 +108,7 @@ export function MapPage({ view = 'map' }) {
   // выбрали.
   const [sheetChoice, setSheetChoice] = useState({ key: null, snap: null });
   const [heightScale, changeHeightScale] = useHeightScale();
+  const [districtsVisible, changeDistrictsVisible] = useDistrictsVisible();
 
   const requestedPeriod = searchParams.get('period');
   const statsPeriod = STATS_PERIODS.some((p) => p.code === requestedPeriod)
@@ -128,8 +120,6 @@ export function MapPage({ view = 'map' }) {
   useEffect(() => {
     if (city.data?.slug) rememberCity(city.data.slug);
   }, [city.data?.slug]);
-  const clock = useCityClock(city.data?.timezone, searchParams.get('time'));
-  const phase = clock ? dayPhase(clock.hour) : null;
   // Переход страницы ждёт город и его настроения, прежде чем сложиться.
   useTransitionReady(Boolean(city.data && moods.data));
   const entered = usePageEntered();
@@ -401,6 +391,8 @@ export function MapPage({ view = 'map' }) {
       onMetric={setMetric}
       heightScale={heightScale}
       onHeightScale={changeHeightScale}
+      districtsVisible={districtsVisible}
+      onDistrictsVisible={changeDistrictsVisible}
       range={cityStats.data ? reportedRange(cityStats.data) : undefined}
       districts={districts}
       selectedSlug={districtSlug}
@@ -548,9 +540,9 @@ export function MapPage({ view = 'map' }) {
         layer={layer}
         overlay={overlay}
         heightScale={heightScale}
+        districtsVisible={districtsVisible}
         selectedSlug={isStats ? focus : districtSlug}
         selectedProblemId={problem?.id ?? null}
-        hour={clock?.hour}
         onHover={setHover}
         onSelectDistrict={selectDistrict}
         onSelectProblem={selectProblem}
@@ -736,17 +728,6 @@ export function MapPage({ view = 'map' }) {
             />
           )}
           {toast.text}
-        </p>
-      )}
-
-      {clock && !sheetLayout && (
-        <p className={styles.clock} data-panel="corner" title={texts.daytime.title}>
-          <Icon name={PHASE_ICONS[phase]} size={16} key={phase} />
-          {format(texts.daytime.caption, {
-            city: city.data?.name ?? texts.cityFallback,
-            phase: texts.daytime[phase],
-            time: clock.label,
-          })}
         </p>
       )}
 

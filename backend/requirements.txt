@@ -6,7 +6,8 @@
 #   pip install -r requirements.txt          # только запуск API
 #   pip install -r requirements-dev.txt      # запуск + тесты и линтер
 #
-# Python 3.12+. Скриптам в scripts/ (build_streets.py) пакеты не нужны — только стандартная библиотека.
+# Python 3.12+. build_streets.py обходится стандартной библиотекой, build_map_tiles.py (PNG-плитки карты)
+# использует Pillow отсюда.
 # База данных ещё не выбрана: драйвер, ORM и миграции добавятся сюда после выбора.
 
 # API-сервер

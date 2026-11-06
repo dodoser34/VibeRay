@@ -43,10 +43,11 @@
       "title": "Projektplan",
       "items": [
         "Stadtkarte",
-        "Viertel von Kostanay",
+        "Viertel von Kostanai",
         "Stimmungsmarken",
         "Probleme auf der Karte",
-        "Statistik der Viertel"
+        "Statistik der Viertel",
+        "Skalierung auf andere Städte"
       ]
     },
     "moodCard": {

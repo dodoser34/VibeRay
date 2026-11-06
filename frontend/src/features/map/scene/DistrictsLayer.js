@@ -4,18 +4,19 @@ import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { gsap } from '@/shared/animations/core/gsapSetup';
 import { cssVar } from '@/shared/lib/theme/cssVar';
-import { labelPoint, pointInPolygon } from '@/shared/lib/geo/geoProjection';
-import { createRandom, hashString } from '@/shared/lib/random';
+import { labelPoint } from '@/shared/lib/geo/geoProjection';
 import { colorForAggregate, colorForDistrict, colorForNoData, colorForScore } from './moodColor';
-import { ROAD_CLASSES, roadLines, segmentsByKind } from './roadStyles';
 
 const LIFT = 0.14;
 const HOVER_DURATION = 0.45;
 const EDGE_OPACITY = 0.85;
-const WINDOW_SIZE = 0.03; // км: крошечный квадрат света на крыше
-const WINDOWS_PER_KM2 = 30;
-const MAX_WINDOWS = 160;
-const WINDOW_OPACITY = 0.78;
+const ACTIVE_BOOST = 0.35; // доля пути от baseOpacity к непрозрачной плите у района под курсором
+const HIDE_DURATION = 0.8;
+const FLAT = 0.001; // высота скрытой плиты: она лежит на земле и ловит клик, когда ставят метку
+// Плиты прозрачнее этого — «стекло» над общим слоем дорог (MapTiles): глубину не пишут, чтобы
+// дороги и стенки соседей не перекрывали друг друга, и рисуются после дорог, подкрашивая их.
+const SEE_THROUGH = 0.6;
+const SEE_THROUGH_ORDER = 10;
 
 // Выдавленные плиты районов. Три режима цвета: 'districts' — у каждого района свой пастельный цвет
 // (легко различать), 'mood' — цвет по общему настроению жителей, 'scores' — любая метрика дашборда
@@ -25,6 +26,8 @@ const WINDOW_OPACITY = 0.78;
 // Высота плиты — то же значение, что и цвет: настроение района (или метрика дашборда) на шкале
 // −2…+2, чем лучше — тем выше; heightScale — множитель высоты (0 — плоская карта). Районы, где
 // отметок мало, остаются низкими.
+// Плиты почти прозрачные, а улицы лежат под ними на земле (MapTiles) — и на карте, и в истории
+// «О проекте». setHidden убирает районы совсем — остаётся карта дорог.
 export class DistrictsLayer {
   constructor(
     features,
@@ -36,9 +39,6 @@ export class DistrictsLayer {
       opacity = 0.92,
       roughness = 0.7,
       colorMode = 'districts',
-      streets = null,
-      streetOpacity = 1,
-      streetKinds = null,
     } = {},
   ) {
     this.group = new THREE.Group();
@@ -56,42 +56,11 @@ export class DistrictsLayer {
     this.hovered = null;
     this.selected = null;
     this.dimmed = false;
+    this.hidden = false;
+    this.seeThrough = opacity < SEE_THROUGH;
     this.introDone = false;
 
     features.forEach((feature) => this.addDistrict(feature, project, lineWidth));
-    this.streetMaterials = [];
-    if (streets) this.addStreets(streets.features, project, streetOpacity, streetKinds);
-  }
-
-  // Настоящие улицы (OSM) поверх каждой плиты, чтобы районы читались как город, а не плоские блоки:
-  // тёмные линии по иерархии дорог (магистрали толще и заметнее, дворовые проезды — едва видны).
-  // opacity — общий множитель (на главной улицы тише), kinds — какие классы рисовать (null — все).
-  // Линии лежат на верхней грани плиты (y ≈ 1) и растут вместе с ней; у объектов userData.street —
-  // история на «О проекте» прорисовывает их по прогрессу.
-  addStreets(features, project, opacity, kinds) {
-    const color = new THREE.Color(cssVar('--scene-street-on-district'));
-    const bySlug = new Map();
-    features.forEach((feature) => {
-      const { district, kind } = feature.properties;
-      if (!this.items.has(district) || (kinds && !kinds.includes(kind))) return;
-      bySlug.set(district, [...(bySlug.get(district) ?? []), feature]);
-    });
-    bySlug.forEach((list, slug) => {
-      const byKind = segmentsByKind(list, project, 0);
-      ROAD_CLASSES.forEach((style, i) => {
-        const positions = byKind.get(style.kind);
-        if (!positions?.length) return;
-        const { object, material, fat } = roadLines(positions, style, {
-          color,
-          opacity: style.slab * opacity,
-        });
-        object.position.y = 1.004 + i * 0.0005;
-        object.userData.street = true;
-        if (fat) this.lineMaterials.push(material);
-        this.streetMaterials.push(material);
-        this.items.get(slug).group.add(object);
-      });
-    });
   }
 
   addDistrict(feature, project, lineWidth) {
@@ -117,6 +86,7 @@ export class DistrictsLayer {
       emissiveIntensity: 0.08,
       transparent: true,
       opacity: this.baseOpacity,
+      depthWrite: !this.seeThrough,
       roughness: this.roughness,
       metalness: 0,
     });
@@ -132,12 +102,15 @@ export class DistrictsLayer {
     this.lineMaterials.push(lineMaterial);
 
     const item = new THREE.Group();
+    if (this.seeThrough) item.renderOrder = SEE_THROUGH_ORDER;
     item.add(mesh);
     polygons.forEach(([outer]) => {
       const positions = outer.flatMap(([x, y]) => [x, 1.002, -y]);
       const lineGeometry = new LineGeometry();
       lineGeometry.setPositions(positions);
-      item.add(new Line2(lineGeometry, lineMaterial));
+      const edge = new Line2(lineGeometry, lineMaterial);
+      edge.renderOrder = 1;
+      item.add(edge);
     });
     this.group.add(item);
     this.meshes.push(mesh);
@@ -162,80 +135,6 @@ export class DistrictsLayer {
     item.scale.y = this.baseHeight;
   }
 
-  // Окна на крышах: загораются вечером и ночью (setWindows). В районах побольше — больше окон;
-  // detail (renderQuality) уменьшает их число на слабых устройствах. Квадраты лежат плашмя на верхней
-  // грани плиты, поэтому вместе с ней растут по высоте.
-  addWindows({ detail = 1 } = {}) {
-    this.windowMaterial = new THREE.MeshBasicMaterial({
-      color: new THREE.Color(cssVar('--scene-window')),
-      transparent: true,
-      opacity: 0,
-      depthWrite: false,
-    });
-    const geometry = new THREE.PlaneGeometry(WINDOW_SIZE, WINDOW_SIZE);
-    geometry.rotateX(-Math.PI / 2);
-    const dummy = new THREE.Object3D();
-    this.items.forEach((item) => {
-      const count = Math.min(MAX_WINDOWS, Math.round(item.area * WINDOWS_PER_KM2 * detail));
-      if (!count) return;
-      const rand = createRandom(hashString(`windows:${item.slug}`));
-      const rings = item.polygons;
-      const xs = rings.flatMap(([outer]) => outer.map((p) => p[0]));
-      const ys = rings.flatMap(([outer]) => outer.map((p) => p[1]));
-      const [minX, maxX, minY, maxY] = [
-        Math.min(...xs),
-        Math.max(...xs),
-        Math.min(...ys),
-        Math.max(...ys),
-      ];
-      const inside = (point) => rings.some((polygon) => pointInPolygon(point, polygon));
-      const mesh = new THREE.InstancedMesh(geometry, this.windowMaterial, count);
-      let placed = 0;
-      for (let attempt = 0; placed < count && attempt < count * 12; attempt++) {
-        const point = [minX + rand() * (maxX - minX), minY + rand() * (maxY - minY)];
-        if (!inside(point)) continue;
-        dummy.position.set(point[0], 1.007, -point[1]);
-        dummy.updateMatrix();
-        mesh.setMatrixAt(placed, dummy.matrix);
-        placed += 1;
-      }
-      mesh.count = placed;
-      mesh.userData.lit = new Uint8Array(placed).fill(1);
-      item.windows = mesh;
-      item.group.add(mesh);
-    });
-    this.windowGeometry = geometry;
-  }
-
-  setWindows(level, duration = 1.5) {
-    if (!this.windowMaterial) return;
-    gsap.to(this.windowMaterial, {
-      opacity: level * WINDOW_OPACITY,
-      duration,
-      ease: 'power2.inOut',
-      overwrite: 'auto',
-    });
-  }
-
-  // Живой город: время от времени в паре случайных окон гаснет или загорается свет.
-  twinkle(rand = Math.random) {
-    if (!this.windowMaterial || this.windowMaterial.opacity < 0.05) return;
-    const items = [...this.items.values()].filter((item) => item.windows);
-    const dummy = new THREE.Object3D();
-    for (let n = 0; n < 3; n++) {
-      const mesh = items[Math.floor(rand() * items.length)]?.windows;
-      if (!mesh) continue;
-      const i = Math.floor(rand() * mesh.count);
-      mesh.getMatrixAt(i, dummy.matrix);
-      dummy.matrix.decompose(dummy.position, dummy.quaternion, dummy.scale);
-      mesh.userData.lit[i] ^= 1;
-      dummy.scale.setScalar(mesh.userData.lit[i] ? 1 : 0.001);
-      dummy.updateMatrix();
-      mesh.setMatrixAt(i, dummy.matrix);
-      mesh.instanceMatrix.needsUpdate = true;
-    }
-  }
-
   setResolution(width, height) {
     this.lineMaterials.forEach((material) => material.resolution.set(width, height));
   }
@@ -251,13 +150,10 @@ export class DistrictsLayer {
 
   // Новая смена цвета заменяет идущую (overwrite): например, настроения приходят чуть раньше оценок
   // дашборда, и более длинная первая анимация не должна закончиться последней.
-  // Тема сменилась: границы, улицы на крышах, окна и сами плиты — в цветах новой темы.
+  // Тема сменилась: границы и сами плиты — в цветах новой темы.
   refreshTheme() {
     const edge = new THREE.Color(cssVar('--scene-district-edge'));
     this.items.forEach((item) => item.lineMaterial.color.copy(edge));
-    const street = new THREE.Color(cssVar('--scene-street-on-district'));
-    this.streetMaterials.forEach((material) => material.color.copy(street));
-    this.windowMaterial?.color.set(cssVar('--scene-window'));
     this.applyColors(0.6);
   }
 
@@ -310,23 +206,40 @@ export class DistrictsLayer {
       const level = score === null ? 0 : (Math.max(-2, Math.min(2, score)) + 2) / 4;
       item.height = this.baseHeight + this.heightRange * this.heightScale * level;
       if (this.introDone) {
-        gsap.to(item.group.scale, { y: item.height, duration, ease: 'power3.out' });
+        gsap.to(item.group.scale, { y: this.shownHeight(item), duration, ease: 'power3.out' });
       }
     });
+  }
+
+  shownHeight(item) {
+    return this.hidden ? FLAT : item.height;
+  }
+
+  // Только карта дорог: плиты и границы гаснут, а плиты ложатся на землю. Высоты по-прежнему
+  // считаются — при возврате районы встают на свои места.
+  setHidden(hidden) {
+    if (hidden === this.hidden) return;
+    this.hidden = hidden;
+    this.refreshStates(HIDE_DURATION);
+    if (this.introDone) this.updateHeights(HIDE_DURATION);
   }
 
   animateIn({ delay = 0, stagger = 0.09 } = {}) {
     const items = [...this.items.values()].sort((a, b) => a.anchor.length() - b.anchor.length());
     items.forEach((item) => {
-      item.group.scale.y = 0.001;
+      item.group.scale.y = FLAT;
       item.material.opacity = 0;
     });
     const timeline = gsap.timeline({
       delay,
       onComplete: () => {
         this.introDone = true;
-        // Настроения могут прийти во время появления — остаёмся на последних высотах.
-        this.items.forEach((item) => gsap.to(item.group.scale, { y: item.height, duration: 0.6 }));
+        // Настроения или скрытие районов могут прийти во время появления — остаёмся на последних
+        // высотах и прозрачности.
+        this.items.forEach((item) =>
+          gsap.to(item.group.scale, { y: this.shownHeight(item), duration: 0.6 }),
+        );
+        this.refreshStates(0.6);
       },
     });
     items.forEach((item, i) => {
@@ -346,6 +259,13 @@ export class DistrictsLayer {
     this.refreshStates();
   }
 
+  // Новая базовая прозрачность плит (смена темы): плавно, с учётом наведения и выбора.
+  setBaseOpacity(opacity) {
+    if (opacity === this.baseOpacity) return;
+    this.baseOpacity = opacity;
+    this.refreshStates(0.6);
+  }
+
   setSelected(slug) {
     this.selected = slug;
     this.refreshStates();
@@ -357,24 +277,28 @@ export class DistrictsLayer {
     this.refreshStates();
   }
 
-  refreshStates() {
+  // Прозрачность считается от baseOpacity: на полной карте и район под курсором остаётся
+  // полупрозрачным — дороги под ним видны.
+  refreshStates(duration = HOVER_DURATION) {
     const focus = this.hovered ?? this.selected;
     this.items.forEach((item) => {
-      const active = item.slug === this.hovered || item.slug === this.selected;
+      const active = !this.hidden && (item.slug === this.hovered || item.slug === this.selected);
       const faded = this.dimmed || (focus && !active);
+      let opacity = faded ? this.baseOpacity * 0.45 : this.baseOpacity;
+      if (active) opacity += (1 - this.baseOpacity) * ACTIVE_BOOST;
       gsap.to(item.group.position, {
         y: active ? LIFT : 0,
-        duration: HOVER_DURATION,
+        duration,
         ease: 'power3.out',
       });
       gsap.to(item.material, {
-        opacity: faded ? this.baseOpacity * 0.45 : this.baseOpacity,
+        opacity: this.hidden ? 0 : opacity,
         emissiveIntensity: active ? 0.22 : faded ? 0.02 : 0.08,
-        duration: HOVER_DURATION,
+        duration,
       });
       gsap.to(item.lineMaterial, {
-        opacity: faded ? 0.3 : EDGE_OPACITY,
-        duration: HOVER_DURATION,
+        opacity: this.hidden ? 0 : faded ? 0.3 : EDGE_OPACITY,
+        duration,
       });
     });
   }
@@ -403,7 +327,9 @@ export class DistrictsLayer {
     return item ? new THREE.Vector3(item.anchor.x, item.height, item.anchor.y) : null;
   }
 
+  // Высота крыши для меток проблем; у скрытых районов метки стоят на земле.
   heightOf(slug) {
+    if (this.hidden) return 0;
     return this.items.get(slug)?.height ?? this.baseHeight;
   }
 
@@ -421,10 +347,6 @@ export class DistrictsLayer {
       item.material.dispose();
       item.lineMaterial.dispose();
     });
-    this.streetMaterials.forEach((material) => material.dispose());
-    if (this.windowMaterial) gsap.killTweensOf(this.windowMaterial);
-    this.windowMaterial?.dispose();
-    this.windowGeometry?.dispose();
     this.group.removeFromParent();
   }
 }

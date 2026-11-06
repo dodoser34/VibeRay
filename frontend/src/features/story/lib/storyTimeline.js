@@ -110,7 +110,7 @@ export function addOverlayTimeline(tl, { q, stage, variant = 'room' }) {
   tl.to(one('canvas'), { opacity: 0.3, duration: 1 }, at(BUILD));
   show(one('build-card'), at(BUILD, phone ? 3.6 : 1.2));
   const checks = q('[data-story="build-check"]');
-  const [first, gap] = phone ? [4.8, 0.65] : [2.4, 1];
+  const [first, gap] = phone ? [4.8, 0.55] : [2.4, 1];
   checks.forEach((check, k) => {
     tl.fromTo(
       check,

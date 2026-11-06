@@ -34,6 +34,7 @@
 }
 
 .column {
+  position: relative;
   display: grid;
   gap: var(--space-5);
   width: min(27.5rem, 40vw);

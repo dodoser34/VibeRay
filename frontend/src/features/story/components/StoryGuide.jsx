@@ -8,13 +8,12 @@ import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/controls/Button';
 import { FULL_STORY } from '../lib/chapters';
+import { STORY_CITY } from '../lib/storyCity';
 import { GuideMap } from './GuideMap';
 import about from '@/texts/ru/about.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryGuide.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
-
-const CITY = 'kostanay';
 
 const texts = about.guide;
 const STEPS = texts.steps;
@@ -35,7 +34,7 @@ const ICONS = {
   photo: 'photo-off',
 };
 
-// «Как это работает» после истории: живой 2D-Костанай, который следует за шагами при прокрутке,
+// «Как это работает» после истории: живой 2D-город истории (Костанай), который следует за шагами при прокрутке,
 // цифры продукта, обещания приватности и финальный призыв открыть карту.
 export function StoryGuide({ onOpenMap }) {
   const language = useLanguage();
@@ -44,7 +43,7 @@ export function StoryGuide({ onOpenMap }) {
   const [step, setStep] = useState(0);
   const reduced = useReducedMotion();
   const { compact } = useViewport();
-  const { city, moods, problems } = useCityData(CITY, 'week');
+  const { city, moods, problems } = useCityData(STORY_CITY.slug, 'week');
 
   const stats = [
     { value: city.data?.districts.features.length ?? 18, label: texts.stats.districts },
@@ -147,7 +146,13 @@ export function StoryGuide({ onOpenMap }) {
       >
         <div className={styles.stage} data-ui="guide-stage">
           <div className={styles.mapColumn} data-ui="guide-map-column">
-            <GuideMap city={city.data} moods={moods.data} problems={problems.data} step={step} />
+            <GuideMap
+              city={city.data}
+              moods={moods.data}
+              problems={problems.data}
+              focus={STORY_CITY.focus}
+              step={step}
+            />
             <ol className={styles.progress} aria-hidden="true">
               {STEPS.map((item, i) => (
                 <li

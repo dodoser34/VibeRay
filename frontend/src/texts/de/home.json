@@ -4,6 +4,11 @@
   "lead": "Markiere deine Stimmung, melde Probleme und sieh, wie sich deine Stadt verändert",
   "scrollHint": "Scrolle weiter — unten landest du in der Stadt",
   "openMap": "Stadtkarte öffnen",
+  "phoneQr": {
+    "title": "Auf dem Handy öffnen",
+    "text": "Kamera draufhalten — VibeRay öffnet sich auf dem Handy",
+    "label": "QR-Code mit Link zur VibeRay-Seite"
+  },
   "thoughts": {
     "mood": "Wie ist heute meine Stimmung?",
     "great": "Wie schön!",

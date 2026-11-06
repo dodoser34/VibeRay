@@ -11,6 +11,7 @@ import { planeMatrix } from '../lib/isometric';
 import { addPhoneTimeline } from '../lib/phoneTimeline';
 import { COVER, RoomCamera } from '../lib/roomCamera';
 import { monitorMapBox, SCREEN } from '../lib/roomLayout';
+import { STORY_CITY, STORY_EXTENT } from '../lib/storyCity';
 import { outlineCenter, topViewBox } from '../lib/topView';
 import { useBoxSize } from '../hooks/useBoxSize';
 import { addRoomTimeline } from '../lib/roomTimeline';
@@ -19,8 +20,6 @@ import { PhoneStage } from './phone/PhoneStage';
 import { IsometricRoom } from './room/IsometricRoom';
 import { StoryOverlay } from './StoryOverlay';
 import styles from './StoryExperience.module.css';
-
-const CITY = 'kostanay';
 
 // «Как родилась идея»: закреплённая сцена, вся история которой — одна временная шкала, привязанная
 // к прокрутке. Начало плоское: на ПК — изометрическая комната (наезд на монитор), на телефонах и
@@ -31,7 +30,8 @@ const CITY = 'kostanay';
 // держит экран закрытым до этого момента (AboutPage).
 export function StoryExperience({ onOpenMap, onReady }) {
   const language = useLanguage();
-  // Тема перекрашивает 3D-город (цвета читаются при создании) — сцена создаётся заново.
+  // Тема перекрашивает 3D-город (цвета читаются при создании), язык меняет сам город — сцена
+  // создаётся заново.
   const theme = useTheme();
   const rootRef = useRef(null);
   const stageRef = useRef(null);
@@ -45,14 +45,17 @@ export function StoryExperience({ onOpenMap, onReady }) {
   // становится короче, и браузер сбрасывает прокрутку назад.
   const scrollRef = useRef(null);
   const reduced = useReducedMotion();
-  const { city, moods, problems } = useCityData(CITY, 'week');
-  const outline = useCityOutline(city.data, problems.data);
+  // Город истории — Костанай на любом языке (lib/storyCity.js).
+  const { city, moods, problems } = useCityData(STORY_CITY.slug, 'week');
+  const outline = useCityOutline(city.data, problems.data, { extent: STORY_EXTENT });
   const stageSize = useBoxSize(stageRef);
   // Изометрическая комната — на ПК; телефоны и планшеты получают телефон в руке.
   const { isDesktop, portrait } = useViewport();
   const variant = isDesktop ? 'room' : 'phone';
   const orientation = portrait ? 'portrait' : 'landscape';
-  const dataReady = Boolean(city.data && moods.data && problems.data);
+  // Пока грузится город нового языка, useRequest держит прежние данные — сцене их не отдаём.
+  const loading = city.loading || moods.loading || problems.loading;
+  const dataReady = Boolean(city.data && moods.data && problems.data) && !loading;
   const timelineDeps = [scene, failed, dataReady, reduced, language, variant, orientation];
 
   // 3D-город рисуется по размеру своего блока: вся сцена на ПК, экран телефона — на телефоне.
@@ -105,7 +108,10 @@ export function StoryExperience({ onOpenMap, onReady }) {
   useGSAP(
     () => {
       if ((!scene && !failed) || !dataReady) return undefined;
-      scene?.setCity(city.data, moods.data, problems.data, outlineCenter(outline.viewBox));
+      scene?.setCity(city.data, moods.data, problems.data, outlineCenter(outline.viewBox), {
+        scale: outline.scale,
+        focus: STORY_CITY.focus,
+      });
       const q = gsap.utils.selector(rootRef);
       const tl = gsap.timeline({ paused: true, defaults: { ease: 'none' } });
       let camera = null;

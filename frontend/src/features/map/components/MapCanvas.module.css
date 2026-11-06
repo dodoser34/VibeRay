@@ -15,16 +15,15 @@
   display: inline-block;
   padding: 0.25rem 0.625rem;
   border-radius: var(--radius-pill);
-  background: var(--color-glass-strong);
+  background: var(--color-glass-solid);
   border: 1px solid var(--color-glass-border);
-  backdrop-filter: blur(6px);
+  box-shadow: var(--shadow-soft);
   color: var(--color-text);
   font-family: var(--font-display);
   font-size: var(--fs-xs);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.02em;
   white-space: nowrap;
-  opacity: 0.78;
   transition:
     opacity var(--dur-base) var(--ease-out),
     transform var(--dur-base) var(--ease-out),

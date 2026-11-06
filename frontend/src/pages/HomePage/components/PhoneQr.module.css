@@ -1,0 +1,115 @@
+/* Стоит справа от карточки входа, по её нижнему краю (колонка — position: relative). Раскладки
+   других экранов — adaptations/{desktop,tablet,mobile}/pages/home.css. */
+.shell {
+  position: absolute;
+  bottom: 0;
+  left: calc(100% + var(--space-6));
+  transform-origin: 50% 100%;
+}
+
+.card {
+  --qr-corner: 1.1rem;
+
+  display: grid;
+  gap: var(--space-3);
+  width: 12.5rem;
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(var(--blur-glass));
+  color: var(--color-text);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  line-height: 1.2;
+}
+
+.badge {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-bright);
+}
+
+/* Рамка видоискателя: четыре уголка цветом акцента вокруг светлого поля кода. */
+.frame {
+  position: relative;
+  padding: var(--space-2);
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(var(--color-accent), var(--color-accent)) top left / var(--qr-corner) 2px,
+    linear-gradient(var(--color-accent), var(--color-accent)) top left / 2px var(--qr-corner),
+    linear-gradient(var(--color-accent), var(--color-accent)) top right / var(--qr-corner) 2px,
+    linear-gradient(var(--color-accent), var(--color-accent)) top right / 2px var(--qr-corner),
+    linear-gradient(var(--color-accent), var(--color-accent)) bottom left / var(--qr-corner) 2px,
+    linear-gradient(var(--color-accent), var(--color-accent)) bottom left / 2px var(--qr-corner),
+    linear-gradient(var(--color-accent), var(--color-accent)) bottom right / var(--qr-corner) 2px,
+    linear-gradient(var(--color-accent), var(--color-accent)) bottom right / 2px var(--qr-corner);
+  background-repeat: no-repeat;
+}
+
+.code {
+  width: 100%;
+  height: auto;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.card:hover .code {
+  transform: scale(1.03);
+}
+
+/* Линия сканирования: тонкая полоса акцента без свечения, медленно ходит сверху вниз. Слой — во всю
+   высоту кода, полоса — по его верху: сдвиг слоя на 100 % его высоты доводит её до низа кода. */
+.scan {
+  position: absolute;
+  inset: var(--space-2) var(--space-3);
+  pointer-events: none;
+  animation: qr-scan 3.2s var(--ease-in-out) infinite alternate;
+}
+
+.scan::before {
+  content: '';
+  display: block;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  opacity: 0.55;
+}
+
+@keyframes qr-scan {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(100% - 2px));
+  }
+}
+
+.text {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scan {
+    display: none;
+  }
+
+  .code {
+    transition: none;
+  }
+}

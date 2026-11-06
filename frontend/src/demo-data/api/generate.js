@@ -1,6 +1,5 @@
 import homeDistricts from '../cities/kostanay/districts.geojson';
 import homeWater from '../cities/kostanay/water.geojson';
-import homeStreets from '../cities/kostanay/streets.geojson';
 import { MOODS, MOOD_BY_CODE } from '@/shared/config/moods';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
 import { largestPolygon, pointInPolygon } from '@/shared/lib/geo/geoProjection';
@@ -66,10 +65,10 @@ const CITY_INFO = Object.values(
   import.meta.glob('../cities/*/city.json', { eager: true, import: 'default' }),
 ).sort((a, b) => (b.slug === HOME_CITY) - (a.slug === HOME_CITY));
 const CITY_LAYERS = import.meta.glob(
-  ['../cities/*/{districts,water,streets}.geojson', '!../cities/kostanay/*'],
+  ['../cities/*/{districts,water}.geojson', '!../cities/kostanay/*'],
   { import: 'default' },
 );
-const LAYER_NAMES = ['districts', 'water', 'streets'];
+const LAYER_NAMES = ['districts', 'water'];
 
 const cities = new Map(); // slug города → город с геометрией
 const districtCity = new Map(); // slug района → slug города
@@ -77,7 +76,7 @@ export const problems = [];
 
 export const cityInfos = () => CITY_INFO;
 
-function registerCity(info, { districts, water, streets }) {
+function registerCity(info, { districts, water }) {
   const city = {
     slug: info.slug,
     name: info.name,
@@ -86,10 +85,8 @@ function registerCity(info, { districts, water, streets }) {
     name_de: info.name_de,
     center: info.center,
     bbox: info.bbox,
-    timezone: info.timezone,
-    // Слои OpenStreetMap (ODbL): реки и водоёмы, улицы с привязкой к району.
+    // Слой OpenStreetMap (ODbL): реки и водоёмы.
     water,
-    streets,
     districts: {
       type: 'FeatureCollection',
       features: districts.features.map((feature) => ({ ...feature, id: feature.properties.slug })),
@@ -372,7 +369,7 @@ problems.push(
   ...seedProblems(
     registerCity(
       CITY_INFO.find((info) => info.slug === HOME_CITY),
-      { districts: homeDistricts, water: homeWater, streets: homeStreets },
+      { districts: homeDistricts, water: homeWater },
     ),
     { prefix: '', recent: 64, history: 1100, seeds: [20260924, 20230101] },
   ),

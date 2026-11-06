@@ -100,6 +100,29 @@ function HeightScale({ value, onChange, withHint }) {
   );
 }
 
+// Районы на карте или только карта дорог под ними.
+function DistrictsVisibility({ value, onChange }) {
+  return (
+    <div className={styles.group} data-ui="map-filters-districts">
+      <span className={styles.groupLabel}>{texts.districtsVisibility.label}</span>
+      <Choice
+        label={texts.districtsVisibility.groupLabel}
+        value={value ? 'show' : 'hide'}
+        onChange={(code) => onChange(code === 'show')}
+        options={[
+          ['show', texts.districtsVisibility.show],
+          ['hide', texts.districtsVisibility.hide],
+        ]}
+      />
+      {!value && (
+        <p className={styles.hint} data-ui="map-filters-districts-hint">
+          {texts.districtsVisibility.hint}
+        </p>
+      )}
+    </div>
+  );
+}
+
 // Что показывает карта. Те же элементы живут в левой панели десктопа, в панели инструментов
 // планшета в альбомной ориентации (только переключатели) и в шторке фильтров телефона (без
 // заголовка).
@@ -122,6 +145,8 @@ export function MapFilters({
   onMetric,
   heightScale,
   onHeightScale,
+  districtsVisible,
+  onDistrictsVisible,
   range,
   districts,
   selectedSlug,
@@ -181,6 +206,8 @@ export function MapFilters({
       </div>
 
       <HeightScale value={heightScale} onChange={onHeightScale} withHint={!isStats} />
+
+      <DistrictsVisibility value={districtsVisible} onChange={onDistrictsVisible} />
 
       <div className={`${styles.group} ${styles.legend}`} data-ui="map-filters-legend">
         <span className={styles.groupLabel}>

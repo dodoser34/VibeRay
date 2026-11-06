@@ -25,6 +25,7 @@
   :root [data-ui='map-filters-heading'],
   :root [data-ui='map-filters-legend'],
   :root [data-ui='map-filters-height-hint'],
+  :root [data-ui='map-filters-districts-hint'],
   :root [data-ui='map-filters-footnote'] {
     display: none;
   }

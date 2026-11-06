@@ -15,9 +15,9 @@ export function MapCanvas({
   layer,
   overlay = null,
   heightScale = 1,
+  districtsVisible = true,
   selectedSlug,
   selectedProblemId = null,
-  hour,
   onHover,
   onSelectDistrict,
   onSelectProblem,
@@ -85,16 +85,16 @@ export function MapCanvas({
   }, [heightScale]);
 
   useEffect(() => {
+    sceneRef.current.setDistrictsVisible(districtsVisible);
+  }, [districtsVisible]);
+
+  useEffect(() => {
     sceneRef.current.selectDistrict(selectedSlug ?? null);
   }, [selectedSlug]);
 
   useEffect(() => {
     sceneRef.current.setSelectedProblem(selectedProblemId);
   }, [selectedProblemId]);
-
-  useEffect(() => {
-    if (hour !== undefined) sceneRef.current.setHour(hour);
-  }, [hour]);
 
   // «Сообщить о проблеме»: в режиме выбора места клик по району ставит метку в эту точку.
   useEffect(() => {

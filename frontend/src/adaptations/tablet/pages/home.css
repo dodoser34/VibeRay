@@ -43,6 +43,35 @@
     max-width: none;
   }
 
+  /* QR «открой на телефоне» — под формой входа, во всю колонку: код слева, подпись справа. */
+  :root [data-ui='home-qr'] {
+    position: static;
+  }
+
+  :root [data-ui='home-qr-card'] {
+    grid-template-columns: 7.5rem 1fr;
+    grid-template-areas:
+      'frame head'
+      'frame text';
+    align-content: center;
+    column-gap: var(--space-4);
+    width: auto;
+  }
+
+  :root [data-ui='home-qr-frame'] {
+    grid-area: frame;
+  }
+
+  :root [data-ui='home-qr-head'] {
+    grid-area: head;
+    align-self: end;
+  }
+
+  :root [data-ui='home-qr-text'] {
+    grid-area: text;
+    align-self: start;
+  }
+
   :root [data-ui='home-map-cta'] {
     display: inline-flex;
     justify-self: start;

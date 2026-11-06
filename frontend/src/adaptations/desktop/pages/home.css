@@ -21,4 +21,14 @@
     gap: var(--space-4);
     padding: var(--space-5);
   }
+
+  /* QR-карточка компактнее: код и заголовок, без пояснения */
+  :root [data-ui='home-qr-card'] {
+    width: 10.5rem;
+    padding: var(--space-3);
+  }
+
+  :root [data-ui='home-qr-text'] {
+    display: none;
+  }
 }

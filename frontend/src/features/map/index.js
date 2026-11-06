@@ -4,6 +4,7 @@ export { useCityData } from './hooks/useCityData';
 export { DEFAULT_CITY, lastCity, rememberCity } from './lib/lastCity';
 export { SceneRuntime } from './scene/SceneRuntime';
 export { CityBackdrop } from './scene/CityBackdrop';
+export { MapTiles } from './scene/MapTiles';
 export { DistrictsLayer } from './scene/DistrictsLayer';
 export { colorForAggregate, colorForDistrict } from './scene/moodColor';
 export { moodFill } from './lib/moodFill';

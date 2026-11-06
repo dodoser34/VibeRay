@@ -43,6 +43,12 @@ export const GLYPHS = {
       <circle cx="12" cy="13" r="3.5" />
     </>,
   ),
+  phone: large(
+    <>
+      <rect x="7" y="3" width="10" height="18" rx="2.2" />
+      <path d="M11 18h2" />
+    </>,
+  ),
   eye: large(
     <>
       <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" />
@@ -125,8 +131,6 @@ export const GLYPHS = {
     ),
   ),
   moon: large(path('M20 14.2A8.5 8.5 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2z')),
-  sunrise: large(path('M3 17h18M7 17a5 5 0 0 1 10 0M12 5v3M5.6 9.6l1.8 1.8M18.4 9.6l-1.8 1.8')),
-  sunset: large(path('M3 17h18M7 17a5 5 0 0 1 10 0M12 11V5l-2.5 2.5M12 5l2.5 2.5')),
 
   // Категории проблем
   trash: large(

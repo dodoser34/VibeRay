@@ -4,6 +4,11 @@
   "lead": "Share your mood, report problems and watch your city change",
   "scrollHint": "Scroll — you'll land right in the city",
   "openMap": "Open the city map",
+  "phoneQr": {
+    "title": "Open on your phone",
+    "text": "Point your camera — VibeRay opens on your phone",
+    "label": "QR code linking to the VibeRay site"
+  },
   "thoughts": {
     "mood": "What's my mood today?",
     "great": "Feels so good!",

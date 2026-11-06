@@ -1,0 +1,12 @@
+.code {
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+.field {
+  fill: var(--qr-field);
+}
+
+.modules {
+  fill: var(--qr-module);
+}

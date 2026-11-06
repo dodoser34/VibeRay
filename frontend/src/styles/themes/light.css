@@ -22,6 +22,9 @@
   --color-text: #16301f;
   --color-text-muted: #466a52;
   --color-text-faint: #6c8a73;
+  /* QR-код: тёмные модули на светлом поле в обеих темах — так его читает любая камера */
+  --qr-field: #e8f3e0;
+  --qr-module: #16301f;
 
   /* Акцент — тот же зелёный; тревога и опасность чуть глубже для контраста на светлом */
   --color-accent: #2f7a4a;
@@ -34,6 +37,20 @@
   --color-success: #2f7a4a;
   --color-river: #6aa3b9;
 
+  /* Цвета районов: глубже, чем в тёмной теме, — пастель на светло-зелёной земле сливалась */
+  --district-1: #b0962c;
+  --district-2: #a65676;
+  --district-3: #8a6240;
+  --district-4: #3d75a6;
+  --district-5: #378659;
+  --district-6: #b36e2c;
+  --district-7: #a3473d;
+  --district-8: #6b58a0;
+  --district-9: #2e8a82;
+  --district-10: #7b8f2e;
+  --district-11: #93598d;
+  --district-12: #66708c;
+
   /* 3D-сцена: светло-зелёная земля, дороги темнее земли, светлые границы районов */
   --scene-bg: #d8e8cf;
   --color-layer-front: #e5f1dc;
@@ -42,17 +59,13 @@
   --scene-fog: #d8e8cf;
   --scene-ground: #c9ddbf;
   --scene-light: #f6f4ee;
-  --scene-light-dawn: #f1e6d4;
-  --scene-light-dusk: #eedfcb;
   --scene-light-night: #c9d0dc;
-  --scene-bg-night: #c3d6bb;
-  --scene-window: #b88f3e;
-  --scene-district-edge: #e1f0d7;
-  --scene-street-on-district: #16301f;
-  --scene-road-major: #93b495;
-  --scene-road: #b1cbae;
-  --scene-road-service: #c0d6bb;
-  --scene-rail: #8b938e;
+  --scene-district-edge: #eef7e8;
+  --scene-district-opacity: 0.56; /* плиты районов на полной карте: < 0,6 — дороги видны сквозь них */
+  --scene-road-major: #7a9f7e;
+  --scene-road: #98b897;
+  --scene-road-service: #adc8a9;
+  --scene-rail: #7d8680;
   --scene-dust: #466a52;
 
   /* История «О проекте»: та же комната июльским днём — светлые стены, дневное небо, солнце через

@@ -4,16 +4,19 @@ import { createProjection } from '@/shared/lib/geo/geoProjection';
 
 const PADDING_KM = 0.6;
 
-// Костанай в 2D для SVG: контуры районов (те же районы OSM, что на 3D-карте), рамка viewBox (км) и
+// Город в 2D для SVG: контуры районов (те же районы OSM, что на 3D-карте), рамка viewBox (км) и
 // метки проблем (первые `pinLimit`). Общая основа плоских карт: гид «Как это работает», карта на
-// стене и на экранах в истории «О проекте».
-export function useCityOutline(city, problems, pinLimit = 36) {
+// стене и на экранах в истории «О проекте». extent — привести размах районов к этому числу единиц
+// (scale — во сколько раз; история приводит к нему и 3D-город): города разного размера
+// рисуются одинаково крупно, толщины и радиусы в единицах viewBox подходят всем.
+export function useCityOutline(city, problems, { pinLimit = 36, extent = null } = {}) {
   return useMemo(() => {
     if (!city) return null;
     const project = createProjection(city.center);
+    const scale = extent ? extent / cityExtent(city, project) : 1;
     const toSvg = (lonlat) => {
       const [x, y] = project(lonlat);
-      return [x, -y];
+      return [x * scale, -y * scale];
     };
     const xs = [];
     const ys = [];
@@ -45,6 +48,16 @@ export function useCityOutline(city, problems, pinLimit = 36) {
       const [x, y] = toSvg(problem.location);
       return { id: problem.id ?? i, x, y, colorVar: STATUS_BY_CODE[problem.status].colorVar };
     });
-    return { districts, viewBox, pins };
-  }, [city, problems, pinLimit]);
+    return { districts, viewBox, pins, scale };
+  }, [city, problems, pinLimit, extent]);
+}
+
+// Размах районов (км): большая из сторон их рамки.
+function cityExtent(city, project) {
+  const points = city.districts.features.flatMap(({ geometry }) =>
+    geometry.coordinates.flatMap(([outer]) => outer.map(project)),
+  );
+  const xs = points.map((p) => p[0]);
+  const ys = points.map((p) => p[1]);
+  return Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys));
 }

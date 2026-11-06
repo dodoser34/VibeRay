@@ -19,6 +19,13 @@
     "flat": "flat",
     "hint": "The better a district's mood, the taller it stands"
   },
+  "districtsVisibility": {
+    "label": "Districts",
+    "groupLabel": "Show or hide districts",
+    "show": "Show",
+    "hide": "Hide",
+    "hint": "Without districts, only the road map remains"
+  },
   "legendTitles": {
     "districts": "City districts",
     "mood": "District mood",
@@ -117,13 +124,5 @@
     }
   },
   "cluster": "{count} {problems} nearby — zoom in",
-  "clusterForms": ["problem", "problems", "problems"],
-  "daytime": {
-    "morning": "morning",
-    "day": "daytime",
-    "evening": "evening",
-    "night": "night",
-    "caption": "{city} · {phase}, {time}",
-    "title": "The light on the map matches the city right now"
-  }
+  "clusterForms": ["problem", "problems", "problems"]
 }

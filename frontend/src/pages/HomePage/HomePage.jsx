@@ -14,6 +14,7 @@ import { Button } from '@/shared/ui/controls/Button';
 import { isModerator } from '@/shared/config/roles';
 import home from '@/texts/ru/home.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
+import { PhoneQr } from './components/PhoneQr';
 import styles from './HomePage.module.css';
 
 const CITY = 'kostanay';
@@ -36,6 +37,7 @@ export function HomePage() {
   const sceneLayerRef = useRef(null);
   const passRef = useRef(null);
   const columnRef = useRef(null);
+  const qrRef = useRef(null);
   const layerRef = useRef(null);
   const fadeRef = useRef(null);
   const pinRef = useRef(null);
@@ -61,6 +63,7 @@ export function HomePage() {
     leavingRef.current = true;
     ScrollTrigger.getAll().forEach((trigger) => trigger.disable(false));
     gsap.to(columnRef.current, { autoAlpha: 0, x: -40, duration: 0.5, ease: 'power2.in' });
+    gsap.to(qrRef.current, { y: 40, rotation: 5, duration: 0.5, ease: 'power2.in' });
     const fly = { progress: 0 };
     await gsap.to(fly, {
       progress: 1,
@@ -96,6 +99,12 @@ export function HomePage() {
             if (leavingRef.current) return;
             heroRef.current?.setFlyProgress(progress);
             gsap.set(columnRef.current, { autoAlpha: 1 - progress * 2.4, x: -progress * 90 });
+            // QR-карточка уходит раньше формы и по-своему: проваливается вниз с лёгким поворотом.
+            gsap.set(qrRef.current, {
+              autoAlpha: 1 - progress * 4,
+              y: progress * 160,
+              rotation: progress * 10,
+            });
             gsap.set(layerRef.current, {
               autoAlpha: 1 - progress * 1.6,
               yPercent: progress * SHEET_FLY_SHIFT * 100,
@@ -118,6 +127,14 @@ export function HomePage() {
       const conditions = { all: 'all', wide: WIDE_QUERY, calm: '(prefers-reduced-motion: reduce)' };
       media.add(conditions, (context) => {
         if (context.conditions.wide || context.conditions.calm) return;
+        // QR-карточка под формой гаснет и отъезжает вверх, когда её пролистывают.
+        gsap.to(qrRef.current, {
+          autoAlpha: 0,
+          y: -24,
+          scale: 0.96,
+          ease: 'none',
+          scrollTrigger: { trigger: qrRef.current, start: 'top 35%', end: 'top 5%', scrub: true },
+        });
         gsap.to(sceneLayerRef.current, {
           yPercent: 14,
           autoAlpha: 0,
@@ -259,6 +276,7 @@ export function HomePage() {
               onAuthenticated={celebrate}
               wideEnterDelay={FRONT_FLOW_END}
             />
+            <PhoneQr ref={qrRef} wideEnterDelay={FRONT_FLOW_END} />
           </div>
         </div>
 

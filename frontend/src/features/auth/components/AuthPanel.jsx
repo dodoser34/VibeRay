@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { WIDE_QUERY } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { cardEnter, partsEnter } from '@/shared/animations/effects/cardEnter';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { LoginForm } from './LoginForm';
 import { RegisterFlow } from './RegisterFlow';
@@ -71,32 +72,15 @@ export function AuthPanel({
       const timeline = gsap.timeline();
       if (prevHeight.current === null) {
         const wide = window.matchMedia(WIDE_QUERY).matches;
-        timeline.from(
-          card,
-          {
-            y: 40,
-            scale: 0.98,
-            filter: 'blur(6px)',
-            autoAlpha: 0,
-            transformOrigin: '50% 100%',
-            duration: 1.4,
-            ease: 'power2.out',
-            clearProps: 'transform,filter',
-          },
-          wide ? wideEnterDelay : NARROW_ENTER_DELAY,
-        );
-      } else {
-        timeline.fromTo(
-          bgRef.current,
-          { scaleY: prevHeight.current / card.offsetHeight },
-          { scaleY: 1, transformOrigin: '50% 0%', duration: 0.6, ease: 'power2.out' },
-        );
+        cardEnter(timeline, card, parts(), wide ? wideEnterDelay : NARROW_ENTER_DELAY);
+        return;
       }
-      timeline.from(
-        parts(),
-        { y: 14, autoAlpha: 0, duration: 0.9, ease: 'power2.out', stagger: 0.07 },
-        prevHeight.current === null ? '<0.45' : 0.15,
+      timeline.fromTo(
+        bgRef.current,
+        { scaleY: prevHeight.current / card.offsetHeight },
+        { scaleY: 1, transformOrigin: '50% 0%', duration: 0.6, ease: 'power2.out' },
       );
+      partsEnter(timeline, parts(), 0.15);
     },
     { dependencies: [shown, entered], scope: rootRef },
   );

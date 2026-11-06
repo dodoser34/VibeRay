@@ -1,15 +1,16 @@
 import * as THREE from 'three';
 import { gsap } from '@/shared/animations/core/gsapSetup';
 import { CSS2DObject, CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
+import { cityOutline } from '@/shared/lib/geo/cityOutline';
 import { createProjection, createUnprojection } from '@/shared/lib/geo/geoProjection';
 import { cssVar } from '@/shared/lib/theme/cssVar';
 import { SceneRuntime } from './SceneRuntime';
 import { DistrictsLayer } from './DistrictsLayer';
 import { ProblemsLayer } from './ProblemsLayer';
 import { CityBackdrop } from './CityBackdrop';
+import { MapTiles } from './MapTiles';
 import { CameraRig } from './cameraRig';
 import { ClusterLabels } from './ClusterLabels';
-import { lightingAt } from './dayCycle';
 import { Picker } from './Picker';
 import { PlacementMarker } from './PlacementMarker';
 
@@ -26,7 +27,10 @@ const FIT_POINTS = 120;
 const INSET_SETTLE_MS = 200; // шторка столько стоит на месте — обзор пересчитывается под неё // вершин на район для вписывания в кадр — хватает, чтобы не потерять выступы
 const LABEL_CHECK_MS = 150; // как часто разбираются налезающие подписи
 const LABEL_GAP = 4; // px между двумя подписями, которые обе остаются
-const TWINKLE_MS = 1400; // как часто в городе гаснет или загорается пара окон
+// Плиты районов — полупрозрачное стекло над общим слоем дорог: дороги читаются сквозь них
+// непрерывно, а районы хорошо различаются цветом и светлыми границами. Плотность своя у каждой темы.
+const districtOpacity = () => parseFloat(cssVar('--scene-district-opacity'));
+const LABELS_FADE = 0.5;
 
 // Полноэкранная карта города. React общается с ней только через эти публичные методы.
 export class MapScene {
@@ -64,11 +68,12 @@ export class MapScene {
     this.overlay = null; // дашборд города: { scores, values } по районам, заменяет слой
     this.started = false; // см. startIntro()
     this.placing = null; // { onPlace }, пока пользователь выбирает точку для новой проблемы
+    this.districtsHidden = false; // режим «только дороги» (setDistrictsVisible)
     this.marker = new PlacementMarker();
     scene.add(this.marker.group);
 
-    // Мягкий свет: пастельные плиты читаются через свет, а не через свечение. Цвет, сила и
-    // направление следуют времени суток в городе (setHour).
+    // Мягкий свет: пастельные плиты читаются через свет, а не через свечение. День или ночь на
+    // карте задаёт тема: цвет света, фон и туман — из её токенов.
     this.hemi = new THREE.HemisphereLight(
       new THREE.Color(cssVar('--scene-light')),
       new THREE.Color(cssVar('--scene-ground')),
@@ -89,8 +94,10 @@ export class MapScene {
     container.appendChild(this.labelRenderer.domElement);
 
     this.picker = new Picker(camera, canvas, {
+      // Скрытые районы не выбираются и не подсвечиваются; плиты (лежащие на земле) ловят только
+      // клик, которым ставят метку новой проблемы.
       getTargets: () => [
-        ...(this.districts?.meshes ?? []),
+        ...(!this.districtsHidden || this.placing ? (this.districts?.meshes ?? []) : []),
         ...(this.problems?.group.visible ? [this.problems.heads] : []),
       ],
       onHover: (hit) => this.handleHover(hit),
@@ -102,19 +109,14 @@ export class MapScene {
     this.viewInset = 0;
     this.runtime.onResize((width, height) => {
       this.districts?.setResolution(width, height);
-      this.backdrop?.setResolution(width, height);
       this.labelRenderer.setSize(width, height);
       this.setViewInset(this.viewInset);
       this.refitHome();
     });
     this.labelCheck = 0;
-    this.twinkleAt = 0;
     this.runtime.onTick((time, delta) => {
-      if (time * 1000 - this.twinkleAt > TWINKLE_MS) {
-        this.twinkleAt = time * 1000;
-        this.districts?.twinkle();
-      }
       this.rig.update();
+      this.tiles?.update(camera, this.runtime.size.height, time * 1000);
       this.updateClusters(time, delta);
       this.problems?.update(time, delta);
       this.labelRenderer.render(scene, camera);
@@ -136,26 +138,33 @@ export class MapScene {
     this.project = createProjection(city.center);
     this.unproject = createUnprojection(city.center);
     this.city = city;
-    this.backdrop = new CityBackdrop(this.project, { water: city.water, streets: city.streets });
+    // Земля (CityBackdrop), на ней дороги и вода — PNG-плитки (MapTiles): к краю контура города они
+    // плавно гаснут, окрестности не видны.
+    this.outline = cityOutline(city.districts, city.center);
+    this.backdrop = new CityBackdrop();
+    this.tiles = new MapTiles(city.slug, this.outline, this.runtime.renderer);
     this.districts = new DistrictsLayer(city.districts.features, this.project, {
       baseHeight: 0.22,
       heightRange: 0.55,
       lineWidth: 2,
+      opacity: districtOpacity(),
       colorMode: this.colorModeFor(this.layer),
-      streets: city.streets,
     });
-    this.districts.addWindows({ detail: this.runtime.quality.detail });
+    this.districts.setHidden(this.districtsHidden);
     if (this.heightScale !== undefined) this.districts.setHeightScale(this.heightScale);
-    if (this.hour !== undefined) this.setHour(this.hour, { immediate: true });
     this.problems = new ProblemsLayer(this.project);
     this.clusterLabels = new ClusterLabels(this.problems.group, this.clusterOptions);
     this.pinsShown = false;
     this.problems.group.visible = false;
     this.problems.group.scale.y = 0.001;
-    this.runtime.scene.add(this.backdrop.group, this.districts.group, this.problems.group);
+    this.runtime.scene.add(
+      this.backdrop.group,
+      this.tiles.group,
+      this.districts.group,
+      this.problems.group,
+    );
     const { width, height } = this.runtime.size;
     this.districts.setResolution(width, height);
-    this.backdrop.setResolution(width, height);
     this.createLabels(city.districts.features);
 
     const size = new THREE.Box3().setFromObject(this.districts.group).getSize(new THREE.Vector3());
@@ -224,7 +233,9 @@ export class MapScene {
     this.clusterLabels.dispose();
     this.problems.dispose();
     this.backdrop.dispose();
+    this.tiles.dispose();
     this.labels.forEach((label) => {
+      gsap.killTweensOf(label.element);
       label.element.remove();
       label.removeFromParent();
     });
@@ -250,6 +261,7 @@ export class MapScene {
       value.className = this.labelValueClassName;
       chip.append(name, value);
       element.appendChild(chip);
+      if (this.districtsHidden) gsap.set(element, { autoAlpha: 0 });
       const label = new CSS2DObject(element);
       label.userData.chip = chip;
       label.userData.value = value;
@@ -272,6 +284,22 @@ export class MapScene {
     if (!this.districts) return;
     this.districts.setHeightScale(scale);
     this.placeLabels();
+    if (this.problemList) this.setProblems(this.problemList);
+  }
+
+  // Режим «только дороги»: районы с подписями плавно гаснут, плиты ложатся на землю, метки проблем
+  // опускаются на неё же; выбрать или подсветить район нельзя. Reduced motion укорачивает переход
+  // (gsapSetup).
+  setDistrictsVisible(visible) {
+    if (visible === !this.districtsHidden) return;
+    this.districtsHidden = !visible;
+    if (!this.districts) return;
+    if (this.districtsHidden) this.handleHover(null);
+    this.districts.setHidden(this.districtsHidden);
+    gsap.to(
+      [...this.labels.values()].map((label) => label.element),
+      { autoAlpha: visible ? 1 : 0, duration: LABELS_FADE, overwrite: 'auto' },
+    );
     if (this.problemList) this.setProblems(this.problemList);
   }
 
@@ -427,56 +455,25 @@ export class MapScene {
   }
 
   flashDistrict(slug) {
-    this.districts?.flash(slug);
+    if (!this.districtsHidden) this.districts?.flash(slug);
   }
 
-  // Время суток в городе (час дробью): свет, фон, туман и окна плавно переходят к нему.
-  // Тема сменилась (токены уже перечитаны): свет, фон и туман, земля с дорогами и водой, плиты —
-  // в цветах новой темы. Камера, выбор и слои остаются как были.
+  // Тема сменилась (токены уже перечитаны): свет, фон и туман, земля, дороги и вода (цвета плиток),
+  // плиты — в цветах новой темы. Камера, выбор и слои остаются как были.
   refreshTheme() {
+    const light = cssVar('--scene-light');
+    this.hemi.color.set(light);
+    this.key.color.set(light);
     this.hemi.groundColor.set(cssVar('--scene-ground'));
-    if (this.hour !== undefined) this.setHour(this.hour, { immediate: true });
-    else {
-      this.runtime.scene.background.set(cssVar('--scene-bg'));
-      this.runtime.scene.fog.color.set(cssVar('--scene-fog'));
-    }
+    this.runtime.scene.background.set(cssVar('--scene-bg'));
+    this.runtime.scene.fog.color.set(cssVar('--scene-fog'));
     if (!this.city) return;
     this.backdrop.dispose();
-    this.backdrop = new CityBackdrop(this.project, {
-      water: this.city.water,
-      streets: this.city.streets,
-    });
+    this.backdrop = new CityBackdrop();
     this.runtime.scene.add(this.backdrop.group);
-    const { width, height } = this.runtime.size;
-    this.backdrop.setResolution(width, height);
+    this.tiles.setTheme();
     this.districts.refreshTheme();
-  }
-
-  setHour(hour, { immediate = false } = {}) {
-    const first = this.hour === undefined;
-    this.hour = hour;
-    const light = lightingAt(hour);
-    const duration = immediate || first ? 0 : 2;
-    const { scene } = this.runtime;
-    const tweens = [
-      [this.hemi.color, light.color],
-      [this.key.color, light.color],
-      [scene.background, light.background],
-      [scene.fog.color, light.background],
-    ];
-    tweens.forEach(([target, color]) =>
-      gsap.to(target, { r: color.r, g: color.g, b: color.b, duration, overwrite: 'auto' }),
-    );
-    gsap.to(this.hemi, { intensity: light.hemiIntensity, duration, overwrite: 'auto' });
-    gsap.to(this.key, { intensity: light.keyIntensity, duration, overwrite: 'auto' });
-    gsap.to(this.key.position, {
-      x: light.position.x,
-      y: light.position.y,
-      z: light.position.z,
-      duration,
-      overwrite: 'auto',
-    });
-    this.districts?.setWindows(light.windows, duration);
+    this.districts.setBaseOpacity(districtOpacity());
   }
 
   // Кластеры пересчитываются, только пока метки видны и камера или данные изменились.
@@ -544,7 +541,7 @@ export class MapScene {
   // выбранный район и район под курсором, затем более крупные. При приближении остальные
   // возвращаются.
   resolveLabelOverlaps() {
-    if (!this.districts) return;
+    if (!this.districts || this.districtsHidden) return;
     const { camera } = this.runtime;
     const { width, height } = this.runtime.size;
     const point = new THREE.Vector3();
@@ -641,6 +638,7 @@ export class MapScene {
     this.problems?.dispose();
     this.marker.dispose();
     this.backdrop?.dispose();
+    this.tiles?.dispose();
     this.labels.forEach((label) => label.element.remove());
     this.labelRenderer.domElement.remove();
     this.runtime.dispose();

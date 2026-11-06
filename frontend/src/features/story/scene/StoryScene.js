@@ -5,10 +5,8 @@ import { at } from '../lib/chapters';
 import { FOV, TOP_VIEW_HEIGHT, zoomFactor } from '../lib/topView';
 import { CITY_PARAMS, CityStage } from './CityStage';
 
-// Куда «приземляется» история, когда район показывают крупно.
-const FOCUS_DISTRICT = 'center';
 const FOG = [80, 160];
-// Далёкая ближняя плоскость сохраняет точность глубины, поэтому улицы на крышах не мерцают.
+// Далёкая ближняя плоскость сохраняет точность глубины, поэтому границы на крышах не мерцают.
 const NEAR = 0.5;
 
 // 3D-город истории, управляемый прокруткой: начинается с главы «город», когда плоская сцена
@@ -41,17 +39,24 @@ export class StoryScene {
     this.lastKey = '';
 
     this.runtime.onResize((width, height) => this.city?.setResolution(width, height));
-    this.runtime.onTick(() => this.tick());
+    this.runtime.onTick((time) => this.tick(time));
   }
 
-  // center — середина районов на плоской карте [x, y] (км, y — на юг): вокруг неё строятся все кадры,
-  // и первый кадр совпадает с картой на экране (lib/topView.js).
-  setCity(city, moods, problems, [cx, cy] = [0, 0]) {
+  // center — середина районов на плоской карте [x, y] (единицы истории, y — на юг): вокруг неё
+  // строятся все кадры, и первый кадр совпадает с картой на экране (lib/topView.js). scale — масштаб
+  // плана города (useCityOutline с extent), focus — район, куда «приземляется» история
+  // (lib/storyCity.js).
+  setCity(city, moods, problems, [cx, cy] = [0, 0], { scale = 1, focus } = {}) {
     if (this.city) return;
+    this.focus = focus;
     this.center = new THREE.Vector3(cx, 0, cy);
     this.look.copy(this.center);
     this.cam.set(cx, TOP_VIEW_HEIGHT, cy + 0.5);
-    this.city = new CityStage(city, moods, problems, { detail: this.runtime.quality.detail });
+    this.city = new CityStage(city, moods, problems, {
+      detail: this.runtime.quality.detail,
+      scale,
+      renderer: this.runtime.renderer,
+    });
     this.city.group.visible = false;
     const lights = new THREE.Group();
     lights.add(
@@ -73,7 +78,7 @@ export class StoryScene {
   // Добавляет анимации города в шкалу истории (раскладка глав: ../lib/chapters.js).
   buildTimeline(tl) {
     const { params: p, cam, look } = this;
-    const focus = this.city.anchorOf(FOCUS_DISTRICT);
+    const focus = this.city.anchorOf(this.focus);
     const { x: ox, z: oz } = this.center;
     // Кадры вокруг середины районов (кроме подлёта к району — он в координатах самого района).
     const around = ([x, y, z]) => [x + ox, y, z + oz];
@@ -82,8 +87,9 @@ export class StoryScene {
         .to(cam, { x: position[0], y: position[1], z: position[2], duration, ease }, time)
         .to(look, { x: target[0], y: target[1], z: target[2], duration, ease }, time);
 
-    // 3. Та же карта, что была на экране, теперь в 3D и строго сверху: появляются окрестности и
-    // река, рисуются улицы, районы растут волной от центра, приходят люди.
+    // 3. Та же карта, что была на экране, теперь в 3D и строго сверху: появляются земля и река,
+    // от центра наружу рисуются дороги (плиты становятся полупрозрачными), районы растут волной от
+    // центра, приходят люди.
     tl.set(p, { world: 1, appear: 1 }, at(2));
     tl.to(p, { backdrop: 1, duration: 1.8 }, at(2, 0.2));
     tl.to(p, { streets: 1, duration: 3.2 }, at(2, 0.3));
@@ -113,10 +119,12 @@ export class StoryScene {
     return tl;
   }
 
-  tick() {
+  tick(time) {
     const { params: p, runtime } = this;
     const camera = runtime.camera;
     if (!this.city) return;
+    // Плитки дорог грузятся и пока город скрыт: к главе «город» они уже на месте.
+    this.city.update(camera, runtime.size.height, time * 1000);
     const inCity = p.world >= 0.5;
     this.city.group.visible = inCity;
     if (inCity) {

@@ -19,6 +19,13 @@
     "flat": "flach",
     "hint": "Je besser die Stimmung im Viertel, desto höher ist es"
   },
+  "districtsVisibility": {
+    "label": "Viertel",
+    "groupLabel": "Viertel ein- oder ausblenden",
+    "show": "Zeigen",
+    "hide": "Ausblenden",
+    "hint": "Ohne Viertel bleibt nur das Straßennetz"
+  },
   "legendTitles": {
     "districts": "Stadtviertel",
     "mood": "Stimmung im Viertel",
@@ -117,13 +124,5 @@
     }
   },
   "cluster": "{count} {problems} in der Nähe — heranzoomen",
-  "clusterForms": ["Problem", "Probleme", "Probleme"],
-  "daytime": {
-    "morning": "Morgen",
-    "day": "Tag",
-    "evening": "Abend",
-    "night": "Nacht",
-    "caption": "{city} · {phase}, {time}",
-    "title": "Das Licht auf der Karte entspricht der Tageszeit in der Stadt"
-  }
+  "clusterForms": ["Problem", "Probleme", "Probleme"]
 }

@@ -1,7 +1,14 @@
 import * as THREE from 'three';
-import { CityBackdrop, colorForAggregate, colorForDistrict, DistrictsLayer } from '@/features/map';
+import {
+  CityBackdrop,
+  colorForAggregate,
+  colorForDistrict,
+  DistrictsLayer,
+  MapTiles,
+} from '@/features/map';
 import { MOOD_BY_CODE, MOODS } from '@/shared/config/moods';
 import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
+import { cityOutline } from '@/shared/lib/geo/cityOutline';
 import { cssVar } from '@/shared/lib/theme/cssVar';
 import {
   createProjection,
@@ -18,6 +25,11 @@ const DOT_RADIUS = 0.045;
 const PIN_HEIGHT = 0.5;
 const PIN_DROP = 2.6; // км над крышами, с которых падают метки
 const LINKS = 110;
+// Дороги строятся волной от центра к краю: сначала каркас магистралей, следом улицы и проезды.
+// REVEAL_SOFT — ширина размытого фронта волны в долях размаха города.
+const REVEAL_SOFT = 0.12;
+// Кольца и дуги прозрачные: рисуются после полупрозрачных плит, иначе плиты их подкрашивают.
+const EFFECTS_ORDER = 20;
 const clamp01 = (v) => Math.min(1, Math.max(0, v));
 const backOut = (t) => {
   const s = 1.9;
@@ -38,8 +50,8 @@ const staggered = (p, i, n, span = 0.25) => clamp01((p - (i / n) * (1 - span)) /
 
 export const CITY_PARAMS = {
   appear: 0, // появляется плоская карта (совпадает с картой на мониторе)
-  backdrop: 0, // проявляются река, вода и окрестности
-  streets: 0, // на крышах районов рисуются улицы
+  backdrop: 0, // проявляются земля и река
+  streets: 0, // от центра наружу рисуются дороги, плиты становятся полупрозрачными
   rise: 0, // районы выдавливаются волной от центра наружу
   people: 0,
   moodDots: 0,
@@ -48,29 +60,35 @@ export const CITY_PARAMS = {
   links: 0,
 };
 
-// Настоящая карта Костаная для истории, полностью управляется прогрессом прокрутки (никаких
+// Настоящая карта города для истории, полностью управляется прогрессом прокрутки (никаких
 // анимаций по времени, поэтому прокрутка назад проигрывает всё в обратную сторону).
 export class CityStage {
   // detail (0…1, renderQuality из adaptations/core): на телефонах меньше жителей и связей.
-  constructor(city, moods, problems, { detail = 1 } = {}) {
+  // scale — во сколько раз растянуть план города (useCityOutline с extent): любой город истории
+  // одного размаха; высоты плит не меняются. renderer — рендерер сцены (плиткам нужна анизотропия).
+  constructor(city, moods, problems, { detail = 1, scale = 1, renderer }) {
     this.detail = detail;
     this.group = new THREE.Group();
-    this.project = createProjection(city.center);
-    this.backdrop = new CityBackdrop(this.project, { water: city.water, streets: city.streets });
-    this.backdropMaterials = [];
-    this.backdrop.group.traverse((object) => {
-      if (!object.material) return;
-      object.material.transparent = true;
-      this.backdropMaterials.push([object.material, object.material.opacity]);
-    });
-    this.group.add(this.backdrop.group);
+    const project = createProjection(city.center);
+    this.project = (lonlat) => project(lonlat).map((v) => v * scale);
+    // Та же подложка, что на карте города: земля и PNG-плитки дорог и воды (без загрузки схемы дорог),
+    // к контуру города они гаснут; вся дорожная сеть лежит на земле под полупрозрачными плитами.
+    const km = cityOutline(city.districts, city.center);
+    const outline = {
+      ...km,
+      edges: km.edges.map(([nx, ny, h]) => [nx, ny, h * scale]),
+      fade: km.fade * scale,
+    };
+    this.reach = km.reach * scale;
+    this.backdrop = new CityBackdrop();
+    this.tiles = new MapTiles(city.slug, outline, renderer, { scale });
+    this.group.add(this.backdrop.group, this.tiles.group);
 
     this.districts = new DistrictsLayer(city.districts.features, this.project, {
       baseHeight: 0.25,
       heightRange: 0.55,
       lineWidth: 1.6,
-      streets: city.streets,
-      streetOpacity: 0.26,
+      opacity: parseFloat(cssVar('--scene-district-opacity')),
     });
     this.districts.setData(moods.districts, { animate: false });
     this.group.add(this.districts.group);
@@ -79,23 +97,8 @@ export class CityStage {
       (a, b) => a.anchor.length() - b.anchor.length(),
     );
     this.items.forEach((item) => {
-      // Отодвигаем плиту в глубину: улицы и края лежат всего в метрах над крышей, до которой от
-      // камеры 20+ км, и без смещения они мерцают сквозь неё.
-      Object.assign(item.material, {
-        polygonOffset: true,
-        polygonOffsetFactor: 2,
-        polygonOffsetUnits: 2,
-      });
       item.districtColor = colorForDistrict(item.palette);
       item.moodColor = colorForAggregate(moods.districts[item.slug]);
-      item.streets = item.group.children
-        .filter((child) => child.userData.street)
-        .map((object) => ({
-          object,
-          total: object.isLineSegments2
-            ? object.geometry.attributes.instanceStart.count
-            : object.geometry.attributes.position.count / 2,
-        }));
     });
 
     this.addPeople(city.districts.features, moods.districts);
@@ -145,6 +148,7 @@ export class CityStage {
       person.color = new THREE.Color(cssVar(MOOD_BY_CODE[person.mood].colorVar));
       this.dots.setColorAt(i, this.neutral);
     });
+    this.moodPulses.mesh.renderOrder = EFFECTS_ORDER;
     this.group.add(this.dots, this.moodPulses.mesh);
   }
 
@@ -172,6 +176,7 @@ export class CityStage {
       this.pinStems.setColorAt(i, pin.color);
       this.pinHeads.setColorAt(i, pin.color);
     });
+    this.pinPulses.mesh.renderOrder = EFFECTS_ORDER;
     this.group.add(this.pinStems, this.pinHeads, this.pinPulses.mesh);
     this.dummy = new THREE.Object3D();
   }
@@ -193,6 +198,7 @@ export class CityStage {
       });
     }
     this.links = new LinkNetwork(pairs);
+    this.links.lines.renderOrder = EFFECTS_ORDER;
     this.group.add(this.links.lines);
   }
 
@@ -208,22 +214,28 @@ export class CityStage {
   apply(p) {
     const color = new THREE.Color();
     const n = this.items.length;
-    this.backdropMaterials.forEach(([material, opacity]) => {
-      material.opacity = opacity * p.backdrop;
-    });
-    this.backdrop.group.visible = p.backdrop > 0.001;
+    this.backdrop.setOpacity(p.backdrop);
+    this.tiles.setOpacity(p.backdrop);
+    // Радиус волны: 0 — дорог нет, reach + фронт — видны до края. Вода проявляется вместе с землёй.
+    const soft = this.reach * REVEAL_SOFT;
+    const radius = (t) => t * (this.reach + soft);
+    this.tiles.setReveal(
+      {
+        water: radius(1),
+        major: radius(staggered(p.streets, 0, 2, 0.55)),
+        local: radius(staggered(p.streets, 1, 2, 0.55)),
+      },
+      soft,
+    );
+    // Пока дорог нет, плиты плотные, как карта на экране; с дорогами — полупрозрачные, как на карте
+    // города, и сеть видна сквозь них.
+    const opacity = THREE.MathUtils.lerp(1, this.districts.baseOpacity, p.streets) * p.appear;
 
     this.items.forEach((item, i) => {
       const grow = staggered(p.rise, i, n, 0.35);
       item.group.scale.y = Math.max(0.02, item.height * backOut(grow));
-      item.material.opacity = this.districts.baseOpacity * p.appear;
+      item.material.opacity = opacity;
       item.lineMaterial.opacity = 0.85 * p.appear;
-      const drawn = staggered(p.streets, i, n, 0.5);
-      item.streets.forEach(({ object, total }) => {
-        const shown = Math.floor(total * drawn);
-        if (object.isLineSegments2) object.geometry.instanceCount = shown;
-        else object.geometry.setDrawRange(0, shown * 2);
-      });
       color.copy(item.districtColor).lerp(item.moodColor, p.moodMix);
       item.material.color.copy(color);
       item.material.emissive.copy(color);
@@ -279,13 +291,18 @@ export class CityStage {
     return this.districts.getLocalAnchor(slug) ?? new THREE.Vector3();
   }
 
+  // Плитки нужного уровня под текущую камеру (каждый кадр, сами плитки — не чаще своего шага).
+  update(camera, viewportHeight, time) {
+    this.tiles.update(camera, viewportHeight, time);
+  }
+
   setResolution(width, height) {
     this.districts.setResolution(width, height);
-    this.backdrop.setResolution(width, height);
   }
 
   dispose() {
     this.backdrop.dispose();
+    this.tiles.dispose();
     this.districts.dispose();
     [this.dots, this.pinStems, this.pinHeads].forEach((mesh) => {
       mesh.geometry.dispose();

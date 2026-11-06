@@ -170,7 +170,9 @@ export function smoothBoundaries(collection, { water, tolerance = 16, iterations
       out.push(...arc.slice(0, -1));
     });
     out.push(out[0]);
-    return out;
+    // Маленькое кольцо (дыра или анклав меньше допуска) Дуглас–Пекер схлопывает до двух точек —
+    // такое кольцо триангуляция не переваривает, оно остаётся несглаженным.
+    return out.length < 4 ? [...ring.points, ring.points[0]] : out;
   });
 
   return {

@@ -1,19 +1,19 @@
 import { moodFill } from '@/features/map';
 import { MOOD_PERIODS } from '@/shared/config/periods';
 import { useCityOutline } from '@/shared/hooks/useCityOutline';
+import { STORY_EXTENT } from '../lib/storyCity';
 import styles from './StoryGuide.module.css';
 
 const PINS = 36;
-const FOCUS = 'center';
 // Декоративная линия тренда для шага «статистика» (не настоящие данные). viewBox близок к реальным
 // пропорциям графика, поэтому штрих не растянут, а появление пунктиром рисует одну непрерывную
 // линию (non-scaling stroke разбил бы pathLength на куски).
 const TREND = 'M4 60 C 36 54, 54 68, 90 50 S 144 32, 180 40 S 240 14, 296 11';
 
-// Костанай в 2D (те же районы OSM, что на 3D-карте). `step` переключает, что показывает карта: 0 —
-// районы, один выбран; 1 — цвета настроения; 2 — метки проблем; 3 — тренд поверх.
-export function GuideMap({ city, moods, problems, step }) {
-  const map = useCityOutline(city, problems, PINS);
+// Город истории в 2D (те же районы OSM, что на 3D-карте). `step` переключает, что показывает карта:
+// 0 — районы, выбран focus; 1 — цвета настроения; 2 — метки проблем; 3 — тренд поверх.
+export function GuideMap({ city, moods, problems, focus, step }) {
+  const map = useCityOutline(city, problems, { pinLimit: PINS, extent: STORY_EXTENT });
 
   if (!map) return <div className={styles.mapFrame} aria-hidden="true" />;
   const [, , width] = map.viewBox;
@@ -27,7 +27,7 @@ export function GuideMap({ city, moods, problems, step }) {
             key={district.slug}
             d={district.d}
             className={styles.district}
-            data-focus={district.slug === FOCUS || undefined}
+            data-focus={district.slug === focus || undefined}
             style={{
               '--fill-district': `var(--district-${district.palette})`,
               '--fill-mood': moodFill(moods?.districts[district.slug]),
@@ -52,7 +52,7 @@ export function GuideMap({ city, moods, problems, step }) {
 
       <p className={styles.mapLabel}>
         <span className={styles.mapDot} />
-        {map.districts.find((d) => d.slug === FOCUS)?.name}
+        {map.districts.find((d) => d.slug === focus)?.name}
       </p>
 
       <div className={styles.trend}>
