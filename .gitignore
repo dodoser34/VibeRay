@@ -16,7 +16,8 @@ BLENDER/
 CLAUDE.md
 AGENTS.md
 .claude/
-1
+# Только в корне: без «/» правило прятало бы папки уровня 1 плиток карты (frontend/public/maps/*/1)
+/1
 Files
 # Сгенерированные исходники иллюстраций: в проект попадают уже переведённые в WebP
 docs/art/incoming/*.png
