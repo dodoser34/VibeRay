@@ -62,3 +62,6 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          # Плиток карты ~6 тыс. файлов: Pages разворачивает их дольше стандартных 10 минут ожидания
+          timeout: 1800000
