@@ -4,7 +4,7 @@ import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
 import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
 import { gsap } from '@/shared/animations/core/gsapSetup';
 import { cssVar } from '@/shared/lib/theme/cssVar';
-import { labelPoint } from '@/shared/lib/geo/geoProjection';
+import { labelPoint, ringArea } from '@/shared/lib/geo/geoProjection';
 import { colorForAggregate, colorForDistrict, colorForNoData, colorForScore } from './moodColor';
 
 const LIFT = 0.14;
@@ -39,6 +39,7 @@ export class DistrictsLayer {
       opacity = 0.92,
       roughness = 0.7,
       colorMode = 'districts',
+      plates = null,
     } = {},
   ) {
     this.group = new THREE.Group();
@@ -48,6 +49,7 @@ export class DistrictsLayer {
     this.baseHeight = baseHeight;
     this.heightRange = heightRange;
     this.heightScale = 1;
+    this.proximity = 1; // вблизи камеры плиты прижимаются к земле (setProximity)
     this.baseOpacity = opacity;
     this.roughness = roughness;
     this.colorMode = colorMode;
@@ -60,24 +62,19 @@ export class DistrictsLayer {
     this.seeThrough = opacity < SEE_THROUGH;
     this.introDone = false;
 
-    features.forEach((feature) => this.addDistrict(feature, project, lineWidth));
+    features.forEach((feature) =>
+      this.addDistrict(feature, project, lineWidth, plates?.[feature.properties.slug]),
+    );
   }
 
-  addDistrict(feature, project, lineWidth) {
+  // plate — готовая плита района (getCity → plates, построена в фоновом потоке в км проекции без
+  // растяжения); без неё плита строится здесь.
+  addDistrict(feature, project, lineWidth, plate) {
     const { slug, name, palette } = feature.properties;
     const polygons = feature.geometry.coordinates.map((polygon) =>
       polygon.map((ring) => ring.map(project)),
     );
-    const shapes = polygons.map(([outer, ...holes]) => {
-      const shape = new THREE.Shape(outer.map(([x, y]) => new THREE.Vector2(x, y)));
-      holes.forEach((hole) =>
-        shape.holes.push(new THREE.Path(hole.map(([x, y]) => new THREE.Vector2(x, y)))),
-      );
-      return shape;
-    });
-
-    const geometry = new THREE.ExtrudeGeometry(shapes, { depth: 1, bevelEnabled: false });
-    geometry.rotateX(-Math.PI / 2);
+    const geometry = plate ? plateGeometry(plate) : extrudePlate(polygons);
 
     const color = colorForDistrict(palette);
     const material = new THREE.MeshStandardMaterial({
@@ -115,7 +112,7 @@ export class DistrictsLayer {
     this.group.add(item);
     this.meshes.push(mesh);
 
-    const [lx, ly] = labelPoint(polygons);
+    const [lx, ly] = plate ? project(plate.label) : labelPoint(polygons);
     this.items.set(slug, {
       slug,
       name,
@@ -127,10 +124,13 @@ export class DistrictsLayer {
       polygons,
       height: this.baseHeight,
       // Площадь (км²): при столкновении подписей большие районы сохраняют свою.
-      area: shapes.reduce(
-        (sum, shape) => sum + Math.abs(THREE.ShapeUtils.area(shape.getPoints())),
-        0,
-      ),
+      area:
+        plate?.area ??
+        polygons.reduce(
+          (sum, [outer, ...holes]) =>
+            sum + ringArea(outer) - holes.reduce((h, hole) => h + ringArea(hole), 0),
+          0,
+        ),
     });
     item.scale.y = this.baseHeight;
   }
@@ -185,6 +185,16 @@ export class DistrictsLayer {
     this.updateHeights(0.7);
   }
 
+  // Камера близко к земле (уровень улицы): плиты плавно ложатся — 1 — полная высота, ~0 — почти
+  // плоские пятна, сквозь которые видны дороги. Короткий твин сглаживает шаги колеса мыши.
+  setProximity(proximity) {
+    this.proximity = proximity;
+    if (!this.introDone) return;
+    this.items.forEach((item) =>
+      gsap.to(item.group.scale, { y: this.shownHeight(item), duration: 0.15, overwrite: 'auto' }),
+    );
+  }
+
   // Агрегаты настроения задают высоту плит, а в режиме 'mood' — и цвет.
   setData(aggregates, { animate = true } = {}) {
     this.aggregates = aggregates;
@@ -212,7 +222,7 @@ export class DistrictsLayer {
   }
 
   shownHeight(item) {
-    return this.hidden ? FLAT : item.height;
+    return this.hidden ? FLAT : Math.max(FLAT, item.height * this.proximity);
   }
 
   // Только карта дорог: плиты и границы гаснут, а плиты ложатся на землю. Высоты по-прежнему
@@ -324,13 +334,14 @@ export class DistrictsLayer {
 
   getLocalAnchor(slug) {
     const item = this.items.get(slug);
-    return item ? new THREE.Vector3(item.anchor.x, item.height, item.anchor.y) : null;
+    return item ? new THREE.Vector3(item.anchor.x, this.shownHeight(item), item.anchor.y) : null;
   }
 
   // Высота крыши для меток проблем; у скрытых районов метки стоят на земле.
   heightOf(slug) {
     if (this.hidden) return 0;
-    return this.items.get(slug)?.height ?? this.baseHeight;
+    const item = this.items.get(slug);
+    return item ? this.shownHeight(item) : this.baseHeight * this.proximity;
   }
 
   dispose() {
@@ -349,4 +360,25 @@ export class DistrictsLayer {
     });
     this.group.removeFromParent();
   }
+}
+
+function extrudePlate(polygons) {
+  const shapes = polygons.map(([outer, ...holes]) => {
+    const shape = new THREE.Shape(outer.map(([x, y]) => new THREE.Vector2(x, y)));
+    holes.forEach((hole) =>
+      shape.holes.push(new THREE.Path(hole.map(([x, y]) => new THREE.Vector2(x, y)))),
+    );
+    return shape;
+  });
+  const geometry = new THREE.ExtrudeGeometry(shapes, { depth: 1, bevelEnabled: false });
+  geometry.rotateX(-Math.PI / 2);
+  return geometry;
+}
+
+function plateGeometry({ position, normal, uv }) {
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.BufferAttribute(position, 3));
+  geometry.setAttribute('normal', new THREE.BufferAttribute(normal, 3));
+  geometry.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+  return geometry;
 }

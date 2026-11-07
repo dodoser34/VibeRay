@@ -1,11 +1,12 @@
-"""Схема дорог города из OpenStreetMap -> streets.geojson.
+"""Схема дорог города из OpenStreetMap -> streets/<район>.geojson.
 
 Берёт дороги (от магистралей до дворовых проездов) и железную дорогу через Overpass API, делит их на
 классы схемы, разрезает по районам (участок относится к району своей середины) и слегка упрощает.
 Названий и адресов в результате нет — только рисунок дорог. Лицензия данных — ODbL.
 
-Пишет backend/data/cities/<slug>/streets.geojson. Фронтенд схему не читает: карта и история рисуют дороги
-PNG-плитками, после этого скрипта их пересобирает build_map_tiles.py.
+Пишет backend/data/cities/<slug>/streets/: по файлу на район (<slug района>.geojson)
+и _outside.geojson для дорог вне районов; старые файлы папки удаляются. Фронтенд схему не читает:
+карта и история рисуют дороги плитками, после этого скрипта их пересобирает build_map_tiles.py.
 
 Запуск из корня репозитория:
 
@@ -28,6 +29,7 @@ OVERPASS = 'https://overpass-api.de/api/interpreter'
 USER_AGENT = 'VibeRay/0.1 (city mood map; data build script)'
 MARGIN_DEG = 0.02  # запас вокруг города, чтобы подложка не обрывалась у края районов
 PRINT_WIDTH = 100  # как printWidth в frontend/.prettierrc
+OUTSIDE = '_outside'  # файл дорог вне районов (district = null)
 
 KIND = {
     'motorway': 'major',
@@ -295,6 +297,25 @@ def pretty(value: object, indent: int = 0, prefix: int = 0) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
+def write_streets(streets: dict, folder: Path) -> int:
+    """Пишет схему дорог по файлу на район (вне районов — _outside.geojson): огромный город
+    в одном файле тормозит в редакторе, а правка района меняет только свой файл.
+    Возвращает размер в байтах."""
+    groups: dict[str, list[dict]] = {}
+    for feature in streets['features']:
+        name = feature['properties']['district'] or OUTSIDE
+        groups.setdefault(name, []).append(feature)
+    folder.mkdir(parents=True, exist_ok=True)
+    for old in folder.glob('*.geojson'):
+        old.unlink()
+    size = 0
+    for name, features in sorted(groups.items()):
+        text = pretty({'type': 'FeatureCollection', 'features': features}) + '\n'
+        (folder / f'{name}.geojson').write_text(text, encoding='utf-8', newline='\n')
+        size += len(text.encode('utf-8'))
+    return size
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     parser.add_argument('city', help='slug города, например kostanay')
@@ -337,11 +358,12 @@ def main() -> None:
         skip_outside=skip_outside,
         tolerance=tolerance,
     )
-    text = pretty(streets) + '\n'
-    (backend_dir / 'streets.geojson').write_text(text, encoding='utf-8', newline='\n')
+    folder = backend_dir / 'streets'
+    size = write_streets(streets, folder)
 
     kinds = Counter(f['properties']['kind'] for f in streets['features'])
-    print(f'{len(streets["features"])} линий, {len(text) // 1024} КБ: {dict(kinds)}')
+    files = len(list(folder.glob('*.geojson')))
+    print(f'{len(streets["features"])} линий, {size // 1024} КБ в {files} файлах: {dict(kinds)}')
     print(f'Плитки карты: python backend/scripts/build_map_tiles.py {args.city}')
 
 

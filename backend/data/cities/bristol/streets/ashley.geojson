@@ -1,0 +1,5627 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.568802, 51.468337],
+          [-2.568148, 51.468682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574701, 51.46609],
+          [-2.574976, 51.466224],
+          [-2.575115, 51.466271],
+          [-2.575232, 51.466287],
+          [-2.575417, 51.466284],
+          [-2.575801, 51.466225],
+          [-2.575978, 51.466117],
+          [-2.576048, 51.466036],
+          [-2.576074, 51.465931],
+          [-2.576066, 51.465776],
+          [-2.57603, 51.465671],
+          [-2.575953, 51.46557],
+          [-2.575845, 51.465497],
+          [-2.575561, 51.46537],
+          [-2.575384, 51.46531],
+          [-2.575198, 51.465286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570963, 51.467847],
+          [-2.57233, 51.467534],
+          [-2.573024, 51.467339],
+          [-2.573483, 51.467172],
+          [-2.573879, 51.466979],
+          [-2.574484, 51.46665],
+          [-2.574835, 51.466411],
+          [-2.575021, 51.466356],
+          [-2.575417, 51.466284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578004, 51.463406],
+          [-2.576689, 51.464359],
+          [-2.576295, 51.46466],
+          [-2.575754, 51.465117],
+          [-2.575609, 51.465182],
+          [-2.575285, 51.465224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576055, 51.465733],
+          [-2.576152, 51.465486],
+          [-2.576234, 51.465376],
+          [-2.576955, 51.464749],
+          [-2.577138, 51.464463],
+          [-2.577357, 51.464205],
+          [-2.577768, 51.463785]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.566622, 51.469667],
+          [-2.567572, 51.469119],
+          [-2.568505, 51.468677],
+          [-2.568939, 51.468496],
+          [-2.569675, 51.468224],
+          [-2.570114, 51.468081],
+          [-2.572245, 51.467476],
+          [-2.572957, 51.467251],
+          [-2.573427, 51.467059],
+          [-2.574072, 51.466747],
+          [-2.574651, 51.466366],
+          [-2.575035, 51.466068],
+          [-2.576938, 51.464462],
+          [-2.577768, 51.463785]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578004, 51.463406],
+          [-2.580514, 51.461285],
+          [-2.580775, 51.46111],
+          [-2.581442, 51.460722],
+          [-2.582099, 51.460419],
+          [-2.582331, 51.460236],
+          [-2.582595, 51.460313],
+          [-2.582798, 51.460295],
+          [-2.582982, 51.460248]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577768, 51.463785],
+          [-2.580649, 51.461362],
+          [-2.581068, 51.461093],
+          [-2.5819, 51.460701],
+          [-2.582982, 51.460248]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582982, 51.460248],
+          [-2.584067, 51.459759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584445, 51.459466],
+          [-2.58424, 51.459458],
+          [-2.584113, 51.459388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578004, 51.463406],
+          [-2.574932, 51.466012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582092, 51.460258],
+          [-2.582063, 51.46034],
+          [-2.58199, 51.460407],
+          [-2.581582, 51.460589],
+          [-2.581442, 51.460722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.568148, 51.468682],
+          [-2.567452, 51.469017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585852, 51.459198],
+          [-2.58561, 51.459188],
+          [-2.585362, 51.459208],
+          [-2.585029, 51.459278],
+          [-2.584445, 51.459466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592081, 51.471918],
+          [-2.591896, 51.472068],
+          [-2.591902, 51.472108],
+          [-2.591446, 51.472446],
+          [-2.591239, 51.472622],
+          [-2.591107, 51.472795],
+          [-2.591028, 51.473021],
+          [-2.591056, 51.473135],
+          [-2.591149, 51.473307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59043, 51.465562],
+          [-2.590406, 51.465605],
+          [-2.590435, 51.465665],
+          [-2.59061, 51.46598],
+          [-2.590676, 51.466017],
+          [-2.591367, 51.467379],
+          [-2.591641, 51.4678],
+          [-2.591946, 51.468099],
+          [-2.592819, 51.468806],
+          [-2.592968, 51.468952],
+          [-2.592988, 51.469033],
+          [-2.593132, 51.469199],
+          [-2.593173, 51.469217],
+          [-2.593348, 51.469446],
+          [-2.593443, 51.469503],
+          [-2.593519, 51.469634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584445, 51.459466],
+          [-2.584046, 51.459565],
+          [-2.584067, 51.459759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584067, 51.459759],
+          [-2.584651, 51.459532],
+          [-2.585159, 51.459373],
+          [-2.585422, 51.459316],
+          [-2.585631, 51.459297],
+          [-2.58605, 51.459303],
+          [-2.587207, 51.459424],
+          [-2.588326, 51.459435],
+          [-2.588875, 51.459407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590398, 51.461896],
+          [-2.590309, 51.462058],
+          [-2.590186, 51.462178],
+          [-2.590022, 51.462449],
+          [-2.58994, 51.462653],
+          [-2.589955, 51.462746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59043, 51.465562],
+          [-2.589729, 51.464229],
+          [-2.58976, 51.463797],
+          [-2.589954, 51.462855],
+          [-2.589955, 51.462746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589955, 51.462746],
+          [-2.589989, 51.462723],
+          [-2.590024, 51.462635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.568872, 51.468404],
+          [-2.568148, 51.468682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573942, 51.466687],
+          [-2.573345, 51.466992],
+          [-2.572896, 51.467173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590501, 51.465592],
+          [-2.59043, 51.465562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576955, 51.464749],
+          [-2.577339, 51.464456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576623, 51.466271],
+          [-2.576439, 51.466197],
+          [-2.576295, 51.466097],
+          [-2.576217, 51.466007],
+          [-2.576143, 51.465827],
+          [-2.576066, 51.465776]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575801, 51.466225],
+          [-2.5765, 51.466283],
+          [-2.576623, 51.466271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581833, 51.472959],
+          [-2.58101, 51.472334],
+          [-2.580863, 51.472193],
+          [-2.580782, 51.471437],
+          [-2.580704, 51.471053],
+          [-2.579518, 51.468675],
+          [-2.579494, 51.46846],
+          [-2.579786, 51.466525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581316, 51.474286],
+          [-2.580494, 51.475824]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582738, 51.465417],
+          [-2.583019, 51.465359],
+          [-2.583313, 51.465318],
+          [-2.583584, 51.465323],
+          [-2.584314, 51.465275],
+          [-2.586212, 51.465257],
+          [-2.586481, 51.465227],
+          [-2.588069, 51.464618],
+          [-2.589729, 51.464229]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579786, 51.466525],
+          [-2.579275, 51.466514],
+          [-2.576623, 51.466271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579786, 51.466525],
+          [-2.579813, 51.466447],
+          [-2.579936, 51.466328],
+          [-2.580688, 51.466],
+          [-2.581625, 51.465686],
+          [-2.582506, 51.46546]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581373, 51.474184],
+          [-2.58133, 51.474205],
+          [-2.581303, 51.474256],
+          [-2.581316, 51.474286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581861, 51.473171],
+          [-2.581829, 51.473318],
+          [-2.581373, 51.474184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581316, 51.474286],
+          [-2.581357, 51.474263],
+          [-2.581373, 51.474184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581822, 51.473008],
+          [-2.581833, 51.473156],
+          [-2.581861, 51.473171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581861, 51.473171],
+          [-2.581891, 51.473146],
+          [-2.581899, 51.473006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581822, 51.473008],
+          [-2.58187, 51.473017],
+          [-2.581899, 51.473006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582738, 51.465417],
+          [-2.582675, 51.465393],
+          [-2.582545, 51.465414],
+          [-2.582506, 51.46546]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582506, 51.46546],
+          [-2.582586, 51.465475],
+          [-2.582703, 51.465457],
+          [-2.582738, 51.465417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581899, 51.473006],
+          [-2.581896, 51.472965],
+          [-2.581833, 51.472959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581833, 51.472959],
+          [-2.581808, 51.472982],
+          [-2.581822, 51.473008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573879, 51.466979],
+          [-2.574018, 51.467057],
+          [-2.57406, 51.467126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580719, 51.461573],
+          [-2.580729, 51.461475],
+          [-2.580795, 51.461403],
+          [-2.581473, 51.460936],
+          [-2.581574, 51.460852]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584702, 51.460609],
+          [-2.58397, 51.460813],
+          [-2.582363, 51.4613],
+          [-2.582176, 51.461399],
+          [-2.582075, 51.461502],
+          [-2.581379, 51.461912],
+          [-2.581295, 51.461923],
+          [-2.581206, 51.461897],
+          [-2.580839, 51.461616],
+          [-2.580783, 51.461588],
+          [-2.580719, 51.461573]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584363, 51.460159],
+          [-2.584702, 51.460609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586866, 51.46197],
+          [-2.586584, 51.461599],
+          [-2.586352, 51.461269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58497, 51.462917],
+          [-2.584859, 51.463003],
+          [-2.584271, 51.463371],
+          [-2.582665, 51.46431],
+          [-2.58217, 51.464655],
+          [-2.582132, 51.464668],
+          [-2.582097, 51.464666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58842, 51.460375],
+          [-2.588729, 51.461062]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578167, 51.468903],
+          [-2.578326, 51.468793],
+          [-2.5785, 51.468707],
+          [-2.578671, 51.468637],
+          [-2.579299, 51.468461],
+          [-2.579494, 51.46846],
+          [-2.579392, 51.468357],
+          [-2.579205, 51.468024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577134, 51.469509],
+          [-2.577221, 51.469493],
+          [-2.577422, 51.469436],
+          [-2.577557, 51.469378],
+          [-2.577741, 51.469284],
+          [-2.577898, 51.469166],
+          [-2.578167, 51.468903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571956, 51.471742],
+          [-2.572553, 51.47138],
+          [-2.572848, 51.471173],
+          [-2.573046, 51.471002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575257, 51.469946],
+          [-2.575297, 51.469957],
+          [-2.575356, 51.469938],
+          [-2.575364, 51.469908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575442, 51.469333],
+          [-2.575674, 51.469805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580643, 51.470932],
+          [-2.581261, 51.470593],
+          [-2.581271, 51.470524],
+          [-2.581094, 51.469873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581094, 51.469873],
+          [-2.581568, 51.469484],
+          [-2.582048, 51.469177],
+          [-2.582419, 51.468973],
+          [-2.583252, 51.468593],
+          [-2.583305, 51.468559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588131, 51.466167],
+          [-2.58821, 51.466083],
+          [-2.589101, 51.464751],
+          [-2.589266, 51.464442],
+          [-2.589233, 51.464349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579038, 51.463106],
+          [-2.581513, 51.464371],
+          [-2.582048, 51.464655],
+          [-2.582097, 51.464666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577085, 51.46485],
+          [-2.577097, 51.464765],
+          [-2.577275, 51.464573],
+          [-2.577339, 51.464456],
+          [-2.577458, 51.464347],
+          [-2.577731, 51.464143],
+          [-2.579038, 51.463106],
+          [-2.579196, 51.462964],
+          [-2.579862, 51.462308],
+          [-2.580476, 51.461668],
+          [-2.580587, 51.461597],
+          [-2.58064, 51.461579],
+          [-2.580719, 51.461573]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590117, 51.46208],
+          [-2.590157, 51.462086],
+          [-2.59025, 51.462051],
+          [-2.590261, 51.462024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572848, 51.471173],
+          [-2.574312, 51.47224],
+          [-2.574409, 51.472267],
+          [-2.574489, 51.472268],
+          [-2.574599, 51.472244],
+          [-2.575865, 51.471786],
+          [-2.575955, 51.47168],
+          [-2.57598, 51.471668],
+          [-2.576664, 51.47152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577155, 51.466316],
+          [-2.577022, 51.466532],
+          [-2.576674, 51.467043],
+          [-2.576541, 51.467334]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584614, 51.467781],
+          [-2.584268, 51.467498],
+          [-2.584074, 51.46732],
+          [-2.583425, 51.466789],
+          [-2.583623, 51.466697],
+          [-2.583714, 51.466666],
+          [-2.58468, 51.466416],
+          [-2.584775, 51.466417],
+          [-2.585032, 51.466445],
+          [-2.585253, 51.466424],
+          [-2.586368, 51.466268],
+          [-2.586657, 51.466218],
+          [-2.586732, 51.466197],
+          [-2.586889, 51.46611],
+          [-2.58701, 51.466074],
+          [-2.587156, 51.466058],
+          [-2.587436, 51.466046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573692, 51.471312],
+          [-2.574348, 51.471038],
+          [-2.574755, 51.470881],
+          [-2.575496, 51.470547],
+          [-2.575945, 51.470377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574046, 51.471167],
+          [-2.574564, 51.471688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576099, 51.474915],
+          [-2.577105, 51.474633],
+          [-2.577174, 51.474593],
+          [-2.577191, 51.474574],
+          [-2.577199, 51.47453],
+          [-2.577213, 51.473911],
+          [-2.577312, 51.473737],
+          [-2.577338, 51.473666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577834, 51.473901],
+          [-2.578507, 51.474216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577723, 51.474618],
+          [-2.577834, 51.473901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583604, 51.46941],
+          [-2.585017, 51.468534],
+          [-2.586139, 51.467887],
+          [-2.58701, 51.467258],
+          [-2.58823, 51.466409],
+          [-2.588296, 51.466392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583587, 51.470032],
+          [-2.584201, 51.469676],
+          [-2.584673, 51.469443],
+          [-2.584999, 51.4692],
+          [-2.585538, 51.468891],
+          [-2.586581, 51.468241],
+          [-2.587546, 51.467555],
+          [-2.588711, 51.466656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585158, 51.4709],
+          [-2.586413, 51.469901],
+          [-2.586485, 51.469859],
+          [-2.586584, 51.469824],
+          [-2.587452, 51.469619],
+          [-2.587595, 51.469624],
+          [-2.587867, 51.469707],
+          [-2.589346, 51.470286],
+          [-2.589994, 51.470526]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592748, 51.469697],
+          [-2.593276, 51.470004],
+          [-2.593507, 51.470124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587384, 51.459999],
+          [-2.588207, 51.459865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585694, 51.460366],
+          [-2.586343, 51.460177],
+          [-2.58651, 51.460141],
+          [-2.587384, 51.459999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585726, 51.460407],
+          [-2.585694, 51.460366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587217, 51.461798],
+          [-2.587622, 51.462142],
+          [-2.588455, 51.462815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588059, 51.459432],
+          [-2.588124, 51.459652],
+          [-2.588207, 51.459865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588748, 51.472271],
+          [-2.587101, 51.471651],
+          [-2.586193, 51.471334],
+          [-2.58537, 51.471034],
+          [-2.585193, 51.470991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587101, 51.471651],
+          [-2.586883, 51.471839],
+          [-2.586689, 51.471968],
+          [-2.5858, 51.472496],
+          [-2.584656, 51.473126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584405, 51.47154],
+          [-2.5858, 51.472496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583896, 51.472701],
+          [-2.585105, 51.472023],
+          [-2.586046, 51.47148],
+          [-2.586193, 51.471334]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586106, 51.474048],
+          [-2.588221, 51.474406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591225, 51.470168],
+          [-2.591151, 51.470638],
+          [-2.590997, 51.47103],
+          [-2.59087, 51.471232],
+          [-2.590671, 51.471443],
+          [-2.590527, 51.471576],
+          [-2.590245, 51.471801],
+          [-2.590091, 51.471953],
+          [-2.58993, 51.472141],
+          [-2.589659, 51.472517],
+          [-2.589542, 51.472721],
+          [-2.589426, 51.47296],
+          [-2.589364, 51.473174],
+          [-2.589238, 51.474043],
+          [-2.589044, 51.475181],
+          [-2.588121, 51.475038],
+          [-2.588495, 51.472786],
+          [-2.58867, 51.472389],
+          [-2.588923, 51.472007],
+          [-2.589148, 51.471753],
+          [-2.589843, 51.471095],
+          [-2.589926, 51.471004],
+          [-2.589989, 51.470919],
+          [-2.590025, 51.470836],
+          [-2.590031, 51.47073],
+          [-2.589994, 51.470526],
+          [-2.590569, 51.469943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589148, 51.471753],
+          [-2.585754, 51.47042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589754, 51.471176],
+          [-2.586413, 51.469901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59028, 51.473233],
+          [-2.588436, 51.47312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591478, 51.47177],
+          [-2.591924, 51.471963],
+          [-2.591996, 51.471983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582048, 51.471885],
+          [-2.582225, 51.471951],
+          [-2.582379, 51.471994],
+          [-2.582677, 51.472051],
+          [-2.583896, 51.472701],
+          [-2.584656, 51.473126],
+          [-2.584976, 51.473283],
+          [-2.585258, 51.473386],
+          [-2.585394, 51.473452],
+          [-2.585798, 51.473781],
+          [-2.586907, 51.474734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589927, 51.464012],
+          [-2.589743, 51.463992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588131, 51.466167],
+          [-2.588296, 51.466392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587253, 51.466579],
+          [-2.588131, 51.466167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588298, 51.46914],
+          [-2.587867, 51.469707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57229, 51.468851],
+          [-2.57224, 51.468848],
+          [-2.572187, 51.468831],
+          [-2.572114, 51.468761],
+          [-2.571508, 51.468059],
+          [-2.573545, 51.467389],
+          [-2.573602, 51.467358],
+          [-2.573612, 51.467296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571864, 51.468465],
+          [-2.574073, 51.467762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571226, 51.470055],
+          [-2.572285, 51.469283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572114, 51.468761],
+          [-2.571913, 51.468862],
+          [-2.570722, 51.469565],
+          [-2.570537, 51.469707],
+          [-2.571226, 51.470055],
+          [-2.571753, 51.470349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570972, 51.470554],
+          [-2.571488, 51.470204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574238, 51.470354],
+          [-2.572041, 51.46915],
+          [-2.572264, 51.468902],
+          [-2.57229, 51.468851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574395, 51.469872],
+          [-2.575362, 51.469189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573279, 51.469181],
+          [-2.574695, 51.468482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57786, 51.471492],
+          [-2.57671, 51.471627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573835, 51.469525],
+          [-2.575011, 51.468781]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577772, 51.468807],
+          [-2.577884, 51.468818],
+          [-2.578167, 51.468903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580231, 51.470127],
+          [-2.579657, 51.470241],
+          [-2.579611, 51.470357],
+          [-2.579562, 51.470423],
+          [-2.57947, 51.470494],
+          [-2.579342, 51.470559],
+          [-2.578586, 51.470706],
+          [-2.578876, 51.471276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581525, 51.470552],
+          [-2.582665, 51.469981],
+          [-2.58282, 51.469018],
+          [-2.582839, 51.468779]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572125, 51.470097],
+          [-2.572833, 51.469581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572656, 51.470403],
+          [-2.573372, 51.469881]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584074, 51.46732],
+          [-2.585354, 51.467007],
+          [-2.58653, 51.46676],
+          [-2.587253, 51.466579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581457, 51.467432],
+          [-2.580096, 51.467856],
+          [-2.580008, 51.467867],
+          [-2.579594, 51.467849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58288, 51.467348],
+          [-2.582816, 51.467393],
+          [-2.582241, 51.467662],
+          [-2.581585, 51.46794],
+          [-2.579518, 51.468675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581892, 51.466278],
+          [-2.582098, 51.466563],
+          [-2.582658, 51.467177],
+          [-2.582847, 51.467343],
+          [-2.58288, 51.467348]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586698, 51.465153],
+          [-2.587436, 51.466046],
+          [-2.587771, 51.466338]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587352, 51.464891],
+          [-2.586649, 51.464346],
+          [-2.586274, 51.464075],
+          [-2.58525, 51.463281],
+          [-2.584859, 51.463003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575737, 51.467844],
+          [-2.575864, 51.467227]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575735, 51.471563],
+          [-2.575507, 51.471323]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577303, 51.467795],
+          [-2.578247, 51.467482],
+          [-2.578332, 51.467468],
+          [-2.578713, 51.467442],
+          [-2.578906, 51.467418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577085, 51.46485],
+          [-2.577132, 51.464858],
+          [-2.578066, 51.465164],
+          [-2.578093, 51.465205],
+          [-2.577432, 51.466342]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572577, 51.468764],
+          [-2.573279, 51.469181],
+          [-2.573835, 51.469525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576219, 51.467286],
+          [-2.575406, 51.467156],
+          [-2.57518, 51.467096],
+          [-2.574933, 51.467092],
+          [-2.574358, 51.467885],
+          [-2.574266, 51.467974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576541, 51.467334],
+          [-2.577034, 51.467383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581803, 51.471696],
+          [-2.581589, 51.471147]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57809, 51.46522],
+          [-2.578287, 51.465331],
+          [-2.578548, 51.465455],
+          [-2.578638, 51.465484],
+          [-2.579159, 51.465602],
+          [-2.579295, 51.46565],
+          [-2.579412, 51.465712],
+          [-2.579571, 51.465822],
+          [-2.579698, 51.465943],
+          [-2.579809, 51.466085],
+          [-2.579936, 51.466328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586649, 51.464346],
+          [-2.587594, 51.463911],
+          [-2.588998, 51.46322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586018, 51.460838],
+          [-2.586313, 51.460745],
+          [-2.586774, 51.460647],
+          [-2.587597, 51.460508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578857, 51.46177],
+          [-2.578972, 51.461698],
+          [-2.579038, 51.461641],
+          [-2.579191, 51.46147],
+          [-2.579289, 51.461323],
+          [-2.579327, 51.461236],
+          [-2.579345, 51.461151],
+          [-2.579374, 51.460775],
+          [-2.579452, 51.460638],
+          [-2.579532, 51.46055],
+          [-2.579612, 51.460472],
+          [-2.579717, 51.460392],
+          [-2.579855, 51.460315],
+          [-2.580408, 51.460123],
+          [-2.580609, 51.46004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579901, 51.461441],
+          [-2.58116, 51.460713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579965, 51.460271],
+          [-2.580915, 51.460851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581211, 51.46543],
+          [-2.581106, 51.465398],
+          [-2.581043, 51.465393],
+          [-2.580624, 51.465496],
+          [-2.580288, 51.465556],
+          [-2.579981, 51.465597],
+          [-2.579944, 51.465592],
+          [-2.579906, 51.465569],
+          [-2.581513, 51.464371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58315, 51.466382],
+          [-2.582098, 51.466563],
+          [-2.581229, 51.466699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580579, 51.466784],
+          [-2.580017, 51.466293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580991, 51.466424],
+          [-2.581892, 51.466278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585396, 51.465969],
+          [-2.585151, 51.465396],
+          [-2.585121, 51.465266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583019, 51.465359],
+          [-2.583426, 51.466259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583426, 51.466259],
+          [-2.584477, 51.465871],
+          [-2.584593, 51.465844],
+          [-2.585291, 51.465727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583426, 51.466259],
+          [-2.583258, 51.466326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577206, 51.473953],
+          [-2.576896, 51.473995],
+          [-2.576669, 51.474064],
+          [-2.576246, 51.474297],
+          [-2.576144, 51.47438],
+          [-2.576116, 51.474434],
+          [-2.576117, 51.474486],
+          [-2.576146, 51.474533],
+          [-2.576353, 51.474731],
+          [-2.57638, 51.474771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584363, 51.460159],
+          [-2.584067, 51.459759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576065, 51.466411],
+          [-2.575886, 51.466413],
+          [-2.575848, 51.466567],
+          [-2.575761, 51.466823],
+          [-2.576727, 51.466965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584363, 51.460159],
+          [-2.58366, 51.460387],
+          [-2.582947, 51.460635],
+          [-2.582986, 51.46069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584155, 51.461072],
+          [-2.58366, 51.460387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576418, 51.470965],
+          [-2.576955, 51.470866],
+          [-2.57749, 51.47079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586037, 51.462386],
+          [-2.586091, 51.462345],
+          [-2.588729, 51.461062]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586037, 51.462386],
+          [-2.588277, 51.464571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585467, 51.460077],
+          [-2.585694, 51.460366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579082, 51.464676],
+          [-2.580305, 51.463758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577085, 51.46485],
+          [-2.577006, 51.464857],
+          [-2.576962, 51.464882],
+          [-2.576344, 51.465579],
+          [-2.576355, 51.465613],
+          [-2.576387, 51.465635],
+          [-2.577158, 51.465904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580904, 51.464062],
+          [-2.579805, 51.464904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58497, 51.462917],
+          [-2.584921, 51.462877],
+          [-2.584877, 51.462799],
+          [-2.584924, 51.462678],
+          [-2.584914, 51.462624],
+          [-2.584331, 51.462092],
+          [-2.584274, 51.461984],
+          [-2.584302, 51.461948],
+          [-2.585457, 51.461615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576669, 51.465209],
+          [-2.577424, 51.465473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583655, 51.463738],
+          [-2.584755, 51.464544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579205, 51.468024],
+          [-2.577553, 51.468466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585467, 51.460077],
+          [-2.584514, 51.460346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590705, 51.460494],
+          [-2.590428, 51.46058],
+          [-2.590187, 51.461002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590187, 51.461002],
+          [-2.59005, 51.460979],
+          [-2.588517, 51.461722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5847, 51.459297],
+          [-2.584692, 51.459268],
+          [-2.58475, 51.458873],
+          [-2.584722, 51.458871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591641, 51.4678],
+          [-2.591727, 51.467771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575945, 51.470377],
+          [-2.576145, 51.47062],
+          [-2.576373, 51.47087],
+          [-2.576459, 51.47104],
+          [-2.576664, 51.47152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588541, 51.4681],
+          [-2.588769, 51.4681],
+          [-2.588884, 51.468109],
+          [-2.589229, 51.46816],
+          [-2.589669, 51.46819],
+          [-2.590293, 51.46831],
+          [-2.591142, 51.468539],
+          [-2.592577, 51.468851],
+          [-2.592654, 51.468856],
+          [-2.59274, 51.468837],
+          [-2.592819, 51.468806]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58002, 51.469681],
+          [-2.578724, 51.469971],
+          [-2.578822, 51.470131]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578775, 51.471289],
+          [-2.578876, 51.471276],
+          [-2.579679, 51.47112],
+          [-2.579853, 51.471107],
+          [-2.580092, 51.471131],
+          [-2.580207, 51.471126],
+          [-2.580319, 51.471109],
+          [-2.580455, 51.471072],
+          [-2.580675, 51.470992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578869, 51.466783],
+          [-2.578921, 51.466732],
+          [-2.579228, 51.466598],
+          [-2.579258, 51.46657],
+          [-2.579274, 51.466535],
+          [-2.579272, 51.466419],
+          [-2.57922, 51.466276],
+          [-2.579126, 51.466161],
+          [-2.578971, 51.466062],
+          [-2.578729, 51.465961],
+          [-2.57842, 51.46587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579877, 51.469389],
+          [-2.579969, 51.469366],
+          [-2.580025, 51.469365],
+          [-2.580099, 51.469389],
+          [-2.580224, 51.469473],
+          [-2.580568, 51.469655],
+          [-2.581094, 51.469873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580025, 51.469365],
+          [-2.58005, 51.469299],
+          [-2.582816, 51.46813],
+          [-2.584268, 51.467498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580863, 51.472193],
+          [-2.581803, 51.471696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57406, 51.467126],
+          [-2.574152, 51.466929],
+          [-2.574484, 51.46665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583009, 51.473741],
+          [-2.584417, 51.472993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583153, 51.468394],
+          [-2.582816, 51.46813]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585416, 51.461558],
+          [-2.586037, 51.462386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573046, 51.471002],
+          [-2.573291, 51.470793],
+          [-2.573436, 51.470694],
+          [-2.573569, 51.470622],
+          [-2.573907, 51.470475],
+          [-2.574238, 51.470354],
+          [-2.574807, 51.470126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573046, 51.471002],
+          [-2.573281, 51.47113],
+          [-2.573446, 51.471249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582382, 51.472691],
+          [-2.583093, 51.473185]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58141, 51.474123],
+          [-2.583059, 51.474467],
+          [-2.58303, 51.474522],
+          [-2.582537, 51.474774]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579682, 51.475273],
+          [-2.579779, 51.475297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580776, 51.475287],
+          [-2.581876, 51.475531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57725, 51.47012],
+          [-2.57749, 51.47079],
+          [-2.577666, 51.471239],
+          [-2.57786, 51.471492],
+          [-2.578174, 51.471868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577956, 51.469805],
+          [-2.578347, 51.469745],
+          [-2.578433, 51.46972],
+          [-2.578476, 51.469691],
+          [-2.578686, 51.469462],
+          [-2.578972, 51.469336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579997, 51.4685],
+          [-2.580316, 51.468826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584829, 51.470203],
+          [-2.584703, 51.470207],
+          [-2.584109, 51.470559],
+          [-2.584051, 51.470578],
+          [-2.583993, 51.470583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58282, 51.469018],
+          [-2.583293, 51.469358],
+          [-2.58333, 51.46942],
+          [-2.583217, 51.469537],
+          [-2.583238, 51.46966],
+          [-2.58333, 51.469753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588947, 51.46611],
+          [-2.589375, 51.466361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588947, 51.46611],
+          [-2.58869, 51.466289]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589051, 51.464828],
+          [-2.58727, 51.465412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58592, 51.464615],
+          [-2.585259, 51.464935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584182, 51.46288],
+          [-2.583033, 51.463593]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583768, 51.462635],
+          [-2.583291, 51.462938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581946, 51.464187],
+          [-2.581667, 51.46405],
+          [-2.581392, 51.46389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582661, 51.464771],
+          [-2.582806, 51.464694],
+          [-2.582826, 51.464625],
+          [-2.58299, 51.464529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58229, 51.464572],
+          [-2.582556, 51.464748],
+          [-2.582661, 51.464771],
+          [-2.582707, 51.464807],
+          [-2.582806, 51.464843],
+          [-2.582982, 51.464966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581892, 51.466278],
+          [-2.582845, 51.466124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577772, 51.468807],
+          [-2.577553, 51.468466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57678, 51.469032],
+          [-2.57698, 51.469381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577303, 51.467795],
+          [-2.577189, 51.467822],
+          [-2.576596, 51.467848],
+          [-2.576519, 51.467845],
+          [-2.576194, 51.467804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574643, 51.470334],
+          [-2.574863, 51.470242]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573864, 51.470671],
+          [-2.574057, 51.470593]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5747, 51.471637],
+          [-2.574896, 51.471853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582459, 51.470079],
+          [-2.581568, 51.469484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584743, 51.466075],
+          [-2.585396, 51.465969],
+          [-2.586776, 51.465769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584271, 51.463371],
+          [-2.585989, 51.464663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588181, 51.462367],
+          [-2.589509, 51.461744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582933, 51.462386],
+          [-2.58302, 51.46233],
+          [-2.583173, 51.462283],
+          [-2.583222, 51.462291],
+          [-2.583768, 51.462635],
+          [-2.584398, 51.463014],
+          [-2.584554, 51.462923],
+          [-2.584735, 51.462859],
+          [-2.584889, 51.462828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579692, 51.463446],
+          [-2.578339, 51.464461],
+          [-2.578303, 51.464526],
+          [-2.578251, 51.464749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582442, 51.462723],
+          [-2.582288, 51.46263],
+          [-2.5817, 51.463051],
+          [-2.581505, 51.463202],
+          [-2.580997, 51.463715],
+          [-2.580726, 51.463967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583698, 51.468791],
+          [-2.584145, 51.469076],
+          [-2.584673, 51.469443],
+          [-2.584458, 51.469638],
+          [-2.584433, 51.469714],
+          [-2.584707, 51.470122],
+          [-2.584779, 51.470142],
+          [-2.584851, 51.470149]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587622, 51.462142],
+          [-2.5864, 51.462743],
+          [-2.58525, 51.463281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583059, 51.464087],
+          [-2.583919, 51.464711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581592, 51.464414],
+          [-2.582609, 51.46377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58204, 51.470968],
+          [-2.583318, 51.470472],
+          [-2.583505, 51.470459],
+          [-2.583624, 51.470466],
+          [-2.583729, 51.470494],
+          [-2.583879, 51.470569],
+          [-2.583993, 51.470583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592748, 51.469697],
+          [-2.592706, 51.470051],
+          [-2.592626, 51.470227],
+          [-2.592185, 51.470898],
+          [-2.591598, 51.471675],
+          [-2.591478, 51.47177],
+          [-2.591178, 51.471932],
+          [-2.590962, 51.472112],
+          [-2.590692, 51.472427],
+          [-2.590374, 51.47293],
+          [-2.59028, 51.473233],
+          [-2.590138, 51.473848],
+          [-2.589933, 51.475315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587433, 51.468937],
+          [-2.587595, 51.468986],
+          [-2.588298, 51.46914],
+          [-2.588791, 51.469291],
+          [-2.590569, 51.469943],
+          [-2.591225, 51.470168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591316, 51.471853],
+          [-2.590527, 51.471576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592748, 51.469697],
+          [-2.592573, 51.469543],
+          [-2.592655, 51.469517],
+          [-2.592715, 51.469483],
+          [-2.592764, 51.469428],
+          [-2.592874, 51.469],
+          [-2.592968, 51.468952]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589711, 51.461884],
+          [-2.589957, 51.46195],
+          [-2.590101, 51.462084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584976, 51.473283],
+          [-2.584718, 51.473443],
+          [-2.584711, 51.473476],
+          [-2.584726, 51.473501],
+          [-2.585182, 51.473797],
+          [-2.58543, 51.473982],
+          [-2.585567, 51.474124],
+          [-2.585674, 51.474267],
+          [-2.585736, 51.474382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592197, 51.468302],
+          [-2.59188, 51.468459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581942, 51.465248],
+          [-2.582707, 51.464807]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576431, 51.467319],
+          [-2.576541, 51.467334]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579938, 51.461419],
+          [-2.580046, 51.461508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576446, 51.469105],
+          [-2.577772, 51.468807]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576134, 51.469172],
+          [-2.57632, 51.469517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576459, 51.47104],
+          [-2.575771, 51.47123],
+          [-2.575507, 51.471323],
+          [-2.574564, 51.471688],
+          [-2.574305, 51.471814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591225, 51.470168],
+          [-2.591679, 51.470369],
+          [-2.591814, 51.470438],
+          [-2.591941, 51.470544],
+          [-2.592022, 51.470641],
+          [-2.592185, 51.470898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577338, 51.473666],
+          [-2.577834, 51.473901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584672, 51.474511],
+          [-2.58552, 51.474075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588296, 51.466392],
+          [-2.588338, 51.466403],
+          [-2.588665, 51.466638],
+          [-2.588711, 51.466656],
+          [-2.588831, 51.466661],
+          [-2.588881, 51.466654],
+          [-2.58895, 51.466634],
+          [-2.589033, 51.466594],
+          [-2.589684, 51.466163],
+          [-2.590389, 51.465784],
+          [-2.590492, 51.465762],
+          [-2.590591, 51.465753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578638, 51.465484],
+          [-2.578096, 51.466407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57229, 51.468851],
+          [-2.574438, 51.468177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573948, 51.467291],
+          [-2.573894, 51.467299],
+          [-2.573612, 51.467296],
+          [-2.573465, 51.46732],
+          [-2.572766, 51.467516],
+          [-2.570507, 51.468099],
+          [-2.570262, 51.468168],
+          [-2.569823, 51.46831],
+          [-2.5694, 51.468458],
+          [-2.56899, 51.468618]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578728, 51.470975],
+          [-2.579472, 51.470838]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576664, 51.47152],
+          [-2.576788, 51.471853],
+          [-2.576781, 51.47218],
+          [-2.576814, 51.472364],
+          [-2.576845, 51.472452],
+          [-2.577286, 51.473065],
+          [-2.577328, 51.473148],
+          [-2.577347, 51.473602],
+          [-2.577338, 51.473666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583674, 51.466997],
+          [-2.582934, 51.467333],
+          [-2.58288, 51.467348]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582188, 51.471938],
+          [-2.582268, 51.471882],
+          [-2.583939, 51.470929],
+          [-2.583997, 51.470841],
+          [-2.583993, 51.470583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583313, 51.465318],
+          [-2.583389, 51.465243],
+          [-2.583692, 51.46508],
+          [-2.584103, 51.464862],
+          [-2.584755, 51.464544],
+          [-2.587099, 51.463428],
+          [-2.589522, 51.462334],
+          [-2.590101, 51.462084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583153, 51.468394],
+          [-2.584614, 51.467781],
+          [-2.585022, 51.467621],
+          [-2.58659, 51.466938],
+          [-2.586888, 51.466801],
+          [-2.587253, 51.466579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588006, 51.465467],
+          [-2.587851, 51.465526],
+          [-2.587733, 51.4656],
+          [-2.587721, 51.465619],
+          [-2.587767, 51.465746],
+          [-2.587767, 51.465862],
+          [-2.587784, 51.465899],
+          [-2.587809, 51.465913],
+          [-2.587862, 51.465919],
+          [-2.588121, 51.465918],
+          [-2.588303, 51.465938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588729, 51.461062],
+          [-2.58962, 51.461839],
+          [-2.589711, 51.461884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577034, 51.467383],
+          [-2.577045, 51.467444],
+          [-2.577204, 51.467696],
+          [-2.577303, 51.467795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585919, 51.460724],
+          [-2.585789, 51.460489],
+          [-2.585726, 51.460407],
+          [-2.585734, 51.460469],
+          [-2.585708, 51.460527],
+          [-2.585675, 51.460547],
+          [-2.585516, 51.460592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585974, 51.461261],
+          [-2.586159, 51.461218],
+          [-2.586228, 51.461219],
+          [-2.586295, 51.461236],
+          [-2.586352, 51.461269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585148, 51.460675],
+          [-2.584962, 51.460726],
+          [-2.584902, 51.46073],
+          [-2.584846, 51.46072],
+          [-2.58475, 51.460675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585416, 51.461558],
+          [-2.585426, 51.461492],
+          [-2.58546, 51.46144],
+          [-2.585667, 51.461348]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588219, 51.462216],
+          [-2.58832, 51.4623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580871, 51.475116],
+          [-2.580327, 51.474993],
+          [-2.580193, 51.47499],
+          [-2.58004, 51.475008],
+          [-2.57989, 51.475056],
+          [-2.579765, 51.475151],
+          [-2.579646, 51.475336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582201, 51.470905],
+          [-2.58224, 51.470979],
+          [-2.582244, 51.471649],
+          [-2.582268, 51.471882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589217, 51.464788],
+          [-2.589542, 51.465551],
+          [-2.58954, 51.465628],
+          [-2.589469, 51.465717],
+          [-2.588947, 51.46611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581048, 51.466333],
+          [-2.580947, 51.466113],
+          [-2.580788, 51.465962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580967, 51.466686],
+          [-2.580827, 51.466386],
+          [-2.58121, 51.4663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581803, 51.471696],
+          [-2.581869, 51.471781],
+          [-2.581986, 51.471855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575926, 51.470344],
+          [-2.577905, 51.470009],
+          [-2.577937, 51.469995],
+          [-2.577964, 51.469963],
+          [-2.577956, 51.469805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578869, 51.466783],
+          [-2.578729, 51.466782],
+          [-2.578597, 51.466816],
+          [-2.578508, 51.466827],
+          [-2.578431, 51.466823],
+          [-2.578356, 51.466802],
+          [-2.578119, 51.466777],
+          [-2.578053, 51.466801],
+          [-2.577989, 51.466795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583153, 51.468394],
+          [-2.5833, 51.46852],
+          [-2.583305, 51.468559],
+          [-2.583363, 51.468583],
+          [-2.583673, 51.468777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573948, 51.467291],
+          [-2.573993, 51.46735],
+          [-2.574009, 51.467402],
+          [-2.573971, 51.467583],
+          [-2.573995, 51.467676],
+          [-2.574367, 51.468083],
+          [-2.574492, 51.468259],
+          [-2.574695, 51.468482],
+          [-2.575264, 51.469012],
+          [-2.575442, 51.469333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584881, 51.45946],
+          [-2.58497, 51.459491],
+          [-2.585045, 51.459547],
+          [-2.585467, 51.460077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587384, 51.459999],
+          [-2.587225, 51.459644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586012, 51.464681],
+          [-2.58665, 51.465168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588207, 51.459865],
+          [-2.58842, 51.460375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591225, 51.470168],
+          [-2.59122, 51.470001],
+          [-2.591111, 51.46941],
+          [-2.591124, 51.469285]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585156, 51.461232],
+          [-2.585416, 51.461558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58497, 51.462917],
+          [-2.586037, 51.462386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582097, 51.464666],
+          [-2.582052, 51.464757],
+          [-2.580659, 51.465881],
+          [-2.58064, 51.465931],
+          [-2.580688, 51.466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590044, 51.460552],
+          [-2.589969, 51.460488],
+          [-2.588729, 51.461062]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588643, 51.461662],
+          [-2.588703, 51.461716]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58289, 51.463941],
+          [-2.582507, 51.463708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582922, 51.463521],
+          [-2.583151, 51.463671]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579059, 51.469415],
+          [-2.578885, 51.469256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58842, 51.460375],
+          [-2.588623, 51.460335],
+          [-2.589598, 51.460095],
+          [-2.589704, 51.460116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577719, 51.466669],
+          [-2.577053, 51.46735],
+          [-2.577034, 51.467383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577134, 51.469509],
+          [-2.577107, 51.469498],
+          [-2.577037, 51.469509],
+          [-2.577018, 51.46953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575674, 51.469805],
+          [-2.576243, 51.469678],
+          [-2.577018, 51.46953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577018, 51.46953],
+          [-2.577051, 51.469538],
+          [-2.577115, 51.469527],
+          [-2.577134, 51.469509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579205, 51.468024],
+          [-2.578933, 51.467651],
+          [-2.578906, 51.467418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574348, 51.471038],
+          [-2.573954, 51.470637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575152, 51.470696],
+          [-2.574748, 51.47029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590261, 51.462024],
+          [-2.590215, 51.462012],
+          [-2.590176, 51.462026],
+          [-2.590119, 51.46205],
+          [-2.590117, 51.46208]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590101, 51.462084],
+          [-2.590117, 51.46208]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590261, 51.462024],
+          [-2.590339, 51.462004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575364, 51.469908],
+          [-2.575326, 51.469895],
+          [-2.575259, 51.469917],
+          [-2.575257, 51.469946]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574807, 51.470126],
+          [-2.575257, 51.469946]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575364, 51.469908],
+          [-2.575674, 51.469805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577681, 51.469315],
+          [-2.577783, 51.469391],
+          [-2.577893, 51.469493],
+          [-2.577956, 51.469805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575442, 51.469333],
+          [-2.576396, 51.469116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589711, 51.461884],
+          [-2.590187, 51.461002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583758, 51.464698],
+          [-2.583841, 51.464654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581586, 51.463299],
+          [-2.581474, 51.463233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581257, 51.463607],
+          [-2.581162, 51.463549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581566, 51.463898],
+          [-2.58149, 51.463948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581414, 51.467376],
+          [-2.581501, 51.467488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58475, 51.460675],
+          [-2.58495, 51.460946]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57406, 51.467126],
+          [-2.574019, 51.467237],
+          [-2.573948, 51.467291]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569761, 51.468332],
+          [-2.569834, 51.468416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576367, 51.466825],
+          [-2.576336, 51.466907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578937, 51.467657],
+          [-2.577357, 51.468086],
+          [-2.577335, 51.468109],
+          [-2.577343, 51.468167],
+          [-2.577553, 51.468466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575674, 51.469805],
+          [-2.575945, 51.470377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580782, 51.471437],
+          [-2.581493, 51.471149],
+          [-2.581589, 51.471147],
+          [-2.582, 51.470984]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576109, 51.468253],
+          [-2.576415, 51.468286],
+          [-2.576686, 51.4683],
+          [-2.577154, 51.468293],
+          [-2.577414, 51.468272]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577063, 51.468443],
+          [-2.57746, 51.46834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576296, 51.468275],
+          [-2.57624, 51.468418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578906, 51.467418],
+          [-2.578847, 51.466852],
+          [-2.578869, 51.466783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584702, 51.460609],
+          [-2.58475, 51.460675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588708, 51.463984],
+          [-2.588896, 51.464157],
+          [-2.588799, 51.464196],
+          [-2.588989, 51.464406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573835, 51.469525],
+          [-2.574807, 51.470126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576726, 51.474157],
+          [-2.576713, 51.474047]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591526, 51.472465],
+          [-2.591446, 51.472446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581625, 51.465686],
+          [-2.581892, 51.466278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586352, 51.461269],
+          [-2.586107, 51.460961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587597, 51.460508],
+          [-2.587384, 51.459999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58842, 51.460375],
+          [-2.587597, 51.460508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588769, 51.4681],
+          [-2.588777, 51.467958],
+          [-2.588855, 51.467867],
+          [-2.58897, 51.467774],
+          [-2.589076, 51.467725],
+          [-2.589205, 51.467712],
+          [-2.589616, 51.467808]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586584, 51.461599],
+          [-2.585654, 51.461878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582802, 51.475042],
+          [-2.583543, 51.474648],
+          [-2.584581, 51.47412],
+          [-2.585182, 51.473797]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583312, 51.473195],
+          [-2.583656, 51.473014],
+          [-2.583702, 51.473005],
+          [-2.583738, 51.473017],
+          [-2.584324, 51.473416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582007, 51.474249],
+          [-2.582223, 51.473905],
+          [-2.58251, 51.47336],
+          [-2.582546, 51.473314],
+          [-2.582663, 51.473384],
+          [-2.582972, 51.473266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583477, 51.473493],
+          [-2.583906, 51.473777],
+          [-2.583756, 51.473864],
+          [-2.583721, 51.47384],
+          [-2.583145, 51.474119],
+          [-2.582223, 51.473905]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581146, 51.473212],
+          [-2.580837, 51.473849],
+          [-2.580596, 51.47418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581491, 51.473983],
+          [-2.580837, 51.473849],
+          [-2.580721, 51.473849],
+          [-2.580419, 51.473774]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58634, 51.46525],
+          [-2.586368, 51.465332],
+          [-2.586461, 51.465404],
+          [-2.586554, 51.465432],
+          [-2.586638, 51.465479],
+          [-2.586703, 51.465542],
+          [-2.586889, 51.46611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59188, 51.468459],
+          [-2.591161, 51.468121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574502, 51.467078],
+          [-2.574535, 51.467034],
+          [-2.574677, 51.467035],
+          [-2.574923, 51.467106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587546, 51.467555],
+          [-2.58701, 51.467258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591309, 51.473968],
+          [-2.591255, 51.473988],
+          [-2.591194, 51.474026],
+          [-2.591125, 51.474087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58987, 51.463239],
+          [-2.589177, 51.463183],
+          [-2.589084, 51.463187],
+          [-2.588998, 51.46322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588906, 51.466695],
+          [-2.588881, 51.466654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589375, 51.466361],
+          [-2.589659, 51.466589]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578388, 51.464646],
+          [-2.578281, 51.46462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57781, 51.46886],
+          [-2.577772, 51.468807]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589067, 51.459454],
+          [-2.589062, 51.45949],
+          [-2.588955, 51.459681],
+          [-2.588994, 51.459697],
+          [-2.589018, 51.459689],
+          [-2.58903, 51.459674],
+          [-2.589174, 51.459444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57934, 51.470085],
+          [-2.579416, 51.470228],
+          [-2.579645, 51.470292]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570804, 51.470454],
+          [-2.570972, 51.470554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579674, 51.462491],
+          [-2.579938, 51.462581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585681, 51.459882],
+          [-2.585778, 51.459866],
+          [-2.585841, 51.459883],
+          [-2.585866, 51.459906],
+          [-2.585875, 51.459933],
+          [-2.585855, 51.459972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586875, 51.459759],
+          [-2.587247, 51.459696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583756, 51.473864],
+          [-2.583858, 51.473954],
+          [-2.583858, 51.473978],
+          [-2.58353, 51.474152],
+          [-2.583467, 51.474215],
+          [-2.583418, 51.474224],
+          [-2.583331, 51.474178],
+          [-2.583145, 51.474119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593363, 51.470048],
+          [-2.593296, 51.470087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590444, 51.466931],
+          [-2.591058, 51.46678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577335, 51.473269],
+          [-2.577873, 51.473252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581329, 51.475825],
+          [-2.58277, 51.475058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580932, 51.475013],
+          [-2.581368, 51.475097]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581045, 51.4748],
+          [-2.581485, 51.474894]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577983, 51.46463],
+          [-2.578206, 51.464742],
+          [-2.578251, 51.464749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581298, 51.467203],
+          [-2.581414, 51.467376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581612, 51.467626],
+          [-2.581501, 51.467488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57828, 51.469139],
+          [-2.578194, 51.469197],
+          [-2.578081, 51.469436],
+          [-2.577909, 51.469584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579045, 51.468753],
+          [-2.578867, 51.468582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573256, 51.470376],
+          [-2.573413, 51.470487],
+          [-2.573569, 51.470622]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583059, 51.474467],
+          [-2.583381, 51.474513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59009, 51.466265],
+          [-2.589953, 51.466015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588699, 51.462969],
+          [-2.588502, 51.462794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590213, 51.473528],
+          [-2.590535, 51.473545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588332, 51.460852],
+          [-2.588612, 51.460804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589422, 51.461522],
+          [-2.589321, 51.461572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586177, 51.460567],
+          [-2.586313, 51.460745]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58374, 51.460496],
+          [-2.583797, 51.46048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579423, 51.468645],
+          [-2.579502, 51.468622]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583903, 51.472274],
+          [-2.584434, 51.471996],
+          [-2.584783, 51.471801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587035, 51.470923],
+          [-2.586918, 51.471042],
+          [-2.586817, 51.471163],
+          [-2.586783, 51.471169],
+          [-2.58676, 51.471164],
+          [-2.586361, 51.471033],
+          [-2.586331, 51.471032],
+          [-2.586309, 51.471042],
+          [-2.586066, 51.471288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58812, 51.46442],
+          [-2.588432, 51.464322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593221, 51.470046],
+          [-2.593279, 51.470006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587464, 51.46167],
+          [-2.587315, 51.461551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586616, 51.462092],
+          [-2.586465, 51.461943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570606, 51.468226],
+          [-2.570507, 51.468099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570173, 51.468346],
+          [-2.570074, 51.468226]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571508, 51.468059],
+          [-2.571205, 51.468039],
+          [-2.570848, 51.468154],
+          [-2.570763, 51.468032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590638, 51.473782],
+          [-2.590653, 51.473632],
+          [-2.590195, 51.473607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583817, 51.467111],
+          [-2.584804, 51.466865],
+          [-2.58485, 51.466859],
+          [-2.584874, 51.466868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584426, 51.461646],
+          [-2.58458, 51.461868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582032, 51.472181],
+          [-2.582098, 51.472135],
+          [-2.582225, 51.471951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586706, 51.467033],
+          [-2.58659, 51.466938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57845, 51.472996],
+          [-2.578205, 51.473064],
+          [-2.57793, 51.473117],
+          [-2.57773, 51.47314],
+          [-2.57754, 51.473149],
+          [-2.577328, 51.473148]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582815, 51.461422],
+          [-2.582489, 51.461516],
+          [-2.582454, 51.461518],
+          [-2.5823, 51.461328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581826, 51.460734],
+          [-2.581993, 51.460798],
+          [-2.582039, 51.460822],
+          [-2.582107, 51.460875],
+          [-2.582128, 51.460916],
+          [-2.58212, 51.460985],
+          [-2.582094, 51.461014],
+          [-2.581901, 51.461107],
+          [-2.581756, 51.461156],
+          [-2.58163, 51.461233],
+          [-2.581593, 51.461241],
+          [-2.58152, 51.461235],
+          [-2.581456, 51.461214],
+          [-2.581385, 51.461177],
+          [-2.581266, 51.46108]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580494, 51.475824],
+          [-2.579551, 51.475498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579949, 51.475637],
+          [-2.58006, 51.475434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577956, 51.469805],
+          [-2.57685, 51.469984]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582924, 51.467049],
+          [-2.582658, 51.467177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585855, 51.459972],
+          [-2.585467, 51.460077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585923, 51.459952],
+          [-2.585855, 51.459972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578271, 51.470968],
+          [-2.578069, 51.47048],
+          [-2.577412, 51.470568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580978, 51.475871],
+          [-2.581089, 51.475893],
+          [-2.581317, 51.475771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581042, 51.475716],
+          [-2.5814, 51.475787]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590241, 51.466703],
+          [-2.590936, 51.46653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570628, 51.469162],
+          [-2.571259, 51.468818],
+          [-2.571723, 51.468537],
+          [-2.571876, 51.468479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580359, 51.470371],
+          [-2.579912, 51.470462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580866, 51.472272],
+          [-2.580914, 51.472254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578493, 51.471567],
+          [-2.578611, 51.471435],
+          [-2.578775, 51.471289]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590293, 51.46831],
+          [-2.590295, 51.468123],
+          [-2.590254, 51.467918],
+          [-2.590231, 51.467888],
+          [-2.590196, 51.467864],
+          [-2.58991, 51.467786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579471, 51.460618],
+          [-2.580146, 51.461003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579698, 51.461277],
+          [-2.580272, 51.460926]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586131, 51.463369],
+          [-2.586293, 51.463256],
+          [-2.586314, 51.463225],
+          [-2.586319, 51.463188],
+          [-2.586299, 51.463158],
+          [-2.586029, 51.462913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583404, 51.462215],
+          [-2.583734, 51.462418],
+          [-2.583581, 51.462515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5694, 51.468458],
+          [-2.569466, 51.468539],
+          [-2.57048, 51.469553],
+          [-2.570344, 51.469657],
+          [-2.569932, 51.469819],
+          [-2.569891, 51.469813],
+          [-2.569709, 51.469634],
+          [-2.56996, 51.469429],
+          [-2.570247, 51.469318]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569338, 51.469128],
+          [-2.568853, 51.468671]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56977, 51.469694],
+          [-2.570381, 51.469453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.568353, 51.468884],
+          [-2.56899, 51.468618]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571007, 51.46797],
+          [-2.571082, 51.468079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570372, 51.469219],
+          [-2.57021, 51.469281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570348, 51.46907],
+          [-2.570096, 51.469168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569846, 51.469279],
+          [-2.570107, 51.469178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569695, 51.46915],
+          [-2.569971, 51.469042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569978, 51.46905],
+          [-2.570246, 51.468945]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569861, 51.468933],
+          [-2.570145, 51.468821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56983, 51.468902],
+          [-2.569539, 51.469015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569385, 51.468882],
+          [-2.56969, 51.468762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570048, 51.468703],
+          [-2.569747, 51.468819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569944, 51.468576],
+          [-2.569631, 51.468703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56923, 51.468748],
+          [-2.569547, 51.46862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569512, 51.468585],
+          [-2.569773, 51.468479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576697, 51.466503],
+          [-2.576672, 51.466576],
+          [-2.576531, 51.466563],
+          [-2.57649, 51.466571],
+          [-2.576448, 51.466607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584795, 51.462088],
+          [-2.584648, 51.461932],
+          [-2.584608, 51.46186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578928, 51.469296],
+          [-2.579413, 51.469092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59073, 51.468683],
+          [-2.590088, 51.468515],
+          [-2.589625, 51.468409],
+          [-2.58937, 51.46836],
+          [-2.589339, 51.468348],
+          [-2.58932, 51.468314],
+          [-2.589377, 51.468175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582343, 51.460879],
+          [-2.582521, 51.460786],
+          [-2.582947, 51.460635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579058, 51.467821],
+          [-2.57893, 51.467855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576949, 51.468679],
+          [-2.577172, 51.46862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57714, 51.468574],
+          [-2.577244, 51.468724],
+          [-2.57766, 51.468633]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590637, 51.465998],
+          [-2.5904, 51.466044],
+          [-2.590492, 51.466228],
+          [-2.590763, 51.466176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577189, 51.466003],
+          [-2.577159, 51.466104],
+          [-2.577523, 51.46619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581525, 51.470552],
+          [-2.581455, 51.470623],
+          [-2.581414, 51.470644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575235, 51.46736],
+          [-2.575406, 51.467156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577719, 51.466771],
+          [-2.577628, 51.466763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588413, 51.466801],
+          [-2.588476, 51.466831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584518, 51.461556],
+          [-2.584718, 51.461828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590795, 51.466242],
+          [-2.590217, 51.46638],
+          [-2.590323, 51.466577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572387, 51.471733],
+          [-2.572806, 51.47196],
+          [-2.573243, 51.472166],
+          [-2.573997, 51.472412],
+          [-2.57469, 51.47255],
+          [-2.575408, 51.472626],
+          [-2.576157, 51.472634],
+          [-2.576819, 51.472588],
+          [-2.577354, 51.47251],
+          [-2.577741, 51.472428],
+          [-2.578131, 51.472326],
+          [-2.579441, 51.471817],
+          [-2.581166, 51.471021],
+          [-2.583397, 51.469942],
+          [-2.585983, 51.46873],
+          [-2.586309, 51.468609],
+          [-2.586571, 51.468537],
+          [-2.587166, 51.46842],
+          [-2.587532, 51.468372],
+          [-2.587893, 51.468345],
+          [-2.588277, 51.468339],
+          [-2.588986, 51.468379],
+          [-2.589335, 51.468429],
+          [-2.590189, 51.468612],
+          [-2.591277, 51.468912],
+          [-2.591789, 51.469018],
+          [-2.592606, 51.469125],
+          [-2.593241, 51.469176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.566886, 51.468027],
+          [-2.567516, 51.46857],
+          [-2.568246, 51.469125],
+          [-2.568659, 51.46941],
+          [-2.569096, 51.469674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572982, 51.472177],
+          [-2.573549, 51.472599]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572387, 51.471733],
+          [-2.571519, 51.471166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571519, 51.471166],
+          [-2.571252, 51.471018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571519, 51.471166],
+          [-2.568696, 51.469388],
+          [-2.568285, 51.469105],
+          [-2.567556, 51.46855],
+          [-2.566928, 51.468009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575355, 51.474455],
+          [-2.574883, 51.473841],
+          [-2.574533, 51.473442],
+          [-2.574096, 51.473011],
+          [-2.573591, 51.472578],
+          [-2.573023, 51.472155],
+          [-2.572387, 51.471733]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.569087, 51.469735],
+          [-2.567707, 51.468848],
+          [-2.567052, 51.468366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56723, 51.468551],
+          [-2.567611, 51.468831],
+          [-2.568546, 51.469445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582006, 51.472905],
+          [-2.585123, 51.471127],
+          [-2.585164, 51.47108],
+          [-2.585193, 51.470991],
+          [-2.584831, 51.470272],
+          [-2.584821, 51.470246],
+          [-2.584851, 51.470149],
+          [-2.584964, 51.470001],
+          [-2.585658, 51.469459],
+          [-2.585865, 51.46934],
+          [-2.586027, 51.469283],
+          [-2.586622, 51.46912],
+          [-2.587999, 51.468815],
+          [-2.588462, 51.468736],
+          [-2.588742, 51.468725],
+          [-2.589031, 51.468753],
+          [-2.589442, 51.468821],
+          [-2.589764, 51.468901],
+          [-2.590613, 51.469153],
+          [-2.591014, 51.46926],
+          [-2.592475, 51.469545],
+          [-2.592573, 51.469543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59313, 51.469096],
+          [-2.593173, 51.469217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58191, 51.472989],
+          [-2.581984, 51.472948],
+          [-2.582006, 51.472905]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ashley" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582006, 51.472905],
+          [-2.581885, 51.472959]
+        ]
+      }
+    }
+  ]
+}

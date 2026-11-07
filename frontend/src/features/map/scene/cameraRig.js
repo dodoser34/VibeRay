@@ -13,7 +13,7 @@ export class CameraRig {
     Object.assign(this.controls, {
       enableDamping: true,
       dampingFactor: 0.08,
-      minDistance: 3.5,
+      minDistance: 0.6, // уровень улицы: в кадре ~400 м — видно, куда ставить метку
       maxDistance: 26,
       minPolarAngle: 0.15,
       maxPolarAngle: 1.2,
@@ -74,9 +74,11 @@ export class CameraRig {
       );
   }
 
+  // true — камера в этом кадре сдвинулась (в том числе инерция после жеста).
   update() {
-    if (this.controls.enabled) this.controls.update();
-    else this.camera.lookAt(this.controls.target);
+    if (this.controls.enabled) return this.controls.update();
+    this.camera.lookAt(this.controls.target);
+    return false;
   }
 
   dispose() {

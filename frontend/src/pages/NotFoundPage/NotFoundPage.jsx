@@ -57,7 +57,7 @@ export function NotFoundPage() {
         <p className={styles.kicker} data-rise>
           {texts.kicker}
         </p>
-        <h1 key={language} className={styles.title} data-title>
+        <h1 key={language} className={styles.title} data-title data-ui="not-found-title">
           {texts.title}
         </h1>
         <p className={styles.lead} data-rise>

@@ -9,6 +9,7 @@ import { DistrictsLayer } from './DistrictsLayer';
 import { ProblemsLayer } from './ProblemsLayer';
 import { CityBackdrop } from './CityBackdrop';
 import { MapTiles } from './MapTiles';
+import { MapVectors } from './MapVectors';
 import { CameraRig } from './cameraRig';
 import { ClusterLabels } from './ClusterLabels';
 import { Picker } from './Picker';
@@ -31,6 +32,14 @@ const LABEL_GAP = 4; // px между двумя подписями, котор�
 // непрерывно, а районы хорошо различаются цветом и светлыми границами. Плотность своя у каждой темы.
 const districtOpacity = () => parseFloat(cssVar('--scene-district-opacity'));
 const LABELS_FADE = 0.5;
+// Вблизи (уровень улицы) плиты районов ложатся на землю: полная высота дальше PROXIMITY_FAR км от
+// точки взгляда, ближе PROXIMITY_NEAR — почти плоские (PROXIMITY_MIN). Метки проблем уменьшаются
+// пропорционально расстоянию (PIN_REF_KM — расстояние полного размера), но не меньше PIN_MIN.
+const PROXIMITY_NEAR = 1.2;
+const PROXIMITY_FAR = 5;
+const PROXIMITY_MIN = 0.04;
+const PIN_REF_KM = 6;
+const PIN_MIN = 0.12;
 
 // Полноэкранная карта города. React общается с ней только через эти публичные методы.
 export class MapScene {
@@ -48,10 +57,13 @@ export class MapScene {
       onSelectProblem,
     },
   ) {
+    // Кадр — только когда что-то меняется (камера, твины, плитки, пульсация меток): в покое карта не
+    // тратит процессор и видеокарту.
     this.runtime = new SceneRuntime(canvas, container, {
       fov: 38,
       fogNear: FOG.near,
       fogFar: FOG.far,
+      onDemand: true,
     });
     const { scene, camera } = this.runtime;
     this.labelClassName = labelClassName;
@@ -84,6 +96,9 @@ export class MapScene {
     scene.add(this.hemi, this.key);
 
     this.rig = new CameraRig(camera, canvas, { home: HOME_OFFSET });
+    // Колесо и жесты двигают камеру прямо в обработчике событий — кадр нужен, даже если тикер уже
+    // не увидит сдвига.
+    this.rig.controls.addEventListener('change', () => this.runtime.invalidate());
 
     this.labelRenderer = new CSS2DRenderer();
     Object.assign(this.labelRenderer.domElement.style, {
@@ -109,19 +124,29 @@ export class MapScene {
     this.viewInset = 0;
     this.runtime.onResize((width, height) => {
       this.districts?.setResolution(width, height);
+      this.vectors?.setResolution(width, height);
       this.labelRenderer.setSize(width, height);
       this.setViewInset(this.viewInset);
       this.refitHome();
     });
     this.labelCheck = 0;
+    // true — в этом кадре что-то сдвинулось и его надо нарисовать.
     this.runtime.onTick((time, delta) => {
-      this.rig.update();
-      this.tiles?.update(camera, this.runtime.size.height, time * 1000);
+      let changed = this.rig.update();
+      this.applyProximity();
+      const { height } = this.runtime.size;
+      if (this.vectors?.update(camera, height, time * 1000)) changed = true;
+      if (this.tiles?.update(camera, height, time * 1000)) changed = true;
       this.updateClusters(time, delta);
       this.problems?.update(time, delta);
+      return changed || this.pinsShown;
+    });
+    // Подписи районов двигаются только вместе с кадром.
+    this.runtime.onRender(() => {
       this.labelRenderer.render(scene, camera);
-      if (time * 1000 - this.labelCheck > LABEL_CHECK_MS) {
-        this.labelCheck = time * 1000;
+      const now = performance.now();
+      if (now - this.labelCheck > LABEL_CHECK_MS) {
+        this.labelCheck = now;
         this.resolveLabelOverlaps();
       }
     });
@@ -135,20 +160,25 @@ export class MapScene {
     }
     if (this.citySlug) this.dropCity();
     this.citySlug = city.slug;
+    this.runtime.invalidate();
     this.project = createProjection(city.center);
     this.unproject = createUnprojection(city.center);
     this.city = city;
-    // Земля (CityBackdrop), на ней дороги и вода — PNG-плитки (MapTiles): к краю контура города они
-    // плавно гаснут, окрестности не видны.
+    // Земля (CityBackdrop), на ней дороги и вода — плитки-картинки (MapTiles), вблизи — чёткие
+    // векторные линии дорог (MapVectors); к краю контура города всё плавно гаснет.
     this.outline = cityOutline(city.districts, city.center);
     this.backdrop = new CityBackdrop();
     this.tiles = new MapTiles(city.slug, this.outline, this.runtime.renderer);
+    this.vectors = new MapVectors(city.slug, this.outline);
+    this.tiles.roadMix = (x, y) => this.vectors.mixAt(x, y);
+    this.closeness = 1;
     this.districts = new DistrictsLayer(city.districts.features, this.project, {
       baseHeight: 0.22,
       heightRange: 0.55,
       lineWidth: 2,
       opacity: districtOpacity(),
       colorMode: this.colorModeFor(this.layer),
+      plates: city.plates,
     });
     this.districts.setHidden(this.districtsHidden);
     if (this.heightScale !== undefined) this.districts.setHeightScale(this.heightScale);
@@ -160,11 +190,13 @@ export class MapScene {
     this.runtime.scene.add(
       this.backdrop.group,
       this.tiles.group,
+      this.vectors.group,
       this.districts.group,
       this.problems.group,
     );
     const { width, height } = this.runtime.size;
     this.districts.setResolution(width, height);
+    this.vectors.setResolution(width, height);
     this.createLabels(city.districts.features);
 
     const size = new THREE.Box3().setFromObject(this.districts.group).getSize(new THREE.Vector3());
@@ -234,6 +266,7 @@ export class MapScene {
     this.problems.dispose();
     this.backdrop.dispose();
     this.tiles.dispose();
+    this.vectors.dispose();
     this.labels.forEach((label) => {
       gsap.killTweensOf(label.element);
       label.element.remove();
@@ -243,6 +276,7 @@ export class MapScene {
   }
 
   renameLabels(features) {
+    this.runtime.invalidate();
     features.forEach(({ properties: { slug, name } }) => {
       const chip = this.labels.get(slug)?.userData.chip;
       if (chip) chip.firstChild.nodeValue = name;
@@ -269,6 +303,34 @@ export class MapScene {
       this.runtime.scene.add(label);
     });
     this.placeLabels();
+  }
+
+  // Камера у земли (уровень улицы): плиты прижимаются, метки уменьшаются, ближняя плоскость
+  // подходит ближе (у большого города она отодвинута ради точности глубины и срезала бы землю).
+  // Подписи и метки переставляются, только когда плиты заметно сдвинулись.
+  applyProximity() {
+    if (!this.districts || !this.frame) return;
+    const { camera } = this.runtime;
+    const distance = camera.position.distanceTo(this.rig.controls.target);
+    const near = Math.min(CAMERA_NEAR * this.frame.scale, distance * 0.15);
+    if (Math.abs(near - camera.near) > near * 0.05) {
+      camera.near = near;
+      camera.updateProjectionMatrix();
+    }
+    const size = THREE.MathUtils.clamp(distance / PIN_REF_KM, PIN_MIN, 1);
+    this.problems.setSize(size);
+    this.marker.setSize(size);
+    const closeness =
+      PROXIMITY_MIN +
+      (1 - PROXIMITY_MIN) * THREE.MathUtils.smoothstep(distance, PROXIMITY_NEAR, PROXIMITY_FAR);
+    const settled = closeness === 1 || closeness === PROXIMITY_MIN;
+    if (Math.abs(closeness - this.closeness) < 0.02 && !(settled && closeness !== this.closeness)) {
+      return;
+    }
+    this.closeness = closeness;
+    this.districts.setProximity(closeness);
+    this.placeLabels();
+    if (this.problemList) this.setProblems(this.problemList);
   }
 
   placeLabels() {
@@ -432,6 +494,7 @@ export class MapScene {
   // поднимается в свободную часть, чтобы город и выбранный район не оказались под шторкой. Лучи
   // выбора и подписи используют ту же проекцию, поэтому попадание остаётся точным.
   setViewInset(bottom) {
+    this.runtime.invalidate();
     const { camera } = this.runtime;
     const { width, height } = this.runtime.size;
     this.viewInset = bottom;
@@ -461,6 +524,7 @@ export class MapScene {
   // Тема сменилась (токены уже перечитаны): свет, фон и туман, земля, дороги и вода (цвета плиток),
   // плиты — в цветах новой темы. Камера, выбор и слои остаются как были.
   refreshTheme() {
+    this.runtime.invalidate();
     const light = cssVar('--scene-light');
     this.hemi.color.set(light);
     this.key.color.set(light);
@@ -472,6 +536,7 @@ export class MapScene {
     this.backdrop = new CityBackdrop();
     this.runtime.scene.add(this.backdrop.group);
     this.tiles.setTheme();
+    this.vectors.setTheme();
     this.districts.refreshTheme();
     this.districts.setBaseOpacity(districtOpacity());
   }
@@ -639,6 +704,7 @@ export class MapScene {
     this.marker.dispose();
     this.backdrop?.dispose();
     this.tiles?.dispose();
+    this.vectors?.dispose();
     this.labels.forEach((label) => label.element.remove());
     this.labelRenderer.domElement.remove();
     this.runtime.dispose();

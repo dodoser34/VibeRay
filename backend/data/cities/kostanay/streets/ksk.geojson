@@ -1,0 +1,5212 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680919, 53.229638],
+          [63.681984, 53.229252],
+          [63.685166, 53.22788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669633, 53.238131],
+          [63.669651, 53.238198],
+          [63.669705, 53.238258],
+          [63.66979, 53.238303],
+          [63.669938, 53.238334],
+          [63.670055, 53.238328],
+          [63.670161, 53.238298],
+          [63.670244, 53.238248],
+          [63.670293, 53.238185],
+          [63.670295, 53.238087],
+          [63.670249, 53.238023],
+          [63.670168, 53.237972],
+          [63.670063, 53.237941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670063, 53.237941],
+          [63.669877, 53.23794],
+          [63.669766, 53.237974],
+          [63.669683, 53.238028],
+          [63.669639, 53.238098]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.663547, 53.242901],
+          [63.663456, 53.24297],
+          [63.663082, 53.243128],
+          [63.655825, 53.245547],
+          [63.655456, 53.245691],
+          [63.655112, 53.245874],
+          [63.651517, 53.248415],
+          [63.646285, 53.251948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670898, 53.237753],
+          [63.674552, 53.235936],
+          [63.675892, 53.235258],
+          [63.676017, 53.235167],
+          [63.67219, 53.232387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670898, 53.237753],
+          [63.670443, 53.23792],
+          [63.670243, 53.237945],
+          [63.670063, 53.237941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670302, 53.238157],
+          [63.670402, 53.238064],
+          [63.670898, 53.237753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66947, 53.238403],
+          [63.669591, 53.238362],
+          [63.669895, 53.238329]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685068, 53.227798],
+          [63.681886, 53.22917],
+          [63.680919, 53.229638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.676377, 53.231033],
+          [63.677292, 53.230908],
+          [63.677683, 53.230834],
+          [63.678143, 53.230727],
+          [63.678681, 53.230558],
+          [63.679321, 53.230316],
+          [63.680919, 53.229638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674547, 53.231249],
+          [63.674852, 53.231197],
+          [63.675591, 53.231109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672091, 53.23253],
+          [63.672018, 53.232612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.676017, 53.235167],
+          [63.678599, 53.2371],
+          [63.68172, 53.239378],
+          [63.685881, 53.242467],
+          [63.691066, 53.246258],
+          [63.693555, 53.248145],
+          [63.696307, 53.250152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67, 53.237934],
+          [63.669773, 53.237859],
+          [63.669113, 53.237426],
+          [63.667102, 53.23623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685169, 53.249565],
+          [63.679683, 53.252223],
+          [63.679529, 53.252288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655088, 53.25094],
+          [63.660122, 53.249211],
+          [63.660203, 53.249097],
+          [63.661229, 53.248709],
+          [63.667373, 53.246533],
+          [63.669215, 53.245524],
+          [63.670408, 53.244918],
+          [63.675418, 53.242698],
+          [63.675945, 53.242443]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685881, 53.242467],
+          [63.688648, 53.241185],
+          [63.689969, 53.240537],
+          [63.693204, 53.23898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.692027, 53.237993],
+          [63.690249, 53.238902],
+          [63.689471, 53.239314],
+          [63.684849, 53.241705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.696033, 53.247014],
+          [63.688864, 53.24176],
+          [63.688548, 53.241553],
+          [63.688277, 53.241357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691652, 53.242024],
+          [63.692214, 53.2424],
+          [63.692274, 53.24241],
+          [63.692896, 53.242359],
+          [63.694857, 53.242157],
+          [63.694906, 53.242162],
+          [63.695178, 53.24237],
+          [63.696677, 53.241527],
+          [63.696711, 53.2415],
+          [63.696725, 53.241469],
+          [63.696721, 53.241432],
+          [63.696687, 53.24139],
+          [63.696475, 53.241234],
+          [63.695839, 53.240837],
+          [63.695093, 53.240325],
+          [63.694195, 53.239658],
+          [63.693366, 53.239122],
+          [63.693204, 53.23898],
+          [63.693269, 53.238908],
+          [63.69326, 53.238847],
+          [63.693205, 53.238787],
+          [63.69302, 53.238654],
+          [63.692027, 53.237993],
+          [63.691943, 53.237901],
+          [63.691826, 53.237811],
+          [63.690758, 53.237128],
+          [63.689944, 53.23659],
+          [63.689831, 53.236409],
+          [63.687175, 53.234668],
+          [63.686147, 53.234032],
+          [63.68584, 53.233825],
+          [63.685521, 53.233645],
+          [63.68438, 53.233102],
+          [63.684262, 53.233028],
+          [63.683383, 53.232627],
+          [63.682766, 53.232385],
+          [63.682085, 53.232168],
+          [63.681661, 53.232048],
+          [63.680191, 53.231695],
+          [63.678662, 53.231301],
+          [63.678316, 53.231287],
+          [63.678148, 53.231369],
+          [63.678111, 53.231504],
+          [63.678264, 53.231646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686147, 53.234032],
+          [63.685304, 53.234518],
+          [63.68514, 53.234584],
+          [63.685103, 53.234695],
+          [63.684808, 53.234881],
+          [63.684581, 53.234906],
+          [63.684164, 53.234726],
+          [63.683821, 53.234635],
+          [63.683601, 53.234539],
+          [63.682475, 53.233851],
+          [63.682275, 53.23369],
+          [63.682232, 53.233504],
+          [63.682322, 53.233172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687872, 53.236057],
+          [63.689303, 53.236852]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678264, 53.231646],
+          [63.676144, 53.232377],
+          [63.678258, 53.233975],
+          [63.687172, 53.240504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679924, 53.233953],
+          [63.680874, 53.233444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678371, 53.234058],
+          [63.679314, 53.233532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.690758, 53.237128],
+          [63.690735, 53.237256],
+          [63.690664, 53.237346],
+          [63.689213, 53.238104]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68045, 53.231068],
+          [63.680483, 53.231236],
+          [63.680461, 53.23137],
+          [63.680191, 53.231695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68991, 53.23654],
+          [63.689303, 53.236852],
+          [63.688313, 53.237451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678258, 53.233975],
+          [63.676059, 53.235028],
+          [63.675936, 53.235106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.689471, 53.239314],
+          [63.687497, 53.237983],
+          [63.684824, 53.236302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678599, 53.2371],
+          [63.679345, 53.236773],
+          [63.679829, 53.236532],
+          [63.677138, 53.234516],
+          [63.674485, 53.23276],
+          [63.673443, 53.233301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.684262, 53.233028],
+          [63.68393, 53.233165],
+          [63.682322, 53.233172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682322, 53.233172],
+          [63.681889, 53.232863],
+          [63.681219, 53.232528],
+          [63.68016, 53.232952]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68514, 53.234584],
+          [63.68421, 53.234065],
+          [63.68317, 53.233339],
+          [63.683149, 53.233168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680811, 53.235844],
+          [63.681909, 53.235326],
+          [63.682887, 53.23483],
+          [63.683601, 53.234539]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68331, 53.237672],
+          [63.683679, 53.237464],
+          [63.684216, 53.236885],
+          [63.684824, 53.236302],
+          [63.684874, 53.236217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685451, 53.23268],
+          [63.684264, 53.232385],
+          [63.683458, 53.232042],
+          [63.681585, 53.231505],
+          [63.680461, 53.23137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687175, 53.234668],
+          [63.685861, 53.235374],
+          [63.685819, 53.235431],
+          [63.685825, 53.235501],
+          [63.685877, 53.235602],
+          [63.685884, 53.235723],
+          [63.685317, 53.236064],
+          [63.684874, 53.236217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.690249, 53.238902],
+          [63.689868, 53.238576],
+          [63.688313, 53.237451],
+          [63.688109, 53.237378],
+          [63.687871, 53.237319],
+          [63.687396, 53.237127],
+          [63.687055, 53.236961],
+          [63.686844, 53.236841],
+          [63.686763, 53.236777],
+          [63.686679, 53.236681],
+          [63.686638, 53.23666],
+          [63.685317, 53.236064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686589, 53.238497],
+          [63.681909, 53.235326],
+          [63.678118, 53.232705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.684874, 53.236217],
+          [63.682887, 53.23483],
+          [63.678264, 53.231646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68184, 53.243153],
+          [63.681252, 53.242692],
+          [63.679862, 53.241678],
+          [63.679568, 53.241386],
+          [63.679399, 53.241183],
+          [63.678804, 53.239545],
+          [63.680712, 53.23865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.688307, 53.251381],
+          [63.68801, 53.251166],
+          [63.687687, 53.250976],
+          [63.685913, 53.249722],
+          [63.68553, 53.249428]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.690809, 53.241184],
+          [63.689969, 53.240537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.69514, 53.244781],
+          [63.698839, 53.242829],
+          [63.698964, 53.242816],
+          [63.699079, 53.24285],
+          [63.700084, 53.243542],
+          [63.701147, 53.244233],
+          [63.70115, 53.244282],
+          [63.701135, 53.244323],
+          [63.701091, 53.244361],
+          [63.697305, 53.246346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.700084, 53.243542],
+          [63.696252, 53.245584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.697305, 53.246346],
+          [63.694296, 53.24417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.697305, 53.246346],
+          [63.697226, 53.246472],
+          [63.693555, 53.248145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.694102, 53.244259],
+          [63.690371, 53.241502],
+          [63.689909, 53.241138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691311, 53.242191],
+          [63.691652, 53.242024],
+          [63.691373, 53.241776],
+          [63.691349, 53.241733],
+          [63.691349, 53.241569],
+          [63.691266, 53.241481],
+          [63.690809, 53.241184],
+          [63.691791, 53.240735],
+          [63.691903, 53.240701],
+          [63.6921, 53.240662],
+          [63.694195, 53.239658]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.690532, 53.245868],
+          [63.691065, 53.245605],
+          [63.691468, 53.245383],
+          [63.692005, 53.245114],
+          [63.69291, 53.244731],
+          [63.694102, 53.244259],
+          [63.696279, 53.243261]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.701043, 53.250346],
+          [63.699709, 53.25061]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.694233, 53.2512],
+          [63.691872, 53.249554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.696307, 53.250152],
+          [63.695125, 53.250749],
+          [63.692788, 53.249091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.690705, 53.249826],
+          [63.689884, 53.250234],
+          [63.689027, 53.250676],
+          [63.68801, 53.251166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680587, 53.254766],
+          [63.680317, 53.254291],
+          [63.679908, 53.253346],
+          [63.679529, 53.252288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679529, 53.252288],
+          [63.678783, 53.252593],
+          [63.677345, 53.253141],
+          [63.677086, 53.253199],
+          [63.676359, 53.253232],
+          [63.675538, 53.253179],
+          [63.674815, 53.252994],
+          [63.674548, 53.252913],
+          [63.673653, 53.252572],
+          [63.673157, 53.252338]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673157, 53.252338],
+          [63.667373, 53.246533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667791, 53.251572],
+          [63.667531, 53.251444],
+          [63.663856, 53.24778],
+          [63.662067, 53.245959],
+          [63.660168, 53.244101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671335, 53.252955],
+          [63.669521, 53.251123],
+          [63.669446, 53.25097],
+          [63.665661, 53.247141],
+          [63.663899, 53.245324],
+          [63.662039, 53.243476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672052, 53.248765],
+          [63.668327, 53.246013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665042, 53.246503],
+          [63.663233, 53.247146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66122, 53.24513],
+          [63.663055, 53.244486],
+          [63.664775, 53.243865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666906, 53.250821],
+          [63.66464, 53.251612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.663205, 53.247117],
+          [63.661947, 53.247535],
+          [63.660198, 53.248151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667531, 53.251444],
+          [63.665885, 53.25201],
+          [63.665272, 53.252172],
+          [63.66381, 53.252721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664489, 53.245933],
+          [63.659754, 53.247569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674815, 53.252994],
+          [63.674971, 53.252391],
+          [63.67249, 53.249892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665272, 53.252172],
+          [63.664049, 53.25109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66388, 53.251149],
+          [63.661932, 53.249234]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668628, 53.247793],
+          [63.665121, 53.24904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.660386, 53.249028],
+          [63.65996, 53.24857],
+          [63.656708, 53.245255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665634, 53.244709],
+          [63.663899, 53.245324],
+          [63.658579, 53.247162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669454, 53.253989],
+          [63.667558, 53.252165],
+          [63.668162, 53.25195],
+          [63.667791, 53.251572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673157, 53.252338],
+          [63.669676, 53.253517],
+          [63.669616, 53.25368],
+          [63.669264, 53.253806]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667456, 53.246493],
+          [63.664775, 53.243865],
+          [63.664172, 53.243216],
+          [63.664046, 53.243044],
+          [63.66391, 53.243006],
+          [63.663456, 53.24297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665375, 53.254201],
+          [63.660611, 53.249697],
+          [63.660122, 53.249211]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669854, 53.249013],
+          [63.668146, 53.249654],
+          [63.66388, 53.251149],
+          [63.662634, 53.25161]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673121, 53.249593],
+          [63.67249, 53.249892],
+          [63.668642, 53.251254],
+          [63.667791, 53.251572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.663501, 53.244929],
+          [63.661678, 53.245579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661158, 53.246273],
+          [63.659346, 53.244375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691047, 53.249939],
+          [63.690705, 53.249826],
+          [63.689286, 53.248736],
+          [63.68923, 53.2486],
+          [63.689417, 53.248304],
+          [63.689324, 53.248154],
+          [63.688839, 53.247848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686827, 53.235686],
+          [63.686575, 53.235851],
+          [63.686493, 53.235878],
+          [63.686424, 53.235869],
+          [63.686235, 53.235775],
+          [63.686129, 53.23574],
+          [63.685884, 53.235723]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.688241, 53.239951],
+          [63.689429, 53.240802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679343, 53.256068],
+          [63.676312, 53.254363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680192, 53.254004],
+          [63.679384, 53.254086],
+          [63.679217, 53.254255],
+          [63.677687, 53.255137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681259, 53.237367],
+          [63.680099, 53.23652],
+          [63.680047, 53.236509],
+          [63.679908, 53.236578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.689245, 53.242039],
+          [63.690371, 53.241502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.684849, 53.241705],
+          [63.68184, 53.243153],
+          [63.678724, 53.244681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685608, 53.24939],
+          [63.685104, 53.249044],
+          [63.684371, 53.248645],
+          [63.670458, 53.238394],
+          [63.67037, 53.238307],
+          [63.670293, 53.238185]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669938, 53.238334],
+          [63.670228, 53.23843],
+          [63.670317, 53.238475],
+          [63.671896, 53.239662],
+          [63.684214, 53.248721],
+          [63.684691, 53.249204],
+          [63.685169, 53.249565],
+          [63.68553, 53.249428],
+          [63.691493, 53.246581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679719, 53.245413],
+          [63.680422, 53.245107],
+          [63.681443, 53.24461],
+          [63.683611, 53.243583],
+          [63.685881, 53.242467]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673395, 53.240566],
+          [63.673232, 53.240643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.69698, 53.243809],
+          [63.696279, 53.243261],
+          [63.696322, 53.243193],
+          [63.69778, 53.242432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670451, 53.234735],
+          [63.669794, 53.234244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66963, 53.235339],
+          [63.669118, 53.234956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670031, 53.235045],
+          [63.669368, 53.234549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669206, 53.235255],
+          [63.66855, 53.235757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671055, 53.234],
+          [63.671677, 53.233696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671027, 53.23458],
+          [63.670208, 53.233955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674263, 53.234603],
+          [63.673394, 53.233963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671718, 53.233725],
+          [63.671568, 53.233796],
+          [63.67152, 53.233833],
+          [63.671533, 53.233883],
+          [63.671659, 53.234018],
+          [63.671674, 53.234049],
+          [63.671656, 53.234081],
+          [63.671292, 53.23431],
+          [63.671027, 53.23458],
+          [63.670691, 53.234838],
+          [63.669114, 53.235849],
+          [63.668875, 53.235916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672493, 53.234277],
+          [63.671115, 53.233296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669113, 53.237426],
+          [63.669601, 53.237128],
+          [63.669862, 53.236909],
+          [63.670142, 53.236699],
+          [63.668724, 53.236034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668875, 53.235916],
+          [63.668036, 53.235505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668875, 53.235916],
+          [63.668195, 53.236449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674679, 53.235674],
+          [63.674553, 53.235615],
+          [63.674481, 53.235596],
+          [63.674389, 53.235594],
+          [63.674135, 53.235731],
+          [63.674043, 53.235732],
+          [63.673233, 53.235204],
+          [63.672281, 53.234471],
+          [63.672237, 53.234407],
+          [63.672275, 53.234371],
+          [63.672493, 53.234277],
+          [63.673394, 53.233963],
+          [63.673937, 53.233659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6755, 53.234792],
+          [63.674887, 53.235091],
+          [63.675046, 53.235208]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67513, 53.234973],
+          [63.675289, 53.23509],
+          [63.675046, 53.235208],
+          [63.674765, 53.235386],
+          [63.674717, 53.235436],
+          [63.674756, 53.235483],
+          [63.675034, 53.235692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687441, 53.236249],
+          [63.686702, 53.236706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673904, 53.232511],
+          [63.674343, 53.232834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686104, 53.239265],
+          [63.686857, 53.239812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.684567, 53.238594],
+          [63.684252, 53.238768],
+          [63.684239, 53.238796],
+          [63.684251, 53.238821],
+          [63.684397, 53.238963],
+          [63.684394, 53.238992],
+          [63.684371, 53.239022],
+          [63.683153, 53.239617]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686589, 53.238497],
+          [63.687497, 53.237983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678118, 53.232705],
+          [63.679087, 53.232214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68642, 53.23995],
+          [63.68407, 53.24113]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68635, 53.239139],
+          [63.687104, 53.239688],
+          [63.686485, 53.239998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685617, 53.240123],
+          [63.684561, 53.240637],
+          [63.682389, 53.239059],
+          [63.68172, 53.239378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680879, 53.238382],
+          [63.680569, 53.238544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673812, 53.231435],
+          [63.673967, 53.231609],
+          [63.673121, 53.23201],
+          [63.672922, 53.231882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677078, 53.231212],
+          [63.676384, 53.231296],
+          [63.676204, 53.231356],
+          [63.675704, 53.231389],
+          [63.675657, 53.231231],
+          [63.675591, 53.231109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672988, 53.232971],
+          [63.673344, 53.232672],
+          [63.673383, 53.232522],
+          [63.673028, 53.232184],
+          [63.67274, 53.231978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677962, 53.243063],
+          [63.6762, 53.24174],
+          [63.676843, 53.241856],
+          [63.676959, 53.241866],
+          [63.677079, 53.24184],
+          [63.677753, 53.241485],
+          [63.677796, 53.24143],
+          [63.677764, 53.24137],
+          [63.677327, 53.241104],
+          [63.676591, 53.240555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679399, 53.241183],
+          [63.680459, 53.240726],
+          [63.680614, 53.240741],
+          [63.681859, 53.240152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67394, 53.239581],
+          [63.673558, 53.239767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68264, 53.240074],
+          [63.682109, 53.240336],
+          [63.681446, 53.24063],
+          [63.681422, 53.240669],
+          [63.681421, 53.240738],
+          [63.682195, 53.241381],
+          [63.682321, 53.241414],
+          [63.682448, 53.241389],
+          [63.683665, 53.240831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677034, 53.238374],
+          [63.678439, 53.237687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674146, 53.240215],
+          [63.674751, 53.239919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672769, 53.238545],
+          [63.67616, 53.23691],
+          [63.67546, 53.236408],
+          [63.671777, 53.238183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680183, 53.242805],
+          [63.678999, 53.243391]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.675653, 53.236824],
+          [63.675405, 53.236943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673766, 53.238665],
+          [63.674986, 53.239562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681367, 53.242784],
+          [63.684345, 53.241333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.676591, 53.240555],
+          [63.676367, 53.240384],
+          [63.67597, 53.240192],
+          [63.675982, 53.24012],
+          [63.675528, 53.239728],
+          [63.675317, 53.239709],
+          [63.674792, 53.239951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679413, 53.239924],
+          [63.679015, 53.240125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681033, 53.242532],
+          [63.684, 53.241078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680604, 53.239412],
+          [63.680159, 53.239087],
+          [63.679662, 53.238687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677717, 53.237159],
+          [63.678779, 53.237935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.675317, 53.236874],
+          [63.672366, 53.238296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679156, 53.24351],
+          [63.678589, 53.243082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677244, 53.243399],
+          [63.678081, 53.243005],
+          [63.679134, 53.243786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.675928, 53.237022],
+          [63.675229, 53.236519]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679134, 53.243786],
+          [63.68077, 53.243006],
+          [63.679858, 53.24232],
+          [63.678723, 53.242862],
+          [63.678851, 53.242957],
+          [63.678343, 53.2432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680695, 53.241711],
+          [63.68024, 53.241953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680459, 53.240726],
+          [63.67991, 53.24031],
+          [63.681226, 53.239688],
+          [63.683122, 53.241079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674506, 53.240489],
+          [63.673063, 53.23939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67687, 53.236781],
+          [63.677165, 53.237015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67426, 53.238425],
+          [63.675485, 53.239322],
+          [63.67433, 53.239877],
+          [63.673441, 53.239202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672738, 53.239672],
+          [63.673018, 53.239874],
+          [63.672683, 53.240041]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67461, 53.236397],
+          [63.67495, 53.236233],
+          [63.674738, 53.23606],
+          [63.674552, 53.235936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.676591, 53.240555],
+          [63.674661, 53.241498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681088, 53.240785],
+          [63.680119, 53.241235],
+          [63.679825, 53.241004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67597, 53.240192],
+          [63.674962, 53.240684],
+          [63.675508, 53.241085]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677717, 53.237159],
+          [63.676313, 53.237845],
+          [63.67716, 53.238467]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.675708, 53.239884],
+          [63.674795, 53.240348],
+          [63.673773, 53.240844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671824, 53.239274],
+          [63.671829, 53.239188],
+          [63.671884, 53.238987],
+          [63.671548, 53.238736],
+          [63.671133, 53.238895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669689, 53.237055],
+          [63.670675, 53.237523],
+          [63.67104, 53.237682],
+          [63.671266, 53.237801],
+          [63.671442, 53.237934],
+          [63.671705, 53.238107],
+          [63.671777, 53.238183],
+          [63.67273, 53.238804],
+          [63.672979, 53.238675],
+          [63.672005, 53.238073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674878, 53.240012],
+          [63.674556, 53.239769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673876, 53.238986],
+          [63.672309, 53.239766]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679662, 53.238687],
+          [63.678745, 53.239147],
+          [63.678624, 53.239179],
+          [63.678542, 53.239147],
+          [63.677626, 53.238462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677327, 53.241104],
+          [63.676237, 53.241642],
+          [63.6762, 53.24174],
+          [63.675465, 53.24209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677626, 53.238462],
+          [63.678779, 53.237935],
+          [63.679356, 53.237649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678007, 53.236647],
+          [63.677165, 53.237015],
+          [63.67677, 53.237213],
+          [63.673498, 53.238795],
+          [63.672915, 53.239017],
+          [63.672749, 53.239054],
+          [63.672611, 53.239042],
+          [63.671549, 53.238231],
+          [63.671495, 53.23817],
+          [63.671465, 53.238109],
+          [63.671442, 53.237934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.684531, 53.249031],
+          [63.684813, 53.248886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.676344, 53.243362],
+          [63.676695, 53.243187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685913, 53.249722],
+          [63.686217, 53.249572],
+          [63.686213, 53.249102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.675418, 53.242698],
+          [63.675925, 53.243061],
+          [63.676092, 53.242973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678087, 53.249081],
+          [63.682251, 53.247084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682497, 53.244645],
+          [63.681843, 53.244948],
+          [63.68085, 53.245422],
+          [63.680422, 53.245107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686783, 53.247651],
+          [63.685398, 53.248325]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68409, 53.24442],
+          [63.684478, 53.244229]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.688772, 53.247191],
+          [63.687903, 53.246541],
+          [63.689289, 53.245859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686308, 53.247315],
+          [63.684937, 53.247986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686791, 53.246163],
+          [63.687782, 53.245665],
+          [63.687787, 53.245586],
+          [63.687557, 53.245431],
+          [63.687974, 53.245217],
+          [63.688506, 53.245596],
+          [63.688828, 53.245518],
+          [63.689567, 53.245162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686695, 53.24681],
+          [63.68783, 53.247654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687284, 53.246524],
+          [63.686036, 53.247122],
+          [63.687214, 53.247956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687704, 53.244685],
+          [63.690316, 53.24662],
+          [63.691066, 53.246258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686275, 53.245387],
+          [63.687704, 53.244685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685291, 53.244834],
+          [63.683611, 53.243583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682664, 53.24738],
+          [63.684514, 53.246464],
+          [63.683694, 53.245866],
+          [63.683254, 53.246067],
+          [63.681816, 53.24676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.683254, 53.246067],
+          [63.682221, 53.245274],
+          [63.681765, 53.244881],
+          [63.681675, 53.244751],
+          [63.681443, 53.24461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685719, 53.243133],
+          [63.6856, 53.243044],
+          [63.685306, 53.243185],
+          [63.684955, 53.242922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.69017, 53.248128],
+          [63.690027, 53.248055],
+          [63.689716, 53.247942],
+          [63.689168, 53.247823],
+          [63.688994, 53.247774],
+          [63.685923, 53.245538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.683537, 53.246951],
+          [63.686361, 53.249031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.690163, 53.246507],
+          [63.685825, 53.248638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.683385, 53.249089],
+          [63.684489, 53.249896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.683135, 53.249217],
+          [63.684237, 53.250017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682093, 53.247985],
+          [63.682247, 53.24791],
+          [63.682526, 53.247732],
+          [63.682541, 53.247708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671896, 53.239662],
+          [63.67174, 53.239773],
+          [63.673738, 53.241229],
+          [63.676508, 53.24328],
+          [63.682541, 53.247708],
+          [63.682726, 53.247636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.689001, 53.241461],
+          [63.689135, 53.241597],
+          [63.689133, 53.241619],
+          [63.689112, 53.241641],
+          [63.688864, 53.24176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691729, 53.242075],
+          [63.695093, 53.240325]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6879, 53.241309],
+          [63.686961, 53.240613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.693831, 53.246325],
+          [63.692205, 53.247133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.694197, 53.243387],
+          [63.692896, 53.242359],
+          [63.695839, 53.240837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.694458, 53.2468],
+          [63.692879, 53.247639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.690145, 53.240914],
+          [63.689001, 53.241461],
+          [63.688648, 53.241185]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687264, 53.242522],
+          [63.687111, 53.242386],
+          [63.687087, 53.242353],
+          [63.687522, 53.242126],
+          [63.687522, 53.242089],
+          [63.687196, 53.241858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.690682, 53.244531],
+          [63.689443, 53.245071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.692005, 53.245114],
+          [63.690143, 53.243696],
+          [63.689818, 53.243859],
+          [63.690682, 53.244531],
+          [63.691676, 53.245281],
+          [63.692405, 53.245869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686436, 53.24287],
+          [63.6871, 53.242596],
+          [63.687264, 53.242522],
+          [63.687897, 53.242966],
+          [63.688473, 53.243414],
+          [63.688023, 53.243625],
+          [63.6877, 53.243797]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.695178, 53.24237],
+          [63.695479, 53.242682],
+          [63.695509, 53.242733],
+          [63.695484, 53.24279],
+          [63.693421, 53.243754]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691493, 53.246581],
+          [63.691729, 53.246417],
+          [63.691786, 53.24629],
+          [63.691614, 53.245918],
+          [63.691362, 53.245728],
+          [63.691065, 53.245605],
+          [63.689119, 53.244221],
+          [63.689818, 53.243859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691872, 53.249554],
+          [63.691047, 53.249939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.689292, 53.249657],
+          [63.688584, 53.249085]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.689286, 53.248736],
+          [63.687839, 53.249456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.688621, 53.250047],
+          [63.686922, 53.248763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.689069, 53.248348],
+          [63.688338, 53.248722],
+          [63.688179, 53.248819],
+          [63.687927, 53.248939],
+          [63.687905, 53.248975],
+          [63.688037, 53.249119],
+          [63.688032, 53.249161],
+          [63.687698, 53.24935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686706, 53.251606],
+          [63.686861, 53.251721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680471, 53.2469],
+          [63.681328, 53.247532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687399, 53.251268],
+          [63.687557, 53.251385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68546, 53.252435],
+          [63.685559, 53.252508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687163, 53.251378],
+          [63.687324, 53.251498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686466, 53.251723],
+          [63.686619, 53.251838]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686029, 53.251949],
+          [63.686171, 53.252054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686237, 53.251834],
+          [63.686391, 53.251948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685794, 53.252049],
+          [63.686133, 53.252293],
+          [63.687959, 53.251412],
+          [63.687778, 53.251278],
+          [63.685949, 53.252161]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686934, 53.251496],
+          [63.687089, 53.251611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681913, 53.254272],
+          [63.685227, 53.252576],
+          [63.685289, 53.252517],
+          [63.685701, 53.25232],
+          [63.6858, 53.252392],
+          [63.685303, 53.252631],
+          [63.685227, 53.252576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685045, 53.251849],
+          [63.683211, 53.250509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667873, 53.240147],
+          [63.667365, 53.23987]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671105, 53.24136],
+          [63.66808, 53.239374]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668216, 53.239918],
+          [63.667749, 53.240231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664646, 53.241975],
+          [63.665119, 53.242073],
+          [63.665357, 53.241873],
+          [63.665068, 53.241622]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673661, 53.243483],
+          [63.671875, 53.242143]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672734, 53.242136],
+          [63.672402, 53.241888]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670543, 53.242779],
+          [63.672402, 53.241888],
+          [63.673738, 53.241229]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668019, 53.245856],
+          [63.666105, 53.244451],
+          [63.664537, 53.243335],
+          [63.665054, 53.243064],
+          [63.665338, 53.243077],
+          [63.665867, 53.243185],
+          [63.666251, 53.243299],
+          [63.666561, 53.243442],
+          [63.667023, 53.243746],
+          [63.66877, 53.2454]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667023, 53.243746],
+          [63.667183, 53.244401],
+          [63.668464, 53.245361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670395, 53.244548],
+          [63.66946, 53.243632]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665338, 53.243077],
+          [63.666857, 53.244165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669261, 53.245164],
+          [63.670395, 53.244548],
+          [63.670659, 53.24442],
+          [63.670074, 53.243894],
+          [63.668609, 53.24327],
+          [63.667785, 53.243143],
+          [63.666903, 53.243072],
+          [63.666877, 53.243233],
+          [63.667024, 53.243245],
+          [63.667575, 53.243578],
+          [63.667819, 53.243794],
+          [63.669373, 53.24527],
+          [63.669516, 53.245371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66499, 53.243098],
+          [63.666642, 53.244291]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668649, 53.245285],
+          [63.668283, 53.245436]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668175, 53.243437],
+          [63.668039, 53.243358],
+          [63.667545, 53.24332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66949, 53.24504],
+          [63.668046, 53.24368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669704, 53.244923],
+          [63.668518, 53.243787],
+          [63.668261, 53.243573]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669934, 53.244798],
+          [63.668761, 53.243675],
+          [63.668489, 53.243459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664763, 53.243217],
+          [63.666361, 53.244344],
+          [63.668228, 53.245743]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670167, 53.244672],
+          [63.669007, 53.243562],
+          [63.668748, 53.243329],
+          [63.667819, 53.243794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667921, 53.243571],
+          [63.667211, 53.243097]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674361, 53.253872],
+          [63.675106, 53.253609],
+          [63.676359, 53.253232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667547, 53.244241],
+          [63.667003, 53.24448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664996, 53.243655],
+          [63.665169, 53.243964],
+          [63.666378, 53.24493],
+          [63.667795, 53.245978],
+          [63.668496, 53.245596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666858, 53.244298],
+          [63.666642, 53.244291],
+          [63.666361, 53.244344],
+          [63.666105, 53.244451],
+          [63.665902, 53.244554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673718, 53.256901],
+          [63.675931, 53.25494],
+          [63.676209, 53.254448],
+          [63.67683, 53.253934],
+          [63.677079, 53.253634],
+          [63.677345, 53.253141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66928, 53.243402],
+          [63.669143, 53.2435],
+          [63.668518, 53.243787],
+          [63.66787, 53.24407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665867, 53.243185],
+          [63.666854, 53.24387],
+          [63.666858, 53.244298],
+          [63.667003, 53.24448],
+          [63.668745, 53.245783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674032, 53.253154],
+          [63.674548, 53.252913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.663379, 53.243959],
+          [63.664468, 53.243533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.659906, 53.247879],
+          [63.659444, 53.248043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673121, 53.249593],
+          [63.672052, 53.248765],
+          [63.672809, 53.248411],
+          [63.674527, 53.247581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670298, 53.248844],
+          [63.669854, 53.249013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.658077, 53.245322],
+          [63.6577, 53.244924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.659273, 53.250582],
+          [63.66063, 53.250083],
+          [63.660906, 53.249975]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666106, 53.253878],
+          [63.667011, 53.253548],
+          [63.666453, 53.252986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668631, 53.248597],
+          [63.666425, 53.249366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665262, 53.248156],
+          [63.667383, 53.247412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664426, 53.248347],
+          [63.660611, 53.249697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668668, 53.250182],
+          [63.669488, 53.24989],
+          [63.670256, 53.250684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67178, 53.250144],
+          [63.670298, 53.248844],
+          [63.669628, 53.248244],
+          [63.669511, 53.248151],
+          [63.669403, 53.248143],
+          [63.669299, 53.248156],
+          [63.669086, 53.248248]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666496, 53.25501],
+          [63.665548, 53.254208],
+          [63.665176, 53.25419],
+          [63.664945, 53.254267],
+          [63.664618, 53.254566],
+          [63.664344, 53.2549],
+          [63.663856, 53.255341],
+          [63.663615, 53.255528],
+          [63.663299, 53.255821],
+          [63.662714, 53.256016],
+          [63.662038, 53.256302],
+          [63.661308, 53.25652],
+          [63.660799, 53.256697],
+          [63.660391, 53.256985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671777, 53.252805],
+          [63.671468, 53.252546],
+          [63.66984, 53.250831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665698, 53.249607],
+          [63.664349, 53.250085],
+          [63.664337, 53.250222],
+          [63.6649, 53.250792]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66145, 53.251259],
+          [63.661004, 53.250832],
+          [63.661572, 53.250605]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.660198, 53.248151],
+          [63.659698, 53.247685],
+          [63.659754, 53.247569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665027, 53.248947],
+          [63.664243, 53.249221],
+          [63.663313, 53.249267],
+          [63.662306, 53.249602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664823, 53.253679],
+          [63.665192, 53.253522],
+          [63.665228, 53.25341],
+          [63.666453, 53.252986],
+          [63.666747, 53.252895],
+          [63.667426, 53.252635],
+          [63.667893, 53.252487],
+          [63.6689, 53.25212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670788, 53.252403],
+          [63.670181, 53.252607],
+          [63.669942, 53.252547],
+          [63.668642, 53.251254],
+          [63.668517, 53.251159],
+          [63.667347, 53.249934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651862, 53.249953],
+          [63.651715, 53.250076],
+          [63.653755, 53.251036],
+          [63.653761, 53.251242],
+          [63.65369, 53.251401],
+          [63.651356, 53.250989],
+          [63.650698, 53.251043],
+          [63.650113, 53.250952],
+          [63.649378, 53.250596],
+          [63.649111, 53.250394],
+          [63.649129, 53.250267],
+          [63.650551, 53.24928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651217, 53.24862],
+          [63.651312, 53.248687],
+          [63.651332, 53.248734],
+          [63.651324, 53.248757],
+          [63.651005, 53.248985],
+          [63.651011, 53.249015],
+          [63.651042, 53.249044],
+          [63.65128, 53.249175],
+          [63.651879, 53.248763],
+          [63.651517, 53.248415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.65082, 53.249866],
+          [63.650444, 53.250152],
+          [63.650407, 53.25025],
+          [63.651252, 53.250451],
+          [63.651494, 53.250194],
+          [63.65082, 53.249866],
+          [63.651174, 53.249604]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655088, 53.25094],
+          [63.655056, 53.250951],
+          [63.654825, 53.250984],
+          [63.654621, 53.250987],
+          [63.654487, 53.250978],
+          [63.654345, 53.250997],
+          [63.654107, 53.251101],
+          [63.654056, 53.251109],
+          [63.653924, 53.251059],
+          [63.65364, 53.250889],
+          [63.65257, 53.250315],
+          [63.652331, 53.25022],
+          [63.651924, 53.249985],
+          [63.650379, 53.249191]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66196, 53.24487],
+          [63.66096, 53.243836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.689888, 53.246642],
+          [63.689547, 53.246395],
+          [63.688612, 53.246826],
+          [63.688842, 53.247001],
+          [63.688643, 53.247094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679829, 53.236532],
+          [63.679908, 53.236578],
+          [63.680706, 53.237164],
+          [63.680757, 53.23723],
+          [63.680762, 53.237291],
+          [63.680495, 53.23749],
+          [63.680389, 53.237502],
+          [63.680286, 53.237441],
+          [63.679345, 53.236773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.643882, 53.247121],
+          [63.648631, 53.247347],
+          [63.652735, 53.247562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.65315, 53.246409],
+          [63.653861, 53.246761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.64937, 53.248815],
+          [63.648502, 53.248747],
+          [63.648635, 53.247638],
+          [63.648631, 53.247347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.649252, 53.247756],
+          [63.649306, 53.247382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654731, 53.245715],
+          [63.655112, 53.245874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653241, 53.245698],
+          [63.654144, 53.245794],
+          [63.654802, 53.246092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646662, 53.248396],
+          [63.646609, 53.249381],
+          [63.648371, 53.249484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654178, 53.246312],
+          [63.654028, 53.246419],
+          [63.65421, 53.246513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647387, 53.24656],
+          [63.651279, 53.246735],
+          [63.651664, 53.246822],
+          [63.652574, 53.247251],
+          [63.652866, 53.247299],
+          [63.653003, 53.247371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.643612, 53.249287],
+          [63.643672, 53.24964],
+          [63.643844, 53.249779],
+          [63.646042, 53.250089],
+          [63.646421, 53.249994],
+          [63.647664, 53.250037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647182, 53.250415],
+          [63.648549, 53.249344],
+          [63.64937, 53.248815],
+          [63.65087, 53.247825],
+          [63.651241, 53.247484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.687557, 53.245431],
+          [63.686939, 53.245761],
+          [63.686841, 53.245745],
+          [63.686479, 53.245936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685465, 53.247082],
+          [63.685111, 53.247265],
+          [63.684603, 53.246914]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68501, 53.246712],
+          [63.684407, 53.247012],
+          [63.684006, 53.246721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678266, 53.242166],
+          [63.677343, 53.242598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679562, 53.242021],
+          [63.680022, 53.241791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678955, 53.241875],
+          [63.679203, 53.241757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67867, 53.241346],
+          [63.679203, 53.241757],
+          [63.679562, 53.242021],
+          [63.679724, 53.242191],
+          [63.67976, 53.242367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682954, 53.24947],
+          [63.68391, 53.250173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682058, 53.239217],
+          [63.682074, 53.239049],
+          [63.682152, 53.238953],
+          [63.682762, 53.2386],
+          [63.682919, 53.238542],
+          [63.682994, 53.238536],
+          [63.68305, 53.238564],
+          [63.68308, 53.238601],
+          [63.683074, 53.238656],
+          [63.682966, 53.238739],
+          [63.682389, 53.239059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664714, 53.252381],
+          [63.665606, 53.253279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665117, 53.25223],
+          [63.666025, 53.253134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666872, 53.245921],
+          [63.666004, 53.246231],
+          [63.665425, 53.245608],
+          [63.666223, 53.245286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677406, 53.23691],
+          [63.677459, 53.236989],
+          [63.677526, 53.237059],
+          [63.677717, 53.237159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678688, 53.237976],
+          [63.679662, 53.238687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682027, 53.231632],
+          [63.681661, 53.232048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679338, 53.241016],
+          [63.678551, 53.241403],
+          [63.677174, 53.240374],
+          [63.67717, 53.24031],
+          [63.678804, 53.239545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679178, 53.240575],
+          [63.678128, 53.241087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678987, 53.240049],
+          [63.677613, 53.240702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681252, 53.242692],
+          [63.680693, 53.242948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679134, 53.243786],
+          [63.678719, 53.243941],
+          [63.678261, 53.244148]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678539, 53.244774],
+          [63.678724, 53.244681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.679533, 53.245505],
+          [63.679719, 53.245413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.68163, 53.245645],
+          [63.6826, 53.246382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.689298, 53.246162],
+          [63.688332, 53.246631],
+          [63.688612, 53.246826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.688062, 53.244062],
+          [63.687672, 53.244287],
+          [63.687548, 53.244394],
+          [63.687548, 53.244549],
+          [63.687704, 53.244685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.684917, 53.243543],
+          [63.684087, 53.243937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.683142, 53.244404],
+          [63.68335, 53.244559],
+          [63.682767, 53.244842],
+          [63.682053, 53.244321]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.683694, 53.245866],
+          [63.683678, 53.245739],
+          [63.683448, 53.245517],
+          [63.683367, 53.245385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67147, 53.239903],
+          [63.67174, 53.239773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672305, 53.240582],
+          [63.672623, 53.240417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673232, 53.240643],
+          [63.672576, 53.240968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680331, 53.245148],
+          [63.679307, 53.244395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.648114, 53.251547],
+          [63.647656, 53.251845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67166, 53.245016],
+          [63.67106, 53.245241],
+          [63.670635, 53.245392],
+          [63.670942, 53.245603],
+          [63.671429, 53.24583],
+          [63.671809, 53.246051],
+          [63.671893, 53.246366],
+          [63.6721, 53.2465],
+          [63.672296, 53.246918],
+          [63.672726, 53.247242],
+          [63.673213, 53.24758],
+          [63.673548, 53.247748],
+          [63.673759, 53.247951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669518, 53.23559],
+          [63.670972, 53.236315],
+          [63.671519, 53.236057],
+          [63.673233, 53.235204],
+          [63.673861, 53.234983],
+          [63.67405, 53.234795],
+          [63.674229, 53.234795],
+          [63.674431, 53.23487],
+          [63.675169, 53.234554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670544, 53.23556],
+          [63.670098, 53.235879],
+          [63.669954, 53.236024],
+          [63.669846, 53.236053],
+          [63.669777, 53.236058],
+          [63.66941, 53.235969],
+          [63.669214, 53.235913],
+          [63.669114, 53.235849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671519, 53.236057],
+          [63.669999, 53.235282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.676182, 53.249907],
+          [63.677298, 53.249414],
+          [63.678087, 53.249081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678244, 53.250178],
+          [63.677298, 53.249414]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.685391, 53.242708],
+          [63.685378, 53.242601],
+          [63.685336, 53.242564],
+          [63.685274, 53.242542],
+          [63.68488, 53.242528],
+          [63.684783, 53.242511],
+          [63.684708, 53.242483],
+          [63.684614, 53.242412],
+          [63.684552, 53.242349],
+          [63.684517, 53.242274],
+          [63.684525, 53.241953],
+          [63.684483, 53.24193],
+          [63.68441, 53.241916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681391, 53.241271],
+          [63.681531, 53.241178],
+          [63.681517, 53.241117],
+          [63.681329, 53.240976],
+          [63.681274, 53.240969],
+          [63.681225, 53.240976],
+          [63.679862, 53.241678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67757, 53.242491],
+          [63.676632, 53.241818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.675412, 53.239717],
+          [63.6758, 53.239505],
+          [63.675823, 53.239453],
+          [63.675855, 53.239277],
+          [63.677626, 53.238462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678283, 53.237573],
+          [63.677757, 53.237812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677911, 53.237945],
+          [63.677648, 53.237728],
+          [63.677584, 53.237712],
+          [63.677513, 53.237733],
+          [63.67669, 53.238122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678953, 53.23847],
+          [63.678651, 53.23845],
+          [63.678579, 53.238433],
+          [63.678515, 53.238404],
+          [63.678236, 53.23818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.678845, 53.23809],
+          [63.678665, 53.23819],
+          [63.678666, 53.238226],
+          [63.678706, 53.238271],
+          [63.679209, 53.238675],
+          [63.679193, 53.238744],
+          [63.679142, 53.2388],
+          [63.679008, 53.238855],
+          [63.678855, 53.238889],
+          [63.678676, 53.238832],
+          [63.678494, 53.238764],
+          [63.678122, 53.238565],
+          [63.678053, 53.238505],
+          [63.677842, 53.238366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674717, 53.235436],
+          [63.674389, 53.235594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673821, 53.23236],
+          [63.674623, 53.231953],
+          [63.674647, 53.231854],
+          [63.674523, 53.231725],
+          [63.673974, 53.23138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671769, 53.243627],
+          [63.671973, 53.243572],
+          [63.672085, 53.243588],
+          [63.672546, 53.243975]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672037, 53.243081],
+          [63.672198, 53.243014],
+          [63.672316, 53.243052],
+          [63.672552, 53.243229],
+          [63.672686, 53.243235],
+          [63.672804, 53.243181],
+          [63.673104, 53.243066]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671715, 53.243043],
+          [63.672519, 53.242632]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670142, 53.236699],
+          [63.67065, 53.236478],
+          [63.670972, 53.236315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670196, 53.237718],
+          [63.670326, 53.237673],
+          [63.670397, 53.237587],
+          [63.670384, 53.237538],
+          [63.670084, 53.237393],
+          [63.669601, 53.237128],
+          [63.669517, 53.237009],
+          [63.668922, 53.236685],
+          [63.668681, 53.236537],
+          [63.668567, 53.236515],
+          [63.668476, 53.236533],
+          [63.668031, 53.236778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666153, 53.24071],
+          [63.666442, 53.240914],
+          [63.666405, 53.240995],
+          [63.666179, 53.24118],
+          [63.665876, 53.241344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651001, 53.249294],
+          [63.650858, 53.24922],
+          [63.650848, 53.249178],
+          [63.651042, 53.249044]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.688548, 53.241553],
+          [63.687746, 53.241968],
+          [63.687675, 53.241999],
+          [63.687626, 53.241996],
+          [63.687593, 53.241985],
+          [63.687343, 53.241791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.644223, 53.248516],
+          [63.644201, 53.248339],
+          [63.644148, 53.248198],
+          [63.643992, 53.248038]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686977, 53.249777],
+          [63.687127, 53.249682],
+          [63.687181, 53.249622],
+          [63.687176, 53.249553],
+          [63.686434, 53.248996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.648493, 53.246876],
+          [63.647457, 53.246837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647677, 53.246633],
+          [63.64765, 53.246731],
+          [63.647602, 53.246779],
+          [63.647457, 53.246837],
+          [63.647412, 53.24689],
+          [63.647328, 53.247285]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677777, 53.251485],
+          [63.677227, 53.251753],
+          [63.677217, 53.251788],
+          [63.67723, 53.251817],
+          [63.677453, 53.251992],
+          [63.678463, 53.252716]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680192, 53.254004],
+          [63.680046, 53.254158],
+          [63.67995, 53.254293],
+          [63.679864, 53.254559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680698, 53.252631],
+          [63.680506, 53.252712],
+          [63.680213, 53.252556],
+          [63.679683, 53.252223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681693, 53.254347],
+          [63.681643, 53.254261],
+          [63.681634, 53.25421],
+          [63.681655, 53.254019],
+          [63.681654, 53.253914],
+          [63.681606, 53.253844],
+          [63.681422, 53.253683],
+          [63.680918, 53.253332],
+          [63.680856, 53.253274],
+          [63.680844, 53.253243],
+          [63.680849, 53.253207],
+          [63.6808, 53.253022],
+          [63.680718, 53.25288],
+          [63.680506, 53.252712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672947, 53.242294],
+          [63.672734, 53.242136]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672734, 53.242136],
+          [63.672978, 53.242004],
+          [63.673015, 53.241967],
+          [63.673012, 53.241926],
+          [63.672961, 53.241874],
+          [63.672898, 53.241849],
+          [63.672864, 53.241848],
+          [63.67254, 53.241996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681982, 53.240392],
+          [63.681559, 53.240294]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666747, 53.252895],
+          [63.665885, 53.25201]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669676, 53.253517],
+          [63.668489, 53.252269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668703, 53.253826],
+          [63.667426, 53.252635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664452, 53.25248],
+          [63.663953, 53.252015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66104, 53.24878],
+          [63.660586, 53.248323],
+          [63.660615, 53.248228],
+          [63.660478, 53.248053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671507, 53.252019],
+          [63.671106, 53.252164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672039, 53.25258],
+          [63.671193, 53.251689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672231, 53.239305],
+          [63.672184, 53.239291],
+          [63.672107, 53.239282],
+          [63.671641, 53.239272]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672014, 53.239549],
+          [63.67224, 53.239348],
+          [63.672247, 53.239322],
+          [63.672231, 53.239305],
+          [63.672367, 53.239244],
+          [63.672416, 53.2392],
+          [63.672344, 53.239079],
+          [63.67234, 53.239036],
+          [63.672399, 53.238985],
+          [63.672472, 53.23894]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.693725, 53.248444],
+          [63.693502, 53.24828],
+          [63.69316, 53.248055],
+          [63.693109, 53.248037],
+          [63.69306, 53.248035],
+          [63.693007, 53.248037],
+          [63.692969, 53.24805],
+          [63.69294, 53.248071],
+          [63.692929, 53.2481],
+          [63.692946, 53.248152],
+          [63.693007, 53.248199],
+          [63.693543, 53.24853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.693002, 53.247918],
+          [63.692048, 53.247299],
+          [63.691973, 53.247291],
+          [63.69192, 53.247308],
+          [63.691906, 53.247345],
+          [63.691924, 53.247382],
+          [63.692862, 53.247992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.692486, 53.248188],
+          [63.691845, 53.247741],
+          [63.691767, 53.247712],
+          [63.691698, 53.247707],
+          [63.691631, 53.247718],
+          [63.691252, 53.247895],
+          [63.69115, 53.247956],
+          [63.691124, 53.247993],
+          [63.691129, 53.248039],
+          [63.691451, 53.248273],
+          [63.691841, 53.248531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.69315, 53.247842],
+          [63.691841, 53.248531],
+          [63.691113, 53.248944],
+          [63.691109, 53.248972],
+          [63.691126, 53.248999],
+          [63.691604, 53.249277],
+          [63.691739, 53.249374],
+          [63.691796, 53.249394],
+          [63.691834, 53.249398],
+          [63.691879, 53.249386],
+          [63.692796, 53.248922],
+          [63.693302, 53.248647],
+          [63.693872, 53.248377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691667, 53.247383],
+          [63.690916, 53.246856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.65206, 53.249493],
+          [63.652452, 53.249731],
+          [63.652661, 53.24982],
+          [63.652768, 53.249901],
+          [63.652819, 53.249973],
+          [63.652763, 53.250024],
+          [63.652331, 53.25022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.676614, 53.236821],
+          [63.676429, 53.236922],
+          [63.676427, 53.236932],
+          [63.67677, 53.237213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.686969, 53.246294],
+          [63.687747, 53.245823],
+          [63.687814, 53.245728],
+          [63.687782, 53.245665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672303, 53.236147],
+          [63.672472, 53.23628],
+          [63.672528, 53.236296],
+          [63.673035, 53.236044]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673582, 53.236418],
+          [63.673409, 53.23629],
+          [63.672406, 53.235616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674054, 53.246927],
+          [63.674714, 53.247407],
+          [63.67477, 53.247429],
+          [63.674856, 53.247416],
+          [63.675438, 53.247164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674623, 53.246542],
+          [63.675438, 53.247164],
+          [63.675921, 53.247497],
+          [63.677037, 53.248336],
+          [63.678087, 53.249081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.680966, 53.239247],
+          [63.680717, 53.239046],
+          [63.680387, 53.238803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681516, 53.23923],
+          [63.681039, 53.239466],
+          [63.680945, 53.239487],
+          [63.680808, 53.239383],
+          [63.680813, 53.23932],
+          [63.680213, 53.238884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.681308, 53.23908],
+          [63.680813, 53.23932],
+          [63.680604, 53.239412],
+          [63.679874, 53.23977],
+          [63.67951, 53.239672],
+          [63.679416, 53.239564],
+          [63.679373, 53.239441],
+          [63.679262, 53.239326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691489, 53.24514],
+          [63.691281, 53.24524],
+          [63.69125, 53.24524],
+          [63.689558, 53.243996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672151, 53.253112],
+          [63.672778, 53.252847],
+          [63.673195, 53.25272],
+          [63.673439, 53.252693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673289, 53.253092],
+          [63.673065, 53.25286],
+          [63.673439, 53.252693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673439, 53.252693],
+          [63.673586, 53.252646],
+          [63.673633, 53.252619],
+          [63.673653, 53.252572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667071, 53.242551],
+          [63.667151, 53.242209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667957, 53.242444],
+          [63.667151, 53.242209],
+          [63.666816, 53.241923],
+          [63.666574, 53.241624],
+          [63.666406, 53.241512],
+          [63.666247, 53.241431],
+          [63.665876, 53.241344],
+          [63.665754, 53.241336],
+          [63.665509, 53.241268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67154, 53.23706],
+          [63.671373, 53.236884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670914, 53.236344],
+          [63.671373, 53.236884],
+          [63.672144, 53.2365],
+          [63.672173, 53.236466],
+          [63.672164, 53.236419],
+          [63.671607, 53.236013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.688354, 53.243636],
+          [63.688198, 53.243639],
+          [63.688023, 53.243625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.688895, 53.243125],
+          [63.688473, 53.243414]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67383, 53.246229],
+          [63.670532, 53.24381],
+          [63.670118, 53.243556],
+          [63.669749, 53.243382],
+          [63.669261, 53.243199],
+          [63.668639, 53.243034],
+          [63.667974, 53.242925],
+          [63.667245, 53.242879],
+          [63.664115, 53.242872],
+          [63.663547, 53.242901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670893, 53.254947],
+          [63.674662, 53.253715],
+          [63.674949, 53.253604],
+          [63.675254, 53.25343],
+          [63.675538, 53.253179],
+          [63.675787, 53.252846],
+          [63.67592, 53.252595],
+          [63.675976, 53.252313],
+          [63.675958, 53.252051],
+          [63.675834, 53.251718],
+          [63.675686, 53.251424],
+          [63.675329, 53.251016]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671813, 53.255801],
+          [63.6756, 53.254576],
+          [63.676003, 53.254408],
+          [63.676375, 53.254197],
+          [63.676665, 53.253962],
+          [63.676896, 53.253693],
+          [63.677029, 53.253396],
+          [63.677118, 53.252985],
+          [63.677089, 53.252736],
+          [63.677, 53.252498],
+          [63.676775, 53.252191],
+          [63.676507, 53.251901],
+          [63.675329, 53.251016],
+          [63.674881, 53.250631],
+          [63.674738, 53.250472],
+          [63.674621, 53.250296],
+          [63.674502, 53.249885],
+          [63.674393, 53.249705],
+          [63.674216, 53.249483],
+          [63.674019, 53.249302],
+          [63.670634, 53.24681],
+          [63.67003, 53.246288],
+          [63.667186, 53.24362],
+          [63.666869, 53.243394],
+          [63.666514, 53.243201],
+          [63.666157, 53.243082],
+          [63.665747, 53.242976],
+          [63.665221, 53.242904],
+          [63.664822, 53.242874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "ksk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668958, 53.258407],
+          [63.666365, 53.257147],
+          [63.663694, 53.255316],
+          [63.661608, 53.254045],
+          [63.659249, 53.252948],
+          [63.656792, 53.252167],
+          [63.654121, 53.251607],
+          [63.644922, 53.250252],
+          [63.642317, 53.249691]
+        ]
+      }
+    }
+  ]
+}

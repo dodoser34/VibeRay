@@ -1,16 +1,34 @@
 import * as THREE from 'three';
 import { pixelRatioFor, renderQuality } from '@/adaptations/core';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import { cssVar } from '@/shared/lib/theme/cssVar';
 
+const WAKE_MS = 400; // после касания или колеса кадры идут ещё столько, пока сцена откликается
+const WAKE_EVENTS = ['pointerdown', 'pointermove', 'wheel', 'touchstart'];
+const gsapBusy = () =>
+  gsap.globalTimeline.getChildren(true, true, false).some((animation) => animation.isActive());
+
 // Общий рендерер и цикл отрисовки для всех Three.js-сцен сайта (без постобработки: спокойный вид).
+// onDemand — кадр рисуется, только когда что-то изменилось: тикер вернул true, идёт твин GSAP,
+// пользователь трогает сцену или кто-то вызвал invalidate(). В покое карта не тратит процессор и
+// видеокарту (телефон не греется).
 export class SceneRuntime {
   // transparent: сквозь пустые части сцены виден анимированный фон страницы.
   constructor(
     canvas,
     container,
-    { fov = 40, fogNear = 20, fogFar = 60, transparent = false } = {},
+    { fov = 40, fogNear = 20, fogFar = 60, transparent = false, onDemand = false } = {},
   ) {
     this.container = container;
+    this.canvas = canvas;
+    this.onDemand = onDemand;
+    this.awakeUntil = 0;
+    this.dirty = true;
+    this.renderers = new Set();
+    this.wake = () => this.invalidate(WAKE_MS);
+    if (onDemand) {
+      WAKE_EVENTS.forEach((type) => canvas.addEventListener(type, this.wake, { passive: true }));
+    }
     // Плотность пикселей, сглаживание и детализация сцены зависят от устройства (adaptations/core).
     this.quality = renderQuality();
     this.renderer = new THREE.WebGLRenderer({
@@ -58,11 +76,24 @@ export class SceneRuntime {
     this.camera.aspect = width / height;
     this.camera.updateProjectionMatrix();
     this.resizers.forEach((fn) => fn(width, height));
+    this.invalidate();
+  }
+
+  // Следующий кадр нужно нарисовать (и ещё ms миллисекунд после него).
+  invalidate(ms = 0) {
+    this.dirty = true;
+    this.awakeUntil = Math.max(this.awakeUntil, performance.now() + ms);
   }
 
   onTick(fn) {
     this.tickers.add(fn);
     return () => this.tickers.delete(fn);
+  }
+
+  // Вызывается сразу после отрисовки кадра (например, подписи CSS2DRenderer — только в такие кадры).
+  onRender(fn) {
+    this.renderers.add(fn);
+    return () => this.renderers.delete(fn);
   }
 
   onResize(fn) {
@@ -79,8 +110,15 @@ export class SceneRuntime {
       const delta = Math.min((now - this.lastTime) / 1000, 0.1);
       this.lastTime = now;
       const elapsed = (now - this.startTime) / 1000;
-      this.tickers.forEach((fn) => fn(elapsed, delta));
-      this.renderer.render(this.scene, this.camera);
+      let changed = false;
+      this.tickers.forEach((fn) => {
+        if (fn(elapsed, delta)) changed = true;
+      });
+      if (!this.onDemand || changed || this.dirty || now < this.awakeUntil || gsapBusy()) {
+        this.dirty = false;
+        this.renderer.render(this.scene, this.camera);
+        this.renderers.forEach((fn) => fn());
+      }
       this.frame = requestAnimationFrame(loop);
     };
     this.frame = requestAnimationFrame(loop);
@@ -102,8 +140,10 @@ export class SceneRuntime {
     this.stop();
     this.resizeObserver.disconnect();
     document.removeEventListener('visibilitychange', this.onVisibilityChange);
+    WAKE_EVENTS.forEach((type) => this.canvas.removeEventListener(type, this.wake));
     this.tickers.clear();
     this.resizers.clear();
+    this.renderers.clear();
     this.scene.traverse((object) => {
       object.geometry?.dispose();
       const materials = Array.isArray(object.material) ? object.material : [object.material];

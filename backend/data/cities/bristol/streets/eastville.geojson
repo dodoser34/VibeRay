@@ -1,0 +1,6166 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560179, 51.474643],
+          [-2.560023, 51.47472],
+          [-2.559866, 51.474762],
+          [-2.559575, 51.474777],
+          [-2.559409, 51.474763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561746, 51.474835],
+          [-2.561515, 51.474816],
+          [-2.561355, 51.474773],
+          [-2.561276, 51.474732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550255, 51.465607],
+          [-2.550342, 51.465226],
+          [-2.550734, 51.464442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550119, 51.467061],
+          [-2.549717, 51.468162],
+          [-2.549686, 51.468329],
+          [-2.549694, 51.468559],
+          [-2.5498, 51.468911],
+          [-2.54985, 51.468999],
+          [-2.550194, 51.469423],
+          [-2.550566, 51.469802],
+          [-2.550977, 51.470171],
+          [-2.551559, 51.470613],
+          [-2.55169, 51.470794],
+          [-2.551757, 51.471082],
+          [-2.551741, 51.471356],
+          [-2.551807, 51.471566],
+          [-2.551838, 51.471911],
+          [-2.551676, 51.472873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560548, 51.477859],
+          [-2.560892, 51.476367],
+          [-2.560882, 51.476175],
+          [-2.560768, 51.475474],
+          [-2.560802, 51.475419],
+          [-2.560986, 51.475274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560305, 51.477421],
+          [-2.56051, 51.477417],
+          [-2.560562, 51.4774],
+          [-2.560611, 51.477375],
+          [-2.560686, 51.477294]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537125, 51.477209],
+          [-2.536944, 51.477103],
+          [-2.536825, 51.477086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560174, 51.475182],
+          [-2.560219, 51.475357],
+          [-2.560186, 51.475704],
+          [-2.560115, 51.475793],
+          [-2.559831, 51.476472],
+          [-2.559789, 51.476621],
+          [-2.559801, 51.476747],
+          [-2.559843, 51.476876],
+          [-2.559918, 51.477003],
+          [-2.560305, 51.477421],
+          [-2.560443, 51.477626],
+          [-2.560548, 51.477859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535481, 51.476569],
+          [-2.536825, 51.477086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560483, 51.478096],
+          [-2.560535, 51.478],
+          [-2.560548, 51.477859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563507, 51.471011],
+          [-2.56328, 51.471415],
+          [-2.562156, 51.472282],
+          [-2.561761, 51.472687],
+          [-2.560823, 51.473892],
+          [-2.560621, 51.474201],
+          [-2.5605, 51.474438],
+          [-2.560374, 51.474534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559409, 51.474763],
+          [-2.559858, 51.474919],
+          [-2.560148, 51.475149]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556602, 51.473939],
+          [-2.55807, 51.47442],
+          [-2.558546, 51.474554],
+          [-2.559409, 51.474763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561103, 51.475229],
+          [-2.561629, 51.475092],
+          [-2.561925, 51.475083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528227, 51.470226],
+          [-2.528869, 51.469816],
+          [-2.529087, 51.46969],
+          [-2.529293, 51.469607],
+          [-2.529866, 51.469462],
+          [-2.53209, 51.469008],
+          [-2.53234, 51.468939],
+          [-2.533405, 51.468464],
+          [-2.535232, 51.467711],
+          [-2.535458, 51.467653],
+          [-2.536191, 51.467616],
+          [-2.537698, 51.467473],
+          [-2.538253, 51.467384],
+          [-2.538736, 51.4673],
+          [-2.539342, 51.467156],
+          [-2.540336, 51.466868],
+          [-2.540673, 51.466749],
+          [-2.542021, 51.466187],
+          [-2.542199, 51.466087],
+          [-2.542336, 51.465974],
+          [-2.542439, 51.465807],
+          [-2.542873, 51.46578],
+          [-2.543194, 51.465739],
+          [-2.5439, 51.465598],
+          [-2.544151, 51.465505],
+          [-2.545741, 51.464768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556602, 51.473939],
+          [-2.556458, 51.473897],
+          [-2.556162, 51.473894]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555971, 51.473984],
+          [-2.556228, 51.473951],
+          [-2.556469, 51.47396],
+          [-2.556602, 51.473939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561103, 51.475229],
+          [-2.561252, 51.47511],
+          [-2.561325, 51.474987],
+          [-2.561342, 51.47488],
+          [-2.561276, 51.474732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556602, 51.473939],
+          [-2.556525, 51.473871],
+          [-2.55652, 51.473843],
+          [-2.556551, 51.473786],
+          [-2.556605, 51.473749],
+          [-2.556653, 51.473638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550928, 51.46408],
+          [-2.551003, 51.463924],
+          [-2.55101, 51.463826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549916, 51.463992],
+          [-2.550842, 51.463879],
+          [-2.55101, 51.463826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536825, 51.477086],
+          [-2.536859, 51.477136],
+          [-2.53703, 51.47725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551676, 51.472873],
+          [-2.551589, 51.472958],
+          [-2.551356, 51.473051]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551633, 51.473091],
+          [-2.551676, 51.472873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55159, 51.473168],
+          [-2.551633, 51.473091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551633, 51.473091],
+          [-2.551713, 51.473138],
+          [-2.551928, 51.473198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560174, 51.475182],
+          [-2.560322, 51.475286],
+          [-2.560496, 51.475333],
+          [-2.560693, 51.475334],
+          [-2.560986, 51.475274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561276, 51.474732],
+          [-2.561108, 51.474578],
+          [-2.56102, 51.474532],
+          [-2.560895, 51.474496],
+          [-2.56076, 51.474477],
+          [-2.560621, 51.474478],
+          [-2.560374, 51.474534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560179, 51.474643],
+          [-2.560064, 51.474831],
+          [-2.560046, 51.474924],
+          [-2.560148, 51.475149]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560986, 51.475274],
+          [-2.561103, 51.475229]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560374, 51.474534],
+          [-2.560179, 51.474643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560148, 51.475149],
+          [-2.560174, 51.475182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55101, 51.463826],
+          [-2.551422, 51.463662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550229, 51.466559],
+          [-2.550235, 51.465859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560458, 51.478127],
+          [-2.560484, 51.477366],
+          [-2.560581, 51.476103],
+          [-2.560679, 51.475666],
+          [-2.560768, 51.475474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560186, 51.475704],
+          [-2.560181, 51.475865],
+          [-2.560045, 51.476487],
+          [-2.559992, 51.476837],
+          [-2.559984, 51.477157],
+          [-2.56001, 51.477438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555745, 51.474001],
+          [-2.555919, 51.473997],
+          [-2.556162, 51.473894]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537441, 51.477046],
+          [-2.539328, 51.476299],
+          [-2.539931, 51.476096],
+          [-2.540779, 51.475868],
+          [-2.545002, 51.474898],
+          [-2.545384, 51.474793],
+          [-2.546296, 51.474501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560206, 51.477504],
+          [-2.560201, 51.476807],
+          [-2.560257, 51.476251],
+          [-2.560436, 51.475517],
+          [-2.560682, 51.474843],
+          [-2.560999, 51.474178],
+          [-2.561256, 51.473765],
+          [-2.561498, 51.473425],
+          [-2.561814, 51.473039],
+          [-2.562095, 51.472747],
+          [-2.562691, 51.472161],
+          [-2.563197, 51.471737],
+          [-2.563902, 51.471219],
+          [-2.563149, 51.471669],
+          [-2.562309, 51.472281],
+          [-2.562113, 51.472451],
+          [-2.56154, 51.473142],
+          [-2.561201, 51.473591],
+          [-2.560819, 51.474174],
+          [-2.560713, 51.474294],
+          [-2.5605, 51.474438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562639, 51.472545],
+          [-2.563951, 51.471318],
+          [-2.56338, 51.471727],
+          [-2.562768, 51.472233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561174, 51.474624],
+          [-2.561161, 51.474487],
+          [-2.561594, 51.473737]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556162, 51.473894],
+          [-2.556023, 51.473909],
+          [-2.555745, 51.474001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552173, 51.473238],
+          [-2.553539, 51.473843],
+          [-2.553883, 51.47396],
+          [-2.554206, 51.474025],
+          [-2.554589, 51.474051],
+          [-2.55539, 51.474053],
+          [-2.555554, 51.474041],
+          [-2.555745, 51.474001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556653, 51.473638],
+          [-2.557529, 51.473192],
+          [-2.558033, 51.472902],
+          [-2.558606, 51.472529],
+          [-2.559372, 51.472121],
+          [-2.559721, 51.471965],
+          [-2.56205, 51.470831],
+          [-2.562559, 51.47063],
+          [-2.563142, 51.470442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560385, 51.477995],
+          [-2.560354, 51.477603],
+          [-2.560346, 51.476819],
+          [-2.560397, 51.476243],
+          [-2.560577, 51.475532],
+          [-2.56079, 51.47492],
+          [-2.561162, 51.474174],
+          [-2.561406, 51.473782]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533578, 51.478654],
+          [-2.534038, 51.478486],
+          [-2.534897, 51.478108],
+          [-2.536294, 51.477531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54643, 51.474458],
+          [-2.548598, 51.473676],
+          [-2.549415, 51.473418],
+          [-2.549804, 51.473311],
+          [-2.550582, 51.473128],
+          [-2.550843, 51.473098],
+          [-2.551216, 51.47309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556162, 51.473894],
+          [-2.556491, 51.473745],
+          [-2.556653, 51.473638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546296, 51.474501],
+          [-2.546346, 51.474508],
+          [-2.546413, 51.474487],
+          [-2.54643, 51.474458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54643, 51.474458],
+          [-2.546385, 51.474451],
+          [-2.546315, 51.474475],
+          [-2.546296, 51.474501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536294, 51.477531],
+          [-2.536832, 51.477339],
+          [-2.537182, 51.477186],
+          [-2.537441, 51.477046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552173, 51.473238],
+          [-2.552022, 51.473148],
+          [-2.551785, 51.47309],
+          [-2.551356, 51.473051],
+          [-2.551216, 51.47309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551216, 51.47309],
+          [-2.55139, 51.473137],
+          [-2.551768, 51.473204],
+          [-2.551928, 51.473198],
+          [-2.552173, 51.473238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537441, 51.477046],
+          [-2.537129, 51.477127],
+          [-2.536954, 51.477199],
+          [-2.536294, 51.477531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556653, 51.473638],
+          [-2.556446, 51.473701],
+          [-2.556173, 51.473819],
+          [-2.555795, 51.473944],
+          [-2.555745, 51.474001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558094, 51.471877],
+          [-2.559165, 51.471146],
+          [-2.559532, 51.47092],
+          [-2.559918, 51.470741],
+          [-2.560541, 51.470478],
+          [-2.561022, 51.470281],
+          [-2.561085, 51.470265],
+          [-2.561151, 51.470254],
+          [-2.561294, 51.470255],
+          [-2.561403, 51.470282],
+          [-2.561585, 51.4704],
+          [-2.562123, 51.470804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559532, 51.47092],
+          [-2.559077, 51.470593],
+          [-2.559019, 51.470494],
+          [-2.55903, 51.470396],
+          [-2.559296, 51.469657]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555927, 51.472703],
+          [-2.55547, 51.47296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555654, 51.471424],
+          [-2.555563, 51.471658],
+          [-2.555695, 51.471746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555394, 51.47129],
+          [-2.555599, 51.471409],
+          [-2.55572, 51.471431],
+          [-2.555794, 51.471422],
+          [-2.555872, 51.471396],
+          [-2.555948, 51.471358],
+          [-2.556047, 51.47129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55324, 51.472234],
+          [-2.553358, 51.472354],
+          [-2.55348, 51.472426],
+          [-2.55412, 51.472677],
+          [-2.555501, 51.473364],
+          [-2.55556, 51.473413],
+          [-2.555937, 51.473901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552999, 51.472299],
+          [-2.554721, 51.471806],
+          [-2.555394, 51.47129],
+          [-2.555796, 51.470922],
+          [-2.555872, 51.470865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546623, 51.483902],
+          [-2.547693, 51.483911],
+          [-2.547875, 51.483923],
+          [-2.548004, 51.483941],
+          [-2.548126, 51.483975]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560556, 51.477898],
+          [-2.561396, 51.47795],
+          [-2.561524, 51.477912],
+          [-2.561605, 51.477852],
+          [-2.561793, 51.476688],
+          [-2.561766, 51.47578],
+          [-2.561663, 51.475172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547454, 51.474087],
+          [-2.548056, 51.474804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545002, 51.474898],
+          [-2.545278, 51.4753],
+          [-2.545891, 51.476072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54269, 51.475438],
+          [-2.542938, 51.475856],
+          [-2.543004, 51.475947],
+          [-2.544069, 51.476574],
+          [-2.544612, 51.476908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542121, 51.475561],
+          [-2.541872, 51.47514],
+          [-2.541802, 51.47503],
+          [-2.541763, 51.474995],
+          [-2.54072, 51.474347],
+          [-2.540669, 51.474332],
+          [-2.540609, 51.474339],
+          [-2.539967, 51.47467],
+          [-2.539935, 51.474697],
+          [-2.539928, 51.474733],
+          [-2.539971, 51.474772],
+          [-2.540914, 51.475421],
+          [-2.540971, 51.475477],
+          [-2.541022, 51.475554],
+          [-2.541148, 51.475783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540779, 51.475868],
+          [-2.541396, 51.47627],
+          [-2.542994, 51.477265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539571, 51.475477],
+          [-2.539931, 51.476096],
+          [-2.54112, 51.476832],
+          [-2.542299, 51.477594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539163, 51.475033],
+          [-2.538629, 51.475394],
+          [-2.539328, 51.476299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538034, 51.476803],
+          [-2.538491, 51.477249],
+          [-2.539436, 51.476878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537293, 51.477844],
+          [-2.537065, 51.477582],
+          [-2.536832, 51.477339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534603, 51.477648],
+          [-2.534418, 51.477464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534227, 51.479173],
+          [-2.534253, 51.479143],
+          [-2.534256, 51.479104],
+          [-2.534038, 51.478486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55565, 51.4725],
+          [-2.555462, 51.472598],
+          [-2.555296, 51.472631],
+          [-2.555025, 51.472773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547668, 51.474936],
+          [-2.547956, 51.475329],
+          [-2.54825, 51.475639],
+          [-2.54827, 51.475719],
+          [-2.548188, 51.475917],
+          [-2.548167, 51.47613],
+          [-2.548196, 51.476272],
+          [-2.548444, 51.476728],
+          [-2.548571, 51.476881]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541589, 51.477935],
+          [-2.541967, 51.478241],
+          [-2.542674, 51.47886],
+          [-2.542806, 51.478923],
+          [-2.543713, 51.479166],
+          [-2.543984, 51.479196],
+          [-2.544322, 51.479173],
+          [-2.545407, 51.478958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54037, 51.478347],
+          [-2.539479, 51.478496],
+          [-2.539397, 51.478499],
+          [-2.539312, 51.478476],
+          [-2.539047, 51.47835],
+          [-2.538648, 51.47812],
+          [-2.538454, 51.478044],
+          [-2.53786, 51.477884],
+          [-2.537648, 51.477841],
+          [-2.537402, 51.477824],
+          [-2.537293, 51.477844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540803, 51.478917],
+          [-2.540724, 51.478955],
+          [-2.540639, 51.479048],
+          [-2.540611, 51.479123],
+          [-2.540618, 51.479214],
+          [-2.540647, 51.479304],
+          [-2.540693, 51.479388],
+          [-2.540973, 51.479758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542343, 51.478564],
+          [-2.543401, 51.478076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541447, 51.479303],
+          [-2.541153, 51.4794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538939, 51.478291],
+          [-2.539484, 51.477918],
+          [-2.54002, 51.477578],
+          [-2.54112, 51.476832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537293, 51.477844],
+          [-2.536906, 51.478008],
+          [-2.536872, 51.47804],
+          [-2.536876, 51.478078],
+          [-2.536921, 51.478116],
+          [-2.537645, 51.47854],
+          [-2.537674, 51.478545],
+          [-2.537734, 51.478537],
+          [-2.538376, 51.478346],
+          [-2.53874, 51.478279],
+          [-2.538859, 51.478242]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540575, 51.4772],
+          [-2.541661, 51.477898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536223, 51.481186],
+          [-2.535922, 51.480952],
+          [-2.535716, 51.480868],
+          [-2.536033, 51.480774]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538202, 51.481805],
+          [-2.537934, 51.481747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539392, 51.4822],
+          [-2.539206, 51.482061],
+          [-2.539117, 51.482012],
+          [-2.539065, 51.481993],
+          [-2.538483, 51.481876],
+          [-2.538638, 51.481575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539026, 51.482118],
+          [-2.539065, 51.481993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53877, 51.475578],
+          [-2.537528, 51.476088],
+          [-2.537444, 51.476115],
+          [-2.537328, 51.476125],
+          [-2.537249, 51.476113],
+          [-2.537127, 51.476072],
+          [-2.537023, 51.47608],
+          [-2.536962, 51.476113],
+          [-2.536689, 51.47635],
+          [-2.536361, 51.476539],
+          [-2.536288, 51.476571],
+          [-2.536207, 51.476588],
+          [-2.536157, 51.476586],
+          [-2.535956, 51.476509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538052, 51.464991],
+          [-2.538073, 51.465185],
+          [-2.538268, 51.465854],
+          [-2.538332, 51.46619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55002, 51.469669],
+          [-2.550027, 51.469788],
+          [-2.55013, 51.469962],
+          [-2.550343, 51.470276],
+          [-2.550393, 51.470316],
+          [-2.550604, 51.470384],
+          [-2.550639, 51.470414],
+          [-2.550753, 51.470599]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547978, 51.470623],
+          [-2.547983, 51.470343],
+          [-2.548058, 51.470193],
+          [-2.548204, 51.470056],
+          [-2.548419, 51.469951],
+          [-2.54877, 51.469875],
+          [-2.549576, 51.469666],
+          [-2.549729, 51.469655],
+          [-2.55002, 51.469669],
+          [-2.550206, 51.469657],
+          [-2.550378, 51.469617]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548359, 51.469643],
+          [-2.548505, 51.469687],
+          [-2.548601, 51.469728],
+          [-2.54877, 51.469875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546122, 51.471252],
+          [-2.546444, 51.471346],
+          [-2.546677, 51.471394],
+          [-2.546903, 51.471417],
+          [-2.547373, 51.471423],
+          [-2.548083, 51.471417],
+          [-2.548184, 51.471398],
+          [-2.548246, 51.471367],
+          [-2.548285, 51.471328],
+          [-2.548313, 51.471281],
+          [-2.548314, 51.471223],
+          [-2.547978, 51.470623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544045, 51.472065],
+          [-2.544678, 51.471891],
+          [-2.545585, 51.471591],
+          [-2.546122, 51.471252],
+          [-2.546205, 51.471139],
+          [-2.546268, 51.47098],
+          [-2.54624, 51.470825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549037, 51.473536],
+          [-2.548954, 51.473392],
+          [-2.548882, 51.473166],
+          [-2.548565, 51.472375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544443, 51.473566],
+          [-2.546342, 51.472902],
+          [-2.546851, 51.472771],
+          [-2.5489, 51.472292],
+          [-2.549107, 51.472249],
+          [-2.550486, 51.472104],
+          [-2.551316, 51.472006],
+          [-2.551835, 51.471961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55013, 51.469962],
+          [-2.54947, 51.470043],
+          [-2.549389, 51.470078],
+          [-2.549289, 51.470157],
+          [-2.549203, 51.470184],
+          [-2.548686, 51.47025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546449, 51.470794],
+          [-2.546414, 51.470611],
+          [-2.54648, 51.470507],
+          [-2.547025, 51.470304],
+          [-2.547103, 51.470288],
+          [-2.547374, 51.470285],
+          [-2.547671, 51.470412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549327, 51.469392],
+          [-2.549576, 51.469666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54963, 51.472861],
+          [-2.550498, 51.472617],
+          [-2.550618, 51.472628],
+          [-2.55067, 51.472658],
+          [-2.550696, 51.4727],
+          [-2.550843, 51.473098]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547867, 51.473151],
+          [-2.54645, 51.473506],
+          [-2.547083, 51.474219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543382, 51.473124],
+          [-2.543443, 51.473424],
+          [-2.543463, 51.473649],
+          [-2.543483, 51.473697],
+          [-2.543514, 51.473705],
+          [-2.543656, 51.473698],
+          [-2.543904, 51.473708],
+          [-2.543944, 51.473746],
+          [-2.54397, 51.473912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548598, 51.473676],
+          [-2.548668, 51.474355],
+          [-2.548699, 51.474953],
+          [-2.548744, 51.475023],
+          [-2.549446, 51.475552]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548952, 51.475184],
+          [-2.549669, 51.474844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548323, 51.474715],
+          [-2.547668, 51.474936],
+          [-2.545522, 51.475608],
+          [-2.544069, 51.476574],
+          [-2.543447, 51.477021],
+          [-2.542994, 51.477265],
+          [-2.541589, 51.477935],
+          [-2.540996, 51.478205],
+          [-2.540798, 51.478271],
+          [-2.54037, 51.478347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536904, 51.476297],
+          [-2.537618, 51.476978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550464, 51.482415],
+          [-2.55036, 51.482496],
+          [-2.550301, 51.482585],
+          [-2.549944, 51.482893],
+          [-2.549349, 51.48339],
+          [-2.549261, 51.483453],
+          [-2.548605, 51.483783],
+          [-2.548126, 51.483975]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550423, 51.4686],
+          [-2.55045, 51.468467],
+          [-2.550231, 51.467653],
+          [-2.550154, 51.467418],
+          [-2.550112, 51.467374],
+          [-2.550029, 51.46734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550345, 51.46807],
+          [-2.55081, 51.468007],
+          [-2.550976, 51.467965],
+          [-2.551147, 51.467873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543881, 51.482174],
+          [-2.543839, 51.481817],
+          [-2.54356, 51.481487],
+          [-2.543498, 51.481287],
+          [-2.543546, 51.481165],
+          [-2.543448, 51.481058],
+          [-2.543392, 51.481045],
+          [-2.543017, 51.481061]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535544, 51.477841],
+          [-2.535725, 51.477986],
+          [-2.537252, 51.47912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534603, 51.477648],
+          [-2.533686, 51.477834],
+          [-2.53323, 51.477819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546148, 51.481146],
+          [-2.546255, 51.481401],
+          [-2.546246, 51.481527],
+          [-2.546213, 51.48161],
+          [-2.546147, 51.481681],
+          [-2.546066, 51.481743],
+          [-2.54598, 51.481786],
+          [-2.545727, 51.481879],
+          [-2.545669, 51.481988],
+          [-2.545509, 51.48223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545296, 51.481203],
+          [-2.545429, 51.481537],
+          [-2.545483, 51.481817],
+          [-2.545532, 51.481863],
+          [-2.545727, 51.481879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543839, 51.481817],
+          [-2.544282, 51.481759],
+          [-2.544376, 51.481727],
+          [-2.544412, 51.481668],
+          [-2.544376, 51.48153],
+          [-2.54438, 51.481417],
+          [-2.544439, 51.48134],
+          [-2.544451, 51.481294],
+          [-2.544329, 51.481218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546044, 51.480003],
+          [-2.546323, 51.48005],
+          [-2.546406, 51.480097]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548025, 51.48021],
+          [-2.547989, 51.480816]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54724, 51.480181],
+          [-2.548724, 51.48023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549293, 51.480858],
+          [-2.548361, 51.480826],
+          [-2.54832, 51.480831],
+          [-2.548192, 51.480871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549733, 51.480265],
+          [-2.548878, 51.480235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549362, 51.480252],
+          [-2.549271, 51.481128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546236, 51.482481],
+          [-2.546661, 51.481906],
+          [-2.547204, 51.481469],
+          [-2.547261, 51.481409],
+          [-2.547276, 51.481342],
+          [-2.547252, 51.481266],
+          [-2.547103, 51.481129],
+          [-2.547055, 51.481045],
+          [-2.547047, 51.480954],
+          [-2.547094, 51.480878],
+          [-2.547223, 51.480805],
+          [-2.547366, 51.480775],
+          [-2.548033, 51.480818],
+          [-2.548082, 51.480826],
+          [-2.548164, 51.480855],
+          [-2.548221, 51.480893],
+          [-2.548234, 51.480914],
+          [-2.548235, 51.480988],
+          [-2.54821, 51.481089],
+          [-2.547988, 51.48167],
+          [-2.547886, 51.481903],
+          [-2.547618, 51.482284],
+          [-2.547331, 51.48266],
+          [-2.54726, 51.48273],
+          [-2.547129, 51.48277],
+          [-2.546882, 51.482805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549082, 51.481679],
+          [-2.548047, 51.48152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548934, 51.482054],
+          [-2.549227, 51.481275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548438, 51.48245],
+          [-2.547656, 51.48223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548337, 51.48259],
+          [-2.548688, 51.482105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546863, 51.483535],
+          [-2.547423, 51.483522],
+          [-2.547419, 51.482852],
+          [-2.547398, 51.482815],
+          [-2.54726, 51.48273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549261, 51.483453],
+          [-2.54903, 51.483213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546623, 51.483902],
+          [-2.546674, 51.48348],
+          [-2.546714, 51.483334],
+          [-2.54688, 51.482918],
+          [-2.546882, 51.482805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546882, 51.482805],
+          [-2.546827, 51.482721],
+          [-2.546744, 51.48266],
+          [-2.546653, 51.482615],
+          [-2.546236, 51.482481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547133, 51.480172],
+          [-2.546565, 51.480085],
+          [-2.546474, 51.480082],
+          [-2.546406, 51.480097],
+          [-2.546299, 51.48024],
+          [-2.546283, 51.480315],
+          [-2.546299, 51.480386],
+          [-2.546517, 51.480703],
+          [-2.546575, 51.480751],
+          [-2.546839, 51.480883],
+          [-2.547052, 51.480934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543861, 51.482489],
+          [-2.54344, 51.482531],
+          [-2.543303, 51.482396],
+          [-2.543232, 51.482262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546236, 51.482481],
+          [-2.545846, 51.482334],
+          [-2.545509, 51.48223],
+          [-2.545113, 51.482168],
+          [-2.544805, 51.482152],
+          [-2.54435, 51.482144],
+          [-2.543881, 51.482174],
+          [-2.543232, 51.482262],
+          [-2.542758, 51.482342],
+          [-2.542247, 51.482406],
+          [-2.541818, 51.482439],
+          [-2.54103, 51.48246],
+          [-2.540834, 51.482511],
+          [-2.540749, 51.482554],
+          [-2.540716, 51.482588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557883, 51.47051],
+          [-2.558262, 51.470358],
+          [-2.55838, 51.470335],
+          [-2.558503, 51.470337],
+          [-2.55903, 51.470396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557559, 51.470238],
+          [-2.558101, 51.470683]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559548, 51.471598],
+          [-2.559349, 51.471389],
+          [-2.559246, 51.471229],
+          [-2.559165, 51.471146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558883, 51.472373],
+          [-2.558094, 51.471877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560249, 51.471191],
+          [-2.560421, 51.471126],
+          [-2.559918, 51.470741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551838, 51.471911],
+          [-2.552106, 51.47199],
+          [-2.552999, 51.472299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552173, 51.473238],
+          [-2.552275, 51.473138],
+          [-2.553235, 51.47268],
+          [-2.553624, 51.472483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555292, 51.473259],
+          [-2.554443, 51.473253],
+          [-2.554299, 51.473224],
+          [-2.553422, 51.472826],
+          [-2.553235, 51.47268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552611, 51.473425],
+          [-2.553185, 51.473033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563103, 51.471559],
+          [-2.561976, 51.470867]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562156, 51.472282],
+          [-2.560827, 51.471745],
+          [-2.560557, 51.471554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561761, 51.472687],
+          [-2.559721, 51.471965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561394, 51.473138],
+          [-2.559614, 51.472517],
+          [-2.559029, 51.472293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560459, 51.473191],
+          [-2.559194, 51.472903],
+          [-2.559372, 51.47278],
+          [-2.559614, 51.472517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560294, 51.473419],
+          [-2.560459, 51.473191],
+          [-2.560725, 51.472904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557529, 51.473192],
+          [-2.557812, 51.473291],
+          [-2.558677, 51.473519],
+          [-2.560892, 51.473818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560681, 51.474107],
+          [-2.56036, 51.474093],
+          [-2.560231, 51.474105],
+          [-2.560182, 51.47413],
+          [-2.560033, 51.474308],
+          [-2.559808, 51.474477],
+          [-2.559689, 51.474498],
+          [-2.559518, 51.47448],
+          [-2.558308, 51.474134],
+          [-2.557313, 51.47378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541388, 51.470272],
+          [-2.541012, 51.470366],
+          [-2.540329, 51.470325],
+          [-2.540247, 51.470312],
+          [-2.54015, 51.470258],
+          [-2.540122, 51.470206],
+          [-2.540197, 51.46978],
+          [-2.540205, 51.469637],
+          [-2.540194, 51.469615],
+          [-2.539362, 51.469546]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532779, 51.471935],
+          [-2.533458, 51.472134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536705, 51.4703],
+          [-2.53637, 51.47024],
+          [-2.535933, 51.470135],
+          [-2.534098, 51.470066],
+          [-2.53249, 51.469995],
+          [-2.532162, 51.469962],
+          [-2.531762, 51.469942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527307, 51.468822],
+          [-2.528331, 51.469312],
+          [-2.529087, 51.46969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538736, 51.4673],
+          [-2.538387, 51.467663],
+          [-2.538051, 51.467991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545854, 51.466113],
+          [-2.545732, 51.466281],
+          [-2.545648, 51.466423],
+          [-2.545613, 51.466503],
+          [-2.545577, 51.466664],
+          [-2.545591, 51.466924],
+          [-2.545748, 51.46741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544589, 51.4653],
+          [-2.545188, 51.465817],
+          [-2.545487, 51.465986],
+          [-2.545854, 51.466113],
+          [-2.54618, 51.46621],
+          [-2.546657, 51.466291],
+          [-2.547117, 51.466316],
+          [-2.550233, 51.466378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54901, 51.46866],
+          [-2.548552, 51.468786],
+          [-2.548374, 51.468859],
+          [-2.54826, 51.468924],
+          [-2.548159, 51.468995],
+          [-2.548017, 51.469116],
+          [-2.547851, 51.469277],
+          [-2.547826, 51.469348],
+          [-2.547824, 51.469426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547326, 51.468767],
+          [-2.547785, 51.46923],
+          [-2.547851, 51.469277]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545835, 51.468997],
+          [-2.545873, 51.468909],
+          [-2.54585, 51.468775],
+          [-2.545902, 51.468727],
+          [-2.546434, 51.468674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541589, 51.466373],
+          [-2.542123, 51.467038],
+          [-2.542267, 51.467384],
+          [-2.542395, 51.467924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54417, 51.470805],
+          [-2.544054, 51.470695],
+          [-2.543996, 51.470616],
+          [-2.543753, 51.469927],
+          [-2.543743, 51.469868],
+          [-2.543757, 51.469805],
+          [-2.543804, 51.469729],
+          [-2.543871, 51.46967],
+          [-2.543965, 51.469629],
+          [-2.544084, 51.469601],
+          [-2.546051, 51.469344],
+          [-2.54632, 51.469279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541388, 51.470272],
+          [-2.541501, 51.470384],
+          [-2.541623, 51.470431],
+          [-2.541724, 51.47045],
+          [-2.543511, 51.47055],
+          [-2.543767, 51.470548],
+          [-2.543961, 51.470515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5397, 51.472986],
+          [-2.540253, 51.473001],
+          [-2.540818, 51.473123],
+          [-2.541268, 51.473194],
+          [-2.541526, 51.47317],
+          [-2.541885, 51.473115],
+          [-2.542063, 51.473109],
+          [-2.543961, 51.473136],
+          [-2.544057, 51.473152],
+          [-2.544146, 51.473189],
+          [-2.544298, 51.47336],
+          [-2.544741, 51.473963],
+          [-2.545384, 51.474793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531482, 51.46876],
+          [-2.530051, 51.469038],
+          [-2.529849, 51.469039],
+          [-2.529783, 51.469048],
+          [-2.529735, 51.469069],
+          [-2.529703, 51.46911],
+          [-2.529701, 51.469141],
+          [-2.529721, 51.469206],
+          [-2.529866, 51.469462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530672, 51.468702],
+          [-2.530771, 51.4689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533945, 51.470442],
+          [-2.534098, 51.470066]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547117, 51.466316],
+          [-2.547142, 51.465999],
+          [-2.547123, 51.465738],
+          [-2.546829, 51.46483],
+          [-2.546703, 51.464492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546987, 51.465306],
+          [-2.546208, 51.465408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548481, 51.464159],
+          [-2.548598, 51.464519],
+          [-2.548532, 51.464621],
+          [-2.548422, 51.464709],
+          [-2.548317, 51.464771],
+          [-2.548327, 51.464869],
+          [-2.54838, 51.464981],
+          [-2.548477, 51.465088],
+          [-2.54852, 51.46516],
+          [-2.548529, 51.465241],
+          [-2.548504, 51.465318],
+          [-2.548457, 51.46535],
+          [-2.548393, 51.465375],
+          [-2.548316, 51.465392],
+          [-2.548331, 51.465493],
+          [-2.548327, 51.465695],
+          [-2.548275, 51.465891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548598, 51.464519],
+          [-2.548942, 51.464498],
+          [-2.549119, 51.464472],
+          [-2.549321, 51.464425],
+          [-2.549716, 51.4643],
+          [-2.549821, 51.464235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548317, 51.464771],
+          [-2.547883, 51.464815],
+          [-2.547808, 51.464884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530906, 51.470333],
+          [-2.529969, 51.469993],
+          [-2.529919, 51.469931],
+          [-2.529922, 51.469862],
+          [-2.530047, 51.469658],
+          [-2.530046, 51.469609],
+          [-2.529894, 51.469457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53209, 51.469008],
+          [-2.532118, 51.469079],
+          [-2.532114, 51.469125],
+          [-2.531687, 51.469678],
+          [-2.531665, 51.469766],
+          [-2.531693, 51.46985],
+          [-2.531762, 51.469942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531762, 51.469942],
+          [-2.531435, 51.470465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531059, 51.466938],
+          [-2.531183, 51.467039],
+          [-2.531322, 51.467088],
+          [-2.531677, 51.467182],
+          [-2.531928, 51.467265],
+          [-2.532164, 51.467366],
+          [-2.533039, 51.467753],
+          [-2.533643, 51.468056]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551712, 51.472679],
+          [-2.551884, 51.472662],
+          [-2.552999, 51.472299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548708, 51.46635],
+          [-2.548745, 51.465833],
+          [-2.548769, 51.465788],
+          [-2.548844, 51.465748],
+          [-2.54893, 51.465741],
+          [-2.549365, 51.465748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56364, 51.470955],
+          [-2.563507, 51.471011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558033, 51.472902],
+          [-2.558149, 51.472951],
+          [-2.558526, 51.473056],
+          [-2.560294, 51.473419],
+          [-2.561076, 51.473558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54839, 51.484141],
+          [-2.548457, 51.484238],
+          [-2.548487, 51.48432],
+          [-2.548496, 51.484395],
+          [-2.548481, 51.484474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54002, 51.477578],
+          [-2.540996, 51.478205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545601, 51.473811],
+          [-2.545506, 51.47384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563284, 51.470688],
+          [-2.562886, 51.470992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56256, 51.471222],
+          [-2.562002, 51.471558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560372, 51.4701],
+          [-2.560013, 51.470268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558912, 51.471324],
+          [-2.558556, 51.47103],
+          [-2.558421, 51.471091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561294, 51.470255],
+          [-2.561432, 51.469871],
+          [-2.561688, 51.469907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557678, 51.473108],
+          [-2.557247, 51.472788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550696, 51.4727],
+          [-2.551191, 51.472639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548188, 51.475917],
+          [-2.547584, 51.475844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548205, 51.477191],
+          [-2.549107, 51.476444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549415, 51.475529],
+          [-2.550238, 51.475125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550673, 51.464553],
+          [-2.548814, 51.464818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544892, 51.46556],
+          [-2.544625, 51.465682],
+          [-2.544419, 51.465724],
+          [-2.544449, 51.466217],
+          [-2.544532, 51.466276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537175, 51.46611],
+          [-2.537183, 51.466258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535634, 51.466423],
+          [-2.535632, 51.466856],
+          [-2.535612, 51.467227],
+          [-2.535627, 51.467638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537975, 51.466212],
+          [-2.538023, 51.466539],
+          [-2.537952, 51.466708],
+          [-2.537961, 51.466757],
+          [-2.538023, 51.466828],
+          [-2.538102, 51.466858],
+          [-2.538153, 51.466865],
+          [-2.538401, 51.466842],
+          [-2.538789, 51.466938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535422, 51.46816],
+          [-2.534861, 51.468386],
+          [-2.534736, 51.468402],
+          [-2.53455, 51.468372],
+          [-2.534478, 51.468343],
+          [-2.534235, 51.468128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535841, 51.468656],
+          [-2.535447, 51.468546],
+          [-2.535257, 51.468502],
+          [-2.535209, 51.468479],
+          [-2.535024, 51.468322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533039, 51.467753],
+          [-2.533311, 51.467543],
+          [-2.533378, 51.467473],
+          [-2.533385, 51.466919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533643, 51.468056],
+          [-2.533081, 51.468295],
+          [-2.532749, 51.46823]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532164, 51.467366],
+          [-2.532307, 51.467238],
+          [-2.532326, 51.467202],
+          [-2.53231, 51.466997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54437, 51.474535],
+          [-2.543414, 51.474753],
+          [-2.541872, 51.47514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536133, 51.467224],
+          [-2.536755, 51.467184],
+          [-2.536716, 51.466843],
+          [-2.537976, 51.466779]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541562, 51.465925],
+          [-2.541613, 51.466188],
+          [-2.541659, 51.466345]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542474, 51.46999],
+          [-2.542459, 51.470083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542281, 51.470073],
+          [-2.543543, 51.470147],
+          [-2.543644, 51.470148],
+          [-2.543821, 51.470121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541388, 51.470272],
+          [-2.541365, 51.47021],
+          [-2.541367, 51.470177],
+          [-2.541522, 51.469248],
+          [-2.541598, 51.469027],
+          [-2.541817, 51.468623],
+          [-2.541849, 51.468508],
+          [-2.541876, 51.468146],
+          [-2.541845, 51.468025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546032, 51.483142],
+          [-2.546308, 51.483203]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545953, 51.482935],
+          [-2.546294, 51.482791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545586, 51.482399],
+          [-2.545583, 51.482472],
+          [-2.545411, 51.482832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545107, 51.482934],
+          [-2.545157, 51.483004],
+          [-2.545168, 51.483147],
+          [-2.545274, 51.483284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546016, 51.483168],
+          [-2.546039, 51.483125],
+          [-2.546039, 51.483054],
+          [-2.546012, 51.482993],
+          [-2.545953, 51.482935],
+          [-2.545599, 51.482838],
+          [-2.545411, 51.482832],
+          [-2.545262, 51.482867],
+          [-2.545107, 51.482934],
+          [-2.544994, 51.482972],
+          [-2.544653, 51.483041],
+          [-2.544469, 51.483094],
+          [-2.544371, 51.483159],
+          [-2.544234, 51.483318]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535572, 51.477255],
+          [-2.534603, 51.477648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546253, 51.471831],
+          [-2.546722, 51.471805],
+          [-2.547663, 51.471722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544741, 51.473963],
+          [-2.545151, 51.473868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547373, 51.471423],
+          [-2.547391, 51.471746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543405, 51.468162],
+          [-2.543647, 51.468032],
+          [-2.543837, 51.468373],
+          [-2.543829, 51.468451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53756, 51.481714],
+          [-2.53768, 51.481323],
+          [-2.537398, 51.481287],
+          [-2.537316, 51.481297],
+          [-2.537299, 51.481319],
+          [-2.537115, 51.481674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535794, 51.480447],
+          [-2.536033, 51.480774],
+          [-2.536391, 51.480795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539642, 51.468531],
+          [-2.53961, 51.468691],
+          [-2.53941, 51.469335],
+          [-2.539362, 51.469546],
+          [-2.539191, 51.469898],
+          [-2.538921, 51.470362],
+          [-2.53886, 51.470456],
+          [-2.538774, 51.470548]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546466, 51.483889],
+          [-2.546623, 51.483902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556874, 51.469384],
+          [-2.556937, 51.469424],
+          [-2.556995, 51.469429],
+          [-2.557664, 51.469294]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547796, 51.464561],
+          [-2.547964, 51.464521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547883, 51.464815],
+          [-2.547796, 51.464561],
+          [-2.547731, 51.464516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548316, 51.465392],
+          [-2.54815, 51.465374],
+          [-2.547878, 51.465371],
+          [-2.547682, 51.465383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537106, 51.467172],
+          [-2.536755, 51.467184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538486, 51.466709],
+          [-2.538401, 51.466842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53827, 51.467004],
+          [-2.538204, 51.466988],
+          [-2.538196, 51.466866]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536097, 51.46686],
+          [-2.536299, 51.466856],
+          [-2.536393, 51.466794],
+          [-2.536544, 51.466785],
+          [-2.53664, 51.466836],
+          [-2.536716, 51.466843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53789, 51.467241],
+          [-2.537885, 51.467033],
+          [-2.538089, 51.467012],
+          [-2.538204, 51.466988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537096, 51.467055],
+          [-2.537122, 51.467339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535109, 51.480378],
+          [-2.534988, 51.480265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535052, 51.478043],
+          [-2.534603, 51.477648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560541, 51.470478],
+          [-2.560201, 51.470178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554721, 51.471806],
+          [-2.555927, 51.472703],
+          [-2.556717, 51.473255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553646, 51.468199],
+          [-2.553878, 51.46826],
+          [-2.554176, 51.468284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561678, 51.475253],
+          [-2.561519, 51.475262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541354, 51.479669],
+          [-2.54037, 51.478347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544688, 51.471288],
+          [-2.545049, 51.471123],
+          [-2.545434, 51.47097],
+          [-2.545695, 51.47091],
+          [-2.546449, 51.470794],
+          [-2.546877, 51.470742],
+          [-2.547451, 51.470651],
+          [-2.547978, 51.470623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542598, 51.466365],
+          [-2.542735, 51.46667],
+          [-2.542434, 51.466752],
+          [-2.542015, 51.466898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542609, 51.467186],
+          [-2.542211, 51.467232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538151, 51.477379],
+          [-2.538491, 51.477249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543331, 51.481971],
+          [-2.543858, 51.481976]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543116, 51.481558],
+          [-2.54356, 51.481487]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54674, 51.481217],
+          [-2.54622, 51.4813]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539856, 51.482335],
+          [-2.539928, 51.482383],
+          [-2.540084, 51.482423],
+          [-2.540124, 51.482448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54839, 51.484141],
+          [-2.54851, 51.483872],
+          [-2.548605, 51.483783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538751, 51.481598],
+          [-2.538525, 51.481551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537316, 51.481297],
+          [-2.537002, 51.481241],
+          [-2.536962, 51.481251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546661, 51.481775],
+          [-2.546188, 51.481634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546154, 51.482134],
+          [-2.545669, 51.481988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53567, 51.468733],
+          [-2.53575, 51.468629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535355, 51.468096],
+          [-2.535484, 51.46822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533987, 51.468232],
+          [-2.533643, 51.468056]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537143, 51.479185],
+          [-2.537362, 51.479054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54625, 51.474517],
+          [-2.545539, 51.473738]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549691, 51.472755],
+          [-2.549759, 51.472822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55005, 51.469243],
+          [-2.550217, 51.46918],
+          [-2.550795, 51.468809],
+          [-2.551875, 51.46815],
+          [-2.552164, 51.468058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547014, 51.483455],
+          [-2.547017, 51.483532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547424, 51.483571],
+          [-2.547423, 51.483522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532214, 51.467115],
+          [-2.532325, 51.46711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533767, 51.46727],
+          [-2.533833, 51.467332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533382, 51.46743],
+          [-2.534099, 51.467132]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542701, 51.466592],
+          [-2.543762, 51.466407],
+          [-2.543677, 51.466217],
+          [-2.542615, 51.466402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542899, 51.467203],
+          [-2.542624, 51.467235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542639, 51.467286],
+          [-2.542595, 51.467138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536477, 51.477884],
+          [-2.536601, 51.477973],
+          [-2.536675, 51.478003],
+          [-2.536872, 51.47804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549495, 51.474103],
+          [-2.549529, 51.474317],
+          [-2.548665, 51.474333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558094, 51.471877],
+          [-2.557609, 51.472167],
+          [-2.557545, 51.472183],
+          [-2.557871, 51.472421],
+          [-2.558374, 51.472684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54531, 51.481888],
+          [-2.545394, 51.481884],
+          [-2.545513, 51.481845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544043, 51.481173],
+          [-2.543546, 51.481165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5413, 51.46675],
+          [-2.541206, 51.466672],
+          [-2.541129, 51.466675],
+          [-2.540851, 51.466796],
+          [-2.540837, 51.466839],
+          [-2.541373, 51.467499],
+          [-2.541316, 51.467576],
+          [-2.540767, 51.467686],
+          [-2.540689, 51.467676],
+          [-2.540065, 51.466949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53903, 51.46776],
+          [-2.540219, 51.467714],
+          [-2.54061, 51.467584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53949, 51.467364],
+          [-2.539689, 51.467625],
+          [-2.539699, 51.467734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53859, 51.467893],
+          [-2.540189, 51.467852],
+          [-2.540223, 51.467866],
+          [-2.540272, 51.467933],
+          [-2.540306, 51.468044],
+          [-2.54045, 51.468319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539852, 51.468342],
+          [-2.539156, 51.468363],
+          [-2.539116, 51.468457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544307, 51.482043],
+          [-2.544305, 51.481854],
+          [-2.544282, 51.481759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539477, 51.475568],
+          [-2.539609, 51.475542]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561979, 51.472068],
+          [-2.561869, 51.472167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555948, 51.471358],
+          [-2.556285, 51.47158]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538562, 51.47528],
+          [-2.538646, 51.475382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54099, 51.468195],
+          [-2.540913, 51.467995],
+          [-2.540909, 51.467851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550106, 51.468461],
+          [-2.550092, 51.468397],
+          [-2.550423, 51.468365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548186, 51.465809],
+          [-2.548294, 51.46582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547815, 51.465376],
+          [-2.547821, 51.465442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536416, 51.470248],
+          [-2.536212, 51.470607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532695, 51.467992],
+          [-2.532483, 51.467908],
+          [-2.532775, 51.467636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559486, 51.471533],
+          [-2.559248, 51.471631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558646, 51.470989],
+          [-2.558556, 51.47103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538763, 51.468283],
+          [-2.538756, 51.467892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556949, 51.469735],
+          [-2.557052, 51.469645],
+          [-2.557066, 51.469608],
+          [-2.55697, 51.46943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548126, 51.483975],
+          [-2.548279, 51.484051],
+          [-2.54839, 51.484141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545621, 51.472657],
+          [-2.545476, 51.472731],
+          [-2.545804, 51.473086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544298, 51.47336],
+          [-2.544739, 51.473095],
+          [-2.544643, 51.472973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543037, 51.474199],
+          [-2.542602, 51.474372],
+          [-2.542525, 51.474483],
+          [-2.542576, 51.474608],
+          [-2.54275, 51.474921]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550119, 51.467061],
+          [-2.550025, 51.467045],
+          [-2.549953, 51.467001],
+          [-2.549809, 51.466822],
+          [-2.549718, 51.466775],
+          [-2.549629, 51.466749],
+          [-2.549329, 51.466765],
+          [-2.549265, 51.466794],
+          [-2.549238, 51.466844],
+          [-2.549284, 51.466934],
+          [-2.549426, 51.467017],
+          [-2.549581, 51.467347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539312, 51.478476],
+          [-2.539252, 51.478525],
+          [-2.539174, 51.478546],
+          [-2.538376, 51.47862],
+          [-2.538435, 51.478722],
+          [-2.53847, 51.478752],
+          [-2.538502, 51.478766],
+          [-2.53854, 51.478804],
+          [-2.539029, 51.479409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553925, 51.46845],
+          [-2.553661, 51.468665],
+          [-2.553593, 51.468781],
+          [-2.55357, 51.468896],
+          [-2.553616, 51.469057],
+          [-2.553745, 51.469224],
+          [-2.554263, 51.469827],
+          [-2.554285, 51.469826],
+          [-2.554454, 51.469875],
+          [-2.55458, 51.469889],
+          [-2.554727, 51.469887],
+          [-2.554893, 51.469858],
+          [-2.555058, 51.469794],
+          [-2.555147, 51.469736],
+          [-2.555217, 51.469667],
+          [-2.555253, 51.469612],
+          [-2.555282, 51.469523],
+          [-2.555281, 51.469441],
+          [-2.555264, 51.469386],
+          [-2.555141, 51.46925],
+          [-2.554844, 51.468958],
+          [-2.554594, 51.468799],
+          [-2.553925, 51.46845],
+          [-2.554065, 51.468321],
+          [-2.55409, 51.46828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553761, 51.469238],
+          [-2.553583, 51.469292],
+          [-2.553532, 51.469332],
+          [-2.553515, 51.469402],
+          [-2.553955, 51.469945],
+          [-2.553985, 51.469977],
+          [-2.554051, 51.470007],
+          [-2.55413, 51.470015],
+          [-2.554205, 51.470001],
+          [-2.554258, 51.469972],
+          [-2.554288, 51.46993],
+          [-2.554281, 51.46987],
+          [-2.554263, 51.469827]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538774, 51.470548],
+          [-2.53766, 51.470525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556105, 51.471173],
+          [-2.556047, 51.47129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558447, 51.470069],
+          [-2.558538, 51.470162],
+          [-2.558503, 51.470337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53886, 51.470456],
+          [-2.53772, 51.470382],
+          [-2.537436, 51.470291],
+          [-2.537324, 51.470124],
+          [-2.537456, 51.469857]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531076, 51.470401],
+          [-2.531435, 51.470465],
+          [-2.531744, 51.470542]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531229, 51.470428],
+          [-2.531108, 51.470625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529562, 51.470263],
+          [-2.529817, 51.47007],
+          [-2.529904, 51.470036],
+          [-2.529969, 51.469993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549829, 51.474275],
+          [-2.549529, 51.474317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555675, 51.473557],
+          [-2.555366, 51.473638],
+          [-2.555067, 51.473636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551316, 51.472006],
+          [-2.551181, 51.471506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548444, 51.476728],
+          [-2.547839, 51.476868],
+          [-2.547708, 51.476481],
+          [-2.547534, 51.476255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542465, 51.47694],
+          [-2.542998, 51.476589],
+          [-2.544024, 51.475944],
+          [-2.544212, 51.475696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54297, 51.475898],
+          [-2.543756, 51.475733],
+          [-2.544212, 51.475696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542006, 51.475925],
+          [-2.542089, 51.476086],
+          [-2.542367, 51.476229],
+          [-2.542998, 51.476589]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542333, 51.472747],
+          [-2.54263, 51.472755],
+          [-2.542664, 51.472768],
+          [-2.542908, 51.472766]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542642, 51.473115],
+          [-2.542664, 51.472768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546829, 51.46483],
+          [-2.54737, 51.464741],
+          [-2.547402, 51.464761],
+          [-2.547526, 51.465135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546834, 51.464847],
+          [-2.546344, 51.464956],
+          [-2.546093, 51.465051],
+          [-2.54585, 51.465172],
+          [-2.545716, 51.465329],
+          [-2.545659, 51.465376],
+          [-2.545402, 51.465398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542305, 51.467517],
+          [-2.542608, 51.46749],
+          [-2.542921, 51.467422],
+          [-2.543421, 51.467349],
+          [-2.543628, 51.467324],
+          [-2.544198, 51.467272],
+          [-2.544175, 51.467608],
+          [-2.544111, 51.467672],
+          [-2.544089, 51.467853],
+          [-2.543708, 51.467891],
+          [-2.5437, 51.468003],
+          [-2.543647, 51.468032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543322, 51.466854],
+          [-2.543473, 51.467617],
+          [-2.543467, 51.467646],
+          [-2.543425, 51.467718],
+          [-2.543443, 51.467819],
+          [-2.543419, 51.46784],
+          [-2.543089, 51.467872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546855, 51.471077],
+          [-2.548149, 51.470929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541967, 51.478241],
+          [-2.543156, 51.477703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540638, 51.480957],
+          [-2.540559, 51.480589],
+          [-2.54053, 51.480537],
+          [-2.540498, 51.480523],
+          [-2.540421, 51.480521],
+          [-2.539884, 51.480577],
+          [-2.539807, 51.480606],
+          [-2.539561, 51.480737],
+          [-2.539534, 51.48076],
+          [-2.539524, 51.480829],
+          [-2.539574, 51.48111],
+          [-2.539622, 51.481606],
+          [-2.539615, 51.481677],
+          [-2.539585, 51.481744],
+          [-2.539537, 51.481792],
+          [-2.53915, 51.482028]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538813, 51.466544],
+          [-2.538806, 51.466179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529022, 51.467249],
+          [-2.527843, 51.467263],
+          [-2.527685, 51.467236],
+          [-2.527556, 51.467129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531059, 51.466938],
+          [-2.530943, 51.467099],
+          [-2.530949, 51.467246],
+          [-2.530729, 51.467707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534932, 51.466433],
+          [-2.534969, 51.46708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538276, 51.465891],
+          [-2.538826, 51.465832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54402, 51.477874],
+          [-2.543753, 51.477773],
+          [-2.543499, 51.477665],
+          [-2.543341, 51.477587],
+          [-2.542951, 51.477285]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527028, 51.468233],
+          [-2.527033, 51.468299],
+          [-2.527074, 51.468412],
+          [-2.527149, 51.468534],
+          [-2.527154, 51.468592],
+          [-2.527111, 51.468643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536689, 51.469089],
+          [-2.536367, 51.469018],
+          [-2.534387, 51.468676],
+          [-2.534266, 51.468714],
+          [-2.534076, 51.468705],
+          [-2.533577, 51.468606],
+          [-2.533462, 51.468527],
+          [-2.533405, 51.468464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533497, 51.469161],
+          [-2.533971, 51.469181],
+          [-2.533987, 51.469283],
+          [-2.53393, 51.469636],
+          [-2.533882, 51.469684],
+          [-2.533619, 51.470045]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544188, 51.473003],
+          [-2.544145, 51.473018],
+          [-2.544062, 51.473066],
+          [-2.544051, 51.473106],
+          [-2.544057, 51.473152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539332, 51.47907],
+          [-2.539287, 51.47894],
+          [-2.539289, 51.478911],
+          [-2.539321, 51.478894],
+          [-2.539509, 51.478856],
+          [-2.539522, 51.478831],
+          [-2.539367, 51.478493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557502, 51.474243],
+          [-2.557677, 51.474014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557314, 51.474168],
+          [-2.557356, 51.474106],
+          [-2.55734, 51.474007],
+          [-2.557366, 51.473976],
+          [-2.557093, 51.473881],
+          [-2.556972, 51.473911],
+          [-2.556874, 51.474022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554304, 51.473439],
+          [-2.554032, 51.473351],
+          [-2.553539, 51.473843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551931, 51.473118],
+          [-2.551985, 51.473075],
+          [-2.55202, 51.473074],
+          [-2.552202, 51.47311],
+          [-2.552275, 51.473138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547085, 51.473672],
+          [-2.548236, 51.473377],
+          [-2.54852, 51.473704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544375, 51.466848],
+          [-2.543355, 51.467023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544454, 51.467124],
+          [-2.544333, 51.466699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544072, 51.469725],
+          [-2.544339, 51.469694],
+          [-2.544531, 51.469643],
+          [-2.545023, 51.469585],
+          [-2.545057, 51.46957],
+          [-2.545161, 51.469459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534644, 51.479368],
+          [-2.534752, 51.479495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534138, 51.469065],
+          [-2.534291, 51.468759],
+          [-2.534266, 51.468714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538268, 51.465854],
+          [-2.537754, 51.465895],
+          [-2.537729, 51.465891],
+          [-2.537709, 51.465877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561585, 51.4704],
+          [-2.561683, 51.470357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543192, 51.475322],
+          [-2.542959, 51.474937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544257, 51.475075],
+          [-2.544032, 51.474687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538634, 51.476231],
+          [-2.538868, 51.476479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539992, 51.475461],
+          [-2.540215, 51.475697],
+          [-2.540252, 51.475718],
+          [-2.540417, 51.475966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533878, 51.477988],
+          [-2.534181, 51.478421]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53382, 51.478705],
+          [-2.533748, 51.478597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541396, 51.47627],
+          [-2.542089, 51.476086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544212, 51.475696],
+          [-2.545302, 51.47533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542367, 51.476229],
+          [-2.542938, 51.475856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545278, 51.4753],
+          [-2.545821, 51.475121],
+          [-2.545868, 51.475124],
+          [-2.54694, 51.474778],
+          [-2.547186, 51.475087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554829, 51.474052],
+          [-2.554768, 51.473714],
+          [-2.554753, 51.473516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554553, 51.473514],
+          [-2.554982, 51.473519]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549464, 51.473405],
+          [-2.549243, 51.473046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557801, 51.473777],
+          [-2.557469, 51.473679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557638, 51.473729],
+          [-2.557543, 51.473861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55837, 51.473922],
+          [-2.558234, 51.474108]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543965, 51.483115],
+          [-2.544123, 51.48306]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544428, 51.482678],
+          [-2.544067, 51.482799],
+          [-2.544041, 51.482818],
+          [-2.54403, 51.482849],
+          [-2.54404, 51.48299],
+          [-2.544057, 51.483027],
+          [-2.544085, 51.483047],
+          [-2.544143, 51.483062],
+          [-2.544211, 51.483052],
+          [-2.544817, 51.482837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54476, 51.482857],
+          [-2.54491, 51.482992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534956, 51.468633],
+          [-2.53499, 51.468572],
+          [-2.535029, 51.468533],
+          [-2.535199, 51.46847]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542901, 51.466051],
+          [-2.543026, 51.466331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543972, 51.465856],
+          [-2.543926, 51.465923],
+          [-2.544002, 51.466093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543864, 51.465934],
+          [-2.543926, 51.465923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542547, 51.466249],
+          [-2.542598, 51.466365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544001, 51.46646],
+          [-2.543762, 51.466407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544191, 51.46606],
+          [-2.543758, 51.466137],
+          [-2.543677, 51.466217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543215, 51.466772],
+          [-2.543102, 51.466522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543613, 51.466703],
+          [-2.543501, 51.466453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54331, 51.466002],
+          [-2.543426, 51.466261]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542595, 51.467138],
+          [-2.542553, 51.466999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537753, 51.466469],
+          [-2.537758, 51.466531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537666, 51.466534],
+          [-2.538023, 51.466522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538789, 51.466938],
+          [-2.53887, 51.46695],
+          [-2.539078, 51.466919],
+          [-2.539134, 51.466993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538487, 51.467102],
+          [-2.538445, 51.467044],
+          [-2.53827, 51.467004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538356, 51.468805],
+          [-2.538497, 51.468899]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538289, 51.468941],
+          [-2.538461, 51.468973],
+          [-2.538497, 51.468899],
+          [-2.539159, 51.469024],
+          [-2.539321, 51.468691],
+          [-2.539484, 51.468721],
+          [-2.539287, 51.46918],
+          [-2.539292, 51.469191],
+          [-2.539319, 51.469207],
+          [-2.539335, 51.469274],
+          [-2.53935, 51.469294],
+          [-2.53941, 51.469335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539021, 51.468561],
+          [-2.538878, 51.468534],
+          [-2.538782, 51.468482],
+          [-2.537875, 51.468311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537382, 51.469153],
+          [-2.537458, 51.469167],
+          [-2.537928, 51.4682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536892, 51.46887],
+          [-2.53622, 51.46886],
+          [-2.536145, 51.468835],
+          [-2.536115, 51.468809],
+          [-2.536095, 51.468776],
+          [-2.536012, 51.468226],
+          [-2.536013, 51.4681],
+          [-2.536047, 51.468032],
+          [-2.536106, 51.467966],
+          [-2.536165, 51.467924],
+          [-2.536251, 51.467886],
+          [-2.536403, 51.467761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537106, 51.468334],
+          [-2.537457, 51.467989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542438, 51.469546],
+          [-2.543755, 51.469609],
+          [-2.543909, 51.469649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540885, 51.468573],
+          [-2.540731, 51.468245]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543626, 51.468312],
+          [-2.543571, 51.468342],
+          [-2.54334, 51.468547],
+          [-2.543238, 51.468694],
+          [-2.54322, 51.468758],
+          [-2.543267, 51.468794],
+          [-2.543691, 51.468863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542565, 51.4705],
+          [-2.542458, 51.471287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540661, 51.474071],
+          [-2.54098, 51.474262],
+          [-2.541013, 51.474292],
+          [-2.54102, 51.474337],
+          [-2.540984, 51.474395],
+          [-2.5409, 51.474464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546319, 51.470242],
+          [-2.545669, 51.470501],
+          [-2.545626, 51.470513],
+          [-2.544518, 51.470693],
+          [-2.544396, 51.470732],
+          [-2.544145, 51.470783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539556, 51.468885],
+          [-2.540181, 51.468959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539734, 51.468616],
+          [-2.539665, 51.468897]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541088, 51.470351],
+          [-2.541082, 51.470464],
+          [-2.540988, 51.47098],
+          [-2.54091, 51.471024],
+          [-2.540404, 51.470991],
+          [-2.54032, 51.470949],
+          [-2.540311, 51.470745],
+          [-2.540358, 51.470472],
+          [-2.540414, 51.47033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541819, 51.471354],
+          [-2.541137, 51.471318],
+          [-2.541049, 51.471164],
+          [-2.541137, 51.470647],
+          [-2.541214, 51.470572],
+          [-2.541338, 51.470498],
+          [-2.541501, 51.470384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537331, 51.476315],
+          [-2.537907, 51.476861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534707, 51.477101],
+          [-2.534191, 51.477218],
+          [-2.533957, 51.477226],
+          [-2.533913, 51.477221]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540962, 51.482641],
+          [-2.54103, 51.48246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543557, 51.470038],
+          [-2.543531, 51.469878],
+          [-2.543634, 51.469812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542616, 51.469645],
+          [-2.542868, 51.469657],
+          [-2.543748, 51.469835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546144, 51.470023],
+          [-2.546737, 51.469954],
+          [-2.546812, 51.469424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536859, 51.477136],
+          [-2.536812, 51.47715],
+          [-2.536751, 51.477147],
+          [-2.536438, 51.477008],
+          [-2.536181, 51.476907],
+          [-2.536143, 51.476966],
+          [-2.535934, 51.477102],
+          [-2.535572, 51.477255],
+          [-2.53573, 51.477372],
+          [-2.535992, 51.477242],
+          [-2.5362, 51.477091],
+          [-2.536438, 51.477008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538957, 51.47765],
+          [-2.538523, 51.477236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538391, 51.477407],
+          [-2.538224, 51.477472],
+          [-2.538218, 51.477494],
+          [-2.538339, 51.47761],
+          [-2.538407, 51.477639],
+          [-2.538554, 51.47765],
+          [-2.538607, 51.477625],
+          [-2.538305, 51.47732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537529, 51.478688],
+          [-2.537701, 51.478544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534133, 51.477493],
+          [-2.534418, 51.477464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545667, 51.470208],
+          [-2.545837, 51.470175],
+          [-2.545858, 51.47016],
+          [-2.545874, 51.47011],
+          [-2.545647, 51.469396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545393, 51.470094],
+          [-2.545196, 51.469455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545269, 51.469679],
+          [-2.545718, 51.46962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541619, 51.478901],
+          [-2.540931, 51.479094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544995, 51.468242],
+          [-2.544812, 51.468226],
+          [-2.544674, 51.468205],
+          [-2.544302, 51.468091],
+          [-2.543871, 51.468008],
+          [-2.543701, 51.467988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528877, 51.469585],
+          [-2.528979, 51.469507],
+          [-2.529207, 51.469465],
+          [-2.529293, 51.469607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547256, 51.474658],
+          [-2.547786, 51.474483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544923, 51.467894],
+          [-2.544919, 51.467825],
+          [-2.544993, 51.467664],
+          [-2.545066, 51.467622],
+          [-2.545081, 51.467588],
+          [-2.545049, 51.467489],
+          [-2.545748, 51.46741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551278, 51.467974],
+          [-2.551231, 51.467985],
+          [-2.551191, 51.467985],
+          [-2.55111, 51.467967],
+          [-2.551038, 51.467931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548995, 51.465196],
+          [-2.548807, 51.465242],
+          [-2.548721, 51.465253],
+          [-2.548529, 51.465241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54397, 51.473912],
+          [-2.544098, 51.474101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543351, 51.47224],
+          [-2.544045, 51.472065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539503, 51.47642],
+          [-2.539397, 51.476277]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53952, 51.476821],
+          [-2.539691, 51.476839],
+          [-2.539743, 51.476827]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536667, 51.4814],
+          [-2.536962, 51.481251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535943, 51.469899],
+          [-2.535358, 51.46978],
+          [-2.534797, 51.469681],
+          [-2.534418, 51.469647],
+          [-2.53393, 51.469636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536007, 51.469828],
+          [-2.535836, 51.470019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537097, 51.481258],
+          [-2.537177, 51.481135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53768, 51.481323],
+          [-2.537721, 51.481207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544624, 51.48311],
+          [-2.544707, 51.483066],
+          [-2.544922, 51.483025],
+          [-2.545139, 51.482971]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537924, 51.477311],
+          [-2.537696, 51.477392],
+          [-2.537065, 51.477582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557102, 51.472415],
+          [-2.557545, 51.472183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534445, 51.478863],
+          [-2.534181, 51.478893]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544846, 51.473043],
+          [-2.545139, 51.472948],
+          [-2.545209, 51.472906],
+          [-2.545377, 51.47277],
+          [-2.545476, 51.472731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549584, 51.472537],
+          [-2.54964, 51.472699],
+          [-2.549691, 51.472755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543655, 51.472691],
+          [-2.543178, 51.472696],
+          [-2.543328, 51.473123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548211, 51.470754],
+          [-2.548336, 51.47099],
+          [-2.548198, 51.471016]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548352, 51.47102],
+          [-2.548336, 51.47099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548983, 51.469562],
+          [-2.549355, 51.469423]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535992, 51.476651],
+          [-2.536073, 51.47656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537209, 51.478881],
+          [-2.537054, 51.478974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541448, 51.478655],
+          [-2.541277, 51.478737],
+          [-2.540772, 51.478877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545009, 51.477168],
+          [-2.544771, 51.477025],
+          [-2.544612, 51.476908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538879, 51.469853],
+          [-2.539006, 51.469898],
+          [-2.539169, 51.469936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53865, 51.470442],
+          [-2.538934, 51.469872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535431, 51.477496],
+          [-2.53573, 51.477372]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538695, 51.472489],
+          [-2.538341, 51.472484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549446, 51.475552],
+          [-2.549596, 51.475685],
+          [-2.549613, 51.475732],
+          [-2.549553, 51.47578],
+          [-2.549475, 51.475826],
+          [-2.549358, 51.475822],
+          [-2.54927, 51.475809],
+          [-2.549153, 51.475756],
+          [-2.549079, 51.475699],
+          [-2.549019, 51.475624],
+          [-2.549033, 51.475553],
+          [-2.549111, 51.475483],
+          [-2.549247, 51.475403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549819, 51.474388],
+          [-2.54977, 51.474285]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546857, 51.468924],
+          [-2.546836, 51.468978],
+          [-2.546967, 51.469426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54969, 51.465477],
+          [-2.549717, 51.465549],
+          [-2.550277, 51.465478]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538284, 51.476266],
+          [-2.538194, 51.4763],
+          [-2.538549, 51.476602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558869, 51.473096],
+          [-2.559194, 51.472903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553973, 51.468399],
+          [-2.553741, 51.468379]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546939, 51.470336],
+          [-2.546866, 51.470268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547808, 51.464884],
+          [-2.547773, 51.464913],
+          [-2.547604, 51.464937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547773, 51.464913],
+          [-2.547798, 51.464941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5498, 51.468911],
+          [-2.54959, 51.46899],
+          [-2.549204, 51.469181],
+          [-2.548911, 51.469302],
+          [-2.548698, 51.469378],
+          [-2.548511, 51.469412],
+          [-2.548268, 51.469429],
+          [-2.546967, 51.469426],
+          [-2.546719, 51.469416],
+          [-2.546568, 51.469397],
+          [-2.54646, 51.469356],
+          [-2.545894, 51.469026],
+          [-2.545704, 51.468949],
+          [-2.545118, 51.468776],
+          [-2.544763, 51.468702],
+          [-2.544253, 51.468615],
+          [-2.544001, 51.468538],
+          [-2.543829, 51.468451],
+          [-2.543405, 51.468162],
+          [-2.543197, 51.468041],
+          [-2.543059, 51.467983],
+          [-2.542872, 51.467934],
+          [-2.542612, 51.467913],
+          [-2.542395, 51.467924],
+          [-2.540731, 51.468245],
+          [-2.539642, 51.468531],
+          [-2.539587, 51.46853],
+          [-2.539116, 51.468457],
+          [-2.538147, 51.468278],
+          [-2.537931, 51.468202],
+          [-2.537662, 51.468067],
+          [-2.537457, 51.467989],
+          [-2.537229, 51.467928],
+          [-2.53667, 51.467827],
+          [-2.536403, 51.467761],
+          [-2.536287, 51.467703],
+          [-2.536191, 51.467616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533034, 51.466517],
+          [-2.532013, 51.466753],
+          [-2.531277, 51.46688],
+          [-2.531059, 51.466938],
+          [-2.529886, 51.466867]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542439, 51.465807],
+          [-2.542198, 51.46581],
+          [-2.54192, 51.465831],
+          [-2.54167, 51.465827]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "eastville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541044, 51.465919],
+          [-2.539982, 51.466112],
+          [-2.539678, 51.466156],
+          [-2.539345, 51.46618],
+          [-2.538806, 51.466179],
+          [-2.537582, 51.466223],
+          [-2.536974, 51.466282],
+          [-2.536302, 51.466394],
+          [-2.536077, 51.466413],
+          [-2.533666, 51.466442]
+        ]
+      }
+    }
+  ]
+}

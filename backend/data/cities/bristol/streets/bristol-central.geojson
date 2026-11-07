@@ -1,0 +1,6520 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585327, 51.454214],
+          [-2.585332, 51.454518],
+          [-2.58537, 51.454704],
+          [-2.58537, 51.454867],
+          [-2.585322, 51.455022],
+          [-2.585156, 51.455323],
+          [-2.58511, 51.455368],
+          [-2.585012, 51.455418],
+          [-2.584784, 51.455444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584178, 51.454231],
+          [-2.585327, 51.454214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584784, 51.455444],
+          [-2.584234, 51.455469],
+          [-2.583912, 51.455404]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592445, 51.449574],
+          [-2.592554, 51.449572],
+          [-2.592658, 51.449555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592658, 51.449555],
+          [-2.592749, 51.449543],
+          [-2.592814, 51.449509],
+          [-2.592942, 51.449358],
+          [-2.593009, 51.44933],
+          [-2.593106, 51.449311],
+          [-2.59333, 51.449304],
+          [-2.596795, 51.449525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596392, 51.451659],
+          [-2.596187, 51.451662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598198, 51.460654],
+          [-2.598257, 51.46052],
+          [-2.5985, 51.459755],
+          [-2.598543, 51.459428],
+          [-2.598527, 51.459223],
+          [-2.598241, 51.458285],
+          [-2.598197, 51.457956],
+          [-2.598199, 51.457444],
+          [-2.598156, 51.457341]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593217, 51.458117],
+          [-2.593412, 51.458181]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585327, 51.454214],
+          [-2.585964, 51.454178],
+          [-2.586299, 51.45413],
+          [-2.58652, 51.454056]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585087, 51.455875],
+          [-2.585079, 51.455733],
+          [-2.585033, 51.455578],
+          [-2.584955, 51.455508],
+          [-2.584784, 51.455444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585087, 51.455875],
+          [-2.585405, 51.456384],
+          [-2.585877, 51.457068],
+          [-2.586109, 51.457006],
+          [-2.586604, 51.4568],
+          [-2.587151, 51.456618],
+          [-2.588108, 51.456346],
+          [-2.590125, 51.455809],
+          [-2.591926, 51.455305],
+          [-2.592343, 51.45516],
+          [-2.592534, 51.455056],
+          [-2.592625, 51.454966],
+          [-2.592665, 51.454893],
+          [-2.592669, 51.454836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584111, 51.455712],
+          [-2.584322, 51.455603],
+          [-2.584445, 51.455582],
+          [-2.584748, 51.455558],
+          [-2.584821, 51.455573],
+          [-2.584899, 51.455618],
+          [-2.585087, 51.455875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59558, 51.458908],
+          [-2.595373, 51.458912],
+          [-2.595224, 51.458873],
+          [-2.593838, 51.458363],
+          [-2.593412, 51.458181]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596739, 51.448748],
+          [-2.596785, 51.449216],
+          [-2.596795, 51.449525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592658, 51.449555],
+          [-2.592473, 51.449518]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592702, 51.457719],
+          [-2.592762, 51.457797],
+          [-2.593217, 51.458117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596187, 51.451662],
+          [-2.596205, 51.451764],
+          [-2.596237, 51.451794],
+          [-2.596415, 51.45186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604537, 51.462465],
+          [-2.605279, 51.462442],
+          [-2.605383, 51.462449],
+          [-2.605601, 51.462472],
+          [-2.605859, 51.462557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60346, 51.462236],
+          [-2.603416, 51.462198],
+          [-2.60327, 51.462125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598156, 51.457341],
+          [-2.59826, 51.457383],
+          [-2.598454, 51.457491],
+          [-2.598821, 51.457724],
+          [-2.599095, 51.45792],
+          [-2.599191, 51.457999],
+          [-2.599445, 51.458351],
+          [-2.599648, 51.458579],
+          [-2.599827, 51.458715],
+          [-2.600423, 51.459094],
+          [-2.600544, 51.459205],
+          [-2.600854, 51.459525],
+          [-2.601038, 51.459758],
+          [-2.601096, 51.45986],
+          [-2.601238, 51.46026],
+          [-2.601371, 51.460478],
+          [-2.601494, 51.460594],
+          [-2.602227, 51.461136],
+          [-2.602487, 51.461346],
+          [-2.602602, 51.46146],
+          [-2.602925, 51.461846]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5964, 51.450932],
+          [-2.596547, 51.450547],
+          [-2.596795, 51.449525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592761, 51.457942],
+          [-2.593217, 51.458117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593412, 51.458181],
+          [-2.593278, 51.458076],
+          [-2.593248, 51.457974],
+          [-2.593263, 51.457926],
+          [-2.593305, 51.457885],
+          [-2.593444, 51.457807]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602925, 51.461846],
+          [-2.60327, 51.462125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60327, 51.462125],
+          [-2.603305, 51.462184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596084, 51.4534],
+          [-2.596369, 51.451976],
+          [-2.596415, 51.45186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60376, 51.458199],
+          [-2.603737, 51.458319],
+          [-2.603753, 51.458458],
+          [-2.60388, 51.458829],
+          [-2.604042, 51.4592],
+          [-2.604125, 51.45934],
+          [-2.604935, 51.461074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592615, 51.454685],
+          [-2.592057, 51.454149],
+          [-2.591811, 51.453933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596392, 51.451659],
+          [-2.596331, 51.451493],
+          [-2.596444, 51.450997],
+          [-2.5964, 51.450932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596415, 51.45186],
+          [-2.59643, 51.451716],
+          [-2.596392, 51.451659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5964, 51.450932],
+          [-2.596346, 51.450977],
+          [-2.596187, 51.451662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601603, 51.455347],
+          [-2.601638, 51.455407],
+          [-2.601686, 51.455446],
+          [-2.602211, 51.455706],
+          [-2.602682, 51.455995],
+          [-2.602915, 51.456176],
+          [-2.603322, 51.456595],
+          [-2.603428, 51.456741],
+          [-2.60355, 51.456956],
+          [-2.603746, 51.457431],
+          [-2.603854, 51.457861],
+          [-2.603852, 51.458012],
+          [-2.60382, 51.458102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597494, 51.456934],
+          [-2.597742, 51.457028],
+          [-2.597857, 51.45709],
+          [-2.598092, 51.457262],
+          [-2.598156, 51.457341]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584178, 51.454231],
+          [-2.584058, 51.454206],
+          [-2.584002, 51.45418],
+          [-2.583911, 51.454095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592615, 51.454685],
+          [-2.592602, 51.454722],
+          [-2.592631, 51.454811],
+          [-2.592669, 51.454836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592669, 51.454836],
+          [-2.592691, 51.454805],
+          [-2.592665, 51.454722],
+          [-2.592615, 51.454685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602925, 51.461846],
+          [-2.603066, 51.46177],
+          [-2.603109, 51.461726]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603109, 51.461726],
+          [-2.603032, 51.461744],
+          [-2.602886, 51.461801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583835, 51.454288],
+          [-2.584178, 51.454231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60382, 51.458102],
+          [-2.60377, 51.458122],
+          [-2.603738, 51.458174],
+          [-2.60376, 51.458199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60376, 51.458199],
+          [-2.603806, 51.458188],
+          [-2.603837, 51.458135],
+          [-2.60382, 51.458102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603987, 51.462402],
+          [-2.604254, 51.462434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6087, 51.459784],
+          [-2.608082, 51.459832],
+          [-2.607856, 51.459884],
+          [-2.607213, 51.460158],
+          [-2.606127, 51.460651],
+          [-2.605501, 51.460912],
+          [-2.604935, 51.461074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604935, 51.461074],
+          [-2.604007, 51.461317],
+          [-2.603109, 51.461726]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583877, 51.455388],
+          [-2.583701, 51.455343],
+          [-2.583606, 51.455344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588875, 51.459407],
+          [-2.589438, 51.459402],
+          [-2.589588, 51.459421],
+          [-2.589708, 51.459455],
+          [-2.590168, 51.459684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596403, 51.455371],
+          [-2.597409, 51.454306],
+          [-2.597614, 51.454023],
+          [-2.597689, 51.453769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607208, 51.456056],
+          [-2.606194, 51.45603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6089, 51.458325],
+          [-2.608912, 51.45821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608763, 51.459334],
+          [-2.608822, 51.458869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608553, 51.460992],
+          [-2.608757, 51.459388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591319, 51.45917],
+          [-2.591295, 51.459042],
+          [-2.591321, 51.458968],
+          [-2.591384, 51.45889],
+          [-2.591757, 51.458551],
+          [-2.591854, 51.458437],
+          [-2.592226, 51.458101],
+          [-2.592296, 51.458058],
+          [-2.592482, 51.457992],
+          [-2.592622, 51.457961],
+          [-2.593027, 51.457901],
+          [-2.593444, 51.457807],
+          [-2.594823, 51.457446],
+          [-2.595024, 51.457379],
+          [-2.595404, 51.457188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59501, 51.456752],
+          [-2.594308, 51.456946],
+          [-2.59398, 51.457076],
+          [-2.593308, 51.45738],
+          [-2.592796, 51.45766],
+          [-2.592208, 51.45801],
+          [-2.592068, 51.458113],
+          [-2.591217, 51.458872],
+          [-2.591079, 51.458956],
+          [-2.590878, 51.459034],
+          [-2.590811, 51.459083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598433, 51.452337],
+          [-2.598413, 51.452292]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59827, 51.452237],
+          [-2.597948, 51.452539],
+          [-2.597828, 51.452755],
+          [-2.597833, 51.452834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595404, 51.457188],
+          [-2.59557, 51.457087],
+          [-2.595783, 51.456925],
+          [-2.595963, 51.456659],
+          [-2.596037, 51.456477],
+          [-2.596243, 51.455709],
+          [-2.596403, 51.455371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60878, 51.457783],
+          [-2.608912, 51.45821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590846, 51.460449],
+          [-2.590966, 51.460661],
+          [-2.590975, 51.460755],
+          [-2.59094, 51.460975],
+          [-2.590956, 51.460996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590956, 51.460996],
+          [-2.590999, 51.460985],
+          [-2.591101, 51.460835],
+          [-2.591136, 51.460714],
+          [-2.591091, 51.460469],
+          [-2.590892, 51.46013],
+          [-2.590854, 51.460017],
+          [-2.590845, 51.459913],
+          [-2.590959, 51.459752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60878, 51.457783],
+          [-2.608923, 51.457879],
+          [-2.608988, 51.457893],
+          [-2.609123, 51.457895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584612, 51.457543],
+          [-2.584762, 51.45736],
+          [-2.584804, 51.457254],
+          [-2.584801, 51.457118],
+          [-2.584657, 51.456868],
+          [-2.584085, 51.456039],
+          [-2.584061, 51.455941],
+          [-2.584067, 51.45579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584612, 51.457543],
+          [-2.58461, 51.45723],
+          [-2.584547, 51.456989],
+          [-2.58446, 51.456814],
+          [-2.58377, 51.455733],
+          [-2.583667, 51.455497],
+          [-2.583604, 51.455253],
+          [-2.583581, 51.455007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595404, 51.457188],
+          [-2.595457, 51.457039],
+          [-2.595408, 51.456923],
+          [-2.595309, 51.456847],
+          [-2.59501, 51.456752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584067, 51.45579],
+          [-2.584111, 51.455712],
+          [-2.584103, 51.455597],
+          [-2.584031, 51.455486],
+          [-2.583877, 51.455388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606194, 51.45603],
+          [-2.606095, 51.45613],
+          [-2.606091, 51.456179],
+          [-2.606124, 51.456265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607932, 51.456764],
+          [-2.60805, 51.456214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607549, 51.456932],
+          [-2.60767, 51.456931],
+          [-2.607801, 51.456905],
+          [-2.607891, 51.456827],
+          [-2.607932, 51.456764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609139, 51.457758],
+          [-2.60906, 51.457658],
+          [-2.608021, 51.457094],
+          [-2.607963, 51.45703],
+          [-2.607937, 51.456957],
+          [-2.607932, 51.456764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604929, 51.455891],
+          [-2.604648, 51.455852],
+          [-2.604236, 51.455629],
+          [-2.604286, 51.455704],
+          [-2.604504, 51.455858],
+          [-2.604695, 51.455929],
+          [-2.605566, 51.456094],
+          [-2.606124, 51.456265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606194, 51.45603],
+          [-2.605626, 51.455994],
+          [-2.60521, 51.455939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597689, 51.453769],
+          [-2.597759, 51.453688],
+          [-2.59783, 51.453468],
+          [-2.597815, 51.453425],
+          [-2.597933, 51.452899],
+          [-2.598007, 51.452772],
+          [-2.598127, 51.452627],
+          [-2.598131, 51.452574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589579, 51.459317],
+          [-2.58822, 51.459341],
+          [-2.587224, 51.459315],
+          [-2.585852, 51.459198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590811, 51.459083],
+          [-2.590301, 51.459254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590959, 51.459752],
+          [-2.591266, 51.45964],
+          [-2.591374, 51.459564],
+          [-2.591428, 51.459489],
+          [-2.591454, 51.459406],
+          [-2.591319, 51.45917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591319, 51.45917],
+          [-2.591223, 51.459125],
+          [-2.591115, 51.459101],
+          [-2.590811, 51.459083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607549, 51.456932],
+          [-2.608387, 51.457407],
+          [-2.608494, 51.457489],
+          [-2.60878, 51.457783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606124, 51.456265],
+          [-2.607549, 51.456932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598692, 51.452288],
+          [-2.598433, 51.452337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59021, 51.459306],
+          [-2.590138, 51.459396],
+          [-2.590113, 51.459479],
+          [-2.590168, 51.459684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608912, 51.45821],
+          [-2.608999, 51.458035],
+          [-2.609076, 51.457945]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590372, 51.459803],
+          [-2.590552, 51.460031],
+          [-2.590717, 51.460306],
+          [-2.590846, 51.460449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583839, 51.45591],
+          [-2.58396, 51.455865],
+          [-2.584067, 51.45579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590486, 51.459834],
+          [-2.590641, 51.459972],
+          [-2.590803, 51.460277],
+          [-2.590846, 51.460449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596403, 51.455371],
+          [-2.596208, 51.45559],
+          [-2.596079, 51.455851],
+          [-2.595909, 51.456279],
+          [-2.595789, 51.456445],
+          [-2.595695, 51.456523],
+          [-2.595595, 51.456573],
+          [-2.59501, 51.456752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590168, 51.459684],
+          [-2.590372, 51.459803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590486, 51.459834],
+          [-2.590612, 51.459841],
+          [-2.590704, 51.459827],
+          [-2.590959, 51.459752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584327, 51.457958],
+          [-2.584612, 51.457543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584404, 51.456991],
+          [-2.58443, 51.45718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59021, 51.459306],
+          [-2.589579, 51.459317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590301, 51.459254],
+          [-2.590138, 51.459241],
+          [-2.589724, 51.459246],
+          [-2.589579, 51.459317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590789, 51.461259],
+          [-2.590956, 51.460996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598433, 51.452337],
+          [-2.598331, 51.452398],
+          [-2.598131, 51.452574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590301, 51.459254],
+          [-2.59021, 51.459306]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583877, 51.455388],
+          [-2.583734, 51.455233],
+          [-2.583691, 51.455007],
+          [-2.583706, 51.454773],
+          [-2.583762, 51.454483],
+          [-2.583911, 51.454095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590372, 51.459803],
+          [-2.590486, 51.459834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597833, 51.452834],
+          [-2.597655, 51.453679],
+          [-2.597689, 51.453769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598131, 51.452574],
+          [-2.598051, 51.452592],
+          [-2.598026, 51.452613],
+          [-2.597833, 51.452834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588108, 51.456346],
+          [-2.588294, 51.456594],
+          [-2.588368, 51.456618],
+          [-2.588437, 51.456624],
+          [-2.588584, 51.456582],
+          [-2.588985, 51.456412],
+          [-2.589191, 51.456335],
+          [-2.58949, 51.456242],
+          [-2.589682, 51.456196],
+          [-2.590512, 51.456105],
+          [-2.590985, 51.456075],
+          [-2.591455, 51.456055],
+          [-2.591579, 51.45606],
+          [-2.591739, 51.456084],
+          [-2.591954, 51.456152],
+          [-2.592582, 51.456545],
+          [-2.592729, 51.45669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586726, 51.458295],
+          [-2.586955, 51.458617],
+          [-2.587033, 51.458709],
+          [-2.587123, 51.458764],
+          [-2.58721, 51.458799],
+          [-2.587425, 51.458824],
+          [-2.587638, 51.458835],
+          [-2.588508, 51.458809],
+          [-2.588719, 51.45882],
+          [-2.588985, 51.45881],
+          [-2.589061, 51.4588],
+          [-2.590624, 51.458257],
+          [-2.591045, 51.458101],
+          [-2.591361, 51.458014],
+          [-2.591814, 51.457908],
+          [-2.591917, 51.457875],
+          [-2.591962, 51.457851],
+          [-2.591991, 51.45781],
+          [-2.591991, 51.457779],
+          [-2.591511, 51.457223],
+          [-2.591423, 51.457099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596925, 51.45445],
+          [-2.597017, 51.454585],
+          [-2.597027, 51.454647],
+          [-2.597013, 51.454726]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597357, 51.45437],
+          [-2.597176, 51.454434],
+          [-2.596925, 51.45445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586314, 51.454558],
+          [-2.585449, 51.454684],
+          [-2.58537, 51.454704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585156, 51.455323],
+          [-2.585225, 51.455417],
+          [-2.585298, 51.455455],
+          [-2.585395, 51.45547],
+          [-2.586503, 51.455461],
+          [-2.586676, 51.455441],
+          [-2.586781, 51.455406],
+          [-2.586864, 51.455355],
+          [-2.586898, 51.455271],
+          [-2.586881, 51.455139],
+          [-2.586149, 51.454392],
+          [-2.585964, 51.454178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608889, 51.457559],
+          [-2.60897, 51.457446],
+          [-2.609052, 51.457414]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600962, 51.454621],
+          [-2.601459, 51.454354],
+          [-2.601492, 51.454316],
+          [-2.601494, 51.454289],
+          [-2.601051, 51.45393],
+          [-2.600852, 51.453868],
+          [-2.600732, 51.453852]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60075, 51.45377],
+          [-2.600787, 51.453673],
+          [-2.600808, 51.45365],
+          [-2.601227, 51.453383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599551, 51.453933],
+          [-2.599826, 51.454138],
+          [-2.59993, 51.454251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603621, 51.455153],
+          [-2.603072, 51.455422],
+          [-2.602949, 51.45553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600995, 51.453129],
+          [-2.600787, 51.453255],
+          [-2.600056, 51.453596],
+          [-2.600004, 51.453606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600326, 51.453879],
+          [-2.60005, 51.453668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598954, 51.45349],
+          [-2.599551, 51.453933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595295, 51.461127],
+          [-2.595315, 51.461053],
+          [-2.595289, 51.46092],
+          [-2.595272, 51.460898],
+          [-2.595174, 51.460831],
+          [-2.595078, 51.460788],
+          [-2.594954, 51.460755],
+          [-2.594772, 51.460752],
+          [-2.594689, 51.460768],
+          [-2.593795, 51.461278],
+          [-2.592905, 51.461803],
+          [-2.59215, 51.462313],
+          [-2.591451, 51.461916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606132, 51.462667],
+          [-2.6086, 51.461761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605455, 51.462127],
+          [-2.607652, 51.461348],
+          [-2.607795, 51.461324],
+          [-2.608529, 51.461339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604992, 51.461174],
+          [-2.605455, 51.462127],
+          [-2.605601, 51.462472]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603855, 51.457986],
+          [-2.603928, 51.457978],
+          [-2.60402, 51.457947],
+          [-2.604519, 51.457701],
+          [-2.604748, 51.457557],
+          [-2.604863, 51.457476],
+          [-2.60504, 51.457327],
+          [-2.605515, 51.45686]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607178, 51.458125],
+          [-2.607063, 51.458064],
+          [-2.606893, 51.457676],
+          [-2.60681, 51.457516],
+          [-2.606673, 51.457398],
+          [-2.606378, 51.457254],
+          [-2.605515, 51.45686]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606772, 51.458384],
+          [-2.607067, 51.458283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604404, 51.45994],
+          [-2.607053, 51.459267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592712, 51.451635],
+          [-2.592691, 51.451701],
+          [-2.592685, 51.452015],
+          [-2.592611, 51.452551],
+          [-2.592643, 51.45264],
+          [-2.592675, 51.452666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594817, 51.451366],
+          [-2.594847, 51.451201]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593372, 51.451614],
+          [-2.592712, 51.451635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593441, 51.451121],
+          [-2.593372, 51.451614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592675, 51.452666],
+          [-2.592708, 51.452681],
+          [-2.592755, 51.452686],
+          [-2.593303, 51.452677]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596058, 51.453498],
+          [-2.596014, 51.453651],
+          [-2.596035, 51.453785],
+          [-2.596019, 51.45382],
+          [-2.595977, 51.453844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595324, 51.454047],
+          [-2.595158, 51.453859],
+          [-2.59507, 51.453781],
+          [-2.59483, 51.45364],
+          [-2.59467, 51.453557],
+          [-2.59462, 51.453517],
+          [-2.594587, 51.453471],
+          [-2.594567, 51.45339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595977, 51.453844],
+          [-2.596968, 51.453533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592057, 51.454149],
+          [-2.592706, 51.453951],
+          [-2.594073, 51.453732],
+          [-2.594291, 51.453705],
+          [-2.5944, 51.453716],
+          [-2.594489, 51.453736],
+          [-2.594726, 51.453826],
+          [-2.594932, 51.453944],
+          [-2.595121, 51.454111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595234, 51.455963],
+          [-2.595889, 51.45632],
+          [-2.595956, 51.456337],
+          [-2.59603, 51.456334],
+          [-2.596093, 51.456286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59322, 51.456613],
+          [-2.593467, 51.456592],
+          [-2.594051, 51.45651],
+          [-2.59445, 51.456437],
+          [-2.594578, 51.456405],
+          [-2.59473, 51.456338],
+          [-2.595234, 51.455963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593248, 51.457225],
+          [-2.593273, 51.457314],
+          [-2.593308, 51.45738]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592796, 51.45766],
+          [-2.592041, 51.456858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59213, 51.455564],
+          [-2.592134, 51.455697],
+          [-2.591954, 51.456152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593144, 51.456518],
+          [-2.5935, 51.456237],
+          [-2.593605, 51.456225],
+          [-2.593887, 51.456076],
+          [-2.594275, 51.455814],
+          [-2.594475, 51.455642]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603154, 51.460114],
+          [-2.602749, 51.460276],
+          [-2.601714, 51.460765]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60268, 51.459559],
+          [-2.602908, 51.459901],
+          [-2.601942, 51.460148],
+          [-2.601722, 51.459864]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603592, 51.458636],
+          [-2.600854, 51.459525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60108, 51.458079],
+          [-2.600795, 51.458099],
+          [-2.60068, 51.45812],
+          [-2.600623, 51.458142],
+          [-2.59997, 51.458585],
+          [-2.599827, 51.458715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600561, 51.458181],
+          [-2.600439, 51.457666],
+          [-2.600452, 51.457568],
+          [-2.60052, 51.457463],
+          [-2.600598, 51.457407],
+          [-2.600937, 51.45721],
+          [-2.601374, 51.457015],
+          [-2.601512, 51.456964],
+          [-2.601671, 51.456919],
+          [-2.60181, 51.456886],
+          [-2.601912, 51.456882],
+          [-2.602106, 51.456894],
+          [-2.602209, 51.456911],
+          [-2.602281, 51.456944],
+          [-2.602366, 51.457004],
+          [-2.602793, 51.457346],
+          [-2.602959, 51.457496],
+          [-2.603316, 51.457866],
+          [-2.60346, 51.458038],
+          [-2.603577, 51.458212],
+          [-2.603631, 51.458237],
+          [-2.603745, 51.458249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598257, 51.46052],
+          [-2.598322, 51.460512],
+          [-2.598388, 51.460486],
+          [-2.598485, 51.460418],
+          [-2.600318, 51.459026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60117, 51.460074],
+          [-2.600884, 51.460142],
+          [-2.599896, 51.460528],
+          [-2.599665, 51.460649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599809, 51.460794],
+          [-2.599665, 51.460649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597506, 51.450025],
+          [-2.597481, 51.450174],
+          [-2.597373, 51.450617],
+          [-2.597326, 51.450935],
+          [-2.596431, 51.450843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591423, 51.457099],
+          [-2.591349, 51.456994],
+          [-2.59089, 51.456152],
+          [-2.590611, 51.455672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594054, 51.454511],
+          [-2.595121, 51.454111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59234, 51.453644],
+          [-2.592319, 51.453497],
+          [-2.592335, 51.453365],
+          [-2.592433, 51.45301],
+          [-2.592561, 51.452781],
+          [-2.592675, 51.452666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593578, 51.450433],
+          [-2.592765, 51.450381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594268, 51.459273],
+          [-2.594584, 51.45947],
+          [-2.594718, 51.459567]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592395, 51.461231],
+          [-2.593165, 51.461652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592954, 51.460828],
+          [-2.593795, 51.461278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591941, 51.461554],
+          [-2.592671, 51.461955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595563, 51.460951],
+          [-2.595557, 51.460909],
+          [-2.595577, 51.460882],
+          [-2.596354, 51.460351]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602902, 51.460837],
+          [-2.602412, 51.460429]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602749, 51.460276],
+          [-2.603163, 51.460648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594, 51.46067],
+          [-2.593007, 51.459919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594054, 51.454511],
+          [-2.593944, 51.454543],
+          [-2.592994, 51.45494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595056, 51.455838],
+          [-2.594475, 51.455642],
+          [-2.594249, 51.455548],
+          [-2.593122, 51.454991],
+          [-2.592994, 51.45494],
+          [-2.592879, 51.454917],
+          [-2.592665, 51.454893]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593141, 51.455732],
+          [-2.593013, 51.455813]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590624, 51.458257],
+          [-2.589984, 51.457537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58536, 51.454934],
+          [-2.584088, 51.45496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591423, 51.457099],
+          [-2.591476, 51.457019],
+          [-2.59156, 51.456966],
+          [-2.59165, 51.456936],
+          [-2.591893, 51.456896],
+          [-2.592041, 51.456858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592685, 51.452015],
+          [-2.593376, 51.451997],
+          [-2.593463, 51.451971],
+          [-2.593919, 51.451925],
+          [-2.594187, 51.451886],
+          [-2.594957, 51.451753],
+          [-2.595271, 51.451688],
+          [-2.595587, 51.451645],
+          [-2.595734, 51.451636],
+          [-2.595915, 51.45164],
+          [-2.596187, 51.451662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593439, 51.452555],
+          [-2.593369, 51.45193],
+          [-2.593372, 51.451614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592749, 51.449543],
+          [-2.592814, 51.449627],
+          [-2.592821, 51.449683],
+          [-2.592765, 51.450381],
+          [-2.592729, 51.451088],
+          [-2.592737, 51.45158],
+          [-2.592712, 51.451635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591455, 51.456055],
+          [-2.591468, 51.455788],
+          [-2.591507, 51.455757],
+          [-2.591925, 51.455647],
+          [-2.59214, 51.455638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59213, 51.455564],
+          [-2.592212, 51.45556],
+          [-2.592598, 51.455661],
+          [-2.592895, 51.455763],
+          [-2.593147, 51.455873],
+          [-2.593221, 51.455925],
+          [-2.593352, 51.456102],
+          [-2.5935, 51.456237],
+          [-2.593588, 51.456254],
+          [-2.593727, 51.456298],
+          [-2.593871, 51.456326],
+          [-2.594176, 51.456299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59379, 51.455328],
+          [-2.59362, 51.455442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591228, 51.454404],
+          [-2.591919, 51.454023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585966, 51.457176],
+          [-2.586726, 51.458295]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595324, 51.454047],
+          [-2.595977, 51.453844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586825, 51.459204],
+          [-2.587076, 51.458808],
+          [-2.587123, 51.458764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596649, 51.460508],
+          [-2.596354, 51.460351]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598695, 51.455877],
+          [-2.598464, 51.455634],
+          [-2.599119, 51.455296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602006, 51.456144],
+          [-2.602071, 51.456173],
+          [-2.602226, 51.456214],
+          [-2.602452, 51.456246],
+          [-2.602534, 51.456248],
+          [-2.602653, 51.456221],
+          [-2.602853, 51.456127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60089, 51.456157],
+          [-2.60111, 51.456036],
+          [-2.601452, 51.455942],
+          [-2.601572, 51.455922],
+          [-2.601625, 51.45593],
+          [-2.601687, 51.455958],
+          [-2.602006, 51.456144]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593303, 51.452677],
+          [-2.593386, 51.452707],
+          [-2.593468, 51.452773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593303, 51.452677],
+          [-2.593386, 51.452635],
+          [-2.593439, 51.452555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593468, 51.452773],
+          [-2.593482, 51.452735],
+          [-2.593472, 51.452612],
+          [-2.593439, 51.452555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594817, 51.451366],
+          [-2.594732, 51.451431],
+          [-2.593372, 51.451614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595811, 51.450595],
+          [-2.5965, 51.450662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594914, 51.453376],
+          [-2.59511, 51.453068],
+          [-2.595328, 51.452752],
+          [-2.596179, 51.452974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597667, 51.454982],
+          [-2.597601, 51.455004],
+          [-2.597508, 51.455073],
+          [-2.597109, 51.455491],
+          [-2.596659, 51.455796],
+          [-2.596589, 51.45592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594848, 51.449475],
+          [-2.594802, 51.449852]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596635, 51.451912],
+          [-2.596877, 51.452104],
+          [-2.596907, 51.452143],
+          [-2.597085, 51.452414],
+          [-2.597148, 51.45254],
+          [-2.59717, 51.452663],
+          [-2.597145, 51.453387],
+          [-2.597119, 51.453579],
+          [-2.596847, 51.454195],
+          [-2.596801, 51.454323],
+          [-2.596814, 51.454365],
+          [-2.596856, 51.454418],
+          [-2.596925, 51.45445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590846, 51.460449],
+          [-2.590705, 51.460494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591114, 51.460538],
+          [-2.591285, 51.460504],
+          [-2.591845, 51.460293],
+          [-2.592128, 51.460465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592164, 51.461397],
+          [-2.591354, 51.460909],
+          [-2.591242, 51.460864],
+          [-2.591101, 51.460835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592884, 51.459905],
+          [-2.592179, 51.460405],
+          [-2.592128, 51.460465],
+          [-2.591422, 51.460947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584722, 51.458871],
+          [-2.58473, 51.458794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601517, 51.455863],
+          [-2.601429, 51.455354]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606772, 51.458384],
+          [-2.606138, 51.458537],
+          [-2.605745, 51.458598],
+          [-2.605122, 51.458668],
+          [-2.604272, 51.458688],
+          [-2.603982, 51.458674],
+          [-2.603823, 51.458681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608363, 51.457649],
+          [-2.607405, 51.457954],
+          [-2.60735, 51.457981],
+          [-2.607178, 51.458125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593838, 51.458363],
+          [-2.593737, 51.458551],
+          [-2.593667, 51.458755],
+          [-2.593675, 51.458841],
+          [-2.593705, 51.458915],
+          [-2.593758, 51.458971],
+          [-2.594268, 51.459273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607067, 51.458283],
+          [-2.60707, 51.458248],
+          [-2.607178, 51.458125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607213, 51.460158],
+          [-2.607059, 51.459752],
+          [-2.607067, 51.458283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595553, 51.45529],
+          [-2.595229, 51.455682],
+          [-2.595131, 51.455787],
+          [-2.595056, 51.455838]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594, 51.46067],
+          [-2.59523, 51.459764],
+          [-2.595712, 51.460011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597742, 51.457028],
+          [-2.598062, 51.456853],
+          [-2.598167, 51.456771],
+          [-2.598288, 51.456652],
+          [-2.598505, 51.456351],
+          [-2.598677, 51.456163],
+          [-2.598771, 51.456106],
+          [-2.599264, 51.455871],
+          [-2.599277, 51.455843],
+          [-2.599226, 51.455792]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596055, 51.449905],
+          [-2.596624, 51.449948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593441, 51.451121],
+          [-2.592822, 51.451093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599204, 51.456909],
+          [-2.599472, 51.457015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599308, 51.456953],
+          [-2.599552, 51.45669],
+          [-2.599671, 51.456602],
+          [-2.599608, 51.456562],
+          [-2.599095, 51.45632],
+          [-2.598978, 51.456255],
+          [-2.598771, 51.456106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601034, 51.460795],
+          [-2.601494, 51.460594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595553, 51.45529],
+          [-2.594843, 51.455006],
+          [-2.594541, 51.45485],
+          [-2.594182, 51.454646],
+          [-2.594087, 51.454582],
+          [-2.594059, 51.454549],
+          [-2.594054, 51.454511]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599339, 51.45289],
+          [-2.599082, 51.45275],
+          [-2.598227, 51.45249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595919, 51.453865],
+          [-2.596026, 51.454004],
+          [-2.596102, 51.45407],
+          [-2.596247, 51.454151],
+          [-2.596532, 51.454249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599551, 51.453933],
+          [-2.60005, 51.453668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59977, 51.453447],
+          [-2.599266, 51.453722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599151, 51.454554],
+          [-2.599553, 51.454369],
+          [-2.59993, 51.454251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60075, 51.45377],
+          [-2.600624, 51.453763],
+          [-2.600544, 51.453769],
+          [-2.60051, 51.453779],
+          [-2.600085, 51.454019],
+          [-2.600069, 51.454052],
+          [-2.600118, 51.454207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586719, 51.458242],
+          [-2.586993, 51.458184],
+          [-2.587573, 51.458082],
+          [-2.58843, 51.457871],
+          [-2.588715, 51.457815],
+          [-2.589542, 51.457553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584707, 51.453594],
+          [-2.585087, 51.45403],
+          [-2.585189, 51.454216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595712, 51.460011],
+          [-2.595181, 51.460392],
+          [-2.594343, 51.460799],
+          [-2.594221, 51.46083],
+          [-2.594, 51.46067]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594268, 51.459273],
+          [-2.593642, 51.459615],
+          [-2.59359, 51.459663],
+          [-2.59356, 51.459762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597559, 51.454113],
+          [-2.597761, 51.454115],
+          [-2.597858, 51.454141],
+          [-2.597905, 51.454161],
+          [-2.597963, 51.454217],
+          [-2.597979, 51.454297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59322, 51.456613],
+          [-2.592989, 51.4563],
+          [-2.592817, 51.456169],
+          [-2.592694, 51.456104],
+          [-2.592565, 51.456058],
+          [-2.592444, 51.456029],
+          [-2.59213, 51.455998],
+          [-2.592021, 51.456001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595134, 51.458175],
+          [-2.595029, 51.458163],
+          [-2.594844, 51.458171],
+          [-2.594688, 51.458155],
+          [-2.594647, 51.45813],
+          [-2.594545, 51.458027],
+          [-2.59446, 51.458],
+          [-2.594377, 51.458013],
+          [-2.59427, 51.458047],
+          [-2.593939, 51.458177],
+          [-2.593806, 51.458234],
+          [-2.593705, 51.458307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60402, 51.45915],
+          [-2.60268, 51.459559],
+          [-2.601254, 51.460017],
+          [-2.60116, 51.460035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597131, 51.459848],
+          [-2.597817, 51.460205],
+          [-2.598283, 51.460433]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593007, 51.459919],
+          [-2.593038, 51.459893],
+          [-2.593073, 51.459809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592816, 51.459799],
+          [-2.59283, 51.45987],
+          [-2.592884, 51.459905],
+          [-2.592954, 51.459921],
+          [-2.593007, 51.459919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592562, 51.459049],
+          [-2.592132, 51.459241],
+          [-2.592022, 51.459319],
+          [-2.591953, 51.459414],
+          [-2.591906, 51.459652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594574, 51.456242],
+          [-2.594559, 51.456217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596797, 51.449963],
+          [-2.597506, 51.450025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597979, 51.454297],
+          [-2.598092, 51.454248],
+          [-2.59821, 51.454228],
+          [-2.598322, 51.454227],
+          [-2.59848, 51.454256],
+          [-2.59865, 51.454298],
+          [-2.598875, 51.454377],
+          [-2.599151, 51.454554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596772, 51.449057],
+          [-2.597072, 51.449066],
+          [-2.597652, 51.449117],
+          [-2.597506, 51.450025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595265, 51.455939],
+          [-2.595751, 51.455475],
+          [-2.595792, 51.455423],
+          [-2.595783, 51.455368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595324, 51.454047],
+          [-2.595692, 51.454494],
+          [-2.595805, 51.454654],
+          [-2.595866, 51.454793],
+          [-2.595925, 51.454873],
+          [-2.596009, 51.454959],
+          [-2.596007, 51.455017],
+          [-2.595851, 51.455194],
+          [-2.595809, 51.455263],
+          [-2.595783, 51.455368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596415, 51.45186],
+          [-2.596635, 51.451912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596635, 51.451912],
+          [-2.596579, 51.451841],
+          [-2.596478, 51.451746],
+          [-2.59643, 51.451716]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597575, 51.456175],
+          [-2.597548, 51.45578],
+          [-2.597559, 51.455602],
+          [-2.597691, 51.454864],
+          [-2.597725, 51.454719],
+          [-2.59778, 51.454579],
+          [-2.597979, 51.454297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608363, 51.457649],
+          [-2.60863, 51.457627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608508, 51.457504],
+          [-2.608363, 51.457649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603221, 51.461016],
+          [-2.602855, 51.461176],
+          [-2.602438, 51.461307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595056, 51.455838],
+          [-2.595265, 51.455939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585415, 51.457929],
+          [-2.585282, 51.457937],
+          [-2.584674, 51.457739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594985, 51.451745],
+          [-2.594895, 51.45143],
+          [-2.594817, 51.451366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599207, 51.457437],
+          [-2.598883, 51.457629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593622, 51.453496],
+          [-2.593561, 51.453456],
+          [-2.593506, 51.453237],
+          [-2.593468, 51.452773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595234, 51.455963],
+          [-2.595265, 51.455939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59213, 51.455564],
+          [-2.591926, 51.455305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5989, 51.453514],
+          [-2.599416, 51.45324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596354, 51.460351],
+          [-2.595712, 51.460011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597249, 51.459912],
+          [-2.597151, 51.459983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599646, 51.457118],
+          [-2.59928, 51.45739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597957, 51.452846],
+          [-2.598289, 51.452885],
+          [-2.598719, 51.452912],
+          [-2.598778, 51.452933],
+          [-2.59884, 51.452972],
+          [-2.599072, 51.45304],
+          [-2.59977, 51.453447],
+          [-2.600004, 51.453606],
+          [-2.60005, 51.453668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592986, 51.449683],
+          [-2.593634, 51.449729]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599665, 51.460649],
+          [-2.599519, 51.460715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608479, 51.457341],
+          [-2.608685, 51.457174],
+          [-2.609306, 51.456919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59668, 51.455897],
+          [-2.596608, 51.455883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595121, 51.454111],
+          [-2.595324, 51.454047]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593487, 51.457298],
+          [-2.593361, 51.457274],
+          [-2.593248, 51.457225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59322, 51.456613],
+          [-2.593258, 51.456685],
+          [-2.593248, 51.457225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597549, 51.455744],
+          [-2.59763, 51.455706],
+          [-2.597829, 51.455546],
+          [-2.598222, 51.455215],
+          [-2.598578, 51.454889]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595783, 51.455368],
+          [-2.595553, 51.45529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600797, 51.456592],
+          [-2.601276, 51.456313],
+          [-2.601395, 51.456259],
+          [-2.60152, 51.456221],
+          [-2.601613, 51.456206],
+          [-2.601898, 51.4562],
+          [-2.60195, 51.456181],
+          [-2.602006, 51.456144]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585149, 51.458505],
+          [-2.585412, 51.458444],
+          [-2.585886, 51.458354],
+          [-2.586726, 51.458295]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585219, 51.458664],
+          [-2.58578, 51.458672],
+          [-2.586339, 51.458714],
+          [-2.586846, 51.458798],
+          [-2.587076, 51.458808]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585415, 51.457929],
+          [-2.585778, 51.457693],
+          [-2.586007, 51.457575],
+          [-2.586783, 51.457249],
+          [-2.58707, 51.457151],
+          [-2.587222, 51.457111],
+          [-2.587554, 51.457045],
+          [-2.587912, 51.457004],
+          [-2.588063, 51.456991],
+          [-2.588077, 51.457019],
+          [-2.58857, 51.457001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588764, 51.457297],
+          [-2.589083, 51.457696],
+          [-2.589204, 51.45795],
+          [-2.589748, 51.458563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585998, 51.457039],
+          [-2.585966, 51.457176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585877, 51.457068],
+          [-2.585966, 51.457176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598578, 51.454889],
+          [-2.598851, 51.454706],
+          [-2.599151, 51.454554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584791, 51.458688],
+          [-2.585121, 51.458678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584766, 51.458785],
+          [-2.584791, 51.458688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584857, 51.458566],
+          [-2.584974, 51.458528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584791, 51.458688],
+          [-2.584857, 51.458566],
+          [-2.584892, 51.458409],
+          [-2.585139, 51.458169],
+          [-2.585415, 51.457929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603592, 51.458636],
+          [-2.603639, 51.458649],
+          [-2.603809, 51.458643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59993, 51.454251],
+          [-2.600054, 51.454217],
+          [-2.600289, 51.454183],
+          [-2.600533, 51.454105],
+          [-2.60061, 51.454071],
+          [-2.60068, 51.453988],
+          [-2.60075, 51.45377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592041, 51.456858],
+          [-2.592729, 51.45669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598578, 51.454889],
+          [-2.599081, 51.455267],
+          [-2.599542, 51.455641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605515, 51.45686],
+          [-2.606124, 51.456265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599086, 51.454141],
+          [-2.599523, 51.453913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593887, 51.456076],
+          [-2.59406, 51.456174],
+          [-2.594114, 51.456305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603782, 51.458562],
+          [-2.603629, 51.458603],
+          [-2.603592, 51.458636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590339, 51.45732],
+          [-2.591003, 51.457125],
+          [-2.591349, 51.456994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592729, 51.45669],
+          [-2.593034, 51.456621],
+          [-2.59322, 51.456613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589729, 51.457502],
+          [-2.590152, 51.457371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588277, 51.456617],
+          [-2.588287, 51.456655],
+          [-2.588473, 51.456871],
+          [-2.58871, 51.457206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594495, 51.456234],
+          [-2.594609, 51.456198],
+          [-2.594809, 51.456059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597019, 51.449063],
+          [-2.596988, 51.449112],
+          [-2.596998, 51.449299],
+          [-2.596983, 51.449392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599896, 51.455405],
+          [-2.599772, 51.455474],
+          [-2.599803, 51.455549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60707, 51.458248],
+          [-2.606772, 51.458384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593994, 51.459851],
+          [-2.59426, 51.459796],
+          [-2.594322, 51.459749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593876, 51.459777],
+          [-2.592425, 51.459698],
+          [-2.591906, 51.459652],
+          [-2.591747, 51.459619],
+          [-2.591612, 51.459563],
+          [-2.591454, 51.459406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59627, 51.458239],
+          [-2.596379, 51.458198],
+          [-2.596453, 51.458127],
+          [-2.597576, 51.456963],
+          [-2.597691, 51.45683],
+          [-2.597682, 51.456794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591017, 51.462222],
+          [-2.593615, 51.460371],
+          [-2.593764, 51.460235],
+          [-2.593891, 51.460051]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597815, 51.453425],
+          [-2.597756, 51.453486],
+          [-2.59769, 51.453506],
+          [-2.597551, 51.453513],
+          [-2.596759, 51.453465],
+          [-2.59591, 51.453387],
+          [-2.595503, 51.453372],
+          [-2.594567, 51.45339],
+          [-2.594085, 51.453434],
+          [-2.593622, 51.453496],
+          [-2.592524, 51.453702],
+          [-2.592066, 51.453828],
+          [-2.591811, 51.453933],
+          [-2.591621, 51.453803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594322, 51.459749],
+          [-2.594511, 51.459675],
+          [-2.594718, 51.459567],
+          [-2.595474, 51.458994],
+          [-2.595924, 51.458609],
+          [-2.59627, 51.458239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609165, 51.457713],
+          [-2.60906, 51.457658]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604022, 51.455795],
+          [-2.602581, 51.45544],
+          [-2.602189, 51.455379],
+          [-2.601831, 51.455349],
+          [-2.601429, 51.455354],
+          [-2.599982, 51.455518],
+          [-2.599756, 51.455561],
+          [-2.59944, 51.455689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59944, 51.455689],
+          [-2.599246, 51.455659],
+          [-2.598812, 51.455834],
+          [-2.598183, 51.456047],
+          [-2.597687, 51.456165],
+          [-2.597575, 51.456175],
+          [-2.597551, 51.456606],
+          [-2.597446, 51.456753],
+          [-2.597152, 51.457085],
+          [-2.597097, 51.457223],
+          [-2.597118, 51.457321]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597682, 51.456794],
+          [-2.598048, 51.456447],
+          [-2.598247, 51.456294],
+          [-2.598548, 51.456116],
+          [-2.59944, 51.455689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597118, 51.457321],
+          [-2.596274, 51.458162],
+          [-2.59627, 51.458239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604022, 51.455795],
+          [-2.604102, 51.45583],
+          [-2.604621, 51.455929],
+          [-2.604695, 51.455929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604648, 51.455852],
+          [-2.604138, 51.455784],
+          [-2.604022, 51.455795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593876, 51.459777],
+          [-2.593879, 51.459851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593994, 51.459851],
+          [-2.59399, 51.459778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593891, 51.460051],
+          [-2.593982, 51.45993],
+          [-2.593994, 51.459851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593879, 51.459851],
+          [-2.593891, 51.460051]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597682, 51.456794],
+          [-2.597622, 51.456805],
+          [-2.597118, 51.457321]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594322, 51.459749],
+          [-2.594237, 51.459729],
+          [-2.59399, 51.459778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593879, 51.459851],
+          [-2.593994, 51.459851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591266, 51.45964],
+          [-2.591516, 51.459655],
+          [-2.591889, 51.459736],
+          [-2.592113, 51.459764],
+          [-2.593879, 51.459851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59399, 51.459778],
+          [-2.593876, 51.459777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593435, 51.452488],
+          [-2.593954, 51.452472]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593468, 51.452773],
+          [-2.593997, 51.452746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601716, 51.461326],
+          [-2.602227, 51.461136]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58535, 51.456502],
+          [-2.585463, 51.456465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59362, 51.455442],
+          [-2.593141, 51.455732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596817, 51.458095],
+          [-2.596479, 51.457964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597789, 51.459308],
+          [-2.597634, 51.459403],
+          [-2.596354, 51.460351]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592911, 51.459256],
+          [-2.59281, 51.459301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595723, 51.457546],
+          [-2.595783, 51.457607],
+          [-2.595833, 51.457637],
+          [-2.595925, 51.457625],
+          [-2.595987, 51.457589],
+          [-2.596026, 51.457547],
+          [-2.596034, 51.457447],
+          [-2.595984, 51.457356],
+          [-2.59577, 51.457119],
+          [-2.595785, 51.457083],
+          [-2.59623, 51.456779],
+          [-2.596376, 51.456624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59623, 51.456779],
+          [-2.596186, 51.456724],
+          [-2.596135, 51.456695],
+          [-2.595963, 51.456659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59263, 51.457762],
+          [-2.592456, 51.45778],
+          [-2.592333, 51.457776],
+          [-2.59215, 51.457749],
+          [-2.591918, 51.457694]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598851, 51.454706],
+          [-2.599321, 51.45508],
+          [-2.599376, 51.455097],
+          [-2.599407, 51.455097],
+          [-2.599444, 51.455092],
+          [-2.599521, 51.455056],
+          [-2.599081, 51.455267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600121, 51.4555],
+          [-2.600067, 51.455286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603987, 51.461325],
+          [-2.604532, 51.461932],
+          [-2.604638, 51.462084],
+          [-2.604608, 51.46216],
+          [-2.604573, 51.462192],
+          [-2.604517, 51.462219],
+          [-2.604453, 51.462235],
+          [-2.603887, 51.462192],
+          [-2.603776, 51.462309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602362, 51.455792],
+          [-2.602567, 51.455695],
+          [-2.60261, 51.455704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60776, 51.45961],
+          [-2.607764, 51.459705],
+          [-2.607738, 51.459805],
+          [-2.607755, 51.459923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599123, 51.452669],
+          [-2.599168, 51.452625],
+          [-2.599286, 51.452456],
+          [-2.59933, 51.452359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600058, 51.452606],
+          [-2.599777, 51.452879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59352, 51.461754],
+          [-2.593492, 51.46157],
+          [-2.593413, 51.461506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599914, 51.453067],
+          [-2.599863, 51.453024],
+          [-2.599894, 51.452984],
+          [-2.599878, 51.45296],
+          [-2.599777, 51.452879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607972, 51.456617],
+          [-2.608436, 51.456736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603928, 51.455778],
+          [-2.603871, 51.455949],
+          [-2.603816, 51.456055]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602567, 51.455105],
+          [-2.60235, 51.455226],
+          [-2.602288, 51.455391]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603074, 51.458342],
+          [-2.603159, 51.458288],
+          [-2.603198, 51.458251],
+          [-2.603239, 51.45817],
+          [-2.603232, 51.458139],
+          [-2.603166, 51.458121],
+          [-2.603139, 51.458123],
+          [-2.603119, 51.458134],
+          [-2.603058, 51.458261],
+          [-2.603012, 51.4583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601093, 51.460769],
+          [-2.600978, 51.46065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596306, 51.457635],
+          [-2.596144, 51.457791],
+          [-2.596078, 51.457825],
+          [-2.596026, 51.457838],
+          [-2.595893, 51.457959],
+          [-2.595836, 51.457993],
+          [-2.59579, 51.458013],
+          [-2.595426, 51.458113],
+          [-2.595199, 51.458212],
+          [-2.595134, 51.458175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597326, 51.450935],
+          [-2.597303, 51.451198],
+          [-2.597311, 51.451633],
+          [-2.597302, 51.451949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593555, 51.461357],
+          [-2.593607, 51.461393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590596, 51.460338],
+          [-2.590717, 51.460306]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605034, 51.461916],
+          [-2.605012, 51.461883],
+          [-2.604932, 51.461877],
+          [-2.60488, 51.461891],
+          [-2.604839, 51.461916],
+          [-2.604796, 51.462051],
+          [-2.604749, 51.462073],
+          [-2.604638, 51.462084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603416, 51.462198],
+          [-2.60349, 51.462162],
+          [-2.603522, 51.462134],
+          [-2.603518, 51.462111],
+          [-2.603451, 51.462074],
+          [-2.603371, 51.462057],
+          [-2.603217, 51.462083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597789, 51.459308],
+          [-2.597757, 51.459294],
+          [-2.597736, 51.459272],
+          [-2.597717, 51.459212],
+          [-2.597745, 51.458973],
+          [-2.597743, 51.458912],
+          [-2.597706, 51.458827],
+          [-2.597589, 51.458733],
+          [-2.597144, 51.458482],
+          [-2.59716, 51.458448],
+          [-2.597528, 51.45818],
+          [-2.597537, 51.458158],
+          [-2.59752, 51.45814],
+          [-2.597256, 51.457997],
+          [-2.597211, 51.457989],
+          [-2.597171, 51.458003],
+          [-2.596966, 51.458153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595661, 51.459984],
+          [-2.596515, 51.459374]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599488, 51.456504],
+          [-2.599902, 51.456195],
+          [-2.599998, 51.456137],
+          [-2.600127, 51.45609],
+          [-2.600223, 51.456064],
+          [-2.600362, 51.456038],
+          [-2.600575, 51.456036],
+          [-2.600671, 51.456046],
+          [-2.600782, 51.456034],
+          [-2.601165, 51.456018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598778, 51.452933],
+          [-2.598676, 51.453046],
+          [-2.598643, 51.453056],
+          [-2.598499, 51.453035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597178, 51.458501],
+          [-2.596786, 51.458811],
+          [-2.596735, 51.458829],
+          [-2.596649, 51.458819],
+          [-2.596628, 51.458806],
+          [-2.59662, 51.458787],
+          [-2.596634, 51.458752],
+          [-2.597114, 51.458375],
+          [-2.597147, 51.458338],
+          [-2.597158, 51.458297],
+          [-2.597147, 51.458261],
+          [-2.597113, 51.45823],
+          [-2.596966, 51.458153],
+          [-2.596817, 51.458095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607296, 51.460845],
+          [-2.607311, 51.460902],
+          [-2.607402, 51.461071],
+          [-2.607625, 51.461357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608792, 51.459076],
+          [-2.607998, 51.459033],
+          [-2.608012, 51.458907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604778, 51.45868],
+          [-2.604739, 51.458593],
+          [-2.604352, 51.458116],
+          [-2.604197, 51.458092],
+          [-2.604114, 51.458052],
+          [-2.604032, 51.457976],
+          [-2.60402, 51.457947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601854, 51.454564],
+          [-2.601523, 51.454634],
+          [-2.601616, 51.45482],
+          [-2.602036, 51.454729],
+          [-2.602257, 51.455171],
+          [-2.602189, 51.455379]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589061, 51.4588],
+          [-2.589208, 51.459019],
+          [-2.589238, 51.459027],
+          [-2.589377, 51.459018],
+          [-2.589549, 51.458989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591126, 51.457658],
+          [-2.591361, 51.458014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591049, 51.457678],
+          [-2.591267, 51.457616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594249, 51.455548],
+          [-2.594126, 51.455658],
+          [-2.593876, 51.455819],
+          [-2.593705, 51.45595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595112, 51.44917],
+          [-2.595085, 51.449257],
+          [-2.595065, 51.449413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6017, 51.454917],
+          [-2.60185, 51.454955],
+          [-2.602123, 51.4549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607394, 51.457648],
+          [-2.607582, 51.457897]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596424, 51.458021],
+          [-2.596517, 51.45806],
+          [-2.596772, 51.458141],
+          [-2.596954, 51.458231],
+          [-2.596971, 51.458231],
+          [-2.59703, 51.458185]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598836, 51.460436],
+          [-2.599012, 51.460336],
+          [-2.598793, 51.460191]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600344, 51.458325],
+          [-2.600135, 51.458186],
+          [-2.600096, 51.458148],
+          [-2.600056, 51.458082],
+          [-2.600044, 51.45802],
+          [-2.600044, 51.457726],
+          [-2.599902, 51.457726]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598939, 51.458136],
+          [-2.599191, 51.457999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604757, 51.458619],
+          [-2.60493, 51.458579],
+          [-2.605234, 51.458554],
+          [-2.605626, 51.458502],
+          [-2.605607, 51.458347],
+          [-2.6057, 51.458266],
+          [-2.605775, 51.458244],
+          [-2.606219, 51.458156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607268, 51.462201],
+          [-2.607303, 51.462237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585241, 51.456126],
+          [-2.585142, 51.456163],
+          [-2.585132, 51.456206],
+          [-2.58524, 51.456374],
+          [-2.585274, 51.456397],
+          [-2.585318, 51.456403],
+          [-2.585405, 51.456384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584196, 51.456213],
+          [-2.584409, 51.456216],
+          [-2.584481, 51.456234],
+          [-2.584579, 51.45627],
+          [-2.58478, 51.456571],
+          [-2.584737, 51.456662],
+          [-2.584883, 51.456886],
+          [-2.584851, 51.45696],
+          [-2.584829, 51.456974],
+          [-2.584744, 51.457001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595088, 51.451727],
+          [-2.595173, 51.451885]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58496, 51.457461],
+          [-2.584872, 51.457435],
+          [-2.584762, 51.45736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584612, 51.457543],
+          [-2.584754, 51.457515],
+          [-2.584834, 51.457507],
+          [-2.584923, 51.457519]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599299, 51.459806],
+          [-2.599123, 51.45971],
+          [-2.5991, 51.459677],
+          [-2.59912, 51.459655],
+          [-2.59936, 51.45948],
+          [-2.599384, 51.459472],
+          [-2.599437, 51.459469],
+          [-2.599467, 51.459476],
+          [-2.599623, 51.45956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603592, 51.458636],
+          [-2.603536, 51.458563],
+          [-2.603375, 51.458511],
+          [-2.603227, 51.458447],
+          [-2.602661, 51.458063],
+          [-2.602393, 51.457917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598382, 51.458775],
+          [-2.598192, 51.458791],
+          [-2.598116, 51.458817],
+          [-2.598089, 51.45886],
+          [-2.598083, 51.459021],
+          [-2.598036, 51.45924],
+          [-2.598012, 51.459269],
+          [-2.597964, 51.459289],
+          [-2.597892, 51.459306],
+          [-2.597789, 51.459308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598604, 51.45943],
+          [-2.598543, 51.459428]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597346, 51.459961],
+          [-2.597442, 51.459925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596627, 51.457323],
+          [-2.596894, 51.456887],
+          [-2.596939, 51.456878],
+          [-2.597249, 51.45697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597304, 51.451495],
+          [-2.596972, 51.451463],
+          [-2.596901, 51.451479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596895, 51.451169],
+          [-2.597303, 51.451198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59771, 51.454784],
+          [-2.597949, 51.454856],
+          [-2.597955, 51.454872],
+          [-2.597882, 51.454974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598398, 51.455649],
+          [-2.598294, 51.455708],
+          [-2.59857, 51.455921]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598715, 51.46065],
+          [-2.598844, 51.460729]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599051, 51.453776],
+          [-2.598701, 51.453884],
+          [-2.598765, 51.453964],
+          [-2.598771, 51.454081],
+          [-2.598751, 51.45414],
+          [-2.59865, 51.454298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595469, 51.458471],
+          [-2.595172, 51.458302],
+          [-2.595199, 51.458212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592388, 51.459381],
+          [-2.59242, 51.459463],
+          [-2.592483, 51.459509],
+          [-2.592497, 51.459538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592545, 51.459303],
+          [-2.592547, 51.459447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5926, 51.459284],
+          [-2.592599, 51.459409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592655, 51.459198],
+          [-2.59265, 51.459382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592446, 51.459354],
+          [-2.592455, 51.459423],
+          [-2.592502, 51.4595],
+          [-2.5925, 51.459527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592483, 51.459331],
+          [-2.592485, 51.459408],
+          [-2.592514, 51.459494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592709, 51.459178],
+          [-2.5927, 51.459356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592769, 51.459153],
+          [-2.592758, 51.459326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592822, 51.459132],
+          [-2.59281, 51.459301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592871, 51.459107],
+          [-2.592858, 51.459279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59293, 51.459076],
+          [-2.592911, 51.459256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593011, 51.459045],
+          [-2.592934, 51.459246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593081, 51.459018],
+          [-2.592987, 51.459222]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593149, 51.459],
+          [-2.593061, 51.459189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593224, 51.458976],
+          [-2.593141, 51.459153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593284, 51.458959],
+          [-2.593218, 51.459119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593428, 51.458915],
+          [-2.59336, 51.459062]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593515, 51.4589],
+          [-2.593451, 51.459025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595767, 51.452577],
+          [-2.595868, 51.452258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601569, 51.455348],
+          [-2.60148, 51.454951],
+          [-2.601038, 51.454991],
+          [-2.601119, 51.455388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605745, 51.458598],
+          [-2.605626, 51.458502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592712, 51.451635],
+          [-2.592634, 51.451634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5987, 51.4548],
+          [-2.598842, 51.454906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60795, 51.459857],
+          [-2.607903, 51.459787],
+          [-2.607917, 51.459658]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608732, 51.459536],
+          [-2.608154, 51.459505],
+          [-2.608146, 51.459559],
+          [-2.607877, 51.459545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608763, 51.459334],
+          [-2.608068, 51.459302],
+          [-2.608058, 51.459383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606038, 51.456954],
+          [-2.605926, 51.457048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606849, 51.457586],
+          [-2.607222, 51.457544],
+          [-2.607362, 51.457718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606673, 51.457398],
+          [-2.606952, 51.457215]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60712, 51.457389],
+          [-2.60681, 51.457516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606218, 51.457053],
+          [-2.606115, 51.457134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604125, 51.45934],
+          [-2.604648, 51.459218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602038, 51.455364],
+          [-2.60206, 51.455169],
+          [-2.6017, 51.455143],
+          [-2.60166, 51.455347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594085, 51.453434],
+          [-2.594069, 51.453391],
+          [-2.594093, 51.453173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601866, 51.460152],
+          [-2.601933, 51.460136]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594264, 51.456961],
+          [-2.594438, 51.457138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604632, 51.460431],
+          [-2.604677, 51.460423]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600818, 51.460168],
+          [-2.600839, 51.460188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598777, 51.460687],
+          [-2.598677, 51.460749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600408, 51.459084],
+          [-2.600606, 51.459002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60785, 51.46139],
+          [-2.607859, 51.461325]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597192, 51.454698],
+          [-2.597077, 51.454659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596801, 51.454323],
+          [-2.596675, 51.45436],
+          [-2.596593, 51.454406],
+          [-2.596007, 51.455017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607044, 51.462613],
+          [-2.60686, 51.4624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595289, 51.44931],
+          [-2.595327, 51.449311],
+          [-2.59531, 51.44943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593797, 51.449048],
+          [-2.593757, 51.449325]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592016, 51.459036],
+          [-2.592132, 51.459241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589061, 51.459406],
+          [-2.589067, 51.459454]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589174, 51.459444],
+          [-2.589212, 51.459402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608812, 51.457897],
+          [-2.608698, 51.457933],
+          [-2.608664, 51.457961],
+          [-2.608653, 51.457983],
+          [-2.608699, 51.458163],
+          [-2.608741, 51.458209],
+          [-2.60891, 51.458231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591384, 51.461629],
+          [-2.591643, 51.461773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587724, 51.455135],
+          [-2.587152, 51.455162],
+          [-2.587063, 51.455191],
+          [-2.586893, 51.455199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596599, 51.449056],
+          [-2.596772, 51.449057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598622, 51.453606],
+          [-2.5989, 51.453514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6089, 51.458325],
+          [-2.608767, 51.45832],
+          [-2.608675, 51.458334],
+          [-2.608643, 51.458353],
+          [-2.608613, 51.45842],
+          [-2.608613, 51.458458],
+          [-2.608635, 51.458489],
+          [-2.608671, 51.458507],
+          [-2.608747, 51.458523],
+          [-2.608873, 51.458534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587411, 51.458525],
+          [-2.587837, 51.458476],
+          [-2.587872, 51.45855],
+          [-2.58844, 51.458483],
+          [-2.588656, 51.458817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587781, 51.4583],
+          [-2.587837, 51.458476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590856, 51.456248],
+          [-2.590934, 51.456232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596582, 51.45041],
+          [-2.596787, 51.450431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594195, 51.460806],
+          [-2.593889, 51.46101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595776, 51.458947],
+          [-2.596325, 51.458538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595679, 51.458828],
+          [-2.59583, 51.458905]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589289, 51.456032],
+          [-2.589354, 51.456123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589409, 51.456107],
+          [-2.589345, 51.456017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604783, 51.45873],
+          [-2.604761, 51.45868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594012, 51.461154],
+          [-2.594105, 51.461208]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593983, 51.461568],
+          [-2.594563, 51.461178],
+          [-2.594267, 51.461008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603412, 51.460932],
+          [-2.603221, 51.461016],
+          [-2.603264, 51.461051],
+          [-2.603284, 51.461041]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602752, 51.461209],
+          [-2.602538, 51.461033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601888, 51.461581],
+          [-2.602487, 51.461346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603427, 51.460484],
+          [-2.603154, 51.460114],
+          [-2.603288, 51.460074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586423, 51.454293],
+          [-2.586149, 51.454392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601199, 51.460562],
+          [-2.601305, 51.460677]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600032, 51.460672],
+          [-2.599896, 51.460528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599777, 51.452879],
+          [-2.599474, 51.452717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593644, 51.459091],
+          [-2.593808, 51.459001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585537, 51.456782],
+          [-2.585655, 51.456744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596817, 51.458095],
+          [-2.596772, 51.458141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595567, 51.45792],
+          [-2.595155, 51.45732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591815, 51.456323],
+          [-2.591994, 51.456176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593878, 51.451546],
+          [-2.593935, 51.451714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59329, 51.45909],
+          [-2.593352, 51.458937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603714, 51.457341],
+          [-2.603817, 51.457328],
+          [-2.603983, 51.45736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593705, 51.458915],
+          [-2.59329, 51.45909]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606145, 51.460203],
+          [-2.606412, 51.460521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592758, 51.459326],
+          [-2.5927, 51.459356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5927, 51.459356],
+          [-2.592599, 51.459409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5925, 51.459527],
+          [-2.592497, 51.459538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584964, 51.45494],
+          [-2.584976, 51.454996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584659, 51.454947],
+          [-2.584677, 51.455036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598957, 51.453756],
+          [-2.598998, 51.453742],
+          [-2.599166, 51.453648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598566, 51.453992],
+          [-2.598772, 51.454042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603571, 51.46093],
+          [-2.603716, 51.461059],
+          [-2.603779, 51.46108],
+          [-2.604007, 51.461317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584892, 51.453691],
+          [-2.58513, 51.453612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585087, 51.45403],
+          [-2.585364, 51.453951],
+          [-2.585344, 51.453906],
+          [-2.585646, 51.453806],
+          [-2.585612, 51.453767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5895, 51.456386],
+          [-2.590352, 51.456122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588792, 51.456492],
+          [-2.588899, 51.456491],
+          [-2.589698, 51.456242]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588673, 51.456547],
+          [-2.588673, 51.456515],
+          [-2.588625, 51.456506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590582, 51.456102],
+          [-2.590573, 51.456066]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590539, 51.45607],
+          [-2.590545, 51.456104]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590788, 51.458706],
+          [-2.590475, 51.458308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604383, 51.461282],
+          [-2.604353, 51.461227],
+          [-2.604266, 51.461126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604102, 51.461161],
+          [-2.604506, 51.461084],
+          [-2.604596, 51.461048],
+          [-2.604617, 51.460959],
+          [-2.604582, 51.460872],
+          [-2.604592, 51.460827],
+          [-2.604795, 51.460781]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602566, 51.457161],
+          [-2.602726, 51.457083],
+          [-2.602749, 51.457045],
+          [-2.602742, 51.457016],
+          [-2.602313, 51.456653],
+          [-2.601574, 51.456613],
+          [-2.601051, 51.456926],
+          [-2.601035, 51.456959],
+          [-2.601054, 51.456998],
+          [-2.601199, 51.457093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60286, 51.457275],
+          [-2.602752, 51.457255],
+          [-2.602699, 51.457273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603065, 51.459024],
+          [-2.603194, 51.459188],
+          [-2.603219, 51.459198],
+          [-2.603343, 51.459356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597247, 51.459224],
+          [-2.597729, 51.458869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585661, 51.454195],
+          [-2.585687, 51.454263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592497, 51.459538],
+          [-2.59248, 51.459596],
+          [-2.592425, 51.459698]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592934, 51.459246],
+          [-2.592911, 51.459256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59281, 51.459301],
+          [-2.592758, 51.459326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592599, 51.459409],
+          [-2.592547, 51.459447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591533, 51.455844],
+          [-2.591465, 51.455846]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592346, 51.45555],
+          [-2.592306, 51.455582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592083, 51.460115],
+          [-2.591845, 51.460293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600775, 51.453703],
+          [-2.600864, 51.453736],
+          [-2.600986, 51.453843],
+          [-2.600962, 51.453899]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592805, 51.450958],
+          [-2.592735, 51.450955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592605, 51.450523],
+          [-2.592758, 51.450521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595776, 51.456174],
+          [-2.595814, 51.45628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599197, 51.455054],
+          [-2.599253, 51.455026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593716, 51.458602],
+          [-2.593452, 51.458576],
+          [-2.593394, 51.458576],
+          [-2.593307, 51.458592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592514, 51.459494],
+          [-2.5925, 51.459527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592547, 51.459447],
+          [-2.592514, 51.459494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592987, 51.459222],
+          [-2.592934, 51.459246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593061, 51.459189],
+          [-2.592987, 51.459222]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593141, 51.459153],
+          [-2.593061, 51.459189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593218, 51.459119],
+          [-2.593141, 51.459153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bristol-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59329, 51.45909],
+          [-2.593218, 51.459119]
+        ]
+      }
+    }
+  ]
+}

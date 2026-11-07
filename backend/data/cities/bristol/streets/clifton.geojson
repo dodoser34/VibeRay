@@ -1,0 +1,4964 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623891, 51.461978],
+          [-2.622484, 51.460472],
+          [-2.622284, 51.460276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624112, 51.459257],
+          [-2.62353, 51.458405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625217, 51.459008],
+          [-2.625964, 51.458873],
+          [-2.626689, 51.458724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620978, 51.46554],
+          [-2.621049, 51.465619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617633, 51.463812],
+          [-2.618667, 51.463392],
+          [-2.619747, 51.462922],
+          [-2.621208, 51.462304],
+          [-2.621982, 51.461958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62338, 51.456119],
+          [-2.623728, 51.456683],
+          [-2.623893, 51.456875],
+          [-2.62406, 51.457114],
+          [-2.624189, 51.45725],
+          [-2.624338, 51.457353],
+          [-2.624544, 51.457476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620793, 51.455814],
+          [-2.619946, 51.454651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621326, 51.455659],
+          [-2.621056, 51.455264],
+          [-2.620468, 51.454495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622638, 51.451304],
+          [-2.622607, 51.451381],
+          [-2.622567, 51.451557],
+          [-2.62258, 51.451709],
+          [-2.622661, 51.451887],
+          [-2.622732, 51.452229],
+          [-2.622724, 51.452343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622893, 51.452826],
+          [-2.623095, 51.452786],
+          [-2.62325, 51.452771],
+          [-2.623626, 51.452755],
+          [-2.623796, 51.452787],
+          [-2.624009, 51.45285],
+          [-2.624292, 51.452964],
+          [-2.624411, 51.453024],
+          [-2.62463, 51.453153],
+          [-2.624819, 51.453312],
+          [-2.625013, 51.453546],
+          [-2.625161, 51.453756],
+          [-2.625395, 51.454115],
+          [-2.625453, 51.454223],
+          [-2.625474, 51.454333],
+          [-2.625424, 51.454972],
+          [-2.625401, 51.455047],
+          [-2.625335, 51.455133],
+          [-2.625181, 51.45521],
+          [-2.624431, 51.455506],
+          [-2.624159, 51.45563],
+          [-2.623648, 51.455931],
+          [-2.623589, 51.456014],
+          [-2.623577, 51.456069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617796, 51.457219],
+          [-2.618178, 51.457652],
+          [-2.618183, 51.457692],
+          [-2.618159, 51.457778],
+          [-2.618345, 51.458258],
+          [-2.618583, 51.458747],
+          [-2.618803, 51.45913],
+          [-2.619, 51.459314],
+          [-2.620149, 51.46028],
+          [-2.621541, 51.461617],
+          [-2.621782, 51.461814],
+          [-2.621982, 51.461958],
+          [-2.622126, 51.462039],
+          [-2.622877, 51.462442],
+          [-2.623512, 51.462758],
+          [-2.623659, 51.46284],
+          [-2.624269, 51.463215],
+          [-2.62456, 51.463417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616625, 51.458577],
+          [-2.616771, 51.458564],
+          [-2.617278, 51.458479],
+          [-2.619909, 51.457935],
+          [-2.620503, 51.457805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620129, 51.457047],
+          [-2.620429, 51.457601],
+          [-2.620503, 51.457805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60993, 51.453131],
+          [-2.610002, 51.453108],
+          [-2.610121, 51.453093],
+          [-2.610236, 51.453064],
+          [-2.610535, 51.452915],
+          [-2.610852, 51.45281],
+          [-2.610926, 51.452799],
+          [-2.612908, 51.452784]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614182, 51.453219],
+          [-2.614346, 51.453168],
+          [-2.614769, 51.453097],
+          [-2.615067, 51.453098],
+          [-2.615344, 51.453121],
+          [-2.616895, 51.453482],
+          [-2.617049, 51.453524],
+          [-2.617587, 51.453705],
+          [-2.617763, 51.453771],
+          [-2.617922, 51.453846],
+          [-2.6184, 51.454254],
+          [-2.618457, 51.454292],
+          [-2.618534, 51.454364],
+          [-2.618674, 51.454531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620468, 51.454495],
+          [-2.624275, 51.453472],
+          [-2.624819, 51.453312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621501, 51.45761],
+          [-2.622142, 51.45754],
+          [-2.622678, 51.457465],
+          [-2.622729, 51.457445],
+          [-2.62276, 51.457386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620435, 51.457058],
+          [-2.620843, 51.457425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625065, 51.461445],
+          [-2.624921, 51.46128],
+          [-2.62484, 51.461132],
+          [-2.624325, 51.460084],
+          [-2.624247, 51.459975],
+          [-2.624118, 51.459838],
+          [-2.624005, 51.459749],
+          [-2.62384, 51.459649],
+          [-2.623567, 51.45951],
+          [-2.623344, 51.459416],
+          [-2.623012, 51.459253],
+          [-2.622179, 51.458804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621755, 51.458976],
+          [-2.622669, 51.459464],
+          [-2.622206, 51.459797],
+          [-2.621724, 51.458988],
+          [-2.622179, 51.458804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623626, 51.452755],
+          [-2.6235, 51.452494],
+          [-2.623484, 51.452421],
+          [-2.623427, 51.452324],
+          [-2.623422, 51.452241],
+          [-2.623467, 51.452137],
+          [-2.623542, 51.452051],
+          [-2.623649, 51.451986],
+          [-2.623733, 51.451967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619923, 51.453937],
+          [-2.619908, 51.453868],
+          [-2.619932, 51.453833],
+          [-2.620351, 51.453609],
+          [-2.621069, 51.453404],
+          [-2.622076, 51.453094],
+          [-2.622293, 51.453008],
+          [-2.622433, 51.452936],
+          [-2.62257, 51.452749],
+          [-2.622677, 51.452559],
+          [-2.622724, 51.452343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620999, 51.454969],
+          [-2.622136, 51.454664]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621162, 51.455259],
+          [-2.62109, 51.455312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622136, 51.454664],
+          [-2.622317, 51.454924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62324, 51.455764],
+          [-2.623116, 51.455609],
+          [-2.623005, 51.455516],
+          [-2.62293, 51.455419],
+          [-2.622856, 51.455274],
+          [-2.622865, 51.455224],
+          [-2.622927, 51.455186],
+          [-2.624606, 51.454701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62324, 51.455764],
+          [-2.624008, 51.455585],
+          [-2.624431, 51.455506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622812, 51.455659],
+          [-2.621541, 51.455873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619336, 51.452868],
+          [-2.619272, 51.452914],
+          [-2.6192, 51.452942],
+          [-2.618708, 51.453016],
+          [-2.618646, 51.453038],
+          [-2.618226, 51.45327],
+          [-2.618034, 51.453342],
+          [-2.617401, 51.453514],
+          [-2.617224, 51.453579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617895, 51.452719],
+          [-2.618669, 51.452821],
+          [-2.619276, 51.452864],
+          [-2.619821, 51.452872],
+          [-2.620206, 51.452853],
+          [-2.620666, 51.452799],
+          [-2.621013, 51.452734],
+          [-2.621414, 51.452644],
+          [-2.6219, 51.452509],
+          [-2.622279, 51.452441],
+          [-2.622724, 51.452343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617944, 51.45534],
+          [-2.618047, 51.455314],
+          [-2.618594, 51.455215],
+          [-2.619098, 51.455108]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616127, 51.456063],
+          [-2.616381, 51.456177],
+          [-2.616862, 51.456454],
+          [-2.617224, 51.456697],
+          [-2.617547, 51.456968],
+          [-2.617796, 51.457219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616127, 51.456063],
+          [-2.617503, 51.455361],
+          [-2.61633, 51.454848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617932, 51.455047],
+          [-2.618047, 51.455314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619688, 51.456114],
+          [-2.620793, 51.455814],
+          [-2.621326, 51.455659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610279, 51.456611],
+          [-2.611031, 51.455701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611031, 51.455701],
+          [-2.611785, 51.455953],
+          [-2.613912, 51.456623],
+          [-2.613318, 51.457237],
+          [-2.613229, 51.457277],
+          [-2.613078, 51.457278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610279, 51.456611],
+          [-2.611499, 51.457012],
+          [-2.611197, 51.457404]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609944, 51.456777],
+          [-2.609282, 51.456494],
+          [-2.60925, 51.456486],
+          [-2.609183, 51.456497],
+          [-2.608685, 51.457174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611039, 51.456863],
+          [-2.611614, 51.456176],
+          [-2.611785, 51.455953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611031, 51.455701],
+          [-2.611557, 51.455082],
+          [-2.611844, 51.455013],
+          [-2.613387, 51.454369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613942, 51.454899],
+          [-2.613705, 51.455002],
+          [-2.613453, 51.45517],
+          [-2.613182, 51.455377],
+          [-2.612702, 51.455787],
+          [-2.613312, 51.456184],
+          [-2.613535, 51.45631],
+          [-2.613877, 51.456464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616081, 51.454451],
+          [-2.615316, 51.454993],
+          [-2.614608, 51.455356],
+          [-2.614518, 51.455411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617462, 51.452752],
+          [-2.616846, 51.452952],
+          [-2.616722, 51.452968],
+          [-2.616594, 51.452974],
+          [-2.616457, 51.452956],
+          [-2.615914, 51.45286],
+          [-2.615489, 51.452866],
+          [-2.615246, 51.45292],
+          [-2.61502, 51.453023],
+          [-2.614953, 51.453064],
+          [-2.614931, 51.453092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611286, 51.452794],
+          [-2.611307, 51.453172],
+          [-2.611313, 51.453648],
+          [-2.611357, 51.454149]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611357, 51.454149],
+          [-2.611045, 51.454306],
+          [-2.61055, 51.454661],
+          [-2.61014, 51.454938],
+          [-2.610043, 51.454983],
+          [-2.609924, 51.455011],
+          [-2.609809, 51.455005]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611033, 51.457413],
+          [-2.611197, 51.457404],
+          [-2.611415, 51.457426],
+          [-2.611857, 51.457526],
+          [-2.612659, 51.457681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609052, 51.457414],
+          [-2.61018, 51.457404],
+          [-2.610763, 51.457411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610613, 51.454612],
+          [-2.610691, 51.454655],
+          [-2.610712, 51.454702],
+          [-2.610782, 51.455013],
+          [-2.610781, 51.455055],
+          [-2.610598, 51.455385],
+          [-2.610435, 51.455602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613387, 51.454369],
+          [-2.613361, 51.454305],
+          [-2.613384, 51.454262],
+          [-2.613557, 51.454092],
+          [-2.613589, 51.454034],
+          [-2.61361, 51.453899],
+          [-2.61355, 51.453713],
+          [-2.613576, 51.453617],
+          [-2.613815, 51.453371],
+          [-2.61398, 51.453296],
+          [-2.614182, 51.453219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624509, 51.460452],
+          [-2.624664, 51.4604],
+          [-2.625308, 51.460078],
+          [-2.625389, 51.46003],
+          [-2.625448, 51.459966],
+          [-2.62548, 51.459906],
+          [-2.625481, 51.459813],
+          [-2.625217, 51.459008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620978, 51.46554],
+          [-2.621588, 51.464719],
+          [-2.621049, 51.464147],
+          [-2.620582, 51.463705],
+          [-2.62011, 51.463307],
+          [-2.619747, 51.462922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612907, 51.456308],
+          [-2.611857, 51.457526]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611608, 51.45146],
+          [-2.612224, 51.451239],
+          [-2.612507, 51.451112],
+          [-2.6126, 51.451043],
+          [-2.612673, 51.450971],
+          [-2.612721, 51.450895],
+          [-2.612877, 51.450488],
+          [-2.61312, 51.449916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610393, 51.451027],
+          [-2.610598, 51.45098],
+          [-2.610637, 51.450959],
+          [-2.610611, 51.450924],
+          [-2.610612, 51.450896],
+          [-2.610625, 51.450875],
+          [-2.61066, 51.45086],
+          [-2.611007, 51.450762],
+          [-2.611062, 51.45066],
+          [-2.61114, 51.450616],
+          [-2.611473, 51.450544],
+          [-2.612062, 51.450453],
+          [-2.612313, 51.450442],
+          [-2.612587, 51.450447],
+          [-2.613339, 51.450549],
+          [-2.614167, 51.450624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616651, 51.451187],
+          [-2.616849, 51.451232],
+          [-2.617358, 51.451374]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611918, 51.451718],
+          [-2.613633, 51.451081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610926, 51.452296],
+          [-2.612128, 51.451892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611852, 51.451002],
+          [-2.6126, 51.451043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610637, 51.450959],
+          [-2.61068, 51.450961],
+          [-2.610997, 51.450887],
+          [-2.611285, 51.451133],
+          [-2.611608, 51.45146],
+          [-2.61236, 51.452081],
+          [-2.612538, 51.452172],
+          [-2.612908, 51.452784]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609489, 51.450927],
+          [-2.609942, 51.450836],
+          [-2.610411, 51.450724],
+          [-2.610475, 51.450737],
+          [-2.610581, 51.450857],
+          [-2.610625, 51.450875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622575, 51.455284],
+          [-2.62194, 51.455481],
+          [-2.621326, 51.455659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6173, 51.459884],
+          [-2.61901, 51.459507],
+          [-2.619162, 51.459447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618849, 51.459173],
+          [-2.61711, 51.45957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61711, 51.45957],
+          [-2.616974, 51.459502],
+          [-2.616843, 51.459414],
+          [-2.616749, 51.459335],
+          [-2.616598, 51.459153],
+          [-2.616531, 51.458977],
+          [-2.616521, 51.45884],
+          [-2.616625, 51.458577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616771, 51.458564],
+          [-2.616702, 51.458366],
+          [-2.616715, 51.45833],
+          [-2.616765, 51.458302],
+          [-2.617021, 51.458188],
+          [-2.617759, 51.457902],
+          [-2.618159, 51.457778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619858, 51.46003],
+          [-2.620099, 51.459905],
+          [-2.620249, 51.45981],
+          [-2.620273, 51.459741],
+          [-2.620227, 51.45967],
+          [-2.620184, 51.459642],
+          [-2.620124, 51.459624],
+          [-2.619993, 51.459627],
+          [-2.619876, 51.45967],
+          [-2.61959, 51.459802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617462, 51.452752],
+          [-2.617095, 51.452473],
+          [-2.617016, 51.452392],
+          [-2.617013, 51.452332],
+          [-2.617099, 51.452117],
+          [-2.617105, 51.45205],
+          [-2.617097, 51.452009],
+          [-2.617019, 51.451923],
+          [-2.616872, 51.451841],
+          [-2.616722, 51.45179],
+          [-2.616507, 51.451745],
+          [-2.616119, 51.451689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62113, 51.451417],
+          [-2.621045, 51.451485],
+          [-2.620901, 51.451519],
+          [-2.620781, 51.451521],
+          [-2.620637, 51.451488],
+          [-2.621087, 51.450922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6219, 51.452509],
+          [-2.622139, 51.452405],
+          [-2.622475, 51.452293],
+          [-2.62254, 51.452245],
+          [-2.622587, 51.45219],
+          [-2.622595, 51.452137],
+          [-2.62258, 51.4521],
+          [-2.622367, 51.451941],
+          [-2.622299, 51.451908],
+          [-2.622208, 51.451887],
+          [-2.621764, 51.45184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620025, 51.452005],
+          [-2.620119, 51.45156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620752, 51.451924],
+          [-2.62047, 51.451991],
+          [-2.619364, 51.452027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620593, 51.451677],
+          [-2.620119, 51.45156],
+          [-2.619499, 51.451376],
+          [-2.619469, 51.451451],
+          [-2.619364, 51.452027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618845, 51.457584],
+          [-2.618407, 51.45677],
+          [-2.618078, 51.456188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618168, 51.457739],
+          [-2.618252, 51.457727],
+          [-2.618845, 51.457584],
+          [-2.620263, 51.457296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616862, 51.456454],
+          [-2.617813, 51.456225],
+          [-2.618145, 51.456179],
+          [-2.618363, 51.45614],
+          [-2.619551, 51.455887]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614777, 51.459014],
+          [-2.615721, 51.458626],
+          [-2.615904, 51.4586],
+          [-2.616625, 51.458577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61626, 51.457996],
+          [-2.61744, 51.457366],
+          [-2.61766, 51.457267],
+          [-2.617796, 51.457219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614466, 51.455789],
+          [-2.614604, 51.455855],
+          [-2.614715, 51.45595],
+          [-2.614758, 51.456053],
+          [-2.614702, 51.456644],
+          [-2.614658, 51.456905],
+          [-2.614587, 51.457178],
+          [-2.61432, 51.45771],
+          [-2.614168, 51.457966],
+          [-2.614053, 51.458133],
+          [-2.61394, 51.458224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615721, 51.458626],
+          [-2.614592, 51.457817],
+          [-2.61451, 51.457774],
+          [-2.61432, 51.45771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615904, 51.4586],
+          [-2.615898, 51.458556],
+          [-2.615919, 51.458514],
+          [-2.616258, 51.45822],
+          [-2.615764, 51.457865],
+          [-2.615121, 51.458197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616168, 51.461355],
+          [-2.617292, 51.461155],
+          [-2.616726, 51.460011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626728, 51.460631],
+          [-2.626957, 51.460635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609944, 51.456777],
+          [-2.610138, 51.456736],
+          [-2.610198, 51.456696],
+          [-2.610279, 51.456611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616651, 51.451187],
+          [-2.617112, 51.450976],
+          [-2.617241, 51.450882],
+          [-2.617319, 51.450772],
+          [-2.617339, 51.450704],
+          [-2.617283, 51.450319],
+          [-2.616964, 51.45031],
+          [-2.616795, 51.450343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614167, 51.450624],
+          [-2.614498, 51.450608],
+          [-2.614841, 51.450564],
+          [-2.614954, 51.450563],
+          [-2.615639, 51.450656],
+          [-2.615973, 51.450666],
+          [-2.616416, 51.450637],
+          [-2.616529, 51.450607],
+          [-2.616604, 51.450577],
+          [-2.616676, 51.450514],
+          [-2.616744, 51.45038],
+          [-2.616795, 51.450343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609314, 51.451248],
+          [-2.60955, 51.451304],
+          [-2.609777, 51.451391],
+          [-2.609988, 51.451486],
+          [-2.610366, 51.4517],
+          [-2.61056, 51.451846],
+          [-2.61071, 51.45199],
+          [-2.610926, 51.452296],
+          [-2.610983, 51.452405],
+          [-2.611015, 51.452502],
+          [-2.611013, 51.452595],
+          [-2.610994, 51.452642]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610776, 51.454129],
+          [-2.610597, 51.454077],
+          [-2.610512, 51.454042],
+          [-2.610255, 51.453849],
+          [-2.610202, 51.453821],
+          [-2.610004, 51.453787]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61101, 51.454239],
+          [-2.610545, 51.454585],
+          [-2.610521, 51.454614],
+          [-2.610528, 51.454641],
+          [-2.61055, 51.454661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609617, 51.451928],
+          [-2.609117, 51.451706],
+          [-2.609404, 51.451264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622638, 51.451304],
+          [-2.623177, 51.451387],
+          [-2.623388, 51.451386],
+          [-2.623663, 51.451357],
+          [-2.62373, 51.451382],
+          [-2.623769, 51.451419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621559, 51.450233],
+          [-2.620977, 51.450078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621087, 51.450922],
+          [-2.621559, 51.450233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621974, 51.451088],
+          [-2.622327, 51.450427],
+          [-2.62239, 51.450274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620148, 51.450697],
+          [-2.619832, 51.451122],
+          [-2.620225, 51.451234],
+          [-2.620473, 51.450858],
+          [-2.620487, 51.450777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619831, 51.450576],
+          [-2.620148, 51.450697],
+          [-2.620352, 51.450736],
+          [-2.620487, 51.450777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618981, 51.454929],
+          [-2.619946, 51.454651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611357, 51.454149],
+          [-2.611663, 51.454053],
+          [-2.611926, 51.453993],
+          [-2.612237, 51.453976],
+          [-2.612662, 51.453974],
+          [-2.612736, 51.45396],
+          [-2.613042, 51.453819],
+          [-2.613442, 51.453555],
+          [-2.613668, 51.453365],
+          [-2.613988, 51.453196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613668, 51.453365],
+          [-2.613737, 51.453103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618139, 51.451459],
+          [-2.618037, 51.451442],
+          [-2.617927, 51.451386],
+          [-2.617885, 51.45134],
+          [-2.617895, 51.451291],
+          [-2.61794, 51.451236],
+          [-2.617969, 51.451172],
+          [-2.61798, 51.451106],
+          [-2.617943, 51.45091],
+          [-2.617971, 51.450867],
+          [-2.618022, 51.450839],
+          [-2.618069, 51.450822],
+          [-2.618207, 51.450815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618203, 51.450912],
+          [-2.618365, 51.450936],
+          [-2.618975, 51.451384],
+          [-2.619074, 51.451473],
+          [-2.619067, 51.451574],
+          [-2.618533, 51.451545],
+          [-2.618476, 51.451562],
+          [-2.618345, 51.45163],
+          [-2.618299, 51.451615],
+          [-2.61812, 51.451598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620487, 51.450777],
+          [-2.620737, 51.450505],
+          [-2.620829, 51.450374],
+          [-2.620886, 51.450253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616258, 51.450729],
+          [-2.616648, 51.450809],
+          [-2.616933, 51.450898],
+          [-2.617112, 51.450976]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622711, 51.452407],
+          [-2.622808, 51.452326],
+          [-2.622854, 51.45211],
+          [-2.622919, 51.45193],
+          [-2.622989, 51.451817],
+          [-2.623086, 51.451728],
+          [-2.623208, 51.451652],
+          [-2.623434, 51.451535],
+          [-2.623875, 51.451387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6184, 51.454254],
+          [-2.619022, 51.45406],
+          [-2.619196, 51.454016],
+          [-2.619327, 51.453991],
+          [-2.619785, 51.453955],
+          [-2.620091, 51.453911],
+          [-2.621106, 51.453685],
+          [-2.6216, 51.453547],
+          [-2.622034, 51.453382],
+          [-2.62263, 51.453139],
+          [-2.623056, 51.452907],
+          [-2.623197, 51.452818],
+          [-2.62325, 51.452771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622307, 51.451155],
+          [-2.622668, 51.451237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618551, 51.453388],
+          [-2.618964, 51.453956],
+          [-2.619022, 51.45406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615249, 51.455483],
+          [-2.615251, 51.455533],
+          [-2.615286, 51.455626],
+          [-2.615329, 51.45567],
+          [-2.616127, 51.456063]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627045, 51.460431],
+          [-2.626728, 51.460631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625065, 51.461445],
+          [-2.625976, 51.462358],
+          [-2.626022, 51.462381],
+          [-2.62616, 51.462406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618226, 51.45327],
+          [-2.618318, 51.453293],
+          [-2.619124, 51.453323],
+          [-2.619482, 51.45332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620093, 51.457894],
+          [-2.620663, 51.458647],
+          [-2.620716, 51.458737],
+          [-2.620733, 51.458833],
+          [-2.620709, 51.458973],
+          [-2.620716, 51.459041],
+          [-2.621058, 51.459574],
+          [-2.621307, 51.45993],
+          [-2.621893, 51.460515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615502, 51.456978],
+          [-2.615605, 51.457031],
+          [-2.615656, 51.457079],
+          [-2.615686, 51.457268],
+          [-2.615751, 51.457324],
+          [-2.616023, 51.45749],
+          [-2.616113, 51.457529],
+          [-2.616186, 51.457548],
+          [-2.61625, 51.457551],
+          [-2.61632, 51.457541],
+          [-2.616503, 51.457471],
+          [-2.617547, 51.456968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615508, 51.456972],
+          [-2.61554, 51.456967],
+          [-2.615578, 51.45693],
+          [-2.615576, 51.456908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609682, 51.455218],
+          [-2.609874, 51.455336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620487, 51.450777],
+          [-2.621087, 51.450922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614167, 51.450624],
+          [-2.614768, 51.450752],
+          [-2.615887, 51.451043],
+          [-2.616214, 51.451121],
+          [-2.616612, 51.451187],
+          [-2.616651, 51.451187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619374, 51.451599],
+          [-2.619067, 51.451574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618032, 51.452174],
+          [-2.618002, 51.452344],
+          [-2.617871, 51.452546],
+          [-2.617785, 51.452596],
+          [-2.617762, 51.452642],
+          [-2.617783, 51.452667],
+          [-2.617895, 51.452719]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623244, 51.450344],
+          [-2.622788, 51.450289],
+          [-2.622589, 51.450275],
+          [-2.621918, 51.450267],
+          [-2.621559, 51.450233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618844, 51.452005],
+          [-2.618345, 51.45163]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624638, 51.450446],
+          [-2.624382, 51.450494],
+          [-2.623892, 51.450486],
+          [-2.623531, 51.45047],
+          [-2.623415, 51.450445],
+          [-2.623237, 51.450361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621929, 51.45142],
+          [-2.622178, 51.451517],
+          [-2.622307, 51.451155]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622394, 51.455577],
+          [-2.622245, 51.455383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622607, 51.45554],
+          [-2.622452, 51.455324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622035, 51.455654],
+          [-2.62194, 51.455481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620843, 51.457425],
+          [-2.621007, 51.45753],
+          [-2.621229, 51.457604],
+          [-2.621286, 51.457612],
+          [-2.621501, 51.45761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624909, 51.455313],
+          [-2.624669, 51.455006],
+          [-2.624623, 51.454849],
+          [-2.624606, 51.454701],
+          [-2.624603, 51.454424],
+          [-2.624579, 51.45435],
+          [-2.624522, 51.454284],
+          [-2.622317, 51.454924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625161, 51.453756],
+          [-2.624088, 51.454087],
+          [-2.622136, 51.454664]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619306, 51.455459],
+          [-2.619413, 51.455442],
+          [-2.619497, 51.455442],
+          [-2.619606, 51.455473],
+          [-2.619682, 51.455554],
+          [-2.619859, 51.455856],
+          [-2.61984, 51.455936],
+          [-2.619757, 51.456096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613065, 51.450038],
+          [-2.612064, 51.450064],
+          [-2.611621, 51.450094],
+          [-2.611429, 51.450131]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615673, 51.450194],
+          [-2.616724, 51.450319],
+          [-2.616795, 51.450343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612031, 51.452789],
+          [-2.611801, 51.452528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614518, 51.455411],
+          [-2.613942, 51.454899],
+          [-2.613387, 51.454369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614723, 51.455568],
+          [-2.61464, 51.455521],
+          [-2.614518, 51.455411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620973, 51.461068],
+          [-2.622284, 51.460276],
+          [-2.623526, 51.459491],
+          [-2.623734, 51.459381],
+          [-2.623874, 51.459325],
+          [-2.624107, 51.459258],
+          [-2.625217, 51.459008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622678, 51.457465],
+          [-2.623079, 51.458298],
+          [-2.623156, 51.458364],
+          [-2.623209, 51.458393],
+          [-2.623264, 51.458405],
+          [-2.62353, 51.458405],
+          [-2.624585, 51.458379],
+          [-2.624689, 51.458409],
+          [-2.624765, 51.458457],
+          [-2.624841, 51.458531],
+          [-2.625149, 51.45902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613103, 51.449949],
+          [-2.613607, 51.450021],
+          [-2.614594, 51.450146],
+          [-2.614786, 51.450157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613613, 51.453576],
+          [-2.614225, 51.453379],
+          [-2.614498, 51.453332],
+          [-2.61486, 51.453328],
+          [-2.616096, 51.45339],
+          [-2.616157, 51.453379],
+          [-2.616186, 51.453315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618284, 51.450266],
+          [-2.618207, 51.450815],
+          [-2.618153, 51.451376],
+          [-2.618032, 51.452174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617895, 51.452719],
+          [-2.617817, 51.45274],
+          [-2.617658, 51.452739],
+          [-2.617462, 51.452752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621162, 51.455259],
+          [-2.621056, 51.455264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622317, 51.454924],
+          [-2.621162, 51.455259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619346, 51.455526],
+          [-2.618826, 51.455638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614766, 51.457615],
+          [-2.614592, 51.457817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614587, 51.457178],
+          [-2.61486, 51.457221],
+          [-2.615035, 51.457211],
+          [-2.615213, 51.457162],
+          [-2.61538, 51.457079],
+          [-2.615502, 51.456978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621923, 51.456505],
+          [-2.621397, 51.455641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622987, 51.462494],
+          [-2.623891, 51.461978],
+          [-2.624963, 51.461482],
+          [-2.625065, 51.461445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626728, 51.460631],
+          [-2.625162, 51.461406],
+          [-2.625065, 51.461445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620261, 51.456913],
+          [-2.620435, 51.457058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620483, 51.456969],
+          [-2.620435, 51.457058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620129, 51.457047],
+          [-2.620099, 51.456841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62003, 51.456834],
+          [-2.620088, 51.456982],
+          [-2.620129, 51.457047]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617796, 51.457219],
+          [-2.618543, 51.457028],
+          [-2.619986, 51.456732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609306, 51.456919],
+          [-2.609944, 51.456777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620503, 51.457805],
+          [-2.621084, 51.457683]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623443, 51.44994],
+          [-2.623316, 51.450166],
+          [-2.623133, 51.450578],
+          [-2.622847, 51.451049],
+          [-2.622668, 51.451237],
+          [-2.622638, 51.451304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620352, 51.450736],
+          [-2.620487, 51.45067],
+          [-2.620737, 51.450505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621087, 51.450922],
+          [-2.621883, 51.451082],
+          [-2.621974, 51.451088]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622456, 51.452918],
+          [-2.622712, 51.452876],
+          [-2.622893, 51.452826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622893, 51.452826],
+          [-2.622721, 51.452817],
+          [-2.622624, 51.452786],
+          [-2.62257, 51.452749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618667, 51.463392],
+          [-2.620978, 51.46554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610789, 51.455149],
+          [-2.610741, 51.455138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621974, 51.451088],
+          [-2.622307, 51.451155]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615695, 51.460237],
+          [-2.6173, 51.459884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6173, 51.459884],
+          [-2.61711, 51.45957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622179, 51.458804],
+          [-2.621583, 51.458179],
+          [-2.621157, 51.457781],
+          [-2.621084, 51.457683]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62324, 51.455764],
+          [-2.623336, 51.455977],
+          [-2.623451, 51.4561]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62469, 51.463453],
+          [-2.624609, 51.463424],
+          [-2.62456, 51.463417],
+          [-2.624558, 51.463452],
+          [-2.624587, 51.463504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618602, 51.452003],
+          [-2.618737, 51.451924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619364, 51.452027],
+          [-2.619338, 51.452141],
+          [-2.618032, 51.452174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615576, 51.456908],
+          [-2.615545, 51.456913],
+          [-2.615502, 51.456951],
+          [-2.615508, 51.456972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615502, 51.456978],
+          [-2.615508, 51.456972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615576, 51.456908],
+          [-2.616381, 51.456177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619946, 51.454651],
+          [-2.620468, 51.454495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612908, 51.452784],
+          [-2.613033, 51.452822],
+          [-2.61388, 51.453159],
+          [-2.613988, 51.453196],
+          [-2.614182, 51.453219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620847, 51.45499],
+          [-2.620999, 51.454969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620894, 51.455051],
+          [-2.620967, 51.455011],
+          [-2.620999, 51.454969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620843, 51.457425],
+          [-2.621084, 51.457683]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621084, 51.457683],
+          [-2.621294, 51.457638],
+          [-2.621501, 51.45761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626465, 51.455496],
+          [-2.626492, 51.455485]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619926, 51.456563],
+          [-2.620002, 51.45672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619926, 51.456563],
+          [-2.619688, 51.456114],
+          [-2.619067, 51.455053],
+          [-2.618674, 51.454531],
+          [-2.618081, 51.454722],
+          [-2.617726, 51.454783],
+          [-2.61749, 51.45478],
+          [-2.617328, 51.454761],
+          [-2.616845, 51.454639],
+          [-2.616748, 51.454633],
+          [-2.616644, 51.454653],
+          [-2.616568, 51.454685],
+          [-2.615431, 51.455446],
+          [-2.615249, 51.455483],
+          [-2.614972, 51.455492],
+          [-2.614799, 51.455526],
+          [-2.614739, 51.455554],
+          [-2.614466, 51.455789],
+          [-2.613877, 51.456464],
+          [-2.612921, 51.457445],
+          [-2.612659, 51.457681],
+          [-2.612808, 51.457722],
+          [-2.613784, 51.45814],
+          [-2.61394, 51.458224],
+          [-2.614094, 51.458336],
+          [-2.614467, 51.458667],
+          [-2.615396, 51.459742],
+          [-2.6156, 51.460026],
+          [-2.616392, 51.461865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609123, 51.457895],
+          [-2.609191, 51.45789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609335, 51.457797],
+          [-2.609165, 51.457713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609877, 51.454771],
+          [-2.609773, 51.45496],
+          [-2.609588, 51.455208],
+          [-2.609374, 51.455431],
+          [-2.60925, 51.455512]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608992, 51.455747],
+          [-2.609288, 51.455583],
+          [-2.609456, 51.455458],
+          [-2.609619, 51.455297],
+          [-2.609835, 51.454957],
+          [-2.609877, 51.454771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620002, 51.45672],
+          [-2.619969, 51.45676],
+          [-2.619972, 51.456789],
+          [-2.62003, 51.456834],
+          [-2.620126, 51.456836],
+          [-2.620169, 51.456816],
+          [-2.620194, 51.456763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620335, 51.45669],
+          [-2.621748, 51.456542],
+          [-2.623451, 51.4561],
+          [-2.623964, 51.455991],
+          [-2.624487, 51.455953],
+          [-2.624977, 51.455983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609858, 51.452964],
+          [-2.609661, 51.452751],
+          [-2.609412, 51.452598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60993, 51.453131],
+          [-2.609896, 51.453045]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609877, 51.454771],
+          [-2.610044, 51.454248],
+          [-2.609947, 51.453282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620095, 51.456701],
+          [-2.619926, 51.456563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620194, 51.456763],
+          [-2.620335, 51.45669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620335, 51.45669],
+          [-2.620135, 51.456709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617141, 51.463341],
+          [-2.618002, 51.464164],
+          [-2.618304, 51.464585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625696, 51.4558],
+          [-2.625975, 51.45569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626465, 51.455496],
+          [-2.625975, 51.45569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626465, 51.455496],
+          [-2.626243, 51.455537],
+          [-2.625975, 51.45569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625975, 51.45569],
+          [-2.626259, 51.455622],
+          [-2.626465, 51.455496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624977, 51.455983],
+          [-2.625155, 51.455999],
+          [-2.625327, 51.45597],
+          [-2.625592, 51.455872],
+          [-2.625696, 51.4558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625696, 51.4558],
+          [-2.625564, 51.45583],
+          [-2.625243, 51.455949],
+          [-2.624977, 51.455983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620135, 51.456709],
+          [-2.620095, 51.456701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620194, 51.456763],
+          [-2.620135, 51.456709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620095, 51.456701],
+          [-2.620002, 51.45672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625316, 51.451091],
+          [-2.625637, 51.451555],
+          [-2.626427, 51.452604],
+          [-2.626512, 51.452758],
+          [-2.626686, 51.453181],
+          [-2.626888, 51.453812],
+          [-2.626923, 51.453993],
+          [-2.626927, 51.454587],
+          [-2.627017, 51.454968],
+          [-2.627148, 51.455335],
+          [-2.627422, 51.455695],
+          [-2.627569, 51.455852],
+          [-2.627872, 51.456122],
+          [-2.628322, 51.45644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624373, 51.450113],
+          [-2.624517, 51.450192],
+          [-2.624672, 51.450316],
+          [-2.625316, 51.451091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629224, 51.457314],
+          [-2.629191, 51.457087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626172, 51.462738],
+          [-2.6264, 51.462588],
+          [-2.626574, 51.462527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624548, 51.450091],
+          [-2.624244, 51.449966],
+          [-2.623849, 51.449841],
+          [-2.622805, 51.449613],
+          [-2.622628, 51.449544],
+          [-2.622474, 51.449441],
+          [-2.622415, 51.449381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622096, 51.449695],
+          [-2.623712, 51.449892],
+          [-2.624054, 51.449966],
+          [-2.624373, 51.450113]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621812, 51.449805],
+          [-2.622322, 51.449815],
+          [-2.623443, 51.44994],
+          [-2.623871, 51.449992],
+          [-2.624373, 51.450113]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625316, 51.451091],
+          [-2.625129, 51.450719],
+          [-2.624913, 51.450411],
+          [-2.624813, 51.450295],
+          [-2.624548, 51.450091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609076, 51.457945],
+          [-2.609153, 51.45784],
+          [-2.609139, 51.457758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613311, 51.449522],
+          [-2.612735, 51.449568],
+          [-2.612194, 51.449637],
+          [-2.608838, 51.450419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629191, 51.457087],
+          [-2.629026, 51.456845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613714, 51.449487],
+          [-2.613311, 51.449522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613311, 51.449522],
+          [-2.613515, 51.449545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624548, 51.450091],
+          [-2.62431, 51.449935],
+          [-2.622447, 51.448982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629742, 51.457704],
+          [-2.629931, 51.458117],
+          [-2.630015, 51.458403],
+          [-2.630021, 51.458659],
+          [-2.629746, 51.459675],
+          [-2.62971, 51.460033],
+          [-2.629747, 51.460785],
+          [-2.629814, 51.461069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618284, 51.450266],
+          [-2.618745, 51.450343],
+          [-2.619831, 51.450576],
+          [-2.620111, 51.450618],
+          [-2.620213, 51.45062],
+          [-2.620384, 51.450585],
+          [-2.620458, 51.450554],
+          [-2.620625, 51.45042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622129, 51.464938],
+          [-2.622556, 51.464588],
+          [-2.622885, 51.464386],
+          [-2.624325, 51.463658],
+          [-2.624361, 51.463611],
+          [-2.624419, 51.463583],
+          [-2.624786, 51.463407],
+          [-2.624902, 51.463378],
+          [-2.625956, 51.462869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627467, 51.462042],
+          [-2.627789, 51.461761],
+          [-2.628815, 51.461347],
+          [-2.628986, 51.461256],
+          [-2.629096, 51.461159],
+          [-2.629151, 51.461039],
+          [-2.629134, 51.460816],
+          [-2.628936, 51.460298],
+          [-2.628926, 51.459896],
+          [-2.62898, 51.459495],
+          [-2.629568, 51.45879],
+          [-2.629663, 51.458528],
+          [-2.629698, 51.458257],
+          [-2.629636, 51.458],
+          [-2.629577, 51.457874],
+          [-2.629224, 51.457314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629024, 51.456954],
+          [-2.629224, 51.457314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629742, 51.457704],
+          [-2.629672, 51.457528],
+          [-2.629463, 51.457242],
+          [-2.629208, 51.456969],
+          [-2.629026, 51.456845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629191, 51.457087],
+          [-2.629742, 51.457704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628322, 51.45644],
+          [-2.628536, 51.456625],
+          [-2.629024, 51.456954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629026, 51.456845],
+          [-2.62856, 51.456553],
+          [-2.628322, 51.45644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629024, 51.456954],
+          [-2.629191, 51.457087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6264, 51.462588],
+          [-2.626235, 51.462515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620336, 51.456932],
+          [-2.621843, 51.457285],
+          [-2.622163, 51.457337],
+          [-2.62276, 51.457386],
+          [-2.624544, 51.457476],
+          [-2.625009, 51.457562],
+          [-2.625634, 51.457744],
+          [-2.625981, 51.457891],
+          [-2.626317, 51.45817],
+          [-2.626554, 51.458467],
+          [-2.626881, 51.459129],
+          [-2.627041, 51.459527],
+          [-2.627109, 51.459776],
+          [-2.627125, 51.460173],
+          [-2.627082, 51.460358],
+          [-2.626178, 51.462323],
+          [-2.62616, 51.462406],
+          [-2.626172, 51.46246],
+          [-2.626235, 51.462515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620126, 51.456836],
+          [-2.620208, 51.456896],
+          [-2.620336, 51.456932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620336, 51.456932],
+          [-2.620193, 51.456785]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626235, 51.462515],
+          [-2.626283, 51.462658]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624088, 51.454087],
+          [-2.624283, 51.454354]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618826, 51.455638],
+          [-2.618594, 51.455215]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616081, 51.454451],
+          [-2.615486, 51.454123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623396, 51.463984],
+          [-2.623989, 51.463677]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61728, 51.452172],
+          [-2.617339, 51.452077],
+          [-2.617325, 51.45195],
+          [-2.617285, 51.451752],
+          [-2.617302, 51.451624],
+          [-2.617332, 51.451501],
+          [-2.617462, 51.451304],
+          [-2.617481, 51.451154],
+          [-2.617408, 51.45048],
+          [-2.617377, 51.450367],
+          [-2.617356, 51.450349],
+          [-2.617285, 51.450339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609069, 51.455969],
+          [-2.608974, 51.455996],
+          [-2.608908, 51.455957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609363, 51.455629],
+          [-2.609288, 51.455583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613358, 51.450858],
+          [-2.613169, 51.450772],
+          [-2.612777, 51.45076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611967, 51.454662],
+          [-2.612466, 51.454235],
+          [-2.612569, 51.454115],
+          [-2.612662, 51.453974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624275, 51.453472],
+          [-2.624009, 51.4532],
+          [-2.623973, 51.453176],
+          [-2.623931, 51.453165],
+          [-2.623293, 51.453369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623119, 51.45391],
+          [-2.622358, 51.454128],
+          [-2.621932, 51.454213],
+          [-2.621858, 51.45412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621485, 51.456577],
+          [-2.621393, 51.456292],
+          [-2.62133, 51.456181],
+          [-2.621279, 51.45614],
+          [-2.621126, 51.456171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621583, 51.458179],
+          [-2.622414, 51.458103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620663, 51.458647],
+          [-2.619812, 51.458856],
+          [-2.618773, 51.459072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616598, 51.459153],
+          [-2.618583, 51.458747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624841, 51.458531],
+          [-2.625137, 51.458388],
+          [-2.625173, 51.458358],
+          [-2.625126, 51.458313],
+          [-2.624956, 51.458212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616811, 51.462761],
+          [-2.61824, 51.462479],
+          [-2.618415, 51.462805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620419, 51.461862],
+          [-2.621373, 51.461457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620177, 51.462304],
+          [-2.620494, 51.462609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61884, 51.456671],
+          [-2.618659, 51.456334]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610739, 51.454856],
+          [-2.610559, 51.454966],
+          [-2.610403, 51.455086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624062, 51.451127],
+          [-2.62408, 51.451181],
+          [-2.623609, 51.451267],
+          [-2.623234, 51.451323],
+          [-2.62319, 51.451347],
+          [-2.623177, 51.451387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624902, 51.451113],
+          [-2.624312, 51.45126],
+          [-2.623875, 51.451387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617508, 51.460509],
+          [-2.619847, 51.460023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622206, 51.459797],
+          [-2.622154, 51.459843],
+          [-2.622001, 51.45994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621738, 51.458349],
+          [-2.621148, 51.458552],
+          [-2.621295, 51.458718],
+          [-2.621892, 51.458513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615747, 51.459528],
+          [-2.615132, 51.458873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619427, 51.455666],
+          [-2.619294, 51.455695],
+          [-2.619226, 51.455721],
+          [-2.619191, 51.455741],
+          [-2.619177, 51.455766],
+          [-2.619177, 51.455797],
+          [-2.6192, 51.455832],
+          [-2.619239, 51.455849],
+          [-2.619531, 51.45589]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619825, 51.45849],
+          [-2.620451, 51.458363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616365, 51.461799],
+          [-2.617119, 51.46166],
+          [-2.617753, 51.461526],
+          [-2.617992, 51.461453],
+          [-2.618016, 51.461435],
+          [-2.618024, 51.461412],
+          [-2.617888, 51.461157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622616, 51.460613],
+          [-2.623337, 51.46033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611977, 51.455369],
+          [-2.611962, 51.455305],
+          [-2.611963, 51.455178],
+          [-2.611844, 51.455013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622129, 51.464938],
+          [-2.622044, 51.464892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615207, 51.452959],
+          [-2.615143, 51.45292],
+          [-2.615072, 51.452831],
+          [-2.615036, 51.452775],
+          [-2.615041, 51.452732],
+          [-2.615102, 51.452654],
+          [-2.615183, 51.4526],
+          [-2.615309, 51.452534],
+          [-2.615323, 51.452498],
+          [-2.615321, 51.452425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626532, 51.458441],
+          [-2.626277, 51.458501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627083, 51.459679],
+          [-2.626753, 51.459712],
+          [-2.626695, 51.459712],
+          [-2.626644, 51.459697],
+          [-2.626613, 51.459675],
+          [-2.62659, 51.45964],
+          [-2.626574, 51.459561],
+          [-2.62659, 51.459527],
+          [-2.626625, 51.459508],
+          [-2.627008, 51.459445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626987, 51.459392],
+          [-2.626688, 51.459435],
+          [-2.626624, 51.459427],
+          [-2.626562, 51.459409],
+          [-2.626515, 51.459381],
+          [-2.626483, 51.459346],
+          [-2.626464, 51.459305],
+          [-2.626464, 51.45927],
+          [-2.626483, 51.459232],
+          [-2.626524, 51.459199],
+          [-2.626565, 51.459181],
+          [-2.626881, 51.459129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627111, 51.4598],
+          [-2.626854, 51.459816],
+          [-2.626778, 51.459845],
+          [-2.626675, 51.459861],
+          [-2.626636, 51.459883],
+          [-2.62661, 51.45992],
+          [-2.626581, 51.459997],
+          [-2.626582, 51.460031],
+          [-2.626621, 51.460056],
+          [-2.626672, 51.460068],
+          [-2.627122, 51.460088]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627111, 51.460235],
+          [-2.626625, 51.460172],
+          [-2.626427, 51.460424],
+          [-2.626798, 51.460587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625534, 51.458951],
+          [-2.625617, 51.459139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625964, 51.458873],
+          [-2.625993, 51.458908],
+          [-2.626047, 51.458931],
+          [-2.6264, 51.458861],
+          [-2.626742, 51.458836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624973, 51.458738],
+          [-2.62508, 51.458704],
+          [-2.625114, 51.458686],
+          [-2.625135, 51.458655],
+          [-2.625135, 51.458632],
+          [-2.625055, 51.458503]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626565, 51.459181],
+          [-2.626481, 51.459183],
+          [-2.626002, 51.459236],
+          [-2.626073, 51.459442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627805, 51.456201],
+          [-2.627872, 51.456122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628335, 51.456567],
+          [-2.62826, 51.456401]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625453, 51.454223],
+          [-2.625589, 51.454125],
+          [-2.625626, 51.453856],
+          [-2.62568, 51.453575],
+          [-2.625754, 51.453319],
+          [-2.625729, 51.453195],
+          [-2.625698, 51.453116],
+          [-2.625626, 51.452985],
+          [-2.625519, 51.452831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622677, 51.452559],
+          [-2.622797, 51.452521],
+          [-2.622919, 51.452461],
+          [-2.623006, 51.452326],
+          [-2.623071, 51.45229],
+          [-2.623109, 51.452258],
+          [-2.623195, 51.452278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623063, 51.455567],
+          [-2.622825, 51.455604],
+          [-2.622806, 51.455633],
+          [-2.622812, 51.455659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61723, 51.453657],
+          [-2.61729, 51.453603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613582, 51.455084],
+          [-2.613417, 51.454938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613201, 51.454879],
+          [-2.613495, 51.455142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622721, 51.455672],
+          [-2.622849, 51.455953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610535, 51.452915],
+          [-2.610244, 51.452546]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623691, 51.462664],
+          [-2.623512, 51.462758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623811, 51.462933],
+          [-2.624132, 51.46275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613879, 51.454839],
+          [-2.614219, 51.45467],
+          [-2.614409, 51.454521],
+          [-2.614474, 51.454448],
+          [-2.614436, 51.454417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622902, 51.457917],
+          [-2.622418, 51.457981]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621353, 51.465035],
+          [-2.621466, 51.465075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62444, 51.463334],
+          [-2.62515, 51.463109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623165, 51.458694],
+          [-2.623009, 51.458447],
+          [-2.623018, 51.458416],
+          [-2.623046, 51.458399],
+          [-2.623156, 51.458364]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621664, 51.460287],
+          [-2.621878, 51.460203]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618544, 51.453959],
+          [-2.618685, 51.454165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618964, 51.453956],
+          [-2.618893, 51.453977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620878, 51.450271],
+          [-2.62116, 51.450353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618407, 51.45677],
+          [-2.618978, 51.45664]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621541, 51.461617],
+          [-2.621753, 51.461538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622663, 51.457787],
+          [-2.622824, 51.457761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612717, 51.455775],
+          [-2.612673, 51.455708],
+          [-2.61263, 51.455607],
+          [-2.612641, 51.455512],
+          [-2.612664, 51.455484],
+          [-2.612694, 51.455465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612556, 51.455345],
+          [-2.612494, 51.455387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612664, 51.455484],
+          [-2.612465, 51.45537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616096, 51.45458],
+          [-2.616452, 51.454765]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622974, 51.450841],
+          [-2.623266, 51.450899],
+          [-2.623351, 51.450896],
+          [-2.623538, 51.450871],
+          [-2.623615, 51.450871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62293, 51.450512],
+          [-2.622916, 51.450527],
+          [-2.623133, 51.450578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618656, 51.454504],
+          [-2.619111, 51.454379],
+          [-2.619244, 51.454558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616858, 51.459699],
+          [-2.616964, 51.459873],
+          [-2.616669, 51.459943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612416, 51.456153],
+          [-2.612586, 51.455928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612649, 51.457197],
+          [-2.612269, 51.457049]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612525, 51.456752],
+          [-2.612606, 51.456783],
+          [-2.612641, 51.456785],
+          [-2.612771, 51.456713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615375, 51.457562],
+          [-2.615603, 51.457437],
+          [-2.615751, 51.457324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620796, 51.456376],
+          [-2.620877, 51.456637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616803, 51.461055],
+          [-2.616746, 51.460939],
+          [-2.617148, 51.460862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615948, 51.453383],
+          [-2.615933, 51.453447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615378, 51.453354],
+          [-2.615362, 51.453417],
+          [-2.615443, 51.453456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615362, 51.453417],
+          [-2.615248, 51.453873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617617, 51.453456],
+          [-2.617909, 51.453587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622268, 51.458628],
+          [-2.622124, 51.458594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622549, 51.458457],
+          [-2.622008, 51.45863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625486, 51.459852],
+          [-2.625802, 51.45992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625036, 51.459547],
+          [-2.625064, 51.459591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625014, 51.459608],
+          [-2.625379, 51.459483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623948, 51.457444],
+          [-2.623957, 51.457539],
+          [-2.62399, 51.457568],
+          [-2.624377, 51.457594],
+          [-2.62442, 51.457573],
+          [-2.624448, 51.457469]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609127, 51.450569],
+          [-2.608857, 51.450656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615572, 51.456232],
+          [-2.6161, 51.456439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614395, 51.45828],
+          [-2.614842, 51.458001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621883, 51.451082],
+          [-2.621725, 51.451358]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62149, 51.451006],
+          [-2.621469, 51.451037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623295, 51.45546],
+          [-2.623234, 51.4554],
+          [-2.623202, 51.455354],
+          [-2.622923, 51.455406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617317, 51.45988],
+          [-2.617359, 51.459962],
+          [-2.617797, 51.459868],
+          [-2.617748, 51.459782]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616437, 51.459145],
+          [-2.616582, 51.459113]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624366, 51.463448],
+          [-2.624496, 51.463374]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614592, 51.457817],
+          [-2.614191, 51.458073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614378, 51.457593],
+          [-2.614604, 51.457665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618462, 51.456325],
+          [-2.618363, 51.45614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617593, 51.454783],
+          [-2.61767, 51.454612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617831, 51.454938],
+          [-2.617726, 51.454783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618224, 51.454678],
+          [-2.617957, 51.454505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624859, 51.461968],
+          [-2.624978, 51.46194],
+          [-2.625112, 51.461873],
+          [-2.625215, 51.461753],
+          [-2.625313, 51.461698]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62547, 51.462514],
+          [-2.62566, 51.462438],
+          [-2.625666, 51.462347],
+          [-2.625724, 51.462285],
+          [-2.625841, 51.462224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615674, 51.457146],
+          [-2.615796, 51.457068],
+          [-2.615836, 51.457026],
+          [-2.615857, 51.45698],
+          [-2.615983, 51.456963],
+          [-2.616057, 51.456971],
+          [-2.616647, 51.457402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620015, 51.465471],
+          [-2.619713, 51.465597],
+          [-2.619595, 51.46559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610917, 51.451508],
+          [-2.610768, 51.451359],
+          [-2.610772, 51.451336],
+          [-2.611285, 51.451133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620385, 51.453184],
+          [-2.619482, 51.45332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611976, 51.456383],
+          [-2.612035, 51.456308],
+          [-2.611614, 51.456176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618669, 51.453552],
+          [-2.619514, 51.453528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622728, 51.461815],
+          [-2.622476, 51.461637],
+          [-2.622307, 51.461752],
+          [-2.621969, 51.461949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621202, 51.464309],
+          [-2.620865, 51.464454],
+          [-2.620904, 51.464522],
+          [-2.620921, 51.464582],
+          [-2.620901, 51.464627],
+          [-2.620871, 51.464646],
+          [-2.620798, 51.464663],
+          [-2.620687, 51.464638],
+          [-2.620633, 51.464608],
+          [-2.620173, 51.464791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619211, 51.464868],
+          [-2.619105, 51.464762],
+          [-2.618606, 51.464988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612275, 51.453104],
+          [-2.612305, 51.453019],
+          [-2.612278, 51.453],
+          [-2.612254, 51.452788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612151, 51.452875],
+          [-2.612139, 51.45279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613759, 51.457543],
+          [-2.614051, 51.457669],
+          [-2.614139, 51.457664],
+          [-2.61432, 51.45771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613801, 51.450719],
+          [-2.613825, 51.450593]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613262, 51.457707],
+          [-2.613125, 51.457859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61364, 51.457624],
+          [-2.613502, 51.457575],
+          [-2.61321, 51.457896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618304, 51.463022],
+          [-2.618492, 51.462943],
+          [-2.618726, 51.463172],
+          [-2.618717, 51.463202],
+          [-2.618823, 51.463324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626037, 51.460593],
+          [-2.626215, 51.460688],
+          [-2.626377, 51.460805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625914, 51.461035],
+          [-2.625752, 51.460911],
+          [-2.625722, 51.460862],
+          [-2.625741, 51.460832],
+          [-2.625881, 51.460755],
+          [-2.625919, 51.46074],
+          [-2.625955, 51.460741],
+          [-2.626033, 51.46076],
+          [-2.626202, 51.460892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62625, 51.460445],
+          [-2.626483, 51.460527],
+          [-2.626701, 51.460645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625048, 51.460822],
+          [-2.624716, 51.460892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625008, 51.462016],
+          [-2.625046, 51.461997],
+          [-2.62511, 51.461984],
+          [-2.625363, 51.461968],
+          [-2.625536, 51.46192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622729, 51.457445],
+          [-2.622895, 51.457595],
+          [-2.622951, 51.457614],
+          [-2.623044, 51.457623],
+          [-2.623143, 51.457618],
+          [-2.623198, 51.457607],
+          [-2.623245, 51.457584],
+          [-2.623275, 51.45755],
+          [-2.623315, 51.457413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610152, 51.456143],
+          [-2.609717, 51.45668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612197, 51.456576],
+          [-2.612235, 51.456547],
+          [-2.612263, 51.456544],
+          [-2.612594, 51.456671]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609254, 51.452134],
+          [-2.609104, 51.452062],
+          [-2.609079, 51.452063],
+          [-2.608847, 51.452194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615562, 51.450232],
+          [-2.615578, 51.45019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612535, 51.449592],
+          [-2.612519, 51.449466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612411, 51.449493],
+          [-2.612519, 51.449466],
+          [-2.612664, 51.449408],
+          [-2.613222, 51.44928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610558, 51.452306],
+          [-2.610685, 51.452523],
+          [-2.610738, 51.452572],
+          [-2.611013, 51.452595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624597, 51.451032],
+          [-2.624062, 51.451127],
+          [-2.623732, 51.451175]
+        ]
+      }
+    }
+  ]
+}

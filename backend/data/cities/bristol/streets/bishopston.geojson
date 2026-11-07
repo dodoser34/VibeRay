@@ -1,0 +1,2782 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580494, 51.475824],
+          [-2.580123, 51.476472],
+          [-2.579954, 51.477186],
+          [-2.579701, 51.47801],
+          [-2.57964, 51.478293],
+          [-2.579643, 51.478362],
+          [-2.579702, 51.478458],
+          [-2.581391, 51.48003],
+          [-2.582791, 51.481255],
+          [-2.582996, 51.481406],
+          [-2.583192, 51.481496],
+          [-2.583502, 51.481581],
+          [-2.583697, 51.481669],
+          [-2.584573, 51.482279],
+          [-2.585027, 51.48267],
+          [-2.585472, 51.483017],
+          [-2.586829, 51.483686]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577647, 51.48125],
+          [-2.578298, 51.481667],
+          [-2.578543, 51.481852],
+          [-2.578801, 51.482082],
+          [-2.579077, 51.482408],
+          [-2.579209, 51.482599],
+          [-2.579325, 51.482852],
+          [-2.579407, 51.483118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596705, 51.484709],
+          [-2.597259, 51.484417],
+          [-2.597443, 51.484344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579582, 51.485448],
+          [-2.579663, 51.48608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594317, 51.485952],
+          [-2.593958, 51.486054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591487, 51.487322],
+          [-2.591944, 51.486996],
+          [-2.592301, 51.486767],
+          [-2.592811, 51.486476],
+          [-2.593384, 51.48624],
+          [-2.593739, 51.48613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585348, 51.486911],
+          [-2.585306, 51.486886],
+          [-2.585232, 51.486883],
+          [-2.585052, 51.486947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585492, 51.486681],
+          [-2.58513, 51.48688],
+          [-2.585052, 51.486947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585052, 51.486947],
+          [-2.58524, 51.48695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584669, 51.487159],
+          [-2.585052, 51.486947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58876, 51.48749],
+          [-2.589713, 51.487575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579662, 51.483611],
+          [-2.580042, 51.483601],
+          [-2.580207, 51.483621],
+          [-2.580386, 51.483676],
+          [-2.580777, 51.483833],
+          [-2.580941, 51.483889],
+          [-2.58192, 51.48412],
+          [-2.582004, 51.484131],
+          [-2.582031, 51.484125],
+          [-2.58208, 51.484086],
+          [-2.582486, 51.483668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579186, 51.482393],
+          [-2.579264, 51.482405],
+          [-2.579964, 51.482673],
+          [-2.582486, 51.483668],
+          [-2.583356, 51.484001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581056, 51.483918],
+          [-2.581656, 51.48334]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583697, 51.481669],
+          [-2.581812, 51.482485],
+          [-2.581555, 51.48253],
+          [-2.581314, 51.482591],
+          [-2.581176, 51.482654],
+          [-2.581005, 51.48278],
+          [-2.580207, 51.483621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589295, 51.476982],
+          [-2.589189, 51.477093],
+          [-2.589016, 51.477364],
+          [-2.588944, 51.477523],
+          [-2.588781, 51.477988],
+          [-2.588719, 51.478218],
+          [-2.588565, 51.478606],
+          [-2.588095, 51.479923],
+          [-2.587866, 51.480246],
+          [-2.58775, 51.480377],
+          [-2.586962, 51.481115],
+          [-2.586774, 51.481247],
+          [-2.586631, 51.481329],
+          [-2.585538, 51.481755],
+          [-2.584573, 51.482279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579521, 51.483093],
+          [-2.579667, 51.482971],
+          [-2.580344, 51.482292],
+          [-2.580652, 51.482042],
+          [-2.580947, 51.481851],
+          [-2.581382, 51.481633],
+          [-2.582288, 51.481278],
+          [-2.582643, 51.481128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582809, 51.484699],
+          [-2.583623, 51.4852],
+          [-2.584285, 51.485652],
+          [-2.585177, 51.486152],
+          [-2.585675, 51.48624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587391, 51.476671],
+          [-2.586533, 51.476985],
+          [-2.586509, 51.477006],
+          [-2.586504, 51.477036],
+          [-2.586551, 51.47715],
+          [-2.586532, 51.477222],
+          [-2.586501, 51.477247],
+          [-2.586106, 51.477384],
+          [-2.586367, 51.477754],
+          [-2.586738, 51.478375],
+          [-2.587294, 51.479384],
+          [-2.587412, 51.479544],
+          [-2.587512, 51.479647],
+          [-2.587657, 51.479727],
+          [-2.588095, 51.479923],
+          [-2.588999, 51.480286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587829, 51.477206],
+          [-2.588261, 51.476989],
+          [-2.588407, 51.476931],
+          [-2.58859, 51.476922],
+          [-2.589295, 51.476982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587829, 51.477206],
+          [-2.589016, 51.477364]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581812, 51.482485],
+          [-2.581888, 51.482536],
+          [-2.583876, 51.483539]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58372, 51.483664],
+          [-2.585911, 51.484367],
+          [-2.58643, 51.484508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588868, 51.477738],
+          [-2.589801, 51.478145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589311, 51.47992],
+          [-2.589379, 51.479926],
+          [-2.5909, 51.48026],
+          [-2.591228, 51.480176],
+          [-2.591733, 51.480105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57576, 51.475014],
+          [-2.576099, 51.474915]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577898, 51.479094],
+          [-2.57861, 51.479689],
+          [-2.579314, 51.480304],
+          [-2.580428, 51.481324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581391, 51.48003],
+          [-2.579861, 51.480799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580819, 51.479507],
+          [-2.579314, 51.480304],
+          [-2.578882, 51.480568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580216, 51.478938],
+          [-2.57861, 51.479689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583623, 51.4852],
+          [-2.583775, 51.48519],
+          [-2.585351, 51.485556],
+          [-2.585939, 51.48566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583204, 51.484199],
+          [-2.58568, 51.484999],
+          [-2.586186, 51.485087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584448, 51.479525],
+          [-2.586738, 51.478375],
+          [-2.588565, 51.478606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58659, 51.477672],
+          [-2.5867, 51.477708],
+          [-2.588781, 51.477988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583793, 51.479041],
+          [-2.584448, 51.479525],
+          [-2.585145, 51.479982],
+          [-2.58567, 51.480268],
+          [-2.586361, 51.480618]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584964, 51.480797],
+          [-2.58567, 51.480268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588121, 51.475038],
+          [-2.587122, 51.47488],
+          [-2.587029, 51.474832],
+          [-2.586907, 51.474734],
+          [-2.586632, 51.475033],
+          [-2.586287, 51.475217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588178, 51.476191],
+          [-2.586632, 51.475033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587391, 51.476671],
+          [-2.586128, 51.475639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588407, 51.476931],
+          [-2.58761, 51.476594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582444, 51.482819],
+          [-2.584227, 51.482037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58538, 51.484195],
+          [-2.585604, 51.483794],
+          [-2.584385, 51.483134],
+          [-2.583172, 51.482503]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580504, 51.484366],
+          [-2.580574, 51.484545],
+          [-2.580592, 51.484628],
+          [-2.5806, 51.485254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582035, 51.485985],
+          [-2.581621, 51.485509],
+          [-2.581582, 51.485192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581199, 51.486281],
+          [-2.580591, 51.485566],
+          [-2.580557, 51.485416],
+          [-2.58055, 51.485257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581154, 51.486567],
+          [-2.581242, 51.486633],
+          [-2.581025, 51.486767],
+          [-2.581017, 51.486821],
+          [-2.581183, 51.486958],
+          [-2.581227, 51.487038],
+          [-2.581413, 51.48715],
+          [-2.581544, 51.487143],
+          [-2.581678, 51.48712],
+          [-2.582058, 51.487386],
+          [-2.582199, 51.487419],
+          [-2.582314, 51.487504],
+          [-2.58236, 51.487571],
+          [-2.582693, 51.487741],
+          [-2.583144, 51.487929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586035, 51.482415],
+          [-2.587398, 51.482762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577985, 51.478515],
+          [-2.577104, 51.478853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578994, 51.481412],
+          [-2.579102, 51.481468],
+          [-2.580078, 51.480998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583883, 51.481795],
+          [-2.585046, 51.481236],
+          [-2.585851, 51.480939],
+          [-2.586018, 51.480852],
+          [-2.586361, 51.480618],
+          [-2.586854, 51.480214],
+          [-2.586856, 51.48019],
+          [-2.586839, 51.480166],
+          [-2.585895, 51.479579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588115, 51.481146],
+          [-2.586486, 51.480514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587829, 51.477206],
+          [-2.5873, 51.477429],
+          [-2.586367, 51.477754],
+          [-2.581539, 51.480157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585736, 51.474382],
+          [-2.585845, 51.474603],
+          [-2.586029, 51.474904],
+          [-2.5862, 51.475136],
+          [-2.586224, 51.475165],
+          [-2.586561, 51.475436],
+          [-2.585281, 51.476023],
+          [-2.586442, 51.47698],
+          [-2.586509, 51.477006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589044, 51.475181],
+          [-2.589018, 51.475375],
+          [-2.588969, 51.475487],
+          [-2.588885, 51.475587],
+          [-2.587888, 51.476443],
+          [-2.58776, 51.476523],
+          [-2.58761, 51.476594],
+          [-2.587391, 51.476671]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589618, 51.481224],
+          [-2.589138, 51.481658],
+          [-2.589667, 51.482053],
+          [-2.589861, 51.481961],
+          [-2.5899, 51.481991],
+          [-2.590117, 51.481884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583224, 51.479778],
+          [-2.582928, 51.479943],
+          [-2.582792, 51.480102],
+          [-2.582647, 51.480186],
+          [-2.582645, 51.480231],
+          [-2.582666, 51.48028],
+          [-2.582965, 51.480523]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582248, 51.48182],
+          [-2.582139, 51.481708],
+          [-2.582222, 51.481677],
+          [-2.581955, 51.481403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580947, 51.481851],
+          [-2.581355, 51.482181],
+          [-2.581438, 51.482141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582137, 51.477884],
+          [-2.581884, 51.477978],
+          [-2.580041, 51.478772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581972, 51.478048],
+          [-2.58273, 51.478736],
+          [-2.582754, 51.478775],
+          [-2.582724, 51.478811],
+          [-2.581625, 51.47929],
+          [-2.58153, 51.479375],
+          [-2.58095, 51.479619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579701, 51.47801],
+          [-2.578415, 51.477877],
+          [-2.577368, 51.477755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580123, 51.476472],
+          [-2.579931, 51.476418],
+          [-2.579731, 51.476273],
+          [-2.579671, 51.476251],
+          [-2.579315, 51.476212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589934, 51.475749],
+          [-2.589546, 51.475654],
+          [-2.589468, 51.475671],
+          [-2.589401, 51.475701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590309, 51.476859],
+          [-2.590046, 51.476819],
+          [-2.589891, 51.47681],
+          [-2.589704, 51.476824],
+          [-2.589522, 51.476873],
+          [-2.589387, 51.476928],
+          [-2.589295, 51.476982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590802, 51.487219],
+          [-2.590851, 51.487198],
+          [-2.591214, 51.487516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577297, 51.478258],
+          [-2.577324, 51.478105],
+          [-2.577313, 51.477909],
+          [-2.577323, 51.477862],
+          [-2.577587, 51.477278],
+          [-2.577621, 51.477235],
+          [-2.577685, 51.477202],
+          [-2.577737, 51.477193],
+          [-2.577834, 51.477195],
+          [-2.577911, 51.477218],
+          [-2.578449, 51.477565],
+          [-2.578471, 51.477603],
+          [-2.578415, 51.477877],
+          [-2.578266, 51.478364],
+          [-2.578046, 51.478459],
+          [-2.577746, 51.478209],
+          [-2.577781, 51.478091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579356, 51.480958],
+          [-2.57967, 51.481195]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582025, 51.48058],
+          [-2.578801, 51.482082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590537, 51.476256],
+          [-2.589521, 51.47607],
+          [-2.589421, 51.476284],
+          [-2.589315, 51.476354],
+          [-2.589146, 51.476327]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584253, 51.479867],
+          [-2.582965, 51.480523],
+          [-2.58231, 51.480835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580021, 51.476883],
+          [-2.584672, 51.474511],
+          [-2.585622, 51.475441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5871, 51.479046],
+          [-2.586548, 51.479197],
+          [-2.586372, 51.479278],
+          [-2.585895, 51.479579],
+          [-2.58545, 51.479784],
+          [-2.585145, 51.479982],
+          [-2.584716, 51.480235],
+          [-2.582791, 51.481255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577063, 51.478406],
+          [-2.577084, 51.478741],
+          [-2.577104, 51.478853],
+          [-2.577152, 51.478986],
+          [-2.57723, 51.479083],
+          [-2.577402, 51.479219],
+          [-2.577456, 51.479235],
+          [-2.57753, 51.479237],
+          [-2.577593, 51.479226],
+          [-2.577898, 51.479094],
+          [-2.578464, 51.478876],
+          [-2.578913, 51.478691],
+          [-2.579643, 51.478362]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579568, 51.485313],
+          [-2.581931, 51.485176],
+          [-2.582086, 51.485153],
+          [-2.58221, 51.485118],
+          [-2.582328, 51.48507],
+          [-2.582493, 51.484972],
+          [-2.582691, 51.484818],
+          [-2.582809, 51.484699],
+          [-2.583356, 51.484001],
+          [-2.583467, 51.483876],
+          [-2.583585, 51.483768],
+          [-2.584681, 51.482893],
+          [-2.584869, 51.482763],
+          [-2.585027, 51.48267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587323, 51.482886],
+          [-2.587744, 51.482995],
+          [-2.587817, 51.483024],
+          [-2.589882, 51.484235],
+          [-2.589948, 51.484297],
+          [-2.590127, 51.484551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588656, 51.48352],
+          [-2.589036, 51.482838],
+          [-2.589139, 51.482746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58642, 51.484538],
+          [-2.587611, 51.484791],
+          [-2.587853, 51.484857],
+          [-2.58791, 51.484883],
+          [-2.587958, 51.484922],
+          [-2.588196, 51.485323],
+          [-2.588371, 51.485645],
+          [-2.588404, 51.485744],
+          [-2.58876, 51.48749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585648, 51.486307],
+          [-2.58633, 51.486516],
+          [-2.588615, 51.487175],
+          [-2.588697, 51.487185]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58633, 51.486516],
+          [-2.58638, 51.486446],
+          [-2.587134, 51.486137],
+          [-2.587213, 51.486122],
+          [-2.587284, 51.486123],
+          [-2.587349, 51.48614],
+          [-2.58741, 51.48617],
+          [-2.58745, 51.486219],
+          [-2.58756, 51.486871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587603, 51.483977],
+          [-2.588018, 51.484071],
+          [-2.588637, 51.484428]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587338, 51.48556],
+          [-2.587732, 51.485414],
+          [-2.588932, 51.485173],
+          [-2.589038, 51.485163],
+          [-2.589509, 51.485178],
+          [-2.589592, 51.485189],
+          [-2.590387, 51.485383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587611, 51.484791],
+          [-2.587708, 51.484723],
+          [-2.588637, 51.484428],
+          [-2.591331, 51.484006],
+          [-2.594154, 51.483418],
+          [-2.595083, 51.483194],
+          [-2.595511, 51.483075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588434, 51.48588],
+          [-2.588545, 51.485917],
+          [-2.58868, 51.485988],
+          [-2.588821, 51.486104],
+          [-2.588944, 51.486176],
+          [-2.589208, 51.486282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587189, 51.484701],
+          [-2.58864, 51.482146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586063, 51.485373],
+          [-2.586609, 51.485484],
+          [-2.586694, 51.485519],
+          [-2.586937, 51.485715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588798, 51.484786],
+          [-2.588984, 51.48509],
+          [-2.589571, 51.485859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587752, 51.482001],
+          [-2.58864, 51.482146],
+          [-2.588744, 51.482183],
+          [-2.58901, 51.482447],
+          [-2.589055, 51.482518],
+          [-2.58911, 51.48269],
+          [-2.589139, 51.482746],
+          [-2.589189, 51.482819],
+          [-2.589325, 51.482972],
+          [-2.589409, 51.483041],
+          [-2.590585, 51.483782],
+          [-2.590732, 51.483897],
+          [-2.590825, 51.483991],
+          [-2.590881, 51.484076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588506, 51.480758],
+          [-2.590402, 51.48156],
+          [-2.590486, 51.481638],
+          [-2.590601, 51.481833],
+          [-2.590681, 51.481908],
+          [-2.591067, 51.482166],
+          [-2.591562, 51.482359],
+          [-2.591947, 51.482471],
+          [-2.59236, 51.482578],
+          [-2.592492, 51.482618],
+          [-2.592694, 51.482698],
+          [-2.594154, 51.483418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590283, 51.482562],
+          [-2.591067, 51.482166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592004, 51.483862],
+          [-2.591864, 51.483561],
+          [-2.591692, 51.483332],
+          [-2.591615, 51.483265],
+          [-2.591124, 51.483034],
+          [-2.591095, 51.483007],
+          [-2.591092, 51.482973],
+          [-2.591123, 51.482942],
+          [-2.591899, 51.482533],
+          [-2.591947, 51.482471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594708, 51.481243],
+          [-2.594678, 51.48131],
+          [-2.594608, 51.481331],
+          [-2.594563, 51.481324],
+          [-2.593573, 51.480707],
+          [-2.593524, 51.480657]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59475, 51.484677],
+          [-2.595171, 51.48421],
+          [-2.595263, 51.484147],
+          [-2.595403, 51.484078],
+          [-2.596178, 51.483798]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589132, 51.480176],
+          [-2.589818, 51.480547],
+          [-2.59092, 51.481086],
+          [-2.591036, 51.48118],
+          [-2.591172, 51.481358],
+          [-2.591275, 51.481464],
+          [-2.591399, 51.48156],
+          [-2.59161, 51.48168],
+          [-2.59188, 51.481783],
+          [-2.592067, 51.481837],
+          [-2.592653, 51.481964],
+          [-2.59281, 51.482013],
+          [-2.59306, 51.48212],
+          [-2.593353, 51.48223],
+          [-2.595273, 51.482884],
+          [-2.59541, 51.482975],
+          [-2.595511, 51.483075],
+          [-2.595906, 51.483497],
+          [-2.596897, 51.484599]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589434, 51.48568],
+          [-2.589547, 51.485651],
+          [-2.589614, 51.485651],
+          [-2.590871, 51.485956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579159, 51.47663],
+          [-2.579279, 51.47624],
+          [-2.579315, 51.476212],
+          [-2.579361, 51.47607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590625, 51.483201],
+          [-2.591123, 51.482942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584309, 51.480976],
+          [-2.584206, 51.480782],
+          [-2.583983, 51.480626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583037, 51.477471],
+          [-2.582805, 51.477582],
+          [-2.582314, 51.477792],
+          [-2.582284, 51.477823]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579473, 51.483617],
+          [-2.579563, 51.483614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593384, 51.48624],
+          [-2.593016, 51.485559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58448, 51.486275],
+          [-2.584708, 51.48641],
+          [-2.584353, 51.486646],
+          [-2.584954, 51.486932],
+          [-2.584999, 51.486973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582457, 51.481451],
+          [-2.582288, 51.481278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582441, 51.480249],
+          [-2.58257, 51.480191],
+          [-2.582647, 51.480186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579628, 51.481704],
+          [-2.579827, 51.481888],
+          [-2.579928, 51.481997],
+          [-2.579713, 51.482134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580512, 51.48167],
+          [-2.580222, 51.481421]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579969, 51.481968],
+          [-2.579928, 51.481997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580512, 51.48167],
+          [-2.58023, 51.481809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584325, 51.475209],
+          [-2.583824, 51.475455],
+          [-2.580364, 51.477218],
+          [-2.580244, 51.477204],
+          [-2.579954, 51.477186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580512, 51.48167],
+          [-2.58078, 51.481525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596582, 51.48425],
+          [-2.596104, 51.484426],
+          [-2.595344, 51.484948],
+          [-2.595219, 51.484978],
+          [-2.595114, 51.484986],
+          [-2.595009, 51.485052],
+          [-2.594864, 51.485383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595309, 51.483584],
+          [-2.595666, 51.48398],
+          [-2.596104, 51.484426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595273, 51.482884],
+          [-2.595417, 51.482799],
+          [-2.595647, 51.482585],
+          [-2.595647, 51.482541],
+          [-2.595414, 51.48244],
+          [-2.595299, 51.482403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59313, 51.48254],
+          [-2.593159, 51.4825],
+          [-2.592936, 51.482408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592892, 51.482796],
+          [-2.59313, 51.48254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582017, 51.48413],
+          [-2.58192, 51.484336],
+          [-2.581716, 51.484531],
+          [-2.581606, 51.484582],
+          [-2.581436, 51.484601],
+          [-2.581262, 51.484596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582671, 51.487729],
+          [-2.58207, 51.488075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580655, 51.486922],
+          [-2.581305, 51.487432],
+          [-2.582082, 51.487781]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580796, 51.487699],
+          [-2.580959, 51.487605],
+          [-2.581305, 51.487432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580194, 51.485686],
+          [-2.580333, 51.485909]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579644, 51.485962],
+          [-2.580306, 51.485873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588514, 51.480097],
+          [-2.588758, 51.479558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587657, 51.479727],
+          [-2.587339, 51.479967],
+          [-2.586866, 51.479669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598788, 51.481227],
+          [-2.598626, 51.481119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580639, 51.47868],
+          [-2.581444, 51.479412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5806, 51.484924],
+          [-2.58011, 51.484958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578153, 51.477371],
+          [-2.578002, 51.477459],
+          [-2.577936, 51.477515],
+          [-2.577886, 51.477612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57826, 51.480331],
+          [-2.577334, 51.479533],
+          [-2.577252, 51.479376],
+          [-2.577456, 51.479235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579306, 51.478827],
+          [-2.579071, 51.478621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579419, 51.479843],
+          [-2.579333, 51.479891],
+          [-2.57964, 51.48013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595083, 51.483194],
+          [-2.595309, 51.483584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593889, 51.486092],
+          [-2.594149, 51.485368],
+          [-2.594214, 51.485152],
+          [-2.594208, 51.485059],
+          [-2.593935, 51.484609],
+          [-2.593792, 51.484451],
+          [-2.593643, 51.48431],
+          [-2.593613, 51.484265],
+          [-2.593589, 51.484215],
+          [-2.593584, 51.484165],
+          [-2.593607, 51.484101],
+          [-2.593703, 51.484004],
+          [-2.593769, 51.483967],
+          [-2.593969, 51.483925],
+          [-2.594114, 51.483904],
+          [-2.594654, 51.483789],
+          [-2.595309, 51.483584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594375, 51.484168],
+          [-2.594214, 51.484095],
+          [-2.594154, 51.484058],
+          [-2.594121, 51.483993],
+          [-2.594114, 51.483904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58258, 51.487682],
+          [-2.582845, 51.487516],
+          [-2.583113, 51.487369],
+          [-2.58315, 51.487336],
+          [-2.583245, 51.487296],
+          [-2.583437, 51.487187],
+          [-2.583519, 51.487188],
+          [-2.583614, 51.487214],
+          [-2.584066, 51.48742],
+          [-2.584126, 51.487465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581911, 51.486148],
+          [-2.582091, 51.486107],
+          [-2.582131, 51.486065],
+          [-2.582119, 51.486033],
+          [-2.582035, 51.485985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589243, 51.484335],
+          [-2.58919, 51.484292],
+          [-2.588834, 51.484082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59371, 51.481865],
+          [-2.593559, 51.481799],
+          [-2.593749, 51.481678],
+          [-2.594018, 51.48156],
+          [-2.594608, 51.481331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586106, 51.477384],
+          [-2.585976, 51.477274],
+          [-2.585895, 51.477256],
+          [-2.585673, 51.477361],
+          [-2.585603, 51.477459],
+          [-2.585283, 51.477637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57987, 51.486599],
+          [-2.580811, 51.486462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579724, 51.486284],
+          [-2.580555, 51.486166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583871, 51.486944],
+          [-2.583921, 51.486964],
+          [-2.584135, 51.486832],
+          [-2.584353, 51.486646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583137, 51.477893],
+          [-2.582688, 51.478102],
+          [-2.582454, 51.477897],
+          [-2.582361, 51.477829],
+          [-2.582284, 51.477823],
+          [-2.582137, 51.477884],
+          [-2.58162, 51.477408],
+          [-2.580166, 51.478116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586959, 51.484652],
+          [-2.586809, 51.484927],
+          [-2.587438, 51.485098]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591012, 51.486389],
+          [-2.590916, 51.486419],
+          [-2.591039, 51.486586],
+          [-2.591001, 51.486703],
+          [-2.591125, 51.486886],
+          [-2.591257, 51.486942],
+          [-2.591487, 51.487322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597565, 51.483999],
+          [-2.597776, 51.484231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597239, 51.484121],
+          [-2.597872, 51.483884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595104, 51.482821],
+          [-2.594337, 51.482995],
+          [-2.593256, 51.482578],
+          [-2.59313, 51.48254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584943, 51.482598],
+          [-2.585348, 51.482356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582332, 51.478982],
+          [-2.581541, 51.478281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5884, 51.481325],
+          [-2.588215, 51.481258],
+          [-2.588065, 51.481214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587044, 51.481735],
+          [-2.587452, 51.481862],
+          [-2.587657, 51.48187],
+          [-2.58779, 51.48189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594642, 51.485745],
+          [-2.594511, 51.485783],
+          [-2.594466, 51.48581],
+          [-2.594428, 51.48585],
+          [-2.59442, 51.485887],
+          [-2.594434, 51.485943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589686, 51.477008],
+          [-2.589352, 51.477105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589266, 51.477013],
+          [-2.589497, 51.477259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588242, 51.481754],
+          [-2.588215, 51.481724],
+          [-2.588004, 51.481689],
+          [-2.587866, 51.481645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588062, 51.481219],
+          [-2.588189, 51.48129],
+          [-2.588392, 51.481431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590163, 51.480099],
+          [-2.590151, 51.480145],
+          [-2.590161, 51.480171],
+          [-2.590209, 51.480203],
+          [-2.590337, 51.480267],
+          [-2.590557, 51.480334]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581119, 51.479777],
+          [-2.581004, 51.479835],
+          [-2.580889, 51.479748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580891, 51.479059],
+          [-2.581005, 51.479013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586571, 51.483085],
+          [-2.586449, 51.483055],
+          [-2.586398, 51.483004],
+          [-2.586339, 51.482981],
+          [-2.586315, 51.48296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586603, 51.48256],
+          [-2.586315, 51.48296],
+          [-2.585845, 51.482839],
+          [-2.585661, 51.483111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585684, 51.48272],
+          [-2.585472, 51.483017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585212, 51.482813],
+          [-2.585425, 51.48251],
+          [-2.58562, 51.482561]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579573, 51.47742],
+          [-2.579401, 51.477978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579732, 51.476876],
+          [-2.579882, 51.476382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578897, 51.4776],
+          [-2.578812, 51.477917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582664, 51.477466],
+          [-2.582805, 51.477582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599162, 51.483333],
+          [-2.599187, 51.483337],
+          [-2.599301, 51.483389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592269, 51.482215],
+          [-2.592065, 51.482502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589586, 51.480831],
+          [-2.589299, 51.481091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590114, 51.482163],
+          [-2.5899, 51.481991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589991, 51.482223],
+          [-2.590114, 51.482163]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590236, 51.482103],
+          [-2.590114, 51.482163]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589494, 51.482268],
+          [-2.589588, 51.482338],
+          [-2.589827, 51.48222],
+          [-2.589686, 51.482111],
+          [-2.589667, 51.482053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591508, 51.482737],
+          [-2.591082, 51.482567],
+          [-2.590982, 51.482563],
+          [-2.590614, 51.482395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590403, 51.482886],
+          [-2.591041, 51.482565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589741, 51.482392],
+          [-2.590269, 51.482133],
+          [-2.590634, 51.482385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591071, 51.483609],
+          [-2.591187, 51.483747],
+          [-2.591872, 51.483578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588844, 51.481968],
+          [-2.588685, 51.482156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586244, 51.482098],
+          [-2.585849, 51.482702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586628, 51.482195],
+          [-2.586412, 51.482511]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589402, 51.475606],
+          [-2.589546, 51.475654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589401, 51.475701],
+          [-2.589261, 51.475813]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579848, 51.476036],
+          [-2.579973, 51.476115],
+          [-2.580006, 51.476162],
+          [-2.58023, 51.476288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578769, 51.478277],
+          [-2.579013, 51.478305],
+          [-2.579095, 51.478269],
+          [-2.579185, 51.477956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585911, 51.484367],
+          [-2.585804, 51.484609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582707, 51.481603],
+          [-2.582857, 51.481529],
+          [-2.582996, 51.481406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587541, 51.486724],
+          [-2.588045, 51.486687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586324, 51.485927],
+          [-2.586514, 51.485463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585802, 51.484702],
+          [-2.58568, 51.484999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586144, 51.482969],
+          [-2.586102, 51.483036],
+          [-2.585897, 51.483228]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586279, 51.483132],
+          [-2.586102, 51.483036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592946, 51.485297],
+          [-2.59304, 51.485425],
+          [-2.593067, 51.485448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592799, 51.485332],
+          [-2.59305, 51.485272]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593745, 51.48409],
+          [-2.594228, 51.484285]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593993, 51.484404],
+          [-2.593742, 51.484267],
+          [-2.593657, 51.484235],
+          [-2.593644, 51.484186],
+          [-2.593745, 51.48409],
+          [-2.593703, 51.484004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588666, 51.481106],
+          [-2.588754, 51.481142],
+          [-2.588959, 51.480948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582043, 51.48774],
+          [-2.582352, 51.487559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581745, 51.487593],
+          [-2.582012, 51.487437],
+          [-2.582075, 51.48739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581708, 51.487461],
+          [-2.581828, 51.487544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581178, 51.487212],
+          [-2.581346, 51.48711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581697, 51.486953],
+          [-2.581466, 51.486804],
+          [-2.581189, 51.48697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580717, 51.48673],
+          [-2.580798, 51.486776],
+          [-2.581024, 51.486777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58448, 51.476022],
+          [-2.584621, 51.47611],
+          [-2.585952, 51.477166],
+          [-2.585989, 51.4772],
+          [-2.585976, 51.477274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582279, 51.477123],
+          [-2.582193, 51.477055],
+          [-2.582584, 51.476861],
+          [-2.582923, 51.476711],
+          [-2.583324, 51.476508],
+          [-2.583755, 51.476307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576607, 51.478718],
+          [-2.576482, 51.479447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57661, 51.477689],
+          [-2.576621, 51.478223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576449, 51.476785],
+          [-2.576551, 51.477272]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576408, 51.479931],
+          [-2.576581, 51.479173],
+          [-2.576667, 51.478638],
+          [-2.576681, 51.478018],
+          [-2.576594, 51.477269],
+          [-2.576502, 51.476779],
+          [-2.576285, 51.476133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopston" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589769, 51.478229],
+          [-2.589593, 51.478704],
+          [-2.589431, 51.479497],
+          [-2.589311, 51.47992],
+          [-2.589132, 51.480176],
+          [-2.588283, 51.480969],
+          [-2.588115, 51.481146],
+          [-2.587997, 51.481334],
+          [-2.587516, 51.482574],
+          [-2.586799, 51.483746],
+          [-2.58643, 51.484508],
+          [-2.585434, 51.486837]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5419 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605985, 51.431968],
+          [-2.605613, 51.431601],
+          [-2.605242, 51.431186],
+          [-2.605093, 51.430999],
+          [-2.604903, 51.430703],
+          [-2.604739, 51.430301],
+          [-2.604444, 51.429327],
+          [-2.604251, 51.428475],
+          [-2.604183, 51.427779],
+          [-2.604195, 51.427268],
+          [-2.604245, 51.426392],
+          [-2.604367, 51.425452],
+          [-2.604378, 51.42486],
+          [-2.604471, 51.423428],
+          [-2.604459, 51.422863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602742, 51.420286],
+          [-2.601458, 51.419458],
+          [-2.600147, 51.418685],
+          [-2.598728, 51.417892],
+          [-2.597754, 51.417298],
+          [-2.596411, 51.41651],
+          [-2.595665, 51.415991],
+          [-2.59555, 51.415883],
+          [-2.59518, 51.415372]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589158, 51.417722],
+          [-2.589681, 51.417429],
+          [-2.593192, 51.415243],
+          [-2.593456, 51.415149],
+          [-2.594174, 51.4151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6062, 51.432223],
+          [-2.606744, 51.432592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605985, 51.431968],
+          [-2.606012, 51.432065],
+          [-2.6062, 51.432223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606096, 51.43201],
+          [-2.605985, 51.431968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579362, 51.42169],
+          [-2.5803, 51.421446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588152, 51.418273],
+          [-2.588073, 51.418257],
+          [-2.58797, 51.418261],
+          [-2.587786, 51.418324],
+          [-2.5874, 51.418524]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585726, 51.419269],
+          [-2.585995, 51.419275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588174, 51.418121],
+          [-2.58883, 51.417804],
+          [-2.589158, 51.417722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588152, 51.418273],
+          [-2.589158, 51.417722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593918, 51.415028],
+          [-2.594174, 51.4151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5803, 51.421446],
+          [-2.58076, 51.421294],
+          [-2.581672, 51.420952],
+          [-2.585995, 51.419275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594174, 51.4151],
+          [-2.594408, 51.415114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576517, 51.422811],
+          [-2.577052, 51.422579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6062, 51.432223],
+          [-2.606307, 51.432173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585995, 51.419275],
+          [-2.587383, 51.41868],
+          [-2.588152, 51.418273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580909, 51.421239],
+          [-2.580824, 51.421211],
+          [-2.580755, 51.421207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580034, 51.421461],
+          [-2.580204, 51.421431],
+          [-2.5803, 51.421446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603795, 51.421216],
+          [-2.603336, 51.420745]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604167, 51.42178],
+          [-2.60399, 51.421483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60442, 51.422561],
+          [-2.604336, 51.422189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602781, 51.433801],
+          [-2.6062, 51.432223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60587, 51.43238],
+          [-2.606031, 51.432343],
+          [-2.606187, 51.432353],
+          [-2.606292, 51.432375],
+          [-2.606562, 51.432474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586987, 51.428065],
+          [-2.586929, 51.42804],
+          [-2.586864, 51.428035],
+          [-2.585866, 51.428126],
+          [-2.58578, 51.428187],
+          [-2.585752, 51.428232],
+          [-2.585795, 51.428376],
+          [-2.585823, 51.428417],
+          [-2.585863, 51.428438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599979, 51.418597],
+          [-2.599701, 51.418752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586987, 51.428065],
+          [-2.587942, 51.427623],
+          [-2.590651, 51.426436],
+          [-2.591372, 51.42609],
+          [-2.591475, 51.426055],
+          [-2.591689, 51.425907],
+          [-2.591955, 51.425848],
+          [-2.592792, 51.425481],
+          [-2.593014, 51.425326],
+          [-2.594368, 51.4241],
+          [-2.595983, 51.422863],
+          [-2.596497, 51.422492],
+          [-2.596634, 51.422371],
+          [-2.597096, 51.422046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583987, 51.429375],
+          [-2.585863, 51.428438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597438, 51.421638],
+          [-2.597309, 51.421776]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597096, 51.422046],
+          [-2.59719, 51.422],
+          [-2.597336, 51.421957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597309, 51.421776],
+          [-2.597208, 51.421807],
+          [-2.597177, 51.421845],
+          [-2.597173, 51.421877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597449, 51.421825],
+          [-2.597393, 51.421788],
+          [-2.597309, 51.421776]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597336, 51.421957],
+          [-2.597385, 51.421948],
+          [-2.597442, 51.421916],
+          [-2.597464, 51.421855],
+          [-2.597449, 51.421825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597173, 51.421877],
+          [-2.597218, 51.421933],
+          [-2.597285, 51.421955],
+          [-2.597336, 51.421957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586376, 51.433075],
+          [-2.586938, 51.433274],
+          [-2.587242, 51.433408],
+          [-2.587694, 51.433725],
+          [-2.587934, 51.433953],
+          [-2.588122, 51.434168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597438, 51.421638],
+          [-2.59791, 51.420717],
+          [-2.59805, 51.420515],
+          [-2.598215, 51.420313],
+          [-2.598593, 51.419916],
+          [-2.599426, 51.418944],
+          [-2.599701, 51.418752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599701, 51.418752],
+          [-2.599839, 51.418731],
+          [-2.600015, 51.418726],
+          [-2.60017, 51.418769],
+          [-2.600306, 51.418779]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597449, 51.421825],
+          [-2.597463, 51.421767],
+          [-2.597438, 51.421638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58407, 51.429478],
+          [-2.58431, 51.42983],
+          [-2.584444, 51.430078],
+          [-2.584498, 51.43021],
+          [-2.58463, 51.430696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597173, 51.421877],
+          [-2.597158, 51.421947],
+          [-2.597096, 51.422046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599734, 51.418459],
+          [-2.59976, 51.418591],
+          [-2.599701, 51.418752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585863, 51.428438],
+          [-2.585942, 51.428459],
+          [-2.586004, 51.428461],
+          [-2.586966, 51.428369],
+          [-2.587049, 51.42831],
+          [-2.587061, 51.428264],
+          [-2.587047, 51.428146],
+          [-2.587027, 51.428097],
+          [-2.586987, 51.428065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604379, 51.428468],
+          [-2.604251, 51.428475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60278, 51.431759],
+          [-2.603128, 51.431819],
+          [-2.60321, 51.431818],
+          [-2.603385, 51.431787],
+          [-2.603476, 51.431757],
+          [-2.603682, 51.431645],
+          [-2.603771, 51.431575],
+          [-2.603818, 51.431498],
+          [-2.603845, 51.431421],
+          [-2.603845, 51.431356],
+          [-2.603771, 51.43105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602985, 51.431106],
+          [-2.602976, 51.431206],
+          [-2.60278, 51.431759],
+          [-2.602442, 51.432537],
+          [-2.602304, 51.432744],
+          [-2.601857, 51.433263],
+          [-2.601683, 51.433194],
+          [-2.601482, 51.433135],
+          [-2.600515, 51.432945],
+          [-2.600231, 51.432903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600515, 51.432945],
+          [-2.600878, 51.431801],
+          [-2.600917, 51.431717],
+          [-2.601068, 51.431521],
+          [-2.601748, 51.430802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59803, 51.43106],
+          [-2.597373, 51.431606],
+          [-2.596554, 51.432109],
+          [-2.596204, 51.432279],
+          [-2.595814, 51.432447],
+          [-2.595381, 51.43261],
+          [-2.592906, 51.433385],
+          [-2.592415, 51.433519],
+          [-2.591853, 51.433607],
+          [-2.591761, 51.433632],
+          [-2.591715, 51.433678],
+          [-2.591724, 51.433745],
+          [-2.592011, 51.434346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59195, 51.432962],
+          [-2.59239, 51.432878],
+          [-2.592761, 51.432761],
+          [-2.593042, 51.432734],
+          [-2.593173, 51.432683],
+          [-2.593328, 51.432566],
+          [-2.593394, 51.432538],
+          [-2.593618, 51.432485],
+          [-2.593805, 51.432426],
+          [-2.594004, 51.432395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596554, 51.432109],
+          [-2.596726, 51.432254],
+          [-2.596822, 51.43235],
+          [-2.597003, 51.432569],
+          [-2.597087, 51.432719],
+          [-2.59717, 51.432924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59803, 51.43106],
+          [-2.598499, 51.431275],
+          [-2.598639, 51.431366],
+          [-2.598817, 51.431548],
+          [-2.598892, 51.431662],
+          [-2.598946, 51.431779],
+          [-2.598977, 51.432008],
+          [-2.598954, 51.43215],
+          [-2.59877, 51.432786],
+          [-2.599198, 51.432791],
+          [-2.599831, 51.432856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598954, 51.43215],
+          [-2.597938, 51.43205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597271, 51.430724],
+          [-2.59803, 51.43106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598104, 51.430097],
+          [-2.597821, 51.430235],
+          [-2.596717, 51.431207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58856, 51.434292],
+          [-2.588237, 51.434165],
+          [-2.588179, 51.434154],
+          [-2.588122, 51.434168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602367, 51.431025],
+          [-2.600772, 51.430441],
+          [-2.600643, 51.430376],
+          [-2.600543, 51.430338],
+          [-2.600278, 51.430247],
+          [-2.6002, 51.430235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602619, 51.433663],
+          [-2.602655, 51.433595],
+          [-2.602759, 51.433505],
+          [-2.604282, 51.43199],
+          [-2.604703, 51.431624],
+          [-2.605242, 51.431186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600064, 51.424058],
+          [-2.600019, 51.423847],
+          [-2.599965, 51.423718],
+          [-2.599832, 51.423533],
+          [-2.599745, 51.423449],
+          [-2.599537, 51.423293],
+          [-2.598878, 51.422861],
+          [-2.597631, 51.422067]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596872, 51.423436],
+          [-2.597446, 51.423798],
+          [-2.59759, 51.423875],
+          [-2.597744, 51.423945],
+          [-2.598043, 51.42404],
+          [-2.598445, 51.424097],
+          [-2.598713, 51.42411],
+          [-2.599141, 51.424102],
+          [-2.600064, 51.424058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599064, 51.423581],
+          [-2.599537, 51.423293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597407, 51.423772],
+          [-2.598134, 51.423312],
+          [-2.598878, 51.422861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588203, 51.423449],
+          [-2.589365, 51.422987],
+          [-2.592832, 51.421643],
+          [-2.593496, 51.421394],
+          [-2.593662, 51.421369],
+          [-2.594733, 51.421404],
+          [-2.594792, 51.421417],
+          [-2.59549, 51.421759],
+          [-2.596634, 51.422371],
+          [-2.598134, 51.423312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587898, 51.432914],
+          [-2.588176, 51.433069],
+          [-2.588308, 51.433162],
+          [-2.588776, 51.433583],
+          [-2.588888, 51.43365],
+          [-2.589154, 51.433743],
+          [-2.589542, 51.433816],
+          [-2.589554, 51.433849],
+          [-2.589582, 51.434474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586936, 51.433672],
+          [-2.587242, 51.433408],
+          [-2.587898, 51.432914],
+          [-2.588774, 51.432282],
+          [-2.589042, 51.432147],
+          [-2.58922, 51.432077],
+          [-2.589358, 51.432035],
+          [-2.589739, 51.43194],
+          [-2.590495, 51.431792],
+          [-2.591342, 51.43167],
+          [-2.591513, 51.431637],
+          [-2.591679, 51.431591],
+          [-2.591979, 51.431464],
+          [-2.592144, 51.431359],
+          [-2.592338, 51.431192],
+          [-2.592423, 51.43109],
+          [-2.592928, 51.430377],
+          [-2.592951, 51.430324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588235, 51.428132],
+          [-2.588993, 51.428094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58526, 51.429067],
+          [-2.587713, 51.428923],
+          [-2.587786, 51.428915],
+          [-2.587856, 51.42889],
+          [-2.588237, 51.428491],
+          [-2.588277, 51.428393],
+          [-2.588174, 51.42786],
+          [-2.587942, 51.427623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590128, 51.429266],
+          [-2.590041, 51.429271],
+          [-2.589912, 51.429249],
+          [-2.587034, 51.428326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585665, 51.429626],
+          [-2.588704, 51.429451],
+          [-2.58882, 51.429431],
+          [-2.588885, 51.429404],
+          [-2.588929, 51.429372],
+          [-2.589289, 51.429046],
+          [-2.590045, 51.428308],
+          [-2.59009, 51.428251],
+          [-2.590109, 51.428205],
+          [-2.590109, 51.428114],
+          [-2.59008, 51.428023],
+          [-2.590029, 51.427951],
+          [-2.589094, 51.427118],
+          [-2.588099, 51.426261],
+          [-2.588021, 51.426216],
+          [-2.587912, 51.426195],
+          [-2.587786, 51.426182],
+          [-2.587655, 51.426184],
+          [-2.586739, 51.426254],
+          [-2.586095, 51.426315],
+          [-2.585259, 51.426373]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590916, 51.428654],
+          [-2.590967, 51.428531],
+          [-2.591038, 51.428418],
+          [-2.591088, 51.428284],
+          [-2.591102, 51.428202],
+          [-2.591095, 51.428041],
+          [-2.591019, 51.427835],
+          [-2.590941, 51.427693],
+          [-2.590848, 51.427588],
+          [-2.589917, 51.426758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592951, 51.430324],
+          [-2.59302, 51.430129],
+          [-2.593021, 51.429946],
+          [-2.592992, 51.429857],
+          [-2.592859, 51.429663],
+          [-2.592721, 51.429516],
+          [-2.592578, 51.429386],
+          [-2.592272, 51.429162],
+          [-2.592156, 51.429094],
+          [-2.591907, 51.428977],
+          [-2.591505, 51.428813],
+          [-2.591121, 51.428681],
+          [-2.591006, 51.428653],
+          [-2.590916, 51.428654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593686, 51.43113],
+          [-2.593944, 51.430741],
+          [-2.594001, 51.430606],
+          [-2.594034, 51.430462],
+          [-2.594056, 51.430279],
+          [-2.594035, 51.430243],
+          [-2.593977, 51.430192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592951, 51.430324],
+          [-2.593281, 51.430309],
+          [-2.593914, 51.43021],
+          [-2.59401, 51.430179],
+          [-2.594033, 51.430153],
+          [-2.594044, 51.430115],
+          [-2.593996, 51.429893],
+          [-2.593925, 51.429693],
+          [-2.593803, 51.429468],
+          [-2.593634, 51.429235],
+          [-2.593545, 51.429133],
+          [-2.593532, 51.429076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591504, 51.430646],
+          [-2.591651, 51.430497],
+          [-2.59173, 51.43044],
+          [-2.591828, 51.430396],
+          [-2.591967, 51.430353],
+          [-2.592201, 51.430313],
+          [-2.592385, 51.430302],
+          [-2.592679, 51.430306],
+          [-2.592951, 51.430324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593532, 51.429076],
+          [-2.593605, 51.429064],
+          [-2.593667, 51.429041],
+          [-2.594368, 51.428587],
+          [-2.594943, 51.428188],
+          [-2.595009, 51.428115],
+          [-2.595032, 51.428045],
+          [-2.595039, 51.427961],
+          [-2.595013, 51.427864],
+          [-2.594944, 51.427778],
+          [-2.594843, 51.427701],
+          [-2.592964, 51.42686],
+          [-2.592277, 51.426569],
+          [-2.592106, 51.426484],
+          [-2.59187, 51.426295],
+          [-2.591604, 51.426055],
+          [-2.591538, 51.426021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593943, 51.427301],
+          [-2.593759, 51.427543],
+          [-2.593715, 51.427621],
+          [-2.593688, 51.427759],
+          [-2.593684, 51.427857],
+          [-2.593689, 51.427969],
+          [-2.593721, 51.428075],
+          [-2.593766, 51.428159],
+          [-2.593834, 51.428238],
+          [-2.594368, 51.428587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584821, 51.427841],
+          [-2.58578, 51.428187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592964, 51.42686],
+          [-2.59267, 51.427242],
+          [-2.592587, 51.427428],
+          [-2.592535, 51.427751],
+          [-2.592544, 51.427956],
+          [-2.592649, 51.428311],
+          [-2.59272, 51.428433],
+          [-2.592815, 51.428554],
+          [-2.592979, 51.428719],
+          [-2.593176, 51.42887],
+          [-2.593464, 51.429055],
+          [-2.593532, 51.429076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590655, 51.427409],
+          [-2.590685, 51.427386],
+          [-2.59144, 51.427053],
+          [-2.591768, 51.426819],
+          [-2.592106, 51.426484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591792, 51.42728],
+          [-2.59144, 51.427053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591095, 51.428041],
+          [-2.592544, 51.427956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590128, 51.429266],
+          [-2.590127, 51.42933],
+          [-2.590018, 51.429449],
+          [-2.589604, 51.429814],
+          [-2.589393, 51.429929],
+          [-2.58922, 51.429987],
+          [-2.589041, 51.430019],
+          [-2.588879, 51.430036],
+          [-2.586293, 51.430169],
+          [-2.586172, 51.430155],
+          [-2.586074, 51.43013],
+          [-2.585926, 51.430066],
+          [-2.585828, 51.429999],
+          [-2.585758, 51.429894],
+          [-2.585618, 51.429487],
+          [-2.585506, 51.429285],
+          [-2.585466, 51.429238],
+          [-2.58526, 51.429067],
+          [-2.584984, 51.428871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594695, 51.431375],
+          [-2.594353, 51.431598],
+          [-2.594018, 51.431783],
+          [-2.59358, 51.431971],
+          [-2.593228, 51.432097],
+          [-2.593, 51.432156],
+          [-2.592901, 51.432166],
+          [-2.592741, 51.432176],
+          [-2.592595, 51.432173],
+          [-2.592452, 51.43215],
+          [-2.592284, 51.432101],
+          [-2.592165, 51.432048],
+          [-2.592013, 51.431961],
+          [-2.591875, 51.431852],
+          [-2.591679, 51.431591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584913, 51.428809],
+          [-2.58473, 51.428661],
+          [-2.584655, 51.428577],
+          [-2.584571, 51.428388],
+          [-2.584545, 51.428259],
+          [-2.584544, 51.428197],
+          [-2.584566, 51.42813],
+          [-2.584609, 51.428064],
+          [-2.584821, 51.427841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583945, 51.428698],
+          [-2.584084, 51.428636],
+          [-2.584118, 51.428436],
+          [-2.584571, 51.428388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587295, 51.424099],
+          [-2.587317, 51.424146],
+          [-2.587625, 51.42449],
+          [-2.588077, 51.424817],
+          [-2.589436, 51.425503],
+          [-2.590083, 51.425959],
+          [-2.590651, 51.426436]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588542, 51.426644],
+          [-2.590083, 51.425959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587912, 51.426195],
+          [-2.589221, 51.425618],
+          [-2.589436, 51.425503]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587595, 51.425815],
+          [-2.587655, 51.426184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587475, 51.422921],
+          [-2.587709, 51.423111],
+          [-2.588203, 51.423449],
+          [-2.588346, 51.423565],
+          [-2.588933, 51.423981],
+          [-2.589537, 51.4244],
+          [-2.589718, 51.424512],
+          [-2.59044, 51.425036],
+          [-2.591689, 51.425907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586546, 51.425422],
+          [-2.58689, 51.425382],
+          [-2.587174, 51.425317],
+          [-2.589537, 51.4244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586546, 51.425422],
+          [-2.586604, 51.425514],
+          [-2.586853, 51.42683]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585153, 51.425526],
+          [-2.585114, 51.425623],
+          [-2.585259, 51.426373]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588505, 51.424225],
+          [-2.588933, 51.423981]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580737, 51.425576],
+          [-2.581182, 51.425393],
+          [-2.583086, 51.42465],
+          [-2.583448, 51.424518],
+          [-2.583636, 51.424462],
+          [-2.584018, 51.424375],
+          [-2.584321, 51.424335],
+          [-2.587206, 51.424119],
+          [-2.587331, 51.424091],
+          [-2.588346, 51.423565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581297, 51.425658],
+          [-2.581386, 51.425316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583297, 51.42517],
+          [-2.583091, 51.425495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582265, 51.424383],
+          [-2.582686, 51.42481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583695, 51.423158],
+          [-2.582962, 51.424019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584002, 51.423814],
+          [-2.583327, 51.423589]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584307, 51.42587],
+          [-2.584236, 51.425592],
+          [-2.584142, 51.425064],
+          [-2.584107, 51.424971],
+          [-2.584059, 51.424902],
+          [-2.583539, 51.424362],
+          [-2.583381, 51.424245],
+          [-2.583213, 51.424141],
+          [-2.582962, 51.424019],
+          [-2.582738, 51.42394],
+          [-2.582375, 51.423848],
+          [-2.581992, 51.423797],
+          [-2.581814, 51.423818],
+          [-2.581742, 51.423843],
+          [-2.581662, 51.423881],
+          [-2.58159, 51.423933],
+          [-2.581527, 51.424022],
+          [-2.581454, 51.424212],
+          [-2.581419, 51.424427],
+          [-2.581421, 51.424483],
+          [-2.581456, 51.424622],
+          [-2.581501, 51.424746],
+          [-2.581624, 51.424996],
+          [-2.581668, 51.425066],
+          [-2.581741, 51.425141],
+          [-2.582031, 51.42523],
+          [-2.583091, 51.425495],
+          [-2.583437, 51.425573],
+          [-2.583551, 51.42559],
+          [-2.583758, 51.425607],
+          [-2.583965, 51.425606],
+          [-2.585153, 51.425526]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581289, 51.423385],
+          [-2.581742, 51.423843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580793, 51.42488],
+          [-2.58078, 51.425012],
+          [-2.581182, 51.425393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579431, 51.423896],
+          [-2.579676, 51.424237],
+          [-2.579735, 51.424299],
+          [-2.579883, 51.424392],
+          [-2.580064, 51.424464],
+          [-2.580267, 51.424505],
+          [-2.580389, 51.424507],
+          [-2.581421, 51.424483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580599, 51.423943],
+          [-2.580387, 51.423636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582496, 51.423379],
+          [-2.582306, 51.423107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577925, 51.424305],
+          [-2.578896, 51.424048],
+          [-2.582306, 51.423107],
+          [-2.582589, 51.423041],
+          [-2.582808, 51.422972],
+          [-2.582899, 51.422908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575509, 51.424372],
+          [-2.575622, 51.424291],
+          [-2.575743, 51.424224],
+          [-2.575996, 51.424128],
+          [-2.582137, 51.422449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579846, 51.423071],
+          [-2.579799, 51.423004],
+          [-2.579766, 51.422927],
+          [-2.57975, 51.42278],
+          [-2.57977, 51.422696],
+          [-2.579826, 51.422568],
+          [-2.579867, 51.422513],
+          [-2.579988, 51.422408],
+          [-2.580134, 51.422319],
+          [-2.580256, 51.42226],
+          [-2.581457, 51.421786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578677, 51.425518],
+          [-2.578985, 51.425504],
+          [-2.579304, 51.425503],
+          [-2.580075, 51.425524],
+          [-2.580737, 51.425576],
+          [-2.581636, 51.425714],
+          [-2.582296, 51.425862],
+          [-2.58299, 51.42606],
+          [-2.584248, 51.426519],
+          [-2.584312, 51.426551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577925, 51.424305],
+          [-2.57882, 51.425068],
+          [-2.578911, 51.425183],
+          [-2.578967, 51.425303],
+          [-2.578993, 51.425402],
+          [-2.578987, 51.425996],
+          [-2.579801, 51.426],
+          [-2.580408, 51.426034],
+          [-2.581133, 51.426126],
+          [-2.581481, 51.426189],
+          [-2.581874, 51.426272],
+          [-2.582391, 51.42641],
+          [-2.583919, 51.426945]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585167, 51.423259],
+          [-2.585167, 51.423314],
+          [-2.585202, 51.423353],
+          [-2.585282, 51.423378],
+          [-2.585338, 51.423406],
+          [-2.585366, 51.42344],
+          [-2.585661, 51.424996],
+          [-2.585657, 51.425036],
+          [-2.585592, 51.425144],
+          [-2.585239, 51.425423],
+          [-2.585187, 51.42547],
+          [-2.585153, 51.425526]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586546, 51.425422],
+          [-2.585877, 51.425077],
+          [-2.585837, 51.425018],
+          [-2.585494, 51.423431],
+          [-2.585514, 51.423394],
+          [-2.585591, 51.423355],
+          [-2.585637, 51.423307],
+          [-2.58564, 51.423233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588375, 51.425566],
+          [-2.588703, 51.425846]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59044, 51.425036],
+          [-2.59055, 51.424973],
+          [-2.5933, 51.423904],
+          [-2.593862, 51.423694],
+          [-2.593959, 51.423668],
+          [-2.594047, 51.423663],
+          [-2.594186, 51.423682],
+          [-2.594662, 51.423868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592625, 51.423228],
+          [-2.593079, 51.423049],
+          [-2.59324, 51.423016],
+          [-2.593412, 51.423009],
+          [-2.59462, 51.423062],
+          [-2.594789, 51.423085],
+          [-2.594922, 51.42313],
+          [-2.595351, 51.423347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594114, 51.422119],
+          [-2.594017, 51.423035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595199, 51.422545],
+          [-2.594858, 51.42205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592917, 51.42245],
+          [-2.593366, 51.421981]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592832, 51.421643],
+          [-2.592973, 51.421764],
+          [-2.593065, 51.421828],
+          [-2.593342, 51.421973],
+          [-2.593451, 51.42201],
+          [-2.593703, 51.422077],
+          [-2.593832, 51.422098],
+          [-2.594062, 51.422118],
+          [-2.594226, 51.422121],
+          [-2.594487, 51.42211],
+          [-2.594748, 51.422074],
+          [-2.594858, 51.42205],
+          [-2.595048, 51.421993],
+          [-2.595249, 51.42191],
+          [-2.59549, 51.421759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590657, 51.422483],
+          [-2.59187, 51.423691]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589365, 51.422987],
+          [-2.590549, 51.424191]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589718, 51.424512],
+          [-2.589903, 51.42443],
+          [-2.592746, 51.423359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590974, 51.421587],
+          [-2.5933, 51.423904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590315, 51.417734],
+          [-2.590507, 51.417781],
+          [-2.59053, 51.417802],
+          [-2.590584, 51.418374],
+          [-2.590636, 51.418479],
+          [-2.590711, 51.418583],
+          [-2.59083, 51.418701],
+          [-2.590932, 51.418784],
+          [-2.591313, 51.419047],
+          [-2.591473, 51.41917],
+          [-2.59201, 51.419749],
+          [-2.592159, 51.420032],
+          [-2.592392, 51.420246],
+          [-2.592872, 51.420736],
+          [-2.592897, 51.420767],
+          [-2.592916, 51.420879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592916, 51.420879],
+          [-2.592793, 51.420895],
+          [-2.592672, 51.420928],
+          [-2.591896, 51.421217],
+          [-2.590245, 51.421869],
+          [-2.589145, 51.422275],
+          [-2.588171, 51.422685],
+          [-2.58767, 51.422861],
+          [-2.587475, 51.422921]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592916, 51.420879],
+          [-2.593073, 51.420873],
+          [-2.593278, 51.420891],
+          [-2.59382, 51.421027],
+          [-2.593962, 51.421054],
+          [-2.594248, 51.421077],
+          [-2.594411, 51.421076],
+          [-2.594571, 51.421061],
+          [-2.595239, 51.420977],
+          [-2.595372, 51.420983],
+          [-2.595567, 51.421017],
+          [-2.59581, 51.421084],
+          [-2.595906, 51.421124],
+          [-2.596868, 51.421621],
+          [-2.597071, 51.42174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589871, 51.418157],
+          [-2.590556, 51.418158]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593215, 51.421005],
+          [-2.59358, 51.421376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595099, 51.421177],
+          [-2.594792, 51.421417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6002, 51.430235],
+          [-2.600142, 51.43005],
+          [-2.599804, 51.429195],
+          [-2.599758, 51.429012],
+          [-2.599744, 51.428415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599688, 51.427929],
+          [-2.599293, 51.427842],
+          [-2.598855, 51.42771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596337, 51.426899],
+          [-2.596659, 51.426932],
+          [-2.596788, 51.426965],
+          [-2.597744, 51.427351],
+          [-2.597913, 51.4274],
+          [-2.598046, 51.427406],
+          [-2.598183, 51.427396],
+          [-2.598293, 51.427375],
+          [-2.598447, 51.427309],
+          [-2.59852, 51.427261],
+          [-2.598569, 51.427197],
+          [-2.598735, 51.426862],
+          [-2.598772, 51.426724],
+          [-2.598754, 51.426508],
+          [-2.5987, 51.426362],
+          [-2.598656, 51.426294],
+          [-2.598571, 51.426216],
+          [-2.598393, 51.42613],
+          [-2.597476, 51.425798]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59831, 51.42798],
+          [-2.598422, 51.427805],
+          [-2.598436, 51.427674],
+          [-2.598411, 51.427575],
+          [-2.598293, 51.427375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597357, 51.425034],
+          [-2.598733, 51.425409],
+          [-2.599878, 51.425667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599218, 51.425519],
+          [-2.599358, 51.425053],
+          [-2.599362, 51.425001],
+          [-2.599337, 51.424958],
+          [-2.599271, 51.424926],
+          [-2.598149, 51.424707],
+          [-2.598095, 51.424704],
+          [-2.598068, 51.424711],
+          [-2.598047, 51.42473],
+          [-2.597749, 51.425142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592418, 51.425645],
+          [-2.592535, 51.425739],
+          [-2.59273, 51.425825],
+          [-2.59328, 51.426117],
+          [-2.593464, 51.42619],
+          [-2.596128, 51.42689],
+          [-2.596219, 51.426905],
+          [-2.596271, 51.426906],
+          [-2.596337, 51.426899],
+          [-2.596445, 51.426836],
+          [-2.596928, 51.426382],
+          [-2.597476, 51.425798],
+          [-2.598007, 51.42521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59948, 51.419691],
+          [-2.599056, 51.419697],
+          [-2.598821, 51.419652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597903, 51.421466],
+          [-2.597542, 51.421417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59521, 51.419936],
+          [-2.596063, 51.419613],
+          [-2.596954, 51.419256],
+          [-2.597491, 51.41907],
+          [-2.597614, 51.419049],
+          [-2.597769, 51.419047],
+          [-2.59797, 51.41907],
+          [-2.598068, 51.41909],
+          [-2.599025, 51.419408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596954, 51.419256],
+          [-2.597179, 51.419448],
+          [-2.597297, 51.419528],
+          [-2.597423, 51.419595],
+          [-2.598177, 51.419878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596447, 51.420357],
+          [-2.596509, 51.420387],
+          [-2.597395, 51.420431],
+          [-2.597643, 51.420471],
+          [-2.59802, 51.420558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596063, 51.419613],
+          [-2.596257, 51.419836],
+          [-2.596345, 51.419989],
+          [-2.596398, 51.420171],
+          [-2.596414, 51.42031],
+          [-2.596447, 51.420357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596789, 51.421223],
+          [-2.596594, 51.421256],
+          [-2.596491, 51.421291],
+          [-2.596372, 51.421365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595194, 51.420483],
+          [-2.595272, 51.420482],
+          [-2.595347, 51.420497],
+          [-2.595422, 51.420522],
+          [-2.595459, 51.420565],
+          [-2.595481, 51.420721],
+          [-2.595473, 51.420861],
+          [-2.595434, 51.420991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596115, 51.420417],
+          [-2.596447, 51.420357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597125, 51.420621],
+          [-2.597032, 51.420414]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596502, 51.419437],
+          [-2.596345, 51.419284],
+          [-2.596207, 51.419201],
+          [-2.595624, 51.419008],
+          [-2.595417, 51.418951],
+          [-2.595055, 51.418869],
+          [-2.594896, 51.418822],
+          [-2.594715, 51.418728],
+          [-2.594629, 51.418654],
+          [-2.594572, 51.41858],
+          [-2.594536, 51.418497],
+          [-2.594527, 51.418391],
+          [-2.594551, 51.418292],
+          [-2.594604, 51.4182],
+          [-2.594689, 51.418116],
+          [-2.594735, 51.418085],
+          [-2.594829, 51.418036],
+          [-2.595043, 51.417948],
+          [-2.595181, 51.417858],
+          [-2.595275, 51.417769],
+          [-2.595472, 51.417491],
+          [-2.595486, 51.417407],
+          [-2.595456, 51.417325],
+          [-2.59538, 51.417247],
+          [-2.595289, 51.417201],
+          [-2.595176, 51.417166],
+          [-2.595097, 51.417156],
+          [-2.594957, 51.417158],
+          [-2.594826, 51.417195],
+          [-2.594382, 51.417384],
+          [-2.594197, 51.417434],
+          [-2.594014, 51.417459],
+          [-2.593374, 51.417511],
+          [-2.592536, 51.417607],
+          [-2.592391, 51.417634],
+          [-2.592254, 51.417681],
+          [-2.592125, 51.417755],
+          [-2.592071, 51.417799],
+          [-2.592014, 51.417881],
+          [-2.591993, 51.417934],
+          [-2.591983, 51.41803],
+          [-2.591994, 51.418079],
+          [-2.59203, 51.418166],
+          [-2.592064, 51.418211],
+          [-2.592153, 51.418289],
+          [-2.592207, 51.418323],
+          [-2.593533, 51.418986],
+          [-2.593663, 51.419089],
+          [-2.593701, 51.419157],
+          [-2.593717, 51.41923],
+          [-2.593719, 51.419614],
+          [-2.593697, 51.419702],
+          [-2.593547, 51.420047],
+          [-2.593493, 51.420461],
+          [-2.593465, 51.420555],
+          [-2.593421, 51.420626],
+          [-2.593206, 51.420882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593481, 51.420495],
+          [-2.594144, 51.420642],
+          [-2.594266, 51.420654],
+          [-2.594336, 51.420652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593586, 51.419947],
+          [-2.593903, 51.419986],
+          [-2.594385, 51.419949],
+          [-2.594622, 51.419993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593719, 51.419603],
+          [-2.594185, 51.4196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593713, 51.419206],
+          [-2.593375, 51.419209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593589, 51.419022],
+          [-2.593757, 51.418935],
+          [-2.593956, 51.418932],
+          [-2.593956, 51.418788],
+          [-2.593901, 51.418788],
+          [-2.593779, 51.418675],
+          [-2.593779, 51.418477],
+          [-2.593761, 51.418409],
+          [-2.59371, 51.418346],
+          [-2.593704, 51.418104]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593047, 51.418742],
+          [-2.592895, 51.418864],
+          [-2.592844, 51.418892],
+          [-2.592779, 51.418906],
+          [-2.592671, 51.418907],
+          [-2.592671, 51.419111],
+          [-2.592661, 51.419137],
+          [-2.59261, 51.419185],
+          [-2.592612, 51.419338]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591872, 51.418598],
+          [-2.592095, 51.418611],
+          [-2.592185, 51.418599],
+          [-2.592412, 51.418427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596049, 51.419144],
+          [-2.596353, 51.41892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594756, 51.418073],
+          [-2.594586, 51.417971],
+          [-2.594531, 51.417958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595773, 51.417973],
+          [-2.595292, 51.417969],
+          [-2.595233, 51.417952],
+          [-2.595132, 51.417895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596273, 51.41752],
+          [-2.596064, 51.41752],
+          [-2.596064, 51.417491],
+          [-2.595651, 51.417491],
+          [-2.595477, 51.417475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595116, 51.417159],
+          [-2.595123, 51.416994],
+          [-2.595167, 51.416959],
+          [-2.595344, 51.416871],
+          [-2.595389, 51.416804],
+          [-2.595412, 51.416675],
+          [-2.595427, 51.41644],
+          [-2.595394, 51.416408],
+          [-2.594986, 51.416373],
+          [-2.594645, 51.416401],
+          [-2.594557, 51.416414],
+          [-2.594508, 51.416439],
+          [-2.59447, 51.416534],
+          [-2.594409, 51.416558],
+          [-2.5942, 51.416561],
+          [-2.593958, 51.416523],
+          [-2.593851, 51.416525],
+          [-2.593802, 51.416533],
+          [-2.593602, 51.416599],
+          [-2.593423, 51.416608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591979, 51.416992],
+          [-2.59199, 51.417537],
+          [-2.592025, 51.417598],
+          [-2.592178, 51.41772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591383, 51.41809],
+          [-2.591995, 51.418086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592858, 51.417852],
+          [-2.592858, 51.417669],
+          [-2.592835, 51.417573]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592937, 51.417561],
+          [-2.592933, 51.417319],
+          [-2.592944, 51.417286],
+          [-2.593002, 51.417215],
+          [-2.592988, 51.417118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594007, 51.417459],
+          [-2.594009, 51.416944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594624, 51.417037],
+          [-2.594709, 51.417037],
+          [-2.594719, 51.417176],
+          [-2.594756, 51.417225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597939, 51.421355],
+          [-2.597874, 51.421559],
+          [-2.597816, 51.421603],
+          [-2.597764, 51.421617],
+          [-2.597684, 51.421622]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591614, 51.420922],
+          [-2.591896, 51.421217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596382, 51.416272],
+          [-2.596266, 51.416414],
+          [-2.596471, 51.416331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603845, 51.430662],
+          [-2.603692, 51.430109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603614, 51.429845],
+          [-2.603529, 51.429459],
+          [-2.603544, 51.42944],
+          [-2.603572, 51.42943],
+          [-2.604444, 51.429327]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604276, 51.430038],
+          [-2.603286, 51.430155],
+          [-2.603202, 51.430171],
+          [-2.603135, 51.430199],
+          [-2.603089, 51.43023],
+          [-2.602367, 51.431025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606675, 51.432626],
+          [-2.606244, 51.432846],
+          [-2.606057, 51.432929],
+          [-2.604166, 51.433695],
+          [-2.604014, 51.433764],
+          [-2.603959, 51.433799],
+          [-2.603918, 51.433864],
+          [-2.603923, 51.433915],
+          [-2.603947, 51.433962],
+          [-2.604035, 51.434036],
+          [-2.604102, 51.434056],
+          [-2.604205, 51.434065],
+          [-2.604331, 51.434057],
+          [-2.604761, 51.43399],
+          [-2.605989, 51.433505],
+          [-2.606614, 51.433246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582899, 51.422908],
+          [-2.582669, 51.422796],
+          [-2.58249, 51.422695],
+          [-2.58229, 51.422566],
+          [-2.582137, 51.422449],
+          [-2.58115, 51.421488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584881, 51.426996],
+          [-2.584987, 51.426914],
+          [-2.586168, 51.426836],
+          [-2.58625, 51.426866],
+          [-2.586339, 51.426871],
+          [-2.587686, 51.426763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602759, 51.433782],
+          [-2.602619, 51.433663],
+          [-2.602379, 51.433502],
+          [-2.602151, 51.433382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604887, 51.431005],
+          [-2.604831, 51.431007],
+          [-2.604763, 51.43097],
+          [-2.604636, 51.43095],
+          [-2.60429, 51.430979],
+          [-2.603771, 51.43105],
+          [-2.60311, 51.431103],
+          [-2.602985, 51.431106],
+          [-2.602744, 51.431093],
+          [-2.602596, 51.431073],
+          [-2.602367, 51.431025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592574, 51.419719],
+          [-2.592562, 51.419915],
+          [-2.592605, 51.419999],
+          [-2.592678, 51.420075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590711, 51.418583],
+          [-2.590422, 51.418662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592159, 51.420032],
+          [-2.592562, 51.419915]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591774, 51.420862],
+          [-2.591278, 51.421046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597362, 51.421952],
+          [-2.597557, 51.422028],
+          [-2.597631, 51.422067]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597071, 51.42174],
+          [-2.597177, 51.421845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599674, 51.43284],
+          [-2.599708, 51.43267],
+          [-2.599744, 51.432575],
+          [-2.599898, 51.432351],
+          [-2.600036, 51.431868],
+          [-2.600172, 51.431595],
+          [-2.600211, 51.431355],
+          [-2.60029, 51.431125],
+          [-2.600396, 51.43095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593001, 51.418102],
+          [-2.593005, 51.418397],
+          [-2.59289, 51.418399],
+          [-2.592798, 51.418414],
+          [-2.59259, 51.418515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585167, 51.423259],
+          [-2.584679, 51.423261],
+          [-2.584323, 51.42325],
+          [-2.584024, 51.423215],
+          [-2.583695, 51.423158],
+          [-2.583468, 51.423107],
+          [-2.5833, 51.423056],
+          [-2.582899, 51.422908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576246, 51.424759],
+          [-2.577925, 51.424305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6002, 51.430235],
+          [-2.599834, 51.430217],
+          [-2.599702, 51.430223],
+          [-2.599557, 51.430241],
+          [-2.599426, 51.43028],
+          [-2.599106, 51.430412],
+          [-2.598567, 51.430677],
+          [-2.598369, 51.43079],
+          [-2.59803, 51.43106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597889, 51.432835],
+          [-2.59717, 51.432924],
+          [-2.596815, 51.432984],
+          [-2.596138, 51.433137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596537, 51.423213],
+          [-2.595983, 51.422863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599878, 51.425667],
+          [-2.600031, 51.425397],
+          [-2.600124, 51.425053],
+          [-2.600132, 51.424823],
+          [-2.600064, 51.424058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599688, 51.427929],
+          [-2.599797, 51.427419],
+          [-2.59977, 51.427106],
+          [-2.599733, 51.426931],
+          [-2.599582, 51.426474],
+          [-2.599566, 51.426133],
+          [-2.599639, 51.426009],
+          [-2.599878, 51.425667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597631, 51.422067],
+          [-2.597464, 51.421855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597272, 51.42178],
+          [-2.597071, 51.42174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595906, 51.421124],
+          [-2.595925, 51.421088],
+          [-2.596004, 51.421038],
+          [-2.596258, 51.420993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585478, 51.427242],
+          [-2.585554, 51.427156],
+          [-2.585501, 51.427051],
+          [-2.58547, 51.426886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587489, 51.426643],
+          [-2.587521, 51.426777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586163, 51.426744],
+          [-2.586168, 51.426836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605093, 51.430999],
+          [-2.604887, 51.431005]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605011, 51.430878],
+          [-2.604979, 51.430921],
+          [-2.604887, 51.431005]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598344, 51.420559],
+          [-2.598217, 51.420563],
+          [-2.59805, 51.420515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59791, 51.420717],
+          [-2.598036, 51.420763],
+          [-2.598207, 51.420772],
+          [-2.59821, 51.420828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598548, 51.420244],
+          [-2.598552, 51.420339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598325, 51.420197],
+          [-2.598497, 51.420244],
+          [-2.598637, 51.420247]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598861, 51.419985],
+          [-2.598868, 51.420053],
+          [-2.598961, 51.420079],
+          [-2.599206, 51.420071],
+          [-2.599202, 51.419896],
+          [-2.599159, 51.419857],
+          [-2.599062, 51.419842],
+          [-2.599056, 51.419697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598258, 51.419784],
+          [-2.598177, 51.419878],
+          [-2.598171, 51.419918],
+          [-2.598291, 51.419962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600067, 51.424081],
+          [-2.600464, 51.424101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600522, 51.423811],
+          [-2.600436, 51.424293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599744, 51.428415],
+          [-2.599697, 51.428181],
+          [-2.599688, 51.427929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599744, 51.428415],
+          [-2.599925, 51.428419],
+          [-2.600119, 51.428451],
+          [-2.60029, 51.428497],
+          [-2.600695, 51.428634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59992, 51.428855],
+          [-2.600498, 51.428568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591015, 51.429278],
+          [-2.590845, 51.429442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590991, 51.429501],
+          [-2.590261, 51.429206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590916, 51.428654],
+          [-2.590848, 51.428668],
+          [-2.590807, 51.428689],
+          [-2.590261, 51.429206],
+          [-2.590203, 51.429243],
+          [-2.590128, 51.429266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591964, 51.41928],
+          [-2.591678, 51.419389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59515, 51.427275],
+          [-2.595252, 51.42713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594725, 51.427195],
+          [-2.594848, 51.427014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594524, 51.426922],
+          [-2.595551, 51.427215],
+          [-2.595594, 51.427218],
+          [-2.595625, 51.427204],
+          [-2.595893, 51.426828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589542, 51.433816],
+          [-2.589622, 51.433789],
+          [-2.590124, 51.433778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590124, 51.433778],
+          [-2.590181, 51.434457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594004, 51.432395],
+          [-2.594415, 51.432913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590083, 51.433272],
+          [-2.590124, 51.433778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595646, 51.43179],
+          [-2.595473, 51.431855],
+          [-2.594856, 51.432163],
+          [-2.594783, 51.432186],
+          [-2.594709, 51.432197],
+          [-2.594498, 51.432195],
+          [-2.594399, 51.432206],
+          [-2.594292, 51.432239],
+          [-2.594177, 51.432288],
+          [-2.594068, 51.432367],
+          [-2.594004, 51.432395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589196, 51.432899],
+          [-2.589564, 51.43326],
+          [-2.589596, 51.433275],
+          [-2.591632, 51.433253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589196, 51.432899],
+          [-2.588921, 51.432954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589331, 51.432765],
+          [-2.589299, 51.43285],
+          [-2.589196, 51.432899]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585153, 51.425526],
+          [-2.586546, 51.425422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583503, 51.427365],
+          [-2.583919, 51.426945],
+          [-2.584204, 51.426638],
+          [-2.584312, 51.426551],
+          [-2.58446, 51.426476],
+          [-2.584587, 51.426436],
+          [-2.584753, 51.426407],
+          [-2.585259, 51.426373]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583503, 51.427365],
+          [-2.584821, 51.427841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581045, 51.426616],
+          [-2.581528, 51.426713],
+          [-2.582069, 51.426856],
+          [-2.58243, 51.426977],
+          [-2.583503, 51.427365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576517, 51.422811],
+          [-2.576888, 51.42313],
+          [-2.577248, 51.422978],
+          [-2.577483, 51.422867],
+          [-2.577887, 51.422707],
+          [-2.578047, 51.422609],
+          [-2.578058, 51.422537],
+          [-2.577798, 51.422269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585511, 51.423244],
+          [-2.585514, 51.422921],
+          [-2.585502, 51.422788],
+          [-2.58546, 51.422695],
+          [-2.585376, 51.422624],
+          [-2.585257, 51.422581],
+          [-2.585165, 51.422559],
+          [-2.584904, 51.422527],
+          [-2.58459, 51.422452],
+          [-2.584349, 51.422373],
+          [-2.584134, 51.422281],
+          [-2.583829, 51.422106],
+          [-2.583652, 51.421982],
+          [-2.583397, 51.421758],
+          [-2.583266, 51.421586],
+          [-2.583188, 51.421459],
+          [-2.583184, 51.421359],
+          [-2.58322, 51.421241],
+          [-2.583314, 51.421186],
+          [-2.584244, 51.420812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581865, 51.421292],
+          [-2.583107, 51.421228],
+          [-2.58322, 51.421241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575582, 51.42365],
+          [-2.575651, 51.423651],
+          [-2.576038, 51.423569],
+          [-2.576307, 51.423441],
+          [-2.576802, 51.423184],
+          [-2.576888, 51.42313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578314, 51.422851],
+          [-2.577887, 51.422707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593077, 51.416805],
+          [-2.593077, 51.416894],
+          [-2.593052, 51.416952],
+          [-2.593048, 51.417058],
+          [-2.593025, 51.417096],
+          [-2.592988, 51.417118],
+          [-2.592916, 51.417074],
+          [-2.592902, 51.416925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594531, 51.417767],
+          [-2.594531, 51.417958],
+          [-2.594485, 51.417958],
+          [-2.594485, 51.418043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580087, 51.421656],
+          [-2.579835, 51.421781],
+          [-2.579799, 51.421809],
+          [-2.579489, 51.421938],
+          [-2.579417, 51.42209],
+          [-2.579368, 51.422146],
+          [-2.578915, 51.422403],
+          [-2.578601, 51.422731],
+          [-2.578464, 51.422802],
+          [-2.578314, 51.422851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590921, 51.41909],
+          [-2.591077, 51.41903],
+          [-2.591189, 51.418964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591361, 51.419528],
+          [-2.591694, 51.419406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587475, 51.422921],
+          [-2.587115, 51.423007],
+          [-2.586503, 51.423124],
+          [-2.586045, 51.423198],
+          [-2.58564, 51.423233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58564, 51.423233],
+          [-2.585167, 51.423259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580688, 51.421218],
+          [-2.58076, 51.421294],
+          [-2.580913, 51.421415],
+          [-2.58103, 51.421463],
+          [-2.58115, 51.421488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58115, 51.421488],
+          [-2.580909, 51.421239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595549, 51.419808],
+          [-2.595626, 51.419917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57991, 51.421878],
+          [-2.579799, 51.421809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577758, 51.423029],
+          [-2.578036, 51.422927],
+          [-2.578314, 51.422851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592785, 51.424814],
+          [-2.591656, 51.425251],
+          [-2.591463, 51.425349],
+          [-2.591151, 51.425528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596652, 51.428461],
+          [-2.596845, 51.428484],
+          [-2.596971, 51.428488],
+          [-2.597051, 51.428477],
+          [-2.597132, 51.428434],
+          [-2.597199, 51.42835],
+          [-2.597221, 51.428272],
+          [-2.597223, 51.428178],
+          [-2.597123, 51.427855],
+          [-2.597087, 51.427768],
+          [-2.597057, 51.427733],
+          [-2.597009, 51.427698],
+          [-2.596704, 51.427568],
+          [-2.596598, 51.427534],
+          [-2.596433, 51.427465],
+          [-2.596363, 51.427456],
+          [-2.596275, 51.427464],
+          [-2.596183, 51.427503],
+          [-2.595997, 51.427718],
+          [-2.595778, 51.427941],
+          [-2.595682, 51.428037],
+          [-2.595577, 51.428118],
+          [-2.595364, 51.428182],
+          [-2.595316, 51.428189],
+          [-2.595009, 51.428115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595364, 51.428182],
+          [-2.595388, 51.428269],
+          [-2.595375, 51.428302],
+          [-2.59535, 51.42832],
+          [-2.595253, 51.428357],
+          [-2.595145, 51.428439],
+          [-2.595075, 51.42846],
+          [-2.594949, 51.428472],
+          [-2.594841, 51.428494],
+          [-2.594757, 51.428533],
+          [-2.59451, 51.428691]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595145, 51.428439],
+          [-2.595162, 51.428496],
+          [-2.595205, 51.428548],
+          [-2.59529, 51.428625],
+          [-2.595391, 51.428693],
+          [-2.5956, 51.428788],
+          [-2.595715, 51.428803],
+          [-2.595789, 51.428792],
+          [-2.59586, 51.428753],
+          [-2.595941, 51.428671],
+          [-2.596045, 51.428531],
+          [-2.596077, 51.428505],
+          [-2.596183, 51.428464],
+          [-2.596395, 51.428399],
+          [-2.596435, 51.428376],
+          [-2.59648, 51.428304],
+          [-2.596475, 51.428272],
+          [-2.596455, 51.428237],
+          [-2.596417, 51.428206],
+          [-2.5961, 51.428084],
+          [-2.595682, 51.428037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584957, 51.424861],
+          [-2.585017, 51.425217],
+          [-2.58501, 51.425242],
+          [-2.584925, 51.425328],
+          [-2.584844, 51.425387],
+          [-2.584808, 51.425435],
+          [-2.584784, 51.425547]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585045, 51.424797],
+          [-2.584939, 51.424288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588898, 51.419071],
+          [-2.588376, 51.418554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588898, 51.419071],
+          [-2.589205, 51.418963],
+          [-2.589437, 51.418896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596929, 51.421049],
+          [-2.596756, 51.420664],
+          [-2.596719, 51.420628],
+          [-2.596655, 51.420625],
+          [-2.59653, 51.420639],
+          [-2.596466, 51.420472],
+          [-2.596447, 51.420357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59386, 51.416883],
+          [-2.593799, 51.416883],
+          [-2.593805, 51.41733]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594008, 51.417118],
+          [-2.593802, 51.417119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595055, 51.418869],
+          [-2.595095, 51.4188],
+          [-2.595103, 51.418754],
+          [-2.59509, 51.418722],
+          [-2.595087, 51.418378],
+          [-2.595108, 51.418337],
+          [-2.595148, 51.41831],
+          [-2.595221, 51.418299],
+          [-2.595575, 51.418303],
+          [-2.595673, 51.418316],
+          [-2.596013, 51.418399],
+          [-2.596483, 51.418409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601716, 51.429295],
+          [-2.600625, 51.428854],
+          [-2.600566, 51.428847],
+          [-2.600525, 51.428862],
+          [-2.600216, 51.429111],
+          [-2.600143, 51.42914],
+          [-2.600061, 51.429159],
+          [-2.599804, 51.429195]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598912, 51.420713],
+          [-2.598516, 51.421164],
+          [-2.598563, 51.421225],
+          [-2.598428, 51.421322],
+          [-2.597672, 51.421173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604277, 51.428611],
+          [-2.604199, 51.428611],
+          [-2.604114, 51.428591],
+          [-2.603532, 51.428343],
+          [-2.602985, 51.428084],
+          [-2.602765, 51.427997],
+          [-2.602482, 51.427929],
+          [-2.602396, 51.427855],
+          [-2.602535, 51.427679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602985, 51.428084],
+          [-2.602883, 51.428238],
+          [-2.602735, 51.42837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603565, 51.42688],
+          [-2.603158, 51.426935],
+          [-2.603031, 51.426973],
+          [-2.602921, 51.427031],
+          [-2.602854, 51.427101],
+          [-2.602862, 51.427218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604211, 51.426908],
+          [-2.603565, 51.42688],
+          [-2.603545, 51.426721],
+          [-2.603577, 51.426154]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596394, 51.427724],
+          [-2.596598, 51.427534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595375, 51.428302],
+          [-2.595474, 51.428331],
+          [-2.595523, 51.428334],
+          [-2.595557, 51.428328],
+          [-2.595593, 51.428309],
+          [-2.595616, 51.42828],
+          [-2.595641, 51.428207],
+          [-2.595638, 51.428179],
+          [-2.595577, 51.428118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58951, 51.419078],
+          [-2.589351, 51.418925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58841, 51.419263],
+          [-2.589134, 51.419941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58769, 51.419547],
+          [-2.587842, 51.419685],
+          [-2.588327, 51.420177],
+          [-2.588302, 51.420237],
+          [-2.588243, 51.42028],
+          [-2.587675, 51.420509],
+          [-2.587638, 51.420481],
+          [-2.587092, 51.419973],
+          [-2.587842, 51.419685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586169, 51.419554],
+          [-2.586613, 51.420004],
+          [-2.586642, 51.420005],
+          [-2.586814, 51.419938],
+          [-2.586817, 51.419915],
+          [-2.586374, 51.419479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586594, 51.419695],
+          [-2.588177, 51.419106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589087, 51.419895],
+          [-2.588566, 51.420099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5872, 51.419473],
+          [-2.587388, 51.419665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597357, 51.425034],
+          [-2.596837, 51.424928],
+          [-2.595216, 51.424501],
+          [-2.595139, 51.424497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596904, 51.427012],
+          [-2.597203, 51.426725],
+          [-2.597254, 51.426693],
+          [-2.597296, 51.426679],
+          [-2.597342, 51.426678],
+          [-2.597379, 51.426663],
+          [-2.597714, 51.426352]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597342, 51.426678],
+          [-2.597763, 51.426869],
+          [-2.597914, 51.426907],
+          [-2.598008, 51.426898],
+          [-2.598043, 51.42688],
+          [-2.59808, 51.426839],
+          [-2.598094, 51.426806],
+          [-2.598083, 51.426581],
+          [-2.598063, 51.426533],
+          [-2.598019, 51.426481],
+          [-2.597934, 51.42643],
+          [-2.597714, 51.426352]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601748, 51.430802],
+          [-2.60213, 51.430423],
+          [-2.602081, 51.430369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58711, 51.419775],
+          [-2.58769, 51.419547]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58769, 51.419547],
+          [-2.588898, 51.419071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588482, 51.418667],
+          [-2.588634, 51.418617],
+          [-2.588738, 51.418611],
+          [-2.588918, 51.41862],
+          [-2.589014, 51.418586],
+          [-2.589043, 51.418547],
+          [-2.58898, 51.418468],
+          [-2.588949, 51.418367],
+          [-2.588695, 51.418374],
+          [-2.588532, 51.418496],
+          [-2.588376, 51.418554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591806, 51.426238],
+          [-2.592192, 51.426058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592972, 51.425954],
+          [-2.593293, 51.425726],
+          [-2.593378, 51.425653],
+          [-2.593602, 51.425756],
+          [-2.593852, 51.425849],
+          [-2.594988, 51.426136],
+          [-2.595729, 51.426337],
+          [-2.595937, 51.426411],
+          [-2.596153, 51.426463],
+          [-2.596174, 51.426457],
+          [-2.59628, 51.426374],
+          [-2.596868, 51.425635],
+          [-2.597001, 51.425486],
+          [-2.597042, 51.425455],
+          [-2.597074, 51.425441],
+          [-2.597135, 51.425438],
+          [-2.597665, 51.425589]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599537, 51.423293],
+          [-2.599814, 51.423117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594878, 51.428483],
+          [-2.594912, 51.428529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594631, 51.428613],
+          [-2.594693, 51.428665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598132, 51.425632],
+          [-2.597859, 51.425936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597714, 51.426352],
+          [-2.597773, 51.426278],
+          [-2.598062, 51.42601],
+          [-2.598355, 51.425713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605685, 51.43167],
+          [-2.605535, 51.431729],
+          [-2.605129, 51.431861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594273, 51.42477],
+          [-2.593806, 51.425194],
+          [-2.593367, 51.425013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588157, 51.42753],
+          [-2.587858, 51.427254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598597, 51.4258],
+          [-2.59775, 51.425495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592364, 51.425339],
+          [-2.59251, 51.425264],
+          [-2.592792, 51.425481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59408, 51.425426],
+          [-2.594021, 51.425377],
+          [-2.593957, 51.425343],
+          [-2.593856, 51.425311],
+          [-2.593705, 51.425277],
+          [-2.59327, 51.425099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599093, 51.425491],
+          [-2.598918, 51.425723],
+          [-2.598969, 51.425774],
+          [-2.599022, 51.425856],
+          [-2.599027, 51.425885],
+          [-2.598957, 51.425987],
+          [-2.599099, 51.426093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585437, 51.42019],
+          [-2.584888, 51.420388],
+          [-2.584695, 51.420187],
+          [-2.585243, 51.41999],
+          [-2.585645, 51.420405],
+          [-2.584632, 51.420803],
+          [-2.584554, 51.420812],
+          [-2.584244, 51.420812],
+          [-2.58374, 51.420267],
+          [-2.583558, 51.420086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602183, 51.433397],
+          [-2.602491, 51.433202],
+          [-2.602779, 51.432954],
+          [-2.602952, 51.432788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590519, 51.423477],
+          [-2.590433, 51.423436],
+          [-2.59035, 51.423442],
+          [-2.589952, 51.423587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601916, 51.42459],
+          [-2.601498, 51.424546],
+          [-2.601455, 51.424459],
+          [-2.601063, 51.424421],
+          [-2.601049, 51.424462],
+          [-2.600746, 51.424431],
+          [-2.600514, 51.42443],
+          [-2.600396, 51.424435],
+          [-2.600104, 51.424473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601931, 51.42855],
+          [-2.601656, 51.428847],
+          [-2.601566, 51.428884],
+          [-2.600801, 51.428588],
+          [-2.600388, 51.428444],
+          [-2.599974, 51.428342],
+          [-2.599925, 51.428419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599188, 51.428344],
+          [-2.599613, 51.428477]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599236, 51.428289],
+          [-2.599144, 51.428394]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599746, 51.428626],
+          [-2.599706, 51.4286],
+          [-2.599635, 51.428524],
+          [-2.599613, 51.428477],
+          [-2.599616, 51.428435],
+          [-2.599629, 51.428411],
+          [-2.599716, 51.428297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599177, 51.427807],
+          [-2.599125, 51.427869],
+          [-2.599102, 51.427915],
+          [-2.599046, 51.428197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594524, 51.426922],
+          [-2.593748, 51.426662],
+          [-2.593211, 51.426502],
+          [-2.592827, 51.426335],
+          [-2.592421, 51.426125],
+          [-2.59273, 51.425825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591505, 51.428813],
+          [-2.591559, 51.428758],
+          [-2.59167, 51.428714],
+          [-2.591786, 51.428713],
+          [-2.591875, 51.428731],
+          [-2.591924, 51.428759],
+          [-2.591963, 51.428798],
+          [-2.59198, 51.428853],
+          [-2.591965, 51.42891],
+          [-2.591907, 51.428977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597644, 51.42788],
+          [-2.597314, 51.42764],
+          [-2.596699, 51.427376],
+          [-2.596515, 51.427317],
+          [-2.596029, 51.427213],
+          [-2.595947, 51.4272],
+          [-2.59581, 51.427197],
+          [-2.595647, 51.427173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59959, 51.424592],
+          [-2.599703, 51.424073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595893, 51.426828],
+          [-2.596153, 51.426463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587081, 51.425342],
+          [-2.586944, 51.425143],
+          [-2.586879, 51.424964],
+          [-2.586501, 51.424774],
+          [-2.58648, 51.424713],
+          [-2.586471, 51.424564],
+          [-2.586432, 51.424529],
+          [-2.586334, 51.424398],
+          [-2.586281, 51.424189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592026, 51.424768],
+          [-2.591762, 51.424502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602067, 51.428211],
+          [-2.601265, 51.428066],
+          [-2.600777, 51.427969],
+          [-2.600644, 51.427907],
+          [-2.600482, 51.427864],
+          [-2.599726, 51.427765]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586492, 51.4277],
+          [-2.586566, 51.428061]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591161, 51.429336],
+          [-2.590991, 51.429501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58615, 51.428707],
+          [-2.586088, 51.428453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587092, 51.419973],
+          [-2.586163, 51.420332],
+          [-2.586137, 51.420364],
+          [-2.586137, 51.420386],
+          [-2.586277, 51.420663],
+          [-2.58638, 51.420822],
+          [-2.586426, 51.420862],
+          [-2.58648, 51.420892],
+          [-2.586568, 51.420913],
+          [-2.586664, 51.42091],
+          [-2.587675, 51.420509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603446, 51.428619],
+          [-2.603809, 51.428744],
+          [-2.603872, 51.428815],
+          [-2.603939, 51.429032],
+          [-2.603998, 51.429088],
+          [-2.604077, 51.42913],
+          [-2.604187, 51.429167],
+          [-2.60427, 51.429184],
+          [-2.604406, 51.429188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590861, 51.423454],
+          [-2.590826, 51.423403],
+          [-2.59083, 51.423257],
+          [-2.591267, 51.423089]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604591, 51.434294],
+          [-2.604735, 51.434436]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601385, 51.429933],
+          [-2.601167, 51.430149],
+          [-2.601201, 51.430229],
+          [-2.600944, 51.430504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596141, 51.431069],
+          [-2.596078, 51.431157],
+          [-2.596046, 51.431232],
+          [-2.59596, 51.431323],
+          [-2.595953, 51.431415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583957, 51.420501],
+          [-2.583407, 51.420709],
+          [-2.583285, 51.420719],
+          [-2.583233, 51.42073],
+          [-2.582677, 51.42095],
+          [-2.582714, 51.421244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58216, 51.421724],
+          [-2.582436, 51.421634],
+          [-2.582483, 51.421597],
+          [-2.582434, 51.421263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590561, 51.421484],
+          [-2.590625, 51.421548],
+          [-2.590626, 51.421599],
+          [-2.590698, 51.42169]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587572, 51.43395],
+          [-2.587821, 51.433837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595778, 51.427486],
+          [-2.596052, 51.427646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595886, 51.427357],
+          [-2.596215, 51.427433],
+          [-2.596275, 51.427464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597872, 51.42445],
+          [-2.59808, 51.424498],
+          [-2.598036, 51.424574],
+          [-2.598095, 51.424704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595009, 51.420296],
+          [-2.595019, 51.420408],
+          [-2.595039, 51.420438],
+          [-2.595065, 51.420463],
+          [-2.595103, 51.42048],
+          [-2.595194, 51.420483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595083, 51.420554],
+          [-2.595103, 51.42048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600274, 51.429445],
+          [-2.600449, 51.429525],
+          [-2.600591, 51.429617],
+          [-2.600672, 51.429762],
+          [-2.600711, 51.429881],
+          [-2.600738, 51.430103],
+          [-2.600725, 51.430222],
+          [-2.600729, 51.430279],
+          [-2.600643, 51.430376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598422, 51.418622],
+          [-2.598227, 51.418858],
+          [-2.598191, 51.418928],
+          [-2.598068, 51.41909]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582539, 51.422025],
+          [-2.583384, 51.421741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583167, 51.422541],
+          [-2.583829, 51.422106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584091, 51.42277],
+          [-2.584436, 51.422405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601474, 51.429197],
+          [-2.601249, 51.429425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600898, 51.428964],
+          [-2.60064, 51.429225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603169, 51.424873],
+          [-2.602816, 51.425152],
+          [-2.602757, 51.425269],
+          [-2.60272, 51.425883],
+          [-2.602733, 51.425913],
+          [-2.602807, 51.425932],
+          [-2.602937, 51.425938],
+          [-2.603418, 51.425928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604392, 51.424626],
+          [-2.603543, 51.424607],
+          [-2.603425, 51.424655],
+          [-2.603169, 51.424873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603418, 51.425928],
+          [-2.603511, 51.425915],
+          [-2.60361, 51.425872],
+          [-2.603645, 51.425825],
+          [-2.603633, 51.425604],
+          [-2.603652, 51.425421],
+          [-2.603703, 51.425202],
+          [-2.603731, 51.425156],
+          [-2.603794, 51.425123],
+          [-2.603868, 51.425109],
+          [-2.604279, 51.425132],
+          [-2.604376, 51.42513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603169, 51.424873],
+          [-2.603298, 51.424933],
+          [-2.603359, 51.424994],
+          [-2.603312, 51.425348],
+          [-2.603391, 51.425424],
+          [-2.603577, 51.425439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603363, 51.424713],
+          [-2.603755, 51.424732],
+          [-2.603748, 51.425009],
+          [-2.603868, 51.425109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603084, 51.42494],
+          [-2.603124, 51.424973],
+          [-2.603156, 51.425434],
+          [-2.603352, 51.425434],
+          [-2.603391, 51.425424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59187, 51.418353],
+          [-2.591872, 51.418598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591921, 51.418601],
+          [-2.591923, 51.418794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59161, 51.417977],
+          [-2.591381, 51.417978],
+          [-2.591383, 51.41809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593431, 51.418235],
+          [-2.593306, 51.418236],
+          [-2.593223, 51.418207],
+          [-2.593003, 51.418208]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596342, 51.419045],
+          [-2.596445, 51.418969],
+          [-2.596353, 51.41892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593903, 51.419603],
+          [-2.593905, 51.419449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595087, 51.418528],
+          [-2.594929, 51.418529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593787, 51.417476],
+          [-2.593787, 51.417701],
+          [-2.59373, 51.417923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591181, 51.418481],
+          [-2.591169, 51.418603],
+          [-2.591114, 51.418653],
+          [-2.591087, 51.418709],
+          [-2.590932, 51.418784]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592148, 51.417281],
+          [-2.59215, 51.417506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591982, 51.417282],
+          [-2.592238, 51.41728]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603932, 51.427257],
+          [-2.604195, 51.427268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603577, 51.425439],
+          [-2.603652, 51.425421]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581962, 51.420994],
+          [-2.582101, 51.421147],
+          [-2.582119, 51.42128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588376, 51.418554],
+          [-2.588317, 51.418425],
+          [-2.588264, 51.418353],
+          [-2.588027, 51.418182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587921, 51.418278],
+          [-2.588162, 51.41845],
+          [-2.588376, 51.418554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577441, 51.423208],
+          [-2.577592, 51.423104],
+          [-2.577758, 51.423029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602066, 51.427569],
+          [-2.601958, 51.427755],
+          [-2.602396, 51.427855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587043, 51.42664],
+          [-2.587079, 51.426812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586558, 51.426674],
+          [-2.586594, 51.42685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592661, 51.419576],
+          [-2.592655, 51.419669],
+          [-2.592574, 51.419719]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592357, 51.420674],
+          [-2.59268, 51.420545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593208, 51.420043],
+          [-2.593547, 51.420047]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599319, 51.419532],
+          [-2.599328, 51.419693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598085, 51.421034],
+          [-2.597742, 51.421035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601818, 51.430458],
+          [-2.602028, 51.430524]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584881, 51.422836],
+          [-2.585024, 51.42261],
+          [-2.585034, 51.422544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603577, 51.425439],
+          [-2.603569, 51.425634],
+          [-2.603533, 51.425753],
+          [-2.603481, 51.425792],
+          [-2.603417, 51.425819],
+          [-2.603397, 51.425878],
+          [-2.603418, 51.425928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591502, 51.421738],
+          [-2.591231, 51.42184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604188, 51.42758],
+          [-2.604347, 51.427598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59112, 51.426005],
+          [-2.591286, 51.426131]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588312, 51.423038],
+          [-2.588256, 51.422986],
+          [-2.587908, 51.42285],
+          [-2.587856, 51.422796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580297, 51.421763],
+          [-2.580183, 51.421645],
+          [-2.580087, 51.421656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586736, 51.427019],
+          [-2.586701, 51.426842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587018, 51.426999],
+          [-2.58698, 51.42682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587655, 51.426707],
+          [-2.587508, 51.426717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587724, 51.426899],
+          [-2.587697, 51.426803],
+          [-2.587643, 51.426767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587481, 51.426587],
+          [-2.587489, 51.426643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586384, 51.423491],
+          [-2.586435, 51.423793],
+          [-2.586159, 51.423805],
+          [-2.586229, 51.424193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595135, 51.42458],
+          [-2.595143, 51.424519],
+          [-2.595134, 51.424469],
+          [-2.595091, 51.424425],
+          [-2.594368, 51.4241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "filwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606598, 51.433767],
+          [-2.605591, 51.434201]
+        ]
+      }
+    }
+  ]
+}

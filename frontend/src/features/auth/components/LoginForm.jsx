@@ -62,7 +62,9 @@ export function LoginForm({ onSuccess, onSwitch }) {
     <form ref={formRef} className={styles.form} onSubmit={handleSubmit} noValidate>
       <div className={styles.intro} data-part>
         <h2 className={styles.title}>{auth.login.title}</h2>
-        <p className={styles.lead}>{auth.login.lead}</p>
+        <p className={styles.lead} data-ui="auth-login-lead">
+          {auth.login.lead}
+        </p>
       </div>
 
       <div data-part>

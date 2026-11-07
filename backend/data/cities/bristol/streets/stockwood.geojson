@@ -1,0 +1,4097 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55991, 51.415352],
+          [-2.560073, 51.416419],
+          [-2.56036, 51.417555],
+          [-2.560516, 51.418534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556223, 51.429945],
+          [-2.556062, 51.429934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556726, 51.429912],
+          [-2.556417, 51.429939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561163, 51.428733],
+          [-2.560359, 51.429047],
+          [-2.559296, 51.429417],
+          [-2.558909, 51.429536],
+          [-2.558381, 51.429663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560516, 51.418534],
+          [-2.560471, 51.418572],
+          [-2.560544, 51.418937],
+          [-2.560611, 51.419014],
+          [-2.560765, 51.419509],
+          [-2.561231, 51.420778],
+          [-2.561571, 51.421456],
+          [-2.562324, 51.42276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55877, 51.411676],
+          [-2.558787, 51.411829],
+          [-2.558826, 51.411929],
+          [-2.559373, 51.412574],
+          [-2.559484, 51.412759],
+          [-2.55968, 51.413323],
+          [-2.559759, 51.413939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562518, 51.423225],
+          [-2.563051, 51.425156],
+          [-2.563211, 51.425568],
+          [-2.563434, 51.426031],
+          [-2.563422, 51.42613],
+          [-2.563658, 51.426896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556417, 51.429939],
+          [-2.556347, 51.429927],
+          [-2.556223, 51.429945]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556465, 51.429957],
+          [-2.556417, 51.429939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560585, 51.418566],
+          [-2.560516, 51.418534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556223, 51.429945],
+          [-2.556187, 51.429963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558236, 51.413791],
+          [-2.557979, 51.415024],
+          [-2.557833, 51.415661],
+          [-2.557798, 51.416569],
+          [-2.557594, 51.417654],
+          [-2.557568, 51.418032],
+          [-2.557653, 51.418666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55624, 51.417534],
+          [-2.556207, 51.417471],
+          [-2.556207, 51.417363],
+          [-2.556399, 51.417114],
+          [-2.556469, 51.416925],
+          [-2.556374, 51.415234],
+          [-2.556395, 51.415061],
+          [-2.556436, 51.415008],
+          [-2.556501, 51.414958],
+          [-2.556614, 51.414911],
+          [-2.55671, 51.414904],
+          [-2.557979, 51.415024],
+          [-2.558668, 51.4151],
+          [-2.559254, 51.415123],
+          [-2.559885, 51.415096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557594, 51.417654],
+          [-2.556315, 51.417563],
+          [-2.55624, 51.417534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556688, 51.417591],
+          [-2.55662, 51.418007],
+          [-2.556656, 51.418259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556748, 51.414171],
+          [-2.55813, 51.414282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558003, 51.4124],
+          [-2.558131, 51.41254],
+          [-2.558272, 51.412658],
+          [-2.558309, 51.412718],
+          [-2.558341, 51.412874],
+          [-2.558391, 51.412953],
+          [-2.558714, 51.413032],
+          [-2.558831, 51.413029],
+          [-2.559543, 51.412903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557929, 51.412865],
+          [-2.558001, 51.412966],
+          [-2.558245, 51.412951],
+          [-2.558391, 51.412953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559023, 51.41182],
+          [-2.55899, 51.411675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560528, 51.428497],
+          [-2.559513, 51.428943],
+          [-2.559413, 51.429039],
+          [-2.559295, 51.42912],
+          [-2.559192, 51.429147],
+          [-2.559086, 51.42916],
+          [-2.558974, 51.429157],
+          [-2.558873, 51.429138],
+          [-2.558338, 51.428957],
+          [-2.557256, 51.428416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557962, 51.428323],
+          [-2.558433, 51.428571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556646, 51.429656],
+          [-2.556835, 51.429649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552548, 51.428652],
+          [-2.552474, 51.428645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55259, 51.427917],
+          [-2.553542, 51.427713],
+          [-2.552612, 51.426099],
+          [-2.551847, 51.42585],
+          [-2.551779, 51.42585],
+          [-2.551069, 51.426065],
+          [-2.550413, 51.426857],
+          [-2.550495, 51.426943],
+          [-2.551211, 51.427143],
+          [-2.551843, 51.427339],
+          [-2.552115, 51.42749],
+          [-2.55259, 51.427917],
+          [-2.552619, 51.427986],
+          [-2.55264, 51.428055],
+          [-2.552635, 51.428142],
+          [-2.552548, 51.428652],
+          [-2.55258, 51.428714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551502, 51.42723],
+          [-2.551686, 51.426987],
+          [-2.551975, 51.426673],
+          [-2.552795, 51.426405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554613, 51.42835],
+          [-2.554512, 51.428292],
+          [-2.554213, 51.427947],
+          [-2.554171, 51.427867],
+          [-2.554142, 51.427723],
+          [-2.554148, 51.427669],
+          [-2.554171, 51.427616],
+          [-2.55422, 51.427547],
+          [-2.554306, 51.427496],
+          [-2.554527, 51.427432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556995, 51.427086],
+          [-2.556748, 51.427344],
+          [-2.556668, 51.42749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562056, 51.426082],
+          [-2.561981, 51.425948],
+          [-2.561989, 51.425445],
+          [-2.562308, 51.424471],
+          [-2.562354, 51.424389],
+          [-2.562435, 51.424324],
+          [-2.562622, 51.424279],
+          [-2.562807, 51.424265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560532, 51.426006],
+          [-2.561077, 51.42471],
+          [-2.561305, 51.424095],
+          [-2.561318, 51.424031],
+          [-2.561307, 51.423991],
+          [-2.561282, 51.423964],
+          [-2.561206, 51.423918],
+          [-2.560004, 51.423387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560583, 51.423644],
+          [-2.559933, 51.424747],
+          [-2.559826, 51.424884],
+          [-2.559658, 51.425019],
+          [-2.559454, 51.425106],
+          [-2.559137, 51.425175],
+          [-2.558803, 51.425214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561735, 51.421741],
+          [-2.561649, 51.421793],
+          [-2.56147, 51.421951],
+          [-2.560582, 51.422802],
+          [-2.560004, 51.423387],
+          [-2.559699, 51.423583],
+          [-2.559524, 51.423645],
+          [-2.558924, 51.423825],
+          [-2.558657, 51.423899],
+          [-2.558446, 51.423939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560582, 51.422802],
+          [-2.561402, 51.423185],
+          [-2.561474, 51.423211],
+          [-2.561565, 51.423209],
+          [-2.562466, 51.423082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556225, 51.418751],
+          [-2.556037, 51.418751],
+          [-2.555917, 51.418713],
+          [-2.555869, 51.418673],
+          [-2.555837, 51.418618],
+          [-2.555765, 51.41824]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559379, 51.425999],
+          [-2.559243, 51.425929],
+          [-2.559087, 51.425887],
+          [-2.558996, 51.42582],
+          [-2.558908, 51.425725],
+          [-2.558803, 51.425214],
+          [-2.558625, 51.424635],
+          [-2.558368, 51.423678],
+          [-2.558222, 51.42331],
+          [-2.557712, 51.422128],
+          [-2.557072, 51.420771],
+          [-2.556282, 51.418972],
+          [-2.556225, 51.418751]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560046, 51.42334],
+          [-2.559353, 51.422871],
+          [-2.559262, 51.422799],
+          [-2.559163, 51.422666],
+          [-2.558964, 51.422329],
+          [-2.558908, 51.422204],
+          [-2.558617, 51.421224],
+          [-2.55793, 51.418659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552695, 51.410456],
+          [-2.552777, 51.410438],
+          [-2.552967, 51.410428],
+          [-2.553639, 51.410429],
+          [-2.553887, 51.410406],
+          [-2.554195, 51.410353],
+          [-2.554474, 51.41029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554791, 51.410129],
+          [-2.554794, 51.410082],
+          [-2.554745, 51.410006],
+          [-2.55452, 51.409793],
+          [-2.554406, 51.409726],
+          [-2.554291, 51.409697],
+          [-2.554163, 51.409681],
+          [-2.552961, 51.409631],
+          [-2.55038, 51.409549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552005, 51.4096],
+          [-2.551961, 51.410383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550326, 51.410337],
+          [-2.550365, 51.409729],
+          [-2.550109, 51.409719]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543248, 51.411679],
+          [-2.54432, 51.411721],
+          [-2.547564, 51.41181]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539888, 51.41573],
+          [-2.54036, 51.416284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542064, 51.415542],
+          [-2.542505, 51.415318],
+          [-2.543672, 51.414877],
+          [-2.543775, 51.414884],
+          [-2.543852, 51.41492],
+          [-2.544012, 51.415081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541416, 51.415063],
+          [-2.542806, 51.416091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544859, 51.414175],
+          [-2.544679, 51.414488],
+          [-2.544696, 51.414544],
+          [-2.5449, 51.414757],
+          [-2.544799, 51.414795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537429, 51.414591],
+          [-2.537507, 51.41454],
+          [-2.537574, 51.414536],
+          [-2.537677, 51.414565],
+          [-2.537823, 51.414652],
+          [-2.537834, 51.414697],
+          [-2.537797, 51.414746],
+          [-2.537233, 51.415107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53596, 51.414058],
+          [-2.536118, 51.414664]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535616, 51.416206],
+          [-2.535621, 51.416957],
+          [-2.535655, 51.417006],
+          [-2.535733, 51.41705],
+          [-2.536545, 51.417052],
+          [-2.536932, 51.417045],
+          [-2.537376, 51.416941],
+          [-2.538566, 51.416719],
+          [-2.53872, 51.416624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538416, 51.416088],
+          [-2.538686, 51.416592],
+          [-2.53872, 51.416624],
+          [-2.538807, 51.416651],
+          [-2.538885, 51.416654],
+          [-2.539588, 51.416503],
+          [-2.539906, 51.41642],
+          [-2.54036, 51.416284],
+          [-2.541203, 51.415955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536545, 51.417052],
+          [-2.536556, 51.416186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540742, 51.414562],
+          [-2.539257, 51.413654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537806, 51.413667],
+          [-2.54045, 51.41526],
+          [-2.540651, 51.415427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534479, 51.416297],
+          [-2.535616, 51.416206],
+          [-2.535933, 51.416188],
+          [-2.537696, 51.416188],
+          [-2.537924, 51.416174],
+          [-2.538084, 51.416153],
+          [-2.538416, 51.416088],
+          [-2.53916, 51.415932],
+          [-2.53954, 51.415837],
+          [-2.539888, 51.41573],
+          [-2.540292, 51.415584],
+          [-2.540651, 51.415427],
+          [-2.542023, 51.414767],
+          [-2.543258, 51.414296],
+          [-2.543358, 51.414214],
+          [-2.543584, 51.413861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538245, 51.415269],
+          [-2.539028, 51.415742],
+          [-2.53916, 51.415932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537344, 51.415535],
+          [-2.537316, 51.415225],
+          [-2.537286, 51.415166],
+          [-2.537233, 51.415107],
+          [-2.536688, 51.414723],
+          [-2.536557, 51.414676],
+          [-2.536382, 51.414652],
+          [-2.536118, 51.414664],
+          [-2.535597, 51.414721],
+          [-2.535514, 51.414749],
+          [-2.535462, 51.414788],
+          [-2.535447, 51.414846],
+          [-2.535546, 51.415237],
+          [-2.535624, 51.415299],
+          [-2.535688, 51.415316],
+          [-2.536097, 51.41528],
+          [-2.536215, 51.415288],
+          [-2.536555, 51.415506],
+          [-2.536652, 51.415532],
+          [-2.537641, 51.415531],
+          [-2.537793, 51.415518],
+          [-2.537912, 51.415481],
+          [-2.539321, 51.414575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542115, 51.411651],
+          [-2.542092, 51.412089],
+          [-2.542032, 51.412858],
+          [-2.542018, 51.412907],
+          [-2.541913, 51.413],
+          [-2.54147, 51.413292]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540164, 51.412143],
+          [-2.540783, 51.412496],
+          [-2.540859, 51.412566],
+          [-2.540932, 51.412655],
+          [-2.541244, 51.413111],
+          [-2.54147, 51.413292],
+          [-2.541664, 51.4134],
+          [-2.541842, 51.413457],
+          [-2.543584, 51.413861],
+          [-2.545497, 51.414324],
+          [-2.546036, 51.414684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540602, 51.412847],
+          [-2.540506, 51.41286],
+          [-2.540452, 51.41288],
+          [-2.539257, 51.413654],
+          [-2.538561, 51.414119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540932, 51.412655],
+          [-2.540741, 51.412713],
+          [-2.540673, 51.412748],
+          [-2.540618, 51.412797],
+          [-2.540602, 51.412835],
+          [-2.540612, 51.412902],
+          [-2.540663, 51.412949],
+          [-2.541093, 51.413116],
+          [-2.541244, 51.413111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545625, 51.411756],
+          [-2.545558, 51.412812],
+          [-2.545511, 51.412952],
+          [-2.545398, 51.41315],
+          [-2.545148, 51.413517],
+          [-2.54514, 51.413572],
+          [-2.545176, 51.413626],
+          [-2.545225, 51.413656],
+          [-2.545892, 51.413818],
+          [-2.546078, 51.41388],
+          [-2.546746, 51.414155]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546124, 51.413333],
+          [-2.546338, 51.413384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545589, 51.412226],
+          [-2.546337, 51.412241],
+          [-2.54639, 51.412251],
+          [-2.54644, 51.412275],
+          [-2.546479, 51.412306],
+          [-2.546492, 51.412348],
+          [-2.546476, 51.41277],
+          [-2.546507, 51.412819],
+          [-2.54656, 51.412849],
+          [-2.546652, 51.412865],
+          [-2.547469, 51.412887]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542203, 51.417552],
+          [-2.542204, 51.417448],
+          [-2.542239, 51.417243],
+          [-2.542456, 51.416849],
+          [-2.542471, 51.416777],
+          [-2.542458, 51.416703],
+          [-2.542403, 51.416604],
+          [-2.54225, 51.416464],
+          [-2.542247, 51.416416],
+          [-2.542324, 51.416347],
+          [-2.543515, 51.415729],
+          [-2.543838, 51.415591],
+          [-2.545506, 51.41496],
+          [-2.545708, 51.414862],
+          [-2.546036, 51.414684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545744, 51.410208],
+          [-2.545696, 51.410798]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543248, 51.411679],
+          [-2.54329, 51.411186],
+          [-2.543316, 51.411123],
+          [-2.543404, 51.411006],
+          [-2.543477, 51.410951],
+          [-2.543614, 51.410894],
+          [-2.544071, 51.410774],
+          [-2.544256, 51.410757],
+          [-2.54764, 51.41086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54435, 51.411356],
+          [-2.54432, 51.411721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547901, 51.413517],
+          [-2.54818, 51.413146],
+          [-2.547629, 51.412985],
+          [-2.547457, 51.412969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542118, 51.410869],
+          [-2.541484, 51.410457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543164, 51.409266],
+          [-2.542118, 51.409949],
+          [-2.541987, 51.410024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543914, 51.409701],
+          [-2.543164, 51.409266],
+          [-2.542502, 51.40886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544921, 51.409221],
+          [-2.545213, 51.409491],
+          [-2.545337, 51.409545],
+          [-2.545447, 51.409577],
+          [-2.545601, 51.409595],
+          [-2.546446, 51.409619],
+          [-2.546552, 51.409654],
+          [-2.546605, 51.409717],
+          [-2.546565, 51.410232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543647, 51.40988],
+          [-2.544064, 51.410105],
+          [-2.544199, 51.410152],
+          [-2.544277, 51.410165],
+          [-2.546825, 51.410241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538562, 51.411544],
+          [-2.539872, 51.412338]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538292, 51.412376],
+          [-2.538014, 51.412536],
+          [-2.538127, 51.412633],
+          [-2.538692, 51.412337],
+          [-2.538593, 51.412251],
+          [-2.538292, 51.412376],
+          [-2.537803, 51.411985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536734, 51.41251],
+          [-2.537074, 51.412769],
+          [-2.538168, 51.413438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537048, 51.413399],
+          [-2.53672, 51.413202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53919, 51.411044],
+          [-2.539842, 51.411378],
+          [-2.540067, 51.411188],
+          [-2.540211, 51.411268],
+          [-2.539811, 51.411581],
+          [-2.53967, 51.411513],
+          [-2.539842, 51.411378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545313, 51.415821],
+          [-2.545533, 51.416041],
+          [-2.545558, 51.416091],
+          [-2.54555, 51.416156],
+          [-2.544538, 51.417515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545567, 51.416852],
+          [-2.545131, 51.416721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545422, 51.415445],
+          [-2.545593, 51.415383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544752, 51.415701],
+          [-2.544575, 51.415768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541733, 51.418585],
+          [-2.541659, 51.418466],
+          [-2.541552, 51.418485]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542131, 51.417861],
+          [-2.542066, 51.417833],
+          [-2.542027, 51.417786],
+          [-2.542042, 51.417732],
+          [-2.542203, 51.417552]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546774, 51.415168],
+          [-2.547112, 51.415389],
+          [-2.547146, 51.415428],
+          [-2.547199, 51.415532],
+          [-2.547203, 51.415601],
+          [-2.547186, 51.415703],
+          [-2.546825, 51.416499],
+          [-2.546737, 51.416663],
+          [-2.546179, 51.417537],
+          [-2.546095, 51.417607],
+          [-2.545929, 51.417667],
+          [-2.54579, 51.417687],
+          [-2.545695, 51.417681],
+          [-2.545071, 51.4176],
+          [-2.544538, 51.417515],
+          [-2.543389, 51.417242],
+          [-2.543261, 51.417176],
+          [-2.543194, 51.417109],
+          [-2.543159, 51.417037],
+          [-2.543158, 51.416957],
+          [-2.543334, 51.41664],
+          [-2.543394, 51.416572],
+          [-2.543451, 51.416534],
+          [-2.543544, 51.416488],
+          [-2.545742, 51.415659],
+          [-2.546225, 51.415457],
+          [-2.546473, 51.415337],
+          [-2.546774, 51.415168],
+          [-2.547206, 51.414887],
+          [-2.547412, 51.414726],
+          [-2.547588, 51.414572],
+          [-2.547859, 51.414297],
+          [-2.548008, 51.414106],
+          [-2.547992, 51.41404],
+          [-2.547935, 51.413931],
+          [-2.547829, 51.413851],
+          [-2.547147, 51.413673]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544109, 51.416274],
+          [-2.543515, 51.415729]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542857, 51.41893],
+          [-2.542422, 51.41884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544576, 51.418334],
+          [-2.544608, 51.418512],
+          [-2.544589, 51.418555],
+          [-2.544527, 51.418612],
+          [-2.544448, 51.418651],
+          [-2.54414, 51.418757],
+          [-2.543743, 51.418857]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54571, 51.418277],
+          [-2.545396, 51.41847]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547625, 51.41109],
+          [-2.54817, 51.411102],
+          [-2.548216, 51.411112],
+          [-2.548273, 51.411145],
+          [-2.54829, 51.411193],
+          [-2.548262, 51.411508],
+          [-2.548149, 51.411504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542092, 51.412089],
+          [-2.541729, 51.412082],
+          [-2.541665, 51.412093],
+          [-2.54161, 51.412114],
+          [-2.54135, 51.412276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543355, 51.414995],
+          [-2.542832, 51.414458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542131, 51.417861],
+          [-2.541979, 51.417952],
+          [-2.541852, 51.418044],
+          [-2.541732, 51.418167],
+          [-2.541651, 51.418325],
+          [-2.541659, 51.418466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54317, 51.415417],
+          [-2.542897, 51.415166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542252, 51.40986],
+          [-2.541607, 51.409484],
+          [-2.54153, 51.409459],
+          [-2.541439, 51.409476],
+          [-2.541082, 51.409723],
+          [-2.540051, 51.410402],
+          [-2.539709, 51.410642],
+          [-2.538562, 51.411544],
+          [-2.538215, 51.41179],
+          [-2.536293, 51.412729],
+          [-2.536158, 51.412835],
+          [-2.535842, 51.413123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55689, 51.429026],
+          [-2.556931, 51.429011],
+          [-2.556985, 51.429018],
+          [-2.557468, 51.429152],
+          [-2.557543, 51.429156],
+          [-2.557588, 51.429128],
+          [-2.557664, 51.429018],
+          [-2.557966, 51.428776],
+          [-2.558321, 51.428513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55689, 51.429026],
+          [-2.556648, 51.429399],
+          [-2.556629, 51.429477],
+          [-2.556646, 51.429656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545742, 51.415659],
+          [-2.545511, 51.415413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544897, 51.415984],
+          [-2.544658, 51.415736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544984, 51.418151],
+          [-2.54515, 51.418199],
+          [-2.545504, 51.418403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556185, 51.427147],
+          [-2.556748, 51.427344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545892, 51.413818],
+          [-2.546237, 51.41336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543139, 51.418016],
+          [-2.54295, 51.418303],
+          [-2.542852, 51.418482],
+          [-2.542811, 51.418583],
+          [-2.542734, 51.418904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547829, 51.413851],
+          [-2.548106, 51.413919],
+          [-2.548119, 51.413965],
+          [-2.548008, 51.414106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54422, 51.411352],
+          [-2.54447, 51.411359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554647, 51.418007],
+          [-2.553982, 51.418008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552752, 51.416588],
+          [-2.553144, 51.4158],
+          [-2.553254, 51.415674],
+          [-2.553438, 51.415556],
+          [-2.553628, 51.415489],
+          [-2.553816, 51.415455],
+          [-2.554268, 51.415422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556274, 51.423302],
+          [-2.556474, 51.423233],
+          [-2.556561, 51.423178],
+          [-2.556582, 51.42313],
+          [-2.556564, 51.422832],
+          [-2.556532, 51.422746],
+          [-2.556289, 51.422456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553732, 51.422217],
+          [-2.553827, 51.422196],
+          [-2.553919, 51.422162],
+          [-2.554369, 51.421929],
+          [-2.554867, 51.421749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553943, 51.42273],
+          [-2.553946, 51.422532],
+          [-2.553912, 51.422347],
+          [-2.553827, 51.422196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554893, 51.422393],
+          [-2.554918, 51.422231],
+          [-2.554909, 51.422181],
+          [-2.554872, 51.422123],
+          [-2.554819, 51.422077],
+          [-2.554737, 51.422035],
+          [-2.554646, 51.422014],
+          [-2.554502, 51.422013],
+          [-2.554369, 51.421929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546469, 51.416154],
+          [-2.546943, 51.416238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539472, 51.41526],
+          [-2.539827, 51.415086],
+          [-2.540004, 51.414986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537394, 51.412969],
+          [-2.536882, 51.413299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542772, 51.40988],
+          [-2.543221, 51.410156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540562, 51.410717],
+          [-2.540051, 51.410402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540066, 51.409847],
+          [-2.540526, 51.410092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540659, 51.413596],
+          [-2.539985, 51.413189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544372, 51.416746],
+          [-2.544285, 51.416865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544934, 51.416985],
+          [-2.544324, 51.416812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551917, 51.420659],
+          [-2.552113, 51.42139],
+          [-2.552186, 51.421629],
+          [-2.552248, 51.421757],
+          [-2.552392, 51.421899],
+          [-2.552487, 51.421971],
+          [-2.552546, 51.421999],
+          [-2.552658, 51.422],
+          [-2.552775, 51.42198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551281, 51.415124],
+          [-2.552343, 51.415339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554609, 51.421336],
+          [-2.554387, 51.421383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552546, 51.421999],
+          [-2.552391, 51.422215],
+          [-2.552309, 51.422367],
+          [-2.552247, 51.422629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550112, 51.418997],
+          [-2.550142, 51.418098],
+          [-2.550181, 51.417895],
+          [-2.550265, 51.417684],
+          [-2.55037, 51.417473],
+          [-2.550872, 51.416564],
+          [-2.550946, 51.416318],
+          [-2.551153, 51.415438],
+          [-2.551281, 51.415124],
+          [-2.551379, 51.414936],
+          [-2.551531, 51.414693],
+          [-2.552102, 51.414066],
+          [-2.552348, 51.413704],
+          [-2.552432, 51.413537],
+          [-2.552504, 51.413321],
+          [-2.552707, 51.412098],
+          [-2.55281, 51.411634],
+          [-2.552822, 51.411514],
+          [-2.552795, 51.411412],
+          [-2.552726, 51.411309],
+          [-2.552605, 51.411209],
+          [-2.552447, 51.411129],
+          [-2.552257, 51.411073],
+          [-2.552057, 51.411053],
+          [-2.551031, 51.411029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555192, 51.413043],
+          [-2.555144, 51.413238],
+          [-2.555068, 51.413346],
+          [-2.554949, 51.413447],
+          [-2.554794, 51.413535],
+          [-2.554591, 51.413611],
+          [-2.554361, 51.413658],
+          [-2.554122, 51.413674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553611, 51.412997],
+          [-2.555172, 51.413114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560125, 51.421064],
+          [-2.56124, 51.420996],
+          [-2.561326, 51.42098]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554062, 51.420432],
+          [-2.554292, 51.420415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554317, 51.421159],
+          [-2.554387, 51.421383],
+          [-2.554399, 51.421471],
+          [-2.554565, 51.421729]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559709, 51.420446],
+          [-2.559741, 51.420933],
+          [-2.559935, 51.420928],
+          [-2.559971, 51.420935],
+          [-2.559996, 51.420947],
+          [-2.560125, 51.421064],
+          [-2.560064, 51.421146],
+          [-2.560068, 51.421638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554518, 51.418009],
+          [-2.554614, 51.418459],
+          [-2.554595, 51.418962],
+          [-2.554652, 51.419254],
+          [-2.554733, 51.41956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556043, 51.423007],
+          [-2.555801, 51.423081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556023, 51.424251],
+          [-2.556271, 51.424203],
+          [-2.55643, 51.424194],
+          [-2.556866, 51.424108]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553991, 51.420288],
+          [-2.554008, 51.420371],
+          [-2.554062, 51.420432],
+          [-2.554032, 51.420515],
+          [-2.554057, 51.420591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55013, 51.418328],
+          [-2.551237, 51.418341],
+          [-2.551393, 51.418318],
+          [-2.551519, 51.418266],
+          [-2.551598, 51.418198],
+          [-2.551656, 51.418069],
+          [-2.551675, 51.416761],
+          [-2.551699, 51.416624],
+          [-2.551774, 51.416412],
+          [-2.552343, 51.415339],
+          [-2.552973, 51.414099],
+          [-2.553049, 51.414003],
+          [-2.55314, 51.413959],
+          [-2.553278, 51.413914],
+          [-2.553611, 51.413884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552065, 51.418902],
+          [-2.552068, 51.419353],
+          [-2.552106, 51.419625],
+          [-2.552236, 51.42021],
+          [-2.552268, 51.420273],
+          [-2.552334, 51.420315],
+          [-2.552396, 51.420336],
+          [-2.552546, 51.420343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555599, 51.422804],
+          [-2.556145, 51.423534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550737, 51.41682],
+          [-2.551084, 51.416893],
+          [-2.551338, 51.416914],
+          [-2.551675, 51.416916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55319, 51.422251],
+          [-2.553102, 51.422412],
+          [-2.553068, 51.422645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552968, 51.419841],
+          [-2.553092, 51.41993],
+          [-2.553152, 51.420002],
+          [-2.553206, 51.420115],
+          [-2.553345, 51.42074],
+          [-2.553355, 51.420888],
+          [-2.553318, 51.421084],
+          [-2.553317, 51.421251],
+          [-2.553362, 51.421448],
+          [-2.553606, 51.421995],
+          [-2.553732, 51.422217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534336, 51.417677],
+          [-2.534444, 51.417761],
+          [-2.534486, 51.417868],
+          [-2.534475, 51.417944],
+          [-2.534426, 51.418049],
+          [-2.534306, 51.418178],
+          [-2.534161, 51.418256],
+          [-2.533897, 51.418349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552789, 51.418937],
+          [-2.55269, 51.419309],
+          [-2.552668, 51.419631],
+          [-2.552692, 51.419764],
+          [-2.552715, 51.419809],
+          [-2.552772, 51.419876],
+          [-2.552847, 51.419914]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553873, 51.411519],
+          [-2.553933, 51.411534],
+          [-2.554318, 51.411542],
+          [-2.555404, 51.41145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55544, 51.41088],
+          [-2.55539, 51.411157],
+          [-2.555387, 51.411301],
+          [-2.555404, 51.41145],
+          [-2.555488, 51.411828],
+          [-2.555455, 51.411956],
+          [-2.555412, 51.412048],
+          [-2.555326, 51.412141],
+          [-2.555202, 51.412236],
+          [-2.55472, 51.412441],
+          [-2.55461, 51.412521],
+          [-2.554558, 51.41262],
+          [-2.554465, 51.41306]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554008, 51.41838],
+          [-2.55381, 51.418399],
+          [-2.553721, 51.418428],
+          [-2.553565, 51.418538],
+          [-2.55354, 51.418568],
+          [-2.553462, 51.418709],
+          [-2.553334, 51.419548],
+          [-2.553118, 51.419756],
+          [-2.552968, 51.419841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555945, 51.42327],
+          [-2.555764, 51.423322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559356, 51.414386],
+          [-2.559147, 51.414406],
+          [-2.559112, 51.414421],
+          [-2.559101, 51.414449],
+          [-2.559151, 51.414672],
+          [-2.559188, 51.414717],
+          [-2.559254, 51.414723],
+          [-2.559846, 51.414707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556112, 51.41784],
+          [-2.556161, 51.417608],
+          [-2.55624, 51.417534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558829, 51.416543],
+          [-2.558848, 51.416349],
+          [-2.560073, 51.416419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558668, 51.4151],
+          [-2.558589, 51.415412],
+          [-2.558567, 51.415664],
+          [-2.558641, 51.415795],
+          [-2.559047, 51.415835],
+          [-2.559156, 51.415819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560177, 51.416868],
+          [-2.559181, 51.416851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55907, 51.417396],
+          [-2.55866, 51.417427],
+          [-2.558701, 51.417671],
+          [-2.558559, 51.417787],
+          [-2.558587, 51.417986],
+          [-2.558581, 51.418027],
+          [-2.558555, 51.418067],
+          [-2.558646, 51.418625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551138, 51.417619],
+          [-2.551662, 51.417623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561039, 51.428786],
+          [-2.561112, 51.428665],
+          [-2.561171, 51.428602],
+          [-2.56308, 51.427781]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557256, 51.428416],
+          [-2.557552, 51.42802],
+          [-2.557726, 51.427876],
+          [-2.557789, 51.427809],
+          [-2.55804, 51.427425],
+          [-2.558327, 51.426871],
+          [-2.558411, 51.426302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556976, 51.428734],
+          [-2.557112, 51.428532],
+          [-2.557178, 51.4285],
+          [-2.557256, 51.428416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547643, 51.408935],
+          [-2.547799, 51.408902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548207, 51.412313],
+          [-2.548197, 51.412445],
+          [-2.547518, 51.41243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554474, 51.41029],
+          [-2.554862, 51.410095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553839, 51.411298],
+          [-2.553893, 51.411249],
+          [-2.55402, 51.410774],
+          [-2.554122, 51.410605],
+          [-2.554474, 51.41029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552707, 51.412098],
+          [-2.553762, 51.412166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551755, 51.411603],
+          [-2.551983, 51.411586]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551861, 51.412273],
+          [-2.55189, 51.41214],
+          [-2.551911, 51.411918],
+          [-2.551903, 51.411732],
+          [-2.551871, 51.411594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550962, 51.410351],
+          [-2.551139, 51.412116],
+          [-2.551157, 51.412165],
+          [-2.551204, 51.412201],
+          [-2.551294, 51.412234],
+          [-2.552137, 51.412289],
+          [-2.552675, 51.412336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552968, 51.419841],
+          [-2.552782, 51.419955],
+          [-2.552638, 51.420102],
+          [-2.552565, 51.420251],
+          [-2.552546, 51.420343],
+          [-2.552713, 51.420978],
+          [-2.55275, 51.421245],
+          [-2.552755, 51.421918],
+          [-2.552814, 51.422055],
+          [-2.552883, 51.422123],
+          [-2.552982, 51.422181],
+          [-2.553078, 51.42222],
+          [-2.55319, 51.422251],
+          [-2.553314, 51.422265],
+          [-2.553453, 51.422264],
+          [-2.553732, 51.422217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546036, 51.414684],
+          [-2.546338, 51.414491],
+          [-2.546565, 51.414317],
+          [-2.546746, 51.414155],
+          [-2.546923, 51.413966],
+          [-2.547147, 51.413673],
+          [-2.547289, 51.413426],
+          [-2.547396, 51.413165],
+          [-2.547457, 51.412969],
+          [-2.547518, 51.41243],
+          [-2.547564, 51.41181]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547564, 51.41181],
+          [-2.54764, 51.41086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542323, 51.417776],
+          [-2.542131, 51.417861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54764, 51.41086],
+          [-2.547692, 51.410264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545071, 51.4176],
+          [-2.545047, 51.417982],
+          [-2.545033, 51.418059],
+          [-2.544984, 51.418151],
+          [-2.544901, 51.418235],
+          [-2.544811, 51.418284],
+          [-2.544756, 51.418304],
+          [-2.544576, 51.418334],
+          [-2.544408, 51.418339],
+          [-2.543827, 51.418171],
+          [-2.542708, 51.417923],
+          [-2.542464, 51.417847],
+          [-2.542323, 51.417776]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541401, 51.411351],
+          [-2.541806, 51.411583],
+          [-2.541946, 51.411631],
+          [-2.542115, 51.411651],
+          [-2.543248, 51.411679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56025, 51.418659],
+          [-2.558646, 51.418625],
+          [-2.557653, 51.418666],
+          [-2.556225, 51.418751]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542323, 51.417776],
+          [-2.542262, 51.417717],
+          [-2.542203, 51.417552]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560593, 51.418616],
+          [-2.560288, 51.418647],
+          [-2.56025, 51.418659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56025, 51.418659],
+          [-2.560287, 51.418675],
+          [-2.560493, 51.418686],
+          [-2.560609, 51.418683]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557496, 51.428093],
+          [-2.557617, 51.428134],
+          [-2.557882, 51.428284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556646, 51.429656],
+          [-2.556452, 51.429662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548182, 51.413342],
+          [-2.54806, 51.413306]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548211, 51.413105],
+          [-2.54818, 51.413146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543703, 51.418804],
+          [-2.543743, 51.418857],
+          [-2.54372, 51.418922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556952, 51.428762],
+          [-2.556851, 51.428948],
+          [-2.556863, 51.428997],
+          [-2.55689, 51.429026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559334, 51.418152],
+          [-2.559023, 51.418127],
+          [-2.558959, 51.418113],
+          [-2.558833, 51.418049],
+          [-2.558774, 51.418037],
+          [-2.558581, 51.418027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559055, 51.41731],
+          [-2.559116, 51.417754],
+          [-2.55898, 51.417764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554652, 51.419254],
+          [-2.554532, 51.419264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550104, 51.409782],
+          [-2.55012, 51.409472]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559538, 51.420511],
+          [-2.559712, 51.42051]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534585, 51.413937],
+          [-2.534416, 51.414109],
+          [-2.534389, 51.414158],
+          [-2.5344, 51.414204],
+          [-2.534433, 51.414243],
+          [-2.53452, 51.414293],
+          [-2.534681, 51.414349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537529, 51.414469],
+          [-2.537537, 51.414538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53796, 51.414729],
+          [-2.537903, 51.414705],
+          [-2.537834, 51.414697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543081, 51.415452],
+          [-2.543266, 51.415379]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543946, 51.415106],
+          [-2.544149, 51.415031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54501, 51.414719],
+          [-2.5449, 51.414757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541428, 51.412227],
+          [-2.541507, 51.412276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56267, 51.428085],
+          [-2.562579, 51.428003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559087, 51.425887],
+          [-2.559192, 51.426079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556098, 51.424166],
+          [-2.55613, 51.42423]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553847, 51.422663],
+          [-2.553944, 51.422667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551822, 51.420733],
+          [-2.551934, 51.420727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559417, 51.412635],
+          [-2.559521, 51.412623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557111, 51.426301],
+          [-2.557093, 51.426192],
+          [-2.557156, 51.425846],
+          [-2.557159, 51.425243],
+          [-2.557132, 51.424947],
+          [-2.55709, 51.424676],
+          [-2.557006, 51.424423],
+          [-2.556866, 51.424108],
+          [-2.556571, 51.423668],
+          [-2.556043, 51.423007],
+          [-2.555789, 51.422711],
+          [-2.554867, 51.421749],
+          [-2.554776, 51.421627],
+          [-2.554609, 51.421336],
+          [-2.554481, 51.421061],
+          [-2.554391, 51.420797],
+          [-2.554292, 51.420415],
+          [-2.554122, 51.419589],
+          [-2.55405, 51.419068],
+          [-2.553982, 51.418008],
+          [-2.554021, 51.417336],
+          [-2.554271, 51.415853],
+          [-2.554281, 51.415703],
+          [-2.554268, 51.415422],
+          [-2.554211, 51.415168],
+          [-2.554155, 51.415036],
+          [-2.553655, 51.414016],
+          [-2.553572, 51.413722],
+          [-2.55355, 51.413509],
+          [-2.553611, 51.412997],
+          [-2.553873, 51.411519],
+          [-2.553874, 51.411417],
+          [-2.553793, 51.411181],
+          [-2.553722, 51.411058],
+          [-2.553622, 51.410942],
+          [-2.553481, 51.410818],
+          [-2.553314, 51.410706],
+          [-2.553134, 51.410615],
+          [-2.552818, 51.410488],
+          [-2.552561, 51.410424],
+          [-2.552223, 51.410393],
+          [-2.547692, 51.410264],
+          [-2.547751, 51.409251],
+          [-2.547643, 51.408935],
+          [-2.547433, 51.408956],
+          [-2.547182, 51.408954],
+          [-2.546168, 51.408883],
+          [-2.545978, 51.408886],
+          [-2.545812, 51.408908],
+          [-2.545631, 51.408956],
+          [-2.544461, 51.409398],
+          [-2.544201, 51.409521],
+          [-2.543914, 51.409701],
+          [-2.542118, 51.410869],
+          [-2.541401, 51.411351],
+          [-2.538168, 51.413438],
+          [-2.537806, 51.413667],
+          [-2.537445, 51.41387],
+          [-2.537126, 51.413954],
+          [-2.535235, 51.414123],
+          [-2.535107, 51.414159],
+          [-2.534804, 51.414279],
+          [-2.534681, 51.414349],
+          [-2.534508, 51.414526],
+          [-2.534442, 51.414628],
+          [-2.534345, 51.414837],
+          [-2.534307, 51.414998],
+          [-2.534307, 51.415265],
+          [-2.534557, 51.416819],
+          [-2.534608, 51.417334],
+          [-2.534561, 51.417432],
+          [-2.534464, 51.417568],
+          [-2.534336, 51.417677],
+          [-2.534195, 51.417767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549516, 51.426891],
+          [-2.549667, 51.427121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5373, 51.415861],
+          [-2.53731, 51.41619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552309, 51.422367],
+          [-2.552351, 51.422393],
+          [-2.55239, 51.422443],
+          [-2.55239, 51.422788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550956, 51.418682],
+          [-2.550963, 51.418856],
+          [-2.550688, 51.419014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536292, 51.415861],
+          [-2.537646, 51.415859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550864, 51.418032],
+          [-2.55087, 51.417735],
+          [-2.55106, 51.417667],
+          [-2.551138, 51.417619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542247, 51.416416],
+          [-2.541981, 51.416531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559582, 51.426393],
+          [-2.559867, 51.426361],
+          [-2.560162, 51.426282],
+          [-2.560653, 51.426232],
+          [-2.560707, 51.426016]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548446, 51.413672],
+          [-2.547901, 51.413517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552584, 51.416742],
+          [-2.55266, 51.416623],
+          [-2.552752, 51.416588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554122, 51.413674],
+          [-2.554105, 51.413853],
+          [-2.554132, 51.413889]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547169, 51.415461],
+          [-2.547496, 51.415225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552867, 51.414298],
+          [-2.553116, 51.414346],
+          [-2.553232, 51.414376],
+          [-2.553258, 51.414395],
+          [-2.553275, 51.414431],
+          [-2.553305, 51.414584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545111, 51.408334],
+          [-2.545306, 51.408628],
+          [-2.545367, 51.408681],
+          [-2.545464, 51.408724],
+          [-2.545634, 51.408772],
+          [-2.54575, 51.408839],
+          [-2.545812, 51.408908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558552, 51.426288],
+          [-2.558592, 51.426389],
+          [-2.558877, 51.426335],
+          [-2.558991, 51.426301],
+          [-2.559479, 51.426072],
+          [-2.559614, 51.426042],
+          [-2.559713, 51.426032],
+          [-2.559781, 51.426035],
+          [-2.559861, 51.426068],
+          [-2.559975, 51.426138],
+          [-2.560162, 51.426282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555311, 51.42842],
+          [-2.554998, 51.428485],
+          [-2.554894, 51.428495],
+          [-2.55476, 51.42849],
+          [-2.554569, 51.42838]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554712, 51.428724],
+          [-2.55473, 51.428625],
+          [-2.554798, 51.428545],
+          [-2.554794, 51.42852],
+          [-2.55476, 51.42849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534113, 51.417011],
+          [-2.534557, 51.416819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554762, 51.410689],
+          [-2.554682, 51.410864],
+          [-2.554682, 51.410919],
+          [-2.554708, 51.410946],
+          [-2.554758, 51.41096],
+          [-2.554808, 51.410956],
+          [-2.554853, 51.410928],
+          [-2.554883, 51.410872],
+          [-2.554886, 51.410801],
+          [-2.554843, 51.410728],
+          [-2.554762, 51.410689],
+          [-2.554776, 51.410635],
+          [-2.554813, 51.4106],
+          [-2.554975, 51.410512],
+          [-2.555014, 51.410457],
+          [-2.554997, 51.41043],
+          [-2.554662, 51.4102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543369, 51.418915],
+          [-2.54361, 51.418948],
+          [-2.543676, 51.418944],
+          [-2.54372, 51.418922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535534, 51.416213],
+          [-2.535466, 51.416007],
+          [-2.535304, 51.415788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546536, 51.411353],
+          [-2.546572, 51.41131],
+          [-2.546582, 51.411268],
+          [-2.546622, 51.410825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546289, 51.411491],
+          [-2.546268, 51.411775]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545559, 51.412782],
+          [-2.54514, 51.412764],
+          [-2.545137, 51.412793],
+          [-2.545108, 51.412828],
+          [-2.545078, 51.412967],
+          [-2.54508, 51.413028],
+          [-2.545106, 51.413061],
+          [-2.545398, 51.41315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558377, 51.426543],
+          [-2.5586, 51.42672],
+          [-2.5586, 51.426953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557072, 51.420771],
+          [-2.556328, 51.4209],
+          [-2.556107, 51.420485]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559726, 51.413667],
+          [-2.55943, 51.413676],
+          [-2.559475, 51.413948],
+          [-2.559759, 51.413939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559234, 51.413964],
+          [-2.559475, 51.413948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541923, 51.414373],
+          [-2.542271, 51.41467]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542115, 51.411186],
+          [-2.54163, 51.410933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539785, 51.410078],
+          [-2.540014, 51.410085],
+          [-2.540449, 51.410142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545462, 51.411406],
+          [-2.54544, 51.41175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544942, 51.411442],
+          [-2.544938, 51.411535],
+          [-2.544994, 51.411648],
+          [-2.545025, 51.41174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552037, 51.413326],
+          [-2.552476, 51.413406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558551, 51.42268],
+          [-2.558466, 51.422474],
+          [-2.558461, 51.422449],
+          [-2.55847, 51.422425],
+          [-2.558511, 51.422406],
+          [-2.558964, 51.422329]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541201, 51.418507],
+          [-2.541552, 51.418485]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559942, 51.411551],
+          [-2.559965, 51.41161],
+          [-2.560056, 51.411714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560574, 51.428675],
+          [-2.560414, 51.42855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544458, 51.418975],
+          [-2.54425, 51.418721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544157, 51.417786],
+          [-2.544107, 51.417883],
+          [-2.543895, 51.418191]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542484, 51.418203],
+          [-2.541852, 51.418044]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555114, 51.421362],
+          [-2.554674, 51.421459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541141, 51.410258],
+          [-2.541315, 51.410383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540671, 51.409994],
+          [-2.541141, 51.410258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542633, 51.410536],
+          [-2.542444, 51.410442],
+          [-2.541691, 51.410314],
+          [-2.54126, 51.410281],
+          [-2.541141, 51.410258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539108, 51.414447],
+          [-2.539337, 51.41431],
+          [-2.539363, 51.414302],
+          [-2.539397, 51.414302],
+          [-2.539746, 51.414497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541593, 51.410305],
+          [-2.541723, 51.410189],
+          [-2.54195, 51.410047]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550351, 51.409958],
+          [-2.550914, 51.409977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559663, 51.421303],
+          [-2.559805, 51.421298],
+          [-2.559946, 51.421271],
+          [-2.56006, 51.421269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558555, 51.418067],
+          [-2.558223, 51.41809],
+          [-2.558177, 51.418108],
+          [-2.558197, 51.418194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559774, 51.421844],
+          [-2.56036, 51.421817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560068, 51.421638],
+          [-2.560072, 51.42183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558151, 51.417948],
+          [-2.558223, 51.41809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55512, 51.422016],
+          [-2.555436, 51.421906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553301, 51.428706],
+          [-2.553366, 51.428927],
+          [-2.553445, 51.429106],
+          [-2.553601, 51.429081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555596, 51.427693],
+          [-2.555906, 51.427842],
+          [-2.556579, 51.428142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551931, 51.425579],
+          [-2.551847, 51.42585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557168, 51.42939],
+          [-2.557282, 51.429383],
+          [-2.557449, 51.429335],
+          [-2.557543, 51.429156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559381, 51.425122],
+          [-2.559523, 51.42533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53514, 51.41415],
+          [-2.53511, 51.414101],
+          [-2.534945, 51.413993],
+          [-2.534916, 51.413941],
+          [-2.534871, 51.413912],
+          [-2.534877, 51.413872],
+          [-2.534981, 51.413782]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53511, 51.414101],
+          [-2.535214, 51.41406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535501, 51.414096],
+          [-2.535551, 51.414012],
+          [-2.535562, 51.414],
+          [-2.535588, 51.413992],
+          [-2.535615, 51.413993],
+          [-2.535632, 51.414004],
+          [-2.535695, 51.414079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535761, 51.41309],
+          [-2.535965, 51.413177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535811, 51.41267],
+          [-2.536158, 51.412835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551576, 51.410031],
+          [-2.551977, 51.410037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551816, 51.419391],
+          [-2.552072, 51.419381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53412, 51.41448],
+          [-2.534212, 51.414464],
+          [-2.534338, 51.414465],
+          [-2.534543, 51.414485]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561427, 51.422371],
+          [-2.561263, 51.422157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561411, 51.42235],
+          [-2.561454, 51.422336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561352, 51.422273],
+          [-2.561408, 51.422259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561319, 51.42223],
+          [-2.561364, 51.422199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55922, 51.414855],
+          [-2.559254, 51.415123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536644, 51.413997],
+          [-2.536568, 51.413681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5409, 51.411246],
+          [-2.541251, 51.411447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541716, 51.410876],
+          [-2.541034, 51.411323]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542802, 51.410175],
+          [-2.542184, 51.410578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55802, 51.429305],
+          [-2.558132, 51.429348],
+          [-2.558219, 51.429345],
+          [-2.558307, 51.429332],
+          [-2.558661, 51.42907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55861, 51.428713],
+          [-2.558587, 51.428624],
+          [-2.558433, 51.428571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558472, 51.417222],
+          [-2.558431, 51.417271],
+          [-2.558418, 51.417404],
+          [-2.558449, 51.417425],
+          [-2.558587, 51.417419],
+          [-2.55866, 51.417427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544834, 51.418707],
+          [-2.544708, 51.418609],
+          [-2.544569, 51.418577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548262, 51.411508],
+          [-2.548585, 51.411727],
+          [-2.54858, 51.411823]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555532, 51.41306],
+          [-2.555274, 51.413039],
+          [-2.55519, 51.413054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543982, 51.414828],
+          [-2.544094, 51.414936],
+          [-2.54416, 51.415025],
+          [-2.544149, 51.415031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536114, 51.415761],
+          [-2.536196, 51.415957],
+          [-2.53618, 51.416186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544636, 51.412062],
+          [-2.544655, 51.41173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54381, 51.40927],
+          [-2.543509, 51.409466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537627, 51.411025],
+          [-2.538562, 51.411544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560461, 51.419721],
+          [-2.560831, 51.419694]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561034, 51.420271],
+          [-2.560843, 51.420281],
+          [-2.560815, 51.420289],
+          [-2.560798, 51.420303],
+          [-2.560793, 51.420322],
+          [-2.560815, 51.420394],
+          [-2.560839, 51.420407],
+          [-2.560912, 51.420411],
+          [-2.561079, 51.42039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554066, 51.414862],
+          [-2.553678, 51.414942],
+          [-2.553615, 51.41493],
+          [-2.553517, 51.414739],
+          [-2.553956, 51.414646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552642, 51.418998],
+          [-2.55277, 51.419008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553855, 51.419163],
+          [-2.553865, 51.419377],
+          [-2.554092, 51.419371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554069, 51.419209],
+          [-2.553858, 51.419227]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55353, 51.411424],
+          [-2.553874, 51.411436]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548608, 51.410534],
+          [-2.548612, 51.410285]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548891, 51.410466],
+          [-2.548609, 51.410452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "stockwood" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563434, 51.426031],
+          [-2.562587, 51.426074],
+          [-2.561642, 51.426078],
+          [-2.561165, 51.426038],
+          [-2.559663, 51.425959],
+          [-2.55949, 51.425972],
+          [-2.559379, 51.425999],
+          [-2.558888, 51.426209],
+          [-2.558597, 51.426284],
+          [-2.558411, 51.426302],
+          [-2.557425, 51.426268],
+          [-2.557111, 51.426301],
+          [-2.557003, 51.426335],
+          [-2.556829, 51.426454],
+          [-2.556588, 51.426668],
+          [-2.55596, 51.427387],
+          [-2.555596, 51.427693],
+          [-2.555359, 51.427863],
+          [-2.554492, 51.428423],
+          [-2.554293, 51.428512],
+          [-2.553801, 51.428649],
+          [-2.552612, 51.428778]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5796 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606218, 53.185481],
+          [63.602901, 53.185991],
+          [63.598301, 53.186666],
+          [63.596827, 53.186862],
+          [63.592904, 53.18717],
+          [63.589824, 53.187435],
+          [63.586198, 53.187715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.614319, 53.205909],
+          [63.615238, 53.205433]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606701, 53.209816],
+          [63.610145, 53.208067],
+          [63.612592, 53.206803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601211, 53.212653],
+          [63.603093, 53.211687],
+          [63.604382, 53.210991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609406, 53.201697],
+          [63.607796, 53.201879],
+          [63.601888, 53.202415],
+          [63.59661, 53.202923],
+          [63.589481, 53.203555],
+          [63.587832, 53.203717],
+          [63.586412, 53.203872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587673, 53.195196],
+          [63.589184, 53.195282],
+          [63.597308, 53.195619],
+          [63.601222, 53.195719],
+          [63.601914, 53.195637],
+          [63.602595, 53.19561],
+          [63.60847, 53.195203]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597308, 53.195619],
+          [63.598927, 53.202696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597909, 53.210468],
+          [63.598062, 53.209773],
+          [63.598094, 53.209407],
+          [63.597414, 53.20648],
+          [63.596902, 53.204142],
+          [63.59661, 53.202923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597909, 53.210468],
+          [63.597746, 53.210621],
+          [63.597552, 53.210722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597971, 53.210892],
+          [63.597909, 53.210468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60751, 53.185794],
+          [63.607066, 53.185581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594941, 53.209332],
+          [63.593852, 53.208674],
+          [63.593442, 53.208403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59994, 53.212201],
+          [63.600437, 53.212453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597774, 53.211243],
+          [63.597915, 53.211168],
+          [63.597995, 53.211065],
+          [63.598003, 53.21096],
+          [63.597971, 53.210892],
+          [63.597902, 53.210824],
+          [63.597804, 53.21077],
+          [63.597684, 53.210735],
+          [63.597552, 53.210722],
+          [63.597347, 53.210747],
+          [63.59724, 53.210788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591171, 53.207923],
+          [63.590986, 53.20815],
+          [63.590719, 53.208337],
+          [63.590365, 53.208479],
+          [63.586683, 53.209395],
+          [63.585608, 53.20968],
+          [63.585239, 53.209838],
+          [63.58498, 53.209998],
+          [63.584773, 53.210194],
+          [63.584717, 53.210344],
+          [63.584905, 53.210232],
+          [63.58509, 53.210056],
+          [63.58533, 53.209908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598463, 53.211466],
+          [63.597995, 53.211065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59747, 53.210725],
+          [63.596886, 53.2105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590975, 53.206812],
+          [63.591119, 53.207135],
+          [63.591213, 53.207749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593442, 53.208403],
+          [63.592357, 53.207731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592069, 53.207559],
+          [63.590975, 53.206812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586732, 53.209486],
+          [63.591701, 53.208233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591969, 53.208208],
+          [63.592522, 53.208248],
+          [63.593442, 53.208403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608127, 53.191817],
+          [63.608341, 53.193481],
+          [63.6086, 53.196752],
+          [63.608842, 53.198981],
+          [63.609198, 53.201388],
+          [63.609276, 53.201542],
+          [63.609406, 53.201697],
+          [63.610051, 53.202075],
+          [63.614803, 53.205151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60751, 53.185794],
+          [63.607635, 53.186062],
+          [63.607692, 53.186326],
+          [63.607742, 53.187219],
+          [63.607981, 53.189956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590975, 53.206812],
+          [63.590388, 53.206175],
+          [63.589925, 53.205458],
+          [63.589726, 53.2048],
+          [63.589481, 53.203555],
+          [63.588765, 53.200237],
+          [63.588738, 53.200027],
+          [63.587443, 53.19417],
+          [63.586198, 53.187715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606907, 53.201958],
+          [63.608328, 53.202861],
+          [63.611573, 53.204996],
+          [63.613539, 53.206314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598094, 53.209407],
+          [63.601529, 53.209176],
+          [63.602587, 53.209122],
+          [63.603357, 53.209053],
+          [63.603767, 53.208981],
+          [63.604263, 53.208835],
+          [63.604769, 53.208577],
+          [63.608108, 53.206728],
+          [63.609709, 53.205873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603055, 53.195577],
+          [63.60395, 53.199669],
+          [63.604279, 53.200862],
+          [63.604392, 53.201467],
+          [63.604577, 53.202178],
+          [63.604636, 53.202305],
+          [63.604583, 53.20253],
+          [63.605123, 53.204747],
+          [63.608108, 53.206728],
+          [63.610145, 53.208067]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596827, 53.186862],
+          [63.597192, 53.187862],
+          [63.597471, 53.188746],
+          [63.598307, 53.19245]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604382, 53.210991],
+          [63.602601, 53.209821],
+          [63.601529, 53.209176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602315, 53.186075],
+          [63.60261, 53.186773],
+          [63.602677, 53.186905],
+          [63.602187, 53.187284],
+          [63.602535, 53.189089],
+          [63.60282, 53.190477],
+          [63.603645, 53.195532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594363, 53.192752],
+          [63.594403, 53.19312],
+          [63.593894, 53.193217],
+          [63.590939, 53.193689],
+          [63.589101, 53.193952],
+          [63.587443, 53.19417],
+          [63.584243, 53.194557],
+          [63.583678, 53.194637],
+          [63.583269, 53.194673],
+          [63.577177, 53.195375],
+          [63.576786, 53.195485],
+          [63.576578, 53.195576],
+          [63.574968, 53.196023],
+          [63.573327, 53.196463],
+          [63.571044, 53.197068],
+          [63.563885, 53.198925],
+          [63.559702, 53.20482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60282, 53.190477],
+          [63.604321, 53.190403],
+          [63.604861, 53.190318],
+          [63.605626, 53.19022],
+          [63.606369, 53.190113],
+          [63.606454, 53.190093],
+          [63.606572, 53.190023],
+          [63.606647, 53.189998],
+          [63.607981, 53.189956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600427, 53.188885],
+          [63.597531, 53.189008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600096, 53.186402],
+          [63.600229, 53.186681],
+          [63.600365, 53.187078],
+          [63.600215, 53.18711],
+          [63.600138, 53.187303],
+          [63.600135, 53.187382],
+          [63.600163, 53.187445],
+          [63.600427, 53.188885],
+          [63.601204, 53.192221]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602491, 53.188861],
+          [63.600467, 53.189054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599677, 53.192342],
+          [63.599402, 53.190566],
+          [63.599073, 53.188942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591303, 53.191995],
+          [63.591642, 53.193577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592538, 53.194775],
+          [63.592317, 53.193469]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60029, 53.19289],
+          [63.600189, 53.192302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594059, 53.194149],
+          [63.594975, 53.194074],
+          [63.595159, 53.194045],
+          [63.595412, 53.193986],
+          [63.595224, 53.192768],
+          [63.595755, 53.192714],
+          [63.59615, 53.192605],
+          [63.596791, 53.19257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608341, 53.193481],
+          [63.603364, 53.193799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601586, 53.194383],
+          [63.601204, 53.192221]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594156, 53.195487],
+          [63.594162, 53.195253],
+          [63.594206, 53.194937],
+          [63.593894, 53.193217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600161, 53.193295],
+          [63.599102, 53.193328],
+          [63.598558, 53.19339],
+          [63.596923, 53.193513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589919, 53.191269],
+          [63.589912, 53.191412],
+          [63.590483, 53.193754]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589919, 53.191269],
+          [63.593047, 53.191024],
+          [63.597903, 53.190679],
+          [63.600794, 53.190461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602384, 53.196523],
+          [63.588224, 53.19773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608687, 53.19753],
+          [63.58855, 53.199236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598646, 53.201486],
+          [63.596372, 53.201703],
+          [63.59611, 53.201651],
+          [63.595739, 53.201617],
+          [63.595054, 53.201726],
+          [63.593638, 53.20187],
+          [63.590609, 53.202095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605155, 53.200278],
+          [63.608941, 53.199683]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608836, 53.19893],
+          [63.607428, 53.199155],
+          [63.60395, 53.199669],
+          [63.601209, 53.199883],
+          [63.590343, 53.200824]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595939, 53.200339],
+          [63.595926, 53.200777],
+          [63.596056, 53.201215],
+          [63.596101, 53.201619],
+          [63.596479, 53.202935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602913, 53.198522],
+          [63.600938, 53.198685],
+          [63.598057, 53.198903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59469, 53.200447],
+          [63.594404, 53.199234],
+          [63.593094, 53.199349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596654, 53.197012],
+          [63.59691, 53.198021],
+          [63.595023, 53.198192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593381, 53.195457],
+          [63.593359, 53.195614],
+          [63.593706, 53.197261],
+          [63.594048, 53.198771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607796, 53.201879],
+          [63.607581, 53.201119],
+          [63.604392, 53.201467],
+          [63.598753, 53.201955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594398, 53.195497],
+          [63.595529, 53.200375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590182, 53.195325],
+          [63.591892, 53.203341]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609019, 53.200273],
+          [63.604279, 53.200862],
+          [63.598614, 53.201346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589184, 53.195282],
+          [63.590888, 53.20343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591201, 53.195366],
+          [63.591187, 53.195541],
+          [63.592571, 53.201949],
+          [63.592832, 53.203259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592295, 53.195411],
+          [63.592288, 53.195507],
+          [63.592662, 53.197352],
+          [63.593917, 53.203162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602557, 53.205271],
+          [63.601888, 53.202415],
+          [63.601209, 53.199883],
+          [63.600499, 53.196684],
+          [63.600347, 53.195696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594941, 53.209332],
+          [63.59545, 53.209244],
+          [63.596537, 53.209097],
+          [63.596689, 53.209063],
+          [63.596753, 53.20904],
+          [63.596828, 53.208983],
+          [63.603211, 53.208479],
+          [63.603896, 53.208207],
+          [63.604116, 53.208097]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601793, 53.206135],
+          [63.600063, 53.206286],
+          [63.597414, 53.20648],
+          [63.596442, 53.206575],
+          [63.594598, 53.206709],
+          [63.594596, 53.20678],
+          [63.594575, 53.206812],
+          [63.594535, 53.206832],
+          [63.594376, 53.206817],
+          [63.594089, 53.206709],
+          [63.59395, 53.206683],
+          [63.593733, 53.206685],
+          [63.593554, 53.206711],
+          [63.592819, 53.206871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592945, 53.20751],
+          [63.592819, 53.206871],
+          [63.591422, 53.207002],
+          [63.59131, 53.207051]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600117, 53.20693],
+          [63.600594, 53.209244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609958, 53.202019],
+          [63.609842, 53.202071],
+          [63.609288, 53.202372],
+          [63.60656, 53.203759],
+          [63.605436, 53.204298],
+          [63.605009, 53.204289],
+          [63.602388, 53.204553],
+          [63.599718, 53.204776],
+          [63.597086, 53.204982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601541, 53.206812],
+          [63.59757, 53.20714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606609, 53.207559],
+          [63.607929, 53.208379],
+          [63.608627, 53.208834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604263, 53.208835],
+          [63.602601, 53.209821],
+          [63.600592, 53.210906],
+          [63.600513, 53.211041],
+          [63.59954, 53.210558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603213, 53.207759],
+          [63.603434, 53.207713],
+          [63.604, 53.207441],
+          [63.60521, 53.206785],
+          [63.606866, 53.205906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604116, 53.208097],
+          [63.604769, 53.208577],
+          [63.606587, 53.20973],
+          [63.606701, 53.209816]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.611962, 53.20637],
+          [63.611381, 53.205951],
+          [63.61132, 53.205937],
+          [63.61126, 53.20594],
+          [63.610458, 53.206389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605464, 53.204976],
+          [63.597269, 53.205809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601762, 53.20932],
+          [63.601054, 53.209651],
+          [63.600468, 53.209938],
+          [63.599655, 53.210402],
+          [63.59954, 53.210558],
+          [63.599229, 53.210651],
+          [63.598757, 53.210944],
+          [63.598691, 53.210976],
+          [63.598597, 53.211004],
+          [63.598518, 53.211016],
+          [63.598005, 53.21103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606525, 53.207606],
+          [63.605826, 53.207182],
+          [63.60521, 53.206785],
+          [63.604951, 53.206676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605194, 53.202701],
+          [63.604671, 53.2029],
+          [63.602059, 53.203157],
+          [63.599396, 53.20337],
+          [63.596771, 53.203595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606644, 53.205761],
+          [63.604951, 53.206676],
+          [63.604295, 53.207007],
+          [63.603274, 53.207551],
+          [63.603227, 53.207647],
+          [63.603213, 53.207759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603213, 53.207759],
+          [63.603042, 53.207821],
+          [63.602784, 53.207861],
+          [63.60037, 53.208116],
+          [63.597832, 53.208261]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604828, 53.203541],
+          [63.597206, 53.204175],
+          [63.596949, 53.204363],
+          [63.604869, 53.20371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61175, 53.207229],
+          [63.610458, 53.206389],
+          [63.609709, 53.205873],
+          [63.609364, 53.205664],
+          [63.60823, 53.20488],
+          [63.60656, 53.203759],
+          [63.605194, 53.202701],
+          [63.604636, 53.202305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609709, 53.205873],
+          [63.610089, 53.205821],
+          [63.611573, 53.204996],
+          [63.613236, 53.204132]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613039, 53.204004],
+          [63.609859, 53.205691],
+          [63.609709, 53.205873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576941, 53.209271],
+          [63.580123, 53.208851],
+          [63.584102, 53.208032],
+          [63.583994, 53.207835],
+          [63.583922, 53.207589],
+          [63.583855, 53.206891],
+          [63.583601, 53.202909],
+          [63.58324, 53.201676],
+          [63.58243, 53.198169],
+          [63.581644, 53.194861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602198, 53.193761],
+          [63.60217, 53.193557],
+          [63.601449, 53.193614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599236, 53.202667],
+          [63.600208, 53.206922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.578321, 53.186406],
+          [63.578476, 53.18658],
+          [63.578715, 53.186738],
+          [63.578958, 53.186796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589421, 53.189326],
+          [63.589721, 53.190418],
+          [63.589919, 53.191269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608127, 53.191817],
+          [63.604858, 53.191994],
+          [63.603085, 53.192081],
+          [63.60263, 53.19206],
+          [63.601204, 53.192221]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575376, 53.207805],
+          [63.575852, 53.207777],
+          [63.575979, 53.207789],
+          [63.576092, 53.207835],
+          [63.576245, 53.208042],
+          [63.576941, 53.209271],
+          [63.577541, 53.211277]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604116, 53.208097],
+          [63.607466, 53.206303]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601385, 53.193207],
+          [63.600637, 53.193261]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601204, 53.192221],
+          [63.596791, 53.19257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595401, 53.190858],
+          [63.59527, 53.190734],
+          [63.595211, 53.190343],
+          [63.595213, 53.190227],
+          [63.595243, 53.190179],
+          [63.595211, 53.190034],
+          [63.595203, 53.189817],
+          [63.596066, 53.189653],
+          [63.596734, 53.189507],
+          [63.596756, 53.189468],
+          [63.596635, 53.189031],
+          [63.596613, 53.18889],
+          [63.596753, 53.188825],
+          [63.597471, 53.188746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598964, 53.198836],
+          [63.599059, 53.199301],
+          [63.599243, 53.200055]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571929, 53.208092],
+          [63.574391, 53.207914],
+          [63.575376, 53.207805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574099, 53.205753],
+          [63.574208, 53.20616],
+          [63.574657, 53.206355],
+          [63.574716, 53.206429],
+          [63.575078, 53.207665],
+          [63.575188, 53.207748],
+          [63.575376, 53.207805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596791, 53.19257],
+          [63.596923, 53.193513],
+          [63.597039, 53.194216],
+          [63.597308, 53.195619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603303, 53.193465],
+          [63.60217, 53.193557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597034, 53.190216],
+          [63.596965, 53.189925],
+          [63.596844, 53.189656],
+          [63.596734, 53.189507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597783, 53.190141],
+          [63.597665, 53.190108],
+          [63.597533, 53.19009],
+          [63.597461, 53.1901],
+          [63.597281, 53.190162],
+          [63.597123, 53.190204],
+          [63.596836, 53.190241],
+          [63.596637, 53.190236],
+          [63.596565, 53.190204],
+          [63.596509, 53.190148],
+          [63.596474, 53.19005],
+          [63.596439, 53.189994],
+          [63.596375, 53.189978],
+          [63.596259, 53.189986],
+          [63.595929, 53.190055],
+          [63.59576, 53.190113],
+          [63.595452, 53.19017],
+          [63.595213, 53.190227],
+          [63.594481, 53.19031],
+          [63.594066, 53.19037],
+          [63.593944, 53.190393],
+          [63.593815, 53.190442],
+          [63.593691, 53.19046],
+          [63.593567, 53.190441],
+          [63.593522, 53.190399],
+          [63.593442, 53.190289],
+          [63.593404, 53.190192],
+          [63.593427, 53.190113],
+          [63.59362, 53.190029],
+          [63.593963, 53.189991],
+          [63.594291, 53.189971],
+          [63.594773, 53.189913],
+          [63.595203, 53.189817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59615, 53.192605],
+          [63.596038, 53.192583],
+          [63.59436, 53.192704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586564, 53.19312],
+          [63.587227, 53.193062],
+          [63.587773, 53.192779],
+          [63.588288, 53.192551],
+          [63.588241, 53.192286],
+          [63.587666, 53.192165],
+          [63.587059, 53.192199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604228, 53.189082],
+          [63.60424, 53.189207],
+          [63.604129, 53.18939],
+          [63.604321, 53.190403],
+          [63.60441, 53.190687],
+          [63.604451, 53.190895],
+          [63.604697, 53.191524],
+          [63.604858, 53.191994],
+          [63.604967, 53.192139],
+          [63.605003, 53.192337],
+          [63.604596, 53.192363],
+          [63.604588, 53.192311],
+          [63.60358, 53.192371],
+          [63.60361, 53.192555],
+          [63.603166, 53.192582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60479, 53.185587],
+          [63.604855, 53.185692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587476, 53.187621],
+          [63.587453, 53.187497],
+          [63.587317, 53.187508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608575, 53.194534],
+          [63.608421, 53.194538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597192, 53.187862],
+          [63.597883, 53.187778],
+          [63.597926, 53.187732],
+          [63.597946, 53.187684],
+          [63.597948, 53.187629],
+          [63.597847, 53.187416],
+          [63.597843, 53.187393],
+          [63.597865, 53.187371],
+          [63.599279, 53.187118],
+          [63.599355, 53.187118],
+          [63.599409, 53.187142],
+          [63.599682, 53.187096],
+          [63.599766, 53.187107],
+          [63.599825, 53.187139],
+          [63.600089, 53.1871],
+          [63.600215, 53.18711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602677, 53.186905],
+          [63.603091, 53.18767],
+          [63.603878, 53.18754],
+          [63.604045, 53.187933],
+          [63.604115, 53.187969],
+          [63.604192, 53.18815],
+          [63.603208, 53.1883],
+          [63.602904, 53.188216],
+          [63.602522, 53.18735],
+          [63.602582, 53.187287],
+          [63.602867, 53.187244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606458, 53.189284],
+          [63.606647, 53.189998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600279, 53.188068],
+          [63.597335, 53.188293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602535, 53.189089],
+          [63.60347, 53.189033],
+          [63.603864, 53.189038],
+          [63.604228, 53.189082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60261, 53.186773],
+          [63.600935, 53.187032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607872, 53.188569],
+          [63.607001, 53.18858],
+          [63.606931, 53.187238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602075, 53.186664],
+          [63.60186, 53.186141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603837, 53.191238],
+          [63.603908, 53.191578],
+          [63.604697, 53.191524]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604451, 53.190895],
+          [63.603681, 53.19094],
+          [63.603648, 53.190739],
+          [63.60441, 53.190687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603081, 53.186338],
+          [63.60304, 53.186296],
+          [63.602901, 53.185991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605737, 53.188626],
+          [63.604273, 53.188663],
+          [63.604274, 53.188889],
+          [63.604228, 53.189082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606274, 53.189173],
+          [63.604732, 53.189211],
+          [63.60424, 53.189207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605279, 53.187298],
+          [63.606103, 53.187251],
+          [63.606393, 53.187253],
+          [63.607742, 53.187219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60145, 53.186953],
+          [63.601612, 53.187341],
+          [63.601421, 53.18737],
+          [63.601564, 53.187712],
+          [63.601611, 53.187802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606182, 53.188747],
+          [63.606131, 53.188209],
+          [63.606288, 53.188099],
+          [63.606288, 53.18773],
+          [63.606388, 53.187578],
+          [63.606393, 53.187253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606182, 53.188747],
+          [63.606519, 53.188738],
+          [63.607001, 53.18858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604785, 53.18865],
+          [63.604779, 53.188465],
+          [63.604859, 53.188409],
+          [63.605207, 53.188395],
+          [63.605307, 53.188281],
+          [63.605528, 53.188273],
+          [63.605682, 53.188212],
+          [63.606131, 53.188209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596487, 53.189336],
+          [63.594615, 53.18965],
+          [63.594278, 53.188395],
+          [63.596519, 53.188186],
+          [63.596982, 53.188131]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592663, 53.187191],
+          [63.592801, 53.187679],
+          [63.592856, 53.187787],
+          [63.593424, 53.18989],
+          [63.594288, 53.18975],
+          [63.593734, 53.18771],
+          [63.590418, 53.187994],
+          [63.590584, 53.1887],
+          [63.593048, 53.188496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593082, 53.189758],
+          [63.590451, 53.189979]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592931, 53.189207],
+          [63.590539, 53.189413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593998, 53.189797],
+          [63.593445, 53.187736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596245, 53.18785],
+          [63.596876, 53.187799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590458, 53.188167],
+          [63.592903, 53.187959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592977, 53.189372],
+          [63.59058, 53.18958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590542, 53.188524],
+          [63.593, 53.188321]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596295, 53.188606],
+          [63.596069, 53.188632]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596213, 53.18805],
+          [63.596929, 53.187966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596186, 53.187678],
+          [63.596821, 53.187628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596107, 53.188724],
+          [63.594435, 53.188977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596238, 53.188395],
+          [63.597038, 53.188304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592839, 53.188869],
+          [63.590456, 53.189074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590199, 53.188919],
+          [63.592794, 53.188705],
+          [63.593137, 53.189957],
+          [63.590498, 53.190177],
+          [63.590115, 53.188563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596148, 53.188827],
+          [63.594465, 53.189091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593721, 53.189842],
+          [63.593154, 53.187761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590502, 53.188352],
+          [63.592952, 53.188143]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595022, 53.188084],
+          [63.595095, 53.188319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588997, 53.188201],
+          [63.589357, 53.188174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596266, 53.189121],
+          [63.594947, 53.189358],
+          [63.594896, 53.189259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595011, 53.187603],
+          [63.595134, 53.188071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593025, 53.189549],
+          [63.590404, 53.189783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596235, 53.189044],
+          [63.594526, 53.189318]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592884, 53.189034],
+          [63.59028, 53.189262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596026, 53.188522],
+          [63.594382, 53.188782]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594763, 53.18763],
+          [63.594648, 53.187382],
+          [63.594556, 53.187038]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595468, 53.18861],
+          [63.595435, 53.188513],
+          [63.594968, 53.188547],
+          [63.594345, 53.188642]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596036, 53.187969],
+          [63.594123, 53.188186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595901, 53.187517],
+          [63.595959, 53.18772],
+          [63.594123, 53.187941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589214, 53.187484],
+          [63.589357, 53.188174],
+          [63.589622, 53.188153],
+          [63.589588, 53.187983],
+          [63.590064, 53.187415],
+          [63.590166, 53.187894],
+          [63.590625, 53.189763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596765, 53.187455],
+          [63.59557, 53.18754],
+          [63.594763, 53.18763],
+          [63.593946, 53.187705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597229, 53.188566],
+          [63.596316, 53.188671],
+          [63.596295, 53.188606],
+          [63.596337, 53.188559],
+          [63.597088, 53.188463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596361, 53.189357],
+          [63.595913, 53.188243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596747, 53.187397],
+          [63.597125, 53.188578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587773, 53.192779],
+          [63.587666, 53.192165],
+          [63.587864, 53.191899],
+          [63.58821, 53.191856],
+          [63.588281, 53.19175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591071, 53.194499],
+          [63.590939, 53.193689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598307, 53.19245],
+          [63.598558, 53.19339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598926, 53.191322],
+          [63.599139, 53.192385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60035, 53.191396],
+          [63.600532, 53.192274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595921, 53.194134],
+          [63.595755, 53.192714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58857, 53.189091],
+          [63.588409, 53.188387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598279, 53.189716],
+          [63.59858, 53.191345],
+          [63.598739, 53.192417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604226, 53.194834],
+          [63.604513, 53.194815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607593, 53.195263],
+          [63.607319, 53.194073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599406, 53.194755],
+          [63.597176, 53.194931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58868, 53.188287],
+          [63.588564, 53.187836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594517, 53.195502],
+          [63.594557, 53.195275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59925, 53.194054],
+          [63.597039, 53.194216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586934, 53.191555],
+          [63.588228, 53.191507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589123, 53.194993],
+          [63.589184, 53.195282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60569, 53.192995],
+          [63.605601, 53.19243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599355, 53.194541],
+          [63.601133, 53.194418],
+          [63.601238, 53.195093],
+          [63.600901, 53.195118],
+          [63.600731, 53.19426],
+          [63.601556, 53.194202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60427, 53.193071],
+          [63.607156, 53.192917],
+          [63.606986, 53.191879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589217, 53.193097],
+          [63.588968, 53.193129],
+          [63.589101, 53.193952]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607061, 53.192338],
+          [63.60361, 53.192555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588448, 53.19136],
+          [63.588235, 53.191381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603163, 53.19539],
+          [63.601896, 53.195483],
+          [63.601809, 53.195507],
+          [63.601602, 53.195523],
+          [63.600512, 53.195479],
+          [63.600445, 53.195699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59083, 53.191718],
+          [63.590579, 53.191219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587793, 53.195734],
+          [63.588239, 53.195604],
+          [63.58847, 53.195242]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600398, 53.195156],
+          [63.600108, 53.195177],
+          [63.599972, 53.194497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602193, 53.193455],
+          [63.602797, 53.193417],
+          [63.6033, 53.193407],
+          [63.604291, 53.193344],
+          [63.604313, 53.193226],
+          [63.604201, 53.192822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595445, 53.195324],
+          [63.594162, 53.195253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589794, 53.195309],
+          [63.589636, 53.194603],
+          [63.588297, 53.19471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604586, 53.195468],
+          [63.604392, 53.193734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588036, 53.190276],
+          [63.587978, 53.189982],
+          [63.58665, 53.190077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603202, 53.195566],
+          [63.603099, 53.195102],
+          [63.601873, 53.195179],
+          [63.601908, 53.195385],
+          [63.601896, 53.195483],
+          [63.601914, 53.195637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58868, 53.188287],
+          [63.588609, 53.188341],
+          [63.588409, 53.188387],
+          [63.587569, 53.188456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587656, 53.188693],
+          [63.587259, 53.188732],
+          [63.58742, 53.189434],
+          [63.587539, 53.189493],
+          [63.587642, 53.190006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587418, 53.18793],
+          [63.589799, 53.187731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59966, 53.195679],
+          [63.599355, 53.194541],
+          [63.599102, 53.193328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60451, 53.194792],
+          [63.605886, 53.194747],
+          [63.605769, 53.194562],
+          [63.605684, 53.194357],
+          [63.606137, 53.194249],
+          [63.606163, 53.194158],
+          [63.607319, 53.194073],
+          [63.608384, 53.194052]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588228, 53.191507],
+          [63.588235, 53.191381],
+          [63.588213, 53.191215],
+          [63.587614, 53.19124],
+          [63.587439, 53.190317],
+          [63.588227, 53.190263],
+          [63.588288, 53.190587],
+          [63.588207, 53.191022],
+          [63.588213, 53.191215]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587978, 53.189982],
+          [63.588137, 53.189889],
+          [63.587984, 53.189233],
+          [63.587746, 53.189076],
+          [63.587656, 53.188693],
+          [63.587569, 53.188456],
+          [63.587341, 53.187631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604077, 53.200129],
+          [63.602938, 53.200234],
+          [63.603133, 53.20096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597074, 53.198514],
+          [63.597546, 53.2002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606857, 53.197685],
+          [63.607428, 53.199155]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602384, 53.196523],
+          [63.602616, 53.197544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603471, 53.197479],
+          [63.601599, 53.19762],
+          [63.601367, 53.19661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6074, 53.197639],
+          [63.607625, 53.19833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594367, 53.201358],
+          [63.594752, 53.201326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605755, 53.197779],
+          [63.606121, 53.199348]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59563, 53.197099],
+          [63.595868, 53.198115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593654, 53.1993],
+          [63.593898, 53.200354]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605406, 53.198532],
+          [63.605244, 53.19782]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600127, 53.199208],
+          [63.598165, 53.199379]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606418, 53.196689],
+          [63.60536, 53.196812],
+          [63.605294, 53.196157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607024, 53.196964],
+          [63.606823, 53.196856],
+          [63.606418, 53.196689],
+          [63.606279, 53.196074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594577, 53.200457],
+          [63.594837, 53.201748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600023, 53.198756],
+          [63.600301, 53.199962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598713, 53.197865],
+          [63.59848, 53.196856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595054, 53.201726],
+          [63.595202, 53.202296],
+          [63.595367, 53.203033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596011, 53.198604],
+          [63.596165, 53.199219],
+          [63.596653, 53.199216],
+          [63.596913, 53.200255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599157, 53.195666],
+          [63.599183, 53.195757],
+          [63.59921, 53.196152],
+          [63.599161, 53.196205],
+          [63.59836, 53.196375],
+          [63.598314, 53.19642],
+          [63.598418, 53.196861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596277, 53.195576],
+          [63.596262, 53.195723],
+          [63.596485, 53.196522],
+          [63.595572, 53.196596],
+          [63.59537, 53.195698],
+          [63.59539, 53.195538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608532, 53.195945],
+          [63.606279, 53.196074],
+          [63.605294, 53.196157],
+          [63.605001, 53.196172],
+          [63.60485, 53.196155],
+          [63.604725, 53.195625],
+          [63.604792, 53.195454]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597917, 53.210433],
+          [63.597303, 53.210383],
+          [63.597058, 53.210271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599027, 53.209859],
+          [63.599253, 53.209888],
+          [63.599408, 53.20993],
+          [63.599494, 53.209994],
+          [63.5995, 53.210119],
+          [63.599462, 53.210241],
+          [63.599403, 53.210302],
+          [63.599274, 53.210328],
+          [63.598212, 53.210257],
+          [63.597955, 53.210259],
+          [63.597331, 53.210213],
+          [63.596641, 53.21036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597714, 53.207757],
+          [63.594845, 53.207959],
+          [63.594741, 53.207811],
+          [63.594197, 53.207845],
+          [63.594035, 53.207781],
+          [63.594007, 53.207596],
+          [63.593722, 53.20761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590684, 53.205217],
+          [63.590538, 53.204718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594598, 53.206709],
+          [63.594527, 53.206403],
+          [63.594493, 53.206333],
+          [63.59444, 53.206292],
+          [63.594389, 53.206271],
+          [63.594282, 53.206263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596442, 53.206575],
+          [63.596648, 53.207454],
+          [63.596722, 53.207828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595254, 53.208464],
+          [63.594031, 53.208558],
+          [63.593852, 53.208674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591165, 53.205903],
+          [63.591094, 53.205625],
+          [63.590787, 53.205452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594208, 53.203136],
+          [63.594296, 53.203453],
+          [63.594436, 53.203509],
+          [63.594563, 53.203587],
+          [63.594631, 53.203816],
+          [63.594121, 53.203902],
+          [63.591813, 53.204117],
+          [63.591618, 53.203366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594335, 53.207837],
+          [63.594219, 53.207202],
+          [63.593961, 53.207081],
+          [63.59288, 53.207156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59697, 53.20945],
+          [63.596699, 53.209528],
+          [63.596573, 53.209501],
+          [63.596471, 53.209366],
+          [63.596346, 53.209129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592602, 53.206887],
+          [63.592509, 53.206449],
+          [63.592313, 53.206328],
+          [63.592096, 53.205341]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595618, 53.207524],
+          [63.596399, 53.207469],
+          [63.596487, 53.207845],
+          [63.596588, 53.208405],
+          [63.596425, 53.208543],
+          [63.595313, 53.208623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595528, 53.204097],
+          [63.595999, 53.204216],
+          [63.596902, 53.204142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594282, 53.206263],
+          [63.593362, 53.206332],
+          [63.593286, 53.206314],
+          [63.593153, 53.206269],
+          [63.593104, 53.206234],
+          [63.592962, 53.205603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595199, 53.208189],
+          [63.594361, 53.208249],
+          [63.593805, 53.208004],
+          [63.593722, 53.20761],
+          [63.592918, 53.207371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592685, 53.205287],
+          [63.590787, 53.205452],
+          [63.590246, 53.205508],
+          [63.589998, 53.205568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596828, 53.208983],
+          [63.596919, 53.209342],
+          [63.597091, 53.20967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594282, 53.206263],
+          [63.594088, 53.205623],
+          [63.594036, 53.205579],
+          [63.593981, 53.205551],
+          [63.593918, 53.205534],
+          [63.59385, 53.205527],
+          [63.592962, 53.205603],
+          [63.592811, 53.205588],
+          [63.592685, 53.205287],
+          [63.592461, 53.204412],
+          [63.591813, 53.204117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592598, 53.204948],
+          [63.592238, 53.204984],
+          [63.592115, 53.204523],
+          [63.591845, 53.204431],
+          [63.590612, 53.204551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595148, 53.207938],
+          [63.595254, 53.208464],
+          [63.595313, 53.208623],
+          [63.59545, 53.209244],
+          [63.595454, 53.209463],
+          [63.595354, 53.209582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591735, 53.203816],
+          [63.590615, 53.203927],
+          [63.590481, 53.204067],
+          [63.590637, 53.204639],
+          [63.590538, 53.204718],
+          [63.589726, 53.2048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609882, 53.206933],
+          [63.610639, 53.206507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603896, 53.208207],
+          [63.603213, 53.207759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608592, 53.208002],
+          [63.607929, 53.208379]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603702, 53.20664],
+          [63.604295, 53.207007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600235, 53.207503],
+          [63.597698, 53.207688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608746, 53.208103],
+          [63.608254, 53.207782]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607394, 53.203336],
+          [63.605954, 53.202238],
+          [63.605866, 53.202056]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604948, 53.209696],
+          [63.605227, 53.209869],
+          [63.605312, 53.210039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61031, 53.207209],
+          [63.609386, 53.206614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604592, 53.206116],
+          [63.603377, 53.206831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600594, 53.209244],
+          [63.600778, 53.209473],
+          [63.601054, 53.209651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603174, 53.208334],
+          [63.603357, 53.209053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606496, 53.208616],
+          [63.606899, 53.208907],
+          [63.606892, 53.208996],
+          [63.607472, 53.209425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601691, 53.211713],
+          [63.60175, 53.211693],
+          [63.601763, 53.21167],
+          [63.601747, 53.211639],
+          [63.601656, 53.211581],
+          [63.601495, 53.211494],
+          [63.601019, 53.211291],
+          [63.600513, 53.211041]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.611457, 53.204013],
+          [63.609838, 53.202908],
+          [63.609804, 53.202786],
+          [63.609288, 53.202372]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609713, 53.20491],
+          [63.60805, 53.203832],
+          [63.607737, 53.203759],
+          [63.60724, 53.203414]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613062, 53.20502],
+          [63.613861, 53.205519],
+          [63.614415, 53.205366],
+          [63.614803, 53.205151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605991, 53.210177],
+          [63.605685, 53.20995],
+          [63.604292, 53.210282],
+          [63.603626, 53.210499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602669, 53.207533],
+          [63.603042, 53.207821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605971, 53.205312],
+          [63.60637, 53.205085],
+          [63.606387, 53.205064],
+          [63.606387, 53.205038],
+          [63.605878, 53.204723],
+          [63.605864, 53.204676],
+          [63.605873, 53.204602],
+          [63.605854, 53.204559],
+          [63.605436, 53.204298],
+          [63.605086, 53.204593]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.614351, 53.20593],
+          [63.614319, 53.205909]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604077, 53.211246],
+          [63.604, 53.2112]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602274, 53.212107],
+          [63.602381, 53.212178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603171, 53.211773],
+          [63.603093, 53.211687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579137, 53.198084],
+          [63.578899, 53.198097],
+          [63.578618, 53.198151],
+          [63.57872, 53.198325],
+          [63.579014, 53.198535],
+          [63.579751, 53.198469],
+          [63.580341, 53.198309],
+          [63.580905, 53.19828],
+          [63.58243, 53.198169]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.580727, 53.196175],
+          [63.580448, 53.195002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586973, 53.207764],
+          [63.586813, 53.207745],
+          [63.586764, 53.207697],
+          [63.586652, 53.207199],
+          [63.586512, 53.206444],
+          [63.586555, 53.206373],
+          [63.586641, 53.206322],
+          [63.586804, 53.206274],
+          [63.589874, 53.206007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587832, 53.203717],
+          [63.58824, 53.205128],
+          [63.588358, 53.205329],
+          [63.58851, 53.20543],
+          [63.588626, 53.205467],
+          [63.588835, 53.205469],
+          [63.589396, 53.205453],
+          [63.589925, 53.205458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589726, 53.207543],
+          [63.589428, 53.207546],
+          [63.588985, 53.207563],
+          [63.588917, 53.207575],
+          [63.588894, 53.2076],
+          [63.588921, 53.207642],
+          [63.589602, 53.207626],
+          [63.590063, 53.207604],
+          [63.590161, 53.207559],
+          [63.590234, 53.20749],
+          [63.59117, 53.2074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.582777, 53.202603],
+          [63.583489, 53.202527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584193, 53.195661],
+          [63.583986, 53.194923],
+          [63.583944, 53.194904],
+          [63.583814, 53.194899],
+          [63.583763, 53.194881],
+          [63.583705, 53.194775],
+          [63.58365, 53.194703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588807, 53.207231],
+          [63.589325, 53.207184],
+          [63.589965, 53.20702],
+          [63.590082, 53.207008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581886, 53.200087],
+          [63.582855, 53.200011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575852, 53.202215],
+          [63.582245, 53.201746],
+          [63.582872, 53.201685],
+          [63.583227, 53.201621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58992, 53.206228],
+          [63.589987, 53.206594],
+          [63.590082, 53.207008],
+          [63.590234, 53.20749],
+          [63.59035, 53.208185]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584707, 53.199913],
+          [63.583801, 53.196262],
+          [63.583602, 53.195533],
+          [63.583511, 53.195153],
+          [63.583471, 53.194846],
+          [63.583503, 53.194803],
+          [63.58365, 53.194703],
+          [63.583678, 53.194637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59008, 53.205696],
+          [63.589811, 53.205752],
+          [63.58992, 53.206228],
+          [63.590388, 53.206175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583617, 53.203169],
+          [63.583197, 53.203183],
+          [63.582885, 53.203172],
+          [63.582946, 53.203674],
+          [63.583095, 53.20373],
+          [63.583261, 53.20374],
+          [63.58365, 53.20368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579096, 53.197251],
+          [63.578694, 53.195206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.561255, 53.198241],
+          [63.563885, 53.198925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606203, 53.189175],
+          [63.606182, 53.188747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604732, 53.189211],
+          [63.604709, 53.188936],
+          [63.60576, 53.1889]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605737, 53.188626],
+          [63.605784, 53.189186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601672, 53.191326],
+          [63.601819, 53.192152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605392, 53.206688],
+          [63.605197, 53.206543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605266, 53.206506],
+          [63.604893, 53.206263],
+          [63.605341, 53.205991],
+          [63.605414, 53.205858],
+          [63.605268, 53.205755],
+          [63.606001, 53.205332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604519, 53.187064],
+          [63.604055, 53.186382],
+          [63.603826, 53.185846]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587465, 53.188484],
+          [63.587579, 53.188475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596999, 53.187358],
+          [63.597222, 53.187327],
+          [63.597378, 53.18773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60224, 53.186371],
+          [63.602428, 53.186343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600229, 53.186681],
+          [63.602175, 53.186381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604497, 53.197885],
+          [63.60445, 53.197623],
+          [63.604008, 53.197647],
+          [63.603941, 53.197254],
+          [63.604076, 53.197171],
+          [63.604023, 53.196907],
+          [63.603893, 53.19688],
+          [63.603736, 53.195893],
+          [63.603645, 53.195532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60041, 53.196146],
+          [63.603135, 53.195943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604368, 53.196117],
+          [63.603779, 53.19616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603893, 53.19688],
+          [63.603348, 53.196919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603828, 53.196473],
+          [63.604423, 53.196428],
+          [63.604368, 53.196117],
+          [63.604412, 53.196065],
+          [63.604368, 53.195848],
+          [63.603736, 53.195893]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588363, 53.191733],
+          [63.588281, 53.19175],
+          [63.588228, 53.191507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587846, 53.197453],
+          [63.587917, 53.197762],
+          [63.588224, 53.19773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587555, 53.198768],
+          [63.588437, 53.198691]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585661, 53.199242],
+          [63.587441, 53.199079],
+          [63.587579, 53.198901],
+          [63.587438, 53.198294]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587492, 53.197483],
+          [63.588159, 53.197428]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588419, 53.198616],
+          [63.587536, 53.198692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589392, 53.200189],
+          [63.588765, 53.200237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590243, 53.200319],
+          [63.589667, 53.20036],
+          [63.589875, 53.201543],
+          [63.590084, 53.20252],
+          [63.58927, 53.202579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589842, 53.201356],
+          [63.589021, 53.201423]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590465, 53.201407],
+          [63.589859, 53.201452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589884, 53.202821],
+          [63.589838, 53.202536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593817, 53.192002],
+          [63.593828, 53.192163]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591117, 53.190628],
+          [63.591243, 53.191164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593596, 53.192405],
+          [63.593558, 53.192165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593283, 53.192166],
+          [63.593047, 53.191024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591951, 53.190565],
+          [63.590906, 53.190644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591918, 53.192477],
+          [63.592106, 53.192364],
+          [63.592549, 53.192265],
+          [63.592815, 53.19222],
+          [63.59281, 53.192387],
+          [63.592753, 53.192446],
+          [63.592668, 53.192501],
+          [63.592547, 53.192533],
+          [63.592416, 53.192482],
+          [63.592408, 53.192403],
+          [63.592454, 53.192329],
+          [63.592549, 53.192265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594083, 53.191944],
+          [63.59402, 53.191987],
+          [63.593817, 53.192002],
+          [63.59356, 53.191962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594149, 53.190946],
+          [63.594363, 53.192752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593148, 53.192166],
+          [63.594294, 53.192161]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587843, 53.193202],
+          [63.587263, 53.193243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587364, 53.193739],
+          [63.587616, 53.193692],
+          [63.587633, 53.193683],
+          [63.587641, 53.193672],
+          [63.58762, 53.193535],
+          [63.587586, 53.193518],
+          [63.587317, 53.193514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586558, 53.195743],
+          [63.586955, 53.195749],
+          [63.587781, 53.195678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589337, 53.206648],
+          [63.589987, 53.206594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587153, 53.192682],
+          [63.586325, 53.192777],
+          [63.58622, 53.192774],
+          [63.586147, 53.192748],
+          [63.586091, 53.192698],
+          [63.585969, 53.191908],
+          [63.585927, 53.191881],
+          [63.585874, 53.191868],
+          [63.58541, 53.191877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589492, 53.205786],
+          [63.589811, 53.205752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599562, 53.196764],
+          [63.599757, 53.197685],
+          [63.599697, 53.19777],
+          [63.598713, 53.197865],
+          [63.597836, 53.197937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600106, 53.211215],
+          [63.599726, 53.211661],
+          [63.599448, 53.211956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600434, 53.211697],
+          [63.600254, 53.211863],
+          [63.599726, 53.211661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589106, 53.194893],
+          [63.588234, 53.19497],
+          [63.588295, 53.195232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.558709, 53.203226],
+          [63.557993, 53.204409],
+          [63.559702, 53.20482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591969, 53.208208],
+          [63.592082, 53.208397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604348, 53.209705],
+          [63.604821, 53.209929],
+          [63.605054, 53.2101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602913, 53.198522],
+          [63.603146, 53.199732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602397, 53.201023],
+          [63.601825, 53.198612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596173, 53.19948],
+          [63.596357, 53.200303]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595202, 53.202296],
+          [63.594828, 53.202414],
+          [63.594621, 53.202431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606218, 53.197026],
+          [63.606551, 53.196984],
+          [63.607332, 53.196952],
+          [63.608155, 53.196984],
+          [63.608627, 53.196994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581263, 53.192832],
+          [63.581513, 53.192803],
+          [63.581564, 53.19282],
+          [63.581587, 53.192838],
+          [63.581866, 53.193722],
+          [63.581851, 53.193768],
+          [63.581805, 53.193802],
+          [63.579552, 53.194043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.580858, 53.193725],
+          [63.580273, 53.193783],
+          [63.580236, 53.193772],
+          [63.58022, 53.193749],
+          [63.579943, 53.192791],
+          [63.579949, 53.192767],
+          [63.579982, 53.192752],
+          [63.580509, 53.192712],
+          [63.580541, 53.192718],
+          [63.58056, 53.192731],
+          [63.580911, 53.193899]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581339, 53.193854],
+          [63.581644, 53.194861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.563566, 53.189589],
+          [63.572954, 53.193865],
+          [63.573667, 53.194149],
+          [63.574539, 53.194591],
+          [63.576578, 53.195576],
+          [63.576593, 53.196651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589194, 53.202227],
+          [63.588134, 53.202309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583125, 53.192095],
+          [63.58307, 53.192195],
+          [63.583008, 53.192345],
+          [63.582928, 53.192658],
+          [63.582976, 53.193113],
+          [63.583001, 53.193168],
+          [63.583065, 53.193206],
+          [63.583165, 53.193228],
+          [63.583477, 53.19333],
+          [63.583521, 53.19338],
+          [63.583638, 53.194321],
+          [63.583769, 53.194619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584029, 53.193589],
+          [63.584243, 53.194557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601198, 53.190044],
+          [63.602707, 53.189929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604273, 53.188663],
+          [63.604242, 53.18823],
+          [63.604192, 53.18815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606706, 53.19498],
+          [63.606465, 53.19499],
+          [63.606306, 53.194901],
+          [63.606289, 53.194786],
+          [63.606667, 53.19477],
+          [63.606767, 53.195319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606068, 53.195367],
+          [63.605978, 53.194747],
+          [63.605886, 53.194747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.578626, 53.185585],
+          [63.578388, 53.185743],
+          [63.578243, 53.185973],
+          [63.578229, 53.186165],
+          [63.578321, 53.186406],
+          [63.577377, 53.185974],
+          [63.576931, 53.18572],
+          [63.576687, 53.185409],
+          [63.575459, 53.184484],
+          [63.574394, 53.183841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594813, 53.203083],
+          [63.594621, 53.202431],
+          [63.594571, 53.201775]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595412, 53.187196],
+          [63.595919, 53.187149]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596897, 53.187064],
+          [63.595919, 53.187149],
+          [63.595872, 53.186936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598514, 53.189692],
+          [63.598625, 53.190624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601198, 53.190044],
+          [63.601337, 53.190644],
+          [63.602017, 53.190602],
+          [63.601917, 53.189989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60096, 53.191174],
+          [63.600028, 53.191237],
+          [63.59951, 53.191263],
+          [63.598926, 53.191322],
+          [63.59858, 53.191345],
+          [63.598067, 53.191398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612672, 53.20685],
+          [63.612592, 53.206803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607929, 53.18941],
+          [63.607711, 53.189415],
+          [63.607684, 53.189423],
+          [63.607675, 53.189439],
+          [63.607716, 53.189962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596505, 53.209722],
+          [63.596575, 53.209682],
+          [63.596823, 53.209659],
+          [63.597091, 53.20967],
+          [63.598074, 53.209635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605533, 53.204245],
+          [63.605116, 53.204021],
+          [63.60503, 53.203928],
+          [63.605073, 53.203873],
+          [63.605424, 53.20369],
+          [63.605451, 53.203618],
+          [63.605392, 53.20353],
+          [63.605073, 53.203268],
+          [63.604698, 53.203012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605309, 53.187734],
+          [63.605556, 53.18768],
+          [63.605859, 53.187664],
+          [63.605974, 53.187649],
+          [63.606053, 53.187617],
+          [63.606114, 53.187563],
+          [63.606194, 53.187433],
+          [63.606253, 53.187372],
+          [63.606337, 53.18732],
+          [63.606393, 53.187301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596342, 53.191806],
+          [63.596495, 53.192583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585512, 53.199789],
+          [63.585541, 53.200231],
+          [63.585582, 53.200278],
+          [63.585648, 53.200304],
+          [63.585756, 53.200318],
+          [63.586901, 53.200234],
+          [63.587357, 53.200141],
+          [63.588738, 53.200027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6104, 53.207953],
+          [63.610385, 53.207942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60637, 53.204803],
+          [63.605773, 53.204393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.605734, 53.204153],
+          [63.605773, 53.204393],
+          [63.605688, 53.204457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607825, 53.204854],
+          [63.607185, 53.204412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607297, 53.205545],
+          [63.607737, 53.205793],
+          [63.607793, 53.205796],
+          [63.607862, 53.205788],
+          [63.60828, 53.205575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609364, 53.205664],
+          [63.608808, 53.205829],
+          [63.608756, 53.205829],
+          [63.608698, 53.205816],
+          [63.60828, 53.205575],
+          [63.606951, 53.20461],
+          [63.606932, 53.204586],
+          [63.60694, 53.204557],
+          [63.60737, 53.204303]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606576, 53.20515],
+          [63.607001, 53.205391],
+          [63.607066, 53.205401],
+          [63.60713, 53.205388],
+          [63.60823, 53.20488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587263, 53.201219],
+          [63.587451, 53.202273],
+          [63.58751, 53.202296],
+          [63.588014, 53.202254],
+          [63.588121, 53.202267],
+          [63.588347, 53.203022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596648, 53.207454],
+          [63.596399, 53.207469]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581613, 53.193825],
+          [63.581893, 53.194834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576328, 53.194847],
+          [63.576604, 53.19539],
+          [63.576652, 53.195428],
+          [63.576786, 53.195485]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.577177, 53.195375],
+          [63.577108, 53.195155],
+          [63.578031, 53.195064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.577108, 53.195155],
+          [63.57689, 53.194406],
+          [63.576902, 53.194376],
+          [63.576947, 53.194353],
+          [63.577658, 53.194278],
+          [63.577713, 53.194293],
+          [63.577743, 53.19432],
+          [63.577889, 53.194758],
+          [63.577961, 53.194821],
+          [63.578101, 53.195271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586726, 53.190497],
+          [63.586263, 53.190532],
+          [63.586209, 53.190547],
+          [63.58619, 53.190575],
+          [63.586339, 53.191575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583911, 53.190935],
+          [63.583986, 53.19107],
+          [63.584045, 53.191104],
+          [63.58413, 53.191123],
+          [63.584657, 53.191095],
+          [63.584711, 53.191103],
+          [63.584746, 53.191121],
+          [63.584887, 53.191271],
+          [63.584943, 53.191318],
+          [63.585034, 53.191361],
+          [63.585148, 53.191385],
+          [63.585274, 53.191384],
+          [63.585557, 53.191357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584621, 53.190266],
+          [63.585206, 53.190248],
+          [63.585252, 53.190264],
+          [63.585277, 53.190294],
+          [63.585529, 53.191331],
+          [63.585557, 53.191357],
+          [63.585607, 53.191363],
+          [63.586887, 53.191311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587309, 53.19348],
+          [63.586787, 53.193533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586693, 53.193275],
+          [63.586756, 53.1935],
+          [63.586787, 53.193533],
+          [63.586833, 53.193677],
+          [63.58685, 53.193693],
+          [63.586885, 53.193697],
+          [63.587345, 53.193656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587816, 53.195829],
+          [63.587078, 53.195869],
+          [63.587038, 53.195901],
+          [63.587022, 53.19597],
+          [63.587059, 53.196336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600089, 53.1871],
+          [63.599962, 53.187288],
+          [63.599824, 53.187327],
+          [63.598921, 53.187465],
+          [63.598452, 53.187552],
+          [63.597948, 53.187629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599752, 53.211035],
+          [63.600723, 53.211537],
+          [63.600808, 53.211536],
+          [63.601048, 53.211473],
+          [63.601162, 53.211485],
+          [63.601366, 53.211555],
+          [63.601811, 53.211777],
+          [63.602304, 53.212091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598427, 53.210746],
+          [63.598368, 53.210696],
+          [63.598357, 53.210628],
+          [63.59837, 53.210522],
+          [63.598443, 53.210273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59987, 53.210074],
+          [63.599462, 53.210241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575454, 53.206609],
+          [63.574791, 53.206684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593443, 53.187419],
+          [63.592743, 53.187479],
+          [63.590962, 53.187687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594648, 53.187382],
+          [63.593723, 53.18746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600102, 53.209276],
+          [63.600242, 53.20948],
+          [63.600342, 53.209531],
+          [63.600444, 53.209534],
+          [63.600778, 53.209473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595515, 53.194736],
+          [63.595412, 53.193986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591892, 53.203341],
+          [63.591922, 53.20343],
+          [63.592044, 53.203441],
+          [63.592325, 53.203419],
+          [63.592857, 53.203362]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592917, 53.203587],
+          [63.592832, 53.203259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593966, 53.203158],
+          [63.59401, 53.203385],
+          [63.59404, 53.203459],
+          [63.594093, 53.203477],
+          [63.594175, 53.203485],
+          [63.594239, 53.203478],
+          [63.594296, 53.203453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612509, 53.206933],
+          [63.612434, 53.206886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60185, 53.195029],
+          [63.601873, 53.195179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58902, 53.188803],
+          [63.588974, 53.18856],
+          [63.58891, 53.188491],
+          [63.588746, 53.188382],
+          [63.58868, 53.188287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609736, 53.208304],
+          [63.609716, 53.208283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.5996, 53.195458],
+          [63.598306, 53.195413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601336, 53.187847],
+          [63.602266, 53.187696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599998, 53.191239],
+          [63.600189, 53.192302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569055, 53.196648],
+          [63.57007, 53.196346],
+          [63.570278, 53.196309],
+          [63.570462, 53.196331],
+          [63.571044, 53.197068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587992, 53.196668],
+          [63.587796, 53.19663],
+          [63.587676, 53.196571],
+          [63.58748, 53.19585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575183, 53.196778],
+          [63.575075, 53.196275],
+          [63.574968, 53.196023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588003, 53.194707],
+          [63.587842, 53.194118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584754, 53.192448],
+          [63.584896, 53.192563],
+          [63.584965, 53.192664],
+          [63.584975, 53.192786],
+          [63.584938, 53.192848],
+          [63.584621, 53.192939],
+          [63.583632, 53.193078],
+          [63.583543, 53.193158],
+          [63.583477, 53.19333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600312, 53.194473],
+          [63.600269, 53.194281],
+          [63.600731, 53.19426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60142, 53.189693],
+          [63.601123, 53.189714],
+          [63.601198, 53.190044]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602023, 53.189487],
+          [63.602094, 53.189976],
+          [63.602222, 53.190591],
+          [63.602017, 53.190602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601409, 53.189595],
+          [63.601583, 53.190629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607036, 53.189311],
+          [63.607074, 53.18937],
+          [63.60716, 53.189978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573327, 53.196463],
+          [63.573101, 53.196216],
+          [63.572203, 53.195608],
+          [63.572079, 53.195535],
+          [63.571969, 53.195514],
+          [63.571849, 53.195526],
+          [63.571403, 53.195686],
+          [63.571307, 53.195753],
+          [63.571264, 53.195821],
+          [63.571256, 53.195886],
+          [63.571309, 53.196055],
+          [63.571562, 53.196592],
+          [63.571776, 53.196875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579265, 53.192266],
+          [63.581132, 53.192215],
+          [63.581376, 53.192223],
+          [63.581539, 53.192282],
+          [63.581652, 53.192369],
+          [63.581727, 53.192507],
+          [63.581851, 53.192806],
+          [63.582425, 53.19477]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58648, 53.205917],
+          [63.586555, 53.206209],
+          [63.586641, 53.206322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597472, 53.20671],
+          [63.59649, 53.2068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588679, 53.19318],
+          [63.588854, 53.193984]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587585, 53.203877],
+          [63.587057, 53.203936],
+          [63.587, 53.20393],
+          [63.58696, 53.203904],
+          [63.586941, 53.203816]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589001, 53.204776],
+          [63.589267, 53.205334],
+          [63.589396, 53.205453],
+          [63.589441, 53.205557],
+          [63.589492, 53.205786],
+          [63.589532, 53.206036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606162, 53.188536],
+          [63.60587, 53.188548],
+          [63.605813, 53.188558],
+          [63.605776, 53.18858],
+          [63.605737, 53.188626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601521, 53.187122],
+          [63.600894, 53.187226],
+          [63.600516, 53.187186],
+          [63.600365, 53.187078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586224, 53.208166],
+          [63.586128, 53.207054],
+          [63.584273, 53.198809],
+          [63.58419, 53.198507],
+          [63.584068, 53.198214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569995, 53.208525],
+          [63.581191, 53.207649],
+          [63.581974, 53.207576],
+          [63.582665, 53.207427],
+          [63.583336, 53.207186],
+          [63.583855, 53.206891],
+          [63.584297, 53.206529],
+          [63.584597, 53.206139],
+          [63.584775, 53.205722],
+          [63.584795, 53.205266],
+          [63.584765, 53.204607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579439, 53.211097],
+          [63.58116, 53.21085],
+          [63.581678, 53.210703],
+          [63.58231, 53.210412],
+          [63.582651, 53.210172],
+          [63.583693, 53.209233],
+          [63.58419, 53.208871],
+          [63.585025, 53.207904],
+          [63.585228, 53.20749],
+          [63.585299, 53.207136],
+          [63.585269, 53.206716],
+          [63.583773, 53.200268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586467, 53.209638],
+          [63.586163, 53.208474],
+          [63.586099, 53.207953],
+          [63.583359, 53.195812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583845, 53.197575],
+          [63.584032, 53.198045],
+          [63.586161, 53.207553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57228, 53.18507],
+          [63.574873, 53.1862],
+          [63.577308, 53.187568],
+          [63.579202, 53.188962],
+          [63.580695, 53.190402],
+          [63.581971, 53.192047],
+          [63.582352, 53.192688],
+          [63.582669, 53.193413],
+          [63.582921, 53.194064],
+          [63.583099, 53.194695],
+          [63.583359, 53.195812],
+          [63.583554, 53.196345],
+          [63.58368, 53.196843],
+          [63.586224, 53.208166],
+          [63.586252, 53.208453],
+          [63.586553, 53.209615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581708, 53.18785],
+          [63.583207, 53.194365],
+          [63.583628, 53.196305],
+          [63.58368, 53.196843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574728, 53.203222],
+          [63.579949, 53.20289],
+          [63.580573, 53.202815],
+          [63.580986, 53.202734],
+          [63.581404, 53.202623],
+          [63.58173, 53.202516],
+          [63.582115, 53.202353],
+          [63.58251, 53.20215],
+          [63.582915, 53.201916],
+          [63.58324, 53.201676],
+          [63.583473, 53.201461],
+          [63.583606, 53.201257],
+          [63.583736, 53.200934],
+          [63.58378, 53.200693],
+          [63.583813, 53.198374],
+          [63.58379, 53.198131],
+          [63.583688, 53.197627],
+          [63.583667, 53.197168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583628, 53.196305],
+          [63.584032, 53.198045]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572757, 53.205742],
+          [63.572808, 53.206632],
+          [63.572778, 53.206939],
+          [63.572682, 53.207225],
+          [63.572489, 53.20752],
+          [63.572248, 53.207774],
+          [63.571961, 53.207981],
+          [63.571569, 53.208188],
+          [63.57117, 53.208337],
+          [63.570725, 53.208432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57293, 53.204618],
+          [63.572651, 53.205487],
+          [63.572614, 53.205743],
+          [63.572796, 53.206426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575939, 53.184142],
+          [63.57698, 53.184756],
+          [63.57728, 53.184907],
+          [63.577653, 53.18506],
+          [63.57842, 53.185251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586252, 53.208453],
+          [63.586284, 53.208945]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586845, 53.201026],
+          [63.586357, 53.201589],
+          [63.585734, 53.202607],
+          [63.585571, 53.202959],
+          [63.58541, 53.203518]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585177, 53.200408],
+          [63.585286, 53.200749],
+          [63.585464, 53.201457],
+          [63.585506, 53.202164],
+          [63.58541, 53.203518],
+          [63.585421, 53.203896]
+        ]
+      }
+    }
+  ]
+}

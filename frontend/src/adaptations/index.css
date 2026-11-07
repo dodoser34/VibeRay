@@ -7,6 +7,10 @@
 @import './desktop/4k/4k.css';
 @import './desktop/pages/home.css';
 
+@import './laptop/laptop.css';
+@import './laptop/pages/home.css';
+@import './laptop/pages/not-found.css';
+
 @import './tablet/tablet.css';
 @import './tablet/navigation.css';
 @import './tablet/pages/home.css';

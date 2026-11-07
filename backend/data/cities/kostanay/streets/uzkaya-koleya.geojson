@@ -1,0 +1,2393 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666046, 53.26722],
+          [63.66146, 53.264317],
+          [63.65896, 53.263433],
+          [63.658814, 53.263398],
+          [63.658629, 53.26342],
+          [63.657035, 53.264362],
+          [63.656865, 53.264417],
+          [63.656642, 53.264409],
+          [63.656452, 53.264363],
+          [63.647343, 53.259434],
+          [63.64573, 53.258508],
+          [63.640334, 53.255576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622731, 53.248488],
+          [63.622502, 53.248068],
+          [63.622106, 53.247471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624637, 53.259127],
+          [63.625997, 53.259893],
+          [63.626097, 53.259926],
+          [63.626197, 53.259929],
+          [63.626291, 53.259895],
+          [63.631133, 53.256792],
+          [63.631406, 53.256498],
+          [63.63146, 53.256222],
+          [63.631283, 53.255912],
+          [63.628258, 53.253423],
+          [63.625501, 53.252103],
+          [63.624738, 53.251616],
+          [63.624187, 53.251004],
+          [63.622731, 53.248488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653977, 53.278471],
+          [63.654661, 53.277786],
+          [63.655686, 53.276852],
+          [63.657199, 53.275394],
+          [63.657479, 53.275423],
+          [63.663176, 53.278041],
+          [63.663687, 53.278075],
+          [63.664297, 53.277931],
+          [63.664751, 53.277922],
+          [63.665248, 53.278033],
+          [63.665717, 53.278075],
+          [63.66627, 53.277948],
+          [63.670858, 53.274671]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655686, 53.276852],
+          [63.647522, 53.273984],
+          [63.644003, 53.272836],
+          [63.64323, 53.272329],
+          [63.641932, 53.271071],
+          [63.641385, 53.270821],
+          [63.64073, 53.270667],
+          [63.635302, 53.270475],
+          [63.630396, 53.268881],
+          [63.626729, 53.267638],
+          [63.617456, 53.2641],
+          [63.613617, 53.262567],
+          [63.601828, 53.258558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661393, 53.2648],
+          [63.660426, 53.264262],
+          [63.65965, 53.263792],
+          [63.659615, 53.263665],
+          [63.659664, 53.263496],
+          [63.659555, 53.262797],
+          [63.659432, 53.262574],
+          [63.659173, 53.262365],
+          [63.655732, 53.260241],
+          [63.651636, 53.257747],
+          [63.651241, 53.257627],
+          [63.65082, 53.257618],
+          [63.6504, 53.257746],
+          [63.647343, 53.259434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674865, 53.269652],
+          [63.677153, 53.267946],
+          [63.677256, 53.267792],
+          [63.677204, 53.2676],
+          [63.677056, 53.267466],
+          [63.670588, 53.264381],
+          [63.670299, 53.264281],
+          [63.67001, 53.264296],
+          [63.669779, 53.264415],
+          [63.667645, 53.266141],
+          [63.666749, 53.266791],
+          [63.666046, 53.26722],
+          [63.665889, 53.267471],
+          [63.660997, 53.270266],
+          [63.660981, 53.270503],
+          [63.662233, 53.271167],
+          [63.664415, 53.271808],
+          [63.664642, 53.271913],
+          [63.664728, 53.272045],
+          [63.664728, 53.272186],
+          [63.664681, 53.272304],
+          [63.664546, 53.272452],
+          [63.66402, 53.272891],
+          [63.670858, 53.274671],
+          [63.677792, 53.276718],
+          [63.679127, 53.27682],
+          [63.680352, 53.276712],
+          [63.681436, 53.276472],
+          [63.685787, 53.274568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655226, 53.266395],
+          [63.65965, 53.263792]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655949, 53.266988],
+          [63.656336, 53.266741],
+          [63.656416, 53.266624],
+          [63.660426, 53.264262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653465, 53.258868],
+          [63.650008, 53.260877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661835, 53.263785],
+          [63.660375, 53.263115],
+          [63.659603, 53.263106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635561, 53.265384],
+          [63.63791, 53.263829],
+          [63.638577, 53.263365],
+          [63.638968, 53.263068],
+          [63.639256, 53.262795],
+          [63.639525, 53.262465],
+          [63.639555, 53.262349],
+          [63.639527, 53.262279],
+          [63.639452, 53.262204],
+          [63.634006, 53.259268],
+          [63.633197, 53.258682],
+          [63.63278, 53.258272],
+          [63.632153, 53.256903],
+          [63.631852, 53.256578],
+          [63.63146, 53.256222]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633588, 53.261486],
+          [63.63301, 53.261832],
+          [63.63271, 53.261648],
+          [63.632238, 53.261967],
+          [63.630152, 53.263214],
+          [63.628291, 53.262142],
+          [63.628479, 53.261935],
+          [63.628387, 53.26193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633516, 53.265289],
+          [63.631673, 53.266401],
+          [63.632455, 53.266854],
+          [63.633759, 53.266079],
+          [63.631838, 53.265029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636027, 53.263184],
+          [63.635671, 53.26296],
+          [63.635853, 53.262711],
+          [63.635653, 53.262555],
+          [63.631838, 53.265029],
+          [63.628597, 53.267067],
+          [63.626729, 53.267638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636079, 53.264566],
+          [63.634186, 53.263507],
+          [63.63276, 53.262752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647924, 53.253109],
+          [63.646823, 53.2525],
+          [63.645771, 53.25253],
+          [63.644032, 53.253633],
+          [63.643882, 53.253699],
+          [63.643791, 53.253699],
+          [63.643716, 53.253665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.658935, 53.274347],
+          [63.657489, 53.275149],
+          [63.657199, 53.275394]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653734, 53.26896],
+          [63.655649, 53.268813],
+          [63.656046, 53.268906],
+          [63.656856, 53.269236],
+          [63.658261, 53.269705],
+          [63.658862, 53.270016],
+          [63.659361, 53.270134],
+          [63.659871, 53.269894],
+          [63.660096, 53.269872],
+          [63.660997, 53.270266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661469, 53.262553],
+          [63.660535, 53.263188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661882, 53.262733],
+          [63.662666, 53.263182],
+          [63.661835, 53.263785],
+          [63.661261, 53.264246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622731, 53.248488],
+          [63.62336, 53.2484],
+          [63.624928, 53.248283],
+          [63.625434, 53.248263],
+          [63.626241, 53.248265],
+          [63.626654, 53.248304],
+          [63.626992, 53.24839],
+          [63.627642, 53.248669],
+          [63.628102, 53.248901],
+          [63.630025, 53.249921],
+          [63.632532, 53.251316],
+          [63.640334, 53.255576],
+          [63.642895, 53.254176],
+          [63.643716, 53.253665],
+          [63.646285, 53.251948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622659, 53.259766],
+          [63.623757, 53.259677],
+          [63.624637, 53.259127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.662766, 53.265143],
+          [63.663957, 53.264483],
+          [63.666974, 53.265168],
+          [63.66512, 53.266284],
+          [63.663075, 53.264972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666198, 53.265284],
+          [63.663146, 53.265017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.662922, 53.273533],
+          [63.66402, 53.272891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654483, 53.26016],
+          [63.655242, 53.260568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656304, 53.261636],
+          [63.656527, 53.261495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653278, 53.259861],
+          [63.6525, 53.259429]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654797, 53.264199],
+          [63.652513, 53.263014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654261, 53.260617],
+          [63.65471, 53.260867],
+          [63.654801, 53.260873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.657219, 53.257457],
+          [63.65643, 53.257188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656451, 53.261452],
+          [63.658877, 53.262822],
+          [63.658644, 53.262957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653502, 53.262109],
+          [63.654806, 53.262821],
+          [63.655002, 53.262838],
+          [63.655288, 53.262748],
+          [63.65565, 53.262873],
+          [63.657606, 53.264024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66691, 53.269957],
+          [63.667676, 53.269576],
+          [63.667676, 53.268897],
+          [63.66736, 53.268374],
+          [63.665889, 53.267471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654846, 53.265961],
+          [63.655411, 53.265585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655288, 53.262748],
+          [63.655278, 53.262233],
+          [63.65525, 53.26213],
+          [63.653595, 53.26216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.65365, 53.264894],
+          [63.653075, 53.264592],
+          [63.651467, 53.263773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654917, 53.264702],
+          [63.652151, 53.263264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664632, 53.264636],
+          [63.664353, 53.265791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665991, 53.264945],
+          [63.665761, 53.265898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654801, 53.260873],
+          [63.654858, 53.260844],
+          [63.655242, 53.260568],
+          [63.655732, 53.260241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.65443, 53.264449],
+          [63.655395, 53.263791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.658564, 53.266197],
+          [63.657087, 53.2653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651169, 53.260827],
+          [63.651883, 53.260375],
+          [63.651375, 53.260083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665178, 53.26476],
+          [63.664852, 53.266111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666709, 53.265329],
+          [63.666535, 53.265263],
+          [63.666208, 53.265239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66378, 53.264581],
+          [63.663604, 53.265311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665444, 53.264821],
+          [63.665095, 53.266267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664092, 53.264514],
+          [63.66386, 53.265475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664358, 53.264574],
+          [63.664103, 53.265631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664912, 53.2647],
+          [63.664609, 53.265955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665732, 53.264886],
+          [63.665441, 53.26609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656054, 53.262181],
+          [63.655773, 53.262377],
+          [63.655278, 53.262233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651467, 53.263773],
+          [63.652151, 53.263264],
+          [63.653148, 53.262576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666264, 53.265007],
+          [63.666098, 53.265695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655702, 53.263279],
+          [63.655534, 53.263192],
+          [63.655293, 53.263355],
+          [63.655091, 53.263627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.657522, 53.263066],
+          [63.657995, 53.263324],
+          [63.658072, 53.263447],
+          [63.658338, 53.263592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656416, 53.266624],
+          [63.656082, 53.266439],
+          [63.655595, 53.26673],
+          [63.655236, 53.266523],
+          [63.655226, 53.266395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.658506, 53.257424],
+          [63.658197, 53.257299],
+          [63.657824, 53.257038],
+          [63.657488, 53.256918],
+          [63.657067, 53.256887]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653726, 53.261677],
+          [63.653345, 53.261932],
+          [63.653577, 53.262058],
+          [63.652959, 53.262473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656029, 53.265922],
+          [63.655052, 53.265395],
+          [63.655027, 53.265374],
+          [63.655016, 53.26534],
+          [63.655266, 53.265059],
+          [63.655255, 53.264599],
+          [63.65599, 53.264114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656834, 53.261669],
+          [63.656625, 53.261802],
+          [63.658791, 53.263041],
+          [63.658846, 53.263242],
+          [63.658814, 53.263398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627061, 53.265175],
+          [63.624586, 53.266817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67672, 53.275125],
+          [63.67635, 53.275198],
+          [63.675856, 53.275427],
+          [63.675318, 53.27599]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670049, 53.272836],
+          [63.670644, 53.272742],
+          [63.671901, 53.272187],
+          [63.672246, 53.272015],
+          [63.673204, 53.272435],
+          [63.673669, 53.272745],
+          [63.673355, 53.273095],
+          [63.67331, 53.273438],
+          [63.673193, 53.273604],
+          [63.673211, 53.273702],
+          [63.675087, 53.274301],
+          [63.674249, 53.27525],
+          [63.672485, 53.274708],
+          [63.672164, 53.274495],
+          [63.671207, 53.274216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671262, 53.268437],
+          [63.674313, 53.266157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67295, 53.274127],
+          [63.674746, 53.274689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674784, 53.274647],
+          [63.675669, 53.274931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668891, 53.265592],
+          [63.66852, 53.265434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672864, 53.271109],
+          [63.674865, 53.269652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.67445, 53.275027],
+          [63.675856, 53.275427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673669, 53.272745],
+          [63.674108, 53.273346],
+          [63.674301, 53.273446],
+          [63.675798, 53.273975],
+          [63.676075, 53.274056],
+          [63.676087, 53.274167],
+          [63.675863, 53.274697],
+          [63.675374, 53.275288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.630584, 53.249265],
+          [63.630545, 53.249586],
+          [63.630025, 53.249921]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627764, 53.247666],
+          [63.627742, 53.247855],
+          [63.626992, 53.24839]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628198, 53.246257],
+          [63.62806, 53.247676],
+          [63.627051, 53.247641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.648692, 53.284646],
+          [63.649122, 53.283579],
+          [63.649707, 53.283468],
+          [63.650092, 53.283367],
+          [63.650984, 53.282089],
+          [63.650969, 53.280221],
+          [63.651122, 53.279559],
+          [63.651584, 53.279108],
+          [63.65203, 53.27886],
+          [63.652861, 53.278667],
+          [63.653642, 53.278552],
+          [63.653977, 53.278471],
+          [63.653165, 53.279926],
+          [63.651655, 53.283252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646162, 53.258167],
+          [63.64573, 53.258508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666979, 53.26814],
+          [63.665137, 53.269206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617456, 53.2641],
+          [63.621408, 53.261638],
+          [63.621618, 53.261427],
+          [63.621854, 53.261237],
+          [63.622368, 53.261031],
+          [63.625098, 53.259387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637576, 53.259867],
+          [63.637837, 53.260119],
+          [63.638611, 53.261325],
+          [63.639375, 53.261818],
+          [63.644242, 53.263799],
+          [63.64671, 53.26488],
+          [63.647509, 53.265041],
+          [63.647883, 53.264916],
+          [63.647927, 53.264729],
+          [63.643938, 53.262848],
+          [63.641964, 53.261927],
+          [63.640784, 53.261443],
+          [63.640607, 53.261308],
+          [63.640532, 53.261141],
+          [63.640505, 53.26066],
+          [63.640414, 53.260483],
+          [63.640291, 53.260358],
+          [63.639081, 53.259635],
+          [63.63892, 53.259619],
+          [63.638775, 53.259645],
+          [63.638204, 53.259798],
+          [63.637506, 53.259874],
+          [63.636723, 53.25991],
+          [63.635488, 53.259803],
+          [63.634572, 53.259569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623189, 53.255882],
+          [63.621821, 53.256873],
+          [63.621692, 53.256937],
+          [63.621504, 53.256963],
+          [63.621359, 53.256934],
+          [63.620823, 53.256648],
+          [63.620517, 53.256244],
+          [63.618066, 53.254867],
+          [63.617975, 53.254765],
+          [63.617937, 53.25464],
+          [63.61798, 53.254546],
+          [63.622878, 53.251456],
+          [63.623092, 53.251359],
+          [63.624187, 53.251004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628687, 53.262807],
+          [63.627829, 53.262322],
+          [63.628387, 53.26193],
+          [63.62925, 53.261167],
+          [63.630168, 53.260592],
+          [63.630382, 53.26039],
+          [63.630946, 53.259517],
+          [63.631018, 53.259294],
+          [63.631316, 53.257838],
+          [63.631439, 53.257501],
+          [63.631801, 53.256827],
+          [63.631852, 53.256578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628929, 53.256238],
+          [63.6276, 53.255437],
+          [63.629355, 53.254326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62706, 53.255938],
+          [63.625869, 53.256738],
+          [63.626483, 53.257015],
+          [63.626946, 53.25684],
+          [63.627198, 53.256949],
+          [63.627651, 53.256967],
+          [63.628345, 53.256594],
+          [63.626916, 53.255865],
+          [63.6276, 53.255437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624285, 53.256406],
+          [63.626024, 53.255333],
+          [63.626916, 53.255865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626408, 53.266125],
+          [63.626741, 53.266292],
+          [63.62679, 53.266297],
+          [63.626839, 53.266287],
+          [63.627132, 53.266144],
+          [63.62718, 53.266137],
+          [63.627231, 53.266142],
+          [63.627488, 53.266265],
+          [63.62759, 53.266276],
+          [63.6277, 53.266258],
+          [63.628374, 53.265788],
+          [63.628384, 53.265769],
+          [63.628382, 53.265742],
+          [63.627649, 53.26534],
+          [63.626109, 53.266313],
+          [63.626059, 53.266325],
+          [63.626009, 53.26632],
+          [63.625613, 53.266135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654661, 53.277786],
+          [63.654538, 53.277748],
+          [63.652947, 53.277116],
+          [63.649774, 53.278395],
+          [63.649305, 53.278511],
+          [63.648764, 53.278709],
+          [63.648118, 53.279057],
+          [63.6474, 53.279346],
+          [63.6466, 53.279549],
+          [63.645914, 53.279554],
+          [63.645728, 53.279679],
+          [63.645744, 53.280051],
+          [63.645494, 53.280302],
+          [63.645252, 53.280568],
+          [63.645777, 53.280824],
+          [63.645849, 53.281017],
+          [63.646495, 53.281002],
+          [63.646568, 53.281268],
+          [63.646552, 53.281437],
+          [63.646431, 53.281582],
+          [63.646762, 53.281895],
+          [63.646221, 53.282214],
+          [63.645841, 53.282383],
+          [63.646059, 53.284213],
+          [63.646964, 53.284946],
+          [63.6474, 53.285226]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647656, 53.251845],
+          [63.646823, 53.2525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.658862, 53.270016],
+          [63.657918, 53.270627],
+          [63.657301, 53.271047],
+          [63.657183, 53.271182],
+          [63.657151, 53.271411],
+          [63.657239, 53.271663],
+          [63.657443, 53.271881],
+          [63.65809, 53.272417],
+          [63.658403, 53.272762],
+          [63.658469, 53.272954],
+          [63.659162, 53.273293],
+          [63.659774, 53.273626],
+          [63.65977, 53.273757],
+          [63.659704, 53.273905],
+          [63.659259, 53.274172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661727, 53.272507],
+          [63.661241, 53.272706],
+          [63.660085, 53.273309],
+          [63.659844, 53.273232],
+          [63.659728, 53.273124],
+          [63.659884, 53.27289],
+          [63.659809, 53.27265],
+          [63.659291, 53.272326],
+          [63.659644, 53.272091],
+          [63.659707, 53.271827],
+          [63.659224, 53.271564],
+          [63.657918, 53.270627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626391, 53.24594],
+          [63.625638, 53.245925],
+          [63.625515, 53.245963],
+          [63.625439, 53.246044],
+          [63.625434, 53.248263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623666, 53.254941],
+          [63.624414, 53.254455],
+          [63.625242, 53.253666],
+          [63.625929, 53.252955],
+          [63.626319, 53.252494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622746, 53.253059],
+          [63.621621, 53.252249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651839, 53.259042],
+          [63.650057, 53.257935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.652808, 53.258465],
+          [63.652565, 53.258661],
+          [63.652054, 53.258964],
+          [63.651839, 53.259042],
+          [63.651691, 53.259122],
+          [63.651493, 53.259291],
+          [63.651709, 53.259404],
+          [63.651875, 53.259506],
+          [63.651897, 53.259629],
+          [63.651992, 53.259724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651609, 53.259944],
+          [63.65042, 53.259264],
+          [63.65026, 53.259184],
+          [63.650136, 53.259153],
+          [63.64969, 53.259138],
+          [63.649609, 53.259112],
+          [63.649478, 53.259035],
+          [63.649333, 53.258963],
+          [63.648715, 53.258676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635729, 53.251623],
+          [63.63566, 53.251576],
+          [63.634399, 53.252335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633459, 53.253711],
+          [63.632183, 53.253002],
+          [63.631653, 53.252944],
+          [63.63131, 53.252836],
+          [63.631286, 53.252634],
+          [63.631184, 53.252494],
+          [63.630823, 53.252235],
+          [63.631298, 53.251889],
+          [63.631509, 53.251716],
+          [63.632532, 53.251316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651926, 53.269981],
+          [63.652044, 53.269666],
+          [63.652328, 53.269156],
+          [63.652494, 53.268811],
+          [63.652669, 53.26869],
+          [63.65297, 53.268626],
+          [63.653428, 53.268761],
+          [63.653734, 53.26896],
+          [63.65368, 53.269265],
+          [63.653433, 53.269493],
+          [63.652328, 53.269156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626614, 53.254452],
+          [63.626061, 53.254192],
+          [63.625595, 53.2538],
+          [63.625242, 53.253666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.620936, 53.253487],
+          [63.620259, 53.253108]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625132, 53.246092],
+          [63.624928, 53.248283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672736, 53.262599],
+          [63.671571, 53.263451],
+          [63.671867, 53.263574],
+          [63.670994, 53.264313],
+          [63.670766, 53.264236],
+          [63.670299, 53.264281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671943, 53.265027],
+          [63.672194, 53.264856],
+          [63.670994, 53.264313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672616, 53.264529],
+          [63.672233, 53.264346],
+          [63.672285, 53.26402],
+          [63.67281, 53.264274],
+          [63.672616, 53.264529],
+          [63.672194, 53.264856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.63138, 53.255297],
+          [63.630656, 53.254527],
+          [63.629883, 53.253776],
+          [63.629835, 53.253747],
+          [63.629749, 53.253731],
+          [63.629685, 53.253741],
+          [63.629004, 53.254033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.649051, 53.253152],
+          [63.648412, 53.252831],
+          [63.64833, 53.252804],
+          [63.648238, 53.252796],
+          [63.64787, 53.252818],
+          [63.647608, 53.25282],
+          [63.647378, 53.252807]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637029, 53.266198],
+          [63.636267, 53.265768],
+          [63.635913, 53.265555],
+          [63.635609, 53.265388],
+          [63.635561, 53.265384],
+          [63.63549, 53.265417],
+          [63.635221, 53.265581],
+          [63.634337, 53.266192],
+          [63.633478, 53.266769],
+          [63.631115, 53.268197],
+          [63.630983, 53.268297],
+          [63.6309, 53.268382],
+          [63.630801, 53.268502],
+          [63.630731, 53.268632],
+          [63.630594, 53.268752],
+          [63.630396, 53.268881]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.675181, 53.263721],
+          [63.672454, 53.265271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.649828, 53.264193],
+          [63.650774, 53.263821],
+          [63.65088, 53.263787],
+          [63.650995, 53.263788],
+          [63.651337, 53.263821],
+          [63.651403, 53.263812],
+          [63.651467, 53.263773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.648171, 53.261189],
+          [63.649287, 53.260488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646867, 53.259663],
+          [63.646177, 53.259266],
+          [63.64617, 53.25924],
+          [63.64621, 53.259189],
+          [63.646539, 53.258972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637997, 53.256352],
+          [63.638472, 53.255886],
+          [63.63852, 53.255853],
+          [63.638587, 53.255833],
+          [63.638763, 53.255838],
+          [63.639129, 53.255885],
+          [63.639223, 53.255882],
+          [63.639285, 53.255864],
+          [63.639349, 53.255837],
+          [63.64004, 53.255415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.631901, 53.250968],
+          [63.632169, 53.250072],
+          [63.632179, 53.250016],
+          [63.632171, 53.249975],
+          [63.632131, 53.249941],
+          [63.631884, 53.249828],
+          [63.631764, 53.249814],
+          [63.63167, 53.24983],
+          [63.63043, 53.250147]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624957, 53.247978],
+          [63.624282, 53.248175],
+          [63.624085, 53.24824],
+          [63.623979, 53.248353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.657542, 53.256663],
+          [63.656029, 53.257378],
+          [63.653465, 53.258868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.649383, 53.260033],
+          [63.649404, 53.260085],
+          [63.649443, 53.260139],
+          [63.650286, 53.260708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.631133, 53.25127],
+          [63.631622, 53.251478],
+          [63.631723, 53.251475],
+          [63.631793, 53.251427],
+          [63.632171, 53.251107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.660391, 53.256985],
+          [63.659479, 53.25763],
+          [63.659055, 53.257894],
+          [63.658615, 53.258263],
+          [63.658208, 53.258548],
+          [63.657837, 53.25858],
+          [63.656968, 53.258609],
+          [63.655885, 53.258625],
+          [63.655466, 53.258593],
+          [63.65463, 53.258696],
+          [63.65434, 53.258686],
+          [63.65408, 53.258638],
+          [63.65393, 53.258598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654801, 53.260873],
+          [63.654766, 53.260979],
+          [63.654434, 53.261183],
+          [63.653889, 53.261614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654766, 53.260979],
+          [63.654638, 53.261289],
+          [63.65464, 53.261398],
+          [63.654675, 53.261504],
+          [63.654715, 53.26214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656981, 53.261012],
+          [63.656625, 53.26126],
+          [63.656467, 53.261339],
+          [63.656354, 53.261358],
+          [63.656156, 53.261342],
+          [63.655351, 53.261212],
+          [63.655254, 53.261221],
+          [63.654949, 53.261359],
+          [63.654675, 53.261504],
+          [63.654216, 53.261661],
+          [63.654069, 53.261666],
+          [63.653889, 53.261614],
+          [63.653484, 53.261372],
+          [63.653441, 53.261362],
+          [63.653335, 53.261379],
+          [63.652629, 53.261685],
+          [63.652112, 53.262015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633674, 53.269424],
+          [63.633162, 53.269779]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622797, 53.247107],
+          [63.622639, 53.247185],
+          [63.622566, 53.247283],
+          [63.622604, 53.247442],
+          [63.622816, 53.247957],
+          [63.622719, 53.248055],
+          [63.622502, 53.248068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656416, 53.265695],
+          [63.655266, 53.265059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682517, 53.276],
+          [63.682251, 53.275938],
+          [63.680942, 53.274748],
+          [63.67915, 53.273224],
+          [63.678533, 53.272829],
+          [63.678035, 53.272447],
+          [63.677697, 53.271642],
+          [63.676779, 53.270661],
+          [63.676141, 53.270112],
+          [63.675755, 53.269987],
+          [63.675422, 53.270009],
+          [63.674247, 53.27086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628408, 53.264698],
+          [63.62762, 53.265265],
+          [63.627606, 53.265288],
+          [63.627649, 53.26534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627606, 53.265288],
+          [63.626709, 53.264747],
+          [63.626702, 53.264699],
+          [63.626794, 53.264626],
+          [63.627057, 53.264454]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655912, 53.259104],
+          [63.65537, 53.259411],
+          [63.65533, 53.259407],
+          [63.65408, 53.258638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.63826, 53.254444],
+          [63.637589, 53.254913],
+          [63.637541, 53.255018],
+          [63.63747, 53.255106],
+          [63.637127, 53.255426],
+          [63.637158, 53.255489],
+          [63.637317, 53.255608],
+          [63.637476, 53.25576],
+          [63.637513, 53.255778],
+          [63.637555, 53.255776],
+          [63.638086, 53.255425],
+          [63.638091, 53.255391],
+          [63.638071, 53.255361],
+          [63.637541, 53.255018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653075, 53.264592],
+          [63.652953, 53.264632],
+          [63.652906, 53.264638],
+          [63.652849, 53.264628],
+          [63.652505, 53.264433],
+          [63.65245, 53.264432],
+          [63.652395, 53.26442],
+          [63.652071, 53.264239],
+          [63.651966, 53.264121],
+          [63.651992, 53.264043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621697, 53.256265],
+          [63.624058, 53.254739],
+          [63.624388, 53.254544],
+          [63.625588, 53.253933],
+          [63.626096, 53.253602],
+          [63.626402, 53.253314],
+          [63.626627, 53.252955],
+          [63.626706, 53.25268],
+          [63.626732, 53.252483],
+          [63.626677, 53.252214],
+          [63.626499, 53.25186],
+          [63.626256, 53.251501],
+          [63.625803, 53.251117],
+          [63.625166, 53.250628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621591, 53.247841],
+          [63.622106, 53.247471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623576, 53.248841],
+          [63.624202, 53.249659],
+          [63.624447, 53.249938],
+          [63.625228, 53.250558],
+          [63.626383, 53.251277],
+          [63.628598, 53.252421],
+          [63.629018, 53.252553],
+          [63.629519, 53.252658],
+          [63.630638, 53.252965],
+          [63.631151, 53.253181],
+          [63.632679, 53.253963],
+          [63.635279, 53.255358],
+          [63.641738, 53.258985],
+          [63.646647, 53.261614],
+          [63.648081, 53.262402],
+          [63.651415, 53.264159],
+          [63.653817, 53.265721],
+          [63.655893, 53.267897],
+          [63.659111, 53.269731],
+          [63.663846, 53.272227],
+          [63.669369, 53.273932],
+          [63.670069, 53.274058],
+          [63.670605, 53.274078],
+          [63.671093, 53.274078],
+          [63.671744, 53.274165],
+          [63.673829, 53.274775]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666121, 53.272935],
+          [63.666757, 53.273],
+          [63.667367, 53.27303],
+          [63.667827, 53.27303],
+          [63.668395, 53.27298],
+          [63.669114, 53.27286],
+          [63.670669, 53.27264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666853, 53.27316],
+          [63.668337, 53.273555],
+          [63.669064, 53.273695],
+          [63.669708, 53.27373],
+          [63.670368, 53.27367],
+          [63.670861, 53.27355],
+          [63.671288, 53.273405],
+          [63.671614, 53.273245],
+          [63.671948, 53.273025],
+          [63.672868, 53.27236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667831, 53.27346],
+          [63.669064, 53.273745],
+          [63.669332, 53.27378],
+          [63.669683, 53.27379],
+          [63.670101, 53.273765],
+          [63.670385, 53.27373],
+          [63.670719, 53.27367],
+          [63.671589, 53.273475],
+          [63.672074, 53.27344],
+          [63.672391, 53.27344],
+          [63.672776, 53.27349],
+          [63.673018, 53.273555],
+          [63.673862, 53.273795],
+          [63.675584, 53.274335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66858, 53.27369],
+          [63.669056, 53.2738],
+          [63.66944, 53.273845],
+          [63.6698, 53.27386],
+          [63.670101, 53.27384],
+          [63.671388, 53.273635],
+          [63.671798, 53.27361],
+          [63.672241, 53.273665],
+          [63.6726, 53.27373],
+          [63.674874, 53.274425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661946, 53.271225],
+          [63.662349, 53.271561],
+          [63.662554, 53.271828],
+          [63.663141, 53.272941],
+          [63.663552, 53.273284],
+          [63.664048, 53.273644],
+          [63.665449, 53.27455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.662517, 53.27178],
+          [63.662533, 53.272023],
+          [63.662504, 53.272353],
+          [63.662327, 53.272696],
+          [63.662129, 53.272954],
+          [63.661981, 53.273123],
+          [63.660728, 53.273961],
+          [63.660416, 53.274274],
+          [63.660268, 53.274524],
+          [63.660168, 53.274833],
+          [63.660176, 53.27507],
+          [63.660225, 53.275227],
+          [63.660367, 53.275409],
+          [63.660607, 53.275553],
+          [63.661832, 53.27612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661563, 53.271024],
+          [63.664005, 53.272044],
+          [63.664508, 53.272162],
+          [63.665138, 53.272205],
+          [63.665569, 53.272175],
+          [63.666029, 53.272116],
+          [63.66673, 53.271896],
+          [63.667134, 53.271697],
+          [63.667353, 53.271485],
+          [63.667509, 53.271273],
+          [63.667587, 53.270981],
+          [63.667551, 53.270664],
+          [63.667445, 53.270516],
+          [63.667219, 53.270334],
+          [63.666942, 53.270202],
+          [63.665357, 53.269326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641012, 53.259669],
+          [63.625682, 53.250976],
+          [63.625166, 53.250628],
+          [63.624393, 53.249984],
+          [63.624003, 53.249565],
+          [63.623576, 53.248841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671095, 53.271083],
+          [63.671524, 53.27073],
+          [63.671911, 53.270362],
+          [63.672372, 53.27001],
+          [63.674173, 53.268737]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66673, 53.271896],
+          [63.667026, 53.271819],
+          [63.667382, 53.271753],
+          [63.667632, 53.271725],
+          [63.667947, 53.271718],
+          [63.669078, 53.271739],
+          [63.669958, 53.27161],
+          [63.67018, 53.271551],
+          [63.67053, 53.271425],
+          [63.670775, 53.271296],
+          [63.671095, 53.271083],
+          [63.672244, 53.270233],
+          [63.674214, 53.268817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624173, 53.24769],
+          [63.62428, 53.246467],
+          [63.624272, 53.246189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623735, 53.247738],
+          [63.623956, 53.245222]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625672, 53.247723],
+          [63.625891, 53.245928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627867, 53.264708],
+          [63.630703, 53.262891],
+          [63.631015, 53.262661],
+          [63.631206, 53.262445],
+          [63.631359, 53.262216],
+          [63.631469, 53.261985],
+          [63.631498, 53.261748],
+          [63.631504, 53.26041],
+          [63.631552, 53.259918],
+          [63.632217, 53.2566],
+          [63.632236, 53.256225],
+          [63.632161, 53.255851],
+          [63.632021, 53.255508],
+          [63.631807, 53.255187],
+          [63.631579, 53.25494],
+          [63.631254, 53.254646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637501, 53.263432],
+          [63.6355, 53.262322],
+          [63.634985, 53.261992],
+          [63.633584, 53.261],
+          [63.63299, 53.260666],
+          [63.632587, 53.260419],
+          [63.632276, 53.260117],
+          [63.632067, 53.25979],
+          [63.631933, 53.259347],
+          [63.631868, 53.25884],
+          [63.63187, 53.258316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637777, 53.258134],
+          [63.631493, 53.254596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637716, 53.258175],
+          [63.631934, 53.254907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637665, 53.258203],
+          [63.63253, 53.255327],
+          [63.629142, 53.252938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627405, 53.260551],
+          [63.627778, 53.2595],
+          [63.627867, 53.259331],
+          [63.628006, 53.25918],
+          [63.628205, 53.259033],
+          [63.630928, 53.257232],
+          [63.631281, 53.256949],
+          [63.631501, 53.256705],
+          [63.63167, 53.256408],
+          [63.631793, 53.25602],
+          [63.631796, 53.255691],
+          [63.631742, 53.255403],
+          [63.631638, 53.255145],
+          [63.631472, 53.2549],
+          [63.631254, 53.254646],
+          [63.630836, 53.254202],
+          [63.63044, 53.253853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "uzkaya-koleya" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623576, 53.248841],
+          [63.62336, 53.2484],
+          [63.623238, 53.248019],
+          [63.623113, 53.247501],
+          [63.623107, 53.246877]
+        ]
+      }
+    }
+  ]
+}

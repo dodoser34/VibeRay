@@ -1,0 +1,2707 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.56974, 53.143523],
+          [63.570173, 53.143487],
+          [63.570631, 53.14357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57025, 53.143111],
+          [63.570058, 53.143351],
+          [63.56974, 53.143523]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.577574, 53.143487],
+          [63.578595, 53.142912],
+          [63.579269, 53.142564],
+          [63.580515, 53.141886],
+          [63.582022, 53.141091],
+          [63.582256, 53.140979],
+          [63.582931, 53.141288],
+          [63.586453, 53.143679],
+          [63.59163, 53.147147],
+          [63.591892, 53.147591],
+          [63.592099, 53.148075],
+          [63.592154, 53.14825],
+          [63.592256, 53.148946],
+          [63.592198, 53.149574],
+          [63.59223, 53.149817],
+          [63.593064, 53.151678],
+          [63.587515, 53.152057],
+          [63.583688, 53.152331],
+          [63.580831, 53.152581],
+          [63.580469, 53.152665],
+          [63.580346, 53.152712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.577574, 53.143487],
+          [63.578977, 53.143813],
+          [63.579513, 53.143979],
+          [63.581658, 53.144826],
+          [63.581942, 53.144977],
+          [63.585782, 53.1479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.558498, 53.146656],
+          [63.56974, 53.143523]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571579, 53.143314],
+          [63.571721, 53.143112],
+          [63.572013, 53.142854]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572013, 53.142854],
+          [63.571512, 53.142886],
+          [63.571105, 53.142847]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585782, 53.1479],
+          [63.584636, 53.148266],
+          [63.583646, 53.148567],
+          [63.582745, 53.148876],
+          [63.582642, 53.148957],
+          [63.582856, 53.149688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583688, 53.152331],
+          [63.583618, 53.152068],
+          [63.583157, 53.149733],
+          [63.583132, 53.149689],
+          [63.582856, 53.149688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590517, 53.146412],
+          [63.590058, 53.146601],
+          [63.589483, 53.146793],
+          [63.585782, 53.1479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572013, 53.142854],
+          [63.572914, 53.142603],
+          [63.573284, 53.142593],
+          [63.577574, 53.143487]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.580755, 53.14377],
+          [63.580491, 53.143911],
+          [63.580091, 53.144207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579618, 53.14346],
+          [63.579985, 53.143268],
+          [63.580081, 53.143009],
+          [63.579269, 53.142564]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.582856, 53.149688],
+          [63.583439, 53.152354]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596824, 53.150572],
+          [63.594923, 53.149437],
+          [63.592289, 53.147984]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59328, 53.147513],
+          [63.595673, 53.148956],
+          [63.597587, 53.150082],
+          [63.598022, 53.150374],
+          [63.598276, 53.150584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592256, 53.148946],
+          [63.594042, 53.150003],
+          [63.595932, 53.151146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593943, 53.147198],
+          [63.596145, 53.148408],
+          [63.596156, 53.148478],
+          [63.596088, 53.148647],
+          [63.596581, 53.148685],
+          [63.596776, 53.148712],
+          [63.597515, 53.14907],
+          [63.59849, 53.149614],
+          [63.598395, 53.14979],
+          [63.59824, 53.1498],
+          [63.598092, 53.149836],
+          [63.597587, 53.150082],
+          [63.595932, 53.151146],
+          [63.595385, 53.15148],
+          [63.595143, 53.151587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591715, 53.154256],
+          [63.584745, 53.154512],
+          [63.584527, 53.154439],
+          [63.584309, 53.154308],
+          [63.584094, 53.153685],
+          [63.58411, 53.153408],
+          [63.58389, 53.152316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588259, 53.14372],
+          [63.587551, 53.143261],
+          [63.587583, 53.1431],
+          [63.585484, 53.141538],
+          [63.584864, 53.141163],
+          [63.584246, 53.140912],
+          [63.583539, 53.141142],
+          [63.582931, 53.141288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592733, 53.152615],
+          [63.593728, 53.155004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591673, 53.151768],
+          [63.591607, 53.152097],
+          [63.591659, 53.152398],
+          [63.591849, 53.15411],
+          [63.591715, 53.154256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596088, 53.148647],
+          [63.595673, 53.148956],
+          [63.594042, 53.150003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593447, 53.154329],
+          [63.593008, 53.154455],
+          [63.592399, 53.154533],
+          [63.591948, 53.154488],
+          [63.591715, 53.154256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607339, 53.156175],
+          [63.607089, 53.156008],
+          [63.606833, 53.155676],
+          [63.60521, 53.153965],
+          [63.602427, 53.151142],
+          [63.602106, 53.151006],
+          [63.601729, 53.150981],
+          [63.601334, 53.151067],
+          [63.598682, 53.151929],
+          [63.598312, 53.152003],
+          [63.597935, 53.152018],
+          [63.597679, 53.152003],
+          [63.596625, 53.151922],
+          [63.596337, 53.151886],
+          [63.595245, 53.151606],
+          [63.595143, 53.151587],
+          [63.594918, 53.151576],
+          [63.594639, 53.15158],
+          [63.593064, 53.151678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587897, 53.144649],
+          [63.58706, 53.145054],
+          [63.586162, 53.145393],
+          [63.5857, 53.145464],
+          [63.583778, 53.146371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588307, 53.145918],
+          [63.586826, 53.146344],
+          [63.586196, 53.146542],
+          [63.584721, 53.147087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586196, 53.146542],
+          [63.585183, 53.145703],
+          [63.583379, 53.144284],
+          [63.581942, 53.144977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576363, 53.144951],
+          [63.577546, 53.144236],
+          [63.578005, 53.143585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583646, 53.148567],
+          [63.577546, 53.144236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573923, 53.146132],
+          [63.574258, 53.146027],
+          [63.574493, 53.146214],
+          [63.574753, 53.14619],
+          [63.575089, 53.14598],
+          [63.575183, 53.145716],
+          [63.575774, 53.145434],
+          [63.576387, 53.14506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581195, 53.152549],
+          [63.581117, 53.152006],
+          [63.581054, 53.151855],
+          [63.579392, 53.150281],
+          [63.578421, 53.149328],
+          [63.575089, 53.14598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.578421, 53.149328],
+          [63.582642, 53.148957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587374, 53.153776],
+          [63.584181, 53.153941],
+          [63.583422, 53.153969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590992, 53.152553],
+          [63.591163, 53.152676],
+          [63.591238, 53.15278],
+          [63.590982, 53.15294],
+          [63.589318, 53.15306],
+          [63.588096, 53.153188],
+          [63.58411, 53.153408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588096, 53.153188],
+          [63.587756, 53.152619],
+          [63.587515, 53.152057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590337, 53.154305],
+          [63.590084, 53.153705],
+          [63.589452, 53.15325],
+          [63.589318, 53.15306],
+          [63.589208, 53.152667],
+          [63.589142, 53.152234],
+          [63.589079, 53.151948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.582125, 53.153891],
+          [63.580831, 53.152581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600629, 53.155829],
+          [63.599478, 53.154095],
+          [63.598681, 53.152821],
+          [63.597935, 53.152018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586002, 53.149511],
+          [63.590041, 53.148339],
+          [63.590309, 53.148283],
+          [63.590573, 53.148269],
+          [63.591771, 53.148275],
+          [63.592154, 53.14825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584636, 53.148266],
+          [63.584935, 53.148641],
+          [63.58537, 53.149036],
+          [63.586828, 53.15013],
+          [63.588687, 53.14985],
+          [63.589223, 53.14985],
+          [63.590052, 53.149623],
+          [63.590488, 53.149537],
+          [63.590898, 53.149489],
+          [63.591261, 53.149497],
+          [63.592198, 53.149574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.590679, 53.151477],
+          [63.590052, 53.149623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589296, 53.151933],
+          [63.589207, 53.151628],
+          [63.590032, 53.151537],
+          [63.592884, 53.15126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60231, 53.146317],
+          [63.601892, 53.146166],
+          [63.601827, 53.146169],
+          [63.597223, 53.148315],
+          [63.597103, 53.148395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592099, 53.148075],
+          [63.594358, 53.147009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594358, 53.147009],
+          [63.594498, 53.147033],
+          [63.595593, 53.147532],
+          [63.596555, 53.148111],
+          [63.597103, 53.148395],
+          [63.59852, 53.149353],
+          [63.598604, 53.149458],
+          [63.598547, 53.149552],
+          [63.59849, 53.149614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.5948, 53.149516],
+          [63.596703, 53.15065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58085, 53.148058],
+          [63.578936, 53.146733],
+          [63.576387, 53.14506],
+          [63.576363, 53.144951],
+          [63.575812, 53.14457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592415, 53.154973],
+          [63.592035, 53.15478],
+          [63.591948, 53.154488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59526, 53.155095],
+          [63.594686, 53.155178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608626, 53.155729],
+          [63.607862, 53.155357],
+          [63.607651, 53.155394],
+          [63.606911, 53.155787]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579479, 53.148218],
+          [63.57887, 53.147644],
+          [63.577869, 53.146735],
+          [63.57751, 53.146479],
+          [63.576978, 53.146635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57887, 53.147644],
+          [63.578264, 53.147878],
+          [63.577637, 53.147255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576676, 53.147575],
+          [63.576858, 53.147493],
+          [63.577537, 53.14729],
+          [63.578224, 53.147058],
+          [63.578936, 53.146733]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576858, 53.147493],
+          [63.576947, 53.147374],
+          [63.576981, 53.147296],
+          [63.57699, 53.147206],
+          [63.576978, 53.146635],
+          [63.576957, 53.146559],
+          [63.576817, 53.146375],
+          [63.576539, 53.146069],
+          [63.575774, 53.145434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576842, 53.141738],
+          [63.577069, 53.141566],
+          [63.577747, 53.141194],
+          [63.580579, 53.139685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576888, 53.142327],
+          [63.577765, 53.142612],
+          [63.577916, 53.142639],
+          [63.57804, 53.142633],
+          [63.578148, 53.142609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573403, 53.141492],
+          [63.574166, 53.141755],
+          [63.574295, 53.141753],
+          [63.575617, 53.140972],
+          [63.575646, 53.140959],
+          [63.575685, 53.140958],
+          [63.57574, 53.140979],
+          [63.576842, 53.141738],
+          [63.577551, 53.142198],
+          [63.578595, 53.142912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593264, 53.146582],
+          [63.592931, 53.146714],
+          [63.592726, 53.146729],
+          [63.592462, 53.146762],
+          [63.592088, 53.146878],
+          [63.591556, 53.147099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570636, 53.139731],
+          [63.571657, 53.140777],
+          [63.572404, 53.141617],
+          [63.572474, 53.141738],
+          [63.572527, 53.141873],
+          [63.572409, 53.142744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576725, 53.132415],
+          [63.576668, 53.132058],
+          [63.576873, 53.13063],
+          [63.576868, 53.130545],
+          [63.576825, 53.130435],
+          [63.576198, 53.129544],
+          [63.574968, 53.127643],
+          [63.574823, 53.127384],
+          [63.574544, 53.12712],
+          [63.574244, 53.126869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.560253, 53.131192],
+          [63.562976, 53.1339],
+          [63.563601, 53.134452],
+          [63.564088, 53.134942],
+          [63.564127, 53.134958],
+          [63.564174, 53.134957],
+          [63.565595, 53.134467],
+          [63.574348, 53.131256],
+          [63.57531, 53.131036],
+          [63.576255, 53.130801],
+          [63.576507, 53.130725],
+          [63.576873, 53.13063]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576255, 53.130801],
+          [63.575875, 53.1304],
+          [63.575821, 53.13037],
+          [63.575743, 53.130368],
+          [63.575325, 53.130436],
+          [63.574542, 53.130595],
+          [63.573479, 53.130848],
+          [63.563601, 53.134452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.56187, 53.132793],
+          [63.565987, 53.13124],
+          [63.570931, 53.129565],
+          [63.571211, 53.129511],
+          [63.571464, 53.129513],
+          [63.57236, 53.129653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.562028, 53.134272],
+          [63.562976, 53.1339],
+          [63.572978, 53.130262],
+          [63.573231, 53.130228],
+          [63.573491, 53.130241],
+          [63.574542, 53.130595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.566257, 53.129089],
+          [63.568641, 53.128568],
+          [63.574643, 53.127214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.582256, 53.140979],
+          [63.581977, 53.140742],
+          [63.58118, 53.140248],
+          [63.580493, 53.139605],
+          [63.578809, 53.137005],
+          [63.578514, 53.136337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.578802, 53.140632],
+          [63.577416, 53.13969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.577069, 53.141566],
+          [63.575343, 53.140471],
+          [63.575164, 53.140446],
+          [63.575002, 53.140476],
+          [63.574023, 53.141196],
+          [63.573687, 53.141387],
+          [63.573052, 53.141615],
+          [63.572527, 53.141873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.562413, 53.133336],
+          [63.570151, 53.130445],
+          [63.570939, 53.13014],
+          [63.571336, 53.130024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574313, 53.130164],
+          [63.574445, 53.130058],
+          [63.574648, 53.129957],
+          [63.576198, 53.129544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574188, 53.129632],
+          [63.575947, 53.129157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575686, 53.128753],
+          [63.573259, 53.129424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572766, 53.129083],
+          [63.575445, 53.12838]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57519, 53.127986],
+          [63.571586, 53.128929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574968, 53.127643],
+          [63.571779, 53.128422],
+          [63.567973, 53.129229],
+          [63.566389, 53.129646],
+          [63.566227, 53.129705],
+          [63.566142, 53.129761],
+          [63.566049, 53.130037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569319, 53.129711],
+          [63.568345, 53.130036],
+          [63.567994, 53.130162],
+          [63.567575, 53.130214],
+          [63.567264, 53.130206],
+          [63.566547, 53.13008],
+          [63.566049, 53.130037],
+          [63.565459, 53.13008],
+          [63.565094, 53.130141],
+          [63.564229, 53.130413],
+          [63.560816, 53.13175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.559274, 53.130741],
+          [63.562421, 53.129985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.563138, 53.130095],
+          [63.560253, 53.131192],
+          [63.559899, 53.131337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575628, 53.131575],
+          [63.574673, 53.131845],
+          [63.574265, 53.132035],
+          [63.572409, 53.132737],
+          [63.564813, 53.135531],
+          [63.564615, 53.135559],
+          [63.564438, 53.135566],
+          [63.564309, 53.135543],
+          [63.564196, 53.135485],
+          [63.563048, 53.134423],
+          [63.562703, 53.134007],
+          [63.559213, 53.130684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.568132, 53.140556],
+          [63.568258, 53.140462],
+          [63.568382, 53.140338],
+          [63.568497, 53.140195],
+          [63.568522, 53.140004],
+          [63.568339, 53.139702],
+          [63.567155, 53.138377],
+          [63.566317, 53.1376],
+          [63.566223, 53.13746],
+          [63.566219, 53.13735],
+          [63.566581, 53.136714],
+          [63.566708, 53.136436],
+          [63.566725, 53.136331],
+          [63.566683, 53.135986],
+          [63.566747, 53.135902],
+          [63.56899, 53.135158],
+          [63.569139, 53.135079],
+          [63.569629, 53.134747],
+          [63.569885, 53.134632],
+          [63.57011, 53.134581],
+          [63.570766, 53.134576],
+          [63.570987, 53.134612],
+          [63.571196, 53.134734],
+          [63.571541, 53.135212],
+          [63.571605, 53.135263],
+          [63.57169, 53.135276],
+          [63.571796, 53.135263],
+          [63.572094, 53.135151],
+          [63.572422, 53.135005],
+          [63.573061, 53.134632],
+          [63.574159, 53.134183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585484, 53.151339],
+          [63.585826, 53.151867],
+          [63.585879, 53.151902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581812, 53.143858],
+          [63.58281, 53.143217],
+          [63.584668, 53.142468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584663, 53.145294],
+          [63.585232, 53.144876],
+          [63.584947, 53.144663],
+          [63.585323, 53.14443],
+          [63.584488, 53.143967],
+          [63.583214, 53.143054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583327, 53.151886],
+          [63.581117, 53.152006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586674, 53.152117],
+          [63.586662, 53.151859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586662, 53.151859],
+          [63.585879, 53.151902],
+          [63.583381, 53.152088]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585922, 53.149451],
+          [63.585616, 53.149479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585783, 53.149346],
+          [63.585616, 53.149479],
+          [63.585146, 53.149501],
+          [63.584936, 53.149462],
+          [63.584222, 53.149479],
+          [63.583491, 53.149518],
+          [63.583313, 53.149555],
+          [63.583208, 53.149613],
+          [63.583132, 53.149689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593608, 53.149746],
+          [63.593035, 53.150099],
+          [63.592809, 53.15013],
+          [63.592451, 53.150304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587551, 53.143261],
+          [63.586571, 53.143758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584612, 53.141457],
+          [63.584857, 53.14163],
+          [63.584873, 53.141703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585594, 53.142201],
+          [63.584948, 53.141715],
+          [63.584913, 53.141704],
+          [63.584873, 53.141703],
+          [63.584831, 53.14172],
+          [63.584075, 53.142065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586565, 53.142343],
+          [63.586456, 53.142403],
+          [63.586415, 53.142414],
+          [63.586212, 53.142431],
+          [63.585997, 53.142404],
+          [63.585769, 53.142299],
+          [63.585594, 53.142201],
+          [63.585531, 53.142195],
+          [63.585474, 53.142202],
+          [63.584763, 53.142532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.582333, 53.142341],
+          [63.582363, 53.142316],
+          [63.582362, 53.142285],
+          [63.582148, 53.142168],
+          [63.582109, 53.142164],
+          [63.582075, 53.142174],
+          [63.581894, 53.142288],
+          [63.581887, 53.14233],
+          [63.582093, 53.142423],
+          [63.582799, 53.142703],
+          [63.583384, 53.142986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.582801, 53.149502],
+          [63.582167, 53.149502],
+          [63.58136, 53.149563],
+          [63.581314, 53.149588],
+          [63.581293, 53.149624],
+          [63.581341, 53.149785],
+          [63.581282, 53.149814],
+          [63.581051, 53.149849],
+          [63.58096, 53.149827],
+          [63.580912, 53.149801],
+          [63.580837, 53.149621],
+          [63.580799, 53.149589],
+          [63.580724, 53.149563],
+          [63.57964, 53.149714],
+          [63.579485, 53.149679],
+          [63.579383, 53.149602],
+          [63.579044, 53.149274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598376, 53.153848],
+          [63.597824, 53.153296],
+          [63.597482, 53.152889],
+          [63.59721, 53.1525],
+          [63.596874, 53.152123],
+          [63.596625, 53.151922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595683, 53.14645],
+          [63.595247, 53.146512],
+          [63.595145, 53.146533],
+          [63.595061, 53.146565],
+          [63.594983, 53.146616],
+          [63.594902, 53.146743],
+          [63.594832, 53.146798],
+          [63.59467, 53.146893],
+          [63.594358, 53.147009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.589207, 53.151628],
+          [63.588591, 53.151728],
+          [63.588153, 53.151772],
+          [63.587187, 53.151815],
+          [63.586662, 53.151859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588629, 53.149858],
+          [63.588909, 53.150327],
+          [63.588999, 53.150506],
+          [63.589161, 53.150698],
+          [63.589413, 53.150883],
+          [63.589758, 53.151284],
+          [63.58992, 53.151551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591659, 53.152398],
+          [63.590849, 53.152508],
+          [63.590503, 53.15254],
+          [63.590042, 53.152555],
+          [63.589903, 53.152548],
+          [63.589787, 53.152493],
+          [63.589142, 53.152234]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.577295, 53.145655],
+          [63.576539, 53.146069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574365, 53.147488],
+          [63.574653, 53.147755],
+          [63.57474, 53.147822],
+          [63.574804, 53.147903],
+          [63.574945, 53.148162],
+          [63.575065, 53.148421],
+          [63.575183, 53.148688],
+          [63.575268, 53.148942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574134, 53.147991],
+          [63.573935, 53.148118],
+          [63.573907, 53.148189],
+          [63.573875, 53.148371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570475, 53.149018],
+          [63.571059, 53.14841],
+          [63.571275, 53.148272],
+          [63.571447, 53.148208],
+          [63.571632, 53.148161],
+          [63.571857, 53.148129],
+          [63.572155, 53.14814],
+          [63.572563, 53.148183],
+          [63.573037, 53.148261],
+          [63.573875, 53.148371],
+          [63.574251, 53.14848],
+          [63.574655, 53.148619],
+          [63.5748, 53.148683],
+          [63.575612, 53.14913],
+          [63.575688, 53.149161],
+          [63.575791, 53.149183],
+          [63.575957, 53.149192],
+          [63.576193, 53.149191],
+          [63.576334, 53.149171],
+          [63.576452, 53.149139],
+          [63.576673, 53.149057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576725, 53.132415],
+          [63.576695, 53.1326],
+          [63.576698, 53.132691],
+          [63.576738, 53.132798],
+          [63.577294, 53.134021],
+          [63.577875, 53.135434],
+          [63.57816, 53.135938],
+          [63.578291, 53.136137],
+          [63.578409, 53.136256],
+          [63.578514, 53.136337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.578514, 53.136337],
+          [63.578449, 53.1361],
+          [63.576945, 53.132888],
+          [63.576856, 53.132623],
+          [63.576725, 53.132415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596555, 53.148111],
+          [63.596145, 53.148408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576752, 53.129038],
+          [63.576943, 53.128978],
+          [63.576995, 53.128971],
+          [63.577038, 53.128976],
+          [63.57711, 53.129032],
+          [63.577137, 53.12916],
+          [63.577336, 53.129779],
+          [63.577347, 53.129991],
+          [63.577328, 53.130102],
+          [63.577294, 53.130141],
+          [63.577179, 53.130165],
+          [63.576838, 53.130135],
+          [63.576653, 53.130191]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.577551, 53.142198],
+          [63.578865, 53.141481],
+          [63.579246, 53.14149],
+          [63.580158, 53.141296],
+          [63.581244, 53.140749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58164, 53.140534],
+          [63.581244, 53.140749],
+          [63.580081, 53.139951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.580469, 53.152665],
+          [63.566196, 53.138401]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.564904, 53.137346],
+          [63.580346, 53.152712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.564068, 53.13629],
+          [63.554787, 53.12704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.566314, 53.136544],
+          [63.566359, 53.136397],
+          [63.566372, 53.13623],
+          [63.566295, 53.136064],
+          [63.56612, 53.135913],
+          [63.565889, 53.135807],
+          [63.56555, 53.135752],
+          [63.565122, 53.135743],
+          [63.564134, 53.135826],
+          [63.563008, 53.135961],
+          [63.560079, 53.13633],
+          [63.558513, 53.136569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.561484, 53.133961],
+          [63.56156, 53.134271],
+          [63.561541, 53.134569],
+          [63.561474, 53.134806],
+          [63.561316, 53.135065],
+          [63.560965, 53.135418],
+          [63.560375, 53.135855],
+          [63.560191, 53.135975],
+          [63.559832, 53.136161],
+          [63.559488, 53.136301],
+          [63.558513, 53.136569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.558513, 53.136569],
+          [63.560008, 53.136426],
+          [63.560473, 53.136441],
+          [63.563438, 53.136763],
+          [63.563954, 53.136868],
+          [63.564445, 53.13705],
+          [63.564904, 53.137346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.566314, 53.136544],
+          [63.566067, 53.136708],
+          [63.565868, 53.136797],
+          [63.565589, 53.136863],
+          [63.565306, 53.136864],
+          [63.565001, 53.13681],
+          [63.56472, 53.136688],
+          [63.564068, 53.13629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.566196, 53.138401],
+          [63.565939, 53.137914],
+          [63.565864, 53.137661],
+          [63.565861, 53.137416],
+          [63.56592, 53.137203],
+          [63.566047, 53.13696],
+          [63.566314, 53.136544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.558513, 53.136569],
+          [63.558048, 53.136687],
+          [63.55745, 53.136888],
+          [63.556442, 53.137278],
+          [63.555464, 53.13772],
+          [63.554577, 53.138193],
+          [63.549523, 53.141004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.561484, 53.133961],
+          [63.564904, 53.137346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.566196, 53.138401],
+          [63.564068, 53.13629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.556078, 53.128579],
+          [63.559935, 53.132437],
+          [63.561484, 53.133961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.561211, 53.133448],
+          [63.56102, 53.133503]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569814, 53.142233],
+          [63.569539, 53.14243],
+          [63.569478, 53.143596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.602247, 53.150557],
+          [63.601762, 53.150872],
+          [63.601729, 53.150981]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.559935, 53.132437],
+          [63.558935, 53.132698],
+          [63.558218, 53.131926],
+          [63.55787, 53.131776],
+          [63.557525, 53.131748],
+          [63.5572, 53.131794],
+          [63.556343, 53.132099],
+          [63.554939, 53.132695],
+          [63.553202, 53.133559],
+          [63.553228, 53.133728],
+          [63.554004, 53.13512],
+          [63.554217, 53.135796],
+          [63.555307, 53.137665],
+          [63.556873, 53.136868],
+          [63.557349, 53.136725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587674, 53.147334],
+          [63.586826, 53.146344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594522, 53.153802],
+          [63.594062, 53.153836],
+          [63.59329, 53.153953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.585503, 53.140355],
+          [63.584448, 53.140852],
+          [63.584246, 53.140912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.582745, 53.148876],
+          [63.582632, 53.148677],
+          [63.581858, 53.148735]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572175, 53.142809],
+          [63.573123, 53.143363],
+          [63.573624, 53.143508],
+          [63.573906, 53.143524],
+          [63.574279, 53.143664],
+          [63.575343, 53.144461],
+          [63.575521, 53.144492],
+          [63.575812, 53.14457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.583004, 53.15239],
+          [63.583422, 53.153969],
+          [63.583433, 53.154278],
+          [63.583379, 53.154673],
+          [63.583508, 53.154879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584553, 53.148291],
+          [63.58366, 53.147561],
+          [63.582751, 53.146907],
+          [63.58071, 53.145343],
+          [63.580023, 53.144846],
+          [63.57917, 53.14449],
+          [63.577707, 53.144008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591701, 53.147267],
+          [63.591429, 53.14763],
+          [63.589846, 53.14774],
+          [63.588379, 53.148055],
+          [63.585228, 53.148907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59112, 53.148272],
+          [63.591088, 53.149493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.591101, 53.14884],
+          [63.590318, 53.148824],
+          [63.588319, 53.149458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588207, 53.149313],
+          [63.58643, 53.149832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.588629, 53.149858],
+          [63.587928, 53.148952]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.598022, 53.150374],
+          [63.598459, 53.150174],
+          [63.598975, 53.150672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599318, 53.150548],
+          [63.599029, 53.150252],
+          [63.598962, 53.15025],
+          [63.598395, 53.14979]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.567446, 53.137967],
+          [63.568328, 53.137578],
+          [63.568565, 53.137424],
+          [63.568592, 53.137267],
+          [63.56871, 53.13713],
+          [63.56874, 53.136921],
+          [63.568721, 53.136772],
+          [63.568356, 53.136332],
+          [63.567782, 53.135806],
+          [63.567599, 53.135619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.567446, 53.137967],
+          [63.567173, 53.13803],
+          [63.566987, 53.138044],
+          [63.566781, 53.138031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.567155, 53.138377],
+          [63.567227, 53.138164],
+          [63.567446, 53.137967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.567034, 53.14401],
+          [63.566444, 53.144138],
+          [63.565645, 53.14426],
+          [63.564605, 53.144382],
+          [63.562941, 53.144602],
+          [63.562662, 53.144521],
+          [63.562506, 53.144399],
+          [63.562077, 53.143159],
+          [63.561472, 53.141722],
+          [63.5607, 53.139304],
+          [63.552939, 53.140456],
+          [63.55018, 53.140638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595998, 53.151799],
+          [63.595991, 53.152651],
+          [63.596027, 53.152868],
+          [63.596151, 53.15311],
+          [63.596879, 53.154181],
+          [63.596905, 53.154297],
+          [63.596849, 53.154423],
+          [63.596722, 53.154509],
+          [63.59647, 53.154601],
+          [63.595822, 53.154773],
+          [63.595464, 53.154811],
+          [63.595233, 53.154744],
+          [63.594437, 53.154162],
+          [63.594201, 53.153829]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.558137, 53.145891],
+          [63.556418, 53.146194],
+          [63.556085, 53.1467]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554617, 53.144523],
+          [63.554288, 53.14363],
+          [63.555554, 53.143466],
+          [63.556144, 53.143397],
+          [63.556793, 53.143163],
+          [63.558193, 53.142968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.557303, 53.144891],
+          [63.557228, 53.144576],
+          [63.556793, 53.143163],
+          [63.556616, 53.142362],
+          [63.556386, 53.141892],
+          [63.556168, 53.141313],
+          [63.556005, 53.140689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.55844, 53.143636],
+          [63.566441, 53.142586],
+          [63.566567, 53.142501],
+          [63.566054, 53.141142],
+          [63.557941, 53.142169],
+          [63.558193, 53.142968],
+          [63.55844, 53.143636],
+          [63.558621, 53.144263],
+          [63.558256, 53.14444],
+          [63.557228, 53.144576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.56361, 53.141452],
+          [63.564054, 53.1429],
+          [63.564605, 53.144382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.565645, 53.14426],
+          [63.565033, 53.142771],
+          [63.564473, 53.141343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.56368, 53.144505],
+          [63.563147, 53.143019],
+          [63.562882, 53.142211],
+          [63.562759, 53.141559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.557925, 53.145441],
+          [63.558498, 53.146656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586649, 53.149996],
+          [63.587106, 53.150534],
+          [63.587046, 53.150621],
+          [63.586492, 53.150892],
+          [63.586384, 53.151007],
+          [63.586667, 53.151249],
+          [63.586662, 53.151859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573732, 53.144217],
+          [63.573474, 53.143958],
+          [63.573495, 53.14387],
+          [63.573616, 53.143759],
+          [63.573662, 53.143649],
+          [63.573624, 53.143508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574391, 53.145097],
+          [63.574204, 53.144835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57396, 53.144656],
+          [63.574115, 53.144817],
+          [63.574204, 53.144835],
+          [63.574351, 53.144793],
+          [63.575343, 53.144461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573329, 53.144679],
+          [63.572769, 53.144045],
+          [63.57206, 53.143345],
+          [63.572069, 53.143236],
+          [63.572122, 53.143165],
+          [63.572444, 53.142966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597521, 53.153826],
+          [63.596742, 53.153982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.596865, 53.15256],
+          [63.596004, 53.152728]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595154, 53.154052],
+          [63.594894, 53.154055],
+          [63.594642, 53.154092],
+          [63.594437, 53.154162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594573, 53.153626],
+          [63.594849, 53.153567],
+          [63.595087, 53.153559],
+          [63.595355, 53.153535],
+          [63.595483, 53.153608],
+          [63.59556, 53.153709],
+          [63.59556, 53.153791],
+          [63.595154, 53.154052],
+          [63.59482, 53.154447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.594477, 53.15332],
+          [63.594297, 53.152861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595032, 53.153153],
+          [63.594847, 53.152841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.595722, 53.154557],
+          [63.59612, 53.154472],
+          [63.596366, 53.154343],
+          [63.596404, 53.154227],
+          [63.596353, 53.15404],
+          [63.596213, 53.153817],
+          [63.595902, 53.153395],
+          [63.59565, 53.153085],
+          [63.595125, 53.15248],
+          [63.595082, 53.152374],
+          [63.595199, 53.152273],
+          [63.59559, 53.152142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593339, 53.152342],
+          [63.594297, 53.152226],
+          [63.594607, 53.152132],
+          [63.595488, 53.152017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592596, 53.152235],
+          [63.592891, 53.15221],
+          [63.593151, 53.152214],
+          [63.59327, 53.152265],
+          [63.593519, 53.152529],
+          [63.593724, 53.152678],
+          [63.594016, 53.152787],
+          [63.594297, 53.152861],
+          [63.594525, 53.152872],
+          [63.594915, 53.152835],
+          [63.595191, 53.15277],
+          [63.595496, 53.15269],
+          [63.595625, 53.152605],
+          [63.595718, 53.15245],
+          [63.595732, 53.152351],
+          [63.595707, 53.152287],
+          [63.595488, 53.152017],
+          [63.595321, 53.15179],
+          [63.595245, 53.151606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600315, 53.152456],
+          [63.60044, 53.152736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.599827, 53.152461],
+          [63.599986, 53.152842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600643, 53.153578],
+          [63.600246, 53.153668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600246, 53.153668],
+          [63.599976, 53.15331],
+          [63.599713, 53.152769],
+          [63.599413, 53.152223],
+          [63.599097, 53.151794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.600642, 53.153856],
+          [63.600727, 53.153813],
+          [63.600745, 53.153713],
+          [63.600668, 53.153625],
+          [63.600615, 53.153523],
+          [63.600602, 53.153404],
+          [63.600519, 53.153262],
+          [63.600501, 53.153111],
+          [63.600586, 53.15301],
+          [63.600594, 53.152868],
+          [63.60053, 53.152779],
+          [63.60044, 53.152736],
+          [63.600228, 53.152777],
+          [63.599776, 53.152899],
+          [63.59962, 53.15296],
+          [63.599498, 53.153084],
+          [63.599548, 53.15321],
+          [63.599801, 53.153501],
+          [63.599978, 53.15376],
+          [63.600039, 53.153821],
+          [63.600204, 53.1538],
+          [63.60027, 53.153767],
+          [63.600246, 53.153668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587495, 53.150736],
+          [63.587657, 53.150649],
+          [63.58775, 53.150617],
+          [63.587813, 53.150625],
+          [63.587895, 53.150674],
+          [63.587919, 53.150728],
+          [63.587906, 53.150784],
+          [63.587797, 53.150857],
+          [63.587269, 53.151158],
+          [63.587198, 53.151177],
+          [63.587115, 53.151171],
+          [63.587025, 53.151152],
+          [63.586892, 53.151065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587243, 53.150875],
+          [63.586733, 53.151152],
+          [63.586667, 53.151249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57569, 53.147182],
+          [63.575871, 53.147368],
+          [63.576037, 53.147504],
+          [63.576077, 53.147517],
+          [63.576149, 53.147518],
+          [63.576359, 53.147443]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575871, 53.147368],
+          [63.575775, 53.147411],
+          [63.575659, 53.147477]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576676, 53.147575],
+          [63.576483, 53.147637],
+          [63.576281, 53.147678],
+          [63.576084, 53.147699],
+          [63.575987, 53.147701],
+          [63.575912, 53.147664],
+          [63.575817, 53.147562],
+          [63.57572, 53.147496],
+          [63.575659, 53.147477],
+          [63.575578, 53.147489],
+          [63.57537, 53.147576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.562518, 53.147696],
+          [63.564734, 53.148263],
+          [63.564912, 53.148299],
+          [63.565084, 53.148304],
+          [63.565193, 53.148298],
+          [63.565409, 53.148247],
+          [63.566749, 53.147707],
+          [63.566956, 53.147641],
+          [63.567086, 53.147621],
+          [63.567282, 53.147611],
+          [63.567415, 53.147627],
+          [63.56763, 53.147673],
+          [63.567907, 53.147759],
+          [63.570932, 53.148542]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.593744, 53.148787],
+          [63.594119, 53.148557],
+          [63.594138, 53.148521],
+          [63.594132, 53.148493],
+          [63.593962, 53.148383],
+          [63.593902, 53.148359],
+          [63.593804, 53.148346],
+          [63.593589, 53.148464],
+          [63.593403, 53.148595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570132, 53.140554],
+          [63.570336, 53.140802],
+          [63.570328, 53.140853],
+          [63.569848, 53.141027],
+          [63.569802, 53.141028],
+          [63.569491, 53.14079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570491, 53.14043],
+          [63.570132, 53.140554],
+          [63.569491, 53.14079],
+          [63.568793, 53.141011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "amangeldy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.568282, 53.140706],
+          [63.56809, 53.140886],
+          [63.568085, 53.140923],
+          [63.569539, 53.14243]
+        ]
+      }
+    }
+  ]
+}

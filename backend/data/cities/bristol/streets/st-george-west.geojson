@@ -1,0 +1,2482 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543553, 51.460326],
+          [-2.543796, 51.460267],
+          [-2.544623, 51.46011],
+          [-2.545049, 51.46005],
+          [-2.545941, 51.459963],
+          [-2.546604, 51.459829],
+          [-2.547943, 51.459486],
+          [-2.548204, 51.459455],
+          [-2.548491, 51.459445],
+          [-2.549029, 51.459481],
+          [-2.54958, 51.459539],
+          [-2.550252, 51.459634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539482, 51.461116],
+          [-2.539967, 51.461059],
+          [-2.540952, 51.460978],
+          [-2.541972, 51.460827],
+          [-2.54251, 51.460695],
+          [-2.543121, 51.460489]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551497, 51.459651],
+          [-2.550252, 51.459634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54316, 51.460365],
+          [-2.543121, 51.460489]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550252, 51.459634],
+          [-2.550414, 51.459682],
+          [-2.550783, 51.459706],
+          [-2.55125, 51.459691],
+          [-2.551497, 51.459651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551497, 51.459651],
+          [-2.553715, 51.459437],
+          [-2.554223, 51.459352]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54316, 51.460365],
+          [-2.543553, 51.460326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543121, 51.460489],
+          [-2.543553, 51.460326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54026, 51.460424],
+          [-2.541147, 51.460509],
+          [-2.541529, 51.460523],
+          [-2.542221, 51.460477],
+          [-2.54316, 51.460365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551025, 51.459903],
+          [-2.551281, 51.45999],
+          [-2.551563, 51.460107],
+          [-2.552254, 51.460368],
+          [-2.552413, 51.460464],
+          [-2.55263, 51.460618],
+          [-2.553119, 51.461139],
+          [-2.553627, 51.461618],
+          [-2.553958, 51.462126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551063, 51.455154],
+          [-2.551606, 51.455317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544017, 51.458219],
+          [-2.546418, 51.45789],
+          [-2.54714, 51.457775],
+          [-2.547885, 51.457692],
+          [-2.548621, 51.457628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54714, 51.457775],
+          [-2.547764, 51.459107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547764, 51.459107],
+          [-2.548803, 51.458964],
+          [-2.54905, 51.458947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549029, 51.459481],
+          [-2.549057, 51.459319],
+          [-2.54905, 51.458947],
+          [-2.549013, 51.458464],
+          [-2.548621, 51.457628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54734, 51.459632],
+          [-2.546418, 51.45789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547764, 51.459107],
+          [-2.547943, 51.459486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547885, 51.457692],
+          [-2.548289, 51.458573],
+          [-2.547559, 51.458671]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550252, 51.459634],
+          [-2.550273, 51.459574],
+          [-2.550308, 51.459299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550308, 51.459299],
+          [-2.550092, 51.458986],
+          [-2.55001, 51.458833],
+          [-2.549452, 51.457565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545704, 51.457987],
+          [-2.546724, 51.459798]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541848, 51.458732],
+          [-2.541921, 51.458852],
+          [-2.542089, 51.459654],
+          [-2.542127, 51.459678],
+          [-2.542179, 51.459682],
+          [-2.542996, 51.459612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542996, 51.459612],
+          [-2.54316, 51.460365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542714, 51.458455],
+          [-2.542996, 51.459612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543325, 51.458758],
+          [-2.544237, 51.458644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544017, 51.458219],
+          [-2.544438, 51.459043],
+          [-2.544586, 51.459393],
+          [-2.544593, 51.45949],
+          [-2.544566, 51.459971],
+          [-2.544573, 51.460019],
+          [-2.544623, 51.46011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543515, 51.461692],
+          [-2.543481, 51.461627],
+          [-2.54333, 51.461452],
+          [-2.542851, 51.460799],
+          [-2.542738, 51.460628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554206, 51.460521],
+          [-2.553793, 51.459427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547208, 51.463083],
+          [-2.54756, 51.464015],
+          [-2.547646, 51.46427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546206, 51.464604],
+          [-2.546104, 51.464279],
+          [-2.545415, 51.463211],
+          [-2.545436, 51.463153],
+          [-2.545479, 51.46313],
+          [-2.546588, 51.463116],
+          [-2.547832, 51.463042],
+          [-2.548463, 51.46298],
+          [-2.549089, 51.462908],
+          [-2.549701, 51.462821],
+          [-2.549944, 51.462766],
+          [-2.550222, 51.462663],
+          [-2.550384, 51.462568],
+          [-2.550533, 51.462437],
+          [-2.550553, 51.462402],
+          [-2.550558, 51.462327],
+          [-2.550259, 51.46179],
+          [-2.549993, 51.461406],
+          [-2.551892, 51.460851],
+          [-2.55263, 51.460618],
+          [-2.55289, 51.460467],
+          [-2.553365, 51.460411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542145, 51.46223],
+          [-2.543844, 51.462194],
+          [-2.543961, 51.462168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537571, 51.463531],
+          [-2.53794, 51.463448],
+          [-2.538311, 51.463395],
+          [-2.538737, 51.463375],
+          [-2.539069, 51.463378],
+          [-2.539213, 51.463389],
+          [-2.539467, 51.463423],
+          [-2.541613, 51.463869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553181, 51.459085],
+          [-2.553155, 51.459103],
+          [-2.55307, 51.459111],
+          [-2.551519, 51.459217],
+          [-2.550989, 51.459261]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553022, 51.457993],
+          [-2.55319, 51.459065],
+          [-2.553181, 51.459085]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537807, 51.463852],
+          [-2.537879, 51.463876],
+          [-2.537956, 51.463913],
+          [-2.538051, 51.464016],
+          [-2.538057, 51.464039],
+          [-2.538052, 51.464991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55078, 51.458065],
+          [-2.551041, 51.458128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549351, 51.463611],
+          [-2.551026, 51.463362],
+          [-2.551212, 51.463651],
+          [-2.551292, 51.463715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548463, 51.46298],
+          [-2.548894, 51.464112]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547832, 51.463042],
+          [-2.54827, 51.464178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549518, 51.464038],
+          [-2.549089, 51.462908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553412, 51.455985],
+          [-2.553424, 51.456127],
+          [-2.553491, 51.456272],
+          [-2.553732, 51.456666],
+          [-2.553946, 51.457129],
+          [-2.553988, 51.457202],
+          [-2.554236, 51.457498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554456, 51.458129],
+          [-2.554432, 51.458447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553412, 51.455985],
+          [-2.551805, 51.456387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553053, 51.458193],
+          [-2.55302, 51.458175],
+          [-2.552987, 51.458171],
+          [-2.551867, 51.458245]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55307, 51.459111],
+          [-2.553077, 51.459361],
+          [-2.553101, 51.459497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553627, 51.461618],
+          [-2.553878, 51.4615],
+          [-2.553365, 51.460411],
+          [-2.553088, 51.459623],
+          [-2.55306, 51.459501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553582, 51.461573],
+          [-2.55342, 51.461586],
+          [-2.552441, 51.46137],
+          [-2.552011, 51.460815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550259, 51.46179],
+          [-2.552349, 51.461262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550533, 51.462437],
+          [-2.550733, 51.462446],
+          [-2.550867, 51.462468],
+          [-2.551256, 51.462637],
+          [-2.551319, 51.462651],
+          [-2.55141, 51.462654],
+          [-2.551506, 51.462644],
+          [-2.553145, 51.462307],
+          [-2.553212, 51.462303],
+          [-2.553851, 51.462364]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55135, 51.462654],
+          [-2.55137, 51.462774],
+          [-2.55143, 51.4629],
+          [-2.55152, 51.463049],
+          [-2.55163, 51.463182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543541, 51.462829],
+          [-2.542727, 51.462884],
+          [-2.542313, 51.462882],
+          [-2.542033, 51.462854],
+          [-2.54092, 51.46264],
+          [-2.540632, 51.462553],
+          [-2.540395, 51.462469],
+          [-2.540099, 51.462384],
+          [-2.539563, 51.46227],
+          [-2.539143, 51.462196],
+          [-2.538528, 51.462102],
+          [-2.538124, 51.462075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539621, 51.461791],
+          [-2.539644, 51.461503],
+          [-2.539482, 51.461116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553253, 51.455213],
+          [-2.553237, 51.455359],
+          [-2.553241, 51.455445],
+          [-2.553271, 51.455494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552691, 51.454183],
+          [-2.552923, 51.454288],
+          [-2.553006, 51.454356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553412, 51.455985],
+          [-2.553418, 51.455918]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541787, 51.460515],
+          [-2.541972, 51.460827],
+          [-2.542156, 51.461194],
+          [-2.542176, 51.461258],
+          [-2.542136, 51.46251],
+          [-2.542102, 51.462671],
+          [-2.541847, 51.463359],
+          [-2.541789, 51.463504],
+          [-2.541409, 51.464302],
+          [-2.541314, 51.464554],
+          [-2.541289, 51.464655],
+          [-2.541263, 51.464897],
+          [-2.541272, 51.4651],
+          [-2.541329, 51.465387],
+          [-2.541453, 51.465845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541627, 51.463841],
+          [-2.542844, 51.464082],
+          [-2.543844, 51.46422],
+          [-2.544014, 51.464249],
+          [-2.544238, 51.464305],
+          [-2.545065, 51.464698],
+          [-2.545426, 51.464909]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542156, 51.461753],
+          [-2.542477, 51.461752],
+          [-2.543453, 51.461687],
+          [-2.543515, 51.461692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540604, 51.464141],
+          [-2.540834, 51.463708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546104, 51.464279],
+          [-2.546809, 51.464171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546889, 51.463522],
+          [-2.546942, 51.463628],
+          [-2.547018, 51.46373],
+          [-2.546994, 51.463818],
+          [-2.546884, 51.463883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544151, 51.465505],
+          [-2.543673, 51.465033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542844, 51.464082],
+          [-2.542691, 51.46456],
+          [-2.542478, 51.46485],
+          [-2.542412, 51.465022],
+          [-2.542408, 51.465115],
+          [-2.542477, 51.465253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543439, 51.463879],
+          [-2.543716, 51.463914],
+          [-2.543738, 51.463999],
+          [-2.543979, 51.464035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542267, 51.463312],
+          [-2.542548, 51.463326],
+          [-2.542627, 51.463361],
+          [-2.542829, 51.463404],
+          [-2.543182, 51.463457],
+          [-2.54324, 51.463487],
+          [-2.543215, 51.463511],
+          [-2.543196, 51.463653],
+          [-2.543312, 51.463767],
+          [-2.543388, 51.463817],
+          [-2.543439, 51.463879],
+          [-2.543351, 51.464152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545496, 51.463344],
+          [-2.543765, 51.463782],
+          [-2.543782, 51.463811],
+          [-2.543716, 51.463914]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5401, 51.463552],
+          [-2.539941, 51.463839]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539621, 51.461791],
+          [-2.54046, 51.461825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540099, 51.462384],
+          [-2.540252, 51.462111],
+          [-2.54029, 51.46182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537919, 51.46223],
+          [-2.538124, 51.462075],
+          [-2.538654, 51.461608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53781, 51.46382],
+          [-2.537806, 51.463785],
+          [-2.537753, 51.463713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547428, 51.463674],
+          [-2.547018, 51.46373]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553863, 51.458303],
+          [-2.554446, 51.458263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550762, 51.458719],
+          [-2.550347, 51.458762],
+          [-2.55001, 51.458833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550293, 51.457871],
+          [-2.549632, 51.457983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554035, 51.457614],
+          [-2.554093, 51.457926],
+          [-2.554003, 51.457933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548594, 51.458696],
+          [-2.548569, 51.45857],
+          [-2.549018, 51.458506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550457, 51.458267],
+          [-2.549802, 51.45837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549701, 51.462821],
+          [-2.549973, 51.463516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540952, 51.460978],
+          [-2.540806, 51.460482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541102, 51.459589],
+          [-2.541264, 51.459643],
+          [-2.541275, 51.459784],
+          [-2.541444, 51.45986],
+          [-2.541582, 51.459895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543298, 51.4597],
+          [-2.54386, 51.459632],
+          [-2.54401, 51.459636],
+          [-2.544582, 51.45968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540896, 51.460229],
+          [-2.541466, 51.460212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544194, 51.462421],
+          [-2.543553, 51.461707],
+          [-2.543515, 51.461692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541033, 51.460008],
+          [-2.541021, 51.459803],
+          [-2.541275, 51.459784]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542135, 51.460322],
+          [-2.54155, 51.460354],
+          [-2.541527, 51.460347],
+          [-2.541471, 51.460252],
+          [-2.541466, 51.460212],
+          [-2.541538, 51.460059],
+          [-2.541557, 51.459944],
+          [-2.541582, 51.459895],
+          [-2.541616, 51.459868],
+          [-2.541679, 51.459854],
+          [-2.541924, 51.459846],
+          [-2.542016, 51.45982],
+          [-2.542079, 51.459776],
+          [-2.542127, 51.459678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543483, 51.459142],
+          [-2.544438, 51.459043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552793, 51.460098],
+          [-2.553245, 51.460054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549921, 51.455092],
+          [-2.549915, 51.455161],
+          [-2.549863, 51.455185],
+          [-2.549271, 51.455185],
+          [-2.549202, 51.455207],
+          [-2.549167, 51.455229],
+          [-2.54913, 51.455274],
+          [-2.549121, 51.45531],
+          [-2.548577, 51.455295],
+          [-2.548548, 51.455301],
+          [-2.54852, 51.45532],
+          [-2.548508, 51.455374],
+          [-2.548546, 51.455423],
+          [-2.548601, 51.455444],
+          [-2.548858, 51.45542],
+          [-2.549123, 51.455414],
+          [-2.549413, 51.455443],
+          [-2.549774, 51.455501],
+          [-2.549943, 51.4555],
+          [-2.550014, 51.455491],
+          [-2.550051, 51.455461],
+          [-2.550055, 51.45541],
+          [-2.550037, 51.455375],
+          [-2.549994, 51.455353],
+          [-2.54992, 51.455348],
+          [-2.549684, 51.45536],
+          [-2.549533, 51.455357],
+          [-2.549238, 51.455329],
+          [-2.549121, 51.45531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551957, 51.456979],
+          [-2.551331, 51.457053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549585, 51.459098],
+          [-2.550092, 51.458986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545941, 51.459963],
+          [-2.54588, 51.459672],
+          [-2.545042, 51.458074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550308, 51.459299],
+          [-2.550446, 51.45928],
+          [-2.550621, 51.459279],
+          [-2.55077, 51.459305],
+          [-2.550935, 51.459363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5512, 51.457621],
+          [-2.550906, 51.458095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542641, 51.458127],
+          [-2.543257, 51.458229],
+          [-2.543533, 51.458296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551392, 51.456482],
+          [-2.551661, 51.457477]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54283, 51.463874],
+          [-2.543082, 51.463907],
+          [-2.543262, 51.463847],
+          [-2.543388, 51.463817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543551, 51.463458],
+          [-2.54324, 51.463487]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543316, 51.463265],
+          [-2.543167, 51.46328],
+          [-2.543199, 51.463421],
+          [-2.543182, 51.463457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542543, 51.463564],
+          [-2.543196, 51.463653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542851, 51.460799],
+          [-2.543334, 51.460755],
+          [-2.543459, 51.460765],
+          [-2.543544, 51.4608],
+          [-2.543797, 51.460786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542806, 51.456031],
+          [-2.543103, 51.456031],
+          [-2.543422, 51.456054],
+          [-2.543875, 51.456146],
+          [-2.544036, 51.456163],
+          [-2.545101, 51.456187],
+          [-2.545226, 51.456183],
+          [-2.545361, 51.45613],
+          [-2.545841, 51.455768],
+          [-2.546715, 51.455152],
+          [-2.546891, 51.455048],
+          [-2.547162, 51.454953],
+          [-2.54731, 51.454926],
+          [-2.547468, 51.454911],
+          [-2.547935, 51.454933],
+          [-2.548488, 51.455007],
+          [-2.548744, 51.455029],
+          [-2.549249, 51.455042],
+          [-2.549601, 51.455078],
+          [-2.549921, 51.455092],
+          [-2.550711, 51.4551],
+          [-2.551063, 51.455154]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551649, 51.455138],
+          [-2.551429, 51.455153],
+          [-2.551293, 51.455145],
+          [-2.551063, 51.455154]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550783, 51.459706],
+          [-2.550792, 51.459767],
+          [-2.550816, 51.459795],
+          [-2.550908, 51.459865],
+          [-2.551025, 51.459903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551025, 51.459903],
+          [-2.550903, 51.459701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553181, 51.459085],
+          [-2.553338, 51.459099],
+          [-2.553357, 51.459114],
+          [-2.55334, 51.459246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552895, 51.463022],
+          [-2.552662, 51.46281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553958, 51.458357],
+          [-2.553948, 51.458297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550703, 51.455376],
+          [-2.550037, 51.455375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539563, 51.46227],
+          [-2.539621, 51.461791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543583, 51.465068],
+          [-2.543706, 51.465019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552662, 51.46281],
+          [-2.552766, 51.462768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548621, 51.457628],
+          [-2.549452, 51.457565],
+          [-2.550212, 51.457461],
+          [-2.550369, 51.457455],
+          [-2.550554, 51.457466],
+          [-2.550927, 51.45754],
+          [-2.5512, 51.457621],
+          [-2.551474, 51.457689],
+          [-2.551693, 51.457738],
+          [-2.551903, 51.457767],
+          [-2.55203, 51.457769],
+          [-2.552312, 51.457756],
+          [-2.553317, 51.457657],
+          [-2.554294, 51.457601]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552528, 51.462837],
+          [-2.552662, 51.46281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541149, 51.458967],
+          [-2.542268, 51.458591],
+          [-2.542714, 51.458455],
+          [-2.543533, 51.458296],
+          [-2.544017, 51.458219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551422, 51.463662],
+          [-2.552186, 51.463323],
+          [-2.553151, 51.462922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545741, 51.464768],
+          [-2.545982, 51.464669],
+          [-2.546206, 51.464604],
+          [-2.547791, 51.464242],
+          [-2.549916, 51.463992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553851, 51.462364],
+          [-2.553958, 51.462126],
+          [-2.554076, 51.46203],
+          [-2.554249, 51.461945],
+          [-2.554184, 51.461955],
+          [-2.554059, 51.461947],
+          [-2.553996, 51.461925],
+          [-2.553927, 51.46187],
+          [-2.553759, 51.461825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550852, 51.459589],
+          [-2.550989, 51.459261],
+          [-2.551167, 51.459022],
+          [-2.551867, 51.458245],
+          [-2.551949, 51.458101],
+          [-2.552005, 51.457931],
+          [-2.552072, 51.457476],
+          [-2.552061, 51.457348],
+          [-2.551679, 51.455932],
+          [-2.551582, 51.455506],
+          [-2.551579, 51.455426],
+          [-2.551649, 51.455138],
+          [-2.551797, 51.454925],
+          [-2.551988, 51.45474],
+          [-2.552296, 51.454511],
+          [-2.552691, 51.454183],
+          [-2.552879, 51.453965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550852, 51.459589],
+          [-2.550798, 51.459648],
+          [-2.550783, 51.459706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550903, 51.459701],
+          [-2.550852, 51.459589]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54167, 51.465827],
+          [-2.541453, 51.465845],
+          [-2.541044, 51.465919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543533, 51.458296],
+          [-2.543464, 51.458127],
+          [-2.543436, 51.458098],
+          [-2.543366, 51.458055],
+          [-2.543271, 51.457962],
+          [-2.543211, 51.457815],
+          [-2.543277, 51.457761],
+          [-2.543627, 51.457703],
+          [-2.543458, 51.457262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545415, 51.463211],
+          [-2.545258, 51.463005],
+          [-2.543872, 51.463279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552123, 51.462888],
+          [-2.552196, 51.463014],
+          [-2.552458, 51.462953],
+          [-2.552555, 51.462889],
+          [-2.552528, 51.462837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545749, 51.463723],
+          [-2.545164, 51.463871],
+          [-2.544652, 51.463988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545065, 51.464698],
+          [-2.545476, 51.464421],
+          [-2.54549, 51.464388],
+          [-2.545164, 51.463871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543951, 51.465088],
+          [-2.544907, 51.464621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541472, 51.46275],
+          [-2.541218, 51.463411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541339, 51.463095],
+          [-2.540596, 51.462944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539994, 51.462812],
+          [-2.540425, 51.462939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540395, 51.462469],
+          [-2.540107, 51.462845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540632, 51.462553],
+          [-2.54089, 51.462236],
+          [-2.541345, 51.462366],
+          [-2.541866, 51.462455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539192, 51.462598],
+          [-2.53854, 51.4625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539143, 51.462196],
+          [-2.538999, 51.462569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544497, 51.462674],
+          [-2.543541, 51.462829],
+          [-2.543503, 51.462738],
+          [-2.54345, 51.462537],
+          [-2.543594, 51.462524]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54345, 51.462537],
+          [-2.542772, 51.46254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541848, 51.458732],
+          [-2.541592, 51.458427],
+          [-2.542054, 51.458311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551586, 51.458568],
+          [-2.553099, 51.458483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553091, 51.458438],
+          [-2.553398, 51.458425],
+          [-2.55346, 51.458408],
+          [-2.55348, 51.458382],
+          [-2.553317, 51.457657]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540712, 51.459862],
+          [-2.54065, 51.460463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551281, 51.45999],
+          [-2.551185, 51.460093],
+          [-2.551123, 51.460126],
+          [-2.551105, 51.460209],
+          [-2.551126, 51.460287],
+          [-2.551182, 51.460342]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53903, 51.465744],
+          [-2.539643, 51.465733]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540649, 51.465541],
+          [-2.539643, 51.465733],
+          [-2.539828, 51.466134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538826, 51.465832],
+          [-2.538654, 51.464973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553698, 51.459102],
+          [-2.553628, 51.459107],
+          [-2.553715, 51.459437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547973, 51.455236],
+          [-2.547892, 51.455058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547549, 51.455102],
+          [-2.547892, 51.455058],
+          [-2.548011, 51.455019],
+          [-2.548123, 51.454963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542328, 51.46092],
+          [-2.54223, 51.460766]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545259, 51.457662],
+          [-2.545175, 51.457529],
+          [-2.545033, 51.457532],
+          [-2.544925, 51.457552],
+          [-2.544976, 51.457693],
+          [-2.545324, 51.457657],
+          [-2.545516, 51.457688],
+          [-2.545614, 51.457737],
+          [-2.545665, 51.457797],
+          [-2.54573, 51.457984]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549452, 51.457565],
+          [-2.549391, 51.457406],
+          [-2.549244, 51.45691]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549178, 51.456753],
+          [-2.549045, 51.456378],
+          [-2.549091, 51.456313],
+          [-2.549182, 51.456261],
+          [-2.551489, 51.455783],
+          [-2.551645, 51.455764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551538, 51.459783],
+          [-2.551497, 51.459651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548237, 51.45966],
+          [-2.548204, 51.459455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548307, 51.459653],
+          [-2.548278, 51.45945]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549186, 51.459679],
+          [-2.54916, 51.459617],
+          [-2.549167, 51.459494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545764, 51.460162],
+          [-2.545712, 51.459992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540547, 51.460453],
+          [-2.540601, 51.459994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550563, 51.458985],
+          [-2.550572, 51.459063],
+          [-2.550562, 51.459088],
+          [-2.550518, 51.459122],
+          [-2.550508, 51.459143],
+          [-2.550554, 51.459276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55063, 51.45918],
+          [-2.550712, 51.459065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550663, 51.459134],
+          [-2.551011, 51.459231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543937, 51.459458],
+          [-2.544593, 51.45949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551259, 51.45344],
+          [-2.551253, 51.45378],
+          [-2.551305, 51.45383],
+          [-2.551416, 51.453873],
+          [-2.552448, 51.453878],
+          [-2.552698, 51.453903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552425, 51.453458],
+          [-2.552414, 51.453878],
+          [-2.552337, 51.45399],
+          [-2.552261, 51.454041],
+          [-2.55211, 51.454185],
+          [-2.551653, 51.454571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55111, 51.454779],
+          [-2.551209, 51.454096],
+          [-2.551416, 51.453873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551774, 51.454005],
+          [-2.552261, 51.454041]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552642, 51.455623],
+          [-2.553251, 51.455461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551217, 51.461838],
+          [-2.552905, 51.461472]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55281, 51.457003],
+          [-2.552858, 51.457141],
+          [-2.552937, 51.457165],
+          [-2.55303, 51.457372],
+          [-2.553988, 51.457202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545061, 51.455912],
+          [-2.54512, 51.455818],
+          [-2.545367, 51.455667],
+          [-2.545741, 51.455505],
+          [-2.545953, 51.455442],
+          [-2.546498, 51.455123],
+          [-2.546589, 51.455104],
+          [-2.546828, 51.455085]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550495, 51.454833],
+          [-2.54974, 51.454831],
+          [-2.549686, 51.454878],
+          [-2.54963, 51.454897],
+          [-2.549411, 51.454888],
+          [-2.549342, 51.454899],
+          [-2.549289, 51.454933],
+          [-2.549263, 51.454977],
+          [-2.549249, 51.455042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550468, 51.453988],
+          [-2.550006, 51.453985],
+          [-2.54973, 51.454129],
+          [-2.54974, 51.454831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540728, 51.459384],
+          [-2.54082, 51.459525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540395, 51.461312],
+          [-2.540333, 51.461033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552991, 51.457835],
+          [-2.552948, 51.457693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545284, 51.459725],
+          [-2.545076, 51.459724],
+          [-2.544581, 51.459698]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546236, 51.463464],
+          [-2.545886, 51.463485],
+          [-2.545631, 51.463551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541926, 51.4639],
+          [-2.541951, 51.463849],
+          [-2.541995, 51.463809],
+          [-2.542038, 51.463808],
+          [-2.54231, 51.463852],
+          [-2.542369, 51.463884],
+          [-2.542357, 51.463986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541789, 51.464217],
+          [-2.541934, 51.464185],
+          [-2.541965, 51.464167],
+          [-2.542007, 51.464117],
+          [-2.542092, 51.463933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549106, 51.459744],
+          [-2.54912, 51.459663],
+          [-2.54916, 51.459617]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543888, 51.460433],
+          [-2.543796, 51.460267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551103, 51.462332],
+          [-2.550772, 51.46241],
+          [-2.550733, 51.462446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551738, 51.46059],
+          [-2.551809, 51.460506],
+          [-2.55182, 51.46048],
+          [-2.551804, 51.460441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544355, 51.455911],
+          [-2.544212, 51.455913],
+          [-2.544196, 51.456059],
+          [-2.543955, 51.456055],
+          [-2.543932, 51.456152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543767, 51.456039],
+          [-2.543955, 51.456055]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551715, 51.45942],
+          [-2.551754, 51.459626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545468, 51.459648],
+          [-2.545715, 51.459634],
+          [-2.545846, 51.459606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542617, 51.455955],
+          [-2.542776, 51.455963],
+          [-2.542916, 51.455958],
+          [-2.543067, 51.455934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-west" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542845, 51.458067],
+          [-2.542797, 51.458153]
+        ]
+      }
+    }
+  ]
+}

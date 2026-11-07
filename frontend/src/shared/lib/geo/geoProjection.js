@@ -56,11 +56,24 @@ function distanceToSegment([px, py], [ax, ay], [bx, by]) {
   return Math.hypot(px - (ax + t * dx), py - (ay + t * dy));
 }
 
+// Для поиска точки подписи хватает прореженного контура без мелких дыр (пруды): у большого города в
+// районе десятки тысяч вершин и сотни прудов, а точка ищется по сетке 29 × 29 — расстояние до каждой
+// вершины было главным тормозом при открытии карты.
+const LABEL_RING_POINTS = 96;
+const LABEL_HOLE_SHARE = 0.002; // дыры меньше этой доли площади района на подпись не влияют
+const thin = (ring) => {
+  if (ring.length <= LABEL_RING_POINTS) return ring;
+  const step = Math.ceil(ring.length / LABEL_RING_POINTS);
+  return ring.filter((_, i) => i % step === 0 || i === ring.length - 1);
+};
+
 // Точка глубоко внутри самого большого полигона (грубый «полюс недоступности»). В отличие от
 // центроида никогда не выпадает за пределы длинных или вогнутых районов — используется для подписей
 // и меток.
 export function labelPoint(multiPolygon, resolution = 28) {
-  const polygon = largestPolygon(multiPolygon);
+  const [outer, ...holes] = largestPolygon(multiPolygon);
+  const minHole = ringArea(outer) * LABEL_HOLE_SHARE;
+  const polygon = [outer, ...holes.filter((hole) => ringArea(hole) > minHole)].map(thin);
   const [ring] = polygon;
   const xs = ring.map((p) => p[0]);
   const ys = ring.map((p) => p[1]);

@@ -1,0 +1,814 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.54664, 53.155795],
+          [63.546839, 53.155885],
+          [63.547049, 53.155948],
+          [63.550583, 53.157128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.544057, 53.161345],
+          [63.544701, 53.160751],
+          [63.545574, 53.15992],
+          [63.5478, 53.157629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554492, 53.152963],
+          [63.554634, 53.152756],
+          [63.555203, 53.152149],
+          [63.555492, 53.151788],
+          [63.555715, 53.151408],
+          [63.555939, 53.150839],
+          [63.556101, 53.150153],
+          [63.556354, 53.147711],
+          [63.556273, 53.147275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.536269, 53.152335],
+          [63.537606, 53.152081],
+          [63.539529, 53.151861],
+          [63.541272, 53.151741],
+          [63.541603, 53.151768],
+          [63.541781, 53.151823],
+          [63.545135, 53.15236],
+          [63.547511, 53.152775],
+          [63.547903, 53.152987],
+          [63.548477, 53.152974],
+          [63.554492, 53.152963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.539877, 53.154845],
+          [63.541221, 53.154857],
+          [63.541526, 53.154819],
+          [63.542123, 53.154836],
+          [63.542199, 53.15483],
+          [63.54225, 53.154803],
+          [63.542753, 53.154197],
+          [63.546162, 53.154194],
+          [63.547993, 53.154167],
+          [63.553364, 53.15413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.541221, 53.154857],
+          [63.54216, 53.155314],
+          [63.54391, 53.156049],
+          [63.544632, 53.156365],
+          [63.545604, 53.156841],
+          [63.5478, 53.157629],
+          [63.549557, 53.15823]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.547827, 53.154638],
+          [63.549271, 53.15518],
+          [63.550712, 53.155684],
+          [63.551647, 53.155994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.537636, 53.153543],
+          [63.540253, 53.153546],
+          [63.54068, 53.15357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.547049, 53.155948],
+          [63.547418, 53.155653],
+          [63.547978, 53.155319],
+          [63.549059, 53.155102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.540389, 53.154028],
+          [63.541916, 53.1541],
+          [63.542544, 53.15419],
+          [63.542753, 53.154197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.544231, 53.158257],
+          [63.544634, 53.157856],
+          [63.545169, 53.157277],
+          [63.546551, 53.155904],
+          [63.54664, 53.155795],
+          [63.546676, 53.155684],
+          [63.546746, 53.155561],
+          [63.547754, 53.15472],
+          [63.547827, 53.154638],
+          [63.547868, 53.154555],
+          [63.547993, 53.154167],
+          [63.548044, 53.153535],
+          [63.548056, 53.152984]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.53642, 53.159154],
+          [63.541109, 53.159182],
+          [63.541243, 53.15919],
+          [63.541521, 53.159227],
+          [63.545574, 53.15992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.536413, 53.15613],
+          [63.536418, 53.160312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.539877, 53.154845],
+          [63.541781, 53.151823],
+          [63.542532, 53.150724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.543208, 53.152945],
+          [63.542899, 53.15292],
+          [63.542324, 53.15289],
+          [63.541232, 53.152697],
+          [63.540176, 53.152726],
+          [63.537667, 53.152828],
+          [63.537617, 53.15285],
+          [63.537593, 53.152909],
+          [63.537636, 53.153543],
+          [63.53767, 53.15479],
+          [63.537636, 53.154814],
+          [63.537591, 53.154824],
+          [63.535112, 53.154772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.536415, 53.158028],
+          [63.53849, 53.158059],
+          [63.540552, 53.158074],
+          [63.541631, 53.157874],
+          [63.541883, 53.15785],
+          [63.542548, 53.157906],
+          [63.543597, 53.158078],
+          [63.543964, 53.158152],
+          [63.546408, 53.159061]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.532695, 53.160278],
+          [63.536418, 53.160312],
+          [63.537257, 53.160343],
+          [63.538469, 53.160338],
+          [63.539043, 53.160392],
+          [63.540737, 53.160666],
+          [63.541997, 53.160893],
+          [63.544057, 53.161345],
+          [63.545967, 53.162001],
+          [63.546529, 53.161398],
+          [63.549557, 53.15823],
+          [63.551647, 53.155994],
+          [63.553364, 53.15413],
+          [63.553876, 53.153619],
+          [63.554492, 53.152963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.545377, 53.156727],
+          [63.540932, 53.157826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.539877, 53.154845],
+          [63.539433, 53.155668],
+          [63.538677, 53.15581],
+          [63.537798, 53.155934],
+          [63.536944, 53.15607],
+          [63.536413, 53.15613],
+          [63.533955, 53.156146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.531666, 53.159878],
+          [63.531548, 53.159403],
+          [63.531349, 53.158389],
+          [63.531068, 53.156212],
+          [63.530883, 53.155216],
+          [63.530759, 53.154228]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.533951, 53.152774],
+          [63.533856, 53.154249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.530759, 53.154228],
+          [63.535514, 53.154266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.530883, 53.155216],
+          [63.534646, 53.155261]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.531068, 53.156212],
+          [63.533923, 53.156204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.531217, 53.15739],
+          [63.533894, 53.157387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.530691, 53.158468],
+          [63.531027, 53.158391],
+          [63.533869, 53.158398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.536269, 53.152335],
+          [63.536281, 53.152968],
+          [63.536181, 53.153388],
+          [63.535715, 53.154013],
+          [63.535112, 53.154772],
+          [63.533989, 53.155971],
+          [63.533955, 53.156146],
+          [63.533923, 53.156204],
+          [63.533838, 53.160287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.552818, 53.145929],
+          [63.553518, 53.147412],
+          [63.553779, 53.147839],
+          [63.553912, 53.147917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.548642, 53.14591],
+          [63.548842, 53.146281],
+          [63.548955, 53.146786],
+          [63.549937, 53.146687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.550385, 53.147933],
+          [63.549937, 53.146687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.538641, 53.157447],
+          [63.538666, 53.156976],
+          [63.538668, 53.156573],
+          [63.538683, 53.156481],
+          [63.538677, 53.15581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.54391, 53.156049],
+          [63.541329, 53.156731],
+          [63.540423, 53.156999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.553902, 53.145974],
+          [63.553752, 53.146114],
+          [63.553585, 53.146209],
+          [63.549937, 53.146687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.530599, 53.153388],
+          [63.530759, 53.154228]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.530599, 53.153388],
+          [63.533951, 53.152774]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.533951, 53.152774],
+          [63.536269, 53.152335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.540255, 53.156508],
+          [63.538683, 53.156481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.540423, 53.156999],
+          [63.538666, 53.156976]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.548243, 53.152979],
+          [63.54843, 53.15261]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.543931, 53.149377],
+          [63.544261, 53.15048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.546162, 53.154194],
+          [63.546125, 53.154452],
+          [63.546051, 53.154568],
+          [63.545559, 53.154921],
+          [63.545061, 53.155241],
+          [63.544975, 53.155268],
+          [63.54488, 53.15528],
+          [63.543535, 53.15531],
+          [63.54216, 53.155314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.529194, 53.153454],
+          [63.529923, 53.153541],
+          [63.530143, 53.153525],
+          [63.530363, 53.153447],
+          [63.530599, 53.153388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.541, 53.157988],
+          [63.540932, 53.157826],
+          [63.540793, 53.15764],
+          [63.540648, 53.157363],
+          [63.540423, 53.156999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.540737, 53.160666],
+          [63.541085, 53.159794],
+          [63.541156, 53.159453],
+          [63.541161, 53.1593],
+          [63.541109, 53.159182],
+          [63.541109, 53.157967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.53765, 53.154056],
+          [63.536284, 53.154006],
+          [63.535995, 53.154035],
+          [63.535849, 53.154038],
+          [63.535715, 53.154013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.529076, 53.152665],
+          [63.544261, 53.15048],
+          [63.545559, 53.150236],
+          [63.558498, 53.146656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.551417, 53.154936],
+          [63.550712, 53.155684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.542324, 53.15289],
+          [63.541916, 53.1541]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.548044, 53.153535],
+          [63.553672, 53.153579],
+          [63.553876, 53.153619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.54682, 53.158637],
+          [63.545702, 53.158223],
+          [63.544634, 53.157856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.547362, 53.158079],
+          [63.546166, 53.157657],
+          [63.545169, 53.157277]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.54541, 53.161272],
+          [63.54696, 53.159688],
+          [63.547561, 53.159101],
+          [63.54817, 53.158402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.549094, 53.158715],
+          [63.54817, 53.158402],
+          [63.547336, 53.158105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.556085, 53.1467],
+          [63.55608, 53.146928],
+          [63.556273, 53.147275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.531387, 53.150483],
+          [63.530417, 53.150518],
+          [63.529971, 53.150502],
+          [63.529601, 53.150477],
+          [63.529323, 53.150434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.530824, 53.151162],
+          [63.530594, 53.151233],
+          [63.530127, 53.151352],
+          [63.529879, 53.151398],
+          [63.529547, 53.151437],
+          [63.529065, 53.151471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.530249, 53.157454],
+          [63.530668, 53.158422],
+          [63.531672, 53.16053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "dostyk" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.549523, 53.141004],
+          [63.547611, 53.141922],
+          [63.545965, 53.142606],
+          [63.545043, 53.142942],
+          [63.543694, 53.143398],
+          [63.542288, 53.143812],
+          [63.536106, 53.145405],
+          [63.535039, 53.145747],
+          [63.534027, 53.146125],
+          [63.53315, 53.146554],
+          [63.532552, 53.14689],
+          [63.531714, 53.147433],
+          [63.531065, 53.147982],
+          [63.530408, 53.148655],
+          [63.530031, 53.149115],
+          [63.529724, 53.149601],
+          [63.529323, 53.150434],
+          [63.52916, 53.150908],
+          [63.529065, 53.151471],
+          [63.529014, 53.152068],
+          [63.529076, 53.152665],
+          [63.529288, 53.154086],
+          [63.529506, 53.155149]
+        ]
+      }
+    }
+  ]
+}

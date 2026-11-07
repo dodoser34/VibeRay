@@ -7,6 +7,7 @@ import { RouterProvider } from 'react-router';
 import { AuthProvider } from '@/features/auth';
 import { NotificationsProvider } from '@/features/notifications';
 import { trackInputModality } from '@/app/lib/inputModality';
+import { registerServiceWorker } from '@/app/lib/serviceWorker';
 import { prefetchPages, router } from '@/app/routing/router';
 import { canPrefetch } from '@/adaptations/core';
 import '@/shared/animations/core/gsapSetup';
@@ -19,6 +20,7 @@ import '@/styles/global.css';
 import '@/adaptations/index.css';
 
 trackInputModality();
+registerServiceWorker();
 
 // После загрузки, когда браузер свободен, — остальные страницы в кэш (не на медленной сети).
 window.addEventListener(

@@ -1,0 +1,5984 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583749, 51.492187],
+          [-2.58331, 51.492717],
+          [-2.582943, 51.4932],
+          [-2.582618, 51.493711],
+          [-2.582001, 51.494844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580966, 51.496734],
+          [-2.580911, 51.496768],
+          [-2.580879, 51.496813],
+          [-2.580753, 51.49707],
+          [-2.58046, 51.497574],
+          [-2.580482, 51.497624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584958, 51.489761],
+          [-2.585074, 51.490056],
+          [-2.58512, 51.490288],
+          [-2.585108, 51.490494],
+          [-2.585001, 51.490835],
+          [-2.58495, 51.490926],
+          [-2.584837, 51.49108],
+          [-2.584497, 51.491424],
+          [-2.584439, 51.491524]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581956, 51.494927],
+          [-2.580966, 51.496734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585434, 51.486837],
+          [-2.585328, 51.487081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578764, 51.500123],
+          [-2.578796, 51.500263],
+          [-2.579079, 51.500827]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584439, 51.491524],
+          [-2.584563, 51.491464],
+          [-2.584971, 51.491047],
+          [-2.585093, 51.490847],
+          [-2.585198, 51.490521],
+          [-2.58522, 51.490284],
+          [-2.585176, 51.490053],
+          [-2.584855, 51.48898],
+          [-2.584788, 51.488923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584439, 51.491524],
+          [-2.584212, 51.491762],
+          [-2.583901, 51.492045]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584788, 51.488923],
+          [-2.584736, 51.488984],
+          [-2.584769, 51.489154],
+          [-2.584804, 51.489294],
+          [-2.58497, 51.489686],
+          [-2.584958, 51.489761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584788, 51.488923],
+          [-2.584773, 51.48877],
+          [-2.584809, 51.488534],
+          [-2.585289, 51.487179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584658, 51.489508],
+          [-2.584796, 51.489591],
+          [-2.584958, 51.489761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580482, 51.497624],
+          [-2.580542, 51.497581],
+          [-2.580889, 51.496986],
+          [-2.580965, 51.496834],
+          [-2.580966, 51.496734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580482, 51.497624],
+          [-2.580206, 51.498007],
+          [-2.57953, 51.498654],
+          [-2.579201, 51.499017],
+          [-2.578937, 51.499339],
+          [-2.578772, 51.499701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578764, 51.500123],
+          [-2.578793, 51.500082],
+          [-2.578798, 51.499752],
+          [-2.578772, 51.499701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581956, 51.494927],
+          [-2.581992, 51.494912],
+          [-2.582014, 51.494867],
+          [-2.582001, 51.494844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582001, 51.494844],
+          [-2.581959, 51.49488],
+          [-2.581956, 51.494927]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583901, 51.492045],
+          [-2.583811, 51.492055],
+          [-2.583736, 51.492132],
+          [-2.583749, 51.492187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583749, 51.492187],
+          [-2.583839, 51.492166],
+          [-2.583909, 51.492098],
+          [-2.583901, 51.492045]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585289, 51.487179],
+          [-2.585335, 51.48716],
+          [-2.585351, 51.487115],
+          [-2.585328, 51.487081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578772, 51.499701],
+          [-2.578725, 51.499747],
+          [-2.578707, 51.499935],
+          [-2.578715, 51.500054],
+          [-2.578764, 51.500123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585328, 51.487081],
+          [-2.585281, 51.487105],
+          [-2.585265, 51.487156],
+          [-2.585289, 51.487179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589713, 51.487575],
+          [-2.590006, 51.487678],
+          [-2.59047, 51.487911],
+          [-2.591125, 51.488192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581218, 51.497021],
+          [-2.586346, 51.498089],
+          [-2.588652, 51.498439],
+          [-2.588834, 51.498463],
+          [-2.589149, 51.498484],
+          [-2.589374, 51.498569],
+          [-2.589725, 51.498676],
+          [-2.590132, 51.498862],
+          [-2.590337, 51.498996],
+          [-2.590525, 51.499151],
+          [-2.590766, 51.499383],
+          [-2.590932, 51.499577],
+          [-2.591742, 51.501113],
+          [-2.5919, 51.501244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58478, 51.488875],
+          [-2.584978, 51.488748],
+          [-2.585955, 51.487989],
+          [-2.586214, 51.487656],
+          [-2.586268, 51.48761],
+          [-2.586338, 51.487578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594111, 51.489459],
+          [-2.591239, 51.488243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586338, 51.487578],
+          [-2.585777, 51.487238],
+          [-2.585389, 51.486956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578862, 51.490187],
+          [-2.580216, 51.489455],
+          [-2.581429, 51.488769],
+          [-2.582137, 51.488419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58524, 51.48695],
+          [-2.585389, 51.486956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577364, 51.491398],
+          [-2.577974, 51.490883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576329, 51.492326],
+          [-2.576403, 51.492252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57268, 51.497257],
+          [-2.573197, 51.496367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571509, 51.499341],
+          [-2.572373, 51.497806]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586338, 51.487578],
+          [-2.586417, 51.487564],
+          [-2.586551, 51.487561],
+          [-2.587509, 51.48757],
+          [-2.588228, 51.487494],
+          [-2.58876, 51.48749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585389, 51.486956],
+          [-2.585348, 51.486911]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582281, 51.488489],
+          [-2.5832, 51.487952],
+          [-2.583589, 51.487765],
+          [-2.584669, 51.487159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581218, 51.497021],
+          [-2.581193, 51.496991],
+          [-2.580837, 51.496916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591125, 51.488192],
+          [-2.59113, 51.488226],
+          [-2.591188, 51.488251],
+          [-2.591239, 51.488243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591239, 51.488243],
+          [-2.591228, 51.488214],
+          [-2.591174, 51.48819],
+          [-2.591125, 51.488192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601265, 51.492418],
+          [-2.59833, 51.492182],
+          [-2.598024, 51.492149],
+          [-2.597793, 51.492102],
+          [-2.596833, 51.491825],
+          [-2.596001, 51.491489],
+          [-2.595757, 51.491334],
+          [-2.595681, 51.491267],
+          [-2.595566, 51.491141],
+          [-2.595496, 51.491026],
+          [-2.595063, 51.490253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580807, 51.496967],
+          [-2.581125, 51.497026],
+          [-2.581218, 51.497021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585408, 51.489122],
+          [-2.585811, 51.48932],
+          [-2.586313, 51.48954],
+          [-2.586405, 51.489566],
+          [-2.586511, 51.489581],
+          [-2.586751, 51.489536],
+          [-2.586859, 51.489501],
+          [-2.587075, 51.489405],
+          [-2.587325, 51.489195],
+          [-2.587686, 51.48883],
+          [-2.587919, 51.488576],
+          [-2.587994, 51.488449],
+          [-2.588109, 51.488157],
+          [-2.588112, 51.488068],
+          [-2.588029, 51.487511]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573812, 51.495423],
+          [-2.580657, 51.496908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582951, 51.491009],
+          [-2.583295, 51.490438],
+          [-2.58393, 51.489333],
+          [-2.583926, 51.489284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585014, 51.490785],
+          [-2.584127, 51.490622],
+          [-2.582817, 51.490335],
+          [-2.581561, 51.490038],
+          [-2.581434, 51.490037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582378, 51.490231],
+          [-2.58313, 51.488871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586555, 51.493544],
+          [-2.587076, 51.493655],
+          [-2.587349, 51.493701],
+          [-2.589051, 51.493961],
+          [-2.589153, 51.493983],
+          [-2.589279, 51.494043],
+          [-2.589332, 51.494092],
+          [-2.589454, 51.494298],
+          [-2.589165, 51.494521],
+          [-2.589172, 51.494574],
+          [-2.589262, 51.494727],
+          [-2.589262, 51.494777],
+          [-2.58887, 51.49508],
+          [-2.589049, 51.495176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585888, 51.496145],
+          [-2.586832, 51.496273],
+          [-2.586914, 51.496319],
+          [-2.587249, 51.49781],
+          [-2.587085, 51.498209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581729, 51.497877],
+          [-2.581685, 51.497906],
+          [-2.581666, 51.497941],
+          [-2.581669, 51.497995],
+          [-2.582074, 51.498346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581588, 51.498572],
+          [-2.582419, 51.498195],
+          [-2.582648, 51.498084],
+          [-2.582811, 51.497983],
+          [-2.582991, 51.49783],
+          [-2.583248, 51.497446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587098, 51.499839],
+          [-2.588408, 51.500016]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585555, 51.496306],
+          [-2.584935, 51.497271],
+          [-2.584671, 51.49774],
+          [-2.584436, 51.4982],
+          [-2.584318, 51.498395],
+          [-2.584308, 51.498507],
+          [-2.58452, 51.498851],
+          [-2.585026, 51.499741],
+          [-2.585074, 51.499794],
+          [-2.585103, 51.499803],
+          [-2.58516, 51.499802],
+          [-2.585329, 51.499765],
+          [-2.585387, 51.499742],
+          [-2.585499, 51.499677],
+          [-2.585554, 51.499663],
+          [-2.585729, 51.499674],
+          [-2.586061, 51.499714],
+          [-2.586329, 51.499728],
+          [-2.586451, 51.499722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587372, 51.499878],
+          [-2.587641, 51.499189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582782, 51.501144],
+          [-2.582857, 51.501205],
+          [-2.582964, 51.501341],
+          [-2.583013, 51.50159],
+          [-2.583035, 51.501618],
+          [-2.583061, 51.501633],
+          [-2.583267, 51.501673],
+          [-2.583527, 51.50179],
+          [-2.583594, 51.501806],
+          [-2.583811, 51.501822],
+          [-2.583909, 51.50174],
+          [-2.583975, 51.50171],
+          [-2.58441, 51.50164],
+          [-2.584229, 51.50115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582964, 51.501341],
+          [-2.583116, 51.501303],
+          [-2.583226, 51.501288],
+          [-2.583453, 51.501282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58452, 51.498851],
+          [-2.584608, 51.498882],
+          [-2.584678, 51.498883],
+          [-2.585043, 51.498814],
+          [-2.585116, 51.498812],
+          [-2.586184, 51.498963],
+          [-2.587641, 51.499189],
+          [-2.588522, 51.499302],
+          [-2.588958, 51.499394],
+          [-2.589137, 51.499447],
+          [-2.589363, 51.499564],
+          [-2.589596, 51.499718],
+          [-2.589768, 51.499889],
+          [-2.589907, 51.500077],
+          [-2.590374, 51.500866],
+          [-2.590489, 51.500956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587581, 51.501689],
+          [-2.588883, 51.501585],
+          [-2.589095, 51.501551],
+          [-2.589337, 51.501478],
+          [-2.589919, 51.501243],
+          [-2.59022, 51.5011],
+          [-2.590489, 51.500956],
+          [-2.590792, 51.500762],
+          [-2.591227, 51.500435],
+          [-2.59136, 51.500383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578208, 51.490684],
+          [-2.578379, 51.490726],
+          [-2.579574, 51.491117],
+          [-2.582459, 51.491895],
+          [-2.582924, 51.49204],
+          [-2.583322, 51.49219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572905, 51.498714],
+          [-2.572666, 51.499102],
+          [-2.573008, 51.499184],
+          [-2.573252, 51.498788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571972, 51.49852],
+          [-2.574075, 51.498964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573042, 51.498743],
+          [-2.573307, 51.498322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572689, 51.497548],
+          [-2.573651, 51.49774],
+          [-2.574855, 51.498007],
+          [-2.575321, 51.49809],
+          [-2.575579, 51.498154],
+          [-2.575875, 51.498209],
+          [-2.575984, 51.498209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57687, 51.496724],
+          [-2.577196, 51.496156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57687, 51.496724],
+          [-2.577942, 51.496969],
+          [-2.580487, 51.497531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574791, 51.497419],
+          [-2.57533, 51.49725],
+          [-2.575524, 51.497258],
+          [-2.575889, 51.497149],
+          [-2.575903, 51.497131],
+          [-2.575826, 51.497025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574925, 51.496721],
+          [-2.57533, 51.49725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573197, 51.496367],
+          [-2.574047, 51.496552],
+          [-2.574207, 51.496601],
+          [-2.574325, 51.496676],
+          [-2.574446, 51.496842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574713, 51.49635],
+          [-2.574944, 51.496267],
+          [-2.575003, 51.496267],
+          [-2.575086, 51.496283],
+          [-2.575135, 51.496319],
+          [-2.575332, 51.496555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57284, 51.496988],
+          [-2.573437, 51.497114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573132, 51.49705],
+          [-2.573211, 51.496951],
+          [-2.57324, 51.496865],
+          [-2.573297, 51.496822],
+          [-2.573399, 51.496798],
+          [-2.573529, 51.496786],
+          [-2.573658, 51.496809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57535, 51.498049],
+          [-2.575482, 51.49785],
+          [-2.575631, 51.49779],
+          [-2.57575, 51.497776],
+          [-2.575872, 51.497782],
+          [-2.57622, 51.497861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576208, 51.49797],
+          [-2.576699, 51.498068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576824, 51.498093],
+          [-2.577254, 51.498179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577432, 51.497872],
+          [-2.577816, 51.497934],
+          [-2.578084, 51.497941],
+          [-2.578411, 51.497907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576222, 51.498518],
+          [-2.577187, 51.498227],
+          [-2.577254, 51.498179],
+          [-2.577385, 51.498128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574075, 51.498964],
+          [-2.573891, 51.499322],
+          [-2.573883, 51.499341],
+          [-2.573895, 51.499371],
+          [-2.573953, 51.499395],
+          [-2.574675, 51.49953],
+          [-2.574879, 51.499531],
+          [-2.575069, 51.499513],
+          [-2.5761, 51.499395],
+          [-2.576258, 51.499369],
+          [-2.57674, 51.499231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574075, 51.498964],
+          [-2.574464, 51.498209],
+          [-2.574544, 51.498163],
+          [-2.57475, 51.498097],
+          [-2.574855, 51.498007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575984, 51.498209],
+          [-2.576163, 51.498433],
+          [-2.57674, 51.499231],
+          [-2.57749, 51.500213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577385, 51.498128],
+          [-2.577469, 51.498165],
+          [-2.577567, 51.498264],
+          [-2.577651, 51.498296],
+          [-2.579465, 51.498721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578419, 51.499911],
+          [-2.578542, 51.499887],
+          [-2.57859, 51.499888],
+          [-2.578707, 51.499935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570791, 51.499145],
+          [-2.571509, 51.499341],
+          [-2.572248, 51.499588],
+          [-2.573212, 51.499961],
+          [-2.573488, 51.500052],
+          [-2.574068, 51.500186],
+          [-2.574473, 51.500258],
+          [-2.575229, 51.50035],
+          [-2.575621, 51.500379],
+          [-2.576019, 51.50039],
+          [-2.576415, 51.500383],
+          [-2.576945, 51.50034],
+          [-2.577326, 51.500267],
+          [-2.578419, 51.499911]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576261, 51.495953],
+          [-2.57661, 51.495448],
+          [-2.577188, 51.49466],
+          [-2.577653, 51.493962],
+          [-2.577759, 51.493825],
+          [-2.578111, 51.49331],
+          [-2.579214, 51.491599],
+          [-2.579574, 51.491117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574401, 51.494557],
+          [-2.576877, 51.495094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577034, 51.491682],
+          [-2.577669, 51.491946],
+          [-2.577901, 51.492031],
+          [-2.578781, 51.49227]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577669, 51.491946],
+          [-2.577953, 51.491635],
+          [-2.578057, 51.491627],
+          [-2.578371, 51.491739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575664, 51.494828],
+          [-2.576573, 51.493591],
+          [-2.577901, 51.492031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57661, 51.495448],
+          [-2.581148, 51.496415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577385, 51.498128],
+          [-2.577349, 51.49803],
+          [-2.577364, 51.497976],
+          [-2.577942, 51.496969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575365, 51.499174],
+          [-2.575462, 51.499466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573321, 51.499319],
+          [-2.57316, 51.499594],
+          [-2.574068, 51.499777],
+          [-2.574156, 51.499772],
+          [-2.574225, 51.49974],
+          [-2.574372, 51.499472]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573489, 51.497998],
+          [-2.573884, 51.497373],
+          [-2.573904, 51.497324],
+          [-2.57392, 51.497207],
+          [-2.574019, 51.497112],
+          [-2.574069, 51.497045],
+          [-2.574097, 51.496938],
+          [-2.574213, 51.496876],
+          [-2.574326, 51.496871],
+          [-2.574925, 51.496721],
+          [-2.575115, 51.496665],
+          [-2.575235, 51.496589],
+          [-2.575332, 51.496555],
+          [-2.575649, 51.496499],
+          [-2.575816, 51.496516],
+          [-2.57687, 51.496724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573156, 51.500656],
+          [-2.573488, 51.500052]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580458, 51.490382],
+          [-2.58058, 51.490448],
+          [-2.582951, 51.491009],
+          [-2.584555, 51.491359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583631, 51.489853],
+          [-2.584591, 51.490059],
+          [-2.585074, 51.490056]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581434, 51.490037],
+          [-2.582324, 51.488507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579288, 51.491023],
+          [-2.579556, 51.490721],
+          [-2.581307, 51.490064],
+          [-2.581434, 51.490037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582238, 51.493229],
+          [-2.582375, 51.49302],
+          [-2.581702, 51.492846],
+          [-2.581655, 51.492812],
+          [-2.581356, 51.492736],
+          [-2.581068, 51.493176],
+          [-2.582683, 51.493602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581695, 51.493339],
+          [-2.581993, 51.492919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580606, 51.49575],
+          [-2.581341, 51.494316],
+          [-2.579583, 51.493896],
+          [-2.578199, 51.496373]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576973, 51.494964],
+          [-2.581417, 51.495926]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57739, 51.49436],
+          [-2.577892, 51.494481],
+          [-2.579114, 51.494737]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579029, 51.494887],
+          [-2.581688, 51.49543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581141, 51.494704],
+          [-2.582003, 51.494889]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579313, 51.49438],
+          [-2.5811, 51.49479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577856, 51.493677],
+          [-2.579515, 51.494019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585381, 51.496117],
+          [-2.585383, 51.496164],
+          [-2.585408, 51.496215],
+          [-2.585466, 51.496275],
+          [-2.585555, 51.496306],
+          [-2.585638, 51.496294],
+          [-2.585749, 51.49626],
+          [-2.585824, 51.49621],
+          [-2.585888, 51.496145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583345, 51.496616],
+          [-2.583725, 51.496602],
+          [-2.583873, 51.496623],
+          [-2.584016, 51.496666],
+          [-2.584109, 51.496718],
+          [-2.584179, 51.496794],
+          [-2.584254, 51.497018],
+          [-2.5843, 51.497081],
+          [-2.584378, 51.497136],
+          [-2.5845, 51.497173],
+          [-2.584935, 51.497271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588522, 51.499302],
+          [-2.588834, 51.498463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595369, 51.495342],
+          [-2.595596, 51.495745],
+          [-2.595905, 51.496137],
+          [-2.596191, 51.496417],
+          [-2.596379, 51.496568],
+          [-2.597378, 51.497227]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595227, 51.491225],
+          [-2.595138, 51.491216],
+          [-2.594942, 51.491178],
+          [-2.594538, 51.49114],
+          [-2.594268, 51.491125],
+          [-2.593913, 51.491119],
+          [-2.59355, 51.491119],
+          [-2.593085, 51.491145],
+          [-2.592545, 51.491199],
+          [-2.592116, 51.491277],
+          [-2.591703, 51.491385],
+          [-2.589422, 51.49192],
+          [-2.588871, 51.492005],
+          [-2.587956, 51.492117],
+          [-2.586939, 51.492162],
+          [-2.586245, 51.492159],
+          [-2.585947, 51.492133],
+          [-2.585392, 51.492063],
+          [-2.585318, 51.49207],
+          [-2.585251, 51.492092],
+          [-2.585197, 51.492142],
+          [-2.584783, 51.49316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59535, 51.495306],
+          [-2.595192, 51.494993],
+          [-2.595184, 51.494802],
+          [-2.595245, 51.494657],
+          [-2.595486, 51.494308],
+          [-2.595744, 51.493976],
+          [-2.595941, 51.493663],
+          [-2.59641, 51.493014],
+          [-2.597052, 51.491891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594111, 51.489459],
+          [-2.594049, 51.489506],
+          [-2.59397, 51.489511],
+          [-2.592784, 51.489136],
+          [-2.59259, 51.489109],
+          [-2.591847, 51.489137],
+          [-2.591371, 51.489122],
+          [-2.591048, 51.489088],
+          [-2.589586, 51.48888],
+          [-2.58946, 51.488822],
+          [-2.5894, 51.488774],
+          [-2.589373, 51.488736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596675, 51.49177],
+          [-2.596694, 51.491742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590116, 51.491763],
+          [-2.59073, 51.492636],
+          [-2.590919, 51.49275],
+          [-2.591056, 51.492775],
+          [-2.59155, 51.492771],
+          [-2.591925, 51.492791],
+          [-2.59232, 51.492836],
+          [-2.592738, 51.492922],
+          [-2.59326, 51.493092],
+          [-2.593655, 51.493273],
+          [-2.594065, 51.493522],
+          [-2.594638, 51.493983],
+          [-2.59481, 51.494104],
+          [-2.595068, 51.494228],
+          [-2.59535, 51.494316],
+          [-2.595415, 51.494323],
+          [-2.595486, 51.494308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591703, 51.491385],
+          [-2.591779, 51.491566],
+          [-2.591886, 51.491957],
+          [-2.591932, 51.492057],
+          [-2.592055, 51.492157],
+          [-2.592152, 51.492201],
+          [-2.592273, 51.492234],
+          [-2.59237, 51.492243],
+          [-2.592911, 51.492159],
+          [-2.59322, 51.492142],
+          [-2.594066, 51.492164],
+          [-2.594389, 51.492202],
+          [-2.594713, 51.492281],
+          [-2.594921, 51.492356],
+          [-2.59504, 51.492412],
+          [-2.595875, 51.492869],
+          [-2.59641, 51.493014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599827, 51.492299],
+          [-2.599784, 51.492621],
+          [-2.599715, 51.492886],
+          [-2.599529, 51.493172],
+          [-2.599242, 51.493422],
+          [-2.59786, 51.494365],
+          [-2.59779, 51.494363],
+          [-2.595744, 51.493976]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599701, 51.493693],
+          [-2.599242, 51.493422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599748, 51.493722],
+          [-2.601368, 51.494706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586939, 51.492162],
+          [-2.586921, 51.491998],
+          [-2.586953, 51.491758],
+          [-2.586979, 51.491697],
+          [-2.587058, 51.491565],
+          [-2.58738, 51.491143],
+          [-2.587477, 51.491043],
+          [-2.587595, 51.49095],
+          [-2.5877, 51.490876],
+          [-2.587827, 51.490806],
+          [-2.588101, 51.490704],
+          [-2.589378, 51.490324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59326, 51.493092],
+          [-2.593462, 51.492899],
+          [-2.59361, 51.492684],
+          [-2.59369, 51.492521],
+          [-2.593722, 51.492379],
+          [-2.593736, 51.492154]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583144, 51.487929],
+          [-2.584538, 51.488542],
+          [-2.584783, 51.488658]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586167, 51.488672],
+          [-2.585581, 51.488289]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587008, 51.487568],
+          [-2.586995, 51.487746],
+          [-2.58697, 51.487865],
+          [-2.58691, 51.488015],
+          [-2.586811, 51.488163],
+          [-2.586693, 51.488297],
+          [-2.586562, 51.48842],
+          [-2.58638, 51.488546],
+          [-2.585408, 51.489122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590324, 51.490047],
+          [-2.590542, 51.49033],
+          [-2.590604, 51.49049],
+          [-2.590592, 51.490706],
+          [-2.590405, 51.491095],
+          [-2.590399, 51.49117],
+          [-2.5904, 51.491254],
+          [-2.590416, 51.491319],
+          [-2.590592, 51.491644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59833, 51.492182],
+          [-2.598306, 51.492259],
+          [-2.596906, 51.494194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586453, 51.494506],
+          [-2.586311, 51.494395],
+          [-2.586254, 51.494274],
+          [-2.586555, 51.493544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588434, 51.495015],
+          [-2.587902, 51.494989],
+          [-2.587548, 51.494557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586678, 51.492166],
+          [-2.586795, 51.492775],
+          [-2.586827, 51.492818],
+          [-2.586892, 51.492849],
+          [-2.588141, 51.493055],
+          [-2.589844, 51.49335],
+          [-2.589916, 51.493376],
+          [-2.589973, 51.493425],
+          [-2.589986, 51.493467],
+          [-2.589803, 51.493908],
+          [-2.589732, 51.493964],
+          [-2.589332, 51.494092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589078, 51.493219],
+          [-2.589378, 51.492545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58654, 51.490668],
+          [-2.586939, 51.490804],
+          [-2.586569, 51.491321],
+          [-2.586124, 51.491858],
+          [-2.58602, 51.491997],
+          [-2.585947, 51.492133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586063, 51.491161],
+          [-2.586569, 51.491321]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587344, 51.490424],
+          [-2.587601, 51.49024],
+          [-2.587677, 51.490217],
+          [-2.587774, 51.490206],
+          [-2.587892, 51.490215],
+          [-2.58803, 51.49025],
+          [-2.588273, 51.490369],
+          [-2.588381, 51.490473],
+          [-2.588477, 51.490587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588452, 51.489998],
+          [-2.588586, 51.490073],
+          [-2.588867, 51.490473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591143, 51.489823],
+          [-2.591101, 51.489795],
+          [-2.591022, 51.489768],
+          [-2.590502, 51.489712],
+          [-2.590311, 51.489709],
+          [-2.590174, 51.489738],
+          [-2.590043, 51.489785],
+          [-2.589918, 51.489857],
+          [-2.589385, 51.49026],
+          [-2.589372, 51.490288],
+          [-2.589378, 51.490324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592843, 51.49052],
+          [-2.59335, 51.49024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590496, 51.490905],
+          [-2.590356, 51.490901],
+          [-2.588537, 51.491287],
+          [-2.588427, 51.491317],
+          [-2.588405, 51.491341],
+          [-2.588405, 51.491391],
+          [-2.588435, 51.491419],
+          [-2.588481, 51.491434],
+          [-2.588544, 51.491435],
+          [-2.590134, 51.491106],
+          [-2.590203, 51.491097],
+          [-2.590405, 51.491095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592042, 51.490441],
+          [-2.590604, 51.49049]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590974, 51.493238],
+          [-2.590799, 51.493208],
+          [-2.590748, 51.493189],
+          [-2.590535, 51.492996],
+          [-2.590497, 51.492949],
+          [-2.590802, 51.492841],
+          [-2.590848, 51.492816],
+          [-2.590919, 51.49275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588141, 51.493055],
+          [-2.588319, 51.492643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600743, 51.493551],
+          [-2.600124, 51.493946],
+          [-2.597941, 51.495294]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595858, 51.494782],
+          [-2.596624, 51.494989],
+          [-2.597941, 51.495294],
+          [-2.598401, 51.495385],
+          [-2.599814, 51.495701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596077, 51.495174],
+          [-2.596329, 51.495266],
+          [-2.596479, 51.495154],
+          [-2.596624, 51.494989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598027, 51.495614],
+          [-2.598401, 51.495385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600204, 51.494823],
+          [-2.600731, 51.495139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601526, 51.493979],
+          [-2.602035, 51.49429]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601431, 51.493057],
+          [-2.601805, 51.492694],
+          [-2.601825, 51.492654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592158, 51.499794],
+          [-2.593246, 51.500377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592314, 51.498824],
+          [-2.594079, 51.499769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586615, 51.487116],
+          [-2.586382, 51.487403],
+          [-2.586254, 51.487529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585397, 51.4916],
+          [-2.585536, 51.491667],
+          [-2.586124, 51.491858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57875, 51.490848],
+          [-2.578195, 51.491295]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584069, 51.491893],
+          [-2.582611, 51.491571],
+          [-2.582528, 51.491538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595651, 51.496897],
+          [-2.59586, 51.496738],
+          [-2.596379, 51.496568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591022, 51.49221],
+          [-2.591886, 51.491957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601316, 51.493014],
+          [-2.601534, 51.4931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594772, 51.496469],
+          [-2.595151, 51.496216],
+          [-2.59582, 51.496025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573086, 51.499681],
+          [-2.57316, 51.499594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575628, 51.499788],
+          [-2.576203, 51.499783],
+          [-2.576623, 51.499914],
+          [-2.576984, 51.500005],
+          [-2.577025, 51.500001],
+          [-2.577277, 51.49993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591179, 51.490471],
+          [-2.591204, 51.490812],
+          [-2.591246, 51.490991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581473, 51.493288],
+          [-2.581232, 51.493621],
+          [-2.580797, 51.493514],
+          [-2.580884, 51.493381],
+          [-2.58078, 51.493358],
+          [-2.580955, 51.493115],
+          [-2.581133, 51.493077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581497, 51.492464],
+          [-2.581376, 51.492641],
+          [-2.581356, 51.492736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583236, 51.492813],
+          [-2.58369, 51.492941],
+          [-2.583937, 51.493],
+          [-2.584858, 51.493174],
+          [-2.586555, 51.493544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585767, 51.495517],
+          [-2.586148, 51.494612],
+          [-2.586295, 51.494554],
+          [-2.586453, 51.494506],
+          [-2.587157, 51.494599],
+          [-2.587548, 51.494557],
+          [-2.587913, 51.494418],
+          [-2.588528, 51.494211],
+          [-2.588591, 51.494145],
+          [-2.588686, 51.493904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586758, 51.490648],
+          [-2.586697, 51.490716]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578666, 51.491281],
+          [-2.578351, 51.49117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586121, 51.494656],
+          [-2.585177, 51.494496],
+          [-2.585311, 51.494217],
+          [-2.585661, 51.49335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587464, 51.493718],
+          [-2.587439, 51.493789],
+          [-2.587373, 51.493883],
+          [-2.587205, 51.494278],
+          [-2.587269, 51.494355],
+          [-2.587157, 51.494599]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586254, 51.494274],
+          [-2.585347, 51.494127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585013, 51.495448],
+          [-2.585767, 51.495517],
+          [-2.586509, 51.495645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588285, 51.494799],
+          [-2.587913, 51.494418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599988, 51.495189],
+          [-2.600098, 51.49511]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599196, 51.49495],
+          [-2.599623, 51.495188],
+          [-2.599791, 51.495086],
+          [-2.600357, 51.495383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575984, 51.498209],
+          [-2.576028, 51.498159],
+          [-2.576149, 51.498071],
+          [-2.576184, 51.498023],
+          [-2.576227, 51.49792],
+          [-2.57622, 51.497861],
+          [-2.576385, 51.497599],
+          [-2.57687, 51.496724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584656, 51.487721],
+          [-2.584624, 51.487822],
+          [-2.584719, 51.487878],
+          [-2.585081, 51.487802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575465, 51.498005],
+          [-2.575384, 51.49799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596144, 51.492188],
+          [-2.595669, 51.492019],
+          [-2.59547, 51.491938],
+          [-2.595412, 51.491899],
+          [-2.595356, 51.491833],
+          [-2.595351, 51.491755],
+          [-2.595413, 51.491651],
+          [-2.595496, 51.49158],
+          [-2.595843, 51.491393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585508, 51.491584],
+          [-2.585474, 51.491634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587528, 51.490402],
+          [-2.587438, 51.490355]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586022, 51.491205],
+          [-2.5861, 51.491117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58524, 51.495003],
+          [-2.585932, 51.495115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585489, 51.494854],
+          [-2.585409, 51.49503]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578725, 51.499747],
+          [-2.578629, 51.49981],
+          [-2.578419, 51.499911]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585381, 51.496117],
+          [-2.585888, 51.496145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582028, 51.497188],
+          [-2.582753, 51.495939],
+          [-2.585381, 51.496117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588733, 51.490027],
+          [-2.58862, 51.490112]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589378, 51.490324],
+          [-2.590933, 51.489869],
+          [-2.591143, 51.489823]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591143, 51.489823],
+          [-2.591409, 51.489782],
+          [-2.591562, 51.489772],
+          [-2.591692, 51.489771],
+          [-2.592017, 51.489795],
+          [-2.592283, 51.489842],
+          [-2.592726, 51.489956],
+          [-2.593028, 51.49008],
+          [-2.59335, 51.49024],
+          [-2.593698, 51.490459],
+          [-2.593951, 51.490662],
+          [-2.594171, 51.490932],
+          [-2.594268, 51.491125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592258, 51.499849],
+          [-2.59214, 51.499939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59238, 51.498776],
+          [-2.592262, 51.498861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583665, 51.492276],
+          [-2.583421, 51.492197],
+          [-2.583322, 51.49219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592037, 51.490381],
+          [-2.592048, 51.490509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59604, 51.492212],
+          [-2.59608, 51.492165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589307, 51.492533],
+          [-2.589447, 51.492557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574006, 51.496543],
+          [-2.574122, 51.496471],
+          [-2.574236, 51.496293],
+          [-2.574273, 51.49627],
+          [-2.574351, 51.496266],
+          [-2.574614, 51.496335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585363, 51.492364],
+          [-2.585477, 51.492072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595566, 51.491141],
+          [-2.595443, 51.491207],
+          [-2.595227, 51.491225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595227, 51.491225],
+          [-2.595467, 51.49127],
+          [-2.595681, 51.491267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58345, 51.501198],
+          [-2.583455, 51.501361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588273, 51.499998],
+          [-2.588286, 51.499961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585761, 51.499572],
+          [-2.585729, 51.499674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586324, 51.499782],
+          [-2.586329, 51.499728]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587885, 51.489718],
+          [-2.588265, 51.489435],
+          [-2.588467, 51.489207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588242, 51.492629],
+          [-2.588401, 51.492657]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598692, 51.495762],
+          [-2.598813, 51.495688],
+          [-2.598863, 51.49572],
+          [-2.599156, 51.495554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580837, 51.496916],
+          [-2.580713, 51.496901],
+          [-2.580657, 51.496908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580657, 51.496908],
+          [-2.580703, 51.496939],
+          [-2.580807, 51.496967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592582, 51.491196],
+          [-2.592641, 51.491492],
+          [-2.592621, 51.491556],
+          [-2.592541, 51.4916],
+          [-2.591811, 51.491682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583322, 51.49219],
+          [-2.583377, 51.492243],
+          [-2.583618, 51.492335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58489, 51.488813],
+          [-2.584984, 51.488877],
+          [-2.585408, 51.489122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584977, 51.48941],
+          [-2.584447, 51.489439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580796, 51.487699],
+          [-2.581187, 51.487962],
+          [-2.581504, 51.488126],
+          [-2.58313, 51.488871],
+          [-2.583926, 51.489284],
+          [-2.584447, 51.489439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585373, 51.490819],
+          [-2.589373, 51.488736],
+          [-2.590585, 51.487962],
+          [-2.591487, 51.487322]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593126, 51.500467],
+          [-2.593246, 51.500377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5919, 51.501244],
+          [-2.592074, 51.501181]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584447, 51.489439],
+          [-2.584658, 51.489508],
+          [-2.585001, 51.48948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58495, 51.490926],
+          [-2.585046, 51.490936],
+          [-2.585176, 51.490912],
+          [-2.585271, 51.49088],
+          [-2.585373, 51.490819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585373, 51.490819],
+          [-2.585163, 51.490851],
+          [-2.585001, 51.490835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600605, 51.495184],
+          [-2.600515, 51.495246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597952, 51.496877],
+          [-2.599312, 51.496017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593982, 51.499837],
+          [-2.593928, 51.499845],
+          [-2.593857, 51.499898],
+          [-2.593851, 51.499931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594079, 51.499769],
+          [-2.594862, 51.499154]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595261, 51.498784],
+          [-2.595304, 51.498744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59169, 51.501412],
+          [-2.59165, 51.501403],
+          [-2.591555, 51.501448],
+          [-2.591555, 51.501476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589149, 51.498484],
+          [-2.589245, 51.498282],
+          [-2.589915, 51.497591],
+          [-2.590248, 51.497297],
+          [-2.590497, 51.497101],
+          [-2.590864, 51.496842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59137, 51.497223],
+          [-2.591041, 51.497459],
+          [-2.591003, 51.497524],
+          [-2.590998, 51.497598],
+          [-2.591082, 51.497854],
+          [-2.591116, 51.49791],
+          [-2.591161, 51.497956],
+          [-2.591932, 51.498352],
+          [-2.592024, 51.498365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581341, 51.494316],
+          [-2.581474, 51.494316],
+          [-2.581912, 51.494083],
+          [-2.582165, 51.494147],
+          [-2.582356, 51.49418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582121, 51.493375],
+          [-2.582238, 51.493229]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595218, 51.491646],
+          [-2.594327, 51.491512],
+          [-2.594314, 51.491493],
+          [-2.594378, 51.491132]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588897, 51.493645],
+          [-2.588684, 51.493611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589788, 51.492269],
+          [-2.590244, 51.492981],
+          [-2.590302, 51.493005],
+          [-2.590497, 51.492949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594643, 51.498766],
+          [-2.59468, 51.498849],
+          [-2.595021, 51.499023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59387, 51.494586],
+          [-2.593809, 51.494624],
+          [-2.593646, 51.494685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588148, 51.49641],
+          [-2.588455, 51.496182],
+          [-2.588507, 51.496159],
+          [-2.589258, 51.496124],
+          [-2.589627, 51.496129],
+          [-2.590453, 51.496101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588507, 51.496159],
+          [-2.588442, 51.495998],
+          [-2.588352, 51.495918],
+          [-2.588242, 51.49588],
+          [-2.587915, 51.495843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591866, 51.499394],
+          [-2.592095, 51.499127],
+          [-2.592113, 51.498989],
+          [-2.592079, 51.498908],
+          [-2.591982, 51.498828],
+          [-2.591842, 51.498743],
+          [-2.591728, 51.498685],
+          [-2.591962, 51.49854],
+          [-2.592002, 51.498499],
+          [-2.592029, 51.498435],
+          [-2.592024, 51.498365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59234, 51.500526],
+          [-2.592481, 51.500546],
+          [-2.592562, 51.5006],
+          [-2.592584, 51.500636],
+          [-2.592579, 51.500675],
+          [-2.592755, 51.500746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588821, 51.487492],
+          [-2.588912, 51.488115],
+          [-2.588965, 51.488223],
+          [-2.589048, 51.488344],
+          [-2.589373, 51.488736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57875, 51.490848],
+          [-2.579248, 51.490464],
+          [-2.579739, 51.49025],
+          [-2.579991, 51.490165],
+          [-2.580524, 51.489953],
+          [-2.580833, 51.489817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582817, 51.490335],
+          [-2.58354, 51.489078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581927, 51.490122],
+          [-2.581984, 51.489999],
+          [-2.582726, 51.48868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580728, 51.48917],
+          [-2.580886, 51.489273],
+          [-2.58122, 51.489355],
+          [-2.581324, 51.489244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574148, 51.494929],
+          [-2.574455, 51.495014],
+          [-2.574749, 51.495067],
+          [-2.57661, 51.495448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579697, 51.499764],
+          [-2.579465, 51.499859],
+          [-2.579328, 51.49975],
+          [-2.579215, 51.499636],
+          [-2.579141, 51.499542],
+          [-2.57911, 51.49944],
+          [-2.579181, 51.499345],
+          [-2.579271, 51.499273],
+          [-2.579744, 51.498957],
+          [-2.579384, 51.498808]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580246, 51.498749],
+          [-2.579927, 51.498891],
+          [-2.579744, 51.498957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594942, 51.491178],
+          [-2.594676, 51.490662],
+          [-2.594459, 51.490398],
+          [-2.594111, 51.490052],
+          [-2.59415, 51.490001],
+          [-2.594623, 51.489758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592545, 51.491199],
+          [-2.592514, 51.490937],
+          [-2.592569, 51.490896],
+          [-2.593189, 51.490841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581504, 51.488126],
+          [-2.581106, 51.488448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582149, 51.491811],
+          [-2.581907, 51.492148]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579354, 51.49142],
+          [-2.580485, 51.491761],
+          [-2.580779, 51.491839]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581447, 51.491622],
+          [-2.58123, 51.491958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579922, 51.491588],
+          [-2.579722, 51.491822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578169, 51.49322],
+          [-2.578643, 51.493339],
+          [-2.579635, 51.491898],
+          [-2.579107, 51.491769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578643, 51.493339],
+          [-2.578631, 51.493399],
+          [-2.578364, 51.493784],
+          [-2.578098, 51.494143],
+          [-2.577762, 51.494699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577623, 51.494009],
+          [-2.578098, 51.494143],
+          [-2.579313, 51.49438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578027, 51.492599],
+          [-2.577522, 51.493218],
+          [-2.577498, 51.493269],
+          [-2.577351, 51.493478],
+          [-2.577229, 51.493608],
+          [-2.576789, 51.494164],
+          [-2.576592, 51.494457],
+          [-2.576544, 51.494508],
+          [-2.57648, 51.494602],
+          [-2.576274, 51.494962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576513, 51.493674],
+          [-2.576982, 51.493803],
+          [-2.577128, 51.49382],
+          [-2.577653, 51.493962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577048, 51.493028],
+          [-2.577557, 51.493176],
+          [-2.578111, 51.49331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575391, 51.493298],
+          [-2.575919, 51.49344],
+          [-2.575983, 51.493474],
+          [-2.576084, 51.493464],
+          [-2.57626, 51.493504],
+          [-2.576573, 51.493591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575983, 51.493474],
+          [-2.575665, 51.493878],
+          [-2.575223, 51.494409],
+          [-2.575119, 51.494609],
+          [-2.575058, 51.494701],
+          [-2.575014, 51.494737],
+          [-2.574808, 51.495079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576461, 51.492926],
+          [-2.576313, 51.4931],
+          [-2.576276, 51.493107],
+          [-2.576271, 51.493149],
+          [-2.576147, 51.493298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575767, 51.492892],
+          [-2.57594, 51.492986],
+          [-2.576276, 51.493107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577645, 51.492328],
+          [-2.577256, 51.492212],
+          [-2.577177, 51.492212],
+          [-2.576892, 51.492458],
+          [-2.576752, 51.4926]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576403, 51.492252],
+          [-2.576571, 51.492312],
+          [-2.576892, 51.492458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59125, 51.492408],
+          [-2.591086, 51.492191]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595091, 51.498962],
+          [-2.594754, 51.49879],
+          [-2.594643, 51.498766]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593128, 51.497664],
+          [-2.59327, 51.497563],
+          [-2.593529, 51.497353],
+          [-2.593627, 51.497286],
+          [-2.59365, 51.49726],
+          [-2.593649, 51.497177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593092, 51.494459],
+          [-2.593641, 51.494521],
+          [-2.593767, 51.494547],
+          [-2.593972, 51.49463],
+          [-2.594047, 51.494684],
+          [-2.594136, 51.494767],
+          [-2.594172, 51.49482],
+          [-2.594198, 51.494875],
+          [-2.594238, 51.495029],
+          [-2.594299, 51.495138],
+          [-2.594438, 51.49526],
+          [-2.594633, 51.495396],
+          [-2.594771, 51.495516],
+          [-2.594826, 51.495593],
+          [-2.594841, 51.495642],
+          [-2.594833, 51.495716],
+          [-2.594777, 51.49578],
+          [-2.593318, 51.496843],
+          [-2.593323, 51.496947],
+          [-2.593386, 51.496998],
+          [-2.593506, 51.497061],
+          [-2.593617, 51.497132],
+          [-2.593649, 51.497177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590253, 51.497819],
+          [-2.590078, 51.497734],
+          [-2.589915, 51.497591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589305, 51.498212],
+          [-2.589488, 51.498261],
+          [-2.589756, 51.498354]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578666, 51.491281],
+          [-2.578704, 51.491312],
+          [-2.578711, 51.491348],
+          [-2.578627, 51.491499],
+          [-2.578585, 51.491547],
+          [-2.578577, 51.491584],
+          [-2.578622, 51.491609],
+          [-2.579126, 51.491739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583427, 51.492577],
+          [-2.583327, 51.492552],
+          [-2.583234, 51.49254],
+          [-2.583186, 51.492547],
+          [-2.583113, 51.492591],
+          [-2.583047, 51.492663],
+          [-2.583002, 51.492694],
+          [-2.582959, 51.492709],
+          [-2.582893, 51.492716],
+          [-2.582346, 51.49263],
+          [-2.58205, 51.49256],
+          [-2.581817, 51.492477]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581266, 51.492874],
+          [-2.580885, 51.492772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581912, 51.494083],
+          [-2.579425, 51.493496],
+          [-2.579366, 51.493428],
+          [-2.57937, 51.493368],
+          [-2.579382, 51.493346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591728, 51.498685],
+          [-2.590968, 51.499235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590745, 51.496603],
+          [-2.59076, 51.496655],
+          [-2.590841, 51.496749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579252, 51.500655],
+          [-2.579015, 51.500671]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585533, 51.488756],
+          [-2.585393, 51.488658],
+          [-2.585297, 51.488623],
+          [-2.585205, 51.488576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582116, 51.494243],
+          [-2.582165, 51.494147]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582675, 51.492329],
+          [-2.582924, 51.49204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588072, 51.501652],
+          [-2.588245, 51.501281],
+          [-2.588576, 51.501235],
+          [-2.588878, 51.501149],
+          [-2.589574, 51.500931],
+          [-2.589919, 51.501243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587544, 51.487224],
+          [-2.588448, 51.487486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598535, 51.496515],
+          [-2.59812, 51.496256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595503, 51.491641],
+          [-2.595452, 51.491617]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581094, 51.488535],
+          [-2.581429, 51.488769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580377, 51.496845],
+          [-2.580215, 51.497129],
+          [-2.580157, 51.49716],
+          [-2.580005, 51.497429],
+          [-2.57983, 51.49771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580496, 51.496629],
+          [-2.580577, 51.496446],
+          [-2.580558, 51.496415],
+          [-2.58062, 51.496303],
+          [-2.580673, 51.496249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579389, 51.497964],
+          [-2.580096, 51.498117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581291, 51.497035],
+          [-2.581159, 51.497246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581203, 51.496325],
+          [-2.581769, 51.49645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581637, 51.496691],
+          [-2.582211, 51.495648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581053, 51.497222],
+          [-2.581288, 51.497274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586021, 51.489412],
+          [-2.586146, 51.489314],
+          [-2.586384, 51.489162],
+          [-2.587091, 51.488753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586, 51.489403],
+          [-2.58626, 51.489147],
+          [-2.586276, 51.489108],
+          [-2.586309, 51.489071],
+          [-2.587032, 51.48864]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577223, 51.49986],
+          [-2.578165, 51.499567],
+          [-2.578213, 51.49946],
+          [-2.578048, 51.499241],
+          [-2.578273, 51.499171],
+          [-2.578466, 51.498873],
+          [-2.577291, 51.498613],
+          [-2.576642, 51.498822],
+          [-2.576487, 51.498883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592309, 51.496968],
+          [-2.59169, 51.496635],
+          [-2.591592, 51.496599],
+          [-2.591536, 51.496588],
+          [-2.591475, 51.496586],
+          [-2.591277, 51.496605],
+          [-2.591172, 51.496632],
+          [-2.591021, 51.496717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592188, 51.49747],
+          [-2.592138, 51.497391],
+          [-2.592109, 51.497365],
+          [-2.591989, 51.49732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594643, 51.498766],
+          [-2.593291, 51.498046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590864, 51.496842],
+          [-2.590913, 51.496861],
+          [-2.590956, 51.496865],
+          [-2.590998, 51.496861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595639, 51.497983],
+          [-2.596, 51.498181]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592024, 51.498365],
+          [-2.592085, 51.498352],
+          [-2.592601, 51.497998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591265, 51.496976],
+          [-2.591599, 51.497142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590453, 51.496101],
+          [-2.590622, 51.49643],
+          [-2.590745, 51.496603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590925, 51.496708],
+          [-2.590829, 51.496633],
+          [-2.590745, 51.496603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591265, 51.496976],
+          [-2.591235, 51.496926],
+          [-2.591074, 51.496814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590998, 51.496861],
+          [-2.591175, 51.496955],
+          [-2.591265, 51.496976]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59616, 51.498061],
+          [-2.595743, 51.497834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59316, 51.497411],
+          [-2.593342, 51.497499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592541, 51.498036],
+          [-2.592415, 51.497951],
+          [-2.592421, 51.497923],
+          [-2.592489, 51.497862],
+          [-2.592298, 51.497758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591555, 51.498158],
+          [-2.591225, 51.498431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592865, 51.497452],
+          [-2.593185, 51.497621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592207, 51.498268],
+          [-2.591911, 51.498115],
+          [-2.591807, 51.498027],
+          [-2.591715, 51.497965],
+          [-2.591367, 51.497787]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594356, 51.497973],
+          [-2.594753, 51.498191],
+          [-2.594799, 51.498228],
+          [-2.594767, 51.498258],
+          [-2.594729, 51.49832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595932, 51.497679],
+          [-2.59578, 51.497794],
+          [-2.596214, 51.498019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592557, 51.49767],
+          [-2.592637, 51.497736],
+          [-2.592753, 51.497793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592817, 51.497754],
+          [-2.592686, 51.4977],
+          [-2.592557, 51.49767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594356, 51.497973],
+          [-2.594974, 51.497506],
+          [-2.59399, 51.497013],
+          [-2.593916, 51.497068],
+          [-2.593758, 51.497157],
+          [-2.593649, 51.497177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57969, 51.500729],
+          [-2.579085, 51.500845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57936, 51.500633],
+          [-2.579252, 51.500655]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579042, 51.500728],
+          [-2.579252, 51.500655]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577356, 51.500305],
+          [-2.577326, 51.500267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602231, 51.493402],
+          [-2.602537, 51.493568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597952, 51.496877],
+          [-2.59754, 51.49662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59764, 51.496509],
+          [-2.598097, 51.496787]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598486, 51.496076],
+          [-2.598551, 51.496117],
+          [-2.59833, 51.496251],
+          [-2.598638, 51.496451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598919, 51.496057],
+          [-2.599122, 51.495929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598641, 51.495887],
+          [-2.59909, 51.496162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598918, 51.495764],
+          [-2.599312, 51.496017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595092, 51.496989],
+          [-2.596595, 51.497736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58867, 51.498897],
+          [-2.589079, 51.498989],
+          [-2.589336, 51.499071],
+          [-2.589598, 51.499185],
+          [-2.589759, 51.499271],
+          [-2.590025, 51.499464],
+          [-2.590157, 51.499577],
+          [-2.590307, 51.499724],
+          [-2.590425, 51.499913],
+          [-2.5905, 51.499982],
+          [-2.590569, 51.500103],
+          [-2.59097, 51.500626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584323, 51.498543],
+          [-2.583925, 51.498554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59177, 51.497271],
+          [-2.591763, 51.497299],
+          [-2.591773, 51.497328],
+          [-2.591801, 51.497351],
+          [-2.591841, 51.497366],
+          [-2.591887, 51.497369],
+          [-2.591932, 51.497361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591837, 51.494213],
+          [-2.591916, 51.494266],
+          [-2.591996, 51.494305],
+          [-2.592092, 51.494322],
+          [-2.592187, 51.494322],
+          [-2.592317, 51.494284],
+          [-2.592386, 51.494243],
+          [-2.59248, 51.494162],
+          [-2.59259, 51.494012],
+          [-2.592633, 51.49391],
+          [-2.592655, 51.493787]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589571, 51.494479],
+          [-2.589596, 51.494539],
+          [-2.590023, 51.495277],
+          [-2.590453, 51.496101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590581, 51.493886],
+          [-2.589829, 51.494308],
+          [-2.589642, 51.494376],
+          [-2.58961, 51.494395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58961, 51.494395],
+          [-2.58946, 51.49431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594356, 51.495539],
+          [-2.594371, 51.495469],
+          [-2.594465, 51.495437],
+          [-2.594633, 51.495396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589258, 51.496124],
+          [-2.589262, 51.496078],
+          [-2.589243, 51.496061],
+          [-2.588788, 51.495991],
+          [-2.588757, 51.496015],
+          [-2.588701, 51.496148]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598856, 51.492677],
+          [-2.598634, 51.492661],
+          [-2.598125, 51.492508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599121, 51.4927],
+          [-2.599749, 51.492755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600339, 51.492736],
+          [-2.600609, 51.492771],
+          [-2.600638, 51.492786],
+          [-2.600672, 51.492827]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600282, 51.492924],
+          [-2.600332, 51.492768],
+          [-2.600414, 51.492352]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595012, 51.495865],
+          [-2.595135, 51.496011],
+          [-2.595252, 51.496187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595848, 51.496746],
+          [-2.595483, 51.496517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596227, 51.497079],
+          [-2.596427, 51.49691],
+          [-2.596669, 51.496761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574063, 51.500039],
+          [-2.574176, 51.499842],
+          [-2.574174, 51.499765]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575738, 51.496215],
+          [-2.575546, 51.496168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575656, 51.496195],
+          [-2.57569, 51.496499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576049, 51.496343],
+          [-2.576297, 51.496396],
+          [-2.576189, 51.496592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576001, 51.496788],
+          [-2.575892, 51.496765],
+          [-2.575875, 51.496716],
+          [-2.575965, 51.496549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.576172, 51.49683],
+          [-2.576242, 51.496845],
+          [-2.576367, 51.496626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575826, 51.497025],
+          [-2.575769, 51.496947],
+          [-2.575954, 51.496895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577897, 51.498094],
+          [-2.577718, 51.49805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577825, 51.498076],
+          [-2.577913, 51.497937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580166, 51.490909],
+          [-2.582052, 51.491415],
+          [-2.582069, 51.491436],
+          [-2.582064, 51.49146],
+          [-2.581882, 51.491739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579342, 51.49692],
+          [-2.580087, 51.497087],
+          [-2.580215, 51.497129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578166, 51.494952],
+          [-2.577136, 51.494734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578352, 51.496098],
+          [-2.576449, 51.495685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578624, 51.495612],
+          [-2.576786, 51.495215]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573805, 51.496138],
+          [-2.573754, 51.496228],
+          [-2.573775, 51.496256],
+          [-2.573656, 51.496466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58946, 51.49431],
+          [-2.589463, 51.494349],
+          [-2.589482, 51.494386],
+          [-2.589571, 51.494479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589454, 51.494298],
+          [-2.58946, 51.49431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592562, 51.496783],
+          [-2.592309, 51.496968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58701, 51.493283],
+          [-2.58688, 51.493616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587464, 51.493348],
+          [-2.587439, 51.493412],
+          [-2.587451, 51.493444],
+          [-2.587349, 51.493701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587719, 51.493392],
+          [-2.587585, 51.493736]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588116, 51.493438],
+          [-2.588077, 51.493531],
+          [-2.588194, 51.49355],
+          [-2.588091, 51.493815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588686, 51.493904],
+          [-2.588794, 51.493628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585433, 51.492185],
+          [-2.585553, 51.492203],
+          [-2.585491, 51.492363],
+          [-2.58537, 51.492345]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583846, 51.493129],
+          [-2.583937, 51.493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58623, 51.493222],
+          [-2.585762, 51.493126],
+          [-2.585768, 51.49304],
+          [-2.585979, 51.492532],
+          [-2.585333, 51.492429],
+          [-2.585052, 51.493132]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586179, 51.493312],
+          [-2.586347, 51.493025],
+          [-2.586161, 51.492979]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585762, 51.493126],
+          [-2.585789, 51.493189],
+          [-2.585817, 51.493218],
+          [-2.585867, 51.493242],
+          [-2.586484, 51.493378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586649, 51.493073],
+          [-2.586451, 51.493441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58539, 51.493421],
+          [-2.58546, 51.493306],
+          [-2.585709, 51.493223],
+          [-2.585789, 51.493189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59, 51.496897],
+          [-2.590545, 51.496929],
+          [-2.590659, 51.49698]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588861, 51.496845],
+          [-2.588992, 51.496916],
+          [-2.589012, 51.497066],
+          [-2.589525, 51.497044],
+          [-2.589612, 51.49699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592747, 51.495706],
+          [-2.592186, 51.494664],
+          [-2.592188, 51.494622],
+          [-2.592216, 51.494575],
+          [-2.592268, 51.494532],
+          [-2.592332, 51.494495],
+          [-2.592473, 51.494464],
+          [-2.592561, 51.494632]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594771, 51.498483],
+          [-2.594794, 51.49853],
+          [-2.594784, 51.498599],
+          [-2.59473, 51.498673],
+          [-2.594643, 51.498766]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597431, 51.496551],
+          [-2.596864, 51.496891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584233, 51.487404],
+          [-2.584494, 51.487588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594799, 51.498228],
+          [-2.594898, 51.498162],
+          [-2.595411, 51.497741],
+          [-2.594974, 51.497506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574698, 51.497154],
+          [-2.574587, 51.497006],
+          [-2.574781, 51.496958],
+          [-2.574875, 51.496958],
+          [-2.575063, 51.496903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590792, 51.500762],
+          [-2.590948, 51.500863],
+          [-2.590996, 51.500908],
+          [-2.591081, 51.501082],
+          [-2.591079, 51.501123],
+          [-2.591057, 51.501159],
+          [-2.590709, 51.501381],
+          [-2.590044, 51.501731],
+          [-2.589589, 51.501928],
+          [-2.589438, 51.502006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590709, 51.501381],
+          [-2.591127, 51.501698]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592977, 51.497924],
+          [-2.593078, 51.497978],
+          [-2.593162, 51.498012],
+          [-2.593291, 51.498046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593291, 51.498046],
+          [-2.593247, 51.498002],
+          [-2.59304, 51.497884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592801, 51.497913],
+          [-2.592654, 51.498001],
+          [-2.592601, 51.497998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59303, 51.49778],
+          [-2.593137, 51.497689],
+          [-2.593128, 51.497664]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593128, 51.497664],
+          [-2.593085, 51.497659],
+          [-2.592963, 51.497747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592601, 51.497998],
+          [-2.592588, 51.497974],
+          [-2.592746, 51.497855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59303, 51.49778],
+          [-2.592963, 51.497747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591932, 51.497361],
+          [-2.592031, 51.497419],
+          [-2.592188, 51.49747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592557, 51.49767],
+          [-2.592188, 51.49747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59199, 51.497277],
+          [-2.592121, 51.497159],
+          [-2.592124, 51.497117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591828, 51.497232],
+          [-2.59168, 51.497152],
+          [-2.591599, 51.497142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591599, 51.497142],
+          [-2.591622, 51.497184],
+          [-2.59177, 51.497271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592124, 51.497117],
+          [-2.592074, 51.49713],
+          [-2.592008, 51.497161],
+          [-2.591944, 51.497237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59509, 51.498249],
+          [-2.595268, 51.498124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595228, 51.498152],
+          [-2.595709, 51.498417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592309, 51.496968],
+          [-2.592124, 51.497117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587935, 51.502051],
+          [-2.588029, 51.501656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590225, 51.500614],
+          [-2.589434, 51.500809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582782, 51.501144],
+          [-2.582633, 51.501109],
+          [-2.582527, 51.501103],
+          [-2.582254, 51.501109],
+          [-2.582094, 51.501123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587098, 51.499839],
+          [-2.587051, 51.499802],
+          [-2.587027, 51.49977],
+          [-2.587023, 51.499745],
+          [-2.587079, 51.499604]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581666, 51.498535],
+          [-2.581721, 51.498583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583035, 51.497757],
+          [-2.583149, 51.49778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583453, 51.497014],
+          [-2.583414, 51.496972],
+          [-2.583387, 51.496912],
+          [-2.583388, 51.496882],
+          [-2.583442, 51.496799],
+          [-2.583449, 51.49676],
+          [-2.583419, 51.496611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584938, 51.497267],
+          [-2.585364, 51.497368],
+          [-2.585463, 51.497409],
+          [-2.585608, 51.497449],
+          [-2.585871, 51.497566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587249, 51.49781],
+          [-2.586694, 51.497728],
+          [-2.586517, 51.497691],
+          [-2.58646, 51.497665],
+          [-2.586181, 51.497615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58889, 51.49456],
+          [-2.58878, 51.494479],
+          [-2.588528, 51.494211]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585877, 51.49525],
+          [-2.586659, 51.495369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574285, 51.495905],
+          [-2.57415, 51.496126],
+          [-2.573456, 51.495968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597402, 51.495453],
+          [-2.597568, 51.495208]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59383, 51.49712],
+          [-2.593943, 51.49718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593984, 51.49715],
+          [-2.593875, 51.497092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594507, 51.497859],
+          [-2.594337, 51.497771],
+          [-2.594293, 51.497737],
+          [-2.594255, 51.497679],
+          [-2.594221, 51.497648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594168, 51.497686],
+          [-2.594195, 51.497703],
+          [-2.594234, 51.497759],
+          [-2.594217, 51.497792],
+          [-2.594154, 51.49785],
+          [-2.594168, 51.497868],
+          [-2.594356, 51.497973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587153, 51.496057],
+          [-2.587181, 51.496177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586878, 51.496292],
+          [-2.587042, 51.496195],
+          [-2.587354, 51.496161]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591669, 51.493706],
+          [-2.591948, 51.494209],
+          [-2.591999, 51.494245],
+          [-2.592038, 51.494256],
+          [-2.592089, 51.494259],
+          [-2.592141, 51.494251],
+          [-2.592167, 51.494226],
+          [-2.592182, 51.494188],
+          [-2.592179, 51.494156],
+          [-2.592157, 51.494123],
+          [-2.591952, 51.493991],
+          [-2.59181, 51.493744],
+          [-2.591787, 51.493657]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592141, 51.494251],
+          [-2.592224, 51.494385],
+          [-2.592269, 51.494442],
+          [-2.592332, 51.494495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581897, 51.493397],
+          [-2.581796, 51.493544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581796, 51.493544],
+          [-2.581691, 51.493744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581874, 51.493563],
+          [-2.581796, 51.493544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58772, 51.494176],
+          [-2.587953, 51.494096],
+          [-2.58807, 51.493811]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588872, 51.495303],
+          [-2.589049, 51.495176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585795, 51.493708],
+          [-2.586015, 51.493741],
+          [-2.586131, 51.493451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585761, 51.493796],
+          [-2.585812, 51.493663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593336, 51.4967],
+          [-2.593439, 51.496754]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594771, 51.498483],
+          [-2.594778, 51.498426],
+          [-2.594756, 51.498361],
+          [-2.594729, 51.49832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594729, 51.49832],
+          [-2.594697, 51.498372],
+          [-2.594728, 51.498445],
+          [-2.594771, 51.498483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587142, 51.488563],
+          [-2.587353, 51.48838],
+          [-2.58733, 51.488343],
+          [-2.586821, 51.488149]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585878, 51.499459],
+          [-2.585808, 51.499557],
+          [-2.585761, 51.499572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575349, 51.494762],
+          [-2.575174, 51.495058],
+          [-2.574964, 51.495018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582581, 51.490628],
+          [-2.582852, 51.490693],
+          [-2.582909, 51.490743],
+          [-2.583086, 51.490784]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578905, 51.495109],
+          [-2.578431, 51.495009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581034, 51.491903],
+          [-2.581536, 51.49204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58961, 51.494395],
+          [-2.589576, 51.494438],
+          [-2.589571, 51.494479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592532, 51.49288],
+          [-2.592714, 51.492587],
+          [-2.593098, 51.492548]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590841, 51.496749],
+          [-2.590828, 51.496799],
+          [-2.590864, 51.496842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590925, 51.496708],
+          [-2.590862, 51.49673],
+          [-2.590841, 51.496749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591021, 51.496717],
+          [-2.590958, 51.496706],
+          [-2.590925, 51.496708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591074, 51.496814],
+          [-2.591082, 51.496792],
+          [-2.591069, 51.49675],
+          [-2.591021, 51.496717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590998, 51.496861],
+          [-2.59104, 51.496845],
+          [-2.591074, 51.496814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591989, 51.49732],
+          [-2.59199, 51.497277]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591932, 51.497361],
+          [-2.591967, 51.497344],
+          [-2.591989, 51.49732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591828, 51.497232],
+          [-2.591793, 51.497248],
+          [-2.59177, 51.497271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591944, 51.497237],
+          [-2.591907, 51.497227],
+          [-2.591828, 51.497232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59199, 51.497277],
+          [-2.591944, 51.497237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592801, 51.497913],
+          [-2.592856, 51.497931],
+          [-2.592918, 51.497935],
+          [-2.592977, 51.497924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592746, 51.497855],
+          [-2.592765, 51.497887],
+          [-2.592801, 51.497913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592753, 51.497793],
+          [-2.592746, 51.497855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59304, 51.497884],
+          [-2.593058, 51.497849],
+          [-2.593055, 51.497813],
+          [-2.59303, 51.49778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592977, 51.497924],
+          [-2.59304, 51.497884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592817, 51.497754],
+          [-2.592753, 51.497793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592963, 51.497747],
+          [-2.592914, 51.497739],
+          [-2.592863, 51.497742],
+          [-2.592817, 51.497754]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "horfield" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582356, 51.49333],
+          [-2.582194, 51.493283]
+        ]
+      }
+    }
+  ]
+}

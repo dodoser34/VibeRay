@@ -1,0 +1,4474 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634839, 51.437731],
+          [-2.635949, 51.437278],
+          [-2.637051, 51.436801],
+          [-2.638584, 51.436038],
+          [-2.639182, 51.4357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635992, 51.437584],
+          [-2.638471, 51.436187],
+          [-2.639182, 51.4357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.633073, 51.437763],
+          [-2.632763, 51.43811],
+          [-2.632445, 51.438412],
+          [-2.631805, 51.438819],
+          [-2.631059, 51.439191],
+          [-2.633871, 51.438136],
+          [-2.634839, 51.437731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634839, 51.437731],
+          [-2.634473, 51.437811],
+          [-2.633633, 51.438123],
+          [-2.63345, 51.43813],
+          [-2.633297, 51.438104],
+          [-2.633179, 51.438048],
+          [-2.63309, 51.437968],
+          [-2.633068, 51.437901],
+          [-2.633073, 51.437763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634087, 51.436896],
+          [-2.633834, 51.436949],
+          [-2.633571, 51.437093],
+          [-2.633434, 51.437228],
+          [-2.633073, 51.437763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.640754, 51.433048],
+          [-2.639816, 51.432723],
+          [-2.639321, 51.432527],
+          [-2.637415, 51.431731],
+          [-2.636986, 51.431521],
+          [-2.636474, 51.431196],
+          [-2.636101, 51.430898],
+          [-2.635745, 51.43051],
+          [-2.635577, 51.430265],
+          [-2.635462, 51.430052],
+          [-2.635239, 51.429499],
+          [-2.63497, 51.428649],
+          [-2.634821, 51.427827],
+          [-2.634725, 51.427095],
+          [-2.634705, 51.426868],
+          [-2.634749, 51.426531],
+          [-2.634894, 51.426062],
+          [-2.635012, 51.425819],
+          [-2.635436, 51.425304],
+          [-2.635946, 51.424842],
+          [-2.636506, 51.424296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.631084, 51.43921],
+          [-2.631362, 51.439185],
+          [-2.632674, 51.439209],
+          [-2.633078, 51.439194],
+          [-2.634795, 51.439059],
+          [-2.635308, 51.438995]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.643309, 51.432637],
+          [-2.643642, 51.432454],
+          [-2.650983, 51.426596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.641284, 51.434243],
+          [-2.64145, 51.434123],
+          [-2.641823, 51.433802],
+          [-2.642231, 51.433549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.641731, 51.433507],
+          [-2.641841, 51.433555],
+          [-2.64197, 51.433579],
+          [-2.642104, 51.433576],
+          [-2.642231, 51.433549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.641731, 51.433507],
+          [-2.641679, 51.433744],
+          [-2.641284, 51.434243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.641708, 51.433134],
+          [-2.641581, 51.433175],
+          [-2.64138, 51.433174],
+          [-2.640754, 51.433048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.640754, 51.433048],
+          [-2.641346, 51.43327],
+          [-2.641568, 51.433379],
+          [-2.641646, 51.433437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.643309, 51.432637],
+          [-2.642589, 51.432894],
+          [-2.642055, 51.433046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.639182, 51.4357],
+          [-2.640773, 51.434699],
+          [-2.641085, 51.434461],
+          [-2.641284, 51.434243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.642455, 51.433301],
+          [-2.642431, 51.433156],
+          [-2.642471, 51.43309],
+          [-2.642538, 51.433042],
+          [-2.642991, 51.432852],
+          [-2.643199, 51.432738],
+          [-2.643309, 51.432637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.640754, 51.433048],
+          [-2.641196, 51.433253],
+          [-2.641435, 51.433382],
+          [-2.641559, 51.433498],
+          [-2.641601, 51.433616],
+          [-2.641578, 51.433737],
+          [-2.6415, 51.433905],
+          [-2.641284, 51.434243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.642231, 51.433549],
+          [-2.642327, 51.433504],
+          [-2.6424, 51.433445],
+          [-2.642444, 51.433376],
+          [-2.642455, 51.433301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.642455, 51.433301],
+          [-2.64242, 51.433207],
+          [-2.642333, 51.433126],
+          [-2.642206, 51.43307],
+          [-2.642055, 51.433046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.641708, 51.433134],
+          [-2.641636, 51.433201],
+          [-2.641601, 51.433279],
+          [-2.641604, 51.43336],
+          [-2.641646, 51.433437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.641646, 51.433437],
+          [-2.641731, 51.433507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.642055, 51.433046],
+          [-2.641927, 51.433053],
+          [-2.641808, 51.433083],
+          [-2.641708, 51.433134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.633071, 51.436901],
+          [-2.633139, 51.436775],
+          [-2.633542, 51.4363],
+          [-2.633624, 51.436246],
+          [-2.633733, 51.436236],
+          [-2.634018, 51.436293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.636986, 51.438478],
+          [-2.637153, 51.438352],
+          [-2.637226, 51.438183],
+          [-2.637247, 51.438009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.638778, 51.438063],
+          [-2.638434, 51.438136],
+          [-2.638109, 51.438236],
+          [-2.637831, 51.438365],
+          [-2.637011, 51.438946],
+          [-2.636885, 51.43902],
+          [-2.636758, 51.439066],
+          [-2.636602, 51.43909],
+          [-2.636458, 51.439087],
+          [-2.636313, 51.439049],
+          [-2.636222, 51.439007],
+          [-2.636112, 51.438854],
+          [-2.636064, 51.438806]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635012, 51.435601],
+          [-2.635132, 51.435603],
+          [-2.635277, 51.435563],
+          [-2.635446, 51.435536],
+          [-2.635619, 51.435531],
+          [-2.635765, 51.435542],
+          [-2.636435, 51.435653],
+          [-2.636547, 51.435646],
+          [-2.63662, 51.435611],
+          [-2.636662, 51.435562],
+          [-2.636643, 51.435512],
+          [-2.636589, 51.43547],
+          [-2.636479, 51.435433],
+          [-2.636335, 51.435426],
+          [-2.635469, 51.435456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635119, 51.436668],
+          [-2.636015, 51.435862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634948, 51.435787],
+          [-2.634889, 51.435793],
+          [-2.634797, 51.435834],
+          [-2.634738, 51.435887],
+          [-2.634686, 51.435879],
+          [-2.634517, 51.435794],
+          [-2.634743, 51.435699],
+          [-2.635012, 51.435601]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.640536, 51.440186],
+          [-2.640597, 51.440031],
+          [-2.640755, 51.439815],
+          [-2.640961, 51.43963],
+          [-2.641224, 51.439422],
+          [-2.64138, 51.439237],
+          [-2.641735, 51.438888],
+          [-2.642837, 51.437973],
+          [-2.643014, 51.437876]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635308, 51.438995],
+          [-2.635354, 51.439076],
+          [-2.635311, 51.439308],
+          [-2.635661, 51.439323],
+          [-2.635694, 51.43918],
+          [-2.635339, 51.439157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635555, 51.426817],
+          [-2.635407, 51.426786],
+          [-2.635221, 51.426768],
+          [-2.635032, 51.426756],
+          [-2.634714, 51.426752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634686, 51.435879],
+          [-2.634631, 51.436418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635836, 51.439135],
+          [-2.635694, 51.43918]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635642, 51.439033],
+          [-2.635743, 51.439164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635469, 51.435456],
+          [-2.635178, 51.435507],
+          [-2.635067, 51.435545],
+          [-2.635012, 51.435601]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.656592, 51.430624],
+          [-2.656392, 51.430404]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.669911, 51.428997],
+          [-2.669362, 51.428499],
+          [-2.669182, 51.428301],
+          [-2.669021, 51.428068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672273, 51.425277],
+          [-2.672072, 51.425334],
+          [-2.672258, 51.425577],
+          [-2.672394, 51.425643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671211, 51.425574],
+          [-2.672072, 51.425334],
+          [-2.672, 51.425227],
+          [-2.671308, 51.425417],
+          [-2.671262, 51.425352]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671932, 51.425415],
+          [-2.671905, 51.425382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.656358, 51.430056],
+          [-2.656777, 51.430563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.650611, 51.430287],
+          [-2.650394, 51.430357],
+          [-2.650456, 51.430364],
+          [-2.650502, 51.430383],
+          [-2.650533, 51.430415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.637078, 51.436392],
+          [-2.636957, 51.436258],
+          [-2.63665, 51.435873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.638078, 51.435104],
+          [-2.638096, 51.435142],
+          [-2.638021, 51.435367],
+          [-2.636817, 51.435477]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635958, 51.436695],
+          [-2.635972, 51.436555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.637287, 51.434524],
+          [-2.63723, 51.434493],
+          [-2.636819, 51.434503],
+          [-2.636778, 51.434522],
+          [-2.63642, 51.434847],
+          [-2.636033, 51.435136],
+          [-2.635613, 51.435319],
+          [-2.635538, 51.435374],
+          [-2.635469, 51.435456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.638123, 51.435719],
+          [-2.637904, 51.435695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.648337, 51.435628],
+          [-2.64838, 51.43556],
+          [-2.648377, 51.435485],
+          [-2.648323, 51.435423],
+          [-2.64822, 51.435334],
+          [-2.648029, 51.435219],
+          [-2.64778, 51.435194],
+          [-2.647581, 51.435127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66347, 51.429677],
+          [-2.664141, 51.429535]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.665701, 51.433768],
+          [-2.665564, 51.433567],
+          [-2.665508, 51.433464],
+          [-2.665455, 51.433281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666756, 51.429299],
+          [-2.666296, 51.429379],
+          [-2.664236, 51.429636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.652722, 51.433473],
+          [-2.652798, 51.433455],
+          [-2.652876, 51.43345],
+          [-2.652975, 51.433474],
+          [-2.653051, 51.433526],
+          [-2.65318, 51.433661],
+          [-2.653255, 51.433762],
+          [-2.653343, 51.433958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66272, 51.426265],
+          [-2.662798, 51.426512]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672254, 51.425251],
+          [-2.672303, 51.425319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.674081, 51.428723],
+          [-2.675236, 51.429837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.665182, 51.43245],
+          [-2.665197, 51.43243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666028, 51.428794],
+          [-2.666059, 51.428975]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663244, 51.431281],
+          [-2.663285, 51.431319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.664091, 51.429254],
+          [-2.663975, 51.42903],
+          [-2.66422, 51.428979]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.646272, 51.435835],
+          [-2.646867, 51.436112],
+          [-2.647042, 51.436165],
+          [-2.648215, 51.436363],
+          [-2.648295, 51.436371],
+          [-2.648346, 51.43636],
+          [-2.648412, 51.43631],
+          [-2.648645, 51.43606],
+          [-2.648722, 51.436],
+          [-2.648786, 51.435971],
+          [-2.648882, 51.435946],
+          [-2.649013, 51.435933],
+          [-2.649145, 51.435932],
+          [-2.649283, 51.435956],
+          [-2.649373, 51.436005]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.660767, 51.430001],
+          [-2.660795, 51.43007],
+          [-2.660796, 51.43012],
+          [-2.66076, 51.430163],
+          [-2.660621, 51.430226],
+          [-2.66054, 51.430239],
+          [-2.660446, 51.430236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.659225, 51.430907],
+          [-2.659157, 51.430767],
+          [-2.658999, 51.430335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65831, 51.430389],
+          [-2.658331, 51.430526],
+          [-2.658413, 51.430617],
+          [-2.658433, 51.430687],
+          [-2.658448, 51.430836],
+          [-2.658445, 51.43095],
+          [-2.658353, 51.430972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.63901, 51.432787],
+          [-2.639321, 51.432527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635989, 51.430434],
+          [-2.635745, 51.43051]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635994, 51.431125],
+          [-2.63624, 51.431013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65004, 51.428842],
+          [-2.649922, 51.428728],
+          [-2.649635, 51.428559],
+          [-2.649261, 51.428438],
+          [-2.648571, 51.42836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.650571, 51.433121],
+          [-2.650439, 51.432998],
+          [-2.65038, 51.432871],
+          [-2.650308, 51.432819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.645632, 51.437032],
+          [-2.645512, 51.436997],
+          [-2.645474, 51.436996],
+          [-2.645444, 51.437007],
+          [-2.64525, 51.437204],
+          [-2.645219, 51.437216],
+          [-2.645176, 51.437219],
+          [-2.645012, 51.437154],
+          [-2.644957, 51.437125],
+          [-2.644766, 51.437064],
+          [-2.644633, 51.437035],
+          [-2.644524, 51.436986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.644557, 51.437507],
+          [-2.644518, 51.437554],
+          [-2.644436, 51.437554],
+          [-2.644173, 51.437477],
+          [-2.64403, 51.437406],
+          [-2.643966, 51.437361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.660492, 51.42963],
+          [-2.660637, 51.42964],
+          [-2.660704, 51.42966],
+          [-2.660811, 51.429727],
+          [-2.66087, 51.429788],
+          [-2.660966, 51.429959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.655716, 51.434489],
+          [-2.655427, 51.434139],
+          [-2.655415, 51.434093],
+          [-2.655425, 51.434078],
+          [-2.655584, 51.434011],
+          [-2.656585, 51.433539],
+          [-2.655802, 51.432935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657924, 51.433496],
+          [-2.657971, 51.433457],
+          [-2.657976, 51.433411],
+          [-2.657952, 51.4333],
+          [-2.657918, 51.43323],
+          [-2.657848, 51.433172],
+          [-2.657749, 51.433118],
+          [-2.657584, 51.433063],
+          [-2.657543, 51.433057],
+          [-2.657412, 51.433085],
+          [-2.657346, 51.433108],
+          [-2.656963, 51.433338],
+          [-2.656585, 51.433539]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.669463, 51.427253],
+          [-2.66943, 51.427206],
+          [-2.66942, 51.427161],
+          [-2.669532, 51.42689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.647581, 51.434646],
+          [-2.647773, 51.434444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.665842, 51.427281],
+          [-2.665753, 51.426756],
+          [-2.665728, 51.426721],
+          [-2.665611, 51.426626],
+          [-2.665602, 51.426589],
+          [-2.665615, 51.426563],
+          [-2.665873, 51.42629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661718, 51.427026],
+          [-2.662117, 51.427033],
+          [-2.662189, 51.427054],
+          [-2.66225, 51.427089],
+          [-2.66226, 51.427146],
+          [-2.662252, 51.427217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661936, 51.427174],
+          [-2.661958, 51.42703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661703, 51.427197],
+          [-2.661725, 51.426947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66226, 51.427146],
+          [-2.662394, 51.427133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.650396, 51.429766],
+          [-2.649983, 51.429816],
+          [-2.649745, 51.429888],
+          [-2.64968, 51.429886],
+          [-2.649486, 51.429803],
+          [-2.64935, 51.429781],
+          [-2.649038, 51.429777],
+          [-2.648844, 51.429758],
+          [-2.648708, 51.429718],
+          [-2.64858, 51.429638],
+          [-2.6485, 51.429555],
+          [-2.648258, 51.429461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.674604, 51.428468],
+          [-2.674341, 51.428527],
+          [-2.67427, 51.428532],
+          [-2.674203, 51.42853],
+          [-2.674124, 51.428509],
+          [-2.674024, 51.428449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.645651, 51.429348],
+          [-2.646317, 51.429781],
+          [-2.646373, 51.429796],
+          [-2.646422, 51.429788],
+          [-2.647625, 51.428817],
+          [-2.647705, 51.42876],
+          [-2.647797, 51.42873],
+          [-2.64787, 51.428721],
+          [-2.647979, 51.428743],
+          [-2.648407, 51.428937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.673649, 51.425352],
+          [-2.673482, 51.425371],
+          [-2.673331, 51.425353],
+          [-2.673096, 51.425414],
+          [-2.673038, 51.425436]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672966, 51.42625],
+          [-2.672831, 51.42606],
+          [-2.672854, 51.425922],
+          [-2.67265, 51.425637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667839, 51.425581],
+          [-2.668006, 51.425561],
+          [-2.668058, 51.425735]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668755, 51.425845],
+          [-2.668675, 51.425936],
+          [-2.668599, 51.426046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.669942, 51.426031],
+          [-2.669871, 51.425926],
+          [-2.669964, 51.425811],
+          [-2.669893, 51.425564]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.647793, 51.427737],
+          [-2.647797, 51.427451],
+          [-2.648204, 51.427439],
+          [-2.64828, 51.427397],
+          [-2.648361, 51.427384],
+          [-2.64878, 51.427378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657652, 51.429111],
+          [-2.657684, 51.42915],
+          [-2.657741, 51.429185],
+          [-2.657891, 51.429167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657741, 51.429185],
+          [-2.657758, 51.429241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.652744, 51.431467],
+          [-2.652791, 51.43144],
+          [-2.65287, 51.431352],
+          [-2.652962, 51.431201],
+          [-2.653112, 51.431076],
+          [-2.653403, 51.430929],
+          [-2.65349, 51.430864],
+          [-2.653622, 51.430805],
+          [-2.65366, 51.430763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.652149, 51.42871],
+          [-2.652031, 51.428566],
+          [-2.651868, 51.428612],
+          [-2.651607, 51.428666],
+          [-2.651483, 51.428701],
+          [-2.651349, 51.428752],
+          [-2.651071, 51.428824],
+          [-2.650966, 51.428837],
+          [-2.65064, 51.428841],
+          [-2.650051, 51.428891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.651802, 51.428685],
+          [-2.651771, 51.428633]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.674192, 51.427689],
+          [-2.674316, 51.427631],
+          [-2.67434, 51.427602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672619, 51.42784],
+          [-2.672648, 51.427861],
+          [-2.672681, 51.427861],
+          [-2.672902, 51.427768],
+          [-2.672978, 51.427687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672647, 51.427976],
+          [-2.67257, 51.428009],
+          [-2.672546, 51.428053],
+          [-2.672562, 51.42818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672397, 51.428053],
+          [-2.672477, 51.428036],
+          [-2.672546, 51.428053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.645056, 51.437331],
+          [-2.644824, 51.437234],
+          [-2.64461, 51.437164],
+          [-2.644528, 51.437096],
+          [-2.644439, 51.43705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6571, 51.428994],
+          [-2.657158, 51.429041],
+          [-2.657194, 51.429051],
+          [-2.657413, 51.429035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657861, 51.430412],
+          [-2.6579, 51.430546],
+          [-2.657939, 51.430595],
+          [-2.658008, 51.430735]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661852, 51.428526],
+          [-2.66199, 51.428533],
+          [-2.662092, 51.428554],
+          [-2.662162, 51.428553],
+          [-2.662473, 51.428508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.662665, 51.428387],
+          [-2.662614, 51.428201],
+          [-2.663147, 51.428151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.660571, 51.4306],
+          [-2.66063, 51.430565],
+          [-2.660692, 51.430498],
+          [-2.660721, 51.430437],
+          [-2.66076, 51.430332],
+          [-2.660796, 51.43012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672686, 51.427313],
+          [-2.672655, 51.427463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671664, 51.427605],
+          [-2.67161, 51.427647],
+          [-2.671601, 51.427662],
+          [-2.67161, 51.427678],
+          [-2.671646, 51.427704],
+          [-2.671761, 51.427724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.652435, 51.433188],
+          [-2.652207, 51.433276],
+          [-2.652096, 51.433309],
+          [-2.651968, 51.433326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.645077, 51.437832],
+          [-2.644752, 51.43773],
+          [-2.644175, 51.437601],
+          [-2.644112, 51.437574],
+          [-2.644056, 51.437528],
+          [-2.644016, 51.437439],
+          [-2.64403, 51.437406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65064, 51.429066],
+          [-2.650302, 51.429097],
+          [-2.650264, 51.429076],
+          [-2.650204, 51.428876]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.664048, 51.432434],
+          [-2.663977, 51.432418],
+          [-2.663788, 51.432345],
+          [-2.663706, 51.432343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657043, 51.429406],
+          [-2.657038, 51.42947],
+          [-2.657078, 51.429562],
+          [-2.657188, 51.429698],
+          [-2.65716, 51.429706],
+          [-2.657115, 51.429742],
+          [-2.657093, 51.429789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.664513, 51.426295],
+          [-2.664639, 51.426667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.664515, 51.426679],
+          [-2.664943, 51.426636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.673501, 51.428233],
+          [-2.673419, 51.428092],
+          [-2.673355, 51.428041]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.673119, 51.428335],
+          [-2.673034, 51.428177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672955, 51.428011],
+          [-2.673084, 51.42816]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672951, 51.42746],
+          [-2.672775, 51.427532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671934, 51.427518],
+          [-2.672248, 51.427392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.669789, 51.427417],
+          [-2.670132, 51.427308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.670702, 51.426725],
+          [-2.670811, 51.426882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.674054, 51.42823],
+          [-2.67425, 51.428194],
+          [-2.674297, 51.428177],
+          [-2.674329, 51.428153],
+          [-2.674375, 51.428097],
+          [-2.674451, 51.428066]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.669121, 51.426102],
+          [-2.669267, 51.426298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66921, 51.426016],
+          [-2.669387, 51.426264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666941, 51.425798],
+          [-2.666906, 51.4257],
+          [-2.667053, 51.42568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.67338, 51.428356],
+          [-2.673447, 51.42849],
+          [-2.673498, 51.428547]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671292, 51.427853],
+          [-2.6707, 51.428025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667099, 51.428411],
+          [-2.666875, 51.428255],
+          [-2.666878, 51.428219],
+          [-2.666939, 51.42818],
+          [-2.667063, 51.428128],
+          [-2.667226, 51.428077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.659539, 51.428959],
+          [-2.659698, 51.428948],
+          [-2.659788, 51.428958],
+          [-2.659952, 51.428997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.654088, 51.432417],
+          [-2.653885, 51.432455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65406, 51.432081],
+          [-2.653523, 51.432234]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.653235, 51.432283],
+          [-2.653504, 51.432214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657028, 51.433865],
+          [-2.656956, 51.433764],
+          [-2.656887, 51.433705],
+          [-2.656795, 51.433662],
+          [-2.656609, 51.433593],
+          [-2.656554, 51.433554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.655839, 51.43433],
+          [-2.655694, 51.434172],
+          [-2.655659, 51.43409],
+          [-2.655669, 51.434031],
+          [-2.655734, 51.43394]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668186, 51.42886],
+          [-2.668182, 51.428953],
+          [-2.66807, 51.429134],
+          [-2.668223, 51.429291]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661404, 51.429606],
+          [-2.661675, 51.429558],
+          [-2.661711, 51.429541],
+          [-2.661767, 51.429488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.662034, 51.429476],
+          [-2.662054, 51.429442],
+          [-2.662101, 51.429416],
+          [-2.662344, 51.429353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635384, 51.435677],
+          [-2.635298, 51.435663],
+          [-2.635219, 51.435676],
+          [-2.635144, 51.43571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.636982, 51.435689],
+          [-2.637779, 51.436011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663864, 51.429299],
+          [-2.663809, 51.429253],
+          [-2.663682, 51.429078],
+          [-2.663648, 51.42906],
+          [-2.66356, 51.42904],
+          [-2.663424, 51.429036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.675554, 51.425112],
+          [-2.67561, 51.425191],
+          [-2.675517, 51.42521],
+          [-2.675592, 51.425327]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.67366, 51.426686],
+          [-2.673823, 51.426598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.673121, 51.426738],
+          [-2.672892, 51.426567]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672942, 51.426765],
+          [-2.672764, 51.426653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671398, 51.427239],
+          [-2.671508, 51.427341]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.670422, 51.427309],
+          [-2.670176, 51.427368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66904, 51.426805],
+          [-2.668953, 51.426992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666436, 51.425948],
+          [-2.666349, 51.425903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.664149, 51.426967],
+          [-2.664301, 51.426956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.658983, 51.429112],
+          [-2.659006, 51.429152],
+          [-2.659081, 51.429204],
+          [-2.659196, 51.429242]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.646604, 51.436308],
+          [-2.646362, 51.436536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.645974, 51.436592],
+          [-2.646094, 51.43649],
+          [-2.646187, 51.436449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.646518, 51.436601],
+          [-2.646323, 51.4368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634087, 51.436896],
+          [-2.634003, 51.436724],
+          [-2.633987, 51.436576],
+          [-2.63399, 51.436408],
+          [-2.634018, 51.436293],
+          [-2.634062, 51.436184],
+          [-2.634221, 51.435986],
+          [-2.634352, 51.435892],
+          [-2.634517, 51.435794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635171, 51.42929],
+          [-2.634848, 51.429309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634231, 51.429284],
+          [-2.633531, 51.429264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.64359, 51.436318],
+          [-2.644357, 51.435854],
+          [-2.644416, 51.435828],
+          [-2.644497, 51.435827],
+          [-2.644591, 51.435854],
+          [-2.64503, 51.436077],
+          [-2.645426, 51.436305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.648783, 51.430931],
+          [-2.648755, 51.430991],
+          [-2.647586, 51.432715],
+          [-2.647493, 51.432902],
+          [-2.647448, 51.433055],
+          [-2.647431, 51.433237],
+          [-2.647437, 51.433518],
+          [-2.647473, 51.434157],
+          [-2.64754, 51.434275],
+          [-2.647597, 51.434335],
+          [-2.647668, 51.434388],
+          [-2.647773, 51.434444],
+          [-2.64818, 51.434605]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.646168, 51.432686],
+          [-2.647493, 51.432902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.646788, 51.431558],
+          [-2.646232, 51.432548],
+          [-2.646142, 51.432768],
+          [-2.646047, 51.433431],
+          [-2.646063, 51.433508],
+          [-2.646163, 51.433668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.649595, 51.433256],
+          [-2.650264, 51.43366],
+          [-2.650681, 51.43389],
+          [-2.650777, 51.433898],
+          [-2.650912, 51.433893],
+          [-2.651011, 51.433876],
+          [-2.651065, 51.433831],
+          [-2.651082, 51.433776],
+          [-2.651067, 51.433725],
+          [-2.65103, 51.433684],
+          [-2.651384, 51.433423]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65103, 51.433684],
+          [-2.650927, 51.433666],
+          [-2.650833, 51.433674],
+          [-2.650729, 51.43371],
+          [-2.650536, 51.433805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.650739, 51.432586],
+          [-2.650894, 51.432705],
+          [-2.651242, 51.432936],
+          [-2.651437, 51.43302],
+          [-2.651665, 51.433092],
+          [-2.651835, 51.433169],
+          [-2.651923, 51.433229],
+          [-2.651969, 51.43331],
+          [-2.651964, 51.433399],
+          [-2.651866, 51.433605],
+          [-2.651718, 51.43384],
+          [-2.651695, 51.433907],
+          [-2.651711, 51.43397],
+          [-2.651753, 51.434026],
+          [-2.652029, 51.43417],
+          [-2.652223, 51.43425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.652223, 51.43425],
+          [-2.652351, 51.434241],
+          [-2.652579, 51.434193],
+          [-2.652919, 51.434102],
+          [-2.653936, 51.433754],
+          [-2.654526, 51.433529],
+          [-2.65499, 51.433322],
+          [-2.655994, 51.432843],
+          [-2.658141, 51.431773],
+          [-2.658343, 51.431693],
+          [-2.658494, 51.431652],
+          [-2.658938, 51.431573],
+          [-2.659284, 51.431476],
+          [-2.659438, 51.431412],
+          [-2.659717, 51.431273],
+          [-2.659949, 51.431176],
+          [-2.661925, 51.430586],
+          [-2.662756, 51.43039],
+          [-2.664503, 51.429951],
+          [-2.666344, 51.429796],
+          [-2.66652, 51.429769],
+          [-2.668223, 51.429291]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.662393, 51.429591],
+          [-2.662641, 51.42991],
+          [-2.662714, 51.430068],
+          [-2.662767, 51.43033],
+          [-2.662885, 51.430572],
+          [-2.662919, 51.430682],
+          [-2.662961, 51.430718],
+          [-2.66303, 51.430747],
+          [-2.663171, 51.430843],
+          [-2.663237, 51.430902],
+          [-2.66328, 51.430959],
+          [-2.663332, 51.431239],
+          [-2.663409, 51.431551],
+          [-2.66346, 51.431644],
+          [-2.663527, 51.431725],
+          [-2.663613, 51.431785],
+          [-2.664189, 51.432079],
+          [-2.665494, 51.432528],
+          [-2.665667, 51.432635],
+          [-2.666134, 51.433037],
+          [-2.666491, 51.433324],
+          [-2.666689, 51.433575],
+          [-2.666845, 51.433827],
+          [-2.666879, 51.433912],
+          [-2.666909, 51.434197],
+          [-2.666983, 51.434603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663252, 51.426457],
+          [-2.66265, 51.426531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666429, 51.425845],
+          [-2.666112, 51.426058],
+          [-2.665929, 51.426301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663523, 51.427564],
+          [-2.663387, 51.427044],
+          [-2.663252, 51.426457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6631, 51.427626],
+          [-2.66259, 51.427711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65341, 51.430678],
+          [-2.653279, 51.430779],
+          [-2.652881, 51.431009],
+          [-2.652803, 51.431075],
+          [-2.652677, 51.43131],
+          [-2.652588, 51.431408],
+          [-2.6525, 51.431478],
+          [-2.652369, 51.431531],
+          [-2.65186, 51.431641],
+          [-2.651783, 51.43169],
+          [-2.651727, 51.431816],
+          [-2.651754, 51.431893],
+          [-2.651867, 51.432037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66622, 51.42763],
+          [-2.666344, 51.427378],
+          [-2.66626, 51.426772],
+          [-2.666264, 51.426687],
+          [-2.666312, 51.426552],
+          [-2.666411, 51.42644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66523, 51.427458],
+          [-2.66536, 51.427095],
+          [-2.66537, 51.427],
+          [-2.665346, 51.426838]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.664417, 51.427427],
+          [-2.66428, 51.426868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667314, 51.428154],
+          [-2.667941, 51.427866]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667725, 51.428558],
+          [-2.667255, 51.4281],
+          [-2.667108, 51.427988],
+          [-2.666862, 51.427847],
+          [-2.666824, 51.427803],
+          [-2.666799, 51.427715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663379, 51.428636],
+          [-2.663237, 51.428665],
+          [-2.66213, 51.428825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663379, 51.428636],
+          [-2.663293, 51.428535],
+          [-2.663234, 51.428438],
+          [-2.663198, 51.428343],
+          [-2.663118, 51.42803],
+          [-2.663116, 51.427932],
+          [-2.663139, 51.427834],
+          [-2.663136, 51.427732],
+          [-2.6631, 51.427626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663142, 51.42813],
+          [-2.66397, 51.428108],
+          [-2.664282, 51.428016]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663387, 51.427044],
+          [-2.662394, 51.427133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668955, 51.426788],
+          [-2.669631, 51.426907],
+          [-2.66984, 51.426973],
+          [-2.669945, 51.427054],
+          [-2.67037, 51.42763],
+          [-2.671235, 51.428664],
+          [-2.671318, 51.42878],
+          [-2.671342, 51.428852],
+          [-2.671329, 51.428914],
+          [-2.671281, 51.428964],
+          [-2.671154, 51.429006],
+          [-2.670879, 51.429077],
+          [-2.669318, 51.429747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668223, 51.429291],
+          [-2.668645, 51.429079],
+          [-2.668764, 51.429062],
+          [-2.668846, 51.429066],
+          [-2.668905, 51.429086],
+          [-2.668972, 51.428942],
+          [-2.668973, 51.428879],
+          [-2.668935, 51.428805],
+          [-2.668736, 51.428628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666596, 51.428903],
+          [-2.666903, 51.429662],
+          [-2.6672, 51.430137],
+          [-2.667215, 51.430194],
+          [-2.66713, 51.430935],
+          [-2.667084, 51.431028],
+          [-2.66702, 51.431098],
+          [-2.666905, 51.431181],
+          [-2.666779, 51.431241],
+          [-2.666637, 51.431278],
+          [-2.666475, 51.431298],
+          [-2.666326, 51.431286],
+          [-2.666028, 51.431226],
+          [-2.665675, 51.43118],
+          [-2.665448, 51.431177],
+          [-2.665095, 51.431196],
+          [-2.664832, 51.43124],
+          [-2.664294, 51.43131],
+          [-2.664108, 51.431315],
+          [-2.66394, 51.431303],
+          [-2.663472, 51.431237],
+          [-2.663332, 51.431239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.665095, 51.431196],
+          [-2.664975, 51.430967],
+          [-2.664873, 51.430852],
+          [-2.664799, 51.430799],
+          [-2.664482, 51.430633]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666028, 51.431226],
+          [-2.666044, 51.431138],
+          [-2.66604, 51.431058],
+          [-2.665758, 51.430639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666206, 51.431266],
+          [-2.666189, 51.43131],
+          [-2.666202, 51.431345],
+          [-2.666825, 51.43192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66713, 51.430935],
+          [-2.667198, 51.430963],
+          [-2.667252, 51.430999],
+          [-2.667732, 51.431412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663799, 51.431879],
+          [-2.663699, 51.431925],
+          [-2.662772, 51.432115],
+          [-2.662671, 51.432143],
+          [-2.662427, 51.432272],
+          [-2.662359, 51.432293],
+          [-2.661825, 51.432399],
+          [-2.661772, 51.432432],
+          [-2.661612, 51.432579],
+          [-2.66149, 51.432611],
+          [-2.661412, 51.432613],
+          [-2.661337, 51.432597],
+          [-2.660886, 51.432411],
+          [-2.660779, 51.432353],
+          [-2.660611, 51.432228],
+          [-2.66049, 51.432015],
+          [-2.66027, 51.431731],
+          [-2.659717, 51.431273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.662104, 51.431429],
+          [-2.661967, 51.431469],
+          [-2.661771, 51.431546],
+          [-2.661647, 51.431622],
+          [-2.661605, 51.431682],
+          [-2.661599, 51.431731],
+          [-2.661733, 51.431713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661599, 51.431731],
+          [-2.661261, 51.43183],
+          [-2.661194, 51.431873],
+          [-2.660862, 51.432274],
+          [-2.660779, 51.432353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66119, 51.432534],
+          [-2.661153, 51.432583],
+          [-2.661053, 51.432661],
+          [-2.660881, 51.432743],
+          [-2.660025, 51.432966],
+          [-2.659001, 51.433113]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.655994, 51.432843],
+          [-2.655249, 51.432185],
+          [-2.654455, 51.431386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.653512, 51.431596],
+          [-2.653564, 51.431765],
+          [-2.653556, 51.431799],
+          [-2.653529, 51.431833],
+          [-2.653446, 51.431895],
+          [-2.653421, 51.431941],
+          [-2.653443, 51.432099],
+          [-2.653485, 51.432193],
+          [-2.653767, 51.432493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.653443, 51.432099],
+          [-2.652937, 51.432246],
+          [-2.653268, 51.432667],
+          [-2.653068, 51.432757],
+          [-2.653033, 51.432793],
+          [-2.653042, 51.43284],
+          [-2.653096, 51.432933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.660611, 51.432228],
+          [-2.660146, 51.432322],
+          [-2.659464, 51.432438],
+          [-2.65885, 51.432556],
+          [-2.658517, 51.43268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.652937, 51.432246],
+          [-2.652633, 51.43233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.651723, 51.431306],
+          [-2.651688, 51.431448],
+          [-2.651613, 51.431548],
+          [-2.651476, 51.43162],
+          [-2.651308, 51.431702],
+          [-2.651008, 51.431809],
+          [-2.650355, 51.431972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.651176, 51.430987],
+          [-2.651016, 51.431017],
+          [-2.650822, 51.431072],
+          [-2.650706, 51.431137],
+          [-2.650572, 51.431241],
+          [-2.650442, 51.431318],
+          [-2.650102, 51.431432],
+          [-2.649377, 51.431602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.655266, 51.429718],
+          [-2.655489, 51.429932],
+          [-2.655474, 51.429977],
+          [-2.655379, 51.430036],
+          [-2.655195, 51.430111],
+          [-2.655018, 51.430197],
+          [-2.654737, 51.430354],
+          [-2.654519, 51.43049],
+          [-2.654117, 51.430689],
+          [-2.65398, 51.430747],
+          [-2.653856, 51.430769],
+          [-2.653751, 51.430775],
+          [-2.65366, 51.430763],
+          [-2.653476, 51.430708],
+          [-2.65341, 51.430678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.656769, 51.429337],
+          [-2.656698, 51.42933],
+          [-2.656483, 51.429378],
+          [-2.656368, 51.429383],
+          [-2.656188, 51.429346],
+          [-2.656047, 51.429288],
+          [-2.655563, 51.429167],
+          [-2.655323, 51.429178],
+          [-2.654723, 51.429383],
+          [-2.654646, 51.429425],
+          [-2.654569, 51.429551],
+          [-2.654492, 51.429602],
+          [-2.654306, 51.429664],
+          [-2.654043, 51.429791],
+          [-2.653779, 51.429975],
+          [-2.653665, 51.430111],
+          [-2.653566, 51.430349],
+          [-2.65355, 51.430482],
+          [-2.653492, 51.430586],
+          [-2.65341, 51.430678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.653603, 51.430245],
+          [-2.653458, 51.4302],
+          [-2.653291, 51.43019],
+          [-2.653108, 51.430212],
+          [-2.652881, 51.430291],
+          [-2.652612, 51.430405],
+          [-2.652328, 51.430582],
+          [-2.651956, 51.430833],
+          [-2.651841, 51.430926]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.650125, 51.430597],
+          [-2.650216, 51.430641],
+          [-2.650301, 51.430645],
+          [-2.650365, 51.430635],
+          [-2.650577, 51.430571],
+          [-2.650648, 51.430506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.651132, 51.430452],
+          [-2.650926, 51.430349],
+          [-2.650865, 51.430302],
+          [-2.650787, 51.430281],
+          [-2.650681, 51.430276],
+          [-2.650611, 51.430287],
+          [-2.650542, 51.430327],
+          [-2.650522, 51.430366],
+          [-2.650552, 51.430454],
+          [-2.650593, 51.430487],
+          [-2.650648, 51.430506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.648783, 51.430931],
+          [-2.648913, 51.431041],
+          [-2.649421, 51.431854],
+          [-2.649901, 51.432514],
+          [-2.650151, 51.432903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.656283, 51.430737],
+          [-2.656546, 51.430985],
+          [-2.657166, 51.431438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666941, 51.4344],
+          [-2.666617, 51.434437],
+          [-2.666497, 51.434439],
+          [-2.666329, 51.434409],
+          [-2.666086, 51.434336],
+          [-2.666007, 51.434297],
+          [-2.665921, 51.434242],
+          [-2.665875, 51.434185],
+          [-2.665756, 51.433844],
+          [-2.665701, 51.433768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666701, 51.428879],
+          [-2.66663, 51.428787],
+          [-2.666552, 51.428711],
+          [-2.666384, 51.428596],
+          [-2.665976, 51.428338],
+          [-2.665428, 51.42801],
+          [-2.665052, 51.428222],
+          [-2.663379, 51.428636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66942, 51.425814],
+          [-2.669635, 51.425613],
+          [-2.669723, 51.42558],
+          [-2.670132, 51.42555],
+          [-2.670231, 51.42556],
+          [-2.670312, 51.425593],
+          [-2.67037, 51.425631],
+          [-2.670789, 51.426197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672556, 51.424487],
+          [-2.672644, 51.42491],
+          [-2.672772, 51.425067],
+          [-2.673084, 51.425499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.670789, 51.426197],
+          [-2.671884, 51.425883],
+          [-2.672286, 51.425757],
+          [-2.672342, 51.425725],
+          [-2.672394, 51.425643],
+          [-2.672512, 51.425658],
+          [-2.672604, 51.425652],
+          [-2.673084, 51.425499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667581, 51.425806],
+          [-2.668058, 51.425735],
+          [-2.668265, 51.42569],
+          [-2.66878, 51.425647],
+          [-2.668966, 51.425646],
+          [-2.66942, 51.425814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.674081, 51.428723],
+          [-2.673968, 51.428636],
+          [-2.673928, 51.428586],
+          [-2.673907, 51.428498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672455, 51.428949],
+          [-2.672392, 51.428842],
+          [-2.672394, 51.428777],
+          [-2.672426, 51.428681],
+          [-2.672506, 51.428627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.669232, 51.430244],
+          [-2.668223, 51.429291]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.662481, 51.431395],
+          [-2.662845, 51.431322],
+          [-2.66335, 51.431319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.649121, 51.435045],
+          [-2.648891, 51.434986],
+          [-2.648668, 51.434983],
+          [-2.648513, 51.434968],
+          [-2.648372, 51.434927],
+          [-2.648008, 51.434772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.676041, 51.427461],
+          [-2.675655, 51.427295],
+          [-2.675499, 51.427242],
+          [-2.674367, 51.427094],
+          [-2.674058, 51.426976],
+          [-2.673206, 51.426355]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.674302, 51.42752],
+          [-2.674068, 51.427355],
+          [-2.674046, 51.427313],
+          [-2.674054, 51.427284],
+          [-2.674078, 51.42726],
+          [-2.674319, 51.427172],
+          [-2.674348, 51.427146],
+          [-2.674367, 51.427094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672391, 51.427528],
+          [-2.671975, 51.427134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672289, 51.428199],
+          [-2.67251, 51.428176],
+          [-2.67272, 51.428203],
+          [-2.672952, 51.428194],
+          [-2.673034, 51.428177],
+          [-2.673299, 51.4281],
+          [-2.673341, 51.428065],
+          [-2.673379, 51.427999],
+          [-2.673423, 51.427972],
+          [-2.673548, 51.427927],
+          [-2.673688, 51.427856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657487, 51.429386],
+          [-2.657446, 51.429246],
+          [-2.657453, 51.429181],
+          [-2.657503, 51.429113],
+          [-2.657652, 51.429111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661553, 51.428567],
+          [-2.661852, 51.428526]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.648783, 51.430931],
+          [-2.648782, 51.430885],
+          [-2.648693, 51.430759],
+          [-2.64834, 51.430287],
+          [-2.648155, 51.430062],
+          [-2.64814, 51.429979],
+          [-2.648228, 51.429568],
+          [-2.648571, 51.42836],
+          [-2.648745, 51.427481],
+          [-2.64878, 51.427378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.665929, 51.426301],
+          [-2.665682, 51.426254],
+          [-2.665395, 51.426223],
+          [-2.665108, 51.426232],
+          [-2.664831, 51.426256],
+          [-2.663252, 51.426457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.651345, 51.430533],
+          [-2.651606, 51.430304],
+          [-2.651786, 51.430174],
+          [-2.652077, 51.430005],
+          [-2.652343, 51.429882],
+          [-2.652577, 51.429802],
+          [-2.653017, 51.429676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66622, 51.42763],
+          [-2.665492, 51.427498],
+          [-2.66523, 51.427458],
+          [-2.664694, 51.427411],
+          [-2.664417, 51.427427],
+          [-2.663523, 51.427564]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667972, 51.427313],
+          [-2.667957, 51.427208],
+          [-2.667916, 51.427168],
+          [-2.667769, 51.42708],
+          [-2.666958, 51.426654],
+          [-2.666736, 51.426547],
+          [-2.666411, 51.42644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.652754, 51.431167],
+          [-2.652572, 51.431117],
+          [-2.652442, 51.431114],
+          [-2.65232, 51.43114],
+          [-2.652067, 51.431266],
+          [-2.651858, 51.431307],
+          [-2.651723, 51.431306],
+          [-2.651562, 51.431282],
+          [-2.651387, 51.431221],
+          [-2.651267, 51.431114],
+          [-2.651176, 51.430987],
+          [-2.651136, 51.430864],
+          [-2.651164, 51.430769],
+          [-2.651218, 51.430683],
+          [-2.651345, 51.430533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.651345, 51.430533],
+          [-2.651132, 51.430452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671884, 51.425883],
+          [-2.671954, 51.425969],
+          [-2.672073, 51.426204],
+          [-2.672219, 51.426403],
+          [-2.672233, 51.426442],
+          [-2.672211, 51.426483],
+          [-2.671952, 51.426581],
+          [-2.67163, 51.426778],
+          [-2.671389, 51.426859],
+          [-2.671021, 51.426809],
+          [-2.670936, 51.426818],
+          [-2.670873, 51.426856],
+          [-2.670665, 51.426939],
+          [-2.670193, 51.426874],
+          [-2.670009, 51.426873],
+          [-2.669929, 51.426899],
+          [-2.66984, 51.426973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668955, 51.426788],
+          [-2.668727, 51.426707],
+          [-2.668101, 51.426416],
+          [-2.667812, 51.426291],
+          [-2.667748, 51.426209],
+          [-2.667775, 51.426144]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668941, 51.425519],
+          [-2.668966, 51.425646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667775, 51.426144],
+          [-2.667662, 51.42609],
+          [-2.667581, 51.425806]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668955, 51.426788],
+          [-2.669045, 51.426711],
+          [-2.66923, 51.426645],
+          [-2.66992, 51.426453],
+          [-2.670789, 51.426197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667775, 51.426144],
+          [-2.667861, 51.426107],
+          [-2.668524, 51.42603],
+          [-2.668599, 51.426046],
+          [-2.668933, 51.426169],
+          [-2.669043, 51.426163],
+          [-2.66907, 51.426152],
+          [-2.66942, 51.425814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.670779, 51.427257],
+          [-2.670659, 51.42708],
+          [-2.670665, 51.426939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672365, 51.426006],
+          [-2.672437, 51.426099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.672684, 51.426214],
+          [-2.672574, 51.426066],
+          [-2.672073, 51.426204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671937, 51.428898],
+          [-2.671454, 51.429034],
+          [-2.671369, 51.429006],
+          [-2.671281, 51.428964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.653583, 51.429508],
+          [-2.654043, 51.429791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.647849, 51.435668],
+          [-2.647561, 51.435605],
+          [-2.647464, 51.435571],
+          [-2.647315, 51.4355],
+          [-2.647112, 51.435361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.648684, 51.43281],
+          [-2.649834, 51.432789],
+          [-2.650085, 51.432793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.646676, 51.436667],
+          [-2.646201, 51.436462],
+          [-2.645859, 51.436068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.67364, 51.426005],
+          [-2.673479, 51.425896],
+          [-2.673084, 51.425499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65015, 51.430732],
+          [-2.650216, 51.430641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.650523, 51.43193],
+          [-2.65056, 51.431988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.664579, 51.430685],
+          [-2.66451, 51.430732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666744, 51.431845],
+          [-2.666648, 51.431884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65274, 51.429665],
+          [-2.652788, 51.429741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661927, 51.431418],
+          [-2.661967, 51.431469]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661761, 51.431776],
+          [-2.661717, 51.431666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65186, 51.430785],
+          [-2.651956, 51.430833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.665592, 51.433811],
+          [-2.665811, 51.433724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.65365, 51.432538],
+          [-2.653885, 51.432455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.646717, 51.43169],
+          [-2.646599, 51.431663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.645909, 51.433515],
+          [-2.646063, 51.433508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668854, 51.429145],
+          [-2.668905, 51.429086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668383, 51.428769],
+          [-2.669079, 51.428497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.649544, 51.43156],
+          [-2.649598, 51.431634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657503, 51.429113],
+          [-2.657413, 51.429035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.654604, 51.43054],
+          [-2.654519, 51.43049]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.654947, 51.429837],
+          [-2.65537, 51.429677]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.660899, 51.428921],
+          [-2.660994, 51.428932],
+          [-2.661087, 51.428926],
+          [-2.66117, 51.428905],
+          [-2.661244, 51.42887]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.656769, 51.429337],
+          [-2.656895, 51.429425],
+          [-2.65696, 51.429457],
+          [-2.657038, 51.42947],
+          [-2.657113, 51.429464],
+          [-2.657312, 51.429415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.662154, 51.429652],
+          [-2.66208, 51.429517],
+          [-2.662034, 51.429476],
+          [-2.661999, 51.429465],
+          [-2.661797, 51.429494],
+          [-2.661738, 51.429481],
+          [-2.661707, 51.429454],
+          [-2.661657, 51.429302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661279, 51.429355],
+          [-2.661817, 51.429276],
+          [-2.661834, 51.429262],
+          [-2.661837, 51.429238],
+          [-2.661822, 51.429179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.66565, 51.43067],
+          [-2.665866, 51.430609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.67183, 51.428928],
+          [-2.671883, 51.429007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671474, 51.429133],
+          [-2.671446, 51.429094],
+          [-2.671454, 51.429034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.654204, 51.434554],
+          [-2.65405, 51.434598],
+          [-2.653833, 51.434617],
+          [-2.653455, 51.434604],
+          [-2.653337, 51.434514],
+          [-2.653259, 51.434485],
+          [-2.652695, 51.434398],
+          [-2.652334, 51.4343],
+          [-2.652223, 51.43425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.649783, 51.434021],
+          [-2.650764, 51.434514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.650857, 51.434474],
+          [-2.650948, 51.434608],
+          [-2.65091, 51.434736],
+          [-2.650837, 51.434766],
+          [-2.650732, 51.434774],
+          [-2.650677, 51.434767],
+          [-2.650617, 51.434725],
+          [-2.650583, 51.434669],
+          [-2.65058, 51.434617],
+          [-2.650615, 51.434582],
+          [-2.65082, 51.434488],
+          [-2.651294, 51.43431],
+          [-2.651437, 51.434239],
+          [-2.651525, 51.434185],
+          [-2.651645, 51.434002],
+          [-2.651711, 51.43397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.670886, 51.426418],
+          [-2.671006, 51.426571],
+          [-2.671005, 51.426631],
+          [-2.670936, 51.426818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671431, 51.426543],
+          [-2.671594, 51.426505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671702, 51.42623],
+          [-2.671786, 51.426329],
+          [-2.671786, 51.426355],
+          [-2.671636, 51.426438],
+          [-2.671595, 51.426478],
+          [-2.671594, 51.426505],
+          [-2.671823, 51.42666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671156, 51.426471],
+          [-2.671034, 51.426513],
+          [-2.671006, 51.426571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.653787, 51.429501],
+          [-2.653673, 51.429563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.668365, 51.425584],
+          [-2.668265, 51.42569],
+          [-2.668394, 51.425755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667036, 51.425981],
+          [-2.666969, 51.425878],
+          [-2.666941, 51.425798]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666969, 51.425878],
+          [-2.667581, 51.425806]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663849, 51.43258],
+          [-2.664048, 51.432434],
+          [-2.664213, 51.43247],
+          [-2.664316, 51.432476],
+          [-2.664353, 51.432463],
+          [-2.66441, 51.432422],
+          [-2.664424, 51.432373],
+          [-2.664398, 51.432326],
+          [-2.664243, 51.432249],
+          [-2.664252, 51.43218],
+          [-2.664283, 51.43211]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663951, 51.432506],
+          [-2.664044, 51.432553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.664315, 51.432587],
+          [-2.664236, 51.432541],
+          [-2.664213, 51.432508],
+          [-2.664213, 51.43247]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.653195, 51.433483],
+          [-2.653526, 51.433413],
+          [-2.653622, 51.433419],
+          [-2.653698, 51.433448],
+          [-2.653815, 51.433542],
+          [-2.653989, 51.433734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661244, 51.42887],
+          [-2.661022, 51.428875],
+          [-2.660972, 51.428886],
+          [-2.660899, 51.428921]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.661488, 51.428416],
+          [-2.661553, 51.428567],
+          [-2.661615, 51.428759],
+          [-2.661604, 51.428796],
+          [-2.661557, 51.42882],
+          [-2.661244, 51.42887]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.660899, 51.428921],
+          [-2.660181, 51.428905],
+          [-2.660086, 51.428911],
+          [-2.660017, 51.428934],
+          [-2.659855, 51.429091],
+          [-2.659792, 51.429114],
+          [-2.659284, 51.429207],
+          [-2.659204, 51.42923],
+          [-2.659179, 51.429264],
+          [-2.659212, 51.42944],
+          [-2.659173, 51.429468],
+          [-2.658665, 51.429568],
+          [-2.658619, 51.42956],
+          [-2.658593, 51.42953],
+          [-2.65855, 51.429427],
+          [-2.658502, 51.42936],
+          [-2.658431, 51.429314],
+          [-2.658335, 51.429295],
+          [-2.658244, 51.429312],
+          [-2.657487, 51.429386],
+          [-2.657312, 51.429415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657312, 51.429415],
+          [-2.657069, 51.429411],
+          [-2.656769, 51.429337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.675038, 51.427814],
+          [-2.674728, 51.427598],
+          [-2.674601, 51.427456],
+          [-2.674571, 51.42744],
+          [-2.6745, 51.427434],
+          [-2.674302, 51.42752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.657892, 51.429695],
+          [-2.657852, 51.429597],
+          [-2.657812, 51.42957],
+          [-2.657743, 51.429359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.671761, 51.427724],
+          [-2.671888, 51.42775]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.667972, 51.427313],
+          [-2.667829, 51.427337],
+          [-2.666964, 51.427676],
+          [-2.666799, 51.427715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666799, 51.427715],
+          [-2.66661, 51.427718],
+          [-2.666422, 51.427687],
+          [-2.66622, 51.42763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.666411, 51.42644],
+          [-2.665929, 51.426301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6632, 51.429687],
+          [-2.662556, 51.429801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.650648, 51.430506],
+          [-2.650723, 51.430514],
+          [-2.650809, 51.430507],
+          [-2.651007, 51.430461],
+          [-2.651132, 51.430452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.674908, 51.428193],
+          [-2.674886, 51.428125],
+          [-2.67434, 51.427602],
+          [-2.67435, 51.42759],
+          [-2.674337, 51.42755],
+          [-2.674302, 51.42752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.663523, 51.427564],
+          [-2.6631, 51.427626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.669021, 51.428068],
+          [-2.668684, 51.427634],
+          [-2.668524, 51.427497],
+          [-2.66834, 51.427388],
+          [-2.668245, 51.42735],
+          [-2.66806, 51.427313],
+          [-2.667972, 51.427313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634087, 51.436896],
+          [-2.634254, 51.436883],
+          [-2.634415, 51.436889],
+          [-2.634653, 51.436925],
+          [-2.634869, 51.43698],
+          [-2.63507, 51.437059],
+          [-2.635992, 51.437584],
+          [-2.636518, 51.437856],
+          [-2.636732, 51.437936],
+          [-2.637109, 51.438028]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.635308, 51.438995],
+          [-2.635492, 51.438961],
+          [-2.636064, 51.438806],
+          [-2.636661, 51.438622],
+          [-2.636986, 51.438478],
+          [-2.63743, 51.438239],
+          [-2.637555, 51.438127],
+          [-2.637582, 51.438053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.638299, 51.437877],
+          [-2.639011, 51.437731],
+          [-2.639518, 51.437665],
+          [-2.640018, 51.437613],
+          [-2.640521, 51.437585],
+          [-2.640821, 51.437587],
+          [-2.641674, 51.437685],
+          [-2.643343, 51.437916],
+          [-2.644468, 51.438026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.637582, 51.438053],
+          [-2.637569, 51.437998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.637582, 51.438053],
+          [-2.638038, 51.437964],
+          [-2.638199, 51.437923],
+          [-2.638299, 51.437877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.637109, 51.438028],
+          [-2.63724, 51.438063],
+          [-2.637343, 51.438071],
+          [-2.637582, 51.438053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.638299, 51.437877],
+          [-2.638164, 51.437876],
+          [-2.637736, 51.437973],
+          [-2.637569, 51.437998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.637569, 51.437998],
+          [-2.637247, 51.438009],
+          [-2.637109, 51.438028]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.633955, 51.427515],
+          [-2.636547, 51.427366],
+          [-2.638815, 51.427282],
+          [-2.641097, 51.427244],
+          [-2.646523, 51.427235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.646523, 51.427204],
+          [-2.641096, 51.427213],
+          [-2.63882, 51.42725],
+          [-2.636564, 51.42733],
+          [-2.633835, 51.427488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.651451, 51.427092],
+          [-2.653895, 51.426945],
+          [-2.656552, 51.426729],
+          [-2.659728, 51.426406],
+          [-2.661939, 51.426129],
+          [-2.66658, 51.425458],
+          [-2.668924, 51.425139],
+          [-2.670116, 51.42499],
+          [-2.671301, 51.424868],
+          [-2.673817, 51.424633]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.67381, 51.4246],
+          [-2.671292, 51.424835],
+          [-2.670107, 51.424957],
+          [-2.668913, 51.425106],
+          [-2.666568, 51.425425],
+          [-2.661928, 51.426096],
+          [-2.659719, 51.426373],
+          [-2.656544, 51.426695],
+          [-2.653889, 51.426912],
+          [-2.651446, 51.427059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.676038, 51.425234],
+          [-2.67561, 51.425322],
+          [-2.674813, 51.425518],
+          [-2.6744, 51.425649],
+          [-2.674063, 51.425776],
+          [-2.673856, 51.425873],
+          [-2.67364, 51.426005],
+          [-2.673206, 51.426355],
+          [-2.672367, 51.426938],
+          [-2.671975, 51.427134],
+          [-2.671216, 51.427472],
+          [-2.669487, 51.427957],
+          [-2.669007, 51.428072],
+          [-2.668757, 51.428158],
+          [-2.667725, 51.428558],
+          [-2.666701, 51.428879],
+          [-2.666596, 51.428903],
+          [-2.666059, 51.428975],
+          [-2.665328, 51.429032],
+          [-2.664959, 51.429085],
+          [-2.662872, 51.429487],
+          [-2.662393, 51.429591],
+          [-2.660941, 51.429966],
+          [-2.659053, 51.430329],
+          [-2.658562, 51.430376],
+          [-2.657601, 51.430426],
+          [-2.657196, 51.430474],
+          [-2.656777, 51.430563],
+          [-2.656592, 51.430624],
+          [-2.654878, 51.431244],
+          [-2.654455, 51.431386],
+          [-2.65391, 51.431528],
+          [-2.653066, 51.431679],
+          [-2.65265, 51.431785],
+          [-2.652129, 51.431936],
+          [-2.651648, 51.432121],
+          [-2.651136, 51.432355],
+          [-2.650739, 51.432586],
+          [-2.650151, 51.432903],
+          [-2.649595, 51.433256],
+          [-2.649277, 51.433482],
+          [-2.649057, 51.433683],
+          [-2.648842, 51.433891],
+          [-2.64818, 51.434605],
+          [-2.648008, 51.434772],
+          [-2.647581, 51.435127],
+          [-2.647112, 51.435361],
+          [-2.645426, 51.436305],
+          [-2.644981, 51.436636],
+          [-2.644817, 51.436775],
+          [-2.644228, 51.437199],
+          [-2.643898, 51.4374],
+          [-2.643666, 51.437517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.643106, 51.437696],
+          [-2.642726, 51.43776],
+          [-2.642514, 51.437768],
+          [-2.642166, 51.437756]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.643343, 51.437916],
+          [-2.643419, 51.437699],
+          [-2.643666, 51.437517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.643106, 51.437696],
+          [-2.643014, 51.437876]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "long-ashton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.643666, 51.437517],
+          [-2.64335, 51.437632],
+          [-2.643106, 51.437696]
+        ]
+      }
+    }
+  ]
+}

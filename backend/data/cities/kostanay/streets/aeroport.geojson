@@ -1,0 +1,1459 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.584717, 53.210344],
+          [63.583736, 53.212353],
+          [63.583546, 53.212602],
+          [63.583281, 53.212829],
+          [63.582839, 53.213087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573317, 53.22032],
+          [63.573458, 53.220109],
+          [63.573717, 53.219617],
+          [63.573959, 53.219018],
+          [63.574523, 53.217768],
+          [63.574721, 53.217354],
+          [63.57494, 53.216984],
+          [63.575161, 53.216698],
+          [63.575764, 53.21608],
+          [63.576224, 53.215689],
+          [63.576779, 53.215257],
+          [63.57741, 53.214841],
+          [63.57872, 53.21419],
+          [63.579646, 53.213843],
+          [63.580311, 53.213645],
+          [63.581112, 53.213472],
+          [63.582194, 53.213294]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571969, 53.221577],
+          [63.572356, 53.221339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569898, 53.222872],
+          [63.570912, 53.222246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.567716, 53.224221],
+          [63.569011, 53.22342]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.56322, 53.227034],
+          [63.565492, 53.2256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.56304, 53.225661],
+          [63.563263, 53.225825],
+          [63.563365, 53.225952],
+          [63.563459, 53.226132],
+          [63.563491, 53.226332],
+          [63.563472, 53.226552],
+          [63.563386, 53.226797]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.555144, 53.221613],
+          [63.555634, 53.220872],
+          [63.555222, 53.220762],
+          [63.555187, 53.22063],
+          [63.555101, 53.220495],
+          [63.554972, 53.220407],
+          [63.554809, 53.220341],
+          [63.554708, 53.220314],
+          [63.554575, 53.220314],
+          [63.554342, 53.220356],
+          [63.554169, 53.220432],
+          [63.5541, 53.22048],
+          [63.553875, 53.220816],
+          [63.553859, 53.220888],
+          [63.553843, 53.220973],
+          [63.553878, 53.22106],
+          [63.553974, 53.221132],
+          [63.554803, 53.2215],
+          [63.555009, 53.221577],
+          [63.555653, 53.221757],
+          [63.555847, 53.221836],
+          [63.557086, 53.222428],
+          [63.559459, 53.223613],
+          [63.561235, 53.224641],
+          [63.56304, 53.225661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.565492, 53.2256],
+          [63.56503, 53.225785],
+          [63.56466, 53.22587],
+          [63.564137, 53.225902],
+          [63.563754, 53.225876],
+          [63.563378, 53.225783],
+          [63.56304, 53.225661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.575869, 53.220437],
+          [63.57758, 53.220565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573317, 53.22032],
+          [63.574566, 53.220376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57494, 53.216984],
+          [63.574461, 53.217054],
+          [63.574225, 53.217072],
+          [63.574029, 53.217076],
+          [63.573803, 53.217053],
+          [63.573527, 53.216949],
+          [63.573318, 53.216843],
+          [63.573066, 53.216685],
+          [63.572363, 53.216146],
+          [63.570574, 53.215363],
+          [63.570344, 53.215232],
+          [63.570117, 53.215019],
+          [63.570127, 53.214891],
+          [63.570342, 53.214784],
+          [63.572846, 53.214499],
+          [63.573517, 53.214495],
+          [63.57447, 53.214422],
+          [63.578617, 53.213873],
+          [63.579364, 53.213764],
+          [63.579646, 53.213843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.559702, 53.20482],
+          [63.55622, 53.209735],
+          [63.556178, 53.209899],
+          [63.55619, 53.210225],
+          [63.556132, 53.210421],
+          [63.553988, 53.215134],
+          [63.553713, 53.215978],
+          [63.553645, 53.21633],
+          [63.553656, 53.216536],
+          [63.553821, 53.216987],
+          [63.55428, 53.217736],
+          [63.554403, 53.217872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.577541, 53.211277],
+          [63.578465, 53.213478],
+          [63.578617, 53.213873],
+          [63.57872, 53.21419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570318, 53.220149],
+          [63.5707, 53.219854],
+          [63.571128, 53.219395],
+          [63.571435, 53.219014],
+          [63.571738, 53.218545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572434, 53.219217],
+          [63.571792, 53.21907],
+          [63.571732, 53.219042],
+          [63.571715, 53.219008],
+          [63.571722, 53.218968],
+          [63.571811, 53.218828],
+          [63.571815, 53.218796],
+          [63.571775, 53.218773],
+          [63.571614, 53.218737]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570298, 53.218221],
+          [63.56933, 53.218006],
+          [63.569209, 53.217999],
+          [63.569091, 53.218017],
+          [63.568592, 53.21828],
+          [63.567199, 53.219087],
+          [63.567159, 53.219134],
+          [63.567147, 53.219182],
+          [63.567211, 53.219245],
+          [63.569038, 53.220034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571801, 53.220352],
+          [63.571446, 53.220838],
+          [63.571315, 53.220949],
+          [63.565167, 53.224521],
+          [63.565073, 53.224524],
+          [63.564966, 53.224489],
+          [63.563278, 53.223446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569011, 53.22342],
+          [63.566226, 53.221721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571554, 53.220701],
+          [63.569303, 53.219695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570298, 53.218221],
+          [63.56915, 53.21991],
+          [63.569038, 53.220034],
+          [63.568914, 53.220135],
+          [63.566226, 53.221721],
+          [63.561235, 53.224641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571712, 53.210283],
+          [63.571771, 53.210675],
+          [63.571744, 53.211022],
+          [63.572125, 53.211832],
+          [63.573294, 53.214491]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573064, 53.218818],
+          [63.572898, 53.218807],
+          [63.573025, 53.218864]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573984, 53.21896],
+          [63.573064, 53.218818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573025, 53.218864],
+          [63.573199, 53.218903],
+          [63.573959, 53.219018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572898, 53.218807],
+          [63.570298, 53.218221]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570741, 53.218734],
+          [63.570194, 53.219582],
+          [63.570194, 53.219611],
+          [63.570225, 53.219639],
+          [63.571801, 53.220352]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.57056, 53.219016],
+          [63.57184, 53.219316],
+          [63.571897, 53.219316],
+          [63.571937, 53.219296],
+          [63.57205, 53.219129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571048, 53.219129],
+          [63.571197, 53.218893],
+          [63.571208, 53.218865],
+          [63.571179, 53.21884],
+          [63.570062, 53.218571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573064, 53.218818],
+          [63.573025, 53.218864]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573457, 53.218942],
+          [63.573483, 53.218883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570455, 53.220042],
+          [63.569789, 53.219759],
+          [63.569724, 53.219684],
+          [63.569727, 53.219597],
+          [63.569915, 53.219294],
+          [63.570382, 53.218648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573025, 53.218864],
+          [63.572865, 53.219083],
+          [63.572683, 53.219188],
+          [63.572519, 53.219339],
+          [63.571801, 53.220352]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579646, 53.213843],
+          [63.579941, 53.213962],
+          [63.580458, 53.214055],
+          [63.580851, 53.213966],
+          [63.581112, 53.213472],
+          [63.580851, 53.2129],
+          [63.580647, 53.212593],
+          [63.580289, 53.211677],
+          [63.580393, 53.211476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581405, 53.213421],
+          [63.582029, 53.213679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.555108, 53.220733],
+          [63.554841, 53.221153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554088, 53.22096],
+          [63.554841, 53.221153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.558324, 53.213098],
+          [63.5577, 53.214173],
+          [63.557654, 53.214214],
+          [63.557614, 53.214231],
+          [63.557555, 53.214239],
+          [63.557158, 53.214169],
+          [63.554691, 53.213588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554382, 53.220554],
+          [63.554088, 53.22096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554841, 53.221153],
+          [63.555362, 53.221284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554526, 53.216234],
+          [63.553656, 53.216536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554616, 53.2193],
+          [63.554975, 53.219518],
+          [63.555195, 53.219624],
+          [63.555479, 53.219705],
+          [63.556075, 53.219846],
+          [63.556674, 53.219928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.556679, 53.220469],
+          [63.556351, 53.220393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.555222, 53.220762],
+          [63.554382, 53.220554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.557301, 53.214197],
+          [63.556777, 53.215224],
+          [63.556796, 53.215254],
+          [63.556855, 53.215291],
+          [63.556962, 53.215323],
+          [63.557344, 53.215392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.556185, 53.220643],
+          [63.55604, 53.220615],
+          [63.555978, 53.220622],
+          [63.555911, 53.220649],
+          [63.555761, 53.220758],
+          [63.555634, 53.220872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.555458, 53.221697],
+          [63.556674, 53.219928],
+          [63.557485, 53.218722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581488, 53.212798],
+          [63.580851, 53.2129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581496, 53.213016],
+          [63.58094, 53.213096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579364, 53.213764],
+          [63.579117, 53.213397],
+          [63.578465, 53.213478]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.582379, 53.211189],
+          [63.580393, 53.211476],
+          [63.579914, 53.211515],
+          [63.579385, 53.21147],
+          [63.578333, 53.211635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574033, 53.21623],
+          [63.574385, 53.216376],
+          [63.574668, 53.216443]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574385, 53.216376],
+          [63.574914, 53.215866],
+          [63.57493, 53.215812],
+          [63.574878, 53.215776],
+          [63.574643, 53.215705],
+          [63.574583, 53.215703],
+          [63.57453, 53.215743],
+          [63.574033, 53.21623],
+          [63.573693, 53.21652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570614, 53.218292],
+          [63.570818, 53.217975],
+          [63.571364, 53.218107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571167, 53.218417],
+          [63.57146, 53.217961],
+          [63.572825, 53.218274],
+          [63.572533, 53.218724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.563278, 53.223446],
+          [63.561676, 53.222469],
+          [63.560581, 53.221776],
+          [63.56042, 53.221698],
+          [63.560312, 53.221702],
+          [63.55984, 53.221979],
+          [63.55979, 53.222082],
+          [63.559905, 53.222175],
+          [63.560904, 53.222825],
+          [63.562089, 53.223555],
+          [63.562806, 53.223158],
+          [63.564122, 53.222388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.556449, 53.220249],
+          [63.556293, 53.220244],
+          [63.556256, 53.220254],
+          [63.556209, 53.220287],
+          [63.55604, 53.220615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554809, 53.220341],
+          [63.554591, 53.22039],
+          [63.554496, 53.22043],
+          [63.554434, 53.220478],
+          [63.554382, 53.220554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554319, 53.221285],
+          [63.554648, 53.221237],
+          [63.55476, 53.221205],
+          [63.554841, 53.221153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.554088, 53.22096],
+          [63.554066, 53.22101],
+          [63.554067, 53.221067],
+          [63.554141, 53.221214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.55563, 53.22175],
+          [63.555503, 53.221763],
+          [63.555455, 53.221761],
+          [63.555332, 53.221739],
+          [63.554454, 53.221519],
+          [63.5535, 53.221298],
+          [63.55281, 53.221109],
+          [63.552775, 53.221091],
+          [63.552743, 53.221059],
+          [63.552735, 53.221032],
+          [63.55271, 53.220836],
+          [63.552673, 53.220683],
+          [63.552686, 53.220594],
+          [63.552726, 53.220472],
+          [63.55285, 53.220284],
+          [63.552949, 53.220186],
+          [63.553, 53.220149],
+          [63.553067, 53.220129],
+          [63.553204, 53.220137],
+          [63.554035, 53.220332],
+          [63.554215, 53.220412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569867, 53.21886],
+          [63.568592, 53.21828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.565465, 53.223229],
+          [63.563846, 53.222216],
+          [63.563783, 53.2222],
+          [63.563714, 53.222213],
+          [63.562455, 53.222947],
+          [63.56227, 53.223051],
+          [63.562205, 53.223067],
+          [63.562109, 53.223055],
+          [63.560677, 53.222168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.563704, 53.223709],
+          [63.563063, 53.224103],
+          [63.564, 53.224687],
+          [63.567173, 53.222849],
+          [63.567207, 53.222812],
+          [63.567182, 53.222781],
+          [63.566387, 53.222342],
+          [63.566322, 53.222331],
+          [63.565951, 53.222369],
+          [63.565873, 53.222367],
+          [63.565651, 53.222316],
+          [63.565574, 53.222284],
+          [63.565426, 53.222189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.567346, 53.223255],
+          [63.566936, 53.222989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.567569, 53.222112],
+          [63.567376, 53.22223],
+          [63.567199, 53.222319],
+          [63.566785, 53.222558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.564579, 53.223741],
+          [63.566704, 53.222515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.565065, 53.224067],
+          [63.564579, 53.223741],
+          [63.564173, 53.223485],
+          [63.564158, 53.223453],
+          [63.564178, 53.223425],
+          [63.565616, 53.222591],
+          [63.565666, 53.222585],
+          [63.565717, 53.222595],
+          [63.566121, 53.222851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.565231, 53.223365],
+          [63.565727, 53.223684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.568713, 53.222461],
+          [63.568368, 53.222265],
+          [63.568319, 53.222263],
+          [63.568095, 53.222328],
+          [63.568047, 53.222335],
+          [63.567959, 53.222328],
+          [63.567879, 53.222302],
+          [63.567296, 53.221951],
+          [63.567239, 53.221893],
+          [63.567255, 53.221797],
+          [63.567318, 53.221642],
+          [63.567301, 53.221505],
+          [63.566983, 53.221275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.579243, 53.215741],
+          [63.579571, 53.21545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.578251, 53.214416],
+          [63.580209, 53.21594],
+          [63.580875, 53.216472],
+          [63.580761, 53.216763],
+          [63.580129, 53.218086],
+          [63.580129, 53.21812],
+          [63.580153, 53.218148],
+          [63.580188, 53.218174],
+          [63.581853, 53.218441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.58066, 53.216303],
+          [63.578919, 53.216758],
+          [63.578829, 53.216788],
+          [63.578652, 53.216898],
+          [63.578294, 53.217159],
+          [63.578248, 53.217175],
+          [63.578173, 53.21717],
+          [63.577444, 53.216833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.578829, 53.216788],
+          [63.577969, 53.216383],
+          [63.577905, 53.216367],
+          [63.577846, 53.216369],
+          [63.577792, 53.216396],
+          [63.577296, 53.216795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.561676, 53.222469],
+          [63.561549, 53.222493],
+          [63.561434, 53.22253],
+          [63.561335, 53.222576],
+          [63.560904, 53.222825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569793, 53.214559],
+          [63.572689, 53.214219],
+          [63.572942, 53.214181],
+          [63.572978, 53.214181],
+          [63.57304, 53.214204],
+          [63.573212, 53.214303]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571555, 53.21579],
+          [63.572154, 53.215246],
+          [63.572176, 53.21524],
+          [63.572246, 53.215246],
+          [63.573372, 53.215672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.574171, 53.215055],
+          [63.574399, 53.21493],
+          [63.574448, 53.214874],
+          [63.57447, 53.214422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573426, 53.214761],
+          [63.573638, 53.215158],
+          [63.57363, 53.215203],
+          [63.572888, 53.215489]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572787, 53.215092],
+          [63.572514, 53.21509],
+          [63.572474, 53.215078],
+          [63.572369, 53.214554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.580662, 53.21592],
+          [63.580209, 53.21594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.56042, 53.221698],
+          [63.560902, 53.221397],
+          [63.561015, 53.221397],
+          [63.56127, 53.221548],
+          [63.561273, 53.221608],
+          [63.561203, 53.22167],
+          [63.560808, 53.22192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.557139, 53.220773],
+          [63.557027, 53.220928],
+          [63.556978, 53.220948],
+          [63.556893, 53.220938],
+          [63.556649, 53.220847],
+          [63.556485, 53.220803],
+          [63.55634, 53.220779],
+          [63.556095, 53.220773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570711, 53.217641],
+          [63.570478, 53.217973],
+          [63.570491, 53.217999],
+          [63.57052, 53.218013],
+          [63.570756, 53.218075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573064, 53.218818],
+          [63.573488, 53.218158]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.5708, 53.216025],
+          [63.569888, 53.217053],
+          [63.569834, 53.217154],
+          [63.56985, 53.217219],
+          [63.569941, 53.217264],
+          [63.570813, 53.217501],
+          [63.570915, 53.217514],
+          [63.571006, 53.217471],
+          [63.571043, 53.217399]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572004, 53.21653],
+          [63.571438, 53.217148]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571808, 53.216736],
+          [63.572111, 53.216814],
+          [63.572197, 53.216851],
+          [63.572216, 53.21688],
+          [63.5722, 53.216922],
+          [63.571891, 53.217264],
+          [63.571835, 53.217267],
+          [63.571773, 53.217252],
+          [63.571438, 53.217148],
+          [63.571347, 53.217134],
+          [63.571261, 53.217143],
+          [63.571181, 53.217164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.571545, 53.216374],
+          [63.570977, 53.217023],
+          [63.571004, 53.217064],
+          [63.571106, 53.21709],
+          [63.571165, 53.217122],
+          [63.571181, 53.217164],
+          [63.571151, 53.217256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.576033, 53.214082],
+          [63.575714, 53.214119],
+          [63.575679, 53.214154],
+          [63.575697, 53.214259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570906, 53.218358],
+          [63.571113, 53.218046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569047, 53.217848],
+          [63.569209, 53.217999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.568866, 53.217252],
+          [63.568606, 53.217675],
+          [63.568646, 53.217726],
+          [63.56871, 53.217765],
+          [63.569603, 53.217985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.569815, 53.217586],
+          [63.569566, 53.21806]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.570196, 53.217949],
+          [63.570491, 53.217999]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572734, 53.216297],
+          [63.5736, 53.21671],
+          [63.573847, 53.216816],
+          [63.573997, 53.216841],
+          [63.574145, 53.216836],
+          [63.574281, 53.216817],
+          [63.574427, 53.216726],
+          [63.574668, 53.216443],
+          [63.574751, 53.216364],
+          [63.574866, 53.216337],
+          [63.575126, 53.216356],
+          [63.575369, 53.216483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.572363, 53.216146],
+          [63.572165, 53.2164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.573021, 53.216746],
+          [63.573149, 53.216742],
+          [63.573456, 53.216641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.558022, 53.213266],
+          [63.559119, 53.21113],
+          [63.559559, 53.210486],
+          [63.559776, 53.210215],
+          [63.560143, 53.209904],
+          [63.560537, 53.209651],
+          [63.560969, 53.209451],
+          [63.561484, 53.209281],
+          [63.562079, 53.209152],
+          [63.562698, 53.209082],
+          [63.569995, 53.208525],
+          [63.570725, 53.208432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.55791, 53.21325],
+          [63.558397, 53.212318],
+          [63.558642, 53.211987],
+          [63.558805, 53.211723]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.580598, 53.218974],
+          [63.581169, 53.219066]
+        ]
+      }
+    }
+  ]
+}

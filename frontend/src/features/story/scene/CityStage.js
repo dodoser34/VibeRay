@@ -89,6 +89,8 @@ export class CityStage {
       heightRange: 0.55,
       lineWidth: 1.6,
       opacity: parseFloat(cssVar('--scene-district-opacity')),
+      // Готовые плиты (getCity) — в км без растяжения: годятся, только если план не растянут.
+      plates: scale === 1 ? city.plates : null,
     });
     this.districts.setData(moods.districts, { animate: false });
     this.group.add(this.districts.group);
@@ -293,7 +295,7 @@ export class CityStage {
 
   // Плитки нужного уровня под текущую камеру (каждый кадр, сами плитки — не чаще своего шага).
   update(camera, viewportHeight, time) {
-    this.tiles.update(camera, viewportHeight, time);
+    return this.tiles.update(camera, viewportHeight, time);
   }
 
   setResolution(width, height) {

@@ -1,0 +1,3686 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520223, 51.470625],
+          [-2.520297, 51.47048],
+          [-2.520668, 51.469907],
+          [-2.520907, 51.469376],
+          [-2.520972, 51.469145],
+          [-2.52115, 51.466621],
+          [-2.523632, 51.466843],
+          [-2.524154, 51.466879],
+          [-2.524408, 51.466883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517095, 51.466718],
+          [-2.517719, 51.466715],
+          [-2.519808, 51.466648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513004, 51.467163],
+          [-2.513325, 51.467079],
+          [-2.514319, 51.466964],
+          [-2.515355, 51.466806],
+          [-2.515977, 51.466761],
+          [-2.517052, 51.466719]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512557, 51.476974],
+          [-2.512767, 51.476762],
+          [-2.513248, 51.47621],
+          [-2.514046, 51.474917],
+          [-2.5144, 51.473843],
+          [-2.51473, 51.471804],
+          [-2.514791, 51.47156],
+          [-2.515035, 51.470837],
+          [-2.515255, 51.47027],
+          [-2.515487, 51.469608],
+          [-2.515563, 51.46942],
+          [-2.515637, 51.469362]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528278, 51.466924],
+          [-2.527526, 51.466978],
+          [-2.526746, 51.466992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526276, 51.467001],
+          [-2.526532, 51.467013],
+          [-2.526746, 51.466992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526746, 51.466992],
+          [-2.526604, 51.466987]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515475, 51.48136],
+          [-2.515819, 51.480611],
+          [-2.517043, 51.478143],
+          [-2.517207, 51.477838],
+          [-2.517314, 51.477667],
+          [-2.517605, 51.477057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.510666, 51.471627],
+          [-2.511063, 51.471708],
+          [-2.51161, 51.471781],
+          [-2.51225, 51.471816],
+          [-2.512803, 51.471804],
+          [-2.513343, 51.471741],
+          [-2.514223, 51.4716],
+          [-2.514612, 51.471558],
+          [-2.514791, 51.47156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522658, 51.467957],
+          [-2.522785, 51.467814],
+          [-2.523547, 51.467156],
+          [-2.523569, 51.467114],
+          [-2.523632, 51.466843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525908, 51.467781],
+          [-2.526428, 51.46707],
+          [-2.526435, 51.467012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536366, 51.473034],
+          [-2.536616, 51.473355],
+          [-2.536906, 51.473689],
+          [-2.53698, 51.473714],
+          [-2.538461, 51.473754],
+          [-2.539189, 51.47376],
+          [-2.539253, 51.473753],
+          [-2.539313, 51.473731],
+          [-2.539652, 51.473436],
+          [-2.53969, 51.473378],
+          [-2.5397, 51.472986],
+          [-2.538294, 51.472935],
+          [-2.536847, 51.472901],
+          [-2.536711, 51.472928],
+          [-2.536366, 51.473034],
+          [-2.53246, 51.474438],
+          [-2.531328, 51.474853],
+          [-2.531255, 51.474913],
+          [-2.531014, 51.475153],
+          [-2.530942, 51.475205],
+          [-2.527762, 51.477019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514945, 51.479405],
+          [-2.515111, 51.480296],
+          [-2.515149, 51.480379],
+          [-2.515218, 51.480462],
+          [-2.515309, 51.480512],
+          [-2.515819, 51.480611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514945, 51.479405],
+          [-2.51651, 51.479227]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516296, 51.479652],
+          [-2.517036, 51.479773],
+          [-2.518826, 51.480033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522341, 51.480186],
+          [-2.521236, 51.480036],
+          [-2.519207, 51.479717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519067, 51.481617],
+          [-2.519771, 51.480137],
+          [-2.519929, 51.479833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51967, 51.480353],
+          [-2.520703, 51.480521],
+          [-2.520802, 51.480578],
+          [-2.520807, 51.48065],
+          [-2.520337, 51.481665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518819, 51.479994],
+          [-2.518822, 51.480103],
+          [-2.518564, 51.481241],
+          [-2.518466, 51.481597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517188, 51.481554],
+          [-2.517255, 51.481022],
+          [-2.517343, 51.480622]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53063, 51.471389],
+          [-2.530719, 51.471384],
+          [-2.530827, 51.471395],
+          [-2.531209, 51.471487],
+          [-2.532779, 51.471935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5344, 51.47232],
+          [-2.535404, 51.473383],
+          [-2.536274, 51.474512]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532654, 51.471896],
+          [-2.532323, 51.472344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525908, 51.467781],
+          [-2.526062, 51.468013],
+          [-2.526183, 51.468146],
+          [-2.526518, 51.468337],
+          [-2.52706, 51.468704],
+          [-2.527307, 51.468822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533017, 51.477208],
+          [-2.533115, 51.476938],
+          [-2.533466, 51.475789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534358, 51.47376],
+          [-2.53398, 51.473387],
+          [-2.533883, 51.473325],
+          [-2.533725, 51.473285],
+          [-2.533611, 51.473286],
+          [-2.533462, 51.473312],
+          [-2.531956, 51.473855],
+          [-2.531844, 51.473906],
+          [-2.53176, 51.47398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52967, 51.473568],
+          [-2.530588, 51.473368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529438, 51.474168],
+          [-2.529585, 51.473843],
+          [-2.529666, 51.473621],
+          [-2.52967, 51.473568],
+          [-2.529656, 51.473497],
+          [-2.529452, 51.472951],
+          [-2.529467, 51.472884],
+          [-2.529622, 51.472717],
+          [-2.530601, 51.471513],
+          [-2.530642, 51.471455],
+          [-2.53063, 51.471389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529622, 51.472717],
+          [-2.529287, 51.472619],
+          [-2.528564, 51.47261]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527227, 51.470689],
+          [-2.526272, 51.470472],
+          [-2.524529, 51.470109],
+          [-2.520907, 51.469376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534941, 51.476376],
+          [-2.534762, 51.476453],
+          [-2.533115, 51.476938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513196, 51.47627],
+          [-2.513067, 51.476208],
+          [-2.513009, 51.476145],
+          [-2.512379, 51.475114],
+          [-2.512139, 51.474675],
+          [-2.511954, 51.474009],
+          [-2.51161, 51.471781],
+          [-2.511584, 51.471451],
+          [-2.51166, 51.471152],
+          [-2.5117, 51.471081],
+          [-2.511787, 51.471042],
+          [-2.512362, 51.470999],
+          [-2.512468, 51.471012],
+          [-2.512539, 51.471043],
+          [-2.513343, 51.471741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512828, 51.468672],
+          [-2.512833, 51.468624],
+          [-2.514142, 51.467647],
+          [-2.514249, 51.467616],
+          [-2.514438, 51.467605]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513152, 51.468918],
+          [-2.51497, 51.468499],
+          [-2.516565, 51.468086],
+          [-2.516904, 51.468007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527432, 51.470365],
+          [-2.527133, 51.470299],
+          [-2.527028, 51.470309],
+          [-2.526962, 51.470324],
+          [-2.52691, 51.470389],
+          [-2.526808, 51.470595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517706, 51.469831],
+          [-2.517738, 51.469786],
+          [-2.517786, 51.469758],
+          [-2.517865, 51.469732],
+          [-2.518421, 51.469619],
+          [-2.518514, 51.469606],
+          [-2.518621, 51.469608],
+          [-2.519289, 51.469662],
+          [-2.519544, 51.469672],
+          [-2.519693, 51.469693],
+          [-2.520118, 51.469776],
+          [-2.520668, 51.469907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516118, 51.467878],
+          [-2.516288, 51.467836],
+          [-2.516523, 51.467738],
+          [-2.516568, 51.4677],
+          [-2.516615, 51.467607],
+          [-2.516688, 51.467553],
+          [-2.516784, 51.467518],
+          [-2.51689, 51.4675],
+          [-2.517122, 51.467503]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517138, 51.467676],
+          [-2.517109, 51.467622],
+          [-2.517146, 51.467352],
+          [-2.517095, 51.466718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51839, 51.469002],
+          [-2.518354, 51.46866],
+          [-2.518373, 51.468592],
+          [-2.518352, 51.468564],
+          [-2.518242, 51.467669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520252, 51.468648],
+          [-2.520178, 51.467618]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519487, 51.468664],
+          [-2.519425, 51.467639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521012, 51.468625],
+          [-2.519103, 51.46867],
+          [-2.518373, 51.468592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517055, 51.467972],
+          [-2.517091, 51.467766],
+          [-2.517138, 51.467676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521084, 51.467601],
+          [-2.517228, 51.467689],
+          [-2.517138, 51.467676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512974, 51.4665],
+          [-2.513707, 51.466429]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526988, 51.473209],
+          [-2.526875, 51.473375],
+          [-2.525831, 51.475478],
+          [-2.525781, 51.475537],
+          [-2.52573, 51.475575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52756, 51.471976],
+          [-2.527439, 51.47217],
+          [-2.52738, 51.472384],
+          [-2.527253, 51.473098],
+          [-2.52718, 51.473282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528402, 51.473112],
+          [-2.528104, 51.473644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526733, 51.471475],
+          [-2.527728, 51.471665],
+          [-2.530082, 51.472147]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524309, 51.471033],
+          [-2.526706, 51.471522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524732, 51.470155],
+          [-2.524046, 51.471557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522651, 51.471481],
+          [-2.523453, 51.469888]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521927, 51.470186],
+          [-2.521482, 51.471039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521236, 51.480036],
+          [-2.521469, 51.479409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520309, 51.479894],
+          [-2.520536, 51.479312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527177, 51.470718],
+          [-2.530433, 51.471379],
+          [-2.530536, 51.471396],
+          [-2.53063, 51.471389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521082, 51.467653],
+          [-2.521632, 51.467743],
+          [-2.522582, 51.467944],
+          [-2.523408, 51.468096],
+          [-2.524739, 51.468276],
+          [-2.525053, 51.468266],
+          [-2.525342, 51.468207],
+          [-2.525469, 51.468157],
+          [-2.525629, 51.468058],
+          [-2.525759, 51.467956],
+          [-2.525908, 51.467781]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525629, 51.468058],
+          [-2.524941, 51.467452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536402, 51.472562],
+          [-2.536711, 51.472928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536115, 51.472544],
+          [-2.535496, 51.472774]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514223, 51.4716],
+          [-2.513177, 51.470355],
+          [-2.513152, 51.470265],
+          [-2.513431, 51.469188],
+          [-2.513374, 51.469093],
+          [-2.513152, 51.468918],
+          [-2.512862, 51.46872],
+          [-2.512828, 51.468672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520747, 51.477656],
+          [-2.523254, 51.472635],
+          [-2.523254, 51.472581],
+          [-2.523233, 51.472544],
+          [-2.523712, 51.472085]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523826, 51.471946],
+          [-2.524027, 51.471598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51948, 51.480752],
+          [-2.520103, 51.480852]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514356, 51.479442],
+          [-2.514945, 51.479405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521397, 51.476344],
+          [-2.518915, 51.475885],
+          [-2.514698, 51.475054],
+          [-2.513361, 51.474778],
+          [-2.513052, 51.474738],
+          [-2.512632, 51.474722],
+          [-2.512324, 51.474723],
+          [-2.512166, 51.474737],
+          [-2.511501, 51.474836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526559, 51.476157],
+          [-2.526618, 51.476112],
+          [-2.526667, 51.476042],
+          [-2.527893, 51.473564]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524981, 51.47503],
+          [-2.526977, 51.476465],
+          [-2.528129, 51.477274],
+          [-2.528619, 51.477509],
+          [-2.528887, 51.477669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517043, 51.478143],
+          [-2.517447, 51.47823],
+          [-2.517504, 51.478253],
+          [-2.517542, 51.478307],
+          [-2.517574, 51.478416],
+          [-2.517606, 51.478455],
+          [-2.51769, 51.478494],
+          [-2.518076, 51.478582],
+          [-2.518283, 51.478596],
+          [-2.518459, 51.478592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522877, 51.479068],
+          [-2.52113, 51.479026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.510507, 51.47262],
+          [-2.510414, 51.472115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512111, 51.471018],
+          [-2.512046, 51.470582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514005, 51.472261],
+          [-2.51387, 51.47225],
+          [-2.513721, 51.472184],
+          [-2.51358, 51.472108],
+          [-2.513001, 51.472151],
+          [-2.51288, 51.472143],
+          [-2.512834, 51.47209],
+          [-2.512803, 51.471804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514114, 51.470108],
+          [-2.515255, 51.47027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512834, 51.47209],
+          [-2.512745, 51.472117],
+          [-2.512704, 51.472146],
+          [-2.51255, 51.472397],
+          [-2.512555, 51.472457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514521, 51.46929],
+          [-2.515376, 51.46903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512661, 51.468675],
+          [-2.512828, 51.468672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516191, 51.470164],
+          [-2.516115, 51.470377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514263, 51.470653],
+          [-2.514356, 51.470681],
+          [-2.514399, 51.470733],
+          [-2.514485, 51.470775],
+          [-2.515035, 51.470837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514279, 51.469614],
+          [-2.515487, 51.469608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515311, 51.470112],
+          [-2.516167, 51.470233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.511188, 51.473665],
+          [-2.511908, 51.473698],
+          [-2.513472, 51.473795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513213, 51.473779],
+          [-2.513149, 51.474142],
+          [-2.513179, 51.474182],
+          [-2.51323, 51.474211],
+          [-2.513501, 51.474231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521845, 51.472648],
+          [-2.522054, 51.472944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522959, 51.472615],
+          [-2.521987, 51.471984],
+          [-2.521705, 51.472119],
+          [-2.521423, 51.472212],
+          [-2.521162, 51.472267],
+          [-2.520872, 51.472297],
+          [-2.520976, 51.473112]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52308, 51.475235],
+          [-2.524689, 51.475523],
+          [-2.525118, 51.475817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527942, 51.47302],
+          [-2.527707, 51.473203],
+          [-2.527537, 51.473423]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525875, 51.475679],
+          [-2.525387, 51.475978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523254, 51.477479],
+          [-2.5232, 51.477605],
+          [-2.523255, 51.477672],
+          [-2.523431, 51.477744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53832, 51.474518],
+          [-2.538461, 51.473754]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530358, 51.474546],
+          [-2.530006, 51.474897]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535215, 51.472506],
+          [-2.536115, 51.472544],
+          [-2.536768, 51.472582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520084, 51.47907],
+          [-2.519785, 51.479077],
+          [-2.519689, 51.479119],
+          [-2.519477, 51.479438],
+          [-2.519286, 51.479652],
+          [-2.519245, 51.479724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521549, 51.468281],
+          [-2.521867, 51.468156],
+          [-2.522216, 51.468049],
+          [-2.522307, 51.468046],
+          [-2.522514, 51.468079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521795, 51.468543],
+          [-2.522153, 51.468616],
+          [-2.522224, 51.468623],
+          [-2.522297, 51.46862],
+          [-2.522354, 51.468604],
+          [-2.522402, 51.468574],
+          [-2.522515, 51.468288],
+          [-2.522494, 51.468162],
+          [-2.522514, 51.468079],
+          [-2.522582, 51.467944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523379, 51.468761],
+          [-2.524141, 51.468922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524422, 51.468239],
+          [-2.524327, 51.468513],
+          [-2.524505, 51.46856],
+          [-2.524548, 51.468607],
+          [-2.524241, 51.469118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523268, 51.468951],
+          [-2.523539, 51.468485],
+          [-2.523599, 51.468429],
+          [-2.523703, 51.468422],
+          [-2.524327, 51.468513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5165, 51.476847],
+          [-2.516853, 51.476095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515409, 51.476634],
+          [-2.516067, 51.47532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518813, 51.472042],
+          [-2.519092, 51.471133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514368, 51.476433],
+          [-2.51472, 51.47569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520403, 51.473149],
+          [-2.520511, 51.473123],
+          [-2.520976, 51.473112],
+          [-2.521337, 51.473078],
+          [-2.521779, 51.473012],
+          [-2.522326, 51.472869],
+          [-2.522628, 51.472762],
+          [-2.522959, 51.472615],
+          [-2.523104, 51.472539],
+          [-2.523152, 51.472525],
+          [-2.523193, 51.472527],
+          [-2.523233, 51.472544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522868, 51.475906],
+          [-2.524403, 51.476094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523819, 51.47294],
+          [-2.525192, 51.473331],
+          [-2.525772, 51.473451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52491, 51.472376],
+          [-2.525402, 51.471899]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524352, 51.473863],
+          [-2.523796, 51.474944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517034, 51.473399],
+          [-2.517189, 51.473415],
+          [-2.517346, 51.473412],
+          [-2.517519, 51.473355],
+          [-2.517844, 51.473203],
+          [-2.518325, 51.473078],
+          [-2.518926, 51.472991],
+          [-2.519217, 51.472988],
+          [-2.519509, 51.473004],
+          [-2.519642, 51.473019],
+          [-2.520403, 51.473149],
+          [-2.52279, 51.473566],
+          [-2.525456, 51.474075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513172, 51.476932],
+          [-2.51316, 51.477016],
+          [-2.513198, 51.477146],
+          [-2.514095, 51.478585],
+          [-2.514179, 51.478659],
+          [-2.514318, 51.478712],
+          [-2.514472, 51.478732],
+          [-2.515448, 51.478651],
+          [-2.515588, 51.478617],
+          [-2.515693, 51.478571],
+          [-2.515783, 51.478489],
+          [-2.516254, 51.477561]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517716, 51.474802],
+          [-2.518352, 51.474517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518428, 51.47361],
+          [-2.518628, 51.473923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518005, 51.471471],
+          [-2.518954, 51.471584],
+          [-2.519949, 51.471714],
+          [-2.520259, 51.471728],
+          [-2.520618, 51.471711],
+          [-2.520947, 51.471651],
+          [-2.521138, 51.47159],
+          [-2.521319, 51.471514],
+          [-2.521415, 51.471465],
+          [-2.521568, 51.47136],
+          [-2.52179, 51.471153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514987, 51.478691],
+          [-2.514805, 51.47788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515173, 51.473569],
+          [-2.516666, 51.473851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51696, 51.473908],
+          [-2.518273, 51.474168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512767, 51.476762],
+          [-2.512966, 51.476863],
+          [-2.513172, 51.476932],
+          [-2.519916, 51.478307],
+          [-2.520206, 51.47832],
+          [-2.520459, 51.478292],
+          [-2.521642, 51.478063],
+          [-2.522079, 51.477927],
+          [-2.522124, 51.477885]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518915, 51.475885],
+          [-2.51893, 51.475917],
+          [-2.519177, 51.476038],
+          [-2.519355, 51.476147],
+          [-2.519507, 51.476262],
+          [-2.519638, 51.476395],
+          [-2.519743, 51.476537],
+          [-2.519828, 51.476691],
+          [-2.519886, 51.476893],
+          [-2.519889, 51.477085],
+          [-2.519853, 51.477271],
+          [-2.519771, 51.477461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516678, 51.474085],
+          [-2.516714, 51.474237],
+          [-2.516723, 51.474412],
+          [-2.516757, 51.474596],
+          [-2.516815, 51.474745],
+          [-2.517007, 51.475032],
+          [-2.517161, 51.475195],
+          [-2.517354, 51.475356],
+          [-2.517498, 51.475445],
+          [-2.517773, 51.475589],
+          [-2.517888, 51.475678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518907, 51.476645],
+          [-2.519638, 51.476395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517605, 51.477057],
+          [-2.518129, 51.475987],
+          [-2.518252, 51.475786],
+          [-2.518337, 51.475594],
+          [-2.518804, 51.474693],
+          [-2.518923, 51.474502],
+          [-2.519105, 51.474139],
+          [-2.519179, 51.473946],
+          [-2.519642, 51.473019],
+          [-2.5199, 51.471903],
+          [-2.519946, 51.471781],
+          [-2.51996, 51.471624],
+          [-2.520014, 51.471465],
+          [-2.520223, 51.470625],
+          [-2.51995, 51.470637],
+          [-2.519797, 51.470632],
+          [-2.519026, 51.470557],
+          [-2.518834, 51.470553],
+          [-2.518407, 51.470584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517605, 51.477057],
+          [-2.519771, 51.477461],
+          [-2.521362, 51.47777],
+          [-2.522124, 51.477885],
+          [-2.52264, 51.477952],
+          [-2.523182, 51.478007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517635, 51.472205],
+          [-2.517366, 51.472164],
+          [-2.51724, 51.472158],
+          [-2.517066, 51.472158],
+          [-2.516816, 51.472178],
+          [-2.516604, 51.472221],
+          [-2.516356, 51.472297],
+          [-2.51616, 51.472389],
+          [-2.516079, 51.472441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517635, 51.472205],
+          [-2.518413, 51.470651],
+          [-2.518407, 51.470584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519179, 51.473946],
+          [-2.519009, 51.473913],
+          [-2.518857, 51.473901],
+          [-2.518726, 51.473906],
+          [-2.518628, 51.473923],
+          [-2.518508, 51.473963],
+          [-2.518413, 51.474014],
+          [-2.518332, 51.474078],
+          [-2.518273, 51.474168],
+          [-2.518241, 51.474258],
+          [-2.518242, 51.474328],
+          [-2.518294, 51.474453],
+          [-2.518352, 51.474517],
+          [-2.518484, 51.474606],
+          [-2.518619, 51.474655],
+          [-2.518804, 51.474693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515448, 51.474489],
+          [-2.515674, 51.474749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514357, 51.47498],
+          [-2.514385, 51.474964],
+          [-2.514438, 51.474952],
+          [-2.514934, 51.47492],
+          [-2.515219, 51.474876],
+          [-2.515512, 51.474804],
+          [-2.515911, 51.474658],
+          [-2.516147, 51.474537],
+          [-2.516377, 51.474375],
+          [-2.516678, 51.474085],
+          [-2.516764, 51.473968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513361, 51.47242],
+          [-2.513295, 51.472981]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516851, 51.473785],
+          [-2.517034, 51.473399]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515209, 51.467679],
+          [-2.515174, 51.467284],
+          [-2.514872, 51.467296],
+          [-2.514906, 51.4677]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514483, 51.467772],
+          [-2.514906, 51.4677],
+          [-2.515209, 51.467679],
+          [-2.515318, 51.467718],
+          [-2.515374, 51.467723],
+          [-2.515504, 51.467708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.511785, 51.472904],
+          [-2.513578, 51.472996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51485, 51.471398],
+          [-2.514967, 51.471402],
+          [-2.515037, 51.471386],
+          [-2.515492, 51.471115],
+          [-2.515816, 51.470958],
+          [-2.516001, 51.470895],
+          [-2.516562, 51.470752],
+          [-2.517035, 51.470694],
+          [-2.518407, 51.470584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513248, 51.47621],
+          [-2.517605, 51.477057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53246, 51.474438],
+          [-2.532316, 51.474269],
+          [-2.532215, 51.474173],
+          [-2.53176, 51.47398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525352, 51.475832],
+          [-2.525487, 51.475917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512995, 51.46757],
+          [-2.512837, 51.46748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52196, 51.468476],
+          [-2.521918, 51.468568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531718, 51.471637],
+          [-2.530568, 51.473028],
+          [-2.530535, 51.473161],
+          [-2.53055, 51.47329],
+          [-2.530588, 51.473368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518738, 51.473018],
+          [-2.518673, 51.472859],
+          [-2.518586, 51.472724],
+          [-2.518466, 51.472586],
+          [-2.518263, 51.472432],
+          [-2.518049, 51.47232],
+          [-2.517832, 51.47225],
+          [-2.517635, 51.472205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517034, 51.473399],
+          [-2.516915, 51.473363],
+          [-2.51681, 51.473307],
+          [-2.516732, 51.473237],
+          [-2.516657, 51.473044],
+          [-2.516552, 51.47286],
+          [-2.516313, 51.472614],
+          [-2.516212, 51.47253],
+          [-2.516079, 51.472441],
+          [-2.515931, 51.47236],
+          [-2.515766, 51.472288],
+          [-2.515573, 51.472224],
+          [-2.515317, 51.472155],
+          [-2.5151, 51.472111],
+          [-2.514866, 51.472082],
+          [-2.514693, 51.472071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530588, 51.473368],
+          [-2.530688, 51.4735],
+          [-2.53086, 51.473609],
+          [-2.53176, 51.47398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514319, 51.466964],
+          [-2.514455, 51.467688],
+          [-2.514581, 51.467967],
+          [-2.515242, 51.468863],
+          [-2.515637, 51.469362],
+          [-2.515717, 51.46943],
+          [-2.515818, 51.469465],
+          [-2.517706, 51.469831],
+          [-2.518827, 51.470101],
+          [-2.519506, 51.470317],
+          [-2.520097, 51.470554],
+          [-2.520223, 51.470625],
+          [-2.521482, 51.471039],
+          [-2.522651, 51.471481],
+          [-2.526068, 51.47284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522941, 51.478791],
+          [-2.52299, 51.478457],
+          [-2.522953, 51.478332],
+          [-2.522972, 51.478283],
+          [-2.523182, 51.478007],
+          [-2.523431, 51.477744],
+          [-2.523679, 51.477534],
+          [-2.524689, 51.475523],
+          [-2.524888, 51.47515],
+          [-2.524981, 51.47503],
+          [-2.526068, 51.47284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526068, 51.47284],
+          [-2.529438, 51.474168],
+          [-2.531255, 51.474913],
+          [-2.534941, 51.476376],
+          [-2.535481, 51.476569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526068, 51.47284],
+          [-2.526706, 51.471522],
+          [-2.527057, 51.470887],
+          [-2.527177, 51.470718],
+          [-2.527301, 51.470647],
+          [-2.528227, 51.470226]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518923, 51.474502],
+          [-2.519478, 51.474616],
+          [-2.519545, 51.474662],
+          [-2.519524, 51.474732],
+          [-2.5193, 51.475213],
+          [-2.519191, 51.475313],
+          [-2.51912, 51.475472],
+          [-2.519412, 51.475501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521407, 51.48038],
+          [-2.518819, 51.479994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52487, 51.477007],
+          [-2.524738, 51.477076],
+          [-2.524559, 51.477097],
+          [-2.525167, 51.477475],
+          [-2.526977, 51.476465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523815, 51.467818],
+          [-2.524576, 51.467912],
+          [-2.524684, 51.467879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516887, 51.47975],
+          [-2.516748, 51.480082],
+          [-2.516741, 51.480117],
+          [-2.516767, 51.480143],
+          [-2.518127, 51.480324],
+          [-2.517952, 51.48114],
+          [-2.518017, 51.481153],
+          [-2.518473, 51.481568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515309, 51.480512],
+          [-2.515762, 51.479623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517635, 51.472205],
+          [-2.517474, 51.47256],
+          [-2.517043, 51.472565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53931, 51.474125],
+          [-2.539253, 51.473753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521305, 51.47776],
+          [-2.521534, 51.477326],
+          [-2.521553, 51.477312],
+          [-2.521608, 51.477311],
+          [-2.521949, 51.477373],
+          [-2.521959, 51.477383],
+          [-2.521962, 51.477403],
+          [-2.521833, 51.477736],
+          [-2.521803, 51.477839]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523796, 51.474944],
+          [-2.524888, 51.47515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536616, 51.473355],
+          [-2.536935, 51.473303],
+          [-2.536999, 51.473302],
+          [-2.53852, 51.473365],
+          [-2.53969, 51.473378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534863, 51.473574],
+          [-2.535278, 51.474133],
+          [-2.535284, 51.474194],
+          [-2.535236, 51.474238],
+          [-2.534216, 51.474569],
+          [-2.534102, 51.474531],
+          [-2.534003, 51.474483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534789, 51.47419],
+          [-2.534003, 51.474483],
+          [-2.53382, 51.474395],
+          [-2.533687, 51.474297],
+          [-2.533474, 51.474078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518819, 51.479994],
+          [-2.519207, 51.479717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521745, 51.46738],
+          [-2.522363, 51.467467],
+          [-2.522632, 51.467206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521632, 51.467743],
+          [-2.521725, 51.46757],
+          [-2.521772, 51.467116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520483, 51.466622],
+          [-2.520448, 51.46761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521111, 51.467094],
+          [-2.521772, 51.467116],
+          [-2.523404, 51.467287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523007, 51.475601],
+          [-2.524524, 51.475854]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52369, 51.474113],
+          [-2.523451, 51.474599],
+          [-2.523414, 51.474631],
+          [-2.523393, 51.474674],
+          [-2.523882, 51.474771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523449, 51.474067],
+          [-2.524174, 51.474207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518564, 51.481241],
+          [-2.518956, 51.481299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516503, 51.480586],
+          [-2.516597, 51.480645],
+          [-2.516608, 51.480681],
+          [-2.516471, 51.481087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516234, 51.481161],
+          [-2.516471, 51.481087],
+          [-2.516527, 51.4811],
+          [-2.517239, 51.481125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51826, 51.47917],
+          [-2.518626, 51.479138],
+          [-2.518772, 51.479324],
+          [-2.518837, 51.479577],
+          [-2.518838, 51.479662],
+          [-2.518803, 51.479927],
+          [-2.518819, 51.479994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527556, 51.467129],
+          [-2.527526, 51.466978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514436, 51.479772],
+          [-2.514507, 51.479751],
+          [-2.515004, 51.47971],
+          [-2.516345, 51.479555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515129, 51.480659],
+          [-2.514968, 51.48075],
+          [-2.514916, 51.480742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518286, 51.479468],
+          [-2.518146, 51.479484],
+          [-2.518096, 51.479542],
+          [-2.518196, 51.479937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517008, 51.479661],
+          [-2.517036, 51.479773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517808, 51.479744],
+          [-2.517839, 51.479886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516571, 51.467465],
+          [-2.516482, 51.466741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516719, 51.469638],
+          [-2.516752, 51.469553],
+          [-2.516778, 51.46941],
+          [-2.516768, 51.469344],
+          [-2.516697, 51.46929],
+          [-2.515791, 51.469118],
+          [-2.515669, 51.468999],
+          [-2.515562, 51.468874],
+          [-2.515491, 51.468782],
+          [-2.515431, 51.46868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515431, 51.46868],
+          [-2.515296, 51.468688],
+          [-2.51515, 51.468733]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527111, 51.468643],
+          [-2.52706, 51.468704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526717, 51.468232],
+          [-2.527028, 51.468233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53397, 51.472777],
+          [-2.533836, 51.472599],
+          [-2.534285, 51.472439],
+          [-2.534316, 51.472422],
+          [-2.534456, 51.472378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530961, 51.472549],
+          [-2.531653, 51.47276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52525, 51.467289],
+          [-2.525537, 51.467235],
+          [-2.525555, 51.466902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519042, 51.468309],
+          [-2.519045, 51.468081],
+          [-2.519017, 51.468035],
+          [-2.518936, 51.468019],
+          [-2.518284, 51.468009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51773, 51.469042],
+          [-2.517564, 51.468063],
+          [-2.517574, 51.46805],
+          [-2.517622, 51.468043],
+          [-2.518282, 51.467996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513904, 51.467315],
+          [-2.513707, 51.466429]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52421, 51.472099],
+          [-2.524062, 51.472403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512709, 51.468679],
+          [-2.512568, 51.468843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520668, 51.469907],
+          [-2.520837, 51.469954],
+          [-2.521208, 51.470032],
+          [-2.521133, 51.470159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524016, 51.472493],
+          [-2.524659, 51.472752],
+          [-2.525404, 51.47303],
+          [-2.525552, 51.473059],
+          [-2.525931, 51.473115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535447, 51.47586],
+          [-2.534655, 51.476262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534306, 51.475034],
+          [-2.534, 51.474729],
+          [-2.533015, 51.475073],
+          [-2.532628, 51.475457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537122, 51.474211],
+          [-2.536274, 51.474512],
+          [-2.536269, 51.474566],
+          [-2.535789, 51.474738]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531749, 51.477111],
+          [-2.531862, 51.476901],
+          [-2.533074, 51.477038]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534147, 51.475964],
+          [-2.534106, 51.476044]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525118, 51.476285],
+          [-2.525221, 51.476276],
+          [-2.525925, 51.476759],
+          [-2.526077, 51.476796],
+          [-2.526212, 51.476892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524196, 51.478122],
+          [-2.524551, 51.478086],
+          [-2.525095, 51.477998],
+          [-2.525921, 51.477896],
+          [-2.527041, 51.477774],
+          [-2.527239, 51.477701],
+          [-2.527315, 51.47766],
+          [-2.527706, 51.477384],
+          [-2.527749, 51.477336],
+          [-2.527747, 51.477305],
+          [-2.527726, 51.477266],
+          [-2.527609, 51.477152],
+          [-2.527598, 51.477113],
+          [-2.527762, 51.477019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52661, 51.477608],
+          [-2.52683, 51.477469],
+          [-2.527175, 51.477288],
+          [-2.527598, 51.477113],
+          [-2.527395, 51.476997],
+          [-2.527364, 51.476959],
+          [-2.527359, 51.476919],
+          [-2.527309, 51.47688],
+          [-2.527166, 51.47685],
+          [-2.526778, 51.476576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516553, 51.471096],
+          [-2.516839, 51.471726],
+          [-2.515686, 51.471956],
+          [-2.515477, 51.471928],
+          [-2.515399, 51.471906],
+          [-2.515022, 51.471631],
+          [-2.515022, 51.471609],
+          [-2.515074, 51.471524],
+          [-2.515513, 51.471269],
+          [-2.515518, 51.471244],
+          [-2.515418, 51.471159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515314, 51.471388],
+          [-2.51519, 51.471295]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519539, 51.474942],
+          [-2.519427, 51.474932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522882, 51.468705],
+          [-2.523085, 51.468322],
+          [-2.523158, 51.468311],
+          [-2.523519, 51.468372],
+          [-2.523553, 51.468389],
+          [-2.523599, 51.468429]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523507, 51.468245],
+          [-2.523459, 51.468363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529922, 51.476332],
+          [-2.529484, 51.476033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524241, 51.477035],
+          [-2.524492, 51.477131],
+          [-2.524559, 51.477097]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516553, 51.471096],
+          [-2.516368, 51.470799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517097, 51.471354],
+          [-2.51707, 51.471172],
+          [-2.517035, 51.471096],
+          [-2.516945, 51.471043],
+          [-2.516846, 51.471035],
+          [-2.516553, 51.471096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515896, 51.470931],
+          [-2.516045, 51.471153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524657, 51.471737],
+          [-2.524027, 51.471598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531049, 51.471683],
+          [-2.530021, 51.472924],
+          [-2.529913, 51.473116],
+          [-2.529747, 51.473554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512456, 51.470213],
+          [-2.512181, 51.47022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513918, 51.477461],
+          [-2.513993, 51.477452],
+          [-2.514071, 51.477412],
+          [-2.514194, 51.477141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524179, 51.474197],
+          [-2.524708, 51.4743],
+          [-2.524751, 51.474328],
+          [-2.525277, 51.474435]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524357, 51.475049],
+          [-2.524684, 51.474353],
+          [-2.52473, 51.474315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525336, 51.476244],
+          [-2.52562, 51.476429],
+          [-2.526231, 51.475928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52537, 51.475313],
+          [-2.526025, 51.474012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514913, 51.468083],
+          [-2.514699, 51.468139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514847, 51.46795],
+          [-2.514913, 51.468083],
+          [-2.515046, 51.468274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513173, 51.467758],
+          [-2.51292, 51.46768],
+          [-2.512508, 51.467569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512737, 51.467905],
+          [-2.51292, 51.46768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521355, 51.480513],
+          [-2.521317, 51.480606],
+          [-2.522062, 51.48073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527262, 51.474839],
+          [-2.527847, 51.47498],
+          [-2.527921, 51.474988],
+          [-2.527969, 51.474984],
+          [-2.528544, 51.474647],
+          [-2.528574, 51.474617],
+          [-2.528585, 51.474544],
+          [-2.528557, 51.474475],
+          [-2.528506, 51.474439],
+          [-2.527629, 51.474102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529578, 51.474948],
+          [-2.528585, 51.474544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527325, 51.476468],
+          [-2.527136, 51.476577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527566, 51.476878],
+          [-2.527749, 51.476775]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52673, 51.476281],
+          [-2.526837, 51.476006],
+          [-2.526922, 51.475957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523512, 51.467188],
+          [-2.523822, 51.467308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516904, 51.468007],
+          [-2.516972, 51.468057],
+          [-2.517072, 51.46811],
+          [-2.517055, 51.467972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522243, 51.47064],
+          [-2.521749, 51.470528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52098, 51.470294],
+          [-2.520486, 51.470188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514251, 51.47944],
+          [-2.514356, 51.479442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520029, 51.469372],
+          [-2.519756, 51.469331],
+          [-2.519534, 51.469306],
+          [-2.519328, 51.469306],
+          [-2.519261, 51.46929],
+          [-2.519258, 51.469116],
+          [-2.519475, 51.469115],
+          [-2.519566, 51.469127],
+          [-2.519818, 51.469138],
+          [-2.51998, 51.469118],
+          [-2.520068, 51.469133],
+          [-2.520091, 51.469159],
+          [-2.520094, 51.469185],
+          [-2.519994, 51.469487],
+          [-2.519884, 51.469726],
+          [-2.519506, 51.470317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519566, 51.469127],
+          [-2.519534, 51.469306]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519818, 51.469138],
+          [-2.519756, 51.469331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531665, 51.476764],
+          [-2.532326, 51.47635],
+          [-2.532783, 51.476082],
+          [-2.53293, 51.475979],
+          [-2.533121, 51.475828],
+          [-2.533232, 51.475697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532548, 51.476703],
+          [-2.532655, 51.476384],
+          [-2.532783, 51.476082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532331, 51.476665],
+          [-2.532089, 51.476497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530969, 51.477302],
+          [-2.531384, 51.47707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531191, 51.477361],
+          [-2.531557, 51.477171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531049, 51.477363],
+          [-2.530873, 51.477228],
+          [-2.530837, 51.477176],
+          [-2.530831, 51.477103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530851, 51.477367],
+          [-2.531325, 51.477358],
+          [-2.5316, 51.477333],
+          [-2.531811, 51.477258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52406, 51.467849],
+          [-2.52396, 51.468176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522171, 51.469964],
+          [-2.522717, 51.470076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522527, 51.4697],
+          [-2.522365, 51.470004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523408, 51.468096],
+          [-2.523962, 51.467571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516284, 51.468582],
+          [-2.516065, 51.468613],
+          [-2.51585, 51.468663],
+          [-2.515653, 51.468663],
+          [-2.515431, 51.46868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526758, 51.472661],
+          [-2.526715, 51.472583],
+          [-2.526241, 51.472498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517231, 51.469163],
+          [-2.517153, 51.468875],
+          [-2.517076, 51.468494],
+          [-2.517027, 51.468324],
+          [-2.516963, 51.468258],
+          [-2.516873, 51.468196],
+          [-2.516743, 51.468044]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517673, 51.46768],
+          [-2.517646, 51.467249],
+          [-2.517664, 51.467214],
+          [-2.51771, 51.467202],
+          [-2.520464, 51.467146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534687, 51.474414],
+          [-2.534865, 51.474618],
+          [-2.534466, 51.474757],
+          [-2.534321, 51.474655],
+          [-2.534216, 51.474569]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53321, 51.475008],
+          [-2.533326, 51.47513],
+          [-2.534113, 51.474841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532954, 51.475877],
+          [-2.532938, 51.475808],
+          [-2.53291, 51.47578],
+          [-2.53278, 51.475711],
+          [-2.53272, 51.475693],
+          [-2.532383, 51.475553],
+          [-2.532321, 51.475562],
+          [-2.532316, 51.475598],
+          [-2.532663, 51.475769],
+          [-2.532825, 51.475861],
+          [-2.532954, 51.475877],
+          [-2.533021, 51.475907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536102, 51.474626],
+          [-2.536206, 51.474739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536001, 51.474812],
+          [-2.536298, 51.474706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520425, 51.468643],
+          [-2.520438, 51.468923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517928, 51.469321],
+          [-2.519179, 51.469303],
+          [-2.519261, 51.46929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522263, 51.470858],
+          [-2.522456, 51.470896],
+          [-2.522467, 51.47095],
+          [-2.522877, 51.471032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532897, 51.474283],
+          [-2.533144, 51.474485],
+          [-2.533204, 51.474511],
+          [-2.533277, 51.474602],
+          [-2.533317, 51.474665],
+          [-2.533312, 51.474697],
+          [-2.533272, 51.474758],
+          [-2.532042, 51.475225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524506, 51.466878],
+          [-2.524514, 51.467131],
+          [-2.524469, 51.467215]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527494, 51.471314],
+          [-2.527751, 51.470834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528657, 51.47145],
+          [-2.527542, 51.471218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515374, 51.472321],
+          [-2.51535, 51.472423],
+          [-2.515482, 51.472433],
+          [-2.515587, 51.472376],
+          [-2.515678, 51.472341],
+          [-2.515766, 51.472288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535865, 51.473216],
+          [-2.536465, 51.473932],
+          [-2.536573, 51.473976],
+          [-2.537217, 51.474063],
+          [-2.537394, 51.473976],
+          [-2.537487, 51.47408],
+          [-2.538393, 51.474121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538294, 51.472935],
+          [-2.538341, 51.472484],
+          [-2.538021, 51.472476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53672, 51.474257],
+          [-2.536465, 51.473932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527201, 51.473875],
+          [-2.526543, 51.475122],
+          [-2.526172, 51.475886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528208, 51.477577],
+          [-2.528008, 51.477485],
+          [-2.528199, 51.477307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531779, 51.472815],
+          [-2.531617, 51.472864],
+          [-2.530878, 51.472643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526477, 51.477937],
+          [-2.525526, 51.478028],
+          [-2.525503, 51.477947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533947, 51.474596],
+          [-2.534003, 51.474572],
+          [-2.53382, 51.474395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523321, 51.473902],
+          [-2.523426, 51.473687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532274, 51.474905],
+          [-2.532433, 51.475076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517313, 51.469753],
+          [-2.517364, 51.469683],
+          [-2.517458, 51.469644],
+          [-2.517481, 51.469627],
+          [-2.517623, 51.46944],
+          [-2.517712, 51.469342]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hillfields" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51398, 51.469807],
+          [-2.514159, 51.469716],
+          [-2.514252, 51.469652],
+          [-2.514279, 51.469614]
+        ]
+      }
+    }
+  ]
+}

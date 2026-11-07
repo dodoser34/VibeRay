@@ -1,0 +1,3904 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615601, 51.472129],
+          [-2.615454, 51.471644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593656, 51.470084],
+          [-2.593604, 51.470149],
+          [-2.593592, 51.470422],
+          [-2.593612, 51.470482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615454, 51.471644],
+          [-2.615523, 51.471633],
+          [-2.615585, 51.471592],
+          [-2.615757, 51.471415],
+          [-2.615792, 51.471328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615459, 51.47135],
+          [-2.61558, 51.471389],
+          [-2.615792, 51.471328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615353, 51.471421],
+          [-2.615309, 51.471566],
+          [-2.615342, 51.471612],
+          [-2.615454, 51.471644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591902, 51.472108],
+          [-2.591963, 51.472101],
+          [-2.592053, 51.472035],
+          [-2.592144, 51.471952],
+          [-2.592135, 51.471913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593612, 51.470482],
+          [-2.592523, 51.471562],
+          [-2.592135, 51.471913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592135, 51.471913],
+          [-2.592081, 51.471918]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593443, 51.469503],
+          [-2.593445, 51.469417],
+          [-2.593256, 51.469159],
+          [-2.593106, 51.468997],
+          [-2.592981, 51.468964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590773, 51.475713],
+          [-2.590537, 51.476256],
+          [-2.589769, 51.478229]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590773, 51.475713],
+          [-2.590865, 51.47565],
+          [-2.591119, 51.475292],
+          [-2.591155, 51.475193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615792, 51.471328],
+          [-2.616138, 51.471025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593612, 51.470482],
+          [-2.593713, 51.470393],
+          [-2.59375, 51.470294],
+          [-2.593717, 51.470123],
+          [-2.593656, 51.470084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591155, 51.475193],
+          [-2.591003, 51.475295],
+          [-2.590819, 51.475527],
+          [-2.590745, 51.47565],
+          [-2.590773, 51.475713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593519, 51.469634],
+          [-2.593656, 51.470084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591149, 51.473307],
+          [-2.591271, 51.473487],
+          [-2.591518, 51.473951],
+          [-2.591558, 51.474263],
+          [-2.591487, 51.474574],
+          [-2.591351, 51.474929],
+          [-2.591155, 51.475193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593507, 51.470124],
+          [-2.593604, 51.470149],
+          [-2.593717, 51.470123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589044, 51.475181],
+          [-2.590788, 51.475451],
+          [-2.591461, 51.475571],
+          [-2.591672, 51.475583],
+          [-2.592148, 51.475649],
+          [-2.593474, 51.475858],
+          [-2.59703, 51.476397],
+          [-2.597907, 51.476486],
+          [-2.598624, 51.47654],
+          [-2.598734, 51.47654],
+          [-2.598869, 51.476494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597806, 51.475209],
+          [-2.598131, 51.475521],
+          [-2.598367, 51.475789],
+          [-2.59858, 51.476076],
+          [-2.598775, 51.476382],
+          [-2.598869, 51.476494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599042, 51.476687],
+          [-2.599042, 51.477244],
+          [-2.599077, 51.477417],
+          [-2.599131, 51.47751],
+          [-2.599421, 51.477823],
+          [-2.599501, 51.477975],
+          [-2.599578, 51.478234],
+          [-2.599594, 51.478618],
+          [-2.599578, 51.479189],
+          [-2.59954, 51.479602],
+          [-2.599355, 51.480798],
+          [-2.599381, 51.480934],
+          [-2.599467, 51.481069],
+          [-2.600315, 51.481937],
+          [-2.600947, 51.482629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613409, 51.474682],
+          [-2.613744, 51.474978],
+          [-2.614056, 51.475305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59909, 51.470449],
+          [-2.599904, 51.471062],
+          [-2.600983, 51.471848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597228, 51.470176],
+          [-2.598981, 51.469631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59614, 51.471731],
+          [-2.597071, 51.471247],
+          [-2.597459, 51.471021],
+          [-2.597908, 51.470796],
+          [-2.598004, 51.47076],
+          [-2.59909, 51.470449],
+          [-2.60041, 51.470046],
+          [-2.600446, 51.470015],
+          [-2.600499, 51.469913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599904, 51.471062],
+          [-2.601335, 51.470603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604028, 51.472683],
+          [-2.604103, 51.472795],
+          [-2.604423, 51.473188],
+          [-2.604688, 51.473606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604028, 51.472683],
+          [-2.604248, 51.472745],
+          [-2.604936, 51.472905],
+          [-2.605191, 51.472911],
+          [-2.605561, 51.472835],
+          [-2.606184, 51.472577],
+          [-2.606825, 51.472423],
+          [-2.606863, 51.472371],
+          [-2.6069, 51.472281],
+          [-2.606877, 51.472119],
+          [-2.60825, 51.47178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601684, 51.469741],
+          [-2.601792, 51.46977],
+          [-2.601939, 51.469846],
+          [-2.601994, 51.46991],
+          [-2.602024, 51.469976],
+          [-2.602007, 51.470219],
+          [-2.602024, 51.470387],
+          [-2.60207, 51.47048],
+          [-2.602148, 51.47056],
+          [-2.602358, 51.47069],
+          [-2.60251, 51.47074],
+          [-2.602984, 51.470794],
+          [-2.603403, 51.470817],
+          [-2.603794, 51.470854],
+          [-2.604163, 51.4709],
+          [-2.604666, 51.471005],
+          [-2.605097, 51.471135],
+          [-2.605377, 51.471255],
+          [-2.605539, 51.471369],
+          [-2.60584, 51.471613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613027, 51.472774],
+          [-2.611787, 51.473337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60753, 51.473626],
+          [-2.609593, 51.474295],
+          [-2.610658, 51.474632],
+          [-2.610736, 51.474641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608369, 51.473903],
+          [-2.609037, 51.473036],
+          [-2.609595, 51.472418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608795, 51.473339],
+          [-2.60972, 51.473626],
+          [-2.610035, 51.473735],
+          [-2.610178, 51.473753],
+          [-2.610318, 51.473743],
+          [-2.610458, 51.473698],
+          [-2.610575, 51.473627],
+          [-2.611196, 51.472844]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609087, 51.470965],
+          [-2.609323, 51.471476],
+          [-2.609335, 51.47153],
+          [-2.609319, 51.471584],
+          [-2.609259, 51.471665],
+          [-2.609086, 51.471766],
+          [-2.608829, 51.471884],
+          [-2.608674, 51.471983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611968, 51.476104],
+          [-2.614056, 51.475305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609927, 51.471448],
+          [-2.609335, 51.47153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591518, 51.473951],
+          [-2.591571, 51.47394],
+          [-2.594521, 51.473961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594453, 51.473374],
+          [-2.593991, 51.473395],
+          [-2.593824, 51.473423],
+          [-2.593703, 51.473472],
+          [-2.593604, 51.473491],
+          [-2.591271, 51.473487]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594304, 51.471438],
+          [-2.594745, 51.471753],
+          [-2.595575, 51.472122],
+          [-2.596104, 51.472394],
+          [-2.596507, 51.472651],
+          [-2.596977, 51.472997],
+          [-2.597271, 51.473326],
+          [-2.597523, 51.473668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598962, 51.47659],
+          [-2.599788, 51.475507],
+          [-2.600519, 51.475095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597523, 51.473668],
+          [-2.597594, 51.473604],
+          [-2.598177, 51.473311],
+          [-2.598279, 51.473237],
+          [-2.599802, 51.472468],
+          [-2.601511, 51.471574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597666, 51.474082],
+          [-2.597741, 51.474092],
+          [-2.598, 51.474224],
+          [-2.598395, 51.474505],
+          [-2.599071, 51.475082],
+          [-2.599444, 51.475323],
+          [-2.599788, 51.475507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594689, 51.475275],
+          [-2.594353, 51.475356],
+          [-2.594236, 51.475358],
+          [-2.594126, 51.475335],
+          [-2.594037, 51.475293],
+          [-2.593547, 51.474829],
+          [-2.593471, 51.474724],
+          [-2.593479, 51.474669],
+          [-2.59352, 51.474615],
+          [-2.59363, 51.474568],
+          [-2.593735, 51.474542],
+          [-2.594594, 51.474558],
+          [-2.595302, 51.474552],
+          [-2.59534, 51.474565],
+          [-2.596249, 51.475172],
+          [-2.596291, 51.475212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592869, 51.474545],
+          [-2.591487, 51.474574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594453, 51.473374],
+          [-2.594521, 51.473961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594521, 51.473961],
+          [-2.594594, 51.474558],
+          [-2.594639, 51.475119],
+          [-2.594689, 51.475275],
+          [-2.595172, 51.475731],
+          [-2.595329, 51.475972],
+          [-2.595334, 51.476012],
+          [-2.5953, 51.476135],
+          [-2.594832, 51.477323]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594521, 51.473961],
+          [-2.595567, 51.473952],
+          [-2.596084, 51.473964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595172, 51.475731],
+          [-2.596212, 51.47523],
+          [-2.596291, 51.475212],
+          [-2.596452, 51.475196],
+          [-2.596548, 51.475177],
+          [-2.596626, 51.475146],
+          [-2.597218, 51.474819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59442, 51.473024],
+          [-2.591028, 51.473021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594034, 51.471063],
+          [-2.593964, 51.471082],
+          [-2.592964, 51.472024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59336, 51.472064],
+          [-2.593495, 51.471928],
+          [-2.593587, 51.471863],
+          [-2.593783, 51.471777],
+          [-2.593992, 51.471669],
+          [-2.594304, 51.471438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603411, 51.472278],
+          [-2.603784, 51.471993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597623, 51.47396],
+          [-2.597666, 51.474082],
+          [-2.597749, 51.474446],
+          [-2.597789, 51.475161],
+          [-2.597806, 51.475209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60785, 51.475666],
+          [-2.607947, 51.475684],
+          [-2.607983, 51.4757],
+          [-2.609384, 51.476905]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607855, 51.47535],
+          [-2.607866, 51.475305],
+          [-2.607898, 51.475272],
+          [-2.607952, 51.475239],
+          [-2.60804, 51.475212],
+          [-2.60814, 51.475193],
+          [-2.608315, 51.475179],
+          [-2.608407, 51.475185],
+          [-2.608501, 51.475205],
+          [-2.60859, 51.475251],
+          [-2.609148, 51.47563],
+          [-2.610001, 51.476167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607855, 51.47535],
+          [-2.60785, 51.475666],
+          [-2.607946, 51.476639],
+          [-2.608068, 51.477639],
+          [-2.608089, 51.477697],
+          [-2.608144, 51.477748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607892, 51.477925],
+          [-2.607344, 51.477725],
+          [-2.607284, 51.477695],
+          [-2.606673, 51.477111],
+          [-2.606009, 51.476454],
+          [-2.605934, 51.476409],
+          [-2.605812, 51.476376],
+          [-2.604424, 51.476214],
+          [-2.604307, 51.47618],
+          [-2.604224, 51.476117],
+          [-2.60421, 51.476049],
+          [-2.604232, 51.475968],
+          [-2.604617, 51.475699],
+          [-2.604847, 51.475586],
+          [-2.605417, 51.475443],
+          [-2.605632, 51.47541],
+          [-2.606404, 51.475326],
+          [-2.606698, 51.475314],
+          [-2.607855, 51.47535]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605567, 51.477848],
+          [-2.605956, 51.477572],
+          [-2.606673, 51.477111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605396, 51.477018],
+          [-2.604772, 51.477411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605049, 51.476291],
+          [-2.605022, 51.476338],
+          [-2.604492, 51.476708],
+          [-2.604066, 51.476971],
+          [-2.603716, 51.477209],
+          [-2.603676, 51.477243],
+          [-2.603626, 51.477337],
+          [-2.60362, 51.477486],
+          [-2.603688, 51.477758],
+          [-2.603768, 51.477869],
+          [-2.603941, 51.478059],
+          [-2.604039, 51.47822],
+          [-2.604073, 51.47831],
+          [-2.604284, 51.47915],
+          [-2.60431, 51.479594],
+          [-2.6043, 51.48011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606941, 51.476136],
+          [-2.606698, 51.475314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605849, 51.475806],
+          [-2.605632, 51.47541]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606492, 51.476933],
+          [-2.606835, 51.476788],
+          [-2.606902, 51.476771],
+          [-2.607946, 51.476639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613409, 51.474682],
+          [-2.61161, 51.475403],
+          [-2.611348, 51.475516],
+          [-2.610887, 51.475693],
+          [-2.610633, 51.475783],
+          [-2.610528, 51.475799],
+          [-2.610383, 51.475798]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614351, 51.474152],
+          [-2.614365, 51.474229],
+          [-2.614347, 51.474361],
+          [-2.61424, 51.474657],
+          [-2.614112, 51.474789],
+          [-2.614003, 51.474852],
+          [-2.613744, 51.474978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61595, 51.474089],
+          [-2.615605, 51.474156],
+          [-2.615354, 51.474194],
+          [-2.614935, 51.474197],
+          [-2.614606, 51.474183],
+          [-2.614351, 51.474152],
+          [-2.614301, 51.474079],
+          [-2.61413, 51.473955],
+          [-2.613989, 51.473825],
+          [-2.61331, 51.473033],
+          [-2.612896, 51.472644],
+          [-2.612841, 51.472551],
+          [-2.612822, 51.472465],
+          [-2.612826, 51.472376],
+          [-2.612845, 51.472327],
+          [-2.612905, 51.472249],
+          [-2.61311, 51.472018],
+          [-2.613247, 51.471899],
+          [-2.613462, 51.471761],
+          [-2.61352, 51.4717],
+          [-2.613538, 51.471653],
+          [-2.613537, 51.471597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607612, 51.473526],
+          [-2.60744, 51.473732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594453, 51.473374],
+          [-2.59442, 51.473024],
+          [-2.594423, 51.472576],
+          [-2.594398, 51.4725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611649, 51.474676],
+          [-2.612416, 51.473849],
+          [-2.613006, 51.473603],
+          [-2.613579, 51.473346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61161, 51.475403],
+          [-2.611448, 51.475245],
+          [-2.611284, 51.475108],
+          [-2.611154, 51.47504],
+          [-2.611041, 51.475016],
+          [-2.610656, 51.474983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612592, 51.476742],
+          [-2.611968, 51.476104],
+          [-2.611348, 51.475516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602089, 51.477801],
+          [-2.602586, 51.47754],
+          [-2.602698, 51.477499],
+          [-2.602768, 51.477486],
+          [-2.602893, 51.477482],
+          [-2.60362, 51.477486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602976, 51.479842],
+          [-2.603219, 51.479913],
+          [-2.603656, 51.480092],
+          [-2.603718, 51.480104],
+          [-2.603827, 51.48011],
+          [-2.6043, 51.48011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599042, 51.476687],
+          [-2.599147, 51.476683],
+          [-2.599974, 51.476705],
+          [-2.600024, 51.476714],
+          [-2.600318, 51.476819],
+          [-2.600851, 51.477044],
+          [-2.601486, 51.477385],
+          [-2.602089, 51.477801],
+          [-2.602434, 51.478099],
+          [-2.602774, 51.478432],
+          [-2.602922, 51.478653],
+          [-2.60303, 51.478911],
+          [-2.603097, 51.479242],
+          [-2.603063, 51.47955],
+          [-2.602976, 51.479842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599592, 51.478501],
+          [-2.600057, 51.478488],
+          [-2.601722, 51.478631],
+          [-2.602125, 51.478636],
+          [-2.602281, 51.478607],
+          [-2.602774, 51.478432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600705, 51.477889],
+          [-2.601486, 51.477385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602508, 51.476545],
+          [-2.603676, 51.477243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591733, 51.480105],
+          [-2.592318, 51.480023],
+          [-2.592461, 51.479961],
+          [-2.592708, 51.479816],
+          [-2.593325, 51.479538],
+          [-2.593378, 51.479473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602795, 51.480822],
+          [-2.602359, 51.481211],
+          [-2.602303, 51.481249],
+          [-2.602178, 51.481308],
+          [-2.600315, 51.481937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595461, 51.478096],
+          [-2.596358, 51.478219],
+          [-2.596462, 51.478254],
+          [-2.597985, 51.479388],
+          [-2.598027, 51.479438],
+          [-2.598204, 51.479883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595719, 51.477461],
+          [-2.595461, 51.478096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596015, 51.479716],
+          [-2.595719, 51.481035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590391, 51.476643],
+          [-2.593033, 51.477059],
+          [-2.594851, 51.477326],
+          [-2.597291, 51.477713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591025, 51.478127],
+          [-2.591112, 51.477751],
+          [-2.592155, 51.477838],
+          [-2.595051, 51.478199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591821, 51.478555],
+          [-2.594967, 51.478754]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592155, 51.477838],
+          [-2.591949, 51.478202],
+          [-2.591534, 51.479296],
+          [-2.591228, 51.480176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590875, 51.478111],
+          [-2.590218, 51.480111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589869, 51.477961],
+          [-2.590875, 51.478111],
+          [-2.591667, 51.478185],
+          [-2.591949, 51.478202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592709, 51.477905],
+          [-2.593474, 51.475858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606557, 51.471594],
+          [-2.60682, 51.471587],
+          [-2.60728, 51.471649],
+          [-2.607921, 51.471751],
+          [-2.608004, 51.471748],
+          [-2.608079, 51.471705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609764, 51.470531],
+          [-2.609843, 51.470483],
+          [-2.609874, 51.470428],
+          [-2.609867, 51.470396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609439, 51.470645],
+          [-2.609764, 51.470531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612455, 51.471663],
+          [-2.612445, 51.471546],
+          [-2.612458, 51.471491]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594304, 51.471438],
+          [-2.59412, 51.471198],
+          [-2.594034, 51.471063],
+          [-2.593936, 51.470875],
+          [-2.59379, 51.470499],
+          [-2.593752, 51.470466],
+          [-2.593683, 51.470433],
+          [-2.593592, 51.470422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600573, 51.468952],
+          [-2.600789, 51.469162],
+          [-2.60116, 51.469432],
+          [-2.601684, 51.469741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600068, 51.468818],
+          [-2.600688, 51.469557],
+          [-2.601025, 51.469924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604568, 51.479312],
+          [-2.604511, 51.479281],
+          [-2.60429, 51.47924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612905, 51.472249],
+          [-2.61277, 51.472216],
+          [-2.61269, 51.47217],
+          [-2.612533, 51.471996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599077, 51.477417],
+          [-2.599204, 51.477386],
+          [-2.599305, 51.477375],
+          [-2.600008, 51.477372],
+          [-2.600083, 51.477352],
+          [-2.600189, 51.477272]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603582, 51.480066],
+          [-2.603153, 51.480316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59703, 51.476397],
+          [-2.596861, 51.476923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609764, 51.470531],
+          [-2.610009, 51.470708],
+          [-2.610135, 51.470785]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594766, 51.470046],
+          [-2.594111, 51.469142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590673, 51.475922],
+          [-2.589934, 51.475749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61269, 51.47217],
+          [-2.612632, 51.472192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6043, 51.48011],
+          [-2.604298, 51.480272],
+          [-2.60432, 51.480356],
+          [-2.604452, 51.480452],
+          [-2.604744, 51.480615],
+          [-2.605082, 51.480833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597623, 51.47396],
+          [-2.597523, 51.473668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6062, 51.470664],
+          [-2.605804, 51.470815],
+          [-2.605777, 51.470836],
+          [-2.605773, 51.470865],
+          [-2.605915, 51.471068],
+          [-2.606051, 51.471212],
+          [-2.606232, 51.471374],
+          [-2.606557, 51.471594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601684, 51.469741],
+          [-2.601741, 51.469823],
+          [-2.601759, 51.469954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60972, 51.473626],
+          [-2.610187, 51.473079],
+          [-2.610277, 51.472959],
+          [-2.610284, 51.47291],
+          [-2.610233, 51.472734],
+          [-2.610158, 51.472577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593033, 51.472585],
+          [-2.593038, 51.473023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592242, 51.472533],
+          [-2.592247, 51.473022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595528, 51.478105],
+          [-2.596574, 51.479768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615346, 51.475251],
+          [-2.615079, 51.475236],
+          [-2.614546, 51.475229],
+          [-2.614285, 51.475263],
+          [-2.614056, 51.475305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60431, 51.470108],
+          [-2.604352, 51.470644],
+          [-2.604338, 51.470694],
+          [-2.604223, 51.470798],
+          [-2.604163, 51.4709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600059, 51.47233],
+          [-2.598004, 51.47076],
+          [-2.59642, 51.469566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595302, 51.469902],
+          [-2.599129, 51.472805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614499, 51.47596],
+          [-2.614056, 51.475305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593524, 51.480657],
+          [-2.592461, 51.479961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595461, 51.478096],
+          [-2.595094, 51.478045],
+          [-2.595051, 51.478199],
+          [-2.594967, 51.478754],
+          [-2.594708, 51.481243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602638, 51.476064],
+          [-2.603219, 51.475572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59551, 51.473341],
+          [-2.595567, 51.473952]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611729, 51.473287],
+          [-2.613409, 51.474682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602984, 51.470794],
+          [-2.60296, 51.470901],
+          [-2.602927, 51.470943],
+          [-2.602831, 51.470999],
+          [-2.602689, 51.471042],
+          [-2.602593, 51.471095],
+          [-2.60253, 51.471185],
+          [-2.602523, 51.471266],
+          [-2.602564, 51.471336],
+          [-2.602655, 51.471397],
+          [-2.603597, 51.471881],
+          [-2.603784, 51.471993],
+          [-2.603963, 51.472069],
+          [-2.604086, 51.472098],
+          [-2.604216, 51.472091],
+          [-2.604975, 51.471855],
+          [-2.60584, 51.471613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60584, 51.471613],
+          [-2.605918, 51.471603],
+          [-2.606147, 51.471612],
+          [-2.606557, 51.471594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600905, 51.469924],
+          [-2.600925, 51.470083],
+          [-2.601024, 51.470224],
+          [-2.601335, 51.470603],
+          [-2.601354, 51.470646],
+          [-2.601231, 51.471046],
+          [-2.60122, 51.471121],
+          [-2.601233, 51.471238],
+          [-2.601333, 51.471425],
+          [-2.601392, 51.471501],
+          [-2.601511, 51.471574],
+          [-2.602503, 51.471971],
+          [-2.603411, 51.472278],
+          [-2.603699, 51.472433],
+          [-2.603929, 51.472624],
+          [-2.604028, 51.472683]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598869, 51.476494],
+          [-2.598962, 51.47659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592964, 51.472024],
+          [-2.59336, 51.472064],
+          [-2.59431, 51.472429],
+          [-2.594398, 51.4725],
+          [-2.594605, 51.472524],
+          [-2.594775, 51.472554],
+          [-2.595123, 51.472663],
+          [-2.59549, 51.472923],
+          [-2.596497, 51.47335],
+          [-2.597488, 51.47395],
+          [-2.597623, 51.47396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605089, 51.477615],
+          [-2.605667, 51.478807],
+          [-2.605701, 51.47883],
+          [-2.60678, 51.479224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592053, 51.472035],
+          [-2.592085, 51.472052],
+          [-2.592179, 51.47206],
+          [-2.592711, 51.472024],
+          [-2.592964, 51.472024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604296, 51.479344],
+          [-2.604413, 51.479318],
+          [-2.604568, 51.479312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606122, 51.479861],
+          [-2.604568, 51.479312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611729, 51.473287],
+          [-2.611743, 51.473258],
+          [-2.611699, 51.473221],
+          [-2.61164, 51.473213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611556, 51.473139],
+          [-2.61164, 51.473213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61164, 51.473213],
+          [-2.611636, 51.473247],
+          [-2.611677, 51.473282],
+          [-2.611729, 51.473287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600042, 51.477268],
+          [-2.600135, 51.47731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597888, 51.469111],
+          [-2.59988, 51.468363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596497, 51.47335],
+          [-2.596203, 51.473636],
+          [-2.596109, 51.473771],
+          [-2.59608, 51.473907],
+          [-2.596104, 51.474022],
+          [-2.596152, 51.474072],
+          [-2.597218, 51.474819],
+          [-2.597806, 51.475209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598962, 51.47659],
+          [-2.599042, 51.476687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599578, 51.479189],
+          [-2.600252, 51.479229],
+          [-2.600894, 51.479252],
+          [-2.601035, 51.479274],
+          [-2.602976, 51.479842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591807, 51.472477],
+          [-2.591526, 51.472465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610727, 51.472505],
+          [-2.6107, 51.472445],
+          [-2.610665, 51.472422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609586, 51.476673],
+          [-2.610001, 51.476167],
+          [-2.610383, 51.475798],
+          [-2.610467, 51.475661],
+          [-2.610913, 51.474004],
+          [-2.611, 51.473776],
+          [-2.611132, 51.473557],
+          [-2.6114, 51.473228],
+          [-2.611462, 51.473179],
+          [-2.611556, 51.473139],
+          [-2.611051, 51.472733],
+          [-2.610894, 51.472631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61075, 51.472284],
+          [-2.611468, 51.471998],
+          [-2.612333, 51.47169],
+          [-2.612455, 51.471663],
+          [-2.612737, 51.471623],
+          [-2.613193, 51.471601],
+          [-2.614831, 51.471586],
+          [-2.615309, 51.471566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6105, 51.472413],
+          [-2.610427, 51.472462],
+          [-2.610414, 51.472497],
+          [-2.610448, 51.47256],
+          [-2.610564, 51.472597],
+          [-2.610685, 51.472566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607386, 51.478536],
+          [-2.605554, 51.477843],
+          [-2.605213, 51.477683],
+          [-2.602686, 51.476086],
+          [-2.601151, 51.475547],
+          [-2.600519, 51.475095],
+          [-2.598269, 51.473384],
+          [-2.594199, 51.470241],
+          [-2.594017, 51.470295]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606495, 51.479504],
+          [-2.60678, 51.479224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605257, 51.480678],
+          [-2.605862, 51.480115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593604, 51.470372],
+          [-2.593713, 51.470393],
+          [-2.593898, 51.470366],
+          [-2.593956, 51.470349],
+          [-2.594017, 51.470295]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607892, 51.477925],
+          [-2.608257, 51.47768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610685, 51.472566],
+          [-2.610894, 51.472631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610894, 51.472631],
+          [-2.610727, 51.472505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610685, 51.472566],
+          [-2.610727, 51.472505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610665, 51.472422],
+          [-2.61075, 51.472284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61075, 51.472284],
+          [-2.6105, 51.472413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610665, 51.472422],
+          [-2.61056, 51.472403],
+          [-2.6105, 51.472413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594017, 51.470295],
+          [-2.593917, 51.470276],
+          [-2.59361, 51.470308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610569, 51.471299],
+          [-2.609934, 51.471174],
+          [-2.609935, 51.470909],
+          [-2.609959, 51.470803],
+          [-2.610009, 51.470708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606825, 51.472423],
+          [-2.606736, 51.472513],
+          [-2.606662, 51.472555],
+          [-2.606622, 51.472598],
+          [-2.60657, 51.472739],
+          [-2.606584, 51.472895],
+          [-2.606636, 51.473042],
+          [-2.606669, 51.473099],
+          [-2.606727, 51.473492],
+          [-2.606632, 51.473641],
+          [-2.606117, 51.474016],
+          [-2.60599, 51.474129],
+          [-2.605955, 51.474287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597641, 51.47844],
+          [-2.597128, 51.478136],
+          [-2.597076, 51.478055],
+          [-2.597115, 51.477931],
+          [-2.597291, 51.477713],
+          [-2.59768, 51.477364],
+          [-2.598219, 51.47692],
+          [-2.598734, 51.47654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592397, 51.475076],
+          [-2.592148, 51.475649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593369, 51.475722],
+          [-2.593323, 51.475832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608722, 51.471283],
+          [-2.608762, 51.471463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609203, 51.471218],
+          [-2.608757, 51.471226]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611772, 51.472319],
+          [-2.61217, 51.472676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612632, 51.472192],
+          [-2.611951, 51.472475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607905, 51.476281],
+          [-2.607612, 51.476292],
+          [-2.607542, 51.476325],
+          [-2.606979, 51.476451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607402, 51.47636],
+          [-2.607359, 51.475662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607876, 51.476022],
+          [-2.607381, 51.476037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606782, 51.475621],
+          [-2.606297, 51.475672],
+          [-2.606361, 51.47589],
+          [-2.60632, 51.476081],
+          [-2.606421, 51.476202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605472, 51.476335],
+          [-2.605551, 51.476047],
+          [-2.605534, 51.476013],
+          [-2.605468, 51.475993],
+          [-2.605152, 51.475967],
+          [-2.605049, 51.475967],
+          [-2.605, 51.476006],
+          [-2.604921, 51.476276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604432, 51.476746],
+          [-2.604843, 51.476987],
+          [-2.60526, 51.476704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604492, 51.476708],
+          [-2.604192, 51.476537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606134, 51.476577],
+          [-2.605755, 51.476818],
+          [-2.605685, 51.476852],
+          [-2.605807, 51.476957],
+          [-2.605883, 51.477039],
+          [-2.605898, 51.477074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605218, 51.477127],
+          [-2.605956, 51.477572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605592, 51.477352],
+          [-2.605849, 51.477185],
+          [-2.605919, 51.477178],
+          [-2.605969, 51.477186],
+          [-2.606275, 51.477371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606321, 51.477342],
+          [-2.606865, 51.47787]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608002, 51.477075],
+          [-2.607348, 51.477099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607585, 51.477332],
+          [-2.608036, 51.477319],
+          [-2.608666, 51.476877],
+          [-2.608663, 51.476842],
+          [-2.608495, 51.476692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602768, 51.477486],
+          [-2.602654, 51.477153],
+          [-2.602673, 51.477136],
+          [-2.603137, 51.477111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602686, 51.476086],
+          [-2.602306, 51.47631],
+          [-2.602213, 51.476347],
+          [-2.602112, 51.476335],
+          [-2.601515, 51.476109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599974, 51.476705],
+          [-2.600106, 51.476469],
+          [-2.600108, 51.476437],
+          [-2.600082, 51.476417],
+          [-2.600049, 51.476405],
+          [-2.599876, 51.476385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600105, 51.475331],
+          [-2.600487, 51.475575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600238, 51.479656],
+          [-2.600252, 51.479229],
+          [-2.60029, 51.478864],
+          [-2.600249, 51.478502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60029, 51.478864],
+          [-2.600726, 51.478885]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602281, 51.478607],
+          [-2.602333, 51.478731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598772, 51.478945],
+          [-2.598858, 51.478982],
+          [-2.59883, 51.479482],
+          [-2.598884, 51.479521],
+          [-2.598963, 51.479541],
+          [-2.59954, 51.479602],
+          [-2.600238, 51.479656],
+          [-2.600703, 51.479718],
+          [-2.600922, 51.479756],
+          [-2.601122, 51.479802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601844, 51.480453],
+          [-2.60162, 51.480705],
+          [-2.601695, 51.480793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599402, 51.480463],
+          [-2.600118, 51.480522],
+          [-2.60041, 51.48057],
+          [-2.600697, 51.480644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600192, 51.481003],
+          [-2.600076, 51.480856],
+          [-2.600118, 51.480522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603827, 51.48011],
+          [-2.603744, 51.479829],
+          [-2.603735, 51.479651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6038, 51.478905],
+          [-2.603892, 51.479355]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604284, 51.479154],
+          [-2.603855, 51.479163]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604719, 51.480601],
+          [-2.605364, 51.479966],
+          [-2.604761, 51.479748],
+          [-2.60431, 51.479594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605007, 51.480317],
+          [-2.604846, 51.480214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597817, 51.480236],
+          [-2.596846, 51.480144],
+          [-2.596788, 51.480114],
+          [-2.596574, 51.479768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596667, 51.476342],
+          [-2.596549, 51.476699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614831, 51.471586],
+          [-2.614886, 51.471769],
+          [-2.614681, 51.471788],
+          [-2.614378, 51.471973],
+          [-2.614068, 51.472223],
+          [-2.614144, 51.472313],
+          [-2.614329, 51.472421],
+          [-2.614488, 51.472446],
+          [-2.614668, 51.472451],
+          [-2.614858, 51.472415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598626, 51.481119],
+          [-2.598571, 51.481021],
+          [-2.598824, 51.479965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599012, 51.48131],
+          [-2.598788, 51.481227]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604744, 51.480615],
+          [-2.604518, 51.480767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592439, 51.472042],
+          [-2.592459, 51.472273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591506, 51.473929],
+          [-2.591309, 51.473968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614095, 51.472259],
+          [-2.614177, 51.472233],
+          [-2.614235, 51.472237],
+          [-2.614269, 51.472249],
+          [-2.614288, 51.47227],
+          [-2.614292, 51.472293],
+          [-2.614237, 51.472371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614606, 51.471833],
+          [-2.61472, 51.471882],
+          [-2.61509, 51.471821],
+          [-2.615304, 51.47188],
+          [-2.61538, 51.472005],
+          [-2.61535, 51.472093],
+          [-2.615392, 51.472173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613973, 51.472243],
+          [-2.614015, 51.472243],
+          [-2.614068, 51.472223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607299, 51.472495],
+          [-2.606863, 51.472371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606673, 51.473128],
+          [-2.60624, 51.473291]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598725, 51.477947],
+          [-2.598499, 51.47751],
+          [-2.598415, 51.477416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598224, 51.477059],
+          [-2.598219, 51.47692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596437, 51.476514],
+          [-2.596603, 51.476537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596223, 51.476607],
+          [-2.596564, 51.476653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601104, 51.47583],
+          [-2.601315, 51.475604]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602915, 51.47531],
+          [-2.602586, 51.475539],
+          [-2.602605, 51.475586],
+          [-2.602992, 51.475758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604999, 51.478896],
+          [-2.604543, 51.47797],
+          [-2.604507, 51.477921],
+          [-2.60444, 51.477863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604857, 51.478989],
+          [-2.604956, 51.47905],
+          [-2.606428, 51.47957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604804, 51.479004],
+          [-2.604857, 51.478989],
+          [-2.604972, 51.478935],
+          [-2.604999, 51.478896],
+          [-2.605613, 51.478694]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595431, 51.469535],
+          [-2.595625, 51.469807]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59946, 51.474287],
+          [-2.600018, 51.473999],
+          [-2.600125, 51.474078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609067, 51.475575],
+          [-2.609134, 51.475533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609403, 51.475789],
+          [-2.609681, 51.475579],
+          [-2.609808, 51.475425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602697, 51.470913],
+          [-2.601307, 51.471381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611658, 51.472192],
+          [-2.611468, 51.471998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610943, 51.473923],
+          [-2.611269, 51.474042],
+          [-2.611308, 51.474042],
+          [-2.611343, 51.474023],
+          [-2.611494, 51.473802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615937, 51.474091],
+          [-2.615809, 51.473625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611536, 51.472575],
+          [-2.612223, 51.473144]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612948, 51.472444],
+          [-2.613208, 51.472352],
+          [-2.613068, 51.472212],
+          [-2.612979, 51.472165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614006, 51.472583],
+          [-2.613505, 51.472816],
+          [-2.613371, 51.472949],
+          [-2.613284, 51.473008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613316, 51.473868],
+          [-2.613006, 51.473603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59014, 51.477294],
+          [-2.590481, 51.477302],
+          [-2.590598, 51.477319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607401, 51.474549],
+          [-2.606585, 51.474764],
+          [-2.60624, 51.474888],
+          [-2.605753, 51.475034],
+          [-2.605215, 51.475132],
+          [-2.605417, 51.475443]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609585, 51.472412],
+          [-2.609661, 51.472345],
+          [-2.609983, 51.472192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591897, 51.474767],
+          [-2.591709, 51.474768],
+          [-2.591421, 51.474751]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603507, 51.480728],
+          [-2.603682, 51.480636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603724, 51.480846],
+          [-2.603905, 51.480751]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60369, 51.480599],
+          [-2.603682, 51.480636],
+          [-2.603717, 51.480687],
+          [-2.603761, 51.480712],
+          [-2.603965, 51.480761],
+          [-2.60401, 51.480782],
+          [-2.604125, 51.480868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60348, 51.481214],
+          [-2.604169, 51.480844],
+          [-2.604259, 51.480906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604538, 51.480497],
+          [-2.604494, 51.480529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604214, 51.480621],
+          [-2.604456, 51.480454]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593538, 51.475747],
+          [-2.593369, 51.475722],
+          [-2.593283, 51.475699],
+          [-2.59316, 51.475645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591915, 51.4752],
+          [-2.591827, 51.475187],
+          [-2.591672, 51.475583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592641, 51.475294],
+          [-2.592323, 51.475251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59889, 51.472935],
+          [-2.599226, 51.473202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597753, 51.473524],
+          [-2.598737, 51.474286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593999, 51.470994],
+          [-2.594364, 51.470929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59554, 51.46969],
+          [-2.595566, 51.469682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600231, 51.475798],
+          [-2.599778, 51.47552]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599814, 51.475493],
+          [-2.600388, 51.475853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598867, 51.47491],
+          [-2.599206, 51.474762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599099, 51.474671],
+          [-2.599439, 51.474961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603751, 51.478084],
+          [-2.603941, 51.478059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603801, 51.478445],
+          [-2.604102, 51.47841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613467, 51.473216],
+          [-2.613809, 51.473109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591663, 51.475023],
+          [-2.591472, 51.474981],
+          [-2.591351, 51.474929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591093, 51.477834],
+          [-2.590651, 51.477801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599764, 51.481366],
+          [-2.600372, 51.480974],
+          [-2.600613, 51.481236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607558, 51.477261],
+          [-2.608029, 51.477254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604319, 51.473515],
+          [-2.604567, 51.473406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603451, 51.473325],
+          [-2.604037, 51.473318],
+          [-2.604319, 51.473515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60129, 51.47383],
+          [-2.601665, 51.473863],
+          [-2.602038, 51.473867],
+          [-2.602585, 51.473835],
+          [-2.603577, 51.473741],
+          [-2.603794, 51.473728],
+          [-2.604319, 51.473515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593761, 51.477757],
+          [-2.593828, 51.477553],
+          [-2.593773, 51.47748],
+          [-2.593884, 51.477184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593617, 51.480675],
+          [-2.593524, 51.480657]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608078, 51.474269],
+          [-2.607939, 51.474226],
+          [-2.608233, 51.473858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609155, 51.473688],
+          [-2.609303, 51.473496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600185, 51.471868],
+          [-2.600506, 51.472103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59832, 51.477101],
+          [-2.598284, 51.476874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608071, 51.472314],
+          [-2.608353, 51.472103],
+          [-2.608494, 51.472058],
+          [-2.60862, 51.471957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60464, 51.470521],
+          [-2.604347, 51.470517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602024, 51.470387],
+          [-2.602432, 51.47039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604657, 51.473011],
+          [-2.604648, 51.472962],
+          [-2.60468, 51.47285]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606082, 51.472624],
+          [-2.605818, 51.471996],
+          [-2.605011, 51.472258],
+          [-2.604793, 51.47234]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614454, 51.473638],
+          [-2.614624, 51.473844],
+          [-2.614186, 51.473996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614215, 51.473759],
+          [-2.614349, 51.473939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591461, 51.475571],
+          [-2.591425, 51.475639],
+          [-2.591444, 51.47571],
+          [-2.590887, 51.475844],
+          [-2.590725, 51.475815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610793, 51.474018],
+          [-2.610894, 51.474072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608977, 51.472413],
+          [-2.608677, 51.472274],
+          [-2.608889, 51.472095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60889, 51.472486],
+          [-2.609182, 51.472241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615118, 51.4742],
+          [-2.61534, 51.474402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603929, 51.472624],
+          [-2.604514, 51.472405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6115, 51.474667],
+          [-2.611649, 51.474676],
+          [-2.611819, 51.47481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61151, 51.474539],
+          [-2.61171, 51.474604]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61476, 51.473742],
+          [-2.614614, 51.473568],
+          [-2.614583, 51.47355],
+          [-2.614547, 51.473545],
+          [-2.614187, 51.473665],
+          [-2.613943, 51.473771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614378, 51.473329],
+          [-2.614547, 51.473545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593925, 51.470662],
+          [-2.593857, 51.470673]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594434, 51.470549],
+          [-2.594443, 51.470558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594561, 51.470518],
+          [-2.594334, 51.47059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591127, 51.475786],
+          [-2.591063, 51.475692],
+          [-2.590865, 51.47565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589497, 51.479126],
+          [-2.591534, 51.479296],
+          [-2.596574, 51.479768],
+          [-2.598204, 51.479883],
+          [-2.598824, 51.479965],
+          [-2.59985, 51.480043],
+          [-2.600238, 51.480085],
+          [-2.600931, 51.480197],
+          [-2.601844, 51.480453],
+          [-2.602306, 51.480615],
+          [-2.602795, 51.480822],
+          [-2.60324, 51.481042],
+          [-2.603807, 51.481449],
+          [-2.603912, 51.481538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597888, 51.469111],
+          [-2.598027, 51.469212],
+          [-2.598523, 51.469474],
+          [-2.598981, 51.469631],
+          [-2.600138, 51.469873],
+          [-2.600499, 51.469913],
+          [-2.601297, 51.469931],
+          [-2.601759, 51.469954],
+          [-2.602024, 51.469976],
+          [-2.602473, 51.470034],
+          [-2.603, 51.470064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609811, 51.472496],
+          [-2.609221, 51.47226],
+          [-2.608674, 51.471983],
+          [-2.608079, 51.471705],
+          [-2.60771, 51.471573],
+          [-2.607003, 51.471382],
+          [-2.606891, 51.471339],
+          [-2.606794, 51.471292],
+          [-2.606715, 51.471231],
+          [-2.606425, 51.470918]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593231, 51.468982],
+          [-2.593145, 51.469034],
+          [-2.59313, 51.469096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593256, 51.469159],
+          [-2.593259, 51.469097],
+          [-2.593317, 51.469015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609811, 51.472496],
+          [-2.609912, 51.472536],
+          [-2.610158, 51.472577],
+          [-2.610448, 51.47256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610427, 51.472462],
+          [-2.610132, 51.472505],
+          [-2.609811, 51.472496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597888, 51.469111],
+          [-2.595625, 51.469807],
+          [-2.594766, 51.470046],
+          [-2.594303, 51.470194],
+          [-2.594199, 51.470241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597888, 51.469111],
+          [-2.597713, 51.469009],
+          [-2.597265, 51.468815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593241, 51.469176],
+          [-2.593588, 51.469193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "redland" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595139, 51.469192],
+          [-2.596093, 51.46909],
+          [-2.596947, 51.468939],
+          [-2.597738, 51.468741],
+          [-2.59848, 51.468517],
+          [-2.599052, 51.468325]
+        ]
+      }
+    }
+  ]
+}

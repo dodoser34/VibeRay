@@ -1,0 +1,2956 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532074, 51.456103],
+          [-2.532435, 51.455451],
+          [-2.532592, 51.455241],
+          [-2.532722, 51.455114],
+          [-2.533003, 51.454905],
+          [-2.53323, 51.454782],
+          [-2.534147, 51.454393],
+          [-2.534291, 51.454314],
+          [-2.534419, 51.454217],
+          [-2.534517, 51.454081],
+          [-2.534615, 51.453727],
+          [-2.534677, 51.453634],
+          [-2.534755, 51.453581],
+          [-2.534907, 51.453521],
+          [-2.535245, 51.453428],
+          [-2.535597, 51.453353],
+          [-2.535794, 51.453333],
+          [-2.535923, 51.453337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521932, 51.453685],
+          [-2.5221, 51.453622],
+          [-2.522161, 51.453553],
+          [-2.522478, 51.453007],
+          [-2.522556, 51.452951],
+          [-2.52288, 51.452767],
+          [-2.52321, 51.452625],
+          [-2.52366, 51.452448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522009, 51.454465],
+          [-2.522337, 51.454609],
+          [-2.522563, 51.454682],
+          [-2.522748, 51.454717],
+          [-2.523217, 51.454737],
+          [-2.523302, 51.454749],
+          [-2.523385, 51.454782],
+          [-2.524077, 51.455309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522009, 51.454465],
+          [-2.521941, 51.454477],
+          [-2.521896, 51.454524],
+          [-2.521786, 51.454698],
+          [-2.521467, 51.455002],
+          [-2.520951, 51.455664],
+          [-2.520916, 51.455735],
+          [-2.520925, 51.455825],
+          [-2.520971, 51.455906],
+          [-2.521545, 51.456591],
+          [-2.521601, 51.456635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522009, 51.454465],
+          [-2.522038, 51.454354],
+          [-2.522181, 51.454107],
+          [-2.522163, 51.453993],
+          [-2.521932, 51.453685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521293, 51.455236],
+          [-2.522596, 51.455492],
+          [-2.52275, 51.455549],
+          [-2.523169, 51.455825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530953, 51.446423],
+          [-2.531375, 51.446263],
+          [-2.531734, 51.446173],
+          [-2.53203, 51.446141],
+          [-2.532766, 51.446166],
+          [-2.533278, 51.4462],
+          [-2.533731, 51.446251],
+          [-2.534143, 51.446309],
+          [-2.534749, 51.446433],
+          [-2.5349, 51.446492],
+          [-2.534975, 51.446555],
+          [-2.535024, 51.446627],
+          [-2.534915, 51.446795],
+          [-2.534545, 51.447267],
+          [-2.534017, 51.448277],
+          [-2.533977, 51.448492],
+          [-2.533922, 51.44896],
+          [-2.533993, 51.449228],
+          [-2.53407, 51.449386],
+          [-2.534236, 51.449623],
+          [-2.534495, 51.44989],
+          [-2.535094, 51.450349],
+          [-2.535141, 51.450403],
+          [-2.535223, 51.450628],
+          [-2.535327, 51.451009],
+          [-2.535445, 51.451578],
+          [-2.535636, 51.452251],
+          [-2.535804, 51.452629],
+          [-2.535892, 51.452892],
+          [-2.535923, 51.453337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521266, 51.45626],
+          [-2.520601, 51.456463],
+          [-2.520512, 51.456513],
+          [-2.520448, 51.45658],
+          [-2.520405, 51.456655]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537674, 51.454991],
+          [-2.537588, 51.454767],
+          [-2.537487, 51.454556]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536769, 51.453661],
+          [-2.536887, 51.453958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536766, 51.453057],
+          [-2.536734, 51.452992],
+          [-2.536537, 51.453023],
+          [-2.536769, 51.453661],
+          [-2.536099, 51.453761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536163, 51.452024],
+          [-2.536433, 51.452639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535804, 51.452629],
+          [-2.536383, 51.452543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537062, 51.453333],
+          [-2.536317, 51.453449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53582, 51.451406],
+          [-2.535938, 51.451709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535445, 51.451578],
+          [-2.535864, 51.451518]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52719, 51.455496],
+          [-2.526857, 51.455381],
+          [-2.526601, 51.455264],
+          [-2.52655, 51.455095],
+          [-2.526567, 51.45496],
+          [-2.526828, 51.45465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531788, 51.454703],
+          [-2.531803, 51.454889],
+          [-2.531788, 51.455095],
+          [-2.531769, 51.455156],
+          [-2.531722, 51.455229],
+          [-2.531661, 51.455291],
+          [-2.531363, 51.455513],
+          [-2.531244, 51.455626],
+          [-2.531125, 51.45583],
+          [-2.531107, 51.455982],
+          [-2.531136, 51.456064],
+          [-2.531232, 51.456134],
+          [-2.531876, 51.456393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525463, 51.455634],
+          [-2.524072, 51.456437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522243, 51.456345],
+          [-2.522462, 51.456476],
+          [-2.523563, 51.456967],
+          [-2.52389, 51.457081],
+          [-2.524111, 51.457096],
+          [-2.524256, 51.457086],
+          [-2.524502, 51.457018],
+          [-2.525246, 51.456642],
+          [-2.526023, 51.456364],
+          [-2.526504, 51.456215],
+          [-2.526545, 51.456135],
+          [-2.526454, 51.456082],
+          [-2.524361, 51.455148]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533044, 51.457805],
+          [-2.532129, 51.457457],
+          [-2.532004, 51.457439],
+          [-2.531932, 51.457447],
+          [-2.531876, 51.457464],
+          [-2.531819, 51.457507],
+          [-2.531456, 51.457869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532362, 51.457549],
+          [-2.532671, 51.457204],
+          [-2.532704, 51.457132],
+          [-2.532752, 51.456924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528348, 51.458009],
+          [-2.528665, 51.457796],
+          [-2.528797, 51.457649],
+          [-2.528895, 51.457562],
+          [-2.529066, 51.457479],
+          [-2.529341, 51.457386],
+          [-2.529561, 51.457317],
+          [-2.529739, 51.45728],
+          [-2.52997, 51.457166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529341, 51.457386],
+          [-2.52924, 51.457351],
+          [-2.527967, 51.457137],
+          [-2.527823, 51.45713],
+          [-2.527433, 51.457152],
+          [-2.527129, 51.457134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526545, 51.456135],
+          [-2.5268, 51.456219],
+          [-2.526967, 51.456213],
+          [-2.527598, 51.456164],
+          [-2.528066, 51.456049],
+          [-2.528152, 51.45602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521455, 51.451367],
+          [-2.521314, 51.451532],
+          [-2.52127, 51.451605],
+          [-2.521235, 51.451723],
+          [-2.521225, 51.451878],
+          [-2.521238, 51.452003],
+          [-2.521382, 51.452316],
+          [-2.521422, 51.452514],
+          [-2.521392, 51.452677],
+          [-2.52127, 51.452951],
+          [-2.521313, 51.453114],
+          [-2.521425, 51.453253],
+          [-2.521777, 51.453494],
+          [-2.521932, 51.453685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521346, 51.452254],
+          [-2.521161, 51.452285],
+          [-2.52046, 51.452481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52127, 51.452951],
+          [-2.521006, 51.45295],
+          [-2.520547, 51.452997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521909, 51.453649],
+          [-2.521724, 51.453718],
+          [-2.521474, 51.453918],
+          [-2.520504, 51.453597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518311, 51.452374],
+          [-2.518455, 51.452306],
+          [-2.518668, 51.452121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527306, 51.449577],
+          [-2.527198, 51.449411],
+          [-2.527211, 51.44936],
+          [-2.527727, 51.449175],
+          [-2.527801, 51.449179],
+          [-2.527865, 51.4492],
+          [-2.528056, 51.449338]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527931, 51.448724],
+          [-2.52779, 51.448711],
+          [-2.527689, 51.448725],
+          [-2.527361, 51.448808],
+          [-2.527009, 51.448952],
+          [-2.52658, 51.449296],
+          [-2.526459, 51.449331],
+          [-2.526313, 51.449416],
+          [-2.526203, 51.449514],
+          [-2.525908, 51.450066]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527306, 51.449577],
+          [-2.526935, 51.449624],
+          [-2.526275, 51.449585],
+          [-2.526165, 51.449569],
+          [-2.525511, 51.449404],
+          [-2.525362, 51.449335],
+          [-2.525073, 51.449142],
+          [-2.525056, 51.449114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523969, 51.449612],
+          [-2.524044, 51.449558],
+          [-2.524762, 51.449163],
+          [-2.524904, 51.44912],
+          [-2.525056, 51.449114],
+          [-2.525235, 51.449123],
+          [-2.525419, 51.449166],
+          [-2.525515, 51.449157],
+          [-2.526179, 51.449216],
+          [-2.526195, 51.449189],
+          [-2.526205, 51.449093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525071, 51.451645],
+          [-2.525208, 51.451296],
+          [-2.52537, 51.45094],
+          [-2.525393, 51.450842],
+          [-2.525364, 51.450594],
+          [-2.525351, 51.450263],
+          [-2.525408, 51.449943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522937, 51.45045],
+          [-2.523081, 51.450585],
+          [-2.523203, 51.450634],
+          [-2.52537, 51.45094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523328, 51.452142],
+          [-2.523454, 51.452073],
+          [-2.523468, 51.452048],
+          [-2.523468, 51.451992],
+          [-2.523332, 51.45169],
+          [-2.523219, 51.451498],
+          [-2.523101, 51.45136],
+          [-2.52288, 51.451223],
+          [-2.522469, 51.45099],
+          [-2.522241, 51.450824],
+          [-2.522136, 51.450658],
+          [-2.522104, 51.450478]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522102, 51.449854],
+          [-2.522612, 51.449813],
+          [-2.522825, 51.449768],
+          [-2.522977, 51.449747],
+          [-2.523276, 51.449664],
+          [-2.523592, 51.44961],
+          [-2.523899, 51.449588],
+          [-2.523969, 51.449612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527292, 51.450494],
+          [-2.527183, 51.450692],
+          [-2.52713, 51.450918],
+          [-2.527, 51.452003],
+          [-2.526905, 51.452182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521053, 51.450953],
+          [-2.521178, 51.450896],
+          [-2.52177, 51.450561],
+          [-2.521908, 51.450498],
+          [-2.521996, 51.450481],
+          [-2.522104, 51.450478],
+          [-2.522735, 51.450479],
+          [-2.522937, 51.45045],
+          [-2.523058, 51.450379],
+          [-2.523307, 51.450193],
+          [-2.523613, 51.450064],
+          [-2.524032, 51.449961],
+          [-2.524384, 51.449923],
+          [-2.525061, 51.449916],
+          [-2.525408, 51.449943],
+          [-2.525654, 51.44999],
+          [-2.525908, 51.450066],
+          [-2.527292, 51.450494],
+          [-2.52758, 51.450597],
+          [-2.528096, 51.450721],
+          [-2.528266, 51.450734],
+          [-2.528434, 51.450729],
+          [-2.528625, 51.450752],
+          [-2.528972, 51.450821],
+          [-2.529866, 51.451073],
+          [-2.530352, 51.451239],
+          [-2.530763, 51.45142],
+          [-2.531016, 51.451522],
+          [-2.531145, 51.451563],
+          [-2.532127, 51.451791],
+          [-2.532487, 51.451855],
+          [-2.53392, 51.452072],
+          [-2.534179, 51.452148],
+          [-2.534237, 51.45219],
+          [-2.534459, 51.452521],
+          [-2.534525, 51.452559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523219, 51.451498],
+          [-2.523355, 51.451473],
+          [-2.52354, 51.451473],
+          [-2.524631, 51.451582],
+          [-2.525071, 51.451645],
+          [-2.526905, 51.452182],
+          [-2.527613, 51.452453],
+          [-2.527915, 51.452526],
+          [-2.528201, 51.452576],
+          [-2.528565, 51.452595],
+          [-2.528745, 51.452566],
+          [-2.528821, 51.452542],
+          [-2.528897, 51.452503],
+          [-2.529717, 51.451921],
+          [-2.52985, 51.451839],
+          [-2.529934, 51.45179],
+          [-2.530763, 51.45142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529934, 51.45179],
+          [-2.529517, 51.45155],
+          [-2.529426, 51.451471],
+          [-2.529352, 51.451504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526125, 51.453111],
+          [-2.526728, 51.453488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526378, 51.452936],
+          [-2.526125, 51.453111],
+          [-2.525846, 51.453273],
+          [-2.525672, 51.453206],
+          [-2.525441, 51.453353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535603, 51.452122],
+          [-2.535411, 51.452106],
+          [-2.53503, 51.452111],
+          [-2.534935, 51.452125],
+          [-2.534845, 51.452171],
+          [-2.534525, 51.452559],
+          [-2.534453, 51.452673],
+          [-2.534143, 51.452984],
+          [-2.533976, 51.453077],
+          [-2.533861, 51.453112],
+          [-2.533739, 51.453136],
+          [-2.532829, 51.453204],
+          [-2.532394, 51.453195],
+          [-2.531691, 51.453153],
+          [-2.530643, 51.453157],
+          [-2.530038, 51.453138],
+          [-2.529378, 51.453172],
+          [-2.528602, 51.453321],
+          [-2.528215, 51.453323],
+          [-2.527979, 51.453366],
+          [-2.527313, 51.453676],
+          [-2.52664, 51.453899],
+          [-2.526438, 51.453951],
+          [-2.526332, 51.454001],
+          [-2.526006, 51.454252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528266, 51.450734],
+          [-2.52843, 51.451696],
+          [-2.528426, 51.451841],
+          [-2.52838, 51.452015],
+          [-2.528239, 51.45241],
+          [-2.528201, 51.452576],
+          [-2.528217, 51.453953],
+          [-2.528248, 51.454191],
+          [-2.528396, 51.454984],
+          [-2.528392, 51.455032],
+          [-2.528333, 51.45507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5296, 51.45201],
+          [-2.529964, 51.452298],
+          [-2.530577, 51.452689],
+          [-2.530661, 51.452844],
+          [-2.530671, 51.452911],
+          [-2.530643, 51.453157],
+          [-2.530673, 51.453204],
+          [-2.530911, 51.453264],
+          [-2.531005, 51.45333],
+          [-2.531226, 51.453613],
+          [-2.531344, 51.453722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531796, 51.452534],
+          [-2.531724, 51.452525],
+          [-2.530837, 51.452077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524567, 51.452152],
+          [-2.524573, 51.452249],
+          [-2.524612, 51.452337],
+          [-2.524684, 51.452381],
+          [-2.524828, 51.452407],
+          [-2.524855, 51.452425],
+          [-2.52489, 51.452521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53369, 51.452036],
+          [-2.533633, 51.452193],
+          [-2.533626, 51.452284],
+          [-2.533651, 51.452448],
+          [-2.533695, 51.452555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532127, 51.451791],
+          [-2.531896, 51.452433],
+          [-2.531796, 51.452534],
+          [-2.531691, 51.453153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530038, 51.453138],
+          [-2.530078, 51.453213],
+          [-2.53042, 51.453451],
+          [-2.530567, 51.453577],
+          [-2.530924, 51.454032],
+          [-2.531042, 51.45414],
+          [-2.531228, 51.454372],
+          [-2.531365, 51.454648],
+          [-2.531374, 51.454789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528392, 51.455032],
+          [-2.529524, 51.454954],
+          [-2.529848, 51.454966],
+          [-2.531177, 51.454825],
+          [-2.531788, 51.454703],
+          [-2.531974, 51.454651],
+          [-2.53204, 51.454615],
+          [-2.532212, 51.454461],
+          [-2.532355, 51.454378],
+          [-2.532773, 51.454171],
+          [-2.533017, 51.454001],
+          [-2.533244, 51.453873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531042, 51.45414],
+          [-2.531929, 51.453872],
+          [-2.532016, 51.453836],
+          [-2.532135, 51.453704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521382, 51.452316],
+          [-2.521634, 51.452281],
+          [-2.521807, 51.4523],
+          [-2.522773, 51.452822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524032, 51.449961],
+          [-2.524035, 51.449768],
+          [-2.523969, 51.449612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534915, 51.446795],
+          [-2.534343, 51.446629],
+          [-2.534082, 51.446568],
+          [-2.533585, 51.446488],
+          [-2.533274, 51.446465],
+          [-2.532959, 51.446463],
+          [-2.532166, 51.446405],
+          [-2.531902, 51.446408],
+          [-2.531826, 51.446441],
+          [-2.531797, 51.446487],
+          [-2.5313, 51.446744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533664, 51.451735],
+          [-2.533567, 51.451946],
+          [-2.533566, 51.452018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535534, 51.450896],
+          [-2.535599, 51.451068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53164, 51.45168],
+          [-2.531716, 51.451462],
+          [-2.531798, 51.451451],
+          [-2.533158, 51.451643],
+          [-2.533273, 51.451502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527456, 51.45055],
+          [-2.527518, 51.450492],
+          [-2.527599, 51.45008],
+          [-2.527582, 51.4499],
+          [-2.527516, 51.449763],
+          [-2.527369, 51.449621],
+          [-2.527306, 51.449577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535013, 51.45124],
+          [-2.535025, 51.451358],
+          [-2.535015, 51.451596],
+          [-2.534913, 51.451951],
+          [-2.534935, 51.452125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540304, 51.457767],
+          [-2.539913, 51.45823],
+          [-2.540421, 51.4584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533367, 51.456496],
+          [-2.5329, 51.456339],
+          [-2.532339, 51.45617],
+          [-2.532074, 51.456103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529904, 51.456049],
+          [-2.529607, 51.455783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533708, 51.453355],
+          [-2.533746, 51.45328],
+          [-2.533758, 51.453204],
+          [-2.533739, 51.453136]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530191, 51.455558],
+          [-2.531125, 51.45583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534453, 51.452673],
+          [-2.53457, 51.452773],
+          [-2.534623, 51.452868],
+          [-2.534585, 51.453011],
+          [-2.534425, 51.453277],
+          [-2.534415, 51.453339],
+          [-2.534429, 51.453391]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529856, 51.456303],
+          [-2.529822, 51.456221],
+          [-2.529828, 51.456159],
+          [-2.529853, 51.456102],
+          [-2.529904, 51.456049],
+          [-2.530019, 51.45601],
+          [-2.530158, 51.455989],
+          [-2.531107, 51.455982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53482, 51.453368],
+          [-2.53539, 51.453342],
+          [-2.535503, 51.45337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519913, 51.455649],
+          [-2.520074, 51.45585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521786, 51.454698],
+          [-2.521683, 51.454675],
+          [-2.521418, 51.454688],
+          [-2.521309, 51.45468],
+          [-2.520818, 51.45456],
+          [-2.520737, 51.454526],
+          [-2.520599, 51.454417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526877, 51.452804],
+          [-2.527236, 51.452917],
+          [-2.527489, 51.452977],
+          [-2.527778, 51.45312],
+          [-2.528215, 51.45326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537928, 51.454603],
+          [-2.537963, 51.454723],
+          [-2.537588, 51.454767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521996, 51.450481],
+          [-2.522065, 51.450295],
+          [-2.522095, 51.449998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52354, 51.451473],
+          [-2.52348, 51.451373],
+          [-2.523342, 51.451018],
+          [-2.523236, 51.450834],
+          [-2.523103, 51.450678],
+          [-2.523081, 51.450585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522155, 51.451272],
+          [-2.522469, 51.45099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526967, 51.456213],
+          [-2.527026, 51.456335],
+          [-2.527242, 51.456624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521519, 51.451022],
+          [-2.522364, 51.451361],
+          [-2.522388, 51.451388],
+          [-2.52238, 51.451421],
+          [-2.52232, 51.451487]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525738, 51.451843],
+          [-2.52557, 51.45205],
+          [-2.525539, 51.452151],
+          [-2.52554, 51.452216],
+          [-2.525582, 51.452305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524077, 51.452892],
+          [-2.524327, 51.45283],
+          [-2.524477, 51.452811],
+          [-2.524622, 51.452806],
+          [-2.525132, 51.452823],
+          [-2.525329, 51.45281],
+          [-2.525543, 51.452783],
+          [-2.525701, 51.452794],
+          [-2.525877, 51.452832],
+          [-2.526101, 51.452915],
+          [-2.526373, 51.453064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530309, 51.454172],
+          [-2.53046, 51.45416],
+          [-2.530578, 51.454139],
+          [-2.530924, 51.454032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527264, 51.454752],
+          [-2.527566, 51.45431],
+          [-2.527594, 51.454286],
+          [-2.527638, 51.454267],
+          [-2.528248, 51.454191]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523602, 51.452392],
+          [-2.523846, 51.452313],
+          [-2.524102, 51.452265],
+          [-2.524567, 51.452152],
+          [-2.524596, 51.452091],
+          [-2.52468, 51.45203],
+          [-2.524788, 51.45203]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528364, 51.455113],
+          [-2.528431, 51.455109],
+          [-2.528484, 51.455116],
+          [-2.529106, 51.455304],
+          [-2.529595, 51.455389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532829, 51.453204],
+          [-2.532802, 51.453033],
+          [-2.532846, 51.452972],
+          [-2.532955, 51.452917],
+          [-2.533121, 51.452873],
+          [-2.533659, 51.452772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536222, 51.453124],
+          [-2.53656, 51.453077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52715, 51.449279],
+          [-2.527211, 51.44936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520951, 51.455664],
+          [-2.520814, 51.455621],
+          [-2.520668, 51.455623],
+          [-2.51999, 51.455746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535566, 51.45098],
+          [-2.535327, 51.451009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535923, 51.453337],
+          [-2.536199, 51.45402],
+          [-2.536268, 51.454268],
+          [-2.536303, 51.454459],
+          [-2.536338, 51.454545],
+          [-2.536456, 51.454685],
+          [-2.536833, 51.454955],
+          [-2.536983, 51.455013],
+          [-2.537137, 51.455046],
+          [-2.537298, 51.455044],
+          [-2.537674, 51.454991],
+          [-2.537819, 51.454984],
+          [-2.537919, 51.454989],
+          [-2.538173, 51.45503],
+          [-2.538496, 51.455138],
+          [-2.538851, 51.455289],
+          [-2.539086, 51.4554],
+          [-2.5393, 51.455445],
+          [-2.540109, 51.455586],
+          [-2.540419, 51.455626],
+          [-2.540728, 51.455699],
+          [-2.541171, 51.45572],
+          [-2.54225, 51.455977],
+          [-2.542592, 51.456017],
+          [-2.542806, 51.456031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539916, 51.455787],
+          [-2.540346, 51.455851],
+          [-2.540666, 51.455859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532864, 51.456979],
+          [-2.532748, 51.456975]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521178, 51.450896],
+          [-2.521106, 51.450849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521622, 51.451068],
+          [-2.52153, 51.45116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531003, 51.456529],
+          [-2.530756, 51.456613],
+          [-2.53034, 51.456731],
+          [-2.530268, 51.456772],
+          [-2.530469, 51.457018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537057, 51.453935],
+          [-2.536712, 51.453982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520661, 51.453648],
+          [-2.520609, 51.453712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540141, 51.455777],
+          [-2.540121, 51.45582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540569, 51.456117],
+          [-2.540728, 51.455699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525427, 51.452264],
+          [-2.525548, 51.452244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530061, 51.457213],
+          [-2.530149, 51.457146],
+          [-2.530259, 51.457087],
+          [-2.530469, 51.457018],
+          [-2.531313, 51.456823],
+          [-2.531374, 51.456803],
+          [-2.531531, 51.456727],
+          [-2.531678, 51.456618],
+          [-2.531876, 51.456393],
+          [-2.532074, 51.456103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528013, 51.45755],
+          [-2.528279, 51.457585],
+          [-2.528895, 51.457562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529491, 51.45144],
+          [-2.529426, 51.451471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535853, 51.452028],
+          [-2.535899, 51.452132],
+          [-2.536191, 51.45209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520688, 51.451075],
+          [-2.522098, 51.45162],
+          [-2.522943, 51.451962],
+          [-2.523328, 51.452142],
+          [-2.523463, 51.452244],
+          [-2.524077, 51.452892],
+          [-2.524516, 51.453318],
+          [-2.524902, 51.453584],
+          [-2.526111, 51.454312],
+          [-2.526493, 51.454507],
+          [-2.526828, 51.45465],
+          [-2.527024, 51.454702],
+          [-2.527984, 51.454896],
+          [-2.528269, 51.455012],
+          [-2.528364, 51.455113],
+          [-2.528479, 51.455416],
+          [-2.528604, 51.45609],
+          [-2.528717, 51.456333],
+          [-2.528989, 51.456673],
+          [-2.529146, 51.456779],
+          [-2.52997, 51.457166],
+          [-2.531055, 51.457737],
+          [-2.531456, 51.457869],
+          [-2.531903, 51.458052],
+          [-2.532457, 51.458359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521787, 51.456631],
+          [-2.52192, 51.456532],
+          [-2.522557, 51.456161],
+          [-2.524361, 51.455148],
+          [-2.525953, 51.454219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538659, 51.455207],
+          [-2.538849, 51.455017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535091, 51.447048],
+          [-2.534971, 51.446937],
+          [-2.534834, 51.446896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527599, 51.45008],
+          [-2.526493, 51.449891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525364, 51.450594],
+          [-2.523187, 51.450283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524316, 51.450215],
+          [-2.52475, 51.450286],
+          [-2.525456, 51.450265],
+          [-2.526047, 51.4505],
+          [-2.526295, 51.450769],
+          [-2.526376, 51.450806],
+          [-2.526379, 51.450849],
+          [-2.526485, 51.451052],
+          [-2.5265, 51.451164],
+          [-2.526445, 51.45138],
+          [-2.526358, 51.451615],
+          [-2.526363, 51.451638],
+          [-2.526377, 51.451654],
+          [-2.527026, 51.451762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523176, 51.456402],
+          [-2.524924, 51.455397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528066, 51.456049],
+          [-2.528286, 51.456398],
+          [-2.528257, 51.45643],
+          [-2.527865, 51.456536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525142, 51.456286],
+          [-2.524758, 51.456425],
+          [-2.524498, 51.456551],
+          [-2.524863, 51.456836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525246, 51.456642],
+          [-2.525512, 51.456878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524755, 51.457281],
+          [-2.525512, 51.456878],
+          [-2.526645, 51.456531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525181, 51.451365],
+          [-2.525782, 51.451454],
+          [-2.526358, 51.451615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525916, 51.451104],
+          [-2.526386, 51.451247]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528294, 51.452255],
+          [-2.528599, 51.452297],
+          [-2.528674, 51.452293],
+          [-2.528731, 51.452272],
+          [-2.52892, 51.452023],
+          [-2.528963, 51.451841],
+          [-2.528899, 51.451498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525864, 51.451306],
+          [-2.526341, 51.451438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530219, 51.452026],
+          [-2.530419, 51.452189],
+          [-2.531098, 51.452619],
+          [-2.53114, 51.452652],
+          [-2.531221, 51.452864],
+          [-2.531291, 51.452902],
+          [-2.531729, 51.452932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526136, 51.45059],
+          [-2.526104, 51.450616],
+          [-2.525916, 51.451104],
+          [-2.525864, 51.451306],
+          [-2.525782, 51.451454]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526376, 51.450806],
+          [-2.526415, 51.450797],
+          [-2.526497, 51.450722],
+          [-2.527183, 51.450692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52713, 51.450918],
+          [-2.527673, 51.451007],
+          [-2.527706, 51.45104],
+          [-2.527751, 51.451724],
+          [-2.527658, 51.45206],
+          [-2.52768, 51.452102],
+          [-2.52831, 51.452212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530665, 51.456974],
+          [-2.530769, 51.457176],
+          [-2.530946, 51.457268],
+          [-2.531577, 51.457123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525208, 51.451296],
+          [-2.523342, 51.451018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52664, 51.453899],
+          [-2.526703, 51.453959],
+          [-2.52694, 51.454119],
+          [-2.527025, 51.454074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522478, 51.453007],
+          [-2.523334, 51.4534],
+          [-2.523422, 51.453396],
+          [-2.523496, 51.453367],
+          [-2.52416, 51.452977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527677, 51.457402],
+          [-2.52838, 51.457496],
+          [-2.528468, 51.457496],
+          [-2.528747, 51.45747],
+          [-2.529066, 51.457479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532277, 51.457824],
+          [-2.532736, 51.458046],
+          [-2.532798, 51.458092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530419, 51.452189],
+          [-2.530549, 51.45209],
+          [-2.530925, 51.452121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518672, 51.452439],
+          [-2.518624, 51.452388],
+          [-2.518455, 51.452306]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539271, 51.455158],
+          [-2.539175, 51.455258],
+          [-2.539086, 51.4554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53126, 51.446971],
+          [-2.531406, 51.446876],
+          [-2.531503, 51.44676],
+          [-2.531589, 51.446595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527931, 51.448724],
+          [-2.528395, 51.448763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527759, 51.448618],
+          [-2.52779, 51.448711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541533, 51.456871],
+          [-2.541844, 51.456848],
+          [-2.542021, 51.456854],
+          [-2.542359, 51.456821],
+          [-2.542463, 51.456804],
+          [-2.542541, 51.456806],
+          [-2.542581, 51.456875],
+          [-2.542652, 51.457072],
+          [-2.542726, 51.457086],
+          [-2.54277, 51.457063],
+          [-2.542807, 51.456975],
+          [-2.54281, 51.456823],
+          [-2.542796, 51.456694],
+          [-2.542675, 51.456364],
+          [-2.54256, 51.456252],
+          [-2.542364, 51.456163],
+          [-2.5422, 51.456058],
+          [-2.542138, 51.455954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541015, 51.456533],
+          [-2.541009, 51.456499],
+          [-2.540964, 51.456466],
+          [-2.540904, 51.456461],
+          [-2.54083, 51.456469],
+          [-2.540818, 51.456436],
+          [-2.540847, 51.456411],
+          [-2.540941, 51.456367],
+          [-2.541063, 51.456347],
+          [-2.541116, 51.456327],
+          [-2.54113, 51.456296],
+          [-2.541115, 51.456275],
+          [-2.541079, 51.45626],
+          [-2.540614, 51.456207],
+          [-2.540567, 51.456193],
+          [-2.540548, 51.45616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537286, 51.45534],
+          [-2.537201, 51.455331],
+          [-2.537116, 51.455284],
+          [-2.536568, 51.455087],
+          [-2.536442, 51.454991],
+          [-2.536291, 51.454825],
+          [-2.536232, 51.454659],
+          [-2.536267, 51.454589],
+          [-2.536338, 51.454545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53589, 51.454535],
+          [-2.536079, 51.454479],
+          [-2.536303, 51.454459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53675, 51.454802],
+          [-2.537024, 51.45477],
+          [-2.536971, 51.454626],
+          [-2.537487, 51.454556],
+          [-2.537406, 51.454313],
+          [-2.537249, 51.454336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536506, 51.454394],
+          [-2.53657, 51.454587],
+          [-2.53694, 51.454533],
+          [-2.536971, 51.454626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526171, 51.454341],
+          [-2.52598, 51.45447],
+          [-2.526289, 51.454642],
+          [-2.526493, 51.454507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525668, 51.454391],
+          [-2.525771, 51.454452],
+          [-2.52598, 51.45447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522131, 51.451888],
+          [-2.522312, 51.451709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524915, 51.454822],
+          [-2.524992, 51.454872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521178, 51.456158],
+          [-2.521376, 51.456095],
+          [-2.521446, 51.456089],
+          [-2.521551, 51.456109],
+          [-2.521928, 51.456156],
+          [-2.522123, 51.456156],
+          [-2.52219, 51.45617],
+          [-2.522365, 51.456273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527949, 51.456733],
+          [-2.528043, 51.456798],
+          [-2.528044, 51.456841],
+          [-2.527967, 51.457137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532547, 51.452346],
+          [-2.532661, 51.452324],
+          [-2.532687, 51.452292],
+          [-2.532706, 51.452207],
+          [-2.532709, 51.452122],
+          [-2.532679, 51.452037],
+          [-2.532626, 51.451964],
+          [-2.532487, 51.451855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529854, 51.452575],
+          [-2.530163, 51.452425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521865, 51.452967],
+          [-2.521869, 51.453137],
+          [-2.521849, 51.453214],
+          [-2.521798, 51.453287],
+          [-2.521619, 51.453386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527497, 51.455256],
+          [-2.526567, 51.45496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531428, 51.453694],
+          [-2.531468, 51.453768],
+          [-2.531549, 51.453867],
+          [-2.531668, 51.453952]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519649, 51.456352],
+          [-2.519636, 51.45646],
+          [-2.519686, 51.456506],
+          [-2.519813, 51.456536],
+          [-2.520431, 51.456609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531745, 51.455767],
+          [-2.531712, 51.455851],
+          [-2.531429, 51.456214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531073, 51.45526],
+          [-2.531158, 51.455223],
+          [-2.531123, 51.455151],
+          [-2.531131, 51.455107],
+          [-2.530974, 51.454843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530803, 51.454448],
+          [-2.530842, 51.454676],
+          [-2.530926, 51.454849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540978, 51.457617],
+          [-2.54092, 51.45763],
+          [-2.540815, 51.457674],
+          [-2.540745, 51.457693],
+          [-2.540653, 51.457709],
+          [-2.540391, 51.457719],
+          [-2.540325, 51.457731],
+          [-2.540304, 51.457767],
+          [-2.540574, 51.457766],
+          [-2.540728, 51.457755],
+          [-2.540835, 51.457722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54064, 51.457611],
+          [-2.54066, 51.45768],
+          [-2.540653, 51.457709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523073, 51.453708],
+          [-2.523133, 51.4537],
+          [-2.523192, 51.453656],
+          [-2.523315, 51.453463],
+          [-2.523334, 51.4534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521049, 51.453442],
+          [-2.520843, 51.453707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520866, 51.453373],
+          [-2.521049, 51.453442],
+          [-2.521354, 51.453584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525285, 51.4524],
+          [-2.525288, 51.452303],
+          [-2.525427, 51.452264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540999, 51.456017],
+          [-2.540703, 51.455985],
+          [-2.540652, 51.455896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525177, 51.452405],
+          [-2.52519, 51.452322],
+          [-2.525288, 51.452303]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525582, 51.452305],
+          [-2.525793, 51.45235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520937, 51.456672],
+          [-2.520745, 51.456421]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540212, 51.45833],
+          [-2.540135, 51.458417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540576, 51.457975],
+          [-2.540262, 51.457819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530741, 51.458009],
+          [-2.530672, 51.45799],
+          [-2.530507, 51.457912],
+          [-2.53007, 51.457665],
+          [-2.530004, 51.457638],
+          [-2.529839, 51.457622],
+          [-2.529561, 51.457317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529125, 51.457938],
+          [-2.529359, 51.457802],
+          [-2.529839, 51.457622]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525502, 51.454486],
+          [-2.526003, 51.45484],
+          [-2.525993, 51.454862],
+          [-2.525598, 51.455104]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538624, 51.455038],
+          [-2.538562, 51.455059],
+          [-2.53849, 51.455053],
+          [-2.538256, 51.454955],
+          [-2.538026, 51.45483],
+          [-2.537963, 51.454723]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525073, 51.451796],
+          [-2.525256, 51.45185],
+          [-2.525209, 51.451929],
+          [-2.525235, 51.451966],
+          [-2.525334, 51.452012],
+          [-2.525473, 51.452045],
+          [-2.52557, 51.45205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524549, 51.454506],
+          [-2.524979, 51.454786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529089, 51.451083],
+          [-2.52885, 51.451023],
+          [-2.528791, 51.450986],
+          [-2.52878, 51.450945],
+          [-2.528833, 51.450794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528821, 51.452542],
+          [-2.528922, 51.452617],
+          [-2.529089, 51.452711],
+          [-2.529301, 51.452767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529057, 51.45141],
+          [-2.529145, 51.451474],
+          [-2.529369, 51.451497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531186, 51.451843],
+          [-2.531441, 51.451979],
+          [-2.531131, 51.452225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531539, 51.452022],
+          [-2.531441, 51.451979]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526998, 51.454343],
+          [-2.527452, 51.454477]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527459, 51.454467],
+          [-2.527987, 51.454575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531709, 51.454992],
+          [-2.531461, 51.455009],
+          [-2.53141, 51.454992],
+          [-2.531383, 51.454963],
+          [-2.531324, 51.454798]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532826, 51.453944],
+          [-2.53292, 51.453989],
+          [-2.532976, 51.454031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530838, 51.45552],
+          [-2.530725, 51.455713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52995, 51.456656],
+          [-2.530095, 51.456695],
+          [-2.530217, 51.456744],
+          [-2.530268, 51.456772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534905, 51.452861],
+          [-2.534617, 51.452909]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532016, 51.452101],
+          [-2.532335, 51.452152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536145, 51.451863],
+          [-2.53607, 51.451786],
+          [-2.535987, 51.451723],
+          [-2.535938, 51.451709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535219, 51.452454],
+          [-2.535149, 51.452358],
+          [-2.535084, 51.452299],
+          [-2.534845, 51.452171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525206, 51.449618],
+          [-2.525406, 51.449671],
+          [-2.525426, 51.449689],
+          [-2.525429, 51.449716],
+          [-2.525299, 51.449935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522077, 51.450173],
+          [-2.522405, 51.45019],
+          [-2.522556, 51.450172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528289, 51.454409],
+          [-2.52845, 51.454391],
+          [-2.528653, 51.454392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532511, 51.453739],
+          [-2.532444, 51.453744],
+          [-2.532271, 51.453734],
+          [-2.532135, 51.453704],
+          [-2.532168, 51.453589],
+          [-2.53221, 51.453545],
+          [-2.532274, 51.453528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53238, 51.454605],
+          [-2.532167, 51.454627],
+          [-2.532011, 51.454631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532036, 51.454712],
+          [-2.531907, 51.454668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531915, 51.453261],
+          [-2.531771, 51.453228],
+          [-2.531727, 51.453155]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535457, 51.450767],
+          [-2.535534, 51.450896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526205, 51.449093],
+          [-2.526285, 51.449036],
+          [-2.52638, 51.449005],
+          [-2.526657, 51.448857]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534244, 51.447133],
+          [-2.534545, 51.447267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542092, 51.455866],
+          [-2.542335, 51.455917],
+          [-2.542617, 51.455955],
+          [-2.542592, 51.456017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542086, 51.456441],
+          [-2.542251, 51.45635],
+          [-2.542325, 51.456351],
+          [-2.54271, 51.456458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54033, 51.456525],
+          [-2.540361, 51.456454],
+          [-2.540569, 51.456117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540543, 51.457838],
+          [-2.540367, 51.457767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540966, 51.455707],
+          [-2.540983, 51.455667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-troopers-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527286, 51.454154],
+          [-2.527533, 51.454234],
+          [-2.527594, 51.454286]
+        ]
+      }
+    }
+  ]
+}

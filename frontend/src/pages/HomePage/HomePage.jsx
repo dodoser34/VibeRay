@@ -247,7 +247,7 @@ export function HomePage() {
         <div className={styles.content} data-ui="home-content">
           <div ref={columnRef} className={styles.column} data-ui="home-column">
             <div className={styles.intro}>
-              <p className={styles.eyebrow} data-reveal>
+              <p className={styles.eyebrow} data-reveal data-ui="home-eyebrow">
                 <span className={styles.liveDot} aria-hidden="true" />
                 {home.eyebrow}
               </p>

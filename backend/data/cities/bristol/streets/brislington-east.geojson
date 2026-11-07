@@ -1,0 +1,6435 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521712, 51.430918],
+          [-2.522991, 51.431689],
+          [-2.523906, 51.432308],
+          [-2.524824, 51.433006],
+          [-2.525574, 51.433644],
+          [-2.526394, 51.434416],
+          [-2.527002, 51.435056],
+          [-2.527777, 51.435979],
+          [-2.528054, 51.436376],
+          [-2.528655, 51.437166],
+          [-2.529414, 51.438042],
+          [-2.53015, 51.438826],
+          [-2.530915, 51.439556],
+          [-2.532661, 51.441024],
+          [-2.53355, 51.441677],
+          [-2.534857, 51.442567],
+          [-2.536016, 51.443261],
+          [-2.536891, 51.443753],
+          [-2.537707, 51.444172],
+          [-2.539608, 51.445068],
+          [-2.540726, 51.445561],
+          [-2.54245, 51.446208],
+          [-2.543236, 51.446468],
+          [-2.544795, 51.446941],
+          [-2.546856, 51.447486],
+          [-2.548898, 51.44793],
+          [-2.552722, 51.448663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54664, 51.447394],
+          [-2.545471, 51.447092],
+          [-2.544554, 51.446837],
+          [-2.54374, 51.446586],
+          [-2.542479, 51.446177],
+          [-2.540729, 51.445525],
+          [-2.538543, 51.444532],
+          [-2.536939, 51.443734],
+          [-2.536042, 51.443227],
+          [-2.534912, 51.442539],
+          [-2.533564, 51.441631],
+          [-2.532711, 51.441006],
+          [-2.530955, 51.439538],
+          [-2.5302, 51.438813],
+          [-2.529481, 51.438036],
+          [-2.528692, 51.437145],
+          [-2.528088, 51.436359],
+          [-2.527806, 51.435928],
+          [-2.527259, 51.435276],
+          [-2.526452, 51.434413],
+          [-2.525877, 51.433858],
+          [-2.525174, 51.433247],
+          [-2.524139, 51.432433],
+          [-2.52333, 51.431867],
+          [-2.522027, 51.431057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549795, 51.448088],
+          [-2.549237, 51.447997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549495, 51.434119],
+          [-2.549054, 51.434144],
+          [-2.548799, 51.434135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544248, 51.430849],
+          [-2.544411, 51.430947],
+          [-2.544799, 51.431234],
+          [-2.545125, 51.431522],
+          [-2.545571, 51.432001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548799, 51.434135],
+          [-2.548716, 51.434085],
+          [-2.548444, 51.434013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547331, 51.433391],
+          [-2.547439, 51.433555],
+          [-2.5477, 51.433755],
+          [-2.547808, 51.433827],
+          [-2.548211, 51.434035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534224, 51.428396],
+          [-2.532556, 51.428018],
+          [-2.531079, 51.427633]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53687, 51.429026],
+          [-2.537199, 51.429124],
+          [-2.538357, 51.429403],
+          [-2.538903, 51.429509],
+          [-2.539726, 51.429613],
+          [-2.54083, 51.429875],
+          [-2.541045, 51.429891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525449, 51.426477],
+          [-2.526916, 51.426705],
+          [-2.528423, 51.426975],
+          [-2.527734, 51.426789],
+          [-2.526918, 51.426612],
+          [-2.525483, 51.426384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547713, 51.433668],
+          [-2.547686, 51.433697],
+          [-2.5477, 51.433755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548211, 51.434035],
+          [-2.54824, 51.433996],
+          [-2.548231, 51.433971]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548211, 51.434035],
+          [-2.548623, 51.434149],
+          [-2.548683, 51.434159],
+          [-2.548799, 51.434135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542425, 51.430266],
+          [-2.542828, 51.430389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551434, 51.451158],
+          [-2.550997, 51.450675],
+          [-2.550946, 51.450567],
+          [-2.55098, 51.450194],
+          [-2.550962, 51.450029],
+          [-2.550897, 51.449909],
+          [-2.550729, 51.449782],
+          [-2.549932, 51.449273],
+          [-2.549913, 51.449216],
+          [-2.550013, 51.448826],
+          [-2.550173, 51.448415],
+          [-2.550364, 51.448022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546467, 51.453796],
+          [-2.551341, 51.451408],
+          [-2.551543, 51.451302],
+          [-2.551603, 51.451252],
+          [-2.551625, 51.451218],
+          [-2.551629, 51.451146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545514, 51.453821],
+          [-2.545133, 51.453722],
+          [-2.544283, 51.453552],
+          [-2.542766, 51.453358],
+          [-2.542424, 51.453298],
+          [-2.541704, 51.453143],
+          [-2.541603, 51.453075],
+          [-2.541519, 51.452989],
+          [-2.541405, 51.452274],
+          [-2.541389, 51.451897],
+          [-2.541424, 51.451455],
+          [-2.541597, 51.450533],
+          [-2.541991, 51.449181],
+          [-2.542085, 51.448785],
+          [-2.542125, 51.448331],
+          [-2.542082, 51.448155],
+          [-2.541865, 51.44772],
+          [-2.541587, 51.447025],
+          [-2.5415, 51.446663],
+          [-2.541436, 51.446224],
+          [-2.540929, 51.444685],
+          [-2.540833, 51.444216],
+          [-2.540798, 51.443816],
+          [-2.540824, 51.443677],
+          [-2.540899, 51.443537],
+          [-2.541546, 51.442949],
+          [-2.541827, 51.442235],
+          [-2.542128, 51.44142],
+          [-2.542154, 51.441313],
+          [-2.542118, 51.441225],
+          [-2.542186, 51.441123],
+          [-2.542287, 51.440385],
+          [-2.542446, 51.439484],
+          [-2.542517, 51.439179],
+          [-2.542628, 51.438917],
+          [-2.543647, 51.437987],
+          [-2.544199, 51.437286],
+          [-2.544518, 51.437041],
+          [-2.545213, 51.436616],
+          [-2.546099, 51.436012],
+          [-2.546251, 51.435875],
+          [-2.546492, 51.435542],
+          [-2.546586, 51.435461],
+          [-2.546845, 51.435283],
+          [-2.546991, 51.435201],
+          [-2.547313, 51.435064],
+          [-2.547685, 51.434864],
+          [-2.547807, 51.43478],
+          [-2.547897, 51.434692],
+          [-2.547988, 51.43454],
+          [-2.548022, 51.434454],
+          [-2.548086, 51.434139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551629, 51.451146],
+          [-2.551729, 51.451158],
+          [-2.551989, 51.451122],
+          [-2.552148, 51.451083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5468, 51.447329],
+          [-2.546481, 51.447787],
+          [-2.546324, 51.448091],
+          [-2.546214, 51.448405],
+          [-2.545937, 51.448995],
+          [-2.545898, 51.449111],
+          [-2.545916, 51.449215],
+          [-2.545952, 51.449297],
+          [-2.546231, 51.449595],
+          [-2.54797, 51.451286],
+          [-2.548151, 51.451397],
+          [-2.548327, 51.451478],
+          [-2.548563, 51.451556],
+          [-2.548847, 51.451616],
+          [-2.54904, 51.45164],
+          [-2.549229, 51.451643],
+          [-2.549444, 51.451626],
+          [-2.549731, 51.451579],
+          [-2.551434, 51.451158]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546467, 51.453796],
+          [-2.546196, 51.453898],
+          [-2.546057, 51.453928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545851, 51.454039],
+          [-2.545847, 51.454087],
+          [-2.545871, 51.454124],
+          [-2.545975, 51.454182],
+          [-2.546047, 51.454193],
+          [-2.546118, 51.45419],
+          [-2.546182, 51.454171],
+          [-2.546235, 51.454139],
+          [-2.546261, 51.454109],
+          [-2.546274, 51.454034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545514, 51.453821],
+          [-2.545727, 51.453944],
+          [-2.545851, 51.454039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551434, 51.451158],
+          [-2.551487, 51.451145],
+          [-2.551629, 51.451146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545988, 51.453939],
+          [-2.545514, 51.453821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546274, 51.454034],
+          [-2.54635, 51.453894],
+          [-2.546467, 51.453796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551924, 51.437661],
+          [-2.551908, 51.438283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546057, 51.453928],
+          [-2.545988, 51.453939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545988, 51.453939],
+          [-2.545924, 51.45396],
+          [-2.545876, 51.453995],
+          [-2.545851, 51.454039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546274, 51.454034],
+          [-2.546216, 51.453969],
+          [-2.546156, 51.453942],
+          [-2.546057, 51.453928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552428, 51.435632],
+          [-2.552367, 51.43571],
+          [-2.552324, 51.435888]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552148, 51.451083],
+          [-2.552278, 51.451095],
+          [-2.552405, 51.451127],
+          [-2.552624, 51.451219],
+          [-2.552759, 51.451312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556722, 51.449801],
+          [-2.55625, 51.449984],
+          [-2.555623, 51.45019],
+          [-2.555255, 51.450294],
+          [-2.553855, 51.450569],
+          [-2.55363, 51.450586],
+          [-2.553368, 51.450631],
+          [-2.553245, 51.450677],
+          [-2.55267, 51.450947],
+          [-2.552437, 51.451068],
+          [-2.552405, 51.451127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552148, 51.451083],
+          [-2.55197, 51.451056],
+          [-2.551799, 51.451076],
+          [-2.551655, 51.451112],
+          [-2.551629, 51.451146]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548044, 51.433949],
+          [-2.548086, 51.434139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548086, 51.434139],
+          [-2.548211, 51.434035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549932, 51.449273],
+          [-2.549875, 51.449286],
+          [-2.548881, 51.449833],
+          [-2.547124, 51.450452],
+          [-2.546861, 51.450578],
+          [-2.546667, 51.451037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54797, 51.451286],
+          [-2.549688, 51.450443],
+          [-2.550805, 51.449835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549232, 51.449643],
+          [-2.550039, 51.45025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544152, 51.444251],
+          [-2.544056, 51.443902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542195, 51.444516],
+          [-2.542485, 51.44536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541865, 51.44772],
+          [-2.541187, 51.44784],
+          [-2.539784, 51.447682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542085, 51.448785],
+          [-2.54374, 51.448667],
+          [-2.543983, 51.448625],
+          [-2.544369, 51.4485],
+          [-2.544545, 51.448424],
+          [-2.544858, 51.448223],
+          [-2.545222, 51.447957],
+          [-2.545278, 51.447876],
+          [-2.545708, 51.447715],
+          [-2.546194, 51.447614],
+          [-2.546411, 51.447608],
+          [-2.546574, 51.447654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542097, 51.448723],
+          [-2.538377, 51.448286],
+          [-2.538314, 51.448285],
+          [-2.538261, 51.448296],
+          [-2.538224, 51.448324],
+          [-2.538213, 51.448352],
+          [-2.53819, 51.448954],
+          [-2.538215, 51.44905],
+          [-2.538251, 51.449122],
+          [-2.538362, 51.449256],
+          [-2.538481, 51.449354],
+          [-2.538633, 51.449437],
+          [-2.539691, 51.449828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538885, 51.449531],
+          [-2.539284, 51.449089]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539858, 51.451366],
+          [-2.540615, 51.451005]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543929, 51.450704],
+          [-2.54371, 51.450764],
+          [-2.542574, 51.450646],
+          [-2.541327, 51.450499],
+          [-2.539438, 51.450296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542405, 51.451921],
+          [-2.542408, 51.45125],
+          [-2.542574, 51.450646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540356, 51.449398],
+          [-2.540884, 51.449898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541603, 51.453075],
+          [-2.541447, 51.453108],
+          [-2.541133, 51.453122],
+          [-2.540534, 51.453124],
+          [-2.54037, 51.453108],
+          [-2.540212, 51.453056],
+          [-2.540091, 51.452994],
+          [-2.539947, 51.452879],
+          [-2.539867, 51.452758],
+          [-2.539705, 51.452332],
+          [-2.539616, 51.452179],
+          [-2.539403, 51.451878],
+          [-2.539314, 51.45178],
+          [-2.538604, 51.451206],
+          [-2.538419, 51.451037],
+          [-2.538354, 51.450776],
+          [-2.538346, 51.450611],
+          [-2.538373, 51.450421],
+          [-2.538436, 51.450319],
+          [-2.5386, 51.450116],
+          [-2.539097, 51.449606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545133, 51.453722],
+          [-2.545139, 51.453629],
+          [-2.544608, 51.4527],
+          [-2.544551, 51.452658],
+          [-2.544471, 51.452629],
+          [-2.544379, 51.452621],
+          [-2.542928, 51.452663],
+          [-2.542808, 51.45269],
+          [-2.542762, 51.452714],
+          [-2.542728, 51.452748],
+          [-2.542424, 51.453298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542408, 51.45125],
+          [-2.543199, 51.451312],
+          [-2.543878, 51.451572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54354, 51.454409],
+          [-2.544047, 51.454462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543137, 51.455176],
+          [-2.542432, 51.455096],
+          [-2.542408, 51.455084],
+          [-2.542399, 51.455048],
+          [-2.542415, 51.454968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542956, 51.455158],
+          [-2.543056, 51.454759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542455, 51.454204],
+          [-2.542796, 51.45424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542638, 51.454224],
+          [-2.542509, 51.454698]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540735, 51.453991],
+          [-2.541059, 51.453881],
+          [-2.541005, 51.453778],
+          [-2.540938, 51.4537],
+          [-2.54078, 51.453607],
+          [-2.540606, 51.453565],
+          [-2.54047, 51.453553],
+          [-2.540331, 51.453554],
+          [-2.540159, 51.453574],
+          [-2.540003, 51.453604],
+          [-2.539963, 51.453584],
+          [-2.539904, 51.45357],
+          [-2.539827, 51.453566],
+          [-2.539652, 51.453579],
+          [-2.539549, 51.453602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547755, 51.451084],
+          [-2.547327, 51.451254],
+          [-2.547232, 51.45132],
+          [-2.546994, 51.45165],
+          [-2.546977, 51.451692],
+          [-2.546987, 51.451763],
+          [-2.54702, 51.451819],
+          [-2.54714, 51.451918],
+          [-2.547219, 51.451951],
+          [-2.547307, 51.451962],
+          [-2.548018, 51.4519],
+          [-2.548144, 51.451871],
+          [-2.548234, 51.45182],
+          [-2.548563, 51.451556]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535677, 51.439657],
+          [-2.535978, 51.43939],
+          [-2.536367, 51.439073],
+          [-2.536425, 51.439015],
+          [-2.536436, 51.438945],
+          [-2.536403, 51.438897],
+          [-2.535472, 51.438222],
+          [-2.535357, 51.438207],
+          [-2.535223, 51.438237],
+          [-2.534218, 51.438627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539151, 51.441866],
+          [-2.539229, 51.441195]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540784, 51.441195],
+          [-2.540773, 51.441554],
+          [-2.540465, 51.442382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538154, 51.440905],
+          [-2.537795, 51.441234]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536165, 51.441382],
+          [-2.536096, 51.441383],
+          [-2.536048, 51.4414],
+          [-2.535825, 51.441615],
+          [-2.535607, 51.441796],
+          [-2.535502, 51.441843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541008, 51.443428],
+          [-2.538657, 51.442426],
+          [-2.536165, 51.441382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534849, 51.439155],
+          [-2.533941, 51.439969],
+          [-2.533903, 51.440045],
+          [-2.533908, 51.440128],
+          [-2.533958, 51.440165],
+          [-2.535173, 51.441504],
+          [-2.535502, 51.441843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535502, 51.441843],
+          [-2.535645, 51.442016],
+          [-2.535792, 51.442161],
+          [-2.535916, 51.442259],
+          [-2.536096, 51.442373],
+          [-2.536866, 51.442779],
+          [-2.537522, 51.443073],
+          [-2.539704, 51.443968],
+          [-2.540035, 51.44416],
+          [-2.540807, 51.444694],
+          [-2.540851, 51.444699],
+          [-2.544266, 51.44424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549803, 51.437651],
+          [-2.550301, 51.435463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5499, 51.43541],
+          [-2.551335, 51.435591],
+          [-2.552367, 51.43571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549713, 51.434776],
+          [-2.551077, 51.434753],
+          [-2.55121, 51.434764],
+          [-2.551314, 51.434799],
+          [-2.551393, 51.434847],
+          [-2.551436, 51.434894],
+          [-2.55145, 51.434946],
+          [-2.551439, 51.435062],
+          [-2.551335, 51.435591],
+          [-2.550819, 51.437717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549698, 51.437643],
+          [-2.550819, 51.437717],
+          [-2.551376, 51.437742],
+          [-2.551914, 51.437753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549264, 51.437219],
+          [-2.549174, 51.437242],
+          [-2.547614, 51.437334],
+          [-2.54751, 51.437318]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548383, 51.436277],
+          [-2.548266, 51.43632],
+          [-2.548128, 51.436476],
+          [-2.547903, 51.43678],
+          [-2.54758, 51.437177],
+          [-2.54751, 51.437318],
+          [-2.547425, 51.437645],
+          [-2.547227, 51.438552],
+          [-2.547244, 51.438601],
+          [-2.547516, 51.439022],
+          [-2.547572, 51.439148],
+          [-2.547671, 51.439462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55191, 51.438309],
+          [-2.549437, 51.438335],
+          [-2.547254, 51.438433]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551248, 51.439349],
+          [-2.551091, 51.439287],
+          [-2.55092, 51.439237],
+          [-2.550741, 51.439201],
+          [-2.550463, 51.439171],
+          [-2.550142, 51.43918],
+          [-2.549015, 51.439314],
+          [-2.548529, 51.439357],
+          [-2.547262, 51.439514],
+          [-2.546948, 51.439578],
+          [-2.546225, 51.439747],
+          [-2.546024, 51.439782],
+          [-2.545681, 51.43983],
+          [-2.545024, 51.43988],
+          [-2.544664, 51.439925],
+          [-2.544104, 51.440019],
+          [-2.543703, 51.440104],
+          [-2.543247, 51.440222],
+          [-2.542851, 51.440299],
+          [-2.542287, 51.440385],
+          [-2.541633, 51.440345],
+          [-2.541259, 51.440281],
+          [-2.540401, 51.440092],
+          [-2.540071, 51.439991],
+          [-2.539776, 51.439871],
+          [-2.53944, 51.439714],
+          [-2.539125, 51.439498],
+          [-2.538276, 51.439878],
+          [-2.538149, 51.440006],
+          [-2.537477, 51.440602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548128, 51.436476],
+          [-2.54765, 51.4364],
+          [-2.547554, 51.436408],
+          [-2.54606, 51.43676],
+          [-2.545925, 51.436764],
+          [-2.545377, 51.436688],
+          [-2.545213, 51.436616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543973, 51.438631],
+          [-2.544335, 51.438268],
+          [-2.544568, 51.438184],
+          [-2.545233, 51.438129],
+          [-2.545327, 51.4381],
+          [-2.545429, 51.438044],
+          [-2.545488, 51.437978],
+          [-2.545518, 51.437913],
+          [-2.54552, 51.437866],
+          [-2.545436, 51.437447],
+          [-2.545379, 51.437371],
+          [-2.544709, 51.436925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545278, 51.447876],
+          [-2.541852, 51.447041],
+          [-2.541689, 51.44702],
+          [-2.541587, 51.447025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536354, 51.448455],
+          [-2.535992, 51.44851],
+          [-2.535886, 51.448517],
+          [-2.535738, 51.448492],
+          [-2.535595, 51.448441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535768, 51.448249],
+          [-2.535194, 51.448029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536481, 51.449929],
+          [-2.536721, 51.449766]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535433, 51.44875],
+          [-2.535277, 51.448735],
+          [-2.535186, 51.44874],
+          [-2.535023, 51.448793],
+          [-2.534911, 51.448817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535304, 51.449447],
+          [-2.535227, 51.44934],
+          [-2.535172, 51.449346],
+          [-2.535138, 51.449337],
+          [-2.53506, 51.449237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535588, 51.449242],
+          [-2.535227, 51.44934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538149, 51.440006],
+          [-2.539124, 51.44044],
+          [-2.539966, 51.44073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53486, 51.441152],
+          [-2.535583, 51.440523],
+          [-2.535069, 51.440154]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534121, 51.438552],
+          [-2.53388, 51.438661],
+          [-2.533658, 51.438777],
+          [-2.533467, 51.438919],
+          [-2.53326, 51.439095],
+          [-2.533083, 51.439288],
+          [-2.532959, 51.439472],
+          [-2.532875, 51.43967],
+          [-2.532845, 51.439875],
+          [-2.532843, 51.440085],
+          [-2.532898, 51.440309],
+          [-2.533001, 51.440537],
+          [-2.533145, 51.440738],
+          [-2.533335, 51.440936],
+          [-2.533787, 51.44131],
+          [-2.534193, 51.441625],
+          [-2.53438, 51.441703],
+          [-2.534548, 51.441736],
+          [-2.534716, 51.441737],
+          [-2.534818, 51.441729],
+          [-2.535241, 51.441577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531566, 51.438188],
+          [-2.531363, 51.438596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532461, 51.438091],
+          [-2.532219, 51.438172],
+          [-2.531973, 51.438215],
+          [-2.531762, 51.438215],
+          [-2.531566, 51.438188],
+          [-2.531384, 51.438129],
+          [-2.531153, 51.437985],
+          [-2.530923, 51.437668],
+          [-2.530565, 51.437013],
+          [-2.530525, 51.436917],
+          [-2.530544, 51.436796],
+          [-2.530645, 51.436681],
+          [-2.530764, 51.436604],
+          [-2.530966, 51.436557],
+          [-2.532173, 51.436486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534228, 51.43707],
+          [-2.534244, 51.437244],
+          [-2.534435, 51.437344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533021, 51.437526],
+          [-2.533558, 51.437325],
+          [-2.53376, 51.437277],
+          [-2.533942, 51.437257],
+          [-2.534244, 51.437244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533675, 51.436313],
+          [-2.533795, 51.436506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532398, 51.436886],
+          [-2.532708, 51.436781],
+          [-2.533039, 51.436645],
+          [-2.533366, 51.436495],
+          [-2.533741, 51.436419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533589, 51.43811],
+          [-2.532957, 51.438364],
+          [-2.532876, 51.438383],
+          [-2.532799, 51.438375],
+          [-2.532737, 51.438352],
+          [-2.532461, 51.438091],
+          [-2.531906, 51.437516],
+          [-2.531825, 51.437387],
+          [-2.531804, 51.437252],
+          [-2.531817, 51.437113],
+          [-2.531973, 51.436871],
+          [-2.532281, 51.436748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531002, 51.436133],
+          [-2.530992, 51.435904],
+          [-2.530916, 51.435752],
+          [-2.530525, 51.434724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532132, 51.435863],
+          [-2.531388, 51.435841],
+          [-2.531168, 51.435862],
+          [-2.530992, 51.435904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533687, 51.432193],
+          [-2.535901, 51.434175],
+          [-2.536223, 51.434404],
+          [-2.536571, 51.43463],
+          [-2.536688, 51.434724],
+          [-2.537005, 51.434865],
+          [-2.53799, 51.435257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538104, 51.430459],
+          [-2.538073, 51.430676],
+          [-2.538071, 51.430966],
+          [-2.538085, 51.431083],
+          [-2.538139, 51.431278],
+          [-2.538284, 51.4316],
+          [-2.538403, 51.431804],
+          [-2.538627, 51.432106],
+          [-2.538896, 51.432375],
+          [-2.539229, 51.432621],
+          [-2.539398, 51.43273],
+          [-2.540004, 51.43305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536444, 51.436658],
+          [-2.536291, 51.436597],
+          [-2.53608, 51.436563],
+          [-2.535592, 51.436572],
+          [-2.535477, 51.436545],
+          [-2.53538, 51.436467],
+          [-2.534599, 51.435144]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535219, 51.431502],
+          [-2.537709, 51.433664],
+          [-2.537927, 51.433792],
+          [-2.539032, 51.434253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543643, 51.430641],
+          [-2.543181, 51.431217],
+          [-2.543153, 51.431271],
+          [-2.543141, 51.431337],
+          [-2.543159, 51.431399],
+          [-2.543439, 51.4318],
+          [-2.543454, 51.431858],
+          [-2.543372, 51.431903],
+          [-2.542503, 51.432175],
+          [-2.542389, 51.432205],
+          [-2.54221, 51.432195],
+          [-2.541962, 51.432265],
+          [-2.541809, 51.432327],
+          [-2.54175, 51.432376],
+          [-2.541695, 51.432449],
+          [-2.541597, 51.4325],
+          [-2.541094, 51.432691],
+          [-2.540742, 51.432868],
+          [-2.540659, 51.432892],
+          [-2.540217, 51.43291],
+          [-2.540153, 51.432936],
+          [-2.539828, 51.433189],
+          [-2.539776, 51.433528],
+          [-2.539736, 51.433591],
+          [-2.53681, 51.436379],
+          [-2.536241, 51.436825],
+          [-2.53607, 51.436927],
+          [-2.535941, 51.437001],
+          [-2.535478, 51.437227],
+          [-2.53512, 51.437368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544833, 51.434026],
+          [-2.545589, 51.432514],
+          [-2.545685, 51.432415],
+          [-2.545785, 51.432382],
+          [-2.545999, 51.432366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542851, 51.440299],
+          [-2.543033, 51.440658],
+          [-2.543203, 51.440821],
+          [-2.544241, 51.441658],
+          [-2.544354, 51.441683],
+          [-2.544459, 51.441662],
+          [-2.544899, 51.441439],
+          [-2.544879, 51.441364],
+          [-2.544104, 51.440019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547262, 51.439514],
+          [-2.547383, 51.439784],
+          [-2.547482, 51.439865],
+          [-2.547639, 51.439972],
+          [-2.548262, 51.440243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538602, 51.429453],
+          [-2.538628, 51.429401],
+          [-2.53927, 51.429511],
+          [-2.539726, 51.429613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54143, 51.443352],
+          [-2.541237, 51.44353],
+          [-2.541137, 51.443644],
+          [-2.54108, 51.443742],
+          [-2.541057, 51.443832],
+          [-2.541018, 51.444206],
+          [-2.540833, 51.444216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54347, 51.442372],
+          [-2.543494, 51.442336],
+          [-2.543471, 51.442245],
+          [-2.543286, 51.442085],
+          [-2.543235, 51.442052],
+          [-2.543144, 51.442031],
+          [-2.542968, 51.44204],
+          [-2.542896, 51.442022],
+          [-2.542465, 51.441689],
+          [-2.542293, 51.441604],
+          [-2.542069, 51.441566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545627, 51.454289],
+          [-2.546047, 51.454193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540587, 51.454356],
+          [-2.540651, 51.454416],
+          [-2.540822, 51.454505],
+          [-2.540896, 51.454528],
+          [-2.541038, 51.454555],
+          [-2.543961, 51.454845],
+          [-2.544108, 51.454831],
+          [-2.544211, 51.454798],
+          [-2.544263, 51.454771],
+          [-2.544324, 51.454727],
+          [-2.544369, 51.454675],
+          [-2.544422, 51.454552],
+          [-2.544499, 51.454443],
+          [-2.544562, 51.454404],
+          [-2.544691, 51.454356],
+          [-2.544769, 51.454342],
+          [-2.545082, 51.454352],
+          [-2.545343, 51.454335],
+          [-2.545627, 51.454289]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540977, 51.454087],
+          [-2.541103, 51.454104],
+          [-2.54117, 51.454182],
+          [-2.541576, 51.454219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538901, 51.453871],
+          [-2.538984, 51.454002],
+          [-2.539053, 51.454031],
+          [-2.539266, 51.454039],
+          [-2.539437, 51.454021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538962, 51.453366],
+          [-2.538754, 51.453083],
+          [-2.538302, 51.453193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541265, 51.453866],
+          [-2.541059, 51.453881]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541634, 51.453982],
+          [-2.54148, 51.454594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538829, 51.452771],
+          [-2.538738, 51.452944],
+          [-2.538754, 51.453083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544559, 51.455151],
+          [-2.544445, 51.455064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539702, 51.454563],
+          [-2.539668, 51.454505],
+          [-2.539574, 51.454434],
+          [-2.53944, 51.45409],
+          [-2.539437, 51.454021],
+          [-2.539553, 51.453865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538237, 51.452325],
+          [-2.53842, 51.452617]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54113, 51.454728],
+          [-2.541178, 51.454567]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544406, 51.455035],
+          [-2.544445, 51.455064],
+          [-2.544245, 51.455156],
+          [-2.54364, 51.455179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540379, 51.454822],
+          [-2.540548, 51.454633],
+          [-2.540595, 51.454619],
+          [-2.540688, 51.454621],
+          [-2.54077, 51.454639],
+          [-2.540896, 51.45469],
+          [-2.541003, 51.454714],
+          [-2.541394, 51.454752],
+          [-2.541452, 51.454777],
+          [-2.541488, 51.454811],
+          [-2.541505, 51.454864],
+          [-2.541452, 51.455063]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538354, 51.452511],
+          [-2.537924, 51.452618]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538969, 51.454352],
+          [-2.539506, 51.454263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539517, 51.454289],
+          [-2.53989, 51.454225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536999, 51.450794],
+          [-2.537184, 51.450802],
+          [-2.537385, 51.450762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537035, 51.451357],
+          [-2.537495, 51.451238],
+          [-2.537636, 51.451474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536424, 51.44874],
+          [-2.536445, 51.448993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534911, 51.448207],
+          [-2.534715, 51.44847],
+          [-2.534694, 51.448556],
+          [-2.534713, 51.448644],
+          [-2.534775, 51.448733],
+          [-2.53485, 51.448796],
+          [-2.534911, 51.448817],
+          [-2.534921, 51.448928],
+          [-2.534972, 51.449032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536392, 51.448579],
+          [-2.536328, 51.448367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54013, 51.454009],
+          [-2.539553, 51.453865],
+          [-2.539289, 51.453789],
+          [-2.538945, 51.453667],
+          [-2.538683, 51.453514],
+          [-2.538392, 51.453282],
+          [-2.538302, 51.453193],
+          [-2.538162, 51.45302],
+          [-2.537751, 51.452306],
+          [-2.537602, 51.452084],
+          [-2.537347, 51.45176],
+          [-2.537223, 51.451583],
+          [-2.537035, 51.451357],
+          [-2.536978, 51.451256],
+          [-2.536951, 51.451095],
+          [-2.536999, 51.450794],
+          [-2.537006, 51.450641],
+          [-2.536952, 51.450381],
+          [-2.536907, 51.450289],
+          [-2.536789, 51.450157],
+          [-2.536558, 51.449976],
+          [-2.536041, 51.449663],
+          [-2.5358, 51.449472],
+          [-2.535588, 51.449242],
+          [-2.535454, 51.449021],
+          [-2.535432, 51.448947],
+          [-2.535427, 51.448828],
+          [-2.535444, 51.448688],
+          [-2.535478, 51.448602],
+          [-2.535528, 51.448526],
+          [-2.535768, 51.448249],
+          [-2.536277, 51.447772],
+          [-2.536368, 51.447703],
+          [-2.53656, 51.447608],
+          [-2.537562, 51.447486],
+          [-2.537754, 51.447456],
+          [-2.538008, 51.447465],
+          [-2.538126, 51.447443],
+          [-2.538691, 51.447256],
+          [-2.538752, 51.447207],
+          [-2.538815, 51.447007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537347, 51.450992],
+          [-2.537495, 51.451238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536641, 51.450038],
+          [-2.536161, 51.450301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535604, 51.449845],
+          [-2.535893, 51.449737],
+          [-2.536041, 51.449663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537865, 51.451757],
+          [-2.538025, 51.451984],
+          [-2.537602, 51.452084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536513, 51.449251],
+          [-2.536445, 51.448993],
+          [-2.536234, 51.449039],
+          [-2.536126, 51.449051],
+          [-2.535985, 51.449043],
+          [-2.535819, 51.44902],
+          [-2.535454, 51.449021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544395, 51.453886],
+          [-2.544531, 51.453599]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544265, 51.454144],
+          [-2.544539, 51.454197],
+          [-2.544673, 51.453931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545251, 51.454059],
+          [-2.545206, 51.454028],
+          [-2.54516, 51.454014],
+          [-2.543667, 51.453773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544125, 51.45376],
+          [-2.544103, 51.453839]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540365, 51.454043],
+          [-2.54013, 51.454009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540625, 51.454113],
+          [-2.540735, 51.453991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540408, 51.454235],
+          [-2.540587, 51.454356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540587, 51.454356],
+          [-2.540583, 51.454205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54013, 51.454009],
+          [-2.540288, 51.454116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540735, 51.453991],
+          [-2.540504, 51.454031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544394, 51.435117],
+          [-2.545551, 51.434938],
+          [-2.545709, 51.434943],
+          [-2.546106, 51.435024],
+          [-2.54633, 51.435097],
+          [-2.546542, 51.435136],
+          [-2.546736, 51.43515],
+          [-2.546991, 51.435201]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544068, 51.434847],
+          [-2.544427, 51.434865],
+          [-2.544494, 51.434892],
+          [-2.544532, 51.43493],
+          [-2.544605, 51.435086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542345, 51.433156],
+          [-2.542251, 51.433066],
+          [-2.542226, 51.432958],
+          [-2.542528, 51.432299],
+          [-2.542527, 51.432167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545128, 51.433447],
+          [-2.546686, 51.433718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543731, 51.434149],
+          [-2.544833, 51.434026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548054, 51.434269],
+          [-2.547668, 51.434271],
+          [-2.547057, 51.434377],
+          [-2.544833, 51.434026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545566, 51.43459],
+          [-2.546089, 51.434712],
+          [-2.546106, 51.435024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53024, 51.434173],
+          [-2.530976, 51.434215]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531366, 51.435178],
+          [-2.532156, 51.435207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546417, 51.435648],
+          [-2.546172, 51.435613],
+          [-2.546079, 51.43562],
+          [-2.546018, 51.435644],
+          [-2.545957, 51.435685],
+          [-2.545924, 51.435753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531645, 51.43431],
+          [-2.531714, 51.433839]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533545, 51.434368],
+          [-2.53229, 51.434302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531318, 51.434291],
+          [-2.532008, 51.434339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530606, 51.434192],
+          [-2.530676, 51.43377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527449, 51.431498],
+          [-2.527959, 51.431912],
+          [-2.528765, 51.432436],
+          [-2.529307, 51.432962],
+          [-2.529656, 51.433281],
+          [-2.530126, 51.433608],
+          [-2.530373, 51.433704],
+          [-2.530676, 51.43377],
+          [-2.532359, 51.433882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547524, 51.453277],
+          [-2.546869, 51.452755],
+          [-2.546168, 51.452136],
+          [-2.545909, 51.451707],
+          [-2.546038, 51.451288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553542, 51.448973],
+          [-2.55329, 51.449497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55272, 51.448807],
+          [-2.554475, 51.449161],
+          [-2.554261, 51.449604]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555047, 51.449697],
+          [-2.554911, 51.449934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54037, 51.453108],
+          [-2.540292, 51.453331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541125, 51.453337],
+          [-2.541133, 51.453122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540709, 51.45222],
+          [-2.540562, 51.452442],
+          [-2.540564, 51.452757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546522, 51.437389],
+          [-2.546551, 51.437834],
+          [-2.546576, 51.437869],
+          [-2.546627, 51.437896],
+          [-2.547349, 51.437984]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548543, 51.434573],
+          [-2.548647, 51.434595],
+          [-2.548711, 51.434593],
+          [-2.54883, 51.434526],
+          [-2.548902, 51.434518],
+          [-2.54898, 51.434535],
+          [-2.549021, 51.43459],
+          [-2.549012, 51.434739],
+          [-2.548881, 51.434803],
+          [-2.548785, 51.435003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548623, 51.434149],
+          [-2.548671, 51.434224],
+          [-2.548682, 51.434263],
+          [-2.548543, 51.434573],
+          [-2.548126, 51.435336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543287, 51.438313],
+          [-2.544186, 51.438732],
+          [-2.54435, 51.438757],
+          [-2.544943, 51.438737],
+          [-2.545231, 51.438779],
+          [-2.545592, 51.438902],
+          [-2.545928, 51.439114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544987, 51.435703],
+          [-2.545038, 51.435898],
+          [-2.545035, 51.435998],
+          [-2.544983, 51.436266],
+          [-2.544989, 51.436392],
+          [-2.545013, 51.436438],
+          [-2.545068, 51.436494],
+          [-2.545262, 51.436579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544609, 51.435757],
+          [-2.544987, 51.435703],
+          [-2.545349, 51.435627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547426, 51.435973],
+          [-2.547545, 51.435792],
+          [-2.547944, 51.435429],
+          [-2.548015, 51.435391],
+          [-2.548112, 51.435375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533589, 51.43811],
+          [-2.533894, 51.438371],
+          [-2.534218, 51.438627],
+          [-2.534849, 51.439155],
+          [-2.535059, 51.439314],
+          [-2.535249, 51.43944],
+          [-2.535677, 51.439657],
+          [-2.536827, 51.440281],
+          [-2.537241, 51.440493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544045, 51.439292],
+          [-2.543725, 51.439201],
+          [-2.543549, 51.439135],
+          [-2.543134, 51.438914],
+          [-2.542766, 51.43878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544707, 51.438749],
+          [-2.544779, 51.438924],
+          [-2.545123, 51.439254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549193, 51.436091],
+          [-2.549423, 51.435474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548183, 51.435778],
+          [-2.548306, 51.435779],
+          [-2.549266, 51.435913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548026, 51.435046],
+          [-2.547907, 51.435229],
+          [-2.548126, 51.435336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549817, 51.437847],
+          [-2.549712, 51.437726],
+          [-2.549698, 51.437643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548126, 51.435336],
+          [-2.548104, 51.435459],
+          [-2.548262, 51.436147],
+          [-2.549617, 51.437603],
+          [-2.549698, 51.437643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550013, 51.448826],
+          [-2.549395, 51.448725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551684, 51.450552],
+          [-2.552097, 51.450839],
+          [-2.552278, 51.451095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545847, 51.454087],
+          [-2.545627, 51.454289]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532359, 51.433882],
+          [-2.532328, 51.434003],
+          [-2.532191, 51.43495],
+          [-2.532138, 51.435359],
+          [-2.532125, 51.435577],
+          [-2.532142, 51.436204],
+          [-2.532173, 51.436486],
+          [-2.532216, 51.436621],
+          [-2.532281, 51.436748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544045, 51.454841],
+          [-2.544062, 51.455164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543431, 51.454796],
+          [-2.543564, 51.454319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542546, 51.44124],
+          [-2.542533, 51.441277],
+          [-2.542568, 51.441347],
+          [-2.542761, 51.441491],
+          [-2.54274, 51.441541],
+          [-2.542651, 51.441601],
+          [-2.542465, 51.441689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542142, 51.442795],
+          [-2.542023, 51.442715],
+          [-2.54166, 51.442663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542189, 51.442234],
+          [-2.542461, 51.442284],
+          [-2.542552, 51.442294],
+          [-2.542628, 51.442285],
+          [-2.542828, 51.44218],
+          [-2.543047, 51.442039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551338, 51.438645],
+          [-2.551353, 51.438859],
+          [-2.551938, 51.43886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538602, 51.429453],
+          [-2.53852, 51.429362],
+          [-2.538366, 51.429697],
+          [-2.538386, 51.429739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538104, 51.430459],
+          [-2.537463, 51.430419],
+          [-2.537186, 51.430445],
+          [-2.536962, 51.430522],
+          [-2.536839, 51.430579],
+          [-2.536543, 51.430772],
+          [-2.535219, 51.431502],
+          [-2.534314, 51.431894],
+          [-2.533894, 51.432065],
+          [-2.533687, 51.432193],
+          [-2.533493, 51.432342],
+          [-2.532675, 51.433397],
+          [-2.532428, 51.433748],
+          [-2.532359, 51.433882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538386, 51.429739],
+          [-2.538315, 51.42987],
+          [-2.538111, 51.430358],
+          [-2.538104, 51.430459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533513, 51.437878],
+          [-2.533405, 51.437916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533334, 51.432427],
+          [-2.533412, 51.432449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532281, 51.436748],
+          [-2.532398, 51.436886],
+          [-2.533405, 51.437916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536165, 51.441382],
+          [-2.536192, 51.441293],
+          [-2.536982, 51.440559],
+          [-2.537019, 51.440531],
+          [-2.537068, 51.440512],
+          [-2.537115, 51.440501],
+          [-2.537241, 51.440493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54041, 51.447293],
+          [-2.540489, 51.447198],
+          [-2.540531, 51.44718],
+          [-2.540618, 51.447176],
+          [-2.540676, 51.447154],
+          [-2.540716, 51.447121],
+          [-2.540791, 51.446972],
+          [-2.540808, 51.446959],
+          [-2.541025, 51.446871],
+          [-2.541183, 51.446751],
+          [-2.541228, 51.446729],
+          [-2.541384, 51.446679],
+          [-2.5415, 51.446663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537241, 51.440493],
+          [-2.538154, 51.440905],
+          [-2.538591, 51.441092],
+          [-2.538892, 51.441171],
+          [-2.539229, 51.441195],
+          [-2.541531, 51.441199],
+          [-2.541982, 51.44121],
+          [-2.542118, 51.441225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53905, 51.45425],
+          [-2.539086, 51.454332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539612, 51.454578],
+          [-2.53979, 51.454548]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541372, 51.455054],
+          [-2.541524, 51.455071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540293, 51.454797],
+          [-2.540463, 51.454845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540315, 51.453257],
+          [-2.540119, 51.453238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540971, 51.453319],
+          [-2.54132, 51.453361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545012, 51.454104],
+          [-2.544624, 51.454028]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54139, 51.448339],
+          [-2.541476, 51.448351],
+          [-2.541495, 51.448368],
+          [-2.541402, 51.448642]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537342, 51.450703],
+          [-2.537423, 51.450812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535554, 51.449633],
+          [-2.535689, 51.449817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54213, 51.439814],
+          [-2.541767, 51.439795],
+          [-2.541689, 51.4398],
+          [-2.541621, 51.43982],
+          [-2.541592, 51.439842],
+          [-2.541412, 51.440309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540314, 51.439634],
+          [-2.541577, 51.439879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546358, 51.433223],
+          [-2.546304, 51.433188],
+          [-2.546253, 51.43317],
+          [-2.545926, 51.433116],
+          [-2.54534, 51.432997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538511, 51.429614],
+          [-2.538744, 51.429534],
+          [-2.538903, 51.429509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538386, 51.429739],
+          [-2.538445, 51.429709],
+          [-2.538511, 51.429614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538511, 51.429614],
+          [-2.538602, 51.429453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534455, 51.43533],
+          [-2.534678, 51.435279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541405, 51.452274],
+          [-2.540909, 51.452305],
+          [-2.540639, 51.452335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547669, 51.435546],
+          [-2.547988, 51.435268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548474, 51.43993],
+          [-2.548471, 51.439947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533405, 51.437916],
+          [-2.533589, 51.43811]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549447, 51.435341],
+          [-2.549628, 51.435257],
+          [-2.549713, 51.434776],
+          [-2.549761, 51.434704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5332, 51.430286],
+          [-2.532354, 51.430079],
+          [-2.532305, 51.430048],
+          [-2.53229, 51.43001],
+          [-2.532719, 51.429283],
+          [-2.53275, 51.429246],
+          [-2.532791, 51.429224],
+          [-2.532873, 51.42922],
+          [-2.533307, 51.429324],
+          [-2.533587, 51.429442],
+          [-2.53523, 51.429851],
+          [-2.53583, 51.430014],
+          [-2.536157, 51.43014],
+          [-2.536374, 51.430251],
+          [-2.536598, 51.430393],
+          [-2.536839, 51.430579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541018, 51.444206],
+          [-2.543826, 51.443858],
+          [-2.543914, 51.443821],
+          [-2.543877, 51.443606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545098, 51.454505],
+          [-2.545082, 51.454352]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53004, 51.441756],
+          [-2.52992, 51.44173],
+          [-2.529815, 51.44169],
+          [-2.529748, 51.441616],
+          [-2.529719, 51.441533],
+          [-2.52973, 51.441452],
+          [-2.529974, 51.440985],
+          [-2.530471, 51.440533],
+          [-2.530779, 51.440393],
+          [-2.531068, 51.440249],
+          [-2.531217, 51.440098],
+          [-2.53132, 51.439954],
+          [-2.531576, 51.439571],
+          [-2.53181, 51.439163],
+          [-2.531937, 51.438991],
+          [-2.532108, 51.43883],
+          [-2.53268, 51.438439],
+          [-2.532799, 51.438375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553245, 51.450677],
+          [-2.552479, 51.450044],
+          [-2.552417, 51.449977],
+          [-2.552381, 51.449906],
+          [-2.552365, 51.44982],
+          [-2.552375, 51.44973],
+          [-2.552404, 51.44966],
+          [-2.552632, 51.44953],
+          [-2.552125, 51.449139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552661, 51.450194],
+          [-2.553338, 51.449872],
+          [-2.553377, 51.449843],
+          [-2.553396, 51.449809],
+          [-2.553396, 51.449774],
+          [-2.553362, 51.449742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548052, 51.450124],
+          [-2.547807, 51.449885],
+          [-2.548601, 51.449571],
+          [-2.548895, 51.449402],
+          [-2.548996, 51.449309],
+          [-2.549241, 51.449174],
+          [-2.549514, 51.448408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548881, 51.449833],
+          [-2.548601, 51.449571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551475, 51.449566],
+          [-2.551277, 51.449447],
+          [-2.551067, 51.449308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547688, 51.450251],
+          [-2.548479, 51.451037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54806, 51.450627],
+          [-2.548538, 51.450403],
+          [-2.548744, 51.450323]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547327, 51.451254],
+          [-2.548144, 51.451871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547728, 51.451558],
+          [-2.547485, 51.451687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550898, 51.451287],
+          [-2.550225, 51.450819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543572, 51.455462],
+          [-2.543576, 51.455388],
+          [-2.54354, 51.454951],
+          [-2.543584, 51.454812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536646, 51.450671],
+          [-2.536832, 51.450602],
+          [-2.536996, 51.45057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526416, 51.430058],
+          [-2.525885, 51.42982],
+          [-2.525817, 51.429653],
+          [-2.525836, 51.429558],
+          [-2.528376, 51.427295],
+          [-2.528537, 51.427094],
+          [-2.528619, 51.42702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550729, 51.449782],
+          [-2.55128, 51.449443],
+          [-2.551398, 51.44928],
+          [-2.551432, 51.449032],
+          [-2.551467, 51.448888]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544219, 51.43621],
+          [-2.545068, 51.436494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55035, 51.451896],
+          [-2.55088, 51.452323],
+          [-2.551098, 51.452238],
+          [-2.551536, 51.45188],
+          [-2.551855, 51.451728],
+          [-2.55192, 51.451669],
+          [-2.5519, 51.451602],
+          [-2.551543, 51.451302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5518, 51.451516],
+          [-2.551986, 51.451409],
+          [-2.551986, 51.451302],
+          [-2.552051, 51.451273],
+          [-2.552162, 51.451267],
+          [-2.552228, 51.45129],
+          [-2.552278, 51.451343],
+          [-2.552254, 51.451427],
+          [-2.552193, 51.451501],
+          [-2.552053, 51.451569],
+          [-2.5519, 51.451602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549986, 51.452843],
+          [-2.549387, 51.452364]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545916, 51.449215],
+          [-2.546, 51.449191],
+          [-2.546262, 51.449157],
+          [-2.54674, 51.449041],
+          [-2.546835, 51.448948],
+          [-2.54708, 51.448409],
+          [-2.54713, 51.448387],
+          [-2.54722, 51.448398],
+          [-2.547408, 51.447991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54748, 51.434299],
+          [-2.547288, 51.434058],
+          [-2.547135, 51.433927]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546951, 51.439164],
+          [-2.547042, 51.439265],
+          [-2.547312, 51.439506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549583, 51.434542],
+          [-2.549596, 51.434374],
+          [-2.549495, 51.434119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554395, 51.450358],
+          [-2.553901, 51.450444],
+          [-2.553682, 51.450414],
+          [-2.55363, 51.450586]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546682, 51.438244],
+          [-2.54665, 51.438431],
+          [-2.546673, 51.438529],
+          [-2.546734, 51.438581],
+          [-2.546863, 51.438603],
+          [-2.546984, 51.438597],
+          [-2.547227, 51.438552]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525453, 51.429029],
+          [-2.525978, 51.429126],
+          [-2.5261, 51.429193],
+          [-2.526218, 51.429216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524274, 51.429295],
+          [-2.524537, 51.428994],
+          [-2.524732, 51.429001],
+          [-2.526028, 51.42924],
+          [-2.526176, 51.429254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543287, 51.438313],
+          [-2.543104, 51.438338],
+          [-2.5429, 51.438378],
+          [-2.542807, 51.43843],
+          [-2.542568, 51.438875],
+          [-2.542558, 51.439057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530918, 51.441028],
+          [-2.531143, 51.440996],
+          [-2.531516, 51.440514],
+          [-2.531592, 51.440457],
+          [-2.53162, 51.440422],
+          [-2.532193, 51.440147],
+          [-2.532477, 51.440035],
+          [-2.532665, 51.440008],
+          [-2.532844, 51.440008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538104, 51.430459],
+          [-2.538223, 51.430468],
+          [-2.538346, 51.430489],
+          [-2.539106, 51.430676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536464, 51.441038],
+          [-2.536956, 51.441264],
+          [-2.537001, 51.441272],
+          [-2.537059, 51.44126],
+          [-2.537378, 51.440977],
+          [-2.537375, 51.440946],
+          [-2.537355, 51.440926],
+          [-2.536824, 51.440698],
+          [-2.53642, 51.440511],
+          [-2.536353, 51.440498],
+          [-2.536313, 51.4405],
+          [-2.535173, 51.441504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536297, 51.438122],
+          [-2.536731, 51.438524],
+          [-2.536817, 51.438585],
+          [-2.537287, 51.438834],
+          [-2.537338, 51.438883],
+          [-2.537324, 51.438918],
+          [-2.537265, 51.438983],
+          [-2.53701, 51.439166],
+          [-2.53663, 51.439525],
+          [-2.536563, 51.43957],
+          [-2.536485, 51.439585],
+          [-2.536396, 51.439569],
+          [-2.535978, 51.43939],
+          [-2.535567, 51.439094],
+          [-2.535103, 51.438776],
+          [-2.534688, 51.438439],
+          [-2.534406, 51.438138],
+          [-2.534406, 51.438111],
+          [-2.53443, 51.438086],
+          [-2.534562, 51.438031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534598, 51.440861],
+          [-2.53494, 51.44058],
+          [-2.534956, 51.44055],
+          [-2.534934, 51.440508],
+          [-2.534621, 51.440204],
+          [-2.534591, 51.440133],
+          [-2.534597, 51.440099],
+          [-2.53463, 51.440043],
+          [-2.534699, 51.439967],
+          [-2.534988, 51.439729],
+          [-2.536168, 51.440363],
+          [-2.53627, 51.440486],
+          [-2.536313, 51.4405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541396, 51.441561],
+          [-2.540937, 51.442767],
+          [-2.540895, 51.442824],
+          [-2.540485, 51.44321],
+          [-2.540149, 51.443516],
+          [-2.540095, 51.443549],
+          [-2.540031, 51.443549],
+          [-2.538235, 51.442789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543484, 51.442296],
+          [-2.543925, 51.442066]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538657, 51.442426],
+          [-2.538235, 51.442789],
+          [-2.537522, 51.443073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537059, 51.44126],
+          [-2.537905, 51.441623],
+          [-2.537991, 51.44162],
+          [-2.538315, 51.441365],
+          [-2.538513, 51.441469],
+          [-2.538613, 51.441494],
+          [-2.539496, 51.441543],
+          [-2.541396, 51.441561],
+          [-2.541451, 51.441548],
+          [-2.541688, 51.44158],
+          [-2.542048, 51.44164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542546, 51.44124],
+          [-2.54264, 51.441173],
+          [-2.542635, 51.441133],
+          [-2.5426, 51.441105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535825, 51.441615],
+          [-2.53678, 51.442105],
+          [-2.538278, 51.442758]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539151, 51.441866],
+          [-2.539164, 51.441907],
+          [-2.539202, 51.441944],
+          [-2.539671, 51.442136],
+          [-2.539706, 51.442178],
+          [-2.539674, 51.442262],
+          [-2.539685, 51.442315],
+          [-2.539746, 51.442354],
+          [-2.541147, 51.442923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542023, 51.442715],
+          [-2.542115, 51.442666],
+          [-2.542182, 51.442503]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533749, 51.429911],
+          [-2.533986, 51.429541]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537632, 51.439672],
+          [-2.537687, 51.439732],
+          [-2.538198, 51.439951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540064, 51.430713],
+          [-2.540173, 51.430522],
+          [-2.540168, 51.430461],
+          [-2.540248, 51.430326],
+          [-2.540335, 51.430275],
+          [-2.540521, 51.429962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541221, 51.431021],
+          [-2.541688, 51.430307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541545, 51.430264],
+          [-2.541577, 51.430131],
+          [-2.541641, 51.430032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54124, 51.430173],
+          [-2.541688, 51.430307],
+          [-2.542241, 51.430454]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538627, 51.432106],
+          [-2.538793, 51.432063],
+          [-2.538514, 51.431677],
+          [-2.538353, 51.431718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533105, 51.430667],
+          [-2.53369, 51.43081],
+          [-2.535507, 51.431343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538659, 51.440233],
+          [-2.53901, 51.439968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541531, 51.441199],
+          [-2.541512, 51.44075]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540784, 51.441195],
+          [-2.540772, 51.440759],
+          [-2.540813, 51.440705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538513, 51.441469],
+          [-2.53848, 51.441807],
+          [-2.53846, 51.441825],
+          [-2.538426, 51.441827],
+          [-2.538371, 51.441809],
+          [-2.538002, 51.441649],
+          [-2.537965, 51.441624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538633, 51.439717],
+          [-2.538848, 51.439867],
+          [-2.53901, 51.439968],
+          [-2.53928, 51.440096],
+          [-2.539889, 51.440341],
+          [-2.540263, 51.440468],
+          [-2.540813, 51.440705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540813, 51.440705],
+          [-2.54134, 51.440742],
+          [-2.541478, 51.440759],
+          [-2.541512, 51.44075],
+          [-2.541532, 51.440738],
+          [-2.541541, 51.440713],
+          [-2.541633, 51.440345]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531009, 51.42933],
+          [-2.530504, 51.429338],
+          [-2.530423, 51.429317],
+          [-2.530384, 51.429249],
+          [-2.530373, 51.429175],
+          [-2.530608, 51.428906],
+          [-2.530396, 51.42883],
+          [-2.530165, 51.429101],
+          [-2.530373, 51.429175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526118, 51.429302],
+          [-2.527371, 51.429814],
+          [-2.528011, 51.430066],
+          [-2.527819, 51.430269],
+          [-2.527805, 51.430437],
+          [-2.527994, 51.430822],
+          [-2.528047, 51.430996],
+          [-2.528097, 51.431462],
+          [-2.528074, 51.431552],
+          [-2.5279, 51.431717],
+          [-2.527886, 51.431853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532356, 51.428111],
+          [-2.532427, 51.427985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528779, 51.43245],
+          [-2.529465, 51.431359],
+          [-2.529389, 51.431187],
+          [-2.529303, 51.431106],
+          [-2.529276, 51.430998],
+          [-2.529469, 51.430849],
+          [-2.529383, 51.430672],
+          [-2.529512, 51.430444],
+          [-2.529555, 51.430203],
+          [-2.529584, 51.430139],
+          [-2.529834, 51.429872],
+          [-2.53007, 51.429698],
+          [-2.530381, 51.429548],
+          [-2.531009, 51.42933],
+          [-2.532129, 51.428447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554321, 51.449917],
+          [-2.555297, 51.450078],
+          [-2.555623, 51.45019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55272, 51.448807],
+          [-2.552599, 51.448803],
+          [-2.552491, 51.448814],
+          [-2.552324, 51.448854]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552501, 51.449051],
+          [-2.552351, 51.448962],
+          [-2.552323, 51.448917],
+          [-2.552324, 51.448854],
+          [-2.552109, 51.448811],
+          [-2.551746, 51.448652],
+          [-2.550576, 51.448435]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524144, 51.427161],
+          [-2.524039, 51.427095],
+          [-2.523977, 51.42701],
+          [-2.523953, 51.426942],
+          [-2.523972, 51.426879],
+          [-2.524003, 51.426837],
+          [-2.5241, 51.426807],
+          [-2.524388, 51.426742],
+          [-2.524757, 51.426667],
+          [-2.52499, 51.426629],
+          [-2.52527, 51.426605],
+          [-2.52534, 51.426589],
+          [-2.525398, 51.426571],
+          [-2.525422, 51.426548],
+          [-2.525449, 51.426477]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539118, 51.453504],
+          [-2.539357, 51.453443],
+          [-2.539432, 51.453447],
+          [-2.539463, 51.453473],
+          [-2.539549, 51.453602],
+          [-2.539521, 51.453637],
+          [-2.539513, 51.453716]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539934, 51.453813],
+          [-2.540004, 51.453693],
+          [-2.540003, 51.453604]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540454, 51.453866],
+          [-2.540457, 51.45379],
+          [-2.540414, 51.453663],
+          [-2.540434, 51.453588],
+          [-2.54047, 51.453553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540099, 51.454402],
+          [-2.540044, 51.454288],
+          [-2.539957, 51.454245],
+          [-2.53989, 51.454225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543217, 51.453104],
+          [-2.543249, 51.453043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543224, 51.452964],
+          [-2.543221, 51.453042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544262, 51.4531],
+          [-2.544215, 51.4531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544221, 51.453047],
+          [-2.544215, 51.4531],
+          [-2.544196, 51.453136]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544925, 51.453253],
+          [-2.54372, 51.453059],
+          [-2.543548, 51.45305],
+          [-2.543092, 51.453043],
+          [-2.54266, 51.453023],
+          [-2.542582, 51.453013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543404, 51.447978],
+          [-2.543267, 51.447942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543405, 51.448174],
+          [-2.543385, 51.44804],
+          [-2.543411, 51.447961],
+          [-2.54372, 51.447494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542721, 51.448315],
+          [-2.542828, 51.448731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542123, 51.448311],
+          [-2.541529, 51.448341]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542125, 51.448331],
+          [-2.542215, 51.448331],
+          [-2.542921, 51.448257],
+          [-2.543225, 51.448213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538354, 51.433835],
+          [-2.538286, 51.433942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535722, 51.434015],
+          [-2.534477, 51.434613],
+          [-2.534315, 51.434779],
+          [-2.535149, 51.434918],
+          [-2.536223, 51.434404]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536748, 51.434753],
+          [-2.536393, 51.435098]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537404, 51.432724],
+          [-2.536873, 51.432942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539487, 51.431279],
+          [-2.539646, 51.431042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541557, 51.432375],
+          [-2.541633, 51.43248]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542408, 51.430641],
+          [-2.542471, 51.43054],
+          [-2.543052, 51.4307],
+          [-2.543108, 51.430765],
+          [-2.543135, 51.430829],
+          [-2.543191, 51.430868],
+          [-2.543403, 51.43093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538245, 51.431514],
+          [-2.538518, 51.431457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536543, 51.430772],
+          [-2.536647, 51.430845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542503, 51.432175],
+          [-2.542392, 51.432025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538261, 51.431549],
+          [-2.537977, 51.431608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536205, 51.430959],
+          [-2.536382, 51.431088]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538139, 51.431278],
+          [-2.537873, 51.431305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547622, 51.452571],
+          [-2.54792, 51.452453],
+          [-2.548026, 51.452435],
+          [-2.54809, 51.452463],
+          [-2.548252, 51.452605],
+          [-2.548492, 51.452796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545965, 51.453244],
+          [-2.546457, 51.453017],
+          [-2.546559, 51.45292],
+          [-2.546623, 51.452872],
+          [-2.546869, 51.452755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547265, 51.453071],
+          [-2.54821, 51.452615],
+          [-2.54818, 51.452587],
+          [-2.548178, 51.452538],
+          [-2.54869, 51.45229],
+          [-2.549019, 51.452543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528953, 51.43553],
+          [-2.528892, 51.435471],
+          [-2.52862, 51.435106],
+          [-2.528626, 51.435038],
+          [-2.528674, 51.434962],
+          [-2.528674, 51.434887],
+          [-2.528608, 51.434753],
+          [-2.528479, 51.434588],
+          [-2.528405, 51.434525],
+          [-2.528313, 51.434368],
+          [-2.528348, 51.434336],
+          [-2.528551, 51.434293],
+          [-2.528746, 51.434268],
+          [-2.528869, 51.434265],
+          [-2.529176, 51.434293],
+          [-2.529689, 51.43429],
+          [-2.529752, 51.434272],
+          [-2.52987, 51.434204],
+          [-2.529939, 51.434141],
+          [-2.529985, 51.434063],
+          [-2.53003, 51.43393],
+          [-2.530111, 51.433811],
+          [-2.530275, 51.433666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52798, 51.434218],
+          [-2.52821, 51.434315],
+          [-2.528329, 51.434353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546967, 51.433803],
+          [-2.546352, 51.433462],
+          [-2.545926, 51.433116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545847, 51.433462],
+          [-2.545988, 51.433165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543469, 51.431565],
+          [-2.543335, 51.431428],
+          [-2.543287, 51.431347],
+          [-2.543314, 51.431274],
+          [-2.543379, 51.431224],
+          [-2.543535, 51.431144],
+          [-2.543663, 51.431121],
+          [-2.543775, 51.431112],
+          [-2.543824, 51.4311],
+          [-2.543892, 51.431053],
+          [-2.543927, 51.431015],
+          [-2.543863, 51.430969],
+          [-2.543679, 51.430887],
+          [-2.543497, 51.430817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544046, 51.431618],
+          [-2.544185, 51.431543],
+          [-2.544308, 51.431462],
+          [-2.544332, 51.431367],
+          [-2.544316, 51.431323],
+          [-2.543956, 51.431093],
+          [-2.543927, 51.431015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542959, 51.450273],
+          [-2.543611, 51.450125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528679, 51.431507],
+          [-2.528863, 51.431562],
+          [-2.528958, 51.431576],
+          [-2.529069, 51.431567],
+          [-2.529367, 51.431514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539333, 51.432685],
+          [-2.539221, 51.432761],
+          [-2.538945, 51.432563],
+          [-2.53895, 51.432536],
+          [-2.539032, 51.432479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538247, 51.433004],
+          [-2.538505, 51.433192],
+          [-2.538684, 51.433079],
+          [-2.538794, 51.433046],
+          [-2.53898, 51.432941],
+          [-2.539221, 51.432761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540561, 51.432896],
+          [-2.540536, 51.432788],
+          [-2.540295, 51.432517],
+          [-2.54025, 51.432489],
+          [-2.540409, 51.432374],
+          [-2.54011, 51.4322],
+          [-2.539229, 51.432621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537807, 51.432826],
+          [-2.538334, 51.433282],
+          [-2.53837, 51.433328],
+          [-2.538243, 51.43352],
+          [-2.537887, 51.433769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537119, 51.431906],
+          [-2.536157, 51.432319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536725, 51.431764],
+          [-2.536852, 51.431861],
+          [-2.536873, 51.431896],
+          [-2.536871, 51.431936],
+          [-2.5361, 51.432269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536455, 51.431776],
+          [-2.535833, 51.432036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536809, 51.434083],
+          [-2.536931, 51.43419],
+          [-2.53693, 51.434213],
+          [-2.53678, 51.434345],
+          [-2.536708, 51.434376],
+          [-2.536589, 51.434376],
+          [-2.536406, 51.434353],
+          [-2.536192, 51.434177],
+          [-2.536124, 51.434143],
+          [-2.536039, 51.434132],
+          [-2.535901, 51.434175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536331, 51.434285],
+          [-2.536809, 51.434083],
+          [-2.536671, 51.433964],
+          [-2.536192, 51.434177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534315, 51.434779],
+          [-2.533944, 51.434626],
+          [-2.533824, 51.434542],
+          [-2.533791, 51.434497],
+          [-2.533805, 51.43444],
+          [-2.53384, 51.4344],
+          [-2.534416, 51.434139],
+          [-2.534497, 51.434124],
+          [-2.534588, 51.434139],
+          [-2.53491, 51.434405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536309, 51.436353],
+          [-2.536398, 51.436045],
+          [-2.536438, 51.435984],
+          [-2.536825, 51.435604],
+          [-2.536873, 51.43558],
+          [-2.536938, 51.43558],
+          [-2.537444, 51.435772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547903, 51.43678],
+          [-2.547684, 51.436736],
+          [-2.547649, 51.436736],
+          [-2.547017, 51.436895],
+          [-2.546212, 51.437083],
+          [-2.546187, 51.437064],
+          [-2.546107, 51.436922],
+          [-2.54606, 51.43676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547027, 51.437299],
+          [-2.547036, 51.43695],
+          [-2.547017, 51.436895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539691, 51.439388],
+          [-2.539595, 51.439331],
+          [-2.539241, 51.439579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537545, 51.430821],
+          [-2.537539, 51.430926],
+          [-2.537592, 51.430972],
+          [-2.538071, 51.430966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53944, 51.430074],
+          [-2.539483, 51.429992],
+          [-2.539486, 51.429957],
+          [-2.539463, 51.429925],
+          [-2.539392, 51.429904],
+          [-2.539311, 51.429909],
+          [-2.539251, 51.429936],
+          [-2.53883, 51.43061]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532876, 51.431343],
+          [-2.532625, 51.431275],
+          [-2.532572, 51.431286],
+          [-2.532535, 51.431318],
+          [-2.532387, 51.431516],
+          [-2.532376, 51.431553],
+          [-2.532424, 51.431595],
+          [-2.532491, 51.431623],
+          [-2.532595, 51.431636],
+          [-2.532632, 51.431618],
+          [-2.532904, 51.431312],
+          [-2.533019, 51.431265],
+          [-2.533459, 51.430751]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546877, 51.435823],
+          [-2.54697, 51.435707],
+          [-2.54718, 51.435537],
+          [-2.547624, 51.435325],
+          [-2.547645, 51.435305],
+          [-2.547631, 51.435257],
+          [-2.547273, 51.435084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547615, 51.434623],
+          [-2.547577, 51.434575],
+          [-2.547597, 51.434283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533106, 51.435514],
+          [-2.532434, 51.435491],
+          [-2.53237, 51.435467],
+          [-2.532327, 51.435389],
+          [-2.532297, 51.435369],
+          [-2.532138, 51.435359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532142, 51.436204],
+          [-2.532724, 51.436221],
+          [-2.532795, 51.436216],
+          [-2.532848, 51.436201],
+          [-2.532899, 51.436172],
+          [-2.532935, 51.436137],
+          [-2.532958, 51.43607],
+          [-2.533, 51.435734],
+          [-2.532993, 51.435632],
+          [-2.53297, 51.4356],
+          [-2.532935, 51.435577],
+          [-2.532847, 51.435569],
+          [-2.532481, 51.435562],
+          [-2.532125, 51.435577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537686, 51.434236],
+          [-2.538077, 51.433855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537344, 51.433853],
+          [-2.537709, 51.433664]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538584, 51.439199],
+          [-2.538484, 51.439235],
+          [-2.538483, 51.439276],
+          [-2.538505, 51.439317],
+          [-2.538554, 51.439357],
+          [-2.53862, 51.439391],
+          [-2.538656, 51.439389],
+          [-2.538768, 51.439364],
+          [-2.538905, 51.43931],
+          [-2.539125, 51.439498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542517, 51.439179],
+          [-2.542997, 51.439285],
+          [-2.54322, 51.439364],
+          [-2.543374, 51.439431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544288, 51.436889],
+          [-2.544518, 51.437041]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544419, 51.436803],
+          [-2.544114, 51.436998],
+          [-2.543932, 51.436868],
+          [-2.543841, 51.436755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528202, 51.431374],
+          [-2.528272, 51.431545],
+          [-2.528221, 51.43159],
+          [-2.528119, 51.43171],
+          [-2.528569, 51.432048],
+          [-2.528797, 51.43223],
+          [-2.528892, 51.43227]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526879, 51.429922],
+          [-2.527092, 51.430003],
+          [-2.52722, 51.429977],
+          [-2.527371, 51.429814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526588, 51.429733],
+          [-2.526756, 51.429563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540537, 51.429798],
+          [-2.540482, 51.429927],
+          [-2.540521, 51.429962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540521, 51.429962],
+          [-2.540555, 51.429962],
+          [-2.540602, 51.429922],
+          [-2.540657, 51.42983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543586, 51.441853],
+          [-2.543491, 51.441795],
+          [-2.543047, 51.442039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542489, 51.441982],
+          [-2.542391, 51.442271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546288, 51.453663],
+          [-2.546705, 51.453461],
+          [-2.546293, 51.453091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543431, 51.455205],
+          [-2.543137, 51.455176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5352, 51.437337],
+          [-2.535124, 51.437199],
+          [-2.534933, 51.43679],
+          [-2.53494, 51.436758],
+          [-2.534973, 51.43672],
+          [-2.535044, 51.436688],
+          [-2.535125, 51.436678],
+          [-2.535925, 51.436669],
+          [-2.536025, 51.436691],
+          [-2.536135, 51.436746],
+          [-2.536241, 51.436825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545925, 51.453082],
+          [-2.546056, 51.453199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551758, 51.435917],
+          [-2.550792, 51.435816],
+          [-2.55076, 51.435828],
+          [-2.550742, 51.435845],
+          [-2.550394, 51.437349],
+          [-2.550901, 51.437382],
+          [-2.551383, 51.437431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551825, 51.435648],
+          [-2.551307, 51.437739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536374, 51.430251],
+          [-2.536438, 51.430213],
+          [-2.53651, 51.430184],
+          [-2.536702, 51.430074],
+          [-2.536768, 51.430063],
+          [-2.536808, 51.430066],
+          [-2.536847, 51.430078],
+          [-2.536881, 51.430099],
+          [-2.536905, 51.430144],
+          [-2.536888, 51.430188],
+          [-2.536775, 51.430257],
+          [-2.536685, 51.430347],
+          [-2.536598, 51.430393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53651, 51.430184],
+          [-2.536719, 51.430314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544808, 51.437599],
+          [-2.54486, 51.437627],
+          [-2.544907, 51.437862],
+          [-2.545511, 51.43782]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550156, 51.434436],
+          [-2.550197, 51.434416],
+          [-2.550325, 51.43441],
+          [-2.550468, 51.434418],
+          [-2.551252, 51.434418],
+          [-2.551329, 51.434444],
+          [-2.551748, 51.434657],
+          [-2.551867, 51.434776],
+          [-2.551924, 51.434868],
+          [-2.551951, 51.434967],
+          [-2.551927, 51.435197],
+          [-2.551836, 51.435649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529421, 51.430598],
+          [-2.529208, 51.430527],
+          [-2.528334, 51.430175],
+          [-2.528011, 51.430066]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545878, 51.441782],
+          [-2.546082, 51.441582],
+          [-2.545786, 51.440847],
+          [-2.545691, 51.440728],
+          [-2.545596, 51.440648],
+          [-2.545427, 51.440531],
+          [-2.545388, 51.440481],
+          [-2.545067, 51.439979],
+          [-2.545024, 51.43988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545962, 51.442455],
+          [-2.546486, 51.441911],
+          [-2.546532, 51.441825],
+          [-2.546539, 51.44176],
+          [-2.546133, 51.441614],
+          [-2.546082, 51.441582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540294, 51.439566],
+          [-2.540073, 51.439795],
+          [-2.539918, 51.439929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540138, 51.439559],
+          [-2.540251, 51.43961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539942, 51.453335],
+          [-2.539975, 51.453272],
+          [-2.540056, 51.453244],
+          [-2.540119, 51.453238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539705, 51.452332],
+          [-2.539847, 51.452292],
+          [-2.54004, 51.452189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546031, 51.452565],
+          [-2.546464, 51.452397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536761, 51.443329],
+          [-2.536723, 51.443298],
+          [-2.536507, 51.443208],
+          [-2.535873, 51.442805],
+          [-2.535775, 51.442769],
+          [-2.535782, 51.442719],
+          [-2.536199, 51.442427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534174, 51.436001],
+          [-2.534991, 51.435814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534142, 51.436185],
+          [-2.535075, 51.435964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534638, 51.43521],
+          [-2.534545, 51.435208],
+          [-2.534107, 51.435305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531268, 51.437301],
+          [-2.531064, 51.436923],
+          [-2.531098, 51.436883],
+          [-2.531104, 51.436842],
+          [-2.531071, 51.436551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544604, 51.434805],
+          [-2.544594, 51.434835],
+          [-2.544494, 51.434892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543916, 51.434973],
+          [-2.543936, 51.4349],
+          [-2.543974, 51.434864],
+          [-2.544013, 51.434851],
+          [-2.544068, 51.434847],
+          [-2.543991, 51.434798],
+          [-2.543994, 51.434701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543847, 51.434942],
+          [-2.543921, 51.434946]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543781, 51.434836],
+          [-2.543956, 51.434847],
+          [-2.543997, 51.434857]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543833, 51.434752],
+          [-2.543909, 51.434756],
+          [-2.543944, 51.434765],
+          [-2.543991, 51.434798]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544747, 51.434807],
+          [-2.544894, 51.434793],
+          [-2.545013, 51.434793],
+          [-2.545476, 51.434951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545447, 51.435283],
+          [-2.54582, 51.435314],
+          [-2.545909, 51.435301],
+          [-2.545964, 51.435271],
+          [-2.546106, 51.435024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546345, 51.436321],
+          [-2.546502, 51.436242],
+          [-2.546539, 51.436242],
+          [-2.546686, 51.436306],
+          [-2.547063, 51.436525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527653, 51.427939],
+          [-2.528371, 51.428411],
+          [-2.528804, 51.428739],
+          [-2.528977, 51.428823],
+          [-2.529046, 51.428882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.545113, 51.453584],
+          [-2.545724, 51.453447],
+          [-2.545736, 51.453421],
+          [-2.545542, 51.453031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544937, 51.452252],
+          [-2.542101, 51.452331],
+          [-2.542072, 51.452354],
+          [-2.542151, 51.452803],
+          [-2.542179, 51.452824],
+          [-2.542626, 51.452934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541313, 51.445864],
+          [-2.541932, 51.445786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539435, 51.431145],
+          [-2.539402, 51.431174],
+          [-2.539328, 51.431203],
+          [-2.53893, 51.431274],
+          [-2.538548, 51.431319],
+          [-2.538167, 51.43134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539011, 51.432085],
+          [-2.539556, 51.431905],
+          [-2.5396, 51.431881],
+          [-2.539621, 51.431857],
+          [-2.539619, 51.431829],
+          [-2.539288, 51.431428],
+          [-2.539264, 51.43142],
+          [-2.539207, 51.431422],
+          [-2.538543, 51.431625],
+          [-2.538514, 51.431677]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5366, 51.433328],
+          [-2.536678, 51.433317],
+          [-2.536752, 51.433294],
+          [-2.5371, 51.433138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538321, 51.434458],
+          [-2.538218, 51.434404],
+          [-2.538187, 51.434362],
+          [-2.53819, 51.43433],
+          [-2.538204, 51.434294],
+          [-2.538304, 51.434158],
+          [-2.538448, 51.43401]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535981, 51.432166],
+          [-2.535848, 51.432217],
+          [-2.535517, 51.432369],
+          [-2.535452, 51.432377],
+          [-2.535188, 51.432384],
+          [-2.534907, 51.432369],
+          [-2.534833, 51.432346],
+          [-2.534776, 51.432304],
+          [-2.534314, 51.431894]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54956, 51.4388],
+          [-2.550626, 51.438764],
+          [-2.550703, 51.438777],
+          [-2.551286, 51.439277],
+          [-2.551248, 51.439349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546093, 51.453182],
+          [-2.546231, 51.453309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547147, 51.453276],
+          [-2.546705, 51.453461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.547312, 51.453533],
+          [-2.547198, 51.453437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5484, 51.453035],
+          [-2.547154, 51.453605],
+          [-2.546549, 51.453923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5437, 51.440552],
+          [-2.544311, 51.441243],
+          [-2.544351, 51.441259],
+          [-2.544428, 51.441254],
+          [-2.544764, 51.441163]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543071, 51.440694],
+          [-2.544333, 51.440407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.544327, 51.440396],
+          [-2.544811, 51.440316],
+          [-2.544855, 51.440314],
+          [-2.544882, 51.440322],
+          [-2.545333, 51.441312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543101, 51.441689],
+          [-2.54272, 51.441885]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543276, 51.44088],
+          [-2.542858, 51.441083],
+          [-2.542836, 51.441106],
+          [-2.542833, 51.441149],
+          [-2.543999, 51.441984]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534965, 51.430642],
+          [-2.534933, 51.430795],
+          [-2.534959, 51.430875],
+          [-2.53502, 51.43092],
+          [-2.535125, 51.43097],
+          [-2.535242, 51.431052],
+          [-2.535368, 51.431174],
+          [-2.535431, 51.43125],
+          [-2.535528, 51.431331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534841, 51.433981],
+          [-2.534999, 51.433913],
+          [-2.535113, 51.433891],
+          [-2.535446, 51.433768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541216, 51.432783],
+          [-2.541094, 51.432691]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542962, 51.432449],
+          [-2.542862, 51.432298],
+          [-2.542654, 51.432127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543146, 51.432353],
+          [-2.543005, 51.432332],
+          [-2.542862, 51.432298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533362, 51.433414],
+          [-2.533249, 51.43342],
+          [-2.533141, 51.433463],
+          [-2.533028, 51.433526],
+          [-2.532963, 51.433537],
+          [-2.532818, 51.433497],
+          [-2.532654, 51.433427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533222, 51.433608],
+          [-2.532963, 51.433537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552925, 51.451103],
+          [-2.552665, 51.451244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552774, 51.451054],
+          [-2.552908, 51.450989],
+          [-2.552776, 51.450898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553429, 51.450618],
+          [-2.553453, 51.450801],
+          [-2.553034, 51.450998],
+          [-2.552957, 51.451003],
+          [-2.552908, 51.450989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541023, 51.445005],
+          [-2.540938, 51.445014],
+          [-2.540856, 51.445044],
+          [-2.540943, 51.445274],
+          [-2.541106, 51.445256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539878, 51.441547],
+          [-2.539878, 51.441603],
+          [-2.539725, 51.442121],
+          [-2.539687, 51.442155]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537818, 51.4403],
+          [-2.538337, 51.440533],
+          [-2.538956, 51.440796],
+          [-2.539612, 51.440918],
+          [-2.539745, 51.440922],
+          [-2.539855, 51.440912],
+          [-2.539952, 51.440785],
+          [-2.539966, 51.44073],
+          [-2.540046, 51.440674],
+          [-2.540184, 51.440518],
+          [-2.540263, 51.440468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538751, 51.430341],
+          [-2.538607, 51.430556]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538667, 51.42987],
+          [-2.538584, 51.42988],
+          [-2.538524, 51.429898],
+          [-2.538497, 51.42994],
+          [-2.538483, 51.430001],
+          [-2.538513, 51.430068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548042, 51.450524],
+          [-2.548156, 51.450478],
+          [-2.547864, 51.450188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.546479, 51.44925],
+          [-2.547608, 51.450279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549875, 51.43732],
+          [-2.550394, 51.437349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.549882, 51.437977],
+          [-2.551322, 51.43804],
+          [-2.551342, 51.438034],
+          [-2.551376, 51.437742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534654, 51.429904],
+          [-2.534514, 51.429871],
+          [-2.534622, 51.429699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535957, 51.441865],
+          [-2.536134, 51.441963],
+          [-2.536153, 51.441982],
+          [-2.536143, 51.442055],
+          [-2.536055, 51.44214],
+          [-2.535887, 51.442236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536276, 51.441903],
+          [-2.536153, 51.441982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533427, 51.439732],
+          [-2.533959, 51.439953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53456, 51.441418],
+          [-2.534093, 51.44095],
+          [-2.533924, 51.4408],
+          [-2.533466, 51.440442],
+          [-2.533378, 51.440356],
+          [-2.533332, 51.440293],
+          [-2.533256, 51.440138],
+          [-2.533236, 51.440034],
+          [-2.533245, 51.439964],
+          [-2.533296, 51.439867],
+          [-2.533372, 51.439769],
+          [-2.533427, 51.439732],
+          [-2.533472, 51.439681],
+          [-2.533988, 51.439203],
+          [-2.534098, 51.439134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55173, 51.436027],
+          [-2.552285, 51.436076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543394, 51.439505],
+          [-2.544239, 51.439506],
+          [-2.54436, 51.439531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.543937, 51.439261],
+          [-2.543893, 51.43933],
+          [-2.543863, 51.439504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551261, 51.439023],
+          [-2.551442, 51.439199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542713, 51.438217],
+          [-2.542819, 51.438363],
+          [-2.54287, 51.438397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542134, 51.45483],
+          [-2.542115, 51.454923],
+          [-2.542178, 51.454944],
+          [-2.542415, 51.454968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542882, 51.4546],
+          [-2.542899, 51.454535],
+          [-2.542236, 51.454468],
+          [-2.542219, 51.454536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540956, 51.454372],
+          [-2.540977, 51.454305],
+          [-2.54109, 51.454242],
+          [-2.54117, 51.454182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551408, 51.435221],
+          [-2.549738, 51.435071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.548996, 51.436243],
+          [-2.548257, 51.436126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550792, 51.435816],
+          [-2.550232, 51.435763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529981, 51.43364],
+          [-2.529773, 51.433667],
+          [-2.529532, 51.433673],
+          [-2.529491, 51.433682],
+          [-2.529451, 51.433706],
+          [-2.529417, 51.433746],
+          [-2.529412, 51.433773],
+          [-2.529427, 51.433805],
+          [-2.52954, 51.433832],
+          [-2.529604, 51.433835],
+          [-2.529683, 51.433826],
+          [-2.529765, 51.433805],
+          [-2.529833, 51.433761],
+          [-2.529981, 51.43364],
+          [-2.530097, 51.433588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540265, 51.429912],
+          [-2.540092, 51.430197],
+          [-2.540083, 51.430228],
+          [-2.540111, 51.430247],
+          [-2.540176, 51.43026],
+          [-2.540233, 51.430261],
+          [-2.540287, 51.430242],
+          [-2.540423, 51.430127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527903, 51.426751],
+          [-2.527321, 51.426568],
+          [-2.526504, 51.426358],
+          [-2.526284, 51.42636],
+          [-2.526146, 51.426395],
+          [-2.526047, 51.426473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538403, 51.432745],
+          [-2.539008, 51.432461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.542143, 51.433422],
+          [-2.542281, 51.433345],
+          [-2.542327, 51.433256],
+          [-2.542394, 51.433196],
+          [-2.542345, 51.433156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537908, 51.447336],
+          [-2.537577, 51.447457],
+          [-2.537562, 51.447486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538541, 51.45123],
+          [-2.538604, 51.451206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53829, 51.45107],
+          [-2.538419, 51.451037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "brislington-east" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52992, 51.44173],
+          [-2.530139, 51.441626],
+          [-2.530626, 51.441435],
+          [-2.530711, 51.441389]
+        ]
+      }
+    }
+  ]
+}

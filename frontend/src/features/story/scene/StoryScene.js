@@ -21,6 +21,7 @@ export class StoryScene {
       fogNear: FOG[0],
       fogFar: FOG[1],
       transparent: true,
+      onDemand: true, // кадр — только когда прокрутка что-то сдвинула
     });
     this.runtime.camera.near = NEAR;
     this.runtime.camera.updateProjectionMatrix();
@@ -37,6 +38,7 @@ export class StoryScene {
     this.cam = new THREE.Vector3(0, TOP_VIEW_HEIGHT, 0.5);
     this.look = new THREE.Vector3(0, 0, 0);
     this.lastKey = '';
+    this.lastView = '';
 
     this.runtime.onResize((width, height) => this.city?.setResolution(width, height));
     this.runtime.onTick((time) => this.tick(time));
@@ -73,6 +75,7 @@ export class StoryScene {
     this.runtime.scene.add(this.city.group);
     const { width, height } = this.runtime.size;
     this.city.setResolution(width, height);
+    this.runtime.invalidate();
   }
 
   // Добавляет анимации города в шкалу истории (раскладка глав: ../lib/chapters.js).
@@ -119,13 +122,15 @@ export class StoryScene {
     return tl;
   }
 
+  // true — кадр изменился: сдвинулись параметры прокрутки, камера или догрузились плитки.
   tick(time) {
     const { params: p, runtime } = this;
     const camera = runtime.camera;
-    if (!this.city) return;
+    if (!this.city) return false;
     // Плитки дорог грузятся и пока город скрыт: к главе «город» они уже на месте.
-    this.city.update(camera, runtime.size.height, time * 1000);
+    let changed = this.city.update(camera, runtime.size.height, time * 1000);
     const inCity = p.world >= 0.5;
+    if (this.city.group.visible !== inCity) changed = true;
     this.city.group.visible = inCity;
     if (inCity) {
       const key = Object.keys(CITY_PARAMS)
@@ -134,6 +139,7 @@ export class StoryScene {
       if (key !== this.lastKey) {
         this.lastKey = key;
         this.city.apply(p);
+        changed = true;
       }
     }
     camera.position
@@ -142,6 +148,14 @@ export class StoryScene {
       .multiplyScalar(zoomFactor(camera.aspect))
       .add(this.look);
     camera.lookAt(this.look);
+    const view = [...camera.position.toArray(), ...this.look.toArray()]
+      .map((v) => v.toFixed(4))
+      .join('|');
+    if (view !== this.lastView) {
+      this.lastView = view;
+      changed = true;
+    }
+    return changed;
   }
 
   dispose() {

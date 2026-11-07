@@ -1,7 +1,7 @@
-"""PNG-плитки подложки карты: дороги и вода города -> frontend/public/maps/<slug>/.
+"""Плитки подложки карты: дороги и вода города -> frontend/public/maps/<slug>/.
 
-Карта города рисует дороги и воду не линиями из streets.geojson, а готовыми картинками, лежащими
-плоско под районами. Плитки — пирамида уровней, как у веб-карт: самый детальный уровень 3 м на пиксель,
+Карта города рисует дороги и воду не линиями из streets/*.geojson, а готовыми картинками (WebP без
+потерь), лежащими плоско под районами. Плитки — пирамида уровней, как у веб-карт: самый детальный уровень 3 м на пиксель,
 каждый следующий вдвое грубее, пока весь город не уложится в 2 × 2 плитки; карта берёт уровень по
 расстоянию до камеры. Плитка — не цвета, а маска покрытия по каналам (цвета накладывает шейдер из
 токенов темы, поэтому одна картинка подходит обеим темам):
@@ -12,6 +12,10 @@
 прозрачных пикселей при загрузке. Проекция — та же, что на фронтенде (geoProjection.js): км вокруг
 центра города, +y — на север. Плитки за контуром города (cityOutline.js) не рисуются.
 
+Вблизи (уровень улицы) картинки мало: для каждой клетки самого детального уровня рядом лежит векторный
+кусок vector/<x>_<y>.json — линии дорог этой клетки (обрезанные по её краю), карта рисует их чёткими
+при любом приближении. Координаты куска — целые дециметры от юго-западного угла клетки.
+
 Запуск из корня репозитория (нужна Pillow — она есть в backend/requirements.txt):
 
     python backend/scripts/build_map_tiles.py kostanay
@@ -19,6 +23,7 @@
 """
 
 import argparse
+import hashlib
 import json
 import math
 import shutil
@@ -52,8 +57,9 @@ ROADS = [
     ('secondary', 'B', 0.9, 11.0),
     ('major', 'B', 1.0, 14.0),
 ]
-DASH_M = 50.0  # пунктир железной дороги — как DASH_KM / GAP_KM в roadStyles.js
+DASH_M = 50.0  # пунктир железной дороги (такой же у векторных кусков)
 GAP_M = 35.0
+VECTOR_UNIT_M = 0.1  # шаг координат векторного куска
 
 Point = tuple[float, float]
 
@@ -112,6 +118,62 @@ def dashes(line: list[Point]) -> list[list[Point]]:
     return out
 
 
+def clip_line(line: list[Point], box: tuple[float, float, float, float]) -> list[list[Point]]:
+    """Полилиния, обрезанная прямоугольником (Лианг — Барски по каждому отрезку): куски внутри."""
+    x0, y0, x1, y1 = box
+    pieces: list[list[Point]] = []
+    piece: list[Point] = []
+    for (ax, ay), (bx, by) in zip(line, line[1:], strict=False):
+        dx, dy = bx - ax, by - ay
+        t0, t1 = 0.0, 1.0
+        for p, q in ((-dx, ax - x0), (dx, x1 - ax), (-dy, ay - y0), (dy, y1 - ay)):
+            if p == 0:
+                if q < 0:
+                    t0, t1 = 1.0, 0.0
+                continue
+            t = q / p
+            if p < 0:
+                t0 = max(t0, t)
+            else:
+                t1 = min(t1, t)
+        if t0 > t1:
+            if len(piece) > 1:
+                pieces.append(piece)
+            piece = []
+            continue
+        start = (ax + dx * t0, ay + dy * t0)
+        if not piece or t0 > 0:
+            if len(piece) > 1:
+                pieces.append(piece)
+            piece = [start]
+        piece.append((ax + dx * t1, ay + dy * t1))
+        if t1 < 1:
+            pieces.append(piece)
+            piece = []
+    if len(piece) > 1:
+        pieces.append(piece)
+    return pieces
+
+
+def vector_chunk(x: int, y: int, cell_km: float, roads) -> dict | None:
+    """Линии дорог клетки по классам: [x0, y0, x1, y1, …] в дециметрах от угла клетки."""
+    box = (x * cell_km, y * cell_km, (x + 1) * cell_km, (y + 1) * cell_km)
+    unit = VECTOR_UNIT_M / 1000
+    chunk = {}
+    for kind, *_ in ROADS:
+        out = []
+        for line in roads[kind].query(*box):
+            for piece in clip_line(line, box):
+                flat = []
+                for px, py in piece:
+                    flat += [round((px - box[0]) / unit), round((py - box[1]) / unit)]
+                if len(flat) >= 4:
+                    out.append(flat)
+        if out:
+            chunk[kind] = out
+    return chunk or None
+
+
 def load(slug: str):
     city = json.loads((DATA / slug / 'city.json').read_text(encoding='utf-8'))
     project = projection(city['center'])
@@ -122,11 +184,15 @@ def load(slug: str):
         for polygon in f['geometry']['coordinates']
         for lon, lat in polygon[0]
     ]
-    streets = json.loads((DATA / slug / 'streets.geojson').read_text(encoding='utf-8'))
+    streets = [
+        feature
+        for path in sorted((DATA / slug / 'streets').glob('*.geojson'))
+        for feature in json.loads(path.read_text(encoding='utf-8'))['features']
+    ]
     water = json.loads((DATA / slug / 'water.geojson').read_text(encoding='utf-8'))
 
     lines: dict[str, list[list[Point]]] = {kind: [] for kind, *_ in ROADS}
-    for f in streets['features']:
+    for f in streets:
         kind = f['properties']['kind']
         if kind in lines:
             line = [project(lon, lat) for lon, lat in f['geometry']['coordinates']]
@@ -229,9 +295,9 @@ def build(slug: str) -> None:
                 image = render_tile(x, y, tile_km, mpp, roads, water)
                 if image is None:
                     continue
-                path = target / str(z) / f'{x}_{y}.png'
+                path = target / str(z) / f'{x}_{y}.webp'
                 path.parent.mkdir(parents=True, exist_ok=True)
-                image.save(path, optimize=True)
+                image.save(path, 'WEBP', lossless=True, quality=80, method=4)
                 tiles.append([x, y])
         levels.append({'metersPerPixel': mpp, 'tileKm': tile_km, 'tiles': tiles})
         span = max(ox1 - ox0, oy1 - oy0)
@@ -240,11 +306,38 @@ def build(slug: str) -> None:
             break
         z += 1
 
-    manifest = {'center': city['center'], 'tilePx': TILE_PX, 'levels': levels}
+    # Векторные куски — по клеткам самого детального уровня (там, где есть его плитки).
+    vector = []
+    for x, y in levels[0]['tiles']:
+        chunk = vector_chunk(x, y, finest_km, roads)
+        if chunk is None:
+            continue
+        path = target / 'vector' / f'{x}_{y}.json'
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(chunk, separators=(',', ':')), encoding='utf-8')
+        vector.append([x, y])
+
+    # Версия — хеш содержимого: по ней сервис-воркер сайта сбрасывает кэш после пересборки.
+    digest = hashlib.sha1()
+    for path in sorted(target.rglob('*.*')):
+        digest.update(path.relative_to(target).as_posix().encode())
+        digest.update(path.read_bytes())
+    manifest = {
+        'version': digest.hexdigest()[:12],
+        'format': 'webp',
+        'center': city['center'],
+        'tilePx': TILE_PX,
+        'levels': levels,
+        'vectorCellKm': finest_km,
+        'vectorUnitM': VECTOR_UNIT_M,
+        'vector': vector,
+    }
     (target / 'tiles.json').write_text(json.dumps(manifest, separators=(',', ':')), encoding='utf-8')
-    total = sum(p.stat().st_size for p in target.rglob('*.png'))
+    images = sum(p.stat().st_size for p in target.rglob('*.webp'))
+    chunks = sum(p.stat().st_size for p in target.rglob('vector/*.json'))
     count = sum(len(level['tiles']) for level in levels)
-    print(f'{slug}: {count} плиток, {total / 1024 / 1024:.1f} МБ')
+    print(f'{slug}: {count} плиток {images / 2**20:.1f} МБ, {len(vector)} векторных кусков '
+          f'{chunks / 2**20:.1f} МБ')
 
 
 def main() -> None:

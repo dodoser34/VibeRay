@@ -1,0 +1,6920 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.786812, 59.764518],
+          [30.786626, 59.764283],
+          [30.786565, 59.764134],
+          [30.786686, 59.763988],
+          [30.786752, 59.763949],
+          [30.787344, 59.763853],
+          [30.787072, 59.763451],
+          [30.78695, 59.763404],
+          [30.786795, 59.763391],
+          [30.786632, 59.763391],
+          [30.786437, 59.763086],
+          [30.78615, 59.762598],
+          [30.786057, 59.762582],
+          [30.785754, 59.762627],
+          [30.785727, 59.762671],
+          [30.785784, 59.76318]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814896, 59.7703],
+          [30.814709, 59.770216],
+          [30.814264, 59.770082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798164, 59.773519],
+          [30.798023, 59.773572],
+          [30.79726, 59.77364],
+          [30.797163, 59.773641],
+          [30.797105, 59.77363],
+          [30.797067, 59.773609],
+          [30.796934, 59.773354],
+          [30.796827, 59.773243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796247, 59.774843],
+          [30.796189, 59.77465],
+          [30.796154, 59.774363],
+          [30.796184, 59.774325],
+          [30.796357, 59.774242],
+          [30.796431, 59.774188],
+          [30.796437, 59.77413],
+          [30.796415, 59.773955],
+          [30.79634, 59.773914],
+          [30.795958, 59.773873],
+          [30.795894, 59.773838],
+          [30.795824, 59.77377],
+          [30.795792, 59.773692],
+          [30.795762, 59.773476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804941, 59.769987],
+          [30.804864, 59.769957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802135, 59.769164],
+          [30.802828, 59.769504],
+          [30.80289, 59.769593],
+          [30.802971, 59.769678],
+          [30.803148, 59.76979],
+          [30.803232, 59.769875],
+          [30.803234, 59.769965],
+          [30.803258, 59.770047],
+          [30.803328, 59.770152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803918, 59.768949],
+          [30.802828, 59.769504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802592, 59.768928],
+          [30.803295, 59.769266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806372, 59.768434],
+          [30.80602, 59.76844],
+          [30.805956, 59.768455],
+          [30.805927, 59.768481],
+          [30.805924, 59.768627],
+          [30.805876, 59.76868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.80725, 59.768603],
+          [30.80639, 59.76869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806074, 59.766664],
+          [30.805856, 59.766677],
+          [30.805742, 59.766782],
+          [30.805683, 59.766807],
+          [30.805384, 59.766842],
+          [30.805291, 59.766886],
+          [30.804838, 59.767212],
+          [30.804606, 59.767332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805777, 59.766086],
+          [30.805701, 59.766111],
+          [30.805196, 59.766473],
+          [30.805134, 59.766498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806768, 59.765282],
+          [30.806766, 59.765133],
+          [30.806733, 59.765082],
+          [30.806669, 59.765047],
+          [30.806602, 59.765024],
+          [30.803169, 59.764456],
+          [30.802316, 59.764299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802054, 59.765101],
+          [30.802132, 59.765154],
+          [30.804126, 59.765859],
+          [30.804025, 59.765922],
+          [30.803143, 59.766129],
+          [30.803411, 59.766436],
+          [30.803481, 59.766475],
+          [30.803565, 59.766491],
+          [30.804547, 59.76626],
+          [30.804594, 59.766226],
+          [30.804591, 59.766185],
+          [30.804421, 59.766007],
+          [30.804338, 59.765943],
+          [30.804126, 59.765859]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804854, 59.769038],
+          [30.805173, 59.768818],
+          [30.805209, 59.768761],
+          [30.805223, 59.768717],
+          [30.805235, 59.768216],
+          [30.805193, 59.768162],
+          [30.805083, 59.768119],
+          [30.805026, 59.768132],
+          [30.804965, 59.768123],
+          [30.804566, 59.767973],
+          [30.804478, 59.767965],
+          [30.80441, 59.76798],
+          [30.804056, 59.768215],
+          [30.803938, 59.768246],
+          [30.803823, 59.768248],
+          [30.803394, 59.768088],
+          [30.803338, 59.768082],
+          [30.803289, 59.768095],
+          [30.803072, 59.768241],
+          [30.802866, 59.768283],
+          [30.802602, 59.768459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806308, 59.767875],
+          [30.806218, 59.767855],
+          [30.80531, 59.767586],
+          [30.804703, 59.767376],
+          [30.804606, 59.767332],
+          [30.804543, 59.767279],
+          [30.802106, 59.766401],
+          [30.802023, 59.76635],
+          [30.802007, 59.766308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796494, 59.775256],
+          [30.796505, 59.775315],
+          [30.796403, 59.775404],
+          [30.79534, 59.775814],
+          [30.794632, 59.776047],
+          [30.794448, 59.776094],
+          [30.794337, 59.776111],
+          [30.793964, 59.776135],
+          [30.793211, 59.776159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.799323, 59.775324],
+          [30.798722, 59.77541],
+          [30.798381, 59.775202],
+          [30.798232, 59.775212],
+          [30.794369, 59.77531],
+          [30.794448, 59.776094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795783, 59.773635],
+          [30.795476, 59.773735],
+          [30.795171, 59.773872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798698, 59.774196],
+          [30.798795, 59.774226],
+          [30.798811, 59.774312],
+          [30.798671, 59.774347],
+          [30.798746, 59.774778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796995, 59.77319],
+          [30.797143, 59.773222],
+          [30.797752, 59.773297],
+          [30.797936, 59.773336],
+          [30.798418, 59.773727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798334, 59.774754],
+          [30.798274, 59.774253],
+          [30.798374, 59.774213],
+          [30.798698, 59.774196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79617, 59.77447],
+          [30.794732, 59.774536],
+          [30.794511, 59.77449],
+          [30.794214, 59.774501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.799066, 59.772643],
+          [30.798681, 59.773088],
+          [30.797936, 59.773336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798681, 59.773088],
+          [30.799028, 59.773326],
+          [30.799037, 59.773402],
+          [30.798971, 59.773485],
+          [30.798718, 59.773602],
+          [30.798418, 59.773727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802269, 59.773863],
+          [30.80261, 59.774134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.80111, 59.774136],
+          [30.801563, 59.774569],
+          [30.801622, 59.774569],
+          [30.802059, 59.774452],
+          [30.802245, 59.774391],
+          [30.802293, 59.774364],
+          [30.802293, 59.774326],
+          [30.801839, 59.77396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797698, 59.774781],
+          [30.797633, 59.774606],
+          [30.797582, 59.774598],
+          [30.796189, 59.77465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793288, 59.777141],
+          [30.793081, 59.777189],
+          [30.793059, 59.777236],
+          [30.793075, 59.777549],
+          [30.793106, 59.777592],
+          [30.793195, 59.777639],
+          [30.793306, 59.777646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793297, 59.777392],
+          [30.79396, 59.777381],
+          [30.794603, 59.777254],
+          [30.794936, 59.777135],
+          [30.794179, 59.776514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800022, 59.773343],
+          [30.799256, 59.77354],
+          [30.799369, 59.77361],
+          [30.7995, 59.773726],
+          [30.799542, 59.773838],
+          [30.799529, 59.773879],
+          [30.799486, 59.773908],
+          [30.799333, 59.77394],
+          [30.799355, 59.774162],
+          [30.799923, 59.774145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814675, 59.768618],
+          [30.814889, 59.768618],
+          [30.815458, 59.76865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814289, 59.76911],
+          [30.814503, 59.769126],
+          [30.815109, 59.769115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.812856, 59.769198],
+          [30.812781, 59.769215],
+          [30.812771, 59.76925],
+          [30.81276, 59.769613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.812953, 59.768213],
+          [30.812937, 59.768551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814289, 59.76911],
+          [30.813688, 59.768882],
+          [30.813623, 59.768848],
+          [30.813607, 59.768804],
+          [30.813544, 59.768251],
+          [30.813516, 59.76821],
+          [30.813436, 59.768204],
+          [30.812953, 59.768213],
+          [30.812137, 59.768237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814289, 59.76911],
+          [30.814315, 59.768907],
+          [30.814374, 59.768831],
+          [30.814675, 59.768618],
+          [30.814959, 59.768291],
+          [30.815045, 59.768213],
+          [30.815158, 59.768167],
+          [30.815308, 59.768156],
+          [30.815716, 59.768178],
+          [30.8163, 59.768191],
+          [30.816617, 59.768224],
+          [30.816967, 59.768305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.813237, 59.770692],
+          [30.813716, 59.770822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803278, 59.773648],
+          [30.803844, 59.774142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804457, 59.773361],
+          [30.804767, 59.773615],
+          [30.804788, 59.773672],
+          [30.804734, 59.773729],
+          [30.804187, 59.773856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.808193, 59.763612],
+          [30.809143, 59.762461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814264, 59.770082],
+          [30.81276, 59.769613],
+          [30.81249, 59.769537],
+          [30.812269, 59.76943],
+          [30.812191, 59.768491],
+          [30.812137, 59.768237],
+          [30.810636, 59.767565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798418, 59.773727],
+          [30.79856, 59.773801],
+          [30.798641, 59.7739],
+          [30.798696, 59.774098],
+          [30.798698, 59.774196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806724, 59.773645],
+          [30.806117, 59.773836],
+          [30.806115, 59.773906],
+          [30.806544, 59.77423]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.762277, 59.750652],
+          [30.761693, 59.750929],
+          [30.761286, 59.751146],
+          [30.760767, 59.75146],
+          [30.759876, 59.751908],
+          [30.759813, 59.751995],
+          [30.759857, 59.752049],
+          [30.760048, 59.752159],
+          [30.760071, 59.752246],
+          [30.760024, 59.752337],
+          [30.759838, 59.75255],
+          [30.75974, 59.752635],
+          [30.759674, 59.752742],
+          [30.759671, 59.752862],
+          [30.759763, 59.75305],
+          [30.760023, 59.753179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.760244, 59.748423],
+          [30.760093, 59.748596],
+          [30.759959, 59.748688],
+          [30.759734, 59.748788],
+          [30.759471, 59.748821],
+          [30.759359, 59.748892],
+          [30.759337, 59.74901],
+          [30.759391, 59.749156],
+          [30.75931, 59.749337],
+          [30.759133, 59.7495],
+          [30.758993, 59.749769],
+          [30.758919, 59.74998],
+          [30.758854, 59.750301],
+          [30.75884, 59.750567],
+          [30.758732, 59.750724],
+          [30.758636, 59.750818],
+          [30.758475, 59.751141],
+          [30.758423, 59.751331],
+          [30.758403, 59.751596],
+          [30.758253, 59.751773],
+          [30.757186, 59.752522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.755967, 59.752427],
+          [30.756166, 59.752145],
+          [30.756321, 59.752043],
+          [30.756665, 59.751933],
+          [30.756758, 59.751867],
+          [30.75689, 59.75163],
+          [30.757031, 59.751523],
+          [30.757078, 59.751468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.759779, 59.758791],
+          [30.759602, 59.758822],
+          [30.7593, 59.758857],
+          [30.758883, 59.758921],
+          [30.758813, 59.75895],
+          [30.758783, 59.758987],
+          [30.758729, 59.759146],
+          [30.758637, 59.759301],
+          [30.758384, 59.759526],
+          [30.758335, 59.759609],
+          [30.758337, 59.759699],
+          [30.758452, 59.759835],
+          [30.75895, 59.760077],
+          [30.759225, 59.760409],
+          [30.759369, 59.761617],
+          [30.759907, 59.761969],
+          [30.760458, 59.762232],
+          [30.760657, 59.762294],
+          [30.760893, 59.762344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.763792, 59.753739],
+          [30.764208, 59.754049]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.840462, 59.775044],
+          [30.840794, 59.775267],
+          [30.841003, 59.775371],
+          [30.841757, 59.775593]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.811005, 59.793251],
+          [30.808316, 59.794118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79057, 59.770509],
+          [30.791313, 59.770829],
+          [30.791465, 59.770904],
+          [30.79158, 59.770912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.77345, 59.76118],
+          [30.774525, 59.761218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775454, 59.760521],
+          [30.775778, 59.759954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.776491, 59.761175],
+          [30.776098, 59.760959],
+          [30.774994, 59.761496],
+          [30.774497, 59.761379],
+          [30.774646, 59.760528],
+          [30.775454, 59.760521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783856, 59.768145],
+          [30.783798, 59.768311],
+          [30.783593, 59.768429],
+          [30.783875, 59.768578],
+          [30.784114, 59.768481],
+          [30.78453, 59.768481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775454, 59.760521],
+          [30.776162, 59.760808],
+          [30.77636, 59.760844],
+          [30.776786, 59.761021],
+          [30.777316, 59.761164],
+          [30.777405, 59.761196],
+          [30.777644, 59.761332],
+          [30.777846, 59.761373],
+          [30.777999, 59.761373],
+          [30.778138, 59.761356],
+          [30.779175, 59.761142],
+          [30.779471, 59.761626],
+          [30.780175, 59.761499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.8236, 59.798408],
+          [30.823582, 59.798256],
+          [30.822976, 59.798178],
+          [30.822439, 59.798367],
+          [30.821684, 59.798268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.776177, 59.764806],
+          [30.775695, 59.764571],
+          [30.775563, 59.764486],
+          [30.775542, 59.764453],
+          [30.775549, 59.764419],
+          [30.775961, 59.764217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.821964, 59.769278],
+          [30.820745, 59.769649],
+          [30.818133, 59.770518],
+          [30.816093, 59.771156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.812217, 59.772451],
+          [30.814238, 59.77181],
+          [30.816127, 59.771183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814217, 59.795918],
+          [30.816188, 59.796441],
+          [30.816261, 59.796519],
+          [30.815798, 59.797021],
+          [30.815709, 59.797049],
+          [30.812437, 59.796522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.758883, 59.758921],
+          [30.758735, 59.758656],
+          [30.758171, 59.758199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785092, 59.762162],
+          [30.784917, 59.761894],
+          [30.785087, 59.761911],
+          [30.785565, 59.762003],
+          [30.788313, 59.762459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.762319, 59.75781],
+          [30.75971, 59.758706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.823601, 59.797598],
+          [30.823475, 59.797788],
+          [30.824181, 59.797891],
+          [30.824914, 59.797977],
+          [30.825, 59.797897],
+          [30.825062, 59.797611],
+          [30.824786, 59.797546],
+          [30.824395, 59.797529],
+          [30.823852, 59.797455],
+          [30.823747, 59.79762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.824395, 59.797529],
+          [30.824181, 59.797891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.823445, 59.798764],
+          [30.8236, 59.798408],
+          [30.822682, 59.798282]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.825031, 59.797788],
+          [30.823747, 59.79762],
+          [30.823172, 59.797531],
+          [30.822669, 59.797435],
+          [30.822351, 59.797363],
+          [30.822269, 59.79746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795794, 59.773476],
+          [30.795564, 59.772919],
+          [30.795486, 59.772769],
+          [30.795154, 59.772823],
+          [30.794478, 59.772188],
+          [30.794755, 59.772078],
+          [30.794766, 59.77204],
+          [30.794577, 59.771886],
+          [30.79577, 59.771329],
+          [30.796049, 59.771477],
+          [30.796328, 59.771354],
+          [30.796509, 59.771344],
+          [30.796695, 59.771273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793585, 59.769405],
+          [30.793087, 59.769234],
+          [30.792946, 59.769156],
+          [30.791728, 59.768722],
+          [30.791459, 59.768688],
+          [30.791226, 59.768818],
+          [30.790257, 59.76845],
+          [30.789898, 59.768366],
+          [30.789668, 59.768383],
+          [30.788389, 59.769344],
+          [30.788374, 59.769418],
+          [30.788381, 59.769525],
+          [30.788631, 59.769785],
+          [30.788685, 59.769865],
+          [30.788618, 59.76997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798233, 59.772549],
+          [30.795915, 59.773322],
+          [30.793782, 59.773386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796676, 59.770457],
+          [30.797198, 59.770219],
+          [30.797357, 59.770179],
+          [30.797718, 59.770018],
+          [30.797769, 59.770013],
+          [30.797823, 59.770022],
+          [30.798169, 59.770222]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795681, 59.769975],
+          [30.79628, 59.770241],
+          [30.796676, 59.770457],
+          [30.796714, 59.770536],
+          [30.796951, 59.770671],
+          [30.797029, 59.770685],
+          [30.797101, 59.770674],
+          [30.797765, 59.770379],
+          [30.797945, 59.770326],
+          [30.79841, 59.770105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.789785, 59.770156],
+          [30.788857, 59.769846],
+          [30.788685, 59.769865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797638, 59.770053],
+          [30.796856, 59.769719],
+          [30.796673, 59.769675],
+          [30.796475, 59.76959],
+          [30.796581, 59.769525],
+          [30.796472, 59.76948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.794545, 59.768717],
+          [30.795346, 59.7689],
+          [30.795464, 59.768908],
+          [30.79624, 59.769184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795943, 59.769415],
+          [30.796215, 59.769218],
+          [30.79624, 59.769184],
+          [30.796692, 59.768867]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.792884, 59.772039],
+          [30.792337, 59.771662],
+          [30.792317, 59.77154],
+          [30.792573, 59.771409],
+          [30.793433, 59.77183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.789636, 59.766543],
+          [30.788182, 59.767713],
+          [30.787553, 59.768195],
+          [30.786996, 59.768668],
+          [30.786239, 59.768441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79503, 59.768182],
+          [30.795635, 59.768091],
+          [30.795726, 59.768128],
+          [30.796002, 59.768356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.787247, 59.767691],
+          [30.785871, 59.768715],
+          [30.785305, 59.768399]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.789668, 59.768383],
+          [30.78961, 59.768273],
+          [30.790018, 59.76794],
+          [30.78943, 59.767698],
+          [30.789223, 59.767663],
+          [30.788182, 59.767713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793872, 59.772165],
+          [30.794659, 59.772982],
+          [30.79411, 59.773062],
+          [30.793985, 59.773166],
+          [30.793705, 59.773207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797524, 59.771759],
+          [30.797002, 59.771971],
+          [30.797255, 59.772116],
+          [30.797064, 59.772247],
+          [30.795724, 59.772627],
+          [30.79569, 59.772699],
+          [30.795486, 59.772769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.7844, 59.761977],
+          [30.784647, 59.761556],
+          [30.784585, 59.761486],
+          [30.784401, 59.761424],
+          [30.784202, 59.761448],
+          [30.78406, 59.761563],
+          [30.783956, 59.761702],
+          [30.783899, 59.761811],
+          [30.783906, 59.761867],
+          [30.784019, 59.762038]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771665, 59.764688],
+          [30.773165, 59.763998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781356, 59.765871],
+          [30.781644, 59.765755],
+          [30.781952, 59.76568],
+          [30.782875, 59.765553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.777105, 59.762603],
+          [30.776031, 59.762067]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.787846, 59.763764],
+          [30.787344, 59.763853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783335, 59.766694],
+          [30.783113, 59.766757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.77172, 59.763584],
+          [30.772379, 59.76392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.786642, 59.766452],
+          [30.786518, 59.766223],
+          [30.785204, 59.766437],
+          [30.785283, 59.766557],
+          [30.78507, 59.766632],
+          [30.783849, 59.766833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.779166, 59.76229],
+          [30.778525, 59.761362],
+          [30.778392, 59.761334],
+          [30.778412, 59.7613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.782892, 59.766819],
+          [30.783113, 59.766757],
+          [30.782993, 59.766653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771143, 59.763471],
+          [30.770603, 59.764063],
+          [30.770948, 59.764164],
+          [30.771444, 59.763615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.770948, 59.764164],
+          [30.771054, 59.764191],
+          [30.771469, 59.764052],
+          [30.771748, 59.763771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781356, 59.765871],
+          [30.780293, 59.766376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.780221, 59.761309],
+          [30.780189, 59.761252],
+          [30.780193, 59.761192],
+          [30.780345, 59.760961],
+          [30.780618, 59.760897]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.779874, 59.761035],
+          [30.779473, 59.761089],
+          [30.779175, 59.761142],
+          [30.779227, 59.761073],
+          [30.779138, 59.760908],
+          [30.778199, 59.760745],
+          [30.777854, 59.760952],
+          [30.777405, 59.761196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.782575, 59.76679],
+          [30.782198, 59.76656],
+          [30.781693, 59.766319],
+          [30.781683, 59.76628],
+          [30.781704, 59.766212],
+          [30.781857, 59.766103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775362, 59.762371],
+          [30.777644, 59.761332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.773165, 59.763998],
+          [30.773936, 59.763855],
+          [30.774406, 59.763816]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.782165, 59.761155],
+          [30.781942, 59.761513],
+          [30.781862, 59.761536],
+          [30.78063, 59.761335],
+          [30.780289, 59.761306],
+          [30.780221, 59.761309],
+          [30.78007, 59.761337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771968, 59.763884],
+          [30.771189, 59.763485],
+          [30.770878, 59.763391],
+          [30.770715, 59.76332],
+          [30.770581, 59.763199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783116, 59.762182],
+          [30.782955, 59.761934],
+          [30.782759, 59.761768],
+          [30.78269, 59.7616],
+          [30.782733, 59.7615],
+          [30.782912, 59.76128],
+          [30.783324, 59.761353],
+          [30.783389, 59.761386],
+          [30.783396, 59.76143],
+          [30.783289, 59.761623],
+          [30.78322, 59.761695],
+          [30.783089, 59.761768],
+          [30.782848, 59.761844],
+          [30.780648, 59.762227]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771271, 59.76435],
+          [30.772018, 59.764066],
+          [30.773048, 59.763639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.770735, 59.759801],
+          [30.771303, 59.759818],
+          [30.771359, 59.759882],
+          [30.77189, 59.759902],
+          [30.771908, 59.759953],
+          [30.772929, 59.759985],
+          [30.773063, 59.759943],
+          [30.773609, 59.759959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.761365, 59.762549],
+          [30.764098, 59.76279],
+          [30.765396, 59.762913],
+          [30.766617, 59.763119],
+          [30.766711, 59.763009],
+          [30.767088, 59.762636]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.764098, 59.76279],
+          [30.764395, 59.762196],
+          [30.76455, 59.762011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798153, 59.766781],
+          [30.797988, 59.766959],
+          [30.797812, 59.767191],
+          [30.797805, 59.767234],
+          [30.797835, 59.767261],
+          [30.798343, 59.767477],
+          [30.798399, 59.767541],
+          [30.798391, 59.767617],
+          [30.798341, 59.767691],
+          [30.797863, 59.767975],
+          [30.797301, 59.768374],
+          [30.797164, 59.768406],
+          [30.797038, 59.768409],
+          [30.796944, 59.76839],
+          [30.796362, 59.768164],
+          [30.79632, 59.768158],
+          [30.796278, 59.768166],
+          [30.796002, 59.768356],
+          [30.795844, 59.768606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802737, 59.769893],
+          [30.801308, 59.770611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785727, 59.763534],
+          [30.785877, 59.763842],
+          [30.785977, 59.763979],
+          [30.786132, 59.764043],
+          [30.786202, 59.764172],
+          [30.785314, 59.764327],
+          [30.785837, 59.765051],
+          [30.785871, 59.765109],
+          [30.785851, 59.765168],
+          [30.785712, 59.765202],
+          [30.784133, 59.765466],
+          [30.782944, 59.765656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796481, 59.768209],
+          [30.797953, 59.767311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.801332, 59.767955],
+          [30.801513, 59.767834],
+          [30.801617, 59.767799],
+          [30.801717, 59.767695],
+          [30.802612, 59.767108],
+          [30.801833, 59.766817],
+          [30.801693, 59.766793],
+          [30.801562, 59.766802],
+          [30.801463, 59.766833],
+          [30.800863, 59.767251],
+          [30.800095, 59.767314],
+          [30.79994, 59.767387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798554, 59.76897],
+          [30.798092, 59.768768],
+          [30.798015, 59.768738],
+          [30.797929, 59.768717],
+          [30.797325, 59.769101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785379, 59.76475],
+          [30.785485, 59.764898],
+          [30.784361, 59.76509],
+          [30.784546, 59.765397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803328, 59.770152],
+          [30.803143, 59.770239],
+          [30.80197, 59.77086],
+          [30.801928, 59.770869],
+          [30.801882, 59.770863],
+          [30.801443, 59.770678],
+          [30.800569, 59.770244],
+          [30.800269, 59.770071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798425, 59.772309],
+          [30.798625, 59.772138],
+          [30.799171, 59.77188],
+          [30.799189, 59.771853],
+          [30.799178, 59.771823],
+          [30.798981, 59.771711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800721, 59.77032],
+          [30.802401, 59.769559],
+          [30.802665, 59.769424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800763, 59.769831],
+          [30.800401, 59.769639],
+          [30.800103, 59.769563],
+          [30.798777, 59.768876]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.801842, 59.771304],
+          [30.801025, 59.771721],
+          [30.800659, 59.771934],
+          [30.800452, 59.772039],
+          [30.800293, 59.772085],
+          [30.799921, 59.772134],
+          [30.799773, 59.772186],
+          [30.799264, 59.772446],
+          [30.799115, 59.77249],
+          [30.798868, 59.772545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800941, 59.767802],
+          [30.80011, 59.768214],
+          [30.801548, 59.768882],
+          [30.801927, 59.768699],
+          [30.802, 59.768707],
+          [30.802513, 59.768969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803261, 59.769283],
+          [30.803587, 59.769439],
+          [30.803686, 59.769443],
+          [30.803848, 59.76936],
+          [30.803918, 59.769359],
+          [30.804336, 59.769557],
+          [30.80435, 59.769587],
+          [30.80433, 59.769617],
+          [30.803813, 59.769889],
+          [30.803745, 59.769903],
+          [30.803678, 59.769889],
+          [30.803554, 59.769833],
+          [30.803484, 59.769832],
+          [30.803234, 59.769965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.784636, 59.763957],
+          [30.784002, 59.764049],
+          [30.783973, 59.764201],
+          [30.784018, 59.764364],
+          [30.783889, 59.764441],
+          [30.783886, 59.764587],
+          [30.783981, 59.764733],
+          [30.78426, 59.764955],
+          [30.784361, 59.76509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.808372, 59.767385],
+          [30.808325, 59.767271],
+          [30.808222, 59.767221],
+          [30.807946, 59.767178],
+          [30.807613, 59.767176],
+          [30.80745, 59.767099],
+          [30.806938, 59.766989],
+          [30.806757, 59.767001],
+          [30.806639, 59.767077],
+          [30.806518, 59.767196],
+          [30.806177, 59.767199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800283, 59.774403],
+          [30.799959, 59.774206],
+          [30.799923, 59.774145],
+          [30.800492, 59.774122],
+          [30.800454, 59.773905],
+          [30.800586, 59.773879],
+          [30.800706, 59.773841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800454, 59.773905],
+          [30.800154, 59.773905],
+          [30.800109, 59.773647],
+          [30.800071, 59.7736],
+          [30.800001, 59.773578],
+          [30.799369, 59.77361]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.799563, 59.775928],
+          [30.799397, 59.77571],
+          [30.799469, 59.775645],
+          [30.799312, 59.775587],
+          [30.799122, 59.775531],
+          [30.798051, 59.775565],
+          [30.79792, 59.775592],
+          [30.797605, 59.775814],
+          [30.797589, 59.775856],
+          [30.79454, 59.77681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79515, 59.777561],
+          [30.795463, 59.777824]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.792662, 59.773095],
+          [30.792413, 59.773114],
+          [30.79174, 59.773197],
+          [30.791415, 59.773372],
+          [30.791698, 59.773911],
+          [30.791903, 59.774157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79796, 59.771106],
+          [30.797554, 59.770878],
+          [30.797549, 59.770828],
+          [30.797509, 59.770785],
+          [30.797434, 59.770743]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.794478, 59.76862],
+          [30.794622, 59.768661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793407, 59.765234],
+          [30.793328, 59.765307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795011, 59.769976],
+          [30.795943, 59.769415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.794377, 59.770453],
+          [30.794222, 59.770372],
+          [30.793882, 59.770219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.789618, 59.770718],
+          [30.788846, 59.770328],
+          [30.788827, 59.770163],
+          [30.78884, 59.770032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797198, 59.770219],
+          [30.796762, 59.770033],
+          [30.796689, 59.770024],
+          [30.796623, 59.770039],
+          [30.79628, 59.770241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795992, 59.770871],
+          [30.796062, 59.770821],
+          [30.796714, 59.770536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793562, 59.77118],
+          [30.793005, 59.770871],
+          [30.79266, 59.770723],
+          [30.793385, 59.7702],
+          [30.792786, 59.769997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.780148, 59.76661],
+          [30.780042, 59.766555],
+          [30.780333, 59.766396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79465, 59.777536],
+          [30.794199, 59.777666],
+          [30.793789, 59.777675],
+          [30.793307, 59.777674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781737, 59.76709],
+          [30.781144, 59.767407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798935, 59.769835],
+          [30.79841, 59.770105],
+          [30.798743, 59.770292],
+          [30.798761, 59.770317],
+          [30.798739, 59.770342],
+          [30.797265, 59.771009],
+          [30.797182, 59.771023],
+          [30.797094, 59.771008],
+          [30.796475, 59.77064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.77995, 59.768764],
+          [30.781168, 59.767819],
+          [30.781353, 59.767654],
+          [30.781403, 59.767581],
+          [30.781378, 59.767508],
+          [30.781144, 59.767407],
+          [30.780997, 59.767348],
+          [30.780434, 59.76717],
+          [30.78, 59.766996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795162, 59.770052],
+          [30.794358, 59.76965],
+          [30.794184, 59.76959],
+          [30.794026, 59.769472],
+          [30.793667, 59.769346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.791459, 59.768688],
+          [30.793466, 59.767223],
+          [30.79485, 59.767704],
+          [30.792946, 59.769156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.80091, 59.775745],
+          [30.799767, 59.776086],
+          [30.799563, 59.775928],
+          [30.795174, 59.777307],
+          [30.794936, 59.777135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797255, 59.772116],
+          [30.797855, 59.772444],
+          [30.798233, 59.772549],
+          [30.798619, 59.772419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795985, 59.771443],
+          [30.795146, 59.771849],
+          [30.794515, 59.771425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79456, 59.774915],
+          [30.794543, 59.774772],
+          [30.794252, 59.774794],
+          [30.794206, 59.774844],
+          [30.794217, 59.77493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79423, 59.769986],
+          [30.793882, 59.770219],
+          [30.793782, 59.77023],
+          [30.793487, 59.770127],
+          [30.793385, 59.7702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795075, 59.770586],
+          [30.795282, 59.770698],
+          [30.793823, 59.771329]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795508, 59.77239],
+          [30.79544, 59.772418],
+          [30.795351, 59.772476],
+          [30.794925, 59.772608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.792103, 59.766787],
+          [30.792381, 59.766527],
+          [30.792537, 59.766482],
+          [30.792768, 59.766383],
+          [30.791849, 59.766143],
+          [30.790018, 59.76794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796616, 59.76606],
+          [30.796432, 59.76614],
+          [30.796063, 59.766252],
+          [30.795561, 59.766357],
+          [30.794901, 59.766904],
+          [30.794241, 59.766668],
+          [30.793702, 59.767045],
+          [30.793466, 59.767223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.794473, 59.770089],
+          [30.794843, 59.769891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.792963, 59.7716],
+          [30.793256, 59.771443],
+          [30.793282, 59.771388],
+          [30.793237, 59.771343],
+          [30.792375, 59.770933],
+          [30.79266, 59.770723],
+          [30.792088, 59.770527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793875, 59.765454],
+          [30.793328, 59.765307],
+          [30.793029, 59.765572],
+          [30.793814, 59.765795],
+          [30.793867, 59.765852],
+          [30.793864, 59.765911],
+          [30.793464, 59.766273],
+          [30.793365, 59.766379]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802054, 59.765101],
+          [30.801936, 59.765105],
+          [30.801835, 59.765131],
+          [30.800311, 59.766147],
+          [30.800127, 59.766198],
+          [30.799934, 59.766228],
+          [30.799456, 59.766204],
+          [30.79927, 59.766216],
+          [30.798976, 59.766344],
+          [30.798417, 59.76682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79487, 59.772961],
+          [30.794659, 59.772982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798144, 59.769194],
+          [30.797604, 59.768924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.801994, 59.764218],
+          [30.799239, 59.766012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.799635, 59.774433],
+          [30.800047, 59.774263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.794788, 59.768535],
+          [30.794333, 59.768413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805092, 59.769537],
+          [30.804873, 59.769672],
+          [30.803653, 59.770305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79836, 59.769076],
+          [30.797792, 59.768804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797968, 59.769285],
+          [30.797431, 59.769034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796325, 59.769572],
+          [30.795943, 59.769415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797544, 59.765678],
+          [30.797111, 59.766007],
+          [30.796807, 59.766215]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.801018, 59.770891],
+          [30.801443, 59.770678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800993, 59.76418],
+          [30.801881, 59.764186],
+          [30.802316, 59.764299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.801234, 59.768736],
+          [30.801031, 59.768854]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795637, 59.773094],
+          [30.794481, 59.773124],
+          [30.793985, 59.773166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797227, 59.768697],
+          [30.797159, 59.768739],
+          [30.797084, 59.768758],
+          [30.796958, 59.768755],
+          [30.796789, 59.768717],
+          [30.795971, 59.768405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79567, 59.770993],
+          [30.795536, 59.770913],
+          [30.795463, 59.77081],
+          [30.795282, 59.770698]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796134, 59.767965],
+          [30.795661, 59.767774],
+          [30.795564, 59.767748],
+          [30.795174, 59.767691]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.80057, 59.764906],
+          [30.798821, 59.766075],
+          [30.79894, 59.766132],
+          [30.799027, 59.76613],
+          [30.799239, 59.766012],
+          [30.799562, 59.766136],
+          [30.802316, 59.764299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798582, 59.774759],
+          [30.799375, 59.775363],
+          [30.79978, 59.775266],
+          [30.799878, 59.775233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802384, 59.767372],
+          [30.801866, 59.767715],
+          [30.801783, 59.767721],
+          [30.800877, 59.767373],
+          [30.800847, 59.767307],
+          [30.800863, 59.767251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797854, 59.769342],
+          [30.798061, 59.769239],
+          [30.798554, 59.76897],
+          [30.799161, 59.769264],
+          [30.798465, 59.769619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800242, 59.769599],
+          [30.800367, 59.769384],
+          [30.800625, 59.769054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802855, 59.76541],
+          [30.801985, 59.765996],
+          [30.801932, 59.766005],
+          [30.801748, 59.765994],
+          [30.801698, 59.766006],
+          [30.8011, 59.766413],
+          [30.801032, 59.766432],
+          [30.800833, 59.766423],
+          [30.800745, 59.766437],
+          [30.799597, 59.767247],
+          [30.799461, 59.76731],
+          [30.799394, 59.767327],
+          [30.799325, 59.767323],
+          [30.799148, 59.76725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783798, 59.768311],
+          [30.784114, 59.768481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.754755, 59.748498],
+          [30.754707, 59.748814],
+          [30.754742, 59.748885],
+          [30.755327, 59.749403],
+          [30.755273, 59.749742],
+          [30.755199, 59.749822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.773783, 59.75857],
+          [30.773878, 59.758577],
+          [30.774057, 59.758604],
+          [30.774129, 59.758589],
+          [30.774161, 59.758538],
+          [30.774164, 59.75848],
+          [30.774097, 59.758364],
+          [30.773848, 59.758121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.776168, 59.760998],
+          [30.77636, 59.760844],
+          [30.776849, 59.760545],
+          [30.777322, 59.76074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774533, 59.7622],
+          [30.773355, 59.761959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775647, 59.759802],
+          [30.775578, 59.759916],
+          [30.775778, 59.759954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.761085, 59.752804],
+          [30.761406, 59.753067],
+          [30.760808, 59.753272],
+          [30.76049, 59.753406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.762408, 59.751381],
+          [30.76226, 59.751418],
+          [30.762173, 59.751556],
+          [30.761114, 59.752093],
+          [30.760193, 59.752501],
+          [30.759838, 59.75255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.78794, 59.765851],
+          [30.78366, 59.766557],
+          [30.783518, 59.766506],
+          [30.783399, 59.766478]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.811868, 59.764234],
+          [30.811745, 59.764705],
+          [30.811576, 59.764893]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.808713, 59.764037],
+          [30.808277, 59.764076],
+          [30.808001, 59.764466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804627, 59.763008],
+          [30.804327, 59.763397],
+          [30.804101, 59.763774]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.810146, 59.763942],
+          [30.809891, 59.764378],
+          [30.809647, 59.764745]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804975, 59.763064],
+          [30.804749, 59.763457],
+          [30.804688, 59.763602],
+          [30.80456, 59.76381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.809814, 59.763886],
+          [30.809508, 59.76428],
+          [30.80926, 59.76466]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805466, 59.76315],
+          [30.804987, 59.763923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.812949, 59.764622],
+          [30.812882, 59.764858],
+          [30.812906, 59.764889],
+          [30.813053, 59.764929],
+          [30.813122, 59.764961],
+          [30.813193, 59.765004],
+          [30.813215, 59.765037],
+          [30.81322, 59.765081],
+          [30.813177, 59.765163],
+          [30.813094, 59.765274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.809299, 59.763799],
+          [30.809156, 59.763977],
+          [30.80906, 59.764272],
+          [30.808858, 59.764606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805874, 59.763219],
+          [30.805648, 59.763617],
+          [30.805463, 59.764003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806314, 59.763294],
+          [30.805923, 59.764069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806685, 59.763357],
+          [30.806556, 59.763757],
+          [30.806336, 59.764162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.811454, 59.764164],
+          [30.81091, 59.764942]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.807302, 59.763461],
+          [30.806813, 59.764235]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.810761, 59.764307],
+          [30.810774, 59.764512],
+          [30.810545, 59.764874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.807062, 59.763854],
+          [30.807348, 59.763895],
+          [30.807413, 59.76396],
+          [30.807181, 59.764298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.808885, 59.763729],
+          [30.808713, 59.764037],
+          [30.808704, 59.76415],
+          [30.80846, 59.764543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.810854, 59.764062],
+          [30.810761, 59.764307],
+          [30.810385, 59.764423],
+          [30.810088, 59.764806]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.808095, 59.763595],
+          [30.807781, 59.764035],
+          [30.807823, 59.764135],
+          [30.80771, 59.764301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79938, 59.766066],
+          [30.79927, 59.766216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.763294, 59.754379],
+          [30.762856, 59.75569],
+          [30.763207, 59.75584],
+          [30.763456, 59.755993],
+          [30.763735, 59.756209],
+          [30.763955, 59.756606],
+          [30.764274, 59.756907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.762085, 59.760363],
+          [30.761945, 59.760345],
+          [30.761815, 59.760308],
+          [30.761737, 59.760271],
+          [30.761605, 59.760132],
+          [30.761436, 59.759928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803158, 59.789084],
+          [30.803785, 59.789543],
+          [30.804532, 59.790115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.75753, 59.748957],
+          [30.757238, 59.749072],
+          [30.757012, 59.749132],
+          [30.7568, 59.749138],
+          [30.756421, 59.749661],
+          [30.75639, 59.750028],
+          [30.756076, 59.750422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.755505, 59.747922],
+          [30.754853, 59.748004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.754808, 59.748121],
+          [30.755597, 59.748157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.754755, 59.748498],
+          [30.754873, 59.74846],
+          [30.755537, 59.748402],
+          [30.756139, 59.748382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.754853, 59.748004],
+          [30.754734, 59.748312],
+          [30.754755, 59.748498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.754853, 59.748004],
+          [30.754522, 59.748025],
+          [30.754167, 59.748109],
+          [30.7536, 59.748148],
+          [30.753431, 59.74818],
+          [30.753126, 59.748253],
+          [30.752715, 59.748448],
+          [30.751862, 59.749175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.763831, 59.754798],
+          [30.763169, 59.754753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.758122, 59.757236],
+          [30.759493, 59.757171],
+          [30.759625, 59.75722],
+          [30.759755, 59.757418],
+          [30.759667, 59.757503],
+          [30.75934, 59.757646],
+          [30.758658, 59.757825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.758745, 59.756412],
+          [30.758482, 59.756369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.773624, 59.759846],
+          [30.773083, 59.759825],
+          [30.772894, 59.759769],
+          [30.772268, 59.759721],
+          [30.771416, 59.75964],
+          [30.770821, 59.759613],
+          [30.770645, 59.759653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.778282, 59.761327],
+          [30.77886, 59.762234],
+          [30.779217, 59.762302],
+          [30.779824, 59.762203],
+          [30.780043, 59.762526],
+          [30.780362, 59.76296],
+          [30.781061, 59.76286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785326, 59.768139],
+          [30.7852, 59.768156],
+          [30.784634, 59.767917],
+          [30.784524, 59.767854],
+          [30.784269, 59.767335],
+          [30.784253, 59.767196],
+          [30.784333, 59.767142],
+          [30.784451, 59.767106],
+          [30.784585, 59.767087],
+          [30.784854, 59.767088],
+          [30.786117, 59.767628],
+          [30.786932, 59.767925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.769697, 59.759663],
+          [30.769914, 59.759458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771629, 59.760369],
+          [30.77355, 59.760416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.77412, 59.763506],
+          [30.773476, 59.763845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.773618, 59.763913],
+          [30.772765, 59.763502],
+          [30.773413, 59.763166],
+          [30.77412, 59.763506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781952, 59.76568],
+          [30.781624, 59.765365],
+          [30.781524, 59.765337],
+          [30.781199, 59.76505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771408, 59.764508],
+          [30.772904, 59.763854],
+          [30.773165, 59.763998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.768538, 59.759484],
+          [30.768385, 59.759742],
+          [30.768983, 59.759869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.786664, 59.769264],
+          [30.786045, 59.76906],
+          [30.786223, 59.768933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.786117, 59.767628],
+          [30.785326, 59.768139],
+          [30.786099, 59.768545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774406, 59.763816],
+          [30.774754, 59.763621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.782252, 59.766889],
+          [30.782385, 59.766962],
+          [30.782843, 59.767134],
+          [30.783548, 59.767471],
+          [30.783763, 59.7676],
+          [30.783729, 59.767657],
+          [30.78329, 59.767862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.786812, 59.769132],
+          [30.785749, 59.768772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771135, 59.760165],
+          [30.770783, 59.761167],
+          [30.773402, 59.761553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.772385, 59.760891],
+          [30.772362, 59.761107],
+          [30.771998, 59.761236],
+          [30.771919, 59.761336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.768591, 59.761314],
+          [30.769278, 59.760304],
+          [30.769392, 59.760183],
+          [30.769302, 59.760033],
+          [30.769327, 59.759938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771506, 59.761455],
+          [30.771133, 59.761403],
+          [30.771629, 59.760369],
+          [30.771673, 59.760254]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.768827, 59.759935],
+          [30.769302, 59.760033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774565, 59.76372],
+          [30.77412, 59.763506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775119, 59.763981],
+          [30.774955, 59.764072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775434, 59.764133],
+          [30.77527, 59.764218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.77579, 59.764132],
+          [30.775615, 59.764221],
+          [30.775431, 59.764296],
+          [30.774406, 59.763816]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775792, 59.764305],
+          [30.775017, 59.763929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774845, 59.76402],
+          [30.775188, 59.763836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.776373, 59.76286],
+          [30.776955, 59.762642],
+          [30.777105, 59.762603],
+          [30.77721, 59.762584],
+          [30.777321, 59.762575],
+          [30.777572, 59.762586],
+          [30.777694, 59.76261],
+          [30.778208, 59.762848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775813, 59.76153],
+          [30.776496, 59.761855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.778392, 59.761334],
+          [30.77831, 59.761371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774258, 59.764203],
+          [30.774499, 59.76409],
+          [30.774722, 59.763963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774573, 59.760946],
+          [30.774772, 59.760806],
+          [30.775454, 59.760521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.775778, 59.759954],
+          [30.777331, 59.760201],
+          [30.777883, 59.760447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.772746, 59.762181],
+          [30.77292, 59.762228],
+          [30.773097, 59.762265],
+          [30.77331, 59.762277]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.759573, 59.755861],
+          [30.759245, 59.755786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.779292, 59.764839],
+          [30.780828, 59.765589],
+          [30.781356, 59.765871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783072, 59.764291],
+          [30.782745, 59.764341],
+          [30.782903, 59.764603],
+          [30.783889, 59.764441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774703, 59.759641],
+          [30.773931, 59.759552],
+          [30.773969, 59.759398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774612, 59.759468],
+          [30.773682, 59.759367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781356, 59.765871],
+          [30.782485, 59.766387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781435, 59.764501],
+          [30.780339, 59.764697],
+          [30.780079, 59.76485],
+          [30.779703, 59.76504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.780866, 59.765162],
+          [30.780262, 59.764743]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.782412, 59.764885],
+          [30.781956, 59.764962],
+          [30.781773, 59.764966],
+          [30.781199, 59.76505],
+          [30.780809, 59.765122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781258, 59.764247],
+          [30.781773, 59.764966],
+          [30.78222, 59.765643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.773593, 59.762405],
+          [30.773895, 59.762069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.772271, 59.760385],
+          [30.771817, 59.760546],
+          [30.771753, 59.760937],
+          [30.771643, 59.760975],
+          [30.77135, 59.76095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.78713, 59.766339],
+          [30.786947, 59.766012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785204, 59.766437],
+          [30.783747, 59.766684],
+          [30.78366, 59.766557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783662, 59.765542],
+          [30.783689, 59.765582],
+          [30.783761, 59.765634],
+          [30.784123, 59.765575],
+          [30.784601, 59.766203],
+          [30.783704, 59.766338],
+          [30.783416, 59.76639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783439, 59.764361],
+          [30.783522, 59.764361],
+          [30.783638, 59.764482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774561, 59.761943],
+          [30.77433, 59.762157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795593, 59.767166],
+          [30.795837, 59.767252],
+          [30.796453, 59.766808],
+          [30.796163, 59.766706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.778499, 59.765208],
+          [30.779689, 59.765796],
+          [30.7806, 59.766232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785508, 59.76896],
+          [30.785309, 59.769059],
+          [30.784737, 59.769371],
+          [30.783922, 59.769242],
+          [30.78285, 59.768734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783145, 59.763017],
+          [30.782999, 59.762823],
+          [30.782995, 59.762758],
+          [30.78302, 59.76268],
+          [30.783025, 59.762609],
+          [30.783, 59.762543],
+          [30.782841, 59.762383],
+          [30.78275, 59.762241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.759932, 59.760032],
+          [30.759268, 59.76005],
+          [30.75895, 59.760077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785028, 59.763288],
+          [30.786437, 59.763086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785871, 59.765109],
+          [30.786053, 59.765079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785553, 59.764285],
+          [30.786053, 59.765079],
+          [30.786607, 59.764996],
+          [30.786653, 59.764959],
+          [30.786202, 59.764172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.780545, 59.763735],
+          [30.780261, 59.763321],
+          [30.781103, 59.763164],
+          [30.78123, 59.763121],
+          [30.781921, 59.763009],
+          [30.78202, 59.763019],
+          [30.782098, 59.763064],
+          [30.782356, 59.763465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.78302, 59.76268],
+          [30.783378, 59.762697],
+          [30.783466, 59.762724],
+          [30.783531, 59.762775],
+          [30.78378, 59.76316],
+          [30.783764, 59.763205],
+          [30.7837, 59.76323],
+          [30.781545, 59.763606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781139, 59.761849],
+          [30.780479, 59.761966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.779494, 59.76043],
+          [30.77958, 59.760424],
+          [30.77966, 59.760431],
+          [30.780229, 59.760515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.777526, 59.763194],
+          [30.778044, 59.763457],
+          [30.778092, 59.763503],
+          [30.77809, 59.763554],
+          [30.77804, 59.763599],
+          [30.777787, 59.763742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.764059, 59.760379],
+          [30.764688, 59.760339],
+          [30.764764, 59.760323],
+          [30.76484, 59.760264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.759289, 59.759189],
+          [30.758637, 59.759301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.763003, 59.760857],
+          [30.763352, 59.760972],
+          [30.763422, 59.761034],
+          [30.763435, 59.761112],
+          [30.763213, 59.761526],
+          [30.763086, 59.761681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.763336, 59.761738],
+          [30.763207, 59.76189],
+          [30.762808, 59.761801],
+          [30.762566, 59.76208],
+          [30.762548, 59.762128],
+          [30.762564, 59.762178],
+          [30.762652, 59.762279],
+          [30.762691, 59.762304],
+          [30.762754, 59.762316],
+          [30.7633, 59.762365],
+          [30.76336, 59.762361],
+          [30.7634, 59.762341],
+          [30.763847, 59.761849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.770085, 59.763626],
+          [30.77015, 59.763454],
+          [30.770135, 59.763415],
+          [30.770095, 59.763383],
+          [30.769894, 59.763295]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793636, 59.777389],
+          [30.793649, 59.777814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79328, 59.773497],
+          [30.793275, 59.773439],
+          [30.792951, 59.772896],
+          [30.792513, 59.772211],
+          [30.792472, 59.772172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781059, 59.768496],
+          [30.781245, 59.768369],
+          [30.781245, 59.768225],
+          [30.781524, 59.768023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.778925, 59.768262],
+          [30.778548, 59.768137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774827, 59.768768],
+          [30.777721, 59.768487],
+          [30.777943, 59.768458],
+          [30.778134, 59.768404],
+          [30.778314, 59.768319],
+          [30.778993, 59.767791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.782698, 59.768481],
+          [30.783142, 59.768199],
+          [30.783265, 59.768169],
+          [30.783396, 59.768188],
+          [30.783488, 59.768229],
+          [30.783517, 59.768282],
+          [30.783482, 59.768334],
+          [30.783042, 59.768615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.781112, 59.767862],
+          [30.783042, 59.768615],
+          [30.782417, 59.769001],
+          [30.781095, 59.769116],
+          [30.77995, 59.768764],
+          [30.779274, 59.76893],
+          [30.778791, 59.768976],
+          [30.778611, 59.768504],
+          [30.779369, 59.767919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.782417, 59.769001],
+          [30.780532, 59.768304],
+          [30.779212, 59.767867],
+          [30.778059, 59.767466],
+          [30.777871, 59.767417],
+          [30.777729, 59.767405],
+          [30.777211, 59.767448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.779212, 59.767867],
+          [30.779424, 59.767705],
+          [30.779569, 59.767673],
+          [30.77974, 59.76768],
+          [30.780887, 59.768033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.792099, 59.774495],
+          [30.792339, 59.774468],
+          [30.792742, 59.774381],
+          [30.792958, 59.77437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805948, 59.788124],
+          [30.80679, 59.787847]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.815559, 59.794238],
+          [30.815819, 59.793825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.791635, 59.76573],
+          [30.791772, 59.765994],
+          [30.791927, 59.76609],
+          [30.79236, 59.766213],
+          [30.793068, 59.766353],
+          [30.793365, 59.766379],
+          [30.794102, 59.766541],
+          [30.795235, 59.765678],
+          [30.795323, 59.765597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803328, 59.770152],
+          [30.80403, 59.770484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797373, 59.772456],
+          [30.797064, 59.772247]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.832801, 59.794173],
+          [30.833157, 59.793934],
+          [30.833666, 59.793912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.767239, 59.752537],
+          [30.767143, 59.752513],
+          [30.766718, 59.752251],
+          [30.766439, 59.752136],
+          [30.765847, 59.752369],
+          [30.765756, 59.752422],
+          [30.765761, 59.752542]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.831456, 59.77986],
+          [30.830837, 59.780187],
+          [30.83026, 59.780714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.816309, 59.775689],
+          [30.814333, 59.776297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.834069, 59.774415],
+          [30.833562, 59.774609],
+          [30.832128, 59.775071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805689, 59.773052],
+          [30.805903, 59.773213],
+          [30.805956, 59.773278],
+          [30.805956, 59.77332],
+          [30.805887, 59.773376],
+          [30.805754, 59.773449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806125, 59.774152],
+          [30.805339, 59.774396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805394, 59.773127],
+          [30.805533, 59.773302],
+          [30.805733, 59.773429],
+          [30.805837, 59.773526],
+          [30.805983, 59.773775],
+          [30.806042, 59.774027],
+          [30.806125, 59.774152],
+          [30.80623, 59.774256],
+          [30.806309, 59.77431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800101, 59.767594],
+          [30.79992, 59.767697],
+          [30.799847, 59.767712],
+          [30.799769, 59.767701],
+          [30.799449, 59.767559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806298, 59.768918],
+          [30.806101, 59.768915],
+          [30.806029, 59.768923],
+          [30.805967, 59.768945],
+          [30.805854, 59.76902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804869, 59.768087],
+          [30.804715, 59.768187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804053, 59.765454],
+          [30.803862, 59.765587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804921, 59.769314],
+          [30.805078, 59.769188],
+          [30.805064, 59.769143],
+          [30.804697, 59.768959],
+          [30.803777, 59.768614],
+          [30.803728, 59.768612],
+          [30.803695, 59.76862],
+          [30.803448, 59.76878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.80572, 59.767705],
+          [30.805083, 59.768119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806122, 59.766366],
+          [30.805999, 59.766258],
+          [30.805852, 59.766161],
+          [30.805777, 59.766086],
+          [30.805738, 59.765826],
+          [30.805688, 59.765695],
+          [30.805581, 59.765623],
+          [30.804245, 59.765143],
+          [30.804063, 59.76517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804063, 59.76517],
+          [30.803995, 59.765231],
+          [30.803884, 59.765394],
+          [30.803765, 59.765476],
+          [30.803709, 59.76548],
+          [30.802931, 59.765205],
+          [30.802842, 59.765194],
+          [30.802771, 59.765206],
+          [30.80261, 59.765323]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805856, 59.766677],
+          [30.805762, 59.766648],
+          [30.805513, 59.766615],
+          [30.805411, 59.766592],
+          [30.804842, 59.766407],
+          [30.804772, 59.766354],
+          [30.80478, 59.766293],
+          [30.805136, 59.766037],
+          [30.805191, 59.765973],
+          [30.805211, 59.765913],
+          [30.805158, 59.765844],
+          [30.803884, 59.765394]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804063, 59.76517],
+          [30.8038, 59.765089],
+          [30.803645, 59.764996],
+          [30.802791, 59.764694],
+          [30.802683, 59.764695],
+          [30.802054, 59.765101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803542, 59.767801],
+          [30.802273, 59.767331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802866, 59.768283],
+          [30.801632, 59.767836],
+          [30.801513, 59.767834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.799447, 59.767142],
+          [30.799231, 59.767284]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796593, 59.768836],
+          [30.796789, 59.768717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793522, 59.771594],
+          [30.793256, 59.771443]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793005, 59.770871],
+          [30.793181, 59.770801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.7942, 59.771543],
+          [30.793562, 59.77118],
+          [30.793237, 59.771343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793015, 59.771238],
+          [30.793347, 59.771061]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79411, 59.773062],
+          [30.793637, 59.772307],
+          [30.793629, 59.772272],
+          [30.793671, 59.77224],
+          [30.793951, 59.772135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796322, 59.770707],
+          [30.795573, 59.770292]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797272, 59.769897],
+          [30.797276, 59.769824],
+          [30.797234, 59.769781],
+          [30.797188, 59.76976],
+          [30.79703, 59.769713],
+          [30.796665, 59.769551],
+          [30.796581, 59.769525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798712, 59.772091],
+          [30.798063, 59.771738],
+          [30.797904, 59.771684],
+          [30.79777, 59.771608],
+          [30.797758, 59.771578],
+          [30.797777, 59.771551],
+          [30.79819, 59.771368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798154, 59.771237],
+          [30.797932, 59.771118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803398, 59.769213],
+          [30.803174, 59.769102],
+          [30.803076, 59.769087],
+          [30.802968, 59.769109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.80145, 59.771107],
+          [30.801355, 59.771155]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802134, 59.769679],
+          [30.802286, 59.769748],
+          [30.802419, 59.769791],
+          [30.802682, 59.76992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802366, 59.769044],
+          [30.802191, 59.768955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.800577, 59.769732],
+          [30.802342, 59.768882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.799909, 59.769661],
+          [30.800103, 59.769563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.799347, 59.770047],
+          [30.7997, 59.769865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798825, 59.769435],
+          [30.799794, 59.769911],
+          [30.799864, 59.769911],
+          [30.800401, 59.769639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.799907, 59.767916],
+          [30.800014, 59.768049],
+          [30.80011, 59.768214],
+          [30.798977, 59.768754],
+          [30.798777, 59.768876],
+          [30.798573, 59.76898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798896, 59.77087],
+          [30.79872, 59.770776]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795591, 59.768321],
+          [30.795286, 59.768232],
+          [30.795158, 59.768222],
+          [30.795018, 59.768223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.783221, 59.766065],
+          [30.78308, 59.766109],
+          [30.78245, 59.766372]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.761649, 59.760889],
+          [30.761947, 59.761125],
+          [30.761955, 59.761222],
+          [30.761796, 59.761411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814264, 59.770082],
+          [30.814289, 59.76911]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.830257, 59.769487],
+          [30.830171, 59.769404],
+          [30.82997, 59.769273],
+          [30.829823, 59.769281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.818983, 59.788642],
+          [30.81944, 59.788935],
+          [30.81951, 59.789024],
+          [30.819612, 59.789102],
+          [30.819617, 59.789164],
+          [30.819488, 59.789251],
+          [30.817867, 59.790048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.817283, 59.789607],
+          [30.817455, 59.789712],
+          [30.817589, 59.789812],
+          [30.818013, 59.790171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.779208, 59.763747],
+          [30.779358, 59.763829],
+          [30.779361, 59.76389],
+          [30.779279, 59.763956],
+          [30.779157, 59.76399],
+          [30.778922, 59.76404],
+          [30.778662, 59.764179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.780728, 59.761351],
+          [30.780936, 59.761064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.769274, 59.761371],
+          [30.769353, 59.761393],
+          [30.769391, 59.761413],
+          [30.769386, 59.761435],
+          [30.769316, 59.761514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771612, 59.763054],
+          [30.771565, 59.762959],
+          [30.771162, 59.763013],
+          [30.77121, 59.76311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.77434, 59.761849],
+          [30.774178, 59.761815],
+          [30.774283, 59.761674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.826076, 59.797763],
+          [30.82573, 59.798602],
+          [30.825679, 59.798866],
+          [30.825008, 59.798821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.826397, 59.798749],
+          [30.82571, 59.798703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.8257, 59.798759],
+          [30.824922, 59.798702],
+          [30.824963, 59.798585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.791827, 59.771822],
+          [30.791605, 59.771858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.778348, 59.765416],
+          [30.777986, 59.765605]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771834, 59.761496],
+          [30.772295, 59.761574],
+          [30.772407, 59.761407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.771298, 59.761059],
+          [30.770841, 59.761002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.772595, 59.760317],
+          [30.772639, 59.759978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.777984, 59.760396],
+          [30.778055, 59.760423],
+          [30.778143, 59.76044],
+          [30.779656, 59.760692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.791296, 59.771127],
+          [30.79153, 59.770949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796352, 59.766564],
+          [30.797988, 59.766755],
+          [30.798417, 59.76682],
+          [30.798655, 59.766884],
+          [30.799518, 59.767166],
+          [30.799742, 59.767266],
+          [30.79982, 59.767325],
+          [30.79994, 59.767387],
+          [30.800941, 59.767802],
+          [30.803129, 59.768664]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774649, 59.76214],
+          [30.773647, 59.762651],
+          [30.773148, 59.762823],
+          [30.772729, 59.762895],
+          [30.769894, 59.763295],
+          [30.769724, 59.763294],
+          [30.769563, 59.763265],
+          [30.767518, 59.762751],
+          [30.767088, 59.762636],
+          [30.76455, 59.762011],
+          [30.763847, 59.761849],
+          [30.762169, 59.761484],
+          [30.760687, 59.761193],
+          [30.760528, 59.76115],
+          [30.760479, 59.761068],
+          [30.760488, 59.760595],
+          [30.760391, 59.760225],
+          [30.760126, 59.759492],
+          [30.759967, 59.759375],
+          [30.759904, 59.759276],
+          [30.75985, 59.758908],
+          [30.759779, 59.758791],
+          [30.75963, 59.758633],
+          [30.758293, 59.757515],
+          [30.758145, 59.757318],
+          [30.75812, 59.757251],
+          [30.758147, 59.757003],
+          [30.758188, 59.756901],
+          [30.758531, 59.75628],
+          [30.758621, 59.756179],
+          [30.759501, 59.755623],
+          [30.759676, 59.755526],
+          [30.760333, 59.755091],
+          [30.760806, 59.754715],
+          [30.760963, 59.754531],
+          [30.761066, 59.754266],
+          [30.76108, 59.754073],
+          [30.761053, 59.753978],
+          [30.760902, 59.753802],
+          [30.760559, 59.753463],
+          [30.760423, 59.753352],
+          [30.760259, 59.753265],
+          [30.760023, 59.753179],
+          [30.758715, 59.75296],
+          [30.758299, 59.752876],
+          [30.757186, 59.752522],
+          [30.755699, 59.75198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802117, 59.771442],
+          [30.799814, 59.770292],
+          [30.799031, 59.769881],
+          [30.797325, 59.769101],
+          [30.796692, 59.768867],
+          [30.796229, 59.768716],
+          [30.795844, 59.768606],
+          [30.794944, 59.768389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.786632, 59.763391],
+          [30.784477, 59.763723],
+          [30.782077, 59.764132],
+          [30.78176, 59.764166],
+          [30.780142, 59.764428],
+          [30.779909, 59.764482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.828217, 59.780698],
+          [30.826582, 59.781711],
+          [30.823584, 59.783614],
+          [30.820404, 59.785596],
+          [30.81899, 59.786467],
+          [30.817369, 59.787411],
+          [30.814224, 59.78937],
+          [30.812724, 59.790319],
+          [30.809686, 59.792271],
+          [30.807985, 59.793337],
+          [30.807736, 59.793525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795992, 59.770871],
+          [30.792884, 59.772039],
+          [30.792337, 59.772216],
+          [30.792126, 59.772265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.795992, 59.770871],
+          [30.795222, 59.770448],
+          [30.794635, 59.770159],
+          [30.79423, 59.769986],
+          [30.793246, 59.769648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803129, 59.768664],
+          [30.802135, 59.769164],
+          [30.799814, 59.770292],
+          [30.79946, 59.770457],
+          [30.797072, 59.771492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79982, 59.767325],
+          [30.797196, 59.768978],
+          [30.79709, 59.769085],
+          [30.79506, 59.770365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79153, 59.770949],
+          [30.793246, 59.769648],
+          [30.794545, 59.768717],
+          [30.794878, 59.768461],
+          [30.794944, 59.768389],
+          [30.794994, 59.768303],
+          [30.795207, 59.767578],
+          [30.795293, 59.767443],
+          [30.79575, 59.767019],
+          [30.796807, 59.766215],
+          [30.796616, 59.76606],
+          [30.796381, 59.765923],
+          [30.79617, 59.765827],
+          [30.795028, 59.765519],
+          [30.794535, 59.7654],
+          [30.792561, 59.765109],
+          [30.792046, 59.765044],
+          [30.791359, 59.764871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806309, 59.77431],
+          [30.808891, 59.776392],
+          [30.812123, 59.778936],
+          [30.815728, 59.781852],
+          [30.820404, 59.785596],
+          [30.821604, 59.786578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804141, 59.791406],
+          [30.806705, 59.789943],
+          [30.809805, 59.788104],
+          [30.811471, 59.787202],
+          [30.813083, 59.786279],
+          [30.814687, 59.785314],
+          [30.819489, 59.782578],
+          [30.821298, 59.781805],
+          [30.823045, 59.781028],
+          [30.826575, 59.779418],
+          [30.831767, 59.777026],
+          [30.833578, 59.776237],
+          [30.835337, 59.775451],
+          [30.838877, 59.773763],
+          [30.841891, 59.772463],
+          [30.844253, 59.771414],
+          [30.844523, 59.771356],
+          [30.844816, 59.771438],
+          [30.845268, 59.771621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.804627, 59.763008],
+          [30.811868, 59.764234]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.793049, 59.77496],
+          [30.7941, 59.774935],
+          [30.798334, 59.774754],
+          [30.798582, 59.774759],
+          [30.798878, 59.7748],
+          [30.799034, 59.774799],
+          [30.799199, 59.774779],
+          [30.799317, 59.774753],
+          [30.800283, 59.774403],
+          [30.80111, 59.774136]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.809327, 59.773386],
+          [30.806544, 59.77423],
+          [30.806309, 59.77431],
+          [30.803742, 59.775093],
+          [30.803046, 59.775314],
+          [30.802337, 59.775568],
+          [30.800369, 59.776196],
+          [30.796128, 59.777619],
+          [30.79371, 59.778371],
+          [30.793525, 59.778409],
+          [30.793336, 59.778415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.761736, 59.759877],
+          [30.760345, 59.760091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.767981, 59.762144],
+          [30.768591, 59.761314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.780764, 59.762404],
+          [30.778511, 59.762787],
+          [30.778208, 59.762848],
+          [30.778022, 59.762916],
+          [30.777134, 59.763426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.76985, 59.762606],
+          [30.767981, 59.762144],
+          [30.763803, 59.760992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.822666, 59.77848],
+          [30.819233, 59.780131],
+          [30.815728, 59.781852],
+          [30.810569, 59.784303],
+          [30.80371, 59.787681],
+          [30.80284, 59.788086],
+          [30.801138, 59.788928],
+          [30.800904, 59.788987]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806664, 59.783334],
+          [30.804749, 59.784044],
+          [30.80289, 59.784767],
+          [30.800823, 59.785524],
+          [30.799558, 59.785973],
+          [30.798598, 59.786363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798392, 59.776856],
+          [30.800964, 59.778865],
+          [30.801031, 59.778905],
+          [30.804336, 59.78147],
+          [30.806664, 59.783334],
+          [30.80886, 59.78514],
+          [30.814224, 59.78937],
+          [30.816166, 59.79088],
+          [30.816554, 59.790468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.808248, 59.791161],
+          [30.805972, 59.792548]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.794498, 59.778122],
+          [30.800936, 59.783144],
+          [30.80289, 59.784767],
+          [30.811174, 59.791322],
+          [30.813414, 59.793053],
+          [30.814057, 59.793525],
+          [30.814146, 59.793552],
+          [30.814262, 59.793571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.818983, 59.788642],
+          [30.817369, 59.787411],
+          [30.812303, 59.783454],
+          [30.808184, 59.780218],
+          [30.802337, 59.775568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805249, 59.788853],
+          [30.802346, 59.790228]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.813304, 59.795007],
+          [30.812261, 59.794277],
+          [30.811005, 59.793251],
+          [30.809686, 59.792271],
+          [30.808248, 59.791161],
+          [30.806705, 59.789943],
+          [30.80371, 59.787681],
+          [30.800823, 59.785524],
+          [30.798781, 59.783831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.80284, 59.788086],
+          [30.799558, 59.785973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.794026, 59.781119],
+          [30.794215, 59.78108],
+          [30.794384, 59.781033],
+          [30.796107, 59.780513],
+          [30.801031, 59.778905],
+          [30.804969, 59.777663],
+          [30.810809, 59.775772],
+          [30.814759, 59.774467],
+          [30.818678, 59.77323],
+          [30.826606, 59.770648],
+          [30.828593, 59.770028],
+          [30.830559, 59.76939],
+          [30.831159, 59.769249],
+          [30.832014, 59.76937],
+          [30.833524, 59.769613],
+          [30.835798, 59.77134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.80425, 59.774944],
+          [30.810176, 59.77957],
+          [30.814021, 59.782664],
+          [30.816335, 59.784382],
+          [30.820723, 59.787824]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.840462, 59.775044],
+          [30.838877, 59.773763],
+          [30.835798, 59.77134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774649, 59.76214],
+          [30.775218, 59.76244],
+          [30.775362, 59.762371],
+          [30.776373, 59.76286],
+          [30.776243, 59.762934],
+          [30.776234, 59.762985],
+          [30.776289, 59.763037],
+          [30.777134, 59.763426],
+          [30.777787, 59.763742],
+          [30.778862, 59.764278],
+          [30.779062, 59.764326],
+          [30.779252, 59.764334],
+          [30.779641, 59.764373],
+          [30.779799, 59.764416],
+          [30.779909, 59.764482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.817283, 59.789607],
+          [30.816762, 59.789189],
+          [30.815718, 59.788437],
+          [30.813083, 59.786279],
+          [30.810569, 59.784303],
+          [30.803037, 59.778274],
+          [30.800369, 59.776196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.839339, 59.775612],
+          [30.840462, 59.775044],
+          [30.843605, 59.77338],
+          [30.846433, 59.771845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.808293, 59.773696],
+          [30.810809, 59.775772],
+          [30.814132, 59.778324],
+          [30.817474, 59.780989],
+          [30.819489, 59.782578],
+          [30.821994, 59.784604],
+          [30.823972, 59.786138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.765439, 59.753631],
+          [30.764589, 59.75297],
+          [30.765761, 59.752542],
+          [30.766666, 59.753214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.753691, 59.750926],
+          [30.751311, 59.749772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.802841, 59.782499],
+          [30.801203, 59.783058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.752409, 59.751853],
+          [30.752981, 59.751889],
+          [30.755699, 59.75198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.76108, 59.754073],
+          [30.762233, 59.754078],
+          [30.763015, 59.754098],
+          [30.763382, 59.754145],
+          [30.763612, 59.754139],
+          [30.76375, 59.75416],
+          [30.764208, 59.754049],
+          [30.767408, 59.752969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.753691, 59.750926],
+          [30.753343, 59.751095],
+          [30.752409, 59.751853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.755199, 59.749822],
+          [30.751862, 59.749175],
+          [30.751311, 59.749772],
+          [30.750329, 59.750779],
+          [30.752185, 59.751815],
+          [30.752409, 59.751853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79652, 59.777486],
+          [30.802841, 59.782499],
+          [30.807155, 59.785985],
+          [30.809805, 59.788104],
+          [30.812724, 59.790319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.820047, 59.769883],
+          [30.822638, 59.771942],
+          [30.825817, 59.774539],
+          [30.832249, 59.779451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.830661, 59.780347],
+          [30.830458, 59.780272],
+          [30.82828, 59.778626],
+          [30.824249, 59.775513],
+          [30.82391, 59.775199],
+          [30.820655, 59.772582],
+          [30.818133, 59.770518]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.812217, 59.772451],
+          [30.818063, 59.777071],
+          [30.820842, 59.779363],
+          [30.823045, 59.781028],
+          [30.825113, 59.782638],
+          [30.826949, 59.784104]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.824114, 59.768668],
+          [30.829863, 59.773248],
+          [30.833578, 59.776237],
+          [30.835661, 59.777878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.811399, 59.774025],
+          [30.812783, 59.775115],
+          [30.813931, 59.775973],
+          [30.816087, 59.777708],
+          [30.819233, 59.780131],
+          [30.821298, 59.781805],
+          [30.825547, 59.785168],
+          [30.825657, 59.785223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.838709, 59.775937],
+          [30.837159, 59.774582],
+          [30.833798, 59.771997],
+          [30.830559, 59.76939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.828174, 59.776339],
+          [30.826169, 59.776992],
+          [30.82429, 59.777642]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.843605, 59.77338],
+          [30.841891, 59.772463],
+          [30.838139, 59.770593],
+          [30.836912, 59.769951],
+          [30.836686, 59.769872],
+          [30.833893, 59.769372],
+          [30.833661, 59.769367],
+          [30.833532, 59.769408],
+          [30.833397, 59.769592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.833184, 59.778923],
+          [30.833788, 59.778567],
+          [30.831767, 59.777026],
+          [30.829338, 59.775038],
+          [30.826815, 59.773015],
+          [30.822125, 59.769343],
+          [30.821964, 59.769278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.836847, 59.776676],
+          [30.831859, 59.772607],
+          [30.828593, 59.770028],
+          [30.826881, 59.768621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.837277, 59.772504],
+          [30.840198, 59.771616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814262, 59.793571],
+          [30.814181, 59.793646],
+          [30.813304, 59.795007],
+          [30.812164, 59.796989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.811726, 59.795357],
+          [30.809982, 59.79616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.811004, 59.794586],
+          [30.808997, 59.795064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.820557, 59.795227],
+          [30.821406, 59.795398],
+          [30.824024, 59.79598],
+          [30.833103, 59.797964],
+          [30.835853, 59.798581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.832801, 59.794173],
+          [30.831953, 59.794899],
+          [30.830837, 59.795941],
+          [30.830141, 59.796566],
+          [30.828771, 59.798124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.822136, 59.793071],
+          [30.824291, 59.793081],
+          [30.824595, 59.793114],
+          [30.825993, 59.793399],
+          [30.828284, 59.793891],
+          [30.829584, 59.794158],
+          [30.830258, 59.794337],
+          [30.831953, 59.794899],
+          [30.834851, 59.796045],
+          [30.837535, 59.796646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.836314, 59.794603],
+          [30.83568, 59.79525],
+          [30.834851, 59.796045],
+          [30.833827, 59.797142],
+          [30.833103, 59.797964],
+          [30.832703, 59.798364],
+          [30.831571, 59.79859],
+          [30.830693, 59.798476],
+          [30.828421, 59.79806],
+          [30.826103, 59.797431],
+          [30.824431, 59.797286],
+          [30.823224, 59.797054],
+          [30.821741, 59.796737],
+          [30.821105, 59.796161],
+          [30.820959, 59.79588],
+          [30.821406, 59.795398],
+          [30.822034, 59.794436],
+          [30.822241, 59.791717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.829145, 59.792912],
+          [30.828284, 59.793891],
+          [30.827361, 59.795028],
+          [30.826111, 59.796431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.826675, 59.792448],
+          [30.825993, 59.793399],
+          [30.824024, 59.79598],
+          [30.822552, 59.797961],
+          [30.822377, 59.79855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.818362, 59.795394],
+          [30.819078, 59.795618],
+          [30.819365, 59.795673],
+          [30.819606, 59.795688],
+          [30.819823, 59.795673],
+          [30.82007, 59.795618],
+          [30.820266, 59.795526],
+          [30.820416, 59.79541],
+          [30.821449, 59.79399],
+          [30.821529, 59.793938],
+          [30.82165, 59.793939],
+          [30.822068, 59.794004],
+          [30.825119, 59.794533],
+          [30.827361, 59.795028],
+          [30.829059, 59.795389],
+          [30.830837, 59.795941],
+          [30.833827, 59.797142],
+          [30.836561, 59.797761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.830258, 59.794337],
+          [30.829059, 59.795389],
+          [30.827818, 59.796807]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785207, 59.763613],
+          [30.785109, 59.763424],
+          [30.784485, 59.762376],
+          [30.783337, 59.762539],
+          [30.783116, 59.762182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.784917, 59.761894],
+          [30.780855, 59.762544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.798628, 59.782637],
+          [30.796107, 59.780513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.810422, 59.791803],
+          [30.807955, 59.789874],
+          [30.807407, 59.789533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.761621, 59.762162],
+          [30.762169, 59.761484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814162, 59.791152],
+          [30.812373, 59.792255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.79153, 59.770949],
+          [30.791332, 59.770971],
+          [30.791244, 59.770971],
+          [30.791114, 59.770963],
+          [30.79101, 59.770941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.755699, 59.75198],
+          [30.75573, 59.751826],
+          [30.755949, 59.751562],
+          [30.756056, 59.751371],
+          [30.756288, 59.750772],
+          [30.756076, 59.750422],
+          [30.755556, 59.749993],
+          [30.755199, 59.749822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.755699, 59.75198],
+          [30.755576, 59.751849],
+          [30.75533, 59.751669],
+          [30.754987, 59.751529],
+          [30.754419, 59.751334],
+          [30.753691, 59.750926]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.755199, 59.749822],
+          [30.753691, 59.750926]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.819892, 59.79114],
+          [30.819848, 59.791188],
+          [30.815702, 59.793717],
+          [30.815641, 59.793796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.816976, 59.794011],
+          [30.814262, 59.793571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.824995, 59.785605],
+          [30.825547, 59.785168],
+          [30.825727, 59.785087],
+          [30.826949, 59.784104],
+          [30.828028, 59.783284],
+          [30.828355, 59.78299],
+          [30.826582, 59.781711],
+          [30.824743, 59.780249],
+          [30.822666, 59.77848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.76375, 59.75416],
+          [30.763969, 59.754275],
+          [30.763766, 59.755046],
+          [30.763571, 59.755347],
+          [30.76352, 59.75572],
+          [30.763207, 59.75584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.785871, 59.768715],
+          [30.785427, 59.768922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.838202, 59.795837],
+          [30.83568, 59.79525],
+          [30.83538, 59.795172],
+          [30.832801, 59.794173],
+          [30.829889, 59.79308],
+          [30.829145, 59.792912],
+          [30.826675, 59.792448],
+          [30.821151, 59.791375],
+          [30.820263, 59.791212],
+          [30.816936, 59.790571],
+          [30.816877, 59.790575],
+          [30.816831, 59.790601],
+          [30.816456, 59.790972],
+          [30.816168, 59.791283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.832853, 59.796138],
+          [30.833496, 59.795511]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.824221, 59.792122],
+          [30.824291, 59.793081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.819122, 59.792706],
+          [30.820271, 59.791988],
+          [30.821097, 59.791447],
+          [30.821151, 59.791375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814262, 59.793571],
+          [30.814357, 59.793488],
+          [30.814889, 59.793149],
+          [30.818484, 59.790948],
+          [30.818555, 59.790882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.773885, 59.757814],
+          [30.777424, 59.758411],
+          [30.780875, 59.759019],
+          [30.784676, 59.759636],
+          [30.788848, 59.76034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.779909, 59.764482],
+          [30.779853, 59.764544],
+          [30.779332, 59.76482],
+          [30.778629, 59.765142],
+          [30.778216, 59.76535]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.814238, 59.77181],
+          [30.816662, 59.773867],
+          [30.820121, 59.776421],
+          [30.822666, 59.77848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.835798, 59.77134],
+          [30.838139, 59.770593],
+          [30.838533, 59.770624],
+          [30.839634, 59.770798],
+          [30.84027, 59.770882]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.829433, 59.781685],
+          [30.828217, 59.780698],
+          [30.82429, 59.777642],
+          [30.821983, 59.775825],
+          [30.82391, 59.775199],
+          [30.825817, 59.774539],
+          [30.831859, 59.772607],
+          [30.833798, 59.771997],
+          [30.835798, 59.77134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.816967, 59.768305],
+          [30.81532, 59.769986],
+          [30.815122, 59.77015],
+          [30.814896, 59.7703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.805651, 59.769561],
+          [30.805372, 59.769752],
+          [30.80403, 59.770484],
+          [30.802733, 59.771148],
+          [30.802117, 59.771442],
+          [30.800152, 59.772328],
+          [30.799298, 59.772586],
+          [30.799066, 59.772643],
+          [30.798535, 59.772375],
+          [30.797072, 59.771492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.806768, 59.765282],
+          [30.806122, 59.766366],
+          [30.806074, 59.766664],
+          [30.806308, 59.767875],
+          [30.80639, 59.76869],
+          [30.806367, 59.768781],
+          [30.80627, 59.768959],
+          [30.806024, 59.769213],
+          [30.805651, 59.769561]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.803129, 59.768664],
+          [30.804921, 59.769314],
+          [30.805328, 59.769474],
+          [30.805551, 59.769541],
+          [30.805651, 59.769561]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797072, 59.771492],
+          [30.795992, 59.770871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.815449, 59.791774],
+          [30.813732, 59.792776],
+          [30.813337, 59.792995]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.828799, 59.772399],
+          [30.826815, 59.773015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.833251, 59.773746],
+          [30.833114, 59.773819],
+          [30.829338, 59.775038]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.818362, 59.795394],
+          [30.819129, 59.794368],
+          [30.816976, 59.794011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.818362, 59.795394],
+          [30.815937, 59.794577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.816976, 59.794011],
+          [30.817062, 59.793921],
+          [30.818908, 59.79283],
+          [30.81895, 59.792818],
+          [30.819003, 59.792817],
+          [30.819054, 59.792829],
+          [30.819942, 59.793241],
+          [30.819973, 59.793269],
+          [30.819977, 59.793298],
+          [30.819129, 59.794368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.834273, 59.794206],
+          [30.83882, 59.79509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.774975, 59.761969],
+          [30.774649, 59.76214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.83841, 59.795591],
+          [30.837535, 59.796646],
+          [30.835853, 59.798581],
+          [30.835163, 59.799341],
+          [30.834876, 59.799621],
+          [30.834781, 59.799675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796707, 59.784486],
+          [30.801203, 59.783058],
+          [30.802046, 59.782275],
+          [30.802358, 59.782113],
+          [30.812123, 59.778936],
+          [30.814132, 59.778324],
+          [30.816087, 59.777708],
+          [30.821983, 59.775825],
+          [30.818678, 59.77323],
+          [30.815516, 59.770696],
+          [30.814896, 59.7703],
+          [30.813716, 59.770822],
+          [30.812881, 59.771129],
+          [30.810999, 59.771705],
+          [30.809273, 59.772124],
+          [30.804457, 59.773361],
+          [30.803278, 59.773648],
+          [30.801839, 59.77396],
+          [30.80111, 59.774136],
+          [30.799066, 59.772643],
+          [30.798377, 59.772788],
+          [30.798099, 59.772863],
+          [30.796995, 59.77319],
+          [30.796356, 59.773403],
+          [30.795963, 59.773461],
+          [30.795794, 59.773476],
+          [30.792815, 59.773504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.773395, 59.761601],
+          [30.77399, 59.761628],
+          [30.774524, 59.761726],
+          [30.774711, 59.761804],
+          [30.774975, 59.761969],
+          [30.778435, 59.760157],
+          [30.778534, 59.76014],
+          [30.778656, 59.760141],
+          [30.779258, 59.760239],
+          [30.779362, 59.760266],
+          [30.77942, 59.760312],
+          [30.781857, 59.764086],
+          [30.782875, 59.765553],
+          [30.783377, 59.766297],
+          [30.783416, 59.76639],
+          [30.783399, 59.766478],
+          [30.783282, 59.766558],
+          [30.782095, 59.766938],
+          [30.781737, 59.76709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.797882, 59.763228],
+          [30.80843, 59.764983],
+          [30.813905, 59.765953],
+          [30.816684, 59.766374]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.816978, 59.766338],
+          [30.813014, 59.765694],
+          [30.809122, 59.765014],
+          [30.798012, 59.763155],
+          [30.796146, 59.76282],
+          [30.79397, 59.762325],
+          [30.791736, 59.761919],
+          [30.789942, 59.761637],
+          [30.787697, 59.761392],
+          [30.787005, 59.761283],
+          [30.770157, 59.758446],
+          [30.765121, 59.757619],
+          [30.763159, 59.757263],
+          [30.761897, 59.756972],
+          [30.76025, 59.756563],
+          [30.758725, 59.7563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.758569, 59.756539],
+          [30.765111, 59.757664],
+          [30.773723, 59.759087],
+          [30.784719, 59.760948],
+          [30.78864, 59.761586],
+          [30.791666, 59.762125],
+          [30.796111, 59.762858],
+          [30.798057, 59.763219],
+          [30.80456, 59.764287],
+          [30.813139, 59.765747],
+          [30.816946, 59.766376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.833245, 59.769104],
+          [30.836852, 59.769727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.796579, 59.775975],
+          [30.797028, 59.775882],
+          [30.797605, 59.775814],
+          [30.797994, 59.775788],
+          [30.798458, 59.775737]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.82911, 59.769563],
+          [30.828507, 59.769098],
+          [30.827968, 59.768738],
+          [30.827087, 59.76843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.8368, 59.769767],
+          [30.831328, 59.768827]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.773148, 59.762823],
+          [30.773268, 59.762491],
+          [30.77331, 59.762277],
+          [30.773984, 59.756957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.819542, 59.798186],
+          [30.818061, 59.797947],
+          [30.816748, 59.797716],
+          [30.811838, 59.796933],
+          [30.81143, 59.79686],
+          [30.811049, 59.79676],
+          [30.81069, 59.796608],
+          [30.809982, 59.79616],
+          [30.80971, 59.795945],
+          [30.809534, 59.79576],
+          [30.808997, 59.795064],
+          [30.808172, 59.793919],
+          [30.807987, 59.793728],
+          [30.807736, 59.793525],
+          [30.807451, 59.793344],
+          [30.805972, 59.792548],
+          [30.805361, 59.792191],
+          [30.803248, 59.790834],
+          [30.802346, 59.790228],
+          [30.8014, 59.789515],
+          [30.801169, 59.789299],
+          [30.800904, 59.788987],
+          [30.799154, 59.786851],
+          [30.798911, 59.786614],
+          [30.797814, 59.785711],
+          [30.796226, 59.783963],
+          [30.795926, 59.783666],
+          [30.79522, 59.783035],
+          [30.79469, 59.782227],
+          [30.793794, 59.780736],
+          [30.793523, 59.780108],
+          [30.793435, 59.779821],
+          [30.793388, 59.779543],
+          [30.793288, 59.777141],
+          [30.793211, 59.776159],
+          [30.792815, 59.773504],
+          [30.792644, 59.773061],
+          [30.792126, 59.772265],
+          [30.791472, 59.771292],
+          [30.791296, 59.771127],
+          [30.790796, 59.770802],
+          [30.78988, 59.770339],
+          [30.789584, 59.770235],
+          [30.788355, 59.769901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "otradnoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.787576, 59.769698],
+          [30.786735, 59.769481],
+          [30.786181, 59.769282],
+          [30.78453, 59.768481],
+          [30.772605, 59.762553],
+          [30.771945, 59.762273],
+          [30.771521, 59.76213],
+          [30.76202, 59.759476],
+          [30.761537, 59.759372],
+          [30.761244, 59.759344],
+          [30.760939, 59.759342],
+          [30.760519, 59.759374],
+          [30.758726, 59.759677]
+        ]
+      }
+    }
+  ]
+}

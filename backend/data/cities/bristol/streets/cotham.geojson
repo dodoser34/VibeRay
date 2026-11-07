@@ -1,0 +1,2705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597339, 51.463244],
+          [-2.597621, 51.462915],
+          [-2.597701, 51.462786],
+          [-2.59773, 51.462687],
+          [-2.597777, 51.462248],
+          [-2.597891, 51.461552],
+          [-2.598112, 51.460845],
+          [-2.598198, 51.460654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603429, 51.462319],
+          [-2.603278, 51.462282],
+          [-2.603056, 51.462324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606425, 51.470918],
+          [-2.6062, 51.470664],
+          [-2.606121, 51.470602],
+          [-2.606024, 51.470552],
+          [-2.605793, 51.470457],
+          [-2.604903, 51.470203],
+          [-2.604632, 51.470148],
+          [-2.60431, 51.470108],
+          [-2.603, 51.470064]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594517, 51.467554],
+          [-2.594919, 51.466958],
+          [-2.595235, 51.466562],
+          [-2.59569, 51.466067],
+          [-2.596101, 51.465322],
+          [-2.596284, 51.464877],
+          [-2.596413, 51.464476],
+          [-2.596493, 51.464311],
+          [-2.5967, 51.463991],
+          [-2.596999, 51.463619],
+          [-2.597246, 51.463349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603429, 51.462319],
+          [-2.60346, 51.462236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603635, 51.462457],
+          [-2.603734, 51.462407],
+          [-2.603814, 51.462397],
+          [-2.603987, 51.462402],
+          [-2.603774, 51.462362],
+          [-2.603608, 51.46235],
+          [-2.603429, 51.462319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593378, 51.468915],
+          [-2.5933, 51.46894],
+          [-2.593231, 51.468982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593317, 51.469015],
+          [-2.593378, 51.468915]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603056, 51.462324],
+          [-2.603166, 51.462351],
+          [-2.603301, 51.462359],
+          [-2.603429, 51.462319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59761, 51.463279],
+          [-2.599074, 51.462849],
+          [-2.599856, 51.462688],
+          [-2.601107, 51.462455],
+          [-2.60203, 51.462366],
+          [-2.602764, 51.462325],
+          [-2.603056, 51.462324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603305, 51.462184],
+          [-2.603325, 51.462242],
+          [-2.603429, 51.462319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597265, 51.468815],
+          [-2.596566, 51.46852],
+          [-2.595866, 51.468161],
+          [-2.594926, 51.467938],
+          [-2.594363, 51.467788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594363, 51.467788],
+          [-2.594269, 51.467827],
+          [-2.594252, 51.467903],
+          [-2.594264, 51.467968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594363, 51.467788],
+          [-2.594452, 51.467737],
+          [-2.594502, 51.467632],
+          [-2.594517, 51.467554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594264, 51.467968],
+          [-2.594333, 51.46792],
+          [-2.59438, 51.467855],
+          [-2.594363, 51.467788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594517, 51.467554],
+          [-2.594432, 51.467616],
+          [-2.594372, 51.467713],
+          [-2.594363, 51.467788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593378, 51.468915],
+          [-2.593726, 51.468654],
+          [-2.593973, 51.468419],
+          [-2.594264, 51.467968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59761, 51.463279],
+          [-2.597441, 51.463272],
+          [-2.597339, 51.463244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597246, 51.463349],
+          [-2.597448, 51.46334],
+          [-2.59761, 51.463279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597246, 51.463349],
+          [-2.597339, 51.463244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597791, 51.462183],
+          [-2.599444, 51.461786],
+          [-2.599463, 51.461768],
+          [-2.599462, 51.461747],
+          [-2.599337, 51.46157],
+          [-2.599204, 51.461421],
+          [-2.598795, 51.461039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592797, 51.464188],
+          [-2.593655, 51.463574],
+          [-2.59475, 51.46285],
+          [-2.596191, 51.461932],
+          [-2.597857, 51.460828],
+          [-2.597911, 51.460819],
+          [-2.598112, 51.460845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591134, 51.464113],
+          [-2.591212, 51.464011],
+          [-2.591278, 51.463875],
+          [-2.591355, 51.463804],
+          [-2.592488, 51.463054],
+          [-2.593254, 51.462508],
+          [-2.593339, 51.462474],
+          [-2.593696, 51.46223],
+          [-2.593805, 51.462128],
+          [-2.594548, 51.461615],
+          [-2.595232, 51.461189],
+          [-2.595295, 51.461127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592709, 51.463571],
+          [-2.593242, 51.463862],
+          [-2.594916, 51.464728],
+          [-2.596101, 51.465322],
+          [-2.596282, 51.465443],
+          [-2.597075, 51.466035],
+          [-2.597969, 51.466484],
+          [-2.597989, 51.466503],
+          [-2.597992, 51.466524],
+          [-2.597173, 51.467355],
+          [-2.596437, 51.467796],
+          [-2.595866, 51.468161]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596079, 51.46133],
+          [-2.594291, 51.462577],
+          [-2.593113, 51.463257],
+          [-2.59299, 51.463344],
+          [-2.592282, 51.463914]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592209, 51.463874],
+          [-2.591682, 51.463588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607099, 51.469029],
+          [-2.607176, 51.468939],
+          [-2.607188, 51.468881],
+          [-2.607155, 51.46878],
+          [-2.607087, 51.468686],
+          [-2.606994, 51.468601],
+          [-2.606944, 51.468578],
+          [-2.606726, 51.468547]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606726, 51.468547],
+          [-2.606647, 51.468626],
+          [-2.606624, 51.468697],
+          [-2.606662, 51.468798],
+          [-2.606716, 51.468877],
+          [-2.606756, 51.468924],
+          [-2.606838, 51.468988],
+          [-2.606944, 51.469015],
+          [-2.607099, 51.469029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607099, 51.469029],
+          [-2.60728, 51.469309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606453, 51.468154],
+          [-2.606726, 51.468547]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605315, 51.466548],
+          [-2.606308, 51.467656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605379, 51.466619],
+          [-2.606961, 51.466119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606097, 51.466395],
+          [-2.606987, 51.467376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599519, 51.460715],
+          [-2.598795, 51.461039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600362, 51.461496],
+          [-2.599971, 51.46107],
+          [-2.599905, 51.46091],
+          [-2.599809, 51.460794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597849, 51.46176],
+          [-2.598193, 51.461688],
+          [-2.599204, 51.461421]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594078, 51.465357],
+          [-2.595329, 51.464413],
+          [-2.595698, 51.46412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592608, 51.465627],
+          [-2.594134, 51.466537],
+          [-2.594758, 51.466884],
+          [-2.594919, 51.466958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592216, 51.465911],
+          [-2.592696, 51.465561],
+          [-2.593046, 51.465277],
+          [-2.59488, 51.463849],
+          [-2.594991, 51.463835],
+          [-2.595105, 51.463835],
+          [-2.595422, 51.463979],
+          [-2.596413, 51.464476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596192, 51.466982],
+          [-2.595235, 51.466562],
+          [-2.593046, 51.465277],
+          [-2.590959, 51.464099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603936, 51.466921],
+          [-2.604626, 51.466746],
+          [-2.605645, 51.467878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596066, 51.467205],
+          [-2.596207, 51.467059],
+          [-2.596212, 51.467018],
+          [-2.596192, 51.466982],
+          [-2.597075, 51.466035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608359, 51.467939],
+          [-2.608063, 51.467529],
+          [-2.607235, 51.467822],
+          [-2.606227, 51.468248],
+          [-2.605917, 51.468346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598926, 51.467058],
+          [-2.599516, 51.466499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598598, 51.466814],
+          [-2.59978, 51.465735]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609045, 51.470796],
+          [-2.609039, 51.470844],
+          [-2.609087, 51.470965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608982, 51.468992],
+          [-2.609505, 51.469815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607529, 51.471518],
+          [-2.607594, 51.471102],
+          [-2.607564, 51.471056],
+          [-2.60743, 51.470982],
+          [-2.607402, 51.470947],
+          [-2.607364, 51.470824],
+          [-2.607327, 51.470617],
+          [-2.607331, 51.470549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605982, 51.469573],
+          [-2.60661, 51.470449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604903, 51.470203],
+          [-2.604993, 51.470067],
+          [-2.605077, 51.469991],
+          [-2.605361, 51.469818],
+          [-2.605462, 51.469765],
+          [-2.605566, 51.469724],
+          [-2.605982, 51.469573],
+          [-2.606156, 51.469519],
+          [-2.606356, 51.46947],
+          [-2.606874, 51.469373],
+          [-2.60728, 51.469309],
+          [-2.608137, 51.469223],
+          [-2.608366, 51.469185],
+          [-2.60857, 51.469138],
+          [-2.608742, 51.469084],
+          [-2.608982, 51.468992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603929, 51.468415],
+          [-2.604415, 51.468257],
+          [-2.605645, 51.467878],
+          [-2.606308, 51.467656],
+          [-2.607331, 51.467231],
+          [-2.607722, 51.467088]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595422, 51.463979],
+          [-2.596319, 51.46293],
+          [-2.597103, 51.461979],
+          [-2.597239, 51.461865],
+          [-2.597355, 51.461787],
+          [-2.597438, 51.461745],
+          [-2.59759, 51.461715],
+          [-2.597859, 51.461703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604607, 51.465427],
+          [-2.605751, 51.464887]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604055, 51.464955],
+          [-2.604607, 51.465427],
+          [-2.60511, 51.465883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590424, 51.463989],
+          [-2.590326, 51.464019],
+          [-2.590219, 51.46403],
+          [-2.589927, 51.464012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59299, 51.463344],
+          [-2.592488, 51.463054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593655, 51.463574],
+          [-2.593113, 51.463257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597777, 51.462248],
+          [-2.597045, 51.461995],
+          [-2.59654, 51.461702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602159, 51.465517],
+          [-2.603317, 51.466504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601573, 51.46593],
+          [-2.602479, 51.466841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603133, 51.465262],
+          [-2.604204, 51.466194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590398, 51.461896],
+          [-2.590604, 51.461997],
+          [-2.591424, 51.462452],
+          [-2.591017, 51.462737],
+          [-2.59126, 51.462893]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590066, 51.462813],
+          [-2.590851, 51.463162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592216, 51.465911],
+          [-2.591087, 51.46528],
+          [-2.590898, 51.465151],
+          [-2.590769, 51.464987],
+          [-2.59048, 51.464488],
+          [-2.590455, 51.464405],
+          [-2.590488, 51.464364]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592139, 51.465966],
+          [-2.592084, 51.466003],
+          [-2.592016, 51.466075],
+          [-2.59177, 51.466263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605174, 51.469925],
+          [-2.60508, 51.469805],
+          [-2.605015, 51.469698],
+          [-2.604973, 51.469595],
+          [-2.604977, 51.469541],
+          [-2.605023, 51.469476],
+          [-2.605119, 51.469423],
+          [-2.605306, 51.469356],
+          [-2.606068, 51.469116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595399, 51.461112],
+          [-2.59552, 51.461033],
+          [-2.59556, 51.460987],
+          [-2.595563, 51.460951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590424, 51.463989],
+          [-2.590419, 51.463945],
+          [-2.590569, 51.463507],
+          [-2.590651, 51.463374],
+          [-2.590769, 51.463236],
+          [-2.590851, 51.463162],
+          [-2.591819, 51.462541],
+          [-2.59215, 51.462313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59686, 51.464887],
+          [-2.597372, 51.465566],
+          [-2.598138, 51.466509],
+          [-2.598373, 51.466706],
+          [-2.598598, 51.466814],
+          [-2.598729, 51.466893],
+          [-2.598926, 51.467058],
+          [-2.599432, 51.467567],
+          [-2.599742, 51.467935]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608167, 51.470661],
+          [-2.6083, 51.470245],
+          [-2.608299, 51.470186],
+          [-2.607794, 51.469356],
+          [-2.607764, 51.469263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592458, 51.464418],
+          [-2.593425, 51.464987],
+          [-2.594078, 51.465357],
+          [-2.595478, 51.466187],
+          [-2.595556, 51.466224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592797, 51.464188],
+          [-2.592458, 51.464418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597603, 51.461001],
+          [-2.596649, 51.460508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608982, 51.468992],
+          [-2.608824, 51.46871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609045, 51.470796],
+          [-2.609066, 51.470771],
+          [-2.609179, 51.470724],
+          [-2.609439, 51.470645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59958, 51.464386],
+          [-2.596999, 51.463619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593726, 51.468654],
+          [-2.594111, 51.469142],
+          [-2.594956, 51.468913],
+          [-2.594634, 51.468478],
+          [-2.594287, 51.468042],
+          [-2.594239, 51.468011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591727, 51.467771],
+          [-2.592069, 51.467653],
+          [-2.592551, 51.467414]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592724, 51.467825],
+          [-2.592885, 51.467925],
+          [-2.593284, 51.468129],
+          [-2.593973, 51.468419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592181, 51.468289],
+          [-2.592885, 51.467925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593284, 51.468129],
+          [-2.593533, 51.467953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600834, 51.461949],
+          [-2.601038, 51.46219],
+          [-2.601188, 51.462444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600043, 51.468302],
+          [-2.600573, 51.468952]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592139, 51.465966],
+          [-2.594509, 51.467324],
+          [-2.594632, 51.467382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592216, 51.465911],
+          [-2.592139, 51.465966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591906, 51.467001],
+          [-2.591854, 51.46694],
+          [-2.592377, 51.466755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608744, 51.468563],
+          [-2.608025, 51.468761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606356, 51.46947],
+          [-2.605798, 51.468769],
+          [-2.605626, 51.46882],
+          [-2.605301, 51.468445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603231, 51.467125],
+          [-2.604083, 51.467908],
+          [-2.604415, 51.468257],
+          [-2.605306, 51.469356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599742, 51.467935],
+          [-2.600043, 51.468302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599902, 51.465783],
+          [-2.600041, 51.465642],
+          [-2.600169, 51.465433],
+          [-2.600272, 51.465243],
+          [-2.600422, 51.464921],
+          [-2.600457, 51.464793],
+          [-2.600434, 51.464711],
+          [-2.600373, 51.464664],
+          [-2.59958, 51.464386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594989, 51.465612],
+          [-2.594943, 51.465586]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59202, 51.46417],
+          [-2.591134, 51.464113],
+          [-2.590544, 51.464062],
+          [-2.590468, 51.464038],
+          [-2.590424, 51.463989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595043, 51.465446],
+          [-2.594943, 51.465586],
+          [-2.59468, 51.465627],
+          [-2.59459, 51.465658]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592282, 51.463914],
+          [-2.592797, 51.464188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599742, 51.467935],
+          [-2.601789, 51.467255],
+          [-2.602361, 51.467036],
+          [-2.602426, 51.466902],
+          [-2.602479, 51.466841],
+          [-2.602622, 51.46677],
+          [-2.603317, 51.466504],
+          [-2.606387, 51.46545],
+          [-2.606221, 51.465282],
+          [-2.604764, 51.464041],
+          [-2.604466, 51.463648],
+          [-2.604, 51.462938],
+          [-2.60378, 51.462656],
+          [-2.603679, 51.462559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590042, 51.464109],
+          [-2.592452, 51.46547],
+          [-2.59258, 51.465528],
+          [-2.592696, 51.465561]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600235, 51.461542],
+          [-2.600449, 51.461464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592891, 51.467878],
+          [-2.593542, 51.467491]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590665, 51.465901],
+          [-2.590754, 51.465864],
+          [-2.590804, 51.465859],
+          [-2.590892, 51.465882],
+          [-2.590974, 51.465918],
+          [-2.591033, 51.465927]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597, 51.46492],
+          [-2.597492, 51.465052],
+          [-2.59861, 51.465378],
+          [-2.59978, 51.465735],
+          [-2.600168, 51.465896],
+          [-2.600216, 51.465925],
+          [-2.600254, 51.465965],
+          [-2.600355, 51.466153],
+          [-2.600495, 51.466295],
+          [-2.600678, 51.466442],
+          [-2.601789, 51.467255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596334, 51.464738],
+          [-2.59686, 51.464887]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604, 51.462938],
+          [-2.603656, 51.463105],
+          [-2.603542, 51.46314],
+          [-2.600434, 51.464711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602308, 51.464517],
+          [-2.603113, 51.464835],
+          [-2.604675, 51.463927]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596284, 51.464877],
+          [-2.595329, 51.464413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599856, 51.462688],
+          [-2.599883, 51.462764],
+          [-2.599852, 51.462809],
+          [-2.599459, 51.463147],
+          [-2.599403, 51.463247],
+          [-2.599431, 51.46335],
+          [-2.599553, 51.463495],
+          [-2.599836, 51.463723],
+          [-2.599872, 51.463776],
+          [-2.59989, 51.463846],
+          [-2.59989, 51.463895],
+          [-2.599843, 51.463981],
+          [-2.599575, 51.464306],
+          [-2.599563, 51.464362],
+          [-2.59958, 51.464386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596828, 51.463844],
+          [-2.597034, 51.46444],
+          [-2.597, 51.46492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599432, 51.467567],
+          [-2.600678, 51.466442],
+          [-2.601494, 51.466004],
+          [-2.601573, 51.46593],
+          [-2.601676, 51.465788],
+          [-2.601772, 51.465723],
+          [-2.602585, 51.465287],
+          [-2.602873, 51.465249],
+          [-2.60326, 51.465262],
+          [-2.603394, 51.465234],
+          [-2.603742, 51.465103],
+          [-2.604055, 51.464955],
+          [-2.605268, 51.464468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603542, 51.46314],
+          [-2.603692, 51.463411],
+          [-2.6037, 51.463499],
+          [-2.603645, 51.463582],
+          [-2.602308, 51.464517],
+          [-2.602175, 51.464624],
+          [-2.60188, 51.464821],
+          [-2.601686, 51.464932],
+          [-2.601396, 51.465061],
+          [-2.600986, 51.465178],
+          [-2.600852, 51.465207],
+          [-2.600599, 51.465244],
+          [-2.600432, 51.465254],
+          [-2.600272, 51.465243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601644, 51.467627],
+          [-2.602747, 51.468372],
+          [-2.603024, 51.468261],
+          [-2.603314, 51.468215],
+          [-2.603539, 51.468223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592377, 51.466755],
+          [-2.592521, 51.466892],
+          [-2.592654, 51.466998],
+          [-2.593147, 51.467321],
+          [-2.593542, 51.467491],
+          [-2.594108, 51.467694]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590591, 51.465753],
+          [-2.59077, 51.465781],
+          [-2.590823, 51.465797],
+          [-2.590918, 51.465857],
+          [-2.591008, 51.4659],
+          [-2.591033, 51.465927]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591033, 51.465927],
+          [-2.591563, 51.466152],
+          [-2.59177, 51.466263],
+          [-2.592081, 51.466471],
+          [-2.592268, 51.466638],
+          [-2.592377, 51.466755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603929, 51.468415],
+          [-2.603864, 51.468488],
+          [-2.603805, 51.468527],
+          [-2.603321, 51.468706],
+          [-2.602342, 51.469092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604395, 51.470117],
+          [-2.604384, 51.469994],
+          [-2.604339, 51.46992],
+          [-2.603321, 51.468706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603812, 51.469286],
+          [-2.603511, 51.469315],
+          [-2.603142, 51.469301],
+          [-2.602802, 51.469266],
+          [-2.602659, 51.46924],
+          [-2.602519, 51.469195],
+          [-2.602423, 51.469149],
+          [-2.600738, 51.468012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603936, 51.466921],
+          [-2.603741, 51.466961],
+          [-2.603445, 51.467042],
+          [-2.602742, 51.467315],
+          [-2.602593, 51.467354],
+          [-2.602487, 51.467352],
+          [-2.602002, 51.4675],
+          [-2.601243, 51.467767],
+          [-2.600738, 51.468012],
+          [-2.600043, 51.468302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603936, 51.466921],
+          [-2.604976, 51.468082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602593, 51.467354],
+          [-2.603539, 51.468223],
+          [-2.603649, 51.46826],
+          [-2.603854, 51.468403],
+          [-2.603929, 51.468415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598198, 51.460654],
+          [-2.598258, 51.460669],
+          [-2.598331, 51.460703],
+          [-2.598543, 51.46083],
+          [-2.598795, 51.461039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59686, 51.464887],
+          [-2.597, 51.46492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606024, 51.470552],
+          [-2.606093, 51.4705],
+          [-2.606194, 51.470467],
+          [-2.606323, 51.470455],
+          [-2.60661, 51.470449],
+          [-2.606955, 51.470486],
+          [-2.607331, 51.470549],
+          [-2.608345, 51.470678],
+          [-2.609045, 51.470796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592282, 51.463914],
+          [-2.592037, 51.464126],
+          [-2.59202, 51.46417],
+          [-2.592042, 51.464198],
+          [-2.592458, 51.464418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600877, 51.461993],
+          [-2.600944, 51.461968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59988, 51.468363],
+          [-2.600043, 51.468302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604083, 51.467908],
+          [-2.604677, 51.467743]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596302, 51.461173],
+          [-2.596079, 51.46133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595577, 51.467534],
+          [-2.595724, 51.467486],
+          [-2.595825, 51.46747],
+          [-2.595983, 51.4675],
+          [-2.596437, 51.467796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603776, 51.462309],
+          [-2.603774, 51.462362]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608527, 51.468171],
+          [-2.607598, 51.468456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603864, 51.468488],
+          [-2.604745, 51.469541],
+          [-2.604781, 51.469567],
+          [-2.604839, 51.469588],
+          [-2.604909, 51.469603],
+          [-2.604973, 51.469595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608757, 51.471226],
+          [-2.608728, 51.47124],
+          [-2.608722, 51.471283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596191, 51.461932],
+          [-2.595641, 51.461643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597189, 51.466603],
+          [-2.596995, 51.466806],
+          [-2.596519, 51.46664]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597934, 51.467938],
+          [-2.597536, 51.468187],
+          [-2.597157, 51.467997],
+          [-2.596419, 51.468446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59475, 51.46285],
+          [-2.594291, 51.462577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591171, 51.462953],
+          [-2.591295, 51.463031],
+          [-2.591368, 51.463051],
+          [-2.591407, 51.463051],
+          [-2.591464, 51.463022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.592088, 51.462704],
+          [-2.591819, 51.462541]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591269, 51.463101],
+          [-2.591231, 51.46311],
+          [-2.591021, 51.463253],
+          [-2.591007, 51.463278],
+          [-2.591014, 51.463306],
+          [-2.591057, 51.463334],
+          [-2.5911, 51.463341],
+          [-2.59116, 51.463327],
+          [-2.591387, 51.463171],
+          [-2.591421, 51.463156],
+          [-2.591466, 51.463157],
+          [-2.591583, 51.463221],
+          [-2.59114, 51.463526],
+          [-2.591131, 51.46355],
+          [-2.590967, 51.463663],
+          [-2.590864, 51.463754],
+          [-2.59083, 51.463813],
+          [-2.59082, 51.463871],
+          [-2.590858, 51.464025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591305, 51.463035],
+          [-2.591269, 51.463101],
+          [-2.591304, 51.463132],
+          [-2.591355, 51.463155],
+          [-2.591467, 51.463155],
+          [-2.591585, 51.463221],
+          [-2.591143, 51.463527],
+          [-2.591103, 51.463534],
+          [-2.590938, 51.463649],
+          [-2.590927, 51.46368],
+          [-2.590979, 51.463788],
+          [-2.590977, 51.463839],
+          [-2.590948, 51.46392],
+          [-2.590858, 51.464025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601009, 51.461812],
+          [-2.600887, 51.46167],
+          [-2.600309, 51.461881],
+          [-2.600401, 51.461987]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599728, 51.461561],
+          [-2.599413, 51.461672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599938, 51.462155],
+          [-2.600401, 51.461987],
+          [-2.60052, 51.461989],
+          [-2.601009, 51.461812],
+          [-2.601078, 51.461892],
+          [-2.601888, 51.461581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594215, 51.463766],
+          [-2.595533, 51.462925],
+          [-2.595561, 51.462854],
+          [-2.597045, 51.461995]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601039, 51.463502],
+          [-2.601764, 51.464042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601173, 51.463967],
+          [-2.601464, 51.464193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590835, 51.462126],
+          [-2.590903, 51.462033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590746, 51.462077],
+          [-2.590692, 51.462117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608569, 51.471182],
+          [-2.608599, 51.471095],
+          [-2.608658, 51.471044],
+          [-2.608751, 51.470992],
+          [-2.608857, 51.470761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595152, 51.465703],
+          [-2.594989, 51.465612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593627, 51.465101],
+          [-2.593942, 51.464861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595404, 51.468694],
+          [-2.595028, 51.468603],
+          [-2.594876, 51.468576],
+          [-2.594693, 51.468558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59859, 51.46479],
+          [-2.598623, 51.464791],
+          [-2.599537, 51.465065],
+          [-2.599538, 51.465094],
+          [-2.599299, 51.46559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593655, 51.463574],
+          [-2.594216, 51.463881],
+          [-2.594617, 51.46406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600403, 51.466202],
+          [-2.600208, 51.466373],
+          [-2.600134, 51.466375],
+          [-2.600079, 51.466388],
+          [-2.599958, 51.466493],
+          [-2.599907, 51.466516],
+          [-2.59984, 51.466522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599142, 51.460884],
+          [-2.599199, 51.460936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598677, 51.460749],
+          [-2.598543, 51.46083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603829, 51.462719],
+          [-2.603679, 51.462781],
+          [-2.603859, 51.462757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607331, 51.467231],
+          [-2.607381, 51.467288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607329, 51.467306],
+          [-2.607636, 51.4672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608359, 51.467939],
+          [-2.607603, 51.468174],
+          [-2.607576, 51.468174],
+          [-2.607552, 51.468164],
+          [-2.607492, 51.468091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606639, 51.471156],
+          [-2.606986, 51.471047]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606929, 51.470977],
+          [-2.607035, 51.471108]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606425, 51.470918],
+          [-2.606795, 51.470805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606742, 51.470738],
+          [-2.606839, 51.47086]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598083, 51.462112],
+          [-2.598254, 51.462398],
+          [-2.598186, 51.462414],
+          [-2.598279, 51.462592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602301, 51.46235],
+          [-2.602239, 51.462494],
+          [-2.602291, 51.462762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597722, 51.46466],
+          [-2.597583, 51.464657],
+          [-2.59733, 51.465009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601377, 51.462579],
+          [-2.601315, 51.462563],
+          [-2.601292, 51.462539],
+          [-2.601261, 51.462437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598299, 51.461842],
+          [-2.598193, 51.461688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597034, 51.46444],
+          [-2.597446, 51.464564]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603569, 51.468233],
+          [-2.603634, 51.468177],
+          [-2.603774, 51.468119],
+          [-2.603747, 51.468091],
+          [-2.603824, 51.468063]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597528, 51.467005],
+          [-2.597881, 51.467133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597815, 51.467192],
+          [-2.59795, 51.467071]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60706, 51.470124],
+          [-2.607139, 51.470281],
+          [-2.607085, 51.470508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5938, 51.466713],
+          [-2.593836, 51.466733],
+          [-2.593852, 51.466732],
+          [-2.594134, 51.466537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596774, 51.463071],
+          [-2.596319, 51.46293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590703, 51.463306],
+          [-2.590298, 51.463178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599774, 51.461649],
+          [-2.599579, 51.461718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599655, 51.461691],
+          [-2.599582, 51.461611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599574, 51.461099],
+          [-2.599928, 51.460968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595775, 51.462381],
+          [-2.595853, 51.462331],
+          [-2.595706, 51.462241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59617, 51.461946],
+          [-2.596357, 51.46205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596295, 51.46209],
+          [-2.596528, 51.461937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598909, 51.462273],
+          [-2.598844, 51.462179],
+          [-2.598638, 51.461979]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598091, 51.464424],
+          [-2.598186, 51.464307],
+          [-2.598268, 51.464229],
+          [-2.598314, 51.464204],
+          [-2.598455, 51.464177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598455, 51.464177],
+          [-2.598492, 51.464211],
+          [-2.598543, 51.464234],
+          [-2.598625, 51.464266],
+          [-2.598799, 51.464311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598455, 51.464177],
+          [-2.598538, 51.464076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591854, 51.46694],
+          [-2.591817, 51.46693],
+          [-2.59173, 51.466832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596022, 51.463955],
+          [-2.596163, 51.463773],
+          [-2.595715, 51.463635]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5997, 51.46272],
+          [-2.599529, 51.462433],
+          [-2.599718, 51.462379]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600022, 51.462327],
+          [-2.599777, 51.462377],
+          [-2.59994, 51.462672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59688, 51.460888],
+          [-2.596993, 51.460944],
+          [-2.597204, 51.460795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600279, 51.464826],
+          [-2.599878, 51.464715],
+          [-2.599899, 51.46465],
+          [-2.600001, 51.464531]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598597, 51.463555],
+          [-2.599285, 51.463202],
+          [-2.599369, 51.463182],
+          [-2.599438, 51.463184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590612, 51.463433],
+          [-2.590692, 51.463518],
+          [-2.590795, 51.46358]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590858, 51.464025],
+          [-2.590841, 51.464089]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596209, 51.460856],
+          [-2.596436, 51.460703],
+          [-2.59644, 51.46068],
+          [-2.596649, 51.460508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601718, 51.463879],
+          [-2.601617, 51.463932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599052, 51.468325],
+          [-2.599997, 51.467995],
+          [-2.604504, 51.466549],
+          [-2.605173, 51.466298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.593588, 51.469193],
+          [-2.594128, 51.469206],
+          [-2.595139, 51.469192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590398, 51.461896],
+          [-2.590789, 51.461259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590024, 51.462635],
+          [-2.590298, 51.462121],
+          [-2.590309, 51.462058]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.590676, 51.466017],
+          [-2.59069, 51.465963],
+          [-2.590665, 51.465901],
+          [-2.590501, 51.465592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "cotham" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589954, 51.462855],
+          [-2.590066, 51.462813],
+          [-2.591017, 51.462222]
+        ]
+      }
+    }
+  ]
+}

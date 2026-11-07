@@ -104,7 +104,8 @@ pip install -r requirements-dev.txt
 
 Районы, улицы и вода — **OpenStreetMap** (лицензия ODbL, подпись «© участники OpenStreetMap» на карте).
 Снимки городов лежат в двух копиях: `backend/data/cities/<город>` (для бэкенда) и
-`frontend/src/demo-data/cities/<город>` (для демо-режима). Обновить схему дорог (обе копии сразу):
+`frontend/src/demo-data/cities/<город>` (для демо-режима). Схема дорог — только в бэкенде, по файлу на район
+(`backend/data/cities/<город>/streets/<район>.geojson`, вне районов — `_outside.geojson`). Обновить её:
 
 ```bash
 python backend/scripts/build_streets.py kostanay

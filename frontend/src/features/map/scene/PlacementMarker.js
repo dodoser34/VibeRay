@@ -28,6 +28,12 @@ export class PlacementMarker {
     this.group.add(this.ghost, this.pin);
   }
 
+  // Размер метки вблизи (уровень улицы) — как у меток проблем (ProblemsLayer.setSize).
+  setSize(size) {
+    this.ghost.scale.setScalar(size);
+    this.pin.scale.setScalar(size);
+  }
+
   showGhost(point) {
     this.ghost.visible = Boolean(point);
     if (point) this.ghost.position.copy(point);

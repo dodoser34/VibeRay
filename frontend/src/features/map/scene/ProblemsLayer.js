@@ -164,6 +164,11 @@ export class ProblemsLayer {
     this.dirty = true;
   }
 
+  // Размер меток: вблизи (уровень улицы) они уменьшаются, чтобы быть соразмерны домам.
+  setSize(size) {
+    this.size = size;
+  }
+
   // Новые проблемы пульсируют, чтобы привлекать внимание; метки плавно догоняют свои цели.
   update(time, delta) {
     const k = 1 - Math.exp(-delta * EASE_RATE);
@@ -177,7 +182,7 @@ export class ProblemsLayer {
   writeMatrices(time) {
     this.problems.forEach((problem, i) => {
       const position = this.positions[i];
-      const s = this.scales[i];
+      const s = this.scales[i] * (this.size ?? 1);
       this.dummy.position.set(position.x, position.y + (STEM_HEIGHT / 2) * s, position.z);
       this.dummy.scale.set(s, STEM_HEIGHT * s, s);
       this.dummy.updateMatrix();

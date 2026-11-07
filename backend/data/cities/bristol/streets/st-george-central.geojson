@@ -1,0 +1,4525 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514672, 51.463241],
+          [-2.515101, 51.463234],
+          [-2.516185, 51.463106],
+          [-2.520725, 51.462277],
+          [-2.523744, 51.461825],
+          [-2.524257, 51.461779],
+          [-2.52466, 51.461776],
+          [-2.526009, 51.461836],
+          [-2.526211, 51.461834],
+          [-2.526347, 51.461817],
+          [-2.526595, 51.461763],
+          [-2.527901, 51.461363],
+          [-2.528812, 51.461105],
+          [-2.52931, 51.460997],
+          [-2.529551, 51.460968],
+          [-2.529969, 51.460947],
+          [-2.530653, 51.460952],
+          [-2.53229, 51.461027],
+          [-2.532996, 51.461077],
+          [-2.535657, 51.461473],
+          [-2.537232, 51.461489],
+          [-2.537545, 51.461468],
+          [-2.538658, 51.461253],
+          [-2.539482, 51.461116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535692, 51.459202],
+          [-2.535924, 51.459276],
+          [-2.537087, 51.459816],
+          [-2.537561, 51.459978],
+          [-2.538202, 51.460127],
+          [-2.539427, 51.460336],
+          [-2.54026, 51.460424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532457, 51.458359],
+          [-2.532793, 51.45853],
+          [-2.533134, 51.458647],
+          [-2.533565, 51.458757],
+          [-2.535085, 51.459036],
+          [-2.535413, 51.459116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.511986, 51.463038],
+          [-2.514295, 51.46323],
+          [-2.514672, 51.463241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514672, 51.463241],
+          [-2.514652, 51.463346],
+          [-2.514331, 51.464083],
+          [-2.514266, 51.464296],
+          [-2.514246, 51.464946],
+          [-2.514068, 51.465001],
+          [-2.513233, 51.465588],
+          [-2.513166, 51.465666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535692, 51.459202],
+          [-2.535656, 51.459153],
+          [-2.535512, 51.459108],
+          [-2.535413, 51.459116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535413, 51.459116],
+          [-2.535474, 51.459166],
+          [-2.535599, 51.459206],
+          [-2.535692, 51.459202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540024, 51.459385],
+          [-2.540151, 51.459305],
+          [-2.540672, 51.459127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521601, 51.456635],
+          [-2.52171, 51.456702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514247, 51.464762],
+          [-2.515946, 51.464808],
+          [-2.517301, 51.464835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520405, 51.456655],
+          [-2.520031, 51.457888],
+          [-2.520039, 51.457956],
+          [-2.520111, 51.457995],
+          [-2.521163, 51.458148]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528148, 51.465321],
+          [-2.528555, 51.465735],
+          [-2.528818, 51.466131],
+          [-2.528905, 51.466322],
+          [-2.528959, 51.466497],
+          [-2.529022, 51.466867]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528148, 51.465321],
+          [-2.528516, 51.46509],
+          [-2.529524, 51.464343],
+          [-2.529786, 51.464178],
+          [-2.529916, 51.464114],
+          [-2.530075, 51.464053],
+          [-2.530817, 51.463825],
+          [-2.531086, 51.463699],
+          [-2.531664, 51.463367],
+          [-2.532775, 51.462867],
+          [-2.533147, 51.462615],
+          [-2.533246, 51.462536],
+          [-2.533553, 51.46225],
+          [-2.53368, 51.462164],
+          [-2.533824, 51.462092],
+          [-2.53399, 51.462023],
+          [-2.534157, 51.461983],
+          [-2.53448, 51.461947],
+          [-2.53503, 51.461925],
+          [-2.535245, 51.461891],
+          [-2.535313, 51.461861],
+          [-2.535464, 51.461746],
+          [-2.535573, 51.461641],
+          [-2.535657, 51.461473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535573, 51.461641],
+          [-2.536084, 51.461778],
+          [-2.536356, 51.461822],
+          [-2.536875, 51.461938],
+          [-2.537349, 51.462084],
+          [-2.537919, 51.46223],
+          [-2.537676, 51.462401],
+          [-2.537626, 51.462469],
+          [-2.537572, 51.462993],
+          [-2.537532, 51.463111],
+          [-2.537475, 51.463219],
+          [-2.537466, 51.463282],
+          [-2.537477, 51.46338],
+          [-2.537521, 51.463467],
+          [-2.537571, 51.463531],
+          [-2.537753, 51.463713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532864, 51.462248],
+          [-2.532996, 51.461077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530816, 51.46198],
+          [-2.530945, 51.462002],
+          [-2.532872, 51.462104]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52969, 51.462293],
+          [-2.530297, 51.462167],
+          [-2.530674, 51.462053],
+          [-2.530816, 51.46198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532044, 51.462061],
+          [-2.532146, 51.461021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530653, 51.460952],
+          [-2.530737, 51.461844],
+          [-2.53076, 51.461908],
+          [-2.530816, 51.46198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527258, 51.462263],
+          [-2.528495, 51.462173],
+          [-2.528551, 51.462158],
+          [-2.528603, 51.462132],
+          [-2.528633, 51.462097],
+          [-2.528644, 51.462058],
+          [-2.528618, 51.461885],
+          [-2.528623, 51.461833],
+          [-2.528648, 51.461793],
+          [-2.528742, 51.461732],
+          [-2.528875, 51.461695],
+          [-2.528924, 51.461663],
+          [-2.528956, 51.461591],
+          [-2.528953, 51.461463],
+          [-2.528913, 51.461286],
+          [-2.528812, 51.461105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526996, 51.461642],
+          [-2.527228, 51.462123],
+          [-2.527258, 51.462263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523744, 51.461825],
+          [-2.523761, 51.463057],
+          [-2.523824, 51.463316],
+          [-2.523976, 51.463647],
+          [-2.524024, 51.463794],
+          [-2.524232, 51.464271],
+          [-2.524362, 51.464527],
+          [-2.524283, 51.464943],
+          [-2.524212, 51.465513],
+          [-2.524163, 51.465674],
+          [-2.524003, 51.465935],
+          [-2.524028, 51.466058],
+          [-2.524126, 51.466134],
+          [-2.525334, 51.466445],
+          [-2.525455, 51.466495],
+          [-2.525552, 51.466549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528148, 51.465321],
+          [-2.526661, 51.46608],
+          [-2.525936, 51.466393],
+          [-2.525006, 51.466777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540421, 51.4584],
+          [-2.54074, 51.458505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538637, 51.45967],
+          [-2.538802, 51.458721],
+          [-2.538951, 51.457968]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537794, 51.458651],
+          [-2.539715, 51.458788],
+          [-2.539933, 51.458811],
+          [-2.540147, 51.458846],
+          [-2.540352, 51.458892],
+          [-2.54047, 51.458934],
+          [-2.540559, 51.459],
+          [-2.540672, 51.459127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540024, 51.459385],
+          [-2.539926, 51.459339],
+          [-2.539808, 51.459307],
+          [-2.53872, 51.459201],
+          [-2.537368, 51.4591],
+          [-2.536392, 51.458805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536392, 51.458805],
+          [-2.53657, 51.458543],
+          [-2.536916, 51.4586],
+          [-2.537031, 51.458598],
+          [-2.537111, 51.458444],
+          [-2.537191, 51.458376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534101, 51.459287],
+          [-2.534091, 51.459152],
+          [-2.534104, 51.459064],
+          [-2.534232, 51.45881],
+          [-2.534181, 51.458638],
+          [-2.534088, 51.458495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536541, 51.459987],
+          [-2.535948, 51.460104],
+          [-2.535827, 51.460116],
+          [-2.53416, 51.460174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536541, 51.459987],
+          [-2.536744, 51.460404],
+          [-2.53677, 51.460516],
+          [-2.536758, 51.460559],
+          [-2.53673, 51.460597],
+          [-2.536673, 51.460634],
+          [-2.5366, 51.46066],
+          [-2.535533, 51.460737],
+          [-2.535576, 51.460925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531769, 51.458602],
+          [-2.531702, 51.458921],
+          [-2.531611, 51.459221]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520758, 51.464615],
+          [-2.520381, 51.463958],
+          [-2.520108, 51.463441],
+          [-2.519999, 51.463004],
+          [-2.519926, 51.46242]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5191, 51.465645],
+          [-2.51927, 51.466363],
+          [-2.519304, 51.466667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522422, 51.466323],
+          [-2.522109, 51.466309],
+          [-2.521977, 51.466338],
+          [-2.521174, 51.46631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52226, 51.464133],
+          [-2.521232, 51.464443]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524024, 51.463794],
+          [-2.52357, 51.463853],
+          [-2.522764, 51.463986],
+          [-2.522451, 51.464067],
+          [-2.52226, 51.464133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521462, 51.463229],
+          [-2.522308, 51.463119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52194, 51.462099],
+          [-2.522308, 51.463119],
+          [-2.522306, 51.4632],
+          [-2.522367, 51.463375],
+          [-2.522626, 51.464022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525461, 51.463495],
+          [-2.525412, 51.463456],
+          [-2.525324, 51.463431],
+          [-2.525197, 51.463431],
+          [-2.523976, 51.463647]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52478, 51.463583],
+          [-2.524745, 51.46351]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522383, 51.465519],
+          [-2.522391, 51.465541],
+          [-2.522447, 51.465581],
+          [-2.52316, 51.465761],
+          [-2.524013, 51.465994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52226, 51.464133],
+          [-2.522888, 51.464876],
+          [-2.522925, 51.464906],
+          [-2.522966, 51.464918],
+          [-2.524283, 51.464943],
+          [-2.524615, 51.464935],
+          [-2.524915, 51.464908],
+          [-2.525188, 51.464854],
+          [-2.525451, 51.464782],
+          [-2.526283, 51.464496],
+          [-2.52738, 51.464081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528623, 51.464137],
+          [-2.527883, 51.464238],
+          [-2.527485, 51.464314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527844, 51.463407],
+          [-2.527055, 51.463545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526584, 51.463459],
+          [-2.52697, 51.463359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526222, 51.463873],
+          [-2.525515, 51.464007],
+          [-2.524754, 51.464177],
+          [-2.524232, 51.464271]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525805, 51.464023],
+          [-2.52578, 51.463956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525011, 51.463256],
+          [-2.524884, 51.463196],
+          [-2.524815, 51.463121],
+          [-2.524759, 51.463024],
+          [-2.524686, 51.462826],
+          [-2.523749, 51.462818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524707, 51.462524],
+          [-2.524707, 51.462702],
+          [-2.524686, 51.462826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524485, 51.4625],
+          [-2.524707, 51.462524],
+          [-2.524911, 51.462504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526661, 51.46608],
+          [-2.526601, 51.466024],
+          [-2.526587, 51.465981],
+          [-2.526535, 51.465461],
+          [-2.526475, 51.465061],
+          [-2.526391, 51.464734],
+          [-2.526329, 51.464564],
+          [-2.526283, 51.464496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525461, 51.465591],
+          [-2.526535, 51.465461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523291, 51.462598],
+          [-2.523317, 51.462719],
+          [-2.523345, 51.462741],
+          [-2.523752, 51.462716]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517236, 51.462916],
+          [-2.517336, 51.463127],
+          [-2.517411, 51.463251],
+          [-2.517529, 51.463357],
+          [-2.517802, 51.463529],
+          [-2.517868, 51.463589],
+          [-2.51791, 51.46367],
+          [-2.517925, 51.463755],
+          [-2.517899, 51.463836],
+          [-2.517305, 51.464482],
+          [-2.517274, 51.464535],
+          [-2.517267, 51.464593],
+          [-2.517301, 51.464835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51649, 51.463057],
+          [-2.516611, 51.463373],
+          [-2.516608, 51.463428],
+          [-2.516429, 51.463997],
+          [-2.516359, 51.46407],
+          [-2.5162, 51.464136],
+          [-2.516027, 51.464171],
+          [-2.515814, 51.464169],
+          [-2.51566, 51.464131],
+          [-2.515435, 51.464008],
+          [-2.515204, 51.463698],
+          [-2.515101, 51.463234]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51584, 51.465532],
+          [-2.516027, 51.464171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515692, 51.465532],
+          [-2.515951, 51.465532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513652, 51.463177],
+          [-2.513476, 51.46388],
+          [-2.51323, 51.464769],
+          [-2.513231, 51.464848],
+          [-2.513289, 51.464898],
+          [-2.514068, 51.465001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514515, 51.463647],
+          [-2.513557, 51.463565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516465, 51.46604],
+          [-2.516277, 51.46607],
+          [-2.515858, 51.466069],
+          [-2.515615, 51.466165],
+          [-2.51508, 51.46616],
+          [-2.515019, 51.466133],
+          [-2.514979, 51.466075],
+          [-2.514974, 51.465732],
+          [-2.514221, 51.465724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516333, 51.465641],
+          [-2.516332, 51.46579],
+          [-2.516345, 51.465818],
+          [-2.516428, 51.465885],
+          [-2.516439, 51.465996],
+          [-2.516465, 51.46604],
+          [-2.516595, 51.466137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515613, 51.465961],
+          [-2.515615, 51.466165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514978, 51.465648],
+          [-2.514974, 51.465732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513707, 51.466429],
+          [-2.514205, 51.466382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512773, 51.465439],
+          [-2.512642, 51.465638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512221, 51.465275],
+          [-2.512515, 51.465348],
+          [-2.513233, 51.465588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52931, 51.460997],
+          [-2.52895, 51.459668],
+          [-2.528706, 51.458706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52818, 51.459756],
+          [-2.529837, 51.459576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526931, 51.460751],
+          [-2.527731, 51.460759],
+          [-2.527863, 51.460708],
+          [-2.528056, 51.460458],
+          [-2.527959, 51.460213],
+          [-2.528035, 51.460181],
+          [-2.52818, 51.459756],
+          [-2.528187, 51.459283],
+          [-2.528088, 51.458753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525599, 51.459601],
+          [-2.527244, 51.459436],
+          [-2.528184, 51.459421]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528229, 51.458091],
+          [-2.528177, 51.458276],
+          [-2.528134, 51.458316],
+          [-2.528074, 51.458476],
+          [-2.528045, 51.458608],
+          [-2.528057, 51.458753]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521403, 51.457497],
+          [-2.521879, 51.457539],
+          [-2.521991, 51.45753],
+          [-2.522067, 51.45749],
+          [-2.522085, 51.457459],
+          [-2.522131, 51.457245],
+          [-2.522272, 51.457124],
+          [-2.522337, 51.457091],
+          [-2.522391, 51.457079],
+          [-2.522833, 51.457015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522337, 51.457091],
+          [-2.522298, 51.457059],
+          [-2.521963, 51.456885]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522786, 51.461104],
+          [-2.522666, 51.46096],
+          [-2.522347, 51.460637],
+          [-2.522217, 51.460401],
+          [-2.521825, 51.459372]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519969, 51.460807],
+          [-2.521184, 51.460759],
+          [-2.522225, 51.460783],
+          [-2.52234, 51.460774],
+          [-2.52244, 51.460741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526472, 51.460188],
+          [-2.526311, 51.461004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525751, 51.458703],
+          [-2.525214, 51.461792]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524369, 51.45894],
+          [-2.524481, 51.459189],
+          [-2.524391, 51.459737],
+          [-2.52439, 51.459894],
+          [-2.524431, 51.459968],
+          [-2.524525, 51.460042],
+          [-2.524651, 51.460089],
+          [-2.524822, 51.46012],
+          [-2.525493, 51.460152],
+          [-2.526472, 51.460188],
+          [-2.527959, 51.460213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522987, 51.460912],
+          [-2.523112, 51.460933],
+          [-2.524345, 51.460916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529128, 51.460329],
+          [-2.530049, 51.46024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518703, 51.459145],
+          [-2.518792, 51.45912],
+          [-2.519702, 51.458969],
+          [-2.519839, 51.458956],
+          [-2.519981, 51.458966],
+          [-2.520444, 51.459069],
+          [-2.520679, 51.459111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518703, 51.459145],
+          [-2.518633, 51.459065],
+          [-2.518607, 51.45897],
+          [-2.518707, 51.458464],
+          [-2.518681, 51.45826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519642, 51.460818],
+          [-2.519473, 51.46096],
+          [-2.519344, 51.461027],
+          [-2.519274, 51.461057],
+          [-2.518723, 51.461238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518095, 51.460451],
+          [-2.518289, 51.46072],
+          [-2.518723, 51.461238],
+          [-2.518766, 51.461381],
+          [-2.518713, 51.46159],
+          [-2.51863, 51.461815],
+          [-2.518437, 51.462064],
+          [-2.518397, 51.462102],
+          [-2.518213, 51.462386],
+          [-2.518132, 51.462459],
+          [-2.518101, 51.462536],
+          [-2.518108, 51.462752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51482, 51.462414],
+          [-2.5157, 51.462333],
+          [-2.516376, 51.462298],
+          [-2.516627, 51.462249],
+          [-2.516784, 51.462154],
+          [-2.51687, 51.461988],
+          [-2.517234, 51.46105],
+          [-2.517303, 51.460993],
+          [-2.517416, 51.46095],
+          [-2.518289, 51.46072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51687, 51.461988],
+          [-2.517109, 51.462018],
+          [-2.517199, 51.46209],
+          [-2.517327, 51.462394]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513464, 51.462067],
+          [-2.513601, 51.462122],
+          [-2.513999, 51.462212],
+          [-2.51456, 51.462292],
+          [-2.514693, 51.462325],
+          [-2.514763, 51.462355],
+          [-2.514798, 51.462382],
+          [-2.514846, 51.46245],
+          [-2.514926, 51.462628],
+          [-2.514953, 51.462731],
+          [-2.51502, 51.463239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51609, 51.460073],
+          [-2.514528, 51.461907],
+          [-2.514448, 51.46202],
+          [-2.514347, 51.462262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.5157, 51.462333],
+          [-2.515918, 51.463143]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513464, 51.462067],
+          [-2.513106, 51.462677]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51609, 51.460073],
+          [-2.515866, 51.460047]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522786, 51.461104],
+          [-2.522912, 51.461044],
+          [-2.523095, 51.460707],
+          [-2.523244, 51.460523],
+          [-2.523299, 51.460392],
+          [-2.523352, 51.460041],
+          [-2.523339, 51.459764],
+          [-2.523292, 51.459537],
+          [-2.523143, 51.459184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.513215, 51.46165],
+          [-2.513464, 51.462067]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533284, 51.464216],
+          [-2.53329, 51.464375],
+          [-2.532996, 51.466358],
+          [-2.532996, 51.466414],
+          [-2.533034, 51.466517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532775, 51.462867],
+          [-2.532956, 51.463078],
+          [-2.532996, 51.463175],
+          [-2.533114, 51.463541],
+          [-2.533284, 51.464216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526211, 51.461834],
+          [-2.526399, 51.462205],
+          [-2.526558, 51.462732],
+          [-2.52697, 51.463359],
+          [-2.527146, 51.463721],
+          [-2.52738, 51.464081],
+          [-2.527485, 51.464314],
+          [-2.52773, 51.464945],
+          [-2.527798, 51.46507],
+          [-2.527942, 51.465199],
+          [-2.528119, 51.465336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535061, 51.462762],
+          [-2.533246, 51.462536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527561, 51.466388],
+          [-2.530207, 51.465849],
+          [-2.530339, 51.465797],
+          [-2.530947, 51.465486],
+          [-2.533043, 51.464301],
+          [-2.533284, 51.464216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534134, 51.463532],
+          [-2.534978, 51.463486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536218, 51.463868],
+          [-2.535762, 51.463873],
+          [-2.535758, 51.463789],
+          [-2.535741, 51.463762],
+          [-2.535738, 51.463605],
+          [-2.535758, 51.463565],
+          [-2.5358, 51.463537],
+          [-2.535847, 51.463526],
+          [-2.536252, 51.463565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53496, 51.463579],
+          [-2.535026, 51.463577],
+          [-2.535216, 51.463638],
+          [-2.535312, 51.463656],
+          [-2.535739, 51.463652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532956, 51.463078],
+          [-2.533236, 51.463045],
+          [-2.535079, 51.462959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518095, 51.460451],
+          [-2.518216, 51.460389],
+          [-2.518234, 51.460358],
+          [-2.518648, 51.459206],
+          [-2.518703, 51.459145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.538654, 51.461608],
+          [-2.538699, 51.461552],
+          [-2.538717, 51.461492],
+          [-2.538658, 51.461253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536604, 51.465069],
+          [-2.536612, 51.464647],
+          [-2.5367, 51.464429],
+          [-2.5368, 51.464288],
+          [-2.536854, 51.464236],
+          [-2.536961, 51.464165],
+          [-2.537023, 51.46414],
+          [-2.537384, 51.46408],
+          [-2.537543, 51.46404],
+          [-2.537649, 51.463992],
+          [-2.537776, 51.463902],
+          [-2.537807, 51.463852],
+          [-2.53781, 51.46382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533284, 51.464216],
+          [-2.534936, 51.464429],
+          [-2.535488, 51.464508],
+          [-2.535554, 51.464528],
+          [-2.535747, 51.464618],
+          [-2.536477, 51.465013],
+          [-2.536636, 51.465089],
+          [-2.536802, 51.465222],
+          [-2.5371, 51.465509],
+          [-2.537147, 51.465576],
+          [-2.537186, 51.465703],
+          [-2.537175, 51.46611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535525, 51.464517],
+          [-2.535648, 51.46432],
+          [-2.535646, 51.46422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533218, 51.464863],
+          [-2.535319, 51.465093],
+          [-2.536237, 51.465075],
+          [-2.536477, 51.465013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533113, 51.465522],
+          [-2.534964, 51.465737],
+          [-2.535358, 51.465766],
+          [-2.535782, 51.465768],
+          [-2.537186, 51.465703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530339, 51.465797],
+          [-2.531277, 51.46688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530831, 51.466369],
+          [-2.531241, 51.466233],
+          [-2.531337, 51.466186],
+          [-2.531381, 51.466146],
+          [-2.531381, 51.466091],
+          [-2.531292, 51.465995]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529743, 51.465945],
+          [-2.529453, 51.465362]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530947, 51.465486],
+          [-2.530118, 51.464892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531704, 51.465052],
+          [-2.530245, 51.463997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532472, 51.464627],
+          [-2.53183, 51.464168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532857, 51.464411],
+          [-2.532237, 51.463956],
+          [-2.532154, 51.463916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531664, 51.463367],
+          [-2.53204, 51.46362],
+          [-2.532232, 51.46369],
+          [-2.532349, 51.463715],
+          [-2.532402, 51.463712],
+          [-2.532634, 51.463638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532045, 51.463194],
+          [-2.53177, 51.462923],
+          [-2.531152, 51.462524]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531086, 51.463699],
+          [-2.530871, 51.463506],
+          [-2.530681, 51.463535]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528924, 51.461663],
+          [-2.528992, 51.461684],
+          [-2.529034, 51.461685],
+          [-2.530112, 51.461614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53448, 51.461947],
+          [-2.534344, 51.462407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534936, 51.464429],
+          [-2.534942, 51.46432],
+          [-2.534914, 51.463911],
+          [-2.534919, 51.463825],
+          [-2.535079, 51.462959],
+          [-2.535082, 51.462865],
+          [-2.535038, 51.462641],
+          [-2.535038, 51.46255],
+          [-2.535245, 51.461891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524445, 51.458251],
+          [-2.524331, 51.458172],
+          [-2.52429, 51.458122],
+          [-2.524291, 51.458094],
+          [-2.524316, 51.458063],
+          [-2.524491, 51.45794],
+          [-2.524557, 51.457921],
+          [-2.524614, 51.457918],
+          [-2.524836, 51.457943],
+          [-2.524884, 51.457938],
+          [-2.524959, 51.457908],
+          [-2.524972, 51.457887],
+          [-2.524964, 51.457775],
+          [-2.524948, 51.45773],
+          [-2.524888, 51.457637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524682, 51.458325],
+          [-2.525408, 51.458724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524682, 51.458325],
+          [-2.524752, 51.45825],
+          [-2.524809, 51.458215],
+          [-2.524884, 51.458187],
+          [-2.525509, 51.458081],
+          [-2.52587, 51.457968],
+          [-2.52628, 51.457899],
+          [-2.526481, 51.457855],
+          [-2.526547, 51.45782],
+          [-2.526553, 51.457793],
+          [-2.526501, 51.457702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522712, 51.45823],
+          [-2.5228, 51.458504],
+          [-2.52374, 51.458509],
+          [-2.523843, 51.458499],
+          [-2.523946, 51.45847],
+          [-2.524287, 51.458283],
+          [-2.524445, 51.458251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531462, 51.465927],
+          [-2.531174, 51.466033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519381, 51.463803],
+          [-2.518647, 51.463791],
+          [-2.517925, 51.463755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512695, 51.463097],
+          [-2.512644, 51.463202],
+          [-2.512521, 51.463334],
+          [-2.512448, 51.463432],
+          [-2.512336, 51.463708],
+          [-2.512225, 51.464182],
+          [-2.512019, 51.464912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512225, 51.464182],
+          [-2.511742, 51.464136]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512504, 51.463356],
+          [-2.512037, 51.463391],
+          [-2.511947, 51.463384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535636, 51.462754],
+          [-2.535544, 51.462691],
+          [-2.53549, 51.462671],
+          [-2.535183, 51.462599],
+          [-2.535034, 51.46259]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536537, 51.463931],
+          [-2.536585, 51.463927],
+          [-2.536636, 51.463908],
+          [-2.536656, 51.463888],
+          [-2.536656, 51.463741],
+          [-2.53667, 51.463719],
+          [-2.536714, 51.46371],
+          [-2.536848, 51.46373],
+          [-2.53695, 51.463765],
+          [-2.537069, 51.463855],
+          [-2.537127, 51.463978],
+          [-2.537213, 51.464112]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536875, 51.461938],
+          [-2.536568, 51.462609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526604, 51.466987],
+          [-2.526596, 51.46619],
+          [-2.526573, 51.466118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536195, 51.462638],
+          [-2.536258, 51.462545],
+          [-2.536628, 51.462624]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537186, 51.46271],
+          [-2.537603, 51.462661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520518, 51.460786],
+          [-2.520549, 51.460912],
+          [-2.52066, 51.461026],
+          [-2.520746, 51.461236],
+          [-2.520858, 51.461326],
+          [-2.521068, 51.461292]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521622, 51.458857],
+          [-2.521715, 51.458895],
+          [-2.521765, 51.458934],
+          [-2.521771, 51.458963],
+          [-2.52162, 51.459325]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519408, 51.462138],
+          [-2.519694, 51.462467]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524445, 51.458251],
+          [-2.524532, 51.458269],
+          [-2.524682, 51.458325]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523331, 51.460201],
+          [-2.523786, 51.460239],
+          [-2.524203, 51.460289]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537854, 51.457861],
+          [-2.53867, 51.457933],
+          [-2.538951, 51.457968],
+          [-2.53935, 51.458042],
+          [-2.539913, 51.45823]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537955, 51.460078],
+          [-2.537906, 51.460198],
+          [-2.53787, 51.460361],
+          [-2.537859, 51.460531],
+          [-2.538038, 51.461034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532429, 51.460658],
+          [-2.532528, 51.460679],
+          [-2.53229, 51.461027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534101, 51.459287],
+          [-2.53361, 51.459058],
+          [-2.533589, 51.459032],
+          [-2.5336, 51.459002],
+          [-2.53383, 51.458811]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53416, 51.460174],
+          [-2.534101, 51.459287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535215, 51.461414],
+          [-2.534838, 51.461221],
+          [-2.534391, 51.460879],
+          [-2.534212, 51.460636],
+          [-2.53416, 51.460174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534129, 51.459592],
+          [-2.534476, 51.45958],
+          [-2.535201, 51.459722],
+          [-2.535249, 51.459627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532564, 51.458415],
+          [-2.532695, 51.458304],
+          [-2.532786, 51.458209],
+          [-2.532958, 51.45826],
+          [-2.533224, 51.458286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517719, 51.466715],
+          [-2.517345, 51.465184],
+          [-2.517301, 51.464835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517345, 51.465184],
+          [-2.52009, 51.464961],
+          [-2.520179, 51.464945],
+          [-2.520259, 51.46492],
+          [-2.520758, 51.464615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519928, 51.460444],
+          [-2.519825, 51.460533],
+          [-2.519753, 51.460623],
+          [-2.519642, 51.460818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524462, 51.466528],
+          [-2.524547, 51.466631],
+          [-2.524535, 51.466661],
+          [-2.52469, 51.466867]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537087, 51.459816],
+          [-2.53701, 51.459876],
+          [-2.536914, 51.459914],
+          [-2.536541, 51.459987]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522191, 51.466065],
+          [-2.522181, 51.466311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519684, 51.462089],
+          [-2.519459, 51.462197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519642, 51.460818],
+          [-2.519784, 51.460712],
+          [-2.519856, 51.460681],
+          [-2.51993, 51.460666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52264, 51.456937],
+          [-2.522679, 51.457038]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536571, 51.463183],
+          [-2.53684, 51.463263],
+          [-2.5369, 51.4633],
+          [-2.53692, 51.463331],
+          [-2.536935, 51.463424],
+          [-2.536889, 51.463548],
+          [-2.53688, 51.463742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536896, 51.463169],
+          [-2.536836, 51.463262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53332, 51.462035],
+          [-2.53369, 51.46199],
+          [-2.533772, 51.461989],
+          [-2.533897, 51.461996],
+          [-2.53399, 51.462023]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527258, 51.462263],
+          [-2.527375, 51.462843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523726, 51.461828],
+          [-2.523654, 51.461744],
+          [-2.523128, 51.461432],
+          [-2.523004, 51.461339],
+          [-2.522903, 51.461244],
+          [-2.522786, 51.461104]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521245, 51.465157],
+          [-2.521117, 51.465119],
+          [-2.521014, 51.465019],
+          [-2.520758, 51.464615]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539674, 51.460367],
+          [-2.539951, 51.45951],
+          [-2.540024, 51.459385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535924, 51.459276],
+          [-2.536392, 51.458805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51609, 51.460073],
+          [-2.517051, 51.460069],
+          [-2.517288, 51.460095],
+          [-2.517727, 51.460175],
+          [-2.517895, 51.460257],
+          [-2.517994, 51.460333],
+          [-2.518095, 51.460451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518848, 51.460464],
+          [-2.518192, 51.460585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530117, 51.461671],
+          [-2.530112, 51.461614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535563, 51.460677],
+          [-2.535574, 51.460734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521327, 51.462189],
+          [-2.521389, 51.462382],
+          [-2.521465, 51.462459],
+          [-2.521458, 51.462661],
+          [-2.521363, 51.462676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530112, 51.461614],
+          [-2.530113, 51.461546]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540672, 51.459127],
+          [-2.541149, 51.458967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519808, 51.466648],
+          [-2.520897, 51.466608],
+          [-2.52115, 51.466621],
+          [-2.521258, 51.464942],
+          [-2.521232, 51.464443],
+          [-2.521145, 51.46404],
+          [-2.521018, 51.463634],
+          [-2.520785, 51.463003],
+          [-2.520622, 51.462435],
+          [-2.520499, 51.462189],
+          [-2.519969, 51.460807],
+          [-2.51993, 51.460666],
+          [-2.519928, 51.460444],
+          [-2.519946, 51.460338],
+          [-2.520015, 51.4602],
+          [-2.520679, 51.459111],
+          [-2.521046, 51.458402],
+          [-2.521295, 51.457837],
+          [-2.521559, 51.456941],
+          [-2.521627, 51.456808],
+          [-2.52171, 51.456702],
+          [-2.521787, 51.456631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517052, 51.466719],
+          [-2.517095, 51.466718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533134, 51.458647],
+          [-2.533088, 51.458683],
+          [-2.532994, 51.458699],
+          [-2.531769, 51.458602],
+          [-2.530819, 51.458559],
+          [-2.530392, 51.458555],
+          [-2.530127, 51.458563],
+          [-2.528201, 51.45875],
+          [-2.526013, 51.458705],
+          [-2.525578, 51.458709],
+          [-2.525408, 51.458724],
+          [-2.525026, 51.458789],
+          [-2.524369, 51.45894],
+          [-2.523143, 51.459184],
+          [-2.52205, 51.459355],
+          [-2.521825, 51.459372],
+          [-2.520679, 51.459111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524902, 51.46685],
+          [-2.524408, 51.466883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529886, 51.466867],
+          [-2.529371, 51.466853],
+          [-2.529022, 51.466867],
+          [-2.528278, 51.466924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524902, 51.46685],
+          [-2.524949, 51.466886],
+          [-2.524986, 51.466892],
+          [-2.525023, 51.466888],
+          [-2.525077, 51.466857]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525759, 51.466919],
+          [-2.525148, 51.466871],
+          [-2.525077, 51.466857]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525759, 51.466919],
+          [-2.526276, 51.467001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526604, 51.466987],
+          [-2.525759, 51.466919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525077, 51.466857],
+          [-2.525073, 51.466806],
+          [-2.525006, 51.466777],
+          [-2.524921, 51.466796],
+          [-2.524902, 51.46685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533666, 51.466442],
+          [-2.533352, 51.466459],
+          [-2.533034, 51.466517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528797, 51.464265],
+          [-2.529301, 51.463879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52964, 51.464264],
+          [-2.529141, 51.463995]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528394, 51.464588],
+          [-2.528864, 51.464837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528072, 51.464682],
+          [-2.528394, 51.464588],
+          [-2.528636, 51.46448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52772, 51.461794],
+          [-2.528033, 51.461723],
+          [-2.528113, 51.462199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537349, 51.462084],
+          [-2.537195, 51.462316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535841, 51.462986],
+          [-2.535721, 51.463346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534934, 51.463754],
+          [-2.534469, 51.463868],
+          [-2.534406, 51.463877],
+          [-2.534017, 51.463887],
+          [-2.533866, 51.463882],
+          [-2.53375, 51.463849],
+          [-2.533706, 51.463819],
+          [-2.533663, 51.46375],
+          [-2.533637, 51.463555],
+          [-2.533585, 51.463393],
+          [-2.533568, 51.463296],
+          [-2.533604, 51.463262],
+          [-2.533985, 51.46323],
+          [-2.53472, 51.463194],
+          [-2.535026, 51.4632],
+          [-2.535748, 51.463256]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.541164, 51.458549],
+          [-2.541592, 51.458427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.512222, 51.464196],
+          [-2.512749, 51.464244],
+          [-2.512792, 51.464258],
+          [-2.512812, 51.464282],
+          [-2.512809, 51.464296],
+          [-2.512734, 51.464496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523827, 51.457961],
+          [-2.524014, 51.458011],
+          [-2.524216, 51.458111],
+          [-2.52429, 51.458122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531702, 51.458921],
+          [-2.532896, 51.459072],
+          [-2.532859, 51.459183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532798, 51.458092],
+          [-2.532808, 51.458161],
+          [-2.532786, 51.458209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517531, 51.46593],
+          [-2.518148, 51.465869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518118, 51.465773],
+          [-2.518205, 51.465763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517453, 51.465619],
+          [-2.519608, 51.465445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519709, 51.465955],
+          [-2.519427, 51.464566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518179, 51.465968],
+          [-2.5181, 51.465705],
+          [-2.51811, 51.465566],
+          [-2.518192, 51.465701],
+          [-2.518264, 51.466062]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517288, 51.464754],
+          [-2.517525, 51.464775],
+          [-2.517631, 51.464772],
+          [-2.517714, 51.464758],
+          [-2.51785, 51.464713],
+          [-2.517953, 51.464691],
+          [-2.519691, 51.464544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519227, 51.466171],
+          [-2.51984, 51.466186],
+          [-2.519913, 51.466186],
+          [-2.519977, 51.466174],
+          [-2.520026, 51.466146],
+          [-2.520064, 51.466109],
+          [-2.520075, 51.466065],
+          [-2.519994, 51.465941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539169, 51.460293],
+          [-2.539329, 51.459841],
+          [-2.539337, 51.459778]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531862, 51.464965],
+          [-2.532172, 51.465204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524013, 51.465994],
+          [-2.523893, 51.466043],
+          [-2.523783, 51.466115],
+          [-2.523607, 51.466194],
+          [-2.523518, 51.466212],
+          [-2.523456, 51.466208],
+          [-2.523299, 51.466172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522633, 51.466758],
+          [-2.522709, 51.466397],
+          [-2.522454, 51.46638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536348, 51.460982],
+          [-2.536324, 51.461195]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53787, 51.460361],
+          [-2.537456, 51.460448],
+          [-2.537089, 51.46049]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535576, 51.460925],
+          [-2.535589, 51.460969],
+          [-2.535611, 51.460996],
+          [-2.535664, 51.461023],
+          [-2.535723, 51.46103],
+          [-2.536595, 51.460963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537859, 51.460443],
+          [-2.538274, 51.460523]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.539603, 51.46036],
+          [-2.539491, 51.460799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524356, 51.466697],
+          [-2.524408, 51.466883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525759, 51.466919],
+          [-2.525936, 51.466393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534743, 51.461343],
+          [-2.534705, 51.461444],
+          [-2.534439, 51.461405],
+          [-2.534479, 51.461302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540601, 51.459994],
+          [-2.540334, 51.459983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535389, 51.459532],
+          [-2.535152, 51.459412],
+          [-2.534788, 51.459244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535152, 51.459412],
+          [-2.535413, 51.459116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521745, 51.458606],
+          [-2.522136, 51.45803],
+          [-2.522222, 51.457948],
+          [-2.522264, 51.457876]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521867, 51.458427],
+          [-2.521101, 51.45828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521239, 51.457969],
+          [-2.52145, 51.458004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521164, 51.458525],
+          [-2.52145, 51.458004],
+          [-2.521625, 51.457638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537053, 51.463666],
+          [-2.537119, 51.463666],
+          [-2.537119, 51.463764],
+          [-2.537018, 51.463809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.537709, 51.465877],
+          [-2.537616, 51.46556],
+          [-2.537554, 51.465413],
+          [-2.537525, 51.465368],
+          [-2.537445, 51.465283],
+          [-2.537328, 51.465176],
+          [-2.537297, 51.46513],
+          [-2.537291, 51.4651],
+          [-2.537342, 51.464791],
+          [-2.537374, 51.464685],
+          [-2.53752, 51.464348],
+          [-2.537558, 51.464201],
+          [-2.537565, 51.464108],
+          [-2.537543, 51.46404]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534692, 51.464043],
+          [-2.534496, 51.464045],
+          [-2.53447, 51.46404],
+          [-2.53446, 51.464028],
+          [-2.534447, 51.463871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51476, 51.462625],
+          [-2.514926, 51.462628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527136, 51.457713],
+          [-2.526542, 51.45777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529733, 51.458262],
+          [-2.529883, 51.458279],
+          [-2.529937, 51.458298],
+          [-2.529976, 51.458376],
+          [-2.52999, 51.458453],
+          [-2.530043, 51.458571]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518756, 51.462636],
+          [-2.518855, 51.462853]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518483, 51.462685],
+          [-2.518622, 51.463074],
+          [-2.518701, 51.46308],
+          [-2.518752, 51.463172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.525828, 51.462188],
+          [-2.526082, 51.462172],
+          [-2.526363, 51.462141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526061, 51.462003],
+          [-2.526082, 51.462172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536177, 51.462176],
+          [-2.536302, 51.461975],
+          [-2.536316, 51.461925],
+          [-2.536267, 51.46187],
+          [-2.536253, 51.461804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531765, 51.462537],
+          [-2.531823, 51.462598],
+          [-2.531915, 51.46267],
+          [-2.532209, 51.462839],
+          [-2.532343, 51.462931],
+          [-2.532432, 51.463021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519513, 51.458564],
+          [-2.519617, 51.458611],
+          [-2.51974, 51.458965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530546, 51.460587],
+          [-2.530742, 51.460598],
+          [-2.53077, 51.460616],
+          [-2.530779, 51.460647],
+          [-2.530714, 51.460955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523469, 51.461349],
+          [-2.523462, 51.46137],
+          [-2.523262, 51.46151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523583, 51.461354],
+          [-2.523469, 51.461349],
+          [-2.523393, 51.461317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517789, 51.461994],
+          [-2.517542, 51.46193],
+          [-2.517431, 51.461751],
+          [-2.517402, 51.461735],
+          [-2.516983, 51.461675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518241, 51.46137],
+          [-2.51875, 51.461444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524851, 51.46213],
+          [-2.524903, 51.461981],
+          [-2.524927, 51.461783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515747, 51.462011],
+          [-2.514959, 51.462035],
+          [-2.514867, 51.462023],
+          [-2.514528, 51.461907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515325, 51.462024],
+          [-2.516586, 51.460568],
+          [-2.516578, 51.460532],
+          [-2.516552, 51.46051],
+          [-2.515903, 51.460293]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528056, 51.460458],
+          [-2.528318, 51.460452],
+          [-2.52881, 51.460402],
+          [-2.528868, 51.460405],
+          [-2.52889, 51.460429],
+          [-2.528941, 51.460621],
+          [-2.528983, 51.460634],
+          [-2.529201, 51.460614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52602, 51.461184],
+          [-2.526214, 51.461224],
+          [-2.526595, 51.461763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533288, 51.460668],
+          [-2.533142, 51.461098]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523423, 51.458216],
+          [-2.523549, 51.458234],
+          [-2.52362, 51.458286],
+          [-2.523631, 51.458509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.54057, 51.459161],
+          [-2.540728, 51.459384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51675, 51.464824],
+          [-2.516734, 51.465319],
+          [-2.516855, 51.465812],
+          [-2.517052, 51.466719]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515459, 51.46643],
+          [-2.516949, 51.466239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51295, 51.463515],
+          [-2.512462, 51.463417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522673, 51.462536],
+          [-2.522723, 51.462684],
+          [-2.5227, 51.462754],
+          [-2.522665, 51.462791],
+          [-2.522634, 51.462802],
+          [-2.522216, 51.462862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518284, 51.460234],
+          [-2.51889, 51.460315],
+          [-2.51893, 51.460316],
+          [-2.518975, 51.460294],
+          [-2.519004, 51.460263],
+          [-2.519466, 51.459339],
+          [-2.519472, 51.4593],
+          [-2.519432, 51.459016]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524574, 51.460525],
+          [-2.52413, 51.460538],
+          [-2.523817, 51.460561],
+          [-2.52326, 51.460615],
+          [-2.523168, 51.460611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518491, 51.459649],
+          [-2.517977, 51.45958],
+          [-2.517897, 51.459898],
+          [-2.517752, 51.460187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514228, 51.461484],
+          [-2.514351, 51.461435],
+          [-2.514435, 51.461428],
+          [-2.514481, 51.461437],
+          [-2.51483, 51.461553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520238, 51.458675],
+          [-2.52035, 51.458695],
+          [-2.520398, 51.458689],
+          [-2.520428, 51.45867],
+          [-2.520716, 51.458239],
+          [-2.520785, 51.458093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529969, 51.460947],
+          [-2.529962, 51.460601],
+          [-2.530049, 51.46024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522987, 51.463037],
+          [-2.522994, 51.463106],
+          [-2.523162, 51.46363],
+          [-2.523156, 51.463693],
+          [-2.52323, 51.463906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522859, 51.463968],
+          [-2.523124, 51.464304],
+          [-2.523149, 51.464312],
+          [-2.523187, 51.464313],
+          [-2.523515, 51.464268],
+          [-2.523539, 51.464223],
+          [-2.523807, 51.464157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.531324, 51.461466],
+          [-2.531183, 51.461462],
+          [-2.531146, 51.461448],
+          [-2.531126, 51.461429],
+          [-2.531114, 51.461394],
+          [-2.531111, 51.461247],
+          [-2.531116, 51.461182],
+          [-2.531144, 51.461081],
+          [-2.531147, 51.460977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522926, 51.45875],
+          [-2.521935, 51.458906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520629, 51.460395],
+          [-2.520668, 51.460781]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517071, 51.464045],
+          [-2.517536, 51.46423]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514797, 51.465351],
+          [-2.514788, 51.465728]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517093, 51.463966],
+          [-2.517071, 51.464045],
+          [-2.51698, 51.464089]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521554, 51.464346],
+          [-2.521746, 51.464603],
+          [-2.521796, 51.464642],
+          [-2.521928, 51.464685],
+          [-2.522286, 51.46505],
+          [-2.522363, 51.465107],
+          [-2.522559, 51.465177],
+          [-2.523178, 51.465345],
+          [-2.523421, 51.465407],
+          [-2.523661, 51.465458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523669, 51.465442],
+          [-2.523465, 51.465845]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522422, 51.465563],
+          [-2.522298, 51.465658],
+          [-2.52219, 51.465701],
+          [-2.52201, 51.465703]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526013, 51.458705],
+          [-2.52618, 51.458264],
+          [-2.527294, 51.458289],
+          [-2.528276, 51.45832],
+          [-2.528434, 51.45834],
+          [-2.528482, 51.458272]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524484, 51.461446],
+          [-2.524548, 51.461625],
+          [-2.524552, 51.461777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53252, 51.462523],
+          [-2.532567, 51.462622],
+          [-2.532625, 51.462709],
+          [-2.532775, 51.462867]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521441, 51.457355],
+          [-2.520794, 51.457287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520541, 51.458057],
+          [-2.520794, 51.457287],
+          [-2.520941, 51.456719],
+          [-2.520937, 51.456672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532864, 51.462248],
+          [-2.532847, 51.46239],
+          [-2.532823, 51.462435],
+          [-2.532736, 51.462507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532129, 51.462066],
+          [-2.532119, 51.462265],
+          [-2.532135, 51.462299],
+          [-2.532196, 51.462363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532165, 51.462392],
+          [-2.532196, 51.462363],
+          [-2.532274, 51.462346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519658, 51.463029],
+          [-2.51962, 51.462805],
+          [-2.519656, 51.462778],
+          [-2.51977, 51.462754],
+          [-2.519969, 51.46273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519843, 51.462938],
+          [-2.519643, 51.462955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514537, 51.466274],
+          [-2.514537, 51.466359],
+          [-2.514725, 51.466361],
+          [-2.514725, 51.466316],
+          [-2.514746, 51.466294],
+          [-2.515041, 51.466296],
+          [-2.515103, 51.466279],
+          [-2.515141, 51.466258],
+          [-2.515162, 51.466232],
+          [-2.515169, 51.466162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516148, 51.465506],
+          [-2.516146, 51.465673],
+          [-2.516333, 51.465674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520491, 51.466289],
+          [-2.520483, 51.466622]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.518221, 51.466324],
+          [-2.5182, 51.466189],
+          [-2.51818, 51.466178],
+          [-2.518153, 51.466174],
+          [-2.517603, 51.466229]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.540135, 51.458417],
+          [-2.540112, 51.458428],
+          [-2.54008, 51.458432],
+          [-2.539863, 51.458419],
+          [-2.538879, 51.458329],
+          [-2.537993, 51.458268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.535852, 51.458737],
+          [-2.5359, 51.458721],
+          [-2.536037, 51.458527],
+          [-2.536085, 51.458494],
+          [-2.536128, 51.458489],
+          [-2.536207, 51.458499],
+          [-2.536361, 51.458538],
+          [-2.536526, 51.458607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520425, 51.465313],
+          [-2.520461, 51.465167],
+          [-2.520442, 51.465141],
+          [-2.520409, 51.465122],
+          [-2.52024, 51.465064],
+          [-2.520202, 51.465029],
+          [-2.520148, 51.464951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515177, 51.46519],
+          [-2.514241, 51.465091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515936, 51.463634],
+          [-2.515895, 51.463664],
+          [-2.515811, 51.4637],
+          [-2.515322, 51.463856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.51585, 51.463803],
+          [-2.515842, 51.463709],
+          [-2.515811, 51.4637]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.515537, 51.463655],
+          [-2.515646, 51.463651],
+          [-2.515679, 51.463672],
+          [-2.515714, 51.463731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517982, 51.46184],
+          [-2.518509, 51.461971]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519698, 51.461971],
+          [-2.519734, 51.462016],
+          [-2.519789, 51.462055],
+          [-2.519914, 51.462213],
+          [-2.520005, 51.462406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519205, 51.460516],
+          [-2.519159, 51.46066],
+          [-2.519164, 51.460689],
+          [-2.519193, 51.460702],
+          [-2.519655, 51.460796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516846, 51.462631],
+          [-2.516676, 51.462219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.516518, 51.462623],
+          [-2.516607, 51.462525],
+          [-2.516586, 51.462367],
+          [-2.516543, 51.462265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.519918, 51.458961],
+          [-2.519703, 51.459327]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534825, 51.4594],
+          [-2.534656, 51.459336],
+          [-2.53456, 51.459227],
+          [-2.534493, 51.459206],
+          [-2.534283, 51.459168],
+          [-2.534091, 51.459152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532241, 51.458797],
+          [-2.531971, 51.458768],
+          [-2.531922, 51.458949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53211, 51.459071],
+          [-2.532143, 51.458977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524356, 51.464507],
+          [-2.524179, 51.464498],
+          [-2.523741, 51.464549],
+          [-2.52355, 51.464272],
+          [-2.523515, 51.464268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523445, 51.46456],
+          [-2.52363, 51.464561],
+          [-2.523741, 51.464549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524918, 51.464462],
+          [-2.524362, 51.464549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.528029, 51.462205],
+          [-2.52803, 51.462511]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527128, 51.461916],
+          [-2.527574, 51.461816],
+          [-2.527625, 51.461821],
+          [-2.527656, 51.461836],
+          [-2.527692, 51.461923],
+          [-2.527856, 51.461918]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.530098, 51.461345],
+          [-2.530113, 51.461546]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532089, 51.4616],
+          [-2.531785, 51.46159],
+          [-2.531711, 51.461621],
+          [-2.531471, 51.461612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.526605, 51.463304],
+          [-2.52669, 51.463432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524855, 51.466322],
+          [-2.524731, 51.466513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529398, 51.45918],
+          [-2.529516, 51.459609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533882, 51.46087],
+          [-2.534078, 51.460902],
+          [-2.534378, 51.460862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.533626, 51.46056],
+          [-2.533791, 51.460196],
+          [-2.533816, 51.460176],
+          [-2.534158, 51.460148]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534717, 51.459627],
+          [-2.534801, 51.460474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.534925, 51.460567],
+          [-2.535012, 51.460734],
+          [-2.535276, 51.460693],
+          [-2.535569, 51.460704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.53866, 51.460827],
+          [-2.538553, 51.460835],
+          [-2.537999, 51.460924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52941, 51.458312],
+          [-2.528572, 51.458394],
+          [-2.528491, 51.458419],
+          [-2.52809, 51.458433]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.529171, 51.458337],
+          [-2.529254, 51.458651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.524413, 51.458596],
+          [-2.524884, 51.458439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.52284, 51.459612],
+          [-2.523292, 51.459537],
+          [-2.523726, 51.459451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523926, 51.459643],
+          [-2.523911, 51.459759],
+          [-2.523343, 51.459794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523904, 51.459884],
+          [-2.523911, 51.459759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520669, 51.461042],
+          [-2.520402, 51.461083],
+          [-2.520382, 51.461135],
+          [-2.520415, 51.461228],
+          [-2.520434, 51.461248],
+          [-2.520481, 51.46126],
+          [-2.520741, 51.461222]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.520474, 51.461376],
+          [-2.520459, 51.461315],
+          [-2.520481, 51.46126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521011, 51.461626],
+          [-2.520895, 51.461356],
+          [-2.520858, 51.461326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.523917, 51.458678],
+          [-2.523722, 51.458628],
+          [-2.523636, 51.458629],
+          [-2.522926, 51.45875],
+          [-2.523111, 51.459189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521113, 51.46222],
+          [-2.521213, 51.462442],
+          [-2.521211, 51.462593],
+          [-2.521166, 51.462616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.532189, 51.460367],
+          [-2.532264, 51.460391],
+          [-2.532303, 51.46044],
+          [-2.532302, 51.460537],
+          [-2.532359, 51.46058],
+          [-2.532456, 51.460616],
+          [-2.532479, 51.460668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.521602, 51.461762],
+          [-2.521491, 51.461779],
+          [-2.521631, 51.462144]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.527844, 51.463407],
+          [-2.527901, 51.463407],
+          [-2.527948, 51.463418],
+          [-2.527981, 51.463436],
+          [-2.528004, 51.463462],
+          [-2.527999, 51.46355],
+          [-2.528009, 51.463576],
+          [-2.528052, 51.46361],
+          [-2.528075, 51.463647],
+          [-2.528081, 51.463713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.536067, 51.462173],
+          [-2.53616, 51.462077],
+          [-2.536205, 51.461971],
+          [-2.536267, 51.46187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.517977, 51.45958],
+          [-2.517927, 51.459575],
+          [-2.518059, 51.459179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.522544, 51.458122],
+          [-2.522566, 51.458189],
+          [-2.522694, 51.458173],
+          [-2.522712, 51.45823]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "st-george-central" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.514246, 51.464946],
+          [-2.514205, 51.466382],
+          [-2.514319, 51.466964]
+        ]
+      }
+    }
+  ]
+}

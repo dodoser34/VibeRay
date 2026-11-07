@@ -1,0 +1,3385 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559296, 51.469657],
+          [-2.559433, 51.469234],
+          [-2.558798, 51.467993]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562071, 51.469562],
+          [-2.563333, 51.469697],
+          [-2.563451, 51.469718],
+          [-2.563572, 51.46977],
+          [-2.563911, 51.470042],
+          [-2.563946, 51.470075],
+          [-2.563984, 51.470172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556874, 51.469384],
+          [-2.556052, 51.468166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562382, 51.45789],
+          [-2.562403, 51.458045],
+          [-2.562439, 51.458117],
+          [-2.562471, 51.458151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562698, 51.458916],
+          [-2.563189, 51.458831],
+          [-2.563255, 51.458791],
+          [-2.56327, 51.458743],
+          [-2.563163, 51.458484],
+          [-2.563119, 51.457876],
+          [-2.563131, 51.457754]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554713, 51.461788],
+          [-2.554488, 51.461139],
+          [-2.554206, 51.460521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563098, 51.45771],
+          [-2.562709, 51.457294],
+          [-2.562365, 51.456875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56208, 51.461327],
+          [-2.562928, 51.460875],
+          [-2.563171, 51.460695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553103, 51.463962],
+          [-2.553384, 51.463022],
+          [-2.553246, 51.462885]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55564, 51.464199],
+          [-2.5556, 51.464216],
+          [-2.555116, 51.464222],
+          [-2.5549, 51.464215],
+          [-2.553844, 51.464073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552186, 51.463323],
+          [-2.552263, 51.4634],
+          [-2.552383, 51.463905],
+          [-2.553103, 51.463962],
+          [-2.553844, 51.464073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556244, 51.458127],
+          [-2.55496, 51.458379],
+          [-2.554432, 51.458447],
+          [-2.554424, 51.458737],
+          [-2.554448, 51.45931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556041, 51.457554],
+          [-2.554789, 51.45771],
+          [-2.554594, 51.457728]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551147, 51.467873],
+          [-2.551471, 51.467673]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557757, 51.46519],
+          [-2.559445, 51.465071],
+          [-2.560192, 51.465001],
+          [-2.560537, 51.464988],
+          [-2.560606, 51.465011],
+          [-2.560676, 51.465133],
+          [-2.560705, 51.465143],
+          [-2.560741, 51.465143],
+          [-2.563575, 51.464717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563882, 51.465135],
+          [-2.564043, 51.465527],
+          [-2.564325, 51.466465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559026, 51.463533],
+          [-2.563019, 51.463123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558072, 51.465915],
+          [-2.558253, 51.466233],
+          [-2.558531, 51.466677],
+          [-2.558585, 51.466703],
+          [-2.558648, 51.466708],
+          [-2.55981, 51.466596],
+          [-2.5612, 51.466545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558083, 51.461767],
+          [-2.558031, 51.462048],
+          [-2.557963, 51.462143],
+          [-2.55767, 51.462405],
+          [-2.557611, 51.462498],
+          [-2.557579, 51.462591],
+          [-2.557559, 51.462685],
+          [-2.557536, 51.46293],
+          [-2.557546, 51.463626],
+          [-2.557452, 51.464239],
+          [-2.557714, 51.465018],
+          [-2.557821, 51.465394],
+          [-2.557902, 51.465588],
+          [-2.558072, 51.465915]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.565189, 51.466787],
+          [-2.5651, 51.466738],
+          [-2.565027, 51.466659],
+          [-2.564924, 51.466608],
+          [-2.564578, 51.466586],
+          [-2.564408, 51.466541],
+          [-2.564325, 51.466465],
+          [-2.56126, 51.466745]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563065, 51.467502],
+          [-2.563805, 51.467437],
+          [-2.56406, 51.467401],
+          [-2.564208, 51.467394],
+          [-2.564606, 51.467402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56406, 51.467401],
+          [-2.56407, 51.466953],
+          [-2.564103, 51.466482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562598, 51.467489],
+          [-2.56251, 51.467109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561999, 51.467536],
+          [-2.561922, 51.467173]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561418, 51.46591],
+          [-2.564043, 51.465527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561306, 51.465629],
+          [-2.561571, 51.46627],
+          [-2.564156, 51.465913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560884, 51.465693],
+          [-2.561306, 51.465629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558672, 51.465122],
+          [-2.558823, 51.465851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559445, 51.465071],
+          [-2.559596, 51.465799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560192, 51.465001],
+          [-2.560352, 51.465738]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556977, 51.465358],
+          [-2.557425, 51.466134],
+          [-2.557477, 51.466146],
+          [-2.558128, 51.466016]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561432, 51.467816],
+          [-2.559458, 51.467955],
+          [-2.554258, 51.468278],
+          [-2.553824, 51.467517],
+          [-2.554455, 51.467366],
+          [-2.55576, 51.467028],
+          [-2.557412, 51.466693],
+          [-2.558408, 51.466477],
+          [-2.561099, 51.466207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55576, 51.467028],
+          [-2.555707, 51.466862],
+          [-2.555587, 51.466635],
+          [-2.55514, 51.465932],
+          [-2.555464, 51.465747],
+          [-2.555813, 51.465568],
+          [-2.555982, 51.465518],
+          [-2.556977, 51.465358],
+          [-2.557774, 51.465243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557508, 51.468074],
+          [-2.556123, 51.465492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558656, 51.468],
+          [-2.557886, 51.466592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556279, 51.468152],
+          [-2.555709, 51.46704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555577, 51.468194],
+          [-2.555534, 51.468038],
+          [-2.555079, 51.467208]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554903, 51.468232],
+          [-2.554455, 51.467366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562071, 51.469562],
+          [-2.561189, 51.469446],
+          [-2.559433, 51.469234],
+          [-2.558492, 51.469137],
+          [-2.557664, 51.469294],
+          [-2.557042, 51.468103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558492, 51.469137],
+          [-2.557916, 51.46805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560289, 51.46934],
+          [-2.559694, 51.467939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561189, 51.469446],
+          [-2.560556, 51.467878]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562071, 51.469562],
+          [-2.561446, 51.467863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560884, 51.465693],
+          [-2.561016, 51.465983],
+          [-2.561099, 51.466207],
+          [-2.561166, 51.4664],
+          [-2.56126, 51.466745],
+          [-2.561293, 51.467015],
+          [-2.561299, 51.467283],
+          [-2.561446, 51.467863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559308, 51.467159],
+          [-2.559458, 51.467955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560881, 51.467287],
+          [-2.559357, 51.467397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563786, 51.467967],
+          [-2.563805, 51.467437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563572, 51.46977],
+          [-2.564137, 51.46954],
+          [-2.564894, 51.469249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563699, 51.468834],
+          [-2.564137, 51.46954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.566028, 51.468811],
+          [-2.565483, 51.468629],
+          [-2.565143, 51.468528],
+          [-2.565063, 51.468514],
+          [-2.5649, 51.468513],
+          [-2.564562, 51.468557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561446, 51.467863],
+          [-2.56305, 51.467752],
+          [-2.563107, 51.467992]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562874, 51.468951],
+          [-2.563699, 51.468834],
+          [-2.564624, 51.468715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562885, 51.462582],
+          [-2.560226, 51.462831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563137, 51.463618],
+          [-2.560224, 51.463976],
+          [-2.557919, 51.46422],
+          [-2.557791, 51.464264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560476, 51.464666],
+          [-2.561064, 51.464549],
+          [-2.561083, 51.464522],
+          [-2.561061, 51.46441],
+          [-2.561095, 51.464379],
+          [-2.562897, 51.464205],
+          [-2.56302, 51.464211],
+          [-2.563312, 51.464172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560082, 51.46343],
+          [-2.560224, 51.463976],
+          [-2.560476, 51.464666],
+          [-2.560441, 51.464696],
+          [-2.560444, 51.464756],
+          [-2.560537, 51.464988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560393, 51.464458],
+          [-2.557623, 51.464759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554236, 51.457498],
+          [-2.554295, 51.457552],
+          [-2.554378, 51.457597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554594, 51.457728],
+          [-2.554542, 51.457829],
+          [-2.554456, 51.458129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555618, 51.463919],
+          [-2.555617, 51.463408],
+          [-2.555599, 51.46336],
+          [-2.555629, 51.463162],
+          [-2.555691, 51.462963],
+          [-2.555739, 51.462702],
+          [-2.555747, 51.46255],
+          [-2.555639, 51.462487],
+          [-2.555334, 51.462359],
+          [-2.555117, 51.462247],
+          [-2.554827, 51.462078],
+          [-2.554705, 51.461972],
+          [-2.554614, 51.461857],
+          [-2.554597, 51.461811]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555618, 51.463919],
+          [-2.557509, 51.463874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553384, 51.463022],
+          [-2.553759, 51.463146],
+          [-2.554864, 51.463294],
+          [-2.555599, 51.46336],
+          [-2.556163, 51.463363],
+          [-2.557544, 51.463331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553844, 51.464073],
+          [-2.554127, 51.463197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554864, 51.463294],
+          [-2.554571, 51.464172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559709, 51.457094],
+          [-2.559553, 51.4568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559008, 51.457195],
+          [-2.558838, 51.456869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558445, 51.457275],
+          [-2.55903, 51.45841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558286, 51.457267],
+          [-2.55815, 51.457026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55837, 51.458548],
+          [-2.55787, 51.45732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557304, 51.457396],
+          [-2.557831, 51.458661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557266, 51.458774],
+          [-2.556679, 51.457479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557659, 51.456821],
+          [-2.558665, 51.456634],
+          [-2.559056, 51.456573],
+          [-2.559672, 51.456513],
+          [-2.560557, 51.45646],
+          [-2.560884, 51.456429],
+          [-2.561771, 51.456302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55913, 51.455046],
+          [-2.559667, 51.456273],
+          [-2.56032, 51.456225],
+          [-2.560996, 51.456118],
+          [-2.561806, 51.455976]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555682, 51.456271],
+          [-2.55561, 51.456235],
+          [-2.554725, 51.455323],
+          [-2.554624, 51.455279],
+          [-2.55449, 51.455282],
+          [-2.553485, 51.455545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560996, 51.456118],
+          [-2.560531, 51.455021],
+          [-2.560512, 51.454926]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56032, 51.456225],
+          [-2.559806, 51.454991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558971, 51.456185],
+          [-2.558501, 51.455151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557966, 51.455394],
+          [-2.558409, 51.456278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557445, 51.455662],
+          [-2.557491, 51.455694],
+          [-2.557841, 51.456367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556913, 51.455894],
+          [-2.557281, 51.456453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56114, 51.457277],
+          [-2.561259, 51.457232],
+          [-2.561115, 51.456875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559836, 51.45823],
+          [-2.559335, 51.457596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556608, 51.458902],
+          [-2.556347, 51.458356],
+          [-2.556285, 51.458254],
+          [-2.556244, 51.458127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55496, 51.458379],
+          [-2.555309, 51.459142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555971, 51.459018],
+          [-2.555748, 51.458537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557245, 51.461723],
+          [-2.556716, 51.460968],
+          [-2.556537, 51.460739],
+          [-2.555392, 51.459128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557814, 51.461744],
+          [-2.557134, 51.460577],
+          [-2.556537, 51.460739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559154, 51.459432],
+          [-2.559058, 51.459533],
+          [-2.558585, 51.459739],
+          [-2.557552, 51.460095],
+          [-2.556314, 51.460422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55974, 51.461846],
+          [-2.559706, 51.461626],
+          [-2.559666, 51.461533],
+          [-2.559398, 51.461103],
+          [-2.558585, 51.459739]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558466, 51.461795],
+          [-2.558468, 51.461607],
+          [-2.558438, 51.461511],
+          [-2.557843, 51.460543],
+          [-2.557552, 51.460095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555773, 51.461714],
+          [-2.555104, 51.46035],
+          [-2.554862, 51.45971],
+          [-2.555668, 51.459527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555176, 51.4605],
+          [-2.55618, 51.460236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559673, 51.454986],
+          [-2.559575, 51.454511]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558899, 51.455071],
+          [-2.558871, 51.454993],
+          [-2.558815, 51.454661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557088, 51.461724],
+          [-2.556896, 51.462616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556943, 51.462417],
+          [-2.556233, 51.462452],
+          [-2.55637, 51.461717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556555, 51.4639],
+          [-2.556572, 51.464449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557539, 51.463174],
+          [-2.558832, 51.463074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553573, 51.462731],
+          [-2.553629, 51.462763],
+          [-2.5537, 51.462775],
+          [-2.553758, 51.462774],
+          [-2.554076, 51.462731],
+          [-2.555691, 51.462963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554831, 51.46284],
+          [-2.554962, 51.462516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557579, 51.462591],
+          [-2.559711, 51.462404],
+          [-2.559853, 51.462382],
+          [-2.559992, 51.462333],
+          [-2.560166, 51.462243],
+          [-2.560286, 51.462167],
+          [-2.560379, 51.462092],
+          [-2.560466, 51.461999],
+          [-2.560505, 51.461934],
+          [-2.560518, 51.461872],
+          [-2.560513, 51.461807]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560648, 51.457619],
+          [-2.560066, 51.457734],
+          [-2.560302, 51.458123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560742, 51.461782],
+          [-2.560258, 51.460813],
+          [-2.559374, 51.459484],
+          [-2.559295, 51.459435],
+          [-2.55923, 51.459426],
+          [-2.559154, 51.459432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558446, 51.458532],
+          [-2.55894, 51.459334],
+          [-2.558967, 51.459367],
+          [-2.559154, 51.459432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561411, 51.458507],
+          [-2.561297, 51.458523],
+          [-2.560605, 51.458672],
+          [-2.560365, 51.458744],
+          [-2.559894, 51.458936],
+          [-2.559672, 51.459016],
+          [-2.55962, 51.459008],
+          [-2.559585, 51.458984],
+          [-2.55921, 51.458376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561297, 51.458523],
+          [-2.561058, 51.457977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562206, 51.456654],
+          [-2.561957, 51.456709],
+          [-2.561751, 51.456766],
+          [-2.561447, 51.45682],
+          [-2.559709, 51.457094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553271, 51.455494],
+          [-2.553402, 51.455672],
+          [-2.553425, 51.455801],
+          [-2.553418, 51.455918]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553006, 51.454356],
+          [-2.553079, 51.454467],
+          [-2.553295, 51.454942],
+          [-2.553303, 51.454996],
+          [-2.553253, 51.455213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563822, 51.465048],
+          [-2.563619, 51.464736],
+          [-2.563575, 51.464717],
+          [-2.563312, 51.464172],
+          [-2.563205, 51.463903],
+          [-2.562801, 51.462249],
+          [-2.562784, 51.462158],
+          [-2.562788, 51.462133],
+          [-2.562808, 51.462117],
+          [-2.562867, 51.462099],
+          [-2.563054, 51.46208],
+          [-2.56309, 51.462053],
+          [-2.563038, 51.461659],
+          [-2.563047, 51.461594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558089, 51.460955],
+          [-2.55916, 51.460699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559398, 51.461103],
+          [-2.558753, 51.461273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562954, 51.461571],
+          [-2.562947, 51.461073]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555348, 51.460854],
+          [-2.55642, 51.460577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556716, 51.460968],
+          [-2.555557, 51.461264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555019, 51.460135],
+          [-2.555931, 51.459892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557184, 51.459729],
+          [-2.556528, 51.459899]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556946, 51.459354],
+          [-2.556232, 51.45953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.566589, 51.468318],
+          [-2.566456, 51.468272],
+          [-2.566145, 51.46819],
+          [-2.566009, 51.468158],
+          [-2.565831, 51.46814],
+          [-2.565525, 51.468116],
+          [-2.565281, 51.468107],
+          [-2.564507, 51.468131]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.565189, 51.466787],
+          [-2.565131, 51.466805],
+          [-2.565032, 51.466881],
+          [-2.564779, 51.467173],
+          [-2.564606, 51.467402],
+          [-2.564538, 51.46755],
+          [-2.564501, 51.467734],
+          [-2.564489, 51.467958],
+          [-2.564562, 51.468557],
+          [-2.564711, 51.468972],
+          [-2.564894, 51.469249],
+          [-2.564954, 51.46942],
+          [-2.565132, 51.469741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.565189, 51.466787],
+          [-2.565739, 51.466653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.566126, 51.468695],
+          [-2.566453, 51.468908],
+          [-2.566734, 51.469117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563865, 51.470911],
+          [-2.56364, 51.470955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554903, 51.457134],
+          [-2.557659, 51.456821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556996, 51.456536],
+          [-2.556015, 51.456163]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556996, 51.456536],
+          [-2.557026, 51.456507],
+          [-2.55709, 51.456486],
+          [-2.559585, 51.456091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560186, 51.453783],
+          [-2.560365, 51.454216],
+          [-2.560467, 51.45458],
+          [-2.560512, 51.454926]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555457, 51.456517],
+          [-2.554383, 51.455815],
+          [-2.554026, 51.455409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556671, 51.458891],
+          [-2.556946, 51.459354],
+          [-2.557446, 51.460125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558906, 51.460277],
+          [-2.557843, 51.460543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564924, 51.466608],
+          [-2.564947, 51.466422],
+          [-2.564935, 51.466226],
+          [-2.564907, 51.466115],
+          [-2.564748, 51.465858],
+          [-2.564496, 51.465533],
+          [-2.56448, 51.46543],
+          [-2.564462, 51.465401],
+          [-2.564143, 51.465185],
+          [-2.563962, 51.465125],
+          [-2.563822, 51.465048]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561293, 51.467228],
+          [-2.561922, 51.467173],
+          [-2.56407, 51.466953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563651, 51.470739],
+          [-2.563393, 51.470654],
+          [-2.563327, 51.470662],
+          [-2.563284, 51.470688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563091, 51.469669],
+          [-2.562698, 51.468416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550235, 51.465859],
+          [-2.550797, 51.465868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563171, 51.460695],
+          [-2.561285, 51.461112]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558421, 51.459795],
+          [-2.55819, 51.459515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557619, 51.458706],
+          [-2.557767, 51.458944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.565932, 51.467764],
+          [-2.564538, 51.46755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561707, 51.468553],
+          [-2.563119, 51.46836],
+          [-2.564235, 51.468229],
+          [-2.564518, 51.468203]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561269, 51.466816],
+          [-2.558879, 51.466954],
+          [-2.558805, 51.466693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563016, 51.468001],
+          [-2.563119, 51.46836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561092, 51.465093],
+          [-2.561306, 51.465629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563742, 51.471684],
+          [-2.564152, 51.471644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564152, 51.471644],
+          [-2.564108, 51.47162],
+          [-2.564067, 51.47158],
+          [-2.564035, 51.471526],
+          [-2.564033, 51.471474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563742, 51.471684],
+          [-2.563837, 51.47163],
+          [-2.564245, 51.47131],
+          [-2.564356, 51.471201],
+          [-2.564424, 51.471111],
+          [-2.564464, 51.471018]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564796, 51.471272],
+          [-2.564898, 51.47129],
+          [-2.564783, 51.47157],
+          [-2.564152, 51.471644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564124, 51.470967],
+          [-2.563865, 51.470911]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554587, 51.456755],
+          [-2.554636, 51.456706],
+          [-2.554701, 51.456693],
+          [-2.554768, 51.456712],
+          [-2.555136, 51.456861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554309, 51.462484],
+          [-2.554932, 51.462591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554294, 51.457601],
+          [-2.554378, 51.457597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561321, 51.460732],
+          [-2.562599, 51.460463],
+          [-2.562722, 51.460413],
+          [-2.563206, 51.460306]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564299, 51.470191],
+          [-2.564535, 51.470551],
+          [-2.56455, 51.470618],
+          [-2.56452, 51.470652],
+          [-2.564281, 51.470781],
+          [-2.564124, 51.470967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.565546, 51.471197],
+          [-2.564124, 51.470967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557047, 51.465011],
+          [-2.557066, 51.465057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556927, 51.465029],
+          [-2.557683, 51.464921]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557966, 51.455394],
+          [-2.557533, 51.455606],
+          [-2.557408, 51.455681],
+          [-2.557309, 51.455713],
+          [-2.557128, 51.455808],
+          [-2.556913, 51.455894],
+          [-2.556494, 51.456041],
+          [-2.555905, 51.456192],
+          [-2.555682, 51.456271],
+          [-2.555301, 51.456702],
+          [-2.555136, 51.456861],
+          [-2.554903, 51.457134],
+          [-2.554807, 51.457289],
+          [-2.554642, 51.457617]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558072, 51.465915],
+          [-2.560884, 51.465693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563171, 51.460695],
+          [-2.56324, 51.46058],
+          [-2.563249, 51.460529],
+          [-2.563241, 51.460435],
+          [-2.563206, 51.460306],
+          [-2.562698, 51.458916],
+          [-2.562596, 51.458534],
+          [-2.562471, 51.458151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563663, 51.470716],
+          [-2.563717, 51.47082],
+          [-2.563805, 51.470883],
+          [-2.563865, 51.470911]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563822, 51.465048],
+          [-2.563882, 51.465135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561271, 51.46553],
+          [-2.563882, 51.465135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564081, 51.465159],
+          [-2.563985, 51.465153],
+          [-2.563936, 51.465168],
+          [-2.56391, 51.465209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560512, 51.454926],
+          [-2.559806, 51.454991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560512, 51.454926],
+          [-2.560707, 51.454913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559806, 51.454991],
+          [-2.559673, 51.454986],
+          [-2.559545, 51.455013],
+          [-2.558899, 51.455071],
+          [-2.558564, 51.455136],
+          [-2.558307, 51.45521],
+          [-2.558236, 51.45527],
+          [-2.557966, 51.455394]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553444, 51.467126],
+          [-2.553243, 51.467261],
+          [-2.553213, 51.467272],
+          [-2.55311, 51.467274],
+          [-2.553003, 51.46729],
+          [-2.552846, 51.467388],
+          [-2.552792, 51.467467],
+          [-2.552452, 51.467681],
+          [-2.552251, 51.467781],
+          [-2.552219, 51.467818],
+          [-2.552188, 51.467899],
+          [-2.552164, 51.468058],
+          [-2.55226, 51.468027],
+          [-2.552518, 51.467987],
+          [-2.552772, 51.467983],
+          [-2.552958, 51.467993],
+          [-2.553136, 51.468022],
+          [-2.553322, 51.468069],
+          [-2.553646, 51.468199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564462, 51.465401],
+          [-2.564819, 51.465265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559709, 51.457094],
+          [-2.558445, 51.457275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558445, 51.457275],
+          [-2.558383, 51.457281],
+          [-2.558286, 51.457267],
+          [-2.558178, 51.457274],
+          [-2.557304, 51.457396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558031, 51.456968],
+          [-2.557659, 51.456821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557659, 51.456821],
+          [-2.556996, 51.456536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55495, 51.456628],
+          [-2.554831, 51.456738]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562471, 51.458151],
+          [-2.562493, 51.458114],
+          [-2.562473, 51.457888]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556041, 51.457554],
+          [-2.556244, 51.458127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554868, 51.46683],
+          [-2.553923, 51.467059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554158, 51.467437],
+          [-2.553804, 51.466848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554201, 51.466704],
+          [-2.554544, 51.46649],
+          [-2.554748, 51.466398],
+          [-2.554897, 51.466308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554544, 51.46649],
+          [-2.554744, 51.466641],
+          [-2.554774, 51.466679],
+          [-2.5551, 51.467202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56354, 51.471687],
+          [-2.563742, 51.471684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.561545, 51.457396],
+          [-2.561888, 51.457913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562212, 51.460846],
+          [-2.562239, 51.460901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562503, 51.461895],
+          [-2.562554, 51.462113],
+          [-2.562744, 51.462095],
+          [-2.562821, 51.462111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554378, 51.457597],
+          [-2.554642, 51.457617]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55312, 51.467635],
+          [-2.552814, 51.467436]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554642, 51.457617],
+          [-2.554594, 51.457728]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559821, 51.453186],
+          [-2.559908, 51.453291]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556679, 51.457479],
+          [-2.556041, 51.457554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557304, 51.457396],
+          [-2.556679, 51.457479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555772, 51.46498],
+          [-2.555676, 51.464239],
+          [-2.55564, 51.464199],
+          [-2.555618, 51.463919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553151, 51.462922],
+          [-2.553415, 51.462816],
+          [-2.553673, 51.462658],
+          [-2.553795, 51.462524],
+          [-2.553851, 51.462364]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554249, 51.461945],
+          [-2.554484, 51.461843],
+          [-2.554713, 51.461788],
+          [-2.555305, 51.461728],
+          [-2.555773, 51.461714],
+          [-2.557417, 51.461727],
+          [-2.559041, 51.461831],
+          [-2.55974, 51.461846],
+          [-2.560311, 51.461824],
+          [-2.560742, 51.461782],
+          [-2.561257, 51.461692],
+          [-2.561477, 51.461629],
+          [-2.56208, 51.461327],
+          [-2.562289, 51.461442],
+          [-2.563047, 51.461594],
+          [-2.563379, 51.461627],
+          [-2.563811, 51.461631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563799, 51.470453],
+          [-2.563507, 51.471011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563984, 51.470172],
+          [-2.563975, 51.470279],
+          [-2.563799, 51.470453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563497, 51.470339],
+          [-2.563669, 51.470368],
+          [-2.563799, 51.470453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550734, 51.464442],
+          [-2.550928, 51.46408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550119, 51.467061],
+          [-2.550229, 51.466559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550235, 51.465859],
+          [-2.550255, 51.465607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551471, 51.467673],
+          [-2.552055, 51.467304],
+          [-2.551648, 51.467025],
+          [-2.551379, 51.466874],
+          [-2.551245, 51.46683],
+          [-2.55121, 51.46677],
+          [-2.55121, 51.466638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55139, 51.463933],
+          [-2.551509, 51.463995],
+          [-2.552972, 51.46407],
+          [-2.553184, 51.464163]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559586, 51.461185],
+          [-2.559469, 51.461212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560928, 51.458602],
+          [-2.561004, 51.458751]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552155, 51.466473],
+          [-2.551697, 51.465767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551374, 51.466484],
+          [-2.551355, 51.466641],
+          [-2.550966, 51.466633],
+          [-2.55087, 51.466589],
+          [-2.550918, 51.465994],
+          [-2.550797, 51.465868],
+          [-2.550796, 51.465733],
+          [-2.551092, 51.465739],
+          [-2.551697, 51.465767],
+          [-2.552516, 51.465776],
+          [-2.552591, 51.465818],
+          [-2.552838, 51.466157],
+          [-2.553092, 51.466538],
+          [-2.55311, 51.466574],
+          [-2.553117, 51.466635],
+          [-2.553224, 51.46687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553698, 51.466417],
+          [-2.55311, 51.466574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558879, 51.466954],
+          [-2.558816, 51.466959],
+          [-2.559008, 51.467674],
+          [-2.559402, 51.467638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551853, 51.464125],
+          [-2.55186, 51.464013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552372, 51.464039],
+          [-2.552386, 51.463977],
+          [-2.552383, 51.463905]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556271, 51.454782],
+          [-2.556271, 51.455034],
+          [-2.556313, 51.455116],
+          [-2.556673, 51.455599],
+          [-2.556712, 51.455695],
+          [-2.556732, 51.455794],
+          [-2.556833, 51.455923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551245, 51.46683],
+          [-2.551116, 51.46687],
+          [-2.55074, 51.467093],
+          [-2.550655, 51.467117],
+          [-2.550101, 51.467141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.550796, 51.465733],
+          [-2.550819, 51.465583],
+          [-2.550875, 51.465357],
+          [-2.55095, 51.46515],
+          [-2.55109, 51.464898],
+          [-2.551299, 51.46446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551648, 51.467025],
+          [-2.551092, 51.467356]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556015, 51.456163],
+          [-2.555715, 51.455855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56348, 51.459639],
+          [-2.562984, 51.459715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563184, 51.470234],
+          [-2.563314, 51.470392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563447, 51.46444],
+          [-2.563744, 51.464385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557536, 51.46293],
+          [-2.557136, 51.462947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557559, 51.462685],
+          [-2.557111, 51.462718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556163, 51.463363],
+          [-2.556187, 51.463602],
+          [-2.556877, 51.463585],
+          [-2.556862, 51.463348]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562194, 51.456949],
+          [-2.562241, 51.456928],
+          [-2.562265, 51.456904],
+          [-2.562365, 51.456875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563085, 51.463398],
+          [-2.562676, 51.463458],
+          [-2.562305, 51.463501],
+          [-2.56029, 51.463721],
+          [-2.560154, 51.463708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558435, 51.46383],
+          [-2.560149, 51.463687]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557246, 51.466391],
+          [-2.557399, 51.466696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558259, 51.463762],
+          [-2.558288, 51.46347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558679, 51.463436],
+          [-2.557551, 51.463537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557545, 51.46281],
+          [-2.557685, 51.462831],
+          [-2.558764, 51.462738]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558908, 51.46148],
+          [-2.559081, 51.461439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.558778, 51.461267],
+          [-2.558943, 51.461538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552698, 51.453903],
+          [-2.552879, 51.453965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552072, 51.452549],
+          [-2.55263, 51.452533],
+          [-2.552864, 51.452545],
+          [-2.55304, 51.452573]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.55345, 51.46785],
+          [-2.553646, 51.468199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552393, 51.467879],
+          [-2.552354, 51.468013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559381, 51.457509],
+          [-2.559337, 51.457449],
+          [-2.559291, 51.457427],
+          [-2.559257, 51.457399],
+          [-2.559153, 51.45717]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556763, 51.463077],
+          [-2.556794, 51.46335]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.551322, 51.467945],
+          [-2.551278, 51.467974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553732, 51.456666],
+          [-2.554206, 51.456561],
+          [-2.554246, 51.456509],
+          [-2.554248, 51.456337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555301, 51.456702],
+          [-2.555381, 51.45673],
+          [-2.555623, 51.45672],
+          [-2.555734, 51.456709],
+          [-2.555818, 51.456684],
+          [-2.55588, 51.456652],
+          [-2.556311, 51.456609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553864, 51.455777],
+          [-2.55379, 51.45565],
+          [-2.553595, 51.455519]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554034, 51.455937],
+          [-2.553413, 51.45603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.556172, 51.461424],
+          [-2.556907, 51.46124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555525, 51.461722],
+          [-2.555534, 51.461912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.555146, 51.461955],
+          [-2.555534, 51.461912],
+          [-2.555758, 51.461915]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.557385, 51.459289],
+          [-2.556964, 51.459383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.562628, 51.457884],
+          [-2.562484, 51.457672],
+          [-2.56221, 51.457743],
+          [-2.562217, 51.457897]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.565272, 51.467048],
+          [-2.565297, 51.467152],
+          [-2.565342, 51.467235],
+          [-2.565412, 51.467319],
+          [-2.565458, 51.467357],
+          [-2.565829, 51.467466],
+          [-2.565864, 51.467496],
+          [-2.566341, 51.468062],
+          [-2.566605, 51.468307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.565095, 51.470893],
+          [-2.565002, 51.471107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56137, 51.457673],
+          [-2.561486, 51.457673],
+          [-2.561542, 51.457679],
+          [-2.561564, 51.457688],
+          [-2.561574, 51.457741],
+          [-2.561515, 51.457818],
+          [-2.561497, 51.457907],
+          [-2.561504, 51.457937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559097, 51.459566],
+          [-2.559058, 51.459533]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.559189, 51.460499],
+          [-2.559058, 51.46053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563951, 51.471318],
+          [-2.56626, 51.469888]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564409, 51.470057],
+          [-2.564933, 51.469842],
+          [-2.565132, 51.469741],
+          [-2.565235, 51.469662],
+          [-2.565552, 51.469351],
+          [-2.566247, 51.468571],
+          [-2.566384, 51.468451],
+          [-2.566965, 51.468076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563142, 51.470442],
+          [-2.563543, 51.470328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.567452, 51.469017],
+          [-2.565482, 51.470211],
+          [-2.563902, 51.471219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.554223, 51.459352],
+          [-2.557619, 51.458706],
+          [-2.55921, 51.458376],
+          [-2.560302, 51.458123],
+          [-2.561058, 51.457977],
+          [-2.561653, 51.457925],
+          [-2.562217, 51.457897],
+          [-2.563119, 51.457876]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563543, 51.470328],
+          [-2.563653, 51.470322],
+          [-2.564084, 51.470195],
+          [-2.564326, 51.470114],
+          [-2.564409, 51.470057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564409, 51.470057],
+          [-2.564302, 51.470068],
+          [-2.563626, 51.470284],
+          [-2.563543, 51.470328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563887, 51.459342],
+          [-2.563751, 51.459759],
+          [-2.563675, 51.460181],
+          [-2.563594, 51.460752],
+          [-2.563566, 51.461251],
+          [-2.563645, 51.462453],
+          [-2.563703, 51.462787],
+          [-2.563837, 51.463387],
+          [-2.564045, 51.464036],
+          [-2.564314, 51.464676],
+          [-2.564602, 51.465232],
+          [-2.565255, 51.466245],
+          [-2.565644, 51.466744],
+          [-2.566188, 51.467341],
+          [-2.566886, 51.468027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.567052, 51.468366],
+          [-2.566709, 51.468074],
+          [-2.566101, 51.467484],
+          [-2.565749, 51.467082],
+          [-2.565515, 51.466762],
+          [-2.564624, 51.465413],
+          [-2.564264, 51.464671],
+          [-2.564, 51.464038],
+          [-2.563698, 51.463066],
+          [-2.563588, 51.462568],
+          [-2.563483, 51.461525],
+          [-2.563523, 51.460523],
+          [-2.56357, 51.460117],
+          [-2.563645, 51.45968],
+          [-2.56376, 51.459195],
+          [-2.563884, 51.458809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.565958, 51.467032],
+          [-2.565611, 51.466626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563907, 51.458609],
+          [-2.56369, 51.459246],
+          [-2.563595, 51.45968],
+          [-2.563512, 51.460209],
+          [-2.563433, 51.461374],
+          [-2.563447, 51.461758],
+          [-2.563552, 51.462591],
+          [-2.563764, 51.463456],
+          [-2.563909, 51.463903],
+          [-2.564296, 51.464838],
+          [-2.564493, 51.465256],
+          [-2.564727, 51.46567],
+          [-2.565616, 51.46699],
+          [-2.565934, 51.467385],
+          [-2.566347, 51.467795],
+          [-2.566798, 51.468218],
+          [-2.56723, 51.468551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.552879, 51.453965],
+          [-2.552997, 51.453763],
+          [-2.553051, 51.453551],
+          [-2.553048, 51.453237],
+          [-2.552992, 51.452767],
+          [-2.552998, 51.45267],
+          [-2.55304, 51.452573],
+          [-2.55313, 51.452488],
+          [-2.553244, 51.452424],
+          [-2.553408, 51.452367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553774, 51.4521],
+          [-2.553769, 51.452152],
+          [-2.553694, 51.452246],
+          [-2.553611, 51.452291],
+          [-2.553408, 51.452367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "easton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.553408, 51.452367],
+          [-2.553969, 51.452231],
+          [-2.55405, 51.452172],
+          [-2.554069, 51.452085]
+        ]
+      }
+    }
+  ]
+}

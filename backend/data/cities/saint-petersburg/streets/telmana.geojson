@@ -1,0 +1,4730 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624225, 59.71248],
+          [30.624102, 59.712621],
+          [30.624017, 59.712788],
+          [30.623763, 59.713424],
+          [30.623524, 59.714071],
+          [30.623026, 59.715608],
+          [30.622676, 59.716842],
+          [30.622556, 59.71711],
+          [30.622441, 59.717262],
+          [30.621733, 59.717964],
+          [30.619555, 59.720192],
+          [30.619358, 59.720366],
+          [30.618738, 59.720864],
+          [30.617531, 59.721732],
+          [30.616146, 59.722789],
+          [30.615361, 59.723366],
+          [30.614427, 59.724105],
+          [30.614113, 59.724588],
+          [30.613584, 59.725473],
+          [30.613518, 59.725555],
+          [30.613378, 59.725706],
+          [30.612978, 59.726052],
+          [30.612728, 59.726245],
+          [30.612086, 59.726683],
+          [30.611897, 59.726879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609008, 59.723489],
+          [30.60891, 59.723471],
+          [30.608772, 59.723466],
+          [30.608664, 59.723481],
+          [30.606741, 59.724156],
+          [30.606695, 59.724179],
+          [30.606674, 59.724215],
+          [30.606685, 59.724248],
+          [30.607685, 59.724978],
+          [30.607768, 59.725014],
+          [30.607906, 59.725027],
+          [30.608104, 59.725025],
+          [30.60855, 59.725366],
+          [30.608635, 59.725413],
+          [30.608747, 59.725443],
+          [30.608881, 59.725463],
+          [30.609618, 59.725531],
+          [30.610021, 59.725551],
+          [30.610533, 59.725626],
+          [30.610606, 59.725631],
+          [30.610683, 59.725614],
+          [30.6112, 59.725432],
+          [30.611298, 59.72541],
+          [30.611171, 59.725252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620211, 59.735551],
+          [30.620364, 59.73544],
+          [30.620385, 59.735162],
+          [30.620437, 59.734772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624483, 59.734095],
+          [30.625782, 59.734145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.625114, 59.731862],
+          [30.62398, 59.731823],
+          [30.62388, 59.732599],
+          [30.623894, 59.732646],
+          [30.623954, 59.732682],
+          [30.624055, 59.732695],
+          [30.626008, 59.732748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623283, 59.732332],
+          [30.623908, 59.732351]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623736, 59.732865],
+          [30.623789, 59.732929],
+          [30.623749, 59.73317],
+          [30.62369, 59.733397],
+          [30.623103, 59.733374],
+          [30.623283, 59.732332],
+          [30.623408, 59.731331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613067, 59.729008],
+          [30.612803, 59.729002],
+          [30.612655, 59.728989],
+          [30.611984, 59.72898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.598351, 59.71559],
+          [30.598743, 59.715578],
+          [30.599279, 59.715578],
+          [30.600707, 59.715436],
+          [30.602284, 59.715302],
+          [30.603725, 59.715189],
+          [30.606878, 59.714973],
+          [30.608706, 59.714828],
+          [30.609206, 59.714774],
+          [30.610947, 59.714745],
+          [30.61163, 59.714752],
+          [30.612638, 59.71474],
+          [30.613621, 59.714686],
+          [30.613824, 59.714701],
+          [30.614004, 59.714744],
+          [30.614133, 59.714815],
+          [30.614203, 59.714901],
+          [30.614217, 59.71499],
+          [30.614218, 59.715379],
+          [30.61411, 59.715466],
+          [30.613924, 59.715514],
+          [30.613473, 59.715568],
+          [30.609592, 59.715641],
+          [30.609483, 59.715956],
+          [30.609417, 59.716033],
+          [30.609322, 59.716093],
+          [30.608807, 59.716293],
+          [30.608684, 59.716333],
+          [30.608534, 59.716358],
+          [30.605271, 59.716375],
+          [30.605054, 59.7164],
+          [30.60487, 59.716444],
+          [30.604531, 59.716474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.599344, 59.717682],
+          [30.599356, 59.716521],
+          [30.599308, 59.715699],
+          [30.599256, 59.71543]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.632667, 59.727963],
+          [30.632133, 59.728291],
+          [30.632112, 59.728336],
+          [30.631991, 59.728431],
+          [30.63125, 59.728901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61293, 59.721256],
+          [30.61275, 59.721026],
+          [30.61273, 59.72036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.616024, 59.720279],
+          [30.616027, 59.720752],
+          [30.61616, 59.720805],
+          [30.616436, 59.720811],
+          [30.616469, 59.721178],
+          [30.616458, 59.721408],
+          [30.616487, 59.721437],
+          [30.616578, 59.721466],
+          [30.616925, 59.721469],
+          [30.617137, 59.721421],
+          [30.617342, 59.72142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610827, 59.724451],
+          [30.610954, 59.7244],
+          [30.611124, 59.724276],
+          [30.61135, 59.724138],
+          [30.611509, 59.724077],
+          [30.611646, 59.724011],
+          [30.611628, 59.72393],
+          [30.611589, 59.723883],
+          [30.611287, 59.723632],
+          [30.611181, 59.723498],
+          [30.611328, 59.723438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620496, 59.723397],
+          [30.617193, 59.721983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605411, 59.721741],
+          [30.605221, 59.721604],
+          [30.605171, 59.721553],
+          [30.605164, 59.721499],
+          [30.605186, 59.721452],
+          [30.605597, 59.72129],
+          [30.606031, 59.721288],
+          [30.606353, 59.721222],
+          [30.606595, 59.721087],
+          [30.606332, 59.7209],
+          [30.606018, 59.720981]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.615022, 59.721684],
+          [30.614204, 59.721694],
+          [30.614117, 59.721712],
+          [30.613887, 59.721871],
+          [30.613806, 59.721878],
+          [30.611285, 59.721864]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608175, 59.72254],
+          [30.60769, 59.722705],
+          [30.607611, 59.722764],
+          [30.607566, 59.722786],
+          [30.607454, 59.72279],
+          [30.607091, 59.722912],
+          [30.606397, 59.723125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.615004, 59.722481],
+          [30.615022, 59.721684],
+          [30.615812, 59.721693],
+          [30.615843, 59.721952],
+          [30.615878, 59.722038],
+          [30.615925, 59.72209],
+          [30.616056, 59.722116],
+          [30.61628, 59.722197],
+          [30.616324, 59.722238],
+          [30.616309, 59.722282],
+          [30.615859, 59.722626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609332, 59.723374],
+          [30.609008, 59.723489]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.614555, 59.718457],
+          [30.60772, 59.718846],
+          [30.607599, 59.718871],
+          [30.607465, 59.718933],
+          [30.607422, 59.719055],
+          [30.607578, 59.720488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612261, 59.720734],
+          [30.611148, 59.720784],
+          [30.611285, 59.721864]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61087, 59.724851],
+          [30.610517, 59.724583],
+          [30.610133, 59.724315],
+          [30.609008, 59.723489]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.6186, 59.731156],
+          [30.618598, 59.73102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611171, 59.725252],
+          [30.611248, 59.725206],
+          [30.611259, 59.725157],
+          [30.611244, 59.725118],
+          [30.61087, 59.724851],
+          [30.610288, 59.725053],
+          [30.609884, 59.724768],
+          [30.609606, 59.724679],
+          [30.609426, 59.72456],
+          [30.609302, 59.724456],
+          [30.609274, 59.724323],
+          [30.608805, 59.723984],
+          [30.608194, 59.724175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608104, 59.725025],
+          [30.610133, 59.724315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622774, 59.735616],
+          [30.62248, 59.735604],
+          [30.622931, 59.735372],
+          [30.623151, 59.735324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609894, 59.725199],
+          [30.609774, 59.725537]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608747, 59.724798],
+          [30.609187, 59.725115],
+          [30.609894, 59.725199],
+          [30.610015, 59.725202],
+          [30.610114, 59.72518],
+          [30.610237, 59.725134],
+          [30.61028, 59.725094],
+          [30.610288, 59.725053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607465, 59.723641],
+          [30.608194, 59.724175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617815, 59.73196],
+          [30.618233, 59.731972],
+          [30.618563, 59.731842],
+          [30.61881, 59.731718],
+          [30.618855, 59.731678],
+          [30.618887, 59.731548],
+          [30.618931, 59.731514],
+          [30.619013, 59.731499],
+          [30.620185, 59.731536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.621992, 59.731411],
+          [30.62185, 59.731499],
+          [30.621757, 59.731587],
+          [30.62165, 59.732412],
+          [30.62161, 59.732452],
+          [30.621537, 59.732484],
+          [30.621457, 59.732498],
+          [30.619852, 59.732442],
+          [30.619798, 59.732484],
+          [30.619708, 59.732506],
+          [30.618951, 59.732466],
+          [30.6189, 59.732688],
+          [30.618477, 59.732669],
+          [30.618381, 59.732644],
+          [30.618234, 59.732649],
+          [30.617707, 59.732618],
+          [30.61758, 59.73262],
+          [30.617116, 59.732596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620144, 59.731831],
+          [30.62022, 59.731228]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.6189, 59.732688],
+          [30.618813, 59.733139],
+          [30.618158, 59.733105],
+          [30.618234, 59.732649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617322, 59.733967],
+          [30.61744, 59.733408],
+          [30.61758, 59.73262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619406, 59.733498],
+          [30.61744, 59.733408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619852, 59.732442],
+          [30.61964, 59.732335],
+          [30.61967, 59.732135],
+          [30.619754, 59.732109],
+          [30.621034, 59.732159],
+          [30.621103, 59.731757],
+          [30.620764, 59.731744],
+          [30.620748, 59.731851],
+          [30.620144, 59.731831],
+          [30.619979, 59.731883],
+          [30.619551, 59.73187],
+          [30.618974, 59.732103],
+          [30.618435, 59.732347],
+          [30.618381, 59.732644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.62404, 59.732826],
+          [30.623824, 59.73282],
+          [30.623736, 59.732865],
+          [30.623189, 59.732841]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624638, 59.733218],
+          [30.624554, 59.733764],
+          [30.625152, 59.733781],
+          [30.625251, 59.733244],
+          [30.624638, 59.733218],
+          [30.624706, 59.73288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624987, 59.735455],
+          [30.623151, 59.735324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.62332, 59.734708],
+          [30.623151, 59.735324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.625166, 59.731405],
+          [30.625157, 59.731489],
+          [30.625113, 59.73155],
+          [30.625147, 59.731625],
+          [30.625114, 59.731862],
+          [30.625127, 59.731907],
+          [30.625164, 59.731946],
+          [30.625257, 59.731959],
+          [30.62545, 59.731965],
+          [30.625394, 59.732397],
+          [30.624643, 59.732377],
+          [30.624585, 59.732362],
+          [30.624557, 59.732333],
+          [30.624557, 59.732236],
+          [30.624519, 59.732197],
+          [30.624478, 59.732182],
+          [30.623935, 59.732158]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613551, 59.727849],
+          [30.613583, 59.727068],
+          [30.613591, 59.727011],
+          [30.613649, 59.726953],
+          [30.613761, 59.726933],
+          [30.617353, 59.726922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.62332, 59.734708],
+          [30.6208, 59.734609],
+          [30.620772, 59.734762],
+          [30.620746, 59.734779],
+          [30.620437, 59.734772],
+          [30.62037, 59.734726],
+          [30.620158, 59.734717],
+          [30.619903, 59.734709],
+          [30.619833, 59.734744],
+          [30.61975, 59.73474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624487, 59.734411],
+          [30.623539, 59.734346],
+          [30.623461, 59.734356],
+          [30.623392, 59.734402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624055, 59.732695],
+          [30.623971, 59.73328],
+          [30.623862, 59.733826],
+          [30.623837, 59.734023],
+          [30.62386, 59.734047],
+          [30.623909, 59.734061],
+          [30.623971, 59.734068],
+          [30.624483, 59.734095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624483, 59.734095],
+          [30.624473, 59.73418],
+          [30.624541, 59.734233],
+          [30.624487, 59.734411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613637, 59.730703],
+          [30.613634, 59.730779]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618974, 59.732103],
+          [30.61887, 59.73203],
+          [30.618563, 59.731842]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.626382, 59.731662],
+          [30.625147, 59.731625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622969, 59.734692],
+          [30.622984, 59.734385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617707, 59.732618],
+          [30.617815, 59.73196],
+          [30.617787, 59.731917],
+          [30.617726, 59.731899],
+          [30.617224, 59.731879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619395, 59.733653],
+          [30.617406, 59.733563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.626195, 59.731453],
+          [30.623408, 59.731331],
+          [30.62022, 59.731228],
+          [30.6186, 59.731156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.615771, 59.730829],
+          [30.615778, 59.730759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623984, 59.733181],
+          [30.623749, 59.73317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.6186, 59.731156],
+          [30.618561, 59.731223],
+          [30.618528, 59.731453],
+          [30.6185, 59.731475],
+          [30.618281, 59.731579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617521, 59.728485],
+          [30.61821, 59.728494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620158, 59.734717],
+          [30.620205, 59.734301],
+          [30.620255, 59.734279],
+          [30.620328, 59.734274],
+          [30.620746, 59.734287],
+          [30.623392, 59.734402]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622016, 59.731568],
+          [30.621975, 59.731527],
+          [30.622045, 59.731102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.625113, 59.73155],
+          [30.623395, 59.7315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624487, 59.734411],
+          [30.624469, 59.73455],
+          [30.624407, 59.734693],
+          [30.624367, 59.734716],
+          [30.624308, 59.734722],
+          [30.624095, 59.734711],
+          [30.624036, 59.734715],
+          [30.623994, 59.734731],
+          [30.623966, 59.734757],
+          [30.623904, 59.734979],
+          [30.623909, 59.73501],
+          [30.623941, 59.735035],
+          [30.623986, 59.735047],
+          [30.624403, 59.735074],
+          [30.624459, 59.735074],
+          [30.62451, 59.735063],
+          [30.624611, 59.735021],
+          [30.624658, 59.735019],
+          [30.624843, 59.735028],
+          [30.625296, 59.73507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624619, 59.733306],
+          [30.623971, 59.73328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624469, 59.73455],
+          [30.624846, 59.734577],
+          [30.624905, 59.734593],
+          [30.624944, 59.734618],
+          [30.624952, 59.734647],
+          [30.624843, 59.735028]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611872, 59.7265],
+          [30.611258, 59.726497]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611648, 59.724581],
+          [30.611735, 59.724627],
+          [30.611856, 59.72473],
+          [30.612058, 59.725021],
+          [30.612273, 59.725172],
+          [30.612435, 59.725127],
+          [30.612754, 59.725012],
+          [30.613009, 59.724973],
+          [30.613104, 59.724913],
+          [30.613321, 59.724511],
+          [30.613326, 59.724382],
+          [30.613536, 59.724061],
+          [30.613546, 59.724009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613546, 59.724009],
+          [30.611985, 59.724011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607864, 59.722645],
+          [30.607333, 59.722239],
+          [30.607001, 59.722015],
+          [30.606699, 59.722119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613999, 59.722346],
+          [30.61187, 59.722316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611171, 59.725252],
+          [30.610441, 59.725519],
+          [30.610365, 59.725553],
+          [30.610326, 59.725595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609146, 59.721098],
+          [30.609176, 59.721079],
+          [30.609193, 59.721048],
+          [30.609108, 59.720672],
+          [30.609074, 59.720451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61621, 59.72274],
+          [30.615859, 59.722626],
+          [30.615782, 59.722607],
+          [30.615702, 59.722605],
+          [30.615642, 59.72262],
+          [30.614877, 59.723209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607125, 59.720947],
+          [30.607966, 59.721546],
+          [30.608612, 59.721972],
+          [30.609126, 59.722339],
+          [30.609304, 59.722384],
+          [30.609573, 59.722288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610959, 59.7231],
+          [30.610864, 59.723114],
+          [30.610758, 59.723097],
+          [30.610695, 59.723066],
+          [30.609784, 59.722402],
+          [30.610303, 59.722233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.614415, 59.723066],
+          [30.613572, 59.723826],
+          [30.613537, 59.723873],
+          [30.613546, 59.724009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.606693, 59.722662],
+          [30.606197, 59.722843],
+          [30.605645, 59.722447],
+          [30.60492, 59.721916],
+          [30.605411, 59.721741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610001, 59.721898],
+          [30.610971, 59.72297],
+          [30.610999, 59.723039],
+          [30.610959, 59.7231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607755, 59.724331],
+          [30.608094, 59.724582],
+          [30.608211, 59.72462],
+          [30.608543, 59.72487]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605411, 59.721741],
+          [30.605909, 59.721569],
+          [30.60662, 59.722092],
+          [30.606699, 59.722119],
+          [30.607217, 59.722482],
+          [30.606693, 59.722662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611646, 59.724011],
+          [30.611985, 59.724011],
+          [30.612344, 59.724302],
+          [30.611768, 59.72451],
+          [30.611708, 59.724538],
+          [30.611648, 59.724581],
+          [30.611202, 59.724724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608612, 59.721972],
+          [30.609884, 59.721576],
+          [30.609997, 59.721801],
+          [30.610001, 59.721898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607566, 59.722786],
+          [30.607568, 59.722874],
+          [30.607863, 59.723084],
+          [30.608173, 59.72332],
+          [30.608193, 59.723345],
+          [30.608188, 59.723378],
+          [30.608161, 59.7234],
+          [30.607465, 59.723641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.606755, 59.723126],
+          [30.606886, 59.723099],
+          [30.607568, 59.722874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.633858, 59.727278],
+          [30.634394, 59.726939],
+          [30.63528, 59.726414],
+          [30.636129, 59.725949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618593, 59.725893],
+          [30.618663, 59.725859],
+          [30.618703, 59.725756],
+          [30.618668, 59.725556],
+          [30.618587, 59.725369],
+          [30.618256, 59.725368],
+          [30.615489, 59.7241],
+          [30.615651, 59.723982],
+          [30.616002, 59.723783],
+          [30.616187, 59.723588],
+          [30.616799, 59.723263],
+          [30.617008, 59.723138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.615651, 59.723982],
+          [30.615351, 59.723833],
+          [30.614944, 59.723685]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622414, 59.714123],
+          [30.623524, 59.714071],
+          [30.623865, 59.714081],
+          [30.625632, 59.714187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623295, 59.714788],
+          [30.623035, 59.714763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622375, 59.713628],
+          [30.622414, 59.714123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622978, 59.71367],
+          [30.623007, 59.714095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622623, 59.714113],
+          [30.622247, 59.715558],
+          [30.623026, 59.715608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623186, 59.714087],
+          [30.62314, 59.7142],
+          [30.623035, 59.714763],
+          [30.62287, 59.715388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.615286, 59.71876],
+          [30.615351, 59.71944],
+          [30.615304, 59.719645],
+          [30.615451, 59.719962],
+          [30.615501, 59.720292]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.627767, 59.718532],
+          [30.627847, 59.719138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.626928, 59.718531],
+          [30.626956, 59.719189],
+          [30.627017, 59.720062]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.628495, 59.719136],
+          [30.627847, 59.719138],
+          [30.626956, 59.719189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617014, 59.725994],
+          [30.617024, 59.725374],
+          [30.616983, 59.725243],
+          [30.616875, 59.725149],
+          [30.616667, 59.725071],
+          [30.615998, 59.724959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617247, 59.729361],
+          [30.614325, 59.729364],
+          [30.614103, 59.729319],
+          [30.613854, 59.729321],
+          [30.613589, 59.729294],
+          [30.613549, 59.729284],
+          [30.613539, 59.729267],
+          [30.613529, 59.72837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.614176, 59.725849],
+          [30.614441, 59.725877],
+          [30.615067, 59.725971],
+          [30.615308, 59.725957],
+          [30.615472, 59.72589],
+          [30.615597, 59.725716],
+          [30.615998, 59.724959],
+          [30.615896, 59.724886],
+          [30.614113, 59.724588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611695, 59.72333],
+          [30.612018, 59.723245],
+          [30.612097, 59.723233],
+          [30.61355, 59.723238],
+          [30.613842, 59.723032],
+          [30.613931, 59.723],
+          [30.614035, 59.722992],
+          [30.61417, 59.722999],
+          [30.614415, 59.723066],
+          [30.615361, 59.723366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.615597, 59.725716],
+          [30.6157, 59.725749],
+          [30.615921, 59.725783],
+          [30.616079, 59.725792],
+          [30.617017, 59.725794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.621449, 59.72552],
+          [30.618668, 59.725556]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612737, 59.728997],
+          [30.612764, 59.728912],
+          [30.612775, 59.728365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617726, 59.72513],
+          [30.617759, 59.725528],
+          [30.617854, 59.725617],
+          [30.61801, 59.725642],
+          [30.618593, 59.725893],
+          [30.618569, 59.72593],
+          [30.6181, 59.726203],
+          [30.61799, 59.726203],
+          [30.617973, 59.725871],
+          [30.617998, 59.725802],
+          [30.618155, 59.725704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.616991, 59.728355],
+          [30.613529, 59.72837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.603517, 59.714138],
+          [30.603192, 59.714115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.602465, 59.714763],
+          [30.602729, 59.714814],
+          [30.6029, 59.714821],
+          [30.603078, 59.71481],
+          [30.60316, 59.714739],
+          [30.603242, 59.714421]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619169, 59.734396],
+          [30.619183, 59.73433],
+          [30.619256, 59.734303],
+          [30.619333, 59.733992],
+          [30.619409, 59.733571],
+          [30.619401, 59.73343],
+          [30.619573, 59.732499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619982, 59.715019],
+          [30.619961, 59.715531],
+          [30.619844, 59.715623],
+          [30.619481, 59.715692],
+          [30.619484, 59.715902],
+          [30.619428, 59.717342],
+          [30.619357, 59.718782],
+          [30.620601, 59.719122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.640562, 59.727541],
+          [30.640367, 59.727697],
+          [30.638458, 59.72913],
+          [30.638183, 59.729359],
+          [30.636838, 59.730418],
+          [30.636207, 59.730209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620618, 59.723329],
+          [30.620916, 59.723445],
+          [30.622031, 59.723938],
+          [30.622291, 59.724063],
+          [30.622431, 59.724142],
+          [30.623508, 59.724578],
+          [30.623574, 59.72459],
+          [30.623625, 59.724581],
+          [30.623666, 59.724557],
+          [30.62415, 59.723939],
+          [30.622986, 59.72343],
+          [30.622377, 59.723182],
+          [30.621553, 59.722816],
+          [30.619435, 59.723978],
+          [30.622691, 59.725482],
+          [30.622752, 59.725499],
+          [30.622816, 59.725495],
+          [30.622854, 59.725468],
+          [30.623429, 59.724791],
+          [30.622039, 59.724161],
+          [30.620684, 59.723569],
+          [30.620411, 59.723442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620684, 59.723569],
+          [30.61971, 59.724103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622962, 59.725337],
+          [30.619946, 59.723973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.62311, 59.725163],
+          [30.621553, 59.724449],
+          [30.620182, 59.72384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623262, 59.724979],
+          [30.621789, 59.724299],
+          [30.620428, 59.723705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622039, 59.724161],
+          [30.621789, 59.724299],
+          [30.621553, 59.724449],
+          [30.62106, 59.724727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623906, 59.723834],
+          [30.623162, 59.724441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623812, 59.723793],
+          [30.622848, 59.724315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623525, 59.723669],
+          [30.622567, 59.724196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623248, 59.723546],
+          [30.622291, 59.724063]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622986, 59.72343],
+          [30.622031, 59.723938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622661, 59.7233],
+          [30.621734, 59.723805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622377, 59.723182],
+          [30.621471, 59.723689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622106, 59.723061],
+          [30.621201, 59.72357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.621828, 59.722937],
+          [30.620916, 59.723445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620227, 59.723286],
+          [30.620358, 59.723193],
+          [30.620397, 59.723133],
+          [30.621198, 59.72266],
+          [30.620593, 59.722379],
+          [30.619492, 59.7219],
+          [30.619038, 59.722186],
+          [30.618973, 59.722254],
+          [30.61888, 59.722433],
+          [30.618924, 59.722484],
+          [30.620083, 59.722988],
+          [30.620397, 59.723133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620881, 59.72251],
+          [30.620429, 59.722791],
+          [30.620083, 59.722988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620593, 59.722379],
+          [30.620304, 59.722569],
+          [30.619802, 59.722864]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620319, 59.722257],
+          [30.619515, 59.72274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620051, 59.722141],
+          [30.619251, 59.722625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619771, 59.722018],
+          [30.619002, 59.722517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.60487, 59.716444],
+          [30.605276, 59.717265],
+          [30.605316, 59.717358],
+          [30.605337, 59.717454],
+          [30.605367, 59.717949],
+          [30.605375, 59.718852],
+          [30.605436, 59.719803],
+          [30.605454, 59.720628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618713, 59.735406],
+          [30.618785, 59.73496],
+          [30.618586, 59.734829],
+          [30.617222, 59.734774],
+          [30.617226, 59.734742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618763, 59.735099],
+          [30.620385, 59.735162]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623392, 59.734402],
+          [30.62332, 59.734708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624541, 59.734233],
+          [30.626066, 59.734338]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618444, 59.734017],
+          [30.618317, 59.734815]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619309, 59.734056],
+          [30.617322, 59.733967],
+          [30.616924, 59.733996],
+          [30.616865, 59.733994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.627109, 59.732975],
+          [30.626974, 59.732962],
+          [30.626637, 59.73295],
+          [30.626221, 59.732954],
+          [30.624706, 59.73288],
+          [30.624038, 59.732854]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.600248, 59.716534],
+          [30.599819, 59.716504],
+          [30.599857, 59.716158],
+          [30.599986, 59.716089],
+          [30.59998, 59.715928],
+          [30.600426, 59.715927],
+          [30.600611, 59.715949],
+          [30.601073, 59.716053],
+          [30.601553, 59.716053],
+          [30.602318, 59.716032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605448, 59.720175],
+          [30.604516, 59.72018],
+          [30.604522, 59.720343],
+          [30.605454, 59.720416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622414, 59.716583],
+          [30.622755, 59.716574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611695, 59.72333],
+          [30.61203, 59.723576],
+          [30.612123, 59.72362],
+          [30.612239, 59.723644],
+          [30.612866, 59.723645],
+          [30.612965, 59.72363],
+          [30.61355, 59.723238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612513, 59.72187],
+          [30.612517, 59.721786],
+          [30.612447, 59.721753],
+          [30.611819, 59.721754],
+          [30.611724, 59.721771],
+          [30.61166, 59.721801],
+          [30.611604, 59.721864],
+          [30.611594, 59.721903],
+          [30.611958, 59.722445],
+          [30.612125, 59.722771],
+          [30.612136, 59.722803],
+          [30.612121, 59.722848],
+          [30.612085, 59.722871],
+          [30.611011, 59.723154]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610001, 59.721898],
+          [30.608949, 59.722219],
+          [30.608142, 59.722516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.60719, 59.720994],
+          [30.6076, 59.720889],
+          [30.608048, 59.72134],
+          [30.607868, 59.721476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609884, 59.721576],
+          [30.609722, 59.721207],
+          [30.609679, 59.72119],
+          [30.609645, 59.721156],
+          [30.609638, 59.721126],
+          [30.60967, 59.721088],
+          [30.609502, 59.720657],
+          [30.609108, 59.720672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.616469, 59.721178],
+          [30.617034, 59.721177],
+          [30.617118, 59.721132],
+          [30.617172, 59.721049],
+          [30.617144, 59.720968],
+          [30.616688, 59.720812],
+          [30.616436, 59.720811]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61497, 59.721127],
+          [30.614971, 59.721343],
+          [30.615127, 59.72136],
+          [30.615455, 59.721363],
+          [30.61554, 59.721348],
+          [30.615679, 59.721306],
+          [30.615749, 59.721262],
+          [30.615758, 59.7212],
+          [30.615727, 59.721122],
+          [30.615575, 59.721045],
+          [30.615558, 59.720758],
+          [30.616027, 59.720752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622312, 59.717057],
+          [30.622414, 59.716583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618115, 59.714169],
+          [30.618631, 59.714153],
+          [30.622414, 59.714123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.621304, 59.716612],
+          [30.621885, 59.716578],
+          [30.621996, 59.716608],
+          [30.622414, 59.716583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.604512, 59.715533],
+          [30.606923, 59.715565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605759, 59.715546],
+          [30.605799, 59.715051],
+          [30.605644, 59.714183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607004, 59.716366],
+          [30.606878, 59.714973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609678, 59.71665],
+          [30.60967, 59.716412],
+          [30.608876, 59.716416],
+          [30.608807, 59.716293],
+          [30.608706, 59.714828],
+          [30.60879, 59.714713],
+          [30.608824, 59.714237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.60439, 59.716574],
+          [30.603511, 59.716594],
+          [30.602343, 59.716603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.602884, 59.718287],
+          [30.602888, 59.718475],
+          [30.60294, 59.718549],
+          [30.603053, 59.718583],
+          [30.603215, 59.718584],
+          [30.603359, 59.718624],
+          [30.603431, 59.718708],
+          [30.603482, 59.718802],
+          [30.604898, 59.718762],
+          [30.604902, 59.71866],
+          [30.604969, 59.718607],
+          [30.605079, 59.718586],
+          [30.605374, 59.718587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620229, 59.719503],
+          [30.619855, 59.719411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61821, 59.728494],
+          [30.618199, 59.728586],
+          [30.618156, 59.728664],
+          [30.618107, 59.729419],
+          [30.618111, 59.729499],
+          [30.618145, 59.729558],
+          [30.618147, 59.729598],
+          [30.618078, 59.730267],
+          [30.618195, 59.7304],
+          [30.618372, 59.730488],
+          [30.61858, 59.7305],
+          [30.618698, 59.730561],
+          [30.621033, 59.730614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620401, 59.72958],
+          [30.619331, 59.729559],
+          [30.619122, 59.729581],
+          [30.61742, 59.729542]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618421, 59.734164],
+          [30.61787, 59.734138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.626655, 59.731487],
+          [30.626684, 59.731355],
+          [30.626874, 59.731288],
+          [30.626929, 59.731379],
+          [30.626872, 59.731509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624636, 59.727458],
+          [30.624974, 59.727271],
+          [30.625179, 59.72732],
+          [30.626924, 59.72803],
+          [30.628167, 59.728598],
+          [30.628217, 59.728641],
+          [30.628241, 59.728887],
+          [30.628164, 59.729169],
+          [30.627205, 59.730597],
+          [30.626972, 59.730977],
+          [30.626849, 59.730897],
+          [30.626687, 59.730659],
+          [30.626694, 59.730407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.626924, 59.731183],
+          [30.627084, 59.73112],
+          [30.627151, 59.731001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618655, 59.734027],
+          [30.618664, 59.733938],
+          [30.617991, 59.733907],
+          [30.61797, 59.733994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619833, 59.731878],
+          [30.61983, 59.731999],
+          [30.619759, 59.732036],
+          [30.619754, 59.732109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623106, 59.731321],
+          [30.623073, 59.731583]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.604434, 59.720825],
+          [30.604783, 59.720781],
+          [30.605043, 59.720729],
+          [30.605013, 59.720659],
+          [30.605032, 59.720573]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605526, 59.721234],
+          [30.605597, 59.72129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612845, 59.727443],
+          [30.612521, 59.727442],
+          [30.611923, 59.727469]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612388, 59.729465],
+          [30.611988, 59.729452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613341, 59.730104],
+          [30.612763, 59.730091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612755, 59.730169],
+          [30.612188, 59.730156],
+          [30.61214, 59.730178],
+          [30.612141, 59.730214],
+          [30.61225, 59.730461],
+          [30.612294, 59.7306],
+          [30.612342, 59.730619],
+          [30.61241, 59.73063],
+          [30.612762, 59.730634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612801, 59.729695],
+          [30.612716, 59.730507]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61332, 59.730444],
+          [30.612719, 59.73043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61225, 59.730461],
+          [30.613372, 59.730483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613423, 59.730521],
+          [30.612716, 59.730507],
+          [30.612634, 59.730632]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61364, 59.730677],
+          [30.613466, 59.730546]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613375, 59.729726],
+          [30.613311, 59.730434],
+          [30.613466, 59.730546],
+          [30.613651, 59.730554]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617411, 59.729737],
+          [30.615991, 59.729726],
+          [30.615751, 59.729792],
+          [30.615503, 59.729788],
+          [30.615347, 59.729752],
+          [30.61345, 59.729727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620428, 59.735359],
+          [30.62037, 59.735357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620205, 59.734301],
+          [30.619964, 59.734294]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.621553, 59.729991],
+          [30.62154, 59.730301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.62034, 59.73012],
+          [30.620421, 59.72939],
+          [30.620436, 59.729352],
+          [30.62048, 59.729328],
+          [30.620553, 59.729317],
+          [30.620938, 59.729323],
+          [30.621028, 59.729338],
+          [30.621074, 59.729373],
+          [30.621009, 59.730125]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619259, 59.729927],
+          [30.618879, 59.729922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.621738, 59.730122],
+          [30.621543, 59.730141],
+          [30.621009, 59.730125],
+          [30.620016, 59.730115],
+          [30.619937, 59.730117],
+          [30.619866, 59.730132],
+          [30.619787, 59.730202],
+          [30.619708, 59.730227],
+          [30.619147, 59.730225],
+          [30.619036, 59.730203],
+          [30.61894, 59.730163],
+          [30.61889, 59.730124],
+          [30.618863, 59.730081],
+          [30.618879, 59.729922],
+          [30.618939, 59.729806],
+          [30.618966, 59.729578]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618698, 59.730561],
+          [30.618652, 59.730684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.604434, 59.720825],
+          [30.604225, 59.720852],
+          [30.60417, 59.720775],
+          [30.604099, 59.720714],
+          [30.604104, 59.720566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.604929, 59.720752],
+          [30.604779, 59.720689],
+          [30.604626, 59.720668],
+          [30.604469, 59.720697],
+          [30.604392, 59.720757],
+          [30.604434, 59.720825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.606255, 59.718509],
+          [30.605599, 59.718475],
+          [30.605372, 59.718475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605599, 59.718475],
+          [30.605596, 59.718849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605924, 59.718845],
+          [30.605375, 59.718852]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.606442, 59.719522],
+          [30.606419, 59.719401],
+          [30.605797, 59.719071],
+          [30.605396, 59.719091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.602978, 59.719892],
+          [30.602941, 59.719372]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.602957, 59.719621],
+          [30.602471, 59.719626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.603593, 59.719626],
+          [30.604627, 59.719594],
+          [30.60492, 59.719415],
+          [30.604894, 59.719145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.603497, 59.719199],
+          [30.603482, 59.718802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.603785, 59.719168],
+          [30.604894, 59.719145],
+          [30.604898, 59.718762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.602801, 59.718051],
+          [30.602822, 59.718222],
+          [30.602884, 59.718287],
+          [30.60358, 59.718265],
+          [30.603684, 59.718299],
+          [30.603755, 59.718351],
+          [30.603862, 59.718392],
+          [30.603997, 59.718425],
+          [30.604658, 59.718421],
+          [30.604911, 59.718476],
+          [30.605079, 59.718586]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.60302, 59.716228],
+          [30.602846, 59.716466],
+          [30.60283, 59.716598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613066, 59.725484],
+          [30.613518, 59.725555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613412, 59.722061],
+          [30.613413, 59.721875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.615005, 59.722371],
+          [30.615095, 59.722372],
+          [30.61519, 59.722362],
+          [30.615549, 59.722308],
+          [30.615613, 59.72229],
+          [30.615925, 59.72209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61736, 59.721598],
+          [30.617603, 59.72168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618867, 59.721748],
+          [30.618235, 59.721481],
+          [30.617838, 59.721752],
+          [30.618528, 59.722039],
+          [30.618693, 59.721943],
+          [30.61867, 59.721874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619064, 59.721621],
+          [30.61867, 59.721874],
+          [30.617816, 59.721527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618804, 59.722086],
+          [30.618583, 59.722224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617526, 59.721982],
+          [30.617606, 59.721934],
+          [30.617683, 59.721906],
+          [30.617762, 59.721896],
+          [30.617841, 59.721903],
+          [30.618524, 59.722193],
+          [30.618583, 59.722224],
+          [30.618584, 59.722262],
+          [30.618552, 59.722293],
+          [30.618287, 59.722453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619934, 59.723485],
+          [30.620258, 59.723299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.616698, 59.722855],
+          [30.617646, 59.722177]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617007, 59.722949],
+          [30.617924, 59.722296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617266, 59.723091],
+          [30.61822, 59.722424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610666, 59.726575],
+          [30.610693, 59.727016]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609715, 59.7258],
+          [30.609715, 59.725825],
+          [30.609692, 59.725845],
+          [30.609608, 59.725851],
+          [30.60903, 59.725801],
+          [30.608894, 59.725801],
+          [30.608761, 59.72578],
+          [30.608135, 59.725727],
+          [30.60808, 59.725713],
+          [30.608048, 59.725687],
+          [30.608034, 59.725659],
+          [30.60805, 59.725624],
+          [30.60815, 59.725495],
+          [30.608193, 59.725469],
+          [30.608261, 59.72546],
+          [30.608439, 59.725466],
+          [30.608508, 59.725453],
+          [30.608635, 59.725413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610556, 59.725805],
+          [30.610008, 59.725759],
+          [30.60995, 59.725765],
+          [30.609925, 59.72579],
+          [30.60993, 59.725873],
+          [30.609961, 59.7259],
+          [30.610018, 59.725913],
+          [30.610495, 59.725932],
+          [30.610541, 59.725915],
+          [30.610561, 59.725889],
+          [30.610556, 59.725805],
+          [30.610649, 59.725724],
+          [30.610659, 59.725698],
+          [30.610658, 59.725674],
+          [30.610606, 59.725631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607091, 59.722912],
+          [30.606895, 59.722817],
+          [30.606693, 59.722662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605114, 59.718373],
+          [30.604944, 59.718374],
+          [30.604829, 59.718329]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.604882, 59.717849],
+          [30.60489, 59.717986],
+          [30.604966, 59.718029],
+          [30.604971, 59.718095],
+          [30.604898, 59.718151],
+          [30.604906, 59.718287],
+          [30.604658, 59.718421]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608946, 59.717186],
+          [30.608838, 59.716505],
+          [30.608876, 59.716416]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.602688, 59.716876],
+          [30.602758, 59.716647],
+          [30.602755, 59.716598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605155, 59.717029],
+          [30.60503, 59.717045],
+          [30.605189, 59.717427],
+          [30.605216, 59.717723],
+          [30.605236, 59.717752],
+          [30.605279, 59.717765],
+          [30.605356, 59.717767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.604128, 59.71693],
+          [30.60459, 59.716907],
+          [30.604677, 59.716881],
+          [30.604724, 59.716831],
+          [30.604726, 59.716789],
+          [30.60471, 59.716737],
+          [30.604669, 59.71669],
+          [30.604607, 59.716652],
+          [30.60439, 59.716574],
+          [30.604152, 59.716337],
+          [30.604108, 59.716316],
+          [30.603982, 59.716297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.603578, 59.716969],
+          [30.603576, 59.716902],
+          [30.603545, 59.716841],
+          [30.603511, 59.716594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.603846, 59.715859],
+          [30.603515, 59.715862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.603522, 59.716216],
+          [30.603497, 59.715559],
+          [30.603537, 59.715304],
+          [30.60352, 59.715205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.60286, 59.715353],
+          [30.602796, 59.715334]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.602778, 59.715653],
+          [30.602794, 59.715262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608894, 59.716259],
+          [30.609702, 59.716253],
+          [30.609839, 59.716245],
+          [30.60993, 59.716219],
+          [30.609983, 59.716173],
+          [30.609989, 59.716113],
+          [30.609938, 59.716035],
+          [30.609825, 59.715932],
+          [30.609557, 59.715769]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610716, 59.715289],
+          [30.610719, 59.71562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609576, 59.715318],
+          [30.609592, 59.715641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605799, 59.71831],
+          [30.605368, 59.718303]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.60307, 59.71791],
+          [30.603219, 59.717909],
+          [30.603309, 59.71792],
+          [30.603381, 59.717959],
+          [30.603414, 59.718269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617001, 59.72018],
+          [30.617009, 59.720255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617238, 59.719223],
+          [30.618722, 59.719183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.62121, 59.719211],
+          [30.620589, 59.719868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.621573, 59.719304],
+          [30.620652, 59.719069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613168, 59.72035],
+          [30.613181, 59.720883],
+          [30.613212, 59.721013],
+          [30.61329, 59.721081],
+          [30.61456, 59.721079],
+          [30.614623, 59.72105],
+          [30.614645, 59.721008],
+          [30.614645, 59.720449],
+          [30.614633, 59.720313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610855, 59.723255],
+          [30.610556, 59.723353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611484, 59.723796],
+          [30.61124, 59.723839],
+          [30.610487, 59.723304]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611328, 59.723438],
+          [30.611695, 59.72333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611328, 59.723438],
+          [30.610959, 59.7231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607174, 59.721816],
+          [30.607966, 59.721546]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.606693, 59.722662],
+          [30.606305, 59.722391],
+          [30.606262, 59.722377],
+          [30.606051, 59.722385],
+          [30.605707, 59.722141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607356, 59.723811],
+          [30.607475, 59.723896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608194, 59.724175],
+          [30.607755, 59.724331],
+          [30.607487, 59.724409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.610975, 59.723323],
+          [30.611181, 59.723498]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613335, 59.721279],
+          [30.61293, 59.721256],
+          [30.612761, 59.721328]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612203, 59.720373],
+          [30.612261, 59.720734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607204, 59.721318],
+          [30.606735, 59.721499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61027, 59.726623],
+          [30.609603, 59.726632]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609585, 59.7263],
+          [30.609616, 59.726877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.625045, 59.735439],
+          [30.625233, 59.735515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623698, 59.734065],
+          [30.62386, 59.734047]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623716, 59.732653],
+          [30.623894, 59.732646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.615084, 59.723863],
+          [30.615217, 59.723783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.614615, 59.723952],
+          [30.614732, 59.723995],
+          [30.614774, 59.724034],
+          [30.614764, 59.724092],
+          [30.614386, 59.724553],
+          [30.614338, 59.724628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.628343, 59.728533],
+          [30.628676, 59.728317],
+          [30.628947, 59.728033],
+          [30.629033, 59.727914]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.630012, 59.723119],
+          [30.628497, 59.724091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613574, 59.714689],
+          [30.613568, 59.714232],
+          [30.613284, 59.714242],
+          [30.611855, 59.714237],
+          [30.610378, 59.714213],
+          [30.608824, 59.714237],
+          [30.605656, 59.71424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611557, 59.714752],
+          [30.611567, 59.714232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.627632, 59.725039],
+          [30.627914, 59.724869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.626188, 59.726728],
+          [30.62657, 59.726496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623771, 59.725567],
+          [30.623635, 59.725527],
+          [30.623504, 59.725524]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612457, 59.728368],
+          [30.61246, 59.728488],
+          [30.612389, 59.728525],
+          [30.612389, 59.728611],
+          [30.612453, 59.728679],
+          [30.612443, 59.728985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611285, 59.721864],
+          [30.610335, 59.721863],
+          [30.610001, 59.721898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611285, 59.721864],
+          [30.6113, 59.722009]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612746, 59.720712],
+          [30.612261, 59.720734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620904, 59.730125],
+          [30.620898, 59.730262],
+          [30.620417, 59.730253],
+          [30.620417, 59.730121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620994, 59.730613],
+          [30.621008, 59.730511],
+          [30.620898, 59.730262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612977, 59.729429],
+          [30.612993, 59.729008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613453, 59.729679],
+          [30.61345, 59.729727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623893, 59.713099],
+          [30.62342, 59.713047],
+          [30.622686, 59.713028],
+          [30.621015, 59.713079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618316, 59.727056],
+          [30.618208, 59.728341]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620731, 59.726767],
+          [30.620708, 59.727072],
+          [30.621387, 59.727092],
+          [30.621317, 59.72801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612626, 59.724362],
+          [30.612856, 59.724345],
+          [30.613323, 59.724461]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.607172, 59.720497],
+          [30.607234, 59.720681],
+          [30.606848, 59.720822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.63796, 59.729145],
+          [30.638123, 59.729368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.637462, 59.729209],
+          [30.637159, 59.729258],
+          [30.636886, 59.729151],
+          [30.637789, 59.728485],
+          [30.638509, 59.728737]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.637338, 59.729161],
+          [30.637159, 59.729258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.639199, 59.728223],
+          [30.638477, 59.727964],
+          [30.637789, 59.728485]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.638921, 59.727312],
+          [30.636638, 59.729009],
+          [30.635708, 59.728662],
+          [30.638423, 59.727111],
+          [30.639553, 59.727567],
+          [30.639459, 59.727629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.636055, 59.728791],
+          [30.637501, 59.727683],
+          [30.637576, 59.727595],
+          [30.638235, 59.727822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.636851, 59.728009],
+          [30.636969, 59.728091],
+          [30.63758, 59.728309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.638637, 59.727198],
+          [30.63635, 59.728901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.639197, 59.727423],
+          [30.638477, 59.727964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618316, 59.727056],
+          [30.61805, 59.727035],
+          [30.617937, 59.726993],
+          [30.617863, 59.726994],
+          [30.617699, 59.727027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617332, 59.720247],
+          [30.61724, 59.719257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619577, 59.72835],
+          [30.618208, 59.728341],
+          [30.61821, 59.728494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.618316, 59.727056],
+          [30.619046, 59.72707],
+          [30.619261, 59.726984],
+          [30.620721, 59.726973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.606802, 59.72219],
+          [30.606394, 59.722338],
+          [30.606262, 59.722377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.641496, 59.726514],
+          [30.641708, 59.726582]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.641611, 59.726385],
+          [30.641852, 59.726462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61246, 59.728488],
+          [30.612536, 59.728524],
+          [30.612533, 59.728607],
+          [30.612453, 59.728679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617346, 59.724956],
+          [30.618982, 59.724036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613529, 59.72837],
+          [30.612898, 59.728362],
+          [30.611972, 59.728369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.620179, 59.726977],
+          [30.620181, 59.727035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613375, 59.729726],
+          [30.613197, 59.729725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61345, 59.729727],
+          [30.613375, 59.729726]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612969, 59.727854],
+          [30.613551, 59.727849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613195, 59.728229],
+          [30.613207, 59.727852]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.619924, 59.727039],
+          [30.619919, 59.726979]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.6381, 59.726877],
+          [30.638234, 59.726742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608747, 59.715421],
+          [30.606915, 59.715464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.628389, 59.725349],
+          [30.628648, 59.725179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.635449, 59.72597],
+          [30.635816, 59.726123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611434, 59.729893],
+          [30.611542, 59.729951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613529, 59.72837],
+          [30.613551, 59.727849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611854, 59.729873],
+          [30.611763, 59.72987],
+          [30.611688, 59.729886],
+          [30.611542, 59.729951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.63214, 59.726296],
+          [30.632472, 59.726088]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.609026, 59.720036],
+          [30.607528, 59.720083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.612846, 59.720015],
+          [30.612875, 59.720357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623912, 59.727194],
+          [30.623832, 59.72718],
+          [30.621962, 59.727145],
+          [30.621772, 59.727171],
+          [30.621382, 59.727161]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623912, 59.727194],
+          [30.623727, 59.727034],
+          [30.623513, 59.726986],
+          [30.62189, 59.726965],
+          [30.621785, 59.727029],
+          [30.621731, 59.72763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624636, 59.727458],
+          [30.62454, 59.727449],
+          [30.624293, 59.727328],
+          [30.623912, 59.727194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.608223, 59.715433],
+          [30.608118, 59.715555],
+          [30.608017, 59.715579],
+          [30.607608, 59.71554],
+          [30.607422, 59.715452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611542, 59.729951],
+          [30.611501, 59.72997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622611, 59.734368],
+          [30.622644, 59.73416],
+          [30.621746, 59.734123],
+          [30.620789, 59.734096],
+          [30.620746, 59.734287]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.622493, 59.733844],
+          [30.620957, 59.733787],
+          [30.62084, 59.73383],
+          [30.620789, 59.734096]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.613984, 59.720863],
+          [30.613984, 59.720702],
+          [30.613912, 59.720653],
+          [30.61318, 59.720651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61724, 59.719257],
+          [30.616626, 59.719268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.61724, 59.719257],
+          [30.617238, 59.719223],
+          [30.617128, 59.719122],
+          [30.6171, 59.718777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.626501, 59.728216],
+          [30.624841, 59.727513],
+          [30.624636, 59.727458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624462, 59.728608],
+          [30.62454, 59.727449]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.640367, 59.727697],
+          [30.639669, 59.727415],
+          [30.639592, 59.727366],
+          [30.639516, 59.727283],
+          [30.638234, 59.726742],
+          [30.632244, 59.724085],
+          [30.630012, 59.723119],
+          [30.626722, 59.721627],
+          [30.624454, 59.720654],
+          [30.623302, 59.720138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.605644, 59.714183],
+          [30.60555, 59.713735],
+          [30.60555, 59.713656],
+          [30.605632, 59.713587],
+          [30.610066, 59.712444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623479, 59.725554],
+          [30.627781, 59.72741],
+          [30.628594, 59.727741],
+          [30.628878, 59.727831],
+          [30.629033, 59.727914],
+          [30.62999, 59.728353],
+          [30.63327, 59.729782],
+          [30.633501, 59.729866],
+          [30.633639, 59.729944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.616146, 59.722789],
+          [30.616822, 59.723054],
+          [30.618323, 59.723733],
+          [30.622905, 59.725837],
+          [30.623015, 59.725858],
+          [30.623136, 59.725856],
+          [30.6232, 59.72583],
+          [30.623259, 59.725788],
+          [30.623504, 59.725524],
+          [30.624066, 59.724802],
+          [30.624655, 59.724105],
+          [30.625146, 59.723577],
+          [30.625964, 59.722586],
+          [30.626697, 59.721772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.628878, 59.727831],
+          [30.629469, 59.727188],
+          [30.630051, 59.726517],
+          [30.630194, 59.726408],
+          [30.630528, 59.725971],
+          [30.632244, 59.724085]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.624671, 59.735705],
+          [30.624987, 59.735455],
+          [30.625045, 59.735439],
+          [30.625131, 59.735372],
+          [30.625221, 59.735102],
+          [30.625296, 59.73507],
+          [30.625406, 59.735076],
+          [30.625478, 59.73507],
+          [30.625527, 59.735057],
+          [30.625563, 59.735028],
+          [30.625757, 59.734314],
+          [30.625988, 59.732943],
+          [30.626195, 59.731453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.63146, 59.724939],
+          [30.625964, 59.722586]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.630051, 59.726517],
+          [30.624655, 59.724105]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.630528, 59.725971],
+          [30.627914, 59.724869],
+          [30.625146, 59.723577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.637384, 59.727308],
+          [30.63528, 59.726414],
+          [30.631547, 59.724848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.633798, 59.71995],
+          [30.627017, 59.720062],
+          [30.623909, 59.720105],
+          [30.623302, 59.720138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.623302, 59.720138],
+          [30.619555, 59.720192],
+          [30.605823, 59.720531],
+          [30.605625, 59.720561],
+          [30.605454, 59.720628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.633639, 59.729944],
+          [30.63161, 59.730196],
+          [30.630636, 59.730335],
+          [30.630091, 59.730441],
+          [30.629045, 59.730586],
+          [30.627248, 59.730798],
+          [30.627146, 59.730838],
+          [30.627049, 59.730905],
+          [30.626972, 59.730977],
+          [30.626918, 59.731105],
+          [30.626924, 59.731183],
+          [30.626874, 59.731288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.631008, 59.725441],
+          [30.634394, 59.726939],
+          [30.636471, 59.727835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617292, 59.730906],
+          [30.617521, 59.728485],
+          [30.617699, 59.727027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.635424, 59.729733],
+          [30.630286, 59.727567],
+          [30.629469, 59.727188],
+          [30.624398, 59.724992],
+          [30.624066, 59.724802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.637124, 59.729515],
+          [30.636938, 59.729385],
+          [30.636799, 59.729321],
+          [30.630194, 59.726408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611298, 59.72541],
+          [30.611819, 59.725418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.638183, 59.729359],
+          [30.637124, 59.729515],
+          [30.635424, 59.729733],
+          [30.633639, 59.729944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.611993, 59.730771],
+          [30.611988, 59.730597],
+          [30.611832, 59.730062],
+          [30.611833, 59.729955],
+          [30.611988, 59.729452],
+          [30.611972, 59.728369],
+          [30.611847, 59.725715],
+          [30.611803, 59.725315],
+          [30.611717, 59.725147],
+          [30.611483, 59.724936],
+          [30.611202, 59.724724],
+          [30.605597, 59.720686],
+          [30.605454, 59.720628],
+          [30.605256, 59.720587],
+          [30.605032, 59.720573],
+          [30.603271, 59.720572],
+          [30.603078, 59.720555],
+          [30.602907, 59.720528],
+          [30.602765, 59.720482],
+          [30.602591, 59.720369],
+          [30.602546, 59.7203],
+          [30.602499, 59.72014],
+          [30.602471, 59.719626],
+          [30.602282, 59.715128],
+          [30.60233, 59.714954],
+          [30.602465, 59.714763],
+          [30.602717, 59.714524],
+          [30.603137, 59.714193],
+          [30.603216, 59.714053],
+          [30.603234, 59.713905]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.617283, 59.730996],
+          [30.625377, 59.73119],
+          [30.62639, 59.731241],
+          [30.626874, 59.731288],
+          [30.627831, 59.73141],
+          [30.628694, 59.731561],
+          [30.629167, 59.73167],
+          [30.630332, 59.731995],
+          [30.63206, 59.732596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "telmana" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.632158, 59.732522],
+          [30.630416, 59.731922],
+          [30.629293, 59.731592],
+          [30.628773, 59.731468],
+          [30.628111, 59.731344],
+          [30.626924, 59.731183],
+          [30.626448, 59.731132],
+          [30.62544, 59.731086],
+          [30.617292, 59.730906]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5282 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.64247, 53.20068],
+          [63.642426, 53.200662],
+          [63.640894, 53.199718],
+          [63.64049, 53.199441],
+          [63.640294, 53.199332],
+          [63.639986, 53.199188],
+          [63.639788, 53.19914],
+          [63.639585, 53.199119],
+          [63.639323, 53.199109],
+          [63.638224, 53.199129],
+          [63.637875, 53.199015],
+          [63.637762, 53.199004],
+          [63.635829, 53.200269],
+          [63.634166, 53.200978],
+          [63.632569, 53.201782],
+          [63.630852, 53.202535],
+          [63.629582, 53.203177],
+          [63.627753, 53.204035],
+          [63.627555, 53.204118],
+          [63.626662, 53.204583],
+          [63.625965, 53.20491],
+          [63.624278, 53.205736],
+          [63.620919, 53.207266],
+          [63.619166, 53.208197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.634298, 53.208524],
+          [63.639606, 53.205803],
+          [63.64107, 53.20507],
+          [63.641208, 53.20503],
+          [63.641336, 53.205032],
+          [63.641481, 53.205081],
+          [63.645221, 53.207599],
+          [63.646939, 53.208803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646821, 53.197986],
+          [63.64394, 53.199799],
+          [63.64212, 53.20089],
+          [63.642006, 53.201011],
+          [63.641965, 53.201156],
+          [63.641955, 53.201796],
+          [63.641972, 53.201922],
+          [63.642031, 53.201993],
+          [63.643821, 53.203297],
+          [63.644475, 53.203839],
+          [63.644834, 53.204152],
+          [63.645987, 53.204994],
+          [63.646339, 53.205285],
+          [63.646515, 53.205446],
+          [63.646983, 53.205943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617235, 53.20679],
+          [63.61891, 53.20595],
+          [63.624826, 53.203051],
+          [63.626091, 53.202418],
+          [63.62749, 53.201686],
+          [63.628885, 53.200993],
+          [63.630498, 53.20024],
+          [63.634158, 53.198448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645453, 53.209828],
+          [63.644557, 53.209176],
+          [63.643312, 53.208386],
+          [63.641422, 53.207091],
+          [63.639606, 53.205803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60957, 53.196726],
+          [63.610167, 53.196039],
+          [63.612681, 53.193233],
+          [63.612952, 53.193099],
+          [63.613355, 53.193006],
+          [63.613485, 53.193013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647472, 53.206355],
+          [63.646983, 53.205943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615865, 53.195845],
+          [63.612679, 53.197495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61577, 53.192871],
+          [63.616195, 53.192751],
+          [63.617215, 53.193975],
+          [63.618025, 53.194649],
+          [63.618925, 53.195445],
+          [63.619228, 53.195649],
+          [63.619935, 53.196202],
+          [63.620428, 53.196632],
+          [63.62078, 53.196906],
+          [63.621727, 53.19763],
+          [63.623686, 53.199058],
+          [63.62749, 53.201686],
+          [63.629582, 53.203177],
+          [63.631427, 53.204455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646115, 53.207121],
+          [63.645083, 53.207672],
+          [63.641747, 53.209412],
+          [63.639845, 53.210368],
+          [63.638223, 53.211198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636367, 53.209933],
+          [63.637082, 53.209576],
+          [63.643344, 53.20634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.643123, 53.20619],
+          [63.641422, 53.207091],
+          [63.640698, 53.20744],
+          [63.640068, 53.207796],
+          [63.639692, 53.207994],
+          [63.639034, 53.20833],
+          [63.636196, 53.209817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.644834, 53.204152],
+          [63.643453, 53.205111],
+          [63.643235, 53.205401],
+          [63.642535, 53.205793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633194, 53.204079],
+          [63.633651, 53.203629],
+          [63.633751, 53.20357],
+          [63.634536, 53.203244],
+          [63.636162, 53.202517],
+          [63.637017, 53.202118],
+          [63.637312, 53.202029],
+          [63.63784, 53.201782]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646977, 53.206485],
+          [63.646115, 53.207121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646115, 53.207121],
+          [63.64655, 53.206942],
+          [63.647399, 53.20675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646983, 53.205943],
+          [63.647031, 53.206419]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.632595, 53.194908],
+          [63.632244, 53.195088],
+          [63.632198, 53.19529],
+          [63.632086, 53.195455],
+          [63.631816, 53.195693],
+          [63.63132, 53.19599],
+          [63.630749, 53.196143],
+          [63.630641, 53.196085],
+          [63.630417, 53.196106],
+          [63.628163, 53.196823],
+          [63.627377, 53.196893],
+          [63.626586, 53.196835],
+          [63.626188, 53.196905],
+          [63.626029, 53.197018],
+          [63.625994, 53.197171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62989, 53.195336],
+          [63.629073, 53.195572],
+          [63.628205, 53.195651],
+          [63.62407, 53.196431],
+          [63.623891, 53.196398],
+          [63.623752, 53.196147],
+          [63.622854, 53.196307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625169, 53.198316],
+          [63.623686, 53.199058],
+          [63.622172, 53.199957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627148, 53.197231],
+          [63.626932, 53.197195],
+          [63.625994, 53.197171],
+          [63.625238, 53.197309],
+          [63.624269, 53.197647]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627066, 53.199678],
+          [63.628347, 53.199068],
+          [63.628513, 53.199042],
+          [63.628719, 53.199048],
+          [63.628911, 53.199108],
+          [63.630498, 53.20024],
+          [63.634536, 53.203244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612483, 53.195867],
+          [63.611452, 53.195848],
+          [63.61142, 53.196049],
+          [63.611271, 53.196276],
+          [63.610683, 53.196957]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617677, 53.197171],
+          [63.614478, 53.1988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612215, 53.197207],
+          [63.612395, 53.197009],
+          [63.612532, 53.195234],
+          [63.614098, 53.194486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616291, 53.197065],
+          [63.61402, 53.195422],
+          [63.613306, 53.195776],
+          [63.613267, 53.195869],
+          [63.613091, 53.195986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613236, 53.204132],
+          [63.614861, 53.203305],
+          [63.616549, 53.202409],
+          [63.618316, 53.20151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616337, 53.202257],
+          [63.614628, 53.203152],
+          [63.613039, 53.204004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616337, 53.202257],
+          [63.622486, 53.206552]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.620919, 53.207266],
+          [63.61891, 53.20595],
+          [63.616826, 53.204634],
+          [63.614861, 53.203305],
+          [63.613797, 53.202621],
+          [63.611614, 53.201171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.631132, 53.193434],
+          [63.631202, 53.193564],
+          [63.633041, 53.195344],
+          [63.633089, 53.196072],
+          [63.632948, 53.196393],
+          [63.633057, 53.19718],
+          [63.634158, 53.198448],
+          [63.634767, 53.199276],
+          [63.635829, 53.200269],
+          [63.63784, 53.201782],
+          [63.640414, 53.203623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615673, 53.201796],
+          [63.615884, 53.201699],
+          [63.613656, 53.20011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625962, 53.204911],
+          [63.623937, 53.203483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623621, 53.206979],
+          [63.623004, 53.206555],
+          [63.622689, 53.20646],
+          [63.616553, 53.202147]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.632948, 53.196393],
+          [63.629792, 53.197556],
+          [63.629245, 53.197891],
+          [63.627299, 53.198355],
+          [63.626076, 53.198918]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.644915, 53.202644],
+          [63.643691, 53.201783],
+          [63.64322, 53.20199],
+          [63.642546, 53.202374],
+          [63.64166, 53.202675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646034, 53.203365],
+          [63.644475, 53.203839]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640761, 53.201705],
+          [63.64166, 53.202675],
+          [63.64255, 53.203725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.638321, 53.203981],
+          [63.63813, 53.20386],
+          [63.636162, 53.202517],
+          [63.634166, 53.200978],
+          [63.631089, 53.198515],
+          [63.630805, 53.198385],
+          [63.629792, 53.197556]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646832, 53.207229],
+          [63.647893, 53.207949],
+          [63.648121, 53.20829],
+          [63.648316, 53.208458]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636006, 53.205483],
+          [63.637208, 53.204859],
+          [63.637709, 53.204789],
+          [63.638109, 53.204951],
+          [63.639446, 53.205885]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633981, 53.206385],
+          [63.633074, 53.205776],
+          [63.632551, 53.205398],
+          [63.632509, 53.205276],
+          [63.632425, 53.205155],
+          [63.631427, 53.204455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.630504, 53.208165],
+          [63.62858, 53.2068],
+          [63.626958, 53.207623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62198, 53.208332],
+          [63.623488, 53.209382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647267, 53.2089],
+          [63.646939, 53.208803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.632716, 53.200872],
+          [63.631839, 53.200205],
+          [63.631954, 53.200144],
+          [63.631494, 53.199756]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645705, 53.202201],
+          [63.644971, 53.202611],
+          [63.643875, 53.203257],
+          [63.643821, 53.203297],
+          [63.64255, 53.203725],
+          [63.641861, 53.203994],
+          [63.641363, 53.204133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637762, 53.199004],
+          [63.637684, 53.198901],
+          [63.637479, 53.198681],
+          [63.637289, 53.198453],
+          [63.637045, 53.19824],
+          [63.636648, 53.198025],
+          [63.636278, 53.197768],
+          [63.636101, 53.197533],
+          [63.636032, 53.197237],
+          [63.636136, 53.195945],
+          [63.636179, 53.195167],
+          [63.636192, 53.194546],
+          [63.636155, 53.194505],
+          [63.636085, 53.194478],
+          [63.635827, 53.194434],
+          [63.635047, 53.194528],
+          [63.634472, 53.194757],
+          [63.63402, 53.195032],
+          [63.633089, 53.196072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612176, 53.191204],
+          [63.612101, 53.191274],
+          [63.611585, 53.191437],
+          [63.611269, 53.191519],
+          [63.610533, 53.191685],
+          [63.610068, 53.191718],
+          [63.608127, 53.191817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646339, 53.205285],
+          [63.646121, 53.205453],
+          [63.645804, 53.205661],
+          [63.645286, 53.205402],
+          [63.644773, 53.205093],
+          [63.644617, 53.205042],
+          [63.644225, 53.20507],
+          [63.644091, 53.205045],
+          [63.643775, 53.204886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.648314, 53.203152],
+          [63.64797, 53.205593],
+          [63.647827, 53.206021],
+          [63.647695, 53.206194],
+          [63.647603, 53.206346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613453, 53.200216],
+          [63.615673, 53.201796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615673, 53.201796],
+          [63.616337, 53.202257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618101, 53.201359],
+          [63.616337, 53.202257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621969, 53.192656],
+          [63.62187, 53.192713],
+          [63.621547, 53.192501],
+          [63.62144, 53.192468],
+          [63.621072, 53.192627],
+          [63.620782, 53.192633],
+          [63.620334, 53.19275],
+          [63.619845, 53.193089]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62187, 53.192713],
+          [63.622506, 53.193137],
+          [63.62354, 53.193881],
+          [63.624234, 53.193566],
+          [63.622087, 53.192135],
+          [63.62144, 53.192468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610461, 53.184664],
+          [63.611323, 53.184655],
+          [63.612261, 53.184621],
+          [63.612602, 53.184632],
+          [63.613045, 53.184711],
+          [63.613326, 53.184732],
+          [63.614374, 53.184789],
+          [63.61451, 53.184772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646939, 53.208803],
+          [63.647109, 53.208985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640698, 53.20744],
+          [63.640197, 53.207094],
+          [63.639994, 53.207157],
+          [63.63984, 53.207233],
+          [63.639855, 53.207282],
+          [63.64036, 53.207628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629595, 53.205232],
+          [63.631427, 53.204455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628454, 53.205464],
+          [63.628298, 53.205402],
+          [63.628023, 53.205206],
+          [63.627522, 53.204871],
+          [63.627221, 53.204783],
+          [63.626813, 53.204504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625058, 53.203753],
+          [63.624385, 53.203265]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.642898, 53.206922],
+          [63.641915, 53.207428]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615238, 53.205433],
+          [63.618506, 53.203774],
+          [63.620252, 53.202867],
+          [63.623809, 53.20112],
+          [63.625542, 53.200341],
+          [63.627066, 53.199678]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.619246, 53.197238],
+          [63.622298, 53.195675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625391, 53.210737],
+          [63.624067, 53.211411]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627755, 53.209533],
+          [63.626164, 53.210343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.630149, 53.208339],
+          [63.628842, 53.208979],
+          [63.627722, 53.208153],
+          [63.622246, 53.20431],
+          [63.620252, 53.202867],
+          [63.615187, 53.199315],
+          [63.612679, 53.197495],
+          [63.612215, 53.197207],
+          [63.611387, 53.19699],
+          [63.610683, 53.196957],
+          [63.610332, 53.196923],
+          [63.60957, 53.196726],
+          [63.6086, 53.196752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635873, 53.205394],
+          [63.633981, 53.206385],
+          [63.631017, 53.2079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626958, 53.207623],
+          [63.621539, 53.210362]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.619246, 53.197238],
+          [63.61885, 53.197278],
+          [63.618606, 53.197263],
+          [63.61839, 53.197218],
+          [63.61814, 53.197092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609958, 53.202019],
+          [63.615187, 53.199315],
+          [63.619246, 53.197238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615879, 53.186622],
+          [63.616998, 53.188103],
+          [63.617394, 53.188815],
+          [63.617647, 53.189964],
+          [63.61779, 53.190982],
+          [63.617928, 53.191297],
+          [63.618329, 53.19169],
+          [63.619486, 53.192743],
+          [63.620171, 53.193404],
+          [63.621399, 53.194695],
+          [63.622298, 53.195675],
+          [63.623519, 53.197063],
+          [63.623891, 53.197378],
+          [63.625169, 53.198316],
+          [63.626076, 53.198918],
+          [63.627066, 53.199678],
+          [63.628885, 53.200993],
+          [63.630852, 53.202535],
+          [63.632647, 53.203873],
+          [63.633194, 53.204079],
+          [63.634132, 53.204339],
+          [63.63466, 53.204549],
+          [63.634893, 53.204686],
+          [63.635808, 53.20535],
+          [63.637837, 53.20671],
+          [63.639874, 53.208132],
+          [63.643726, 53.210742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60807, 53.185628],
+          [63.607572, 53.184953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607692, 53.186326],
+          [63.608353, 53.186189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60807, 53.185628],
+          [63.607822, 53.185699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.614803, 53.205151],
+          [63.615285, 53.205465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607981, 53.189956],
+          [63.608127, 53.191817]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.634298, 53.208524],
+          [63.632369, 53.207204],
+          [63.623809, 53.20112],
+          [63.623205, 53.200668],
+          [63.622172, 53.199957],
+          [63.617986, 53.196982],
+          [63.615969, 53.195529],
+          [63.615504, 53.195182],
+          [63.615044, 53.194799],
+          [63.614534, 53.194321],
+          [63.614158, 53.193896],
+          [63.613485, 53.193013],
+          [63.612772, 53.192014],
+          [63.60807, 53.185628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639812, 53.212296],
+          [63.63487, 53.208914]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61451, 53.184772],
+          [63.615488, 53.18612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607862, 53.185524],
+          [63.608353, 53.186189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613289, 53.183039],
+          [63.61385, 53.18385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608353, 53.186189],
+          [63.612101, 53.191274],
+          [63.613355, 53.193006],
+          [63.614057, 53.193925],
+          [63.614437, 53.194355],
+          [63.614951, 53.194837],
+          [63.615414, 53.195222],
+          [63.615882, 53.195572],
+          [63.618378, 53.197372],
+          [63.627554, 53.203893],
+          [63.630305, 53.205867],
+          [63.632762, 53.207587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608353, 53.186189],
+          [63.608462, 53.18616]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616691, 53.191658],
+          [63.617928, 53.191297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61798, 53.193309],
+          [63.618925, 53.192988],
+          [63.619486, 53.192743]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.63813, 53.20386],
+          [63.63976, 53.203153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6493, 53.206451],
+          [63.648766, 53.206595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.648766, 53.206595],
+          [63.648256, 53.206518],
+          [63.647805, 53.206429],
+          [63.647567, 53.206414]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647399, 53.20675],
+          [63.648766, 53.206595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610204, 53.18536],
+          [63.610059, 53.185193],
+          [63.609939, 53.185162],
+          [63.60977, 53.185184],
+          [63.60807, 53.185628]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616614, 53.187582],
+          [63.616032, 53.187844],
+          [63.616274, 53.1882],
+          [63.616998, 53.188103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612289, 53.187648],
+          [63.61303, 53.187447],
+          [63.613152, 53.187366],
+          [63.613162, 53.187288],
+          [63.61244, 53.18623],
+          [63.611713, 53.185238],
+          [63.611733, 53.185167],
+          [63.611782, 53.185125],
+          [63.611839, 53.185102],
+          [63.612595, 53.184967],
+          [63.614374, 53.184789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612577, 53.189228],
+          [63.611516, 53.189514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608954, 53.184142],
+          [63.608559, 53.184228],
+          [63.608518, 53.184222],
+          [63.608363, 53.184059],
+          [63.608148, 53.183773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610501, 53.188124],
+          [63.610337, 53.187894],
+          [63.610337, 53.187847],
+          [63.610386, 53.187807],
+          [63.610469, 53.187773],
+          [63.612051, 53.187354]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61231, 53.188885],
+          [63.611543, 53.187945],
+          [63.611489, 53.187925],
+          [63.611382, 53.187913],
+          [63.610501, 53.188124],
+          [63.611516, 53.189514],
+          [63.61158, 53.189619],
+          [63.611569, 53.189656],
+          [63.611537, 53.189693],
+          [63.611344, 53.189783],
+          [63.611074, 53.189881]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615064, 53.187954],
+          [63.614128, 53.186729],
+          [63.613981, 53.186517],
+          [63.613979, 53.186472],
+          [63.614018, 53.186445],
+          [63.61519, 53.186181],
+          [63.615488, 53.18612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612118, 53.183787],
+          [63.611682, 53.183154],
+          [63.611533, 53.183071],
+          [63.611393, 53.182909]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607595, 53.183921],
+          [63.60781, 53.184204],
+          [63.607826, 53.184211],
+          [63.607926, 53.18419],
+          [63.60812, 53.184129],
+          [63.608134, 53.184105],
+          [63.607945, 53.183836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612289, 53.187648],
+          [63.612051, 53.187354],
+          [63.611906, 53.187124],
+          [63.611921, 53.187069],
+          [63.611968, 53.187033],
+          [63.612791, 53.186823],
+          [63.612837, 53.186805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616499, 53.192157],
+          [63.616576, 53.19235],
+          [63.616735, 53.192631],
+          [63.617247, 53.19321],
+          [63.617365, 53.193364],
+          [63.617625, 53.193359],
+          [63.61798, 53.193309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617315, 53.195859],
+          [63.617021, 53.19601]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618057, 53.195875],
+          [63.617031, 53.195144]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617935, 53.196338],
+          [63.619228, 53.195649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.619144, 53.193514],
+          [63.618925, 53.192988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61242, 53.191129],
+          [63.613016, 53.191877],
+          [63.613597, 53.191733],
+          [63.613758, 53.19143],
+          [63.613331, 53.190861],
+          [63.613581, 53.190693],
+          [63.6146, 53.1904],
+          [63.61506, 53.190973],
+          [63.615142, 53.190993],
+          [63.6154, 53.191003],
+          [63.615482, 53.191018],
+          [63.61554, 53.191053],
+          [63.615683, 53.191275],
+          [63.616273, 53.192054],
+          [63.616499, 53.192157],
+          [63.616674, 53.192174],
+          [63.616881, 53.192147],
+          [63.617978, 53.191815],
+          [63.618329, 53.19169]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615103, 53.194322],
+          [63.615412, 53.194184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615624, 53.190835],
+          [63.61673, 53.190492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.619421, 53.197148],
+          [63.619263, 53.197032],
+          [63.618869, 53.196776],
+          [63.61885, 53.196744],
+          [63.618874, 53.196718],
+          [63.619935, 53.196202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.614518, 53.193152],
+          [63.615308, 53.192928],
+          [63.615601, 53.192914],
+          [63.61577, 53.192871],
+          [63.615203, 53.192072],
+          [63.615182, 53.192023],
+          [63.615214, 53.191994],
+          [63.615555, 53.191922],
+          [63.615778, 53.192129],
+          [63.615834, 53.192143],
+          [63.615901, 53.192141],
+          [63.616273, 53.192054]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618744, 53.19441],
+          [63.619168, 53.194217],
+          [63.620171, 53.193404]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616735, 53.192631],
+          [63.617215, 53.192473],
+          [63.61798, 53.193309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616851, 53.195229],
+          [63.618025, 53.194649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.614542, 53.189766],
+          [63.615952, 53.189388],
+          [63.616452, 53.189264],
+          [63.616742, 53.18908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613485, 53.193013],
+          [63.614279, 53.192817],
+          [63.615504, 53.192495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618799, 53.193631],
+          [63.619987, 53.193226]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616521, 53.195645],
+          [63.617329, 53.196235],
+          [63.618925, 53.195445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615952, 53.189388],
+          [63.61673, 53.190492],
+          [63.61768, 53.190159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613758, 53.19143],
+          [63.613927, 53.191341],
+          [63.613605, 53.190894],
+          [63.613559, 53.190854],
+          [63.613483, 53.190848],
+          [63.613331, 53.190861],
+          [63.612618, 53.191066],
+          [63.612176, 53.191204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621656, 53.194975],
+          [63.622005, 53.194791],
+          [63.621769, 53.194574],
+          [63.621399, 53.194695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621795, 53.195932],
+          [63.621615, 53.195805],
+          [63.621391, 53.195915],
+          [63.621568, 53.196049]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616039, 53.195088],
+          [63.616494, 53.194863],
+          [63.616078, 53.194497],
+          [63.617215, 53.193975]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616175, 53.189705],
+          [63.614769, 53.190073],
+          [63.614542, 53.189766],
+          [63.61409, 53.189608],
+          [63.613738, 53.189107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616931, 53.195287],
+          [63.615245, 53.194057],
+          [63.614668, 53.19336],
+          [63.614279, 53.192817],
+          [63.613763, 53.192031]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621694, 53.201864],
+          [63.620823, 53.201261],
+          [63.621941, 53.200649],
+          [63.622373, 53.200924],
+          [63.622594, 53.200807],
+          [63.622802, 53.200938],
+          [63.622828, 53.201078],
+          [63.622929, 53.201228],
+          [63.62272, 53.201331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.619116, 53.198343],
+          [63.619649, 53.198709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622336, 53.199746],
+          [63.621037, 53.198812],
+          [63.620759, 53.198953]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61972, 53.197204],
+          [63.619433, 53.197355],
+          [63.61943, 53.19738],
+          [63.619562, 53.19751],
+          [63.619626, 53.19756],
+          [63.619635, 53.197596],
+          [63.619676, 53.197652],
+          [63.620002, 53.197898],
+          [63.62007, 53.198016],
+          [63.620139, 53.198074],
+          [63.620399, 53.198255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.620595, 53.201469],
+          [63.620899, 53.201314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618475, 53.198068],
+          [63.617837, 53.198397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.620739, 53.198059],
+          [63.620399, 53.198255],
+          [63.620087, 53.198475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616407, 53.200168],
+          [63.616915, 53.199889],
+          [63.617447, 53.199712],
+          [63.617757, 53.199679],
+          [63.618919, 53.199005],
+          [63.619649, 53.198709],
+          [63.619995, 53.198521]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618161, 53.198626],
+          [63.617478, 53.198142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617457, 53.199052],
+          [63.618074, 53.198734],
+          [63.617348, 53.198209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623834, 53.198235],
+          [63.62242, 53.197262],
+          [63.620821, 53.198116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621241, 53.201551],
+          [63.622107, 53.201103],
+          [63.62167, 53.200797]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621928, 53.201198],
+          [63.622198, 53.201382],
+          [63.621982, 53.201503],
+          [63.621895, 53.201649],
+          [63.621955, 53.201825],
+          [63.622124, 53.201948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622849, 53.199552],
+          [63.620145, 53.19764],
+          [63.620148, 53.197502],
+          [63.619546, 53.197083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612612, 53.192977],
+          [63.612952, 53.193099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609881, 53.189145],
+          [63.607919, 53.189169]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610225, 53.19341],
+          [63.608341, 53.193481]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613267, 53.195869],
+          [63.615461, 53.19747]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.611269, 53.191519],
+          [63.61114, 53.191384],
+          [63.610712, 53.191495],
+          [63.610751, 53.191638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.611585, 53.191437],
+          [63.609552, 53.188701],
+          [63.609337, 53.188615],
+          [63.607878, 53.188652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61715, 53.196838],
+          [63.617073, 53.196782],
+          [63.61682, 53.196811],
+          [63.615461, 53.19747],
+          [63.614716, 53.19787],
+          [63.613558, 53.19704]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60847, 53.195203],
+          [63.608632, 53.195192],
+          [63.609095, 53.194932],
+          [63.609079, 53.194721],
+          [63.608575, 53.194534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609107, 53.192279],
+          [63.609082, 53.192124],
+          [63.61012, 53.192069],
+          [63.610068, 53.191718]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61314, 53.198629],
+          [63.613752, 53.19828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612623, 53.199658],
+          [63.610037, 53.200997],
+          [63.609444, 53.201239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610842, 53.198446],
+          [63.612044, 53.199247],
+          [63.612623, 53.199658],
+          [63.613453, 53.200216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610779, 53.20226],
+          [63.612128, 53.201512]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613117, 53.201097],
+          [63.613751, 53.201551]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62062, 53.206117],
+          [63.619792, 53.206527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617693, 53.201566],
+          [63.615232, 53.199799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.611995, 53.2026],
+          [63.612951, 53.20206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61924, 53.207139],
+          [63.618343, 53.207587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61291, 53.203102],
+          [63.613797, 53.202621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626115, 53.201683],
+          [63.625312, 53.201163],
+          [63.626142, 53.200755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617054, 53.203773],
+          [63.616263, 53.203243],
+          [63.617104, 53.202796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.614035, 53.20152],
+          [63.614121, 53.201783],
+          [63.615476, 53.202708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.614741, 53.200053],
+          [63.615604, 53.199607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.621192, 53.206503],
+          [63.620354, 53.205937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628513, 53.199042],
+          [63.628394, 53.198891],
+          [63.627646, 53.198272]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.619456, 53.207278],
+          [63.618624, 53.206744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633764, 53.198643],
+          [63.633261, 53.198265],
+          [63.63269, 53.197771],
+          [63.632064, 53.19725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624818, 53.204103],
+          [63.625161, 53.203933],
+          [63.625854, 53.204434],
+          [63.626397, 53.204151],
+          [63.6243, 53.202679],
+          [63.623385, 53.202057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617471, 53.206015],
+          [63.616779, 53.205564],
+          [63.616722, 53.205507],
+          [63.616749, 53.205451],
+          [63.61744, 53.205022]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615885, 53.201944],
+          [63.616769, 53.201504],
+          [63.614331, 53.19976]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.631494, 53.199756],
+          [63.631189, 53.199517],
+          [63.630846, 53.199396],
+          [63.629589, 53.198482],
+          [63.629371, 53.198016],
+          [63.629245, 53.197891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622841, 53.205667],
+          [63.621873, 53.204988],
+          [63.622132, 53.204829],
+          [63.62263, 53.204579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.63269, 53.197771],
+          [63.631907, 53.198099],
+          [63.631358, 53.19759],
+          [63.63134, 53.197317],
+          [63.631119, 53.197067]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615028, 53.201337],
+          [63.614829, 53.201433],
+          [63.612668, 53.20167],
+          [63.612499, 53.201759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639471, 53.203911],
+          [63.638321, 53.203981],
+          [63.637693, 53.204006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645363, 53.200064],
+          [63.645861, 53.200004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645137, 53.199991],
+          [63.644928, 53.199324],
+          [63.644818, 53.199247]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645748, 53.201219],
+          [63.645363, 53.200064],
+          [63.645137, 53.199991],
+          [63.64394, 53.199799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6354, 53.204835],
+          [63.635785, 53.204639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639086, 53.205445],
+          [63.639606, 53.205803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635278, 53.204268],
+          [63.635393, 53.204394]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635804, 53.204393],
+          [63.636435, 53.204834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.634915, 53.204268],
+          [63.635168, 53.204496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.63563, 53.204862],
+          [63.636115, 53.205188]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637144, 53.204477],
+          [63.63621, 53.204947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637398, 53.204578],
+          [63.636369, 53.205107],
+          [63.636189, 53.205095]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636775, 53.204424],
+          [63.636408, 53.204597],
+          [63.636079, 53.204392],
+          [63.635393, 53.204394],
+          [63.63502, 53.204564]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635221, 53.2047],
+          [63.635488, 53.204562],
+          [63.635693, 53.204572],
+          [63.63621, 53.204947],
+          [63.636189, 53.205095],
+          [63.636115, 53.205188],
+          [63.635808, 53.20535]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.638725, 53.209406],
+          [63.63817, 53.209684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.638541, 53.210594],
+          [63.637082, 53.209576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640325, 53.209392],
+          [63.639388, 53.209875],
+          [63.638557, 53.210317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641011, 53.208909],
+          [63.640407, 53.209244],
+          [63.640691, 53.209427],
+          [63.640684, 53.20953],
+          [63.639656, 53.210064],
+          [63.638868, 53.210461],
+          [63.639188, 53.210702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.638721, 53.2105],
+          [63.637866, 53.210955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639457, 53.208944],
+          [63.638963, 53.208603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637983, 53.208881],
+          [63.639989, 53.210298]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637611, 53.207325],
+          [63.639034, 53.20833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635965, 53.209395],
+          [63.635078, 53.208804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636136, 53.208347],
+          [63.637101, 53.20897]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637294, 53.208305],
+          [63.636619, 53.207849],
+          [63.636094, 53.207605],
+          [63.635619, 53.207263],
+          [63.634709, 53.20776],
+          [63.633219, 53.206772]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.638242, 53.206993],
+          [63.635437, 53.208472]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.638035, 53.209083],
+          [63.637528, 53.208742],
+          [63.636403, 53.209342],
+          [63.635371, 53.208648],
+          [63.63487, 53.208914]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.632823, 53.206973],
+          [63.634247, 53.207927],
+          [63.633792, 53.20818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.632181, 53.204985],
+          [63.631678, 53.205252],
+          [63.631439, 53.205446],
+          [63.631504, 53.205658],
+          [63.632294, 53.206184],
+          [63.632584, 53.20629],
+          [63.633314, 53.206724]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625858, 53.209257],
+          [63.626729, 53.209912],
+          [63.62685, 53.209991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626106, 53.207023],
+          [63.625927, 53.207111],
+          [63.625488, 53.207207],
+          [63.62483, 53.207316],
+          [63.624027, 53.207397],
+          [63.623771, 53.207379],
+          [63.623443, 53.20738],
+          [63.622588, 53.207685],
+          [63.622022, 53.208005],
+          [63.621878, 53.208178],
+          [63.62198, 53.208332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623771, 53.207379],
+          [63.62535, 53.208438],
+          [63.625701, 53.208693],
+          [63.625848, 53.208875],
+          [63.627228, 53.209801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623684, 53.207706],
+          [63.625095, 53.208697],
+          [63.625858, 53.209257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627137, 53.208348],
+          [63.62682, 53.208505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624502, 53.211189],
+          [63.624155, 53.210945]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624169, 53.20985],
+          [63.625391, 53.210737]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627616, 53.209066],
+          [63.626712, 53.208429]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624147, 53.209048],
+          [63.624569, 53.20934],
+          [63.623337, 53.209979]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626784, 53.209503],
+          [63.62793, 53.208902],
+          [63.6281, 53.208887],
+          [63.628472, 53.208702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622895, 53.209683],
+          [63.624499, 53.21076],
+          [63.623888, 53.211081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626288, 53.207962],
+          [63.626734, 53.208284],
+          [63.626917, 53.208194],
+          [63.62793, 53.208902]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629089, 53.206542],
+          [63.62858, 53.2068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639877, 53.206773],
+          [63.640518, 53.206446]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646586, 53.207629],
+          [63.646398, 53.207719]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.63415, 53.205081],
+          [63.634893, 53.204686]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641394, 53.205671],
+          [63.641931, 53.205385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.643468, 53.207405],
+          [63.644387, 53.208034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637875, 53.205713],
+          [63.63703, 53.206168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647347, 53.208132],
+          [63.646579, 53.208552]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.643735, 53.209586],
+          [63.644557, 53.209176]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.64656, 53.208009],
+          [63.646144, 53.208249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637991, 53.205795],
+          [63.637467, 53.205425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646229, 53.207608],
+          [63.646398, 53.207719],
+          [63.64634, 53.207861],
+          [63.646733, 53.208124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640248, 53.211301],
+          [63.640514, 53.211503],
+          [63.640769, 53.211792],
+          [63.641158, 53.212052]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640556, 53.210009],
+          [63.641002, 53.210212],
+          [63.641109, 53.210177],
+          [63.641383, 53.210369],
+          [63.640521, 53.21082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639588, 53.211511],
+          [63.640343, 53.212017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.642037, 53.211123],
+          [63.642431, 53.211403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641109, 53.210177],
+          [63.641576, 53.209927],
+          [63.641884, 53.210147],
+          [63.642418, 53.209863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639812, 53.212296],
+          [63.640769, 53.211792],
+          [63.641671, 53.211304],
+          [63.642037, 53.211123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641671, 53.211304],
+          [63.641541, 53.211233],
+          [63.64128, 53.211366],
+          [63.640521, 53.21082],
+          [63.639845, 53.210368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625964, 53.197763],
+          [63.62503, 53.198212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633619, 53.199483],
+          [63.632816, 53.199898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628772, 53.200001],
+          [63.629563, 53.199573]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.630111, 53.200963],
+          [63.631107, 53.201816],
+          [63.631626, 53.202196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.634391, 53.200084],
+          [63.633503, 53.199392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629007, 53.200163],
+          [63.628367, 53.199722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626401, 53.198115],
+          [63.625875, 53.197691]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617846, 53.190011],
+          [63.617658, 53.190026]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623116, 53.203885],
+          [63.622791, 53.203648],
+          [63.622744, 53.203632],
+          [63.622698, 53.203636],
+          [63.622586, 53.203624],
+          [63.622442, 53.203687],
+          [63.6223, 53.203601],
+          [63.621362, 53.202936],
+          [63.621644, 53.202789],
+          [63.621134, 53.202433]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.634803, 53.202456],
+          [63.634072, 53.201897],
+          [63.63328, 53.201424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.632219, 53.202598],
+          [63.63302, 53.203167],
+          [63.633867, 53.20275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629381, 53.203977],
+          [63.629872, 53.204357],
+          [63.630756, 53.20399]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.630081, 53.190363],
+          [63.631394, 53.191158],
+          [63.631665, 53.191418],
+          [63.631757, 53.191547],
+          [63.631805, 53.191718],
+          [63.63178, 53.191937],
+          [63.631418, 53.192684],
+          [63.631145, 53.193314],
+          [63.631132, 53.193434],
+          [63.6305, 53.193618],
+          [63.630146, 53.193749],
+          [63.63003, 53.193761],
+          [63.629943, 53.193739],
+          [63.629496, 53.193485],
+          [63.629074, 53.193035],
+          [63.628062, 53.191669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615329, 53.20455],
+          [63.614071, 53.203707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.638348, 53.203047],
+          [63.637017, 53.202118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627042, 53.205657],
+          [63.625962, 53.204911]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636207, 53.204113],
+          [63.635493, 53.203975],
+          [63.634536, 53.203244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618028, 53.202296],
+          [63.618482, 53.202602],
+          [63.617838, 53.203051]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624201, 53.201511],
+          [63.624059, 53.20162],
+          [63.62415, 53.201686],
+          [63.624336, 53.201607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608784, 53.195312],
+          [63.608832, 53.19581],
+          [63.608522, 53.195821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609445, 53.196729],
+          [63.609388, 53.196035],
+          [63.610013, 53.196011],
+          [63.610167, 53.196039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646554, 53.197407],
+          [63.647111, 53.197811],
+          [63.646821, 53.197986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629801, 53.207666],
+          [63.630144, 53.20747],
+          [63.630159, 53.20732],
+          [63.630513, 53.20714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646642, 53.198099],
+          [63.645477, 53.197459]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.632893, 53.189062],
+          [63.632088, 53.189338],
+          [63.631794, 53.189647],
+          [63.630081, 53.190363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628532, 53.188295],
+          [63.629148, 53.189241],
+          [63.629725, 53.190081],
+          [63.629889, 53.190253],
+          [63.629968, 53.19031],
+          [63.630081, 53.190363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639499, 53.188252],
+          [63.636787, 53.18984],
+          [63.635786, 53.190412],
+          [63.635713, 53.190434],
+          [63.635627, 53.190432],
+          [63.635464, 53.19041],
+          [63.635043, 53.190272],
+          [63.63418, 53.190141],
+          [63.633348, 53.18953],
+          [63.632893, 53.189062],
+          [63.63217, 53.188276],
+          [63.631846, 53.187849],
+          [63.631553, 53.187429],
+          [63.631252, 53.187026],
+          [63.630921, 53.186665],
+          [63.630431, 53.18634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609512, 53.183658],
+          [63.609363, 53.18345]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609025, 53.18378],
+          [63.609822, 53.183577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609924, 53.183515],
+          [63.610253, 53.18343],
+          [63.61013, 53.183245]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609167, 53.183933],
+          [63.608846, 53.183587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612772, 53.192014],
+          [63.612918, 53.191964],
+          [63.613016, 53.191877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628501, 53.202406],
+          [63.62684, 53.203274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626416, 53.202641],
+          [63.626091, 53.202418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627226, 53.202889],
+          [63.62696, 53.203027],
+          [63.627104, 53.203135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635464, 53.19041],
+          [63.63541, 53.190591],
+          [63.635448, 53.190713],
+          [63.636862, 53.191964],
+          [63.637163, 53.192168],
+          [63.637111, 53.192271],
+          [63.636941, 53.192366],
+          [63.636267, 53.192588],
+          [63.635821, 53.192754],
+          [63.63579, 53.192876],
+          [63.635173, 53.193701],
+          [63.634536, 53.194368],
+          [63.634472, 53.194757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635082, 53.185842],
+          [63.635622, 53.186329],
+          [63.635616, 53.186367],
+          [63.635585, 53.186402],
+          [63.634699, 53.186917],
+          [63.633232, 53.187742],
+          [63.632709, 53.188013],
+          [63.63217, 53.188276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60997, 53.193248],
+          [63.608322, 53.193329]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629999, 53.208229],
+          [63.630149, 53.208339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.633516, 53.203378],
+          [63.633751, 53.20357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.64322, 53.20199],
+          [63.642751, 53.201693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.644971, 53.202611],
+          [63.645302, 53.20283],
+          [63.645668, 53.203058],
+          [63.645863, 53.203214],
+          [63.645973, 53.203383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.619283, 53.195017],
+          [63.618688, 53.195236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646983, 53.205943],
+          [63.647219, 53.205799]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615683, 53.191275],
+          [63.614314, 53.191625],
+          [63.614077, 53.191353],
+          [63.613927, 53.191341]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615073, 53.192608],
+          [63.614314, 53.191625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641215, 53.204649],
+          [63.641319, 53.204841],
+          [63.641336, 53.205032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645195, 53.207291],
+          [63.64546, 53.207144],
+          [63.645537, 53.206995],
+          [63.645415, 53.20692],
+          [63.644922, 53.20685],
+          [63.644473, 53.207097]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645377, 53.206692],
+          [63.645718, 53.206507],
+          [63.646087, 53.206576],
+          [63.646239, 53.20667],
+          [63.64615, 53.206832],
+          [63.645968, 53.206975],
+          [63.646008, 53.207028],
+          [63.646115, 53.207121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622005, 53.194791],
+          [63.622683, 53.194496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622412, 53.194614],
+          [63.622654, 53.194807],
+          [63.62293, 53.194683],
+          [63.622683, 53.194496],
+          [63.622243, 53.194389],
+          [63.621769, 53.194574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.620902, 53.20801],
+          [63.62043, 53.208337],
+          [63.620215, 53.208414],
+          [63.619708, 53.208567],
+          [63.61943, 53.208663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618912, 53.204741],
+          [63.619446, 53.20443]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.63579, 53.206208],
+          [63.636545, 53.205836]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646985, 53.204122],
+          [63.646551, 53.20435],
+          [63.646529, 53.20442],
+          [63.646728, 53.204609],
+          [63.646717, 53.204739],
+          [63.646317, 53.204863],
+          [63.645987, 53.204994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629278, 53.195167],
+          [63.623752, 53.196147]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.611689, 53.191959],
+          [63.611641, 53.191837],
+          [63.611425, 53.191479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641541, 53.211233],
+          [63.640735, 53.210708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640152, 53.211602],
+          [63.639935, 53.211471],
+          [63.640785, 53.21101]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641739, 53.21056],
+          [63.641383, 53.210369],
+          [63.641251, 53.210589],
+          [63.642037, 53.211123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.642286, 53.210924],
+          [63.641959, 53.21107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646658, 53.205596],
+          [63.64694, 53.205522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629142, 53.190765],
+          [63.62838, 53.190906],
+          [63.627744, 53.191056],
+          [63.627418, 53.191103],
+          [63.626941, 53.1912],
+          [63.626522, 53.191248]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62838, 53.190906],
+          [63.627509, 53.189577],
+          [63.628292, 53.189423],
+          [63.629148, 53.189241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623603, 53.203196],
+          [63.623704, 53.203144],
+          [63.623509, 53.203001],
+          [63.623046, 53.20303],
+          [63.621753, 53.202127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622765, 53.202652],
+          [63.623304, 53.203014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622811, 53.202871],
+          [63.621935, 53.203339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622511, 53.203031],
+          [63.623476, 53.203708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629437, 53.19212],
+          [63.629956, 53.193031],
+          [63.630181, 53.193556],
+          [63.63037, 53.193663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6295, 53.190713],
+          [63.629717, 53.190972],
+          [63.62994, 53.191189],
+          [63.630243, 53.191408],
+          [63.630313, 53.191482],
+          [63.630398, 53.191602],
+          [63.6306, 53.19194],
+          [63.631219, 53.192591],
+          [63.631418, 53.192684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626941, 53.1912],
+          [63.627266, 53.191669],
+          [63.627428, 53.191998],
+          [63.627436, 53.19207],
+          [63.627466, 53.192126],
+          [63.628284, 53.193182],
+          [63.62836, 53.193205],
+          [63.628416, 53.193202],
+          [63.629074, 53.193035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626736, 53.189772],
+          [63.627134, 53.190356],
+          [63.627573, 53.191077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629142, 53.190765],
+          [63.6295, 53.190713],
+          [63.629688, 53.190664],
+          [63.629897, 53.190591],
+          [63.630205, 53.190439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624689, 53.195981],
+          [63.627734, 53.194519],
+          [63.627768, 53.194434],
+          [63.627761, 53.194369],
+          [63.627707, 53.194292],
+          [63.625555, 53.192759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625555, 53.192759],
+          [63.623653, 53.191375],
+          [63.622314, 53.190338],
+          [63.62225, 53.190452],
+          [63.622124, 53.190527],
+          [63.619522, 53.191747],
+          [63.619426, 53.191851],
+          [63.619772, 53.192158],
+          [63.61989, 53.192237],
+          [63.620094, 53.192293],
+          [63.620177, 53.192358],
+          [63.620346, 53.192628],
+          [63.620334, 53.19275]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625555, 53.192759],
+          [63.625835, 53.192624],
+          [63.626075, 53.192522],
+          [63.626271, 53.192472],
+          [63.626683, 53.192275],
+          [63.626819, 53.192182],
+          [63.626876, 53.192061],
+          [63.626856, 53.191901],
+          [63.626522, 53.191248]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628292, 53.189423],
+          [63.629142, 53.190765]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626522, 53.191248],
+          [63.626311, 53.190808],
+          [63.625698, 53.189825]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626164, 53.210343],
+          [63.625493, 53.209854],
+          [63.625517, 53.209766],
+          [63.625208, 53.209555],
+          [63.625858, 53.209257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626729, 53.209912],
+          [63.625289, 53.210663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625816, 53.21052],
+          [63.625703, 53.210444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610774, 53.192144],
+          [63.610106, 53.191973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612331, 53.187895],
+          [63.612235, 53.187742],
+          [63.612229, 53.187696],
+          [63.612289, 53.187648]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612974, 53.18702],
+          [63.614128, 53.186729]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645666, 53.200974],
+          [63.64536, 53.201007]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.643867, 53.200225],
+          [63.643962, 53.200566],
+          [63.64433, 53.200525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.644643, 53.200042],
+          [63.644635, 53.199911]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.611755, 53.188526],
+          [63.611591, 53.188555],
+          [63.611572, 53.188583],
+          [63.611583, 53.188721],
+          [63.611548, 53.188761],
+          [63.611062, 53.188892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610712, 53.191495],
+          [63.610651, 53.191406],
+          [63.610675, 53.191351],
+          [63.611009, 53.191259],
+          [63.611054, 53.191269],
+          [63.611084, 53.19129],
+          [63.61114, 53.191384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609725, 53.191735],
+          [63.609834, 53.19161],
+          [63.609893, 53.191591],
+          [63.610239, 53.19157],
+          [63.61032, 53.191593],
+          [63.610443, 53.191692]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.610533, 53.191685],
+          [63.610298, 53.191241],
+          [63.610373, 53.19118],
+          [63.610639, 53.191094],
+          [63.610969, 53.191069],
+          [63.611309, 53.191065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61258, 53.193346],
+          [63.612894, 53.193634]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.612681, 53.193233],
+          [63.613039, 53.1936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616452, 53.189264],
+          [63.616922, 53.190114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617111, 53.190056],
+          [63.616544, 53.190229]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615149, 53.191411],
+          [63.615555, 53.191922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613673, 53.19159],
+          [63.613957, 53.192003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61412, 53.191402],
+          [63.614531, 53.191287],
+          [63.614565, 53.191262],
+          [63.614565, 53.191225],
+          [63.614024, 53.190566]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.634132, 53.204339],
+          [63.634192, 53.204261],
+          [63.634196, 53.20418],
+          [63.634054, 53.204003],
+          [63.633651, 53.203629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.629374, 53.208719],
+          [63.628258, 53.207955],
+          [63.628176, 53.207939],
+          [63.62812, 53.207944],
+          [63.62805, 53.207973],
+          [63.627722, 53.208153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641711, 53.208919],
+          [63.643058, 53.208214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609408, 53.197797],
+          [63.609512, 53.197778],
+          [63.609569, 53.197738],
+          [63.609574, 53.197668],
+          [63.609512, 53.19739],
+          [63.609442, 53.197278],
+          [63.609346, 53.19719],
+          [63.609193, 53.197125],
+          [63.609043, 53.197114],
+          [63.608641, 53.197122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609826, 53.197333],
+          [63.610242, 53.197088],
+          [63.61029, 53.197026],
+          [63.610332, 53.196923]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616483, 53.198038],
+          [63.61666, 53.197964],
+          [63.61673, 53.197967],
+          [63.617177, 53.198296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62211, 53.209056],
+          [63.622341, 53.208861]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62254, 53.208722],
+          [63.622379, 53.20881],
+          [63.622341, 53.208861],
+          [63.622344, 53.208908],
+          [63.622397, 53.208974],
+          [63.623194, 53.209532]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622604, 53.202206],
+          [63.622979, 53.202003],
+          [63.622993, 53.201973],
+          [63.622971, 53.201941],
+          [63.622629, 53.201699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61299, 53.198535],
+          [63.613023, 53.198603],
+          [63.613079, 53.198623],
+          [63.61314, 53.198629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613025, 53.198071],
+          [63.612822, 53.198199],
+          [63.612833, 53.198263],
+          [63.613135, 53.198476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613663, 53.198209],
+          [63.613135, 53.198476],
+          [63.61299, 53.198535],
+          [63.612835, 53.198557],
+          [63.612745, 53.198582],
+          [63.612526, 53.198741],
+          [63.612484, 53.198875],
+          [63.612505, 53.198938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61314, 53.198629],
+          [63.613075, 53.198769],
+          [63.612822, 53.198906],
+          [63.612722, 53.198942],
+          [63.612505, 53.198938],
+          [63.612044, 53.199247]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.618336, 53.196898],
+          [63.618726, 53.197153],
+          [63.618802, 53.197167],
+          [63.618882, 53.197171],
+          [63.619008, 53.197142],
+          [63.619263, 53.197032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622033, 53.196309],
+          [63.62249, 53.196712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622606, 53.196781],
+          [63.62249, 53.196712],
+          [63.622315, 53.196747],
+          [63.622164, 53.196765],
+          [63.622098, 53.196761],
+          [63.621968, 53.1967],
+          [63.621889, 53.196689],
+          [63.621792, 53.196708],
+          [63.621615, 53.19677],
+          [63.621409, 53.196809],
+          [63.621154, 53.196823],
+          [63.620998, 53.196802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.622621, 53.196042],
+          [63.622033, 53.196309],
+          [63.62078, 53.196906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.613163, 53.186345],
+          [63.61328, 53.186412],
+          [63.61339, 53.186427],
+          [63.61391, 53.186312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.614018, 53.186445],
+          [63.613656, 53.186001],
+          [63.613402, 53.185643],
+          [63.613132, 53.185295],
+          [63.613077, 53.185257],
+          [63.612941, 53.1852],
+          [63.612595, 53.184967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640221, 53.209245],
+          [63.639935, 53.20905],
+          [63.639906, 53.209042],
+          [63.639864, 53.209045],
+          [63.63892, 53.209547]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.634699, 53.186917],
+          [63.635271, 53.187328],
+          [63.636318, 53.188179],
+          [63.63702, 53.188731],
+          [63.637749, 53.189278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635287, 53.185473],
+          [63.634911, 53.185529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640349, 53.185597],
+          [63.639668, 53.185185],
+          [63.639576, 53.185155],
+          [63.639142, 53.18507],
+          [63.637602, 53.185117],
+          [63.637126, 53.185122],
+          [63.636662, 53.185116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608404, 53.185368],
+          [63.608331, 53.185347],
+          [63.608281, 53.18532],
+          [63.608235, 53.185273],
+          [63.608054, 53.185007],
+          [63.60806, 53.184973],
+          [63.608261, 53.184897]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607799, 53.184852],
+          [63.60738, 53.184264],
+          [63.607381, 53.18424],
+          [63.6074, 53.184225],
+          [63.607468, 53.184209],
+          [63.607506, 53.18421],
+          [63.607535, 53.184224],
+          [63.608037, 53.184709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609544, 53.184934],
+          [63.608737, 53.185179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609064, 53.185078],
+          [63.608935, 53.184919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609489, 53.184768],
+          [63.608374, 53.185072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607572, 53.184953],
+          [63.607799, 53.184852],
+          [63.608037, 53.184709],
+          [63.608143, 53.18478],
+          [63.608261, 53.184897],
+          [63.608374, 53.185072],
+          [63.608421, 53.185184],
+          [63.608404, 53.185368],
+          [63.608348, 53.185553]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624617, 53.205009],
+          [63.624382, 53.205117],
+          [63.624333, 53.205122],
+          [63.624299, 53.205113],
+          [63.6233, 53.204403],
+          [63.623261, 53.204359],
+          [63.623252, 53.204288],
+          [63.62327, 53.20424],
+          [63.624293, 53.203734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62289, 53.203995],
+          [63.62327, 53.20424],
+          [63.62348, 53.204283],
+          [63.623625, 53.204326],
+          [63.624319, 53.204769],
+          [63.62505, 53.205358]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.64255, 53.189879],
+          [63.642462, 53.189838],
+          [63.642408, 53.189764],
+          [63.642414, 53.189582],
+          [63.642474, 53.189137],
+          [63.642667, 53.188158]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641884, 53.191389],
+          [63.640674, 53.190892],
+          [63.639577, 53.19037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641406, 53.191855],
+          [63.640414, 53.191456],
+          [63.639636, 53.191093],
+          [63.638992, 53.190755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639772, 53.191988],
+          [63.639643, 53.192039],
+          [63.639527, 53.192052],
+          [63.639393, 53.192055],
+          [63.639105, 53.192039],
+          [63.638636, 53.192028],
+          [63.638235, 53.192044],
+          [63.637907, 53.192076],
+          [63.637163, 53.192168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.642474, 53.189137],
+          [63.642012, 53.18916],
+          [63.641774, 53.189206],
+          [63.641459, 53.189287],
+          [63.641208, 53.189382],
+          [63.641066, 53.189463],
+          [63.640991, 53.189529],
+          [63.640906, 53.189625],
+          [63.640802, 53.189698],
+          [63.640591, 53.189806],
+          [63.639577, 53.19037],
+          [63.638638, 53.190993],
+          [63.637651, 53.191524],
+          [63.636862, 53.191964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61637, 53.198709],
+          [63.616762, 53.19899],
+          [63.616764, 53.199002],
+          [63.616758, 53.199014],
+          [63.616176, 53.199324],
+          [63.616172, 53.199365],
+          [63.616915, 53.199889]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.635195, 53.207209],
+          [63.633981, 53.206385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626848, 53.204486],
+          [63.626397, 53.204151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626662, 53.204583],
+          [63.626217, 53.204249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628454, 53.205464],
+          [63.628819, 53.205764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.627805, 53.204298],
+          [63.629052, 53.205192]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626257, 53.20478],
+          [63.62736, 53.205694],
+          [63.627534, 53.205771],
+          [63.627727, 53.205821],
+          [63.627926, 53.205833],
+          [63.628565, 53.205791],
+          [63.628819, 53.205764],
+          [63.629127, 53.205751],
+          [63.629481, 53.205583],
+          [63.6295, 53.205536],
+          [63.629487, 53.205501],
+          [63.629052, 53.205192],
+          [63.629259, 53.205108]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625589, 53.20267],
+          [63.627555, 53.204118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608864, 53.199142],
+          [63.609365, 53.199118],
+          [63.609434, 53.199086],
+          [63.609456, 53.199033],
+          [63.609354, 53.198472],
+          [63.609365, 53.198425],
+          [63.60941, 53.1984],
+          [63.609746, 53.198356],
+          [63.609783, 53.198321],
+          [63.609727, 53.198004]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.624553, 53.200781],
+          [63.623919, 53.200284],
+          [63.623303, 53.199824],
+          [63.623226, 53.199741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636043, 53.197083],
+          [63.636299, 53.197177],
+          [63.636851, 53.197458],
+          [63.63747, 53.197783],
+          [63.63748, 53.197795],
+          [63.63751, 53.198002],
+          [63.637501, 53.198048],
+          [63.637222, 53.198255],
+          [63.637125, 53.19831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639378, 53.199111],
+          [63.639377, 53.199281],
+          [63.639353, 53.199323],
+          [63.639055, 53.199461],
+          [63.639055, 53.199492],
+          [63.639362, 53.199721],
+          [63.63942, 53.199727],
+          [63.639456, 53.199719],
+          [63.640107, 53.199433]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640294, 53.199332],
+          [63.6402, 53.199391],
+          [63.640107, 53.199433]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.620681, 53.19394],
+          [63.620848, 53.19389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.62107, 53.194349],
+          [63.621232, 53.1943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646191, 53.196503],
+          [63.645827, 53.19673],
+          [63.645561, 53.196918],
+          [63.645569, 53.196984],
+          [63.646896, 53.197941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.643623, 53.20928],
+          [63.643938, 53.209483]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.639825, 53.199306],
+          [63.639223, 53.199618]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.640107, 53.199433],
+          [63.63993, 53.199333],
+          [63.639825, 53.199306],
+          [63.639686, 53.199284],
+          [63.639377, 53.199281]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.637507, 53.198028],
+          [63.636346, 53.197415]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636362, 53.197209],
+          [63.636333, 53.19737],
+          [63.636346, 53.197415],
+          [63.636368, 53.197469],
+          [63.636507, 53.197688],
+          [63.636542, 53.197725],
+          [63.636562, 53.197743],
+          [63.637313, 53.198183]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623205, 53.200668],
+          [63.623427, 53.200575],
+          [63.623452, 53.200516],
+          [63.623347, 53.200414],
+          [63.623342, 53.20031],
+          [63.622542, 53.199743]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.645534, 53.206343],
+          [63.645624, 53.206219],
+          [63.646057, 53.206087],
+          [63.646179, 53.206073],
+          [63.646588, 53.206135],
+          [63.646623, 53.206164],
+          [63.646625, 53.206196],
+          [63.646441, 53.206529],
+          [63.646438, 53.206575],
+          [63.646674, 53.206708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.626032, 53.202823],
+          [63.625892, 53.202894]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608944, 53.190048],
+          [63.60799, 53.190072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.644591, 53.210283],
+          [63.643865, 53.210672],
+          [63.642431, 53.211403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.648316, 53.208458],
+          [63.647267, 53.2089],
+          [63.645599, 53.209755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "narimanovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641158, 53.212052],
+          [63.640329, 53.212472]
+        ]
+      }
+    }
+  ]
+}
