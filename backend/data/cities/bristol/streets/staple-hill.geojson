@@ -265,6 +265,51 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.500228, 51.475792],
+          [-2.50027, 51.475737]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "staple-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.499743, 51.476281],
+          [-2.500018, 51.476017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "staple-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.499556, 51.476405],
+          [-2.499654, 51.476353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "staple-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.499408, 51.476461],
+          [-2.499471, 51.476438]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "staple-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.499035, 51.476559],
           [-2.499104, 51.476674],
           [-2.499903, 51.477684],
           [-2.499986, 51.477716]
@@ -310,9 +355,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.503965, 51.472817],
           [-2.504003, 51.472897],
-          [-2.504005, 51.473438],
-          [-2.504019, 51.473494],
+          [-2.504009, 51.473472],
           [-2.50406, 51.473536]
         ]
       }
@@ -1297,7 +1342,7 @@
           [-2.486913, 51.486352],
           [-2.486681, 51.486535],
           [-2.486471, 51.486668],
-          [-2.486007, 51.486881]
+          [-2.48615, 51.486817]
         ]
       }
     },
@@ -1340,6 +1385,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.497045, 51.489731],
           [-2.496879, 51.489559],
           [-2.496714, 51.489408],
           [-2.496587, 51.489327],
@@ -3061,22 +3107,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.514781, 51.480517],
           [-2.514459, 51.48001],
           [-2.514396, 51.47988],
           [-2.514395, 51.47981],
           [-2.514436, 51.479772]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "staple-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.511659, 51.475181],
-          [-2.511501, 51.474836]
         ]
       }
     },
@@ -4829,18 +4863,9 @@
           [-2.504357, 51.473007],
           [-2.504303, 51.47301],
           [-2.504261, 51.472973],
-          [-2.504196, 51.47276]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "staple-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.504888, 51.472606],
-          [-2.504536, 51.472674]
+          [-2.504196, 51.47276],
+          [-2.504223, 51.472732],
+          [-2.505299, 51.472532]
         ]
       }
     },

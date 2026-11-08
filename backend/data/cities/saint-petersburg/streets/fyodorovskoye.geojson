@@ -95,7 +95,39 @@
           [30.53613, 59.672314],
           [30.537979, 59.673055],
           [30.539846, 59.673828],
-          [30.5406, 59.674231]
+          [30.540238, 59.674031],
+          [30.5406, 59.674231],
+          [30.541084, 59.674552],
+          [30.541999, 59.675196],
+          [30.545095, 59.677276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.552479, 59.692977],
+          [30.552532, 59.693309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.549777, 59.687391],
+          [30.54953, 59.687939],
+          [30.549436, 59.688251],
+          [30.549439, 59.688472],
+          [30.549553, 59.688804],
+          [30.549717, 59.689053],
+          [30.552042, 59.69119],
+          [30.552271, 59.691595]
         ]
       }
     },
@@ -107,8 +139,7 @@
         "coordinates": [
           [30.540996, 59.631878],
           [30.541099, 59.631124],
-          [30.541324, 59.628425],
-          [30.542183, 59.620955]
+          [30.541346, 59.628352]
         ]
       }
     },
@@ -676,8 +707,7 @@
           [30.541721, 59.630066],
           [30.541734, 59.630284],
           [30.541773, 59.630596],
-          [30.541559, 59.631048],
-          [30.541448, 59.631214]
+          [30.541559, 59.631048]
         ]
       }
     },
@@ -689,21 +719,6 @@
         "coordinates": [
           [30.550053, 59.636904],
           [30.55048, 59.636593]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.54357, 59.630889],
-          [30.543239, 59.630939],
-          [30.542956, 59.630996],
-          [30.542826, 59.631073],
-          [30.542822, 59.631487],
-          [30.542787, 59.631571]
         ]
       }
     },
@@ -1315,6 +1330,50 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.482446, 59.629511],
+          [30.481612, 59.629233]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.485334, 59.627347],
+          [30.484458, 59.627043]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.483027, 59.629079],
+          [30.482197, 59.628801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.484191, 59.628216],
+          [30.483678, 59.628042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.509657, 59.627826],
           [30.509753, 59.627843]
         ]
@@ -1350,6 +1409,17 @@
         "coordinates": [
           [30.487792, 59.625525],
           [30.486852, 59.625211]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.483604, 59.628652],
+          [30.482786, 59.628374]
         ]
       }
     },
@@ -1438,7 +1508,8 @@
         "type": "LineString",
         "coordinates": [
           [30.485932, 59.62689],
-          [30.4857, 59.626814]
+          [30.4857, 59.626814],
+          [30.485101, 59.626577]
         ]
       }
     },
@@ -1772,6 +1843,22 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.471996, 59.637158],
+          [30.472681, 59.637232],
+          [30.473158, 59.637404],
+          [30.473816, 59.637335],
+          [30.47485, 59.637105],
+          [30.474802, 59.637029],
+          [30.473042, 59.636584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.530896, 59.633592],
           [30.531053, 59.633721],
           [30.53086, 59.633813],
@@ -2050,7 +2137,18 @@
           [30.499637, 59.624246],
           [30.49978, 59.624049],
           [30.500042, 59.623502],
-          [30.500191, 59.622748]
+          [30.500179, 59.622792],
+          [30.500248, 59.622541],
+          [30.500317, 59.622421],
+          [30.500442, 59.622307],
+          [30.501319, 59.622441],
+          [30.502135, 59.622589],
+          [30.503599, 59.622819],
+          [30.50792, 59.623533],
+          [30.510103, 59.623938],
+          [30.510881, 59.624097],
+          [30.511959, 59.624272],
+          [30.512339, 59.627846]
         ]
       }
     },
@@ -2196,23 +2294,6 @@
           [30.513706, 59.624592],
           [30.513319, 59.624481],
           [30.511959, 59.624272]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.501319, 59.622441],
-          [30.502135, 59.622589],
-          [30.503599, 59.622819],
-          [30.50792, 59.623533],
-          [30.510103, 59.623938],
-          [30.510881, 59.624097],
-          [30.511959, 59.624272],
-          [30.512339, 59.627846]
         ]
       }
     },
@@ -2708,6 +2789,41 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.488691, 59.67731],
+          [30.488693, 59.677712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.537254, 59.692164],
+          [30.537776, 59.690543],
+          [30.537958, 59.690389],
+          [30.540388, 59.690476],
+          [30.543103, 59.690554],
+          [30.544811, 59.69056],
+          [30.545212, 59.690572],
+          [30.545602, 59.690625],
+          [30.54583, 59.690676],
+          [30.547351, 59.69109],
+          [30.547567, 59.69114],
+          [30.547732, 59.691158],
+          [30.547936, 59.691141],
+          [30.548108, 59.691095],
+          [30.55095, 59.690194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.540674, 59.63315],
           [30.540458, 59.633141],
           [30.540512, 59.632947],
@@ -2794,40 +2910,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.558955, 59.633374],
-          [30.55933, 59.63384],
-          [30.560259, 59.633651]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.558804, 59.632549],
-          [30.561531, 59.633125]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.56097, 59.633802],
-          [30.558242, 59.633223]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [30.55933, 59.63384],
           [30.557357, 59.636289]
         ]
@@ -2850,16 +2932,21 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.546627, 59.629455],
-          [30.546804, 59.629527],
-          [30.546866, 59.629611],
-          [30.546691, 59.629854],
-          [30.546547, 59.630029],
-          [30.54638, 59.630192],
           [30.544712, 59.630213],
           [30.543996, 59.630212],
           [30.543049, 59.630189],
           [30.542877, 59.630093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.546627, 59.629455],
+          [30.546804, 59.629527]
         ]
       }
     },
@@ -2945,6 +3032,17 @@
           [30.516173, 59.646728],
           [30.516125, 59.646687],
           [30.51602, 59.646667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.505611, 59.646711],
+          [30.505337, 59.64676]
         ]
       }
     },
@@ -3970,7 +4068,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.477328, 59.680756],
+          [30.477226, 59.680817],
           [30.477431, 59.680688]
         ]
       }
@@ -4098,7 +4196,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.487955, 59.623609],
           [30.488055, 59.62364],
           [30.489091, 59.624032]
         ]
@@ -4661,6 +4758,66 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.548596, 59.68862],
+          [30.548658, 59.688139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.548688, 59.687846],
+          [30.548658, 59.688139],
+          [30.547932, 59.688153],
+          [30.54788, 59.687572],
+          [30.548683, 59.687574],
+          [30.548688, 59.687846],
+          [30.548788, 59.687846],
+          [30.549552, 59.687894]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.548917, 59.689182],
+          [30.54918, 59.689416],
+          [30.549291, 59.689561],
+          [30.549322, 59.689646],
+          [30.549361, 59.689687],
+          [30.549412, 59.689699],
+          [30.549482, 59.689694],
+          [30.549838, 59.689614],
+          [30.550295, 59.689601]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.470216, 59.637449],
+          [30.470703, 59.637585],
+          [30.470936, 59.637687],
+          [30.471167, 59.637748],
+          [30.471635, 59.637833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.52026, 59.629023],
           [30.519577, 59.630948],
           [30.520796, 59.631063],
@@ -4748,7 +4905,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.51782, 59.685172],
           [30.520337, 59.689932],
           [30.520095, 59.689888],
           [30.518142, 59.688746],
@@ -4762,11 +4918,23 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.51782, 59.685172],
+          [30.52084, 59.690884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.51531, 59.686466],
           [30.516479, 59.68874],
           [30.518705, 59.690018],
           [30.519488, 59.690541],
-          [30.519753, 59.690774]
+          [30.519753, 59.690774],
+          [30.519767, 59.690801]
         ]
       }
     },
@@ -4874,6 +5042,18 @@
           [30.522517, 59.663483],
           [30.522645, 59.663309],
           [30.522777, 59.663098]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.548682, 59.692686],
+          [30.54818, 59.69269],
+          [30.548116, 59.692979]
         ]
       }
     },
@@ -5017,6 +5197,20 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.552425, 59.692606],
+          [30.552179, 59.692729],
+          [30.552182, 59.692862],
+          [30.552254, 59.692915],
+          [30.552479, 59.692977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.511555, 59.689746],
           [30.511572, 59.689285],
           [30.511513, 59.689198],
@@ -5138,6 +5332,53 @@
         "coordinates": [
           [30.502713, 59.67814],
           [30.501936, 59.677821]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.572895, 59.664988],
+          [30.565699, 59.664398],
+          [30.559114, 59.663874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.572657, 59.666001],
+          [30.565359, 59.665439],
+          [30.558078, 59.66482]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.560129, 59.662921],
+          [30.566025, 59.663397],
+          [30.568074, 59.663541],
+          [30.569557, 59.663384],
+          [30.570684, 59.663436],
+          [30.572367, 59.663745],
+          [30.572917, 59.663966],
+          [30.572895, 59.664988],
+          [30.572872, 59.665221],
+          [30.57232, 59.667283],
+          [30.572301, 59.667315],
+          [30.572253, 59.667317],
+          [30.566709, 59.666868],
+          [30.556758, 59.666053]
         ]
       }
     },
@@ -5818,6 +6059,28 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.542543, 59.689265],
+          [30.542472, 59.690536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.543854, 59.689315],
+          [30.542112, 59.689249]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.558198, 59.663037],
           [30.556648, 59.662582],
           [30.556616, 59.662531],
@@ -6334,6 +6597,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.550486, 59.691796],
+          [30.550529, 59.69245],
+          [30.550179, 59.692978],
+          [30.550119, 59.693119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.535032, 59.659119],
           [30.532927, 59.659364],
           [30.533066, 59.65985],
@@ -6375,20 +6651,6 @@
         "coordinates": [
           [30.490049, 59.641876],
           [30.491094, 59.641616]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.555124, 59.628376],
-          [30.553657, 59.630181],
-          [30.553579, 59.630292],
-          [30.551788, 59.632531],
-          [30.554686, 59.633104]
         ]
       }
     },
@@ -6648,8 +6910,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.556524, 59.630764],
-          [30.556412, 59.630955],
+          [30.554686, 59.633104],
           [30.553139, 59.63503],
           [30.552991, 59.635163]
         ]
@@ -6840,45 +7101,71 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.571753, 59.668604],
+          [30.569644, 59.66843],
+          [30.564531, 59.667976],
+          [30.555571, 59.667241]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.554612, 59.668202],
+          [30.5642, 59.668991],
+          [30.568943, 59.669424],
+          [30.571121, 59.669556],
+          [30.571271, 59.669528],
+          [30.571529, 59.669398],
+          [30.571904, 59.668039],
+          [30.56992, 59.667128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.566025, 59.663397],
+          [30.563676, 59.670598]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.553652, 59.669162],
+          [30.556753, 59.669417],
+          [30.557679, 59.669505],
+          [30.559255, 59.669634],
+          [30.56125, 59.67006],
+          [30.565027, 59.670899],
+          [30.566078, 59.671511],
+          [30.566422, 59.671625],
+          [30.567945, 59.672053],
+          [30.568063, 59.672042],
+          [30.568181, 59.671836],
+          [30.568943, 59.669424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.502203, 59.634352],
           [30.50105, 59.635213],
           [30.502463, 59.635698]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.567666, 59.635172],
-          [30.564276, 59.634378],
-          [30.562227, 59.633908]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.567033, 59.63591],
-          [30.563595, 59.63511],
-          [30.561722, 59.634646]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.566454, 59.636571],
-          [30.562981, 59.63577],
-          [30.561111, 59.635313]
         ]
       }
     },
@@ -6923,30 +7210,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.568128, 59.634521],
-          [30.562849, 59.633252]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.569104, 59.633979],
-          [30.565445, 59.633122]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.563225, 59.632585],
-          [30.565445, 59.633122],
+          [30.562981, 59.63577],
           [30.560764, 59.638151]
         ]
       }
@@ -7019,36 +7283,6 @@
         "coordinates": [
           [30.491374, 59.634294],
           [30.492852, 59.634762]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.545924, 59.630862],
-          [30.547673, 59.63118],
-          [30.548923, 59.629634],
-          [30.548923, 59.629583],
-          [30.548848, 59.629529],
-          [30.548633, 59.629442],
-          [30.546946, 59.629098]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.54638, 59.630192],
-          [30.545769, 59.631079],
-          [30.54549, 59.63117],
-          [30.545002, 59.631856],
-          [30.544711, 59.632062]
         ]
       }
     },
@@ -7297,6 +7531,17 @@
           [30.531055, 59.662776],
           [30.529817, 59.662903],
           [30.52965, 59.662925]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.568636, 59.670397],
+          [30.563868, 59.670008]
         ]
       }
     },
@@ -7574,6 +7819,35 @@
         "coordinates": [
           [30.492076, 59.631141],
           [30.493699, 59.631701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.542133, 59.675287],
+          [30.541974, 59.6755],
+          [30.541734, 59.675694],
+          [30.541761, 59.676024],
+          [30.542229, 59.676344],
+          [30.542511, 59.676339],
+          [30.542879, 59.676108],
+          [30.543197, 59.676002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.542826, 59.676141],
+          [30.542569, 59.676075],
+          [30.542086, 59.676246]
         ]
       }
     },
@@ -7940,65 +8214,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.57153, 59.633728],
-          [30.573741, 59.631273],
-          [30.57207, 59.630924],
-          [30.569633, 59.633713]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.559873, 59.631014],
-          [30.571638, 59.633609]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.567759, 59.632753],
-          [30.570271, 59.629536],
-          [30.56594, 59.628644],
-          [30.563437, 59.6318]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.567988, 59.629241],
-          [30.565585, 59.632274]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.571823, 59.631207],
-          [30.569375, 59.630684]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [30.578423, 59.635883],
           [30.579629, 59.634656],
           [30.581528, 59.633851]
@@ -8116,44 +8331,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.572548, 59.626613],
-          [30.570271, 59.629536]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.557538, 59.629537],
-          [30.556524, 59.630764],
-          [30.550843, 59.629609],
-          [30.550803, 59.62959],
-          [30.55131, 59.628905],
-          [30.548644, 59.628365],
-          [30.54387, 59.627427]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.554279, 59.632863],
-          [30.554168, 59.633001]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [30.515304, 59.622205],
           [30.514745, 59.622967]
         ]
@@ -8218,6 +8395,20 @@
           [30.517112, 59.618643],
           [30.5165, 59.618979],
           [30.516297, 59.619218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.591323, 59.642699],
+          [30.590846, 59.642244],
+          [30.590082, 59.642291],
+          [30.589883, 59.642371],
+          [30.588416, 59.643355]
         ]
       }
     },
@@ -8312,6 +8503,28 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.556561, 59.669937],
+          [30.556753, 59.669417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.557609, 59.669691],
+          [30.557679, 59.669505]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.505512, 59.633911],
           [30.505343, 59.634047]
         ]
@@ -8375,21 +8588,6 @@
         "coordinates": [
           [30.520711, 59.65328],
           [30.520675, 59.653169]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.549107, 59.632932],
-          [30.548443, 59.63263],
-          [30.548028, 59.632463],
-          [30.547717, 59.63235],
-          [30.545695, 59.631811],
-          [30.54516, 59.631633]
         ]
       }
     },
@@ -9111,6 +9309,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.544606, 59.692725],
+          [30.537254, 59.692164],
+          [30.534793, 59.691952],
+          [30.528627, 59.69149],
+          [30.525217, 59.691201],
+          [30.52084, 59.690884],
+          [30.511912, 59.690199],
+          [30.507932, 59.689916],
+          [30.498857, 59.689205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.482604, 59.630604],
+          [30.482563, 59.63046],
+          [30.482064, 59.630023],
+          [30.482067, 59.629891],
+          [30.482112, 59.629763],
+          [30.484191, 59.628216],
           [30.485932, 59.62689],
           [30.486762, 59.626292],
           [30.488246, 59.625178],
@@ -9534,17 +9756,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.47202, 59.638631],
-          [30.471763, 59.63868]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [30.482912, 59.637627],
           [30.482095, 59.637427],
           [30.481483, 59.637329],
@@ -9552,20 +9763,14 @@
           [30.479702, 59.637259],
           [30.478812, 59.637308],
           [30.478072, 59.637362],
-          [30.477567, 59.637454]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.519767, 59.690801],
-          [30.511912, 59.690199],
-          [30.507932, 59.689916],
-          [30.498857, 59.689205]
+          [30.476752, 59.637606],
+          [30.476076, 59.637715],
+          [30.475443, 59.63785],
+          [30.474164, 59.638079],
+          [30.473587, 59.638202],
+          [30.472911, 59.638365],
+          [30.47202, 59.638631],
+          [30.471763, 59.63868]
         ]
       }
     },
@@ -9974,9 +10179,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.479842, 59.681998],
+          [30.478774, 59.681509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.484243, 59.684018],
-          [30.48169, 59.682838],
-          [30.477886, 59.68111]
+          [30.48169, 59.682838]
         ]
       }
     },
@@ -10139,6 +10354,17 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.54891, 59.693033],
+          [30.55004, 59.693112]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.506117, 59.674828],
           [30.505371, 59.675214],
           [30.503433, 59.676247]
@@ -10240,9 +10466,7 @@
           [30.580809, 59.633047],
           [30.57812, 59.634195],
           [30.577047, 59.635469],
-          [30.576892, 59.635497],
-          [30.569633, 59.633713],
-          [30.56653, 59.637452]
+          [30.576892, 59.635497]
         ]
       }
     },
@@ -10252,7 +10476,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.575363, 59.648098],
+          [30.575659, 59.648305],
           [30.574678, 59.647617],
           [30.574522, 59.647481],
           [30.574318, 59.647243],
@@ -10343,12 +10567,61 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.550671, 59.6884],
+          [30.550295, 59.6883],
+          [30.550043, 59.688335],
+          [30.549603, 59.688457],
+          [30.549439, 59.688472]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.551701, 59.689613],
+          [30.551497, 59.689396],
+          [30.551261, 59.689115]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.552042, 59.69119],
+          [30.552758, 59.691115],
+          [30.552725, 59.690788]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.500369, 59.681897],
           [30.500527, 59.681934],
           [30.500671, 59.681953],
           [30.500792, 59.681952],
           [30.500913, 59.681938],
           [30.502655, 59.681557]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.488201, 59.677281],
+          [30.488693, 59.677712]
         ]
       }
     },
@@ -10730,6 +11003,29 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.475727, 59.634838],
+          [30.475374, 59.63482],
+          [30.474775, 59.634809],
+          [30.473042, 59.636584],
+          [30.472703, 59.636536],
+          [30.47231, 59.636868],
+          [30.471996, 59.637158],
+          [30.471901, 59.63723],
+          [30.47175, 59.637688],
+          [30.471651, 59.637807],
+          [30.471625, 59.637863],
+          [30.471622, 59.637964],
+          [30.471731, 59.638598],
+          [30.471763, 59.63868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.524085, 59.671689],
           [30.52264, 59.671736]
         ]
@@ -11066,6 +11362,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.551593, 59.689498],
+          [30.55147, 59.689511],
+          [30.55138, 59.689531],
+          [30.550542, 59.689818]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.566909, 59.636986],
+          [30.56653, 59.637452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.573396, 59.638478],
           [30.569889, 59.637719]
         ]
@@ -11088,11 +11408,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.541099, 59.631124],
-          [30.542787, 59.631571],
-          [30.546135, 59.632423],
-          [30.546735, 59.632604],
-          [30.547464, 59.632878],
           [30.549504, 59.633871],
           [30.550068, 59.634123],
           [30.550511, 59.634294],
@@ -11142,16 +11457,7 @@
         "coordinates": [
           [30.558217, 59.637153],
           [30.55868, 59.636569],
-          [30.561531, 59.633125],
-          [30.561985, 59.63254],
-          [30.561991, 59.632469],
-          [30.561948, 59.632414],
-          [30.559571, 59.63191],
-          [30.559394, 59.631912],
-          [30.559309, 59.631945],
-          [30.555934, 59.635988],
-          [30.555638, 59.636257],
-          [30.555484, 59.636338]
+          [30.56097, 59.633802]
         ]
       }
     },
@@ -11362,25 +11668,7 @@
         "coordinates": [
           [30.57275, 59.630543],
           [30.574696, 59.62813],
-          [30.576799, 59.628548],
-          [30.577644, 59.629539],
-          [30.576611, 59.630815]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.571612, 59.630437],
-          [30.575209, 59.630773],
-          [30.576611, 59.630815],
-          [30.577287, 59.630876],
-          [30.57747, 59.630955],
-          [30.579956, 59.63182],
-          [30.580809, 59.633047]
+          [30.576799, 59.628548]
         ]
       }
     },
@@ -11686,6 +11974,17 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.548116, 59.692979],
+          [30.548647, 59.693015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.498979, 59.688495],
           [30.495051, 59.688196]
         ]
@@ -11978,6 +12277,18 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.4774, 59.635304],
+          [30.475675, 59.636785],
+          [30.473482, 59.636135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.482912, 59.637627],
           [30.483329, 59.637254],
           [30.483381, 59.637174],
@@ -11990,6 +12301,30 @@
           [30.482319, 59.636761],
           [30.482208, 59.636745],
           [30.4804, 59.636205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.478816, 59.63573],
+          [30.478358, 59.636097],
+          [30.477916, 59.636488],
+          [30.478631, 59.63671]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.475949, 59.634873],
+          [30.474279, 59.63637]
         ]
       }
     },
@@ -12060,6 +12395,18 @@
         "coordinates": [
           [30.50139, 59.68067],
           [30.500488, 59.681228]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.477177, 59.680191],
+          [30.4771, 59.680415],
+          [30.476968, 59.680699]
         ]
       }
     },
@@ -12165,8 +12512,43 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.471763, 59.63868],
-          [30.471731, 59.638598]
+          [30.555247, 59.670477],
+          [30.55281, 59.670006]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.552399, 59.670417],
+          [30.556758, 59.666053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.556758, 59.666053],
+          [30.560129, 59.662921]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "fyodorovskoye" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.558242, 59.633223],
+          [30.555934, 59.635988],
+          [30.555638, 59.636257],
+          [30.555484, 59.636338]
         ]
       }
     },
@@ -12244,7 +12626,8 @@
           [30.58008, 59.643887],
           [30.579865, 59.643854],
           [30.579672, 59.643876],
-          [30.575606, 59.648034]
+          [30.575606, 59.648034],
+          [30.575363, 59.648098]
         ]
       }
     },
@@ -12343,17 +12726,6 @@
           [30.510792, 59.628044],
           [30.510573, 59.628297],
           [30.510373, 59.628771]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "fyodorovskoye" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.46851, 59.638385],
-          [30.467576, 59.639102]
         ]
       }
     }

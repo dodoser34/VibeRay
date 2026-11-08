@@ -480,6 +480,29 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [29.681187, 59.961068],
+          [29.681535, 59.961029],
+          [29.681288, 59.960292],
+          [29.68122, 59.959946],
+          [29.675885, 59.946391],
+          [29.675899, 59.946255],
+          [29.676113, 59.946],
+          [29.676152, 59.94583],
+          [29.675524, 59.9442],
+          [29.675425, 59.944061],
+          [29.675278, 59.94394],
+          [29.674927, 59.94374],
+          [29.674767, 59.943616],
+          [29.674706, 59.943493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "kronshtadtsky" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [29.682565, 59.963614],
           [29.682208, 59.963641]
         ]
@@ -5079,6 +5102,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [29.923038, 60.03391],
+          [29.922718, 60.033878],
+          [29.919725, 60.033358],
+          [29.919352, 60.033307],
+          [29.918941, 60.03328],
+          [29.915511, 60.033203],
+          [29.914736, 60.033164],
+          [29.910724, 60.032796],
+          [29.908548, 60.032605]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "kronshtadtsky" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [29.949717, 60.036496],
           [29.949707, 60.036402],
           [29.947311, 60.03619]
@@ -7421,6 +7462,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [29.908889, 60.032474],
+          [29.91008, 60.032632],
+          [29.910123, 60.032667],
+          [29.91013, 60.032744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "kronshtadtsky" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [29.774481, 60.021786],
           [29.74826, 60.021196],
           [29.745646, 60.021155],
@@ -7579,6 +7633,19 @@
           [29.683055, 59.964387],
           [29.683038, 59.964425],
           [29.682899, 59.964441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "kronshtadtsky" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [29.681837, 59.960916],
+          [29.681462, 59.960298],
+          [29.681397, 59.960282],
+          [29.681288, 59.960292]
         ]
       }
     },
@@ -9610,6 +9677,28 @@
         "coordinates": [
           [29.776535, 60.021576],
           [29.775543, 60.02156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "kronshtadtsky" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [29.909531, 60.033019],
+          [29.909506, 60.033089]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "kronshtadtsky" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [29.910176, 60.033148],
+          [29.908637, 60.033012]
         ]
       }
     },
@@ -14420,7 +14509,7 @@
         "type": "LineString",
         "coordinates": [
           [29.672686, 59.940394],
-          [29.672745, 59.940529]
+          [29.680951, 59.961208]
         ]
       }
     },
@@ -14430,8 +14519,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [29.67305, 59.940595],
+          [29.681236, 59.961181],
           [29.672963, 59.940367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "kronshtadtsky" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [29.92111, 60.033943],
+          [29.908414, 60.032773]
         ]
       }
     },
@@ -14454,6 +14554,17 @@
         "coordinates": [
           [29.947872, 60.036557],
           [29.949669, 60.036725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "kronshtadtsky" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [29.908362, 60.032911],
+          [29.921052, 60.034079]
         ]
       }
     }

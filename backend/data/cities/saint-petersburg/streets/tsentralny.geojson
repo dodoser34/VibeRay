@@ -1885,6 +1885,20 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.309748, 59.93208],
+          [30.309648, 59.932063],
+          [30.309508, 59.932054],
+          [30.309492, 59.931948],
+          [30.309506, 59.931879]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.376897, 59.936765],
           [30.374694, 59.937518],
           [30.374621, 59.937556],
@@ -2523,6 +2537,20 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.319283, 59.930348],
+          [30.316839, 59.92964],
+          [30.316569, 59.929543],
+          [30.316498, 59.929503],
+          [30.316344, 59.929331]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.3728, 59.925019],
           [30.37433, 59.926137]
         ]
@@ -2726,6 +2754,39 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.317216, 59.931683],
+          [30.315686, 59.932709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.318955, 59.930518],
+          [30.318297, 59.930958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.315155, 59.933062],
+          [30.314999, 59.933167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.320012, 59.936077],
           [30.319692, 59.935508],
           [30.319389, 59.935188],
@@ -2919,6 +2980,39 @@
         "coordinates": [
           [30.319707, 59.939869],
           [30.319568, 59.939873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.318181, 59.928749],
+          [30.318528, 59.92852]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.317528, 59.92918],
+          [30.317836, 59.928977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.316839, 59.92964],
+          [30.31693, 59.929576]
         ]
       }
     },
@@ -3231,6 +3325,18 @@
           [30.368795, 59.923839],
           [30.369413, 59.923845],
           [30.372018, 59.924085]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.321971, 59.928469],
+          [30.321778, 59.928627],
+          [30.319154, 59.930384]
         ]
       }
     },
@@ -3587,7 +3693,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.31896, 59.930564],
+          [30.31891, 59.930548],
           [30.324677, 59.932246],
           [30.324799, 59.932312],
           [30.324838, 59.932347],
@@ -3741,6 +3847,28 @@
         "coordinates": [
           [30.337912, 59.941687],
           [30.3398, 59.940243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.312032, 59.932553],
+          [30.314229, 59.93301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.309811, 59.932092],
+          [30.310536, 59.932241]
         ]
       }
     },
@@ -4544,7 +4672,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.330484, 59.926072],
+          [30.328635, 59.925364],
           [30.333718, 59.9273],
           [30.339494, 59.929527],
           [30.342527, 59.931295],
@@ -4635,10 +4763,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.309802, 59.940127],
+          [30.309694, 59.939995],
+          [30.309853, 59.940186],
           [30.309925, 59.940235],
-          [30.310017, 59.94027],
-          [30.312682, 59.941222],
           [30.315941, 59.942413],
           [30.316296, 59.942506],
           [30.316732, 59.942577],
@@ -5276,30 +5403,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.336861, 59.94792],
-          [30.336913, 59.947962],
-          [30.337076, 59.948007],
-          [30.340864, 59.948878],
-          [30.34136, 59.948965],
-          [30.345938, 59.949445],
-          [30.346251, 59.949487]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "tsentralny" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [30.346962, 59.949551],
           [30.345961, 59.94939],
-          [30.341398, 59.948909],
-          [30.34092, 59.948825],
-          [30.33988, 59.948594],
-          [30.337116, 59.947954],
-          [30.336922, 59.947915],
-          [30.336861, 59.94792]
+          [30.342771, 59.949057]
         ]
       }
     },
@@ -5416,6 +5522,17 @@
           [30.392537, 59.942983],
           [30.393785, 59.942972],
           [30.396766, 59.942892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.345938, 59.949445],
+          [30.346251, 59.949487]
         ]
       }
     },
@@ -5784,6 +5901,17 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.327644, 59.92498],
+          [30.327673, 59.924991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.392546, 59.942858],
           [30.392537, 59.942983]
         ]
@@ -5842,17 +5970,6 @@
           [30.392945, 59.921665],
           [30.392034, 59.922151],
           [30.391742, 59.922237]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "tsentralny" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.336762, 59.947899],
-          [30.336861, 59.94792]
         ]
       }
     },
@@ -6080,20 +6197,7 @@
         "coordinates": [
           [30.332455, 59.946945],
           [30.332917, 59.947089],
-          [30.333357, 59.947196],
-          [30.335537, 59.947673],
-          [30.335902, 59.947714]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "tsentralny" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [30.335902, 59.947714],
-          [30.336147, 59.947767]
+          [30.333872, 59.947309]
         ]
       }
     },
@@ -8543,8 +8647,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.311418, 59.935599],
+          [30.311861, 59.935301]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.310841, 59.935987],
+          [30.31123, 59.935725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.341781, 59.948024],
-          [30.34117, 59.94887]
+          [30.341225, 59.948794]
         ]
       }
     },
@@ -8820,8 +8946,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.313569, 59.934194],
-          [30.312012, 59.935217],
           [30.311861, 59.935301],
           [30.314826, 59.936373],
           [30.314898, 59.936428],
@@ -9063,7 +9187,7 @@
         "type": "LineString",
         "coordinates": [
           [30.341301, 59.918235],
-          [30.339669, 59.919586]
+          [30.340494, 59.918908]
         ]
       }
     },
@@ -9111,7 +9235,19 @@
         "type": "LineString",
         "coordinates": [
           [30.319283, 59.930348],
-          [30.326673, 59.925408]
+          [30.3225, 59.928202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.311861, 59.935301],
+          [30.312012, 59.935217],
+          [30.313569, 59.934194]
         ]
       }
     },
@@ -9123,6 +9259,39 @@
         "coordinates": [
           [30.313569, 59.934194],
           [30.315213, 59.933077]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.326175, 59.925734],
+          [30.326673, 59.925408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.324081, 59.927143],
+          [30.324518, 59.926849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.322965, 59.92789],
+          [30.323215, 59.927723]
         ]
       }
     },
@@ -9165,7 +9334,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.315468, 59.932908],
+          [30.315641, 59.932793],
           [30.31848, 59.930887]
         ]
       }
@@ -9217,7 +9386,7 @@
         "type": "LineString",
         "coordinates": [
           [30.310129, 59.936465],
-          [30.31029, 59.936358]
+          [30.310367, 59.936305]
         ]
       }
     },
@@ -9345,6 +9514,17 @@
         "coordinates": [
           [30.31848, 59.930887],
           [30.319003, 59.930534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.31848, 59.930887],
+          [30.318425, 59.930872]
         ]
       }
     },
@@ -20500,6 +20680,114 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.320175, 59.929752],
+          [30.319808, 59.929611],
+          [30.319755, 59.929606],
+          [30.319517, 59.929735]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.319689, 59.930083],
+          [30.319347, 59.929966],
+          [30.318803, 59.929746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.319978, 59.928714],
+          [30.320594, 59.928956],
+          [30.32109, 59.928635],
+          [30.320484, 59.928395],
+          [30.319892, 59.928772],
+          [30.319793, 59.92879],
+          [30.319699, 59.928852],
+          [30.320709, 59.929267],
+          [30.320833, 59.92931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.320401, 59.9296],
+          [30.319815, 59.929359],
+          [30.319779, 59.929381],
+          [30.319296, 59.929184],
+          [30.319524, 59.92904],
+          [30.320019, 59.929236],
+          [30.320104, 59.929242],
+          [30.320238, 59.929288],
+          [30.32033, 59.92929],
+          [30.320672, 59.929418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.32144, 59.928905],
+          [30.320951, 59.92872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.318261, 59.928696],
+          [30.318666, 59.928856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.319828, 59.928062],
+          [30.320133, 59.928188],
+          [30.319775, 59.928406],
+          [30.319105, 59.928139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.318059, 59.929727],
+          [30.317156, 59.929426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.380763, 59.923699],
           [30.381195, 59.923976]
         ]
@@ -21023,7 +21311,8 @@
           [30.318467, 59.931312],
           [30.318572, 59.93124],
           [30.318491, 59.931194],
-          [30.318184, 59.931087]
+          [30.318184, 59.931087],
+          [30.318148, 59.931058]
         ]
       }
     },
@@ -26901,17 +27190,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.34117, 59.94887],
-          [30.341131, 59.948926]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "tsentralny" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [30.35765, 59.925368],
           [30.358122, 59.92527],
           [30.359554, 59.925004],
@@ -27282,6 +27560,30 @@
           [30.344511, 59.945736],
           [30.344831, 59.945763],
           [30.345033, 59.945767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.318738, 59.929296],
+          [30.317956, 59.929012],
+          [30.317836, 59.928977]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.318419, 59.929521],
+          [30.317627, 59.929231],
+          [30.317528, 59.92918]
         ]
       }
     },
@@ -27680,7 +27982,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.338349, 59.948239],
+          [30.338397, 59.948187],
           [30.338577, 59.94799],
           [30.338179, 59.947899],
           [30.338114, 59.947922],
@@ -27899,7 +28201,7 @@
         "type": "LineString",
         "coordinates": [
           [30.342879, 59.948805],
-          [30.342771, 59.949057]
+          [30.342796, 59.949004]
         ]
       }
     },
@@ -40127,6 +40429,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.319102, 59.930087],
+          [30.318532, 59.92991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.318569, 59.930147],
+          [30.318746, 59.930002],
+          [30.318809, 59.929935],
+          [30.318984, 59.929822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.314495, 59.941778],
           [30.316272, 59.940579],
           [30.316345, 59.940534],
@@ -44534,7 +44860,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.340111, 59.948645],
+          [30.340166, 59.948582],
           [30.340406, 59.948249]
         ]
       }
@@ -44545,7 +44871,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.339304, 59.94846],
           [30.339357, 59.948401],
           [30.339528, 59.948148],
           [30.339621, 59.948128],
@@ -44563,7 +44888,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.339012, 59.948393],
           [30.339063, 59.948335],
           [30.339203, 59.948116],
           [30.338942, 59.948056]
@@ -49907,6 +50231,17 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [30.319039, 59.929441],
+          [30.319621, 59.929679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [30.321978, 59.928959],
           [30.321653, 59.929161],
           [30.321504, 59.929264]
@@ -51040,6 +51375,29 @@
         "coordinates": [
           [30.338294, 59.933937],
           [30.338364, 59.93408]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.320019, 59.929236],
+          [30.319815, 59.929359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.321305, 59.928559],
+          [30.321252, 59.928536],
+          [30.32109, 59.928635]
         ]
       }
     },
@@ -58058,7 +58416,7 @@
           [30.339781, 59.948352],
           [30.339726, 59.948355],
           [30.339694, 59.94837],
-          [30.339572, 59.948522]
+          [30.339626, 59.94846]
         ]
       }
     },
@@ -58104,7 +58462,6 @@
         "type": "LineString",
         "coordinates": [
           [30.344321, 59.948704],
-          [30.344395, 59.948542],
           [30.344442, 59.948468]
         ]
       }
@@ -60923,6 +61280,28 @@
         "coordinates": [
           [30.359336, 59.915577],
           [30.359873, 59.915512]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.317766, 59.931366],
+          [30.317716, 59.931348]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.317266, 59.931702],
+          [30.317216, 59.931683]
         ]
       }
     },
@@ -63978,17 +64357,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.33637, 59.922249],
-          [30.336107, 59.922464]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "tsentralny" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [30.385613, 59.923813],
           [30.387138, 59.924102]
         ]
@@ -64041,6 +64409,17 @@
         "coordinates": [
           [30.347103, 59.928247],
           [30.347279, 59.928538]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "tsentralny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.309694, 59.939995],
+          [30.309483, 59.940148]
         ]
       }
     },
@@ -64221,7 +64600,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.321936, 59.928576],
+          [30.321713, 59.928482],
           [30.334422, 59.933812],
           [30.334683, 59.933925],
           [30.334817, 59.934014]
