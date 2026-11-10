@@ -37,8 +37,7 @@
           [-2.579445, 51.431663],
           [-2.579659, 51.431594],
           [-2.583576, 51.429595],
-          [-2.583987, 51.429375],
-          [-2.58407, 51.429478]
+          [-2.583987, 51.429375]
         ]
       }
     },
@@ -199,8 +198,12 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.585416, 51.432336],
+          [-2.585743, 51.432638],
           [-2.586129, 51.432949],
-          [-2.586248, 51.433018]
+          [-2.586376, 51.433075],
+          [-2.586526, 51.433136],
+          [-2.586776, 51.433215]
         ]
       }
     },
@@ -210,20 +213,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.585164, 51.432025],
-          [-2.585289, 51.432194]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.584444, 51.430078],
-          [-2.584498, 51.43021],
-          [-2.584667, 51.430842],
+          [-2.584791, 51.431239],
           [-2.584881, 51.431533]
         ]
       }
@@ -234,7 +224,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.581281, 51.436047],
           [-2.581095, 51.435917],
           [-2.579929, 51.434966],
           [-2.578945, 51.434302],
@@ -308,12 +297,283 @@
     },
     {
       "type": "Feature",
-      "properties": { "kind": "local", "district": "knowle" },
+      "properties": { "kind": "major", "district": "knowle" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.575234, 51.438162],
-          [-2.575268, 51.438149]
+          [-2.56483, 51.442483],
+          [-2.566057, 51.442714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564403, 51.442394],
+          [-2.564594, 51.44243]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563292, 51.42784],
+          [-2.562972, 51.427957],
+          [-2.561781, 51.428453],
+          [-2.560956, 51.428823],
+          [-2.559958, 51.429187],
+          [-2.558909, 51.429536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.567184, 51.434998],
+          [-2.568439, 51.436023],
+          [-2.56899, 51.436504],
+          [-2.569389, 51.43689],
+          [-2.569725, 51.437271],
+          [-2.570029, 51.437559],
+          [-2.570214, 51.437663],
+          [-2.571414, 51.438099],
+          [-2.571738, 51.438265],
+          [-2.571999, 51.438424],
+          [-2.572335, 51.438658],
+          [-2.572568, 51.438859],
+          [-2.573063, 51.439388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563954, 51.42801],
+          [-2.563959, 51.428748],
+          [-2.563884, 51.429531],
+          [-2.563963, 51.429752],
+          [-2.56448, 51.430501],
+          [-2.564754, 51.431406],
+          [-2.565142, 51.432484],
+          [-2.565308, 51.432817],
+          [-2.565567, 51.43319],
+          [-2.566171, 51.433861],
+          [-2.566989, 51.434833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.568029, 51.426507],
+          [-2.568688, 51.426431],
+          [-2.569436, 51.426426],
+          [-2.569868, 51.426407],
+          [-2.570241, 51.426371],
+          [-2.570647, 51.426313],
+          [-2.570966, 51.426249],
+          [-2.571297, 51.426162],
+          [-2.571591, 51.42607],
+          [-2.571901, 51.425945],
+          [-2.57248, 51.425638],
+          [-2.572748, 51.425465],
+          [-2.573629, 51.424759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563524, 51.427789],
+          [-2.563614, 51.427789],
+          [-2.563787, 51.427844],
+          [-2.563954, 51.42801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563292, 51.42784],
+          [-2.563524, 51.427789],
+          [-2.563864, 51.427688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.567043, 51.442815],
+          [-2.566928, 51.442777],
+          [-2.566751, 51.442766],
+          [-2.566622, 51.442791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.567184, 51.434998],
+          [-2.567191, 51.434962],
+          [-2.567099, 51.434876],
+          [-2.567027, 51.434829],
+          [-2.566989, 51.434833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.566989, 51.434833],
+          [-2.566973, 51.434871],
+          [-2.567069, 51.434959],
+          [-2.567111, 51.43499],
+          [-2.567184, 51.434998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563951, 51.427906],
+          [-2.563954, 51.42801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563951, 51.427906],
+          [-2.563997, 51.427816],
+          [-2.56399, 51.427657]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563864, 51.427688],
+          [-2.56399, 51.427657]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563864, 51.427688],
+          [-2.563886, 51.427832],
+          [-2.563951, 51.427906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56399, 51.427657],
+          [-2.564349, 51.427537],
+          [-2.564466, 51.427434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563859, 51.42764],
+          [-2.563757, 51.427653],
+          [-2.563334, 51.427793],
+          [-2.563292, 51.42784]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56399, 51.427657],
+          [-2.563859, 51.42764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56399, 51.427657],
+          [-2.563981, 51.427589]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.563859, 51.42764],
+          [-2.563864, 51.427688]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.56402, 51.427585],
+          [-2.564224, 51.427522]
         ]
       }
     },
@@ -323,11 +583,53 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.578936, 51.43651],
-          [-2.579017, 51.436372],
-          [-2.579099, 51.436299],
-          [-2.57922, 51.436232],
+          [-2.57875, 51.436747],
+          [-2.578799, 51.436728],
+          [-2.578861, 51.436675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.575234, 51.438162],
+          [-2.577707, 51.437172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580005, 51.435918],
           [-2.58074, 51.435625]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579017, 51.436372],
+          [-2.579099, 51.436299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578861, 51.436675],
+          [-2.578913, 51.436579]
         ]
       }
     },
@@ -387,7 +689,8 @@
           [-2.57693, 51.435242],
           [-2.57779, 51.436088],
           [-2.577986, 51.43624],
-          [-2.578754, 51.436635]
+          [-2.578754, 51.436635],
+          [-2.578861, 51.436675]
         ]
       }
     },
@@ -398,7 +701,8 @@
         "type": "LineString",
         "coordinates": [
           [-2.577986, 51.43624],
-          [-2.574745, 51.437601]
+          [-2.574681, 51.437628],
+          [-2.572224, 51.438574]
         ]
       }
     },
@@ -756,7 +1060,16 @@
           [-2.582772, 51.428258],
           [-2.582793, 51.428185],
           [-2.582831, 51.428118],
-          [-2.583503, 51.427365]
+          [-2.583503, 51.427365],
+          [-2.58243, 51.426977],
+          [-2.582069, 51.426856],
+          [-2.581528, 51.426713],
+          [-2.581298, 51.426664],
+          [-2.581045, 51.426616],
+          [-2.580625, 51.426556],
+          [-2.580095, 51.426506],
+          [-2.579772, 51.426496],
+          [-2.578975, 51.426489]
         ]
       }
     },
@@ -807,6 +1120,52 @@
           [-2.573916, 51.425824],
           [-2.573357, 51.426085],
           [-2.572973, 51.426337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.571495, 51.431119],
+          [-2.571431, 51.43112],
+          [-2.571386, 51.431132],
+          [-2.571325, 51.431178],
+          [-2.571314, 51.431207],
+          [-2.571319, 51.431237],
+          [-2.571343, 51.431269],
+          [-2.571383, 51.431292],
+          [-2.571435, 51.431306],
+          [-2.571535, 51.431298],
+          [-2.571601, 51.431258],
+          [-2.571617, 51.431231],
+          [-2.571619, 51.431202],
+          [-2.571598, 51.431164],
+          [-2.571554, 51.431134],
+          [-2.571495, 51.431119]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.570356, 51.431415],
+          [-2.57033, 51.431365],
+          [-2.570252, 51.431336],
+          [-2.570168, 51.431345],
+          [-2.570137, 51.43136],
+          [-2.570105, 51.431405],
+          [-2.570123, 51.431454],
+          [-2.570149, 51.431473],
+          [-2.570225, 51.431491],
+          [-2.570302, 51.431478],
+          [-2.57033, 51.431461],
+          [-2.570356, 51.431415]
         ]
       }
     },
@@ -1205,13 +1564,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.577847, 51.426539],
-          [-2.577732, 51.425743],
-          [-2.57775, 51.425673],
-          [-2.577805, 51.425613],
-          [-2.577889, 51.425574],
-          [-2.578004, 51.425554],
-          [-2.578677, 51.425518]
+          [-2.573862, 51.424948],
+          [-2.574434, 51.425186]
         ]
       }
     },
@@ -1221,8 +1575,36 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.578987, 51.425996],
-          [-2.578975, 51.426489]
+          [-2.577847, 51.426539],
+          [-2.577732, 51.425743],
+          [-2.57775, 51.425673],
+          [-2.577805, 51.425613],
+          [-2.577889, 51.425574],
+          [-2.578004, 51.425554],
+          [-2.578985, 51.425504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578993, 51.425402],
+          [-2.578987, 51.425996]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577963, 51.424337],
+          [-2.57882, 51.425068],
+          [-2.578911, 51.425183]
         ]
       }
     },
@@ -1269,17 +1651,6 @@
         "coordinates": [
           [-2.575234, 51.438162],
           [-2.575105, 51.438209]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.572224, 51.438574],
-          [-2.574681, 51.437628]
         ]
       }
     },
@@ -1571,8 +1942,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.560243, 51.43385],
-          [-2.560533, 51.433845],
           [-2.560809, 51.433869],
           [-2.561006, 51.433915],
           [-2.561742, 51.434178],
@@ -1672,6 +2041,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.570443, 51.439646],
+          [-2.570505, 51.439619],
           [-2.57064, 51.439584],
           [-2.570508, 51.438907],
           [-2.571802, 51.438807],
@@ -1686,7 +2057,8 @@
         "type": "LineString",
         "coordinates": [
           [-2.570592, 51.439354],
-          [-2.572744, 51.439183]
+          [-2.572744, 51.439183],
+          [-2.572863, 51.439166]
         ]
       }
     },
@@ -1696,44 +2068,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.570416, 51.439679],
-          [-2.570443, 51.439646],
-          [-2.570505, 51.439619],
-          [-2.57064, 51.439584],
-          [-2.571637, 51.439502]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.570427, 51.439712],
-          [-2.570416, 51.439679]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.572064, 51.425784],
-          [-2.572124, 51.425829]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.565112, 51.42717],
-          [-2.565138, 51.427236]
+          [-2.572333, 51.439448],
+          [-2.573063, 51.439388]
         ]
       }
     },
@@ -1766,16 +2102,26 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.562431, 51.434763],
-          [-2.561948, 51.435147],
-          [-2.560911, 51.434238],
-          [-2.56083, 51.434141],
-          [-2.560792, 51.434043],
           [-2.560809, 51.433869],
           [-2.560849, 51.432822],
           [-2.560917, 51.432457],
           [-2.561057, 51.432089],
           [-2.561354, 51.431665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.560809, 51.433869],
+          [-2.560792, 51.434043],
+          [-2.56083, 51.434141],
+          [-2.560911, 51.434238],
+          [-2.561948, 51.435147],
+          [-2.562431, 51.434763]
         ]
       }
     },
@@ -1921,6 +2267,17 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.578861, 51.436675],
+          [-2.578951, 51.436676]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.566548, 51.434309],
           [-2.566599, 51.434212],
           [-2.566639, 51.434177],
@@ -1939,6 +2296,18 @@
           [-2.57465, 51.426701],
           [-2.578499, 51.426506],
           [-2.578975, 51.426489]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573862, 51.424948],
+          [-2.573822, 51.424907],
+          [-2.573669, 51.424828]
         ]
       }
     },
@@ -1989,6 +2358,21 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.573403, 51.424949],
+          [-2.573557, 51.424905],
+          [-2.573606, 51.424902],
+          [-2.573703, 51.424915],
+          [-2.573789, 51.424943],
+          [-2.573862, 51.424948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.578428, 51.43182],
           [-2.578363, 51.431682],
           [-2.578308, 51.431628]
@@ -2017,31 +2401,6 @@
           [-2.576453, 51.436245],
           [-2.575795, 51.435663],
           [-2.575777, 51.435628]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581773, 51.426774],
-          [-2.582069, 51.426856]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578975, 51.426489],
-          [-2.579772, 51.426496],
-          [-2.580095, 51.426506],
-          [-2.580625, 51.426556],
-          [-2.581045, 51.426616]
         ]
       }
     },
@@ -2084,12 +2443,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.573714, 51.425313],
           [-2.573453, 51.425389],
           [-2.572965, 51.425584],
           [-2.5727, 51.425747],
           [-2.572603, 51.425854],
           [-2.572566, 51.426007],
           [-2.572566, 51.426063]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573453, 51.425389],
+          [-2.573389, 51.425292]
         ]
       }
     },
@@ -2111,8 +2482,7 @@
         "type": "LineString",
         "coordinates": [
           [-2.570038, 51.439738],
-          [-2.57036, 51.439674],
-          [-2.570416, 51.439679]
+          [-2.570052, 51.439735]
         ]
       }
     },
@@ -2124,424 +2494,6 @@
         "coordinates": [
           [-2.574563, 51.425449],
           [-2.57465, 51.426701]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563786, 51.427268],
-          [-2.563853, 51.427574]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563786, 51.427268],
-          [-2.563519, 51.42755],
-          [-2.563249, 51.427779],
-          [-2.563227, 51.427863]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563227, 51.427863],
-          [-2.561781, 51.428453]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567184, 51.434998],
-          [-2.568439, 51.436023],
-          [-2.56899, 51.436504],
-          [-2.569389, 51.43689],
-          [-2.569725, 51.437271],
-          [-2.570029, 51.437559],
-          [-2.570214, 51.437663],
-          [-2.571414, 51.438099],
-          [-2.571738, 51.438265],
-          [-2.571999, 51.438424],
-          [-2.572335, 51.438658],
-          [-2.572568, 51.438859],
-          [-2.572791, 51.439086]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563954, 51.42801],
-          [-2.563959, 51.428748],
-          [-2.563884, 51.429531],
-          [-2.563963, 51.429752],
-          [-2.56448, 51.430501],
-          [-2.564754, 51.431406],
-          [-2.565142, 51.432484],
-          [-2.565308, 51.432817],
-          [-2.565567, 51.43319],
-          [-2.566171, 51.433861],
-          [-2.566989, 51.434833]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563433, 51.426166],
-          [-2.563786, 51.427268]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.56904, 51.426425],
-          [-2.569436, 51.426426],
-          [-2.569868, 51.426407],
-          [-2.570241, 51.426371],
-          [-2.570647, 51.426313],
-          [-2.570966, 51.426249],
-          [-2.571591, 51.42607],
-          [-2.571901, 51.425945],
-          [-2.57248, 51.425638]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.564466, 51.427434],
-          [-2.566431, 51.426872]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563524, 51.427789],
-          [-2.563614, 51.427789],
-          [-2.563787, 51.427844],
-          [-2.563954, 51.42801]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563292, 51.42784],
-          [-2.563524, 51.427789],
-          [-2.563864, 51.427688]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.566622, 51.442791],
-          [-2.566717, 51.442816],
-          [-2.566842, 51.442826],
-          [-2.567043, 51.442815]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567043, 51.442815],
-          [-2.566928, 51.442777],
-          [-2.566751, 51.442766],
-          [-2.566622, 51.442791]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567043, 51.442815],
-          [-2.56815, 51.44282],
-          [-2.569432, 51.442781]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.565208, 51.442555],
-          [-2.566057, 51.442714],
-          [-2.566622, 51.442791]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567184, 51.434998],
-          [-2.567191, 51.434962],
-          [-2.567099, 51.434876],
-          [-2.567027, 51.434829],
-          [-2.566989, 51.434833]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.566989, 51.434833],
-          [-2.566973, 51.434871],
-          [-2.567069, 51.434959],
-          [-2.567111, 51.43499],
-          [-2.567184, 51.434998]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563951, 51.427906],
-          [-2.563954, 51.42801]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563974, 51.427542],
-          [-2.563949, 51.427398]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563951, 51.427906],
-          [-2.563997, 51.427816],
-          [-2.56399, 51.427657]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563864, 51.427688],
-          [-2.56399, 51.427657]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563864, 51.427688],
-          [-2.563886, 51.427832],
-          [-2.563951, 51.427906]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.56399, 51.427657],
-          [-2.564349, 51.427537],
-          [-2.564466, 51.427434]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563292, 51.42784],
-          [-2.563227, 51.427863]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563334, 51.427793],
-          [-2.563292, 51.42784]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.56399, 51.427657],
-          [-2.563859, 51.42764],
-          [-2.563757, 51.427653],
-          [-2.563334, 51.427793]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563853, 51.427574],
-          [-2.56402, 51.427585],
-          [-2.564466, 51.427434]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563974, 51.427542],
-          [-2.563853, 51.427574]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.56399, 51.427657],
-          [-2.563974, 51.427542]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563853, 51.427574],
-          [-2.563864, 51.427688]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563949, 51.427398],
-          [-2.563525, 51.426121],
-          [-2.563434, 51.426031]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.564172, 51.427485],
-          [-2.564044, 51.427449],
-          [-2.563949, 51.427398]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.564466, 51.427434],
-          [-2.564287, 51.427455],
-          [-2.563974, 51.427542]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.563853, 51.427574],
-          [-2.563532, 51.427667],
-          [-2.563391, 51.42773],
-          [-2.563334, 51.427793]
         ]
       }
     },
@@ -2633,6 +2585,49 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.562818, 51.436689],
+          [-2.563277, 51.43713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.564743, 51.442118],
+          [-2.564804, 51.442182],
+          [-2.564947, 51.442264],
+          [-2.565079, 51.442264],
+          [-2.565265, 51.442238],
+          [-2.565456, 51.442054],
+          [-2.565623, 51.441924],
+          [-2.565801, 51.441828],
+          [-2.56597, 51.441675],
+          [-2.565934, 51.441592],
+          [-2.565853, 51.441477],
+          [-2.565733, 51.441375],
+          [-2.565651, 51.441339],
+          [-2.565228, 51.441248],
+          [-2.564906, 51.441257],
+          [-2.564808, 51.441277],
+          [-2.564714, 51.441322],
+          [-2.564634, 51.441373],
+          [-2.564624, 51.441464],
+          [-2.564662, 51.441699],
+          [-2.564681, 51.441973],
+          [-2.564707, 51.442065],
+          [-2.564743, 51.442118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.568983, 51.439236],
           [-2.56955, 51.439196],
           [-2.569785, 51.439266],
@@ -2679,10 +2674,49 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.568983, 51.439236],
+          [-2.568896, 51.439198],
+          [-2.568751, 51.439178],
+          [-2.568634, 51.439191],
+          [-2.568496, 51.439266],
+          [-2.568615, 51.439303],
+          [-2.568697, 51.439312],
+          [-2.568768, 51.43931],
+          [-2.568854, 51.439292],
+          [-2.568983, 51.439236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.566016, 51.439279],
           [-2.566428, 51.439293],
           [-2.567754, 51.43929],
           [-2.568496, 51.439266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.566016, 51.439279],
+          [-2.565889, 51.439224],
+          [-2.565748, 51.439207],
+          [-2.56562, 51.439223],
+          [-2.565538, 51.439245],
+          [-2.565558, 51.43929],
+          [-2.565602, 51.439318],
+          [-2.565667, 51.439334],
+          [-2.565765, 51.439339],
+          [-2.565879, 51.439326],
+          [-2.566016, 51.439279]
         ]
       }
     },
@@ -2708,7 +2742,7 @@
         "type": "LineString",
         "coordinates": [
           [-2.564947, 51.442264],
-          [-2.564912, 51.442323]
+          [-2.56483, 51.442483]
         ]
       }
     },
@@ -2735,69 +2769,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.567784, 51.443601],
-          [-2.567787, 51.443099]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567787, 51.443099],
-          [-2.568331, 51.442939],
-          [-2.568755, 51.442895],
-          [-2.568912, 51.442806]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.566373, 51.443355],
-          [-2.566513, 51.443356],
-          [-2.566916, 51.443273],
-          [-2.567474, 51.443138],
-          [-2.567787, 51.443099]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.566916, 51.443273],
-          [-2.567071, 51.443599],
-          [-2.567232, 51.443574],
-          [-2.567784, 51.443601]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567784, 51.443601],
-          [-2.567877, 51.443596],
-          [-2.569203, 51.443212]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.560964, 51.434977],
           [-2.56148, 51.43474]
         ]
@@ -2809,7 +2780,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.561807, 51.435699],
+          [-2.561924, 51.435441],
+          [-2.561487, 51.435435],
           [-2.561949, 51.435817]
         ]
       }
@@ -2852,40 +2824,6 @@
           [-2.575878, 51.434589],
           [-2.576194, 51.435325],
           [-2.57629, 51.435504]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567613, 51.443537],
-          [-2.567614, 51.443594]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.566646, 51.443297],
-          [-2.56666, 51.443326]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567919, 51.443062],
-          [-2.567316, 51.442917],
-          [-2.566851, 51.443032]
         ]
       }
     },
@@ -2977,19 +2915,6 @@
         "coordinates": [
           [-2.56545, 51.434283],
           [-2.565504, 51.43433]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.575643, 51.425421],
-          [-2.5759, 51.425407],
-          [-2.575957, 51.425386],
-          [-2.575974, 51.425345]
         ]
       }
     },
@@ -3231,17 +3156,6 @@
           [-2.564927, 51.429231],
           [-2.565119, 51.429216],
           [-2.565327, 51.429159]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.567315, 51.443626],
-          [-2.567297, 51.443578]
         ]
       }
     },
@@ -3684,18 +3598,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.566373, 51.443355],
-          [-2.566345, 51.443409],
-          [-2.566315, 51.443431]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.563523, 51.434741],
           [-2.563472, 51.43476],
           [-2.56339, 51.434752],
@@ -3775,7 +3677,7 @@
         "type": "LineString",
         "coordinates": [
           [-2.578433, 51.43647],
-          [-2.574998, 51.437856]
+          [-2.574947, 51.437877]
         ]
       }
     },
@@ -3787,17 +3689,6 @@
         "coordinates": [
           [-2.573828, 51.435144],
           [-2.574984, 51.43521]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.561487, 51.435435],
-          [-2.561924, 51.435441]
         ]
       }
     },
@@ -3901,6 +3792,17 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.573943, 51.425261],
+          [-2.573714, 51.425313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "knowle" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.577853, 51.43587],
           [-2.577542, 51.435553],
           [-2.57737, 51.435431],
@@ -3918,18 +3820,6 @@
         "coordinates": [
           [-2.577725, 51.435744],
           [-2.577514, 51.435811]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "knowle" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.566453, 51.442773],
-          [-2.566381, 51.443223],
-          [-2.566373, 51.443355]
         ]
       }
     }

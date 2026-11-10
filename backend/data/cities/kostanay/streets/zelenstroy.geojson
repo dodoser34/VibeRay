@@ -7,7 +7,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.696307, 53.250152],
           [63.697529, 53.251044],
           [63.699085, 53.252252],
           [63.699725, 53.252809],
@@ -20,8 +19,30 @@
           [63.706257, 53.260932],
           [63.708939, 53.264481],
           [63.711423, 53.267869],
-          [63.719735, 53.278966],
-          [63.724283, 53.284924]
+          [63.719735, 53.278966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.696307, 53.250152],
+          [63.6973, 53.250877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661261, 53.264246],
+          [63.66146, 53.264317],
+          [63.666046, 53.26722]
         ]
       }
     },
@@ -31,7 +52,21 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.685787, 53.274568],
+          [63.659555, 53.262797],
+          [63.659432, 53.262574],
+          [63.659173, 53.262365],
+          [63.655732, 53.260241],
+          [63.653465, 53.258868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682517, 53.276],
           [63.700045, 53.268324],
           [63.703036, 53.267042],
           [63.70776, 53.264992],
@@ -59,7 +94,8 @@
           [63.692315, 53.254285],
           [63.69064, 53.253095],
           [63.689352, 53.252136],
-          [63.688307, 53.251381]
+          [63.68801, 53.251166],
+          [63.688049, 53.251148]
         ]
       }
     },
@@ -315,18 +351,9 @@
         "type": "LineString",
         "coordinates": [
           [63.692494, 53.252104],
-          [63.689884, 53.250234]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "zelenstroy" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.69161, 53.252576],
-          [63.689027, 53.250676]
+          [63.689884, 53.250234],
+          [63.689027, 53.250676],
+          [63.69161, 53.252576]
         ]
       }
     },
@@ -416,7 +443,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.695125, 53.250749],
+          [63.696307, 53.250152],
           [63.693374, 53.251634],
           [63.69064, 53.253095]
         ]
@@ -474,7 +501,68 @@
           [63.681449, 53.255971],
           [63.681371, 53.255878],
           [63.680742, 53.254968],
-          [63.680587, 53.254766]
+          [63.681373, 53.25465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673653, 53.252572],
+          [63.673157, 53.252338]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.677345, 53.253141],
+          [63.677086, 53.253199],
+          [63.676359, 53.253232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66852, 53.265434],
+          [63.667645, 53.266141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674865, 53.269652],
+          [63.677153, 53.267946],
+          [63.677256, 53.267792],
+          [63.677204, 53.2676],
+          [63.677056, 53.267466],
+          [63.671943, 53.265027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661835, 53.263785],
+          [63.660535, 53.263188],
+          [63.661469, 53.262553]
         ]
       }
     },
@@ -688,6 +776,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.661882, 53.262733],
+          [63.662666, 53.263182],
+          [63.661835, 53.263785],
+          [63.661261, 53.264246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [63.698575, 53.252594],
           [63.699296, 53.253292],
           [63.699416, 53.253434],
@@ -818,7 +919,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.680742, 53.254968],
           [63.681813, 53.254435],
           [63.682115, 53.254333],
           [63.682424, 53.254207],
@@ -1320,9 +1420,7 @@
           [63.67878, 53.256462],
           [63.680073, 53.255558],
           [63.680073, 53.25541],
-          [63.680268, 53.255293],
-          [63.68062, 53.255231],
-          [63.68082, 53.25508]
+          [63.680268, 53.255293]
         ]
       }
     },
@@ -1739,22 +1837,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.704923, 53.250659],
-          [63.705235, 53.251148],
-          [63.705003, 53.251225],
-          [63.705275, 53.251646]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "zelenstroy" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.703942, 53.251779],
           [63.703789, 53.25148],
-          [63.705003, 53.251225]
+          [63.705003, 53.251225],
+          [63.705275, 53.251646]
         ]
       }
     },
@@ -1901,17 +1987,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.703897, 53.250676],
-          [63.70197, 53.251056]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "zelenstroy" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.702255, 53.251484],
           [63.699832, 53.251979],
           [63.6993, 53.252132],
@@ -1942,6 +2017,17 @@
           [63.70071, 53.253408],
           [63.700567, 53.253236],
           [63.70006, 53.253129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.691872, 53.249554],
+          [63.691047, 53.249939]
         ]
       }
     },
@@ -2031,44 +2117,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.685555, 53.252882],
-          [63.688214, 53.251598]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "zelenstroy" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.687621, 53.252346],
-          [63.687436, 53.252208]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "zelenstroy" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.6858, 53.252392],
-          [63.685972, 53.252521]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "zelenstroy" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.687959, 53.251412],
-          [63.688406, 53.251739],
-          [63.685767, 53.253013],
-          [63.68541, 53.252793],
-          [63.688083, 53.251502],
+          [63.688211, 53.251432],
           [63.688307, 53.251381]
         ]
       }
@@ -2079,11 +2128,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.685825, 53.252985],
-          [63.685959, 53.253073],
-          [63.687093, 53.252526],
-          [63.687156, 53.252571],
-          [63.688015, 53.252156]
+          [63.674361, 53.253872],
+          [63.675106, 53.253609],
+          [63.676359, 53.253232]
         ]
       }
     },
@@ -2094,7 +2141,10 @@
         "type": "LineString",
         "coordinates": [
           [63.673351, 53.256866],
-          [63.673718, 53.256901]
+          [63.673718, 53.256901],
+          [63.675931, 53.25494],
+          [63.676209, 53.254448],
+          [63.676312, 53.254363]
         ]
       }
     },
@@ -2104,8 +2154,155 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.699696, 53.25157],
-          [63.699379, 53.25097]
+          [63.674032, 53.253154],
+          [63.674548, 53.252913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.662766, 53.265143],
+          [63.663957, 53.264483],
+          [63.666974, 53.265168],
+          [63.66512, 53.266284],
+          [63.663075, 53.264972]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666198, 53.265284],
+          [63.663146, 53.265017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664632, 53.264636],
+          [63.664353, 53.265791]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665991, 53.264945],
+          [63.665761, 53.265898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665178, 53.26476],
+          [63.664852, 53.266111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666709, 53.265329],
+          [63.666535, 53.265263],
+          [63.666208, 53.265239]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.66378, 53.264581],
+          [63.663604, 53.265311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665444, 53.264821],
+          [63.665095, 53.266267]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664092, 53.264514],
+          [63.66386, 53.265475]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664358, 53.264574],
+          [63.664103, 53.265631]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664912, 53.2647],
+          [63.664609, 53.265955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665732, 53.264886],
+          [63.665441, 53.26609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666264, 53.265007],
+          [63.666098, 53.265695]
         ]
       }
     },
@@ -2116,8 +2313,7 @@
         "type": "LineString",
         "coordinates": [
           [63.699161, 53.251011],
-          [63.699838, 53.250885],
-          [63.699709, 53.25061]
+          [63.699379, 53.25097]
         ]
       }
     },
@@ -2135,6 +2331,58 @@
           [63.700458, 53.252565],
           [63.700333, 53.252642],
           [63.700139, 53.252712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.674654, 53.269806],
+          [63.674865, 53.269652]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672736, 53.262599],
+          [63.671571, 53.263451],
+          [63.671867, 53.263574],
+          [63.670994, 53.264313],
+          [63.670766, 53.264236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672616, 53.264529],
+          [63.672233, 53.264346],
+          [63.672285, 53.26402],
+          [63.67281, 53.264274],
+          [63.672616, 53.264529],
+          [63.672194, 53.264856],
+          [63.670994, 53.264313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.675181, 53.263721],
+          [63.672454, 53.265271]
         ]
       }
     },
@@ -2187,8 +2435,78 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.681813, 53.254435],
-          [63.681693, 53.254347]
+          [63.65393, 53.258598],
+          [63.653465, 53.258868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655466, 53.258593],
+          [63.65463, 53.258696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.659055, 53.257894],
+          [63.658615, 53.258263],
+          [63.658208, 53.258548],
+          [63.657837, 53.25858],
+          [63.656968, 53.258609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.662714, 53.256016],
+          [63.662038, 53.256302],
+          [63.661308, 53.25652],
+          [63.660799, 53.256697],
+          [63.659479, 53.25763]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664945, 53.254267],
+          [63.664618, 53.254566],
+          [63.664344, 53.2549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.682517, 53.276],
+          [63.682251, 53.275938],
+          [63.680942, 53.274748],
+          [63.67915, 53.273224],
+          [63.678533, 53.272829],
+          [63.678035, 53.272447],
+          [63.677697, 53.271642],
+          [63.676779, 53.270661],
+          [63.676141, 53.270112],
+          [63.675755, 53.269987]
         ]
       }
     },
@@ -2207,10 +2525,119 @@
     },
     {
       "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.696744, 53.252137],
+          [63.696604, 53.252269],
+          [63.696581, 53.252334],
+          [63.696594, 53.252413],
+          [63.696622, 53.252443],
+          [63.697261, 53.252935],
+          [63.697293, 53.252947],
+          [63.697383, 53.252945],
+          [63.697507, 53.252892],
+          [63.697533, 53.252866],
+          [63.697538, 53.25282],
+          [63.697517, 53.252778],
+          [63.696818, 53.252294],
+          [63.696763, 53.252245],
+          [63.696747, 53.252196],
+          [63.696744, 53.252137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655912, 53.259104],
+          [63.65537, 53.259411],
+          [63.65533, 53.259407],
+          [63.65408, 53.258638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672151, 53.253112],
+          [63.672778, 53.252847],
+          [63.673195, 53.25272],
+          [63.673439, 53.252693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673289, 53.253092],
+          [63.673065, 53.25286],
+          [63.673439, 53.252693]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.673439, 53.252693],
+          [63.673586, 53.252646],
+          [63.673633, 53.252619],
+          [63.673653, 53.252572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": { "kind": "rail", "district": "zelenstroy" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.670893, 53.254947],
+          [63.674662, 53.253715],
+          [63.674949, 53.253604],
+          [63.675254, 53.25343],
+          [63.675538, 53.253179]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.671813, 53.255801],
+          [63.675139, 53.254732],
+          [63.6756, 53.254576],
+          [63.676003, 53.254408],
+          [63.676375, 53.254197],
+          [63.676665, 53.253962],
+          [63.676896, 53.253693],
+          [63.677029, 53.253396],
+          [63.677086, 53.253199]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zelenstroy" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.724286, 53.2793],
           [63.721923, 53.279262],
           [63.719735, 53.278966],
           [63.717899, 53.278518],
@@ -2223,18 +2650,9 @@
           [63.703589, 53.266801],
           [63.702404, 53.26649],
           [63.672272, 53.259492],
-          [63.668958, 53.258407]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "zelenstroy" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.731858, 53.277562],
-          [63.728373, 53.278661]
+          [63.668958, 53.258407],
+          [63.666365, 53.257147],
+          [63.663694, 53.255316]
         ]
       }
     }

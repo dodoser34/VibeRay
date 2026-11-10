@@ -6,8 +6,8 @@
 #   pip install -r requirements.txt          # только запуск API
 #   pip install -r requirements-dev.txt      # запуск + тесты и линтер
 #
-# Python 3.12+. build_streets.py обходится стандартной библиотекой, build_map_tiles.py (PNG-плитки карты)
-# использует Pillow отсюда.
+# Python 3.12+. build_streets.py обходится стандартной библиотекой, build_map_tiles.py (плитки карты)
+# использует Pillow отсюда; build_districts.py и verify_city_data.py — shapely из requirements-dev.txt.
 # База данных ещё не выбрана: драйвер, ORM и миграции добавятся сюда после выбора.
 
 # API-сервер

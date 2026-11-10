@@ -1,13 +1,11 @@
 import { prepareCity } from '@/shared/lib/geo/prepareCity';
 import { request } from '../client';
 
-// Контуры районов приходят обведёнными с растра; здесь они один раз сглаживаются для всех видов
-// (кроме берегов — они совпадают с водой), а плиты районов и точки подписей готовятся заранее
-// (plates, по slug) — всё в фоновом потоке.
+// Плиты районов и точки подписей готовятся заранее (plates, по slug) в фоновом потоке. Контуры
+// районов остаются как в данных: это границы OpenStreetMap.
 export async function getCity(slug) {
   const city = await request('GET', `/cities/${slug}`);
-  const { districts, plates } = await prepareCity(city);
-  return { ...city, districts, plates };
+  return { ...city, plates: await prepareCity(city) };
 }
 
 // Плитки дорог и воды (карта города и история «О проекте») и векторные куски дорог (карта вблизи) —

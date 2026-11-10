@@ -3,304 +3,29 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
+      "properties": { "kind": "major", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.589305, 51.502645],
-          [-2.591555, 51.501476],
-          [-2.591599, 51.501482],
-          [-2.591687, 51.501441],
-          [-2.59169, 51.501412],
-          [-2.591839, 51.50138],
-          [-2.5919, 51.501244]
+          [-2.616295, 51.49839],
+          [-2.616277, 51.498467],
+          [-2.616298, 51.498623],
+          [-2.616605, 51.499703],
+          [-2.61671, 51.500281],
+          [-2.616591, 51.500677],
+          [-2.616235, 51.501386]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
+      "properties": { "kind": "major", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.587753, 51.503435],
-          [-2.589192, 51.502706]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596595, 51.497736],
-          [-2.597215, 51.497331]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596, 51.498181],
-          [-2.59616, 51.498061]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595346, 51.498749],
-          [-2.595709, 51.498417]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603321, 51.49325],
-          [-2.603404, 51.493178],
-          [-2.603712, 51.492828]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603776, 51.492759],
-          [-2.604356, 51.492572],
-          [-2.604426, 51.492524],
-          [-2.604779, 51.492467],
-          [-2.605278, 51.492448],
-          [-2.605421, 51.492481],
-          [-2.606286, 51.492475],
-          [-2.606702, 51.492447]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603624, 51.492799],
-          [-2.603332, 51.493128],
-          [-2.603321, 51.49325]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601402, 51.494684],
-          [-2.602035, 51.49429],
-          [-2.602858, 51.493746],
-          [-2.603092, 51.493545],
-          [-2.603321, 51.49325]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60103, 51.494946],
-          [-2.601368, 51.494706]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.600522, 51.495279],
-          [-2.60059, 51.495279],
-          [-2.600664, 51.495224],
-          [-2.600663, 51.495182],
-          [-2.600731, 51.495139]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603712, 51.492828],
-          [-2.603768, 51.492806],
-          [-2.603776, 51.492759]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603963, 51.492612],
-          [-2.603772, 51.49268],
-          [-2.603712, 51.492726]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603712, 51.492726],
-          [-2.603634, 51.492745],
-          [-2.603624, 51.492799]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603776, 51.492759],
-          [-2.603712, 51.492726]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603624, 51.492799],
-          [-2.603655, 51.492821],
-          [-2.603712, 51.492828]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.594862, 51.499154],
-          [-2.595091, 51.498962]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.592074, 51.501181],
-          [-2.592644, 51.500832],
-          [-2.593126, 51.500467]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599814, 51.495701],
-          [-2.600357, 51.495383]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599312, 51.496017],
-          [-2.599665, 51.495787]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.597539, 51.497132],
-          [-2.597952, 51.496877]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.593907, 51.499924],
-          [-2.593972, 51.499876]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.589305, 51.502645],
-          [-2.589228, 51.50266],
-          [-2.589195, 51.50268],
-          [-2.589192, 51.502706]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.589192, 51.502706],
-          [-2.589238, 51.502707],
-          [-2.589299, 51.502677],
-          [-2.589305, 51.502645]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595271, 51.498804],
-          [-2.595307, 51.498798]
+          [-2.616019, 51.501916],
+          [-2.615876, 51.502032],
+          [-2.615655, 51.502464]
         ]
       }
     },
@@ -310,8 +35,256 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.588445, 51.502489],
-          [-2.588919, 51.502844]
+          [-2.615003, 51.495934],
+          [-2.615128, 51.496053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615379, 51.496918],
+          [-2.615227, 51.496966],
+          [-2.615064, 51.497045],
+          [-2.614634, 51.497209],
+          [-2.61453, 51.49722],
+          [-2.614412, 51.497182],
+          [-2.614235, 51.497006],
+          [-2.614181, 51.496871],
+          [-2.613795, 51.496529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615288, 51.50075],
+          [-2.615173, 51.500785]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615127, 51.50059],
+          [-2.615491, 51.500961],
+          [-2.615735, 51.501076],
+          [-2.615866, 51.501106],
+          [-2.616013, 51.501122],
+          [-2.616089, 51.501012],
+          [-2.616219, 51.500884],
+          [-2.6163, 51.500777],
+          [-2.61634, 51.500684],
+          [-2.616362, 51.500504],
+          [-2.616488, 51.500292],
+          [-2.616472, 51.500255],
+          [-2.616312, 51.50013]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615192, 51.502381],
+          [-2.615228, 51.502265],
+          [-2.615316, 51.50217],
+          [-2.615343, 51.502113],
+          [-2.615319, 51.501967],
+          [-2.615326, 51.501894],
+          [-2.615367, 51.501829],
+          [-2.615448, 51.501768],
+          [-2.615646, 51.501696],
+          [-2.615804, 51.501618],
+          [-2.615882, 51.501545],
+          [-2.615949, 51.501455],
+          [-2.616013, 51.501308],
+          [-2.616037, 51.501193],
+          [-2.616013, 51.501122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616362, 51.500504],
+          [-2.616246, 51.500479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615971, 51.50074],
+          [-2.616032, 51.500759],
+          [-2.616096, 51.500766],
+          [-2.616183, 51.500758],
+          [-2.6163, 51.500777]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613782, 51.501304],
+          [-2.614337, 51.501818],
+          [-2.614887, 51.502378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613959, 51.498458],
+          [-2.614636, 51.498958],
+          [-2.614819, 51.499106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614333, 51.498735],
+          [-2.615115, 51.498443],
+          [-2.615508, 51.498253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615635, 51.498944],
+          [-2.615614, 51.499003],
+          [-2.615575, 51.499046],
+          [-2.615505, 51.49907],
+          [-2.615446, 51.499081],
+          [-2.615198, 51.499062],
+          [-2.61508, 51.499067],
+          [-2.614819, 51.499106],
+          [-2.614696, 51.49915],
+          [-2.614446, 51.499281],
+          [-2.614362, 51.499312],
+          [-2.614255, 51.499307],
+          [-2.614089, 51.499246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615011, 51.497912],
+          [-2.614923, 51.497838],
+          [-2.614736, 51.497555],
+          [-2.614671, 51.497395],
+          [-2.614634, 51.497209]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604013, 51.509407],
+          [-2.603859, 51.509606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60715, 51.507698],
+          [-2.606431, 51.507949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609585, 51.506075],
+          [-2.609102, 51.506428]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614337, 51.501818],
+          [-2.614624, 51.501706],
+          [-2.614638, 51.50165],
+          [-2.614422, 51.501457],
+          [-2.614387, 51.501447],
+          [-2.614355, 51.501445],
+          [-2.614064, 51.501568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615051, 51.496138],
+          [-2.614973, 51.496157],
+          [-2.614886, 51.496214],
+          [-2.614853, 51.496308],
+          [-2.61487, 51.496374],
+          [-2.615193, 51.496848],
+          [-2.615227, 51.496966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614918, 51.496443],
+          [-2.615024, 51.496417]
         ]
       }
     },
@@ -557,6 +530,33 @@
         "coordinates": [
           [-2.598848, 51.508232],
           [-2.598791, 51.507714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598529, 51.507035],
+          [-2.598563, 51.506975],
+          [-2.598556, 51.506933],
+          [-2.598511, 51.506884],
+          [-2.598457, 51.506859],
+          [-2.598393, 51.506847],
+          [-2.598327, 51.50685],
+          [-2.598265, 51.506866],
+          [-2.598223, 51.506889],
+          [-2.598189, 51.506926],
+          [-2.598177, 51.506967],
+          [-2.59819, 51.50701],
+          [-2.598225, 51.507046],
+          [-2.598303, 51.507079],
+          [-2.598369, 51.507087],
+          [-2.598422, 51.507082],
+          [-2.598482, 51.507064],
+          [-2.598529, 51.507035]
         ]
       }
     },
@@ -1183,7 +1183,10 @@
           [-2.609949, 51.493264],
           [-2.610355, 51.493293],
           [-2.610698, 51.49329],
-          [-2.61101, 51.493229]
+          [-2.61101, 51.493229],
+          [-2.611141, 51.493209],
+          [-2.611197, 51.493209],
+          [-2.611191, 51.493116]
         ]
       }
     },
@@ -1224,58 +1227,6 @@
           [-2.605503, 51.496726],
           [-2.605358, 51.496726],
           [-2.605287, 51.496712]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615379, 51.496918],
-          [-2.615227, 51.496966],
-          [-2.615064, 51.497045],
-          [-2.614634, 51.497209],
-          [-2.61453, 51.49722],
-          [-2.614412, 51.497182],
-          [-2.614235, 51.497006],
-          [-2.614181, 51.496871],
-          [-2.613795, 51.496529]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.611427, 51.496856],
-          [-2.611145, 51.496591]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602618, 51.493194],
-          [-2.602861, 51.492895],
-          [-2.603047, 51.492599]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601825, 51.492654],
-          [-2.601829, 51.492437]
         ]
       }
     },
@@ -1381,146 +1332,6 @@
         "coordinates": [
           [-2.601373, 51.497538],
           [-2.601162, 51.497544]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615288, 51.50075],
-          [-2.615173, 51.500785]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615127, 51.50059],
-          [-2.615491, 51.500961],
-          [-2.615735, 51.501076],
-          [-2.615866, 51.501106],
-          [-2.616013, 51.501122],
-          [-2.616089, 51.501012],
-          [-2.616219, 51.500884],
-          [-2.6163, 51.500777],
-          [-2.61634, 51.500684],
-          [-2.616362, 51.500504],
-          [-2.616488, 51.500292],
-          [-2.616472, 51.500255],
-          [-2.616312, 51.50013]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615192, 51.502381],
-          [-2.615228, 51.502265],
-          [-2.615316, 51.50217],
-          [-2.615343, 51.502113],
-          [-2.615319, 51.501967],
-          [-2.615326, 51.501894],
-          [-2.615367, 51.501829],
-          [-2.615448, 51.501768],
-          [-2.615646, 51.501696],
-          [-2.615804, 51.501618],
-          [-2.615882, 51.501545],
-          [-2.615949, 51.501455],
-          [-2.616013, 51.501308],
-          [-2.616037, 51.501193],
-          [-2.616013, 51.501122]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616362, 51.500504],
-          [-2.616246, 51.500479]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615971, 51.50074],
-          [-2.616032, 51.500759],
-          [-2.616096, 51.500766],
-          [-2.616183, 51.500758],
-          [-2.6163, 51.500777]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613782, 51.501304],
-          [-2.614337, 51.501818],
-          [-2.614903, 51.502395]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613959, 51.498458],
-          [-2.614636, 51.498958],
-          [-2.614819, 51.499106]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614333, 51.498735],
-          [-2.615115, 51.498443],
-          [-2.615508, 51.498253]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615635, 51.498944],
-          [-2.615614, 51.499003],
-          [-2.615575, 51.499046],
-          [-2.615505, 51.49907],
-          [-2.615446, 51.499081],
-          [-2.615198, 51.499062],
-          [-2.61508, 51.499067],
-          [-2.614819, 51.499106],
-          [-2.614696, 51.49915],
-          [-2.614446, 51.499281],
-          [-2.614362, 51.499312],
-          [-2.614255, 51.499307],
-          [-2.614089, 51.499246]
         ]
       }
     },
@@ -1641,17 +1452,6 @@
           [-2.604055, 51.492661],
           [-2.604332, 51.492785],
           [-2.606087, 51.493433]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60308, 51.493347],
-          [-2.602406, 51.493124]
         ]
       }
     },
@@ -1873,100 +1673,18 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.615011, 51.497912],
-          [-2.614923, 51.497838],
-          [-2.614736, 51.497555],
-          [-2.614671, 51.497395],
-          [-2.614634, 51.497209]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607877, 51.507289],
-          [-2.60752, 51.507509],
-          [-2.607318, 51.50762],
-          [-2.60715, 51.507698],
-          [-2.606431, 51.507949],
-          [-2.605856, 51.508198],
-          [-2.605366, 51.50845],
-          [-2.604953, 51.508678],
-          [-2.604539, 51.508938],
-          [-2.604356, 51.509067],
-          [-2.604175, 51.509232],
-          [-2.604013, 51.509407]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60851, 51.506862],
-          [-2.608481, 51.506889]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.609585, 51.506075],
-          [-2.609102, 51.506428]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.609958, 51.505817],
-          [-2.609848, 51.505874]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610026, 51.504457],
-          [-2.610056, 51.504479],
-          [-2.61011, 51.504498],
-          [-2.610651, 51.504593],
-          [-2.610531, 51.504774]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615812, 51.502491],
-          [-2.615373, 51.502406],
-          [-2.615192, 51.502381],
-          [-2.614903, 51.502395],
-          [-2.614603, 51.502485],
-          [-2.613849, 51.502766],
-          [-2.611822, 51.503572],
-          [-2.61144, 51.503784],
-          [-2.611305, 51.503874],
-          [-2.611026, 51.504113],
-          [-2.610811, 51.504354],
-          [-2.610767, 51.504423]
+          [-2.591948, 51.507741],
+          [-2.591893, 51.507724],
+          [-2.591833, 51.507731],
+          [-2.591809, 51.507743],
+          [-2.591784, 51.507776],
+          [-2.591808, 51.507825],
+          [-2.591832, 51.507837],
+          [-2.591893, 51.507845],
+          [-2.591949, 51.507828],
+          [-2.591977, 51.507793],
+          [-2.591966, 51.507756],
+          [-2.591948, 51.507741]
         ]
       }
     },
@@ -2284,22 +2002,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.614337, 51.501818],
-          [-2.614624, 51.501706],
-          [-2.614638, 51.50165],
-          [-2.614422, 51.501457],
-          [-2.614387, 51.501447],
-          [-2.614355, 51.501445],
-          [-2.614064, 51.501568]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.602257, 51.503298],
           [-2.602722, 51.503136]
         ]
@@ -2358,7 +2060,7 @@
         "coordinates": [
           [-2.608431, 51.492338],
           [-2.609523, 51.492322],
-          [-2.61031, 51.492337]
+          [-2.61061, 51.492343]
         ]
       }
     },
@@ -2482,43 +2184,22 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.615081, 51.496681],
-          [-2.615193, 51.496848],
-          [-2.615227, 51.496966]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614853, 51.496308],
-          [-2.61487, 51.496374]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612358, 51.49239],
-          [-2.612853, 51.492498],
-          [-2.613036, 51.492507]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61061, 51.492343],
-          [-2.611119, 51.492353]
+          [-2.599861, 51.505388],
+          [-2.599748, 51.50543],
+          [-2.599706, 51.505463],
+          [-2.599693, 51.505494],
+          [-2.599696, 51.505522],
+          [-2.59985, 51.505635],
+          [-2.599904, 51.505655],
+          [-2.599944, 51.505656],
+          [-2.600199, 51.505569],
+          [-2.600228, 51.505552],
+          [-2.600241, 51.505518],
+          [-2.600167, 51.50538],
+          [-2.600127, 51.505356],
+          [-2.600063, 51.505347],
+          [-2.59998, 51.505356],
+          [-2.599861, 51.505388]
         ]
       }
     },
@@ -2585,6 +2266,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.610026, 51.504457],
+          [-2.610056, 51.504479],
+          [-2.61011, 51.504498],
+          [-2.610651, 51.504593]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.600414, 51.508039],
           [-2.601199, 51.50867],
           [-2.603042, 51.507852],
@@ -2624,6 +2318,348 @@
         "coordinates": [
           [-2.613406, 51.498312],
           [-2.613744, 51.49857]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614207, 51.498326],
+          [-2.615011, 51.497912],
+          [-2.615121, 51.497872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615816, 51.497743],
+          [-2.615862, 51.497638],
+          [-2.615855, 51.49754],
+          [-2.615817, 51.497425],
+          [-2.615591, 51.497021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615281, 51.49784],
+          [-2.61524, 51.49783],
+          [-2.61519, 51.497835],
+          [-2.615138, 51.497848],
+          [-2.615121, 51.497872]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615121, 51.497872],
+          [-2.615156, 51.497885],
+          [-2.615207, 51.497878],
+          [-2.615256, 51.497866],
+          [-2.615281, 51.49784]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615281, 51.49784],
+          [-2.615464, 51.497842],
+          [-2.615695, 51.497895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597378, 51.497227],
+          [-2.598751, 51.49807],
+          [-2.599565, 51.498457],
+          [-2.599961, 51.498627],
+          [-2.600455, 51.498813],
+          [-2.601064, 51.499021],
+          [-2.60246, 51.499415],
+          [-2.603194, 51.499565],
+          [-2.603609, 51.49964],
+          [-2.60759, 51.500227],
+          [-2.607984, 51.500273],
+          [-2.608221, 51.500349],
+          [-2.608397, 51.500458],
+          [-2.608457, 51.50052],
+          [-2.6086, 51.500723]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.591839, 51.50138],
+          [-2.591979, 51.501493],
+          [-2.592678, 51.5025],
+          [-2.593772, 51.504379],
+          [-2.594456, 51.505515],
+          [-2.594543, 51.505595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594543, 51.505595],
+          [-2.597284, 51.504665],
+          [-2.60028, 51.503627],
+          [-2.601013, 51.503357],
+          [-2.602479, 51.502848],
+          [-2.606933, 51.501324],
+          [-2.608392, 51.500816],
+          [-2.6086, 51.500723]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.594543, 51.505595],
+          [-2.594597, 51.505752],
+          [-2.594872, 51.506255],
+          [-2.595083, 51.506566],
+          [-2.595233, 51.506752],
+          [-2.595534, 51.507071],
+          [-2.596038, 51.507512],
+          [-2.599812, 51.50998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599928, 51.510055],
+          [-2.599919, 51.510019],
+          [-2.599871, 51.509987],
+          [-2.599812, 51.50998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599812, 51.50998],
+          [-2.599814, 51.510016],
+          [-2.599871, 51.510053],
+          [-2.599928, 51.510055]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599928, 51.510055],
+          [-2.600014, 51.510111]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610517, 51.500074],
+          [-2.610567, 51.500086],
+          [-2.610644, 51.500062],
+          [-2.610656, 51.500028]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6086, 51.500723],
+          [-2.608783, 51.500685],
+          [-2.609023, 51.500604],
+          [-2.610517, 51.500074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610656, 51.500028],
+          [-2.610601, 51.500019],
+          [-2.61054, 51.500037],
+          [-2.610517, 51.500074]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614077, 51.498392],
+          [-2.61412, 51.498398],
+          [-2.614203, 51.498357],
+          [-2.614207, 51.498326]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612279, 51.499351],
+          [-2.614077, 51.498392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614207, 51.498326],
+          [-2.614161, 51.498323],
+          [-2.614081, 51.49836],
+          [-2.614077, 51.498392]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612279, 51.499351],
+          [-2.612227, 51.499356],
+          [-2.61216, 51.499389],
+          [-2.612143, 51.499425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610656, 51.500028],
+          [-2.611314, 51.499794],
+          [-2.611727, 51.499623],
+          [-2.612143, 51.499425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612143, 51.499425],
+          [-2.612192, 51.499421],
+          [-2.61226, 51.499387],
+          [-2.612279, 51.499351]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615657, 51.498889],
+          [-2.615909, 51.498924],
+          [-2.615948, 51.498828],
+          [-2.615699, 51.498784],
+          [-2.615635, 51.498944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615541, 51.501376],
+          [-2.615594, 51.501326],
+          [-2.615949, 51.501455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614701, 51.497474],
+          [-2.614435, 51.497581],
+          [-2.614396, 51.497613]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615494, 51.49773],
+          [-2.615365, 51.497697],
+          [-2.615318, 51.497788],
+          [-2.61531, 51.497838]
         ]
       }
     },
@@ -2823,6 +2859,29 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.613671, 51.501193],
+          [-2.613706, 51.501167],
+          [-2.61372, 51.501135],
+          [-2.613712, 51.501102],
+          [-2.613682, 51.501074],
+          [-2.613636, 51.501056],
+          [-2.613579, 51.501053],
+          [-2.613525, 51.501065],
+          [-2.613486, 51.50109],
+          [-2.613468, 51.501132],
+          [-2.613488, 51.501173],
+          [-2.613539, 51.501201],
+          [-2.613607, 51.501209],
+          [-2.613671, 51.501193]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.613486, 51.50109],
           [-2.613143, 51.501022],
           [-2.613051, 51.500922]
@@ -2837,32 +2896,6 @@
         "coordinates": [
           [-2.613143, 51.501022],
           [-2.612973, 51.501028]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615657, 51.498889],
-          [-2.615909, 51.498924],
-          [-2.615948, 51.498828],
-          [-2.615699, 51.498784],
-          [-2.615635, 51.498944]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615541, 51.501376],
-          [-2.615594, 51.501326],
-          [-2.615949, 51.501455]
         ]
       }
     },
@@ -2919,6 +2952,28 @@
           [-2.611165, 51.499261],
           [-2.611244, 51.499252],
           [-2.612018, 51.498951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6087, 51.500033],
+          [-2.608989, 51.499919],
+          [-2.609017, 51.49989],
+          [-2.609018, 51.499857],
+          [-2.60898, 51.499791],
+          [-2.608878, 51.499693],
+          [-2.608722, 51.499768],
+          [-2.608644, 51.499811],
+          [-2.608598, 51.499847],
+          [-2.60858, 51.499894],
+          [-2.608571, 51.49999],
+          [-2.608602, 51.500008],
+          [-2.6087, 51.500033]
         ]
       }
     },
@@ -3026,6 +3081,27 @@
         "coordinates": [
           [-2.612959, 51.499922],
           [-2.612635, 51.499966]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603029, 51.502661],
+          [-2.602958, 51.502761],
+          [-2.602922, 51.502787],
+          [-2.602553, 51.502913],
+          [-2.602481, 51.502917],
+          [-2.602325, 51.502903],
+          [-2.602404, 51.502804],
+          [-2.602439, 51.502777],
+          [-2.602626, 51.502713],
+          [-2.602803, 51.502652],
+          [-2.60286, 51.502646],
+          [-2.603029, 51.502661]
         ]
       }
     },
@@ -3281,18 +3357,6 @@
         "coordinates": [
           [-2.614253, 51.498196],
           [-2.61434, 51.498265]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614701, 51.497474],
-          [-2.614435, 51.497581],
-          [-2.614396, 51.497613]
         ]
       }
     },
@@ -3621,28 +3685,6 @@
         "coordinates": [
           [-2.603948, 51.493],
           [-2.603657, 51.492892]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602643, 51.493894],
-          [-2.602387, 51.493759]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602537, 51.493568],
-          [-2.602858, 51.493746]
         ]
       }
     },
@@ -3988,6 +4030,17 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.611172, 51.493209],
+          [-2.611173, 51.493276]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.604067, 51.494846],
           [-2.604079, 51.494997]
         ]
@@ -4099,19 +4152,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.615494, 51.49773],
-          [-2.615365, 51.497697],
-          [-2.615318, 51.497788],
-          [-2.61531, 51.497838]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.609733, 51.503857],
           [-2.609633, 51.504008]
         ]
@@ -4136,20 +4176,6 @@
         "coordinates": [
           [-2.606283, 51.49967],
           [-2.606153, 51.500013]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.589883, 51.50235],
-          [-2.589438, 51.502006],
-          [-2.58911, 51.502186],
-          [-2.588527, 51.502549],
-          [-2.587769, 51.50294]
         ]
       }
     },
@@ -4405,6 +4431,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.584123, 51.512942],
+          [-2.584239, 51.512908],
+          [-2.584405, 51.512847],
+          [-2.584531, 51.51278],
+          [-2.584607, 51.512729],
+          [-2.585008, 51.512654],
+          [-2.585079, 51.51262],
+          [-2.585166, 51.512576],
+          [-2.585038, 51.512493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southmead" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.609808, 51.49943],
           [-2.60996, 51.499376]
         ]
@@ -4446,405 +4490,168 @@
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.597378, 51.497227],
-          [-2.598751, 51.49807],
-          [-2.599565, 51.498457],
-          [-2.599961, 51.498627],
-          [-2.600455, 51.498813],
-          [-2.601064, 51.499021],
-          [-2.60246, 51.499415],
-          [-2.603194, 51.499565],
-          [-2.603609, 51.49964],
-          [-2.60759, 51.500227],
-          [-2.607984, 51.500273],
-          [-2.608221, 51.500349],
-          [-2.608397, 51.500458],
-          [-2.608457, 51.50052],
-          [-2.6086, 51.500723]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614207, 51.498326],
-          [-2.615011, 51.497912],
-          [-2.615121, 51.497872]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615695, 51.497895],
-          [-2.616066, 51.498052]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
+          [-2.58798, 51.503325],
+          [-2.589192, 51.502706],
+          [-2.589238, 51.502707],
+          [-2.589299, 51.502677],
+          [-2.589305, 51.502645],
+          [-2.591555, 51.501476],
+          [-2.591599, 51.501482],
+          [-2.591687, 51.501441],
+          [-2.59169, 51.501412],
           [-2.591839, 51.50138],
-          [-2.591979, 51.501493],
-          [-2.592678, 51.5025],
-          [-2.593772, 51.504379],
-          [-2.594456, 51.505515],
-          [-2.594543, 51.505595]
+          [-2.5919, 51.501244]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.594543, 51.505595],
-          [-2.597284, 51.504665],
-          [-2.60028, 51.503627],
-          [-2.601013, 51.503357],
-          [-2.602479, 51.502848],
-          [-2.606933, 51.501324],
-          [-2.608392, 51.500816],
-          [-2.6086, 51.500723]
+          [-2.595271, 51.498804],
+          [-2.595307, 51.498798],
+          [-2.595343, 51.498763],
+          [-2.595341, 51.49874],
+          [-2.595618, 51.498491],
+          [-2.596, 51.498181],
+          [-2.596595, 51.497736],
+          [-2.597378, 51.497227],
+          [-2.598226, 51.496707]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.603243, 51.492642],
-          [-2.603616, 51.492771]
+          [-2.603019, 51.493617],
+          [-2.603321, 51.49325],
+          [-2.603404, 51.493178],
+          [-2.603712, 51.492828]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.603665, 51.49273],
-          [-2.603243, 51.492642]
+          [-2.603776, 51.492759],
+          [-2.604356, 51.492572],
+          [-2.604426, 51.492524],
+          [-2.604779, 51.492467],
+          [-2.605278, 51.492448],
+          [-2.605421, 51.492481],
+          [-2.606453, 51.492473],
+          [-2.606702, 51.492447],
+          [-2.606861, 51.492359]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.615695, 51.497895],
-          [-2.615816, 51.497743],
-          [-2.615862, 51.497638]
+          [-2.601402, 51.494684],
+          [-2.602643, 51.493894]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.594543, 51.505595],
-          [-2.594597, 51.505752],
-          [-2.594872, 51.506255],
-          [-2.595083, 51.506566],
-          [-2.595233, 51.506752],
-          [-2.595534, 51.507071],
-          [-2.596038, 51.507512],
-          [-2.599812, 51.50998]
+          [-2.600522, 51.495279],
+          [-2.60059, 51.495279],
+          [-2.600664, 51.495224],
+          [-2.600663, 51.495182],
+          [-2.60094, 51.49501],
+          [-2.601368, 51.494706]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.599928, 51.510055],
-          [-2.599919, 51.510019],
-          [-2.599871, 51.509987],
-          [-2.599812, 51.50998]
+          [-2.603712, 51.492828],
+          [-2.603768, 51.492806],
+          [-2.603776, 51.492759]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.599812, 51.50998],
-          [-2.599814, 51.510016],
-          [-2.599871, 51.510053],
-          [-2.599928, 51.510055]
+          [-2.603776, 51.492759],
+          [-2.603739, 51.492732]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.599928, 51.510055],
-          [-2.6001, 51.510165]
+          [-2.603634, 51.492809],
+          [-2.603712, 51.492828]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.610517, 51.500074],
-          [-2.610567, 51.500086],
-          [-2.610644, 51.500062],
-          [-2.610656, 51.500028]
+          [-2.593762, 51.500001],
+          [-2.593851, 51.499931],
+          [-2.593907, 51.499924],
+          [-2.593972, 51.499876],
+          [-2.593982, 51.499837],
+          [-2.594079, 51.499769]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.6086, 51.500723],
-          [-2.608783, 51.500685],
-          [-2.609023, 51.500604],
-          [-2.610517, 51.500074]
+          [-2.600515, 51.495246],
+          [-2.600522, 51.495279]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
+      "properties": { "kind": "secondary", "district": "southmead" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.610656, 51.500028],
-          [-2.610601, 51.500019],
-          [-2.61054, 51.500037],
-          [-2.610517, 51.500074]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615281, 51.49784],
-          [-2.61524, 51.49783],
-          [-2.61519, 51.497835],
-          [-2.615138, 51.497848],
-          [-2.615121, 51.497872]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615121, 51.497872],
-          [-2.615156, 51.497885],
-          [-2.615207, 51.497878],
-          [-2.615256, 51.497866],
-          [-2.615281, 51.49784]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615281, 51.49784],
-          [-2.615464, 51.497842],
-          [-2.615695, 51.497895]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614077, 51.498392],
-          [-2.61412, 51.498398],
-          [-2.614203, 51.498357],
-          [-2.614207, 51.498326]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612279, 51.499351],
-          [-2.614077, 51.498392]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614207, 51.498326],
-          [-2.614161, 51.498323],
-          [-2.614081, 51.49836],
-          [-2.614077, 51.498392]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612279, 51.499351],
-          [-2.612227, 51.499356],
-          [-2.61216, 51.499389],
-          [-2.612143, 51.499425]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610656, 51.500028],
-          [-2.611314, 51.499794],
-          [-2.611727, 51.499623],
-          [-2.612143, 51.499425]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612143, 51.499425],
-          [-2.612192, 51.499421],
-          [-2.61226, 51.499387],
-          [-2.612279, 51.499351]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602392, 51.492457],
-          [-2.601829, 51.492437]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603243, 51.492642],
-          [-2.602957, 51.492575]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616591, 51.500677],
-          [-2.616235, 51.501386],
-          [-2.616055, 51.501841]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616605, 51.499703],
-          [-2.61671, 51.500281],
-          [-2.616673, 51.500446]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616284, 51.498545],
-          [-2.61649, 51.499294]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616019, 51.501916],
-          [-2.615876, 51.502032],
-          [-2.615807, 51.502155],
-          [-2.615655, 51.502464],
-          [-2.615279, 51.503352]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southmead" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615417, 51.503368],
-          [-2.615812, 51.502491]
+          [-2.599109, 51.49615],
+          [-2.599665, 51.495787],
+          [-2.600522, 51.495279]
         ]
       }
     }

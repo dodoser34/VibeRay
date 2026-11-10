@@ -7,61 +7,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.604236, 51.455629],
-          [-2.600995, 51.453129]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608064, 51.450797],
-          [-2.608252, 51.450626],
-          [-2.608504, 51.450487]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602746, 51.450575],
-          [-2.602909, 51.450593],
-          [-2.604773, 51.450495],
-          [-2.605632, 51.45052],
-          [-2.605891, 51.450509]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602746, 51.450575],
-          [-2.60201, 51.450653],
-          [-2.601101, 51.450804],
-          [-2.600011, 51.450901],
-          [-2.599864, 51.450928],
-          [-2.599267, 51.451114],
-          [-2.599143, 51.451165],
-          [-2.599021, 51.451239],
-          [-2.598735, 51.45147]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.621922, 51.449037],
           [-2.621734, 51.449072],
           [-2.621554, 51.449082],
@@ -82,8 +27,7 @@
           [-2.618229, 51.45],
           [-2.618284, 51.45013],
           [-2.618413, 51.450213],
-          [-2.618745, 51.450343],
-          [-2.616139, 51.449897]
+          [-2.618745, 51.450343]
         ]
       }
     },
@@ -107,24 +51,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.598413, 51.452292],
-          [-2.598478, 51.451917],
-          [-2.598692, 51.451575],
-          [-2.598735, 51.45147]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.598735, 51.45147],
-          [-2.598594, 51.451543],
-          [-2.598429, 51.451718],
-          [-2.598353, 51.451904],
-          [-2.59827, 51.452237]
+          [-2.624373, 51.450113],
+          [-2.624517, 51.450192]
         ]
       }
     },
@@ -157,10 +85,15 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.624548, 51.450091],
+          [-2.624244, 51.449966],
+          [-2.623849, 51.449841],
+          [-2.622935, 51.449646],
+          [-2.622628, 51.449544],
+          [-2.622474, 51.449441],
           [-2.622415, 51.449381],
           [-2.622316, 51.449222],
-          [-2.622286, 51.449125],
-          [-2.622288, 51.448981],
+          [-2.622283, 51.449052],
           [-2.622315, 51.448897]
         ]
       }
@@ -177,6 +110,28 @@
           [-2.623473, 51.447451],
           [-2.6235, 51.447353],
           [-2.623006, 51.44801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62222, 51.448841],
+          [-2.622066, 51.448954],
+          [-2.621787, 51.449119],
+          [-2.621647, 51.449258],
+          [-2.621614, 51.449366],
+          [-2.621634, 51.449455],
+          [-2.621678, 51.44952],
+          [-2.621752, 51.44958],
+          [-2.621877, 51.449641],
+          [-2.622013, 51.449681],
+          [-2.623712, 51.449892],
+          [-2.624054, 51.449966],
+          [-2.624172, 51.450011]
         ]
       }
     },
@@ -329,9 +284,13 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.624548, 51.450091],
+          [-2.62431, 51.449935],
+          [-2.624024, 51.449798],
+          [-2.623636, 51.449581],
           [-2.622447, 51.448982],
           [-2.622255, 51.448906],
-          [-2.622021, 51.44884],
+          [-2.621907, 51.448812],
           [-2.621721, 51.448779],
           [-2.621515, 51.448752],
           [-2.620958, 51.448721]
@@ -348,6 +307,18 @@
           [-2.621619, 51.449672],
           [-2.621861, 51.449477],
           [-2.622315, 51.448897]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624913, 51.450411],
+          [-2.624813, 51.450295],
+          [-2.624548, 51.450091]
         ]
       }
     },
@@ -400,150 +371,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.608135, 51.450501],
-          [-2.607403, 51.450475],
-          [-2.606845, 51.450485],
-          [-2.606609, 51.450552]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607749, 51.450562],
-          [-2.607355, 51.450542],
-          [-2.607127, 51.450563]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60521, 51.455939],
-          [-2.604648, 51.455852],
-          [-2.604484, 51.45576]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607127, 51.450563],
-          [-2.607346, 51.450623],
-          [-2.607489, 51.450708]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612735, 51.449568],
-          [-2.612405, 51.449607]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599633, 51.452444],
-          [-2.599119, 51.452308],
-          [-2.598921, 51.452288]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.600226, 51.452674],
-          [-2.600058, 51.452606]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60083, 51.453007],
-          [-2.600485, 51.452796]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60805, 51.456214],
-          [-2.607998, 51.456131],
-          [-2.607874, 51.456079],
-          [-2.60755, 51.456047],
-          [-2.60698, 51.456053]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608838, 51.450419],
-          [-2.608504, 51.450487]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614258, 51.449576],
-          [-2.613897, 51.449505],
-          [-2.613714, 51.449487]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.616139, 51.449897],
           [-2.614944, 51.449719],
-          [-2.614258, 51.449576]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613515, 51.449545],
           [-2.614258, 51.449576]
         ]
       }
@@ -568,6 +397,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.621502, 51.449839],
           [-2.621233, 51.449899],
           [-2.621406, 51.449793]
         ]
@@ -579,9 +409,23 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.61995, 51.450598],
+          [-2.620213, 51.45062],
+          [-2.620384, 51.450585],
+          [-2.620458, 51.450554],
           [-2.620625, 51.45042],
-          [-2.620977, 51.450078],
-          [-2.621233, 51.449899]
+          [-2.620977, 51.450078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616139, 51.449897],
+          [-2.618284, 51.450266]
         ]
       }
     },
@@ -593,19 +437,6 @@
         "coordinates": [
           [-2.623551, 51.447112],
           [-2.62326, 51.44749]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607749, 51.450562],
-          [-2.607622, 51.450602],
-          [-2.607538, 51.450653],
-          [-2.607489, 51.450708]
         ]
       }
     },
@@ -631,6 +462,225 @@
           [-2.619254, 51.447215],
           [-2.619213, 51.447264],
           [-2.619267, 51.447312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622185, 51.449806],
+          [-2.623443, 51.44994]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622905, 51.448139],
+          [-2.623006, 51.44801]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622315, 51.448897],
+          [-2.622332, 51.448875]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60521, 51.455939],
+          [-2.604648, 51.455852],
+          [-2.604236, 51.455629],
+          [-2.601598, 51.453596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60638, 51.456038],
+          [-2.606194, 51.45603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602746, 51.450575],
+          [-2.602909, 51.450593],
+          [-2.604773, 51.450495],
+          [-2.605632, 51.45052],
+          [-2.605891, 51.450509]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602746, 51.450575],
+          [-2.60201, 51.450653],
+          [-2.601101, 51.450804],
+          [-2.600011, 51.450901],
+          [-2.599864, 51.450928],
+          [-2.599267, 51.451114],
+          [-2.599143, 51.451165],
+          [-2.599021, 51.451239],
+          [-2.598735, 51.45147]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598417, 51.452241],
+          [-2.598478, 51.451917],
+          [-2.598692, 51.451575],
+          [-2.598735, 51.45147]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598735, 51.45147],
+          [-2.598594, 51.451543],
+          [-2.598429, 51.451718],
+          [-2.598353, 51.451904],
+          [-2.59827, 51.452237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608135, 51.450501],
+          [-2.607403, 51.450475],
+          [-2.606845, 51.450485],
+          [-2.606609, 51.450552]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607749, 51.450562],
+          [-2.607355, 51.450542],
+          [-2.607127, 51.450563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607127, 51.450563],
+          [-2.607346, 51.450623],
+          [-2.607489, 51.450708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613311, 51.449522],
+          [-2.612735, 51.449568],
+          [-2.612194, 51.449637],
+          [-2.608838, 51.450419],
+          [-2.608504, 51.450487],
+          [-2.60833, 51.450479],
+          [-2.608135, 51.450501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59933, 51.452359],
+          [-2.599119, 51.452308],
+          [-2.598733, 51.452283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614258, 51.449576],
+          [-2.613809, 51.449492],
+          [-2.613714, 51.449487],
+          [-2.613311, 51.449522]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613311, 51.449522],
+          [-2.613571, 51.449551],
+          [-2.614258, 51.449576]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607749, 51.450562],
+          [-2.607622, 51.450602],
+          [-2.607538, 51.450653],
+          [-2.607489, 51.450708]
         ]
       }
     },
@@ -668,66 +718,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.621233, 51.449899],
-          [-2.621502, 51.449839],
-          [-2.621812, 51.449805]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622905, 51.448139],
-          [-2.623006, 51.44801]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622315, 51.448897],
-          [-2.622332, 51.448875]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.62222, 51.448841],
-          [-2.622066, 51.448954],
-          [-2.621787, 51.449119],
-          [-2.621678, 51.449217],
-          [-2.621617, 51.449331],
-          [-2.621634, 51.449455],
-          [-2.621714, 51.449554],
-          [-2.621877, 51.449641],
-          [-2.622096, 51.449695]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.607489, 51.450708],
           [-2.607504, 51.450811],
-          [-2.607535, 51.450853],
-          [-2.607635, 51.450917],
+          [-2.607579, 51.450889],
           [-2.607735, 51.45094],
-          [-2.607915, 51.450925],
-          [-2.608011, 51.450868],
-          [-2.608064, 51.450797]
+          [-2.607843, 51.45094]
         ]
       }
     },
@@ -737,20 +732,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.608504, 51.450487],
-          [-2.60833, 51.450479],
-          [-2.608135, 51.450501]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608064, 51.450797],
-          [-2.608055, 51.450716],
           [-2.607968, 51.450618],
           [-2.607813, 51.450561]
         ]
@@ -792,61 +773,1196 @@
     },
     {
       "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
+      "properties": { "kind": "local", "district": "hotwells" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.618222, 51.447285],
+          [-2.618879, 51.447405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618973, 51.446985],
+          [-2.618941, 51.447026],
+          [-2.618921, 51.44711],
+          [-2.618898, 51.447343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619152, 51.447224],
+          [-2.619084, 51.447141],
+          [-2.619022, 51.447018],
+          [-2.618973, 51.446985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621455, 51.449573],
+          [-2.621399, 51.449559],
+          [-2.621072, 51.449357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62049, 51.449025],
+          [-2.620172, 51.449261],
+          [-2.620139, 51.449298],
+          [-2.61996, 51.449655],
+          [-2.619909, 51.449689],
+          [-2.619867, 51.449693],
+          [-2.619163, 51.449555],
+          [-2.618327, 51.449407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621072, 51.449357],
+          [-2.619864, 51.449993],
+          [-2.618237, 51.449659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619163, 51.449555],
+          [-2.619391, 51.449019],
+          [-2.619515, 51.448761],
+          [-2.619565, 51.448708],
+          [-2.619612, 51.448698],
+          [-2.619928, 51.448791],
+          [-2.620291, 51.44892],
+          [-2.620561, 51.449061],
+          [-2.621072, 51.449357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622265, 51.447413],
+          [-2.621795, 51.447182],
+          [-2.621381, 51.447004],
+          [-2.621158, 51.446942],
+          [-2.621017, 51.446926],
+          [-2.620852, 51.446919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622241, 51.447878],
+          [-2.622351, 51.447839],
+          [-2.622468, 51.447732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622265, 51.447413],
+          [-2.622048, 51.447422],
+          [-2.621804, 51.447445],
+          [-2.621758, 51.447471],
+          [-2.621732, 51.447547],
+          [-2.621763, 51.447651]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617524, 51.446073],
+          [-2.617763, 51.44611],
+          [-2.618186, 51.446225],
+          [-2.618295, 51.446265],
+          [-2.618586, 51.446411],
+          [-2.618696, 51.446488],
+          [-2.618797, 51.446582],
+          [-2.618911, 51.446799],
+          [-2.618973, 51.446985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622468, 51.447732],
+          [-2.622471, 51.447659],
+          [-2.622426, 51.447549],
+          [-2.622358, 51.447468],
+          [-2.622265, 51.447413]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622701, 51.448004],
+          [-2.622568, 51.447915],
+          [-2.622508, 51.447829],
+          [-2.622468, 51.447732]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616245, 51.449603],
+          [-2.616568, 51.449547],
+          [-2.616793, 51.449521],
+          [-2.616977, 51.449502],
+          [-2.617215, 51.449502],
+          [-2.617319, 51.449547],
+          [-2.617361, 51.449575],
+          [-2.617421, 51.449655],
+          [-2.617424, 51.449724],
+          [-2.617376, 51.449884]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616389, 51.449883],
+          [-2.616341, 51.449812],
+          [-2.616293, 51.449644],
+          [-2.616245, 51.449603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617202, 51.449118],
+          [-2.617272, 51.449291],
+          [-2.617215, 51.449502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617202, 51.449118],
+          [-2.617264, 51.449093],
+          [-2.617285, 51.449066],
+          [-2.617283, 51.449014],
+          [-2.617236, 51.448978],
+          [-2.617197, 51.448968],
+          [-2.617134, 51.448969],
+          [-2.617091, 51.448982],
+          [-2.61705, 51.449018],
+          [-2.617053, 51.449073],
+          [-2.617108, 51.449111],
+          [-2.617149, 51.44912],
+          [-2.617202, 51.449118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614594, 51.450146],
+          [-2.615578, 51.45019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614359, 51.449214],
+          [-2.614856, 51.449313],
+          [-2.615027, 51.449316],
+          [-2.615801, 51.449097]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61312, 51.449916],
+          [-2.613103, 51.449949],
+          [-2.613607, 51.450021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615581, 51.448812],
+          [-2.616119, 51.449525],
+          [-2.616245, 51.449603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61726, 51.448991],
+          [-2.617409, 51.448879],
+          [-2.617504, 51.448857],
+          [-2.618041, 51.448877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617006, 51.448442],
+          [-2.617005, 51.448601],
+          [-2.61696, 51.448685],
+          [-2.616946, 51.448864],
+          [-2.616994, 51.448928],
+          [-2.617091, 51.448982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615668, 51.448786],
+          [-2.615468, 51.448846]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616964, 51.45031],
+          [-2.617283, 51.450319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617929, 51.448751],
+          [-2.617919, 51.448874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615581, 51.446332],
+          [-2.615582, 51.446392],
+          [-2.615676, 51.446468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602023, 51.448203],
+          [-2.602199, 51.448244],
+          [-2.602317, 51.448296],
+          [-2.602368, 51.448335],
+          [-2.60246, 51.448439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607851, 51.448002],
+          [-2.60841, 51.447182],
+          [-2.608486, 51.447019],
+          [-2.60849, 51.44696],
+          [-2.60847, 51.446907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607851, 51.448002],
+          [-2.607669, 51.447964],
+          [-2.606663, 51.447822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60887, 51.446879],
+          [-2.609343, 51.447535],
+          [-2.609286, 51.447643],
+          [-2.609272, 51.447726],
+          [-2.609355, 51.447787],
+          [-2.609523, 51.447842],
+          [-2.609681, 51.447919],
+          [-2.609767, 51.447983],
+          [-2.609966, 51.448269]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612283, 51.447955],
+          [-2.612581, 51.447878],
+          [-2.613031, 51.44774],
+          [-2.613526, 51.447551],
+          [-2.613999, 51.44735]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612017, 51.447492],
+          [-2.61262, 51.447298],
+          [-2.613236, 51.447061],
+          [-2.613516, 51.446932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611695, 51.447018],
+          [-2.612342, 51.446796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611485, 51.446693],
+          [-2.612017, 51.447492],
+          [-2.612283, 51.447955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606194, 51.45603],
+          [-2.606373, 51.455584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604874, 51.45527],
+          [-2.606373, 51.455584],
+          [-2.606552, 51.455097],
+          [-2.606497, 51.455057],
+          [-2.605646, 51.454727],
+          [-2.604874, 51.45527]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605665, 51.452825],
+          [-2.602624, 51.454381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603578, 51.455119],
+          [-2.603977, 51.454896],
+          [-2.604432, 51.454665],
+          [-2.605412, 51.454142],
+          [-2.605398, 51.454099],
+          [-2.604957, 51.453762],
+          [-2.603953, 51.453056]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603046, 51.451468],
+          [-2.603007, 51.451346],
+          [-2.603582, 51.450673],
+          [-2.603614, 51.450612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605467, 51.451697],
+          [-2.60553, 51.451688],
+          [-2.606163, 51.451414],
+          [-2.606921, 51.451182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604755, 51.455357],
+          [-2.604353, 51.455689]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603628, 51.453236],
+          [-2.604152, 51.452946]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602354, 51.452834],
+          [-2.602346, 51.452779],
+          [-2.602482, 51.452465],
+          [-2.602525, 51.452324],
+          [-2.602527, 51.452216],
+          [-2.602468, 51.451914],
+          [-2.602377, 51.451702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605076, 51.45124],
+          [-2.605467, 51.451697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603138, 51.44926],
+          [-2.602018, 51.450491],
+          [-2.602028, 51.450559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606646, 51.449779],
+          [-2.606339, 51.450207],
+          [-2.606383, 51.450398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601806, 51.451476],
+          [-2.60178, 51.451338],
+          [-2.601781, 51.451305],
+          [-2.601809, 51.451278],
+          [-2.601843, 51.451265],
+          [-2.602326, 51.451215],
+          [-2.6024, 51.451188],
+          [-2.60239, 51.451129],
+          [-2.602397, 51.451062],
+          [-2.602424, 51.451003],
+          [-2.602422, 51.450932],
+          [-2.602359, 51.450618]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607899, 51.455866],
+          [-2.607992, 51.455829],
+          [-2.608461, 51.455695],
+          [-2.60849, 51.45566],
+          [-2.60856, 51.455615],
+          [-2.608237, 51.455337],
+          [-2.607901, 51.455814],
+          [-2.607899, 51.455866]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604072, 51.450525],
+          [-2.604138, 51.450867],
+          [-2.604156, 51.450896],
+          [-2.604192, 51.45091],
+          [-2.604252, 51.450913],
+          [-2.6047, 51.450873],
+          [-2.604746, 51.450895],
+          [-2.604773, 51.450928],
+          [-2.60493, 51.45128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607428, 51.448558],
+          [-2.607627, 51.448339],
+          [-2.607851, 51.448002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605646, 51.454727],
+          [-2.605622, 51.454655],
+          [-2.605637, 51.45459],
+          [-2.605798, 51.45449],
+          [-2.605957, 51.454427],
+          [-2.606043, 51.454428],
+          [-2.606186, 51.454447],
+          [-2.606374, 51.45448],
+          [-2.60656, 51.454528],
+          [-2.606663, 51.454571],
+          [-2.606897, 51.454724],
+          [-2.607215, 51.454976],
+          [-2.607228, 51.454995],
+          [-2.607223, 51.455049],
+          [-2.607051, 51.455704],
+          [-2.60698, 51.456053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604755, 51.455357],
+          [-2.604438, 51.455092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604874, 51.45527],
+          [-2.604755, 51.455357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601895, 51.451773],
+          [-2.602377, 51.451702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600972, 51.449184],
+          [-2.600898, 51.449211],
           [-2.600876, 51.449256],
-          [-2.600149, 51.44932]
+          [-2.600895, 51.44929],
+          [-2.600921, 51.449308],
+          [-2.600994, 51.449321],
+          [-2.601071, 51.449296],
+          [-2.601096, 51.449253],
+          [-2.601076, 51.449213],
+          [-2.601048, 51.449196],
+          [-2.600972, 51.449184]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
+      "properties": { "kind": "local", "district": "hotwells" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.602017, 51.453373],
-          [-2.603977, 51.454896]
+          [-2.602417, 51.452855],
+          [-2.603006, 51.452623],
+          [-2.603331, 51.452479],
+          [-2.603418, 51.452431],
+          [-2.603494, 51.452367],
+          [-2.604124, 51.451689],
+          [-2.604357, 51.451474],
+          [-2.604348, 51.451404],
+          [-2.604329, 51.451366]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
+      "properties": { "kind": "local", "district": "hotwells" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.601304, 51.450774],
-          [-2.60125, 51.450614],
-          [-2.601203, 51.450371],
-          [-2.601165, 51.450291],
-          [-2.60115, 51.45022],
-          [-2.601109, 51.449952],
-          [-2.600997, 51.449391],
-          [-2.600994, 51.449321]
+          [-2.609343, 51.447535],
+          [-2.611738, 51.44708]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
+      "properties": { "kind": "local", "district": "hotwells" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.605422, 51.450244],
-          [-2.606055, 51.450372],
-          [-2.606383, 51.450398],
-          [-2.606752, 51.450405],
-          [-2.607079, 51.450397],
-          [-2.607293, 51.450376],
-          [-2.607449, 51.450339],
-          [-2.607721, 51.450378],
-          [-2.607916, 51.450417],
-          [-2.608052, 51.450421],
-          [-2.608385, 51.450389],
-          [-2.608548, 51.450363]
+          [-2.614539, 51.449322],
+          [-2.614409, 51.449608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614466, 51.449235],
+          [-2.6145, 51.449155]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602377, 51.451702],
+          [-2.604329, 51.451366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603006, 51.452623],
+          [-2.6031, 51.452654],
+          [-2.603233, 51.452682],
+          [-2.603353, 51.452699],
+          [-2.60346, 51.452702],
+          [-2.603677, 51.452667],
+          [-2.603908, 51.452604],
+          [-2.604102, 51.452539],
+          [-2.604288, 51.452455],
+          [-2.605436, 51.451733],
+          [-2.605467, 51.451697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6091, 51.453328],
+          [-2.609404, 51.453915],
+          [-2.609429, 51.453921],
+          [-2.610021, 51.453915]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607489, 51.450708],
+          [-2.607202, 51.450762],
+          [-2.607053, 51.450812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604329, 51.451366],
+          [-2.60493, 51.45128],
+          [-2.605775, 51.451027],
+          [-2.607053, 51.450812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612209, 51.447978],
+          [-2.612283, 51.447955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608014, 51.455978],
+          [-2.607899, 51.455866]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607053, 51.450812],
+          [-2.60739, 51.450835],
+          [-2.607471, 51.450849],
+          [-2.607579, 51.450889]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601339, 51.453323],
+          [-2.60184, 51.453048],
+          [-2.602035, 51.452953],
+          [-2.602298, 51.452892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601598, 51.453596],
+          [-2.601903, 51.453448],
+          [-2.602031, 51.453361],
+          [-2.60227, 51.45311],
+          [-2.60232, 51.453039],
+          [-2.602351, 51.452971],
+          [-2.602358, 51.452917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602417, 51.452855],
+          [-2.602376, 51.452835],
+          [-2.602326, 51.452839],
+          [-2.602301, 51.452854],
+          [-2.602298, 51.452892],
+          [-2.602327, 51.452911],
+          [-2.602378, 51.452915],
+          [-2.602406, 51.452904],
+          [-2.602424, 51.452885],
+          [-2.602417, 51.452855]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603934, 51.448586],
+          [-2.6035, 51.44908],
+          [-2.603435, 51.4491],
+          [-2.603369, 51.449101],
+          [-2.603296, 51.449084]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601096, 51.449253],
+          [-2.601513, 51.449245],
+          [-2.602252, 51.449186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602561, 51.449207],
+          [-2.602632, 51.449188],
+          [-2.602656, 51.449168],
+          [-2.602668, 51.449122],
+          [-2.602624, 51.449077],
+          [-2.602582, 51.449064],
+          [-2.602538, 51.449062],
+          [-2.602464, 51.449086],
+          [-2.602435, 51.449132],
+          [-2.602458, 51.449178],
+          [-2.602522, 51.449205],
+          [-2.602561, 51.449207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603614, 51.450612],
+          [-2.603692, 51.450513],
+          [-2.60371, 51.450466],
+          [-2.603636, 51.450038],
+          [-2.603635, 51.449896],
+          [-2.603553, 51.449502],
+          [-2.603514, 51.449388],
+          [-2.603386, 51.449247],
+          [-2.603235, 51.449151],
+          [-2.603129, 51.449114],
+          [-2.602982, 51.449095],
+          [-2.602809, 51.449092],
+          [-2.602655, 51.449099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602632, 51.449188],
+          [-2.602881, 51.44918],
+          [-2.603069, 51.449203],
+          [-2.60316, 51.449234],
+          [-2.603247, 51.449276],
+          [-2.603322, 51.449329],
+          [-2.603404, 51.449419],
+          [-2.603456, 51.449599],
+          [-2.603581, 51.450269],
+          [-2.603582, 51.450409],
+          [-2.603614, 51.450612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601076, 51.449955],
+          [-2.603345, 51.449775],
+          [-2.603436, 51.449734]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602442, 51.44813],
+          [-2.602412, 51.448177],
+          [-2.60255, 51.448928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60219, 51.45323],
+          [-2.602448, 51.453315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602435, 51.449132],
+          [-2.602252, 51.449186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602252, 51.449186],
+          [-2.602458, 51.449178]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602582, 51.449064],
+          [-2.60255, 51.448928]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60255, 51.448928],
+          [-2.602496, 51.44907]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599811, 51.449843],
+          [-2.599815, 51.449865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604325, 51.44714],
+          [-2.604608, 51.44704],
+          [-2.604643, 51.446934]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603296, 51.449084],
+          [-2.603262, 51.449121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603644, 51.448499],
+          [-2.603199, 51.448977],
+          [-2.6032, 51.449013],
+          [-2.603235, 51.449054],
+          [-2.603296, 51.449084]
         ]
       }
     },
@@ -859,39 +1975,6 @@
           [-2.616079, 51.446813],
           [-2.616197, 51.44689],
           [-2.616359, 51.446806]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.600927, 51.449195],
-          [-2.600831, 51.449173],
-          [-2.600071, 51.449235],
-          [-2.60003, 51.449249],
-          [-2.600001, 51.449269],
-          [-2.59998, 51.449321],
-          [-2.60001, 51.449369],
-          [-2.600045, 51.449387],
-          [-2.60011, 51.449397],
-          [-2.60066, 51.449357],
-          [-2.600956, 51.449318]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607447, 51.447933],
-          [-2.607062, 51.448395],
-          [-2.607205, 51.44847],
-          [-2.607428, 51.448558]
         ]
       }
     },
@@ -937,43 +2020,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.60115, 51.45022],
-          [-2.603636, 51.450038]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608908, 51.455957],
-          [-2.608461, 51.455695]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.623061, 51.448189],
           [-2.623111, 51.44812]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596248, 51.447275],
-          [-2.596256, 51.447141],
-          [-2.595959, 51.447131],
-          [-2.5957, 51.447308]
         ]
       }
     },
@@ -997,60 +2045,6 @@
         "coordinates": [
           [-2.619489, 51.450144],
           [-2.619278, 51.450459]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599191, 51.452196],
-          [-2.599161, 51.452218],
-          [-2.599119, 51.452308]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599509, 51.452124],
-          [-2.599943, 51.452057]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601845, 51.451838],
-          [-2.601925, 51.45207],
-          [-2.601936, 51.452249],
-          [-2.601895, 51.452434],
-          [-2.601795, 51.452616],
-          [-2.601689, 51.452739],
-          [-2.60151, 51.452876],
-          [-2.601366, 51.452962],
-          [-2.601014, 51.453142]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599524, 51.452224],
-          [-2.599449, 51.452246],
-          [-2.599376, 51.452241],
-          [-2.599191, 51.452196]
         ]
       }
     },
@@ -1109,94 +2103,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.604348, 51.454706],
-          [-2.604268, 51.454645]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.615665, 51.449579],
           [-2.615694, 51.44983]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.609635, 51.454865],
-          [-2.609809, 51.454901]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.597522, 51.447327],
-          [-2.597105, 51.447399],
-          [-2.596726, 51.4474]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606663, 51.447822],
-          [-2.606447, 51.447759],
-          [-2.605884, 51.447541],
-          [-2.605794, 51.44752],
-          [-2.604761, 51.447378],
-          [-2.603965, 51.44728],
-          [-2.603708, 51.447302]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595797, 51.447968],
-          [-2.595827, 51.448007],
-          [-2.595823, 51.448057],
-          [-2.596228, 51.448067]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595817, 51.447695],
-          [-2.595797, 51.447968],
-          [-2.595246, 51.447955]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.609767, 51.447983],
-          [-2.610742, 51.447795]
         ]
       }
     },
@@ -1230,107 +2138,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.599045, 51.451986],
-          [-2.599124, 51.452166],
-          [-2.599191, 51.452196]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599391, 51.452375],
-          [-2.599524, 51.452224]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599524, 51.452224],
-          [-2.599533, 51.452177],
-          [-2.599509, 51.452124]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.598464, 51.451497],
-          [-2.598519, 51.451279]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.598519, 51.451279],
-          [-2.598611, 51.451302],
-          [-2.598812, 51.451396]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.615402, 51.44953],
           [-2.615665, 51.449579],
           [-2.616083, 51.449631]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596717, 51.447961],
-          [-2.596789, 51.44796],
-          [-2.597128, 51.447857],
-          [-2.598059, 51.447535],
-          [-2.599389, 51.447092],
-          [-2.600026, 51.446928],
-          [-2.600276, 51.446883],
-          [-2.600485, 51.446884],
-          [-2.600611, 51.446914],
-          [-2.600671, 51.446947],
-          [-2.600727, 51.447001],
-          [-2.600763, 51.447019],
-          [-2.600828, 51.447031],
-          [-2.600957, 51.447023],
-          [-2.601166, 51.447029],
-          [-2.601502, 51.447065],
-          [-2.60212, 51.447157],
-          [-2.602466, 51.447223],
-          [-2.60293, 51.447331],
-          [-2.60463, 51.447783]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602492, 51.449348],
-          [-2.602561, 51.449207]
         ]
       }
     },
@@ -1357,112 +2167,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.601654, 51.450852],
-          [-2.601724, 51.451183],
-          [-2.601744, 51.451237],
-          [-2.601796, 51.451286]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605324, 51.450433],
-          [-2.60528, 51.450361],
-          [-2.605277, 51.450319],
-          [-2.605332, 51.450271],
-          [-2.605367, 51.450252],
-          [-2.605422, 51.450244]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605422, 51.450244],
-          [-2.605377, 51.450238],
-          [-2.605336, 51.450242],
-          [-2.605264, 51.450265],
-          [-2.605212, 51.450311],
-          [-2.605179, 51.450362],
-          [-2.605158, 51.450424],
-          [-2.605153, 51.450499]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.620415, 51.447478],
           [-2.620504, 51.447277],
           [-2.620676, 51.447298],
           [-2.620712, 51.447221]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608157, 51.448512],
-          [-2.607627, 51.448339]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60499, 51.454733],
-          [-2.605201, 51.454854],
-          [-2.605356, 51.454932]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602913, 51.453207],
-          [-2.602424, 51.452885]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602405, 51.452303],
-          [-2.602525, 51.452324]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605933, 51.447402],
-          [-2.60597, 51.447367],
-          [-2.606002, 51.446989]
         ]
       }
     },
@@ -1485,55 +2193,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.6024, 51.451188],
-          [-2.602428, 51.451225],
-          [-2.602497, 51.451275],
-          [-2.60253, 51.451373]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.614635, 51.449578],
           [-2.614603, 51.449648]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614226, 51.449311],
-          [-2.613926, 51.449243],
-          [-2.613809, 51.449492]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.598727, 51.450536],
-          [-2.598519, 51.451279]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606219, 51.44699],
-          [-2.606206, 51.447059]
         ]
       }
     },
@@ -1546,147 +2207,6 @@
           [-2.618498, 51.447067],
           [-2.61854, 51.447046],
           [-2.618973, 51.446985]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60707, 51.447423],
-          [-2.607121, 51.447353],
-          [-2.607113, 51.446987]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.609185, 51.447316],
-          [-2.609736, 51.447164]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.59501, 51.448026],
-          [-2.595034, 51.447687],
-          [-2.595171, 51.44769],
-          [-2.595281, 51.447682],
-          [-2.595292, 51.447488]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.604954, 51.451444],
-          [-2.60485, 51.451297]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.6047, 51.450873],
-          [-2.604863, 51.450841],
-          [-2.604825, 51.450755]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603587, 51.451134],
-          [-2.603671, 51.451132],
-          [-2.603716, 51.45111],
-          [-2.603739, 51.451076],
-          [-2.603752, 51.451009],
-          [-2.603815, 51.45095],
-          [-2.604192, 51.45091]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605453, 51.451126],
-          [-2.605595, 51.451315]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605467, 51.451359],
-          [-2.605961, 51.451202]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606232, 51.450952],
-          [-2.606193, 51.450799],
-          [-2.606163, 51.450778],
-          [-2.606099, 51.450773],
-          [-2.606093, 51.450789],
-          [-2.606142, 51.450805],
-          [-2.606178, 51.450962]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60381, 51.453775],
-          [-2.603891, 51.453839],
-          [-2.60392, 51.453841],
-          [-2.604145, 51.453729],
-          [-2.604147, 51.453707],
-          [-2.604061, 51.453646]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605798, 51.45449],
-          [-2.605623, 51.454267],
-          [-2.60554, 51.454198]
         ]
       }
     },
@@ -1754,100 +2274,6 @@
           [-2.618516, 51.447788],
           [-2.61867, 51.447716],
           [-2.618739, 51.447697]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603908, 51.452604],
-          [-2.603877, 51.452564]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603969, 51.452534],
-          [-2.604005, 51.452573]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60184, 51.453048],
-          [-2.60187, 51.45307]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599509, 51.452124],
-          [-2.599447, 51.452124],
-          [-2.599288, 51.452149],
-          [-2.599215, 51.452176],
-          [-2.599191, 51.452196]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610446, 51.448814],
-          [-2.610378, 51.448708],
-          [-2.610107, 51.448473],
-          [-2.609966, 51.448269],
-          [-2.610046, 51.448257],
-          [-2.610359, 51.448185],
-          [-2.611104, 51.447993],
-          [-2.611092, 51.447975],
-          [-2.611386, 51.447906],
-          [-2.611458, 51.447818],
-          [-2.611711, 51.447756]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.600465, 51.449091],
-          [-2.600545, 51.449134],
-          [-2.600572, 51.449194]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601014, 51.449186],
-          [-2.601142, 51.449053],
-          [-2.601174, 51.449044],
-          [-2.601437, 51.449129],
-          [-2.601566, 51.449147],
-          [-2.601668, 51.449153]
         ]
       }
     },
@@ -1991,20 +2417,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.608857, 51.450656],
-          [-2.608771, 51.450659],
-          [-2.608716, 51.450635],
-          [-2.60869, 51.450611],
-          [-2.608618, 51.450464]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.617006, 51.448442],
           [-2.617668, 51.448461]
         ]
@@ -2058,6 +2470,836 @@
           [-2.615676, 51.446468],
           [-2.615953, 51.446734],
           [-2.616079, 51.446813]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616079, 51.446813],
+          [-2.616525, 51.446565],
+          [-2.616597, 51.446549],
+          [-2.61698, 51.446506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61698, 51.446506],
+          [-2.616916, 51.446273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615512, 51.450162],
+          [-2.615673, 51.450194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620758, 51.449176],
+          [-2.620802, 51.449145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618223, 51.4482],
+          [-2.618312, 51.448262],
+          [-2.618398, 51.448286],
+          [-2.618505, 51.448303],
+          [-2.61866, 51.448313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617618, 51.447121],
+          [-2.617718, 51.44715],
+          [-2.617852, 51.447172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621429, 51.446489],
+          [-2.621522, 51.446422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600876, 51.449256],
+          [-2.600149, 51.44932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602017, 51.453373],
+          [-2.603977, 51.454896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601304, 51.450774],
+          [-2.60125, 51.450614],
+          [-2.601203, 51.450371],
+          [-2.601165, 51.450291],
+          [-2.60115, 51.45022],
+          [-2.601109, 51.449952],
+          [-2.600997, 51.449391],
+          [-2.600994, 51.449321]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605422, 51.450244],
+          [-2.606055, 51.450372],
+          [-2.606383, 51.450398],
+          [-2.606752, 51.450405],
+          [-2.607079, 51.450397],
+          [-2.607293, 51.450376],
+          [-2.607449, 51.450339],
+          [-2.607721, 51.450378],
+          [-2.607916, 51.450417],
+          [-2.608052, 51.450421],
+          [-2.608385, 51.450389],
+          [-2.608548, 51.450363]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600927, 51.449195],
+          [-2.600831, 51.449173],
+          [-2.600071, 51.449235],
+          [-2.60003, 51.449249],
+          [-2.600001, 51.449269],
+          [-2.59998, 51.449321],
+          [-2.60001, 51.449369],
+          [-2.600045, 51.449387],
+          [-2.60011, 51.449397],
+          [-2.60066, 51.449357],
+          [-2.600956, 51.449318]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607447, 51.447933],
+          [-2.607062, 51.448395],
+          [-2.607205, 51.44847],
+          [-2.607428, 51.448558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60115, 51.45022],
+          [-2.603636, 51.450038]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608832, 51.455908],
+          [-2.608461, 51.455695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599191, 51.452196],
+          [-2.599161, 51.452218],
+          [-2.599119, 51.452308]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599509, 51.452124],
+          [-2.599943, 51.452057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601835, 51.45184],
+          [-2.601888, 51.451819],
+          [-2.601901, 51.451783],
+          [-2.60188, 51.451758],
+          [-2.601853, 51.451747],
+          [-2.601809, 51.451744],
+          [-2.60177, 51.451757],
+          [-2.601752, 51.451772],
+          [-2.601749, 51.451808],
+          [-2.601781, 51.451833],
+          [-2.601835, 51.45184]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601845, 51.451838],
+          [-2.601925, 51.45207],
+          [-2.601936, 51.452249],
+          [-2.601895, 51.452434],
+          [-2.601795, 51.452616],
+          [-2.601689, 51.452739],
+          [-2.60151, 51.452876],
+          [-2.601366, 51.452962],
+          [-2.601014, 51.453142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599524, 51.452224],
+          [-2.599449, 51.452246],
+          [-2.599376, 51.452241],
+          [-2.599191, 51.452196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604348, 51.454706],
+          [-2.604268, 51.454645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609635, 51.454865],
+          [-2.609735, 51.454598],
+          [-2.609765, 51.454489],
+          [-2.609777, 51.454375],
+          [-2.609753, 51.454352],
+          [-2.609667, 51.454338],
+          [-2.609589, 51.454339],
+          [-2.609542, 51.454359],
+          [-2.609458, 51.454513],
+          [-2.60933, 51.454793],
+          [-2.6091, 51.455215],
+          [-2.60909, 51.455266],
+          [-2.609123, 51.455293],
+          [-2.609183, 51.455307],
+          [-2.60923, 51.455302],
+          [-2.60927, 51.455287],
+          [-2.609315, 51.455255],
+          [-2.609404, 51.455164],
+          [-2.609491, 51.455002],
+          [-2.609556, 51.454907],
+          [-2.609584, 51.454879],
+          [-2.609635, 51.454865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609635, 51.454865],
+          [-2.609809, 51.454901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606663, 51.447822],
+          [-2.606447, 51.447759],
+          [-2.605884, 51.447541],
+          [-2.605794, 51.44752],
+          [-2.604761, 51.447378],
+          [-2.603965, 51.44728],
+          [-2.603708, 51.447302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609767, 51.447983],
+          [-2.610742, 51.447795]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599045, 51.451986],
+          [-2.599124, 51.452166],
+          [-2.599191, 51.452196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599391, 51.452375],
+          [-2.599524, 51.452224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599524, 51.452224],
+          [-2.599533, 51.452177],
+          [-2.599509, 51.452124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598464, 51.451497],
+          [-2.598519, 51.451279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598519, 51.451279],
+          [-2.598611, 51.451302],
+          [-2.598812, 51.451396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600026, 51.446928],
+          [-2.600276, 51.446883],
+          [-2.600485, 51.446884],
+          [-2.600611, 51.446914],
+          [-2.600671, 51.446947],
+          [-2.600727, 51.447001],
+          [-2.600763, 51.447019],
+          [-2.600828, 51.447031],
+          [-2.600957, 51.447023],
+          [-2.601166, 51.447029],
+          [-2.601502, 51.447065],
+          [-2.60212, 51.447157],
+          [-2.602466, 51.447223],
+          [-2.60293, 51.447331],
+          [-2.60463, 51.447783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602492, 51.449348],
+          [-2.602561, 51.449207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601654, 51.450852],
+          [-2.601724, 51.451183],
+          [-2.601744, 51.451237],
+          [-2.601796, 51.451286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605324, 51.450433],
+          [-2.60528, 51.450361],
+          [-2.605277, 51.450319],
+          [-2.605332, 51.450271],
+          [-2.605367, 51.450252],
+          [-2.605422, 51.450244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605422, 51.450244],
+          [-2.605377, 51.450238],
+          [-2.605336, 51.450242],
+          [-2.605264, 51.450265],
+          [-2.605212, 51.450311],
+          [-2.605179, 51.450362],
+          [-2.605158, 51.450424],
+          [-2.605153, 51.450499]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608157, 51.448512],
+          [-2.607627, 51.448339]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60499, 51.454733],
+          [-2.605201, 51.454854],
+          [-2.605356, 51.454932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602913, 51.453207],
+          [-2.602424, 51.452885]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.602405, 51.452303],
+          [-2.602525, 51.452324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605933, 51.447402],
+          [-2.60597, 51.447367],
+          [-2.606002, 51.446989]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6024, 51.451188],
+          [-2.602428, 51.451225],
+          [-2.602497, 51.451275],
+          [-2.60253, 51.451373]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614226, 51.449311],
+          [-2.613926, 51.449243],
+          [-2.613809, 51.449492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598727, 51.450536],
+          [-2.598519, 51.451279]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606219, 51.44699],
+          [-2.606206, 51.447059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60707, 51.447423],
+          [-2.607121, 51.447353],
+          [-2.607113, 51.446987]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609185, 51.447316],
+          [-2.609736, 51.447164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604954, 51.451444],
+          [-2.60485, 51.451297]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6047, 51.450873],
+          [-2.604863, 51.450841],
+          [-2.604825, 51.450755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603587, 51.451134],
+          [-2.603671, 51.451132],
+          [-2.603716, 51.45111],
+          [-2.603739, 51.451076],
+          [-2.603752, 51.451009],
+          [-2.603815, 51.45095],
+          [-2.604192, 51.45091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605453, 51.451126],
+          [-2.605595, 51.451315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605467, 51.451359],
+          [-2.605961, 51.451202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606232, 51.450952],
+          [-2.606193, 51.450799],
+          [-2.606163, 51.450778],
+          [-2.606099, 51.450773],
+          [-2.606093, 51.450789],
+          [-2.606142, 51.450805],
+          [-2.606178, 51.450962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60381, 51.453775],
+          [-2.603891, 51.453839],
+          [-2.60392, 51.453841],
+          [-2.604145, 51.453729],
+          [-2.604147, 51.453707],
+          [-2.604061, 51.453646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605798, 51.45449],
+          [-2.605623, 51.454267],
+          [-2.60554, 51.454198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603908, 51.452604],
+          [-2.603877, 51.452564]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603969, 51.452534],
+          [-2.604005, 51.452573]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60184, 51.453048],
+          [-2.60187, 51.45307]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599509, 51.452124],
+          [-2.599447, 51.452124],
+          [-2.599288, 51.452149],
+          [-2.599215, 51.452176],
+          [-2.599191, 51.452196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610446, 51.448814],
+          [-2.610378, 51.448708],
+          [-2.610107, 51.448473],
+          [-2.609966, 51.448269],
+          [-2.610046, 51.448257],
+          [-2.610359, 51.448185],
+          [-2.611104, 51.447993],
+          [-2.611092, 51.447975],
+          [-2.611386, 51.447906],
+          [-2.611458, 51.447818],
+          [-2.611711, 51.447756]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600465, 51.449091],
+          [-2.600545, 51.449134],
+          [-2.600572, 51.449194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.601014, 51.449186],
+          [-2.601142, 51.449053],
+          [-2.601174, 51.449044],
+          [-2.601437, 51.449129],
+          [-2.601566, 51.449147],
+          [-2.601668, 51.449153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609127, 51.450569],
+          [-2.608857, 51.450656],
+          [-2.608771, 51.450659],
+          [-2.608716, 51.450635],
+          [-2.60869, 51.450611],
+          [-2.608618, 51.450464]
         ]
       }
     },
@@ -2231,19 +3473,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.598904, 51.446823],
-          [-2.59899, 51.447041],
-          [-2.599034, 51.447061],
-          [-2.599092, 51.447186]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.6091, 51.453328],
           [-2.609055, 51.453307],
           [-2.60894, 51.453145],
@@ -2257,78 +3486,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616079, 51.446813],
-          [-2.616525, 51.446565],
-          [-2.616597, 51.446549],
-          [-2.61698, 51.446506]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61698, 51.446506],
-          [-2.616916, 51.446273]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608847, 51.452194],
-          [-2.608784, 51.452232]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.60581, 51.44766],
           [-2.605968, 51.447663],
           [-2.60601, 51.447657],
           [-2.606087, 51.44762]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.597965, 51.446996],
-          [-2.597987, 51.447043]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615512, 51.450162],
-          [-2.615673, 51.450194]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.620758, 51.449176],
-          [-2.620802, 51.449145]
         ]
       }
     },
@@ -2397,34 +3558,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.618223, 51.4482],
-          [-2.618312, 51.448262],
-          [-2.618398, 51.448286],
-          [-2.618505, 51.448303],
-          [-2.61866, 51.448313]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.606079, 51.450374],
           [-2.606106, 51.450329]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617618, 51.447121],
-          [-2.617718, 51.44715],
-          [-2.617852, 51.447172]
         ]
       }
     },
@@ -2454,1183 +3589,6 @@
     },
     {
       "type": "Feature",
-      "properties": { "kind": "service", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.621429, 51.446489],
-          [-2.621522, 51.446422]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602023, 51.448203],
-          [-2.602199, 51.448244],
-          [-2.602317, 51.448296],
-          [-2.602368, 51.448335],
-          [-2.60246, 51.448439]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618222, 51.447285],
-          [-2.618879, 51.447405]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618973, 51.446985],
-          [-2.618941, 51.447026],
-          [-2.618921, 51.44711],
-          [-2.618898, 51.447343]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607851, 51.448002],
-          [-2.60841, 51.447182],
-          [-2.608486, 51.447019],
-          [-2.60849, 51.44696],
-          [-2.60847, 51.446907]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607851, 51.448002],
-          [-2.607669, 51.447964],
-          [-2.606663, 51.447822]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60887, 51.446879],
-          [-2.609343, 51.447535],
-          [-2.609286, 51.447643],
-          [-2.609272, 51.447726],
-          [-2.609355, 51.447787],
-          [-2.609523, 51.447842],
-          [-2.609681, 51.447919],
-          [-2.609767, 51.447983],
-          [-2.609966, 51.448269]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612283, 51.447955],
-          [-2.612581, 51.447878],
-          [-2.613031, 51.44774],
-          [-2.613526, 51.447551],
-          [-2.613999, 51.44735]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612017, 51.447492],
-          [-2.61262, 51.447298],
-          [-2.613236, 51.447061],
-          [-2.613516, 51.446932]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.611695, 51.447018],
-          [-2.612342, 51.446796]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.611485, 51.446693],
-          [-2.612017, 51.447492],
-          [-2.612283, 51.447955]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606194, 51.45603],
-          [-2.606373, 51.455584]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605665, 51.452825],
-          [-2.602624, 51.454381]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603578, 51.455119],
-          [-2.603977, 51.454896],
-          [-2.604432, 51.454665],
-          [-2.605412, 51.454142],
-          [-2.605398, 51.454099],
-          [-2.604957, 51.453762],
-          [-2.603953, 51.453056]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603046, 51.451468],
-          [-2.603007, 51.451346],
-          [-2.603582, 51.450673],
-          [-2.603614, 51.450612]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605467, 51.451697],
-          [-2.60553, 51.451688],
-          [-2.606163, 51.451414],
-          [-2.606921, 51.451182]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.604755, 51.455357],
-          [-2.604353, 51.455689]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596412, 51.446568],
-          [-2.59629, 51.446616],
-          [-2.59573, 51.446877],
-          [-2.594696, 51.447571],
-          [-2.59452, 51.447652],
-          [-2.594505, 51.44825],
-          [-2.596711, 51.448317]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603628, 51.453236],
-          [-2.604152, 51.452946]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602354, 51.452834],
-          [-2.602346, 51.452779],
-          [-2.602482, 51.452465],
-          [-2.602525, 51.452324],
-          [-2.602527, 51.452216],
-          [-2.602468, 51.451914],
-          [-2.602377, 51.451702]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617283, 51.450319],
-          [-2.617308, 51.450095]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605076, 51.45124],
-          [-2.605467, 51.451697]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619152, 51.447224],
-          [-2.619084, 51.447141],
-          [-2.619022, 51.447018],
-          [-2.618973, 51.446985]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.621455, 51.449573],
-          [-2.621399, 51.449559],
-          [-2.621072, 51.449357]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.62049, 51.449025],
-          [-2.620172, 51.449261],
-          [-2.620139, 51.449298],
-          [-2.61996, 51.449655],
-          [-2.619909, 51.449689],
-          [-2.619867, 51.449693],
-          [-2.619163, 51.449555],
-          [-2.618327, 51.449407]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.621072, 51.449357],
-          [-2.619864, 51.449993],
-          [-2.618237, 51.449659]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619163, 51.449555],
-          [-2.619391, 51.449019],
-          [-2.619515, 51.448761],
-          [-2.619565, 51.448708],
-          [-2.619612, 51.448698],
-          [-2.619928, 51.448791],
-          [-2.620291, 51.44892],
-          [-2.620561, 51.449061],
-          [-2.621072, 51.449357]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622265, 51.447413],
-          [-2.621795, 51.447182],
-          [-2.621381, 51.447004],
-          [-2.621158, 51.446942],
-          [-2.621017, 51.446926],
-          [-2.620852, 51.446919]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622241, 51.447878],
-          [-2.622351, 51.447839],
-          [-2.622468, 51.447732]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622265, 51.447413],
-          [-2.622048, 51.447422],
-          [-2.621804, 51.447445],
-          [-2.621758, 51.447471],
-          [-2.621732, 51.447547],
-          [-2.621763, 51.447651]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617524, 51.446073],
-          [-2.617763, 51.44611],
-          [-2.618186, 51.446225],
-          [-2.618295, 51.446265],
-          [-2.618586, 51.446411],
-          [-2.618696, 51.446488],
-          [-2.618797, 51.446582],
-          [-2.618911, 51.446799],
-          [-2.618973, 51.446985]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622468, 51.447732],
-          [-2.622471, 51.447659],
-          [-2.622426, 51.447549],
-          [-2.622358, 51.447468],
-          [-2.622265, 51.447413]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622701, 51.448004],
-          [-2.622568, 51.447915],
-          [-2.622508, 51.447829],
-          [-2.622468, 51.447732]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603138, 51.44926],
-          [-2.602018, 51.450491],
-          [-2.602028, 51.450559]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606646, 51.449779],
-          [-2.606339, 51.450207],
-          [-2.606383, 51.450398]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601806, 51.451476],
-          [-2.60178, 51.451338],
-          [-2.601781, 51.451305],
-          [-2.601809, 51.451278],
-          [-2.601843, 51.451265],
-          [-2.602326, 51.451215],
-          [-2.6024, 51.451188],
-          [-2.60239, 51.451129],
-          [-2.602397, 51.451062],
-          [-2.602424, 51.451003],
-          [-2.602422, 51.450932],
-          [-2.602359, 51.450618]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.604072, 51.450525],
-          [-2.604138, 51.450867],
-          [-2.604156, 51.450896],
-          [-2.604192, 51.45091],
-          [-2.604252, 51.450913],
-          [-2.6047, 51.450873],
-          [-2.604746, 51.450895],
-          [-2.604773, 51.450928],
-          [-2.60493, 51.45128]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616245, 51.449603],
-          [-2.616568, 51.449547],
-          [-2.616793, 51.449521],
-          [-2.616977, 51.449502],
-          [-2.617215, 51.449502],
-          [-2.617319, 51.449547],
-          [-2.617361, 51.449575],
-          [-2.617421, 51.449655],
-          [-2.617424, 51.449724],
-          [-2.617376, 51.449884]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616389, 51.449883],
-          [-2.616341, 51.449812],
-          [-2.616293, 51.449644],
-          [-2.616245, 51.449603]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617202, 51.449118],
-          [-2.617272, 51.449291],
-          [-2.617215, 51.449502]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.620886, 51.450253],
-          [-2.620977, 51.450078]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607428, 51.448558],
-          [-2.607627, 51.448339],
-          [-2.607851, 51.448002]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605646, 51.454727],
-          [-2.605622, 51.454655],
-          [-2.605637, 51.45459],
-          [-2.605798, 51.45449],
-          [-2.605957, 51.454427],
-          [-2.606043, 51.454428],
-          [-2.606186, 51.454447],
-          [-2.606374, 51.45448],
-          [-2.60656, 51.454528],
-          [-2.606663, 51.454571],
-          [-2.606897, 51.454724],
-          [-2.607215, 51.454976],
-          [-2.607228, 51.454995],
-          [-2.607223, 51.455049],
-          [-2.607051, 51.455704],
-          [-2.60698, 51.456053]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.604755, 51.455357],
-          [-2.604438, 51.455092]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.604874, 51.45527],
-          [-2.604755, 51.455357]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601895, 51.451773],
-          [-2.602377, 51.451702]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602417, 51.452855],
-          [-2.603006, 51.452623],
-          [-2.603331, 51.452479],
-          [-2.603418, 51.452431],
-          [-2.603494, 51.452367],
-          [-2.604124, 51.451689],
-          [-2.604357, 51.451474],
-          [-2.604348, 51.451404],
-          [-2.604329, 51.451366]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.609343, 51.447535],
-          [-2.611738, 51.44708]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614786, 51.450157],
-          [-2.615673, 51.450194]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614539, 51.449322],
-          [-2.614409, 51.449608]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614359, 51.449214],
-          [-2.614856, 51.449313],
-          [-2.615027, 51.449316],
-          [-2.615801, 51.449097]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615581, 51.448812],
-          [-2.616119, 51.449525],
-          [-2.616245, 51.449603]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61726, 51.448991],
-          [-2.617409, 51.448879],
-          [-2.617504, 51.448857],
-          [-2.618041, 51.448877]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617006, 51.448442],
-          [-2.617005, 51.448601],
-          [-2.61696, 51.448685],
-          [-2.616946, 51.448864],
-          [-2.616994, 51.448928],
-          [-2.617091, 51.448982]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596723, 51.447718],
-          [-2.595281, 51.447682]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614466, 51.449235],
-          [-2.6145, 51.449155]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615668, 51.448786],
-          [-2.615468, 51.448846]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602377, 51.451702],
-          [-2.604329, 51.451366]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603006, 51.452623],
-          [-2.6031, 51.452654],
-          [-2.603233, 51.452682],
-          [-2.603353, 51.452699],
-          [-2.60346, 51.452702],
-          [-2.603677, 51.452667],
-          [-2.603908, 51.452604],
-          [-2.604102, 51.452539],
-          [-2.604288, 51.452455],
-          [-2.605436, 51.451733],
-          [-2.605467, 51.451697]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.6091, 51.453328],
-          [-2.609404, 51.453915],
-          [-2.609429, 51.453921],
-          [-2.610021, 51.453915]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607489, 51.450708],
-          [-2.607202, 51.450762],
-          [-2.607053, 51.450812]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.604329, 51.451366],
-          [-2.60493, 51.45128],
-          [-2.605775, 51.451027],
-          [-2.607053, 51.450812]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612209, 51.447978],
-          [-2.612283, 51.447955]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608014, 51.455978],
-          [-2.607899, 51.455866]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607053, 51.450812],
-          [-2.60739, 51.450835],
-          [-2.607471, 51.450849],
-          [-2.607579, 51.450889]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601227, 51.453383],
-          [-2.60184, 51.453048],
-          [-2.602035, 51.452953],
-          [-2.602298, 51.452892]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601598, 51.453596],
-          [-2.601903, 51.453448],
-          [-2.602031, 51.453361],
-          [-2.60227, 51.45311],
-          [-2.60232, 51.453039],
-          [-2.602351, 51.452971],
-          [-2.602358, 51.452917]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603934, 51.448586],
-          [-2.6035, 51.44908],
-          [-2.603435, 51.4491],
-          [-2.603369, 51.449101],
-          [-2.603296, 51.449084]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601096, 51.449253],
-          [-2.601513, 51.449245],
-          [-2.602252, 51.449186]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603614, 51.450612],
-          [-2.603692, 51.450513],
-          [-2.60371, 51.450466],
-          [-2.603636, 51.450038],
-          [-2.603635, 51.449896],
-          [-2.603553, 51.449502],
-          [-2.603514, 51.449388],
-          [-2.603386, 51.449247],
-          [-2.603235, 51.449151],
-          [-2.603129, 51.449114],
-          [-2.602982, 51.449095],
-          [-2.602809, 51.449092],
-          [-2.602655, 51.449099]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602632, 51.449188],
-          [-2.602881, 51.44918],
-          [-2.603069, 51.449203],
-          [-2.60316, 51.449234],
-          [-2.603247, 51.449276],
-          [-2.603322, 51.449329],
-          [-2.603404, 51.449419],
-          [-2.603456, 51.449599],
-          [-2.603581, 51.450269],
-          [-2.603582, 51.450409],
-          [-2.603614, 51.450612]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601076, 51.449955],
-          [-2.603345, 51.449775],
-          [-2.603436, 51.449734]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602442, 51.44813],
-          [-2.602412, 51.448177],
-          [-2.60255, 51.448928]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599207, 51.446767],
-          [-2.599362, 51.446323]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60219, 51.45323],
-          [-2.602448, 51.453315]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602435, 51.449132],
-          [-2.602252, 51.449186]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602252, 51.449186],
-          [-2.602458, 51.449178]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602582, 51.449064],
-          [-2.60255, 51.448928]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60255, 51.448928],
-          [-2.602496, 51.44907]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617929, 51.448751],
-          [-2.617919, 51.448874]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615581, 51.446332],
-          [-2.615582, 51.446392],
-          [-2.615676, 51.446468]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599811, 51.449843],
-          [-2.599815, 51.449865]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599207, 51.446767],
-          [-2.596959, 51.447176],
-          [-2.596709, 51.447207]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.598203, 51.446954],
-          [-2.597999, 51.446123]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.597255, 51.446266],
-          [-2.59738, 51.446752],
-          [-2.597453, 51.446745],
-          [-2.597537, 51.447071]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.604325, 51.44714],
-          [-2.604608, 51.44704],
-          [-2.604643, 51.446934]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599389, 51.447092],
-          [-2.599208, 51.446801],
-          [-2.599207, 51.446767]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603296, 51.449084],
-          [-2.603262, 51.449121]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603644, 51.448499],
-          [-2.603199, 51.448977],
-          [-2.6032, 51.449013],
-          [-2.603235, 51.449054],
-          [-2.603296, 51.449084]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "properties": { "kind": "tertiary", "district": "hotwells" },
       "geometry": {
         "type": "LineString",
@@ -3654,31 +3612,10 @@
           [-2.607692, 51.446964],
           [-2.606885, 51.446993],
           [-2.605321, 51.446982],
-          [-2.604464, 51.446915],
+          [-2.604643, 51.446934],
           [-2.602994, 51.44675],
           [-2.601746, 51.446565],
-          [-2.600021, 51.446288],
-          [-2.598946, 51.446132],
-          [-2.598586, 51.446099],
-          [-2.598169, 51.446103],
-          [-2.597835, 51.446143],
-          [-2.5975, 51.446201],
-          [-2.597072, 51.446321],
-          [-2.596589, 51.446544]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596721, 51.448502],
-          [-2.596726, 51.4474],
-          [-2.596709, 51.447207],
-          [-2.596615, 51.44689],
-          [-2.596589, 51.446544]
+          [-2.600021, 51.446288]
         ]
       }
     },
@@ -3760,48 +3697,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.596257, 51.446505],
-          [-2.596412, 51.446568],
-          [-2.596589, 51.446544]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.620218, 51.446849],
           [-2.620173, 51.447029],
           [-2.62011, 51.447067],
           [-2.619911, 51.447118]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596589, 51.446544],
-          [-2.596453, 51.446452]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601274, 51.447006],
-          [-2.600671, 51.446947],
-          [-2.600421, 51.446951],
-          [-2.60008, 51.446983],
-          [-2.599651, 51.447077],
-          [-2.598794, 51.447375]
         ]
       }
     },
@@ -3838,6 +3737,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.601274, 51.447006],
+          [-2.600671, 51.446947],
+          [-2.600421, 51.446951],
+          [-2.60008, 51.446983],
+          [-2.600459, 51.44692],
+          [-2.600719, 51.446917],
+          [-2.601861, 51.447006],
+          [-2.602804, 51.447124],
+          [-2.603164, 51.447182]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "hotwells" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.606358, 51.448369],
           [-2.606148, 51.448277],
           [-2.604776, 51.4478],
@@ -3855,21 +3772,6 @@
           [-2.601299, 51.446966],
           [-2.602965, 51.447198],
           [-2.603153, 51.447212]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.603164, 51.447182],
-          [-2.602804, 51.447124],
-          [-2.601861, 51.447006],
-          [-2.600719, 51.446917],
-          [-2.600459, 51.44692],
-          [-2.60008, 51.446983]
         ]
       }
     },
@@ -3904,43 +3806,12 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.597104, 51.448168],
-          [-2.599171, 51.447466],
-          [-2.599472, 51.447394]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.597081, 51.448267],
-          [-2.599387, 51.447477],
-          [-2.59979, 51.447291]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.59667, 51.448281],
-          [-2.59708, 51.448219]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599476, 51.447441],
-          [-2.600364, 51.447143]
+          [-2.600201, 51.447193],
+          [-2.60053, 51.447111],
+          [-2.600952, 51.447064],
+          [-2.601123, 51.447061],
+          [-2.601751, 51.447099],
+          [-2.60221, 51.44715]
         ]
       }
     },
@@ -3972,24 +3843,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.60221, 51.44715],
-          [-2.601751, 51.447099],
-          [-2.601123, 51.447061],
-          [-2.60071, 51.447086],
-          [-2.600364, 51.447143],
-          [-2.599928, 51.447247],
-          [-2.599584, 51.447357],
-          [-2.596916, 51.448277],
-          [-2.596675, 51.448327]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.602231, 51.447119],
           [-2.601295, 51.447008]
         ]
@@ -4012,22 +3865,12 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.607888, 51.451179],
-          [-2.607934, 51.451005],
-          [-2.608011, 51.450868]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
+          [-2.609809, 51.454901],
+          [-2.609588, 51.455208],
           [-2.609374, 51.455431],
           [-2.60892, 51.455691],
           [-2.608582, 51.455824],
-          [-2.608154, 51.455951],
+          [-2.608199, 51.455941],
           [-2.607792, 51.456022],
           [-2.60755, 51.456047]
         ]
@@ -4039,8 +3882,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.609541, 51.455264],
-          [-2.609493, 51.455316]
+          [-2.608308, 51.451878],
+          [-2.608281, 51.451854]
         ]
       }
     },
@@ -4050,12 +3893,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.60993, 51.453131],
+          [-2.609858, 51.452964],
           [-2.609661, 51.452751],
-          [-2.608711, 51.452187],
-          [-2.608458, 51.452008],
-          [-2.608281, 51.451854],
-          [-2.60813, 51.45164],
-          [-2.607888, 51.451179]
+          [-2.608711, 51.452187]
         ]
       }
     },
@@ -4065,19 +3906,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.609896, 51.453045],
-          [-2.609785, 51.452867]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610043, 51.454115],
-          [-2.60993, 51.453131]
+          [-2.610044, 51.454248],
+          [-2.610043, 51.454115]
         ]
       }
     },
@@ -4090,20 +3920,8 @@
           [-2.607635, 51.450917],
           [-2.607745, 51.45102],
           [-2.607805, 51.45112],
-          [-2.607888, 51.451179]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "hotwells" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60805, 51.456214],
-          [-2.608145, 51.456091],
-          [-2.608246, 51.456024],
-          [-2.608992, 51.455747]
+          [-2.607888, 51.451179],
+          [-2.607941, 51.451283]
         ]
       }
     }

@@ -3,12 +3,625 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "kind": "local", "district": "vokzal" },
+      "properties": { "kind": "secondary", "district": "vokzal" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.582466, 53.213231],
-          [63.586937, 53.212503]
+          [63.616718, 53.226291],
+          [63.617266, 53.22668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615474, 53.225387],
+          [63.615806, 53.225629]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615319, 53.225275],
+          [63.613773, 53.226137],
+          [63.611882, 53.227098],
+          [63.611273, 53.227427],
+          [63.609067, 53.226186],
+          [63.610206, 53.225629],
+          [63.613474, 53.223977],
+          [63.613609, 53.224069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.609604, 53.221274],
+          [63.609703, 53.221344]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607602, 53.21991],
+          [63.608478, 53.220512]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60717, 53.219629],
+          [63.607567, 53.219886]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607616, 53.216573],
+          [63.607808, 53.216699]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.604882, 53.214707],
+          [63.605506, 53.215134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.601889, 53.213201],
+          [63.602949, 53.213755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.59994, 53.212201],
+          [63.601022, 53.212749]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654747, 53.233733],
+          [63.655634, 53.234156]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651261, 53.232072],
+          [63.652547, 53.232738]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.649339, 53.230869],
+          [63.650627, 53.231679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647972, 53.229803],
+          [63.648704, 53.230412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.657426, 53.233117],
+          [63.658537, 53.232262],
+          [63.658963, 53.232249],
+          [63.659561, 53.232312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.656745, 53.233609],
+          [63.657231, 53.233244]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.666929, 53.236299],
+          [63.668727, 53.23736],
+          [63.66938, 53.237782],
+          [63.669479, 53.237863]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.664248, 53.23471],
+          [63.665605, 53.235517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.660557, 53.232608],
+          [63.663775, 53.234427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.659948, 53.232377],
+          [63.660292, 53.232486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.586732, 53.209486],
+          [63.590925, 53.208422],
+          [63.591701, 53.208233],
+          [63.591835, 53.208232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597118, 53.211117],
+          [63.597191, 53.211185]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.597099, 53.210915],
+          [63.597081, 53.210959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.592522, 53.208248],
+          [63.593442, 53.208403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.608025, 53.217245],
+          [63.607743, 53.217487]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667373, 53.23639],
+          [63.667102, 53.23623],
+          [63.666963, 53.236319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623638, 53.233167],
+          [63.624155, 53.232878],
+          [63.627738, 53.231187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6577, 53.244924],
+          [63.656708, 53.245255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.660168, 53.244101],
+          [63.659346, 53.244375]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.663082, 53.243128],
+          [63.662039, 53.243476]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.653003, 53.247371],
+          [63.653861, 53.246761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647779, 53.250942],
+          [63.651217, 53.24862]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.619143, 53.236087],
+          [63.620429, 53.235298],
+          [63.62255, 53.233949],
+          [63.623182, 53.233573],
+          [63.623441, 53.233379],
+          [63.623638, 53.233167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.623638, 53.233167],
+          [63.623291, 53.233283],
+          [63.623002, 53.233454],
+          [63.620529, 53.235033],
+          [63.617488, 53.236933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.669424, 53.238367],
+          [63.66925, 53.23852],
+          [63.66947, 53.238403]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.636262, 53.227176],
+          [63.638509, 53.226132],
+          [63.641881, 53.224606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.630885, 53.229702],
+          [63.63557, 53.227493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.628858, 53.230658],
+          [63.630706, 53.229786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.606245, 53.219133],
+          [63.6054, 53.220081],
+          [63.605143, 53.220412],
+          [63.603406, 53.222933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.60713, 53.227342],
+          [63.607779, 53.226903],
+          [63.608456, 53.226484],
+          [63.609067, 53.226186],
+          [63.607869, 53.225483],
+          [63.603406, 53.222933]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.651261, 53.232072],
+          [63.65104, 53.232281],
+          [63.64336, 53.237787],
+          [63.641268, 53.236997],
+          [63.640591, 53.23662],
+          [63.638623, 53.235158],
+          [63.637195, 53.234073],
+          [63.635808, 53.233087],
+          [63.635264, 53.232752],
+          [63.632961, 53.231167],
+          [63.630885, 53.229702]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615668, 53.227517],
+          [63.614041, 53.228356],
+          [63.613412, 53.22873],
+          [63.612607, 53.229271],
+          [63.612507, 53.229322],
+          [63.612382, 53.229356],
+          [63.612202, 53.229331],
+          [63.612013, 53.229275],
+          [63.611678, 53.229143],
+          [63.611208, 53.228984],
+          [63.610806, 53.228868],
+          [63.610492, 53.228789],
+          [63.609142, 53.228505],
+          [63.608442, 53.228215],
+          [63.607965, 53.227968],
+          [63.607652, 53.227765],
+          [63.607513, 53.227615],
+          [63.607375, 53.227496],
+          [63.60713, 53.227342]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.611273, 53.227427],
+          [63.613412, 53.22873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.6084, 53.225791],
+          [63.606645, 53.226897],
+          [63.60691, 53.227166],
+          [63.60713, 53.227342]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647059, 53.231173],
+          [63.641957, 53.226984],
+          [63.640107, 53.225414]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.603406, 53.222933],
+          [63.602437, 53.224036],
+          [63.602249, 53.224045]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.616717, 53.226952],
+          [63.615783, 53.227405],
+          [63.615737, 53.227436],
+          [63.615668, 53.227517]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.61601, 53.227398],
+          [63.616443, 53.22719]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.615668, 53.227517],
+          [63.613773, 53.226137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.620712, 53.231133],
+          [63.619501, 53.230277],
+          [63.618204, 53.230967],
+          [63.617664, 53.231211]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.617188, 53.228616],
+          [63.616382, 53.228028]
         ]
       }
     },
@@ -517,8 +1130,7 @@
           [63.656582, 53.239292],
           [63.658338, 53.238059],
           [63.662193, 53.235461],
-          [63.663775, 53.234427],
-          [63.663858, 53.234303]
+          [63.663775, 53.234427]
         ]
       }
     },
@@ -597,19 +1209,6 @@
           [63.658066, 53.234452],
           [63.657402, 53.235011],
           [63.655869, 53.234268]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.583303, 53.213095],
-          [63.583193, 53.213063],
-          [63.583131, 53.213024],
-          [63.583091, 53.212949]
         ]
       }
     },
@@ -705,484 +1304,6 @@
           [63.643709, 53.226148],
           [63.64029, 53.227779],
           [63.638435, 53.228612]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.608025, 53.217245],
-          [63.607743, 53.217487],
-          [63.607447, 53.217788],
-          [63.606245, 53.219133],
-          [63.60717, 53.219629],
-          [63.609072, 53.220901],
-          [63.614824, 53.224916],
-          [63.617225, 53.226651]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.615319, 53.225275],
-          [63.613773, 53.226137],
-          [63.611882, 53.227098],
-          [63.611273, 53.227427],
-          [63.609067, 53.226186],
-          [63.610206, 53.225629],
-          [63.613474, 53.223977]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.582839, 53.213087],
-          [63.582466, 53.213231],
-          [63.582194, 53.213294]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.597099, 53.210915],
-          [63.597065, 53.21073],
-          [63.597013, 53.210632],
-          [63.596886, 53.2105],
-          [63.594941, 53.209332]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.604007, 53.214291],
-          [63.604882, 53.214707],
-          [63.607179, 53.216285],
-          [63.607808, 53.216699]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.600437, 53.212453],
-          [63.603317, 53.213936]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.597594, 53.211278],
-          [63.598463, 53.211466],
-          [63.59994, 53.212201]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.653827, 53.233317],
-          [63.654747, 53.233733],
-          [63.655869, 53.234268],
-          [63.656745, 53.233609]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.650627, 53.231679],
-          [63.651261, 53.232072]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.647262, 53.229194],
-          [63.648744, 53.230445],
-          [63.649339, 53.230869]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.641881, 53.224606],
-          [63.646378, 53.228416]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.657426, 53.233117],
-          [63.658537, 53.232262]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.660292, 53.232486],
-          [63.660557, 53.232608],
-          [63.663775, 53.234427],
-          [63.666498, 53.236049],
-          [63.668105, 53.236982],
-          [63.66938, 53.237782],
-          [63.669568, 53.237961],
-          [63.669639, 53.238098]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.59724, 53.210788],
-          [63.597154, 53.210846],
-          [63.597081, 53.210959],
-          [63.59708, 53.21104],
-          [63.597118, 53.211117],
-          [63.597191, 53.211185],
-          [63.597293, 53.211237],
-          [63.597437, 53.211273],
-          [63.597594, 53.211278],
-          [63.597774, 53.211243]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.58533, 53.209908],
-          [63.585679, 53.209759],
-          [63.586732, 53.209486]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.666963, 53.236319],
-          [63.667102, 53.23623]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.623638, 53.233167],
-          [63.624155, 53.232878]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.669639, 53.238098],
-          [63.669567, 53.238221],
-          [63.66925, 53.23852]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.66925, 53.23852],
-          [63.66808, 53.239374],
-          [63.666153, 53.24071],
-          [63.665509, 53.241268],
-          [63.664382, 53.242198],
-          [63.663825, 53.242707],
-          [63.663547, 53.242901]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.619143, 53.236087],
-          [63.620429, 53.235298],
-          [63.62255, 53.233949],
-          [63.623182, 53.233573],
-          [63.623441, 53.233379],
-          [63.623638, 53.233167]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.623638, 53.233167],
-          [63.623291, 53.233283],
-          [63.623002, 53.233454],
-          [63.620529, 53.235033],
-          [63.617488, 53.236933]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.66925, 53.23852],
-          [63.66947, 53.238403]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.606245, 53.219133],
-          [63.6054, 53.220081],
-          [63.605143, 53.220412],
-          [63.603406, 53.222933]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.623638, 53.233167],
-          [63.622903, 53.232687],
-          [63.622435, 53.232361],
-          [63.621812, 53.231901],
-          [63.617864, 53.229115],
-          [63.615668, 53.227517]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.60713, 53.227342],
-          [63.607779, 53.226903],
-          [63.608456, 53.226484],
-          [63.609067, 53.226186],
-          [63.607869, 53.225483],
-          [63.603406, 53.222933]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.651261, 53.232072],
-          [63.65104, 53.232281],
-          [63.64336, 53.237787],
-          [63.641268, 53.236997],
-          [63.640591, 53.23662],
-          [63.638623, 53.235158],
-          [63.637195, 53.234073],
-          [63.635808, 53.233087],
-          [63.635264, 53.232752],
-          [63.632961, 53.231167],
-          [63.630885, 53.229702]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.615668, 53.227517],
-          [63.614041, 53.228356],
-          [63.613412, 53.22873],
-          [63.612607, 53.229271],
-          [63.612507, 53.229322],
-          [63.612382, 53.229356],
-          [63.612202, 53.229331],
-          [63.612013, 53.229275],
-          [63.611678, 53.229143],
-          [63.611208, 53.228984],
-          [63.610806, 53.228868],
-          [63.610492, 53.228789],
-          [63.609142, 53.228505],
-          [63.608442, 53.228215],
-          [63.607965, 53.227968],
-          [63.607652, 53.227765],
-          [63.607513, 53.227615],
-          [63.607375, 53.227496],
-          [63.60713, 53.227342]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.611273, 53.227427],
-          [63.613412, 53.22873]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.6084, 53.225791],
-          [63.606645, 53.226897],
-          [63.60691, 53.227166],
-          [63.60713, 53.227342]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.647059, 53.231173],
-          [63.641957, 53.226984],
-          [63.640107, 53.225414]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.603406, 53.222933],
-          [63.602437, 53.224036],
-          [63.602249, 53.224045]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.616717, 53.226952],
-          [63.615783, 53.227405],
-          [63.615737, 53.227436],
-          [63.615668, 53.227517]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.615668, 53.227517],
-          [63.615843, 53.227478],
-          [63.616239, 53.227289]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.615668, 53.227517],
-          [63.613773, 53.226137]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.617664, 53.231211],
-          [63.618204, 53.230967],
-          [63.619501, 53.230277]
         ]
       }
     },
@@ -1453,76 +1574,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.607605, 53.219859],
-          [63.607567, 53.219886]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.607848, 53.217562],
-          [63.607743, 53.217487],
-          [63.60751, 53.217374],
-          [63.60714, 53.21734],
-          [63.606947, 53.217214],
-          [63.60618, 53.217633]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.609757, 53.221332],
-          [63.609703, 53.221344]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.612468, 53.22321],
-          [63.612415, 53.223238]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.611082, 53.222247],
-          [63.611033, 53.222272]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.611627, 53.222626],
-          [63.611577, 53.222652]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.60955, 53.226837],
           [63.610323, 53.227269]
         ]
@@ -1757,7 +1808,7 @@
         "type": "LineString",
         "coordinates": [
           [63.611519, 53.223088],
-          [63.61196, 53.222857]
+          [63.611907, 53.222883]
         ]
       }
     },
@@ -2148,6 +2199,25 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.600153, 53.21437],
+          [63.600452, 53.214291],
+          [63.602316, 53.21475],
+          [63.601317, 53.216299],
+          [63.601284, 53.216438],
+          [63.599494, 53.219247],
+          [63.599343, 53.219293],
+          [63.597613, 53.218908],
+          [63.597375, 53.218698],
+          [63.600153, 53.21437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [63.601584, 53.214569],
           [63.601682, 53.214432],
           [63.602486, 53.214188]
@@ -2329,6 +2399,20 @@
           [63.599562, 53.21281],
           [63.600407, 53.21324],
           [63.60107, 53.212774]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.607743, 53.217487],
+          [63.60751, 53.217374],
+          [63.60714, 53.21734],
+          [63.606947, 53.217214],
+          [63.60618, 53.217633]
         ]
       }
     },
@@ -2543,6 +2627,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.591969, 53.208208],
           [63.592082, 53.208397],
           [63.592779, 53.20857],
           [63.59306, 53.208624],
@@ -2604,18 +2689,6 @@
           [63.592241, 53.218315],
           [63.592191, 53.218362],
           [63.591741, 53.218527]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.582029, 53.213679],
-          [63.582393, 53.21362],
-          [63.582466, 53.213231]
         ]
       }
     },
@@ -2766,7 +2839,7 @@
           [63.627009, 53.23382],
           [63.627054, 53.233694],
           [63.627023, 53.233628],
-          [63.625378, 53.232355]
+          [63.625334, 53.232322]
         ]
       }
     },
@@ -4659,10 +4732,54 @@
           [63.64257, 53.247057],
           [63.642828, 53.247043],
           [63.643422, 53.247099],
-          [63.643882, 53.247121],
-          [63.64382, 53.247466],
-          [63.643858, 53.247697],
-          [63.643992, 53.248038]
+          [63.648631, 53.247347],
+          [63.652735, 53.247562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.65315, 53.246409],
+          [63.653861, 53.246761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.64937, 53.248815],
+          [63.648502, 53.248747],
+          [63.648635, 53.247638],
+          [63.648631, 53.247347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.649252, 53.247756],
+          [63.649306, 53.247382]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654731, 53.245715],
+          [63.655112, 53.245874]
         ]
       }
     },
@@ -4687,12 +4804,92 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.653241, 53.245698],
+          [63.654144, 53.245794],
+          [63.654802, 53.246092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.646662, 53.248396],
+          [63.646609, 53.249381],
+          [63.648371, 53.249484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654178, 53.246312],
+          [63.654028, 53.246419],
+          [63.65421, 53.246513]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647387, 53.24656],
+          [63.651279, 53.246735],
+          [63.651664, 53.246822],
+          [63.652574, 53.247251],
+          [63.652866, 53.247299],
+          [63.653003, 53.247371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.643612, 53.249287],
+          [63.643672, 53.24964],
+          [63.643844, 53.249779],
+          [63.646042, 53.250089],
+          [63.646421, 53.249994],
+          [63.647664, 53.250037]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [63.654994, 53.243646],
           [63.655608, 53.244011],
           [63.654916, 53.244461],
           [63.655128, 53.244783],
           [63.655404, 53.2451],
           [63.655825, 53.245547]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647182, 53.250415],
+          [63.648549, 53.249344],
+          [63.64937, 53.248815],
+          [63.65087, 53.247825],
+          [63.651241, 53.247484]
         ]
       }
     },
@@ -4812,17 +5009,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.584937, 53.212117],
-          [63.583934, 53.21196]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.639639, 53.237955],
           [63.639437, 53.238675],
           [63.638355, 53.238584],
@@ -4838,17 +5024,6 @@
         "coordinates": [
           [63.60156, 53.224292],
           [63.600853, 53.223435]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.585563, 53.213643],
-          [63.585644, 53.212716]
         ]
       }
     },
@@ -5811,6 +5986,28 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.653876, 53.235559],
+          [63.653881, 53.235535],
+          [63.653865, 53.235512],
+          [63.653832, 53.235498],
+          [63.653792, 53.235495],
+          [63.653754, 53.235504],
+          [63.653729, 53.235524],
+          [63.653724, 53.235548],
+          [63.65374, 53.235571],
+          [63.653773, 53.235585],
+          [63.653814, 53.235588],
+          [63.653852, 53.235579],
+          [63.653876, 53.235559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [63.653154, 53.233885],
           [63.653546, 53.233564],
           [63.653827, 53.233317]
@@ -5913,6 +6110,22 @@
           [63.651942, 53.234281],
           [63.651277, 53.233995],
           [63.649685, 53.233257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.644223, 53.248516],
+          [63.644201, 53.248339],
+          [63.644148, 53.248198],
+          [63.643992, 53.248038],
+          [63.643858, 53.247697],
+          [63.64382, 53.247466],
+          [63.643882, 53.247121]
         ]
       }
     },
@@ -6066,6 +6279,32 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.648493, 53.246876],
+          [63.647457, 53.246837]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.647677, 53.246633],
+          [63.64765, 53.246731],
+          [63.647602, 53.246779],
+          [63.647457, 53.246837],
+          [63.647412, 53.24689],
+          [63.647328, 53.247285]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [63.639715, 53.235965],
           [63.639566, 53.236026],
           [63.639529, 53.236078],
@@ -6089,22 +6328,6 @@
           [63.63874, 53.236583],
           [63.638644, 53.236953],
           [63.638567, 53.237849]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.582062, 53.214668],
-          [63.581922, 53.214439],
-          [63.581945, 53.214371],
-          [63.582441, 53.214185],
-          [63.583704, 53.213479],
-          [63.583731, 53.213428],
-          [63.583596, 53.213048]
         ]
       }
     },
@@ -6167,32 +6390,6 @@
           [63.638311, 53.229569],
           [63.638339, 53.229538],
           [63.638637, 53.229435]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.581232, 53.216965],
-          [63.581883, 53.217108],
-          [63.581934, 53.217123],
-          [63.581957, 53.21714],
-          [63.581969, 53.217157],
-          [63.581966, 53.217241],
-          [63.58195, 53.217268],
-          [63.581923, 53.217297],
-          [63.581848, 53.217307],
-          [63.581263, 53.217206],
-          [63.5812, 53.217179],
-          [63.581168, 53.217151],
-          [63.581161, 53.217116],
-          [63.581286, 53.216851],
-          [63.581287, 53.216814],
-          [63.581271, 53.216782],
-          [63.580875, 53.216472]
         ]
       }
     },
@@ -6807,7 +7004,7 @@
           [63.629387, 53.230626],
           [63.629259, 53.230654],
           [63.629181, 53.230656],
-          [63.629161, 53.230646]
+          [63.629025, 53.23058]
         ]
       }
     },
@@ -6967,17 +7164,6 @@
         "coordinates": [
           [63.635072, 53.234335],
           [63.635221, 53.234256]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.581419, 53.215882],
-          [63.580662, 53.21592]
         ]
       }
     },
@@ -7161,25 +7347,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.585127, 53.215033],
-          [63.584766, 53.21509],
-          [63.584526, 53.215086],
-          [63.584352, 53.215032],
-          [63.58424, 53.214961],
-          [63.584153, 53.214887],
-          [63.583968, 53.214656],
-          [63.583948, 53.214503],
-          [63.58398, 53.214378],
-          [63.583727, 53.213451]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.620494, 53.231603],
           [63.620614, 53.231613],
           [63.620697, 53.231608],
@@ -7233,6 +7400,12 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.590016, 53.21827],
+          [63.58935, 53.217797],
+          [63.588934, 53.217456],
+          [63.588565, 53.217041],
+          [63.588316, 53.216659],
+          [63.588133, 53.216302],
           [63.587996, 53.215974],
           [63.587693, 53.214918],
           [63.587499, 53.21383],
@@ -7247,8 +7420,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.627442, 53.243347],
-          [63.625542, 53.241649]
+          [63.625542, 53.241649],
+          [63.623071, 53.239518],
+          [63.622022, 53.238636],
+          [63.621213, 53.237915],
+          [63.619278, 53.236346]
         ]
       }
     },
@@ -7258,9 +7434,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.592972, 53.219942],
-          [63.590594, 53.218614],
-          [63.590016, 53.21827]
+          [63.591318, 53.219018],
+          [63.590594, 53.218614]
         ]
       }
     },
@@ -7323,7 +7498,32 @@
           [63.617718, 53.234526],
           [63.617398, 53.234434],
           [63.617111, 53.234297],
-          [63.616405, 53.23388]
+          [63.616692, 53.23406]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.620037, 53.237633],
+          [63.619492, 53.237321],
+          [63.618648, 53.236748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.625815, 53.242149],
+          [63.622702, 53.239455],
+          [63.621814, 53.238707],
+          [63.620806, 53.238047]
         ]
       }
     },
@@ -7359,9 +7559,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.604068, 53.226243],
-          [63.604874, 53.226629],
-          [63.605648, 53.227055],
           [63.612886, 53.231153],
           [63.612372, 53.230787],
           [63.609026, 53.228907],
@@ -7375,11 +7572,25 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.615948, 53.233388],
+          [63.625968, 53.241449],
+          [63.625046, 53.240833],
+          [63.624284, 53.24028],
+          [63.622814, 53.239111],
+          [63.617712, 53.234979],
+          [63.617021, 53.234312],
+          [63.616407, 53.233831],
           [63.615347, 53.232781],
-          [63.615107, 53.232575],
+          [63.614746, 53.232285],
           [63.614461, 53.232079],
-          [63.614073, 53.231839]
+          [63.614073, 53.231839],
+          [63.611991, 53.23064],
+          [63.605648, 53.227055],
+          [63.604874, 53.226629],
+          [63.604068, 53.226243],
+          [63.602147, 53.225172],
+          [63.59894, 53.223338],
+          [63.59608, 53.221732],
+          [63.592972, 53.219942]
         ]
       }
     },
@@ -7400,20 +7611,6 @@
           [63.599627, 53.222217],
           [63.600194, 53.222622],
           [63.600712, 53.223057]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.615948, 53.233388],
-          [63.614804, 53.23241],
-          [63.614275, 53.232036],
-          [63.613923, 53.231825],
-          [63.59608, 53.221732]
         ]
       }
     },
@@ -7884,6 +8081,21 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.615213, 53.232758],
+          [63.614804, 53.23241],
+          [63.614553, 53.232225],
+          [63.614275, 53.232036],
+          [63.613923, 53.231825],
+          [63.606158, 53.227441]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "vokzal" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [63.613906, 53.23168],
           [63.614138, 53.2318],
           [63.614539, 53.232079],
@@ -7898,33 +8110,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.616407, 53.233831],
-          [63.614869, 53.232591]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.586876, 53.211179],
-          [63.586674, 53.210634]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.586467, 53.209638],
           [63.586674, 53.210634],
-          [63.587391, 53.213731],
-          [63.587452, 53.214293],
-          [63.587391, 53.215631]
+          [63.586467, 53.209638]
         ]
       }
     },
@@ -7934,49 +8122,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.599215, 53.223578],
-          [63.601048, 53.224614]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.618745, 53.235819],
-          [63.617617, 53.2349],
-          [63.617021, 53.234312],
-          [63.616407, 53.233831],
-          [63.615948, 53.233388]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.622814, 53.239111],
-          [63.622054, 53.238496]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
+          [63.644922, 53.250252],
           [63.642317, 53.249691],
           [63.640001, 53.248932],
           [63.638222, 53.248165],
-          [63.627139, 53.242134],
-          [63.625968, 53.241449],
-          [63.625046, 53.240833],
-          [63.624284, 53.24028]
+          [63.627139, 53.242134]
         ]
       }
     },
@@ -7997,40 +8147,6 @@
           [63.649883, 53.238996],
           [63.650131, 53.239209],
           [63.650706, 53.239593]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.62618, 53.242824],
-          [63.626077, 53.242505]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.615213, 53.232758],
-          [63.615056, 53.232634],
-          [63.614686, 53.232397]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "vokzal" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.604432, 53.226591],
-          [63.603038, 53.225666]
         ]
       }
     },

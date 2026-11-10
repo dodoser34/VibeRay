@@ -30,10 +30,6 @@ const BASE_SCORE = {
   ksk: 0.2,
   zelenstroy: 0.7,
   'uzkaya-koleya': -0.9,
-  tobyl: 0.5,
-  zarechnoe: 0.1,
-  michurinskoe: -0.1,
-  altynsarino: 0.3,
 };
 
 // Своя оценка у районов Костаная; районам других городов она выводится из slug (стабильно между

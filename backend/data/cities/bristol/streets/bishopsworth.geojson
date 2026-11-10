@@ -3,556 +3,6 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.611789, 51.43152],
-          [-2.611934, 51.43154],
-          [-2.611978, 51.431578],
-          [-2.611984, 51.431627],
-          [-2.61195, 51.431721],
-          [-2.612355, 51.43123]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60737, 51.43202],
-          [-2.606829, 51.432075],
-          [-2.606459, 51.432131],
-          [-2.606307, 51.432173]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60737, 51.43202],
-          [-2.606879, 51.43219],
-          [-2.60677, 51.432254],
-          [-2.606708, 51.432355],
-          [-2.606732, 51.43253]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612355, 51.43123],
-          [-2.613259, 51.430053],
-          [-2.613567, 51.429561],
-          [-2.613738, 51.429247],
-          [-2.613948, 51.429067],
-          [-2.614089, 51.428969],
-          [-2.615281, 51.428265],
-          [-2.617423, 51.426966],
-          [-2.619251, 51.426031],
-          [-2.623757, 51.423906],
-          [-2.62528, 51.423216],
-          [-2.626691, 51.42261],
-          [-2.628206, 51.421934],
-          [-2.628513, 51.421813],
-          [-2.628742, 51.421752],
-          [-2.628912, 51.421729]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595228, 51.415085],
-          [-2.595434, 51.414722]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595287, 51.41527],
-          [-2.59523, 51.415144]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.596261, 51.416178],
-          [-2.595877, 51.415884]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606829, 51.432075],
-          [-2.606813, 51.432223]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605456, 51.413889],
-          [-2.60644, 51.413995],
-          [-2.60661, 51.414029],
-          [-2.606846, 51.414121]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.601401, 51.413896],
-          [-2.601473, 51.413984],
-          [-2.601522, 51.413918]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.597478, 51.413871],
-          [-2.599584, 51.413731],
-          [-2.600197, 51.413725],
-          [-2.601049, 51.413742]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.611789, 51.43152],
-          [-2.609509, 51.431776],
-          [-2.608357, 51.431924],
-          [-2.60737, 51.43202]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.6074, 51.414041],
-          [-2.607351, 51.414139],
-          [-2.607586, 51.414107],
-          [-2.607692, 51.414076]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.597478, 51.413871],
-          [-2.59785, 51.413792],
-          [-2.598602, 51.413668],
-          [-2.59955, 51.41358],
-          [-2.600287, 51.413537]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606171, 51.43206],
-          [-2.606123, 51.432023]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.597754, 51.417298],
-          [-2.596304, 51.416211]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612355, 51.43123],
-          [-2.61203, 51.431448],
-          [-2.611952, 51.431481],
-          [-2.611789, 51.43152]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595584, 51.414545],
-          [-2.595891, 51.414266],
-          [-2.596037, 51.414187],
-          [-2.597478, 51.413871]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595584, 51.414545],
-          [-2.595616, 51.414469],
-          [-2.595625, 51.414319]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595434, 51.414722],
-          [-2.595584, 51.414545]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595219, 51.414839],
-          [-2.595434, 51.414722]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.634581, 51.417699],
-          [-2.634764, 51.417834]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.62985, 51.414512],
-          [-2.63028, 51.414554],
-          [-2.631148, 51.414606],
-          [-2.631429, 51.414648]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.635155, 51.418492],
-          [-2.635115, 51.418658],
-          [-2.634987, 51.41889],
-          [-2.634696, 51.419229],
-          [-2.635199, 51.418917],
-          [-2.635428, 51.418829],
-          [-2.635583, 51.418797]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.634036, 51.419652],
-          [-2.634372, 51.419457]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.633019, 51.420163],
-          [-2.633374, 51.419984]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.629791, 51.421431],
-          [-2.629945, 51.421345],
-          [-2.631108, 51.421001],
-          [-2.631741, 51.420788],
-          [-2.632095, 51.420637],
-          [-2.632569, 51.420395]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.634764, 51.417834],
-          [-2.63505, 51.418154],
-          [-2.635156, 51.418426]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.635155, 51.418492],
-          [-2.635195, 51.418583],
-          [-2.635275, 51.418675],
-          [-2.635396, 51.418744],
-          [-2.635583, 51.418797]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.637393, 51.419802],
-          [-2.637278, 51.419701]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.6293, 51.421659],
-          [-2.628912, 51.421729]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628912, 51.421729],
-          [-2.629349, 51.421738]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.629585, 51.42164],
-          [-2.629791, 51.421431]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.629791, 51.421431],
-          [-2.629537, 51.421597]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.635156, 51.418426],
-          [-2.635155, 51.418492]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606846, 51.414121],
-          [-2.606908, 51.414172],
-          [-2.607065, 51.414219]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602864, 51.420377],
-          [-2.602742, 51.420286]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606836, 51.413968],
-          [-2.606815, 51.414027],
-          [-2.606846, 51.414121]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.634764, 51.417834],
-          [-2.635164, 51.41801],
-          [-2.635362, 51.418072],
-          [-2.635648, 51.418133],
-          [-2.635456, 51.418168],
-          [-2.635315, 51.418233],
-          [-2.635202, 51.418335],
-          [-2.635156, 51.418426]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.637037, 51.419447],
-          [-2.636352, 51.418659]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.636014, 51.418833],
-          [-2.636136, 51.418864]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.635746, 51.418797],
-          [-2.635952, 51.418822]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.635746, 51.418797],
-          [-2.635926, 51.418751],
-          [-2.636068, 51.418681],
-          [-2.636185, 51.418564],
-          [-2.636218, 51.418484]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.635583, 51.418797],
-          [-2.635746, 51.418797]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "properties": { "kind": "tertiary", "district": "bishopsworth" },
       "geometry": {
         "type": "LineString",
@@ -623,8 +73,13 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.614546, 51.414666],
-          [-2.614659, 51.414713]
+          [-2.612258, 51.413893],
+          [-2.612391, 51.413907],
+          [-2.61256, 51.413944],
+          [-2.612885, 51.414047],
+          [-2.614121, 51.414492],
+          [-2.615522, 51.415067],
+          [-2.615736, 51.415169]
         ]
       }
     },
@@ -654,17 +109,6 @@
           [-2.619796, 51.419287],
           [-2.618508, 51.418828],
           [-2.617375, 51.41844]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612885, 51.414047],
-          [-2.613647, 51.414319]
         ]
       }
     },
@@ -729,141 +173,6 @@
           [-2.613984, 51.428849],
           [-2.613945, 51.428817],
           [-2.613896, 51.428731]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610209, 51.427021],
-          [-2.612038, 51.427321],
-          [-2.613628, 51.427385]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612137, 51.427329],
-          [-2.611912, 51.427722],
-          [-2.611885, 51.427798],
-          [-2.611699, 51.429753],
-          [-2.611663, 51.429887],
-          [-2.61153, 51.430121],
-          [-2.611352, 51.43031],
-          [-2.611242, 51.430396],
-          [-2.611146, 51.430463],
-          [-2.610861, 51.430607],
-          [-2.61022, 51.43083],
-          [-2.610085, 51.430866],
-          [-2.609942, 51.430884],
-          [-2.609745, 51.430866],
-          [-2.609651, 51.430845],
-          [-2.609549, 51.430804],
-          [-2.609439, 51.430728],
-          [-2.609364, 51.430649],
-          [-2.609336, 51.43058],
-          [-2.609328, 51.430514],
-          [-2.609349, 51.430397],
-          [-2.609396, 51.430326],
-          [-2.609518, 51.430235],
-          [-2.609675, 51.430163],
-          [-2.61019, 51.429978],
-          [-2.610342, 51.429892],
-          [-2.61043, 51.42979],
-          [-2.610464, 51.429729],
-          [-2.610481, 51.429661],
-          [-2.610658, 51.427969],
-          [-2.610639, 51.427911],
-          [-2.610614, 51.427878],
-          [-2.610178, 51.427441],
-          [-2.610169, 51.427399],
-          [-2.610209, 51.427021]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610209, 51.427021],
-          [-2.610218, 51.426961],
-          [-2.610482, 51.426306],
-          [-2.610571, 51.426135],
-          [-2.611304, 51.424882],
-          [-2.611856, 51.42398],
-          [-2.611906, 51.423961],
-          [-2.61194, 51.423962],
-          [-2.612703, 51.424119],
-          [-2.61459, 51.424535]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612789, 51.42333],
-          [-2.612503, 51.424078]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612703, 51.424119],
-          [-2.612182, 51.424987],
-          [-2.612014, 51.42538],
-          [-2.611453, 51.426583],
-          [-2.611222, 51.427189]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61221, 51.427332],
-          [-2.612516, 51.426773],
-          [-2.613151, 51.425106],
-          [-2.61357, 51.424313]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613966, 51.423507],
-          [-2.613594, 51.424318]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613208, 51.423741],
-          [-2.612663, 51.423644]
         ]
       }
     },
@@ -1270,40 +579,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.609368, 51.421737],
-          [-2.60867, 51.422027],
-          [-2.60841, 51.422062],
-          [-2.608276, 51.422065]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60845, 51.423035],
-          [-2.608092, 51.423137],
-          [-2.607896, 51.423221],
-          [-2.607647, 51.423375],
-          [-2.607121, 51.423673],
-          [-2.606876, 51.423758],
-          [-2.606683, 51.423864],
-          [-2.606508, 51.424039],
-          [-2.60641, 51.42408],
-          [-2.60629, 51.424102],
-          [-2.605986, 51.424083],
-          [-2.605668, 51.424042]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.614952, 51.428047],
           [-2.615281, 51.428265]
         ]
@@ -1337,71 +612,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.604958, 51.425476],
-          [-2.605068, 51.425591],
-          [-2.605092, 51.425648],
-          [-2.605073, 51.425889],
-          [-2.605136, 51.42693],
-          [-2.605106, 51.427101],
-          [-2.604847, 51.427705],
-          [-2.604715, 51.428335],
-          [-2.604679, 51.42838],
-          [-2.604496, 51.428423],
-          [-2.604424, 51.428464],
-          [-2.604379, 51.428468]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.59682, 51.416102],
-          [-2.597409, 51.415692],
-          [-2.597671, 51.41554],
-          [-2.598268, 51.41514]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.605939, 51.430959],
-          [-2.606825, 51.431903]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.606752, 51.43182],
-          [-2.608364, 51.431272],
-          [-2.608403, 51.431253],
-          [-2.608434, 51.43119],
-          [-2.60842, 51.431147],
-          [-2.608046, 51.43069],
-          [-2.607982, 51.430655],
-          [-2.60792, 51.430643],
-          [-2.607851, 51.43064],
-          [-2.607774, 51.430659],
-          [-2.606161, 51.431201]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.615656, 51.41785],
           [-2.615669, 51.417931],
           [-2.615745, 51.41798],
@@ -1409,70 +619,6 @@
           [-2.615958, 51.418216],
           [-2.616089, 51.418461],
           [-2.616096, 51.418534]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610054, 51.419129],
-          [-2.610983, 51.419148],
-          [-2.611823, 51.41915],
-          [-2.612344, 51.41911],
-          [-2.612607, 51.419065],
-          [-2.613103, 51.418928],
-          [-2.613582, 51.418768],
-          [-2.614003, 51.419334],
-          [-2.61442, 51.419605]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.611434, 51.419868],
-          [-2.61238, 51.419691],
-          [-2.612486, 51.419647],
-          [-2.612593, 51.419574],
-          [-2.612663, 51.419506],
-          [-2.612753, 51.41938],
-          [-2.612752, 51.419308],
-          [-2.612607, 51.419065]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608846, 51.420608],
-          [-2.608894, 51.420612],
-          [-2.608955, 51.420605],
-          [-2.610241, 51.420232]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610054, 51.419129],
-          [-2.609089, 51.419642],
-          [-2.609044, 51.419677],
-          [-2.609011, 51.419723],
-          [-2.60876, 51.421087],
-          [-2.608792, 51.421147],
-          [-2.609039, 51.421456]
         ]
       }
     },
@@ -1606,7 +752,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.61704, 51.415612],
+          [-2.617832, 51.415695],
+          [-2.61751, 51.415615],
+          [-2.617344, 51.4156],
           [-2.616489, 51.41564],
           [-2.616354, 51.415688]
         ]
@@ -1618,9 +766,1188 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.617665, 51.415648],
-          [-2.61751, 51.415615],
-          [-2.617344, 51.4156]
+          [-2.618261, 51.415354],
+          [-2.617906, 51.415617],
+          [-2.617832, 51.415695],
+          [-2.617761, 51.415793],
+          [-2.617587, 51.416117],
+          [-2.617494, 51.416366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623233, 51.416833],
+          [-2.623438, 51.417105],
+          [-2.623634, 51.417429],
+          [-2.624043, 51.418306],
+          [-2.624099, 51.418354],
+          [-2.624174, 51.418378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625759, 51.415661],
+          [-2.62628, 51.415298],
+          [-2.626469, 51.415178],
+          [-2.626804, 51.415016],
+          [-2.627012, 51.414939],
+          [-2.627709, 51.414739],
+          [-2.628333, 51.414576],
+          [-2.628404, 51.414565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62628, 51.415298],
+          [-2.62718, 51.415834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623009, 51.413715],
+          [-2.622188, 51.414068],
+          [-2.620658, 51.414783],
+          [-2.620123, 51.415018],
+          [-2.619899, 51.415075],
+          [-2.619699, 51.415093],
+          [-2.61951, 51.415098],
+          [-2.619283, 51.415063],
+          [-2.619024, 51.414989],
+          [-2.618789, 51.414903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622232, 51.413001],
+          [-2.622028, 51.413116],
+          [-2.621522, 51.41348],
+          [-2.621349, 51.41362],
+          [-2.62125, 51.413738],
+          [-2.621212, 51.413849],
+          [-2.621227, 51.413952],
+          [-2.621408, 51.414122],
+          [-2.621661, 51.414319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625959, 51.416859],
+          [-2.626956, 51.41681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628498, 51.415984],
+          [-2.629511, 51.416093],
+          [-2.62985, 51.416122]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623639, 51.414357],
+          [-2.624052, 51.414174],
+          [-2.624211, 51.414125],
+          [-2.624382, 51.414089],
+          [-2.625248, 51.413998],
+          [-2.625438, 51.413997],
+          [-2.625609, 51.414011],
+          [-2.625755, 51.414036],
+          [-2.626041, 51.41412],
+          [-2.626155, 51.414172],
+          [-2.626252, 51.414233],
+          [-2.626393, 51.414336],
+          [-2.627012, 51.414939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625301, 51.415371],
+          [-2.625759, 51.415661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624832, 51.414039],
+          [-2.624916, 51.414275],
+          [-2.625408, 51.414706],
+          [-2.625441, 51.414804],
+          [-2.62538, 51.414874],
+          [-2.624938, 51.415159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625301, 51.415371],
+          [-2.624357, 51.415983],
+          [-2.624322, 51.416031],
+          [-2.624322, 51.416079],
+          [-2.624346, 51.41614],
+          [-2.624568, 51.416366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625092, 51.41687],
+          [-2.625135, 51.41729]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624353, 51.416779],
+          [-2.624201, 51.416951],
+          [-2.624183, 51.416992],
+          [-2.624201, 51.417051],
+          [-2.62438, 51.417314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624141, 51.416525],
+          [-2.624353, 51.416779],
+          [-2.624835, 51.416939],
+          [-2.624963, 51.416947],
+          [-2.625099, 51.416943]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628383, 51.416333],
+          [-2.626793, 51.416334]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629511, 51.416093],
+          [-2.62928, 51.416994],
+          [-2.629208, 51.417137],
+          [-2.629084, 51.417284],
+          [-2.629051, 51.41739],
+          [-2.629038, 51.417597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627391, 51.420429],
+          [-2.63118, 51.419804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628935, 51.41915],
+          [-2.629076, 51.420151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627313, 51.419331],
+          [-2.627514, 51.419332],
+          [-2.627966, 51.419314],
+          [-2.627943, 51.419688],
+          [-2.627953, 51.419794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629759, 51.420041],
+          [-2.62972, 51.419946],
+          [-2.629612, 51.419201],
+          [-2.629614, 51.419133],
+          [-2.629648, 51.419087],
+          [-2.629747, 51.419047],
+          [-2.630107, 51.418961],
+          [-2.630209, 51.418967],
+          [-2.630299, 51.418991],
+          [-2.630373, 51.419027],
+          [-2.630461, 51.419114],
+          [-2.630716, 51.419451],
+          [-2.630887, 51.419856]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625174, 51.417867],
+          [-2.625123, 51.417479]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617462, 51.418148],
+          [-2.617775, 51.418162],
+          [-2.618321, 51.418154],
+          [-2.618739, 51.418111],
+          [-2.619166, 51.418012],
+          [-2.620497, 51.417646],
+          [-2.621839, 51.417231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627709, 51.414739],
+          [-2.628065, 51.415236]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627588, 51.414219],
+          [-2.627897, 51.414686]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.630577, 51.420767],
+          [-2.630618, 51.420825],
+          [-2.630966, 51.42074],
+          [-2.631514, 51.420577]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.63084, 51.42053],
+          [-2.630966, 51.42074],
+          [-2.630984, 51.420838],
+          [-2.631108, 51.421001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627052, 51.413558],
+          [-2.62656, 51.413767]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617587, 51.416117],
+          [-2.618458, 51.416261],
+          [-2.61853, 51.416256],
+          [-2.618927, 51.415962],
+          [-2.618936, 51.415892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62608, 51.417573],
+          [-2.626552, 51.417541]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626129, 51.413384],
+          [-2.626127, 51.413553],
+          [-2.626167, 51.413604],
+          [-2.62656, 51.413767],
+          [-2.626701, 51.413837],
+          [-2.626765, 51.41389],
+          [-2.62682, 51.414016],
+          [-2.626806, 51.414088],
+          [-2.626773, 51.414147],
+          [-2.626718, 51.414194],
+          [-2.626393, 51.414336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62044, 51.416873],
+          [-2.620501, 51.416797],
+          [-2.620979, 51.416686],
+          [-2.621129, 51.416721],
+          [-2.621839, 51.417231]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621632, 51.416563],
+          [-2.622364, 51.41707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617661, 51.417363],
+          [-2.618276, 51.417481],
+          [-2.618384, 51.417494],
+          [-2.6185, 51.417493],
+          [-2.618599, 51.417481],
+          [-2.619851, 51.417103],
+          [-2.619964, 51.417103],
+          [-2.620081, 51.41715],
+          [-2.620497, 51.417646]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623295, 51.41812],
+          [-2.62328, 51.41792],
+          [-2.62334, 51.417878],
+          [-2.623499, 51.417834],
+          [-2.623804, 51.417794]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622831, 51.41814],
+          [-2.623287, 51.418008]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.630217, 51.420727],
+          [-2.630135, 51.420611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626187, 51.418306],
+          [-2.62608, 51.417573],
+          [-2.625959, 51.416859],
+          [-2.625878, 51.416556],
+          [-2.625831, 51.416474],
+          [-2.625739, 51.416384],
+          [-2.62517, 51.416057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623634, 51.417429],
+          [-2.622913, 51.417649]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624174, 51.418378],
+          [-2.624227, 51.418395],
+          [-2.624301, 51.418403],
+          [-2.626601, 51.418288],
+          [-2.626949, 51.418295],
+          [-2.627225, 51.418323],
+          [-2.627591, 51.418379]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624706, 51.42065],
+          [-2.625165, 51.419258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623401, 51.41964],
+          [-2.62498, 51.419964],
+          [-2.627189, 51.420322],
+          [-2.627375, 51.42033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628478, 51.416029],
+          [-2.628232, 51.416001],
+          [-2.628209, 51.415989],
+          [-2.628194, 51.415972],
+          [-2.628216, 51.415815],
+          [-2.628287, 51.415787],
+          [-2.628548, 51.41585],
+          [-2.628423, 51.416193],
+          [-2.628263, 51.416754],
+          [-2.628036, 51.417433],
+          [-2.627853, 51.417859],
+          [-2.627556, 51.418439],
+          [-2.627498, 51.418584],
+          [-2.62732, 51.419216],
+          [-2.627312, 51.419719],
+          [-2.627355, 51.420216],
+          [-2.627391, 51.420429],
+          [-2.62754, 51.421093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628404, 51.414565],
+          [-2.628671, 51.415104],
+          [-2.628703, 51.415226],
+          [-2.628706, 51.415332],
+          [-2.628693, 51.415414],
+          [-2.628629, 51.41565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624174, 51.418378],
+          [-2.624014, 51.418588],
+          [-2.623874, 51.418876],
+          [-2.623874, 51.418917],
+          [-2.623903, 51.418969],
+          [-2.623942, 51.419012],
+          [-2.62403, 51.419059],
+          [-2.627316, 51.419623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623743, 51.417649],
+          [-2.623934, 51.417632],
+          [-2.624007, 51.417642],
+          [-2.62455, 51.417802],
+          [-2.624632, 51.417814],
+          [-2.625161, 51.417792]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627968, 51.415263],
+          [-2.628172, 51.415207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626954, 51.422484],
+          [-2.626919, 51.422444],
+          [-2.626915, 51.422419],
+          [-2.626932, 51.422376],
+          [-2.62699, 51.422325],
+          [-2.627354, 51.422131],
+          [-2.627684, 51.421977],
+          [-2.627916, 51.421886],
+          [-2.628475, 51.421694],
+          [-2.628584, 51.42168],
+          [-2.628661, 51.421689],
+          [-2.628701, 51.421707],
+          [-2.628742, 51.421752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621839, 51.417231],
+          [-2.623026, 51.416868],
+          [-2.623233, 51.416833],
+          [-2.623364, 51.416768],
+          [-2.624141, 51.416525],
+          [-2.624568, 51.416366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628291, 51.414345],
+          [-2.628404, 51.414565]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620589, 51.412898],
+          [-2.620703, 51.412787],
+          [-2.620948, 51.412619],
+          [-2.621077, 51.412545]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623238, 51.413967],
+          [-2.623452, 51.414183],
+          [-2.623712, 51.41442],
+          [-2.625301, 51.415371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621287, 51.412432],
+          [-2.621955, 51.412816],
+          [-2.622232, 51.413001],
+          [-2.622579, 51.413272]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624568, 51.416366],
+          [-2.624737, 51.416305],
+          [-2.62517, 51.416057],
+          [-2.625759, 51.415661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627848, 51.413749],
+          [-2.627991, 51.41385],
+          [-2.628048, 51.413916],
+          [-2.628197, 51.414178],
+          [-2.628255, 51.414222]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.631311, 51.420637],
+          [-2.631365, 51.420705]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.631032, 51.420485],
+          [-2.630709, 51.420558]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627016, 51.413677],
+          [-2.626943, 51.413601]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620218, 51.413405],
+          [-2.620062, 51.413525]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.63021, 51.420959],
+          [-2.6304, 51.421211]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.630032, 51.421087],
+          [-2.629985, 51.421025],
+          [-2.630255, 51.420946],
+          [-2.630412, 51.4209],
+          [-2.630459, 51.420962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623419, 51.419607],
+          [-2.623384, 51.419673]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627983, 51.419222],
+          [-2.627966, 51.419314]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629187, 51.417512],
+          [-2.629043, 51.41751]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627108, 51.415881],
+          [-2.627248, 51.41579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610209, 51.427021],
+          [-2.612038, 51.427321],
+          [-2.613628, 51.427385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612137, 51.427329],
+          [-2.611912, 51.427722],
+          [-2.611885, 51.427798],
+          [-2.611699, 51.429753],
+          [-2.611663, 51.429887],
+          [-2.61153, 51.430121],
+          [-2.611352, 51.43031],
+          [-2.611242, 51.430396],
+          [-2.611146, 51.430463],
+          [-2.610861, 51.430607],
+          [-2.61022, 51.43083],
+          [-2.610085, 51.430866],
+          [-2.609942, 51.430884],
+          [-2.609745, 51.430866],
+          [-2.609651, 51.430845],
+          [-2.609549, 51.430804],
+          [-2.609439, 51.430728],
+          [-2.609364, 51.430649],
+          [-2.609336, 51.43058],
+          [-2.609328, 51.430514],
+          [-2.609349, 51.430397],
+          [-2.609396, 51.430326],
+          [-2.609518, 51.430235],
+          [-2.609675, 51.430163],
+          [-2.61019, 51.429978],
+          [-2.610342, 51.429892],
+          [-2.61043, 51.42979],
+          [-2.610464, 51.429729],
+          [-2.610481, 51.429661],
+          [-2.610658, 51.427969],
+          [-2.610639, 51.427911],
+          [-2.610614, 51.427878],
+          [-2.610178, 51.427441],
+          [-2.610169, 51.427399],
+          [-2.610209, 51.427021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610209, 51.427021],
+          [-2.610218, 51.426961],
+          [-2.610482, 51.426306],
+          [-2.610571, 51.426135],
+          [-2.611304, 51.424882],
+          [-2.611856, 51.42398],
+          [-2.611906, 51.423961],
+          [-2.61194, 51.423962],
+          [-2.612703, 51.424119],
+          [-2.61459, 51.424535]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612789, 51.42333],
+          [-2.612503, 51.424078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612703, 51.424119],
+          [-2.612182, 51.424987],
+          [-2.612014, 51.42538],
+          [-2.611453, 51.426583],
+          [-2.611222, 51.427189]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61221, 51.427332],
+          [-2.612516, 51.426773],
+          [-2.613151, 51.425106],
+          [-2.61357, 51.424313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613966, 51.423507],
+          [-2.613594, 51.424318]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613208, 51.423741],
+          [-2.612663, 51.423644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609368, 51.421737],
+          [-2.60867, 51.422027],
+          [-2.60841, 51.422062],
+          [-2.608276, 51.422065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60845, 51.423035],
+          [-2.608092, 51.423137],
+          [-2.607896, 51.423221],
+          [-2.607647, 51.423375],
+          [-2.607121, 51.423673],
+          [-2.606876, 51.423758],
+          [-2.606683, 51.423864],
+          [-2.606508, 51.424039],
+          [-2.60641, 51.42408],
+          [-2.60629, 51.424102],
+          [-2.605986, 51.424083],
+          [-2.605668, 51.424042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604958, 51.425476],
+          [-2.605068, 51.425591],
+          [-2.605092, 51.425648],
+          [-2.605073, 51.425889],
+          [-2.605136, 51.42693],
+          [-2.605106, 51.427101],
+          [-2.604847, 51.427705],
+          [-2.604715, 51.428335],
+          [-2.604679, 51.42838],
+          [-2.604496, 51.428423],
+          [-2.604424, 51.428464],
+          [-2.604379, 51.428468]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.59682, 51.416102],
+          [-2.597409, 51.415692],
+          [-2.597671, 51.41554],
+          [-2.598268, 51.41514]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605939, 51.430959],
+          [-2.606825, 51.431903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606752, 51.43182],
+          [-2.608364, 51.431272],
+          [-2.608403, 51.431253],
+          [-2.608434, 51.43119],
+          [-2.60842, 51.431147],
+          [-2.608046, 51.43069],
+          [-2.607982, 51.430655],
+          [-2.60792, 51.430643],
+          [-2.607851, 51.43064],
+          [-2.607774, 51.430659],
+          [-2.606161, 51.431201]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610054, 51.419129],
+          [-2.610983, 51.419148],
+          [-2.611823, 51.41915],
+          [-2.612344, 51.41911],
+          [-2.612607, 51.419065],
+          [-2.613103, 51.418928],
+          [-2.613582, 51.418768],
+          [-2.614003, 51.419334],
+          [-2.61442, 51.419605]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611434, 51.419868],
+          [-2.61238, 51.419691],
+          [-2.612486, 51.419647],
+          [-2.612593, 51.419574],
+          [-2.612663, 51.419506],
+          [-2.612753, 51.41938],
+          [-2.612752, 51.419308],
+          [-2.612607, 51.419065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608846, 51.420608],
+          [-2.608894, 51.420612],
+          [-2.608955, 51.420605],
+          [-2.610241, 51.420232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610054, 51.419129],
+          [-2.609089, 51.419642],
+          [-2.609044, 51.419677],
+          [-2.609011, 51.419723],
+          [-2.60876, 51.421087],
+          [-2.608792, 51.421147],
+          [-2.609039, 51.421456]
         ]
       }
     },
@@ -1895,10 +2222,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.601473, 51.413984],
-          [-2.601434, 51.41418],
+          [-2.601531, 51.413604],
+          [-2.601454, 51.414104],
           [-2.601379, 51.414322],
-          [-2.601342, 51.41438],
           [-2.60129, 51.414446],
           [-2.601138, 51.414585],
           [-2.600963, 51.414686]
@@ -1923,324 +2249,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.618261, 51.415354],
-          [-2.617906, 51.415617],
-          [-2.617832, 51.415695],
-          [-2.617761, 51.415793],
-          [-2.617587, 51.416117],
-          [-2.617494, 51.416366]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.623286, 51.41362],
-          [-2.623009, 51.413715],
-          [-2.622188, 51.414068],
-          [-2.620658, 51.414783],
-          [-2.620123, 51.415018],
-          [-2.619899, 51.415075],
-          [-2.619699, 51.415093],
-          [-2.61951, 51.415098],
-          [-2.619283, 51.415063],
-          [-2.619024, 51.414989],
-          [-2.618789, 51.414903],
-          [-2.618679, 51.415014]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.623233, 51.416833],
-          [-2.623438, 51.417105],
-          [-2.623634, 51.417429],
-          [-2.624043, 51.418306],
-          [-2.624099, 51.418354],
-          [-2.624174, 51.418378]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.625759, 51.415661],
-          [-2.62628, 51.415298],
-          [-2.626469, 51.415178],
-          [-2.626804, 51.415016],
-          [-2.627012, 51.414939],
-          [-2.627709, 51.414739],
-          [-2.628333, 51.414576],
-          [-2.628404, 51.414565]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.62628, 51.415298],
-          [-2.62718, 51.415834]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622028, 51.413116],
-          [-2.621522, 51.41348],
-          [-2.621349, 51.41362],
-          [-2.62125, 51.413738],
-          [-2.621212, 51.413849],
-          [-2.621227, 51.413952],
-          [-2.621408, 51.414122],
-          [-2.621661, 51.414319]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.625959, 51.416859],
-          [-2.626956, 51.41681]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628498, 51.415984],
-          [-2.629511, 51.416093],
-          [-2.62985, 51.416122]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.623639, 51.414357],
-          [-2.624052, 51.414174],
-          [-2.624211, 51.414125],
-          [-2.624382, 51.414089],
-          [-2.625248, 51.413998],
-          [-2.625438, 51.413997],
-          [-2.625609, 51.414011],
-          [-2.625755, 51.414036],
-          [-2.626041, 51.41412],
-          [-2.626155, 51.414172],
-          [-2.626252, 51.414233],
-          [-2.626393, 51.414336],
-          [-2.627012, 51.414939]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.625301, 51.415371],
-          [-2.625759, 51.415661]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.624832, 51.414039],
-          [-2.624916, 51.414275],
-          [-2.625408, 51.414706],
-          [-2.625441, 51.414804],
-          [-2.62538, 51.414874],
-          [-2.624938, 51.415159]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.625301, 51.415371],
-          [-2.624357, 51.415983],
-          [-2.624322, 51.416031],
-          [-2.624322, 51.416079],
-          [-2.624346, 51.41614],
-          [-2.624568, 51.416366]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.625092, 51.41687],
-          [-2.625135, 51.41729]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.624353, 51.416779],
-          [-2.624201, 51.416951],
-          [-2.624183, 51.416992],
-          [-2.624201, 51.417051],
-          [-2.62438, 51.417314]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.624141, 51.416525],
-          [-2.624353, 51.416779],
-          [-2.624835, 51.416939],
-          [-2.624963, 51.416947],
-          [-2.625099, 51.416943]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628383, 51.416333],
-          [-2.626793, 51.416334]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.629511, 51.416093],
-          [-2.62928, 51.416994],
-          [-2.629208, 51.417137],
-          [-2.629084, 51.417284],
-          [-2.629051, 51.41739],
-          [-2.629038, 51.417597]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627391, 51.420429],
-          [-2.63118, 51.419804]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628935, 51.41915],
-          [-2.629076, 51.420151]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627313, 51.419331],
-          [-2.627514, 51.419332],
-          [-2.627966, 51.419314],
-          [-2.627943, 51.419688],
-          [-2.627953, 51.419794]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.629759, 51.420041],
-          [-2.62972, 51.419946],
-          [-2.629612, 51.419201],
-          [-2.629614, 51.419133],
-          [-2.629648, 51.419087],
-          [-2.629747, 51.419047],
-          [-2.630107, 51.418961],
-          [-2.630209, 51.418967],
-          [-2.630299, 51.418991],
-          [-2.630373, 51.419027],
-          [-2.630461, 51.419114],
-          [-2.630716, 51.419451],
-          [-2.630887, 51.419856]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.625174, 51.417867],
-          [-2.625123, 51.417479]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.606778, 51.414353],
-          [-2.606959, 51.414255]
+          [-2.606959, 51.414255],
+          [-2.607065, 51.414219]
         ]
       }
     },
@@ -2371,198 +2382,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.617462, 51.418148],
-          [-2.617775, 51.418162],
-          [-2.618321, 51.418154],
-          [-2.618739, 51.418111],
-          [-2.619166, 51.418012],
-          [-2.620497, 51.417646],
-          [-2.621839, 51.417231]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627709, 51.414739],
-          [-2.628065, 51.415236]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627588, 51.414219],
-          [-2.627897, 51.414686]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.630577, 51.420767],
-          [-2.630618, 51.420825],
-          [-2.630966, 51.42074],
-          [-2.631514, 51.420577]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.63084, 51.42053],
-          [-2.630966, 51.42074],
-          [-2.630984, 51.420838],
-          [-2.631108, 51.421001]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627052, 51.413558],
-          [-2.62656, 51.413767]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617587, 51.416117],
-          [-2.618458, 51.416261],
-          [-2.61853, 51.416256],
-          [-2.618927, 51.415962],
-          [-2.618936, 51.415892]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.62608, 51.417573],
-          [-2.626552, 51.417541]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.626129, 51.413384],
-          [-2.626127, 51.413553],
-          [-2.626167, 51.413604],
-          [-2.62656, 51.413767],
-          [-2.626701, 51.413837],
-          [-2.626765, 51.41389],
-          [-2.62682, 51.414016],
-          [-2.626806, 51.414088],
-          [-2.626773, 51.414147],
-          [-2.626718, 51.414194],
-          [-2.626393, 51.414336]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.62044, 51.416873],
-          [-2.620501, 51.416797],
-          [-2.620979, 51.416686],
-          [-2.621129, 51.416721],
-          [-2.621839, 51.417231]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.621632, 51.416563],
-          [-2.622364, 51.41707]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.611452, 51.417334],
           [-2.611569, 51.417317],
           [-2.611668, 51.417431],
           [-2.611713, 51.417773]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617661, 51.417363],
-          [-2.618276, 51.417481],
-          [-2.618384, 51.417494],
-          [-2.6185, 51.417493],
-          [-2.618599, 51.417481],
-          [-2.619851, 51.417103],
-          [-2.619964, 51.417103],
-          [-2.620081, 51.41715],
-          [-2.620497, 51.417646]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.623295, 51.41812],
-          [-2.62328, 51.41792],
-          [-2.62334, 51.417878],
-          [-2.623499, 51.417834],
-          [-2.623804, 51.417794]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622831, 51.41814],
-          [-2.623287, 51.418008]
         ]
       }
     },
@@ -2588,127 +2411,6 @@
           [-2.608668, 51.432278],
           [-2.608923, 51.432238],
           [-2.609345, 51.432189]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.630217, 51.420727],
-          [-2.630135, 51.420611]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.626187, 51.418306],
-          [-2.62608, 51.417573],
-          [-2.625959, 51.416859],
-          [-2.625878, 51.416556],
-          [-2.625831, 51.416474],
-          [-2.625739, 51.416384],
-          [-2.62517, 51.416057]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.623634, 51.417429],
-          [-2.622913, 51.417649]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.624174, 51.418378],
-          [-2.624227, 51.418395],
-          [-2.624301, 51.418403],
-          [-2.626601, 51.418288],
-          [-2.626949, 51.418295],
-          [-2.627225, 51.418323],
-          [-2.627591, 51.418379]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.624706, 51.42065],
-          [-2.625165, 51.419258]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.623401, 51.41964],
-          [-2.62498, 51.419964],
-          [-2.627189, 51.420322],
-          [-2.627375, 51.42033]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628404, 51.414565],
-          [-2.628671, 51.415104],
-          [-2.628703, 51.415226],
-          [-2.628706, 51.415332],
-          [-2.628693, 51.415414],
-          [-2.628629, 51.41565],
-          [-2.628423, 51.416193],
-          [-2.628263, 51.416754],
-          [-2.628036, 51.417433],
-          [-2.627853, 51.417859],
-          [-2.627556, 51.418439],
-          [-2.627498, 51.418584],
-          [-2.62732, 51.419216],
-          [-2.627312, 51.419719],
-          [-2.627355, 51.420216],
-          [-2.627391, 51.420429],
-          [-2.62754, 51.421093]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.624174, 51.418378],
-          [-2.624014, 51.418588],
-          [-2.623874, 51.418876],
-          [-2.623874, 51.418917],
-          [-2.623903, 51.418969],
-          [-2.623942, 51.419012],
-          [-2.62403, 51.419059],
-          [-2.627316, 51.419623]
         ]
       }
     },
@@ -2751,45 +2453,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.623743, 51.417649],
-          [-2.623934, 51.417632],
-          [-2.624007, 51.417642],
-          [-2.62455, 51.417802],
-          [-2.624632, 51.417814],
-          [-2.625161, 51.417792]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627968, 51.415263],
-          [-2.628172, 51.415207]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.626954, 51.422484],
-          [-2.626919, 51.422444],
-          [-2.626915, 51.422419],
-          [-2.626932, 51.422376],
-          [-2.62699, 51.422325],
-          [-2.627354, 51.422131],
-          [-2.627684, 51.421977],
-          [-2.627916, 51.421886],
-          [-2.628475, 51.421694],
-          [-2.628584, 51.42168],
-          [-2.628661, 51.421689],
-          [-2.628701, 51.421707],
-          [-2.628742, 51.421752]
+          [-2.611402, 51.419837],
+          [-2.611372, 51.419825],
+          [-2.6113, 51.419818],
+          [-2.611258, 51.419827],
+          [-2.611209, 51.419857],
+          [-2.611194, 51.41991],
+          [-2.611219, 51.419945],
+          [-2.611247, 51.419961],
+          [-2.611287, 51.419973],
+          [-2.611359, 51.419971],
+          [-2.611428, 51.419936],
+          [-2.611443, 51.419884],
+          [-2.611402, 51.419837]
         ]
       }
     },
@@ -2843,34 +2519,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.621839, 51.417231],
-          [-2.623026, 51.416868],
-          [-2.623233, 51.416833],
-          [-2.623364, 51.416768],
-          [-2.624141, 51.416525],
-          [-2.624568, 51.416366]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628413, 51.414147],
-          [-2.628316, 51.414246],
-          [-2.628291, 51.414345],
-          [-2.628404, 51.414565]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.598181, 51.415049],
           [-2.596382, 51.416272]
         ]
@@ -2882,110 +2530,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.628478, 51.416029],
-          [-2.628232, 51.416001],
-          [-2.628209, 51.415989],
-          [-2.628194, 51.415972],
-          [-2.628216, 51.415815],
-          [-2.628287, 51.415787],
-          [-2.628548, 51.41585]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622809, 51.413491],
-          [-2.623238, 51.413967],
-          [-2.623452, 51.414183],
-          [-2.623712, 51.41442],
-          [-2.625301, 51.415371]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.624568, 51.416366],
-          [-2.624737, 51.416305],
-          [-2.62517, 51.416057],
-          [-2.625759, 51.415661]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.612684, 51.431198],
           [-2.61243, 51.431126]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627848, 51.413749],
-          [-2.627991, 51.41385],
-          [-2.628048, 51.413916],
-          [-2.628197, 51.414178],
-          [-2.628255, 51.414222],
-          [-2.628316, 51.414246]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.631311, 51.420637],
-          [-2.631365, 51.420705]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.631032, 51.420485],
-          [-2.630709, 51.420558]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627016, 51.413677],
-          [-2.626943, 51.413601]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628476, 51.414473],
-          [-2.628376, 51.414511]
         ]
       }
     },
@@ -3049,6 +2595,35 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.600404, 51.414594],
+          [-2.59946, 51.414607],
+          [-2.599258, 51.414602],
+          [-2.599245, 51.414588],
+          [-2.599237, 51.414172],
+          [-2.599281, 51.414161],
+          [-2.599525, 51.41415],
+          [-2.600151, 51.41414],
+          [-2.600297, 51.414144],
+          [-2.600375, 51.414156],
+          [-2.600461, 51.414183],
+          [-2.600676, 51.414293],
+          [-2.600749, 51.414348],
+          [-2.600778, 51.414392],
+          [-2.600784, 51.414438],
+          [-2.60077, 51.414478],
+          [-2.600737, 51.414513],
+          [-2.600629, 51.414569],
+          [-2.600582, 51.414581],
+          [-2.600404, 51.414594]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.613755, 51.428586],
           [-2.613528, 51.428576],
           [-2.613423, 51.428546],
@@ -3095,18 +2670,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.620218, 51.413405],
-          [-2.620062, 51.413525],
-          [-2.619783, 51.413688]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.609386, 51.416746],
           [-2.609171, 51.417098]
         ]
@@ -3129,78 +2692,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.63021, 51.420959],
-          [-2.6304, 51.421211]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.630032, 51.421087],
-          [-2.629985, 51.421025],
-          [-2.630255, 51.420946],
-          [-2.630412, 51.4209],
-          [-2.630459, 51.420962]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.623419, 51.419607],
-          [-2.623384, 51.419673]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.606825, 51.431903],
           [-2.606836, 51.431971],
           [-2.606829, 51.432075]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627983, 51.419222],
-          [-2.627966, 51.419314]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.629187, 51.417512],
-          [-2.629043, 51.41751]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627108, 51.415881],
-          [-2.627248, 51.41579]
         ]
       }
     },
@@ -3370,28 +2864,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.613581, 51.415965],
-          [-2.613034, 51.415207]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.600579, 51.415085],
-          [-2.600582, 51.414983]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.627213, 51.41722],
           [-2.627354, 51.4176],
           [-2.627952, 51.417643]
@@ -3489,6 +2961,954 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.618439, 51.417494],
+          [-2.618349, 51.417086],
+          [-2.618279, 51.4165]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61488, 51.415693],
+          [-2.614699, 51.415594],
+          [-2.614701, 51.415572],
+          [-2.614825, 51.415415],
+          [-2.614476, 51.415264],
+          [-2.614456, 51.415241],
+          [-2.614453, 51.414918],
+          [-2.614469, 51.414888],
+          [-2.614659, 51.414713]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612859, 51.417443],
+          [-2.61243, 51.417016],
+          [-2.612437, 51.416993],
+          [-2.614282, 51.416139],
+          [-2.614306, 51.416141],
+          [-2.614735, 51.416606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619086, 51.424882],
+          [-2.618452, 51.425109]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620799, 51.4253],
+          [-2.62098, 51.425305],
+          [-2.621303, 51.425156],
+          [-2.621531, 51.424958]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613825, 51.419101],
+          [-2.6145, 51.418801],
+          [-2.614669, 51.418948]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614003, 51.419334],
+          [-2.614449, 51.419121],
+          [-2.614556, 51.419058],
+          [-2.614669, 51.418948],
+          [-2.614913, 51.418641]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616369, 51.41861],
+          [-2.616328, 51.418656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620636, 51.416419],
+          [-2.620601, 51.416279],
+          [-2.620813, 51.416241],
+          [-2.620913, 51.416243],
+          [-2.62098, 51.416268],
+          [-2.621151, 51.416378],
+          [-2.621256, 51.416423],
+          [-2.621433, 51.416455],
+          [-2.621513, 51.416485],
+          [-2.621632, 51.416563]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629671, 51.421031],
+          [-2.629827, 51.421198],
+          [-2.629727, 51.421234],
+          [-2.629867, 51.421383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626388, 51.412882],
+          [-2.626458, 51.412866]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622923, 51.414262],
+          [-2.623364, 51.414094]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627359, 51.414031],
+          [-2.627606, 51.414061],
+          [-2.627658, 51.414055],
+          [-2.627689, 51.414041],
+          [-2.627748, 51.413992],
+          [-2.627825, 51.413881],
+          [-2.627876, 51.413842],
+          [-2.627938, 51.41381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613966, 51.423507],
+          [-2.614013, 51.423462],
+          [-2.614014, 51.423411],
+          [-2.613918, 51.423324],
+          [-2.613888, 51.423282],
+          [-2.613883, 51.423234],
+          [-2.613923, 51.423147],
+          [-2.614711, 51.421917],
+          [-2.614755, 51.421832]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614604, 51.419927],
+          [-2.614549, 51.419998],
+          [-2.61419, 51.42029],
+          [-2.61404, 51.420397],
+          [-2.613889, 51.420483],
+          [-2.613732, 51.420561],
+          [-2.613467, 51.420673],
+          [-2.613277, 51.420737],
+          [-2.612945, 51.42082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616771, 51.418723],
+          [-2.616732, 51.41881],
+          [-2.616458, 51.419005],
+          [-2.616375, 51.41903],
+          [-2.616174, 51.418987],
+          [-2.616036, 51.418972],
+          [-2.615931, 51.419001],
+          [-2.615679, 51.419252],
+          [-2.615353, 51.419479],
+          [-2.615266, 51.419528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.631921, 51.420716],
+          [-2.631692, 51.420485],
+          [-2.631639, 51.420481],
+          [-2.631397, 51.420534]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.63424, 51.420899],
+          [-2.634479, 51.421013],
+          [-2.634592, 51.421092]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.632546, 51.420407],
+          [-2.632673, 51.420464]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628332, 51.421117],
+          [-2.628307, 51.421409],
+          [-2.62809, 51.421445]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627486, 51.420848],
+          [-2.627884, 51.420794],
+          [-2.628449, 51.420684],
+          [-2.628852, 51.420619]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618112, 51.419674],
+          [-2.618191, 51.419485],
+          [-2.618198, 51.419445],
+          [-2.618153, 51.419225],
+          [-2.618171, 51.419139],
+          [-2.618192, 51.419103],
+          [-2.618299, 51.419024],
+          [-2.618508, 51.418828]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626558, 51.413258],
+          [-2.626681, 51.413226],
+          [-2.626868, 51.413198],
+          [-2.62707, 51.413133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626317, 51.412892],
+          [-2.626298, 51.41292]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621821, 51.425433],
+          [-2.621415, 51.425361],
+          [-2.62066, 51.425366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620643, 51.423718],
+          [-2.620362, 51.423438],
+          [-2.620226, 51.423201],
+          [-2.620159, 51.423042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620242, 51.421892],
+          [-2.620336, 51.421896],
+          [-2.620416, 51.421915],
+          [-2.620481, 51.421946],
+          [-2.620947, 51.422422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62726, 51.417021],
+          [-2.628143, 51.41711]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627264, 51.41707],
+          [-2.627252, 51.416903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619752, 51.414725],
+          [-2.62025, 51.414472],
+          [-2.620635, 51.414793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618806, 51.419416],
+          [-2.61887, 51.419267],
+          [-2.618962, 51.419154],
+          [-2.619093, 51.419041]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623123, 51.42478],
+          [-2.62268, 51.424417]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619924, 51.418542],
+          [-2.619459, 51.418204],
+          [-2.619212, 51.418055],
+          [-2.619166, 51.418012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626871, 51.418986],
+          [-2.626903, 51.419039],
+          [-2.627094, 51.419173],
+          [-2.62732, 51.419216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627009, 51.418764],
+          [-2.62697, 51.418946],
+          [-2.627383, 51.41898]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.631966, 51.420337],
+          [-2.63118, 51.419804]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.632042, 51.420209],
+          [-2.631896, 51.420291]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.626483, 51.418957],
+          [-2.626175, 51.41892],
+          [-2.62591, 51.418871],
+          [-2.625702, 51.419347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.625551, 51.41879],
+          [-2.62591, 51.418871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617906, 51.415617],
+          [-2.618233, 51.415638],
+          [-2.61879, 51.415641],
+          [-2.619225, 51.41572],
+          [-2.619504, 51.415813]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619274, 51.421661],
+          [-2.619026, 51.421718],
+          [-2.618763, 51.421819],
+          [-2.61865, 51.421918]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620339, 51.422502],
+          [-2.620874, 51.42247]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616264, 51.424985],
+          [-2.616091, 51.42528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614296, 51.422563],
+          [-2.614689, 51.422685],
+          [-2.614794, 51.422726]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615156, 51.42197],
+          [-2.615083, 51.421954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615229, 51.42185],
+          [-2.614747, 51.422644],
+          [-2.614755, 51.422687],
+          [-2.614794, 51.422726]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627596, 51.415816],
+          [-2.627802, 51.415677],
+          [-2.627869, 51.415615],
+          [-2.627882, 51.415575],
+          [-2.627814, 51.415465],
+          [-2.627968, 51.415263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627814, 51.415465],
+          [-2.627759, 51.415446],
+          [-2.627652, 51.415482],
+          [-2.627638, 51.415511],
+          [-2.627648, 51.415537],
+          [-2.627709, 51.415589],
+          [-2.627787, 51.41563],
+          [-2.627848, 51.415626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634086, 51.421783],
+          [-2.634365, 51.422141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634277, 51.422028],
+          [-2.633849, 51.422167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622413, 51.417304],
+          [-2.622247, 51.417106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614518, 51.427732],
+          [-2.614673, 51.427667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.632107, 51.423358],
+          [-2.632097, 51.423256],
+          [-2.632172, 51.423194],
+          [-2.632181, 51.423046]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61667, 51.424367],
+          [-2.616742, 51.424274],
+          [-2.616861, 51.424218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620193, 51.414175],
+          [-2.620427, 51.414383],
+          [-2.62025, 51.414472]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627628, 51.416777],
+          [-2.62764, 51.416868],
+          [-2.627661, 51.416885],
+          [-2.628198, 51.416951]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616748, 51.423638],
+          [-2.616741, 51.423669],
+          [-2.616773, 51.423708],
+          [-2.61713, 51.423962],
+          [-2.617209, 51.424003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623435, 51.416258],
+          [-2.623466, 51.416298],
+          [-2.623541, 51.416312],
+          [-2.624073, 51.416147],
+          [-2.624322, 51.416079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628463, 51.421122],
+          [-2.628562, 51.421282],
+          [-2.628768, 51.421223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.627606, 51.423967],
+          [-2.627621, 51.424427]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629682, 51.424373],
+          [-2.629703, 51.424349],
+          [-2.629735, 51.424331],
+          [-2.629775, 51.42432],
+          [-2.629819, 51.424318],
+          [-2.629861, 51.424325],
+          [-2.629897, 51.42434],
+          [-2.629923, 51.424362],
+          [-2.629935, 51.424415],
+          [-2.62992, 51.42444],
+          [-2.629857, 51.424475],
+          [-2.629773, 51.424479],
+          [-2.629702, 51.42445],
+          [-2.629682, 51.424426],
+          [-2.629682, 51.424373]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.624506, 51.418029],
+          [-2.624444, 51.418059],
+          [-2.624472, 51.418396]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618591, 51.419365],
+          [-2.618157, 51.419206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618089, 51.419928],
+          [-2.618223, 51.419681],
+          [-2.61814, 51.419608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615289, 51.418386],
+          [-2.615728, 51.418523],
+          [-2.615869, 51.41858]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615288, 51.4183],
+          [-2.615304, 51.418346],
+          [-2.615289, 51.418386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615158, 51.41861],
+          [-2.615289, 51.418386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615891, 51.415263],
+          [-2.615496, 51.41552],
+          [-2.615487, 51.415541],
+          [-2.615564, 51.415697]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622591, 51.423946],
+          [-2.6225, 51.423962],
+          [-2.62245, 51.423962],
+          [-2.622415, 51.423944],
+          [-2.621694, 51.423029],
+          [-2.62168, 51.422908],
+          [-2.621689, 51.422831],
+          [-2.621756, 51.42276],
+          [-2.621827, 51.422722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.621378, 51.426018],
+          [-2.621673, 51.425792]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.634706, 51.42135],
+          [-2.634561, 51.421494],
+          [-2.634086, 51.421783],
+          [-2.633939, 51.42186]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613581, 51.415965],
+          [-2.613034, 51.415207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600579, 51.415085],
+          [-2.600582, 51.414983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.612214, 51.417656],
           [-2.611923, 51.417224]
         ]
@@ -3538,51 +3958,6 @@
           [-2.611116, 51.429571],
           [-2.611291, 51.427667],
           [-2.611313, 51.427592]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618439, 51.417494],
-          [-2.618349, 51.417086],
-          [-2.618279, 51.4165]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61488, 51.415693],
-          [-2.614699, 51.415594],
-          [-2.614701, 51.415572],
-          [-2.614825, 51.415415],
-          [-2.614476, 51.415264],
-          [-2.614456, 51.415241],
-          [-2.614453, 51.414918],
-          [-2.614469, 51.414888],
-          [-2.614659, 51.414713]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612859, 51.417443],
-          [-2.61243, 51.417016],
-          [-2.612437, 51.416993],
-          [-2.614282, 51.416139],
-          [-2.614306, 51.416141],
-          [-2.614735, 51.416606]
         ]
       }
     },
@@ -3822,82 +4197,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.619086, 51.424882],
-          [-2.618452, 51.425109]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.620799, 51.4253],
-          [-2.62098, 51.425305],
-          [-2.621303, 51.425156],
-          [-2.621531, 51.424958]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.634036, 51.419652],
-          [-2.633865, 51.419653],
-          [-2.633099, 51.420051],
-          [-2.633019, 51.420163]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613825, 51.419101],
-          [-2.6145, 51.418801],
-          [-2.614669, 51.418948]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614003, 51.419334],
-          [-2.614449, 51.419121],
-          [-2.614556, 51.419058],
-          [-2.614669, 51.418948],
-          [-2.614913, 51.418641]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.608372, 51.421169],
           [-2.608389, 51.421129]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616369, 51.41861],
-          [-2.616328, 51.418656]
         ]
       }
     },
@@ -3941,66 +4242,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.620636, 51.416419],
-          [-2.620601, 51.416279],
-          [-2.620813, 51.416241],
-          [-2.620913, 51.416243],
-          [-2.62098, 51.416268],
-          [-2.621151, 51.416378],
-          [-2.621256, 51.416423],
-          [-2.621433, 51.416455],
-          [-2.621513, 51.416485],
-          [-2.621632, 51.416563]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.629671, 51.421031],
-          [-2.629827, 51.421198],
-          [-2.629727, 51.421234],
-          [-2.629867, 51.421383]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622923, 51.414262],
-          [-2.623364, 51.414094]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627359, 51.414031],
-          [-2.627606, 51.414061],
-          [-2.627658, 51.414055],
-          [-2.627689, 51.414041],
-          [-2.627748, 51.413992],
-          [-2.627825, 51.413881],
-          [-2.627876, 51.413842],
-          [-2.627938, 51.41381]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
+          [-2.606884, 51.432687],
           [-2.60685, 51.432544],
           [-2.606373, 51.432195],
           [-2.606307, 51.432173]
@@ -4027,150 +4269,6 @@
           [-2.610491, 51.429572],
           [-2.610118, 51.429555],
           [-2.610039, 51.429542]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613966, 51.423507],
-          [-2.614013, 51.423462],
-          [-2.614014, 51.423411],
-          [-2.613918, 51.423324],
-          [-2.613888, 51.423282],
-          [-2.613883, 51.423234],
-          [-2.613923, 51.423147],
-          [-2.614711, 51.421917],
-          [-2.614755, 51.421832]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614604, 51.419927],
-          [-2.614549, 51.419998],
-          [-2.61419, 51.42029],
-          [-2.61404, 51.420397],
-          [-2.613889, 51.420483],
-          [-2.613732, 51.420561],
-          [-2.613467, 51.420673],
-          [-2.613277, 51.420737],
-          [-2.612945, 51.42082]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616771, 51.418723],
-          [-2.616732, 51.41881],
-          [-2.616458, 51.419005],
-          [-2.616375, 51.41903],
-          [-2.616174, 51.418987],
-          [-2.616036, 51.418972],
-          [-2.615931, 51.419001],
-          [-2.615679, 51.419252],
-          [-2.615353, 51.419479],
-          [-2.615266, 51.419528]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.631921, 51.420716],
-          [-2.631692, 51.420485],
-          [-2.631639, 51.420481],
-          [-2.631397, 51.420534]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.63424, 51.420899],
-          [-2.634479, 51.421013],
-          [-2.634592, 51.421092]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.632546, 51.420407],
-          [-2.632673, 51.420464]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.63414, 51.419297],
-          [-2.634372, 51.419457]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628332, 51.421117],
-          [-2.628307, 51.421409],
-          [-2.62809, 51.421445]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627486, 51.420848],
-          [-2.627884, 51.420794],
-          [-2.628449, 51.420684],
-          [-2.628852, 51.420619]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618112, 51.419674],
-          [-2.618191, 51.419485],
-          [-2.618198, 51.419445],
-          [-2.618153, 51.419225],
-          [-2.618171, 51.419139],
-          [-2.618192, 51.419103],
-          [-2.618299, 51.419024],
-          [-2.618508, 51.418828]
         ]
       }
     },
@@ -4269,18 +4367,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.621821, 51.425433],
-          [-2.621415, 51.425361],
-          [-2.62066, 51.425366]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.606693, 51.427814],
           [-2.606676, 51.427983],
           [-2.606042, 51.427953],
@@ -4305,19 +4391,6 @@
           [-2.607971, 51.429441],
           [-2.607251, 51.429542],
           [-2.607105, 51.429609]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.620643, 51.423718],
-          [-2.620362, 51.423438],
-          [-2.620226, 51.423201],
-          [-2.620159, 51.423042]
         ]
       }
     },
@@ -4471,20 +4544,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.620242, 51.421892],
-          [-2.620336, 51.421896],
-          [-2.620416, 51.421915],
-          [-2.620481, 51.421946],
-          [-2.620947, 51.422422]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.607958, 51.414657],
           [-2.608002, 51.414979],
           [-2.60794, 51.415027],
@@ -4508,43 +4567,7 @@
           [-2.607516, 51.414473],
           [-2.60749, 51.41438],
           [-2.607423, 51.414281],
-          [-2.607351, 51.414213]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.62726, 51.417021],
-          [-2.628143, 51.41711]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627264, 51.41707],
-          [-2.627252, 51.416903]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.629791, 51.415362],
-          [-2.629604, 51.415348],
-          [-2.629292, 51.415366],
-          [-2.628968, 51.415411],
-          [-2.628693, 51.415414]
+          [-2.607308, 51.414171]
         ]
       }
     },
@@ -4586,126 +4609,6 @@
           [-2.610168, 51.414374],
           [-2.610176, 51.414309],
           [-2.610074, 51.413901]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619752, 51.414725],
-          [-2.62025, 51.414472],
-          [-2.620635, 51.414793]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618806, 51.419416],
-          [-2.61887, 51.419267],
-          [-2.618962, 51.419154],
-          [-2.619093, 51.419041]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.623123, 51.42478],
-          [-2.62268, 51.424417]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619924, 51.418542],
-          [-2.619459, 51.418204],
-          [-2.619212, 51.418055],
-          [-2.619166, 51.418012]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.626871, 51.418986],
-          [-2.626903, 51.419039],
-          [-2.627094, 51.419173],
-          [-2.62732, 51.419216]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627009, 51.418764],
-          [-2.62697, 51.418946],
-          [-2.627383, 51.41898]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.631966, 51.420337],
-          [-2.63118, 51.419804]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.632042, 51.420209],
-          [-2.631896, 51.420291]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.626483, 51.418957],
-          [-2.626175, 51.41892],
-          [-2.62591, 51.418871],
-          [-2.625702, 51.419347]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.625551, 51.41879],
-          [-2.62591, 51.418871]
         ]
       }
     },
@@ -4775,20 +4678,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.617906, 51.415617],
-          [-2.618233, 51.415638],
-          [-2.61879, 51.415641],
-          [-2.619225, 51.41572],
-          [-2.619504, 51.415813]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.606434, 51.42207],
           [-2.60659, 51.422294],
           [-2.606552, 51.422363],
@@ -4814,77 +4703,6 @@
           [-2.607207, 51.422229],
           [-2.606658, 51.422304],
           [-2.60659, 51.422294]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619274, 51.421661],
-          [-2.619026, 51.421718],
-          [-2.618763, 51.421819],
-          [-2.61865, 51.421918]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.620339, 51.422502],
-          [-2.620874, 51.42247]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616264, 51.424985],
-          [-2.616091, 51.42528]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614296, 51.422563],
-          [-2.614689, 51.422685],
-          [-2.614794, 51.422726]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615156, 51.42197],
-          [-2.615083, 51.421954]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615229, 51.42185],
-          [-2.614747, 51.422644],
-          [-2.614755, 51.422687],
-          [-2.614794, 51.422726]
         ]
       }
     },
@@ -4957,79 +4775,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.627596, 51.415816],
-          [-2.627802, 51.415677],
-          [-2.627869, 51.415615],
-          [-2.627882, 51.415575],
-          [-2.627814, 51.415465],
-          [-2.627968, 51.415263]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627814, 51.415465],
-          [-2.627759, 51.415446],
-          [-2.627652, 51.415482],
-          [-2.627638, 51.415511],
-          [-2.627648, 51.415537],
-          [-2.627709, 51.415589],
-          [-2.627787, 51.41563],
-          [-2.627848, 51.415626]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.630568, 51.414892],
-          [-2.630507, 51.415047],
-          [-2.630693, 51.41508],
-          [-2.630573, 51.415603],
-          [-2.630551, 51.415642],
-          [-2.630512, 51.415661],
-          [-2.629845, 51.415713],
-          [-2.629829, 51.415766],
-          [-2.629753, 51.415801],
-          [-2.62968, 51.416108]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.634086, 51.421783],
-          [-2.634365, 51.422141]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.634277, 51.422028],
-          [-2.633849, 51.422167]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.614121, 51.42766],
           [-2.614103, 51.427715],
           [-2.614039, 51.427764],
@@ -5072,28 +4817,6 @@
           [-2.605139, 51.428329],
           [-2.604927, 51.42835],
           [-2.604715, 51.428335]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622413, 51.417304],
-          [-2.622247, 51.417106]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614518, 51.427732],
-          [-2.614673, 51.427667]
         ]
       }
     },
@@ -5154,31 +4877,6 @@
           [-2.609891, 51.41687],
           [-2.610302, 51.416966],
           [-2.61031, 51.417028]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.632107, 51.423358],
-          [-2.632097, 51.423256],
-          [-2.632172, 51.423194],
-          [-2.632181, 51.423046]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61667, 51.424367],
-          [-2.616742, 51.424274],
-          [-2.616861, 51.424218]
         ]
       }
     },
@@ -5307,31 +5005,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.620193, 51.414175],
-          [-2.620427, 51.414383],
-          [-2.62025, 51.414472]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627628, 51.416777],
-          [-2.62764, 51.416868],
-          [-2.627661, 51.416885],
-          [-2.628198, 51.416951]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.607303, 51.429164],
           [-2.607398, 51.429371],
           [-2.607445, 51.42938],
@@ -5347,20 +5020,6 @@
         "coordinates": [
           [-2.613775, 51.420043],
           [-2.61419, 51.42029]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616748, 51.423638],
-          [-2.616741, 51.423669],
-          [-2.616773, 51.423708],
-          [-2.61713, 51.423962],
-          [-2.617209, 51.424003]
         ]
       }
     },
@@ -5416,43 +5075,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.623435, 51.416258],
-          [-2.623466, 51.416298],
-          [-2.623541, 51.416312],
-          [-2.624073, 51.416147],
-          [-2.624322, 51.416079]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.628463, 51.421122],
-          [-2.628562, 51.421282],
-          [-2.628768, 51.421223]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.627606, 51.423967],
-          [-2.627621, 51.424427]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.606513, 51.41489],
           [-2.606531, 51.414329],
           [-2.606524, 51.41428],
@@ -5461,18 +5083,6 @@
           [-2.605542, 51.414112],
           [-2.605514, 51.414268],
           [-2.606524, 51.41428]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.624506, 51.418029],
-          [-2.624444, 51.418059],
-          [-2.624472, 51.418396]
         ]
       }
     },
@@ -5496,64 +5106,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.618591, 51.419365],
-          [-2.618157, 51.419206]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618089, 51.419928],
-          [-2.618223, 51.419681],
-          [-2.61814, 51.419608]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615289, 51.418386],
-          [-2.615728, 51.418523],
-          [-2.615869, 51.41858]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615288, 51.4183],
-          [-2.615304, 51.418346],
-          [-2.615289, 51.418386]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615158, 51.41861],
-          [-2.615289, 51.418386]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.608582, 51.419353],
           [-2.608367, 51.419763],
           [-2.60833, 51.419851],
@@ -5568,63 +5120,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.615891, 51.415263],
-          [-2.615496, 51.41552],
-          [-2.615487, 51.415541],
-          [-2.615564, 51.415697]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.622591, 51.423946],
-          [-2.6225, 51.423962],
-          [-2.62245, 51.423962],
-          [-2.622415, 51.423944],
-          [-2.621694, 51.423029],
-          [-2.62168, 51.422908],
-          [-2.621689, 51.422831],
-          [-2.621756, 51.42276],
-          [-2.621827, 51.422722]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.621378, 51.426018],
-          [-2.621673, 51.425792]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.604347, 51.427598],
           [-2.604847, 51.427705]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "bishopsworth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.634706, 51.42135],
-          [-2.634561, 51.421494],
-          [-2.634086, 51.421783],
-          [-2.633939, 51.42186]
         ]
       }
     },
@@ -5659,21 +5156,354 @@
     },
     {
       "type": "Feature",
-      "properties": { "kind": "rail", "district": "bishopsworth" },
+      "properties": { "kind": "service", "district": "bishopsworth" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.633835, 51.427488],
-          [-2.632008, 51.427616],
-          [-2.6306, 51.427733],
-          [-2.62942, 51.427842],
-          [-2.627196, 51.428085],
-          [-2.624975, 51.428389],
-          [-2.623434, 51.428641],
-          [-2.621782, 51.428952],
-          [-2.620134, 51.429342],
-          [-2.61867, 51.42975],
-          [-2.611137, 51.432139]
+          [-2.607459, 51.433102],
+          [-2.607435, 51.433013],
+          [-2.607378, 51.432957],
+          [-2.607271, 51.432874]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6293, 51.421659],
+          [-2.629297, 51.421686],
+          [-2.629349, 51.421738],
+          [-2.629458, 51.42176],
+          [-2.629555, 51.42173],
+          [-2.629593, 51.421672],
+          [-2.629585, 51.42164],
+          [-2.629537, 51.421597],
+          [-2.62943, 51.421578],
+          [-2.629334, 51.42161],
+          [-2.6293, 51.421659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612355, 51.43123],
+          [-2.613259, 51.430053],
+          [-2.613567, 51.429561],
+          [-2.613738, 51.429247],
+          [-2.613948, 51.429067],
+          [-2.614089, 51.428969],
+          [-2.615281, 51.428265],
+          [-2.617423, 51.426966],
+          [-2.619251, 51.426031],
+          [-2.623757, 51.423906],
+          [-2.62528, 51.423216],
+          [-2.626691, 51.42261],
+          [-2.628206, 51.421934],
+          [-2.628513, 51.421813],
+          [-2.628742, 51.421752],
+          [-2.628912, 51.421729]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629791, 51.421431],
+          [-2.629945, 51.421345],
+          [-2.631108, 51.421001],
+          [-2.631741, 51.420788],
+          [-2.632095, 51.420637],
+          [-2.632569, 51.420395]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6293, 51.421659],
+          [-2.628912, 51.421729]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.628912, 51.421729],
+          [-2.629349, 51.421738]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629585, 51.42164],
+          [-2.629791, 51.421431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.629791, 51.421431],
+          [-2.629537, 51.421597]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611789, 51.43152],
+          [-2.611934, 51.43154],
+          [-2.611978, 51.431578],
+          [-2.611984, 51.431627],
+          [-2.61195, 51.431721],
+          [-2.612355, 51.43123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60737, 51.43202],
+          [-2.606829, 51.432075],
+          [-2.606459, 51.432131],
+          [-2.606307, 51.432173],
+          [-2.606123, 51.432023],
+          [-2.605985, 51.431968],
+          [-2.605685, 51.43167]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60737, 51.43202],
+          [-2.606879, 51.43219],
+          [-2.60677, 51.432254],
+          [-2.606708, 51.432355],
+          [-2.606732, 51.43253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597754, 51.417298],
+          [-2.595719, 51.415767],
+          [-2.595416, 51.415442],
+          [-2.595245, 51.415203],
+          [-2.595228, 51.415085],
+          [-2.595434, 51.414722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606829, 51.432075],
+          [-2.606813, 51.432223]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606846, 51.414121],
+          [-2.606908, 51.414172],
+          [-2.607065, 51.414219],
+          [-2.607155, 51.414218],
+          [-2.607244, 51.4142],
+          [-2.607351, 51.414139]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.605297, 51.413877],
+          [-2.60644, 51.413995],
+          [-2.60661, 51.414029],
+          [-2.606846, 51.414121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597478, 51.413871],
+          [-2.598987, 51.413761],
+          [-2.599584, 51.413731],
+          [-2.600197, 51.413725],
+          [-2.60082, 51.413734],
+          [-2.601138, 51.413754],
+          [-2.601262, 51.413793],
+          [-2.601364, 51.413854],
+          [-2.601473, 51.413984],
+          [-2.601555, 51.413877],
+          [-2.601663, 51.413817],
+          [-2.601849, 51.413777],
+          [-2.601987, 51.413771],
+          [-2.605297, 51.413877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611789, 51.43152],
+          [-2.609509, 51.431776],
+          [-2.608357, 51.431924],
+          [-2.60737, 51.43202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607351, 51.414139],
+          [-2.607586, 51.414107]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.597478, 51.413871],
+          [-2.59785, 51.413792],
+          [-2.598602, 51.413668],
+          [-2.59955, 51.41358],
+          [-2.600287, 51.413537],
+          [-2.601093, 51.413525],
+          [-2.602202, 51.413556],
+          [-2.602603, 51.413584],
+          [-2.603305, 51.413646],
+          [-2.605297, 51.413877]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612355, 51.43123],
+          [-2.61203, 51.431448],
+          [-2.611952, 51.431481],
+          [-2.611789, 51.43152]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595584, 51.414545],
+          [-2.595891, 51.414266],
+          [-2.596037, 51.414187],
+          [-2.597478, 51.413871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595434, 51.414722],
+          [-2.595533, 51.41462]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595219, 51.414839],
+          [-2.595434, 51.414722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606836, 51.413968],
+          [-2.606815, 51.414027],
+          [-2.606846, 51.414121]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607351, 51.414139],
+          [-2.6074, 51.414041]
         ]
       }
     },
@@ -5683,8 +5513,39 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.630813, 51.427745],
-          [-2.633955, 51.427515]
+          [-2.611137, 51.432139],
+          [-2.609628, 51.432599],
+          [-2.608754, 51.432895],
+          [-2.607582, 51.433346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.632008, 51.427616],
+          [-2.62942, 51.427842],
+          [-2.627196, 51.428085],
+          [-2.624975, 51.428389],
+          [-2.623434, 51.428641],
+          [-2.621782, 51.428952],
+          [-2.620134, 51.429342],
+          [-2.61867, 51.42975],
+          [-2.612549, 51.431701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "bishopsworth" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.633835, 51.427488],
+          [-2.632999, 51.427545]
         ]
       }
     }

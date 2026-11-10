@@ -1,18 +1,17 @@
 import * as THREE from 'three';
 import { createProjection, createUnprojection, labelPoint, ringArea } from './geoProjection';
-import { smoothBoundaries } from './smoothBoundaries';
 
 // Тяжёлая подготовка районов города — один раз при загрузке, в фоновом потоке (cityGeometry.worker.js):
-// сглаживание границ (smoothBoundaries), треугольники плит (выдавливание на высоту 1, плита потом
-// масштабируется по высоте) в км проекции вокруг центра города, точка подписи ([lon, lat]: её можно
-// спроецировать в любом масштабе) и площадь (км²). На главном потоке у большого города это почти
-// секунда.
-export function buildCityGeometry({ districts, water, center }) {
-  const smoothed = smoothBoundaries(districts, { water });
+// треугольники плит (выдавливание на высоту 1, плита потом масштабируется по высоте) в км проекции
+// вокруг центра города, точка подписи ([lon, lat]: её можно спроецировать в любом масштабе) и
+// площадь (км²). На главном потоке у большого города это почти секунда. Контуры районов не
+// сглаживаются и не упрощаются: это границы OpenStreetMap, они должны лежать на дорогах и берегах
+// (ARCHITECTURE.md 5.1).
+export function buildCityGeometry({ districts, center }) {
   const project = createProjection(center);
   const unproject = createUnprojection(center);
   const plates = {};
-  smoothed.features.forEach(({ properties: { slug }, geometry }) => {
+  districts.features.forEach(({ properties: { slug }, geometry }) => {
     const polygons = geometry.coordinates.map((polygon) =>
       polygon.map((ring) => ring.map(project)),
     );
@@ -38,7 +37,7 @@ export function buildCityGeometry({ districts, water, center }) {
     };
     plate.dispose();
   });
-  return { districts: smoothed, plates };
+  return plates;
 }
 
 // Массивы плит — передаются из воркера без копирования.

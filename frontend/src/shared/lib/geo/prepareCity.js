@@ -1,7 +1,7 @@
 // Подготовка районов города (cityGeometry.js) — в фоновом потоке, чтобы открытие карты не замирало;
-// без поддержки воркеров (или если он упал) — тот же расчёт на месте.
-export function prepareCity({ districts, water, center }) {
-  const input = { districts, water, center };
+// без поддержки воркеров (или если он упал) — тот же расчёт на месте. Возвращает плиты по slug.
+export function prepareCity({ districts, center }) {
+  const input = { districts, center };
   if (typeof Worker === 'undefined') return prepareHere(input);
   return new Promise((resolve, reject) => {
     const worker = new Worker(new URL('./cityGeometry.worker.js', import.meta.url), {

@@ -3,495 +3,18 @@
   "features": [
     {
       "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581967, 51.446984],
-          [-2.582081, 51.44703],
-          [-2.582219, 51.447118],
-          [-2.58219, 51.446998],
-          [-2.582213, 51.44696],
-          [-2.582658, 51.446674]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580479, 51.446604],
-          [-2.580967, 51.44695],
-          [-2.58123, 51.447114],
-          [-2.581691, 51.447367]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578451, 51.44388],
-          [-2.578366, 51.443965],
-          [-2.578289, 51.443994],
-          [-2.578092, 51.443999],
-          [-2.577888, 51.443939]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.574455, 51.442695],
-          [-2.575222, 51.44283],
-          [-2.575711, 51.442966],
-          [-2.576114, 51.443119],
-          [-2.576982, 51.44353],
-          [-2.577786, 51.443955],
-          [-2.578106, 51.44424],
-          [-2.578504, 51.444716],
-          [-2.57859, 51.444789]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578641, 51.444696],
-          [-2.578555, 51.444572]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.600157, 51.437824],
-          [-2.600088, 51.437715],
-          [-2.599895, 51.437807]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578828, 51.445158],
-          [-2.579056, 51.445473],
-          [-2.579299, 51.445718],
-          [-2.579715, 51.44607],
-          [-2.580479, 51.446604]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.569432, 51.442781],
-          [-2.571908, 51.442602],
-          [-2.572608, 51.442592]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.582785, 51.446599],
-          [-2.582658, 51.446674]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581691, 51.447367],
-          [-2.581709, 51.447378]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578511, 51.444087],
-          [-2.578534, 51.444041],
-          [-2.578512, 51.443849],
-          [-2.578485, 51.443826]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578519, 51.44418],
-          [-2.578555, 51.444572]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.577888, 51.443939],
-          [-2.577658, 51.443795],
-          [-2.577103, 51.443499],
-          [-2.576538, 51.443222],
-          [-2.575859, 51.442935],
-          [-2.575542, 51.442832],
-          [-2.574888, 51.442691],
-          [-2.574561, 51.442641],
-          [-2.573804, 51.442575],
-          [-2.572983, 51.44256],
-          [-2.572608, 51.442592]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578189, 51.442442],
-          [-2.578212, 51.442355],
-          [-2.578187, 51.442031],
-          [-2.578154, 51.441948],
-          [-2.578023, 51.4418]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578189, 51.442442],
-          [-2.578238, 51.442694],
-          [-2.578373, 51.443141],
-          [-2.578485, 51.443826]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581699, 51.446946],
-          [-2.581582, 51.446988],
-          [-2.58151, 51.447048],
-          [-2.581513, 51.447165],
-          [-2.581607, 51.447259]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581967, 51.446984],
-          [-2.581777, 51.447003],
-          [-2.581638, 51.447053],
-          [-2.581588, 51.447121],
-          [-2.581607, 51.447259]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.572791, 51.439086],
-          [-2.573063, 51.439388],
-          [-2.573532, 51.439848],
-          [-2.573808, 51.440082],
-          [-2.574222, 51.440372],
-          [-2.574797, 51.440659],
-          [-2.576492, 51.44134],
-          [-2.576772, 51.441443],
-          [-2.577609, 51.441669]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578555, 51.444572],
-          [-2.57859, 51.444789]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.582658, 51.446674],
-          [-2.582252, 51.446827],
-          [-2.581699, 51.446946]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578451, 51.44388],
-          [-2.578469, 51.444044],
-          [-2.578511, 51.444087]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.573625, 51.442696],
-          [-2.573744, 51.442683],
-          [-2.574455, 51.442695]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578641, 51.444696],
-          [-2.578668, 51.444615],
-          [-2.578618, 51.444282],
-          [-2.578519, 51.44418]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578511, 51.444087],
-          [-2.578519, 51.44418]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578828, 51.445158],
-          [-2.578641, 51.444696]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.57859, 51.444789],
-          [-2.578717, 51.44502],
-          [-2.578828, 51.445158]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581699, 51.446946],
-          [-2.581304, 51.446901],
-          [-2.58111, 51.446862],
-          [-2.580991, 51.446826],
-          [-2.580479, 51.446604]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578057, 51.44207],
-          [-2.578135, 51.44236],
-          [-2.578189, 51.442442]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.572608, 51.442592],
-          [-2.572944, 51.442623],
-          [-2.574078, 51.442668],
-          [-2.574455, 51.442695]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.586411, 51.444987],
-          [-2.585895, 51.445115],
-          [-2.585201, 51.44536]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.577609, 51.441669],
-          [-2.577667, 51.441727],
-          [-2.57785, 51.441834],
-          [-2.578057, 51.44207]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578023, 51.4418],
-          [-2.577824, 51.441692],
-          [-2.577743, 51.441671],
-          [-2.577609, 51.441669]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578023, 51.4418],
-          [-2.577971, 51.441865],
-          [-2.57804, 51.441949],
-          [-2.578057, 51.44207]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578555, 51.444572],
-          [-2.578162, 51.444149],
-          [-2.577888, 51.443939]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581967, 51.446984],
-          [-2.581699, 51.446946]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.578485, 51.443826],
-          [-2.578451, 51.44388]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581607, 51.447259],
-          [-2.581652, 51.447294],
-          [-2.581691, 51.447367]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "properties": { "kind": "secondary", "district": "windmill-hill" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.581281, 51.436047],
-          [-2.581644, 51.436263],
+          [-2.581095, 51.435917],
+          [-2.581497, 51.436183],
           [-2.581961, 51.436422],
-          [-2.582275, 51.436547],
+          [-2.582153, 51.436499],
           [-2.582691, 51.436684],
           [-2.58358, 51.436896],
-          [-2.583868, 51.437041],
+          [-2.583771, 51.436987],
+          [-2.58392, 51.437083],
           [-2.584176, 51.437368],
           [-2.58431, 51.437457],
           [-2.584432, 51.437405],
@@ -529,8 +52,26 @@
           [-2.598931, 51.436898],
           [-2.599138, 51.437064],
           [-2.599378, 51.437196],
-          [-2.599862, 51.437512],
-          [-2.600088, 51.437715]
+          [-2.599699, 51.43741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.598346, 51.435636],
+          [-2.598793, 51.435632],
+          [-2.599186, 51.435595],
+          [-2.59959, 51.435516],
+          [-2.599922, 51.43541],
+          [-2.600441, 51.435186],
+          [-2.600972, 51.434866],
+          [-2.601646, 51.43442],
+          [-2.602742, 51.433819],
+          [-2.603308, 51.433559]
         ]
       }
     },
@@ -570,24 +111,6 @@
           [-2.597089, 51.435636],
           [-2.597592, 51.435736],
           [-2.597689, 51.435738]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.598346, 51.435636],
-          [-2.598793, 51.435632],
-          [-2.599186, 51.435595],
-          [-2.59959, 51.435516],
-          [-2.599922, 51.43541],
-          [-2.600441, 51.435186],
-          [-2.600972, 51.434866],
-          [-2.601646, 51.43442],
-          [-2.602781, 51.433801]
         ]
       }
     },
@@ -733,17 +256,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.573373, 51.442559],
-          [-2.573294, 51.442897]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.578187, 51.442031],
           [-2.578371, 51.44189],
           [-2.578669, 51.441714],
@@ -768,6 +280,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.587821, 51.433837],
+          [-2.588057, 51.43408],
           [-2.588122, 51.434168],
           [-2.588301, 51.434456],
           [-2.58848, 51.434881],
@@ -818,16 +332,6 @@
         "type": "LineString",
         "coordinates": [
           [-2.573249, 51.443067],
-          [-2.573294, 51.442897]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "tertiary", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.573294, 51.442897],
           [-2.573391, 51.442804],
           [-2.573502, 51.442735],
@@ -866,41 +370,23 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.573373, 51.442559],
+          [-2.573354, 51.44264]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.581578, 51.440651],
           [-2.581495, 51.440598],
           [-2.581377, 51.440594],
           [-2.581289, 51.440637],
           [-2.581265, 51.440681],
           [-2.58127, 51.440716]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.582456, 51.441463],
-          [-2.58303, 51.441834],
-          [-2.583506, 51.442191],
-          [-2.583852, 51.442481],
-          [-2.584163, 51.442815],
-          [-2.584325, 51.443021],
-          [-2.584457, 51.443253],
-          [-2.584697, 51.443871],
-          [-2.58474, 51.444048],
-          [-2.584726, 51.444282],
-          [-2.584657, 51.444529],
-          [-2.584592, 51.44462],
-          [-2.584499, 51.44471],
-          [-2.584438, 51.444789],
-          [-2.584417, 51.44486],
-          [-2.58442, 51.444918],
-          [-2.584483, 51.445032],
-          [-2.584544, 51.445097],
-          [-2.584769, 51.445276],
-          [-2.584954, 51.445452]
         ]
       }
     },
@@ -940,32 +426,6 @@
           [-2.597348, 51.435274],
           [-2.597418, 51.435195],
           [-2.597762, 51.435019]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.586281, 51.444099],
-          [-2.585944, 51.443643],
-          [-2.58546, 51.44362]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.58657, 51.444509],
-          [-2.586065, 51.444648],
-          [-2.585925, 51.444711],
-          [-2.585072, 51.444994],
-          [-2.584926, 51.445025]
         ]
       }
     },
@@ -1542,7 +1002,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.578861, 51.436675],
+          [-2.578951, 51.436676],
           [-2.579072, 51.436678],
           [-2.579192, 51.436667],
           [-2.579305, 51.436637],
@@ -1563,9 +1023,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.575268, 51.438149],
-          [-2.578799, 51.436728],
-          [-2.578861, 51.436675]
+          [-2.577707, 51.437172],
+          [-2.57875, 51.436747]
         ]
       }
     },
@@ -1575,8 +1034,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.578861, 51.436675],
-          [-2.578936, 51.43651]
+          [-2.579099, 51.436299],
+          [-2.57922, 51.436232],
+          [-2.580005, 51.435918]
         ]
       }
     },
@@ -1586,19 +1046,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.578754, 51.436635],
-          [-2.578861, 51.436675]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.574745, 51.437601],
-          [-2.574681, 51.437628]
+          [-2.578913, 51.436579],
+          [-2.578936, 51.43651],
+          [-2.579017, 51.436372]
         ]
       }
     },
@@ -1619,11 +1069,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.589314, 51.434495],
-          [-2.589461, 51.434475],
-          [-2.590181, 51.434457],
-          [-2.59145, 51.434409],
-          [-2.591726, 51.434386],
           [-2.592011, 51.434346],
           [-2.592534, 51.435037],
           [-2.593402, 51.436148],
@@ -1680,12 +1125,35 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.591726, 51.434386],
+          [-2.59145, 51.434409],
+          [-2.590181, 51.434457],
+          [-2.589461, 51.434475],
+          [-2.589314, 51.434495]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.588273, 51.434179],
+          [-2.588179, 51.434154],
+          [-2.588122, 51.434168]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.589314, 51.434495],
           [-2.589237, 51.434458],
-          [-2.588991, 51.434418],
-          [-2.58856, 51.434292],
-          [-2.588237, 51.434165],
-          [-2.588179, 51.434154]
+          [-2.588991, 51.434418]
         ]
       }
     },
@@ -1803,6 +1271,17 @@
           [-2.585062, 51.435679],
           [-2.586148, 51.436909],
           [-2.586181, 51.436932]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.586936, 51.433672],
+          [-2.587242, 51.433408]
         ]
       }
     },
@@ -2009,8 +1488,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.572744, 51.439183],
-          [-2.572863, 51.439166]
+          [-2.57064, 51.439584],
+          [-2.572333, 51.439448]
         ]
       }
     },
@@ -2020,8 +1499,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.571637, 51.439502],
-          [-2.573063, 51.439388]
+          [-2.570416, 51.439679],
+          [-2.570443, 51.439646]
         ]
       }
     },
@@ -2035,7 +1514,7 @@
           [-2.569894, 51.441687],
           [-2.570559, 51.440283],
           [-2.57055, 51.440189],
-          [-2.570427, 51.439712]
+          [-2.570416, 51.439679]
         ]
       }
     },
@@ -2288,6 +1767,23 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.582456, 51.441463],
+          [-2.58303, 51.441834],
+          [-2.583506, 51.442191],
+          [-2.583852, 51.442481],
+          [-2.584163, 51.442815],
+          [-2.584325, 51.443021],
+          [-2.584457, 51.443253],
+          [-2.584551, 51.443493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.580961, 51.444199],
           [-2.583116, 51.443354],
           [-2.583155, 51.443324],
@@ -2309,28 +1805,6 @@
         "coordinates": [
           [-2.571585, 51.441227],
           [-2.571945, 51.441954]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.583308, 51.444871],
-          [-2.582511, 51.445317]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.583216, 51.445513],
-          [-2.582707, 51.445207]
         ]
       }
     },
@@ -2407,8 +1881,10 @@
           [-2.603083, 51.435216],
           [-2.603155, 51.435153],
           [-2.60336, 51.43505],
-          [-2.603398, 51.43502],
-          [-2.603436, 51.434963]
+          [-2.603479, 51.434925],
+          [-2.603969, 51.43466],
+          [-2.604341, 51.434588],
+          [-2.604524, 51.434528]
         ]
       }
     },
@@ -2420,17 +1896,6 @@
         "coordinates": [
           [-2.599683, 51.437188],
           [-2.599378, 51.437196]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.600088, 51.437715],
-          [-2.600218, 51.437656]
         ]
       }
     },
@@ -2499,32 +1964,16 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.584483, 51.445032],
-          [-2.583216, 51.445513],
-          [-2.581232, 51.446317],
-          [-2.581147, 51.446368]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599642, 51.432836],
-          [-2.599198, 51.432791]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
+          [-2.601482, 51.433135],
+          [-2.600515, 51.432945],
           [-2.600231, 51.432903],
-          [-2.599831, 51.432856]
+          [-2.599198, 51.432791],
+          [-2.59877, 51.432786],
+          [-2.59854, 51.43279],
+          [-2.597889, 51.432835],
+          [-2.59717, 51.432924],
+          [-2.596815, 51.432984],
+          [-2.596138, 51.433137]
         ]
       }
     },
@@ -2534,22 +1983,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.602759, 51.433782],
           [-2.602619, 51.433663],
           [-2.602379, 51.433502],
           [-2.602151, 51.433382],
-          [-2.601683, 51.433194],
-          [-2.601482, 51.433135]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.602781, 51.433801],
-          [-2.602759, 51.433782]
+          [-2.601683, 51.433194]
         ]
       }
     },
@@ -2709,18 +2147,6 @@
         "coordinates": [
           [-2.592323, 51.434281],
           [-2.592133, 51.434323]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.59877, 51.432786],
-          [-2.59854, 51.43279],
-          [-2.597889, 51.432835]
         ]
       }
     },
@@ -3187,6 +2613,18 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.570052, 51.439735],
+          [-2.57036, 51.439674],
+          [-2.570416, 51.439679]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.575305, 51.44253],
           [-2.575604, 51.44241]
         ]
@@ -3289,635 +2727,6 @@
     },
     {
       "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580158, 51.445967],
-          [-2.580258, 51.445812],
-          [-2.580481, 51.445555],
-          [-2.580842, 51.445245],
-          [-2.581251, 51.444991],
-          [-2.581703, 51.444761],
-          [-2.582192, 51.444541],
-          [-2.583312, 51.444093],
-          [-2.584049, 51.443857],
-          [-2.585438, 51.443489]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.598331, 51.438297],
-          [-2.599873, 51.437393],
-          [-2.600486, 51.437051]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581803, 51.444783],
-          [-2.581143, 51.445101],
-          [-2.580795, 51.445337],
-          [-2.580668, 51.445444],
-          [-2.580456, 51.445659],
-          [-2.580237, 51.445946],
-          [-2.580064, 51.446343],
-          [-2.580021, 51.446635],
-          [-2.580069, 51.446947],
-          [-2.58018, 51.447205],
-          [-2.580658, 51.447925]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580505, 51.447952],
-          [-2.580046, 51.447129],
-          [-2.579971, 51.446808],
-          [-2.579961, 51.446563],
-          [-2.579993, 51.446389],
-          [-2.580075, 51.446129],
-          [-2.580158, 51.445967]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581382, 51.444823],
-          [-2.580782, 51.445178],
-          [-2.580611, 51.445309],
-          [-2.58029, 51.445609],
-          [-2.580135, 51.4458],
-          [-2.580023, 51.445985],
-          [-2.579851, 51.446378]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.57974, 51.447827],
-          [-2.579782, 51.448027]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581188, 51.444881],
-          [-2.580649, 51.445116],
-          [-2.580384, 51.445288],
-          [-2.580002, 51.445627],
-          [-2.579777, 51.445931],
-          [-2.57966, 51.446182],
-          [-2.579569, 51.446464],
-          [-2.579529, 51.446879],
-          [-2.57956, 51.447288],
-          [-2.579669, 51.447719],
-          [-2.579717, 51.448029]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580414, 51.447968],
-          [-2.580311, 51.447755]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.579825, 51.448025],
-          [-2.579672, 51.446976],
-          [-2.579697, 51.446667],
-          [-2.579771, 51.446361],
-          [-2.579912, 51.446038],
-          [-2.580073, 51.445773],
-          [-2.580329, 51.445463],
-          [-2.580704, 51.44516],
-          [-2.581188, 51.444881]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.579961, 51.446563],
-          [-2.579951, 51.44703],
-          [-2.580092, 51.44739],
-          [-2.580311, 51.447755]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.579953, 51.447295],
-          [-2.580018, 51.447444],
-          [-2.580354, 51.447978]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580159, 51.448005],
-          [-2.579953, 51.447295]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.579851, 51.446378],
-          [-2.579736, 51.446812],
-          [-2.579729, 51.446977],
-          [-2.579865, 51.448024]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.579951, 51.44703],
-          [-2.580033, 51.447396],
-          [-2.580103, 51.447585]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.586672, 51.443281],
-          [-2.585114, 51.443645]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.58025, 51.446215],
-          [-2.580378, 51.445942],
-          [-2.580456, 51.445832],
-          [-2.580693, 51.445595],
-          [-2.581658, 51.444997],
-          [-2.582869, 51.444315]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.582615, 51.444256],
-          [-2.583144, 51.444014]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580345, 51.445864],
-          [-2.580535, 51.445575]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581321, 51.445151],
-          [-2.582323, 51.44455]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581143, 51.445101],
-          [-2.580844, 51.445265],
-          [-2.580621, 51.445424]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580749, 51.44545],
-          [-2.581033, 51.445284],
-          [-2.581658, 51.444997]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581033, 51.445284],
-          [-2.582041, 51.444674]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.595565, 51.4397],
-          [-2.595135, 51.439914],
-          [-2.594821, 51.440045],
-          [-2.59283, 51.440797],
-          [-2.590667, 51.441668],
-          [-2.590317, 51.441827],
-          [-2.589102, 51.442279],
-          [-2.58803, 51.442617],
-          [-2.586994, 51.442916],
-          [-2.585419, 51.443321],
-          [-2.584116, 51.443675],
-          [-2.583443, 51.443892],
-          [-2.582144, 51.444398],
-          [-2.581256, 51.444793]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.583121, 51.444065],
-          [-2.582088, 51.444465],
-          [-2.581593, 51.444683],
-          [-2.580424, 51.445083],
-          [-2.580029, 51.445182],
-          [-2.579399, 51.445253],
-          [-2.577909, 51.445388]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.584858, 51.443607],
-          [-2.585438, 51.443489]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.600514, 51.437074],
-          [-2.599145, 51.437866]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.60066, 51.436897],
-          [-2.597356, 51.438808],
-          [-2.595897, 51.439581],
-          [-2.594717, 51.440149],
-          [-2.592452, 51.441068],
-          [-2.590593, 51.441782],
-          [-2.588026, 51.4427],
-          [-2.58733, 51.442935],
-          [-2.586722, 51.443108],
-          [-2.586282, 51.443225],
-          [-2.584804, 51.443569],
-          [-2.583953, 51.44382]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.586759, 51.443214],
-          [-2.585435, 51.443539],
-          [-2.585114, 51.443645],
-          [-2.584169, 51.443905],
-          [-2.583087, 51.444232],
-          [-2.582869, 51.444315],
-          [-2.581803, 51.444783],
-          [-2.581254, 51.445109],
-          [-2.580749, 51.44545],
-          [-2.580345, 51.445864],
-          [-2.580249, 51.446039],
-          [-2.58012, 51.446382],
-          [-2.58014, 51.446856],
-          [-2.580187, 51.447084],
-          [-2.580306, 51.447328],
-          [-2.580705, 51.447917]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.579953, 51.447295],
-          [-2.579873, 51.446966],
-          [-2.579861, 51.44679],
-          [-2.579917, 51.446354],
-          [-2.580028, 51.446072],
-          [-2.58015, 51.445863],
-          [-2.580392, 51.445549],
-          [-2.580662, 51.445318]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580662, 51.445318],
-          [-2.580452, 51.445518],
-          [-2.580282, 51.445742],
-          [-2.580158, 51.445967]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.58049, 51.445328],
-          [-2.580249, 51.445586],
-          [-2.580108, 51.445799],
-          [-2.580023, 51.445985]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.585438, 51.443489],
-          [-2.586374, 51.44327],
-          [-2.587216, 51.443051]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.584478, 51.443701],
-          [-2.584858, 51.443607]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.589102, 51.442279],
-          [-2.587591, 51.442807],
-          [-2.586861, 51.443026],
-          [-2.584304, 51.443671],
-          [-2.583121, 51.444065]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.584858, 51.443607],
-          [-2.58539, 51.443466],
-          [-2.586302, 51.443261],
-          [-2.587186, 51.443021]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580964, 51.445106],
-          [-2.581382, 51.444823]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.579851, 51.446378],
-          [-2.579812, 51.446745],
-          [-2.579843, 51.44706],
-          [-2.580107, 51.448014]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.583953, 51.44382],
-          [-2.584478, 51.443701]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.583573, 51.44394],
-          [-2.583121, 51.444065]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580689, 51.447776],
-          [-2.580417, 51.447378],
-          [-2.580288, 51.447119],
-          [-2.580129, 51.446695]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581188, 51.444881],
-          [-2.581691, 51.444675]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580311, 51.447755],
-          [-2.580459, 51.44796]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.583953, 51.44382],
-          [-2.583252, 51.44404],
-          [-2.582639, 51.444276],
-          [-2.581691, 51.444675]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580662, 51.445318],
-          [-2.580964, 51.445106]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.581691, 51.444675],
-          [-2.581382, 51.444823]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580964, 51.445106],
-          [-2.581201, 51.444962],
-          [-2.581663, 51.444734],
-          [-2.58267, 51.444304],
-          [-2.58328, 51.444068],
-          [-2.584478, 51.443701]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "properties": { "kind": "service", "district": "windmill-hill" },
       "geometry": {
         "type": "LineString",
@@ -3951,17 +2760,6 @@
           [-2.577762, 51.442523],
           [-2.577548, 51.44247],
           [-2.577488, 51.442397]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.569203, 51.443212],
-          [-2.56977, 51.443036]
         ]
       }
     },
@@ -4030,28 +2828,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.580879, 51.447136],
-          [-2.581125, 51.447047]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.580967, 51.44695],
-          [-2.580826, 51.4471]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.580261, 51.440112],
           [-2.580018, 51.440305],
           [-2.579963, 51.440328],
@@ -4061,28 +2837,6 @@
           [-2.579966, 51.440187],
           [-2.579883, 51.440126],
           [-2.579559, 51.439975]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.583332, 51.445471],
-          [-2.583718, 51.445784]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.583087, 51.445566],
-          [-2.583124, 51.44573]
         ]
       }
     },
@@ -4513,17 +3267,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.583308, 51.444871],
-          [-2.583784, 51.444572]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.593025, 51.439336],
           [-2.593198, 51.439239],
           [-2.593296, 51.439173]
@@ -4673,8 +3416,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.604188, 51.434404],
+          [-2.604341, 51.434588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.601659, 51.436129],
           [-2.601461, 51.436017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604591, 51.434294],
+          [-2.604735, 51.434436]
         ]
       }
     },
@@ -4708,6 +3473,17 @@
         "coordinates": [
           [-2.587943, 51.434815],
           [-2.588429, 51.434755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.587572, 51.43395],
+          [-2.587821, 51.433837]
         ]
       }
     },
@@ -4800,17 +3576,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.574998, 51.437856],
-          [-2.574947, 51.437877]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "windmill-hill" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.582255, 51.439056],
           [-2.581639, 51.438981]
         ]
@@ -4824,6 +3589,17 @@
         "coordinates": [
           [-2.592042, 51.437717],
           [-2.59202, 51.437393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604524, 51.434528],
+          [-2.605046, 51.434289]
         ]
       }
     },
@@ -4964,6 +3740,535 @@
           [-2.60108, 51.433554],
           [-2.601281, 51.433554],
           [-2.601294, 51.433386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578451, 51.44388],
+          [-2.578366, 51.443965],
+          [-2.578289, 51.443994],
+          [-2.578092, 51.443999],
+          [-2.577888, 51.443939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.574455, 51.442695],
+          [-2.575222, 51.44283],
+          [-2.575711, 51.442966],
+          [-2.576114, 51.443119],
+          [-2.576982, 51.44353],
+          [-2.577786, 51.443955],
+          [-2.578106, 51.44424],
+          [-2.578504, 51.444716],
+          [-2.57859, 51.444789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578641, 51.444696],
+          [-2.578555, 51.444572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578828, 51.445158],
+          [-2.579056, 51.445473],
+          [-2.579299, 51.445718],
+          [-2.579715, 51.44607]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.572281, 51.442588],
+          [-2.572341, 51.442588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578511, 51.444087],
+          [-2.578534, 51.444041],
+          [-2.578512, 51.443849],
+          [-2.578485, 51.443826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578519, 51.44418],
+          [-2.578555, 51.444572]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577888, 51.443939],
+          [-2.577658, 51.443795],
+          [-2.577103, 51.443499],
+          [-2.576538, 51.443222],
+          [-2.575859, 51.442935],
+          [-2.575542, 51.442832],
+          [-2.574888, 51.442691],
+          [-2.574561, 51.442641],
+          [-2.573804, 51.442575],
+          [-2.572983, 51.44256],
+          [-2.572608, 51.442592]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578189, 51.442442],
+          [-2.578212, 51.442355],
+          [-2.578187, 51.442031],
+          [-2.578154, 51.441948],
+          [-2.578023, 51.4418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578189, 51.442442],
+          [-2.578238, 51.442694],
+          [-2.578373, 51.443141],
+          [-2.578485, 51.443826]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573063, 51.439388],
+          [-2.573319, 51.439651],
+          [-2.573808, 51.440082],
+          [-2.574053, 51.440263],
+          [-2.574415, 51.440475],
+          [-2.574797, 51.440659],
+          [-2.576492, 51.44134],
+          [-2.576772, 51.441443],
+          [-2.577609, 51.441669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578555, 51.444572],
+          [-2.57859, 51.444789]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578451, 51.44388],
+          [-2.578469, 51.444044],
+          [-2.578511, 51.444087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573625, 51.442696],
+          [-2.573744, 51.442683],
+          [-2.574455, 51.442695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578641, 51.444696],
+          [-2.578668, 51.444615],
+          [-2.578618, 51.444282],
+          [-2.578519, 51.44418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578511, 51.444087],
+          [-2.578519, 51.44418]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578828, 51.445158],
+          [-2.578641, 51.444696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57859, 51.444789],
+          [-2.578717, 51.44502],
+          [-2.578828, 51.445158]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578057, 51.44207],
+          [-2.578135, 51.44236],
+          [-2.578189, 51.442442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.573354, 51.44264],
+          [-2.574455, 51.442695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.577609, 51.441669],
+          [-2.577667, 51.441727],
+          [-2.57785, 51.441834],
+          [-2.578057, 51.44207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578023, 51.4418],
+          [-2.577824, 51.441692],
+          [-2.577743, 51.441671],
+          [-2.577609, 51.441669]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578023, 51.4418],
+          [-2.577971, 51.441865],
+          [-2.57804, 51.441949],
+          [-2.578057, 51.44207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578555, 51.444572],
+          [-2.578162, 51.444149],
+          [-2.577888, 51.443939]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.578485, 51.443826],
+          [-2.578451, 51.44388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581691, 51.444675],
+          [-2.581166, 51.44494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.57974, 51.447827],
+          [-2.579782, 51.448027]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581188, 51.444881],
+          [-2.580649, 51.445116],
+          [-2.580384, 51.445288],
+          [-2.580002, 51.445627],
+          [-2.579777, 51.445931],
+          [-2.57966, 51.446182],
+          [-2.579569, 51.446464],
+          [-2.579529, 51.446879],
+          [-2.57956, 51.447288],
+          [-2.579669, 51.447719],
+          [-2.579717, 51.448029]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579825, 51.448025],
+          [-2.579672, 51.446976],
+          [-2.579697, 51.446667],
+          [-2.579771, 51.446361],
+          [-2.579912, 51.446038],
+          [-2.580073, 51.445773],
+          [-2.580329, 51.445463],
+          [-2.580704, 51.44516],
+          [-2.581188, 51.444881]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579764, 51.44668],
+          [-2.579729, 51.446977],
+          [-2.579865, 51.448024]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582615, 51.444256],
+          [-2.583144, 51.444014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.595565, 51.4397],
+          [-2.595135, 51.439914],
+          [-2.594821, 51.440045],
+          [-2.59283, 51.440797],
+          [-2.590667, 51.441668],
+          [-2.590317, 51.441827],
+          [-2.589102, 51.442279],
+          [-2.58803, 51.442617],
+          [-2.586994, 51.442916],
+          [-2.585419, 51.443321],
+          [-2.584116, 51.443675],
+          [-2.583443, 51.443892],
+          [-2.582144, 51.444398],
+          [-2.581256, 51.444793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583121, 51.444065],
+          [-2.582088, 51.444465],
+          [-2.581593, 51.444683],
+          [-2.580424, 51.445083],
+          [-2.580029, 51.445182],
+          [-2.579399, 51.445253],
+          [-2.577909, 51.445388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.60499, 51.434471],
+          [-2.60432, 51.434793],
+          [-2.603387, 51.43528],
+          [-2.602571, 51.435747],
+          [-2.60066, 51.436897],
+          [-2.597356, 51.438808],
+          [-2.595897, 51.439581],
+          [-2.594717, 51.440149],
+          [-2.592452, 51.441068],
+          [-2.590593, 51.441782],
+          [-2.588026, 51.4427],
+          [-2.58733, 51.442935],
+          [-2.586722, 51.443108],
+          [-2.586282, 51.443225],
+          [-2.584804, 51.443569],
+          [-2.584295, 51.443711],
+          [-2.583252, 51.44404]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58049, 51.445328],
+          [-2.580249, 51.445586]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589102, 51.442279],
+          [-2.587591, 51.442807],
+          [-2.586861, 51.443026],
+          [-2.584304, 51.443671],
+          [-2.583121, 51.444065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583573, 51.44394],
+          [-2.583121, 51.444065]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581188, 51.444881],
+          [-2.581691, 51.444675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "windmill-hill" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582121, 51.444492],
+          [-2.581691, 51.444675]
         ]
       }
     }

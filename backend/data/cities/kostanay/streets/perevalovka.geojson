@@ -3,6 +3,238 @@
   "features": [
     {
       "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.650743, 53.220431],
+          [63.654038, 53.218905]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.655634, 53.234156],
+          [63.655869, 53.234268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.652547, 53.232738],
+          [63.654747, 53.233733]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.650627, 53.231679],
+          [63.651261, 53.232072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.648704, 53.230412],
+          [63.649339, 53.230869]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641881, 53.224606],
+          [63.646378, 53.228416],
+          [63.647972, 53.229803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.657231, 53.233244],
+          [63.657426, 53.233117]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.665605, 53.235517],
+          [63.666929, 53.236299]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.663775, 53.234427],
+          [63.664248, 53.23471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.660292, 53.232486],
+          [63.660557, 53.232608]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.659048, 53.231879],
+          [63.659228, 53.231735],
+          [63.659486, 53.231673],
+          [63.659786, 53.231703],
+          [63.660001, 53.231818],
+          [63.660082, 53.231956],
+          [63.66004, 53.232121],
+          [63.659844, 53.23226],
+          [63.659561, 53.232312],
+          [63.659948, 53.232377]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.667347, 53.23604],
+          [63.667102, 53.23623],
+          [63.663858, 53.234303],
+          [63.661131, 53.232762],
+          [63.660713, 53.232544],
+          [63.660474, 53.232388],
+          [63.660262, 53.232186],
+          [63.660082, 53.231956]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.668955, 53.234834],
+          [63.668628, 53.23508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.670456, 53.23377],
+          [63.669368, 53.234549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.672018, 53.232612],
+          [63.671115, 53.233296]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.65607, 53.220373],
+          [63.657944, 53.221943],
+          [63.665087, 53.227213],
+          [63.666023, 53.22787],
+          [63.666412, 53.228185],
+          [63.667204, 53.228769],
+          [63.67099, 53.231535],
+          [63.67219, 53.232387]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.654304, 53.218882],
+          [63.655999, 53.220313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.659048, 53.231879],
+          [63.659022, 53.232049],
+          [63.659112, 53.232177],
+          [63.659308, 53.232278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.659048, 53.231879],
+          [63.658537, 53.232262]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": { "kind": "tertiary", "district": "perevalovka" },
       "geometry": {
         "type": "LineString",
@@ -88,114 +320,6 @@
     },
     {
       "type": "Feature",
-      "properties": { "kind": "secondary", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.651261, 53.232072],
-          [63.652547, 53.232738],
-          [63.653827, 53.233317]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.649339, 53.230869],
-          [63.650627, 53.231679]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.646378, 53.228416],
-          [63.647262, 53.229194]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.656745, 53.233609],
-          [63.657231, 53.233244],
-          [63.657426, 53.233117]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.659561, 53.232312],
-          [63.659948, 53.232377],
-          [63.660292, 53.232486]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.672018, 53.232612],
-          [63.671115, 53.233296],
-          [63.668036, 53.235505],
-          [63.667102, 53.23623],
-          [63.663858, 53.234303],
-          [63.661131, 53.232762],
-          [63.660713, 53.232544],
-          [63.660474, 53.232388],
-          [63.660262, 53.232186],
-          [63.660082, 53.231956]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.654304, 53.218882],
-          [63.657944, 53.221943],
-          [63.665087, 53.227213],
-          [63.666023, 53.22787],
-          [63.666412, 53.228185],
-          [63.667204, 53.228769],
-          [63.67099, 53.231535],
-          [63.67219, 53.232387],
-          [63.672091, 53.23253]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.659048, 53.231879],
-          [63.658537, 53.232262],
-          [63.658963, 53.232249],
-          [63.659308, 53.232278]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "properties": { "kind": "local", "district": "perevalovka" },
       "geometry": {
         "type": "LineString",
@@ -209,18 +333,6 @@
           [63.665439, 53.229864],
           [63.665781, 53.229357],
           [63.666077, 53.228951]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.661394, 53.220363],
-          [63.659624, 53.221061],
-          [63.65782, 53.219541]
         ]
       }
     },
@@ -245,7 +357,8 @@
           [63.650931, 53.222753],
           [63.65257, 53.222013],
           [63.654179, 53.221245],
-          [63.656202, 53.22031]
+          [63.65607, 53.220373],
+          [63.65782, 53.219541]
         ]
       }
     },
@@ -687,8 +800,7 @@
         "type": "LineString",
         "coordinates": [
           [63.674553, 53.230164],
-          [63.676265, 53.230877],
-          [63.676377, 53.231033]
+          [63.676265, 53.230877]
         ]
       }
     },
@@ -814,7 +926,8 @@
           [63.664748, 53.233754],
           [63.664388, 53.233951],
           [63.664002, 53.234191],
-          [63.663858, 53.234303]
+          [63.663858, 53.234303],
+          [63.663775, 53.234427]
         ]
       }
     },
@@ -1375,18 +1488,6 @@
           [63.666114, 53.22515],
           [63.666747, 53.225597],
           [63.665774, 53.226034]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.661679, 53.221712],
-          [63.660537, 53.221538],
-          [63.659804, 53.22099]
         ]
       }
     },
@@ -2046,17 +2147,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.669118, 53.234956],
-          [63.668955, 53.234834]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "perevalovka" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.662048, 53.230604],
           [63.662306, 53.230416],
           [63.662503, 53.230311]
@@ -2232,6 +2322,17 @@
           [63.656458, 53.224634],
           [63.65646, 53.224693],
           [63.65602, 53.224891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.661679, 53.221712],
+          [63.660881, 53.22159]
         ]
       }
     },
@@ -2752,6 +2853,25 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.665608, 53.226674],
+          [63.665849, 53.226549],
+          [63.665908, 53.226509],
+          [63.665919, 53.226462],
+          [63.665232, 53.226077],
+          [63.665122, 53.226126],
+          [63.66501, 53.226199],
+          [63.664975, 53.226233],
+          [63.664975, 53.226271],
+          [63.665608, 53.226674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [63.665476, 53.227],
           [63.665699, 53.227178],
           [63.665699, 53.22723],
@@ -2793,14 +2913,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.67219, 53.232387],
-          [63.67226, 53.232278],
-          [63.672332, 53.232212],
-          [63.67274, 53.231978],
-          [63.673553, 53.231549],
+          [63.64884, 53.22133],
+          [63.650743, 53.220431]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.641881, 53.224606],
+          [63.647236, 53.222082]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "perevalovka" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [63.673974, 53.23138],
-          [63.674263, 53.231302],
-          [63.674547, 53.231249]
+          [63.674263, 53.231302]
         ]
       }
     },

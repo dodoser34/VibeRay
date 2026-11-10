@@ -5,3 +5,6 @@ pytest==9.1.1
 pytest-asyncio==1.4.0
 httpx==0.28.1
 ruff==0.16.9
+
+# Геометрия в скриптах геоданных (scripts/build_districts.py, verify_city_data.py); API её не использует
+shapely==2.2.0

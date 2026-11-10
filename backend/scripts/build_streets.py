@@ -66,15 +66,8 @@ Point = tuple[float, float]
 Ring = list[list[float]]
 
 
-def fetch_box(south: float, west: float, north: float, east: float, attempts: int = 8) -> dict:
-    box = f'{south},{west},{north},{east}'
-    highways = '|'.join(KIND)
-    query = (
-        '[out:json][timeout:300];('
-        f'way["highway"~"^({highways})$"]({box});'
-        f'way["railway"="rail"]({box});'
-        ');out tags geom;'
-    )
+def overpass(query: str, attempts: int = 8) -> dict:
+    """Запрос к Overpass API с повторами (общий для всех скриптов геоданных)."""
     body = urllib.parse.urlencode({'data': query}).encode()
     for attempt in range(attempts):
         request = urllib.request.Request(OVERPASS, data=body, headers={'User-Agent': USER_AGENT})
@@ -84,7 +77,18 @@ def fetch_box(south: float, west: float, north: float, east: float, attempts: in
         except (OSError, ValueError) as error:  # Overpass часто занят: 429/504 — ждём и повторяем
             print(f'Overpass: попытка {attempt + 1} не удалась ({error})')
             time.sleep(30)
-    raise SystemExit('Overpass недоступен — попробуйте позже или передайте --osm')
+    raise SystemExit('Overpass недоступен — попробуйте позже или передайте сохранённый ответ')
+
+
+def fetch_box(south: float, west: float, north: float, east: float) -> dict:
+    box = f'{south},{west},{north},{east}'
+    highways = '|'.join(KIND)
+    return overpass(
+        '[out:json][timeout:300];('
+        f'way["highway"~"^({highways})$"]({box});'
+        f'way["railway"="rail"]({box});'
+        ');out tags geom;'
+    )
 
 
 def fetch(bbox: list[float], tiles: int = 1) -> dict:
@@ -164,11 +168,16 @@ def simplify(points: list[Point], tolerance_m: float, lat0: float) -> list[Point
         ax, ay = m[start]
         bx, by = m[end]
         dx, dy = bx - ax, by - ay
-        length = math.hypot(dx, dy) or 1e-9
+        length = math.hypot(dx, dy)
         best, index = 0.0, -1
         for i in range(start + 1, end):
             px, py = m[i]
-            distance = abs(dy * px - dx * py + bx * ay - by * ax) / length
+            # Замкнутая линия (кольцевая развязка, петля проезда): концы совпадают, прямой между
+            # ними нет — расстояние считается до самой точки, иначе кольцо схлопнется и пропадёт.
+            if length:
+                distance = abs(dy * px - dx * py + bx * ay - by * ax) / length
+            else:
+                distance = math.hypot(px - ax, py - ay)
             if distance > best:
                 best, index = distance, i
         if best > tolerance_m:

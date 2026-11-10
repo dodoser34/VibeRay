@@ -8,7 +8,7 @@
         "type": "LineString",
         "coordinates": [
           [-2.620502, 51.444319],
-          [-2.622694, 51.444414]
+          [-2.622814, 51.444415]
         ]
       }
     },
@@ -18,8 +18,256 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.623097, 51.442716],
+          [-2.623614, 51.442002],
           [-2.622784, 51.443151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62377, 51.441868],
+          [-2.623614, 51.442002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622784, 51.443151],
+          [-2.622565, 51.443365],
+          [-2.62227, 51.443791],
+          [-2.622162, 51.443915],
+          [-2.621988, 51.444055],
+          [-2.621856, 51.44412],
+          [-2.621582, 51.444199],
+          [-2.621348, 51.44423],
+          [-2.62018, 51.444273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620543, 51.444324],
+          [-2.620784, 51.44439],
+          [-2.622152, 51.444547],
+          [-2.622481, 51.444605],
+          [-2.622781, 51.4447],
+          [-2.623053, 51.444829]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596199, 51.445491],
+          [-2.596803, 51.445438],
+          [-2.597453, 51.445402],
+          [-2.59799, 51.445385],
+          [-2.598564, 51.4454],
+          [-2.599033, 51.445455],
+          [-2.599943, 51.445636],
+          [-2.601955, 51.445981],
+          [-2.603102, 51.446144],
+          [-2.603915, 51.446225],
+          [-2.605019, 51.446301],
+          [-2.605524, 51.446307],
+          [-2.605944, 51.446292],
+          [-2.608446, 51.446122],
+          [-2.613255, 51.445694],
+          [-2.613646, 51.445654],
+          [-2.614018, 51.445594],
+          [-2.614338, 51.445526],
+          [-2.614825, 51.445384],
+          [-2.615169, 51.445252],
+          [-2.615502, 51.445098],
+          [-2.615753, 51.444958],
+          [-2.616064, 51.44472],
+          [-2.616394, 51.444422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.622784, 51.443151],
+          [-2.622516, 51.443675],
+          [-2.622493, 51.443838],
+          [-2.622501, 51.44401],
+          [-2.622532, 51.44417],
+          [-2.622792, 51.444542],
+          [-2.623053, 51.444829]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618632, 51.44434],
+          [-2.618524, 51.444309],
+          [-2.618161, 51.444316],
+          [-2.617992, 51.444342]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.62018, 51.444273],
+          [-2.619762, 51.444281],
+          [-2.619511, 51.444313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620502, 51.444319],
+          [-2.62018, 51.444273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619511, 51.444313],
+          [-2.61977, 51.444334],
+          [-2.620275, 51.444343],
+          [-2.620502, 51.444319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623053, 51.444829],
+          [-2.623806, 51.445521],
+          [-2.62395, 51.445687],
+          [-2.624042, 51.445833],
+          [-2.6241, 51.445982],
+          [-2.6241, 51.446216],
+          [-2.624064, 51.446364],
+          [-2.623938, 51.446595]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616394, 51.444422],
+          [-2.61657, 51.444392],
+          [-2.616816, 51.444385],
+          [-2.616943, 51.444358]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616943, 51.444358],
+          [-2.616852, 51.444335],
+          [-2.616533, 51.444346],
+          [-2.616441, 51.444376],
+          [-2.616394, 51.444422]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617992, 51.444342],
+          [-2.618108, 51.444378],
+          [-2.618515, 51.444374],
+          [-2.618632, 51.44434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616943, 51.444358],
+          [-2.617992, 51.444342]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618632, 51.44434],
+          [-2.619133, 51.444314],
+          [-2.619511, 51.444313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.623875, 51.441613],
+          [-2.623614, 51.442002]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581967, 51.446984],
+          [-2.582081, 51.44703],
+          [-2.582219, 51.447118],
+          [-2.58219, 51.446998],
+          [-2.582213, 51.44696],
+          [-2.582658, 51.446674]
         ]
       }
     },
@@ -55,6 +303,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.580479, 51.446604],
+          [-2.580967, 51.44695],
+          [-2.58123, 51.447114],
+          [-2.581691, 51.447367]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.592746, 51.445638],
           [-2.592892, 51.445681],
           [-2.593177, 51.445705],
@@ -70,39 +331,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.622784, 51.443151],
-          [-2.622565, 51.443365],
-          [-2.62227, 51.443791],
-          [-2.622162, 51.443915],
-          [-2.621988, 51.444055],
-          [-2.621856, 51.44412],
-          [-2.621582, 51.444199],
-          [-2.621348, 51.44423],
-          [-2.62018, 51.444273]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.620543, 51.444324],
-          [-2.620784, 51.44439],
-          [-2.622152, 51.444547],
-          [-2.622481, 51.444605],
-          [-2.622781, 51.4447]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.599895, 51.437807],
+          [-2.600196, 51.437901],
+          [-2.600088, 51.437715],
           [-2.599589, 51.437951]
         ]
       }
@@ -113,12 +343,23 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.600288, 51.438529],
           [-2.600339, 51.438793],
           [-2.600475, 51.439086],
           [-2.600676, 51.43944],
           [-2.60074, 51.439605],
-          [-2.600808, 51.439657]
+          [-2.600808, 51.439657],
+          [-2.600924, 51.43971]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579715, 51.44607],
+          [-2.580479, 51.446604]
         ]
       }
     },
@@ -141,11 +382,21 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.585201, 51.44536],
+          [-2.590642, 51.445222],
+          [-2.590122, 51.445087],
+          [-2.589284, 51.444928],
+          [-2.588813, 51.444853],
+          [-2.58829, 51.444801],
+          [-2.588011, 51.444798],
+          [-2.587248, 51.444856],
+          [-2.586888, 51.444902],
+          [-2.586411, 51.444987],
+          [-2.585895, 51.445115],
+          [-2.585045, 51.445415],
           [-2.584698, 51.445566],
           [-2.583895, 51.445946],
           [-2.583564, 51.446123],
-          [-2.582785, 51.446599]
+          [-2.582658, 51.446674]
         ]
       }
     },
@@ -172,8 +423,7 @@
           [-2.600082, 51.438002],
           [-2.600151, 51.438055],
           [-2.600185, 51.438169],
-          [-2.600257, 51.43825],
-          [-2.600266, 51.438328]
+          [-2.600257, 51.43825]
         ]
       }
     },
@@ -183,30 +433,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.596199, 51.445491],
-          [-2.596803, 51.445438],
-          [-2.597453, 51.445402],
-          [-2.59799, 51.445385],
-          [-2.598564, 51.4454],
-          [-2.599033, 51.445455],
-          [-2.599943, 51.445636],
-          [-2.601955, 51.445981],
-          [-2.603102, 51.446144],
-          [-2.603915, 51.446225],
-          [-2.605019, 51.446301],
-          [-2.605524, 51.446307],
-          [-2.605944, 51.446292],
-          [-2.608446, 51.446122],
-          [-2.613255, 51.445694],
-          [-2.613646, 51.445654],
-          [-2.614018, 51.445594],
-          [-2.614338, 51.445526],
-          [-2.614825, 51.445384],
-          [-2.615169, 51.445252],
-          [-2.615502, 51.445098],
-          [-2.615753, 51.444958],
-          [-2.616064, 51.44472],
-          [-2.616394, 51.444422]
+          [-2.581691, 51.447367],
+          [-2.581709, 51.447378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600227, 51.438024],
+          [-2.600257, 51.43825]
         ]
       }
     },
@@ -324,20 +563,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.622784, 51.443151],
-          [-2.622543, 51.443602],
-          [-2.622493, 51.443838],
-          [-2.622532, 51.44417],
-          [-2.622722, 51.444445]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.595398, 51.445526],
           [-2.593596, 51.445636],
           [-2.592746, 51.445638]
@@ -373,22 +598,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.618632, 51.44434],
-          [-2.618524, 51.444309],
-          [-2.618161, 51.444316],
-          [-2.617992, 51.444342]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.62018, 51.444273],
-          [-2.619762, 51.444281],
-          [-2.619511, 51.444313]
+          [-2.581699, 51.446946],
+          [-2.581582, 51.446988],
+          [-2.58151, 51.447048],
+          [-2.581513, 51.447165],
+          [-2.581607, 51.447259]
         ]
       }
     },
@@ -409,21 +623,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.620502, 51.444319],
-          [-2.62018, 51.444273]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619511, 51.444313],
-          [-2.61977, 51.444334],
-          [-2.620275, 51.444343],
-          [-2.620502, 51.444319]
+          [-2.581967, 51.446984],
+          [-2.581777, 51.447003],
+          [-2.581638, 51.447053],
+          [-2.581588, 51.447121],
+          [-2.581607, 51.447259]
         ]
       }
     },
@@ -437,6 +641,29 @@
           [-2.591959, 51.445477],
           [-2.591868, 51.445396],
           [-2.591797, 51.445289]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.582658, 51.446674],
+          [-2.582252, 51.446827],
+          [-2.581699, 51.446946]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600257, 51.43825],
+          [-2.600271, 51.438387]
         ]
       }
     },
@@ -463,78 +690,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616394, 51.444422],
-          [-2.61657, 51.444392],
-          [-2.616816, 51.444385],
-          [-2.616943, 51.444358]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616943, 51.444358],
-          [-2.616852, 51.444335],
-          [-2.616533, 51.444346],
-          [-2.616441, 51.444376],
-          [-2.616394, 51.444422]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617992, 51.444342],
-          [-2.618108, 51.444378],
-          [-2.618515, 51.444374],
-          [-2.618632, 51.44434]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616943, 51.444358],
-          [-2.617992, 51.444342]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618632, 51.44434],
-          [-2.619133, 51.444314],
-          [-2.619511, 51.444313]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.590642, 51.445222],
-          [-2.590122, 51.445087],
-          [-2.589284, 51.444928],
-          [-2.588813, 51.444853],
-          [-2.58829, 51.444801],
-          [-2.588011, 51.444798],
-          [-2.587248, 51.444856],
-          [-2.586888, 51.444902],
-          [-2.586411, 51.444987]
+          [-2.581699, 51.446946],
+          [-2.581304, 51.446901],
+          [-2.58111, 51.446862],
+          [-2.580991, 51.446826],
+          [-2.580479, 51.446604]
         ]
       }
     },
@@ -546,6 +706,17 @@
         "coordinates": [
           [-2.595833, 51.445525],
           [-2.596199, 51.445491]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581967, 51.446984],
+          [-2.581699, 51.446946]
         ]
       }
     },
@@ -571,6 +742,18 @@
           [-2.595645, 51.442119],
           [-2.59556, 51.442028],
           [-2.59543, 51.44198]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581607, 51.447259],
+          [-2.581652, 51.447294],
+          [-2.581691, 51.447367]
         ]
       }
     },
@@ -629,9 +812,271 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.61664, 51.440222],
+          [-2.61351, 51.442138],
+          [-2.612886, 51.442497],
+          [-2.612032, 51.443035],
+          [-2.611435, 51.443385],
+          [-2.610731, 51.443819]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615564, 51.438988],
+          [-2.613746, 51.439352],
+          [-2.611306, 51.439952],
+          [-2.611236, 51.439947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612202, 51.439731],
+          [-2.612236, 51.439776],
+          [-2.612388, 51.439892],
+          [-2.614702, 51.441409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617821, 51.441034],
+          [-2.615948, 51.442208],
+          [-2.614783, 51.441828],
+          [-2.614719, 51.441797],
+          [-2.61441, 51.441584]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614904, 51.442727],
+          [-2.61547, 51.442053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613455, 51.439421],
+          [-2.613638, 51.43971],
+          [-2.613987, 51.439986],
+          [-2.614719, 51.440502],
+          [-2.615379, 51.440994],
+          [-2.616621, 51.441793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616259, 51.439811],
+          [-2.614719, 51.440502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615946, 51.439433],
+          [-2.613987, 51.439986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611922, 51.445121],
+          [-2.612154, 51.444933],
+          [-2.612343, 51.444752],
+          [-2.612685, 51.444358],
+          [-2.612816, 51.444235],
+          [-2.614184, 51.443129],
+          [-2.614648, 51.442731],
+          [-2.614701, 51.442661]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61706, 51.443512],
+          [-2.618302, 51.444187],
+          [-2.618321, 51.444261],
+          [-2.618274, 51.444311]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616064, 51.44472],
+          [-2.615559, 51.444491],
+          [-2.614662, 51.443943],
+          [-2.613787, 51.443444]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619271, 51.441882],
+          [-2.618492, 51.441451],
+          [-2.618299, 51.44137],
+          [-2.617943, 51.441616],
+          [-2.617934, 51.441632]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616992, 51.442294],
+          [-2.617705, 51.442672]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617677, 51.4415],
+          [-2.617853, 51.441604],
+          [-2.617934, 51.441632]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616954, 51.441085],
+          [-2.6174, 51.440802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617934, 51.441632],
+          [-2.617941, 51.441649],
+          [-2.618702, 51.442076]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616516, 51.444285],
+          [-2.616627, 51.444169],
+          [-2.616697, 51.444127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618405, 51.444244],
+          [-2.618302, 51.444187]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614291, 51.444805],
+          [-2.614672, 51.444961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584551, 51.443493],
+          [-2.584697, 51.443871],
+          [-2.58474, 51.444048],
+          [-2.584726, 51.444282],
+          [-2.584657, 51.444529],
+          [-2.584592, 51.44462],
+          [-2.584499, 51.44471],
+          [-2.584438, 51.444789],
+          [-2.584417, 51.44486],
+          [-2.58442, 51.444918],
+          [-2.584483, 51.445032],
+          [-2.584544, 51.445097],
+          [-2.584769, 51.445276],
+          [-2.584954, 51.445452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.598741, 51.441277],
-          [-2.600822, 51.44078],
-          [-2.600938, 51.440742]
+          [-2.600739, 51.440798]
         ]
       }
     },
@@ -851,35 +1296,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.61664, 51.440222],
-          [-2.61351, 51.442138],
-          [-2.612886, 51.442497],
-          [-2.612032, 51.443035],
-          [-2.611435, 51.443385],
-          [-2.610731, 51.443819]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61549, 51.439005],
-          [-2.613746, 51.439352],
-          [-2.611306, 51.439952],
-          [-2.611236, 51.439947],
-          [-2.611198, 51.439911]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.612287, 51.440528],
           [-2.612551, 51.440684],
           [-2.614139, 51.441748]
@@ -894,98 +1310,6 @@
         "coordinates": [
           [-2.612818, 51.44017],
           [-2.611596, 51.440991]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612202, 51.439731],
-          [-2.612236, 51.439776],
-          [-2.612388, 51.439892],
-          [-2.614702, 51.441409]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617821, 51.441034],
-          [-2.615948, 51.442208],
-          [-2.614783, 51.441828],
-          [-2.614719, 51.441797],
-          [-2.61441, 51.441584]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614904, 51.442727],
-          [-2.61547, 51.442053]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613455, 51.439421],
-          [-2.613638, 51.43971],
-          [-2.613987, 51.439986],
-          [-2.614719, 51.440502],
-          [-2.615379, 51.440994],
-          [-2.616621, 51.441793]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616259, 51.439811],
-          [-2.614719, 51.440502]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615946, 51.439433],
-          [-2.613987, 51.439986]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.611922, 51.445121],
-          [-2.612154, 51.444933],
-          [-2.612343, 51.444752],
-          [-2.612685, 51.444358],
-          [-2.612816, 51.444235],
-          [-2.614184, 51.443129],
-          [-2.614648, 51.442731],
-          [-2.614701, 51.442661]
         ]
       }
     },
@@ -1187,36 +1511,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.61706, 51.443512],
-          [-2.618302, 51.444187],
-          [-2.618321, 51.444261],
-          [-2.618274, 51.444311]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.610101, 51.445975],
           [-2.610024, 51.445628],
           [-2.609978, 51.445557],
           [-2.608481, 51.445693]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616064, 51.44472],
-          [-2.615559, 51.444491],
-          [-2.614662, 51.443943],
-          [-2.613787, 51.443444]
         ]
       }
     },
@@ -1495,7 +1793,8 @@
         "coordinates": [
           [-2.586659, 51.444581],
           [-2.58657, 51.444509],
-          [-2.586281, 51.444099]
+          [-2.585944, 51.443643],
+          [-2.58546, 51.44362]
         ]
       }
     },
@@ -1524,6 +1823,20 @@
           [-2.587849, 51.444162],
           [-2.587828, 51.444098],
           [-2.587547, 51.443751]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58657, 51.444509],
+          [-2.586065, 51.444648],
+          [-2.585925, 51.444711],
+          [-2.585072, 51.444994],
+          [-2.584926, 51.445025]
         ]
       }
     },
@@ -1675,17 +1988,6 @@
           [-2.596662, 51.439883],
           [-2.596746, 51.439906],
           [-2.596906, 51.439982]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610056, 51.440308],
-          [-2.610088, 51.440236]
         ]
       }
     },
@@ -1854,68 +2156,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.583308, 51.444871],
+          [-2.582511, 51.445317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583216, 51.445513],
+          [-2.582707, 51.445207]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.595688, 51.442428],
           [-2.596379, 51.442835]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619271, 51.441882],
-          [-2.618492, 51.441451],
-          [-2.618299, 51.44137],
-          [-2.617943, 51.441616],
-          [-2.617934, 51.441632]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616992, 51.442294],
-          [-2.617705, 51.442672]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617677, 51.4415],
-          [-2.617853, 51.441604],
-          [-2.617934, 51.441632]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616954, 51.441085],
-          [-2.6174, 51.440802]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617934, 51.441632],
-          [-2.617941, 51.441649],
-          [-2.618702, 51.442076]
         ]
       }
     },
@@ -2112,6 +2376,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.584483, 51.445032],
+          [-2.583216, 51.445513],
+          [-2.581232, 51.446317],
+          [-2.581147, 51.446368]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.597812, 51.441173],
           [-2.597818, 51.441234],
           [-2.59786, 51.441288]
@@ -2233,18 +2510,6 @@
           [-2.605198, 51.443237],
           [-2.605895, 51.442972],
           [-2.605963, 51.442934]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616516, 51.444285],
-          [-2.616627, 51.444169],
-          [-2.616697, 51.444127]
         ]
       }
     },
@@ -2445,17 +2710,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.618405, 51.444244],
-          [-2.618302, 51.444187]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.594336, 51.44187],
           [-2.594331, 51.441942]
         ]
@@ -2540,17 +2794,6 @@
           [-2.592481, 51.442022],
           [-2.592849, 51.441903],
           [-2.593016, 51.441874]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614291, 51.444805],
-          [-2.614672, 51.444961]
         ]
       }
     },
@@ -2676,8 +2919,14 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.610924, 51.441163],
-          [-2.610634, 51.440958]
+          [-2.620503, 51.444632],
+          [-2.621034, 51.44482],
+          [-2.621099, 51.444852],
+          [-2.621152, 51.4449],
+          [-2.62118, 51.444971],
+          [-2.621123, 51.44531],
+          [-2.621605, 51.445337],
+          [-2.621657, 51.444997]
         ]
       }
     },
@@ -2687,14 +2936,224 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.6182, 51.444958],
+          [-2.618292, 51.445016],
+          [-2.618597, 51.44509],
+          [-2.61887, 51.445141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616182, 51.444616],
+          [-2.616339, 51.444693],
+          [-2.617467, 51.444871],
+          [-2.618033, 51.444922],
+          [-2.6182, 51.444958],
+          [-2.61834, 51.444912],
+          [-2.618992, 51.444981]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619433, 51.444316],
+          [-2.619401, 51.444917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616743, 51.443363],
+          [-2.616714, 51.443437],
+          [-2.61706, 51.443512]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615767, 51.440757],
+          [-2.617008, 51.441549]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614799, 51.441351],
+          [-2.6151, 51.441553],
+          [-2.616356, 51.441955]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616194, 51.441032],
+          [-2.616554, 51.440821],
+          [-2.616577, 51.440791],
+          [-2.616566, 51.440772],
+          [-2.616161, 51.440518]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612903, 51.439558],
+          [-2.613072, 51.439821],
+          [-2.613116, 51.439853],
+          [-2.614676, 51.440887],
+          [-2.615106, 51.44116]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615133, 51.442453],
+          [-2.615498, 51.44257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614338, 51.445526],
+          [-2.614384, 51.445578],
+          [-2.614431, 51.445611],
+          [-2.614507, 51.445621],
+          [-2.614752, 51.445554],
+          [-2.614833, 51.44553],
+          [-2.614852, 51.445495],
+          [-2.614822, 51.445429],
+          [-2.614825, 51.445384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618638, 51.444486],
+          [-2.618632, 51.44434]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619585, 51.444788],
+          [-2.620365, 51.444806],
+          [-2.620478, 51.444766],
+          [-2.620503, 51.444717],
           [-2.620503, 51.444632],
-          [-2.621034, 51.44482],
-          [-2.621099, 51.444852],
-          [-2.621152, 51.4449],
-          [-2.62118, 51.444971],
-          [-2.621123, 51.44531],
-          [-2.621605, 51.445337],
-          [-2.621657, 51.444997]
+          [-2.620543, 51.444324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617046, 51.443541],
+          [-2.616659, 51.443465],
+          [-2.61655, 51.44366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615652, 51.44277],
+          [-2.615538, 51.442908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615296, 51.44226],
+          [-2.614921, 51.442135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618328, 51.44222],
+          [-2.618215, 51.442084],
+          [-2.618008, 51.441984],
+          [-2.617944, 51.442035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617677, 51.4415],
+          [-2.617489, 51.441626]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610924, 51.441163],
+          [-2.610634, 51.440958]
         ]
       }
     },
@@ -2776,10 +3235,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.6182, 51.444958],
-          [-2.618292, 51.445016],
-          [-2.618597, 51.44509],
-          [-2.61887, 51.445141]
+          [-2.580879, 51.447136],
+          [-2.581125, 51.447047]
         ]
       }
     },
@@ -2789,13 +3246,30 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616182, 51.444616],
-          [-2.616339, 51.444693],
-          [-2.617467, 51.444871],
-          [-2.618033, 51.444922],
-          [-2.6182, 51.444958],
-          [-2.61834, 51.444912],
-          [-2.618992, 51.444981]
+          [-2.580967, 51.44695],
+          [-2.580826, 51.4471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583332, 51.445471],
+          [-2.583718, 51.445784]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583087, 51.445566],
+          [-2.583124, 51.44573]
         ]
       }
     },
@@ -2818,17 +3292,6 @@
         "coordinates": [
           [-2.602193, 51.443208],
           [-2.602123, 51.443117]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619433, 51.444316],
-          [-2.619401, 51.444917]
         ]
       }
     },
@@ -2918,6 +3381,23 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.6001, 51.439171],
+          [-2.600265, 51.43912],
+          [-2.60031, 51.439137],
+          [-2.600481, 51.439439],
+          [-2.600459, 51.439466],
+          [-2.600303, 51.439494],
+          [-2.600259, 51.439475],
+          [-2.6001, 51.439171]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.595102, 51.442493],
           [-2.5954, 51.44264]
         ]
@@ -2965,18 +3445,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616743, 51.443363],
-          [-2.616714, 51.443437],
-          [-2.61706, 51.443512]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.608433, 51.441829],
           [-2.607423, 51.442186]
         ]
@@ -3001,68 +3469,6 @@
         "coordinates": [
           [-2.611167, 51.443476],
           [-2.61123, 51.443512]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615767, 51.440757],
-          [-2.617008, 51.441549]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614799, 51.441351],
-          [-2.6151, 51.441553],
-          [-2.616356, 51.441955]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616194, 51.441032],
-          [-2.616554, 51.440821],
-          [-2.616577, 51.440791],
-          [-2.616566, 51.440772],
-          [-2.616161, 51.440518]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612903, 51.439558],
-          [-2.613072, 51.439821],
-          [-2.613116, 51.439853],
-          [-2.614676, 51.440887],
-          [-2.615106, 51.44116]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615133, 51.442453],
-          [-2.615498, 51.44257]
         ]
       }
     },
@@ -3115,35 +3521,6 @@
         "coordinates": [
           [-2.600798, 51.442831],
           [-2.600013, 51.442646]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614338, 51.445526],
-          [-2.614384, 51.445578],
-          [-2.614431, 51.445611],
-          [-2.614507, 51.445621],
-          [-2.614752, 51.445554],
-          [-2.614833, 51.44553],
-          [-2.614852, 51.445495],
-          [-2.614822, 51.445429],
-          [-2.614825, 51.445384]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618638, 51.444486],
-          [-2.618632, 51.44434]
         ]
       }
     },
@@ -3209,35 +3586,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.619585, 51.444788],
-          [-2.620365, 51.444806],
-          [-2.620478, 51.444766],
-          [-2.620503, 51.444717],
-          [-2.620503, 51.444632],
-          [-2.620543, 51.444324]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617046, 51.443541],
-          [-2.616659, 51.443465],
-          [-2.61655, 51.44366]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615652, 51.44277],
-          [-2.615538, 51.442908]
+          [-2.583308, 51.444871],
+          [-2.583784, 51.444572]
         ]
       }
     },
@@ -3428,17 +3778,6 @@
         "coordinates": [
           [-2.608006, 51.441134],
           [-2.608058, 51.44123]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617899, 51.441071],
-          [-2.61795, 51.441024]
         ]
       }
     },
@@ -3722,17 +4061,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.618561, 51.441269],
-          [-2.618513, 51.441318]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.611553, 51.445415],
           [-2.611666, 51.445414]
         ]
@@ -3803,67 +4131,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.615296, 51.44226],
-          [-2.614921, 51.442135]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.614204, 51.442306],
           [-2.614266, 51.442327],
           [-2.614267, 51.442375],
           [-2.614174, 51.442456]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618328, 51.44222],
-          [-2.618215, 51.442084],
-          [-2.618008, 51.441984],
-          [-2.617944, 51.442035]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61832, 51.441244],
-          [-2.618366, 51.441194]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617677, 51.4415],
-          [-2.617489, 51.441626]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "southville" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618864, 51.44144],
-          [-2.618904, 51.441398]
         ]
       }
     },
@@ -4277,8 +4548,13 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.611236, 51.439947],
-          [-2.610565, 51.440442]
+          [-2.617246, 51.44298],
+          [-2.617422, 51.442889],
+          [-2.617594, 51.442766],
+          [-2.618063, 51.442388],
+          [-2.618328, 51.44222],
+          [-2.618702, 51.442076],
+          [-2.619615, 51.441766]
         ]
       }
     },
@@ -4288,13 +4564,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.617246, 51.44298],
-          [-2.617422, 51.442889],
-          [-2.617594, 51.442766],
-          [-2.618063, 51.442388],
-          [-2.618328, 51.44222],
-          [-2.618702, 51.442076],
-          [-2.619615, 51.441766]
+          [-2.621715, 51.441014],
+          [-2.621924, 51.440954],
+          [-2.622225, 51.440903]
         ]
       }
     },
@@ -4316,16 +4588,188 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616094, 51.439614],
-          [-2.61664, 51.440222],
-          [-2.617033, 51.440558],
-          [-2.617281, 51.440729],
-          [-2.617579, 51.440909],
-          [-2.618015, 51.441123],
-          [-2.618513, 51.441318],
-          [-2.619461, 51.44164],
+          [-2.615095, 51.438457],
+          [-2.615946, 51.439433]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.619553, 51.4417],
           [-2.619615, 51.441766]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617579, 51.440909],
+          [-2.618117, 51.441166],
+          [-2.618688, 51.441379],
+          [-2.619461, 51.44164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610785, 51.440281],
+          [-2.610565, 51.440442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612106, 51.439208],
+          [-2.612053, 51.439294],
+          [-2.611777, 51.439527],
+          [-2.610889, 51.440205]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616852, 51.444335],
+          [-2.616736, 51.44425],
+          [-2.616694, 51.444188],
+          [-2.616697, 51.444127],
+          [-2.617046, 51.443541],
+          [-2.61716, 51.443297],
+          [-2.617308, 51.443137],
+          [-2.617304, 51.44307],
+          [-2.617246, 51.44298],
+          [-2.617053, 51.443035],
+          [-2.616763, 51.443053],
+          [-2.616305, 51.443031],
+          [-2.615949, 51.442991],
+          [-2.615689, 51.442943],
+          [-2.615225, 51.442822],
+          [-2.61484, 51.442708],
+          [-2.614473, 51.442579],
+          [-2.614174, 51.442456],
+          [-2.6134, 51.442082],
+          [-2.612495, 51.441497],
+          [-2.61109, 51.440709],
+          [-2.610565, 51.440442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600809, 51.440882],
+          [-2.60142, 51.441388],
+          [-2.601551, 51.44143],
+          [-2.601672, 51.441431],
+          [-2.602899, 51.441187],
+          [-2.60405, 51.440896],
+          [-2.605138, 51.440658]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.607627, 51.440206],
+          [-2.606314, 51.440407],
+          [-2.6056, 51.440562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600772, 51.440628],
+          [-2.600835, 51.440408],
+          [-2.600811, 51.439974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600821, 51.439912],
+          [-2.600811, 51.439974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.600847, 51.439847],
+          [-2.600807, 51.439717],
+          [-2.60074, 51.439605],
+          [-2.600724, 51.439764],
+          [-2.600738, 51.439888],
+          [-2.600811, 51.439974]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599699, 51.43741],
+          [-2.59993, 51.437565],
+          [-2.600088, 51.437715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609237, 51.440228],
+          [-2.608268, 51.440174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.610191, 51.44034],
+          [-2.610056, 51.440308],
+          [-2.60954, 51.440251]
         ]
       }
     },
@@ -4335,6 +4779,39 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.580158, 51.445967],
+          [-2.580258, 51.445812],
+          [-2.580481, 51.445555],
+          [-2.580842, 51.445245],
+          [-2.581251, 51.444991],
+          [-2.581703, 51.444761],
+          [-2.582192, 51.444541],
+          [-2.583312, 51.444093],
+          [-2.584049, 51.443857],
+          [-2.585438, 51.443489]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.596936, 51.439084],
+          [-2.598331, 51.438297],
+          [-2.599873, 51.437393]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.585438, 51.443489],
+          [-2.586374, 51.44327],
           [-2.587216, 51.443051],
           [-2.591846, 51.441443],
           [-2.592887, 51.441036],
@@ -4350,10 +4827,17 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.589146, 51.442481],
-          [-2.587804, 51.44295],
-          [-2.587337, 51.443097],
-          [-2.586672, 51.443281]
+          [-2.581803, 51.444783],
+          [-2.581143, 51.445101],
+          [-2.580795, 51.445337],
+          [-2.580668, 51.445444],
+          [-2.580456, 51.445659],
+          [-2.580237, 51.445946],
+          [-2.580064, 51.446343],
+          [-2.580021, 51.446635],
+          [-2.580069, 51.446947],
+          [-2.58018, 51.447205],
+          [-2.580658, 51.447925]
         ]
       }
     },
@@ -4363,8 +4847,207 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.599145, 51.437866],
-          [-2.597873, 51.438599],
+          [-2.580505, 51.447952],
+          [-2.580046, 51.447129],
+          [-2.579971, 51.446808],
+          [-2.579961, 51.446563],
+          [-2.579993, 51.446389],
+          [-2.580075, 51.446129],
+          [-2.580158, 51.445967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581166, 51.44494],
+          [-2.580782, 51.445178],
+          [-2.580611, 51.445309],
+          [-2.58029, 51.445609],
+          [-2.580135, 51.4458],
+          [-2.580023, 51.445985],
+          [-2.579851, 51.446378]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580414, 51.447968],
+          [-2.580311, 51.447755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579961, 51.446563],
+          [-2.579951, 51.44703],
+          [-2.580092, 51.44739],
+          [-2.580311, 51.447755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579953, 51.447295],
+          [-2.580018, 51.447444],
+          [-2.580354, 51.447978]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580159, 51.448005],
+          [-2.579953, 51.447295]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579851, 51.446378],
+          [-2.579764, 51.44668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579951, 51.44703],
+          [-2.580033, 51.447396],
+          [-2.580103, 51.447585]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.589146, 51.442481],
+          [-2.587804, 51.44295],
+          [-2.587337, 51.443097],
+          [-2.586672, 51.443281],
+          [-2.585114, 51.443645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.58025, 51.446215],
+          [-2.580378, 51.445942],
+          [-2.580456, 51.445832],
+          [-2.580693, 51.445595],
+          [-2.581658, 51.444997],
+          [-2.582869, 51.444315]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580345, 51.445864],
+          [-2.580535, 51.445575]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581321, 51.445151],
+          [-2.582323, 51.44455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581143, 51.445101],
+          [-2.580844, 51.445265],
+          [-2.580621, 51.445424]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580749, 51.44545],
+          [-2.581033, 51.445284],
+          [-2.581658, 51.444997]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.581033, 51.445284],
+          [-2.582041, 51.444674]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584858, 51.443607],
+          [-2.585438, 51.443489]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.599906, 51.437416],
+          [-2.598362, 51.438322],
           [-2.596572, 51.439319]
         ]
       }
@@ -4386,11 +5069,72 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.589372, 51.442312],
+          [-2.588536, 51.442657],
+          [-2.587446, 51.443021],
+          [-2.586759, 51.443214],
+          [-2.585435, 51.443539],
+          [-2.585114, 51.443645],
+          [-2.584169, 51.443905],
+          [-2.583087, 51.444232],
+          [-2.582869, 51.444315],
+          [-2.581803, 51.444783],
+          [-2.581254, 51.445109],
+          [-2.580749, 51.44545],
+          [-2.580345, 51.445864],
+          [-2.580249, 51.446039],
+          [-2.58012, 51.446382],
+          [-2.58014, 51.446856],
+          [-2.580187, 51.447084],
+          [-2.580306, 51.447328],
+          [-2.580705, 51.447917]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.579953, 51.447295],
+          [-2.579873, 51.446966],
+          [-2.579861, 51.44679],
+          [-2.579917, 51.446354],
+          [-2.580028, 51.446072],
+          [-2.58015, 51.445863],
+          [-2.580392, 51.445549],
+          [-2.580662, 51.445318]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580662, 51.445318],
+          [-2.580452, 51.445518],
+          [-2.580282, 51.445742],
+          [-2.580158, 51.445967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.584858, 51.443607],
+          [-2.58539, 51.443466],
+          [-2.586302, 51.443261],
           [-2.587186, 51.443021],
           [-2.588055, 51.442736],
           [-2.589235, 51.442319],
           [-2.591199, 51.441588],
-          [-2.594166, 51.440415],
+          [-2.592824, 51.440954],
           [-2.594698, 51.440199],
           [-2.59561, 51.439783],
           [-2.596936, 51.439084]
@@ -4403,8 +5147,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.596936, 51.439084],
-          [-2.598331, 51.438297]
+          [-2.580249, 51.445586],
+          [-2.580108, 51.445799],
+          [-2.580023, 51.445985]
         ]
       }
     },
@@ -4425,96 +5170,104 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.589372, 51.442312],
-          [-2.588536, 51.442657],
-          [-2.587446, 51.443021],
-          [-2.586759, 51.443214]
+          [-2.584478, 51.443701],
+          [-2.584858, 51.443607]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southville" },
+      "properties": { "kind": "rail", "district": "southville" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616852, 51.444335],
-          [-2.616736, 51.44425],
-          [-2.616694, 51.444188],
-          [-2.616697, 51.444127],
-          [-2.617046, 51.443541],
-          [-2.61716, 51.443297],
-          [-2.617308, 51.443137],
-          [-2.617304, 51.44307],
-          [-2.617246, 51.44298],
-          [-2.617053, 51.443035],
-          [-2.616861, 51.443052],
-          [-2.616652, 51.443051],
-          [-2.616113, 51.443013],
-          [-2.615538, 51.442908],
-          [-2.61484, 51.442708],
-          [-2.614186, 51.442461],
-          [-2.6134, 51.442082],
-          [-2.612495, 51.441497],
-          [-2.61109, 51.440709],
-          [-2.610565, 51.440442],
-          [-2.610056, 51.440308],
-          [-2.609902, 51.440287],
-          [-2.609237, 51.440228],
-          [-2.608684, 51.440197]
+          [-2.580964, 51.445106],
+          [-2.581382, 51.444823]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southville" },
+      "properties": { "kind": "rail", "district": "southville" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.600811, 51.439974],
-          [-2.600835, 51.440408],
-          [-2.600816, 51.440521],
-          [-2.600738, 51.440721],
-          [-2.600739, 51.440798],
-          [-2.600761, 51.440843],
-          [-2.60142, 51.441388],
-          [-2.601551, 51.44143],
-          [-2.601672, 51.441431],
-          [-2.602899, 51.441187],
-          [-2.603654, 51.440997]
+          [-2.579851, 51.446378],
+          [-2.579812, 51.446745],
+          [-2.579843, 51.44706],
+          [-2.580107, 51.448014]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southville" },
+      "properties": { "kind": "rail", "district": "southville" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.607763, 51.440185],
-          [-2.607213, 51.440267]
+          [-2.583953, 51.44382],
+          [-2.584478, 51.443701]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southville" },
+      "properties": { "kind": "rail", "district": "southville" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.606411, 51.440391],
-          [-2.604495, 51.440802]
+          [-2.580689, 51.447776],
+          [-2.580417, 51.447378],
+          [-2.580288, 51.447119],
+          [-2.580129, 51.446695]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "kind": "secondary", "district": "southville" },
+      "properties": { "kind": "rail", "district": "southville" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.607034, 51.440295],
-          [-2.606928, 51.440311]
+          [-2.580311, 51.447755],
+          [-2.580459, 51.44796]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.583252, 51.44404],
+          [-2.582121, 51.444492]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580662, 51.445318],
+          [-2.580964, 51.445106]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "southville" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.580964, 51.445106],
+          [-2.581201, 51.444962],
+          [-2.581663, 51.444734],
+          [-2.58267, 51.444304],
+          [-2.58328, 51.444068],
+          [-2.584478, 51.443701]
         ]
       }
     }

@@ -7,54 +7,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.608822, 51.458869],
-          [-2.608912, 51.45821],
-          [-2.608986, 51.45806]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608763, 51.459334],
-          [-2.608792, 51.459076]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61415, 51.469257],
-          [-2.614036, 51.469024],
-          [-2.613816, 51.468735],
-          [-2.613448, 51.468386],
-          [-2.612804, 51.467839],
-          [-2.611948, 51.466998],
-          [-2.609868, 51.464817],
-          [-2.609653, 51.464503],
-          [-2.608853, 51.462476],
-          [-2.6086, 51.461761],
-          [-2.608529, 51.461339],
-          [-2.608534, 51.461196],
-          [-2.608732, 51.459536]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.620005, 51.466683],
+          [-2.619976, 51.466578],
           [-2.61997, 51.466455],
-          [-2.620046, 51.466318]
+          [-2.620046, 51.466318],
+          [-2.620176, 51.466193],
+          [-2.62037, 51.466071]
         ]
       }
     },
@@ -64,9 +21,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.620334, 51.468443],
-          [-2.620487, 51.468335],
-          [-2.62053, 51.468273],
+          [-2.620611, 51.467833],
           [-2.620622, 51.46766]
         ]
       }
@@ -77,28 +32,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.619972, 51.468616],
-          [-2.620194, 51.468508]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61719, 51.470052],
-          [-2.617922, 51.469653]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
+          [-2.616352, 51.470816],
+          [-2.617103, 51.470185],
           [-2.61719, 51.470052],
           [-2.617041, 51.470102],
           [-2.616126, 51.470573],
@@ -113,7 +48,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616138, 51.471025],
+          [-2.615375, 51.471282],
+          [-2.615459, 51.47135],
+          [-2.61558, 51.471389],
+          [-2.615792, 51.471328],
+          [-2.616191, 51.470984],
           [-2.616352, 51.470816]
         ]
       }
@@ -160,53 +99,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616352, 51.470816],
-          [-2.616483, 51.470696],
-          [-2.616575, 51.470639]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.615761, 51.470611],
           [-2.615461, 51.470485]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.609156, 51.457799],
-          [-2.609139, 51.457758]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.609153, 51.45784],
-          [-2.609157, 51.457816]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615353, 51.471421],
-          [-2.615309, 51.471566]
         ]
       }
     },
@@ -230,37 +124,12 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.608999, 51.458035],
-          [-2.609123, 51.457895]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.61415, 51.469257],
           [-2.614131, 51.469324],
           [-2.614175, 51.469433],
           [-2.614351, 51.469702],
           [-2.614611, 51.469979],
           [-2.614716, 51.470025]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "major", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614716, 51.470025],
-          [-2.614702, 51.469946],
-          [-2.614468, 51.46967],
-          [-2.614227, 51.469308],
-          [-2.61415, 51.469257]
         ]
       }
     },
@@ -292,8 +161,81 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.617103, 51.470185],
-          [-2.61719, 51.470052]
+          [-2.614716, 51.470025],
+          [-2.614702, 51.469946],
+          [-2.614468, 51.46967],
+          [-2.614227, 51.469308],
+          [-2.61415, 51.469257]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608757, 51.459388],
+          [-2.608912, 51.45821],
+          [-2.608999, 51.458035],
+          [-2.609123, 51.457895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61415, 51.469257],
+          [-2.614036, 51.469024],
+          [-2.613816, 51.468735],
+          [-2.613448, 51.468386],
+          [-2.612804, 51.467839],
+          [-2.611948, 51.466998],
+          [-2.609868, 51.464817],
+          [-2.609653, 51.464503],
+          [-2.608853, 51.462476],
+          [-2.6086, 51.461761],
+          [-2.608529, 51.461339],
+          [-2.608612, 51.460473]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608988, 51.457893],
+          [-2.609123, 51.457895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609123, 51.457895],
+          [-2.609157, 51.457816],
+          [-2.609139, 51.457758],
+          [-2.60906, 51.457658],
+          [-2.608889, 51.457559]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "major", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615375, 51.471282],
+          [-2.615309, 51.471566]
         ]
       }
     },
@@ -305,6 +247,25 @@
         "coordinates": [
           [-2.614796, 51.46467],
           [-2.620514, 51.466067]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604504, 51.466549],
+          [-2.609945, 51.46476],
+          [-2.610788, 51.464552],
+          [-2.611169, 51.464484],
+          [-2.611606, 51.46443],
+          [-2.612373, 51.464393],
+          [-2.612662, 51.464395],
+          [-2.613208, 51.464421],
+          [-2.613684, 51.464468],
+          [-2.614796, 51.46467]
         ]
       }
     },
@@ -330,20 +291,15 @@
     },
     {
       "type": "Feature",
-      "properties": { "kind": "rail", "district": "clifton-down" },
+      "properties": { "kind": "secondary", "district": "clifton-down" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.604504, 51.466549],
-          [-2.609945, 51.46476],
-          [-2.610788, 51.464552],
-          [-2.611169, 51.464484],
-          [-2.611606, 51.46443],
-          [-2.612373, 51.464393],
-          [-2.612662, 51.464395],
-          [-2.613208, 51.464421],
-          [-2.613684, 51.464468],
-          [-2.614796, 51.46467]
+          [-2.619484, 51.465733],
+          [-2.61975, 51.465909],
+          [-2.619843, 51.466],
+          [-2.619901, 51.466402],
+          [-2.61997, 51.466455]
         ]
       }
     },
@@ -353,9 +309,78 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.619861, 51.466062],
-          [-2.619901, 51.466402],
-          [-2.61997, 51.466455]
+          [-2.62037, 51.466071],
+          [-2.620281, 51.466034],
+          [-2.619999, 51.46602]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617141, 51.463341],
+          [-2.618002, 51.464164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618454, 51.464801],
+          [-2.618732, 51.465124],
+          [-2.619068, 51.465419],
+          [-2.619328, 51.46562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614467, 51.458667],
+          [-2.614777, 51.459014]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614094, 51.458336],
+          [-2.61428, 51.458493]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612659, 51.457681],
+          [-2.612808, 51.457722],
+          [-2.613658, 51.458089]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "secondary", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615396, 51.459742],
+          [-2.6156, 51.460026]
         ]
       }
     },
@@ -377,19 +402,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.609262, 51.457763],
-          [-2.609165, 51.457713]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.609624, 51.457914],
-          [-2.609335, 51.457797]
+          [-2.609335, 51.457797],
+          [-2.60906, 51.457658]
         ]
       }
     },
@@ -419,56 +434,6 @@
           [-2.612522, 51.457729],
           [-2.61242, 51.457803],
           [-2.612359, 51.457887]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61777, 51.463943],
-          [-2.618002, 51.464164],
-          [-2.618454, 51.464801],
-          [-2.618732, 51.465124],
-          [-2.619068, 51.465419],
-          [-2.619395, 51.465673],
-          [-2.61975, 51.465909]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613224, 51.4716],
-          [-2.614831, 51.471586]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616365, 51.461799],
-          [-2.616949, 51.463065],
-          [-2.617141, 51.463341]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615091, 51.471573],
-          [-2.615309, 51.471566]
         ]
       }
     },
@@ -517,9 +482,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.613784, 51.45814],
-          [-2.61394, 51.458224],
-          [-2.614094, 51.458336]
+          [-2.613961, 51.471596],
+          [-2.614787, 51.471587]
         ]
       }
     },
@@ -529,30 +493,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.612659, 51.457681],
-          [-2.612808, 51.457722]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616096, 51.461191],
-          [-2.616144, 51.461305]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "secondary", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614777, 51.459014],
-          [-2.615396, 51.459742]
+          [-2.613224, 51.4716],
+          [-2.613537, 51.471597]
         ]
       }
     },
@@ -591,51 +533,11 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.611415, 51.457426],
-          [-2.611857, 51.457526]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610763, 51.457411],
-          [-2.611033, 51.457413]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.614321, 51.466507],
           [-2.614425, 51.466463],
           [-2.616269, 51.465328],
           [-2.617233, 51.464663],
           [-2.618083, 51.464272]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612543, 51.465591],
-          [-2.612812, 51.466142],
-          [-2.613122, 51.466737],
-          [-2.613237, 51.466846],
-          [-2.61348, 51.466975],
-          [-2.613696, 51.467022],
-          [-2.613886, 51.467032],
-          [-2.61412, 51.467008],
-          [-2.61449, 51.466913]
         ]
       }
     },
@@ -703,17 +605,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.611751, 51.466792],
-          [-2.612921, 51.466354]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.61448, 51.468617],
           [-2.614771, 51.468744],
           [-2.616128, 51.468308]
@@ -734,19 +625,6 @@
           [-2.615075, 51.462273],
           [-2.615771, 51.462041],
           [-2.616392, 51.461865]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614495, 51.46309],
-          [-2.614329, 51.462941],
-          [-2.614228, 51.46287],
-          [-2.614042, 51.462696]
         ]
       }
     },
@@ -863,6 +741,259 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.614996, 51.470287],
+          [-2.61513, 51.470219],
+          [-2.615485, 51.469929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616422, 51.470417],
+          [-2.616258, 51.470317],
+          [-2.615485, 51.469929],
+          [-2.615203, 51.469766],
+          [-2.615155, 51.469727],
+          [-2.61515, 51.469678],
+          [-2.615189, 51.469612],
+          [-2.615048, 51.469515],
+          [-2.614994, 51.469452],
+          [-2.61496, 51.469386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608636, 51.461875],
+          [-2.608792, 51.461845],
+          [-2.609316, 51.461687],
+          [-2.61094, 51.4611],
+          [-2.612, 51.460738],
+          [-2.612994, 51.460448],
+          [-2.613973, 51.460244],
+          [-2.615396, 51.459742]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619871, 51.466228],
+          [-2.619793, 51.466265],
+          [-2.619537, 51.466681]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615525, 51.46328],
+          [-2.617233, 51.464663]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615675, 51.460191],
+          [-2.614986, 51.460428],
+          [-2.615542, 51.46142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617599, 51.467658],
+          [-2.618323, 51.468383]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.6178, 51.466569],
+          [-2.618108, 51.466768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617376, 51.468631],
+          [-2.617748, 51.468913],
+          [-2.617816, 51.468938],
+          [-2.618035, 51.469113]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618059, 51.467524],
+          [-2.618702, 51.467355],
+          [-2.618732, 51.467368],
+          [-2.619321, 51.468142]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618059, 51.467524],
+          [-2.617185, 51.466937],
+          [-2.619359, 51.465644]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616749, 51.467974],
+          [-2.617492, 51.468606]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613923, 51.468865],
+          [-2.614312, 51.468708],
+          [-2.61448, 51.468617],
+          [-2.615327, 51.468114],
+          [-2.616014, 51.46767],
+          [-2.616524, 51.467365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614557, 51.469783],
+          [-2.614792, 51.469619],
+          [-2.615048, 51.469515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616373, 51.467864],
+          [-2.61663, 51.468024],
+          [-2.617599, 51.467658],
+          [-2.618059, 51.467524]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608889, 51.457559],
+          [-2.60897, 51.457446],
+          [-2.609052, 51.457414],
+          [-2.61018, 51.457404],
+          [-2.611033, 51.457413],
+          [-2.611197, 51.457404],
+          [-2.611415, 51.457426],
+          [-2.611857, 51.457526]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612543, 51.465591],
+          [-2.612812, 51.466142],
+          [-2.613122, 51.466737],
+          [-2.613237, 51.466846],
+          [-2.61348, 51.466975],
+          [-2.613696, 51.467022],
+          [-2.613886, 51.467032],
+          [-2.61412, 51.467008],
+          [-2.61449, 51.466913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611751, 51.466792],
+          [-2.612921, 51.466354]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614495, 51.46309],
+          [-2.614329, 51.462941],
+          [-2.614228, 51.46287],
+          [-2.614042, 51.462696]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.613738, 51.465364],
           [-2.612543, 51.465591],
           [-2.611524, 51.465961],
@@ -963,7 +1094,10 @@
         "coordinates": [
           [-2.606872, 51.464053],
           [-2.606361, 51.464351],
-          [-2.605644, 51.464789]
+          [-2.605644, 51.464789],
+          [-2.604874, 51.464138],
+          [-2.605761, 51.463727],
+          [-2.607024, 51.463167]
         ]
       }
     },
@@ -975,18 +1109,6 @@
         "coordinates": [
           [-2.606201, 51.463533],
           [-2.606872, 51.464053]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607024, 51.463167],
-          [-2.605761, 51.463727],
-          [-2.604874, 51.464138]
         ]
       }
     },
@@ -1011,6 +1133,19 @@
           [-2.60858, 51.4642],
           [-2.608322, 51.463534],
           [-2.608061, 51.462781]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.603679, 51.462559],
+          [-2.603635, 51.462457],
+          [-2.603585, 51.46239],
+          [-2.603429, 51.462319]
         ]
       }
     },
@@ -1056,35 +1191,6 @@
         "coordinates": [
           [-2.614287, 51.469612],
           [-2.614143, 51.469806]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613193, 51.471601],
-          [-2.61276, 51.471252]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.610135, 51.470785],
-          [-2.610288, 51.470838],
-          [-2.610802, 51.470949],
-          [-2.611723, 51.471089],
-          [-2.61199, 51.471105],
-          [-2.612241, 51.471088],
-          [-2.612922, 51.470943],
-          [-2.612983, 51.470941],
-          [-2.613092, 51.470963]
         ]
       }
     },
@@ -1178,43 +1284,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.614996, 51.470287],
-          [-2.61513, 51.470219],
-          [-2.615485, 51.469929]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616422, 51.470417],
-          [-2.616258, 51.470317],
-          [-2.615485, 51.469929],
-          [-2.615203, 51.469766],
-          [-2.615155, 51.469727],
-          [-2.61515, 51.469678],
-          [-2.615189, 51.469612],
-          [-2.615048, 51.469515],
-          [-2.614994, 51.469452],
-          [-2.61496, 51.469386]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612597, 51.467644],
           [-2.608982, 51.468992],
-          [-2.609867, 51.470396],
-          [-2.609988, 51.470368],
-          [-2.610147, 51.470298],
-          [-2.610807, 51.469827]
+          [-2.609867, 51.470396]
         ]
       }
     },
@@ -1232,23 +1303,6 @@
           [-2.613873, 51.459749],
           [-2.613961, 51.459793],
           [-2.614021, 51.459801]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.608636, 51.461875],
-          [-2.608792, 51.461845],
-          [-2.609316, 51.461687],
-          [-2.61094, 51.4611],
-          [-2.612, 51.460738],
-          [-2.612994, 51.460448],
-          [-2.613973, 51.460244],
-          [-2.615396, 51.459742]
         ]
       }
     },
@@ -1276,6 +1330,17 @@
           [-2.609284, 51.459005],
           [-2.609287, 51.459023],
           [-2.609717, 51.459465]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608982, 51.468992],
+          [-2.612597, 51.467644]
         ]
       }
     },
@@ -1389,7 +1454,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.608824, 51.46871],
+          [-2.608982, 51.468992],
           [-2.60872, 51.468513]
         ]
       }
@@ -1400,10 +1465,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.610009, 51.470708],
           [-2.609764, 51.470531],
           [-2.609843, 51.470483],
-          [-2.609874, 51.470428]
+          [-2.609874, 51.470428],
+          [-2.609867, 51.470396]
         ]
       }
     },
@@ -1413,8 +1478,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.612458, 51.471491],
-          [-2.61276, 51.471252]
+          [-2.609616, 51.470588],
+          [-2.609764, 51.470531]
         ]
       }
     },
@@ -1441,78 +1506,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.619871, 51.466228],
-          [-2.619793, 51.466265],
-          [-2.619537, 51.466681]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615525, 51.46328],
-          [-2.617233, 51.464663]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.612994, 51.460448],
           [-2.612103, 51.459408]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615675, 51.460191],
-          [-2.614986, 51.460428],
-          [-2.615542, 51.46142]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617599, 51.467658],
-          [-2.618323, 51.468383]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.6178, 51.466569],
-          [-2.618108, 51.466768]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617376, 51.468631],
-          [-2.617748, 51.468913],
-          [-2.617816, 51.468938],
-          [-2.618035, 51.469113]
         ]
       }
     },
@@ -1539,19 +1534,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.618059, 51.467524],
-          [-2.618702, 51.467355],
-          [-2.618732, 51.467368],
-          [-2.619321, 51.468142]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.610799, 51.462115],
           [-2.611358, 51.462796]
         ]
@@ -1563,7 +1545,28 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.607182, 51.4664],
+          [-2.609764, 51.470531],
+          [-2.610009, 51.470708],
+          [-2.610135, 51.470785],
+          [-2.610288, 51.470838],
+          [-2.610802, 51.470949],
+          [-2.611723, 51.471089],
+          [-2.61199, 51.471105],
+          [-2.612124, 51.4711],
+          [-2.612241, 51.471088],
+          [-2.612922, 51.470943],
+          [-2.612983, 51.470941],
+          [-2.613092, 51.470963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.608063, 51.467529],
           [-2.606793, 51.465912]
         ]
       }
@@ -1574,20 +1577,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.60781, 51.467202],
-          [-2.607592, 51.466921]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.60872, 51.468513],
-          [-2.608527, 51.468171],
-          [-2.608359, 51.467939]
+          [-2.608527, 51.468171]
         ]
       }
     },
@@ -1707,6 +1698,40 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.603859, 51.462757],
+          [-2.60378, 51.462656]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.604764, 51.464041],
+          [-2.604466, 51.463648],
+          [-2.604, 51.462938]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.606221, 51.465282],
+          [-2.605751, 51.464887]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [-2.610147, 51.470298],
           [-2.610873, 51.470689],
           [-2.610953, 51.470713],
@@ -1714,29 +1739,6 @@
           [-2.611233, 51.470647],
           [-2.611452, 51.470542],
           [-2.612128, 51.470086]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618059, 51.467524],
-          [-2.617185, 51.466937],
-          [-2.619359, 51.465644]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61276, 51.471252],
-          [-2.613092, 51.470963]
         ]
       }
     },
@@ -1757,34 +1759,21 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616749, 51.467974],
-          [-2.617492, 51.468606]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613923, 51.468865],
-          [-2.614312, 51.468708],
-          [-2.61448, 51.468617],
-          [-2.615327, 51.468114],
-          [-2.616014, 51.46767],
-          [-2.616524, 51.467365]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.611289, 51.46632],
           [-2.610221, 51.466726]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.609867, 51.470396],
+          [-2.609988, 51.470368],
+          [-2.610147, 51.470298],
+          [-2.610807, 51.469827]
         ]
       }
     },
@@ -1817,33 +1806,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.614557, 51.469783],
-          [-2.614792, 51.469619],
-          [-2.615048, 51.469515]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.610807, 51.469827],
           [-2.611585, 51.469382]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616373, 51.467864],
-          [-2.61663, 51.468024],
-          [-2.617599, 51.467658],
-          [-2.618059, 51.467524]
         ]
       }
     },
@@ -1939,6 +1903,41 @@
     },
     {
       "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613193, 51.471601],
+          [-2.61276, 51.471252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612455, 51.471663],
+          [-2.612445, 51.471546],
+          [-2.612458, 51.471491],
+          [-2.61276, 51.471252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "local", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61276, 51.471252],
+          [-2.613092, 51.470963]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": { "kind": "service", "district": "clifton-down" },
       "geometry": {
         "type": "LineString",
@@ -1946,6 +1945,357 @@
           [-2.617351, 51.467042],
           [-2.616901, 51.467332],
           [-2.616564, 51.467118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61562, 51.469725],
+          [-2.615853, 51.469555]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615361, 51.471032],
+          [-2.615815, 51.47063]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.613551, 51.461532],
+          [-2.614193, 51.461324],
+          [-2.6147, 51.461181]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618162, 51.467495],
+          [-2.618291, 51.467645]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618785, 51.467436],
+          [-2.619286, 51.467285],
+          [-2.619522, 51.467601]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619314, 51.466952],
+          [-2.619618, 51.466735],
+          [-2.619699, 51.466707],
+          [-2.619755, 51.466668],
+          [-2.619756, 51.466644],
+          [-2.619709, 51.466586],
+          [-2.619636, 51.46653]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614591, 51.460524],
+          [-2.614986, 51.460428]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614038, 51.469946],
+          [-2.614393, 51.47019],
+          [-2.614716, 51.470025]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616289, 51.4696],
+          [-2.616125, 51.469479],
+          [-2.616159, 51.469439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.620334, 51.468443],
+          [-2.620207, 51.468344],
+          [-2.620067, 51.468412],
+          [-2.620194, 51.468508]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614823, 51.47013],
+          [-2.61472, 51.470182],
+          [-2.614683, 51.470237],
+          [-2.61494, 51.470499],
+          [-2.614972, 51.470517],
+          [-2.615114, 51.470529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615457, 51.469464],
+          [-2.615315, 51.469568]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617646, 51.469405],
+          [-2.617853, 51.469305]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61582, 51.463525],
+          [-2.616321, 51.463302]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.615231, 51.467904],
+          [-2.61511, 51.467979],
+          [-2.615327, 51.468114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617666, 51.465207],
+          [-2.618111, 51.465488]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614867, 51.462082],
+          [-2.615075, 51.462273]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614872, 51.468712],
+          [-2.61501, 51.4689],
+          [-2.615058, 51.468949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.61501, 51.4689],
+          [-2.614963, 51.468916]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.619537, 51.466681],
+          [-2.61917, 51.466611],
+          [-2.619092, 51.466616],
+          [-2.619028, 51.466635],
+          [-2.618891, 51.466698],
+          [-2.618502, 51.467049]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616672, 51.469853],
+          [-2.616751, 51.469864],
+          [-2.616796, 51.469853],
+          [-2.617109, 51.469707]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617148, 51.467173],
+          [-2.616862, 51.466992],
+          [-2.616846, 51.466946],
+          [-2.616854, 51.466926],
+          [-2.616909, 51.466891],
+          [-2.616983, 51.46687],
+          [-2.61704, 51.466875],
+          [-2.617185, 51.466937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616011, 51.463063],
+          [-2.616068, 51.463123]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.616148, 51.462935],
+          [-2.616197, 51.462983]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614857, 51.463573],
+          [-2.614916, 51.463611],
+          [-2.615021, 51.463643],
+          [-2.615184, 51.463759]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617169, 51.464365],
+          [-2.617183, 51.464377],
+          [-2.61699, 51.464467]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.614805, 51.459865],
+          [-2.614859, 51.459931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.618348, 51.46606],
+          [-2.617768, 51.465684]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.617741, 51.46484],
+          [-2.618304, 51.464585]
         ]
       }
     },
@@ -2010,19 +2360,10 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.61562, 51.469725],
-          [-2.615853, 51.469555]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615361, 51.471032],
-          [-2.615815, 51.47063]
+          [-2.609934, 51.471174],
+          [-2.609935, 51.470909],
+          [-2.609959, 51.470803],
+          [-2.610009, 51.470708]
         ]
       }
     },
@@ -2057,54 +2398,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.611334, 51.471035],
-          [-2.611049, 51.471309]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.613551, 51.461532],
-          [-2.614193, 51.461324],
-          [-2.6147, 51.461181]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.614193, 51.461324],
           [-2.61435, 51.460774]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618162, 51.467495],
-          [-2.618291, 51.467645]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618785, 51.467436],
-          [-2.619286, 51.467285],
-          [-2.619522, 51.467601]
         ]
       }
     },
@@ -2150,22 +2445,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.619314, 51.466952],
-          [-2.619618, 51.466735],
-          [-2.619699, 51.466707],
-          [-2.619755, 51.466668],
-          [-2.619756, 51.466644],
-          [-2.619709, 51.466586],
-          [-2.619636, 51.46653]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.608355, 51.465055],
           [-2.609104, 51.464791],
           [-2.609376, 51.464545]
@@ -2202,32 +2481,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.614591, 51.460524],
-          [-2.614986, 51.460428]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.610067, 51.465029],
           [-2.610623, 51.464824],
           [-2.611582, 51.46464]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614038, 51.469946],
-          [-2.614393, 51.47019],
-          [-2.614716, 51.470025]
         ]
       }
     },
@@ -2288,18 +2544,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616289, 51.4696],
-          [-2.616125, 51.469479],
-          [-2.616159, 51.469439]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.613765, 51.4703],
           [-2.613963, 51.470368]
         ]
@@ -2351,45 +2595,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.620334, 51.468443],
-          [-2.620207, 51.468344],
-          [-2.620067, 51.468412],
-          [-2.620194, 51.468508]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.612971, 51.471215],
-          [-2.612875, 51.471153]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614823, 51.47013],
-          [-2.61472, 51.470182],
-          [-2.614683, 51.470237],
-          [-2.61494, 51.470499],
-          [-2.614972, 51.470517],
-          [-2.615114, 51.470529]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.608763, 51.4601],
           [-2.608668, 51.460083]
         ]
@@ -2406,28 +2611,6 @@
           [-2.608848, 51.460183],
           [-2.608832, 51.460305],
           [-2.608622, 51.460386]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615457, 51.469464],
-          [-2.615315, 51.469568]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607939, 51.462004],
-          [-2.608308, 51.462415]
         ]
       }
     },
@@ -2516,28 +2699,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.617646, 51.469405],
-          [-2.617853, 51.469305]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61582, 51.463525],
-          [-2.616321, 51.463302]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.608852, 51.468758],
           [-2.609229, 51.468672]
         ]
@@ -2563,29 +2724,6 @@
         "coordinates": [
           [-2.614044, 51.468511],
           [-2.614312, 51.468708]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.615231, 51.467904],
-          [-2.61511, 51.467979],
-          [-2.615327, 51.468114]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617666, 51.465207],
-          [-2.618111, 51.465488]
         ]
       }
     },
@@ -2650,57 +2788,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.614867, 51.462082],
-          [-2.615075, 51.462273]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614872, 51.468712],
-          [-2.61501, 51.4689],
-          [-2.615058, 51.468949]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.61501, 51.4689],
-          [-2.614963, 51.468916]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.612301, 51.461034],
           [-2.61222, 51.461058]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.619537, 51.466681],
-          [-2.61917, 51.466611],
-          [-2.619092, 51.466616],
-          [-2.619028, 51.466635],
-          [-2.618891, 51.466698],
-          [-2.618502, 51.467049]
         ]
       }
     },
@@ -2733,49 +2822,8 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.616672, 51.469853],
-          [-2.616751, 51.469864],
-          [-2.616796, 51.469853],
-          [-2.617109, 51.469707]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.612963, 51.468514],
           [-2.613, 51.468584]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617148, 51.467173],
-          [-2.616862, 51.466992],
-          [-2.616846, 51.466946],
-          [-2.616854, 51.466926],
-          [-2.616909, 51.466891],
-          [-2.616983, 51.46687],
-          [-2.61704, 51.466875],
-          [-2.617185, 51.466937]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.607066, 51.462639],
-          [-2.607044, 51.462613]
         ]
       }
     },
@@ -2799,53 +2847,6 @@
           [-2.610845, 51.463591],
           [-2.611479, 51.463389],
           [-2.611847, 51.463259]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616011, 51.463063],
-          [-2.616068, 51.463123]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.616148, 51.462935],
-          [-2.616197, 51.462983]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614857, 51.463573],
-          [-2.614916, 51.463611],
-          [-2.615021, 51.463643],
-          [-2.615184, 51.463759]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617169, 51.464365],
-          [-2.617183, 51.464377],
-          [-2.61699, 51.464467]
         ]
       }
     },
@@ -2880,17 +2881,6 @@
         "coordinates": [
           [-2.612563, 51.460471],
           [-2.61263, 51.460554]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.614805, 51.459865],
-          [-2.614859, 51.459931]
         ]
       }
     },
@@ -2991,28 +2981,6 @@
           [-2.605586, 51.462856],
           [-2.605257, 51.46269],
           [-2.605501, 51.46246]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.618348, 51.46606],
-          [-2.617768, 51.465684]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "clifton-down" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.617741, 51.46484],
-          [-2.618304, 51.464585]
         ]
       }
     },
@@ -3146,13 +3114,37 @@
     },
     {
       "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.611334, 51.471035],
+          [-2.611049, 51.471309]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "service", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612971, 51.471215],
+          [-2.612875, 51.471153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": { "kind": "tertiary", "district": "clifton-down" },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [-2.604537, 51.462465],
+          [-2.605279, 51.462442],
+          [-2.605601, 51.462472],
           [-2.605859, 51.462557],
           [-2.606412, 51.462782],
-          [-2.606577, 51.462865],
           [-2.606665, 51.462913],
           [-2.607024, 51.463167]
         ]
@@ -3180,8 +3172,31 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.604254, 51.462434],
-          [-2.604537, 51.462465]
+          [-2.603635, 51.462457],
+          [-2.603734, 51.462407],
+          [-2.603814, 51.462397],
+          [-2.603987, 51.462402],
+          [-2.603774, 51.462362],
+          [-2.603608, 51.46235],
+          [-2.603429, 51.462319]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "tertiary", "district": "clifton-down" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-2.612284, 51.458134],
+          [-2.612352, 51.45811],
+          [-2.612438, 51.458014],
+          [-2.612441, 51.457977],
+          [-2.612414, 51.457928],
+          [-2.612359, 51.457887],
+          [-2.61233, 51.458016],
+          [-2.612287, 51.458083],
+          [-2.612284, 51.458134]
         ]
       }
     }

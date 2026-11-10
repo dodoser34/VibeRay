@@ -22,3 +22,5 @@ Files
 # Сгенерированные исходники иллюстраций: в проект попадают уже переведённые в WebP
 docs/art/incoming/*.png
 docs/art/*.zip
+# Сырые ответы Overpass для сборки и проверки геоданных (backend/scripts) — скачиваются заново
+backend/.osm-cache/

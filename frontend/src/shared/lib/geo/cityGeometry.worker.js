@@ -1,7 +1,7 @@
 import { buildCityGeometry, plateBuffers } from './cityGeometry';
 
-// Фоновый поток подготовки районов (prepareCity.js): сглаживание, плиты, точки подписей.
+// Фоновый поток подготовки районов (prepareCity.js): плиты и точки подписей.
 self.onmessage = ({ data }) => {
-  const result = buildCityGeometry(data);
-  self.postMessage(result, plateBuffers(result.plates));
+  const plates = buildCityGeometry(data);
+  self.postMessage(plates, plateBuffers(plates));
 };
