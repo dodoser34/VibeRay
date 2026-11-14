@@ -7,7 +7,7 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
 import { plural } from '@/shared/lib/i18n/plural';
 import { CompareChart } from '@/shared/ui/charts/CompareChart';
-import texts from '@/texts/ru/stats.json';
+import texts from '@/texts/en/stats.json';
 import { useDistrictStats } from '../../hooks/useDistrictStats';
 import { seriesPointTitle, seriesTick } from '../../lib/seriesLabels';
 import styles from './DistrictCompare.module.css';

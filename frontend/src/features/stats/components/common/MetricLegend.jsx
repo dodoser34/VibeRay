@@ -1,5 +1,5 @@
 import { format } from '@/shared/lib/i18n/format';
-import texts from '@/texts/ru/stats.json';
+import texts from '@/texts/en/stats.json';
 import styles from './MetricLegend.module.css';
 
 // Цветовая шкала карты дашборда: настроение (плохо → хорошо) или сообщения (меньше всех → больше

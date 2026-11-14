@@ -1,7 +1,7 @@
 import { useNotifications } from '../model/useNotifications';
 import emptyFigure from '../assets/empty-tea.webp';
 import { NotificationList } from './NotificationList';
-import texts from '@/texts/ru/notifications.json';
+import texts from '@/texts/en/notifications.json';
 import styles from './NotificationsPanel.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

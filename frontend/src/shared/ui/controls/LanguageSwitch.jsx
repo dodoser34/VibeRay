@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { changeLanguage } from '@/shared/animations/languageChange/languageTransition';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { LANGUAGES } from '@/shared/lib/i18n/language';
-import common from '@/texts/ru/common.json';
+import common from '@/texts/en/common.json';
 import deFlag from '../flags/de.svg';
 import gbFlag from '../flags/gb.svg';
 import kzFlag from '../flags/kz.svg';

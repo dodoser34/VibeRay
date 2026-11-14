@@ -8,7 +8,7 @@ import { formatNumber, formatSigned, percentOf } from '@/shared/lib/i18n/formatN
 import { getLocale } from '@/shared/lib/i18n/language';
 import { plural } from '@/shared/lib/i18n/plural';
 import { useRevealed } from '@/shared/hooks/useRevealed';
-import texts from '@/texts/ru/stats.json';
+import texts from '@/texts/en/stats.json';
 import styles from './DistrictTable.module.css';
 
 const SAME_SCORE = 0.1; // меньшие изменения читаются как «без изменений» (оценки −2…+2)

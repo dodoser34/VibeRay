@@ -1,5 +1,5 @@
 import { getLanguage } from '@/shared/lib/i18n/language';
-import common from '@/texts/ru/common.json';
+import common from '@/texts/en/common.json';
 
 // Демо-режим (по умолчанию, в том числе на GitHub Pages): запросы обслуживает фейковый API из
 // src/demo-data/api — бэкенд не нужен. С бэкендом: VITE_USE_MOCKS=false в frontend/.env, запросы идут на

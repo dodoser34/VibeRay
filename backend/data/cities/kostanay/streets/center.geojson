@@ -1660,17 +1660,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.676265, 53.230877],
-          [63.676377, 53.231033]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "center" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.609225, 53.216609],
           [63.609116, 53.21648],
           [63.608757, 53.216192],
@@ -8763,6 +8752,7 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [63.677683, 53.230834],
           [63.678143, 53.230727],
           [63.678681, 53.230558],
           [63.679321, 53.230316],

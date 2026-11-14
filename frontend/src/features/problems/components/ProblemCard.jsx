@@ -20,7 +20,7 @@ import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';
 import { CategoryIcon } from './CategoryIcon';
 import { StatusChip } from './StatusChip';
 import { StatusTimeline } from './StatusTimeline';
-import problemTexts from '@/texts/ru/problems.json';
+import problemTexts from '@/texts/en/problems.json';
 import styles from './ProblemCard.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

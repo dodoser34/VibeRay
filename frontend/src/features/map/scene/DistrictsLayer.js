@@ -17,6 +17,14 @@ const FLAT = 0.001; // высота скрытой плиты: она лежит
 // дороги и стенки соседей не перекрывали друг друга, и рисуются после дорог, подкрашивая их.
 const SEE_THROUGH = 0.6;
 const SEE_THROUGH_ORDER = 10;
+// Высоты заданы для города размером с Костанай (сторона квадрата той же площади ~10 км); у
+// большого города камера дальше, и те же метры терялись — плиты растут вместе с городом.
+const REFERENCE_SIDE_KM = 10;
+const MAX_SIZE_FACTOR = 4;
+// Настроения районов обычно близки (−0,5…+1 из −2…+2), поэтому высота — в основном место района
+// среди районов города (лучший — самый высокий), и лишь эта доля — абсолютное значение шкалы.
+const ABSOLUTE_SHARE = 0.3;
+const MIN_SPREAD = 0.05; // разброс меньше — районы почти равны, растягивать нечего
 
 // Выдавленные плиты районов. Три режима цвета: 'districts' — у каждого района свой пастельный цвет
 // (легко различать), 'mood' — цвет по общему настроению жителей, 'scores' — любая метрика дашборда
@@ -24,8 +32,9 @@ const SEE_THROUGH_ORDER = 10;
 // разделяют соседей похожего цвета. Используется полной картой и сценой главной. Координаты слоя: x
 // — восток, y — вверх, z — юг (1 единица = 1 км до масштаба родителя).
 // Высота плиты — то же значение, что и цвет: настроение района (или метрика дашборда) на шкале
-// −2…+2, чем лучше — тем выше; heightScale — множитель высоты (0 — плоская карта). Районы, где
-// отметок мало, остаются низкими.
+// −2…+2, чем лучше — тем выше, причём разброс районов города растягивается на всю высоту
+// (updateHeights); высоты растут вместе с размером города (sizeFactor); heightScale — множитель
+// высоты (0 — плоская карта). Районы, где отметок мало, остаются низкими.
 // Плиты почти прозрачные, а улицы лежат под ними на земле (MapTiles) — и на карте, и в истории
 // «О проекте». setHidden убирает районы совсем — остаётся карта дорог.
 export class DistrictsLayer {
@@ -65,6 +74,14 @@ export class DistrictsLayer {
     features.forEach((feature) =>
       this.addDistrict(feature, project, lineWidth, plates?.[feature.properties.slug]),
     );
+    const area = [...this.items.values()].reduce((sum, item) => sum + item.area, 0);
+    this.sizeFactor = Math.min(MAX_SIZE_FACTOR, Math.max(1, Math.sqrt(area) / REFERENCE_SIDE_KM));
+    this.baseHeight *= this.sizeFactor;
+    this.heightRange *= this.sizeFactor;
+    this.items.forEach((item) => {
+      item.height = this.baseHeight;
+      item.group.scale.y = this.baseHeight;
+    });
   }
 
   // plate — готовая плита района (getCity → plates, построена в фоновом потоке в км проекции без
@@ -211,9 +228,25 @@ export class DistrictsLayer {
   }
 
   updateHeights(duration) {
+    const scores = new Map(
+      [...this.items.keys()].map((slug) => {
+        const score = this.scoreOf(slug);
+        return [slug, score === null ? null : Math.max(-2, Math.min(2, score))];
+      }),
+    );
+    const known = [...scores.values()].filter((score) => score !== null);
+    const low = Math.min(...known);
+    const spread = Math.max(...known) - low;
     this.items.forEach((item) => {
-      const score = this.scoreOf(item.slug);
-      const level = score === null ? 0 : (Math.max(-2, Math.min(2, score)) + 2) / 4;
+      const score = scores.get(item.slug);
+      let level = 0;
+      if (score !== null) {
+        const absolute = (score + 2) / 4;
+        level =
+          spread < MIN_SPREAD
+            ? absolute
+            : ABSOLUTE_SHARE * absolute + (1 - ABSOLUTE_SHARE) * ((score - low) / spread);
+      }
       item.height = this.baseHeight + this.heightRange * this.heightScale * level;
       if (this.introDone) {
         gsap.to(item.group.scale, { y: this.shownHeight(item), duration, ease: 'power3.out' });
@@ -297,7 +330,7 @@ export class DistrictsLayer {
       let opacity = faded ? this.baseOpacity * 0.45 : this.baseOpacity;
       if (active) opacity += (1 - this.baseOpacity) * ACTIVE_BOOST;
       gsap.to(item.group.position, {
-        y: active ? LIFT : 0,
+        y: active ? LIFT * this.sizeFactor : 0,
         duration,
         ease: 'power3.out',
       });

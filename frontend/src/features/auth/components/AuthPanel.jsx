@@ -1,7 +1,8 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { WIDE_QUERY } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { cardEnter, partsEnter } from '@/shared/animations/effects/cardEnter';
+import { smoothHeight } from '@/shared/animations/effects/smoothLayout';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { LoginForm } from './LoginForm';
 import { RegisterFlow } from './RegisterFlow';
@@ -11,7 +12,8 @@ import styles from './AuthPanel.module.css';
 const NARROW_ENTER_DELAY = 0.3;
 
 // Вход / регистрация. Карточка плавно выдвигается снизу из пустоты; при смене режима текущая форма
-// уходит вверх и гаснет, новая поднимается следом, а фон карточки подстраивается под новую высоту.
+// уходит вверх и гаснет, новая поднимается следом. Фон карточки при любой смене высоты (режим, шаг
+// регистрации, подсказки под полями) плавно дотягивается до новой (smoothHeight), а не прыгает.
 export function AuthPanel({
   ref,
   mode,
@@ -24,7 +26,7 @@ export function AuthPanel({
   const rootRef = useRef(null);
   const bgRef = useRef(null);
   const paneRef = useRef(null);
-  const prevHeight = useRef(null);
+  const switched = useRef(false); // форму уже меняли — карточка на экране, выдвигать её не нужно
   const leaving = useRef(null); // анимация ухода текущей формы, если идёт
   const latestMode = useRef(mode);
   const [shown, setShown] = useState(mode);
@@ -46,7 +48,7 @@ export function AuthPanel({
         return;
       }
       if (leaving.current) return;
-      prevHeight.current = rootRef.current.querySelector('[data-card]').offsetHeight;
+      switched.current = true;
       leaving.current = gsap.to(parts(), {
         y: -10,
         autoAlpha: 0,
@@ -67,23 +69,20 @@ export function AuthPanel({
   useGSAP(
     () => {
       // Первое появление под переходом страницы: показываем, когда страница откроется.
-      if (prevHeight.current === null && !entered) return;
-      const card = rootRef.current.querySelector('[data-card]');
+      if (!switched.current && !entered) return;
       const timeline = gsap.timeline();
-      if (prevHeight.current === null) {
+      if (!switched.current) {
+        const card = rootRef.current.querySelector('[data-card]');
         const wide = window.matchMedia(WIDE_QUERY).matches;
         cardEnter(timeline, card, parts(), wide ? wideEnterDelay : NARROW_ENTER_DELAY);
         return;
       }
-      timeline.fromTo(
-        bgRef.current,
-        { scaleY: prevHeight.current / card.offsetHeight },
-        { scaleY: 1, transformOrigin: '50% 0%', duration: 0.6, ease: 'power2.out' },
-      );
       partsEnter(timeline, parts(), 0.15);
     },
     { dependencies: [shown, entered], scope: rootRef },
   );
+
+  useEffect(() => smoothHeight(rootRef.current.querySelector('[data-card]'), bgRef.current), []);
 
   return (
     <div ref={rootRef} className={styles.root} data-ui="auth-panel">

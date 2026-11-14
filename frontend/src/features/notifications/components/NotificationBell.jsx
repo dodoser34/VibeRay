@@ -4,7 +4,7 @@ import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/i18n/format';
 import { useNotifications } from '../model/useNotifications';
 import { NotificationsPanel } from './NotificationsPanel';
-import texts from '@/texts/ru/notifications.json';
+import texts from '@/texts/en/notifications.json';
 import styles from './NotificationBell.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

@@ -5,8 +5,8 @@ import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import { useSaveAction } from '../../hooks/useSaveAction';
 import { SaveBar } from '../SaveBar';
 import { SettingsSection } from '../SettingsSection';
-import auth from '@/texts/ru/auth.json';
-import texts from '@/texts/ru/settings.json';
+import auth from '@/texts/en/auth.json';
+import texts from '@/texts/en/settings.json';
 import styles from './SecuritySection.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

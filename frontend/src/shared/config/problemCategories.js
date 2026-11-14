@@ -1,4 +1,4 @@
-import dictionaries from '@/texts/ru/dictionaries.json';
+import dictionaries from '@/texts/en/dictionaries.json';
 import { withLabels } from './withLabels';
 
 // Коды должны совпадать с backend/app/models/enums.py (ProblemCategory).

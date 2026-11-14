@@ -1,5 +1,5 @@
 import { Icon } from '@/shared/ui/icons/Icon';
-import about from '@/texts/ru/about.json';
+import about from '@/texts/en/about.json';
 import styles from './StoryBuild.module.css';
 
 // Сцена 7: идея превращается в работу — между парами пункты плана отмечаются один за другим.

@@ -1145,8 +1145,19 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.586467, 53.209638],
+          [63.586674, 53.210634],
           [63.586394, 53.209313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "aeroport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.587452, 53.214293],
+          [63.587436, 53.214931]
         ]
       }
     },

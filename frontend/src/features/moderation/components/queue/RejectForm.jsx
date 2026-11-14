@@ -1,7 +1,7 @@
 import { useId, useState } from 'react';
 import { REJECTION_REASONS } from '@/shared/config/problemStatuses';
 import { Button } from '@/shared/ui/controls/Button';
-import texts from '@/texts/ru/moderation.json';
+import texts from '@/texts/en/moderation.json';
 import styles from './RejectForm.module.css';
 
 // Отклонение: причина обязательна; для дубля — номер исходной проблемы, автор получит ссылку на неё.

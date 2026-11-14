@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Modal } from '@/shared/ui/windows/Modal';
-import texts from '@/texts/ru/map.json';
+import texts from '@/texts/en/map.json';
 import styles from './MapFab.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

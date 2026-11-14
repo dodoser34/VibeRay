@@ -9,7 +9,7 @@ import { gsap } from '@/shared/animations/core/gsapSetup';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { format } from '@/shared/lib/i18n/format';
 import { formatTime } from '@/shared/lib/i18n/formatDate';
-import texts from '@/texts/ru/map.json';
+import texts from '@/texts/en/map.json';
 import { Button } from '@/shared/ui/controls/Button';
 import { HEIGHT_SCALE } from '../lib/heightScale';
 import styles from './MapFilters.module.css';

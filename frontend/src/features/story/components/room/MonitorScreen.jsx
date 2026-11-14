@@ -1,5 +1,5 @@
 import { Icon } from '@/shared/ui/icons/Icon';
-import about from '@/texts/ru/about.json';
+import about from '@/texts/en/about.json';
 import { isDaylight } from '../../lib/chapters';
 import styles from './IsometricRoom.module.css';
 

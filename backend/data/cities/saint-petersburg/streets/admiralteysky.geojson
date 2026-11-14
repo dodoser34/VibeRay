@@ -36353,17 +36353,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [30.292548, 59.929808],
-          [30.29245, 59.929796]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "admiralteysky" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [30.306662, 59.91831],
           [30.306502, 59.918312],
           [30.306419, 59.918325]

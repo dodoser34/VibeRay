@@ -1,4 +1,4 @@
-import about from '@/texts/ru/about.json';
+import about from '@/texts/en/about.json';
 import { getTheme } from '@/shared/lib/theme/theme';
 
 // История идеи для страницы «О проекте». Одна глава = CHAPTER единиц шкалы = один экран прокрутки.

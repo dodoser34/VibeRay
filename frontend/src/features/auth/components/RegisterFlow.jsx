@@ -9,7 +9,7 @@ import { useAuth } from '../model/useAuth';
 import { PasswordField } from './PasswordField';
 import { PasswordStrength } from './PasswordStrength';
 import { format } from '@/shared/lib/i18n/format';
-import auth from '@/texts/ru/auth.json';
+import auth from '@/texts/en/auth.json';
 import styles from './PassForms.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

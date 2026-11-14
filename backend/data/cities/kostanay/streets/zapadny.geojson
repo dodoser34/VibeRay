@@ -1389,7 +1389,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.578101, 53.195271],
           [63.577177, 53.195375],
           [63.576786, 53.195485],
           [63.576578, 53.195576],
@@ -5391,44 +5390,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [63.577177, 53.195375],
-          [63.577108, 53.195155],
-          [63.578031, 53.195064]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "zapadny" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.577743, 53.19432],
-          [63.577889, 53.194758]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "zapadny" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [63.577108, 53.195155],
-          [63.57689, 53.194406],
-          [63.576902, 53.194376],
-          [63.576947, 53.194353],
-          [63.577658, 53.194278],
-          [63.577713, 53.194293]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "service", "district": "zapadny" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [63.586726, 53.190497],
           [63.586263, 53.190532],
           [63.586209, 53.190547],
@@ -6327,6 +6288,18 @@
           [63.572651, 53.205487],
           [63.572614, 53.205743],
           [63.572796, 53.206426]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "kind": "rail", "district": "zapadny" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [63.581338, 53.186704],
+          [63.581531, 53.18736],
+          [63.581708, 53.18785]
         ]
       }
     },

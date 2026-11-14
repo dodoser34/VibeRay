@@ -7,6 +7,11 @@ export function useTransitionNavigate() {
   return useContext(TransitionContext).go;
 }
 
+// Идёт ли сейчас переход между страницами (новый переход до его конца не начнётся).
+export function useTransitionBusy() {
+  return useContext(TransitionContext).isBusy;
+}
+
 // Переход, который знает про карту: внутри неё (город ↔ район ↔ проблема ↔ дашборд) страница не
 // меняется, поэтому бумажный переход не нужен — только смена адреса.
 export function usePageNavigate() {

@@ -1,5 +1,5 @@
 import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
-import texts from '@/texts/ru/support.json';
+import texts from '@/texts/en/support.json';
 import styles from './FaqList.module.css';
 
 // Аккордеон ответов. `category` фильтрует список; `openId` управляется снаружи, чтобы результаты

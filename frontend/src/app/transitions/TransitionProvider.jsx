@@ -9,7 +9,7 @@ import '@/shared/animations/pageTransition/MapFoldTransition.css';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePagePath } from '@/shared/hooks/usePagePath';
 import { TransitionContext } from './TransitionContext';
-import nav from '@/texts/ru/nav.json';
+import nav from '@/texts/en/nav.json';
 import { subscribeTheme } from '@/shared/lib/theme/theme';
 
 // Главная, вход и регистрация — одна страница: переключение между ними анимирует карточку-пропуск.
@@ -216,6 +216,12 @@ export function TransitionProvider({ children }) {
     };
   }, []);
 
-  const value = useMemo(() => ({ go, setInterceptor, holdPage }), [go, setInterceptor, holdPage]);
+  // Таб-бар не двигает подсветку на клик, который всё равно будет отклонён: переход уже идёт.
+  const isBusy = useCallback(() => busyRef.current, []);
+
+  const value = useMemo(
+    () => ({ go, setInterceptor, holdPage, isBusy }),
+    [go, setInterceptor, holdPage, isBusy],
+  );
   return <TransitionContext.Provider value={value}>{children}</TransitionContext.Provider>;
 }

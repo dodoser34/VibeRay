@@ -5,7 +5,7 @@ import { gsap, SplitText, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/controls/Button';
-import texts from '@/texts/ru/notFound.json';
+import texts from '@/texts/en/notFound.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import girlMap from './assets/girl-map.webp';
 import { NotFoundMap } from './components/NotFoundMap';

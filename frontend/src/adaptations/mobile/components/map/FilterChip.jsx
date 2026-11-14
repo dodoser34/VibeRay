@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { format } from '@/shared/lib/i18n/format';
 import { Modal } from '@/shared/ui/windows/Modal';
-import texts from '@/texts/ru/map.json';
+import texts from '@/texts/en/map.json';
 import styles from './FilterChip.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

@@ -1,4 +1,4 @@
-import common from '@/texts/ru/common.json';
+import common from '@/texts/en/common.json';
 import { format } from './format';
 import { getLocale } from './language';
 

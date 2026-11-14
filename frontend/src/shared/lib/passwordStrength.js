@@ -1,5 +1,5 @@
 import { PASSWORD_MIN_LENGTH } from '@/shared/config/validation';
-import auth from '@/texts/ru/auth.json';
+import auth from '@/texts/en/auth.json';
 import { format } from './i18n/format';
 
 const labels = auth.passwordStrength;

@@ -8,7 +8,7 @@ import { useLanguageRoute } from './routing/useLanguageRoute';
 import { useRoleRoute } from './routing/useRoleRoute';
 
 export function App() {
-  // Язык — из адреса (/en/…); оболочка (шапка, меню) перерисовывается на новом языке без
+  // Язык — из адреса (/ru/…); оболочка (шапка, меню) перерисовывается на новом языке без
   // перезагрузки.
   useLanguageRoute();
   useRoleRoute();

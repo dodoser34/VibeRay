@@ -1,4 +1,4 @@
-import transitionTexts from '@/texts/ru/transition.json';
+import transitionTexts from '@/texts/en/transition.json';
 
 // Переход между страницами «бумажная карта-оригами». Сложенная карта вылетает из точки клика,
 // разворачивается на весь экран, падает метка, и к следующей странице прокладывается маршрут, пока

@@ -12,9 +12,9 @@ import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
 import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { Modal } from '@/shared/ui/windows/Modal';
-import notificationTexts from '@/texts/ru/notifications.json';
+import notificationTexts from '@/texts/en/notifications.json';
 import { lastCity } from '@/features/map';
-import nav from '@/texts/ru/nav.json';
+import nav from '@/texts/en/nav.json';
 import styles from './MobileNav.module.css';
 import { LogoMark } from '@/shared/ui/icons/LogoMark';
 import { Icon } from '@/shared/ui/icons/Icon';
@@ -61,6 +61,7 @@ export function MobileNav() {
   const barRef = useRef(null);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
+  const closingRef = useRef(null); // анимация сворачивания меню, если идёт
   // Меню относится к странице, на которой его открыли: любая смена маршрута его закрывает.
   const [openOn, setOpenOn] = useState(null);
   const open = openOn === pathname;
@@ -173,21 +174,35 @@ export function MobileNav() {
   }, [open]);
 
   // Закрыть «на месте» (кнопка, Escape): меню сворачивается обратно в кнопку. Переход на другую
-  // страницу закрывает его сразу — экран всё равно закроет переход.
+  // страницу закрывает его сразу — экран всё равно закроет переход. Повторное нажатие, пока меню
+  // сворачивается, разворачивает его обратно с того же места, а не перезапускает анимацию.
   const closeMenu = () => {
     const menu = menuRef.current;
     if (!menu) return setOpenOn(null);
+    if (closingRef.current) return closingRef.current;
     gsap.killTweensOf(menu);
-    return gsap.fromTo(
+    closingRef.current = gsap.fromTo(
       menu,
       { clipPath: menuCircle() },
       {
         clipPath: menuCircle(buttonRef.current.offsetWidth / 2),
         duration: 0.4,
         ease: 'power3.in',
-        onComplete: () => setOpenOn(null),
+        onComplete: () => {
+          closingRef.current = null;
+          setOpenOn(null);
+        },
+        onReverseComplete: () => {
+          closingRef.current = null;
+          gsap.set(menu, { clearProps: 'clipPath' });
+        },
       },
     );
+    return closingRef.current;
+  };
+  const toggleMenu = () => {
+    if (closingRef.current) return closingRef.current.reverse();
+    return open ? closeMenu() : setOpenOn(pathname);
   };
   const onEscape = useEffectEvent(closeMenu);
 
@@ -253,7 +268,7 @@ export function MobileNav() {
                 ? format(nav.menu.openUnread, { count: unread })
                 : nav.menu.open
           }
-          onClick={() => (open ? closeMenu() : setOpenOn(pathname))}
+          onClick={toggleMenu}
         >
           <span className={styles.burger} aria-hidden="true">
             <span />

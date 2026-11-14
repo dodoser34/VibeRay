@@ -10,7 +10,7 @@ import figure from '../assets/moderator.webp';
 import { CityOverview } from './CityOverview';
 import { ProblemQueue } from './queue/ProblemQueue';
 import { SupportInbox } from './SupportInbox';
-import texts from '@/texts/ru/moderation.json';
+import texts from '@/texts/en/moderation.json';
 import styles from './ModerationCenter.module.css';
 
 const DEFAULT_FILTERS = { status: 'active', district: '', category: '', sort: 'newest' };

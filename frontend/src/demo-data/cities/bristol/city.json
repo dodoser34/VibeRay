@@ -4,7 +4,7 @@
   "name_en": "Bristol",
   "name_kk": "Бристоль",
   "name_de": "Bristol",
-  "center": [-2.60022, 51.46671],
+  "center": [-2.60017, 51.4667],
   "bbox": [-2.71836, 51.39725, -2.51083, 51.54443],
   "note": "Районы — 34 избирательных округа Бристоля (wards) в официальных границах OpenStreetMap (boundary=political, political_division=ward): вершины OSM без упрощения и сглаживания, вырезана только вода. Вода и улицы — тоже OpenStreetMap (ODbL)."
 }

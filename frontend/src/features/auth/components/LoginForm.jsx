@@ -7,7 +7,7 @@ import { TextField } from '@/shared/ui/controls/TextField';
 import { useAuth } from '../model/useAuth';
 import { PasswordField } from './PasswordField';
 import demoAccounts from '@/demo-data/accounts.json';
-import auth from '@/texts/ru/auth.json';
+import auth from '@/texts/en/auth.json';
 import styles from './PassForms.module.css';
 
 // Подсказка демо-входа видна только в демо-режиме (без бэкенда): житель, модератор и новичок —

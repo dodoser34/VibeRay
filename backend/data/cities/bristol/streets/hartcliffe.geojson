@@ -1419,17 +1419,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.628629, 51.41565],
-          [-2.628548, 51.41585]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "local", "district": "hartcliffe" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.629582, 51.40746],
           [-2.629396, 51.407375]
         ]

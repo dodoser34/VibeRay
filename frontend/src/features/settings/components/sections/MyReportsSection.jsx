@@ -9,7 +9,7 @@ import { Button } from '@/shared/ui/controls/Button';
 import emptyFigure from '../../assets/empty-reports.webp';
 import { ReportItem } from './ReportItem';
 import { SettingsSection } from '../SettingsSection';
-import texts from '@/texts/ru/settings.json';
+import texts from '@/texts/en/settings.json';
 import styles from './MyReportsSection.module.css';
 
 const t = texts.reports;

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
-import about from '@/texts/ru/about.json';
+import about from '@/texts/en/about.json';
 import handPhoto from '../../assets/phone-hand.webp';
 import { CHAPTERS, isDaylight } from '../../lib/chapters';
 import { PhoneScreen } from './PhoneScreen';

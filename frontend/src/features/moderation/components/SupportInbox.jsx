@@ -10,7 +10,7 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatRelative } from '@/shared/lib/i18n/formatDate';
 import { plural } from '@/shared/lib/i18n/plural';
 import { OptionGroup } from '@/shared/ui/controls/OptionGroup';
-import texts from '@/texts/ru/moderation.json';
+import texts from '@/texts/en/moderation.json';
 import styles from './SupportInbox.module.css';
 
 // Фильтр → статусы обращений; «open» — новые и те, что в работе.

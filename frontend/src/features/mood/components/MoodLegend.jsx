@@ -1,6 +1,6 @@
 import { MOODS } from '@/shared/config/moods';
 import { MoodFace } from './MoodFace';
-import texts from '@/texts/ru/mood.json';
+import texts from '@/texts/en/mood.json';
 import styles from './MoodLegend.module.css';
 
 export function MoodLegend() {

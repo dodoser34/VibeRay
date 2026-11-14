@@ -84,7 +84,7 @@
     "changed": "Passwort geändert"
   },
   "account": {
-    "lead": "Sprache, Farbschema, Grafik, Abmelden und Konto löschen.",
+    "lead": "Sprache, Farbschema, Abmelden und Konto löschen.",
     "languageTitle": "Sprache der Oberfläche",
     "languageText": "Russisch, Kasachisch, Englisch oder Deutsch. Jede Sprache hat ihre eigene Seitenadresse, die Wahl wird in diesem Browser gespeichert.",
     "themeTitle": "Farbschema",

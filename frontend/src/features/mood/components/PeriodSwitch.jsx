@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from 'react';
 import { gsap } from '@/shared/animations/core/gsapSetup';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { MOOD_PERIODS } from '@/shared/config/periods';
-import texts from '@/texts/ru/mood.json';
+import texts from '@/texts/en/mood.json';
 import styles from './PeriodSwitch.module.css';
 
 export function PeriodSwitch({

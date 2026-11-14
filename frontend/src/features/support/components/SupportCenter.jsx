@@ -15,7 +15,7 @@ import { HelpCategories } from './HelpCategories';
 import { HelpSearch } from './HelpSearch';
 import { ServiceStatus } from './ServiceStatus';
 import { SupportRequestForm } from './SupportRequestForm';
-import texts from '@/texts/ru/support.json';
+import texts from '@/texts/en/support.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SupportCenter.module.css';
 

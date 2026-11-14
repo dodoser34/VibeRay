@@ -4,7 +4,7 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
 import { plural } from '@/shared/lib/i18n/plural';
 import { BarList } from '@/shared/ui/charts/BarList';
-import texts from '@/texts/ru/moderation.json';
+import texts from '@/texts/en/moderation.json';
 import styles from './CityOverview.module.css';
 
 // Открытая проблема без движения дольше этого — повод разобраться с районом.

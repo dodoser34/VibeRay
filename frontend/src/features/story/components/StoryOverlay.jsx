@@ -1,7 +1,7 @@
 import { Button } from '@/shared/ui/controls/Button';
 import { LogoMark } from '@/shared/ui/icons/LogoMark';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import about from '@/texts/ru/about.json';
+import about from '@/texts/en/about.json';
 import { CHAPTERS, story } from '../lib/chapters';
 import { FINAL, LIVING } from '../lib/storyTimeline';
 import { StoryBuild } from './StoryBuild';

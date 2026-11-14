@@ -7,7 +7,7 @@ import { useLanguage } from '@/shared/hooks/useLanguage';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Icon } from '@/shared/ui/icons/Icon';
-import home from '@/texts/ru/home.json';
+import home from '@/texts/en/home.json';
 import { usePointerParallax } from '../hooks/usePointerParallax';
 import styles from './HeroThoughts.module.css';
 

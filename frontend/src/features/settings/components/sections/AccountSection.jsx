@@ -4,7 +4,7 @@ import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
 import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { DeleteAccountDialog } from './DeleteAccountDialog';
 import { SettingsSection } from '../SettingsSection';
-import texts from '@/texts/ru/settings.json';
+import texts from '@/texts/en/settings.json';
 import styles from './AccountSection.module.css';
 
 // onLogout и onDeleted решает страница: сначала уводит с настроек, потом закрывает сессию. Без

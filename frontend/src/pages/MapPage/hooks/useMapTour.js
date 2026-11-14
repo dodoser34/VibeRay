@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { readFlag, writeFlag } from '@/shared/lib/localFlag';
-import texts from '@/texts/ru/map.json';
+import texts from '@/texts/en/map.json';
 
 const TOUR_KEY = 'viberay:tour:map';
 const TOUR_DELAY_MS = 3000; // после пролёта камеры и роста районов

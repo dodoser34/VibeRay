@@ -6,7 +6,7 @@ import { useRequest } from '@/shared/hooks/useRequest';
 import { format } from '@/shared/lib/i18n/format';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import { QueueItem } from './QueueItem';
-import texts from '@/texts/ru/moderation.json';
+import texts from '@/texts/en/moderation.json';
 import styles from './ProblemQueue.module.css';
 
 const SORTS = ['newest', 'oldest', 'confirmations'];

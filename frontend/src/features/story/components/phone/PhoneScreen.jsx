@@ -1,5 +1,5 @@
 import { Icon } from '@/shared/ui/icons/Icon';
-import about from '@/texts/ru/about.json';
+import about from '@/texts/en/about.json';
 import { useRef } from 'react';
 import { useBoxSize } from '../../hooks/useBoxSize';
 import { isDaylight } from '../../lib/chapters';

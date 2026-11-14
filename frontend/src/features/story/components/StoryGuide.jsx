@@ -10,7 +10,7 @@ import { Button } from '@/shared/ui/controls/Button';
 import { FULL_STORY } from '../lib/chapters';
 import { STORY_CITY } from '../lib/storyCity';
 import { GuideMap } from './GuideMap';
-import about from '@/texts/ru/about.json';
+import about from '@/texts/en/about.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryGuide.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';

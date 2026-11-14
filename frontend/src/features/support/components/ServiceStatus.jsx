@@ -3,7 +3,7 @@ import { SERVICE_STATE_BY_CODE } from '@/shared/config/support';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { formatTime } from '@/shared/lib/i18n/formatDate';
 import { format } from '@/shared/lib/i18n/format';
-import texts from '@/texts/ru/support.json';
+import texts from '@/texts/en/support.json';
 import styles from './ServiceStatus.module.css';
 
 // Состояние основных сервисов из GET /status.

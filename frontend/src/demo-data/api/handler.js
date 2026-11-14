@@ -60,7 +60,7 @@ import { format } from '@/shared/lib/i18n/format';
 import demoAccounts from '../accounts.json';
 import demoSupport from '../support.json';
 import { demoContent, localizeDemo, nameOf, setResponseLanguage } from './locale';
-import errors from '@/texts/ru/errors.json';
+import errors from '@/texts/en/errors.json';
 
 const accounts = new Map(
   demoAccounts.map(({ password, user }) => [user.email, { password, user }]),

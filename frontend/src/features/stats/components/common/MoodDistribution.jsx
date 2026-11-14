@@ -1,7 +1,7 @@
 import { MOODS } from '@/shared/config/moods';
 import { format } from '@/shared/lib/i18n/format';
 import { percentOf } from '@/shared/lib/i18n/formatNumber';
-import texts from '@/texts/ru/stats.json';
+import texts from '@/texts/en/stats.json';
 import { Breakdown } from './Breakdown';
 
 export function MoodDistribution({ distribution }) {

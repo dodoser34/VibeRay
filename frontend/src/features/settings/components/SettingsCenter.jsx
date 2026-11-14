@@ -12,7 +12,7 @@ import { MyReportsSection } from './sections/MyReportsSection';
 import { ProfileSection } from './sections/ProfileSection';
 import { SecuritySection } from './sections/SecuritySection';
 import figure from '../assets/profile-assistant.webp';
-import texts from '@/texts/ru/settings.json';
+import texts from '@/texts/en/settings.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SettingsCenter.module.css';
 

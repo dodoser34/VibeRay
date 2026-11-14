@@ -15,8 +15,8 @@ import { formatDate } from '@/shared/lib/i18n/formatDate';
 import { localizePath } from '@/shared/lib/i18n/language';
 import { plural } from '@/shared/lib/i18n/plural';
 import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';
-import problemTexts from '@/texts/ru/problems.json';
-import texts from '@/texts/ru/settings.json';
+import problemTexts from '@/texts/en/problems.json';
+import texts from '@/texts/en/settings.json';
 import styles from './ReportItem.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 

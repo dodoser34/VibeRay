@@ -5,6 +5,7 @@ import { AuthPanel } from '@/features/auth';
 import { FRONT_FLOW_END, FrontLayer, HeroCanvas, SHEET_FLY_SHIFT } from '@/features/hero';
 import { getCity } from '@/shared/api/endpoints/cities';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { smoothShift } from '@/shared/animations/effects/smoothLayout';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { usePagePath } from '@/shared/hooks/usePagePath';
@@ -12,7 +13,7 @@ import { useRequest } from '@/shared/hooks/useRequest';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
 import { isModerator } from '@/shared/config/roles';
-import home from '@/texts/ru/home.json';
+import home from '@/texts/en/home.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { PhoneQr } from './components/PhoneQr';
 import styles from './HomePage.module.css';
@@ -56,6 +57,10 @@ export function HomePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Колонка стоит по центру экрана: когда карточка входа меняет высоту (вход ↔ регистрация, шаги),
+  // заголовок и карточка не прыгают на полразницы, а плавно доезжают.
+  useEffect(() => smoothShift(columnRef.current), []);
 
   // «В город»: форма гаснет, лист опускается вместе с девушкой (она уходит за его край — как при
   // прокрутке), затем переход к карте. Лист не гасим: девушка обрезана по его краю.

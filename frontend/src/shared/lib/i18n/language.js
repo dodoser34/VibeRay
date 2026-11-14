@@ -1,42 +1,42 @@
-// Язык интерфейса: русский (src/texts/ru/*.json — основной), казахский, английский или немецкий
-// (src/texts/{kk,en,de}/*.json с теми же ключами). Код везде импортирует русские файлы
-// (`import texts from '@/texts/ru/map.json'`), а этот модуль записывает значения нужного языка прямо
-// в эти объекты — на месте, не меняя ссылок на вложенные объекты и массивы. Русский встроен в сайт,
-// остальные языки — отдельный файл на язык, который скачивается, только когда язык нужен
-// (translations/<язык>.js). Модуль импортируется первым в main.jsx, а страница
-// рисуется после languageReady — когда тексты языка из адреса на месте. Смена языка на лету —
+// Язык интерфейса: английский (src/texts/en/*.json — основной), русский, казахский или немецкий
+// (src/texts/{ru,kk,de}/*.json с теми же ключами). Код везде импортирует английские файлы
+// (`import texts from '@/texts/en/map.json'`), а этот модуль записывает значения нужного языка прямо
+// в эти объекты — на месте, не меняя ссылок на вложенные объекты и массивы. Все четыре языка
+// загружаются одинаково — отдельный файл на язык (translations/<язык>.js), который скачивается, только
+// когда язык нужен; английский, кроме того, встроен в сайт. Модуль импортируется первым в main.jsx, а
+// страница рисуется после languageReady — когда тексты языка из адреса на месте. Смена языка на лету —
 // applyLanguage(): перевод догружается, тексты переписываются, подписчики (useLanguage)
 // перерисовывают страницу, запросы к API повторяются на новом языке.
 // Что должно это учитывать: подписи в справочниках — геттеры (shared/config/withLabels.js), тексты не
 // копируются в константы модулей, а элементы, которые SplitText разбирает на слова, получают
 // key={language} — иначе React не сможет обновить их текст.
-// У каждого языка свой адрес (для поисковиков каждая версия — отдельная страница): русский — без
-// префикса (/map/kostanay), остальные — подкаталогом (/en/map/kostanay). Язык берётся из адреса;
+// У каждого языка свой адрес (для поисковиков каждая версия — отдельная страница): английский — без
+// префикса (/map/kostanay), остальные — подкаталогом (/ru/map/kostanay). Язык берётся из адреса;
 // маршруты и ссылки работают с путями без префикса, а localizePath() добавляет его
 // (app/routing/useLanguageRoute.js держит адрес и язык согласованными).
 
 import { createListeners } from '../listeners';
 import { readChoice, writeValue } from '../localFlag';
-import about from '@/texts/ru/about.json';
-import auth from '@/texts/ru/auth.json';
-import common from '@/texts/ru/common.json';
-import dictionaries from '@/texts/ru/dictionaries.json';
-import errors from '@/texts/ru/errors.json';
-import home from '@/texts/ru/home.json';
-import map from '@/texts/ru/map.json';
-import moderation from '@/texts/ru/moderation.json';
-import mood from '@/texts/ru/mood.json';
-import nav from '@/texts/ru/nav.json';
-import notFound from '@/texts/ru/notFound.json';
-import notifications from '@/texts/ru/notifications.json';
-import problems from '@/texts/ru/problems.json';
-import settings from '@/texts/ru/settings.json';
-import stats from '@/texts/ru/stats.json';
-import support from '@/texts/ru/support.json';
-import transition from '@/texts/ru/transition.json';
+import about from '@/texts/en/about.json';
+import auth from '@/texts/en/auth.json';
+import common from '@/texts/en/common.json';
+import dictionaries from '@/texts/en/dictionaries.json';
+import errors from '@/texts/en/errors.json';
+import home from '@/texts/en/home.json';
+import map from '@/texts/en/map.json';
+import moderation from '@/texts/en/moderation.json';
+import mood from '@/texts/en/mood.json';
+import nav from '@/texts/en/nav.json';
+import notFound from '@/texts/en/notFound.json';
+import notifications from '@/texts/en/notifications.json';
+import problems from '@/texts/en/problems.json';
+import settings from '@/texts/en/settings.json';
+import stats from '@/texts/en/stats.json';
+import support from '@/texts/en/support.json';
+import transition from '@/texts/en/transition.json';
 
-export const LANGUAGES = ['ru', 'kk', 'en', 'de'];
-export const DEFAULT_LANGUAGE = 'ru';
+export const LANGUAGES = ['en', 'ru', 'kk', 'de'];
+export const DEFAULT_LANGUAGE = 'en';
 const LOCALES = { ru: 'ru-RU', kk: 'kk-KZ', en: 'en-GB', de: 'de-DE' };
 const PREFIXED = LANGUAGES.filter((code) => code !== DEFAULT_LANGUAGE);
 const STORAGE_KEY = 'viberay.language';
@@ -64,11 +64,12 @@ const texts = {
   support,
   transition,
 };
-const translations = { ru: structuredClone(texts) };
+const translations = {};
 // Перевод каждого языка — один файл сборки (translations/<язык>.js). Новый язык добавляется и сюда.
 const LOADERS = {
-  kk: () => import('./translations/kk.js'),
   en: () => import('./translations/en.js'),
+  ru: () => import('./translations/ru.js'),
+  kk: () => import('./translations/kk.js'),
   de: () => import('./translations/de.js'),
 };
 const sectionOf = (path) => path.slice(path.lastIndexOf('/') + 1, -'.json'.length);
@@ -79,8 +80,9 @@ export function loadLanguage(code) {
   if (translations[code]) return Promise.resolve();
   loading[code] ??= LOADERS[code]()
     .then(({ default: files }) => {
+      // Копия: английские файлы — те же объекты, в которые переписывается текущий язык.
       translations[code] = Object.fromEntries(
-        Object.entries(files).map(([path, section]) => [sectionOf(path), section]),
+        Object.entries(files).map(([path, section]) => [sectionOf(path), structuredClone(section)]),
       );
       if (import.meta.env.DEV) {
         Object.keys(translations[code])
@@ -127,26 +129,26 @@ function applyTexts(next) {
   });
 }
 
-// Пути — относительно подпапки сайта, как их видит роутер: '/en/about' → 'en'.
+// Пути — относительно подпапки сайта, как их видит роутер: '/ru/about' → 'ru'.
 export function languageOfPath(pathname) {
   const first = pathname.split('/')[1];
   return PREFIXED.includes(first) ? first : DEFAULT_LANGUAGE;
 }
 
-// '/en/about' → '/about', '/en' → '/'.
+// '/ru/about' → '/about', '/ru' → '/'.
 export function stripLanguage(pathname) {
   const code = languageOfPath(pathname);
   return code === DEFAULT_LANGUAGE ? pathname : pathname.slice(code.length + 1) || '/';
 }
 
-// Путь страницы на нужном языке: '/about' → '/en/about'. Принимает путь без префикса языка.
+// Путь страницы на нужном языке: '/about' → '/ru/about'. Принимает путь без префикса языка.
 export function localizePath(path, code = language) {
   if (code === DEFAULT_LANGUAGE) return path;
   return path === '/' ? `/${code}` : `/${code}${path}`;
 }
 
 // Поисковый робот (и автотест) видит адрес как есть: по каждому адресу — ровно его версия, иначе
-// поисковик не проиндексирует русскую.
+// поисковик не проиндексирует английскую.
 const isRobot = () =>
   navigator.webdriver || /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent);
 
@@ -160,14 +162,17 @@ function browserLanguage() {
   return preferred.find((code) => LANGUAGES.includes(code)) ?? 'en';
 }
 
-// Язык — из адреса. Старые ссылки с ?lang= переводятся на адрес с префиксом. Адрес без префикса —
-// русская версия для поисковиков, а человек попадает на свою: язык, который он сам выбирал раньше,
-// иначе — язык его браузера.
+// Язык — из адреса. Старые ссылки с ?lang= переводятся на адрес с префиксом, старые английские с
+// префиксом /en/ — на адрес без него. Адрес без префикса — английская версия для поисковиков, а человек
+// попадает на свою: язык, который он сам выбирал раньше, иначе — язык его браузера.
 function detect() {
   const url = new URL(window.location.href);
-  const path = url.pathname.startsWith(BASE)
-    ? url.pathname.slice(BASE.length) || '/'
-    : url.pathname;
+  let path = url.pathname.startsWith(BASE) ? url.pathname.slice(BASE.length) || '/' : url.pathname;
+  if (path.split('/')[1] === DEFAULT_LANGUAGE) {
+    path = path.slice(DEFAULT_LANGUAGE.length + 1) || '/';
+    url.pathname = BASE + path;
+    window.history.replaceState(window.history.state, '', url);
+  }
   const fromPath = languageOfPath(path);
   const fromQuery = url.searchParams.get('lang');
   url.searchParams.delete('lang');
@@ -193,14 +198,13 @@ function applyDocument() {
 let language = detect();
 document.documentElement.lang = language;
 
-// Тексты языка из адреса на месте — можно рисовать страницу (main.jsx). Не загрузился перевод
-// (нет сети) — страница рисуется по-русски, а не остаётся пустой.
-export const languageReady =
-  language === DEFAULT_LANGUAGE
-    ? Promise.resolve()
-    : loadLanguage(language)
-        .then(() => applyTexts(language))
-        .catch((error) => console.error('Language texts failed to load', error));
+// Тексты языка из адреса на месте — можно рисовать страницу (main.jsx). Английский загружается
+// первым, пока в общих объектах ещё английские тексты, — к нему можно вернуться после другого языка. Не
+// загрузился перевод (нет сети) — страница рисуется по-английски, а не остаётся пустой.
+export const languageReady = loadLanguage(DEFAULT_LANGUAGE)
+  .then(() => language !== DEFAULT_LANGUAGE && loadLanguage(language))
+  .then(() => language !== DEFAULT_LANGUAGE && applyTexts(language))
+  .catch((error) => console.error('Language texts failed to load', error));
 languageReady.then(applyDocument);
 
 const listeners = createListeners();

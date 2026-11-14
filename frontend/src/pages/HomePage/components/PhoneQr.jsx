@@ -6,7 +6,7 @@ import { SITE_URL } from '@/shared/config/site';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { Icon } from '@/shared/ui/icons/Icon';
 import { QrCode } from '@/shared/ui/qr/QrCode';
-import home from '@/texts/ru/home.json';
+import home from '@/texts/en/home.json';
 import styles from './PhoneQr.module.css';
 
 const NARROW_ENTER_DELAY = 0.3;

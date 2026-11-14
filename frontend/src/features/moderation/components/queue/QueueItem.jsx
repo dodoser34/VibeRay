@@ -13,7 +13,7 @@ import { formatRelative } from '@/shared/lib/i18n/formatDate';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
 import { RejectForm } from './RejectForm';
-import texts from '@/texts/ru/moderation.json';
+import texts from '@/texts/en/moderation.json';
 import styles from './QueueItem.module.css';
 
 // Одна проблема в очереди: что, где, кто, сколько подтверждений — и что модератор может сделать в её

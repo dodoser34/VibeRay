@@ -84,7 +84,7 @@
     "changed": "Password changed"
   },
   "account": {
-    "lead": "Language, theme, graphics, signing out and deleting your account.",
+    "lead": "Language, theme, signing out and deleting your account.",
     "languageTitle": "Interface language",
     "languageText": "Russian, Kazakh, English or German. Each language has its own page address; your choice is remembered in this browser.",
     "themeTitle": "Colour theme",

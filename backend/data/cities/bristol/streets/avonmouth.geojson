@@ -8895,32 +8895,6 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-2.714746, 51.49842],
-          [-2.717154, 51.500334]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "avonmouth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-2.714811, 51.498567],
-          [-2.715815, 51.499346],
-          [-2.716816, 51.500159],
-          [-2.717196, 51.500416],
-          [-2.716753, 51.500166],
-          [-2.714622, 51.498469]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": { "kind": "rail", "district": "avonmouth" },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
           [-2.690655, 51.491414],
           [-2.690824, 51.491831],
           [-2.691073, 51.49231],

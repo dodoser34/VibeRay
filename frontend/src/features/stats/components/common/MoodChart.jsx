@@ -3,7 +3,7 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
 import { plural } from '@/shared/lib/i18n/plural';
 import { TimeSeriesChart } from '@/shared/ui/charts/TimeSeriesChart';
-import texts from '@/texts/ru/stats.json';
+import texts from '@/texts/en/stats.json';
 import { seriesPointTitle, seriesTick } from '../../lib/seriesLabels';
 import styles from './MoodChart.module.css';
 

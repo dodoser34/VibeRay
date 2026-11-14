@@ -3,7 +3,7 @@ import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { MOODS } from '@/shared/config/moods';
 import { Modal } from '@/shared/ui/windows/Modal';
 import { MoodFace } from './MoodFace';
-import texts from '@/texts/ru/mood.json';
+import texts from '@/texts/en/mood.json';
 import styles from './MoodPicker.module.css';
 
 // Настроение для района. Район выбран заранее (открытый или свой район пользователя), и его можно
