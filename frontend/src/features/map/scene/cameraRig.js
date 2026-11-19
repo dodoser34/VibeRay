@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { gsap } from '@/shared/animations/core/gsapSetup';
 import { DURATION, EASE } from '@/shared/animations/core/presets';
+import { attachTrackpadGestures } from './trackpadGestures';
 
 // Орбитальная камера с ограничениями + перелёты GSAP между обзором города и районом.
 export class CameraRig {
@@ -28,6 +29,8 @@ export class CameraRig {
     this.atHome = true;
     this.onUserMove = () => (this.atHome = false);
     this.controls.addEventListener('start', this.onUserMove);
+    // Ноутбук: два пальца двигают карту, щипок — зум к курсору, Alt + два пальца — поворот.
+    this.detachTrackpad = attachTrackpadGestures(this.controls, domElement);
   }
 
   setHome(target, position) {
@@ -84,6 +87,7 @@ export class CameraRig {
   dispose() {
     gsap.killTweensOf([this.controls.target, this.camera.position]);
     this.controls.removeEventListener('start', this.onUserMove);
+    this.detachTrackpad();
     this.controls.dispose();
   }
 }
