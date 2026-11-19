@@ -418,6 +418,7 @@ export class MapScene {
     this.selectedSlug = slug;
     if (!this.districts) return;
     this.districts.setSelected(slug);
+    if (this.problemList) this.setProblems(this.problemList); // метки поднимаются вместе с районом
     this.labels.forEach(
       (label, key) => (label.userData.chip.dataset.active = String(key === slug)),
     );
@@ -597,7 +598,14 @@ export class MapScene {
   }
 
   handleHover(hit) {
-    const slug = hit?.kind === 'district' ? hit.slug : null;
+    // Под меткой её район остаётся поднятым: иначе он опустится вместе с меткой, и она уйдёт из-под
+    // курсора.
+    const slug =
+      hit?.kind === 'district'
+        ? hit.slug
+        : hit?.kind === 'problem'
+          ? (this.problems.problemAt(hit.index)?.district ?? null)
+          : null;
     this.previewDistrict(slug);
     this.callbacks.onHover?.(hit ? this.describe(hit) : null);
   }
@@ -655,6 +663,7 @@ export class MapScene {
   // Приподнимает район, как при наведении, — в том числе извне карты (строка таблицы дашборда).
   previewDistrict(slug) {
     this.districts?.setHovered(slug);
+    if (this.districts && this.problemList) this.setProblems(this.problemList);
     this.labels.forEach((label, key) => (label.userData.chip.dataset.hover = String(key === slug)));
   }
 

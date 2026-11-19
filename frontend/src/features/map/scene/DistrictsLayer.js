@@ -327,12 +327,12 @@ export class DistrictsLayer {
   refreshStates(duration = HOVER_DURATION) {
     const focus = this.hovered ?? this.selected;
     this.items.forEach((item) => {
-      const active = !this.hidden && (item.slug === this.hovered || item.slug === this.selected);
+      const active = this.isActive(item.slug);
       const faded = this.dimmed || (focus && !active);
       let opacity = faded ? this.baseOpacity * 0.45 : this.baseOpacity;
       if (active) opacity += (1 - this.baseOpacity) * ACTIVE_BOOST;
       gsap.to(item.group.position, {
-        y: active ? LIFT * this.sizeFactor : 0,
+        y: this.liftOf(item.slug),
         duration,
         ease: 'power3.out',
       });
@@ -372,11 +372,23 @@ export class DistrictsLayer {
     return item ? new THREE.Vector3(item.anchor.x, this.shownHeight(item), item.anchor.y) : null;
   }
 
-  // Высота крыши для меток проблем; у скрытых районов метки стоят на земле.
+  isActive(slug) {
+    return !this.hidden && (slug === this.hovered || slug === this.selected);
+  }
+
+  // Подъём района под курсором или выбранного. У большого города (sizeFactor) он выше ножки метки,
+  // поэтому метки района поднимаются вместе с ним (heightOf), иначе плита их накрывает.
+  liftOf(slug) {
+    return this.isActive(slug) ? LIFT * this.sizeFactor : 0;
+  }
+
+  // Высота крыши для меток проблем (с подъёмом района); у скрытых районов метки стоят на земле.
   heightOf(slug) {
     if (this.hidden) return 0;
     const item = this.items.get(slug);
-    return item ? this.shownHeight(item) : this.baseHeight * this.proximity;
+    return item
+      ? this.shownHeight(item) + this.liftOf(slug)
+      : this.baseHeight * this.proximity;
   }
 
   dispose() {
