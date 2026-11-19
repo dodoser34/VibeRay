@@ -89,8 +89,8 @@ export function ProfileSection({ id }) {
               autoComplete="nickname"
               maxLength={24}
               value={nickname}
-              onChange={(e) => {
-                setNickname(e.target.value);
+              onChange={(event) => {
+                setNickname(event.target.value);
                 setNicknameError('');
               }}
               error={nicknameError}

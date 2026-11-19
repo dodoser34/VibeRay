@@ -1,6 +1,5 @@
-import { useLayoutEffect, useRef } from 'react';
-import { gsap } from '@/shared/animations/core/gsapSetup';
-import { useLanguage } from '@/shared/hooks/useLanguage';
+import { useRef } from 'react';
+import { useSlidingThumb } from '@/shared/animations/controls/useSlidingThumb';
 import { MOOD_PERIODS } from '@/shared/config/periods';
 import texts from '@/texts/en/mood.json';
 import styles from './PeriodSwitch.module.css';
@@ -11,30 +10,10 @@ export function PeriodSwitch({
   options = MOOD_PERIODS,
   label = texts.periodLabel,
 }) {
-  const language = useLanguage();
   const rootRef = useRef(null);
   const thumbRef = useRef(null);
-
-  // Подсветка едет к выбранному варианту; когда переключатель меняет ширину (панель шире, окно
-  // изменилось, догрузились шрифты), она без анимации встаёт на новое место варианта; при смене языка
-  // — переезжает под подпись новой ширины.
-  useLayoutEffect(() => {
-    const place = (duration) => {
-      const active = rootRef.current.querySelector('[aria-checked="true"]');
-      if (!active) return;
-      gsap.to(thumbRef.current, {
-        x: active.offsetLeft,
-        width: active.offsetWidth,
-        duration,
-        ease: 'power3.out',
-        overwrite: 'auto',
-      });
-    };
-    place(0.45);
-    const observer = new ResizeObserver(() => place(0));
-    observer.observe(rootRef.current);
-    return () => observer.disconnect();
-  }, [value, options, language]);
+  // Подложка перетекает к выбранному периоду (shared/animations/controls/useSlidingThumb).
+  useSlidingThumb(rootRef, thumbRef, value);
 
   return (
     <div

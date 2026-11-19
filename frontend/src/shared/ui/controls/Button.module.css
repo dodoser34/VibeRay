@@ -8,15 +8,40 @@
   font-weight: 600;
   white-space: nowrap;
   /* transform и opacity кнопок анимирует GSAP (появление форм и страниц): CSS-переход на них
-     тянул бы каждый кадр и подменял конечные значения. Нажатие — отдельным свойством scale. */
+     тянул бы каждый кадр и подменял конечные значения. Наведение — отдельным свойством translate,
+     пружину нажатия — свойством scale (shared/animations/controls/pressFeedback). */
   transition:
-    scale var(--dur-fast) var(--ease-out),
-    background-color var(--dur-base) var(--ease-out),
+    translate var(--dur-base) var(--ease-spring),
+    border-color var(--dur-base) var(--ease-out),
+    color var(--dur-base) var(--ease-out),
     box-shadow var(--dur-base) var(--ease-out);
 }
 
-.root:active:not(:disabled) {
-  scale: 0.97;
+/* Заливка наведения: слой цвета «наливается» в кнопку слева направо и уходит обратно */
+.root::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--fill, transparent);
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path var(--dur-base) var(--ease-out);
+  pointer-events: none;
+}
+
+.root:hover:not(:disabled)::before {
+  clip-path: inset(0 0 0 0);
+}
+
+.label,
+.spinner {
+  position: relative;
+}
+
+/* Под указателем кнопка приподнимается и отбрасывает тень */
+.root:hover:not(:disabled, .text) {
+  translate: 0 -3px;
+  box-shadow: var(--shadow-panel);
 }
 
 .root:disabled {
@@ -47,38 +72,40 @@
 }
 
 .primary {
+  --fill: var(--color-accent-bright);
   background: var(--color-accent);
   color: var(--color-on-accent);
   box-shadow: var(--shadow-soft);
 }
 
 .primary:hover:not(:disabled) {
-  background: var(--color-accent-bright);
   color: var(--color-on-accent-hover);
 }
 
 .ghost {
+  --fill: var(--color-accent-soft);
   background: var(--color-glass);
   border: 1px solid var(--color-glass-border);
   color: var(--color-text);
 }
 
 .ghost:hover:not(:disabled) {
-  border-color: var(--color-glass-highlight);
+  border-color: var(--color-accent);
 }
 
 /* Необратимые действия (удаление аккаунта): тёмно-красный, без свечения */
 .danger {
+  --fill: var(--color-danger);
   background: var(--color-glass);
   border: 1px solid var(--color-danger);
   color: var(--color-error);
 }
 
 .danger:hover:not(:disabled) {
-  background: var(--color-danger);
   color: var(--color-text);
 }
 
+/* Текстовая кнопка: вместо заливки под подписью прорисовывается черта слева направо */
 .text {
   height: auto;
   padding: 0;
@@ -86,8 +113,17 @@
   font-weight: 600;
 }
 
+.text .label {
+  background: linear-gradient(currentColor, currentColor) no-repeat left bottom / 0 1px;
+  transition: background-size var(--dur-base) var(--ease-out);
+}
+
 .text:hover:not(:disabled) {
   color: var(--color-text);
+}
+
+.text:hover:not(:disabled) .label {
+  background-size: 100% 1px;
 }
 
 .spinner {
@@ -102,5 +138,13 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root,
+  .root::before,
+  .text .label {
+    transition: none;
   }
 }

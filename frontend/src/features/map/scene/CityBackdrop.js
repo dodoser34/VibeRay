@@ -46,17 +46,17 @@ export class CityBackdrop {
 function createGroundTexture() {
   const canvas = document.createElement('canvas');
   canvas.width = canvas.height = GROUND_TEXTURE_SIZE;
-  const ctx = canvas.getContext('2d');
-  const c = GROUND_TEXTURE_SIZE / 2;
+  const context = canvas.getContext('2d');
+  const center = GROUND_TEXTURE_SIZE / 2;
   const hex = new THREE.Color(cssVar('--scene-ground')).getHex();
-  const [r, g, b] = [hex >> 16, (hex >> 8) & 255, hex & 255];
-  const gradient = ctx.createRadialGradient(c, c, 0, c, c, c);
+  const [red, green, blue] = [hex >> 16, (hex >> 8) & 255, hex & 255];
+  const gradient = context.createRadialGradient(center, center, 0, center, center, center);
   gradient.addColorStop(0, cssVar('--scene-ground'));
   gradient.addColorStop(0.6, cssVar('--scene-ground'));
   // Край гаснет в тот же цвет земли: переход к прозрачному чёрному давал тёмное кольцо вокруг города.
-  gradient.addColorStop(1, `rgba(${r}, ${g}, ${b}, 0)`);
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, GROUND_TEXTURE_SIZE, GROUND_TEXTURE_SIZE);
+  gradient.addColorStop(1, `rgba(${red}, ${green}, ${blue}, 0)`);
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, GROUND_TEXTURE_SIZE, GROUND_TEXTURE_SIZE);
   const texture = new THREE.CanvasTexture(canvas);
   texture.colorSpace = THREE.SRGBColorSpace;
   return texture;

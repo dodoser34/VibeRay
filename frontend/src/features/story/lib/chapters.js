@@ -5,7 +5,7 @@ import { getTheme } from '@/shared/lib/theme/theme';
 // Тексты лежат в src/texts/{ru,en}/about.json; здесь — только порядок глав.
 const CHAPTER = 10;
 // Позиция на шкале прокрутки: глава и смещение внутри неё (в тех же единицах).
-export const at = (chapter, offset = 0) => chapter * CHAPTER + offset;
+export const chapterTime = (chapter, offset = 0) => chapter * CHAPTER + offset;
 
 const CHAPTER_IDS = [
   'evening',

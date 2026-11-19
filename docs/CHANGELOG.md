@@ -11,7 +11,152 @@
 
 ---
 
+## 2026-11-17
+
+### Кнопки и переключатели: заметные анимации по всему сайту
+
+- **Нажатие любой кнопки** — кнопка пружинисто проседает и отскакивает, от места нажатия по ней расходится
+  волна. Работает у всех кнопок сайта (карта, окна, формы, настройки, поддержка, модерация), мышью, пальцем
+  и с клавиатуры. Файл — `shared/animations/controls/pressFeedback.js`, подключён в `main.jsx`.
+- **Переключатели «Город», «Слой», «Районы», «Период»** на карте: подложка выбора теперь действительно
+  перетекает к нажатому варианту, как капля, — передний край убегает, задний догоняет. Раньше она из-за ошибки
+  перескакивала без анимации (`useSlidingThumb.js`, `FilterChoice.jsx`, `PeriodSwitch.jsx`).
+- **Тема и язык** (шапка, меню телефона, настройки): рамка выбора перетекает между вариантами, солнце и луна
+  делают оборот, флаг выбранного языка разворачивается; кнопка темы в шапке покачивается под указателем, новая
+  иконка выкатывается с оборотом (`OptionGroup`, `LanguageSwitch`, `ThemeSwitch`).
+- **Фильтры статусов у модератора и темы FAQ** — один общий ряд чипов `ChipGroup` с той же перетекающей рамкой,
+  в том числе через перенос строки.
+- **Кнопки под указателем:** приподнимаются на 3 px с тенью, цвет «наливается» слева направо; у текстовых кнопок
+  прорисовывается черта под подписью (`Button.module.css`). Крестик закрытия поворачивается с перелётом.
+- Строки рейтинга районов тоже получили волну нажатия. Новый токен движения `--ease-spring` (`styles/tokens.css`).
+
+## 2026-11-16
+
+### Карта: анимации кнопок и панелей, полосы прокрутки, «Сообщить о проблеме», крупный выбор настроения
+
+- **Полосы прокрутки больше не вылезают за карточки.** У левой панели карты (и у окон, панелей модератора)
+  полоса начинается и кончается там, где кончаются скруглённые углы, — в обеих темах.
+- **«Сообщить о проблеме»: верх плиток не срезается.** Область прокрутки формы получила внутренний отступ:
+  плитки, приподнятые при наведении, иконки и рамки фокуса видны целиком.
+- **Анимации формы проблемы:** плитки категорий поднимаются по очереди; под указателем плитка приподнимается, а
+  иконка подпрыгивает и наклоняется; выбранная плитка «нажимается» — и только потом форма переходит к месту;
+  полоса шагов заполняется; пока точки нет, рамка ожидания мягко «дышит», поставленная точка расходится кольцом;
+  фото появляются с увеличением.
+- **«Отметить настроение» — крупно:** лица 64 px в карточках по четыре в ряд (на телефоне по три), неполный ряд по
+  центру; чипы районов крупнее. При наведении карточка подсвечивается цветом настроения, а лицо покачивается;
+  выбранное лицо подпрыгивает, остальные отходят назад, окно закрывается. Внизу — пометка об анонимности с замком.
+- **Кнопки:** под указателем приподнимаются, под пальцем проседают; крестик закрытия панелей и окон — общая кнопка,
+  крестик поворачивается при наведении; у «Вернуться к карте» стрелка подаётся назад.
+- **Переходы панелей:** когда в правой панели меняется содержимое (обзор → район → проблема → форма), новая
+  панель поднимается по частям; в статистике города и района при смене периода (и когда данные догрузились)
+  блоки поднимаются заново; плитки статистики подсвечиваются при наведении.
+
+Файлы: `frontend/src/styles/global.css`, `frontend/src/shared/ui/controls/{Button.module.css,CloseButton.jsx,CloseButton.module.css}`,
+`frontend/src/shared/ui/windows/{Modal.jsx,Modal.module.css}`, `frontend/src/shared/animations/effects/useRiseOnLoad.js`,
+`frontend/src/features/mood/components/MoodPicker.{jsx,module.css}`,
+`frontend/src/features/problems/components/{ReportProblem,ProblemCard}.jsx` и `ReportProblem.module.css`,
+`frontend/src/features/stats/components/{city/CityDashboard,city/CityKpis,district/DistrictPanel}` (`.jsx`, `.module.css`),
+`frontend/src/pages/MapPage/{MapPage.jsx,hooks/useMapPageAnimations.js,components/layout/MapPanelsLayout.*}`,
+`frontend/src/features/moderation/components/ModerationMap.module.css`, `frontend/src/adaptations/mobile/forms.css`.
+
+### «О проекте»: карточки рядом с городом, а не на нём, и их можно трогать
+
+- **Раскладка на ПК.** В главах «настроение», «начал делать» и «продукт» подпись главы и карточки теперь стоят
+  одной колонкой справа, а 3D-город сам вписывается в место слева от неё — на любом размере экрана карточки не
+  налезают на город и не остаются пустые поля. Между главами город плавно переезжает и меняет масштаб вместе с
+  прокруткой. На невысоких ноутбуках панели «продукта» плотнее, ниже 720 px — без панели профиля. В главе
+  «начал делать» карта больше не темнеет: план стоит рядом с ней.
+- **Карточка настроения:** можно нажать любое лицо — рамка выбора переедет к нему; внизу — пометка, что
+  отметка анонимна и видно только общее настроение района.
+- **План проекта:** рядом с полосой прогресса — счётчик «N из 6 готово», растёт в такт галочкам.
+- **Панели продукта:** полоса настроений района показывает долю при наведении (или фокусе); аватар в профиле
+  меняется по нажатию; проблему можно подтвердить — «12 подтверждений» становятся 13, кнопка — «Вы подтвердили»;
+  по графику недели можно провести мышью или пальцем (или шагать стрелками) — подпись показывает день и
+  настроение. График теперь с заливкой и точками дней и раскрывается слева направо.
+- **Телефон:** раскладка прежняя (шторка и стопка экранов), карточки так же интерактивны; лёжа у панелей нет
+  подзаголовков, подсказки и кнопки подтверждения — экран телефона ниже.
+- Новые тексты на всех четырёх языках (`story.moodCard.note`, `story.build.count`,
+  `story.interface.profileAvatar`); неиспользуемая строка `story.interface.problemConfirmations` убрана — число
+  подтверждений склоняется общими текстами карточки проблемы.
+
+Файлы: `frontend/src/features/story/components/{StoryOverlay,StoryExperience,StoryMoodCard,StoryPlan,StoryInterface}.jsx`
+и их `.module.css`, `frontend/src/features/story/scene/{StoryScene,CityStage}.js`,
+`frontend/src/features/story/lib/storyTimeline.js`, `frontend/src/adaptations/laptop/pages/about.css`,
+`frontend/src/adaptations/index.css`, `frontend/src/texts/{en,ru,kk,de}/about.json`.
+
+### «О проекте»: без ошибок при смене размера окна
+
+- Если на странице «О проекте» сузить окно с ПК до телефона (или обратно), в консоли появлялись ошибки
+  `matrix(NaN …)`: камера изометрической комнаты пересчитывала кадр, когда у комнаты ещё или уже не было размера,
+  и делила ноль на ноль. Теперь без размера кадр не считается — его пересчитывает ResizeObserver, как только
+  размер появится. На экране ничего не меняется, ошибок в консоли больше нет.
+
+Файлы: `frontend/src/features/story/lib/room/roomCamera.js`.
+
+### Понятные имена в коде фронтенда
+
+Для посетителя сайта ничего не изменилось — переименования только в коде, поведение то же (демо-API до и
+после отвечает байт в байт одинаково).
+
+- **Переменные и функции** — полными словами по смыслу вместо одной-двух букв: около 450 имён в ~80 файлах.
+  Больше всего — в переходе «бумажная карта» (`MapFoldTransition.js`: `W/H` → `width/height`, `N/M` →
+  `columnCount/rowCount`, `fl` → `flight`, `q` → `parts`, `g` → `gsap`/`paint`, `sT` → `endScale`…), в живом фоне
+  сайта, текстуре листа на главной, 3D-городе истории, демо-данных (`p` → `problem`/`point`), таймлайнах истории
+  (`tl` → `timeline`, `q` → `select`). Оставлены общепринятые обозначения в формулах: координаты, элементы матрицы
+  изометрии, шум Перлина (с пояснением в коде).
+- **Файлы:** `StoryBuild.jsx` → `StoryPlan.jsx`, `curve.js` → `monotoneCurve.js`, `rise.js` → `girlEntrance.js`,
+  `localFlag.js` → `localPreferences.js`, `demo-data/api/generate.js` → `demoHistory.js`, `Picker.js` →
+  `ScenePicker.js`; функция шкалы истории `at()` → `chapterTime()`, изометрия `iso()` → `isoToScreen()`.
+- **CSS-классы перехода** `vr-mt__*` → `map-fold__*` словами (`__name-char`, `__caption-char`, `__origin-char`,
+  `__district-highlight`, `__route-layer`…); проп `ui` у панелей карты → `dataUi`.
+- **Чтобы не вернулось:** правило ESLint `id-length` (однобуквенные имена — ошибка, кроме индексов, координат и
+  формул); правило об именах — в CLAUDE.md и AGENTS.md.
+
+Файлы: `frontend/src/shared/animations/pageTransition/MapFoldTransition.{js,css}`,
+`frontend/src/shared/animations/background/SiteBackground.js`, `frontend/src/features/hero/lib/{sheetTexture,girlEntrance}.js`,
+`frontend/src/features/story/**`, `frontend/src/demo-data/api/*`, `frontend/src/shared/ui/charts/monotoneCurve.js`,
+`frontend/src/shared/lib/localPreferences.js`, `frontend/src/features/map/scene/ScenePicker.js` и ещё ~60 файлов
+(локальные имена), `frontend/eslint.config.js`, `ARCHITECTURE.md` (3, 9), `docs/guide/{03,05}.md`, `docs/DECISIONS.md`.
+
 ## 2026-11-15
+
+### Карта: легенда в панели фильтров снова видна
+
+- На невысоких экранах (1440 × 900, ноутбуки) в левой панели карты от легенды оставалась одна подпись: пять городов
+  занимали три ряда кнопок, и список районов (а в статистике — шкала) сжимался до нуля. Теперь города стоят в три
+  колонки (два ряда, «Санкт-Петербург» переносится на вторую строку), список районов всегда показывает хотя бы три
+  района и прокручивается внутри, а шкала дашборда, настроения и статусы видны целиком. Если места не хватает и
+  так, прокручивается вся панель. На 1920 × 1080 легенда стала выше (168 px вместо 122), панель не прокручивается.
+
+Файлы: `frontend/src/pages/MapPage/components/filters/{MapFilters.jsx,MapFilters.module.css,FilterChoice.jsx,FilterChoice.module.css}`,
+`ARCHITECTURE.md` (9, «Несколько городов»).
+
+### Порядок в файлах фронтенда
+
+Для посетителя сайта ничего не изменилось — код только переехал, чтобы каждый компонент, его стили, логика и
+анимации лежали на своём месте.
+
+- **Свои стили у каждого компонента.** Общий `PassForms.module.css` разделён: общая основа форм —
+  `AuthForm.module.css`, у входа и у каждого шага регистрации — свои модули. Свои стили получили `NotFoundMap`
+  (раньше брал стили страницы 404), `GuideMap` (брал стили `StoryGuide`), `PhoneScreen` (брал стили `PhoneStage`).
+- **Один компонент — один файл.** Вынесены вспомогательные компоненты: фильтры карты (`FilterGroup`,
+  `FilterLabel`, `FilterChoice`, `HeightScaleControl`, `DistrictsVisibility`), дашборд (`DashboardBlock`, `CityKpis`,
+  `CompareSummary`, `MoodSummary`, `MoodPointDetails`), облачко мысли на главной (`ThoughtVisual`); обёртки над
+  иконками заменены прямыми `<Icon>`.
+- **Большие файлы разбиты.** `MapPage.jsx` (744 → 499 строк): раскладки `MapPanelsLayout` / `MapSheetLayout`,
+  наложения `MapTooltip`, `MapToast`, `AuthRequiredModal`, `MapAttribution`, панель `MapNotice`, хуки
+  `useMapPageData` и `useMapPageAnimations`. `RegisterFlow` — по шагу на файл (`register/steps/`), шаги и
+  проверка — `lib/registerSteps.js`. `MobileNav` — меню в `MobileMenu`, скрытие при прокрутке — `useHideOnScroll`.
+- **Модули на своих местах.** `useCityOutline` переехал из `shared/hooks/` в `features/story/hooks/` (им
+  пользуется только история), файлы комнаты — в `features/story/lib/room/`, список демо-аккаунтов — в
+  `demo-data/demoLogin.js`.
+- В правилах (CLAUDE.md, AGENTS.md) убрана несуществующая папка `authPuzzle` и описаны исключения из «стили рядом».
+
+Файлы: `frontend/src/features/auth/**`, `frontend/src/pages/MapPage/**`, `frontend/src/pages/NotFoundPage/components/`,
+`frontend/src/features/stats/components/**`, `frontend/src/features/hero/components/`,
+`frontend/src/features/story/{components,hooks,lib}/`, `frontend/src/adaptations/mobile/components/navigation/`,
+`frontend/src/shared/ui/controls/ThemeSwitch.jsx`, `frontend/src/demo-data/{demoLogin.js,README.md}`,
+`ARCHITECTURE.md` (3), `docs/guide/03-project-structure.md`, `docs/DECISIONS.md`, `frontend/src/adaptations/README.md`.
 
 ### Основной язык сайта — английский
 

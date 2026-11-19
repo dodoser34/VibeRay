@@ -1,4 +1,4 @@
-import { leafTuft } from '../../lib/roomShapes';
+import { leafTuft } from '../../lib/room/roomShapes';
 import { IsoBox } from './IsoBox';
 import { IsoCylinder } from './IsoCylinder';
 import { IsoPlane } from './IsoPlane';

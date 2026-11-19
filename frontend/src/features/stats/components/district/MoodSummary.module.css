@@ -1,0 +1,46 @@
+.mood {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.moodLabel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  line-height: 1.1;
+}
+
+.score {
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.moodMeta {
+  margin-top: 0.25rem;
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.moodText {
+  min-width: 0;
+}
+
+.compare {
+  margin-top: 0.375rem;
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.compare[data-direction='up'] {
+  color: var(--mood-good);
+}
+
+.compare[data-direction='down'] {
+  color: var(--mood-bad);
+}

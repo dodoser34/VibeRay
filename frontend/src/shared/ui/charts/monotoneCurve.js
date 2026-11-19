@@ -1,16 +1,16 @@
 // Монотонная кубическая кривая (Фритч–Карлсон): гладкая, но никогда не выходит за данные, поэтому у
 // спокойной недели нет ложных горбов. Одна точка становится кружком (круглое окончание линии).
-export function curve(points) {
+export function monotoneCurvePath(points) {
   const [x0, y0] = points[0];
   if (points.length === 1) return `M${x0} ${y0}h0.01`;
-  const n = points.length;
+  const count = points.length;
   const slopes = [];
-  for (let i = 0; i < n - 1; i++) {
+  for (let i = 0; i < count - 1; i++) {
     slopes.push((points[i + 1][1] - points[i][1]) / (points[i + 1][0] - points[i][0]));
   }
   const tangents = points.map((_, i) => {
     if (i === 0) return slopes[0];
-    if (i === n - 1) return slopes[n - 2];
+    if (i === count - 1) return slopes[count - 2];
     return slopes[i - 1] * slopes[i] <= 0 ? 0 : (slopes[i - 1] + slopes[i]) / 2;
   });
   slopes.forEach((slope, i) => {
@@ -19,17 +19,17 @@ export function curve(points) {
       tangents[i + 1] = 0;
       return;
     }
-    const a = tangents[i] / slope;
-    const b = tangents[i + 1] / slope;
-    const length = a * a + b * b;
+    const alpha = tangents[i] / slope;
+    const beta = tangents[i + 1] / slope;
+    const length = alpha * alpha + beta * beta;
     if (length > 9) {
       const k = 3 / Math.sqrt(length);
-      tangents[i] = k * a * slope;
-      tangents[i + 1] = k * b * slope;
+      tangents[i] = k * alpha * slope;
+      tangents[i + 1] = k * beta * slope;
     }
   });
   let d = `M${x0.toFixed(1)} ${y0.toFixed(1)}`;
-  for (let i = 0; i < n - 1; i++) {
+  for (let i = 0; i < count - 1; i++) {
     const [xa, ya] = points[i];
     const [xb, yb] = points[i + 1];
     const third = (xb - xa) / 3;
@@ -42,7 +42,7 @@ export function curve(points) {
 }
 
 // Отрезки ненулевых значений: точка без данных разрывает линию, а не придумывает значение.
-export function runs(values, x, y) {
+export function splitIntoRuns(values, x, y) {
   const result = [];
   let current = [];
   values.forEach((value, i) => {

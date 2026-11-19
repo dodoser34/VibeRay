@@ -10,7 +10,7 @@ export function StatusTimeline({ status, history = [], label, compact = false })
   const revealed = useRevealed();
   const steps =
     status === REJECTED_STATUS.code ? [PROBLEM_STATUSES[0], REJECTED_STATUS] : PROBLEM_STATUSES;
-  const current = steps.findIndex((s) => s.code === status);
+  const current = steps.findIndex((step) => step.code === status);
   const dateOf = (code) => history.find((step) => step.status === code)?.changed_at;
 
   return (

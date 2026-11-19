@@ -15,8 +15,8 @@ export function cityOutline(districts, center) {
   const points = districts.features.flatMap(({ geometry }) =>
     geometry.coordinates.flatMap(([outer]) => outer.map(project)),
   );
-  const xs = points.map((p) => p[0]);
-  const ys = points.map((p) => p[1]);
+  const xs = points.map((point) => point[0]);
+  const ys = points.map((point) => point[1]);
   const span = Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys));
   const margin = Math.max(MIN_MARGIN_KM, span * MARGIN_SHARE);
 
@@ -28,6 +28,7 @@ export function cityOutline(districts, center) {
     return [nx, ny, reach + margin];
   });
   const reach =
-    edges.reduce((max, [, , h]) => Math.max(max, h), 0) / Math.cos(Math.PI / OUTLINE_SIDES);
+    edges.reduce((max, [, , distance]) => Math.max(max, distance), 0) /
+    Math.cos(Math.PI / OUTLINE_SIDES);
   return { edges, fade: margin, reach };
 }

@@ -1,7 +1,7 @@
 import { useId } from 'react';
-import { iso, points } from '../../lib/isometric';
-import { WINDOW } from '../../lib/roomLayout';
-import { leafTuft } from '../../lib/roomShapes';
+import { isoToScreen, points } from '../../lib/room/isometric';
+import { WINDOW } from '../../lib/room/roomLayout';
+import { leafTuft } from '../../lib/room/roomShapes';
 import { IsoBox } from './IsoBox';
 import { IsoCylinder } from './IsoCylinder';
 import { IsoPlane } from './IsoPlane';
@@ -102,8 +102,8 @@ export function WindowWall({ daylight }) {
       {/* шторы на карнизе: складки — полосы тени */}
       <IsoBox at={[10.5, 0.9, 20.5]} size={[17, 0.2, 0.2]} tone="--story-metal" />
       {[10.4, 27.6].map((x) => {
-        const [fx, fy] = iso(x, 1, 20.6);
-        return <circle key={x} className={styles.finial} cx={fx} cy={fy} r="3.4" />;
+        const [finialX, finialY] = isoToScreen(x, 1, 20.6);
+        return <circle key={x} className={styles.finial} cx={finialX} cy={finialY} r="3.4" />;
       })}
       {[10.4, 24.6].map((x) => (
         <IsoPlane key={x} facing="y" at={[x, 1.1, 20.4]}>

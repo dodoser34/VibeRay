@@ -37,8 +37,8 @@ export function DeleteAccountDialog({ onClose, onDeleted }) {
           label={texts.account.confirmPassword}
           autoComplete="current-password"
           value={password}
-          onChange={(e) => {
-            setPassword(e.target.value);
+          onChange={(event) => {
+            setPassword(event.target.value);
             setError('');
           }}
           error={error}

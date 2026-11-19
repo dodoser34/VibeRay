@@ -1,127 +1,21 @@
-import { useLayoutEffect, useRef } from 'react';
 import { DistrictLegend } from '@/features/map';
 import { MoodLegend, PeriodSwitch } from '@/features/mood';
 import { StatusChip } from '@/features/problems';
 import { MetricLegend } from '@/features/stats';
 import { STATS_PERIODS } from '@/shared/config/periods';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
-import { gsap } from '@/shared/animations/core/gsapSetup';
-import { useLanguage } from '@/shared/hooks/useLanguage';
 import { format } from '@/shared/lib/i18n/format';
 import { formatTime } from '@/shared/lib/i18n/formatDate';
 import texts from '@/texts/en/map.json';
 import { Button } from '@/shared/ui/controls/Button';
-import { HEIGHT_SCALE } from '../lib/heightScale';
+import { DistrictsVisibility } from './DistrictsVisibility';
+import { FilterChoice } from './FilterChoice';
+import { FilterGroup } from './FilterGroup';
+import { HeightScaleControl } from './HeightScaleControl';
 import styles from './MapFilters.module.css';
 
 const LAYERS = ['districts', 'mood', 'problems'];
 const METRICS = ['mood', 'problems'];
-
-// Переключатель-кнопки (слой, показатель): рамка выбора переезжает к нажатой кнопке, кнопка
-// чуть проседает под пальцем. При смене ширины (панель, язык) рамка встаёт на место без анимации.
-function Choice({ options, value, onChange, label, columns = options.length }) {
-  const rootRef = useRef(null);
-  const thumbRef = useRef(null);
-  const language = useLanguage();
-
-  useLayoutEffect(() => {
-    const place = (duration) => {
-      const active = rootRef.current.querySelector('[aria-checked="true"]');
-      if (!active) return;
-      gsap.to(thumbRef.current, {
-        x: active.offsetLeft,
-        y: active.offsetTop,
-        width: active.offsetWidth,
-        height: active.offsetHeight,
-        autoAlpha: 1,
-        duration,
-        ease: 'power3.out',
-        overwrite: 'auto',
-      });
-    };
-    place(0.45);
-    const observer = new ResizeObserver(() => place(0));
-    observer.observe(rootRef.current);
-    return () => observer.disconnect();
-  }, [value, language]);
-
-  return (
-    <div
-      ref={rootRef}
-      className={styles.choices}
-      style={{ '--count': columns }}
-      role="radiogroup"
-      aria-label={label}
-    >
-      <span ref={thumbRef} className={styles.choiceThumb} aria-hidden="true" />
-      {options.map(([code, text]) => (
-        <button
-          key={code}
-          type="button"
-          role="radio"
-          aria-checked={value === code}
-          className={styles.choice}
-          data-ui="map-choice"
-          onClick={() => onChange(code)}
-        >
-          {text}
-        </button>
-      ))}
-    </div>
-  );
-}
-
-// Множитель высоты районов: 0 — плоская карта, дальше — во сколько раз вытянуть разницу настроений.
-function HeightScale({ value, onChange, withHint }) {
-  const shown = value === 0 ? texts.heightScale.flat : format(texts.heightScale.value, { value });
-  return (
-    <div className={styles.group} data-ui="map-filters-height">
-      <label className={styles.heightHead}>
-        <span className={styles.groupLabel}>{texts.heightScale.label}</span>
-        <output className={styles.heightValue}>{shown}</output>
-        <input
-          type="range"
-          className={styles.range}
-          min={HEIGHT_SCALE.min}
-          max={HEIGHT_SCALE.max}
-          step={HEIGHT_SCALE.step}
-          value={value}
-          aria-valuetext={shown}
-          style={{ '--fill': `${(value / HEIGHT_SCALE.max) * 100}%` }}
-          onChange={(event) => onChange(Number(event.target.value))}
-        />
-      </label>
-      {withHint && (
-        <p className={styles.hint} data-ui="map-filters-height-hint">
-          {texts.heightScale.hint}
-        </p>
-      )}
-    </div>
-  );
-}
-
-// Районы на карте или только карта дорог под ними.
-function DistrictsVisibility({ value, onChange }) {
-  return (
-    <div className={styles.group} data-ui="map-filters-districts">
-      <span className={styles.groupLabel}>{texts.districtsVisibility.label}</span>
-      <Choice
-        label={texts.districtsVisibility.groupLabel}
-        value={value ? 'show' : 'hide'}
-        onChange={(code) => onChange(code === 'show')}
-        options={[
-          ['show', texts.districtsVisibility.show],
-          ['hide', texts.districtsVisibility.hide],
-        ]}
-      />
-      {!value && (
-        <p className={styles.hint} data-ui="map-filters-districts-hint">
-          {texts.districtsVisibility.hint}
-        </p>
-      )}
-    </div>
-  );
-}
 
 // Что показывает карта. Те же элементы живут в левой панели десктопа, в панели инструментов
 // планшета в альбомной ориентации (только переключатели) и в шторке фильтров телефона (без
@@ -165,54 +59,57 @@ export function MapFilters({
       )}
 
       {cities?.length > 1 && (
-        <div className={styles.group}>
-          <span className={styles.groupLabel}>{texts.city}</span>
-          <Choice
+        <FilterGroup label={texts.city}>
+          <FilterChoice
             label={texts.cityLabel}
             value={citySlug}
             onChange={onCity}
             options={cities.map((item) => [item.slug, item.name])}
-            columns={2}
+            columns={3}
+            wrap
           />
-        </div>
+        </FilterGroup>
       )}
 
-      <div className={styles.group}>
-        <span className={styles.groupLabel}>{texts.period}</span>
+      <FilterGroup label={texts.period}>
         {isStats ? (
           <PeriodSwitch value={statsPeriod} onChange={onStatsPeriod} options={STATS_PERIODS} />
         ) : (
           <PeriodSwitch value={period} onChange={onPeriod} />
         )}
-      </div>
+      </FilterGroup>
 
-      <div className={styles.group}>
-        <span className={styles.groupLabel}>{isStats ? texts.stats.metric : texts.layer}</span>
+      <FilterGroup label={isStats ? texts.stats.metric : texts.layer}>
         {isStats ? (
-          <Choice
+          <FilterChoice
             label={texts.stats.metricLabel}
             value={metric}
             onChange={onMetric}
             options={METRICS.map((code) => [code, texts.stats.metrics[code]])}
           />
         ) : (
-          <Choice
+          <FilterChoice
             label={texts.layerLabel}
             value={layer}
             onChange={onLayer}
             options={LAYERS.map((code) => [code, texts.layers[code]])}
           />
         )}
-      </div>
+      </FilterGroup>
 
-      <HeightScale value={heightScale} onChange={onHeightScale} withHint={!isStats} />
+      <HeightScaleControl value={heightScale} onChange={onHeightScale} withHint={!isStats} />
 
       <DistrictsVisibility value={districtsVisible} onChange={onDistrictsVisible} />
 
-      <div className={`${styles.group} ${styles.legend}`} data-ui="map-filters-legend">
-        <span className={styles.groupLabel}>
-          {isStats ? texts.stats.legend : texts.legendTitles[layer]}
-        </span>
+      <FilterGroup
+        label={isStats ? texts.stats.legend : texts.legendTitles[layer]}
+        dataUi="map-filters-legend"
+        className={
+          !isStats && layer === 'districts' && !sheet
+            ? `${styles.legend} ${styles.shrinkable}`
+            : styles.legend
+        }
+      >
         {/* key: при смене слоя или показателя легенда появляется заново — мягко поднимается */}
         <div key={isStats ? `stats:${metric}` : layer} className={styles.legendBody}>
           {isStats && <MetricLegend metric={metric} period={statsPeriod} range={range} />}
@@ -229,13 +126,13 @@ export function MapFilters({
           {!isStats && layer === 'mood' && <MoodLegend />}
           {!isStats && layer === 'problems' && (
             <div className={styles.statuses}>
-              {PROBLEM_STATUSES.map((s) => (
-                <StatusChip key={s.code} status={s.code} />
+              {PROBLEM_STATUSES.map((status) => (
+                <StatusChip key={status.code} status={status.code} />
               ))}
             </div>
           )}
         </div>
-      </div>
+      </FilterGroup>
 
       <p className={styles.footnote} data-ui="map-filters-footnote">
         {updatedAt ? format(texts.updatedAt, { time: formatTime(updatedAt) }) : texts.loading}

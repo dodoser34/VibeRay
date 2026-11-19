@@ -1,6 +1,6 @@
-import { iso, points } from '../../lib/isometric';
-import { SCREEN } from '../../lib/roomLayout';
-import { leafTuft } from '../../lib/roomShapes';
+import { isoToScreen, points } from '../../lib/room/isometric';
+import { SCREEN } from '../../lib/room/roomLayout';
+import { leafTuft } from '../../lib/room/roomShapes';
 import { IsoBox } from './IsoBox';
 import { IsoCylinder } from './IsoCylinder';
 import { IsoPlane } from './IsoPlane';
@@ -34,14 +34,14 @@ const KEYS_IN_ROW = 14;
 
 // Ломаная из точек мира — для тонких деталей (ручка лампы, провод).
 const line = (...corners) =>
-  corners.map((corner, i) => `${i ? 'L' : 'M'}${iso(...corner).join(' ')}`).join('');
+  corners.map((corner, i) => `${i ? 'L' : 'M'}${isoToScreen(...corner).join(' ')}`).join('');
 
 // Рабочее место у левой стены: стол с тумбой, системный блок со стеклом, монитор с живым экраном,
 // клавиатура, мышь на коврике, лампа (ночью горит), стопка книг, кружка с паром, блокнот, телефон,
 // суккулент, провод. Порядок отрисовки — от стены к зрителю.
 export function DeskSet({ outline, mapBox }) {
-  const [headX, headY] = iso(...LAMP_HEAD);
-  const [elbowX, elbowY] = iso(...LAMP_ELBOW);
+  const [headX, headY] = isoToScreen(...LAMP_HEAD);
+  const [elbowX, elbowY] = isoToScreen(...LAMP_ELBOW);
   return (
     <g>
       <polygon
@@ -221,7 +221,7 @@ export function DeskSet({ outline, mapBox }) {
       />
       <g className={styles.steam}>
         {[0, 1].map((k) => {
-          const [x, y] = iso(5.6 - k * 0.15, 7.3 + k * 0.2, TOP + 1);
+          const [x, y] = isoToScreen(5.6 - k * 0.15, 7.3 + k * 0.2, TOP + 1);
           return (
             <path
               key={k}

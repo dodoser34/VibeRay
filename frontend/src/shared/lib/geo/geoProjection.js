@@ -75,8 +75,8 @@ export function labelPoint(multiPolygon, resolution = 28) {
   const minHole = ringArea(outer) * LABEL_HOLE_SHARE;
   const polygon = [outer, ...holes.filter((hole) => ringArea(hole) > minHole)].map(thin);
   const [ring] = polygon;
-  const xs = ring.map((p) => p[0]);
-  const ys = ring.map((p) => p[1]);
+  const xs = ring.map((point) => point[0]);
+  const ys = ring.map((point) => point[1]);
   const minX = Math.min(...xs);
   const minY = Math.min(...ys);
   const stepX = (Math.max(...xs) - minX) / resolution;

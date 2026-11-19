@@ -40,7 +40,7 @@ export function RejectForm({ loading, onSubmit, onCancel }) {
           <span>{texts.queue.reject.duplicateOf}</span>
           <input
             value={duplicateOf}
-            onChange={(e) => setDuplicateOf(e.target.value)}
+            onChange={(event) => setDuplicateOf(event.target.value)}
             placeholder={texts.queue.reject.duplicatePlaceholder}
             spellCheck={false}
           />

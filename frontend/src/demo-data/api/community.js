@@ -1,6 +1,6 @@
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { createRandom, hashString } from '@/shared/lib/random';
-import { districtName, problems } from './generate';
+import { districtName, problems } from './demoHistory';
 
 const ORDER = PROBLEM_STATUSES.map((status) => status.code);
 const AUTO_CONFIRM_THRESHOLD = 3; // ARCHITECTURE.md 6.2
@@ -22,7 +22,7 @@ const hidden = new Map(); // id пользователя → Set id пробле
 const timers = new Set();
 let lastNotification = 0;
 
-const iso = (time) => new Date(time).toISOString();
+const toIsoString = (time) => new Date(time).toISOString();
 // История восстанавливается из текущего статуса: переходы между датой сообщения и сейчас, стабильно
 // для каждой проблемы (на сервере это таблица problem_status_changes).
 function historyOf(problem) {
@@ -30,10 +30,10 @@ function historyOf(problem) {
     const created = new Date(problem.created_at).getTime();
     const rand = createRandom(hashString(`history:${problem.id}`));
     const steps = [{ status: 'new', changed_at: problem.created_at }];
-    let at = created;
+    let time = created;
     for (let i = 1; i <= ORDER.indexOf(problem.status); i++) {
-      at += (Date.now() - at) * (0.25 + rand() * 0.35);
-      steps.push({ status: ORDER[i], changed_at: iso(at) });
+      time += (Date.now() - time) * (0.25 + rand() * 0.35);
+      steps.push({ status: ORDER[i], changed_at: toIsoString(time) });
     }
     histories.set(problem.id, steps);
   }
@@ -44,17 +44,17 @@ export const withHistory = (problem) => ({ ...problem, history: historyOf(proble
 
 export const isAuthor = (problem, user) => authors.get(problem.id) === user.id;
 
-function notify(userId, { kind, problem, status, count, at = Date.now() }) {
+function notify(userId, { kind, problem, status, count, at: time = Date.now() }) {
   if (hidden.get(userId)?.has(problem.id)) return;
   const list = inbox.get(userId) ?? [];
-  lastNotification = Math.max(at, lastNotification + 1);
+  lastNotification = Math.max(time, lastNotification + 1);
   list.unshift({
     id: `n${lastNotification.toString(36)}`,
     kind,
     problem_id: problem.id,
     status,
     count,
-    created_at: iso(at),
+    created_at: toIsoString(time),
     read: false,
   });
   inbox.set(
@@ -63,19 +63,19 @@ function notify(userId, { kind, problem, status, count, at = Date.now() }) {
   );
 }
 
-function setStatus(problem, status, at = Date.now(), notifyAuthor = true) {
+function setStatus(problem, status, time = Date.now(), notifyAuthor = true) {
   historyOf(problem);
   problem.status = status;
-  histories.get(problem.id).push({ status, changed_at: iso(at) });
+  histories.get(problem.id).push({ status, changed_at: toIsoString(time) });
   const author = authors.get(problem.id);
-  if (author && notifyAuthor) notify(author, { kind: 'status', problem, status, at });
+  if (author && notifyAuthor) notify(author, { kind: 'status', problem, status, at: time });
 }
 
 // Модерация: сообщение уходит с карты и из статистики, автор получает уведомление с причиной.
-function reject(problem, reason, duplicateOf, at = Date.now()) {
+function reject(problem, reason, duplicateOf, time = Date.now()) {
   problem.rejection_reason = reason;
   if (duplicateOf) problem.duplicate_of = duplicateOf.id;
-  setStatus(problem, 'rejected', at);
+  setStatus(problem, 'rejected', time);
 }
 
 // Автору сообщают, когда проблему взяли в работу, решили или отклонили; ручное подтверждение, шаг
@@ -108,11 +108,11 @@ function distanceM([lon1, lat1], [lon2, lat2]) {
 
 function originalOf(problem) {
   return problems.find(
-    (p) =>
-      p !== problem &&
-      p.category === problem.category &&
-      !['resolved', 'rejected'].includes(p.status) &&
-      distanceM(p.location, problem.location) < DUPLICATE_RADIUS_M,
+    (candidate) =>
+      candidate !== problem &&
+      candidate.category === problem.category &&
+      !['resolved', 'rejected'].includes(candidate.status) &&
+      distanceM(candidate.location, problem.location) < DUPLICATE_RADIUS_M,
   );
 }
 
@@ -160,7 +160,11 @@ export function seedReports(user, statuses) {
   statuses.forEach((status) => {
     const source = status === 'rejected' ? 'new' : status;
     const problem = problems.find(
-      (p) => p.id.startsWith('p') && p.status === source && !authors.has(p.id) && !taken.has(p.id),
+      (candidate) =>
+        candidate.id.startsWith('p') &&
+        candidate.status === source &&
+        !authors.has(candidate.id) &&
+        !taken.has(candidate.id),
     );
     if (!problem) return;
     taken.add(problem.id);
@@ -169,10 +173,10 @@ export function seedReports(user, statuses) {
     if (status === 'rejected') {
       // Дубль уже известной проблемы, о которой сообщили раньше: то же место и та же категория
       const original = problems.find(
-        (p) =>
-          p !== problem &&
-          ['confirmed', 'in_progress'].includes(p.status) &&
-          p.created_at < problem.created_at,
+        (candidate) =>
+          candidate !== problem &&
+          ['confirmed', 'in_progress'].includes(candidate.status) &&
+          candidate.created_at < problem.created_at,
       );
       if (original) {
         Object.assign(problem, {
@@ -182,16 +186,21 @@ export function seedReports(user, statuses) {
           location: [original.location[0] + 0.0003, original.location[1] + 0.0002],
         });
       }
-      const at = new Date(problem.created_at).getTime() + 3 * 60 * MINUTE;
-      reject(problem, original ? 'duplicate' : 'spam', original, Math.min(at, Date.now()));
+      const time = new Date(problem.created_at).getTime() + 3 * 60 * MINUTE;
+      reject(problem, original ? 'duplicate' : 'spam', original, Math.min(time, Date.now()));
       return;
     }
     const steps = historyOf(problem);
     const created = new Date(problem.created_at).getTime();
     if (problem.confirmations_count >= AUTO_CONFIRM_THRESHOLD) {
       const firstStep = steps[1] ? new Date(steps[1].changed_at).getTime() : Date.now();
-      const at = created + (firstStep - created) * 0.8 || created + 30 * MINUTE;
-      notify(user.id, { kind: 'confirmations', problem, count: problem.confirmations_count, at });
+      const time = created + (firstStep - created) * 0.8 || created + 30 * MINUTE;
+      notify(user.id, {
+        kind: 'confirmations',
+        problem,
+        count: problem.confirmations_count,
+        at: time,
+      });
     }
     steps.slice(1).forEach((step) =>
       notify(user.id, {
@@ -208,7 +217,7 @@ export function seedReports(user, statuses) {
 // Уведомление с кратким видом проблемы, чтобы список можно было показать без лишних запросов.
 export function notificationsOf(user) {
   const items = (inbox.get(user.id) ?? []).map((item) => {
-    const problem = problems.find((p) => p.id === item.problem_id);
+    const problem = problems.find((problem) => problem.id === item.problem_id);
     return {
       ...item,
       problem: problem && {
@@ -247,7 +256,9 @@ export function withdrawProblem(problem) {
       list.filter((item) => item.problem_id !== problem.id),
     ),
   );
-  problems.filter((p) => p.duplicate_of === problem.id).forEach((p) => delete p.duplicate_of);
+  problems
+    .filter((duplicate) => duplicate.duplicate_of === problem.id)
+    .forEach((duplicate) => delete duplicate.duplicate_of);
 }
 
 // Сообщение в работе или решённое автор убирает только из своего списка: на карте и в статистике оно

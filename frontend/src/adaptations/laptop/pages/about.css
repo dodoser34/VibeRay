@@ -1,0 +1,18 @@
+/* «О проекте» на невысоких ноутбуках: в главе «продукт» колонка рядом с городом (подпись и четыре
+   панели интерфейса) не помещалась по высоте. До 860 px панели плотнее; до 720 px колонка ещё и без
+   панели профиля — самой маленькой и наименее важной для рассказа о продукте. */
+@media (min-width: 1200px) and (orientation: landscape) and (max-height: 860px) {
+  [data-variant='room'] [data-ui='story-ui'] {
+    gap: var(--space-2);
+  }
+
+  [data-variant='room'] [data-ui^='story-ui-'] {
+    padding: var(--space-3) var(--space-4);
+  }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) and (max-height: 720px) {
+  [data-variant='room'] [data-ui='story-ui-profile'] {
+    display: none;
+  }
+}

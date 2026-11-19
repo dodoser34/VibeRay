@@ -1,5 +1,7 @@
-/* Стеклянная капсула в стиле таб-бара: круглые флаги, выбранный — в мягком кольце акцента */
+/* Стеклянная капсула в стиле таб-бара: круглые флаги, выбранный — в мягком кольце акцента,
+   которое перетекает к нажатому флагу */
 .root {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 2px;
@@ -14,7 +16,19 @@
   pointer-events: auto;
 }
 
+.thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-accent);
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .option {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +64,7 @@
   transition:
     filter var(--dur-base) var(--ease-out),
     opacity var(--dur-base) var(--ease-out),
-    transform var(--dur-base) var(--ease-out);
+    transform var(--dur-slow) var(--ease-spring);
 }
 
 .flag img {
@@ -62,19 +76,19 @@
 .option:hover .flag {
   filter: saturate(0.75) brightness(0.92);
   opacity: 1;
+  transform: scale(1) rotate(-12deg);
 }
 
 .option[aria-pressed='true'] {
-  background: var(--color-accent-soft);
-  border-color: var(--color-accent);
   color: var(--color-text);
   cursor: default;
 }
 
+/* Флаг выбранного языка «разворачивается» к зрителю, когда к нему приезжает кольцо */
 .option[aria-pressed='true'] .flag {
   filter: saturate(0.85);
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) rotate(360deg);
 }
 
 /* Полные названия (настройки): флаг и язык */

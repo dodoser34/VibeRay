@@ -62,11 +62,11 @@ export class PulseField {
   // Вызывать после set(): кольцо растёт с десятой доли радиуса и гаснет.
   setProgress(i, value) {
     this.progress[i] = value;
-    const d = this.dummy;
-    d.position.fromArray(this.positions, i * 3);
-    d.scale.setScalar(value > 0 && value < 1 ? this.radius * (0.1 + 0.9 * value) : 0);
-    d.updateMatrix();
-    this.mesh.setMatrixAt(i, d.matrix);
+    const dummy = this.dummy;
+    dummy.position.fromArray(this.positions, i * 3);
+    dummy.scale.setScalar(value > 0 && value < 1 ? this.radius * (0.1 + 0.9 * value) : 0);
+    dummy.updateMatrix();
+    this.mesh.setMatrixAt(i, dummy.matrix);
   }
 
   commit() {
@@ -99,14 +99,14 @@ export class LinkNetwork {
           .copy(from)
           .lerp(to, t)
           .setY(from.y + (to.y - from.y) * t + Math.sin(Math.PI * t) * height);
-      for (let s = 0; s < segments; s++) {
-        const t0 = s / segments;
-        const t1 = (s + 1) / segments;
-        point(t0, a);
-        point(t1, b);
+      for (let segment = 0; segment < segments; segment++) {
+        const startFraction = segment / segments;
+        const endFraction = (segment + 1) / segments;
+        point(startFraction, a);
+        point(endFraction, b);
         positions.push(a.x, a.y, a.z, b.x, b.y, b.z);
         colors.push(color.r, color.g, color.b, color.r, color.g, color.b);
-        along.push(t0, t1);
+        along.push(startFraction, endFraction);
         starts.push(start, start);
       }
     });

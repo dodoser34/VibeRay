@@ -5,7 +5,7 @@ import { cardEnter, partsEnter } from '@/shared/animations/effects/cardEnter';
 import { smoothHeight } from '@/shared/animations/effects/smoothLayout';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { LoginForm } from './LoginForm';
-import { RegisterFlow } from './RegisterFlow';
+import { RegisterFlow } from './register/RegisterFlow';
 import styles from './AuthPanel.module.css';
 
 // На узких экранах переднего листа нет — карточке ждать нечего.

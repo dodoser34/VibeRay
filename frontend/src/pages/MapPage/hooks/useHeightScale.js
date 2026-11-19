@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { readNumber, writeNumber } from '@/shared/lib/localFlag';
+import { readNumber, writeNumber } from '@/shared/lib/localPreferences';
 import { HEIGHT_SCALE } from '../lib/heightScale';
 
 const STORAGE_KEY = 'viberay:map:height-scale';

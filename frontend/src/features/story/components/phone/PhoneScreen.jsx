@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { useBoxSize } from '../../hooks/useBoxSize';
 import { isDaylight } from '../../lib/chapters';
 import { outlineCenter, topViewBox } from '../../lib/topView';
-import styles from './PhoneStage.module.css';
+import styles from './PhoneScreen.module.css';
 
 const IDEAS = ['shop', 'habits', 'game', 'studyNetwork', 'finance'];
 

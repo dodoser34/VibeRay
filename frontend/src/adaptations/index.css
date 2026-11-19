@@ -10,6 +10,7 @@
 @import './laptop/laptop.css';
 @import './laptop/pages/home.css';
 @import './laptop/pages/not-found.css';
+@import './laptop/pages/about.css';
 
 @import './tablet/tablet.css';
 @import './tablet/navigation.css';

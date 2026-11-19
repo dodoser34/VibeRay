@@ -29,10 +29,10 @@ function sortRows(rows, { key, dir }) {
   const get = COLUMNS[key].get;
   const sign = dir === 'asc' ? 1 : -1;
   return [...rows].sort((a, b) => {
-    const [va, vb] = [get(a), get(b)];
-    if (va === null || vb === null) return va === vb ? 0 : va === null ? 1 : -1; // районы без данных — в конце
-    if (typeof va === 'string') return sign * va.localeCompare(vb, getLocale());
-    return sign * (va - vb);
+    const [valueA, valueB] = [get(a), get(b)];
+    if (valueA === null || valueB === null) return valueA === valueB ? 0 : valueA === null ? 1 : -1; // районы без данных — в конце
+    if (typeof valueA === 'string') return sign * valueA.localeCompare(valueB, getLocale());
+    return sign * (valueA - valueB);
   });
 }
 
@@ -79,10 +79,10 @@ export function DistrictTable({ rows, focusSlug, onFocus, onHover, onOpen }) {
         : { key, dir: COLUMNS[key].first },
     );
 
-  const header = (key, ui) => (
+  const header = (key, dataUi) => (
     <th
       scope="col"
-      data-ui={ui && `district-table-${ui}`}
+      data-ui={dataUi && `district-table-${dataUi}`}
       aria-sort={sort.key === key ? (sort.dir === 'asc' ? 'ascending' : 'descending') : undefined}
     >
       <button

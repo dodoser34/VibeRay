@@ -6,7 +6,7 @@ import {
   cityMoods,
   cityOfDistrict,
   problems as allProblems,
-} from './generate';
+} from './demoHistory';
 import { resolvedAt, withHistory } from './community';
 import { nameOf } from './locale';
 
@@ -32,10 +32,14 @@ const SORTS = {
 
 const ageDays = (problem, now) => (now - new Date(problem.created_at).getTime()) / DAY;
 // Демо-модератор работает с Костанаем: проблемы других городов в его очередь и сводку не попадают.
-const ownProblems = () => allProblems.filter((p) => cityOfDistrict(p.district) === HOME_CITY);
+const ownProblems = () =>
+  allProblems.filter((problem) => cityOfDistrict(problem.district) === HOME_CITY);
 const districtNames = () =>
   Object.fromEntries(
-    cityBySlug(HOME_CITY).districts.features.map((f) => [f.properties.slug, nameOf(f.properties)]),
+    cityBySlug(HOME_CITY).districts.features.map((feature) => [
+      feature.properties.slug,
+      nameOf(feature.properties),
+    ]),
   );
 
 export const isQueueStatus = (code) => code in QUEUE_STATUSES;
@@ -49,15 +53,15 @@ export function moderationQueue({ status = 'active', district, category, sort = 
   const names = districtNames();
   const matching = ownProblems()
     .filter(
-      (p) =>
-        QUEUE_STATUSES[status].includes(p.status) &&
-        (!district || p.district === district) &&
-        (!category || p.category === category),
+      (problem) =>
+        QUEUE_STATUSES[status].includes(problem.status) &&
+        (!district || problem.district === district) &&
+        (!category || problem.category === category),
     )
     .sort(SORTS[sort] ?? SORTS.newest);
   return {
     total: matching.length,
-    items: matching.slice(0, QUEUE_LIMIT).map((p) => moderationItem(p, names)),
+    items: matching.slice(0, QUEUE_LIMIT).map((problem) => moderationItem(problem, names)),
   };
 }
 
@@ -67,29 +71,31 @@ export function moderationSummary(supportRequests) {
   const names = districtNames();
   const moods = cityMoods(HOME_CITY, 'week').districts;
   const counts = Object.fromEntries([...ACTIVE, 'resolved', 'rejected'].map((code) => [code, 0]));
-  ownProblems().forEach((p) => (counts[p.status] += 1));
+  ownProblems().forEach((problem) => (counts[problem.status] += 1));
 
   const resolvedRecently = ownProblems()
-    .filter((p) => p.status === 'resolved')
-    .map((p) => ({ problem: p, at: resolvedAt(p) }))
-    .filter(({ at }) => at && now - at < 30 * DAY);
+    .filter((problem) => problem.status === 'resolved')
+    .map((problem) => ({ problem, resolvedTime: resolvedAt(problem) }))
+    .filter(({ resolvedTime }) => resolvedTime && now - resolvedTime < 30 * DAY);
   const resolutionDays = resolvedRecently.map(
-    ({ problem, at }) => (at - new Date(problem.created_at).getTime()) / DAY,
+    ({ problem, resolvedTime }) => (resolvedTime - new Date(problem.created_at).getTime()) / DAY,
   );
 
-  const open = ownProblems().filter((p) => ACTIVE.includes(p.status));
+  const open = ownProblems().filter((problem) => ACTIVE.includes(problem.status));
   const districts = Object.keys(names)
     .map((slug) => {
-      const inDistrict = open.filter((p) => p.district === slug);
+      const inDistrict = open.filter((problem) => problem.district === slug);
       const mood = moods[slug];
       return {
         slug,
         name: names[slug],
         open: inDistrict.length,
-        waiting: inDistrict.filter((p) => p.status !== 'in_progress').length,
-        new_week: ownProblems().filter((p) => p.district === slug && ageDays(p, now) < 7).length,
+        waiting: inDistrict.filter((problem) => problem.status !== 'in_progress').length,
+        new_week: ownProblems().filter(
+          (problem) => problem.district === slug && ageDays(problem, now) < 7,
+        ).length,
         oldest_open_days: inDistrict.length
-          ? Math.floor(Math.max(...inDistrict.map((p) => ageDays(p, now))))
+          ? Math.floor(Math.max(...inDistrict.map((problem) => ageDays(problem, now))))
           : null,
         mood_score: mood.insufficient_data ? null : mood.score,
       };
@@ -98,19 +104,23 @@ export function moderationSummary(supportRequests) {
 
   return {
     counts,
-    new_today: ownProblems().filter((p) => ageDays(p, now) < 1).length,
-    stale_confirmed: open.filter((p) => p.status === 'confirmed' && ageDays(p, now) >= STALE_DAYS)
+    new_today: ownProblems().filter((problem) => ageDays(problem, now) < 1).length,
+    stale_confirmed: open.filter(
+      (problem) => problem.status === 'confirmed' && ageDays(problem, now) >= STALE_DAYS,
+    ).length,
+    resolved_week: resolvedRecently.filter(({ resolvedTime }) => now - resolvedTime < 7 * DAY)
       .length,
-    resolved_week: resolvedRecently.filter(({ at }) => now - at < 7 * DAY).length,
     avg_resolution_days: resolutionDays.length
-      ? Math.round((resolutionDays.reduce((sum, d) => sum + d, 0) / resolutionDays.length) * 10) /
-        10
+      ? Math.round(
+          (resolutionDays.reduce((sum, days) => sum + days, 0) / resolutionDays.length) * 10,
+        ) / 10
       : null,
-    support_new: supportRequests.filter((r) => OPEN_SUPPORT_STATUSES.includes(r.status)).length,
+    support_new: supportRequests.filter((request) => OPEN_SUPPORT_STATUSES.includes(request.status))
+      .length,
     districts,
     categories: PROBLEM_CATEGORIES.map(({ code }) => ({
       code,
-      open: open.filter((p) => p.category === code).length,
+      open: open.filter((problem) => problem.category === code).length,
     })).sort((a, b) => b.open - a.open),
   };
 }

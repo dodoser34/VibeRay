@@ -33,8 +33,8 @@ export function QueueItem({ problem, onChanged, onOpenProblem, expandedByDefault
       const updated = await changeProblemStatus(problem.id, { status, ...extra });
       setRejecting(false);
       onChanged(updated);
-    } catch (e) {
-      setError(e.message);
+    } catch (error) {
+      setError(error.message);
     } finally {
       setBusy(null);
     }

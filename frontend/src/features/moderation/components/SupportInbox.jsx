@@ -18,7 +18,7 @@ const FILTERS = {
   open: OPEN_SUPPORT_STATUSES,
   answered: ['answered'],
   closed: ['closed'],
-  all: SUPPORT_REQUEST_STATUSES.map((s) => s.code),
+  all: SUPPORT_REQUEST_STATUSES.map((status) => status.code),
 };
 
 // Обращения из формы поддержки: тема, почта для ответа (видна только поддержке), текст. Ответ —
@@ -27,7 +27,7 @@ export function SupportInbox({ onChanged }) {
   const [filter, setFilter] = useState('open');
   const [busy, setBusy] = useState(null);
   const requests = useRequest('moderation:support', getSupportRequests);
-  const items = (requests.data ?? []).filter((r) => FILTERS[filter].includes(r.status));
+  const items = (requests.data ?? []).filter((request) => FILTERS[filter].includes(request.status));
 
   const changeStatus = async (request, status) => {
     setBusy(request.id);

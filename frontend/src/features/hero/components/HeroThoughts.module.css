@@ -61,41 +61,6 @@
   order: 1;
 }
 
-.faces {
-  display: flex;
-  gap: var(--space-2);
-}
-
-.faces > span,
-.joy {
-  display: block;
-}
-
-.solved {
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 50%;
-  background: var(--color-accent-soft);
-  color: var(--color-accent-bright);
-}
-
-/* Решено: галочка и плашка в цвете статуса «решена» */
-.check {
-  position: absolute;
-  right: -0.25rem;
-  bottom: -0.25rem;
-  display: grid;
-  place-items: center;
-  width: 1.25rem;
-  height: 1.25rem;
-  border-radius: 50%;
-  background: var(--status-resolved);
-  color: var(--color-bg);
-}
-
 .chip {
   grid-column: 2;
   justify-self: start;
@@ -109,55 +74,10 @@
   text-transform: uppercase;
 }
 
-.crowd {
-  display: flex;
-  align-items: center;
-}
-
-.avatar {
-  display: block;
-  margin-left: -0.5rem;
-  border: 2px solid var(--color-glass-strong);
-  border-radius: 50%;
-}
-
-.avatar:first-child {
-  margin-left: 0;
-}
-
-.count {
-  margin-left: var(--space-2);
-  padding: 0.125rem var(--space-2);
-  border-radius: var(--radius-pill);
-  background: var(--color-accent);
-  color: var(--color-on-accent);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-}
-
-.bar {
-  display: flex;
-  gap: 0.125rem;
-  height: 0.625rem;
-  overflow: hidden;
-  border-radius: var(--radius-pill);
-}
-
-.segment {
-  display: block;
-  height: 100%;
-}
-
 /* Одна колонка: девушка в узком блоке — облачка компактнее */
 .root[data-stacked] .bubble {
   max-width: 9.5rem;
   padding: var(--space-3);
-}
-
-/* Узкое облачко: шкала лиц мельче (ThoughtVisual) и остаётся одной строкой — пятое лицо,
-   перенесённое на вторую строку, выглядело оборванным */
-.root[data-stacked] .faces {
-  gap: 0.25rem;
 }
 
 /* Узкое облачко: картинка и текст — друг под другом, у всех видов мысли */

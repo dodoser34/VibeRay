@@ -1,0 +1,38 @@
+/* Индикатор шагов */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-2);
+}
+
+.stepItem {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.stepBar {
+  height: 0.1875rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-border);
+  transition: background-color var(--dur-base) var(--ease-out);
+}
+
+.stepItem[data-state='done'] .stepBar {
+  background: var(--color-accent);
+}
+
+.stepItem[data-state='current'] .stepBar {
+  background: var(--color-accent-bright);
+}
+
+.stepLabel {
+  overflow: hidden;
+  color: var(--color-text-faint);
+  font-size: var(--fs-3xs);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stepItem[data-state='current'] .stepLabel {
+  color: var(--color-text);
+}

@@ -1,53 +1,43 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router';
 import { useTransitionNavigate, useTransitionReady } from '@/app/transitions/useTransition';
-import { rootScale, useViewport } from '@/adaptations/core';
-import { FilterChip } from '@/adaptations/mobile/components/map/FilterChip';
-import { MapFab } from '@/adaptations/mobile/components/map/MapFab';
-import { BottomSheet } from '@/adaptations/mobile/components/sheet/BottomSheet';
+import { useViewport } from '@/adaptations/core';
 import { useAuth } from '@/features/auth';
-import { MapCanvas, rememberCity, useCityData } from '@/features/map';
-import { DistrictRanking, MoodFace, MoodPicker } from '@/features/mood';
+import { MapCanvas } from '@/features/map';
+import { DistrictRanking, MoodPicker } from '@/features/mood';
 import { ProblemCard, ReportProblem } from '@/features/problems';
-import {
-  CityDashboard,
-  DistrictPanel,
-  mapOverlay,
-  reportedRange,
-  statsMoods,
-  useCityStats,
-  useDistrictStats,
-} from '@/features/stats';
-import { getCities } from '@/shared/api/endpoints/cities';
+import { CityDashboard, DistrictPanel, reportedRange } from '@/features/stats';
 import { postMood } from '@/shared/api/endpoints/districts';
-import { getProblem } from '@/shared/api/endpoints/problems';
-import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
-import { moodCodeForScore, MOOD_BY_CODE } from '@/shared/config/moods';
+import { MOOD_BY_CODE } from '@/shared/config/moods';
 import { DEFAULT_STATS_PERIOD, MOOD_PERIODS, STATS_PERIODS } from '@/shared/config/periods';
-import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
-import { useRequest } from '@/shared/hooks/useRequest';
 import { Button } from '@/shared/ui/controls/Button';
 import { CoachMarks } from '@/shared/ui/windows/CoachMarks';
-import { Modal } from '@/shared/ui/windows/Modal';
 import { format } from '@/shared/lib/i18n/format';
 import problemTexts from '@/texts/en/problems.json';
 import texts from '@/texts/en/map.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import { districtFactsFor, panelContent, resolveOpenProblem } from './lib/mapState';
-import { MapFilters } from './components/MapFilters';
-import { PanelToggle } from './components/PanelToggle';
+import { panelContent } from './lib/mapState';
+import { MapFilters } from './components/filters/MapFilters';
+import { MapPanelsLayout } from './components/layout/MapPanelsLayout';
+import { MapSheetLayout } from './components/layout/MapSheetLayout';
+import { MapNotice } from './components/MapNotice';
+import { AuthRequiredModal } from './components/overlays/AuthRequiredModal';
+import { MapAttribution } from './components/overlays/MapAttribution';
+import { MapToast } from './components/overlays/MapToast';
+import { MapTooltip } from './components/overlays/MapTooltip';
 import { useFollowTooltip } from './hooks/useFollowTooltip';
 import { useDistrictsVisible } from './hooks/useDistrictsVisible';
 import { useHeightScale } from './hooks/useHeightScale';
 import { useMapTour } from './hooks/useMapTour';
 import { usePanelVisibility } from './hooks/usePanelVisibility';
+import { useMapPageAnimations } from './hooks/useMapPageAnimations';
+import { useMapPageData } from './hooks/useMapPageData';
 import { useToast } from './hooks/useToast';
 import cheerFigure from './assets/cheer.webp';
 import guideFigure from './assets/guide.webp';
 import styles from './MapPage.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
 
 const TOAST_MS = 3200;
 
@@ -63,18 +53,6 @@ const SHEET_SNAP = {
   'report:details': 'full',
 };
 
-function StatsIcon() {
-  return <Icon name="stats" size={16} className={styles.icon} />;
-}
-
-function BackIcon() {
-  return <Icon name="chevron-left" size={16} className={styles.icon} />;
-}
-
-function PinIcon() {
-  return <Icon name="pin" size={22} className={styles.icon} />;
-}
-
 // Одна страница, два вида одной 3D-карты (карта никогда не монтируется заново): вид «map»
 // (/map/:city, /map/:city/district/:slug) — живое настроение, проблемы, панель района; вид «stats»
 // (/map/:city/stats?period=) — дашборд города за месяц, год или все годы, нарисованный на районах.
@@ -89,7 +67,7 @@ export function MapPage({ view = 'map' }) {
   const navigate = useLocalizedNavigate();
   const go = useTransitionNavigate();
   const { user } = useAuth();
-  const { compact: sheetLayout, phoneNav } = useViewport();
+  const { compact: sheetLayout } = useViewport();
   const isStats = view === 'stats';
   const [period, setPeriod] = useState('day');
   const [layer, setLayer] = useState(problemId ? 'problems' : 'districts');
@@ -111,76 +89,47 @@ export function MapPage({ view = 'map' }) {
   const [districtsVisible, changeDistrictsVisible] = useDistrictsVisible();
 
   const requestedPeriod = searchParams.get('period');
-  const statsPeriod = STATS_PERIODS.some((p) => p.code === requestedPeriod)
+  const statsPeriod = STATS_PERIODS.some((option) => option.code === requestedPeriod)
     ? requestedPeriod
     : DEFAULT_STATS_PERIOD;
 
-  const { city, moods, problems } = useCityData(citySlug, period);
-  const cities = useRequest('cities', getCities);
-  useEffect(() => {
-    if (city.data?.slug) rememberCity(city.data.slug);
-  }, [city.data?.slug]);
+  const {
+    city,
+    moods,
+    problems,
+    cities,
+    stats,
+    cityStats,
+    problem,
+    problemMissing,
+    districts,
+    names,
+    overlay,
+    mapMoods,
+    districtFacts,
+    mapProblems,
+  } = useMapPageData({
+    citySlug,
+    districtSlug,
+    problemId,
+    isStats,
+    period,
+    statsPeriod,
+    metric,
+    problemUpdate,
+    userId: user?.id,
+  });
   // Переход страницы ждёт город и его настроения, прежде чем сложиться.
   useTransitionReady(Boolean(city.data && moods.data));
   const entered = usePageEntered();
-  const stats = useDistrictStats(isStats ? null : districtSlug, period);
-  // Открытая проблема живёт в адресе (/map/:city/problem/:id): ссылкой можно поделиться. Полная
-  // карточка (история статусов, «ваше сообщение») приходит отдельным запросом, а пока он идёт —
-  // хватает лёгкой версии из списка меток.
-  const linked = useRequest(
-    !isStats && problemId ? `problem:${problemId}:${user?.id ?? 'guest'}` : null,
-    () => getProblem(problemId),
-  );
-  const problem = resolveOpenProblem({
-    isStats,
-    problemId,
-    problemUpdate,
-    linked: linked.data,
-    problems: problems.data,
-  });
-  const cityStats = useCityStats(isStats ? citySlug : null, statsPeriod);
 
   const pageRef = useRef(null);
   const mapRef = useRef(null);
   const fadeRef = useRef(null);
-  const viewRef = useRef(view);
 
-  const districts = useMemo(
-    () =>
-      city.data?.districts.features.map((f) => ({
-        slug: f.properties.slug,
-        name: f.properties.name,
-        palette: f.properties.palette,
-      })) ?? [],
-    [city.data],
-  );
-  const names = useMemo(
-    () => Object.fromEntries(districts.map((d) => [d.slug, d.name])),
-    [districts],
-  );
   const nameOf = (slug) => names[slug] ?? '';
   const district =
     !isStats && districtSlug ? { slug: districtSlug, name: nameOf(districtSlug) } : null;
-
-  const overlay = useMemo(
-    () => (isStats ? mapOverlay(cityStats.data, metric) : null),
-    [isStats, cityStats.data, metric],
-  );
-  const statsMoodData = useMemo(() => statsMoods(cityStats.data), [cityStats.data]);
-  const mapMoods = isStats ? (statsMoodData ?? moods.data) : moods.data;
-
-  const districtFacts = useMemo(
-    () => districtFactsFor(districtSlug, city.data, moods.data),
-    [districtSlug, city.data, moods.data],
-  );
-
-  // Решённая давно проблема уже не на карте, но по прямой ссылке её метка должна появиться.
-  const mapProblems = useMemo(() => {
-    if (!problems.data || !problem || problems.data.some((p) => p.id === problem.id)) {
-      return problems.data;
-    }
-    return [...problems.data, problem];
-  }, [problems.data, problem]);
 
   const focusedRef = useRef(null);
   useEffect(() => {
@@ -192,8 +141,6 @@ export function MapPage({ view = 'map' }) {
     focusedRef.current = problem.id;
     mapRef.current?.focusProblem(problem);
   }, [problem]);
-
-  const problemMissing = Boolean(problemId && !problem && linked.error);
 
   // Подсказки при первом визите: когда карта уже показалась, а посетитель ещё ничего не открыл.
   const { tourOpen, tourSteps, openTour, finishTour } = useMapTour({
@@ -212,58 +159,15 @@ export function MapPage({ view = 'map' }) {
   const contentKey = `${content}:${districtSlug ?? ''}:${problem?.id ?? ''}`;
   const sheetSnap = sheetChoice.key === contentKey ? sheetChoice.snap : SHEET_SNAP[content];
   const { leftHidden, rightHidden, toggleLeft, toggleRight } = usePanelVisibility(contentKey);
-  const unit = 16 * rootScale();
 
-  // Панели выезжают, когда страница видна (после перехода страницы, если он был).
-  useGSAP(
-    () => {
-      if (!entered) return;
-      gsap.to(fadeRef.current, { autoAlpha: 0, duration: 0.9, ease: 'power2.out' });
-      // clearProps: GSAP оставляет в стиле `translate: none`, а скрытую панель за край экрана
-      // уводит CSS-свойство translate.
-      gsap.from('[data-panel="left"]', {
-        x: -60,
-        autoAlpha: 0,
-        duration: 1,
-        ease: 'expo.out',
-        delay: 0.9,
-        clearProps: 'all',
-      });
-      gsap.from('[data-panel="right"]', {
-        x: 60,
-        autoAlpha: 0,
-        duration: 1,
-        ease: 'expo.out',
-        delay: 1.05,
-        clearProps: 'all',
-      });
-      // clearProps: после анимации элементами снова управляет CSS («+» прячется, пока сообщают о
-      // проблеме, чип центрируется своим transform).
-      gsap.from('[data-panel="bottom"], [data-panel="corner"], [data-panel="float"]', {
-        y: 40,
-        autoAlpha: 0,
-        duration: 0.8,
-        ease: 'expo.out',
-        delay: 1.3,
-        clearProps: 'transform,opacity,visibility',
-      });
-    },
-    { scope: pageRef, dependencies: [entered] },
-  );
-
-  // Переключение между картой и дашбордом: содержимое панелей поднимается.
-  useGSAP(
-    () => {
-      if (viewRef.current === view) return;
-      viewRef.current = view;
-      gsap.fromTo(
-        '[data-panel] > [data-panel-body] > *',
-        { autoAlpha: 0, y: 16 },
-        { autoAlpha: 1, y: 0, duration: 0.55, stagger: 0.05, ease: 'power3.out' },
-      );
-    },
-    { scope: pageRef, dependencies: [view] },
-  );
+  // Что в панели — без шага формы «Сообщить о проблеме» (шаги она анимирует сама) и без фокуса района
+  // на дашборде: смена ключа поднимает новое содержимое панели.
+  const detailKey = isStats
+    ? 'stats'
+    : report
+      ? 'report'
+      : `${content}:${districtSlug ?? ''}:${problem?.id ?? ''}`;
+  useMapPageAnimations({ pageRef, fadeRef, entered, view, detailKey });
 
   // Боковые панели: камера снова смотрит на весь экран.
   useEffect(() => {
@@ -403,8 +307,8 @@ export function MapPage({ view = 'map' }) {
   );
 
   const filterSummary = isStats
-    ? `${STATS_PERIODS.find((p) => p.code === statsPeriod).label} · ${texts.stats.metrics[metric]}`
-    : `${MOOD_PERIODS.find((p) => p.code === period).label} · ${texts.layers[layer]}`;
+    ? `${STATS_PERIODS.find((option) => option.code === statsPeriod).label} · ${texts.stats.metrics[metric]}`
+    : `${MOOD_PERIODS.find((option) => option.code === period).label} · ${texts.layers[layer]}`;
 
   // Панель для текущего состояния — одно и то же содержимое в боковой панели или в шторке.
   let detail;
@@ -435,16 +339,17 @@ export function MapPage({ view = 'map' }) {
     );
   } else if (problemMissing) {
     detail = (
-      <div className={styles.overview} data-ui="map-detail">
-        <div data-sheet-drag>
-          <p className={styles.kicker}>{problemTexts.card.label}</p>
-          <h2 className={styles.subheading}>{problemTexts.card.notFoundTitle}</h2>
-        </div>
-        <p className={styles.footnote}>{problemTexts.card.notFound}</p>
-        <Button variant="ghost" onClick={closeProblem}>
-          {problemTexts.card.backToMap}
-        </Button>
-      </div>
+      <MapNotice
+        dataUi="map-detail"
+        kicker={problemTexts.card.label}
+        title={problemTexts.card.notFoundTitle}
+        note={problemTexts.card.notFound}
+        action={
+          <Button variant="ghost" onClick={closeProblem}>
+            {problemTexts.card.backToMap}
+          </Button>
+        }
+      />
     );
   } else if (problem) {
     detail = (
@@ -485,43 +390,16 @@ export function MapPage({ view = 'map' }) {
     );
   } else {
     detail = (
-      <div className={styles.overview} data-ui="map-overview">
-        <div data-sheet-drag>
-          <p className={styles.kicker}>{texts.overview.kicker}</p>
-          <h2 className={styles.subheading}>{texts.overview.title}</h2>
-        </div>
+      <MapNotice
+        dataUi="map-overview"
+        kicker={texts.overview.kicker}
+        title={texts.overview.title}
+        note={texts.overview.hint}
+      >
         <DistrictRanking districts={districts} moods={moods.data} onSelect={selectDistrict} />
-        <p className={styles.footnote}>{texts.overview.hint}</p>
-      </div>
+      </MapNotice>
     );
   }
-
-  const fabActions = isStats
-    ? []
-    : [
-        {
-          key: 'mood',
-          primary: true,
-          label: texts.actions.markMood,
-          hint: texts.fab.markMoodHint,
-          icon: <MoodFace mood="good" size={24} label="" />,
-          onSelect: openMoodPicker,
-        },
-        {
-          key: 'problem',
-          label: texts.actions.reportProblem,
-          hint: texts.fab.reportHint,
-          icon: <PinIcon />,
-          onSelect: reportProblem,
-        },
-        {
-          key: 'stats',
-          label: texts.statsLink.open,
-          hint: texts.fab.statsHint,
-          icon: <StatsIcon />,
-          onSelect: openStats,
-        },
-      ];
 
   return (
     <div
@@ -551,136 +429,48 @@ export function MapPage({ view = 'map' }) {
       />
 
       {sheetLayout ? (
-        <>
-          <FilterChip summary={filterSummary}>{filters}</FilterChip>
-          <MapFab
-            actions={fabActions}
-            onRecenter={() => mapRef.current?.recenter()}
-            hidden={sheetSnap === 'full' || report}
-          />
-          <BottomSheet
-            snap={sheetSnap}
-            onSnapChange={(snap) => setSheetChoice({ key: contentKey, snap })}
-            onInset={onSheetInset}
-            label={texts.sheet.label}
-            toggleLabel={texts.sheet.toggle}
-            peek={Math.round((content === 'report:place' ? 15 : 6) * unit)}
-            top={Math.round((phoneNav ? 4.5 : 5.75) * unit)}
-          >
-            {detail}
-          </BottomSheet>
-        </>
+        <MapSheetLayout
+          filters={filters}
+          filterSummary={filterSummary}
+          detail={detail}
+          content={content}
+          isStats={isStats}
+          report={report}
+          snap={sheetSnap}
+          onSnapChange={(snap) => setSheetChoice({ key: contentKey, snap })}
+          onInset={onSheetInset}
+          onRecenter={() => mapRef.current?.recenter()}
+          onMarkMood={openMoodPicker}
+          onReportProblem={reportProblem}
+          onOpenStats={openStats}
+        />
       ) : (
-        <>
-          <aside
-            className={`${styles.panel} ${styles.left}`}
-            data-panel="left"
-            data-ui="map-panel-left"
-            data-hidden={leftHidden || undefined}
-            aria-label={texts.filtersLabel}
-          >
-            <div
-              id="map-panel-left"
-              className={styles.leftBody}
-              data-panel-body
-              data-ui="map-panel-left-body"
-              inert={leftHidden || undefined}
-            >
-              {filters}
-            </div>
-            <PanelToggle
-              side="left"
-              hidden={leftHidden}
-              controls="map-panel-left"
-              label={leftHidden ? texts.panels.showLeft : texts.panels.hideLeft}
-              onToggle={toggleLeft}
-            />
-          </aside>
-
-          <aside
-            className={`${styles.panel} ${styles.right} ${isStats ? styles.wide : ''}`}
-            data-panel="right"
-            data-hidden={rightHidden || undefined}
-            aria-live="polite"
-          >
-            <div
-              id="map-panel-right"
-              className={styles.rightBody}
-              data-panel-body
-              inert={rightHidden || undefined}
-            >
-              {detail}
-            </div>
-            <PanelToggle
-              side="right"
-              hidden={rightHidden}
-              controls="map-panel-right"
-              label={rightHidden ? texts.panels.showRight : texts.panels.hideRight}
-              onToggle={toggleRight}
-            />
-          </aside>
-
-          {!report && (
-            <div className={styles.corner} data-panel="corner">
-              {isStats ? (
-                <Button variant="ghost" onClick={closeStats}>
-                  <BackIcon />
-                  {texts.statsLink.back}
-                </Button>
-              ) : (
-                <Button variant="ghost" onClick={openStats} title={texts.statsLink.openLabel}>
-                  <StatsIcon />
-                  {texts.statsLink.open}
-                </Button>
-              )}
-            </div>
-          )}
-
-          {!report && !isStats && (
-            <div className={styles.actionBar} data-panel="bottom">
-              {!user && (
-                <span className={styles.guestNote} data-ui="map-guest-note">
-                  {texts.actions.guestNote}
-                </span>
-              )}
-              <Button size="sm" variant="ghost" onClick={openMoodPicker} data-onboarding="mood">
-                {texts.actions.markMood}
-              </Button>
-              <Button size="sm" onClick={reportProblem} data-onboarding="report">
-                {texts.actions.reportProblem}
-              </Button>
-              {!user && (
-                <Button size="sm" variant="ghost" onClick={() => go('/login')}>
-                  {texts.actions.login}
-                </Button>
-              )}
-            </div>
-          )}
-        </>
+        <MapPanelsLayout
+          filters={filters}
+          detail={detail}
+          isStats={isStats}
+          report={report}
+          isGuest={!user}
+          leftHidden={leftHidden}
+          rightHidden={rightHidden}
+          onToggleLeft={toggleLeft}
+          onToggleRight={toggleRight}
+          onOpenStats={openStats}
+          onCloseStats={closeStats}
+          onMarkMood={openMoodPicker}
+          onReportProblem={reportProblem}
+          onLogin={() => go('/login')}
+        />
       )}
 
       {hover && !sheetLayout && (
-        <div ref={tooltipRef} className={styles.tooltip} role="tooltip">
-          {hover.kind === 'district' ? (
-            <>
-              <MoodFace
-                mood={
-                  hoveredMood && !hoveredMood.insufficient_data
-                    ? moodCodeForScore(hoveredMood.score)
-                    : null
-                }
-                size={22}
-                label=""
-              />
-              <span>{nameOf(hover.slug)}</span>
-              {hoveredValue && <span className={styles.tooltipValue}>{hoveredValue}</span>}
-            </>
-          ) : (
-            <span>
-              {CATEGORY_BY_CODE[hover.problem.category].label} · {nameOf(hover.problem.district)}
-            </span>
-          )}
-        </div>
+        <MapTooltip
+          ref={tooltipRef}
+          hover={hover}
+          mood={hoveredMood}
+          value={hoveredValue}
+          names={names}
+        />
       )}
 
       {pickerOpen && (
@@ -693,17 +483,11 @@ export function MapPage({ view = 'map' }) {
       )}
 
       {authReason && (
-        <Modal title={texts.authModal.title} onClose={() => setAuthReason(null)} width={420}>
-          <p className={styles.modalText}>{authReason}</p>
-          <div className={styles.modalActions}>
-            <Button block onClick={() => go('/register')}>
-              {texts.authModal.register}
-            </Button>
-            <Button block variant="ghost" onClick={() => go('/login')}>
-              {texts.authModal.login}
-            </Button>
-          </div>
-        </Modal>
+        <AuthRequiredModal
+          reason={authReason}
+          onClose={() => setAuthReason(null)}
+          onNavigate={go}
+        />
       )}
 
       {tourOpen && (
@@ -715,28 +499,9 @@ export function MapPage({ view = 'map' }) {
         />
       )}
 
-      {toast && (
-        <p className={styles.toast} role="status" data-ui="map-toast">
-          {toast.figure && (
-            <img
-              className={styles.toastFigure}
-              src={toast.figure}
-              width="256"
-              height="256"
-              alt=""
-              draggable="false"
-            />
-          )}
-          {toast.text}
-        </p>
-      )}
+      {toast && <MapToast toast={toast} />}
 
-      <p className={styles.attribution} data-ui="map-attribution">
-        {texts.attribution.prefix}{' '}
-        <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">
-          {texts.attribution.osm}
-        </a>
-      </p>
+      <MapAttribution />
 
       <div ref={fadeRef} className={styles.fade} aria-hidden="true" />
     </div>

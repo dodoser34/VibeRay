@@ -10,6 +10,7 @@ import { trackInputModality } from '@/app/lib/inputModality';
 import { registerServiceWorker } from '@/app/lib/serviceWorker';
 import { prefetchPages, router } from '@/app/routing/router';
 import { canPrefetch } from '@/adaptations/core';
+import { installPressFeedback } from '@/shared/animations/controls/pressFeedback';
 import '@/shared/animations/core/gsapSetup';
 import '@/styles/tokens.css';
 import '@/styles/themes/dark.css';
@@ -20,6 +21,7 @@ import '@/styles/global.css';
 import '@/adaptations/index.css';
 
 trackInputModality();
+installPressFeedback();
 registerServiceWorker();
 
 // После загрузки, когда браузер свободен, — остальные страницы в кэш (не на медленной сети).
@@ -27,7 +29,7 @@ window.addEventListener(
   'load',
   () => {
     if (!canPrefetch()) return;
-    const idle = window.requestIdleCallback ?? ((fn) => setTimeout(fn, 1500));
+    const idle = window.requestIdleCallback ?? ((callback) => setTimeout(callback, 1500));
     idle(prefetchPages);
   },
   { once: true },

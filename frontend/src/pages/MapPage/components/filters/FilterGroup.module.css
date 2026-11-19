@@ -1,0 +1,10 @@
+.group {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.hint {
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+  line-height: 1.5;
+}

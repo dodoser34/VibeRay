@@ -58,7 +58,7 @@ export class MapVectors {
   setResolution(width, height) {
     this.resolution.set(width, height);
     this.chunks.forEach((chunk) =>
-      chunk.materials?.forEach((m) => m.resolution.set(width, height)),
+      chunk.materials?.forEach((material) => material.resolution.set(width, height)),
     );
   }
 

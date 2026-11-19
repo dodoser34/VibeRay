@@ -8,7 +8,7 @@ import { gsap } from '../core/gsapSetup';
 // контекстом; возвращает функцию очистки.
 export function revealOnScroll(
   elements,
-  { contextSafe = (fn) => fn, y = 40, duration = 0.9, share = 0.15 } = {},
+  { contextSafe = (callback) => callback, y = 40, duration = 0.9, share = 0.15 } = {},
 ) {
   gsap.set(elements, { y, autoAlpha: 0 });
   const observer = new IntersectionObserver(

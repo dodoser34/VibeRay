@@ -1,10 +1,9 @@
-import { MoodFace } from '@/features/mood';
+import { useRef } from 'react';
 import { ProblemListItem } from '@/features/problems';
-import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
+import { useRiseOnLoad } from '@/shared/animations/effects/useRiseOnLoad';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { format } from '@/shared/lib/i18n/format';
-import { formatNumber, formatSigned, percentOf } from '@/shared/lib/i18n/formatNumber';
-import { plural } from '@/shared/lib/i18n/plural';
+import { percentOf } from '@/shared/lib/i18n/formatNumber';
 import { Button } from '@/shared/ui/controls/Button';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { BarList } from '@/shared/ui/charts/BarList';
@@ -12,8 +11,9 @@ import texts from '@/texts/en/stats.json';
 import { MoodChart } from '../common/MoodChart';
 import { MoodDistribution } from '../common/MoodDistribution';
 import { StatusBreakdown } from '../common/StatusBreakdown';
+import { MoodSummary } from './MoodSummary';
 import styles from './DistrictPanel.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
+import { CloseButton } from '@/shared/ui/controls/CloseButton';
 
 const PERIOD_LABEL = texts.periods;
 // Разница меньше этой читается как «так же» (оценки в диапазоне −2…+2).
@@ -23,56 +23,8 @@ const SAME_SCORE = 0.1;
 function moodTrend(series) {
   const scored = series.filter((point) => point.score !== null);
   if (scored.length < 4) return 0;
-  const average = (points) => points.reduce((sum, p) => sum + p.score, 0) / points.length;
+  const average = (points) => points.reduce((sum, point) => sum + point.score, 0) / points.length;
   return average(scored.slice(-3)) - average(scored.slice(0, 3));
-}
-
-function MoodSummary({ mood, period, cityAverage }) {
-  if (mood.insufficient_data) {
-    return (
-      <div className={styles.mood}>
-        <MoodFace mood={null} size={64} />
-        <div>
-          <p className={styles.moodLabel}>{texts.fewMarks}</p>
-          <p className={styles.moodMeta}>{texts.fewMarksNote}</p>
-        </div>
-      </div>
-    );
-  }
-  const code = moodCodeForScore(mood.score);
-  const delta = cityAverage === null ? null : mood.score - cityAverage;
-  let compare = null;
-  if (delta !== null) {
-    if (Math.abs(delta) < SAME_SCORE) compare = texts.compare.same;
-    else
-      compare = format(delta > 0 ? texts.compare.above : texts.compare.below, {
-        delta: Math.abs(delta).toFixed(1),
-      });
-  }
-  return (
-    <div className={styles.mood}>
-      <MoodFace mood={code} size={64} />
-      <div className={styles.moodText}>
-        <p className={styles.moodLabel}>
-          {MOOD_BY_CODE[code].label}
-          <span className={styles.score}>{formatSigned(mood.score)}</span>
-        </p>
-        <p className={styles.moodMeta}>
-          {format(texts.moodMeta, {
-            count: formatNumber(mood.sample_size),
-            marks: plural(mood.sample_size, texts.marks),
-            period: PERIOD_LABEL[period],
-            mood: MOOD_BY_CODE[mood.dominant_mood].label.toLowerCase(),
-          })}
-        </p>
-        {compare && (
-          <p className={styles.compare} data-direction={delta > 0 ? 'up' : 'down'}>
-            {compare}
-          </p>
-        )}
-      </div>
-    </div>
-  );
 }
 
 // facts: { rank, rankTotal, cityAverage, areaKm2 } — считает страница карты по всем районам.
@@ -91,6 +43,8 @@ export function DistrictPanel({
   const trend = stats ? moodTrend(stats.series) : 0;
   const trendKey = Math.abs(trend) < SAME_SCORE ? 'flat' : trend > 0 ? 'up' : 'down';
   const problemsTotal = stats?.problems.total ?? 0;
+  const bodyRef = useRef(null);
+  useRiseOnLoad(bodyRef, loading);
 
   return (
     <section
@@ -120,21 +74,13 @@ export function DistrictPanel({
             </p>
           )}
         </div>
-        <button
-          type="button"
-          className={styles.close}
-          data-ui="panel-close"
-          onClick={onClose}
-          aria-label={texts.close}
-        >
-          <Icon name="close" size={14} />
-        </button>
+        <CloseButton label={texts.close} onClick={onClose} />
       </header>
 
       {!stats ? (
         <div className={styles.skeleton} aria-label={texts.loading} />
       ) : (
-        <div className={styles.body} data-loading={loading}>
+        <div ref={bodyRef} className={styles.body} data-loading={loading}>
           <MoodSummary mood={stats.mood} period={period} cityAverage={facts?.cityAverage ?? null} />
           {!stats.mood.insufficient_data && (
             <div className={styles.block}>

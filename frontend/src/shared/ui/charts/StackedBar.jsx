@@ -14,7 +14,7 @@ export function StackedBar({ segments, label, height = 8 }) {
     offset: shares.slice(0, i).reduce((sum, share) => sum + share, 0),
   }));
   const dividers = parts.filter(
-    (part, i) => part.share > 0 && parts.slice(0, i).some((p) => p.share > 0),
+    (part, i) => part.share > 0 && parts.slice(0, i).some((previous) => previous.share > 0),
   );
 
   return (

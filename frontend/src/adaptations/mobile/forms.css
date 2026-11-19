@@ -19,6 +19,6 @@
 
   /* Семь настроений: по три в ряд, чтобы лица и подписи были удобны для пальца */
   :root [data-ui='mood-grid'] {
-    grid-template-columns: repeat(3, 1fr);
+    --columns: 3;
   }
 }

@@ -36,7 +36,7 @@ import {
   isDistrict,
   loadCity,
   problems,
-} from './generate';
+} from './demoHistory';
 import {
   addConfirmations,
   claimProblem,
@@ -77,7 +77,7 @@ const supportRequests = demoSupport.map(({ hours_ago: hoursAgo, ...request }, i)
 const confirmations = new Map(); // id проблемы → Set id пользователей
 const MAP_RECENT_MS = 30 * 24 * 3_600_000; // решённые проблемы остаются на карте 30 дней
 
-const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 
 // Сообщения берутся из src/texts/<язык>/errors.json по ключу (ключ — код ошибки, если не задан другой).
 function fail(status, code, messageKey = code, values = {}) {
@@ -137,7 +137,7 @@ async function cityOrFail(slug) {
 }
 
 function findProblem(id, token) {
-  const problem = problems.find((p) => p.id === id);
+  const problem = problems.find((problem) => problem.id === id);
   const email = sessions.get(token);
   const user = email && accounts.get(email)?.user;
   const hidden = problem?.status === 'rejected' && !(user && isAuthor(problem, user));
@@ -439,7 +439,9 @@ const routes = [
       const files = body.getAll('files');
       if (files.length > SUPPORT_MAX_FILES) fail(422, 'too_many_files');
       if (
-        files.some((f) => !SUPPORT_FILE_TYPES.includes(f.type) || f.size > SUPPORT_FILE_MAX_BYTES)
+        files.some(
+          (file) => !SUPPORT_FILE_TYPES.includes(file.type) || file.size > SUPPORT_FILE_MAX_BYTES,
+        )
       ) {
         fail(422, 'invalid_file');
       }
@@ -482,17 +484,17 @@ const routes = [
       if (query.city) await cityOrFail(query.city);
       return problems
         .filter(
-          (p) =>
-            p.status !== 'rejected' &&
-            (!query.city || cityOfDistrict(p.district) === query.city) &&
-            (!query.district || p.district === query.district) &&
-            (!query.category || p.category === query.category) &&
+          (problem) =>
+            problem.status !== 'rejected' &&
+            (!query.city || cityOfDistrict(problem.district) === query.city) &&
+            (!query.district || problem.district === query.district) &&
+            (!query.category || problem.category === query.category) &&
             (query.status
-              ? p.status === query.status
-              : p.status !== 'resolved' ||
-                Date.now() - new Date(p.created_at).getTime() < MAP_RECENT_MS),
+              ? problem.status === query.status
+              : problem.status !== 'resolved' ||
+                Date.now() - new Date(problem.created_at).getTime() < MAP_RECENT_MS),
         )
-        .map((p) => withoutHiddenAuthor(p, null));
+        .map((problem) => withoutHiddenAuthor(problem, null));
     },
   ],
   [
@@ -517,7 +519,7 @@ const routes = [
     /^\/problems\/([\w-]+)\/status$/,
     ({ params, body, token }) => {
       requireModerator(token);
-      const problem = problems.find((p) => p.id === params[0]);
+      const problem = problems.find((problem) => problem.id === params[0]);
       if (!problem) fail(404, 'problem_not_found');
       if (!MODERATOR_TRANSITIONS[problem.status]?.includes(body.status)) {
         fail(409, 'invalid_status_change');
@@ -526,7 +528,9 @@ const routes = [
       if (body.status === 'rejected') {
         if (!REJECTION_REASON_BY_CODE[body.reason]) fail(422, 'invalid_reason');
         if (body.duplicate_of) {
-          duplicateOf = problems.find((p) => p.id === body.duplicate_of && p !== problem);
+          duplicateOf = problems.find(
+            (candidate) => candidate.id === body.duplicate_of && candidate !== problem,
+          );
           if (!duplicateOf) fail(404, 'problem_not_found');
         }
       }
@@ -547,7 +551,7 @@ const routes = [
     /^\/moderation\/support-requests\/([\w-]+)$/,
     ({ params, body, token }) => {
       requireModerator(token);
-      const request = supportRequests.find((r) => r.id === params[0]);
+      const request = supportRequests.find((request) => request.id === params[0]);
       if (!request) fail(404, 'not_found', 'not_found', { method: 'PATCH', path: params[0] });
       if (!SUPPORT_REQUEST_STATUSES.some((status) => status.code === body.status)) {
         fail(422, 'invalid_status_change');

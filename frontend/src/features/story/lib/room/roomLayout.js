@@ -16,13 +16,13 @@ export const SCREEN = {
 // накрывает кадр по центру с запасом cover, а 3D-город рисуется во весь кадр — поэтому рамка первого
 // кадра города переводится в координаты рисунка экрана, и карта переходит в 3D на месте.
 export function monitorMapBox([minX, minY, , viewHeight], width, height, cover) {
-  const [w, h] = SCREEN.size;
-  const scale = Math.max(width / w, height / h) * cover;
+  const [screenWidth, screenHeight] = SCREEN.size;
+  const scale = Math.max(width / screenWidth, height / screenHeight) * cover;
   const kmPerPx = viewHeight / height;
   return [
-    minX + (width / 2 - (w / 2) * scale) * kmPerPx,
-    minY + (height / 2 - (h / 2) * scale) * kmPerPx,
-    w * scale * kmPerPx,
-    h * scale * kmPerPx,
+    minX + (width / 2 - (screenWidth / 2) * scale) * kmPerPx,
+    minY + (height / 2 - (screenHeight / 2) * scale) * kmPerPx,
+    screenWidth * scale * kmPerPx,
+    screenHeight * scale * kmPerPx,
   ];
 }

@@ -1,8 +1,8 @@
 import { moodFill } from '@/features/map';
 import { MOOD_PERIODS } from '@/shared/config/periods';
-import { useCityOutline } from '@/shared/hooks/useCityOutline';
+import { useCityOutline } from '../hooks/useCityOutline';
 import { STORY_EXTENT } from '../lib/storyCity';
-import styles from './StoryGuide.module.css';
+import styles from './GuideMap.module.css';
 
 const PINS = 36;
 // Декоративная линия тренда для шага «статистика» (не настоящие данные). viewBox близок к реальным
@@ -52,7 +52,7 @@ export function GuideMap({ city, moods, problems, focus, step }) {
 
       <p className={styles.mapLabel}>
         <span className={styles.mapDot} />
-        {map.districts.find((d) => d.slug === focus)?.name}
+        {map.districts.find((district) => district.slug === focus)?.name}
       </p>
 
       <div className={styles.trend}>

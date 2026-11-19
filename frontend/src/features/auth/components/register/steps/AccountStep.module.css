@@ -1,0 +1,30 @@
+/* Шаг email: что даёт аккаунт */
+.perks {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+}
+
+.perk {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  line-height: 1.35;
+}
+
+.perkIcon {
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  fill: none;
+  stroke: var(--color-accent-bright);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

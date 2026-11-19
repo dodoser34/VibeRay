@@ -3,7 +3,7 @@ import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useTheme } from '@/shared/hooks/useTheme';
-import { EDGE, SHEET_H as H, SHEET_W as W } from '../lib/sheetEdge';
+import { EDGE, SHEET_H as sheetHeight, SHEET_W as sheetWidth } from '../lib/sheetEdge';
 import { createSheetTexture, TILE } from '../lib/sheetTexture';
 import styles from './FrontLayer.module.css';
 
@@ -15,10 +15,10 @@ const THICKNESS = `M 150 0 C 428 34 602 126 654 336 C 704 548 774 730 968 802 C 
 
 // «Водопад наоборот»: лист натекает из правого нижнего угла к левому верхнему. Фронт потока — линия
 // поперёк этой диагонали, впереди которой бегут струи.
-const LENGTH = Math.hypot(W, H);
-const DIR = [-W / LENGTH, -H / LENGTH]; // снизу справа → вверх влево
+const LENGTH = Math.hypot(sheetWidth, sheetHeight);
+const DIR = [-sheetWidth / LENGTH, -sheetHeight / LENGTH]; // снизу справа → вверх влево
 const ACROSS = [-DIR[1], DIR[0]];
-const HALF_SPAN = (W * H) / LENGTH; // расстояние от диагонали до дальних углов
+const HALF_SPAN = (sheetWidth * sheetHeight) / LENGTH; // расстояние от диагонали до дальних углов
 const STREAM = 440; // насколько самые длинные струи опережают фронт
 const STEPS = 160;
 
@@ -28,16 +28,16 @@ function flowPath(progress, time) {
   const front = [];
   const back = [];
   for (let i = 0; i <= STEPS; i++) {
-    const s = -HALF_SPAN - 40 + ((2 * HALF_SPAN + 80) * i) / STEPS;
+    const diagonalOffset = -HALF_SPAN - 40 + ((2 * HALF_SPAN + 80) * i) / STEPS;
     // Несколько наложенных волн → неровные струи разной ширины, которые смещаются вбок.
     const wave =
-      0.5 * Math.sin(s * 0.009 + time * 1.4) +
-      0.32 * Math.sin(s * 0.023 - time * 2.1 + 1.3) +
-      0.18 * Math.sin(s * 0.052 + time * 2.9 + 0.4);
+      0.5 * Math.sin(diagonalOffset * 0.009 + time * 1.4) +
+      0.32 * Math.sin(diagonalOffset * 0.023 - time * 2.1 + 1.3) +
+      0.18 * Math.sin(diagonalOffset * 0.052 + time * 2.9 + 0.4);
     const lead = Math.max(0, wave + 0.15) ** 1.3; // скруглённые кончики, плоские промежутки
     const advance = Math.max(0, base - STREAM * (1 - lead * calm) * calm - STREAM * (1 - calm));
-    const x = W + ACROSS[0] * s;
-    const y = H + ACROSS[1] * s;
+    const x = sheetWidth + ACROSS[0] * diagonalOffset;
+    const y = sheetHeight + ACROSS[1] * diagonalOffset;
     front.push(`${(x + DIR[0] * advance).toFixed(1)} ${(y + DIR[1] * advance).toFixed(1)}`);
     back.unshift(`${(x - DIR[0] * 40).toFixed(1)} ${(y - DIR[1] * 40).toFixed(1)}`);
   }
@@ -112,7 +112,7 @@ export function FrontLayer({ className = '' }) {
     <svg
       ref={rootRef}
       className={`${styles.root} ${className}`}
-      viewBox={`0 0 ${W} ${H}`}
+      viewBox={`0 0 ${sheetWidth} ${sheetHeight}`}
       preserveAspectRatio="none"
       aria-hidden="true"
     >
@@ -144,11 +144,11 @@ export function FrontLayer({ className = '' }) {
           maskUnits="userSpaceOnUse"
           x="0"
           y="0"
-          width={W}
-          height={H}
+          width={sheetWidth}
+          height={sheetHeight}
           style={{ maskType: 'alpha' }}
         >
-          <rect width={W} height={H} fill={`url(#shade-fade-${uid})`} />
+          <rect width={sheetWidth} height={sheetHeight} fill={`url(#shade-fade-${uid})`} />
         </mask>
         {/* мягкий свет сверху слева: лист читается как освещённая поверхность, а не плоская
            заливка */}

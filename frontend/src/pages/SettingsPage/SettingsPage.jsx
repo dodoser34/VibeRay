@@ -21,9 +21,9 @@ export function SettingsPage() {
 
   const districts = useMemo(
     () =>
-      city.data?.districts.features.map((f) => ({
-        slug: f.properties.slug,
-        name: f.properties.name,
+      city.data?.districts.features.map((feature) => ({
+        slug: feature.properties.slug,
+        name: feature.properties.name,
       })) ?? null,
     [city.data],
   );

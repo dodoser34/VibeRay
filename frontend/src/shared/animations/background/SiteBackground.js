@@ -39,23 +39,25 @@ const COLOR_TOKENS = {
 // Улучшенный шум Перлина (3D) с фиксированным зерном, поэтому неподвижный кадр всегда одинаковый.
 const PERM = new Uint8Array(512);
 {
-  const p = Array.from({ length: 256 }, (_, i) => i);
+  const permutation = Array.from({ length: 256 }, (_, i) => i);
   let seed = 90210;
-  const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const random = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
   for (let i = 255; i > 0; i--) {
-    const j = Math.floor(rnd() * (i + 1));
-    [p[i], p[j]] = [p[j], p[i]];
+    const j = Math.floor(random() * (i + 1));
+    [permutation[i], permutation[j]] = [permutation[j], permutation[i]];
   }
-  for (let i = 0; i < 512; i++) PERM[i] = p[i & 255];
+  for (let i = 0; i < 512; i++) PERM[i] = permutation[i & 255];
 }
 const fade = (t) => t * t * t * (t * (t * 6 - 15) + 10);
-const lerp = (a, b, t) => a + (b - a) * t;
+const lerp = (from, to, t) => from + (to - from) * t;
 const grad = (hash, x, y, z) => {
   const u = hash < 8 ? x : y;
   const v = hash < 4 ? y : hash === 12 || hash === 14 ? x : z;
   return (hash & 1 ? -u : u) + (hash & 2 ? -v : v);
 };
 
+// Обозначения — как в эталонной реализации Перлина (2002): X, Y, Z — ячейка решётки, x, y, z — точка
+// внутри неё, u, v, w — сглаженные доли, A…BB — хеши углов ячейки.
 function noise3(x, y, z) {
   let X = Math.floor(x);
   let Y = Math.floor(y);
@@ -94,13 +96,17 @@ function noise3(x, y, z) {
   );
 }
 
-const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
+const clamp = (value, low, high) => (value < low ? low : value > high ? high : value);
 const smooth = (t) => {
   t = clamp(t, 0, 1);
   return t * t * (3 - 2 * t);
 };
-const mix = (a, b, t) => [lerp(a[0], b[0], t), lerp(a[1], b[1], t), lerp(a[2], b[2], t)];
-const rgba = (c, a) => `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${a})`;
+const mix = (from, to, t) => [
+  lerp(from[0], to[0], t),
+  lerp(from[1], to[1], t),
+  lerp(from[2], to[2], t),
+];
+const rgba = (color, alpha) => `rgba(${color[0] | 0},${color[1] | 0},${color[2] | 0},${alpha})`;
 
 function parseColor(value) {
   if (value.startsWith('rgb'))
@@ -109,36 +115,36 @@ function parseColor(value) {
       .slice(0, 3)
       .map(Number);
   let hex = value.replace('#', '');
-  if (hex.length === 3) hex = [...hex].map((c) => c + c).join('');
-  const n = parseInt(hex.slice(0, 6), 16);
-  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  if (hex.length === 3) hex = [...hex].map((digit) => digit + digit).join('');
+  const packed = parseInt(hex.slice(0, 6), 16);
+  return [(packed >> 16) & 255, (packed >> 8) & 255, packed & 255];
 }
 
 export class SiteBackground {
   constructor(canvas) {
     this.canvas = canvas;
-    this.ctx = canvas.getContext('2d');
-    this.w = 0;
-    this.h = 0;
-    this.dpr = 1;
-    this.t = 0;
-    this.px = 0;
-    this.py = 0;
-    this.ptx = 0;
-    this.pty = 0;
+    this.context = canvas.getContext('2d');
+    this.width = 0;
+    this.height = 0;
+    this.pixelRatio = 1;
+    this.time = 0;
+    this.offsetX = 0;
+    this.offsetY = 0;
+    this.targetOffsetX = 0;
+    this.targetOffsetY = 0;
     this.ripples = [];
     this.dust = [];
     this.field = null;
     this.running = false;
-    this.raf = 0;
-    this.last = 0;
+    this.frameRequest = 0;
+    this.lastFrameTime = 0;
     this.motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     this.tick = this.tick.bind(this);
     this.onPointer = (event) => {
-      if (!this.w) return;
-      this.ptx = clamp((event.clientX / this.w - 0.5) * 2, -1, 1);
-      this.pty = clamp((event.clientY / this.h - 0.5) * 2, -1, 1);
+      if (!this.width) return;
+      this.targetOffsetX = clamp((event.clientX / this.width - 0.5) * 2, -1, 1);
+      this.targetOffsetY = clamp((event.clientY / this.height - 0.5) * 2, -1, 1);
     };
     this.onVisibility = () => (document.hidden ? this.cancel() : this.schedule());
     this.onMotionPref = () => this.applyMode();
@@ -170,7 +176,7 @@ export class SiteBackground {
   }
 
   get isMobile() {
-    return this.w < MOBILE_WIDTH;
+    return this.width < MOBILE_WIDTH;
   }
 
   start() {
@@ -210,54 +216,54 @@ export class SiteBackground {
   }
 
   schedule() {
-    if (this.running && !this.raf && !document.hidden && !this.isStatic) {
-      this.last = performance.now();
-      this.raf = requestAnimationFrame(this.tick);
+    if (this.running && !this.frameRequest && !document.hidden && !this.isStatic) {
+      this.lastFrameTime = performance.now();
+      this.frameRequest = requestAnimationFrame(this.tick);
     }
   }
 
   cancel() {
-    if (this.raf) cancelAnimationFrame(this.raf);
-    this.raf = 0;
+    if (this.frameRequest) cancelAnimationFrame(this.frameRequest);
+    this.frameRequest = 0;
   }
 
   tick(now) {
-    this.raf = requestAnimationFrame(this.tick);
-    const elapsed = now - this.last;
+    this.frameRequest = requestAnimationFrame(this.tick);
+    const elapsed = now - this.lastFrameTime;
     if (elapsed < 1000 / FPS - 2) return; // медленному движению хватает 30 fps
-    this.last = now;
+    this.lastFrameTime = now;
     this.update(Math.min(elapsed, 100) / 1000);
-    this.draw({ t: this.t, ox: this.px, oy: this.py }, false);
+    this.draw({ time: this.time, offsetX: this.offsetX, offsetY: this.offsetY }, false);
   }
 
   resize() {
-    const w = this.canvas.clientWidth;
-    const h = this.canvas.clientHeight;
-    if (!w || !h || (w === this.w && h === this.h)) return;
+    const width = this.canvas.clientWidth;
+    const height = this.canvas.clientHeight;
+    if (!width || !height || (width === this.width && height === this.height)) return;
     // 2D-холст, перерисовываемый 30 раз в секунду: бюджет пикселей меньше, чем у WebGL (около 2K).
-    this.dpr = pixelRatioFor(w, h, renderQuality(w), {
+    this.pixelRatio = pixelRatioFor(width, height, renderQuality(width), {
       maxPixels: BACKGROUND_PIXELS,
       min: 0.75,
     });
-    this.w = w;
-    this.h = h;
-    this.canvas.width = Math.round(w * this.dpr);
-    this.canvas.height = Math.round(h * this.dpr);
+    this.width = width;
+    this.height = height;
+    this.canvas.width = Math.round(width * this.pixelRatio);
+    this.canvas.height = Math.round(height * this.pixelRatio);
     this.initDust();
     if (!this.running) return;
     if (this.isStatic) this.renderStatic();
-    else this.draw({ t: this.t, ox: this.px, oy: this.py }, false);
+    else this.draw({ time: this.time, offsetX: this.offsetX, offsetY: this.offsetY }, false);
   }
 
   initDust() {
     const count = Math.round(PARTICLES * (this.isMobile ? 0.45 : 1));
-    this.dust = Array.from({ length: count }, () => this.mote(true));
+    this.dust = Array.from({ length: count }, () => this.spawnMote(true));
   }
 
-  mote(anywhere) {
+  spawnMote(anywhere) {
     return {
-      x: Math.random() * this.w,
-      y: anywhere ? Math.random() * this.h : this.h + 6,
+      x: Math.random() * this.width,
+      y: anywhere ? Math.random() * this.height : this.height + 6,
       r: 0.5 + Math.random(),
       vy: 5 + Math.random() * 9,
       amp: 4 + Math.random() * 10,
@@ -273,138 +279,150 @@ export class SiteBackground {
     tile.width = tile.height = size;
     const tileCtx = tile.getContext('2d');
     const image = tileCtx.createImageData(size, size);
-    const [r, g, b] = this.colors.grain;
+    const [red, green, blue] = this.colors.grain;
     for (let i = 0; i < size * size; i++) {
-      const o = i * 4;
-      image.data[o] = r;
-      image.data[o + 1] = g;
-      image.data[o + 2] = b;
-      image.data[o + 3] = Math.random() * 255;
+      const offset = i * 4;
+      image.data[offset] = red;
+      image.data[offset + 1] = green;
+      image.data[offset + 2] = blue;
+      image.data[offset + 3] = Math.random() * 255;
     }
     tileCtx.putImageData(image, 0, 0);
-    return this.ctx.createPattern(tile, 'repeat');
+    return this.context.createPattern(tile, 'repeat');
   }
 
-  update(dt) {
-    this.t += dt;
+  update(elapsed) {
+    this.time += elapsed;
     const parallax = this.isMobile ? 0 : PARALLAX;
-    const k = 1 - Math.exp(-dt * 2.5);
-    this.px += (this.ptx * parallax - this.px) * k;
-    this.py += (this.pty * parallax - this.py) * k;
-    this.ripples.forEach((r) => (r.age += dt));
-    this.ripples = this.ripples.filter((r) => r.age < RIPPLE_LIFE);
-    this.dust.forEach((m) => {
-      m.y -= m.vy * dt;
-      if (m.y < -6) Object.assign(m, this.mote(false));
+    const easing = 1 - Math.exp(-elapsed * 2.5);
+    this.offsetX += (this.targetOffsetX * parallax - this.offsetX) * easing;
+    this.offsetY += (this.targetOffsetY * parallax - this.offsetY) * easing;
+    this.ripples.forEach((ripple) => (ripple.age += elapsed));
+    this.ripples = this.ripples.filter((ripple) => ripple.age < RIPPLE_LIFE);
+    this.dust.forEach((mote) => {
+      mote.y -= mote.vy * elapsed;
+      if (mote.y < -6) Object.assign(mote, this.spawnMote(false));
     });
   }
 
   renderStatic() {
-    this.draw({ t: 14, ox: 0, oy: 0 }, true);
+    this.draw({ time: 14, offsetX: 0, offsetY: 0 }, true);
   }
 
   draw(frame, still) {
-    if (!this.w || !this.h) return;
-    const { ctx, dpr } = this;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    if (!this.width || !this.height) return;
+    const { context, pixelRatio } = this;
+    context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
     this.drawDepth(frame);
     this.drawContours(frame, still);
     if (!still) this.drawDust(frame);
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.globalAlpha = 0.04;
-    ctx.fillStyle = this.grain;
-    ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-    ctx.globalAlpha = 1;
+    context.setTransform(1, 0, 0, 1, 0, 0);
+    context.globalAlpha = 0.04;
+    context.fillStyle = this.grain;
+    context.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    context.globalAlpha = 1;
   }
 
   // Базовый цвет, медленно блуждающее пятно света (цикл 60 с) и виньетка.
   drawDepth(frame) {
-    const { ctx, w, h, colors } = this;
-    const cycle = (TAU * frame.t) / 60;
-    ctx.fillStyle = rgba(colors.bg, 1);
-    ctx.fillRect(0, 0, w, h);
-    const lx = w * (0.5 + 0.16 * Math.sin(cycle)) + frame.ox * 0.15;
-    const ly = h * (0.42 + 0.08 * Math.sin(2 * cycle + 1.1)) + frame.oy * 0.15;
-    let g = ctx.createRadialGradient(lx, ly, 0, lx, ly, Math.hypot(w, h) * 0.55);
-    g.addColorStop(0, rgba(colors.bgLight, 1));
-    g.addColorStop(0.5, rgba(colors.bgLight, 0.35));
-    g.addColorStop(1, rgba(colors.bgLight, 0));
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, w, h);
-    g = ctx.createRadialGradient(
-      w / 2,
-      h / 2,
-      Math.min(w, h) * 0.25,
-      w / 2,
-      h / 2,
-      Math.hypot(w, h) * 0.62,
+    const { context, width, height, colors } = this;
+    const cycle = (TAU * frame.time) / 60;
+    context.fillStyle = rgba(colors.bg, 1);
+    context.fillRect(0, 0, width, height);
+    const lx = width * (0.5 + 0.16 * Math.sin(cycle)) + frame.offsetX * 0.15;
+    const ly = height * (0.42 + 0.08 * Math.sin(2 * cycle + 1.1)) + frame.offsetY * 0.15;
+    let gradient = context.createRadialGradient(
+      lx,
+      ly,
+      0,
+      lx,
+      ly,
+      Math.hypot(width, height) * 0.55,
     );
-    g.addColorStop(0, rgba(colors.bgDeep, 0));
-    g.addColorStop(1, rgba(colors.bgDeep, 1));
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, w, h);
+    gradient.addColorStop(0, rgba(colors.bgLight, 1));
+    gradient.addColorStop(0.5, rgba(colors.bgLight, 0.35));
+    gradient.addColorStop(1, rgba(colors.bgLight, 0));
+    context.fillStyle = gradient;
+    context.fillRect(0, 0, width, height);
+    gradient = context.createRadialGradient(
+      width / 2,
+      height / 2,
+      Math.min(width, height) * 0.25,
+      width / 2,
+      height / 2,
+      Math.hypot(width, height) * 0.62,
+    );
+    gradient.addColorStop(0, rgba(colors.bgDeep, 0));
+    gradient.addColorStop(1, rgba(colors.bgDeep, 1));
+    context.fillStyle = gradient;
+    context.fillRect(0, 0, width, height);
   }
 
   // Marching squares по двум октавам дрейфующего шума; волны изгибают поле и подкрашивают отрезки
   // изолиний, через которые проходят (цвет + толщина, никогда не ореол).
   drawContours(frame, still) {
-    const { ctx, w, h, colors } = this;
-    const cs = this.isMobile ? 26 : 16;
-    const margin = cs * 2;
-    const ox = frame.ox * 0.4;
-    const oy = frame.oy * 0.4;
+    const { context, width, height, colors } = this;
+    const cellSize = this.isMobile ? 26 : 16;
+    const margin = cellSize * 2;
+    const ox = frame.offsetX * 0.4;
+    const oy = frame.offsetY * 0.4;
     const x0 = -margin;
     const y0 = -margin;
-    const cols = Math.ceil((w + 2 * margin) / cs) + 1;
-    const rows = Math.ceil((h + 2 * margin) / cs) + 1;
+    const cols = Math.ceil((width + 2 * margin) / cellSize) + 1;
+    const rows = Math.ceil((height + 2 * margin) / cellSize) + 1;
     if (!this.field || this.field.length < cols * rows) this.field = new Float32Array(cols * rows);
     const field = this.field;
-    const tc = frame.t * CONTOUR_SPEED;
-    const fq = 1 / 460;
-    const z = tc * 0.022;
-    const drift = tc * 4;
+    const contourTime = frame.time * CONTOUR_SPEED;
+    const frequency = 1 / 460;
+    const z = contourTime * 0.022;
+    const drift = contourTime * 4;
 
     const rings = still
       ? []
-      : this.ripples.map((r) => {
-          const q = r.age / RIPPLE_LIFE;
+      : this.ripples.map((ripple) => {
+          const progress = ripple.age / RIPPLE_LIFE;
           return {
-            x: r.x - ox,
-            y: r.y - oy,
-            R: (1 - (1 - q) ** 3) * Math.min(640, Math.max(w, h) * 0.45),
-            fade: Math.min(1, q * 6) * (1 - q) ** 1.4,
+            x: ripple.x - ox,
+            y: ripple.y - oy,
+            radius: (1 - (1 - progress) ** 3) * Math.min(640, Math.max(width, height) * 0.45),
+            fade: Math.min(1, progress * 6) * (1 - progress) ** 1.4,
           };
         });
 
     for (let j = 0; j < rows; j++) {
-      const py = y0 + j * cs;
+      const py = y0 + j * cellSize;
       for (let i = 0; i < cols; i++) {
-        const px = x0 + i * cs;
-        let v =
-          (noise3((px + drift) * fq, py * fq, z) +
-            0.5 * noise3(px * fq * 2.1 + 11.3, (py - drift * 0.6) * fq * 2.1, z * 1.4 + 5.7)) /
+        const px = x0 + i * cellSize;
+        let value =
+          (noise3((px + drift) * frequency, py * frequency, z) +
+            0.5 *
+              noise3(
+                px * frequency * 2.1 + 11.3,
+                (py - drift * 0.6) * frequency * 2.1,
+                z * 1.4 + 5.7,
+              )) /
           1.5;
-        for (const r of rings) {
-          const dd = Math.hypot(px - r.x, py - r.y) - r.R;
-          v += 0.1 * r.fade * Math.exp(-(dd * dd) / 2900);
+        for (const ring of rings) {
+          const distance = Math.hypot(px - ring.x, py - ring.y) - ring.radius;
+          value += 0.1 * ring.fade * Math.exp(-(distance * distance) / 2900);
         }
-        field[j * cols + i] = v;
+        field[j * cols + i] = value;
       }
     }
 
-    ctx.save();
-    ctx.translate(ox, oy);
-    ctx.lineWidth = 1;
+    context.save();
+    context.translate(ox, oy);
+    context.lineWidth = 1;
     const lit = rings.length ? [new Path2D(), new Path2D(), new Path2D(), new Path2D()] : null;
     let path;
     const segment = (x1, y1, x2, y2) => {
       if (lit) {
-        const mx = (x1 + x2) / 2;
-        const my = (y1 + y2) / 2;
+        const midX = (x1 + x2) / 2;
+        const midY = (y1 + y2) / 2;
         let intensity = 0;
-        for (const r of rings) {
-          const dd = Math.hypot(mx - r.x, my - r.y) - r.R;
-          intensity = Math.max(intensity, r.fade * Math.exp(-(dd * dd) / 1570));
+        for (const ring of rings) {
+          const distance = Math.hypot(midX - ring.x, midY - ring.y) - ring.radius;
+          intensity = Math.max(intensity, ring.fade * Math.exp(-(distance * distance) / 1570));
         }
         if (intensity > 0.06) {
           const bucket = lit[Math.min(3, (intensity * 4) | 0)];
@@ -420,28 +438,31 @@ export class SiteBackground {
     for (const [level, key, alpha] of LEVELS) {
       path = new Path2D();
       for (let j = 0; j < rows - 1; j++) {
-        const py = y0 + j * cs;
-        const r0 = j * cols;
-        const r1 = r0 + cols;
+        const py = y0 + j * cellSize;
+        const rowStart = j * cols;
+        const nextRowStart = rowStart + cols;
         for (let i = 0; i < cols - 1; i++) {
-          const a = field[r0 + i];
-          const b = field[r0 + i + 1];
-          const c = field[r1 + i + 1];
-          const d = field[r1 + i];
-          const idx =
-            (a > level ? 8 : 0) | (b > level ? 4 : 0) | (c > level ? 2 : 0) | (d > level ? 1 : 0);
-          if (idx === 0 || idx === 15) continue;
-          const px = x0 + i * cs;
-          const tx = px + (cs * (level - a)) / (b - a);
+          const topLeft = field[rowStart + i];
+          const topRight = field[rowStart + i + 1];
+          const bottomRight = field[nextRowStart + i + 1];
+          const bottomLeft = field[nextRowStart + i];
+          const caseIndex =
+            (topLeft > level ? 8 : 0) |
+            (topRight > level ? 4 : 0) |
+            (bottomRight > level ? 2 : 0) |
+            (bottomLeft > level ? 1 : 0);
+          if (caseIndex === 0 || caseIndex === 15) continue;
+          const px = x0 + i * cellSize;
+          const tx = px + (cellSize * (level - topLeft)) / (topRight - topLeft);
           const ty = py;
-          const rx = px + cs;
-          const ry = py + (cs * (level - b)) / (c - b);
-          const bx = px + (cs * (level - d)) / (c - d);
-          const by = py + cs;
+          const rx = px + cellSize;
+          const ry = py + (cellSize * (level - topRight)) / (bottomRight - topRight);
+          const bx = px + (cellSize * (level - bottomLeft)) / (bottomRight - bottomLeft);
+          const by = py + cellSize;
           const lx = px;
-          const ly = py + (cs * (level - a)) / (d - a);
-          const above = (a + b + c + d) / 4 > level;
-          switch (idx) {
+          const ly = py + (cellSize * (level - topLeft)) / (bottomLeft - topLeft);
+          const above = (topLeft + topRight + bottomRight + bottomLeft) / 4 > level;
+          switch (caseIndex) {
             case 1:
             case 14:
               segment(lx, ly, bx, by);
@@ -487,40 +508,47 @@ export class SiteBackground {
           }
         }
       }
-      ctx.strokeStyle = rgba(colors[key], alpha);
-      ctx.stroke(path);
+      context.strokeStyle = rgba(colors[key], alpha);
+      context.stroke(path);
     }
 
     if (lit) {
-      lit.forEach((bucket, b) => {
-        const intensity = (b + 0.5) / 4;
-        ctx.lineWidth = 1 + 0.5 * intensity;
-        ctx.strokeStyle = rgba(
+      lit.forEach((bucket, bucketIndex) => {
+        const intensity = (bucketIndex + 0.5) / 4;
+        context.lineWidth = 1 + 0.5 * intensity;
+        context.strokeStyle = rgba(
           mix(colors.pulse, colors.pulsePeak, intensity),
           0.35 + 0.6 * intensity,
         );
-        ctx.stroke(bucket);
+        context.stroke(bucket);
       });
-      ctx.lineWidth = 1;
-      rings.forEach((r) => {
-        ctx.beginPath();
-        ctx.arc(r.x, r.y, Math.max(0, r.R), 0, TAU);
-        ctx.strokeStyle = rgba(colors.pulse, 0.2 * r.fade);
-        ctx.stroke();
+      context.lineWidth = 1;
+      rings.forEach((ring) => {
+        context.beginPath();
+        context.arc(ring.x, ring.y, Math.max(0, ring.radius), 0, TAU);
+        context.strokeStyle = rgba(colors.pulse, 0.2 * ring.fade);
+        context.stroke();
       });
     }
-    ctx.restore();
+    context.restore();
   }
 
   drawDust(frame) {
-    const { ctx, h, colors } = this;
-    this.dust.forEach((m) => {
-      const edge = smooth(m.y / (h * 0.18)) * smooth((h + 6 - m.y) / (h * 0.1));
+    const { context, height, colors } = this;
+    this.dust.forEach((mote) => {
+      const edge =
+        smooth(mote.y / (height * 0.18)) * smooth((height + 6 - mote.y) / (height * 0.1));
       if (edge <= 0) return;
-      ctx.fillStyle = rgba(colors.dust, m.a * edge);
-      ctx.beginPath();
-      ctx.arc(m.x + Math.sin(this.t * m.f + m.ph) * m.amp + frame.ox, m.y + frame.oy, m.r, 0, TAU);
-      ctx.fill();
+      context.fillStyle = rgba(colors.dust, mote.a * edge);
+      context.beginPath();
+      context.arc(
+        mote.x + Math.sin(this.time * mote.f + mote.ph) * mote.amp + frame.offsetX,
+        mote.y + frame.offsetY,
+        mote.r,
+        0,
+        TAU,
+      );
+      context.fill();
     });
   }
 }

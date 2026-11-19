@@ -1,14 +1,15 @@
 import { SplitText } from '@/shared/animations/core/gsapSetup';
-import { at, CHAPTERS } from './chapters';
+import { format } from '@/shared/lib/i18n/format';
+import about from '@/texts/en/about.json';
+import { chapterTime, CHAPTERS } from './chapters';
 
-export const LIVING = CHAPTERS.findIndex((c) => c.id === 'living');
+export const LIVING = CHAPTERS.findIndex((chapter) => chapter.id === 'living');
 export const FINAL = CHAPTERS.length - 1;
-const BUILD = CHAPTERS.findIndex((c) => c.id === 'build');
-const PRODUCT = CHAPTERS.findIndex((c) => c.id === 'product');
-const MOOD = CHAPTERS.findIndex((c) => c.id === 'mood');
+export const BUILD = CHAPTERS.findIndex((chapter) => chapter.id === 'build');
+export const PRODUCT = CHAPTERS.findIndex((chapter) => chapter.id === 'product');
+export const MOOD = CHAPTERS.findIndex((chapter) => chapter.id === 'mood');
 // Глава с «Заметками» на экране (идеи и вопрос).
-const NOTES = CHAPTERS.findIndex((c) => c.id === 'search');
-const PANEL_OFFSET = { left: [-80, 0], right: [80, 0], top: [0, -60], bottom: [0, 60] };
+const NOTES = CHAPTERS.findIndex((chapter) => chapter.id === 'search');
 
 // Анимации поверх сцены (подписи, карточка настроения, крупные фразы, план проекта, панели
 // интерфейса, финал). q — селектор внутри блока истории, stage — закреплённая сцена (её нижний край
@@ -16,24 +17,24 @@ const PANEL_OFFSET = { left: [-80, 0], right: [80, 0], top: [0, -60], bottom: [0
 //   'room'  — ПК: подписи всплывают в углу, карточка и панели выезжают к краям большого экрана;
 //   'phone' — телефон в руке, как в приложении: подписи приходят уведомлениями внизу экрана,
 //             карточка настроения — шторка снизу, панели интерфейса въезжают экранами справа.
-export function addOverlayTimeline(tl, { q, stage, variant = 'room' }) {
+export function addOverlayTimeline(timeline, { select, stage, variant = 'room' }) {
   const phone = variant === 'phone';
-  const one = (name) => q(`[data-story="${name}"]`);
+  const one = (name) => select(`[data-story="${name}"]`);
   const show = (targets, time, vars = {}) =>
-    tl.fromTo(
+    timeline.fromTo(
       targets,
       { autoAlpha: 0, y: 24 },
       { autoAlpha: 1, y: 0, duration: 1.2, ease: 'power2.out', ...vars },
       time,
     );
   const hide = (targets, time) =>
-    tl.to(targets, { autoAlpha: 0, y: -16, duration: 1, ease: 'power2.in' }, time);
+    timeline.to(targets, { autoAlpha: 0, y: -16, duration: 1, ease: 'power2.in' }, time);
   // Крупные фразы поднимаются по словам из-под маски (разбиение откатывается вместе с
   // контекстом).
   const words = (target, time) => {
     const split = SplitText.create(target, { type: 'words', mask: 'words' });
-    tl.set(target, { autoAlpha: 1 }, time);
-    tl.from(
+    timeline.set(target, { autoAlpha: 1 }, time);
+    timeline.from(
       split.words,
       { yPercent: 110, autoAlpha: 0, duration: 1.1, stagger: 0.14, ease: 'power3.out' },
       time,
@@ -41,118 +42,154 @@ export function addOverlayTimeline(tl, { q, stage, variant = 'room' }) {
   };
 
   hide(one('hint'), 0.2);
-  hide(one('stamp'), at(0, 8.5));
+  hide(one('stamp'), chapterTime(0, 8.5));
   // Когда подпись уходит на телефоне: на экране блокировки — до разблокировки, в «Заметках» — до
   // списка идей, в главах «настроение», «начал делать» и «продукт» — до шторки, плана и панелей, иначе — в конце главы.
   const captionLeave = (i) => {
-    if (i === 0) return at(0, 5.2);
-    if (i === NOTES) return at(NOTES, 3);
-    if (i === MOOD) return at(MOOD, 3.2);
-    if (i === BUILD) return at(BUILD, 3);
-    if (i === PRODUCT) return at(PRODUCT, 2.8);
-    return at(i, 8.5);
+    if (i === 0) return chapterTime(0, 5.2);
+    if (i === NOTES) return chapterTime(NOTES, 3);
+    if (i === MOOD) return chapterTime(MOOD, 3.2);
+    if (i === BUILD) return chapterTime(BUILD, 3);
+    if (i === PRODUCT) return chapterTime(PRODUCT, 2.8);
+    return chapterTime(i, 8.5);
   };
-  q('[data-story="caption"]').forEach((caption) => {
+  select('[data-story="caption"]').forEach((caption) => {
     const i = Number(caption.dataset.index);
     if (phone) {
       // Уведомление внизу экрана: въезжает снизу и уезжает вниз. Когда уходить — captionLeave.
       const away = 130;
       if (i > 0) {
-        tl.fromTo(
+        timeline.fromTo(
           caption,
           { autoAlpha: 0, yPercent: away },
           { autoAlpha: 1, yPercent: 0, duration: 1, ease: 'back.out(1.4)' },
-          at(i, i === NOTES ? 0.3 : 1),
+          chapterTime(i, i === NOTES ? 0.3 : 1),
         );
       }
-      tl.to(
+      timeline.to(
         caption,
         { autoAlpha: 0, yPercent: away, duration: 0.9, ease: 'power2.in' },
         captionLeave(i),
       );
       return;
     }
-    if (i > 0) show(caption, at(i, 1));
-    hide(caption, at(i, 8.5));
+    if (i > 0) show(caption, chapterTime(i, 1));
+    hide(caption, chapterTime(i, 8.5));
   });
 
   if (phone) {
     // Шторка снизу экрана: выезжает, жилец выбирает настроение, шторка уезжает вниз.
     // Сначала читается уведомление главы, потом выезжает шторка.
-    tl.fromTo(
+    timeline.fromTo(
       one('mood-card'),
       { autoAlpha: 0, yPercent: 120 },
       { autoAlpha: 1, yPercent: 0, duration: 1.3, ease: 'power3.out' },
-      at(MOOD, 4),
+      chapterTime(MOOD, 4),
     );
-    tl.to(one('mood-card'), { yPercent: 120, duration: 1, ease: 'power2.in' }, at(MOOD, 8.5));
-    tl.set(one('mood-card'), { autoAlpha: 0 }, at(MOOD, 9.5));
+    timeline.to(
+      one('mood-card'),
+      { yPercent: 120, duration: 1, ease: 'power2.in' },
+      chapterTime(MOOD, 8.5),
+    );
+    timeline.set(one('mood-card'), { autoAlpha: 0 }, chapterTime(MOOD, 9.5));
   } else {
-    show(one('mood-card'), at(MOOD, 0.5));
-    hide(one('mood-card'), at(MOOD, 8.5));
+    show(one('mood-card'), chapterTime(MOOD, 0.5));
+    hide(one('mood-card'), chapterTime(MOOD, 8.5));
   }
-  tl.fromTo(
+  timeline.fromTo(
     one('mood-pick'),
     { autoAlpha: 0, scale: 0.7 },
     { autoAlpha: 1, scale: 1, duration: 0.6, ease: 'back.out(2)' },
-    at(MOOD, phone ? 5.6 : 2.5),
+    chapterTime(MOOD, phone ? 5.6 : 2.5),
   );
 
   // Крупные фразы: карта отходит назад, чтобы слова читались чисто. Сначала на полной яркости
   // рисуются дуги между районами, затем фраза берёт своё.
-  tl.to(one('canvas'), { opacity: phone ? 0.35 : 0.5, duration: 1.2 }, at(LIVING, 3));
-  words(one('phrase-living'), at(LIVING, 3.4));
-  hide(one('phrase-living'), at(LIVING, 8.5));
-  tl.to(one('canvas'), { opacity: 1, duration: 1 }, at(LIVING, 9));
+  timeline.to(
+    one('canvas'),
+    { opacity: phone ? 0.35 : 0.5, duration: 1.2 },
+    chapterTime(LIVING, 3),
+  );
+  words(one('phrase-living'), chapterTime(LIVING, 3.4));
+  hide(one('phrase-living'), chapterTime(LIVING, 8.5));
+  timeline.to(one('canvas'), { opacity: 1, duration: 1 }, chapterTime(LIVING, 9));
 
-  // Начал делать во время учёбы: карта отходит назад, появляется план проекта, пункты отмечаются по
-  // очереди, полоса прогресса растёт вместе с ними. На телефоне план — после того, как ушла подпись.
-  tl.to(one('canvas'), { opacity: 0.3, duration: 1 }, at(BUILD));
-  show(one('build-card'), at(BUILD, phone ? 3.6 : 1.2));
-  const checks = q('[data-story="build-check"]');
+  // Начал делать во время учёбы: появляется план проекта, пункты отмечаются по очереди, полоса
+  // прогресса и счётчик растут вместе с ними. На ПК план стоит в колонке рядом с городом; на телефоне
+  // он поверх карты — карта отходит назад, а план появляется после того, как ушла подпись.
+  if (phone) timeline.to(one('canvas'), { opacity: 0.3, duration: 1 }, chapterTime(BUILD));
+  show(one('build-card'), chapterTime(BUILD, phone ? 3.6 : 1.2));
+  const checks = select('[data-story="build-check"]');
   const [first, gap] = phone ? [4.8, 0.55] : [2.4, 1];
   checks.forEach((check, k) => {
-    tl.fromTo(
+    timeline.fromTo(
       check,
       { autoAlpha: 0, scale: 0.4 },
       { autoAlpha: 1, scale: 1, duration: 0.4, ease: 'back.out(2)' },
-      at(BUILD, first + k * gap),
+      chapterTime(BUILD, first + k * gap),
     );
   });
-  tl.fromTo(
+  timeline.fromTo(
     one('build-bar'),
     { scaleX: 0 },
     { scaleX: 1, duration: checks.length * gap, ease: 'none' },
-    at(BUILD, first),
+    chapterTime(BUILD, first),
   );
-  hide(one('build-card'), at(BUILD, 8.5));
-  tl.to(one('canvas'), { opacity: 1, duration: 1 }, at(BUILD, 9));
+  // «4 из 6 готово»: счётчик идёт в такт галочкам — следующее число, как только появилась галочка.
+  // Шаг счётчика = шаг галочек, и начинается он на шаг раньше: целая часть совпадает с их числом.
+  const counter = one('build-count')[0];
+  const progress = { done: 0 };
+  const writeCount = () => {
+    counter.textContent = format(about.story.build.count, {
+      done: Math.min(checks.length, Math.floor(progress.done)),
+      total: checks.length,
+    });
+  };
+  writeCount();
+  timeline.to(
+    progress,
+    { done: checks.length, duration: checks.length * gap, onUpdate: writeCount },
+    chapterTime(BUILD, first + 0.2 - gap),
+  );
+  hide(one('build-card'), chapterTime(BUILD, 8.5));
+  if (phone) timeline.to(one('canvas'), { opacity: 1, duration: 1 }, chapterTime(BUILD, 9));
 
-  q('[data-story="panel"]').forEach((panel, k) => {
-    const [x, y] = phone ? [0, 0] : PANEL_OFFSET[panel.dataset.from];
-    tl.fromTo(
+  // Панели продукта: на ПК — по очереди въезжают справа в колонку рядом с городом, на телефоне —
+  // экранами приложения. График недели следом раскрывается слева направо (маска графика).
+  select('[data-story="panel"]').forEach((panel, k) => {
+    timeline.fromTo(
       panel,
-      phone ? { autoAlpha: 0, xPercent: 110 } : { autoAlpha: 0, x, y },
-      { autoAlpha: 1, x: 0, y: 0, xPercent: 0, duration: 1.4, ease: 'power3.out' },
-      phone ? at(PRODUCT, 3.8 + k * 0.6) : at(PRODUCT, 1 + k * 0.8),
+      phone ? { autoAlpha: 0, xPercent: 110 } : { autoAlpha: 0, x: 60 },
+      { autoAlpha: 1, x: 0, xPercent: 0, duration: 1.4, ease: 'power3.out' },
+      phone ? chapterTime(PRODUCT, 3.8 + k * 0.6) : chapterTime(PRODUCT, 1 + k * 0.7),
     );
   });
+  timeline.fromTo(
+    one('stats-reveal'),
+    { scaleX: 0, svgOrigin: '0 0' },
+    { scaleX: 1, svgOrigin: '0 0', duration: 2, ease: 'power1.inOut' },
+    chapterTime(PRODUCT, phone ? 5 : 3.6),
+  );
   if (phone) {
-    tl.to(
-      q('[data-story="panel"]'),
+    timeline.to(
+      select('[data-story="panel"]'),
       { autoAlpha: 0, xPercent: -110, duration: 1, ease: 'power2.in' },
-      at(PRODUCT, 8.8),
+      chapterTime(PRODUCT, 8.8),
     );
   } else {
-    hide(q('[data-story="panel"]'), at(PRODUCT, 8.8));
+    hide(select('[data-story="panel"]'), chapterTime(PRODUCT, 8.8));
   }
 
-  tl.to(one('canvas'), { opacity: phone ? 0.3 : 0.4, duration: 1.2 }, at(FINAL, 0.6));
-  words(one('final-phrase'), at(FINAL, 1));
-  show(one('final-question'), at(FINAL, 3.5), { duration: 1.6 });
-  show(one('cta'), at(FINAL, 5.5));
+  timeline.to(
+    one('canvas'),
+    { opacity: phone ? 0.3 : 0.4, duration: 1.2 },
+    chapterTime(FINAL, 0.6),
+  );
+  words(one('final-phrase'), chapterTime(FINAL, 1));
+  show(one('final-question'), chapterTime(FINAL, 3.5), { duration: 1.6 });
+  show(one('cta'), chapterTime(FINAL, 5.5));
   // Мягкий нижний край перед тем, как закрепление отпустит (см. .stage в CSS). Телефон в руке
   // не растворяется — он целиком остаётся в кадре.
-  if (!phone) tl.to(stage, { '--stage-fade': '35%', duration: 2.5 }, at(FINAL, 7.5));
-  tl.to({}, { duration: 0.01 }, at(CHAPTERS.length));
+  if (!phone) timeline.to(stage, { '--stage-fade': '35%', duration: 2.5 }, chapterTime(FINAL, 7.5));
+  timeline.to({}, { duration: 0.01 }, chapterTime(CHAPTERS.length));
 }

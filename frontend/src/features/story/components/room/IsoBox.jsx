@@ -1,4 +1,4 @@
-import { boxFaces } from '../../lib/isometric';
+import { boxFaces } from '../../lib/room/isometric';
 import styles from './IsometricRoom.module.css';
 
 // Коробка в изометрии: верх светлее, грани темнее (тон смешивается с --story-shade в CSS). tone —

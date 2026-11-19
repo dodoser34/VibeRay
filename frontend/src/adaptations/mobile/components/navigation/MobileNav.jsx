@@ -8,51 +8,20 @@ import { usePagePath } from '@/shared/hooks/usePagePath';
 import { format } from '@/shared/lib/i18n/format';
 import { localizePath } from '@/shared/lib/i18n/language';
 import { isModerator } from '@/shared/config/roles';
-import { Avatar } from '@/shared/ui/avatar/Avatar';
-import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
-import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
 import { Modal } from '@/shared/ui/windows/Modal';
 import notificationTexts from '@/texts/en/notifications.json';
-import { lastCity } from '@/features/map';
 import nav from '@/texts/en/nav.json';
+import { MobileMenu } from './MobileMenu';
+import { useHideOnScroll } from './useHideOnScroll';
 import styles from './MobileNav.module.css';
 import { LogoMark } from '@/shared/ui/icons/LogoMark';
-import { Icon } from '@/shared/ui/icons/Icon';
-
-// Прокрутка: кнопки уезжают, когда страницу листают вниз дальше первого экрана шапки, и
-// возвращаются при любом движении вверх; мелкую дрожь пальца не считаем.
-const HIDE_AFTER = 120;
-const SCROLL_SLACK = 6;
-
-const ICONS = {
-  map: 'map',
-  stats: 'chart',
-  about: 'info',
-  support: 'headset',
-  settings: 'sliders',
-  'moderation-queue': 'shield',
-  'moderation-map': 'map',
-  'moderation-city': 'chart',
-  'moderation-support': 'headset',
-  'moderation-settings': 'sliders',
-};
-
-function activeKey(pathname) {
-  if (pathname.endsWith('/stats')) return 'stats';
-  if (pathname.startsWith('/map')) return 'map';
-  if (pathname === '/about') return 'about';
-  if (pathname === '/support') return 'support';
-  if (pathname === '/settings') return 'settings';
-  if (pathname === '/moderation') return 'moderation-queue';
-  if (pathname.startsWith('/moderation/')) return `moderation-${pathname.slice(12)}`;
-  return null;
-}
 
 // Телефоны: вместо капсулы из пяти вкладок — две плавающие кнопки (логотип и меню), которые
-// оставляют экран странице, и полноэкранное меню с крупными строками, аккаунтом и дашбордом города.
-// Главное действие страницы остаётся на экране (карта, «Открыть карту»).
+// оставляют экран странице, и полноэкранное меню (MobileMenu) с крупными строками, аккаунтом и
+// дашбордом города. Главное действие страницы остаётся на экране (карта, «Открыть карту»). Здесь —
+// полоса кнопок, раскрытие меню кругом из кнопки и шторка уведомлений.
 export function MobileNav() {
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
   const pathname = usePagePath();
   const openPage = usePageNavigate();
   const { unread, markRead } = useNotifications();
@@ -65,34 +34,8 @@ export function MobileNav() {
   // Меню относится к странице, на которой его открыли: любая смена маршрута его закрывает.
   const [openOn, setOpenOn] = useState(null);
   const open = openOn === pathname;
-  const current = activeKey(pathname);
-  // Состояние прокрутки относится к странице, где его получили: новая страница начинает с видимых
-  // кнопок, даже если прошлую пролистали вниз.
-  const [scroll, setScroll] = useState({ path: null, hidden: false, scrolled: false });
-  const scrollHere = scroll.path === pathname;
-  const hidden = scrollHere && scroll.hidden && !open;
-  const scrolled = scrollHere && scroll.scrolled;
-
-  const moderator = isModerator(user);
-  const home = moderator ? '/moderation' : '/';
-  // У модератора в меню только его разделы (страницы жителей ему не открываются).
-  const items = moderator
-    ? [
-        ...['queue', 'map', 'city', 'support'].map((key) => ({
-          key: `moderation-${key}`,
-          to: key === 'queue' ? '/moderation' : `/moderation/${key}`,
-          label: nav.moderator.tabs[key].label,
-        })),
-        { key: 'moderation-settings', to: '/moderation/settings', label: nav.moderator.settings },
-      ]
-    : [
-        { key: 'map', to: `/map/${lastCity()}`, label: nav.tabs.map.label },
-        { key: 'stats', to: `/map/${lastCity()}/stats`, label: nav.menu.stats },
-        { key: 'about', to: '/about', label: nav.tabs.about.label },
-        { key: 'support', to: '/support', label: nav.tabs.support.label },
-        ...(user ? [{ key: 'settings', to: '/settings', label: nav.menu.settings }] : []),
-      ];
-
+  const { hidden, scrolled } = useHideOnScroll(pathname, { paused: open });
+  const home = isModerator(user) ? '/moderation' : '/';
   useGSAP(
     () => {
       // Конечные значения явно: повторный запуск (StrictMode) не примет недоигранный сдвиг за место
@@ -105,44 +48,6 @@ export function MobileNav() {
     },
     { scope: barRef },
   );
-
-  // Страницу листают пальцем: кнопки не должны висеть над текстом — вниз они уезжают, вверх
-  // возвращаются; пока страница прокручена, под ними лежит мягкая подложка (текст под ней гаснет).
-  useEffect(() => {
-    let last = window.scrollY;
-    let frame = 0;
-    const update = () => {
-      frame = 0;
-      const y = window.scrollY;
-      const delta = y - last;
-      if (Math.abs(delta) < SCROLL_SLACK && y > 0) return;
-      last = y;
-      const next = {
-        path: pathname,
-        hidden: delta > 0 && y > HIDE_AFTER,
-        scrolled: y > SCROLL_SLACK,
-      };
-      setScroll((prev) =>
-        prev.path === next.path && prev.hidden === next.hidden && prev.scrolled === next.scrolled
-          ? prev
-          : next,
-      );
-    };
-    const onScroll = () => {
-      if (!frame) frame = requestAnimationFrame(update);
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => {
-      cancelAnimationFrame(frame);
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, [pathname]);
-
-  // Липкие элементы страниц (полоса разделов настроек) поднимаются на место уехавших кнопок.
-  useEffect(() => {
-    document.documentElement.toggleAttribute('data-nav-hidden', hidden);
-    return () => document.documentElement.removeAttribute('data-nav-hidden');
-  }, [hidden]);
 
   // Центр кнопки меню: меню раскрывается из неё кругом и в неё же сворачивается.
   const menuCircle = (radius) => {
@@ -280,98 +185,15 @@ export function MobileNav() {
       </header>
 
       {open && (
-        <div
+        <MobileMenu
           ref={menuRef}
           id={menuId}
-          className={styles.menu}
-          role="dialog"
-          aria-modal="true"
-          aria-label={nav.menu.title}
-        >
-          <div className={styles.account} data-menu-item>
-            {user ? (
-              <>
-                <Avatar src={user.avatar_url} size={48} />
-                <div className={styles.who}>
-                  <span className={styles.caption}>{nav.menu.signedIn}</span>
-                  <span className={styles.nickname}>{user.nickname}</span>
-                </div>
-                <button
-                  type="button"
-                  className={styles.secondary}
-                  onClick={() => {
-                    setOpenOn(null);
-                    logout();
-                  }}
-                >
-                  {nav.tabs.logout.label}
-                </button>
-                {!moderator && (
-                  <button
-                    type="button"
-                    className={styles.notifications}
-                    onClick={() => {
-                      setOpenOn(null);
-                      setNotificationsOpen(true);
-                    }}
-                  >
-                    <Icon name="bell" size={20} />
-                    <span>{notificationTexts.title}</span>
-                    {unread > 0 && <span className={styles.count}>{unread}</span>}
-                  </button>
-                )}
-              </>
-            ) : (
-              <>
-                <p className={styles.guestTitle}>{nav.menu.guestTitle}</p>
-                <p className={styles.caption}>{nav.menu.guestText}</p>
-                <div className={styles.authButtons}>
-                  <Link
-                    to={localizePath('/login')}
-                    className={styles.primary}
-                    onClick={follow('/login')}
-                  >
-                    {nav.tabs.login.label}
-                  </Link>
-                  <Link
-                    to={localizePath('/register')}
-                    className={styles.secondary}
-                    onClick={follow('/register')}
-                  >
-                    {nav.tabs.register.label}
-                  </Link>
-                </div>
-              </>
-            )}
-          </div>
-
-          <nav aria-label={nav.navLabel}>
-            <ul className={styles.list}>
-              {items.map((item) => (
-                <li key={item.key} data-menu-item>
-                  <Link
-                    to={localizePath(item.to)}
-                    className={styles.item}
-                    aria-current={current === item.key ? 'page' : undefined}
-                    onClick={follow(item.to)}
-                  >
-                    <Icon name={ICONS[item.key]} className={styles.icon} />
-                    <span>{item.label}</span>
-                    <Icon name="chevron-right" className={styles.chevron} />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <div className={styles.footer} data-menu-item>
-            <div className={styles.footerControls}>
-              <ThemeSwitch />
-              <LanguageSwitch />
-            </div>
-            <p>{nav.menu.footer}</p>
-          </div>
-        </div>
+          pathname={pathname}
+          unread={unread}
+          follow={follow}
+          onClose={() => setOpenOn(null)}
+          onOpenNotifications={() => setNotificationsOpen(true)}
+        />
       )}
       {notificationsOpen && (
         <Modal title={notificationTexts.title} onClose={closeNotifications}>

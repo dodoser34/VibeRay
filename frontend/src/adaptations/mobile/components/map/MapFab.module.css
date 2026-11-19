@@ -39,11 +39,6 @@
   color: var(--color-on-accent);
 }
 
-.main:active,
-.round:active {
-  transform: scale(0.95);
-}
-
 .icon {
   fill: none;
   stroke: currentColor;

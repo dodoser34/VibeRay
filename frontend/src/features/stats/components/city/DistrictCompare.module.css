@@ -124,54 +124,6 @@
   gap: var(--space-2);
 }
 
-.card {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-3);
-  border-radius: var(--radius-md);
-  background: color-mix(in srgb, var(--tone) 9%, var(--color-bg-raised));
-  border: 1px solid color-mix(in srgb, var(--tone) 40%, transparent);
-}
-
-.cardText {
-  display: grid;
-  gap: 0.125rem;
-  min-width: 0;
-}
-
-.cardName {
-  overflow: hidden;
-  color: var(--color-text-muted);
-  font-size: var(--fs-2xs);
-  font-weight: 700;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.cardScore {
-  display: flex;
-  align-items: baseline;
-  gap: var(--space-2);
-  font-family: var(--font-display);
-  font-size: var(--fs-lg);
-  font-variant-numeric: tabular-nums;
-}
-
-.cardMood {
-  overflow: hidden;
-  color: var(--color-text-muted);
-  font-family: var(--font-body);
-  font-size: var(--fs-2xs);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.cardMeta {
-  color: var(--color-text-faint);
-  font-size: var(--fs-3xs);
-}
-
 .verdict {
   justify-self: center;
   padding: var(--space-1) var(--space-3);

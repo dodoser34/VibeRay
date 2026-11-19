@@ -158,7 +158,7 @@ export function SupportRequestForm({ initialTopic, onClose }) {
           type="email"
           autoComplete="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(event) => setEmail(event.target.value)}
           error={touched ? errors.email : null}
           hint={texts.emailHint}
         />
@@ -170,7 +170,7 @@ export function SupportRequestForm({ initialTopic, onClose }) {
             rows={5}
             maxLength={SUPPORT_MESSAGE_MAX}
             value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={(event) => setMessage(event.target.value)}
             placeholder={texts.messagePlaceholder}
           />
           <span className={styles.counter}>

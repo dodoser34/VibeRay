@@ -31,7 +31,7 @@ export function buildCityGeometry({ districts, center }) {
       label: unproject(labelPoint(polygons)),
       area: polygons.reduce(
         (sum, [outer, ...holes]) =>
-          sum + ringArea(outer) - holes.reduce((h, hole) => h + ringArea(hole), 0),
+          sum + ringArea(outer) - holes.reduce((holesArea, hole) => holesArea + ringArea(hole), 0),
         0,
       ),
     };

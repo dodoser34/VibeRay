@@ -5,23 +5,13 @@ import { EMAIL_PATTERN } from '@/shared/config/validation';
 import { Button } from '@/shared/ui/controls/Button';
 import { TextField } from '@/shared/ui/controls/TextField';
 import { useAuth } from '../model/useAuth';
-import { PasswordField } from './PasswordField';
-import demoAccounts from '@/demo-data/accounts.json';
+import { PasswordField } from './password/PasswordField';
+import { DEMO_ACCOUNTS } from '@/demo-data/demoLogin';
 import auth from '@/texts/en/auth.json';
-import styles from './PassForms.module.css';
+import form from './AuthForm.module.css';
+import styles from './LoginForm.module.css';
 
-// Подсказка демо-входа видна только в демо-режиме (без бэкенда): житель, модератор и новичок —
-// житель без сообщений и уведомлений, чтобы были видны пустые состояния. label — ключ подписи в
-// texts/<язык>/auth.json (читается при рендере: язык меняется на лету).
-const DEMO_ACCOUNTS = [
-  { id: 'u-user', label: 'demoResident' },
-  { id: 'u-moderator', label: 'demoModerator' },
-  { id: 'u-newbie', label: 'demoNewcomer' },
-].map(({ id, label }) => {
-  const account = demoAccounts.find(({ user }) => user.id === id);
-  return { id, label, email: account.user.email, password: account.password };
-});
-
+// Подсказка демо-входа — только в демо-режиме (без бэкенда); список — demo-data/demoLogin.js.
 export function LoginForm({ onSuccess, onSwitch }) {
   const { login } = useAuth();
   const formRef = useRef(null);
@@ -31,8 +21,8 @@ export function LoginForm({ onSuccess, onSwitch }) {
   const [loading, setLoading] = useState(false);
 
   const update = (field) => (event) => {
-    setValues((v) => ({ ...v, [field]: event.target.value }));
-    setErrors((e) => ({ ...e, [field]: undefined }));
+    setValues((current) => ({ ...current, [field]: event.target.value }));
+    setErrors((current) => ({ ...current, [field]: undefined }));
     setFormError('');
   };
 
@@ -59,10 +49,10 @@ export function LoginForm({ onSuccess, onSwitch }) {
   };
 
   return (
-    <form ref={formRef} className={styles.form} onSubmit={handleSubmit} noValidate>
-      <div className={styles.intro} data-part>
-        <h2 className={styles.title}>{auth.login.title}</h2>
-        <p className={styles.lead} data-ui="auth-login-lead">
+    <form ref={formRef} className={form.form} onSubmit={handleSubmit} noValidate>
+      <div className={form.intro} data-part>
+        <h2 className={form.title}>{auth.login.title}</h2>
+        <p className={form.lead} data-ui="auth-login-lead">
           {auth.login.lead}
         </p>
       </div>
@@ -88,7 +78,7 @@ export function LoginForm({ onSuccess, onSwitch }) {
       </div>
 
       {formError && (
-        <p className={styles.formError} role="alert">
+        <p className={form.formError} role="alert">
           {formError}
         </p>
       )}
@@ -118,7 +108,7 @@ export function LoginForm({ onSuccess, onSwitch }) {
         </div>
       )}
 
-      <p className={styles.switch} data-part>
+      <p className={form.switch} data-part>
         {auth.login.noAccount}{' '}
         <Button variant="text" onClick={onSwitch}>
           {auth.login.toRegister}

@@ -145,7 +145,9 @@ export class DistrictsLayer {
         plate?.area ??
         polygons.reduce(
           (sum, [outer, ...holes]) =>
-            sum + ringArea(outer) - holes.reduce((h, hole) => h + ringArea(hole), 0),
+            sum +
+            ringArea(outer) -
+            holes.reduce((holesArea, hole) => holesArea + ringArea(hole), 0),
           0,
         ),
     });
@@ -176,9 +178,9 @@ export class DistrictsLayer {
 
   applyColors(duration) {
     this.items.forEach((item) => {
-      const { r, g, b } = this.colorOf(item);
-      gsap.to(item.material.color, { r, g, b, duration, overwrite: 'auto' });
-      gsap.to(item.material.emissive, { r, g, b, duration, overwrite: 'auto' });
+      const { r: red, g: green, b: blue } = this.colorOf(item);
+      gsap.to(item.material.color, { r: red, g: green, b: blue, duration, overwrite: 'auto' });
+      gsap.to(item.material.emissive, { r: red, g: green, b: blue, duration, overwrite: 'auto' });
     });
   }
 

@@ -21,11 +21,11 @@ export function useCityOutline(city, problems, { pinLimit = 36, extent = null } 
     const xs = [];
     const ys = [];
     const districts = city.districts.features.map(({ properties, geometry }) => {
-      const d = geometry.coordinates
+      const pathData = geometry.coordinates
         .flatMap((polygon) =>
           polygon.map((ring) => {
-            const points = ring.map((c) => {
-              const [x, y] = toSvg(c);
+            const points = ring.map((coordinate) => {
+              const [x, y] = toSvg(coordinate);
               xs.push(x);
               ys.push(y);
               return `${x.toFixed(3)} ${y.toFixed(3)}`;
@@ -34,7 +34,12 @@ export function useCityOutline(city, problems, { pinLimit = 36, extent = null } 
           }),
         )
         .join('');
-      return { slug: properties.slug, name: properties.name, palette: properties.palette, d };
+      return {
+        slug: properties.slug,
+        name: properties.name,
+        palette: properties.palette,
+        d: pathData,
+      };
     });
     const minX = Math.min(...xs) - PADDING_KM;
     const minY = Math.min(...ys) - PADDING_KM;
@@ -57,7 +62,7 @@ function cityExtent(city, project) {
   const points = city.districts.features.flatMap(({ geometry }) =>
     geometry.coordinates.flatMap(([outer]) => outer.map(project)),
   );
-  const xs = points.map((p) => p[0]);
-  const ys = points.map((p) => p[1]);
+  const xs = points.map((point) => point[0]);
+  const ys = points.map((point) => point[1]);
   return Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys));
 }

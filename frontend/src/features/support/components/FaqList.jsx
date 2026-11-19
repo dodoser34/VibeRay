@@ -1,3 +1,4 @@
+import { ChipGroup } from '@/shared/ui/controls/ChipGroup';
 import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
 import texts from '@/texts/en/support.json';
 import styles from './FaqList.module.css';
@@ -9,19 +10,16 @@ export function FaqList({ category, onCategoryChange, openId, onToggle }) {
 
   return (
     <div className={styles.faq}>
-      <div className={styles.filters} role="group" aria-label={texts.faqSection.filterLabel}>
-        {[{ code: null, title: texts.faqSection.all }, ...HELP_CATEGORIES].map((item) => (
-          <button
-            key={item.code ?? 'all'}
-            type="button"
-            className={styles.filter}
-            aria-pressed={category === item.code}
-            onClick={() => onCategoryChange(item.code)}
-          >
-            {item.title}
-          </button>
-        ))}
-      </div>
+      <ChipGroup
+        label={texts.faqSection.filterLabel}
+        options={[{ code: null, title: texts.faqSection.all }, ...HELP_CATEGORIES].map((item) => ({
+          code: item.code,
+          label: item.title,
+        }))}
+        value={category}
+        onChange={onCategoryChange}
+        size="md"
+      />
 
       <ul className={styles.list}>
         {items.map((item) => {

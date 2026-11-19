@@ -40,7 +40,7 @@ flowchart TB
 | `features/` | модули по темам | `features/map/scene/MapScene.js` |
 | `shared/api/` | клиент API и все запросы к серверу | `shared/api/endpoints/cities.js` |
 | `shared/ui/` | общие элементы: кнопки, окна, иконки, графики | `shared/ui/icons/Icon.jsx` |
-| `shared/animations/` | пресеты GSAP, переходы, смена языка и темы | `shared/animations/core/presets.js` |
+| `shared/animations/` | пресеты GSAP, переходы, смена языка и темы, отклик кнопок и переключателей | `shared/animations/core/presets.js` |
 | `shared/lib/` | утилиты, внутри `i18n/`, `theme/`, `geo/` | `shared/lib/geo/geoProjection.js` |
 | `shared/config/` | коды настроений, категорий, статусов | `shared/config/problemStatuses.js` |
 | `texts/` | весь видимый текст на en, ru, kk, de | `texts/en/map.json` |
@@ -55,7 +55,8 @@ flowchart TB
 ```
 features/map/
 ├── index.js        # публичный API модуля, другие модули импортируют только его
-├── components/     # компоненты: PascalCase.jsx и PascalCase.module.css рядом
+├── components/     # компоненты: PascalCase.jsx и PascalCase.module.css рядом, по одному на файл;
+│                   #   когда их больше ~8 — подпапки по смыслу (filters/, layout/, steps/)
 ├── hooks/          # useSomething.js
 ├── lib/            # чистые функции
 ├── model/          # контекст и провайдер, если у модуля есть состояние
@@ -67,7 +68,7 @@ features/map/
 
 ```mermaid
 flowchart LR
-    PAGE["MapPage.jsx<br/>панели, фильтры, URL"] --> CANVAS["MapCanvas.jsx<br/>монтирует canvas,<br/>передаёт события"]
+    PAGE["MapPage.jsx<br/>состояние, URL;<br/>панели — components/layout"] --> CANVAS["MapCanvas.jsx<br/>монтирует canvas,<br/>передаёт события"]
     CANVAS --> SCENE["MapScene.js<br/>сцена города"]
     SCENE --> RT["SceneRuntime<br/>рендерер, цикл кадров"]
     SCENE --> D["DistrictsLayer<br/>плиты районов"]
@@ -75,7 +76,7 @@ flowchart LR
     SCENE --> V["MapVectors<br/>дороги вблизи"]
     SCENE --> P["ProblemsLayer<br/>метки проблем"]
     SCENE --> CAM["cameraRig<br/>камера и перелёты"]
-    SCENE --> PK["Picker<br/>клик и наведение"]
+    SCENE --> PK["ScenePicker<br/>клик и наведение"]
 ```
 
 React-компонент `MapCanvas` только монтирует холст и передаёт события. Всё, что относится к 3D, лежит в

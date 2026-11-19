@@ -5,6 +5,7 @@ import { PROBLEM_STATUSES, REJECTED_STATUS } from '@/shared/config/problemStatus
 import { useRequest } from '@/shared/hooks/useRequest';
 import { format } from '@/shared/lib/i18n/format';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
+import { ChipGroup } from '@/shared/ui/controls/ChipGroup';
 import { QueueItem } from './QueueItem';
 import texts from '@/texts/en/moderation.json';
 import styles from './ProblemQueue.module.css';
@@ -39,20 +40,13 @@ export function ProblemQueue({ districts, filters, onFiltersChange, onChanged, o
   return (
     <section className={styles.queue} aria-label={texts.sections.queue}>
       <div className={styles.filters} role="group" aria-label={texts.queue.filtersLabel}>
-        <div className={styles.statuses} role="group" aria-label={texts.queue.statusLabel}>
-          {statuses.map(({ code, label }) => (
-            <button
-              key={code}
-              type="button"
-              className={styles.status}
-              data-ui="queue-status"
-              aria-pressed={filters.status === code}
-              onClick={() => onFiltersChange({ ...filters, status: code })}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+        <ChipGroup
+          label={texts.queue.statusLabel}
+          options={statuses}
+          value={filters.status}
+          onChange={(code) => onFiltersChange({ ...filters, status: code })}
+          optionDataUi="queue-status"
+        />
         <div className={styles.selects} data-ui="moderation-selects">
           <label className={styles.field}>
             <span>{texts.queue.district}</span>

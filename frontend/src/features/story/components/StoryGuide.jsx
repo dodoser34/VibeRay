@@ -54,7 +54,7 @@ export function StoryGuide({ onOpenMap }) {
 
   useGSAP(
     () => {
-      const q = gsap.utils.selector(rootRef);
+      const select = gsap.utils.selector(rootRef);
       if (compact) {
         // Один закреплённый кадр (карта сверху, активная карточка снизу): шаг зависит от того,
         // насколько прокручена высокая секция, сами карточки не двигаются.
@@ -69,7 +69,7 @@ export function StoryGuide({ onOpenMap }) {
           onRefresh: pick,
         });
       } else {
-        q('[data-step-card]').forEach((card, i) => {
+        select('[data-step-card]').forEach((card, i) => {
           ScrollTrigger.create({
             trigger: card,
             start: 'top center',
@@ -81,7 +81,7 @@ export function StoryGuide({ onOpenMap }) {
       }
       if (reduced) return;
 
-      q('[data-split]').forEach((heading) => {
+      select('[data-split]').forEach((heading) => {
         const split = SplitText.create(heading, { type: 'words', mask: 'words' });
         gsap.from(split.words, {
           yPercent: 110,
@@ -91,7 +91,7 @@ export function StoryGuide({ onOpenMap }) {
           scrollTrigger: { trigger: heading, start: 'clamp(top 85%)', refreshPriority: -1 },
         });
       });
-      q('[data-rise]').forEach((element) => {
+      select('[data-rise]').forEach((element) => {
         gsap.from(element, {
           y: 36,
           autoAlpha: 0,
@@ -100,7 +100,7 @@ export function StoryGuide({ onOpenMap }) {
           scrollTrigger: { trigger: element, start: 'clamp(top 88%)', refreshPriority: -1 },
         });
       });
-      q('[data-count]').forEach((number) => {
+      select('[data-count]').forEach((number) => {
         const counter = { value: 0 };
         gsap.to(counter, {
           value: Number(number.dataset.count),

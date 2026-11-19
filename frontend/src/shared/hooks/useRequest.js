@@ -32,7 +32,7 @@ export function useRequest(key, fetcher) {
     };
   }, [key, version, language]);
 
-  const reload = useCallback(() => setVersion((v) => v + 1), []);
+  const reload = useCallback(() => setVersion((version) => version + 1), []);
 
   return {
     data: state.data,

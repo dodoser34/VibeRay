@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { createProblem } from '@/shared/api/endpoints/problems';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { prefersReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
 import {
   PROBLEM_DESCRIPTION_MAX,
@@ -9,6 +10,7 @@ import {
 } from '@/shared/config/validation';
 import { checkPhoto, preparePhoto } from '@/shared/lib/imageTools';
 import { Button } from '@/shared/ui/controls/Button';
+import { CloseButton } from '@/shared/ui/controls/CloseButton';
 import { CategoryIcon } from './CategoryIcon';
 import { format } from '@/shared/lib/i18n/format';
 import problemTexts from '@/texts/en/problems.json';
@@ -59,13 +61,26 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
   });
   useEffect(() => () => photosRef.current.forEach((photo) => URL.revokeObjectURL(photo.url)), []);
 
-  useGSAP(
+  // Шаг въезжает с той стороны, куда идём; плитки категорий следом поднимаются по одной.
+  const { context } = useGSAP(
     () => {
       gsap.fromTo(
         bodyRef.current,
         { x: direction.current * 24, autoAlpha: 0 },
         { x: 0, autoAlpha: 1, duration: 0.45, ease: 'power3.out' },
       );
+      if (step === 0) {
+        gsap.from('[data-category]', {
+          y: 14,
+          scale: 0.94,
+          autoAlpha: 0,
+          duration: 0.5,
+          ease: 'back.out(1.6)',
+          stagger: 0.035,
+          delay: 0.08,
+          clearProps: 'transform',
+        });
+      }
     },
     { dependencies: [step], scope: rootRef },
   );
@@ -77,9 +92,21 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
     onStepChange?.(STEPS[next].key);
   };
 
-  const chooseCategory = (code) => {
+  // Выбранная плитка «нажимается» и отмечается рамкой — и только потом форма переходит к месту.
+  // Анимация — в контексте компонента: закрыли форму раньше, чем она кончилась, — перехода не будет.
+  const chooseCategory = (code, tile) => {
     setCategory(code);
-    goTo(1);
+    if (prefersReducedMotion()) {
+      goTo(1);
+      return;
+    }
+    context.add(() => {
+      gsap.fromTo(
+        tile,
+        { scale: 0.93 },
+        { scale: 1, duration: 0.32, ease: 'back.out(3)', onComplete: () => goTo(1) },
+      );
+    });
   };
 
   const addPhotos = (event) => {
@@ -104,9 +131,9 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
 
   const removePhoto = (id) =>
     setPhotos((list) => {
-      const photo = list.find((p) => p.id === id);
+      const photo = list.find((photo) => photo.id === id);
       if (photo) URL.revokeObjectURL(photo.url);
-      return list.filter((p) => p.id !== id);
+      return list.filter((photo) => photo.id !== id);
     });
 
   const submit = async () => {
@@ -127,8 +154,8 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
         isAnonymous: anonymous,
       });
       onCreated(problem);
-    } catch (e) {
-      setError(e.message);
+    } catch (error) {
+      setError(error.message);
       setLoading(false);
     }
   };
@@ -151,37 +178,30 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
             {STEPS[step].title}
           </h2>
         </div>
-        <button
-          type="button"
-          className={styles.close}
-          data-ui="panel-close"
-          onClick={onClose}
-          aria-label={texts.cancel}
-        >
-          <Icon name="close" size={14} />
-        </button>
+        <CloseButton label={texts.cancel} onClick={onClose} />
       </header>
 
       <ol className={styles.progress} aria-hidden="true">
-        {STEPS.map((s, i) => (
-          <li key={s.key} data-state={i < step ? 'done' : i === step ? 'current' : 'todo'} />
+        {STEPS.map((item, i) => (
+          <li key={item.key} data-state={i < step ? 'done' : i === step ? 'current' : 'todo'} />
         ))}
       </ol>
 
       <div ref={bodyRef} className={styles.body}>
         {step === 0 && (
           <div className={styles.categories} role="radiogroup" aria-label={texts.categoryLabel}>
-            {PROBLEM_CATEGORIES.map((c) => (
+            {PROBLEM_CATEGORIES.map((option) => (
               <button
-                key={c.code}
+                key={option.code}
                 type="button"
                 role="radio"
-                aria-checked={category === c.code}
+                aria-checked={category === option.code}
                 className={styles.category}
-                onClick={() => chooseCategory(c.code)}
+                data-category
+                onClick={(event) => chooseCategory(option.code, event.currentTarget)}
               >
-                <CategoryIcon category={c.code} size={26} />
-                <span>{c.label}</span>
+                <CategoryIcon category={option.code} size={26} />
+                <span>{option.label}</span>
               </button>
             ))}
           </div>
@@ -216,7 +236,7 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
                 rows={5}
                 maxLength={PROBLEM_DESCRIPTION_MAX}
                 value={description}
-                onChange={(e) => setDescription(e.target.value)}
+                onChange={(event) => setDescription(event.target.value)}
                 placeholder={texts.descriptionPlaceholder}
               />
               <span className={styles.counter} data-short={length < PROBLEM_DESCRIPTION_MIN}>
@@ -264,7 +284,7 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
               <input
                 type="checkbox"
                 checked={anonymous}
-                onChange={(e) => setAnonymous(e.target.checked)}
+                onChange={(event) => setAnonymous(event.target.checked)}
               />
               <span>
                 <span className={styles.anonymousLabel}>{texts.anonymousLabel}</span>

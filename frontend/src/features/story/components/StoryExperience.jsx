@@ -2,19 +2,19 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useViewport } from '@/adaptations/core';
 import { useCityData } from '@/features/map';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/core/gsapSetup';
-import { useCityOutline } from '@/shared/hooks/useCityOutline';
+import { useCityOutline } from '../hooks/useCityOutline';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useTheme } from '@/shared/hooks/useTheme';
 import { CHAPTERS, story } from '../lib/chapters';
-import { planeMatrix } from '../lib/isometric';
+import { planeMatrix } from '../lib/room/isometric';
 import { addPhoneTimeline } from '../lib/phoneTimeline';
-import { COVER, RoomCamera } from '../lib/roomCamera';
-import { monitorMapBox, SCREEN } from '../lib/roomLayout';
+import { COVER, RoomCamera } from '../lib/room/roomCamera';
+import { monitorMapBox, SCREEN } from '../lib/room/roomLayout';
 import { STORY_CITY, STORY_EXTENT } from '../lib/storyCity';
 import { outlineCenter, topViewBox } from '../lib/topView';
 import { useBoxSize } from '../hooks/useBoxSize';
-import { addRoomTimeline } from '../lib/roomTimeline';
+import { addRoomTimeline } from '../lib/room/roomTimeline';
 import { addOverlayTimeline } from '../lib/storyTimeline';
 import { PhoneStage } from './phone/PhoneStage';
 import { IsometricRoom } from './room/IsometricRoom';
@@ -90,6 +90,30 @@ export function StoryExperience({ onOpenMap, onReady }) {
     };
   }, [theme, variant]);
 
+  // ПК: в главах с колонкой карточек город вписывается в место слева от неё — по высоте колонки,
+  // с отступом от края экрана и от карточек. Все колонки стоят в одном месте, хватает первой.
+  useEffect(() => {
+    if (!scene || variant !== 'room') return undefined;
+    const stage = stageRef.current;
+    const measure = () => {
+      const column = stage.querySelector('[data-story-column]');
+      if (!column) return;
+      const box = stage.getBoundingClientRect();
+      const columnBox = column.getBoundingClientRect();
+      const gap = parseFloat(getComputedStyle(document.documentElement).fontSize) * 2;
+      scene.setFreeArea([
+        gap,
+        columnBox.top - box.top,
+        columnBox.left - box.left - gap,
+        columnBox.bottom - box.top,
+      ]);
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(stage);
+    return () => observer.disconnect();
+  }, [scene, variant]);
+
   const ready = sceneReady && dataReady;
   useEffect(() => {
     if (ready) onReady?.();
@@ -112,8 +136,8 @@ export function StoryExperience({ onOpenMap, onReady }) {
         scale: outline.scale,
         focus: STORY_CITY.focus,
       });
-      const q = gsap.utils.selector(rootRef);
-      const tl = gsap.timeline({ paused: true, defaults: { ease: 'none' } });
+      const select = gsap.utils.selector(rootRef);
+      const timeline = gsap.timeline({ paused: true, defaults: { ease: 'none' } });
       let camera = null;
       if (variant === 'room') {
         const root = flatRef.current;
@@ -123,17 +147,17 @@ export function StoryExperience({ onOpenMap, onReady }) {
           { matrix: planeMatrix('x', SCREEN.corner, SCREEN.scale), size: SCREEN.size },
           { tilt: reduced ? null : root.querySelector('[data-room="tilt"]') },
         );
-        addRoomTimeline(tl, { q, camera });
+        addRoomTimeline(timeline, { select, camera });
       } else {
-        addPhoneTimeline(tl, q);
+        addPhoneTimeline(timeline, select);
       }
-      scene?.buildTimeline(tl);
+      scene?.buildTimeline(timeline);
       if (reduced) {
-        tl.progress(1);
+        timeline.progress(1);
         return () => camera?.dispose();
       }
 
-      addOverlayTimeline(tl, { q, stage: stageRef.current, variant });
+      addOverlayTimeline(timeline, { select, stage: stageRef.current, variant });
 
       const trigger = ScrollTrigger.create({
         trigger: stageRef.current,
@@ -141,7 +165,7 @@ export function StoryExperience({ onOpenMap, onReady }) {
         end: `+=${CHAPTERS.length * 100}%`,
         pin: true,
         scrub: 0.8,
-        animation: tl,
+        animation: timeline,
       });
       // Закрепление появляется только после загрузки данных города и добавляет 900 % прокрутки:
       // триггеры ниже по странице (гид) должны пересчитать свои позиции.
@@ -150,7 +174,7 @@ export function StoryExperience({ onOpenMap, onReady }) {
       if (scrollRef.current !== null) {
         window.scrollTo({ top: scrollRef.current, behavior: 'instant' });
         trigger.update();
-        tl.progress(trigger.progress);
+        timeline.progress(trigger.progress);
       }
       return () => camera?.dispose();
     },

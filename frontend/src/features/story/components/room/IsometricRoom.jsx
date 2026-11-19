@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { useTheme } from '@/shared/hooks/useTheme';
 import { useFitText } from '../../hooks/useFitText';
 import { isDaylight } from '../../lib/chapters';
-import { VIEW } from '../../lib/isometric';
+import { VIEW } from '../../lib/room/isometric';
 import { Bookcase } from './Bookcase';
 import { DeskChair } from './DeskChair';
 import { DeskSet } from './DeskSet';

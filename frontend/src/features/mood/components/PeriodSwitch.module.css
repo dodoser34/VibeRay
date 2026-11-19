@@ -9,15 +9,15 @@
   border: 1px solid var(--color-glass-border);
 }
 
+/* Подложку ставит и перетекает к выбранному варианту useSlidingThumb */
 .thumb {
   position: absolute;
-  top: 0.25rem;
-  bottom: 0.25rem;
+  top: 0;
   left: 0;
-  width: 0;
   border-radius: var(--radius-pill);
   background: var(--color-accent);
   box-shadow: var(--shadow-soft);
+  visibility: hidden;
 }
 
 .option {
@@ -29,9 +29,17 @@
   color: var(--color-text-muted);
   font-size: var(--fs-sm);
   font-weight: 600;
-  transition: color var(--dur-base) var(--ease-out);
+  transition:
+    color var(--dur-base) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out);
+}
+
+.option:hover:not([aria-checked='true']) {
+  color: var(--color-text);
+  background: var(--color-accent-soft);
 }
 
 .option[aria-checked='true'] {
-  color: var(--color-text);
+  color: var(--color-on-accent);
+  cursor: default;
 }

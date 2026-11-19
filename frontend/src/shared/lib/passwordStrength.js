@@ -68,15 +68,15 @@ function isTrivial(password) {
   const lower = password.toLowerCase();
   if (COMMON_PASSWORDS.has(lower)) return true;
   if (/^(.)\1+$/.test(password)) return true; // «aaaaaaaa»
-  const codes = [...password].map((c) => c.charCodeAt(0));
+  const codes = [...password].map((character) => character.charCodeAt(0));
   const step = codes[1] - codes[0];
-  return Math.abs(step) === 1 && codes.every((c, i) => i === 0 || c - codes[i - 1] === step);
+  return Math.abs(step) === 1 && codes.every((code, i) => i === 0 || code - codes[i - 1] === step);
 }
 
 function containsPersonal(password, { email = '', nickname = '' }) {
   const lower = password.toLowerCase();
-  const parts = [email.split('@')[0], nickname].map((p) => p.trim().toLowerCase());
-  return parts.some((p) => p.length >= 3 && lower.includes(p));
+  const parts = [email.split('@')[0], nickname].map((part) => part.trim().toLowerCase());
+  return parts.some((part) => part.length >= 3 && lower.includes(part));
 }
 
 export function evaluatePassword(password, context = {}) {
@@ -113,8 +113,9 @@ export function evaluatePassword(password, context = {}) {
       ok: password.length > 0 && !containsPersonal(password, context),
     },
   ];
-  const requiredOk = checks.filter((c) => c.required).every((c) => c.ok);
-  const extras = checks.filter((c) => !c.required && c.ok).length + (password.length >= 12 ? 1 : 0);
+  const requiredOk = checks.filter((check) => check.required).every((check) => check.ok);
+  const extras =
+    checks.filter((check) => !check.required && check.ok).length + (password.length >= 12 ? 1 : 0);
   const level = requiredOk ? Math.min(3, extras) : 0;
   return {
     checks,

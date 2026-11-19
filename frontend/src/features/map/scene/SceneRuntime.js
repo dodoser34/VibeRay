@@ -75,32 +75,32 @@ export class SceneRuntime {
     this.renderer.setSize(width, height, false);
     this.camera.aspect = width / height;
     this.camera.updateProjectionMatrix();
-    this.resizers.forEach((fn) => fn(width, height));
+    this.resizers.forEach((resize) => resize(width, height));
     this.invalidate();
   }
 
   // Следующий кадр нужно нарисовать (и ещё ms миллисекунд после него).
-  invalidate(ms = 0) {
+  invalidate(delayMs = 0) {
     this.dirty = true;
-    this.awakeUntil = Math.max(this.awakeUntil, performance.now() + ms);
+    this.awakeUntil = Math.max(this.awakeUntil, performance.now() + delayMs);
   }
 
-  onTick(fn) {
-    this.tickers.add(fn);
-    return () => this.tickers.delete(fn);
+  onTick(callback) {
+    this.tickers.add(callback);
+    return () => this.tickers.delete(callback);
   }
 
   // Вызывается сразу после отрисовки кадра (например, подписи CSS2DRenderer — только в такие кадры).
-  onRender(fn) {
-    this.renderers.add(fn);
-    return () => this.renderers.delete(fn);
+  onRender(callback) {
+    this.renderers.add(callback);
+    return () => this.renderers.delete(callback);
   }
 
-  onResize(fn) {
-    this.resizers.add(fn);
+  onResize(callback) {
+    this.resizers.add(callback);
     const { width, height } = this.size;
-    if (width && height) fn(width, height);
-    return () => this.resizers.delete(fn);
+    if (width && height) callback(width, height);
+    return () => this.resizers.delete(callback);
   }
 
   start() {
@@ -111,13 +111,13 @@ export class SceneRuntime {
       this.lastTime = now;
       const elapsed = (now - this.startTime) / 1000;
       let changed = false;
-      this.tickers.forEach((fn) => {
-        if (fn(elapsed, delta)) changed = true;
+      this.tickers.forEach((tick) => {
+        if (tick(elapsed, delta)) changed = true;
       });
       if (!this.onDemand || changed || this.dirty || now < this.awakeUntil || gsapBusy()) {
         this.dirty = false;
         this.renderer.render(this.scene, this.camera);
-        this.renderers.forEach((fn) => fn());
+        this.renderers.forEach((render) => render());
       }
       this.frame = requestAnimationFrame(loop);
     };

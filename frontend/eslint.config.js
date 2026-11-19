@@ -20,6 +20,36 @@ export default [
     rules: {
       'react/prop-types': 'off',
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      // Имена — полными словами (CLAUDE.md §4). Одна буква — только индексы, координаты, доля t,
+      // путь SVG d и пара a, b в сравнении для sort.
+      'id-length': [
+        'error',
+        {
+          min: 2,
+          exceptions: ['i', 'j', 'k', 'x', 'y', 'z', 't', 'd', 'a', 'b', '_'],
+          properties: 'never',
+        },
+      ],
+    },
+  },
+  // Формулы с общепринятыми обозначениями: оси рисунка u, w на гранях изометрии, элементы аффинной
+  // матрицы a…f, шум Перлина (X, Y, Z — ячейка, u, v, w — доли, A, B — хеши углов).
+  {
+    files: [
+      'src/features/story/components/room/**',
+      'src/features/story/lib/room/**',
+      'src/shared/animations/background/SiteBackground.js',
+    ],
+    rules: {
+      'id-length': [
+        'error',
+        {
+          min: 2,
+          exceptions: ['i', 'j', 'k', 'x', 'y', 'z', 't', 'd', 'a', 'b', '_', 'u', 'v', 'w'],
+          exceptionPatterns: ['^[a-fA-FXYZ]$'],
+          properties: 'never',
+        },
+      ],
     },
   },
 ];

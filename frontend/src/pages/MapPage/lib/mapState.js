@@ -8,7 +8,7 @@ export function resolveOpenProblem({ isStats, problemId, problemUpdate, linked, 
   if (isStats || !problemId) return null;
   if (problemUpdate?.id === problemId) return problemUpdate;
   if (linked?.id === problemId) return linked;
-  return problems?.find((p) => p.id === problemId) ?? null;
+  return problems?.find((problem) => problem.id === problemId) ?? null;
 }
 
 // Что показывает панель (боковая или шторка); определяет и положение шторки.
@@ -27,7 +27,7 @@ export function districtFactsFor(slug, city, moods) {
     .filter(([, aggregate]) => aggregate && !aggregate.insufficient_data)
     .sort((a, b) => b[1].score - a[1].score);
   const rank = ranked.findIndex(([districtSlug]) => districtSlug === slug) + 1;
-  const feature = city.districts.features.find((f) => f.properties.slug === slug);
+  const feature = city.districts.features.find((candidate) => candidate.properties.slug === slug);
   return {
     rank: rank || null,
     rankTotal: ranked.length,

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { readFlag, writeFlag } from '@/shared/lib/localFlag';
+import { readFlag, writeFlag } from '@/shared/lib/localPreferences';
 
 // Скрытые боковые панели запоминаются: левая — всегда, правая — если её скрыли на общем обзоре.
 const LEFT_HIDDEN_KEY = 'viberay:map:left-hidden';

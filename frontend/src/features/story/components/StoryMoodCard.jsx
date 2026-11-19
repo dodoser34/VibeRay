@@ -1,15 +1,21 @@
+import { useState } from 'react';
 import { MoodFace } from '@/features/mood';
 import { MOODS } from '@/shared/config/moods';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
+import { Icon } from '@/shared/ui/icons/Icon';
 import about from '@/texts/en/about.json';
 import styles from './StoryMoodCard.module.css';
 
-const texts = about.story.moodCard;
+const SCALE = MOODS.slice(0, 5);
+// Что жилец выбирает сам по ходу истории; дальше посетитель может выбрать своё.
+const STORY_PICK = 'good';
 
-const PICKED = 'good';
-
-// Сцена 4: точка одного жителя становится человеком с выбором настроения.
+// Сцена 4: точка одного жителя становится человеком с выбором настроения. Рамку выбора показывает
+// шкала истории (data-story="mood-pick"); посетитель может нажать любое лицо — рамка переедет к нему.
 export function StoryMoodCard() {
+  const texts = about.story.moodCard;
+  const [picked, setPicked] = useState(STORY_PICK);
+  const index = SCALE.findIndex((mood) => mood.code === picked);
   return (
     <div className={styles.card} data-story="mood-card" data-later>
       <div className={styles.person}>
@@ -20,17 +26,34 @@ export function StoryMoodCard() {
         </div>
       </div>
       <p className={styles.question}>{texts.question}</p>
-      <ul className={styles.moods}>
-        {MOODS.slice(0, 5).map((mood) => (
-          <li key={mood.code} className={styles.mood}>
-            <MoodFace mood={mood.code} size={34} label="" />
+      <div className={styles.moods} role="radiogroup" aria-label={texts.question}>
+        <span
+          className={styles.picked}
+          style={{ '--pick': index }}
+          data-story="mood-pick"
+          data-later
+          aria-hidden="true"
+        />
+        {SCALE.map((mood) => (
+          <button
+            key={mood.code}
+            type="button"
+            role="radio"
+            aria-checked={picked === mood.code}
+            className={styles.mood}
+            onClick={() => setPicked(mood.code)}
+          >
+            <span className={styles.face}>
+              <MoodFace mood={mood.code} size={34} label="" />
+            </span>
             <span>{mood.label}</span>
-            {mood.code === PICKED && (
-              <span className={styles.picked} data-story="mood-pick" data-later />
-            )}
-          </li>
+          </button>
         ))}
-      </ul>
+      </div>
+      <p className={styles.note}>
+        <Icon name="lock" size={12} />
+        {texts.note}
+      </p>
     </div>
   );
 }

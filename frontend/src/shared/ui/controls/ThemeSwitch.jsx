@@ -5,6 +5,8 @@ import { Icon } from '../icons/Icon';
 import { OptionGroup } from './OptionGroup';
 import styles from './ThemeSwitch.module.css';
 
+const THEME_ICON = { light: 'sun', dark: 'moon' };
+
 // Переключатель темы: солнце и луна. Компактный (шапка, меню телефона) — одна кнопка, которая
 // показывает текущую тему и меняет её; full (настройки) — два варианта с названиями.
 export function ThemeSwitch({ full = false }) {
@@ -18,7 +20,7 @@ export function ThemeSwitch({ full = false }) {
         options={['dark', 'light'].map((code) => ({
           code,
           label: common.theme.names[code],
-          icon: <ThemeIcon theme={code} />,
+          icon: <Icon name={THEME_ICON[code]} size={18} className={styles.icon} />,
         }))}
       />
     );
@@ -35,11 +37,7 @@ export function ThemeSwitch({ full = false }) {
       data-ui="theme-switch"
       onClick={() => changeTheme(next)}
     >
-      <ThemeIcon key={theme} theme={theme} />
+      <Icon key={theme} name={THEME_ICON[theme]} size={18} className={styles.icon} />
     </button>
   );
-}
-
-function ThemeIcon({ theme }) {
-  return <Icon name={theme === 'light' ? 'sun' : 'moon'} size={18} className={styles.icon} />;
 }

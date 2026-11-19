@@ -16,7 +16,7 @@
 // (app/routing/useLanguageRoute.js держит адрес и язык согласованными).
 
 import { createListeners } from '../listeners';
-import { readChoice, writeValue } from '../localFlag';
+import { readChoice, writeValue } from '../localPreferences';
 import about from '@/texts/en/about.json';
 import auth from '@/texts/en/auth.json';
 import common from '@/texts/en/common.json';

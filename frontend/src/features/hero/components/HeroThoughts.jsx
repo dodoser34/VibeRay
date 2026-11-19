@@ -1,14 +1,10 @@
 import { useEffect, useImperativeHandle, useRef, useState } from 'react';
-import { MoodFace } from '@/features/mood';
-import { CategoryIcon } from '@/features/problems';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { STATUS_BY_CODE } from '@/shared/config/problemStatuses';
 import { useLanguage } from '@/shared/hooks/useLanguage';
-import { formatNumber } from '@/shared/lib/i18n/formatNumber';
-import { Avatar } from '@/shared/ui/avatar/Avatar';
-import { Icon } from '@/shared/ui/icons/Icon';
 import home from '@/texts/en/home.json';
 import { usePointerParallax } from '../hooks/usePointerParallax';
+import { ThoughtVisual } from './ThoughtVisual';
 import styles from './HeroThoughts.module.css';
 
 // Мысли жителя — пять разных видов, идут вперемешку, чтобы соседние облачка не были похожи:
@@ -29,15 +25,6 @@ const THOUGHTS = [
   { kind: 'solved', key: 'parks', category: 'parks' },
   { kind: 'district', key: 'district' },
   { kind: 'solved', key: 'noise', category: 'noise' },
-];
-const ASK_MOODS = ['very_bad', 'bad', 'normal', 'good', 'excellent'];
-// Доли настроений в полосе района — от лучшего к худшему (токены --mood-*).
-const DISTRICT_BAR = [
-  ['--mood-excellent', 34],
-  ['--mood-good', 28],
-  ['--mood-normal', 20],
-  ['--mood-anxious', 11],
-  ['--mood-bad', 7],
 ];
 // С какой стороны головы всплывает очередная мысль — угол от центра головы (градусы, 0 — вправо,
 // −90 — вверх), стороны чередуются. Широкий экран: справа сверху, слева сверху, справа, над головой
@@ -106,11 +93,11 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
       head.y -= root.offsetTop;
 
       const sides = stacked ? SIDES.stacked : SIDES.wide;
-      const w = bubble.offsetWidth;
-      const h = bubble.offsetHeight;
+      const bubbleWidth = bubble.offsetWidth;
+      const bubbleHeight = bubble.offsetHeight;
       const minLeft = stacked ? PAD : root.clientWidth * COLUMN_SHARE;
-      const maxLeft = root.clientWidth - w - PAD;
-      const maxTop = root.clientHeight - h - (stacked ? STACKED_BOTTOM : PAD);
+      const maxLeft = root.clientWidth - bubbleWidth - PAD;
+      const maxTop = root.clientHeight - bubbleHeight - (stacked ? STACKED_BOTTOM : PAD);
       const rootTop = root.getBoundingClientRect().top + window.scrollY;
       const minTop = stacked
         ? Math.max(
@@ -122,19 +109,28 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
       // растёт от него наружу и не выходит за допустимую область. Цена места — насколько облачко
       // перекрывает голову (квадрат вокруг неё) и насколько его пришлось сдвинуть от луча.
       const place = (degrees) => {
-        const a = (degrees * Math.PI) / 180;
-        const d = { x: Math.cos(a), y: Math.sin(a) };
-        const corner = { x: head.x + d.x * head.radius * 1.5, y: head.y + d.y * head.radius * 1.5 };
-        const wantLeft = d.x >= 0 ? corner.x : corner.x - w;
-        const wantTop = d.y < 0 ? corner.y - h : corner.y;
+        const radians = (degrees * Math.PI) / 180;
+        const direction = { x: Math.cos(radians), y: Math.sin(radians) };
+        const corner = {
+          x: head.x + direction.x * head.radius * 1.5,
+          y: head.y + direction.y * head.radius * 1.5,
+        };
+        const wantLeft = direction.x >= 0 ? corner.x : corner.x - bubbleWidth;
+        const wantTop = direction.y < 0 ? corner.y - bubbleHeight : corner.y;
         const left = gsap.utils.clamp(minLeft, Math.max(minLeft, maxLeft), wantLeft);
         const top = gsap.utils.clamp(minTop, Math.max(minTop, maxTop), wantTop);
-        const r = head.radius * 1.05;
-        const overlapX = Math.max(0, Math.min(left + w, head.x + r) - Math.max(left, head.x - r));
-        const overlapY = Math.max(0, Math.min(top + h, head.y + r) - Math.max(top, head.y - r));
+        const distance = head.radius * 1.05;
+        const overlapX = Math.max(
+          0,
+          Math.min(left + bubbleWidth, head.x + distance) - Math.max(left, head.x - distance),
+        );
+        const overlapY = Math.max(
+          0,
+          Math.min(top + bubbleHeight, head.y + distance) - Math.max(top, head.y - distance),
+        );
         const shift = Math.abs(left - wantLeft) + Math.abs(top - wantTop);
         const overlap = overlapX * overlapY;
-        return { dir: d, corner, left, top, overlap, cost: overlap + shift * 0.5 };
+        return { dir: direction, corner, left, top, overlap, cost: overlap + shift * 0.5 };
       };
       // Сначала сторона по очереди, затем запасные — зеркальная и над головой; берётся первая
       // свободная, а если свободных нет — с наименьшим перекрытием. Одна колонка: над головой облачко
@@ -156,8 +152,8 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
           ? { x: head.x + Math.sign(dir.x) * head.radius * 0.9, y: head.y }
           : { x: head.x + dir.x * head.radius * 0.95, y: head.y + dir.y * head.radius * 0.95 };
       const to = {
-        x: gsap.utils.clamp(left, left + w, corner.x),
-        y: gsap.utils.clamp(top, top + h, corner.y),
+        x: gsap.utils.clamp(left, left + bubbleWidth, corner.x),
+        y: gsap.utils.clamp(top, top + bubbleHeight, corner.y),
       };
       dots.forEach((dot, i) => {
         const t = (i + 1) / (DOTS + 1);
@@ -261,63 +257,5 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
         )}
       </div>
     </div>
-  );
-}
-
-// Узкое облачко (одна колонка): пять лиц шкалы помещаются в строку только мельче.
-function ThoughtVisual({ thought, stacked }) {
-  if (thought.kind === 'ask') {
-    return (
-      <span className={styles.faces}>
-        {ASK_MOODS.map((mood) => (
-          <span key={mood} data-face>
-            <MoodFace mood={mood} size={stacked ? 20 : 26} label="" />
-          </span>
-        ))}
-      </span>
-    );
-  }
-  if (thought.kind === 'joy') {
-    return (
-      <span className={styles.joy} data-face>
-        <MoodFace mood={thought.mood} size={44} label="" />
-      </span>
-    );
-  }
-  if (thought.kind === 'solved') {
-    return (
-      <span className={styles.solved}>
-        <CategoryIcon category={thought.category} size={22} />
-        <span className={styles.check} data-check>
-          <Icon name="check" size={12} strokeWidth={3} />
-        </span>
-      </span>
-    );
-  }
-  if (thought.kind === 'confirm') {
-    return (
-      <span className={styles.crowd}>
-        {thought.avatars.map((preset) => (
-          <span key={preset} className={styles.avatar} data-avatar>
-            <Avatar src={`preset:${preset}`} size={28} />
-          </span>
-        ))}
-        <span className={styles.count} data-count>
-          +{formatNumber(thought.count)}
-        </span>
-      </span>
-    );
-  }
-  return (
-    <span className={styles.bar}>
-      {DISTRICT_BAR.map(([token, share]) => (
-        <span
-          key={token}
-          className={styles.segment}
-          data-segment
-          style={{ flexGrow: share, background: `var(${token})` }}
-        />
-      ))}
-    </span>
   );
 }

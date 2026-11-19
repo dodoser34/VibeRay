@@ -1,5 +1,5 @@
-import { iso } from '../../lib/isometric';
-import { leafTuft } from '../../lib/roomShapes';
+import { isoToScreen } from '../../lib/room/isometric';
+import { leafTuft } from '../../lib/room/roomShapes';
 import { IsoCylinder } from './IsoCylinder';
 import styles from './IsometricRoom.module.css';
 
@@ -7,8 +7,8 @@ const PLANT_ANGLES = [-75, -50, -28, -8, 14, 36, 58, 80];
 
 // Мелочи на полу перед столом: кресло-мешок с книгой, спящий кот на ковре и большое растение в углу. Порядок — от стены к зрителю.
 export function FloorDecor() {
-  const [catX, catY] = iso(17.5, 18.5, 0.05);
-  const [bagX, bagY] = iso(26, 21, 0);
+  const [catX, catY] = isoToScreen(17.5, 18.5, 0.05);
+  const [bagX, bagY] = isoToScreen(26, 21, 0);
   return (
     <g>
       {/* кресло-мешок: мягкий купол с вмятиной сиденья и швами, на нём раскрытая книга */}

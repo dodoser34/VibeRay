@@ -1,0 +1,8 @@
+.text {
+  color: var(--color-text-muted);
+}
+
+.actions {
+  display: grid;
+  gap: var(--space-2);
+}

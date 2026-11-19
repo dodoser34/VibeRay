@@ -28,25 +28,29 @@ const LINKS = 110;
 // Дороги строятся волной от центра к краю: сначала каркас магистралей, следом улицы и проезды.
 // REVEAL_SOFT — ширина размытого фронта волны в долях размаха города.
 const REVEAL_SOFT = 0.12;
+// Высота, до которой город может доходить на экране (плиты районов и жители на крышах): по ней
+// считается его силуэт для кадрирования рядом с карточками истории.
+const FOOTPRINT_TOP = 1;
 // Кольца и дуги прозрачные: рисуются после полупрозрачных плит, иначе плиты их подкрашивают.
 const EFFECTS_ORDER = 20;
-const clamp01 = (v) => Math.min(1, Math.max(0, v));
+const clamp01 = (value) => Math.min(1, Math.max(0, value));
 const backOut = (t) => {
-  const s = 1.9;
-  const u = t - 1;
-  return 1 + (s + 1) * u * u * u + s * u * u;
+  const overshoot = 1.9;
+  const shifted = t - 1;
+  return 1 + (overshoot + 1) * shifted * shifted * shifted + overshoot * shifted * shifted;
 };
 const bounceOut = (t) => {
-  const n = 7.5625;
-  const d = 2.75;
-  if (t < 1 / d) return n * t * t;
-  if (t < 2 / d) return n * (t -= 1.5 / d) * t + 0.75;
-  if (t < 2.5 / d) return n * (t -= 2.25 / d) * t + 0.9375;
-  return n * (t -= 2.625 / d) * t + 0.984375;
+  const bounceScale = 7.5625;
+  const bounceLength = 2.75;
+  if (t < 1 / bounceLength) return bounceScale * t * t;
+  if (t < 2 / bounceLength) return bounceScale * (t -= 1.5 / bounceLength) * t + 0.75;
+  if (t < 2.5 / bounceLength) return bounceScale * (t -= 2.25 / bounceLength) * t + 0.9375;
+  return bounceScale * (t -= 2.625 / bounceLength) * t + 0.984375;
 };
 // Прогресс 0..1 элемента i из n со сдвигом для общего прогресса p (каждый элемент занимает `span`
 // диапазона).
-const staggered = (p, i, n, span = 0.25) => clamp01((p - (i / n) * (1 - span)) / span);
+const staggered = (progress, i, count, span = 0.25) =>
+  clamp01((progress - (i / count) * (1 - span)) / span);
 
 export const CITY_PARAMS = {
   appear: 0, // появляется плоская карта (совпадает с картой на мониторе)
@@ -70,16 +74,16 @@ export class CityStage {
     this.detail = detail;
     this.group = new THREE.Group();
     const project = createProjection(city.center);
-    this.project = (lonlat) => project(lonlat).map((v) => v * scale);
+    this.project = (lonlat) => project(lonlat).map((value) => value * scale);
     // Та же подложка, что на карте города: земля и PNG-плитки дорог и воды (без загрузки схемы дорог),
     // к контуру города они гаснут; вся дорожная сеть лежит на земле под полупрозрачными плитами.
-    const km = cityOutline(city.districts, city.center);
+    const outlineKm = cityOutline(city.districts, city.center);
     const outline = {
-      ...km,
-      edges: km.edges.map(([nx, ny, h]) => [nx, ny, h * scale]),
-      fade: km.fade * scale,
+      ...outlineKm,
+      edges: outlineKm.edges.map(([nx, ny, distance]) => [nx, ny, distance * scale]),
+      fade: outlineKm.fade * scale,
     };
-    this.reach = km.reach * scale;
+    this.reach = outlineKm.reach * scale;
     this.backdrop = new CityBackdrop();
     this.tiles = new MapTiles(city.slug, outline, renderer, { scale });
     this.group.add(this.backdrop.group, this.tiles.group);
@@ -103,6 +107,8 @@ export class CityStage {
       item.moodColor = colorForAggregate(moods.districts[item.slug]);
     });
 
+    this.footprint = footprintOf(city.districts.features, this.project);
+
     this.addPeople(city.districts.features, moods.districts);
     this.addPins(problems);
     this.addLinks();
@@ -113,19 +119,22 @@ export class CityStage {
   // Жители — маленькие точки на крышах; каждый получает настроение из смеси своего района.
   addPeople(features, aggregates) {
     const rand = createRandom(20260722);
-    const areas = features.map((f) => ringArea(largestRing(f.geometry.coordinates)));
-    const total = areas.reduce((a, b) => a + b, 0);
+    const areas = features.map((feature) => ringArea(largestRing(feature.geometry.coordinates)));
+    const total = areas.reduce((sum, area) => sum + area, 0);
     this.people = [];
-    features.forEach((feature, fi) => {
+    features.forEach((feature, featureIndex) => {
       const polygon = largestPolygon(feature.geometry.coordinates);
       const [ring] = polygon;
-      const xs = ring.map((p) => p[0]);
-      const ys = ring.map((p) => p[1]);
-      const box = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
-      const count = Math.max(8, Math.round((PEOPLE * this.detail * areas[fi]) / total));
+      const xs = ring.map((point) => point[0]);
+      const ys = ring.map((point) => point[1]);
+      const bounds = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+      const count = Math.max(8, Math.round((PEOPLE * this.detail * areas[featureIndex]) / total));
       const distribution = aggregates[feature.properties.slug]?.distribution;
-      for (let n = 0, guard = 0; n < count && guard < count * 40; guard++) {
-        const lonlat = [box[0] + rand() * (box[1] - box[0]), box[2] + rand() * (box[3] - box[2])];
+      for (let placed = 0, guard = 0; placed < count && guard < count * 40; guard++) {
+        const lonlat = [
+          bounds[0] + rand() * (bounds[1] - bounds[0]),
+          bounds[2] + rand() * (bounds[3] - bounds[2]),
+        ];
         if (!pointInPolygon(lonlat, polygon)) continue;
         const [x, y] = this.project(lonlat);
         this.people.push({
@@ -135,7 +144,7 @@ export class CityStage {
           mood: pickMood(distribution, rand),
           order: rand(),
         });
-        n++;
+        placed++;
       }
     });
     this.people.sort((a, b) => a.order - b.order);
@@ -189,14 +198,14 @@ export class CityStage {
     const pairs = [];
     const links = Math.round(LINKS * this.detail);
     for (let guard = 0; pairs.length < links && guard < links * 30; guard++) {
-      const a = this.people[Math.floor(rand() * this.people.length)];
-      const b = this.people[Math.floor(rand() * this.people.length)];
-      const distance = Math.hypot(a.x - b.x, a.z - b.z);
-      if (a.slug === b.slug || distance < 1.2 || distance > 7) continue;
+      const first = this.people[Math.floor(rand() * this.people.length)];
+      const second = this.people[Math.floor(rand() * this.people.length)];
+      const distance = Math.hypot(first.x - second.x, first.z - second.z);
+      if (first.slug === second.slug || distance < 1.2 || distance > 7) continue;
       pairs.push({
-        from: new THREE.Vector3(a.x, this.heightOf(a.slug) + DOT_RADIUS, a.z),
-        to: new THREE.Vector3(b.x, this.heightOf(b.slug) + DOT_RADIUS, b.z),
-        color: a.color,
+        from: new THREE.Vector3(first.x, this.heightOf(first.slug) + DOT_RADIUS, first.z),
+        to: new THREE.Vector3(second.x, this.heightOf(second.slug) + DOT_RADIUS, second.z),
+        color: first.color,
       });
     }
     this.links = new LinkNetwork(pairs);
@@ -213,48 +222,49 @@ export class CityStage {
     return this.districts.items.get(slug)?.group.scale.y ?? 0;
   }
 
-  apply(p) {
+  apply(progress) {
     const color = new THREE.Color();
-    const n = this.items.length;
-    this.backdrop.setOpacity(p.backdrop);
-    this.tiles.setOpacity(p.backdrop);
+    const itemCount = this.items.length;
+    this.backdrop.setOpacity(progress.backdrop);
+    this.tiles.setOpacity(progress.backdrop);
     // Радиус волны: 0 — дорог нет, reach + фронт — видны до края. Вода проявляется вместе с землёй.
     const soft = this.reach * REVEAL_SOFT;
     const radius = (t) => t * (this.reach + soft);
     this.tiles.setReveal(
       {
         water: radius(1),
-        major: radius(staggered(p.streets, 0, 2, 0.55)),
-        local: radius(staggered(p.streets, 1, 2, 0.55)),
+        major: radius(staggered(progress.streets, 0, 2, 0.55)),
+        local: radius(staggered(progress.streets, 1, 2, 0.55)),
       },
       soft,
     );
     // Пока дорог нет, плиты плотные, как карта на экране; с дорогами — полупрозрачные, как на карте
     // города, и сеть видна сквозь них.
-    const opacity = THREE.MathUtils.lerp(1, this.districts.baseOpacity, p.streets) * p.appear;
+    const opacity =
+      THREE.MathUtils.lerp(1, this.districts.baseOpacity, progress.streets) * progress.appear;
 
     this.items.forEach((item, i) => {
-      const grow = staggered(p.rise, i, n, 0.35);
+      const grow = staggered(progress.rise, i, itemCount, 0.35);
       item.group.scale.y = Math.max(0.02, item.height * backOut(grow));
       item.material.opacity = opacity;
-      item.lineMaterial.opacity = 0.85 * p.appear;
-      color.copy(item.districtColor).lerp(item.moodColor, p.moodMix);
+      item.lineMaterial.opacity = 0.85 * progress.appear;
+      color.copy(item.districtColor).lerp(item.moodColor, progress.moodMix);
       item.material.color.copy(color);
       item.material.emissive.copy(color);
     });
 
-    const d = this.dummy;
+    const dummy = this.dummy;
     const position = new THREE.Vector3();
     const count = this.people.length;
     this.people.forEach((person, i) => {
-      const s = backOut(staggered(p.people, i, count, 0.08));
+      const grow = backOut(staggered(progress.people, i, count, 0.08));
       const top = this.roofOf(person.slug);
-      position.set(person.x, top + DOT_RADIUS * s, person.z);
-      d.position.copy(position);
-      d.scale.setScalar(Math.max(0.0001, s));
-      d.updateMatrix();
-      this.dots.setMatrixAt(i, d.matrix);
-      const mood = staggered(p.moodDots, i, count, 0.1);
+      position.set(person.x, top + DOT_RADIUS * grow, person.z);
+      dummy.position.copy(position);
+      dummy.scale.setScalar(Math.max(0.0001, grow));
+      dummy.updateMatrix();
+      this.dots.setMatrixAt(i, dummy.matrix);
+      const mood = staggered(progress.moodDots, i, count, 0.1);
       this.dots.setColorAt(i, color.copy(this.neutral).lerp(person.color, mood));
       this.moodPulses.set(i, position.setY(top + 0.006), person.color);
       this.moodPulses.setProgress(i, mood);
@@ -265,18 +275,18 @@ export class CityStage {
 
     const pinCount = this.pins.length;
     this.pins.forEach((pin, i) => {
-      const t = staggered(p.problems, i, pinCount, 0.3);
+      const t = staggered(progress.problems, i, pinCount, 0.3);
       const base = this.roofOf(pin.slug);
       const fall = (1 - bounceOut(t)) * PIN_DROP;
       const size = t > 0 ? 1 : 0.0001;
-      d.scale.set(size, PIN_HEIGHT * size, size);
-      d.position.set(pin.x, base + fall, pin.z);
-      d.updateMatrix();
-      this.pinStems.setMatrixAt(i, d.matrix);
-      d.scale.setScalar(size);
-      d.position.set(pin.x, base + fall + PIN_HEIGHT, pin.z);
-      d.updateMatrix();
-      this.pinHeads.setMatrixAt(i, d.matrix);
+      dummy.scale.set(size, PIN_HEIGHT * size, size);
+      dummy.position.set(pin.x, base + fall, pin.z);
+      dummy.updateMatrix();
+      this.pinStems.setMatrixAt(i, dummy.matrix);
+      dummy.scale.setScalar(size);
+      dummy.position.set(pin.x, base + fall + PIN_HEIGHT, pin.z);
+      dummy.updateMatrix();
+      this.pinHeads.setMatrixAt(i, dummy.matrix);
       position.set(pin.x, base + 0.01, pin.z);
       this.pinPulses.set(i, position, pin.color);
       this.pinPulses.setProgress(i, clamp01((t - 0.36) / 0.64)); // кольца начинаются с первого удара
@@ -285,7 +295,7 @@ export class CityStage {
     this.pinHeads.instanceMatrix.needsUpdate = true;
     this.pinPulses.commit();
 
-    this.links.setReveal(p.links);
+    this.links.setReveal(progress.links);
   }
 
   // Центр верха района в координатах этой сцены (цели камеры).
@@ -317,14 +327,46 @@ export class CityStage {
   }
 }
 
+// Силуэт города для кадрирования: выпуклая оболочка всех районов на земле и на высоте крыш
+// (точки сцены). Камера проецирует их на экран и вписывает город в свободное от карточек место.
+function footprintOf(features, project) {
+  const points = features.flatMap(({ geometry }) => {
+    const polygons =
+      geometry.type === 'MultiPolygon' ? geometry.coordinates : [geometry.coordinates];
+    return polygons.flatMap(([outer]) => outer.map((lonlat) => project(lonlat)));
+  });
+  return convexHull(points).flatMap(([x, y]) => [
+    new THREE.Vector3(x, 0, -y),
+    new THREE.Vector3(x, FOOTPRINT_TOP, -y),
+  ]);
+}
+
+// Выпуклая оболочка точек на плоскости (монотонная цепочка Эндрю).
+function convexHull(points) {
+  const sorted = [...points].sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const cross = (origin, first, second) =>
+    (first[0] - origin[0]) * (second[1] - origin[1]) -
+    (first[1] - origin[1]) * (second[0] - origin[0]);
+  const half = (list) => {
+    const hull = [];
+    for (const point of list) {
+      while (hull.length >= 2 && cross(hull.at(-2), hull.at(-1), point) <= 0) hull.pop();
+      hull.push(point);
+    }
+    hull.pop();
+    return hull;
+  };
+  return [...half(sorted), ...half([...sorted].reverse())];
+}
+
 function pickMood(distribution, rand) {
   const entries = distribution
-    ? Object.entries(distribution).filter(([, c]) => c > 0)
-    : MOODS.map((m) => [m.code, 1]);
-  const total = entries.reduce((a, [, c]) => a + c, 0);
+    ? Object.entries(distribution).filter(([, count]) => count > 0)
+    : MOODS.map((mood) => [mood.code, 1]);
+  const total = entries.reduce((sum, [, count]) => sum + count, 0);
   let roll = rand() * total;
-  for (const [code, c] of entries) {
-    roll -= c;
+  for (const [code, count] of entries) {
+    roll -= count;
     if (roll <= 0) return code;
   }
   return entries[entries.length - 1][0];

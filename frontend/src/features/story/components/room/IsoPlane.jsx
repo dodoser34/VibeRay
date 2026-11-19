@@ -1,4 +1,4 @@
-import { matrixAttr, planeMatrix } from '../../lib/isometric';
+import { matrixAttr, planeMatrix } from '../../lib/room/isometric';
 
 // Плоский рисунок на грани или стене (facing: 'x' | 'y' | 'z', см. planeMatrix): постеры, экран
 // монитора, улица за окном, ковёр. Рисунок — в единицах мира (10 см) или мельче, если задан scale.

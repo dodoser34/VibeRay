@@ -1,10 +1,17 @@
+import { useRef } from 'react';
+import { useSlidingThumb } from '@/shared/animations/controls/useSlidingThumb';
 import styles from './OptionGroup.module.css';
 
 // Группа вариантов, из которых выбран один (настройки: тема, графика). options — [{ code, label,
-// icon? }]; выбранный вариант — в рамке акцента.
+// icon? }]; рамка акцента перетекает к выбранному варианту (useSlidingThumb).
 export function OptionGroup({ label, options, value, onChange }) {
+  const rootRef = useRef(null);
+  const thumbRef = useRef(null);
+  useSlidingThumb(rootRef, thumbRef, value, '[aria-pressed="true"]');
+
   return (
-    <div className={styles.group} role="group" aria-label={label}>
+    <div ref={rootRef} className={styles.group} role="group" aria-label={label}>
+      <span ref={thumbRef} className={styles.thumb} aria-hidden="true" />
       {options.map((option) => (
         <button
           key={option.code}

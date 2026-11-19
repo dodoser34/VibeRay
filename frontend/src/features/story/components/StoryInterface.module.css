@@ -1,11 +1,11 @@
+/* Где стоят панели, решает оверлей истории: на ПК — колонка рядом с городом, на телефоне — стопка
+   экранов у нижнего края (StoryOverlay.module.css). */
 .layout {
-  position: absolute;
-  inset: calc(var(--tabbar-height) + var(--space-6)) 5vw var(--space-7);
-  pointer-events: none;
+  display: grid;
+  gap: var(--space-3);
 }
 
 .panel {
-  position: absolute;
   display: grid;
   gap: var(--space-2);
   padding: var(--space-4) var(--space-5);
@@ -14,32 +14,13 @@
   border: 1px solid var(--color-glass-border);
   box-shadow: var(--shadow-panel);
   backdrop-filter: blur(var(--blur-glass));
-}
-
-.district {
-  top: 8%;
-  left: 0;
-  width: min(18.75rem, 44vw);
+  pointer-events: auto;
 }
 
 .profile {
-  top: 0;
-  right: 18%;
   display: flex;
   align-items: center;
   gap: var(--space-3);
-}
-
-.problem {
-  top: 34%;
-  right: 0;
-  width: min(18.125rem, 44vw);
-}
-
-.stats {
-  right: 4%;
-  bottom: 2%;
-  width: min(18.75rem, 50vw);
 }
 
 .kicker {
@@ -75,16 +56,82 @@
   font-size: var(--fs-xs);
 }
 
+/* Полоса долей настроений: каждая доля — кнопка; наведённая (или в фокусе) становится толще, а под
+   полосой — её подпись. Кнопка выше видимой полосы, чтобы в неё было легко попасть. */
 .bar {
   display: flex;
-  height: 0.5rem;
-  overflow: hidden;
-  border-radius: var(--radius-pill);
+  gap: 2px;
 }
 
-.bar span {
-  width: var(--w);
-  background: var(--c);
+.segment {
+  flex: var(--share) 1 0;
+  display: grid;
+  align-items: center;
+  height: 1.25rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.segment::before {
+  content: '';
+  height: 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--color);
+  opacity: 0.55;
+  transition:
+    opacity var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+
+.segment[data-active]::before {
+  opacity: 1;
+  transform: scaleY(1.6);
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.swatch {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--color);
+}
+
+.avatarButton {
+  display: grid;
+  flex: none;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.avatarButton:hover {
+  transform: rotate(-8deg) scale(1.06);
+}
+
+/* Новый аватар «встаёт» на место */
+.avatar {
+  display: grid;
+  animation: avatar-swap var(--dur-base) var(--ease-out);
+}
+
+@keyframes avatar-swap {
+  from {
+    opacity: 0;
+    transform: scale(0.6) rotate(-30deg);
+  }
 }
 
 .status {
@@ -96,14 +143,73 @@
   font-weight: 600;
 }
 
-.chart {
-  width: 100%;
-  height: 3.5rem;
+.confirm {
+  justify-self: start;
 }
 
-.chart polyline {
+/* Подпись кнопки — строчный блок: иконка встаёт в строку с текстом */
+.confirmIcon {
+  display: inline-block;
+  margin-right: var(--space-2);
+  vertical-align: -3px;
+}
+
+/* График недели: по нему можно провести мышью или пальцем (прокрутку по вертикали он не держит),
+   а в фокусе — шагать стрелками. Отмеченный день — кружок и пунктир, переезжают плавно. */
+.chartBox {
+  border-radius: var(--radius-sm);
+  cursor: crosshair;
+  touch-action: pan-y;
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 300 / 54;
+  overflow: visible;
+}
+
+.area {
+  fill: var(--color-accent-soft);
+}
+
+.line {
   fill: none;
   stroke: var(--color-accent-bright);
   stroke-width: 2;
+  stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
+}
+
+.point {
+  fill: var(--color-accent-bright);
+}
+
+.cursor {
+  stroke: var(--color-glass-border);
+  stroke-dasharray: 3 3;
+  vector-effect: non-scaling-stroke;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.marker {
+  fill: var(--color-bg-raised);
+  stroke: var(--color-accent-bright);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .segment::before,
+  .avatarButton,
+  .cursor,
+  .marker {
+    transition: none;
+  }
+
+  .avatar {
+    animation: none;
+  }
 }

@@ -115,6 +115,13 @@ html::-webkit-scrollbar {
   background: var(--scrollbar-track);
 }
 
+/* Карточка, которая прокручивается сама (панель карты, окно), задаёт --scrollbar-inset = свой
+   радиус: дорожка начинается и кончается там, где кончаются скруглённые углы, и полоса не вылезает
+   за карточку. */
+::-webkit-scrollbar-track {
+  margin-block: var(--scrollbar-inset, 0px);
+}
+
 ::-webkit-scrollbar-thumb {
   border: 2px solid transparent;
   border-radius: var(--radius-pill);

@@ -30,7 +30,7 @@ export const REJECTION_REASONS = withLabels(
 );
 
 export const REJECTION_REASON_BY_CODE = Object.fromEntries(
-  REJECTION_REASONS.map((r) => [r.code, r]),
+  REJECTION_REASONS.map((reason) => [reason.code, reason]),
 );
 
 // Что модератор может сделать с проблемой в каждом статусе (ARCHITECTURE.md 6.2): вперёд по пути,
@@ -48,5 +48,5 @@ export const isStepBack = (from, to) =>
   (from === 'in_progress' && to === 'confirmed') || (from === 'resolved' && to === 'in_progress');
 
 export const STATUS_BY_CODE = Object.fromEntries(
-  [...PROBLEM_STATUSES, REJECTED_STATUS].map((s) => [s.code, s]),
+  [...PROBLEM_STATUSES, REJECTED_STATUS].map((status) => [status.code, status]),
 );

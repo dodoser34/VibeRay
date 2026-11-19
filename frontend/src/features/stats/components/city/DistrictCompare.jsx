@@ -1,15 +1,13 @@
 import { useState } from 'react';
-import { MoodFace } from '@/features/mood';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
-import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
 import { useRevealed } from '@/shared/hooks/useRevealed';
 import { format } from '@/shared/lib/i18n/format';
-import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
-import { plural } from '@/shared/lib/i18n/plural';
+import { formatSigned } from '@/shared/lib/i18n/formatNumber';
 import { CompareChart } from '@/shared/ui/charts/CompareChart';
 import texts from '@/texts/en/stats.json';
 import { useDistrictStats } from '../../hooks/useDistrictStats';
 import { seriesPointTitle, seriesTick } from '../../lib/seriesLabels';
+import { CompareSummary } from './CompareSummary';
 import styles from './DistrictCompare.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
 
@@ -33,41 +31,10 @@ function defaults(rows) {
     .sort((x, y) => y.mood.score - x.mood.score);
   const first = scored[0]?.district ?? rows[0]?.district;
   const last = scored.at(-1)?.district ?? rows[1]?.district;
-  return { a: first, b: last === first ? rows.find((r) => r.district !== first)?.district : last };
-}
-
-function Summary({ side, stats, name }) {
-  const mood = stats?.mood;
-  const code = mood && !mood.insufficient_data ? moodCodeForScore(mood.score) : null;
-  return (
-    <div className={styles.card} style={{ '--tone': `var(${side.colorVar})` }}>
-      <MoodFace mood={code} size={40} />
-      <div className={styles.cardText}>
-        <span className={styles.cardName}>{name}</span>
-        {!stats ? (
-          <span className={styles.cardMeta}>{t.loading}</span>
-        ) : (
-          <>
-            <span className={styles.cardScore}>
-              {code ? formatSigned(mood.score) : texts.table.noData}
-              {code && <span className={styles.cardMood}>{MOOD_BY_CODE[code].label}</span>}
-            </span>
-            <span className={styles.cardMeta}>
-              {format(t.marks, {
-                count: formatNumber(mood.sample_size),
-                marks: plural(mood.sample_size, texts.marks),
-              })}
-              {' · '}
-              {format(t.reported, {
-                count: stats.problems.new_in_period,
-                problems: plural(stats.problems.new_in_period, t.problemForms),
-              })}
-            </span>
-          </>
-        )}
-      </div>
-    </div>
-  );
+  return {
+    a: first,
+    b: last === first ? rows.find((row) => row.district !== first)?.district : last,
+  };
 }
 
 // Сравнение двух районов за период дашборда: настроение на одном графике и разница в проблемах
@@ -82,10 +49,10 @@ export function DistrictCompare({ period, rows, names, onHover }) {
   const options = [...rows].sort((x, y) => names[x.district]?.localeCompare(names[y.district]));
 
   const verdict = (() => {
-    const [ma, mb] = [data.a?.mood, data.b?.mood];
-    if (!ma || !mb) return null;
-    if (ma.insufficient_data || mb.insufficient_data) return t.fewMarks;
-    const delta = ma.score - mb.score;
+    const [moodA, moodB] = [data.a?.mood, data.b?.mood];
+    if (!moodA || !moodB) return null;
+    if (moodA.insufficient_data || moodB.insufficient_data) return t.fewMarks;
+    const delta = moodA.score - moodB.score;
     if (Math.abs(delta) < SAME_SCORE) return t.equal;
     return format(t.better, {
       district: names[delta > 0 ? picked.a : picked.b],
@@ -129,7 +96,9 @@ export function DistrictCompare({ period, rows, names, onHover }) {
             <select
               className={styles.select}
               value={picked[side.key]}
-              onChange={(event) => setPicked((p) => ({ ...p, [side.key]: event.target.value }))}
+              onChange={(event) =>
+                setPicked((current) => ({ ...current, [side.key]: event.target.value }))
+              }
             >
               {options.map((row) => (
                 <option
@@ -149,7 +118,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
           className={styles.swap}
           aria-label={t.swap}
           title={t.swap}
-          onClick={() => setPicked((p) => ({ a: p.b, b: p.a }))}
+          onClick={() => setPicked((current) => ({ a: current.b, b: current.a }))}
         >
           <Icon name="swap" size={16} />
         </button>
@@ -157,7 +126,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
 
       <div className={styles.cards}>
         {SIDES.map((side) => (
-          <Summary
+          <CompareSummary
             key={side.key}
             side={side}
             stats={data[side.key]}
@@ -185,8 +154,8 @@ export function DistrictCompare({ period, rows, names, onHover }) {
             renderTooltip={(i) => (
               <>
                 <strong>{seriesPointTitle(series[0][i].t, period)}</strong>
-                {SIDES.map((side, s) => {
-                  const score = series[s][i]?.score ?? null;
+                {SIDES.map((side, sideIndex) => {
+                  const score = series[sideIndex][i]?.score ?? null;
                   const district = names[picked[side.key]];
                   return (
                     <span

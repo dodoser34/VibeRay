@@ -1,4 +1,4 @@
-import { iso } from '../../lib/isometric';
+import { isoToScreen } from '../../lib/room/isometric';
 import { IsoBox } from './IsoBox';
 import { IsoCylinder } from './IsoCylinder';
 import { IsoPlane } from './IsoPlane';
@@ -16,23 +16,23 @@ const REACH = 2.3;
 // сиденье, подлокотники и спинка с мягкой вставкой.
 export function DeskChair() {
   const [cx, cy] = CENTER;
-  const [shadowX, shadowY] = iso(cx, cy, 0);
+  const [shadowX, shadowY] = isoToScreen(cx, cy, 0);
   return (
     <g>
       <ellipse className={styles.floorShadow} cx={shadowX} cy={shadowY} rx="66" ry="30" />
       {LEGS.map((angle) => {
         const end = [cx + Math.cos(angle) * REACH, cy + Math.sin(angle) * REACH];
-        const [tx, ty] = iso(end[0], end[1], 0.6);
-        const [wx, wy] = iso(end[0], end[1], 0.2);
+        const [tx, ty] = isoToScreen(end[0], end[1], 0.6);
+        const [wheelX, wheelY] = isoToScreen(end[0], end[1], 0.2);
         // Ролик висит под концом луча: сначала колесо, над ним ножка, поверх — сам луч.
         return (
           <g key={angle}>
-            <ellipse className={styles.caster} cx={wx} cy={wy} rx="4.6" ry="3.4" />
-            <ellipse className={styles.casterHub} cx={wx} cy={wy - 0.6} rx="1.6" ry="1.1" />
-            <path className={styles.casterStem} d={`M${tx} ${ty}V${wy - 1.5}`} />
+            <ellipse className={styles.caster} cx={wheelX} cy={wheelY} rx="4.6" ry="3.4" />
+            <ellipse className={styles.casterHub} cx={wheelX} cy={wheelY - 0.6} rx="1.6" ry="1.1" />
+            <path className={styles.casterStem} d={`M${tx} ${ty}V${wheelY - 1.5}`} />
             <path
               className={styles.chairLeg}
-              d={`M${iso(cx, cy, BASE_Z + 0.1).join(' ')}L${tx} ${ty}`}
+              d={`M${isoToScreen(cx, cy, BASE_Z + 0.1).join(' ')}L${tx} ${ty}`}
             />
           </g>
         );

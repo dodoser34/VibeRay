@@ -89,12 +89,15 @@ function registerCity(info, { districts, water }) {
     },
   };
   cities.set(city.slug, city);
-  city.districts.features.forEach((f) => districtCity.set(f.properties.slug, city.slug));
+  city.districts.features.forEach((feature) =>
+    districtCity.set(feature.properties.slug, city.slug),
+  );
   return city;
 }
 
 export const cityBySlug = (slug) => cities.get(slug) ?? null;
-const districtSlugsOf = (slug) => cities.get(slug).districts.features.map((f) => f.properties.slug);
+const districtSlugsOf = (slug) =>
+  cities.get(slug).districts.features.map((feature) => feature.properties.slug);
 export const cityOfDistrict = (slug) => districtCity.get(slug) ?? null;
 
 // Город с геометрией; при первом открытии у него появляются свои демо-проблемы. null — такого города
@@ -124,7 +127,7 @@ export async function loadCity(slug) {
 
 export function districtName(slug) {
   const city = cities.get(districtCity.get(slug));
-  const feature = city?.districts.features.find((f) => f.properties.slug === slug);
+  const feature = city?.districts.features.find((feature) => feature.properties.slug === slug);
   return feature ? nameOf(feature.properties) : '';
 }
 
@@ -137,23 +140,23 @@ const round2 = (value) => Math.round(value * 100) / 100;
 // [start, end) каждого интервала, от старых к новым. Трёхчасовые интервалы выровнены по 0, 3, 6…
 // часов, дни — по полуночи (последний интервал — текущий, незавершённый); месяцы — календарные.
 function bucketsFor(period, now = Date.now()) {
-  const cfg = PERIODS[period];
-  if (cfg.unit !== 'month') {
+  const periodSettings = PERIODS[period];
+  if (periodSettings.unit !== 'month') {
     const base = new Date(now);
-    if (cfg.unit < DAY) {
-      const hours = cfg.unit / HOUR;
+    if (periodSettings.unit < DAY) {
+      const hours = periodSettings.unit / HOUR;
       base.setHours(base.getHours() - (base.getHours() % hours), 0, 0, 0);
     } else base.setHours(0, 0, 0, 0);
-    return Array.from({ length: cfg.points }, (_, i) => {
-      const start = base.getTime() - (cfg.points - 1 - i) * cfg.unit;
-      return [start, Math.min(start + cfg.unit, now)];
+    return Array.from({ length: periodSettings.points }, (_, i) => {
+      const start = base.getTime() - (periodSettings.points - 1 - i) * periodSettings.unit;
+      return [start, Math.min(start + periodSettings.unit, now)];
     });
   }
   const today = new Date(now);
   const first =
     period === 'all'
       ? new Date(HISTORY_START)
-      : new Date(today.getFullYear(), today.getMonth() - (cfg.points - 1), 1);
+      : new Date(today.getFullYear(), today.getMonth() - (periodSettings.points - 1), 1);
   const buckets = [];
   const year = first.getFullYear();
   for (let month = first.getMonth(); ; month++) {
@@ -171,8 +174,8 @@ function sampleFor(period, buckets) {
 
 function distributionFor(score, sample, rand) {
   const weights = MOODS.map((mood) => Math.exp(-((mood.score - score) ** 2) / 0.9) + rand() * 0.05);
-  const total = weights.reduce((a, b) => a + b, 0);
-  const counts = weights.map((w) => Math.round((w / total) * sample));
+  const total = weights.reduce((sum, weight) => sum + weight, 0);
+  const counts = weights.map((weight) => Math.round((weight / total) * sample));
   return Object.fromEntries(MOODS.map((mood, i) => [mood.code, counts[i]]));
 }
 
@@ -180,16 +183,16 @@ function distributionFor(score, sample, rand) {
 function trendOf(series) {
   const scored = series.filter((point) => point.score !== null);
   if (scored.length < 4) return 0;
-  const mean = (points) => points.reduce((sum, p) => sum + p.score, 0) / points.length;
+  const mean = (points) => points.reduce((sum, point) => sum + point.score, 0) / points.length;
   return round2(mean(scored.slice(-3)) - mean(scored.slice(0, 3)));
 }
 
 // Отклонённые модератором сообщения не входят в статистику (ARCHITECTURE.md 6.2).
-const published = () => problems.filter((p) => p.status !== 'rejected');
+const published = () => problems.filter((problem) => problem.status !== 'rejected');
 
 function problemsIn(list, start, end) {
-  return list.filter((p) => {
-    const t = new Date(p.created_at).getTime();
+  return list.filter((problem) => {
+    const t = new Date(problem.created_at).getTime();
     return t >= start && t < end;
   });
 }
@@ -205,7 +208,7 @@ function seriesFor(slug, period) {
   // Аэропорт ночью тихий: демонстрация порога приватности за день.
   const quiet = slug === 'aeroport' && period === 'day';
   const perBucket = quiet ? 0.15 : sampleFor(period, buckets) / buckets.length;
-  const inDistrict = published().filter((p) => p.district === slug);
+  const inDistrict = published().filter((problem) => problem.district === slug);
   const now = Date.now();
 
   return buckets.map(([start, end], i) => {
@@ -233,10 +236,10 @@ function aggregate(slug, period, series = seriesFor(slug, period)) {
   const scored = series.filter((point) => point.score !== null);
   let sample = series.reduce((sum, point) => sum + point.marks, 0);
   let score = scored.length
-    ? scored.reduce((sum, p) => sum + p.score * p.marks, 0) /
+    ? scored.reduce((sum, point) => sum + point.score * point.marks, 0) /
       Math.max(
         1,
-        scored.reduce((sum, p) => sum + p.marks, 0),
+        scored.reduce((sum, point) => sum + point.marks, 0),
       )
     : baseScore(slug);
   const distribution = distributionFor(score, sample, rand);
@@ -274,8 +277,8 @@ export function cityMoods(citySlug, period) {
 function randomPointIn(feature, rand) {
   const polygon = largestPolygon(feature.geometry.coordinates);
   const [ring] = polygon;
-  const xs = ring.map((p) => p[0]);
-  const ys = ring.map((p) => p[1]);
+  const xs = ring.map((point) => point[0]);
+  const ys = ring.map((point) => point[1]);
   const [minX, maxX, minY, maxY] = [
     Math.min(...xs),
     Math.max(...xs),
@@ -344,7 +347,7 @@ function seedProblems(city, { prefix, recent, history, seeds: [recentSeed, histo
   );
   const historyRand = createRandom(historySeed);
   const historySpan = now - 30 * DAY - HISTORY_START;
-  const old = Array.from({ length: history }, (_, i) => {
+  const historical = Array.from({ length: history }, (_, i) => {
     const createdAt = HISTORY_START + historyRand() ** 0.6 * historySpan;
     const statuses =
       now - createdAt > 365 * DAY
@@ -356,7 +359,7 @@ function seedProblems(city, { prefix, recent, history, seeds: [recentSeed, histo
           ];
     return makeProblem(city, historyRand, `${prefix}h${i + 1}`, statuses, () => createdAt, i % 8);
   });
-  return [...fresh, ...old];
+  return [...fresh, ...historical];
 }
 
 // Костанай: те же затравки и номера проблем, что и до появления других городов (на них ссылаются
@@ -374,21 +377,26 @@ problems.push(
 export function districtStats(slug, period) {
   const series = seriesFor(slug, period);
   const since = bucketsFor(period)[0][0];
-  const inDistrict = published().filter((p) => p.district === slug);
+  const inDistrict = published().filter((problem) => problem.district === slug);
   const inPeriod = problemsIn(inDistrict, since, Infinity);
 
   const byStatus = { new: 0, confirmed: 0, in_progress: 0, resolved: 0 };
-  inDistrict.forEach((p) => (byStatus[p.status] += 1));
+  inDistrict.forEach((problem) => (byStatus[problem.status] += 1));
 
   const byCategory = {};
-  inDistrict.forEach((p) => (byCategory[p.category] = (byCategory[p.category] ?? 0) + 1));
+  inDistrict.forEach(
+    (problem) => (byCategory[problem.category] = (byCategory[problem.category] ?? 0) + 1),
+  );
   const topCategories = Object.entries(byCategory)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 3)
     .map(([category, count]) => ({ category, count }));
   // Все категории за выбранный период — для сравнения районов на дашборде.
   const periodByCategory = {};
-  inPeriod.forEach((p) => (periodByCategory[p.category] = (periodByCategory[p.category] ?? 0) + 1));
+  inPeriod.forEach(
+    (problem) =>
+      (periodByCategory[problem.category] = (periodByCategory[problem.category] ?? 0) + 1),
+  );
 
   return {
     district: slug,
@@ -416,7 +424,7 @@ export function cityStats(citySlug, period) {
   const buckets = bucketsFor(period);
   const since = buckets[0][0];
   const inPeriod = problemsIn(
-    published().filter((p) => districtCity.get(p.district) === citySlug),
+    published().filter((problem) => districtCity.get(problem.district) === citySlug),
     since,
     Infinity,
   );
@@ -424,7 +432,7 @@ export function cityStats(citySlug, period) {
   const rows = districtSlugsOf(citySlug).map((slug) => {
     const series = seriesFor(slug, period);
     const mood = aggregate(slug, period, series);
-    const reported = inPeriod.filter((p) => p.district === slug);
+    const reported = inPeriod.filter((problem) => problem.district === slug);
     return {
       series,
       row: {
@@ -433,7 +441,7 @@ export function cityStats(citySlug, period) {
         trend: mood.insufficient_data ? null : trendOf(series),
         problems: {
           reported: reported.length,
-          resolved: reported.filter((p) => p.status === 'resolved').length,
+          resolved: reported.filter((problem) => problem.status === 'resolved').length,
         },
       },
     };
@@ -442,28 +450,33 @@ export function cityStats(citySlug, period) {
   const series = buckets.map(([start], i) => {
     const points = rows.map(({ series: districtSeries }) => districtSeries[i]);
     const scored = points.filter((point) => point.score !== null);
-    const scoredMarks = scored.reduce((sum, p) => sum + p.marks, 0);
-    const marks = points.reduce((sum, p) => sum + p.marks, 0);
+    const scoredMarks = scored.reduce((sum, point) => sum + point.marks, 0);
+    const marks = points.reduce((sum, point) => sum + point.marks, 0);
     return {
       t: new Date(start).toISOString(),
       score:
         marks >= MIN_SAMPLE && scoredMarks
-          ? round2(scored.reduce((sum, p) => sum + p.score * p.marks, 0) / scoredMarks)
+          ? round2(scored.reduce((sum, point) => sum + point.score * point.marks, 0) / scoredMarks)
           : null,
       marks,
-      problems: points.reduce((sum, p) => sum + p.problems, 0),
+      problems: points.reduce((sum, point) => sum + point.problems, 0),
     };
   });
 
   const moods = rows.map(({ row }) => row.mood).filter((mood) => !mood.insufficient_data);
   const scoredSample = moods.reduce((sum, mood) => sum + mood.sample_size, 0);
   const distribution = Object.fromEntries(
-    MOODS.map((mood) => [mood.code, moods.reduce((sum, m) => sum + m.distribution[mood.code], 0)]),
+    MOODS.map((mood) => [
+      mood.code,
+      moods.reduce((sum, districtMood) => sum + districtMood.distribution[mood.code], 0),
+    ]),
   );
   const byStatus = { new: 0, confirmed: 0, in_progress: 0, resolved: 0 };
-  inPeriod.forEach((p) => (byStatus[p.status] += 1));
+  inPeriod.forEach((problem) => (byStatus[problem.status] += 1));
   const byCategory = {};
-  inPeriod.forEach((p) => (byCategory[p.category] = (byCategory[p.category] ?? 0) + 1));
+  inPeriod.forEach(
+    (problem) => (byCategory[problem.category] = (byCategory[problem.category] ?? 0) + 1),
+  );
 
   return {
     city: citySlug,
@@ -473,7 +486,12 @@ export function cityStats(citySlug, period) {
     mood: scoredSample
       ? {
           insufficient_data: false,
-          score: round2(moods.reduce((sum, m) => sum + m.score * m.sample_size, 0) / scoredSample),
+          score: round2(
+            moods.reduce(
+              (sum, districtMood) => sum + districtMood.score * districtMood.sample_size,
+              0,
+            ) / scoredSample,
+          ),
           dominant_mood: Object.entries(distribution).sort((a, b) => b[1] - a[1])[0][0],
           distribution,
           sample_size: rows.reduce((sum, { row }) => sum + row.mood.sample_size, 0),
@@ -495,7 +513,8 @@ export function cityStats(citySlug, period) {
 
 export function addMoodMark(userId, district, mood) {
   const previous = userMarks.findIndex(
-    (m) => m.userId === userId && m.district === district && Date.now() - m.at < 3 * HOUR,
+    (mark) =>
+      mark.userId === userId && mark.district === district && Date.now() - mark.at < 3 * HOUR,
   );
   if (previous !== -1) userMarks.splice(previous, 1);
   userMarks.push({ userId, district, mood, at: Date.now() });
@@ -508,8 +527,8 @@ export function isDistrict(slug) {
 // Район, в который попадает точка (на сервере — та же проверка «точка внутри полигона района»).
 export function districtAt(location) {
   for (const city of cities.values()) {
-    const feature = city.districts.features.find((f) =>
-      f.geometry.coordinates.some((polygon) => pointInPolygon(location, polygon)),
+    const feature = city.districts.features.find((feature) =>
+      feature.geometry.coordinates.some((polygon) => pointInPolygon(location, polygon)),
     );
     if (feature) return feature.properties.slug;
   }

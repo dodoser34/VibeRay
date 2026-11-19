@@ -25,7 +25,7 @@ export function ModerationPage({ section }) {
   const districts = useMemo(
     () =>
       city.data?.districts.features
-        .map((f) => ({ slug: f.properties.slug, name: f.properties.name }))
+        .map((feature) => ({ slug: feature.properties.slug, name: feature.properties.name }))
         .sort((a, b) => a.name.localeCompare(b.name)) ?? null,
     [city.data],
   );

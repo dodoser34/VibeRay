@@ -4,6 +4,7 @@
 }
 
 .row {
+  position: relative;
   display: grid;
   grid-template-columns: 1.125rem auto 1fr auto;
   align-items: center;

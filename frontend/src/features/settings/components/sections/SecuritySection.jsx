@@ -30,8 +30,8 @@ export function SecuritySection({ id }) {
   const [errors, setErrors] = useState({});
 
   const set = (field) => (event) => {
-    setValues((v) => ({ ...v, [field]: event.target.value }));
-    setErrors((e) => ({ ...e, [field]: undefined }));
+    setValues((current) => ({ ...current, [field]: event.target.value }));
+    setErrors((current) => ({ ...current, [field]: undefined }));
   };
 
   const handleSubmit = async (event) => {

@@ -93,7 +93,7 @@ export class ProblemsLayer {
   // списка — так «зерно» кластера и его ключ стабильны, пока камера двигается понемногу.
   // Возвращает true, если набор кластеров мог измениться.
   recluster(camera, width, height, now) {
-    const key = `${camera.matrixWorld.elements.map((v) => v.toFixed(3)).join()}|${width}|${height}`;
+    const key = `${camera.matrixWorld.elements.map((value) => value.toFixed(3)).join()}|${width}|${height}`;
     if (!this.dirty && (key === this.cameraKey || now - this.lastCluster < RECLUSTER_MS)) {
       return false;
     }
@@ -138,14 +138,14 @@ export class ProblemsLayer {
       });
       if (members.length < 2) return;
       const center = members
-        .reduce((sum, m) => sum.add(this.homes[m]), new THREE.Vector3())
+        .reduce((sum, memberIndex) => sum.add(this.homes[memberIndex]), new THREE.Vector3())
         .divideScalar(members.length);
       const byStatus = {};
-      members.forEach((m) => {
-        const { status } = this.problems[m];
+      members.forEach((memberIndex) => {
+        const { status } = this.problems[memberIndex];
         byStatus[status] = (byStatus[status] ?? 0) + 1;
-        this.targets[m].copy(center);
-        this.targetScales[m] = 0;
+        this.targets[memberIndex].copy(center);
+        this.targetScales[memberIndex] = 0;
       });
       clusters.push({ key: this.problems[i].id, count: members.length, center, byStatus });
     });
@@ -182,15 +182,15 @@ export class ProblemsLayer {
   writeMatrices(time) {
     this.problems.forEach((problem, i) => {
       const position = this.positions[i];
-      const s = this.scales[i] * (this.size ?? 1);
-      this.dummy.position.set(position.x, position.y + (STEM_HEIGHT / 2) * s, position.z);
-      this.dummy.scale.set(s, STEM_HEIGHT * s, s);
+      const scale = this.scales[i] * (this.size ?? 1);
+      this.dummy.position.set(position.x, position.y + (STEM_HEIGHT / 2) * scale, position.z);
+      this.dummy.scale.set(scale, STEM_HEIGHT * scale, scale);
       this.dummy.updateMatrix();
       this.stems.setMatrixAt(i, this.dummy.matrix);
 
       const pulse = problem.status === 'new' ? 1 + Math.sin(time * 4 + i) * 0.3 : 1;
-      this.dummy.position.set(position.x, position.y + STEM_HEIGHT * s, position.z);
-      this.dummy.scale.setScalar(pulse * s);
+      this.dummy.position.set(position.x, position.y + STEM_HEIGHT * scale, position.z);
+      this.dummy.scale.setScalar(pulse * scale);
       this.dummy.updateMatrix();
       this.heads.setMatrixAt(i, this.dummy.matrix);
     });
@@ -219,7 +219,7 @@ export class ProblemsLayer {
   }
 
   worldPositionOf(problem, target = new THREE.Vector3()) {
-    const i = this.problems.findIndex((p) => p.id === problem.id);
+    const i = this.problems.findIndex((candidate) => candidate.id === problem.id);
     if (i === -1) return target.set(0, 0, 0);
     target.copy(this.homes[i]);
     target.y += STEM_HEIGHT;

@@ -1,9 +1,10 @@
 import { Icon } from '@/shared/ui/icons/Icon';
 import about from '@/texts/en/about.json';
-import styles from './StoryBuild.module.css';
+import styles from './StoryPlan.module.css';
 
-// Сцена 7: идея превращается в работу — между парами пункты плана отмечаются один за другим.
-export function StoryBuild() {
+// Сцена 7: идея превращается в работу — между парами пункты плана отмечаются один за другим, полоса
+// и счётчик готовности растут вместе с ними.
+export function StoryPlan() {
   const texts = about.story.build;
   return (
     <div className={styles.card} data-story="build-card" data-ui="story-build" data-later>
@@ -23,9 +24,13 @@ export function StoryBuild() {
           </li>
         ))}
       </ul>
-      <span className={styles.track}>
-        <span className={styles.bar} data-story="build-bar" />
-      </span>
+      <div className={styles.progress}>
+        <span className={styles.track}>
+          <span className={styles.bar} data-story="build-bar" />
+        </span>
+        {/* «4 из 6 готово» пишет шкала истории (storyTimeline) в такт галочкам */}
+        <span className={styles.count} data-story="build-count" />
+      </div>
     </div>
   );
 }

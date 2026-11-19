@@ -1,0 +1,53 @@
+.root {
+  position: relative;
+  display: grid;
+  flex: none;
+  place-items: center;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--color-glass-border);
+  background: var(--color-glass);
+  color: var(--color-text);
+  cursor: pointer;
+  transition:
+    border-color var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out);
+}
+
+.sm {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.md {
+  width: 2.125rem;
+  height: 2.125rem;
+}
+
+.lg {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.root:hover {
+  border-color: var(--color-glass-highlight);
+  background: var(--color-glass-strong);
+}
+
+.root svg {
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  transition: rotate var(--dur-base) var(--ease-spring);
+}
+
+.root:hover svg {
+  rotate: 90deg;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root,
+  .root svg {
+    transition: none;
+  }
+}

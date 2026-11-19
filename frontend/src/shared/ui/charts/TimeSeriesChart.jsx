@@ -2,7 +2,7 @@ import { useId, useRef, useState } from 'react';
 import { rootScale } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useElementWidth } from '@/shared/hooks/useElementWidth';
-import { curve, runs } from './curve';
+import { monotoneCurvePath, splitIntoRuns } from './monotoneCurve';
 import styles from './TimeSeriesChart.module.css';
 
 const PAD = { top: 10, right: 4, bottom: 22, left: 30 };
@@ -35,13 +35,13 @@ function layout(count, width, height, [min, max], k) {
 }
 
 function paths(values, geometry) {
-  const segments = runs(values, geometry.x, geometry.y);
+  const segments = splitIntoRuns(values, geometry.x, geometry.y);
   return {
-    line: segments.map(curve).join(''),
+    line: segments.map(monotoneCurvePath).join(''),
     area: segments
       .map(
         (points) =>
-          `${curve(points)}L${points.at(-1)[0].toFixed(1)} ${geometry.lineBottom}` +
+          `${monotoneCurvePath(points)}L${points.at(-1)[0].toFixed(1)} ${geometry.lineBottom}` +
           `L${points[0][0].toFixed(1)} ${geometry.lineBottom}Z`,
       )
       .join(''),
@@ -86,13 +86,13 @@ export function TimeSeriesChart({
       const area = areaRef.current;
       const rects = [...barsRef.current.children];
       const barTarget = (i) => {
-        const h = (bars[i] / maxBar) * geometry.barBand;
-        return { y: geometry.barBottom - h, height: h };
+        const barHeight = (bars[i] / maxBar) * geometry.barBand;
+        return { y: geometry.barBottom - barHeight, height: barHeight };
       };
       const setPaths = (next) => {
-        const d = paths(next, geometry);
-        line.setAttribute('d', d.line);
-        area.setAttribute('d', d.area);
+        const nextPaths = paths(next, geometry);
+        line.setAttribute('d', nextPaths.line);
+        area.setAttribute('d', nextPaths.area);
       };
       gsap.killTweensOf([line, area, morphRef.current, ...rects]);
 

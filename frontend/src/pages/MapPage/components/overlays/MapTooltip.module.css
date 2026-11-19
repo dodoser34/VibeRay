@@ -1,0 +1,24 @@
+.tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-tabbar);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.375rem 0.75rem 0.375rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-glass-strong);
+  border: 1px solid var(--color-glass-highlight);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+}
+
+.value {
+  padding-left: var(--space-2);
+  border-left: 1px solid var(--color-glass-border);
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}

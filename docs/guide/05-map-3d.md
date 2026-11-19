@@ -19,7 +19,7 @@ flowchart TB
     end
     RT["SceneRuntime<br/>рендерер, рисование по требованию,<br/>пауза на скрытой вкладке, dispose"] --> scene
     CAM["cameraRig<br/>OrbitControls + перелёты GSAP"] --> scene
-    PK["Picker<br/>луч: наведение и клик"] --> scene
+    PK["ScenePicker<br/>луч: наведение и клик"] --> scene
 ```
 
 | Слой | Файл | Что делает |

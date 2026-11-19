@@ -1,5 +1,6 @@
 /* Круглая стеклянная кнопка в стиле колокольчика и переключателя языка */
 .toggle {
+  position: relative;
   display: grid;
   place-items: center;
   width: 2.875rem;
@@ -33,20 +34,27 @@
   stroke-linejoin: round;
 }
 
-/* Иконка мягко поворачивается при смене темы */
+/* При смене темы новая иконка выкатывается с оборотом и пружинит на место; под указателем
+   солнце и луна покачиваются */
 .toggle .icon {
-  animation: icon-in var(--dur-slow) var(--ease-out);
+  animation: icon-in var(--dur-slow) var(--ease-spring);
+  transition: rotate var(--dur-base) var(--ease-spring);
+}
+
+.toggle:hover .icon {
+  rotate: 25deg;
 }
 
 @keyframes icon-in {
   from {
     opacity: 0;
-    transform: rotate(-90deg) scale(0.6);
+    transform: rotate(-200deg) scale(0.3);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .toggle .icon {
     animation: none;
+    transition: none;
   }
 }

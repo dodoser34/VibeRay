@@ -1,4 +1,4 @@
-import { readValue, writeValue } from '@/shared/lib/localFlag';
+import { readValue, writeValue } from '@/shared/lib/localPreferences';
 
 const KEY = 'viberay:city';
 const SLUG = /^[a-z0-9-]+$/;

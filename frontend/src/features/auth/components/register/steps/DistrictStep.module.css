@@ -1,0 +1,32 @@
+.districtGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+.districtOption {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-glass-border);
+  background: var(--color-glass);
+  font-size: var(--fs-xs);
+  line-height: 1.3;
+  cursor: pointer;
+  transition:
+    border-color var(--dur-base) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out);
+}
+
+.districtOption:hover {
+  border-color: var(--color-glass-highlight);
+}
+
+.districtOption:has(input:checked) {
+  border-color: var(--color-accent-bright);
+  background: var(--color-accent-soft);
+}
+
+.districtOption:has(input:focus-visible) {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}

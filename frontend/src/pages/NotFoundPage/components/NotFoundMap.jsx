@@ -1,5 +1,5 @@
 import { useId } from 'react';
-import styles from '../NotFoundPage.module.css';
+import styles from './NotFoundMap.module.css';
 
 // Четыре панели карты, сложенной гармошкой: верхние углы чередуются, как у настоящего сгиба.
 const PANELS = [
@@ -75,8 +75,14 @@ export function NotFoundMap({ label }) {
           pathLength="1"
           data-line
         />
-        {STREETS.map((d) => (
-          <path key={d} d={d} className={styles.street} pathLength="1" data-line />
+        {STREETS.map((streetPath) => (
+          <path
+            key={streetPath}
+            d={streetPath}
+            className={styles.street}
+            pathLength="1"
+            data-line
+          />
         ))}
         <path
           d="M380 70 L500 84 L508 300 L392 316 L372 150 Z"

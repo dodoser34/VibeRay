@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import { rootScale } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useElementWidth } from '@/shared/hooks/useElementWidth';
-import { curve, runs } from './curve';
+import { monotoneCurvePath, splitIntoRuns } from './monotoneCurve';
 import styles from './CompareChart.module.css';
 
 const PAD = { top: 10, right: 6, bottom: 22, left: 30 };
@@ -118,7 +118,7 @@ export function CompareChart({
           {series.map((line) => (
             <path
               key={line.key}
-              d={runs(line.values, geometry.x, geometry.y).map(curve).join('')}
+              d={splitIntoRuns(line.values, geometry.x, geometry.y).map(monotoneCurvePath).join('')}
               className={styles.line}
               style={{ '--line': `var(${line.colorVar})` }}
               pathLength="1"

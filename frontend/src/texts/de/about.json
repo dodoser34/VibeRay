@@ -48,12 +48,14 @@
         "Probleme auf der Karte",
         "Statistik der Viertel",
         "Skalierung auf andere Städte"
-      ]
+      ],
+      "count": "{done} von {total} erledigt"
     },
     "moodCard": {
       "nickname": "Bewohner",
       "place": "Zentrum · jetzt",
-      "question": "Wie fühlst du dich?"
+      "question": "Wie fühlst du dich?",
+      "note": "Anonym: Andere sehen nur die Gesamtstimmung des Viertels"
     },
     "interface": {
       "districtKicker": "Viertel von Kostanai",
@@ -64,7 +66,7 @@
       "problemKicker": "Problem · Straßen",
       "problemTitle": "Tiefes Schlagloch an der Kreuzung",
       "problemStatus": "Bestätigt",
-      "problemConfirmations": "12 Bestätigungen",
+      "profileAvatar": "Avatar wechseln",
       "statsKicker": "Stimmung der Woche"
     }
   },

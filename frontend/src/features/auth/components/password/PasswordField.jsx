@@ -17,7 +17,7 @@ export function PasswordField(props) {
           data-ui="password-toggle"
           aria-label={visible ? auth.fields.hidePassword : auth.fields.showPassword}
           aria-pressed={visible}
-          onClick={() => setVisible((v) => !v)}
+          onClick={() => setVisible((wasVisible) => !wasVisible)}
         >
           <Icon name={visible ? 'eye' : 'eye-off'} size={18} />
         </button>

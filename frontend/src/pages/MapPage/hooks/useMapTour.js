@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { readFlag, writeFlag } from '@/shared/lib/localFlag';
+import { readFlag, writeFlag } from '@/shared/lib/localPreferences';
 import texts from '@/texts/en/map.json';
 
 const TOUR_KEY = 'viberay:tour:map';

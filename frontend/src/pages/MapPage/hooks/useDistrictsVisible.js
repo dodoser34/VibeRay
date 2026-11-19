@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { readFlag, writeFlag } from '@/shared/lib/localFlag';
+import { readFlag, writeFlag } from '@/shared/lib/localPreferences';
 
 const STORAGE_KEY = 'viberay:map:districts-hidden';
 

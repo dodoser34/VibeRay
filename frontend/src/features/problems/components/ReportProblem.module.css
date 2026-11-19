@@ -23,18 +23,6 @@
   font-size: var(--fs-lg);
 }
 
-.close {
-  display: grid;
-  place-items: center;
-  width: 2.125rem;
-  height: 2.125rem;
-  flex: none;
-  border-radius: 50%;
-  border: 1px solid var(--color-glass-border);
-  background: var(--color-glass);
-}
-
-.close svg,
 .removePhoto svg {
   stroke: var(--color-text);
   stroke-width: 1.8;
@@ -47,26 +35,44 @@
   gap: var(--space-2);
 }
 
+/* Полоса шага заполняется слева направо, когда до него дошли */
 .progress li {
   height: 0.1875rem;
+  overflow: hidden;
   border-radius: var(--radius-pill);
   background: var(--color-glass-border);
-  transition: background-color var(--dur-base) var(--ease-out);
 }
 
-.progress li[data-state='done'] {
+.progress li::after {
+  content: '';
+  display: block;
+  height: 100%;
+  border-radius: inherit;
   background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition:
+    transform var(--dur-slow) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out);
 }
 
-.progress li[data-state='current'] {
+.progress li[data-state='done']::after,
+.progress li[data-state='current']::after {
+  transform: scaleX(1);
+}
+
+.progress li[data-state='current']::after {
   background: var(--color-accent-bright);
 }
 
+/* Отступ со всех сторон: плитка при наведении приподнимается, а рамка фокуса и тень поля выходят за
+   свой край — без отступа область прокрутки срезала их верх и бока. Отрицательные поля оставляют
+   содержимое на прежнем месте. Снизу запас больше: последняя карточка не упирается в край. */
 .body {
   min-height: 0;
   overflow-y: auto;
-  /* Запас снизу: последняя карточка не упирается в край прокрутки и не выглядит обрезанной */
-  padding-bottom: var(--space-3);
+  margin: calc(-1 * var(--space-2));
+  padding: var(--space-2) var(--space-2) var(--space-4);
 }
 
 /* Шаг 1 — категория */
@@ -89,16 +95,33 @@
   font-weight: 600;
   line-height: 1.25;
   text-align: center;
+  /* transform плитки занят GSAP (появление, нажатие) — наведение двигает её свойством translate */
   transition:
     border-color var(--dur-base) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out),
     color var(--dur-base) var(--ease-out),
-    transform var(--dur-base) var(--ease-out);
+    translate var(--dur-base) var(--ease-out);
 }
 
+.category svg {
+  transition:
+    translate var(--dur-base) var(--ease-out),
+    rotate var(--dur-base) var(--ease-out),
+    color var(--dur-base) var(--ease-out);
+}
+
+/* Под указателем плитка приподнимается, а иконка подпрыгивает и наклоняется */
 .category:hover {
   border-color: var(--color-glass-highlight);
+  background: var(--color-glass-strong);
   color: var(--color-text);
-  transform: translateY(-2px);
+  translate: 0 -3px;
+}
+
+.category:hover svg {
+  color: var(--color-accent-bright);
+  translate: 0 -2px;
+  rotate: -8deg;
 }
 
 .category[aria-checked='true'] {
@@ -119,6 +142,7 @@
   font-size: var(--fs-sm);
 }
 
+/* Точка поставлена: карточка места «защёлкивается», от точки расходится кольцо */
 .placed {
   display: flex;
   align-items: center;
@@ -127,14 +151,44 @@
   border-radius: var(--radius-md);
   border: 1px solid var(--color-accent-bright);
   background: var(--color-accent-soft);
+  animation: placed-in var(--dur-base) var(--ease-out);
+}
+
+@keyframes placed-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
 }
 
 .placedDot {
+  position: relative;
   width: 0.75rem;
   height: 0.75rem;
   flex: none;
   border-radius: 50%;
   background: var(--color-accent-bright);
+}
+
+.placedDot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid var(--color-accent-bright);
+  animation: placed-ring 1.8s var(--ease-out) infinite;
+}
+
+@keyframes placed-ring {
+  from {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(2.6);
+  }
 }
 
 .placedName {
@@ -147,6 +201,7 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* Точки ещё нет: пунктирная рамка мягко «дышит», приглашая нажать на карту */
 .waiting {
   padding: var(--space-3);
   border-radius: var(--radius-md);
@@ -154,6 +209,14 @@
   color: var(--color-text-faint);
   font-size: var(--fs-sm);
   text-align: center;
+  animation: waiting 2.4s ease-in-out infinite;
+}
+
+@keyframes waiting {
+  50% {
+    border-color: var(--color-accent);
+    color: var(--color-text-muted);
+  }
 }
 
 .note {
@@ -257,6 +320,18 @@
   border-radius: var(--radius-md);
 }
 
+/* Добавленное фото появляется с лёгким увеличением */
+.photo {
+  animation: photo-in var(--dur-base) var(--ease-out);
+}
+
+@keyframes photo-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+}
+
 .photo img {
   width: 100%;
   height: 100%;
@@ -295,6 +370,14 @@
 }
 
 .addPhoto svg {
+  transition: scale var(--dur-base) var(--ease-out);
+}
+
+.addPhoto:hover svg {
+  scale: 1.12;
+}
+
+.addPhoto svg {
   fill: none;
   stroke: currentColor;
   stroke-width: 1.7;
@@ -309,4 +392,20 @@
 .actions {
   display: flex;
   gap: var(--space-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress li::after,
+  .category,
+  .category svg,
+  .addPhoto svg {
+    transition: none;
+  }
+
+  .placed,
+  .placedDot::after,
+  .waiting,
+  .photo {
+    animation: none;
+  }
 }

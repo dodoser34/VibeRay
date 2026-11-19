@@ -12,7 +12,7 @@ import { MapTiles } from './MapTiles';
 import { MapVectors } from './MapVectors';
 import { CameraRig } from './cameraRig';
 import { ClusterLabels } from './ClusterLabels';
-import { Picker } from './Picker';
+import { ScenePicker } from './ScenePicker';
 import { PlacementMarker } from './PlacementMarker';
 
 // Смещение обзорной камеры от центра города: высоко и слегка под наклоном.
@@ -108,7 +108,7 @@ export class MapScene {
     });
     container.appendChild(this.labelRenderer.domElement);
 
-    this.picker = new Picker(camera, canvas, {
+    this.picker = new ScenePicker(camera, canvas, {
       // Скрытые районы не выбираются и не подсвечиваются; плиты (лежащие на земле) ловят только
       // клик, которым ставят метку новой проблемы.
       getTargets: () => [
@@ -632,9 +632,14 @@ export class MapScene {
         label.getWorldPosition(point).project(camera);
         const x = ((point.x + 1) / 2) * width;
         const y = ((1 - point.y) / 2) * height;
-        const w = chip.offsetWidth / 2 + LABEL_GAP;
-        const h = chip.offsetHeight / 2 + LABEL_GAP;
-        const box = { left: x - w, right: x + w, top: y - h, bottom: y + h };
+        const halfWidth = chip.offsetWidth / 2 + LABEL_GAP;
+        const halfHeight = chip.offsetHeight / 2 + LABEL_GAP;
+        const box = {
+          left: x - halfWidth,
+          right: x + halfWidth,
+          top: y - halfHeight,
+          bottom: y + halfHeight,
+        };
         const hidden = placed.some(
           (other) =>
             box.left < other.right &&
@@ -669,7 +674,9 @@ export class MapScene {
     if (this.placing) {
       if (hit?.kind !== 'district') return;
       this.marker.place(hit.point);
-      const location = this.unproject([hit.point.x, -hit.point.z]).map((v) => +v.toFixed(6));
+      const location = this.unproject([hit.point.x, -hit.point.z]).map(
+        (coordinate) => +coordinate.toFixed(6),
+      );
       this.placing.onPlace({ district: hit.slug, location });
       return;
     }

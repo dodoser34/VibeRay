@@ -1,5 +1,6 @@
-/* Выбранный вариант — в рамке акцента */
+/* Выбранный вариант — в рамке акцента, которая перетекает к нажатому варианту */
 .group {
+  position: relative;
   display: inline-flex;
   gap: 2px;
   padding: 0.25rem;
@@ -8,7 +9,19 @@
   border: 1px solid var(--color-glass-border);
 }
 
+.thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-accent);
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .option {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -21,18 +34,31 @@
   font-weight: 600;
   cursor: pointer;
   transition:
-    color var(--dur-fast),
-    border-color var(--dur-fast),
-    background-color var(--dur-fast);
+    color var(--dur-base) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out);
 }
 
-.option:hover {
+.option:hover:not([aria-pressed='true']) {
   color: var(--color-text);
+  background: var(--color-glass-strong);
 }
 
 .option[aria-pressed='true'] {
-  background: var(--color-accent-soft);
-  border-color: var(--color-accent);
   color: var(--color-text);
   cursor: default;
+}
+
+/* Иконка выбранного варианта (солнце, луна) делает оборот, когда рамка к ней приезжает */
+.option > svg {
+  transition: rotate var(--dur-slow) var(--ease-spring);
+}
+
+.option[aria-pressed='true'] > svg {
+  rotate: 360deg;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .option > svg {
+    transition: none;
+  }
 }

@@ -16,63 +16,63 @@ import { subscribeTheme } from '@/shared/lib/theme/theme';
 const HOME_PATHS = ['/', '/login', '/register'];
 const PAGES = [
   {
-    test: (p) => p.startsWith('/map'),
+    test: (path) => path.startsWith('/map'),
     get label() {
       return nav.pageNames.map;
     },
     tab: 'map',
   },
   {
-    test: (p) => p === '/about',
+    test: (path) => path === '/about',
     get label() {
       return nav.pageNames.about;
     },
     tab: 'about',
   },
   {
-    test: (p) => p === '/support',
+    test: (path) => path === '/support',
     get label() {
       return nav.pageNames.support;
     },
     tab: 'support',
   },
   {
-    test: (p) => p === '/settings',
+    test: (path) => path === '/settings',
     get label() {
       return nav.pageNames.settings;
     },
     tab: 'me',
   },
   {
-    test: (p) => p === '/moderation/settings',
+    test: (path) => path === '/moderation/settings',
     get label() {
       return nav.moderator.settings;
     },
     tab: 'me',
   },
   ...['map', 'city', 'support'].map((key) => ({
-    test: (p) => p === `/moderation/${key}`,
+    test: (path) => path === `/moderation/${key}`,
     get label() {
       return nav.moderator.tabs[key].label;
     },
     tab: `moderation-${key}`,
   })),
   {
-    test: (p) => p === '/moderation',
+    test: (path) => path === '/moderation',
     get label() {
       return nav.moderator.tabs.queue.label;
     },
     tab: 'moderation-queue',
   },
   {
-    test: (p) => p === '/login',
+    test: (path) => path === '/login',
     get label() {
       return nav.pageNames.login;
     },
     tab: 'login',
   },
   {
-    test: (p) => p === '/register',
+    test: (path) => path === '/register',
     get label() {
       return nav.pageNames.register;
     },

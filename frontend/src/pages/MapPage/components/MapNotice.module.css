@@ -1,0 +1,25 @@
+.root {
+  display: grid;
+  gap: var(--space-4);
+  min-height: 0;
+  overflow-y: auto;
+  /* Запас снизу: последняя карточка не упирается в край прокрутки и не выглядит обрезанной */
+  padding-bottom: var(--space-3);
+}
+
+.kicker {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: var(--fs-lg);
+}
+
+.note {
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+  line-height: 1.5;
+}

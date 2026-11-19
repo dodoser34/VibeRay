@@ -1,5 +1,5 @@
-import { points, ROOM } from '../../lib/isometric';
-import { WINDOW } from '../../lib/roomLayout';
+import { points, ROOM } from '../../lib/room/isometric';
+import { WINDOW } from '../../lib/room/roomLayout';
 import { IsoBox } from './IsoBox';
 import { IsoPlane } from './IsoPlane';
 import styles from './IsometricRoom.module.css';
@@ -16,7 +16,8 @@ const RUG_BORDER = [
 ];
 
 // Ромб с центром (u, w) и полуосями a, b.
-const rhombus = (u, w, a, b) => `M${u} ${w - b}L${u + a} ${w}L${u} ${w + b}L${u - a} ${w}Z`;
+const rhombus = (u, w, halfWidth, halfHeight) =>
+  `M${u} ${w - halfHeight}L${u + halfWidth} ${w}L${u} ${w + halfHeight}L${u - halfWidth} ${w}Z`;
 
 // Точка окна (x, 0, z) вдоль луча света до пола.
 function onFloor(x, z) {
@@ -35,31 +36,31 @@ const PANES = [
 // Коробка комнаты-диорамы: две стены с толщиной (видны срезы), пол-плита с паркетом, плинтусы,
 // пятно света из окна и ковёр.
 export function RoomShell() {
-  const { x: X, y: Y, z: Z } = ROOM;
+  const { x: roomX, y: roomY, z: roomZ } = ROOM;
   return (
     <g>
-      <IsoBox at={[-1, -1, -1.5]} size={[X + 1, 1, Z + 1.5]} tone="--story-wall" />
-      <IsoBox at={[-1, 0, -1.5]} size={[1, Y, Z + 1.5]} tone="--story-wall" />
-      <IsoBox at={[0, 0, -1.5]} size={[X, Y, 1.5]} tone="--story-floor" />
+      <IsoBox at={[-1, -1, -1.5]} size={[roomX + 1, 1, roomZ + 1.5]} tone="--story-wall" />
+      <IsoBox at={[-1, 0, -1.5]} size={[1, roomY, roomZ + 1.5]} tone="--story-wall" />
+      <IsoBox at={[0, 0, -1.5]} size={[roomX, roomY, 1.5]} tone="--story-floor" />
 
       <IsoPlane facing="z" at={[0, 0, 0]}>
-        {Array.from({ length: Math.floor(Y / PLANK) }, (_, row) => {
+        {Array.from({ length: Math.floor(roomY / PLANK) }, (_, row) => {
           const w = (row + 1) * PLANK;
           const shift = (row % 3) * 3.4;
           return (
             <g key={row} className={styles.plank}>
-              <path d={`M0 ${w}H${X}`} />
+              <path d={`M0 ${w}H${roomX}`} />
               {[0, 1, 2, 3].map((k) => {
                 const u = shift + 2 + k * 8.5;
-                return u < X && <path key={k} d={`M${u} ${w - PLANK}V${w}`} />;
+                return u < roomX && <path key={k} d={`M${u} ${w - PLANK}V${w}`} />;
               })}
             </g>
           );
         })}
       </IsoPlane>
 
-      <IsoBox at={[0, 0, 0]} size={[X, 0.25, 0.8]} tone="--story-paper" />
-      <IsoBox at={[0, 0.25, 0]} size={[0.25, Y - 0.25, 0.8]} tone="--story-paper" />
+      <IsoBox at={[0, 0, 0]} size={[roomX, 0.25, 0.8]} tone="--story-paper" />
+      <IsoBox at={[0, 0.25, 0]} size={[0.25, roomY - 0.25, 0.8]} tone="--story-paper" />
 
       <g className={styles.windowLight}>
         {PANES.map(([x0, x1, z0, z1]) => (

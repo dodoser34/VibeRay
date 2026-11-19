@@ -76,6 +76,42 @@
   transform: translateY(-50%);
 }
 
+/* ПК: в главах с карточками (настроение, план, продукт) подпись и карточки — одной колонкой справа,
+   а город вписывается в место слева от неё (StoryExperience меряет колонку, StoryScene.setFreeArea).
+   Так карточки не лежат на городе и не остаются пустые поля. На телефоне колонки нет (ниже). */
+.column {
+  position: absolute;
+  top: calc(var(--tabbar-height) + var(--space-6));
+  right: 5vw;
+  bottom: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-4);
+  width: min(22.5rem, 34vw);
+}
+
+.overlay[data-variant='room'] .column .caption {
+  position: static;
+  max-width: none;
+  font-size: var(--fs-md);
+}
+
+.overlay[data-variant='room'] .column .moodSlot,
+.overlay[data-variant='room'] .column .center {
+  position: static;
+  transform: none;
+}
+
+.overlay[data-variant='room'] .column [data-story='mood-card'],
+.overlay[data-variant='room'] .column [data-ui='story-build'] {
+  width: 100%;
+}
+
+.overlay[data-variant='phone'] .column {
+  display: contents;
+}
+
 .hint {
   position: absolute;
   right: 0;
@@ -179,6 +215,7 @@
 
 /* Панели интерфейса — стопка экранов приложения у нижнего края */
 .overlay[data-variant='phone'] [data-ui='story-ui'] {
+  position: absolute;
   inset: auto var(--space-4) var(--space-5);
   display: flex;
   flex-direction: column;
@@ -192,9 +229,6 @@
 
 .overlay[data-variant='phone'] [data-ui='story-ui-district'],
 .overlay[data-variant='phone'] [data-ui='story-ui-problem'] {
-  position: relative;
-  inset: auto;
-  width: auto;
   padding: var(--space-3) var(--space-4);
 }
 
@@ -251,6 +285,16 @@
 
 .overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-ui'] > * {
   flex: 1;
+  min-width: 0;
+}
+
+/* Лёжа экран телефона ниже двух панелей: у них нет подзаголовков, оценки и подсказки к полосе
+   настроений, а подтвердить проблему можно стоя и на ПК */
+.overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-ui-kicker'],
+.overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-ui-score'],
+.overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-ui-hint'],
+.overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-ui-problem'] button {
+  display: none;
 }
 
 /* Маленький телефон: подписи мельче, подсказки «листайте» нет — её место занимает подпись */

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useSlidingThumb } from '@/shared/animations/controls/useSlidingThumb';
 import { changeLanguage } from '@/shared/animations/languageChange/languageTransition';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { LANGUAGES } from '@/shared/lib/i18n/language';
@@ -17,10 +18,13 @@ const FLAGS = { ru: ruFlag, kk: kzFlag, en: gbFlag, de: deFlag };
 // языках. Язык меняется без перезагрузки: текст плавно размывается и проявляется уже на новом.
 // Где места мало (шапка планшета стоя, adaptations/tablet), виден только флаг текущего языка:
 // нажатие на него раскрывает остальные (data-open), выбор или нажатие мимо — сворачивает.
+// Кольцо выбранного языка перетекает к нажатому флагу (useSlidingThumb).
 export function LanguageSwitch({ full = false, className = '' }) {
   const current = useLanguage();
   const [open, setOpen] = useState(false);
   const rootRef = useRef(null);
+  const thumbRef = useRef(null);
+  useSlidingThumb(rootRef, thumbRef, current, '[aria-pressed="true"]');
 
   useEffect(() => {
     if (!open) return undefined;
@@ -50,6 +54,7 @@ export function LanguageSwitch({ full = false, className = '' }) {
       data-open={open || undefined}
       data-ui="language-switch"
     >
+      <span ref={thumbRef} className={styles.thumb} aria-hidden="true" />
       {LANGUAGES.map((code) => (
         <button
           key={code}

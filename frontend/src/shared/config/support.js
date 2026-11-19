@@ -38,4 +38,6 @@ const SERVICE_STATES = withLabels(
   dictionaries.serviceStates,
 );
 
-export const SERVICE_STATE_BY_CODE = Object.fromEntries(SERVICE_STATES.map((s) => [s.code, s]));
+export const SERVICE_STATE_BY_CODE = Object.fromEntries(
+  SERVICE_STATES.map((state) => [state.code, state]),
+);

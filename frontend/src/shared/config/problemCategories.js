@@ -17,4 +17,6 @@ export const PROBLEM_CATEGORIES = withLabels(
   dictionaries.problemCategories,
 );
 
-export const CATEGORY_BY_CODE = Object.fromEntries(PROBLEM_CATEGORIES.map((c) => [c.code, c]));
+export const CATEGORY_BY_CODE = Object.fromEntries(
+  PROBLEM_CATEGORIES.map((category) => [category.code, category]),
+);

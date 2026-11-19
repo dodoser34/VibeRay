@@ -4,7 +4,7 @@ import { BREAKPOINTS } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import common from '@/texts/en/common.json';
 import styles from './Modal.module.css';
-import { Icon } from '../icons/Icon';
+import { CloseButton } from '../controls/CloseButton';
 
 export function Modal({ title, onClose, children, width = 460 }) {
   const titleId = useId();
@@ -49,7 +49,7 @@ export function Modal({ title, onClose, children, width = 460 }) {
       ref={rootRef}
       className={styles.overlay}
       data-ui="modal-overlay"
-      onPointerDown={(e) => e.target === e.currentTarget && onClose()}
+      onPointerDown={(event) => event.target === event.currentTarget && onClose()}
     >
       <div
         ref={panelRef}
@@ -64,15 +64,7 @@ export function Modal({ title, onClose, children, width = 460 }) {
           <h2 id={titleId} className={styles.title}>
             {title}
           </h2>
-          <button
-            type="button"
-            className={styles.close}
-            data-ui="modal-close"
-            onClick={onClose}
-            aria-label={common.close}
-          >
-            <Icon name="close" size={14} />
-          </button>
+          <CloseButton label={common.close} onClick={onClose} size="lg" dataUi="modal-close" />
         </header>
         {children}
       </div>

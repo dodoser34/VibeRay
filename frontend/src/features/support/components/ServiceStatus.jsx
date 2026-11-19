@@ -10,7 +10,8 @@ import styles from './ServiceStatus.module.css';
 export function ServiceStatus() {
   const status = useRequest('service-status', getServiceStatus);
   const services = status.data?.services ?? [];
-  const allGood = services.length > 0 && services.every((s) => s.state === 'operational');
+  const allGood =
+    services.length > 0 && services.every((service) => service.state === 'operational');
 
   let summary = texts.status.checking;
   if (status.error) summary = texts.status.failed;

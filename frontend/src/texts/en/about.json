@@ -48,12 +48,14 @@
         "Problems on the map",
         "District statistics",
         "Scaling to other cities"
-      ]
+      ],
+      "count": "{done} of {total} done"
     },
     "moodCard": {
       "nickname": "Resident",
       "place": "Centre · now",
-      "question": "How are you feeling?"
+      "question": "How are you feeling?",
+      "note": "Anonymous: others see only the district’s overall mood"
     },
     "interface": {
       "districtKicker": "Kostanay district",
@@ -64,7 +66,7 @@
       "problemKicker": "Problem · Roads",
       "problemTitle": "A deep pothole at the crossroads",
       "problemStatus": "Confirmed",
-      "problemConfirmations": "12 confirmations",
+      "profileAvatar": "Change avatar",
       "statsKicker": "Mood this week"
     }
   },

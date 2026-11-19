@@ -42,7 +42,7 @@ export function DistrictSection({ id, districts }) {
           {districts ? (
             <div className={styles.grid} data-ui="settings-district-grid">
               {option(null, texts.district.none)}
-              {districts.map((d) => option(d.slug, d.name))}
+              {districts.map((district) => option(district.slug, district.name))}
             </div>
           ) : (
             <p className={styles.loading}>{texts.district.loading}</p>

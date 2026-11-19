@@ -5,6 +5,7 @@ import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { format } from '@/shared/lib/i18n/format';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
+import { ChipGroup } from '@/shared/ui/controls/ChipGroup';
 import { Icon } from '@/shared/ui/icons/Icon';
 import { QueueItem } from './queue/QueueItem';
 import texts from '@/texts/en/moderation.json';
@@ -20,7 +21,7 @@ export function ModerationMap({ city, moods, problemId = null, onReady }) {
   const [selectedId, setSelectedId] = useState(problemId);
   const queue = useRequest(`moderation:map:${status}`, () => getModerationQueue({ status }));
   const items = queue.data?.items ?? null;
-  const selected = items?.find((p) => p.id === selectedId) ?? null;
+  const selected = items?.find((item) => item.id === selectedId) ?? null;
   const statuses = [
     { code: 'active', label: texts.queue.statusActive },
     ...PROBLEM_STATUSES.map(({ code, label }) => ({ code, label })),
@@ -56,19 +57,12 @@ export function ModerationMap({ city, moods, problemId = null, onReady }) {
         <h1 className={styles.title} data-ui="moderation-map-title">
           {texts.map.title}
         </h1>
-        <div className={styles.statuses} role="group" aria-label={texts.map.statusLabel}>
-          {statuses.map(({ code, label }) => (
-            <button
-              key={code}
-              type="button"
-              className={styles.status}
-              aria-pressed={status === code}
-              onClick={() => setStatus(code)}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+        <ChipGroup
+          label={texts.map.statusLabel}
+          options={statuses}
+          value={status}
+          onChange={setStatus}
+        />
         <p className={styles.count}>
           {items
             ? format(texts.map.count, { count: formatNumber(queue.data.total) })

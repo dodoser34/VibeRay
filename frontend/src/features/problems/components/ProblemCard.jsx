@@ -15,6 +15,7 @@ import { formatDate } from '@/shared/lib/i18n/formatDate';
 import { localizePath } from '@/shared/lib/i18n/language';
 import { plural } from '@/shared/lib/i18n/plural';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
+import { CloseButton } from '@/shared/ui/controls/CloseButton';
 import { Button } from '@/shared/ui/controls/Button';
 import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';
 import { CategoryIcon } from './CategoryIcon';
@@ -115,15 +116,7 @@ export function ProblemCard({
           >
             <Icon name="link" size={14} />
           </button>
-          <button
-            type="button"
-            className={styles.tool}
-            data-ui="panel-close"
-            onClick={onClose}
-            aria-label={texts.close}
-          >
-            <Icon name="close" size={12} />
-          </button>
+          <CloseButton label={texts.close} onClick={onClose} size="sm" />
           {shareState !== 'idle' && (
             <span className={styles.shareNote} role="status" data-state={shareState}>
               {shareState === 'copied' ? texts.copied : texts.shareFailed}

@@ -7,7 +7,7 @@ import { OUTLINE_SIDES } from '@/shared/lib/geo/cityOutline';
 // восток, y — север); в фрагментном шейдере она доступна как vEdgePoint.
 export function injectEdgeFade(shader, { edges, fade }, point) {
   shader.uniforms.edgeFadeSides = {
-    value: edges.map(([nx, ny, h]) => new THREE.Vector3(nx, ny, h)),
+    value: edges.map(([nx, ny, distance]) => new THREE.Vector3(nx, ny, distance)),
   };
   shader.uniforms.edgeFadeWidth = { value: fade };
   shader.vertexShader = `varying vec2 vEdgePoint;\n${shader.vertexShader}`.replace(

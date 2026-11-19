@@ -3,7 +3,7 @@ import * as THREE from 'three';
 const CLICK_TOLERANCE_PX = 6;
 
 // Указатель → объект сцены (с 3D-точкой попадания). Отличает клик от перетаскивания орбиты.
-export class Picker {
+export class ScenePicker {
   constructor(camera, domElement, { getTargets, onHover, onClick, onMove }) {
     this.camera = camera;
     this.dom = domElement;

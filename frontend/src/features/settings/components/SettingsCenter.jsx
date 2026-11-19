@@ -43,7 +43,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
     : SECTIONS;
   const [active, setActive] = useState(SECTIONS[0].id);
   const names = useMemo(
-    () => Object.fromEntries((districts ?? []).map((d) => [d.slug, d.name])),
+    () => Object.fromEntries((districts ?? []).map((district) => [district.slug, district.name])),
     [districts],
   );
 

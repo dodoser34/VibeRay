@@ -1,96 +1,25 @@
 import { useRef, useState } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
-import { EMAIL_PATTERN, NICKNAME_PATTERN } from '@/shared/config/validation';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
-import { Avatar, AVATAR_PRESETS } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
-import { TextField } from '@/shared/ui/controls/TextField';
-import { useAuth } from '../model/useAuth';
-import { PasswordField } from './PasswordField';
-import { PasswordStrength } from './PasswordStrength';
-import { format } from '@/shared/lib/i18n/format';
+import { useAuth } from '../../model/useAuth';
+import { STEP, STEPS, validateStep } from '../../lib/registerSteps';
+import { RegisterPreview } from './RegisterPreview';
+import { RegisterProgress } from './RegisterProgress';
+import { AccountStep } from './steps/AccountStep';
+import { AvatarStep } from './steps/AvatarStep';
+import { DistrictStep } from './steps/DistrictStep';
+import { NicknameStep } from './steps/NicknameStep';
+import { PasswordStep } from './steps/PasswordStep';
 import auth from '@/texts/en/auth.json';
-import styles from './PassForms.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
+import form from '../AuthForm.module.css';
+import styles from './RegisterFlow.module.css';
 
-const texts = auth.register;
-
-const STEPS = [
-  {
-    key: 'account',
-    get label() {
-      return texts.steps.account;
-    },
-  },
-  {
-    key: 'password',
-    get label() {
-      return texts.steps.password;
-    },
-  },
-  {
-    key: 'nickname',
-    get label() {
-      return texts.steps.nickname;
-    },
-  },
-  {
-    key: 'avatar',
-    get label() {
-      return texts.steps.avatar;
-    },
-  },
-  {
-    key: 'district',
-    get label() {
-      return texts.steps.district;
-    },
-  },
-];
-const STEP = Object.fromEntries(STEPS.map((s, i) => [s.key, i]));
-// Заполняет шаг email (тело шага держит одну высоту на всех шагах, чтобы карточка не прыгала).
-const PERKS = [
-  {
-    get text() {
-      return texts.perks.mood;
-    },
-    icon: 'smile',
-  },
-  {
-    get text() {
-      return texts.perks.problems;
-    },
-    icon: 'pin-alert',
-  },
-  {
-    get text() {
-      return texts.perks.privacy;
-    },
-    icon: 'padlock',
-  },
-];
-// Готовые ники для шага ника (все подходят под NICKNAME_PATTERN).
-const NICK_IDEAS = texts.nicknameIdeas;
-
-function validate(step, values) {
-  const errors = {};
-  if (step === STEP.account && !EMAIL_PATTERN.test(values.email)) {
-    errors.email = auth.errors.emailTypo;
-  }
-  if (step === STEP.password) {
-    if (!evaluatePassword(values.password, values).acceptable) {
-      errors.password = auth.errors.passwordWeak;
-    }
-    if (values.confirm !== values.password) errors.confirm = auth.errors.passwordsDiffer;
-  }
-  if (step === STEP.nickname && !NICKNAME_PATTERN.test(values.nickname)) {
-    errors.nickname = auth.errors.nicknameInvalid;
-  }
-  return errors;
-}
-
+// Регистрация по шагам: здесь — значения, проверка, отправка и анимация смены шага; поля каждого
+// шага — в steps/.
 export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch }) {
   const { register } = useAuth();
+  const texts = auth.register;
   const formRef = useRef(null);
   const stepRef = useRef(null);
   const direction = useRef(1);
@@ -126,8 +55,8 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
   );
 
   const set = (field, value) => {
-    setValues((v) => ({ ...v, [field]: value }));
-    setErrors((e) => ({ ...e, [field]: undefined }));
+    setValues((current) => ({ ...current, [field]: value }));
+    setErrors((current) => ({ ...current, [field]: undefined }));
     setFormError('');
   };
 
@@ -143,7 +72,7 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const stepErrors = validate(step, values);
+    const stepErrors = validateStep(step, values);
     setErrors(stepErrors);
     if (Object.keys(stepErrors).length) {
       gsap.fromTo(
@@ -189,175 +118,41 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
     }
   };
 
-  const passwordCheck = evaluatePassword(values.password, values);
-  const districtName = districts.find((d) => d.slug === values.district)?.name;
+  const fieldProps = { values, errors, onChange: set };
 
   return (
-    <form ref={formRef} className={styles.form} onSubmit={handleSubmit} noValidate>
-      <div className={styles.intro} data-part>
-        <h2 className={styles.title}>{texts.title}</h2>
+    <form ref={formRef} className={form.form} onSubmit={handleSubmit} noValidate>
+      <div className={form.intro} data-part>
+        <h2 className={form.title}>{texts.title}</h2>
       </div>
 
       {step >= STEP.nickname && (
-        <div className={styles.preview}>
-          <Avatar src={values.avatar} size={52} />
-          <div className={styles.previewText}>
-            <span className={styles.previewName}>
-              {values.nickname || texts.previewNicknamePlaceholder}
-            </span>
-            <span className={styles.previewMeta}>
-              {texts.previewResident}
-              {districtName ? ` · ${districtName}` : ''}
-            </span>
-          </div>
-          <span className={styles.lock} title={texts.previewPrivacyTitle}>
-            <Icon name="lock" size={12} />
-            {texts.previewPrivacy}
-          </span>
-        </div>
+        <RegisterPreview
+          avatar={values.avatar}
+          nickname={values.nickname}
+          districtName={districts.find((district) => district.slug === values.district)?.name}
+        />
       )}
 
-      <ol className={styles.steps} aria-label={texts.stepsLabel} data-part>
-        {STEPS.map((s, i) => (
-          <li
-            key={s.key}
-            className={styles.stepItem}
-            data-state={i < step ? 'done' : i === step ? 'current' : 'todo'}
-            aria-current={i === step ? 'step' : undefined}
-          >
-            <span className={styles.stepBar} />
-            <span className={styles.stepLabel}>{s.label}</span>
-          </li>
-        ))}
-      </ol>
+      <RegisterProgress step={step} />
 
       <div ref={stepRef} className={styles.stepBody} data-part>
-        {step === STEP.account && (
-          <div className={styles.fields}>
-            <TextField
-              label={auth.fields.email}
-              type="email"
-              autoComplete="email"
-              value={values.email}
-              onChange={(e) => set('email', e.target.value)}
-              error={errors.email}
-              hint={texts.emailHint}
-            />
-            <ul className={styles.perks} aria-label={texts.perksLabel}>
-              {PERKS.map((perk) => (
-                <li key={perk.text} className={styles.perk}>
-                  <Icon name={perk.icon} className={styles.perkIcon} />
-                  {perk.text}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {step === STEP.password && (
-          <div className={styles.fields}>
-            <PasswordField
-              label={auth.fields.password}
-              autoComplete="new-password"
-              value={values.password}
-              onChange={(e) => set('password', e.target.value)}
-              error={errors.password}
-            />
-            {values.password && <PasswordStrength result={passwordCheck} />}
-            <PasswordField
-              label={auth.fields.passwordRepeat}
-              autoComplete="new-password"
-              value={values.confirm}
-              onChange={(e) => set('confirm', e.target.value)}
-              error={errors.confirm}
-            />
-          </div>
-        )}
-
-        {step === STEP.nickname && (
-          <div className={styles.fields}>
-            <TextField
-              label={auth.fields.nickname}
-              autoComplete="nickname"
-              maxLength={24}
-              value={values.nickname}
-              onChange={(e) => set('nickname', e.target.value)}
-              error={errors.nickname}
-              hint={texts.nicknameHint}
-            />
-            <div className={styles.ideas}>
-              <span className={styles.ideasLabel}>{texts.ideasLabel}</span>
-              {NICK_IDEAS.map((idea) => (
-                <button
-                  key={idea}
-                  type="button"
-                  className={styles.idea}
-                  data-active={values.nickname === idea || undefined}
-                  onClick={() => set('nickname', idea)}
-                >
-                  {idea}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {step === STEP.avatar && (
-          <fieldset className={styles.choices}>
-            <legend className={styles.legend}>{texts.avatarLegend}</legend>
-            <div className={styles.avatarGrid}>
-              {AVATAR_PRESETS.map((_, i) => {
-                const src = `preset:${i}`;
-                return (
-                  <label key={src} className={styles.avatarOption}>
-                    <input
-                      type="radio"
-                      name="avatar"
-                      className="visually-hidden"
-                      checked={values.avatar === src}
-                      onChange={() => set('avatar', src)}
-                    />
-                    <Avatar
-                      src={src}
-                      size={48}
-                      label={format(texts.avatarOption, { number: i + 1 })}
-                    />
-                  </label>
-                );
-              })}
-            </div>
-          </fieldset>
-        )}
-
+        {step === STEP.account && <AccountStep {...fieldProps} />}
+        {step === STEP.password && <PasswordStep {...fieldProps} />}
+        {step === STEP.nickname && <NicknameStep {...fieldProps} />}
+        {step === STEP.avatar && <AvatarStep {...fieldProps} />}
         {step === STEP.district && (
-          <fieldset className={styles.choices}>
-            <legend className={styles.legend}>{texts.districtLegend}</legend>
-            <p className={styles.note}>{texts.districtNote}</p>
-            <div className={styles.districtGrid}>
-              {districts.map((d) => (
-                <label key={d.slug} className={styles.districtOption}>
-                  <input
-                    type="radio"
-                    name="district"
-                    className="visually-hidden"
-                    checked={values.district === d.slug}
-                    onChange={() => chooseDistrict(d.slug)}
-                  />
-                  <span>{d.name}</span>
-                </label>
-              ))}
-            </div>
-          </fieldset>
+          <DistrictStep districts={districts} value={values.district} onChoose={chooseDistrict} />
         )}
       </div>
 
       {formError && (
-        <p className={styles.formError} role="alert">
+        <p className={form.formError} role="alert">
           {formError}
         </p>
       )}
 
-      <div className={styles.actions} data-part>
+      <div className={form.actions} data-part>
         {step > 0 && (
           <Button variant="ghost" size="lg" onClick={() => goTo(step - 1)}>
             {texts.back}
@@ -368,7 +163,7 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
         </Button>
       </div>
 
-      <p className={styles.switch} data-part>
+      <p className={form.switch} data-part>
         {texts.haveAccount}{' '}
         <Button variant="text" onClick={onSwitch}>
           {texts.toLogin}

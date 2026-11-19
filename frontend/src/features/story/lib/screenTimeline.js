@@ -1,4 +1,4 @@
-import { at, story } from './chapters';
+import { chapterTime, story } from './chapters';
 
 // Тайминги сюжета экрана внутри главы «поиск» (в единицах шкалы главы). На мониторе ПК подпись
 // главы стоит в стороне, поэтому идеи всплывают сразу. На телефоне подпись главы занимает низ
@@ -31,36 +31,36 @@ export const SCREEN_TIMING = {
 // Экран, на котором родилась идея, — монитор в комнате (ПК) или телефон в руке. Разметка у них
 // своя, а сюжет общий и размечен data-screen: всплывают идеи и зачёркиваются, печатается вопрос,
 // экран занимает карта города — с неё начинается 3D-город.
-export function addScreenTimeline(tl, q, timing = SCREEN_TIMING.room) {
-  const all = (name) => q(`[data-screen="${name}"]`);
+export function addScreenTimeline(timeline, select, timing = SCREEN_TIMING.room) {
+  const all = (name) => select(`[data-screen="${name}"]`);
 
   // Идея въезжает сдвигом, без масштаба: масштаб от центра карточки оставлял на мониторе остаточный
   // сдвиг (центр менялся, когда подпись ужималась по ширине), и карточки наезжали на отметки строк.
   all('idea').forEach((idea, k) => {
-    tl.fromTo(
+    timeline.fromTo(
       idea,
       { autoAlpha: 0, x: -10 },
       { autoAlpha: 1, x: 0, duration: 0.6, ease: 'power2.out' },
-      at(1, timing.ideas + k * timing.step),
+      chapterTime(1, timing.ideas + k * timing.step),
     );
   });
   all('strike').forEach((line, k) => {
-    tl.fromTo(
+    timeline.fromTo(
       line,
       { scaleX: 0 },
       { scaleX: 1, transformOrigin: '0% 50%', duration: 0.45, ease: 'power2.out' },
-      at(1, timing.strike + k * timing.step),
+      chapterTime(1, timing.strike + k * timing.step),
     );
   });
-  tl.to(all('ideas'), { opacity: 0.25, duration: 0.8 }, at(1, timing.dim));
+  timeline.to(all('ideas'), { opacity: 0.25, duration: 0.8 }, chapterTime(1, timing.dim));
 
   const notes = all('note');
   if (notes.length) {
-    tl.fromTo(
+    timeline.fromTo(
       notes,
       { autoAlpha: 0, y: 12 },
       { autoAlpha: 1, y: 0, duration: 0.6 },
-      at(1, timing.note),
+      chapterTime(1, timing.note),
     );
   }
   // Вопрос печатается по буквам; текст читается при построении шкалы — её строят заново при смене
@@ -75,17 +75,17 @@ export function addScreenTimeline(tl, q, timing = SCREEN_TIMING.room) {
     });
   };
   print();
-  tl.to(
+  timeline.to(
     typing,
     { chars: text.length, duration: timing.typeDuration, ease: 'none', onUpdate: print },
-    at(1, timing.type),
+    chapterTime(1, timing.type),
   );
 
-  tl.fromTo(
+  timeline.fromTo(
     all('map'),
     { autoAlpha: 0 },
     { autoAlpha: 1, duration: timing.mapDuration },
-    at(1, timing.map),
+    chapterTime(1, timing.map),
   );
-  return tl;
+  return timeline;
 }

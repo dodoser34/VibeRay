@@ -1,5 +1,6 @@
 .card {
   display: grid;
+  pointer-events: auto;
   gap: var(--space-4);
   width: min(21.25rem, 86vw);
   padding: var(--space-5);
@@ -31,6 +32,7 @@
 }
 
 .moods {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: var(--space-2);
@@ -38,19 +40,65 @@
 
 .mood {
   position: relative;
+  z-index: 1;
   display: grid;
   justify-items: center;
   gap: var(--space-1);
   padding: var(--space-2) 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: none;
   color: var(--color-text-muted);
   font-size: var(--fs-3xs);
   text-align: center;
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease-out);
 }
 
+.mood:hover,
+.mood[aria-checked='true'] {
+  color: var(--color-text);
+}
+
+.face {
+  display: block;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.mood:hover .face {
+  transform: translateY(-3px) scale(1.06);
+}
+
+.mood:active .face {
+  transform: scale(0.94);
+}
+
+/* Рамка выбора — одна на всю шкалу: переезжает к выбранному лицу (translate), а появляется по шкале
+   истории (GSAP анимирует transform: scale и прозрачность — свойства не пересекаются). */
 .picked {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc((100% - 4 * var(--space-2)) / 5);
   border: 1.5px solid var(--color-accent-bright);
   border-radius: var(--radius-sm);
   background: var(--color-accent-soft);
+  translate: calc(var(--pick) * (100% + var(--space-2))) 0;
+  transition: translate var(--dur-slow) var(--ease-out);
+}
+
+.note {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-faint);
+  font-size: var(--fs-2xs);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .picked,
+  .face {
+    transition: none;
+  }
 }

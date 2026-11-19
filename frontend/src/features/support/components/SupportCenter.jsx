@@ -91,7 +91,9 @@ export function SupportCenter({ onNavigate }) {
     );
 
   const openForm = () =>
-    setForm({ topic: HELP_CATEGORIES.find((c) => c.code === category)?.topic ?? null });
+    setForm({
+      topic: HELP_CATEGORIES.find((helpCategory) => helpCategory.code === category)?.topic ?? null,
+    });
 
   useGSAP(
     (context, contextSafe) => {

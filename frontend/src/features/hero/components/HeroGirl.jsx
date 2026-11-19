@@ -3,7 +3,7 @@ import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import girl from '../assets/girl.webp';
 import { usePointerParallax } from '../hooks/usePointerParallax';
-import { RISE, riseDelay } from '../lib/rise';
+import { GIRL_ENTRANCE, girlEntranceDelay } from '../lib/girlEntrance';
 import { ABOVE_EDGE, SHEET_FLY_SHIFT } from '../lib/sheetEdge';
 import styles from './HeroGirl.module.css';
 
@@ -56,7 +56,12 @@ export function HeroGirl({ ref, stacked = false, onRisen }) {
         transformOrigin: '50% 60%',
       });
       if (!entered) return;
-      gsap.to(imageRef.current, { yPercent: 0, ...RISE, delay: riseDelay(), onComplete: onRisen });
+      gsap.to(imageRef.current, {
+        yPercent: 0,
+        ...GIRL_ENTRANCE,
+        delay: girlEntranceDelay(),
+        onComplete: onRisen,
+      });
     },
     { scope: rootRef, dependencies: [entered] },
   );

@@ -49,15 +49,26 @@ export class RoomCamera {
   target() {
     const { clientWidth: width, clientHeight: height } = this.svg;
     const fit = Math.min(width / VIEW.width, height / VIEW.height) || 1;
-    const [w, h] = this.size;
-    const k = Math.max(width / fit / w, height / fit / h) * COVER;
-    const view = [k, 0, 0, k, VIEW.width / 2 - (k * w) / 2, VIEW.height / 2 - (k * h) / 2];
+    const [screenWidth, screenHeight] = this.size;
+    const k = Math.max(width / fit / screenWidth, height / fit / screenHeight) * COVER;
+    const view = [
+      k,
+      0,
+      0,
+      k,
+      VIEW.width / 2 - (k * screenWidth) / 2,
+      VIEW.height / 2 - (k * screenHeight) / 2,
+    ];
     return multiply(view, invert(this.screen));
   }
 
   set(t) {
     this.t = t;
     this.turn();
+    // У комнаты нет размера (страница переключается на телефонную версию, вкладка скрыта): кадр не из
+    // чего считать, масштаб вышел бы нулевым, а матрица — из NaN. Кадр пересчитается, когда
+    // ResizeObserver сообщит настоящий размер.
+    if (!this.svg.clientWidth || !this.svg.clientHeight) return;
     const [a, b, c, d] = this.target();
     const zoom = Math.sqrt(Math.abs(a * d - b * c));
     const scale = zoom ** t;
