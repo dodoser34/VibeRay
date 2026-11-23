@@ -6,6 +6,9 @@
   left: 50%;
   bottom: calc(var(--space-5) + 4rem);
   z-index: var(--z-overlay);
+  /* Длинный текст переносится внутри «пилюли», а не растягивает её за края карты */
+  width: max-content;
+  max-width: min(32rem, calc(100% - 2 * var(--space-4)));
   padding: var(--space-3) var(--space-5);
   border-radius: var(--radius-pill);
   background: var(--color-glass-strong);

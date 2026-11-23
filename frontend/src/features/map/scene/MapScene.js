@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { rootScale } from '@/adaptations/core';
 import { gsap } from '@/shared/animations/core/gsapSetup';
 import { CSS2DObject, CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import { cityOutline } from '@/shared/lib/geo/cityOutline';
@@ -23,11 +24,17 @@ const FOG = { near: 18, far: 42 };
 const CAMERA_NEAR = 0.05;
 const CAMERA_FAR = 200;
 const MAX_DISTANCE = 26;
-const FIT_MARGIN = 0.92; // доля кадра (NDC), в которую вписывается город: запас под подписи районов
-const FIT_POINTS = 120;
-const INSET_SETTLE_MS = 200; // шторка столько стоит на месте — обзор пересчитывается под неё // вершин на район для вписывания в кадр — хватает, чтобы не потерять выступы
+// Запас у краёв свободной части кадра под подписи районов: доля её размера, но не меньше
+// FIT_MARGIN_PX (px при корне 16 px) — на узком телефоне доля дала бы всего 16 px.
+const FIT_MARGIN_SHARE = 0.04;
+const FIT_MARGIN_PX = 24;
+const FIT_POINTS = 120; // вершин на район для вписывания в кадр — хватает, чтобы не потерять выступы
+// Какую долю кадра интерфейс может закрыть с каждой стороны: дальше город сжался бы в полоску
+const MAX_INSET = { top: 0.3, bottom: 0.52, side: 0.45 };
+const INSET_SETTLE_MS = 200; // шторка или панели столько стоят на месте — обзор пересчитывается
 const LABEL_CHECK_MS = 150; // как часто разбираются налезающие подписи
 const LABEL_GAP = 4; // px между двумя подписями, которые обе остаются
+const LABEL_LIFT = 8; // px: подпись под указателем приподнимается (MapCanvas.module.css)
 // Плиты районов — полупрозрачное стекло над общим слоем дорог: дороги читаются сквозь них
 // непрерывно, а районы хорошо различаются цветом и светлыми границами. Плотность своя у каждой темы.
 const districtOpacity = () => parseFloat(cssVar('--scene-district-opacity'));
@@ -121,12 +128,12 @@ export class MapScene {
         this.placing && this.marker.showGhost(hit?.kind === 'district' ? hit.point : null),
     });
 
-    this.viewInset = 0;
+    this.viewInsets = { top: 0, right: 0, bottom: 0, left: 0 };
     this.runtime.onResize((width, height) => {
       this.districts?.setResolution(width, height);
       this.vectors?.setResolution(width, height);
       this.labelRenderer.setSize(width, height);
-      this.setViewInset(this.viewInset);
+      this.setViewInsets(this.viewInsets);
       this.refitHome();
     });
     this.labelCheck = 0;
@@ -141,14 +148,15 @@ export class MapScene {
       this.problems?.update(time, delta);
       return changed || this.pinsShown;
     });
-    // Подписи районов двигаются только вместе с кадром.
+    // Подписи районов двигаются только вместе с кадром. Разбор налезающих — не чаще LABEL_CHECK_MS,
+    // но последний кадр движения разбирается обязательно (отложенно): кадры рисуются по требованию, и
+    // после остановки камеры подписи иначе остались бы в положении середины перелёта.
     this.runtime.onRender(() => {
       this.labelRenderer.render(scene, camera);
-      const now = performance.now();
-      if (now - this.labelCheck > LABEL_CHECK_MS) {
-        this.labelCheck = now;
-        this.resolveLabelOverlaps();
-      }
+      const wait = this.labelCheck + LABEL_CHECK_MS - performance.now();
+      clearTimeout(this.labelTimer);
+      if (wait <= 0) this.checkLabels();
+      else this.labelTimer = setTimeout(() => this.checkLabels(), wait);
     });
   }
 
@@ -445,10 +453,27 @@ export class MapScene {
   homeZoom() {
     const { center, corners, scale } = this.frame;
     const probe = this.runtime.camera.clone();
-    // Низ кадра закрыт шторкой (та же доля, что у сдвига в setViewInset): по вертикали город
-    // вписывается в видимую над ней часть — её середина в NDC на `covered`, полувысота 1 − covered.
-    const { height } = this.runtime.size;
-    const covered = height ? Math.min(this.viewInset, height * 0.52) / height : 0;
+    // Часть кадра закрыта интерфейсом (шторка, боковые панели, таб-бар — setViewInsets): город
+    // вписывается в свободный прямоугольник с запасом под подписи. Его границы — в NDC пробной
+    // камеры (у неё тот же сдвиг центра, что у настоящей).
+    const { width, height } = this.runtime.size;
+    const free = this.freeArea();
+    const marginX = Math.max(
+      FIT_MARGIN_SHARE * (free.right - free.left),
+      FIT_MARGIN_PX * rootScale(),
+    );
+    const marginY = Math.max(
+      FIT_MARGIN_SHARE * (free.bottom - free.top),
+      FIT_MARGIN_PX * rootScale(),
+    );
+    const toNdcX = (px) => (px / width) * 2 - 1;
+    const toNdcY = (px) => 1 - (px / height) * 2;
+    const bounds = {
+      left: toNdcX(free.left + marginX),
+      right: toNdcX(free.right - marginX),
+      top: toNdcY(free.top + marginY),
+      bottom: toNdcY(free.bottom - marginY),
+    };
     const fits = (zoom) => {
       probe.position.copy(center).addScaledVector(HOME_OFFSET, zoom * scale);
       probe.lookAt(center);
@@ -456,8 +481,10 @@ export class MapScene {
       return corners.every((corner) => {
         const point = corner.clone().project(probe);
         return (
-          Math.abs(point.x) <= FIT_MARGIN &&
-          Math.abs(point.y - covered) <= FIT_MARGIN * (1 - covered)
+          point.x >= bounds.left &&
+          point.x <= bounds.right &&
+          point.y <= bounds.top &&
+          point.y >= bounds.bottom
         );
       });
     };
@@ -491,19 +518,37 @@ export class MapScene {
     camera.updateProjectionMatrix();
   }
 
-  // Высота (px) нижней части экрана, закрытой шторкой (телефоны, планшеты стоя): центр вида
-  // поднимается в свободную часть, чтобы город и выбранный район не оказались под шторкой. Лучи
-  // выбора и подписи используют ту же проекцию, поэтому попадание остаётся точным.
-  setViewInset(bottom) {
+  // Свободная от интерфейса часть кадра, px от левого верхнего угла холста. Каждая полоса — не
+  // больше своей доли кадра (MAX_INSET).
+  freeArea() {
+    const { width, height } = this.runtime.size;
+    const { top, right, bottom, left } = this.viewInsets;
+    const cap = (value, size, share) => Math.min(Math.max(0, value), size * share);
+    return {
+      left: cap(left, width, MAX_INSET.side),
+      right: width - cap(right, width, MAX_INSET.side),
+      top: cap(top, height, MAX_INSET.top),
+      bottom: height - cap(bottom, height, MAX_INSET.bottom),
+    };
+  }
+
+  // Полосы кадра (px), закрытые интерфейсом: шторка снизу (телефоны, планшеты стоя), боковые панели
+  // и таб-бар (ПК). Центр вида переезжает в середину свободной части, чтобы город и выбранный район
+  // не оказались под панелью. Лучи выбора и подписи используют ту же проекцию, поэтому попадание
+  // остаётся точным. Передаются только изменившиеся стороны.
+  setViewInsets(insets) {
     this.runtime.invalidate();
     const { camera } = this.runtime;
     const { width, height } = this.runtime.size;
-    this.viewInset = bottom;
-    const shift = Math.min(bottom, height * 0.52) / 2;
-    if (!width || !height || shift < 1) camera.clearViewOffset();
-    else camera.setViewOffset(width, height, 0, shift, width, height);
-    // Шторка остановилась: обзор всего города пересчитывается под видимую над ней часть, и камера,
-    // если стоит в обзоре, мягко переезжает (открыли шторку — город уменьшился и встал над ней).
+    this.viewInsets = { ...this.viewInsets, ...insets };
+    const free = this.freeArea();
+    const shiftX = (free.left - (width - free.right)) / 2;
+    const shiftY = (height - free.bottom - free.top) / 2;
+    if (!width || !height || (Math.abs(shiftX) < 1 && Math.abs(shiftY) < 1)) {
+      camera.clearViewOffset();
+    } else camera.setViewOffset(width, height, -shiftX, shiftY, width, height);
+    // Интерфейс остановился: обзор всего города пересчитывается под свободную часть, и камера, если
+    // стоит в обзоре, мягко переезжает (открыли шторку — город уменьшился и встал над ней).
     clearTimeout(this.insetSettle);
     this.insetSettle = setTimeout(() => this.refitHome(), INSET_SETTLE_MS);
   }
@@ -613,11 +658,19 @@ export class MapScene {
   // Подписи, которые налезли бы друг на друга на экране: менее важная исчезает — сначала остаются
   // выбранный район и район под курсором, затем более крупные. При приближении остальные
   // возвращаются.
+  checkLabels() {
+    this.labelCheck = performance.now();
+    this.resolveLabelOverlaps();
+  }
+
   resolveLabelOverlaps() {
     if (!this.districts || this.districtsHidden) return;
     const { camera } = this.runtime;
     const { width, height } = this.runtime.size;
     const point = new THREE.Vector3();
+    // Подпись, которая целиком не помещается в свободную часть кадра (у края экрана, под боковой
+    // панелью, шторкой или таб-баром), прячется, а не торчит обрезанной.
+    const free = this.freeArea();
     // Кластеры меток важнее подписей районов: подпись под значком кластера прячется.
     const origin = this.runtime.container.getBoundingClientRect();
     const placed = this.pinsShown
@@ -648,15 +701,23 @@ export class MapScene {
           top: y - halfHeight,
           bottom: y + halfHeight,
         };
-        const hidden = placed.some(
-          (other) =>
-            box.left < other.right &&
-            box.right > other.left &&
-            box.top < other.bottom &&
-            box.bottom > other.top,
-        );
+        const outside =
+          box.left < free.left ||
+          box.right > free.right ||
+          box.top - LABEL_LIFT < free.top ||
+          box.bottom > free.bottom;
+        const hidden =
+          outside ||
+          placed.some(
+            (other) =>
+              box.left < other.right &&
+              box.right > other.left &&
+              box.top < other.bottom &&
+              box.bottom > other.top,
+          );
         if (!hidden) placed.push(box);
         if (chip.dataset.covered !== String(hidden)) chip.dataset.covered = String(hidden);
+        if (chip.dataset.outside !== String(outside)) chip.dataset.outside = String(outside);
       });
   }
 
@@ -712,6 +773,7 @@ export class MapScene {
     ]);
     clearTimeout(this.pendingSelect);
     clearTimeout(this.insetSettle);
+    clearTimeout(this.labelTimer);
     this.picker.dispose();
     this.rig.dispose();
     this.districts?.dispose();

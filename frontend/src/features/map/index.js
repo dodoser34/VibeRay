@@ -1,6 +1,7 @@
 export { DistrictLegend } from './components/DistrictLegend';
 export { MapCanvas } from './components/MapCanvas';
 export { useCityData } from './hooks/useCityData';
+export { useSceneInsets } from './hooks/useSceneInsets';
 export { DEFAULT_CITY, lastCity, rememberCity } from './lib/lastCity';
 export { SceneRuntime } from './scene/SceneRuntime';
 export { CityBackdrop } from './scene/CityBackdrop';

@@ -1,5 +1,14 @@
 import { useSyncExternalStore } from 'react';
-import { COARSE_POINTER, isCompact, isPhoneLandscape, tierFor } from './breakpoints';
+import {
+  COARSE_POINTER,
+  isCompact,
+  isPhoneLandscape,
+  isPortrait,
+  isShort,
+  isStacked,
+  isUltrawide,
+  tierFor,
+} from './breakpoints';
 
 function subscribe(callback) {
   const coarse = window.matchMedia(COARSE_POINTER);
@@ -11,42 +20,49 @@ function subscribe(callback) {
   };
 }
 
-// Снимок-строка: React перерисовывает только при реальной смене уровня (или типа указателя), а не
-// на каждый пиксель ресайза.
+const FLAGS = ['compact', 'stacked', 'coarse', 'portrait', 'phoneLandscape', 'ultrawide', 'short'];
+
+// Снимок-строка: React перерисовывает только при реальной смене уровня или формы окна, а не на каждый
+// пиксель ресайза.
 function snapshot() {
   // innerWidth включает классическую полосу прокрутки — ту же ширину используют медиазапросы CSS.
   const width = window.innerWidth;
-  const compact = isCompact(width, window.innerHeight);
-  const coarse = window.matchMedia(COARSE_POINTER).matches;
-  const orientation = window.innerHeight > width ? 'portrait' : 'landscape';
-  const phoneLandscape = isPhoneLandscape(width, window.innerHeight);
-  return [
-    tierFor(width),
-    compact ? 'compact' : 'wide',
-    coarse ? 'coarse' : 'fine',
-    orientation,
-    phoneLandscape ? 'phone' : 'other',
-  ].join('|');
+  const height = window.innerHeight;
+  const flags = {
+    compact: isCompact(width, height),
+    stacked: isStacked(width, height),
+    coarse: window.matchMedia(COARSE_POINTER).matches,
+    portrait: isPortrait(width, height),
+    phoneLandscape: isPhoneLandscape(width, height),
+    ultrawide: isUltrawide(width, height),
+    short: isShort(width, height),
+  };
+  return [tierFor(width), ...FLAGS.map((flag) => (flags[flag] ? '1' : '0'))].join('|');
 }
 
-// Уровень устройства для компонентов, которые меняют структуру, а не только стили (мобильное меню
-// вместо таб-бара; `compact`: шторка вместо боковых панелей, главная в одну колонку; `portrait`:
-// экран выше, чем шире — по нему перестраиваются кадры, рассчитанные под пропорции экрана).
+const SERVER_SNAPSHOT = ['desktop', ...FLAGS.map(() => '0')].join('|');
+
+// Уровень устройства и форма окна для компонентов, которые меняют структуру, а не только стили
+// (мобильное меню вместо таб-бара; `compact`: шторка карты вместо боковых панелей; `stacked`: главная,
+// история и текстовые страницы в одну колонку; `portrait`: экран выше, чем шире, или квадрат — по нему
+// перестраиваются кадры, рассчитанные под пропорции экрана; `ultrawide`, `short` — форма и высота).
 export function useViewport() {
-  const [tier, layout, pointer, orientation, landscapePhone] = useSyncExternalStore(
-    subscribe,
-    snapshot,
-    () => 'desktop|wide|fine|landscape|other',
-  ).split('|');
+  const [tier, ...values] = useSyncExternalStore(subscribe, snapshot, () => SERVER_SNAPSHOT).split(
+    '|',
+  );
+  const flags = Object.fromEntries(FLAGS.map((flag, i) => [flag, values[i] === '1']));
   return {
     tier,
     isMobile: tier === 'mobile',
     // Телефонная навигация (плавающие кнопки и меню): телефоны стоя и лёжа
-    phoneNav: tier === 'mobile' || landscapePhone === 'phone',
+    phoneNav: tier === 'mobile' || flags.phoneLandscape,
     isTablet: tier === 'tablet',
     isDesktop: tier !== 'mobile' && tier !== 'tablet',
-    compact: layout === 'compact',
-    coarse: pointer === 'coarse',
-    portrait: orientation === 'portrait',
+    compact: flags.compact,
+    stacked: flags.stacked,
+    coarse: flags.coarse,
+    portrait: flags.portrait,
+    ultrawide: flags.ultrawide,
+    short: flags.short,
   };
 }

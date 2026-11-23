@@ -1,4 +1,4 @@
-import { rootScale, useViewport } from '@/adaptations/core';
+import { useRootScale, useViewport } from '@/adaptations/core';
 import { FilterChip } from '@/adaptations/mobile/components/map/FilterChip';
 import { MapFab } from '@/adaptations/mobile/components/map/MapFab';
 import { BottomSheet } from '@/adaptations/mobile/components/sheet/BottomSheet';
@@ -26,7 +26,7 @@ export function MapSheetLayout({
   onOpenStats,
 }) {
   const { phoneNav } = useViewport();
-  const unit = 16 * rootScale();
+  const unit = 16 * useRootScale();
   const actions = isStats
     ? []
     : [

@@ -49,9 +49,10 @@ export function StoryExperience({ onOpenMap, onReady }) {
   const { city, moods, problems } = useCityData(STORY_CITY.slug, 'week');
   const outline = useCityOutline(city.data, problems.data, { extent: STORY_EXTENT });
   const stageSize = useBoxSize(stageRef);
-  // Изометрическая комната — на ПК; телефоны и планшеты получают телефон в руке.
-  const { isDesktop, portrait } = useViewport();
-  const variant = isDesktop ? 'room' : 'phone';
+  // Изометрическая комната — на альбомном ПК нормальной высоты; телефоны, планшеты, портретные
+  // мониторы и квадратные или низкие окна получают телефон в руке (он рассчитан на высокий кадр).
+  const { isDesktop, portrait, stacked, short } = useViewport();
+  const variant = isDesktop && !stacked && !short ? 'room' : 'phone';
   const orientation = portrait ? 'portrait' : 'landscape';
   // Пока грузится город нового языка, useRequest держит прежние данные — сцене их не отдаём.
   const loading = city.loading || moods.loading || problems.loading;

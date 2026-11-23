@@ -22,6 +22,11 @@
     display: contents;
   }
 
+  /* Дашборд города — правая панель шире: строка фильтров уступает ей столько же */
+  :root :has([data-ui='map-panel-right'][data-wide]) [data-ui='map-panel-left'] {
+    max-width: calc(100% - var(--map-panel-wide) - 3 * var(--space-5));
+  }
+
   :root [data-ui='map-filters-heading'],
   :root [data-ui='map-filters-legend'],
   :root [data-ui='map-filters-height-hint'],

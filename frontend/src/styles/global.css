@@ -6,6 +6,16 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  /* Длинное слово (немецкое составное, адрес почты) переносится, а не выходит за край блока */
+  overflow-wrap: break-word;
+}
+
+/* Абзацы без одинокого слова в последней строке */
+p,
+li,
+dd,
+figcaption {
+  text-wrap: pretty;
 }
 
 /* Анимации, прилетающие сбоку (кусочки пазла карточки входа, поднимающиеся блоки), не должны
@@ -22,6 +32,17 @@ h3 {
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.01em;
+  /* Строки заголовка ровные, а слово, которое не помещается в строку, переносится по слогам
+     (язык — атрибут lang у <html>, shared/lib/i18n/language.js) */
+  text-wrap: balance;
+  hyphens: auto;
+}
+
+/* Маска слова SplitText (shared/animations/effects/wordMask.js): рамка выше строки на хвосты и
+   надстрочные знаки, строка остаётся на месте */
+.split-word-mask {
+  padding-block: 0.14em;
+  margin-block: -0.14em;
 }
 
 /* Смена темы: вся страница плавно растворяется в новую (shared/animations/themeChange/themeTransition.js) */

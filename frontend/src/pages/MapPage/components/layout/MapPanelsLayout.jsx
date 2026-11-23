@@ -28,6 +28,7 @@ export function MapPanelsLayout({
       <aside
         className={`${styles.panel} ${styles.left}`}
         data-panel="left"
+        data-scene-inset="side"
         data-ui="map-panel-left"
         data-hidden={leftHidden || undefined}
         aria-label={texts.filtersLabel}
@@ -53,6 +54,9 @@ export function MapPanelsLayout({
       <aside
         className={`${styles.panel} ${styles.right} ${isStats ? styles.wide : ''}`}
         data-panel="right"
+        data-scene-inset="side"
+        data-ui="map-panel-right"
+        data-wide={isStats || undefined}
         data-hidden={rightHidden || undefined}
         aria-live="polite"
       >
@@ -74,7 +78,7 @@ export function MapPanelsLayout({
       </aside>
 
       {!report && (
-        <div className={styles.corner} data-panel="corner">
+        <div className={styles.corner} data-panel="corner" data-ui="map-corner">
           {isStats ? (
             <Button variant="ghost" onClick={onCloseStats}>
               <Icon name="chevron-left" size={16} className={`${styles.icon} ${styles.back}`} />
@@ -90,7 +94,12 @@ export function MapPanelsLayout({
       )}
 
       {!report && !isStats && (
-        <div className={styles.actionBar} data-panel="bottom">
+        <div
+          className={styles.actionBar}
+          data-panel="bottom"
+          data-scene-inset="bottom"
+          data-ui="map-action-bar"
+        >
           {isGuest && (
             <span className={styles.guestNote} data-ui="map-guest-note">
               {texts.actions.guestNote}

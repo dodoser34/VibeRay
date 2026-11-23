@@ -40,9 +40,10 @@ export class ClusterLabels {
         item.count = cluster.count;
         item.countNode.textContent = String(cluster.count);
         item.button.setAttribute('aria-label', this.describe(cluster.count));
+        // Значок растёт с числом проблем; в rem — вместе с масштабом интерфейса (как и цифра в нём)
         item.button.style.setProperty(
           '--size',
-          `${Math.round(34 + Math.log2(cluster.count) * 6)}px`,
+          `${((34 + Math.log2(cluster.count) * 6) / 16).toFixed(3)}rem`,
         );
       }
       item.button.style.setProperty('--ring', ringOf(cluster.byStatus, cluster.count));

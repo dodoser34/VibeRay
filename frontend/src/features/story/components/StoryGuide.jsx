@@ -14,6 +14,7 @@ import about from '@/texts/en/about.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryGuide.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import { WORD_MASK } from '@/shared/animations/effects/wordMask';
 
 const texts = about.guide;
 const STEPS = texts.steps;
@@ -42,7 +43,7 @@ export function StoryGuide({ onOpenMap }) {
   const flowRef = useRef(null);
   const [step, setStep] = useState(0);
   const reduced = useReducedMotion();
-  const { compact } = useViewport();
+  const { stacked } = useViewport();
   const { city, moods, problems } = useCityData(STORY_CITY.slug, 'week');
 
   const stats = [
@@ -55,7 +56,7 @@ export function StoryGuide({ onOpenMap }) {
   useGSAP(
     () => {
       const select = gsap.utils.selector(rootRef);
-      if (compact) {
+      if (stacked) {
         // Один закреплённый кадр (карта сверху, активная карточка снизу): шаг зависит от того,
         // насколько прокручена высокая секция, сами карточки не двигаются.
         const pick = (self) =>
@@ -82,7 +83,7 @@ export function StoryGuide({ onOpenMap }) {
       if (reduced) return;
 
       select('[data-split]').forEach((heading) => {
-        const split = SplitText.create(heading, { type: 'words', mask: 'words' });
+        const split = SplitText.create(heading, WORD_MASK);
         gsap.from(split.words, {
           yPercent: 110,
           duration: 0.9,
@@ -112,7 +113,7 @@ export function StoryGuide({ onOpenMap }) {
         });
       });
     },
-    { scope: rootRef, dependencies: [reduced, compact, city.data], revertOnUpdate: true },
+    { scope: rootRef, dependencies: [reduced, stacked, city.data], revertOnUpdate: true },
   );
 
   return (

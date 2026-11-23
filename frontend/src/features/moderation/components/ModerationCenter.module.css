@@ -1,6 +1,8 @@
 /* Рабочее место модератора: шире страниц жителей и плотнее — сводка, разделы, списки */
 .center {
   display: grid;
+  /* minmax(0, …): широкий ребёнок (ряд фильтров, длинное слово) не раздвигает страницу за экран */
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-6);
   width: min(80rem, 100%);
   margin: 0 auto;
@@ -34,7 +36,7 @@
 
 .title {
   padding-right: 17rem;
-  font-size: clamp(2rem, 1rem + 3vw, 3.25rem);
+  font-size: clamp(min(2rem, 8vw), min(1rem + 3vw, 7dvh), 3.25rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
@@ -78,6 +80,7 @@
 }
 
 .kpi {
+  min-width: 0;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
@@ -93,6 +96,8 @@
   color: var(--color-text-faint);
   font-size: var(--fs-2xs);
   line-height: 1.3;
+  hyphens: auto;
+  overflow-wrap: anywhere;
 }
 
 .kpi dd {

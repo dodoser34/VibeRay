@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { rootScale } from '@/adaptations/core';
+import { useRootScale } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useElementWidth } from '@/shared/hooks/useElementWidth';
 import { monotoneCurvePath, splitIntoRuns } from './monotoneCurve';
@@ -22,7 +22,7 @@ export function CompareChart({
 }) {
   const rootRef = useRef(null);
   const width = useElementWidth(rootRef);
-  const k = rootScale();
+  const k = useRootScale();
   const height = Math.round(baseHeight * k);
   const [active, setActive] = useState(null);
   const count = series[0]?.values.length ?? 0;
@@ -174,7 +174,7 @@ export function CompareChart({
         <div
           className={styles.tooltip}
           data-side={activeX < width / 2 ? 'right' : 'left'}
-          style={{ '--x': `${activeX}px` }}
+          style={{ '--x': `${activeX}px`, '--width': `${width}px` }}
           role="status"
         >
           {renderTooltip(shown)}

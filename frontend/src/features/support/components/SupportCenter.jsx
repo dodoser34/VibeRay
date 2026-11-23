@@ -18,6 +18,7 @@ import { SupportRequestForm } from './SupportRequestForm';
 import texts from '@/texts/en/support.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SupportCenter.module.css';
+import { WORD_MASK } from '@/shared/animations/effects/wordMask';
 
 const LINKS = [
   {
@@ -99,7 +100,7 @@ export function SupportCenter({ onNavigate }) {
     (context, contextSafe) => {
       // Появление шапки ждёт, пока страница видна (после перехода страницы, если он был).
       if (reduced || !entered) return undefined;
-      const split = SplitText.create('[data-title]', { type: 'words', mask: 'words' });
+      const split = SplitText.create('[data-title]', WORD_MASK);
       gsap
         .timeline({ defaults: { ease: 'power3.out' } })
         .from(split.words, { yPercent: 110, duration: 0.9, stagger: 0.08 }, 0.15)

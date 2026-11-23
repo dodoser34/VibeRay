@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { MapCanvas } from '@/features/map';
+import { MapCanvas, useSceneInsets } from '@/features/map';
 import { getModerationQueue } from '@/shared/api/endpoints/moderation';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { useRequest } from '@/shared/hooks/useRequest';
@@ -16,6 +16,7 @@ import styles from './ModerationMap.module.css';
 // city, moods — данные города (страница грузит их сама); problemId — проблема, открытая по ссылке
 // из очереди; onReady — карта получила данные (переход между страницами ждёт этого).
 export function ModerationMap({ city, moods, problemId = null, onReady }) {
+  const pageRef = useRef(null);
   const mapRef = useRef(null);
   const [status, setStatus] = useState('active');
   const [selectedId, setSelectedId] = useState(problemId);
@@ -41,8 +42,11 @@ export function ModerationMap({ city, moods, problemId = null, onReady }) {
 
   const handleChanged = () => queue.reload();
 
+  // Фильтры и карточка проблемы закрывают часть карты — город вписывается в оставшуюся.
+  useSceneInsets({ rootRef: pageRef, mapRef, enabled: true, deps: [selectedId] });
+
   return (
-    <div className={styles.page} data-ui="moderation-map">
+    <div ref={pageRef} className={styles.page} data-ui="moderation-map">
       <MapCanvas
         ref={mapRef}
         city={city}
@@ -53,7 +57,11 @@ export function ModerationMap({ city, moods, problemId = null, onReady }) {
         onSelectProblem={(problem) => setSelectedId(problem?.id ?? null)}
       />
 
-      <aside className={`${styles.panel} ${styles.left}`} data-ui="moderation-map-filters">
+      <aside
+        className={`${styles.panel} ${styles.left}`}
+        data-ui="moderation-map-filters"
+        data-scene-inset="side"
+      >
         <h1 className={styles.title} data-ui="moderation-map-title">
           {texts.map.title}
         </h1>
@@ -82,7 +90,11 @@ export function ModerationMap({ city, moods, problemId = null, onReady }) {
       </aside>
 
       {selected && (
-        <aside className={`${styles.panel} ${styles.right}`} data-ui="moderation-map-detail">
+        <aside
+          className={`${styles.panel} ${styles.right}`}
+          data-ui="moderation-map-detail"
+          data-scene-inset="side"
+        >
           <button
             type="button"
             className={styles.close}

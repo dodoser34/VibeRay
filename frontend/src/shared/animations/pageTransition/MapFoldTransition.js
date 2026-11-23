@@ -1,3 +1,4 @@
+import { isPhoneWidth, rootScale } from '@/adaptations/core';
 import transitionTexts from '@/texts/en/transition.json';
 
 // Переход между страницами «бумажная карта-оригами». Сложенная карта вылетает из точки клика,
@@ -347,7 +348,8 @@ export class MapFoldTransition {
         tx = tabRect ? tabRect.left + tabRect.width / 2 : width / 2,
         ty = tabRect ? tabRect.top + tabRect.height / 2 : -80;
       const endScale =
-        (tabRect ? clamp(tabRect.height, 18, 40) : 24) / Math.max(this.cellWidth, this.cellHeight);
+        (tabRect ? clamp(tabRect.height, 18 * this.scale, 40 * this.scale) : 24 * this.scale) /
+        Math.max(this.cellWidth, this.cellHeight);
       const from = { x: width / 2, y: height / 2 },
         control = {
           x: (from.x + tx) / 2 + (tx - from.x) * 0.15,
@@ -573,7 +575,7 @@ export class MapFoldTransition {
       return;
     }
     const pixelRatio = Math.min(this.opts.dprCap, devicePixelRatio || 1),
-      mobile = width < 640;
+      mobile = isPhoneWidth(width);
     let columnCount, rowCount;
     if (mobile) {
       const wideRatio = width / 3 / (height / 2),
@@ -593,6 +595,8 @@ export class MapFoldTransition {
       cellWidth: width / columnCount,
       cellHeight: height / rowCount,
       mobile,
+      // Масштаб интерфейса (adaptations/scale.css): компас, подписи и размер у вкладки — вместе с ним
+      scale: rootScale(),
     });
     this.colors = this._readColors();
     if (getComputedStyle(this.el).visibility === 'hidden') this._stylesSeen = true;
@@ -709,7 +713,11 @@ export class MapFoldTransition {
         (-dx * sinRotation + dy * cosRotation) / gridStep,
       ];
     };
-    this.compass = mobile ? { x: 34, y: 92, radius: 15 } : { x: width - 46, y: 104, radius: 20 };
+    // Компас — в масштабе интерфейса (на 4K он не теряется), под таб-баром или кнопками телефона
+    const scale = this.scale;
+    this.compass = mobile
+      ? { x: 34 * scale, y: 92 * scale, radius: 15 * scale }
+      : { x: width - 46 * scale, y: 104 * scale, radius: 20 * scale };
     this.noise = noise;
   }
 
@@ -866,7 +874,7 @@ export class MapFoldTransition {
     drawNeedle(0, 1, compass.radius * 1.15, compass.radius * 0.2, colors.text2);
     drawNeedle(0, -1, compass.radius * 1.25, compass.radius * 0.2, colors.text);
     paint.fillStyle = colors.text;
-    paint.font = `600 9px ${colors.display}`;
+    paint.font = `600 ${9 * this.scale}px ${colors.display}`;
     paint.textAlign = 'center';
     paint.fillText(transitionTexts.compassNorth, compass.x, compass.y - compass.radius * 1.25 - 5);
     paint.textAlign = 'left';
@@ -1070,7 +1078,7 @@ export class MapFoldTransition {
     this.routeLayer.querySelectorAll('.map-fold__district-highlight').forEach((polygon) => {
       this.districts[+polygon.dataset.i].el = polygon;
     });
-    this.labelEl.style.setProperty('--map-fold-label-size', this.mobile ? '17px' : '24px');
+    this.labelEl.style.setProperty('--map-fold-label-size', this.mobile ? '1.0625rem' : '1.5rem');
     this._resetRouteLayer();
   }
 

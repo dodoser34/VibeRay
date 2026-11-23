@@ -40,7 +40,7 @@
 
 .title {
   max-width: 15ch;
-  font-size: clamp(2.4rem, 1rem + 5vw, 5.2rem);
+  font-size: clamp(min(2.4rem, 9.5vw), min(1rem + 5vw, 10dvh), 5.2rem);
   line-height: 1.02;
   letter-spacing: -0.02em;
 }
@@ -82,7 +82,7 @@
 .statValue {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem);
+  font-size: clamp(min(2.2rem, 9vw), min(1.4rem + 3vw, 8dvh), 4rem);
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
@@ -139,9 +139,9 @@
 
 .steps {
   display: grid;
-  gap: 24vh;
+  gap: 24svh;
   /* Первая и последняя карточки доходят до середины экрана, где переключаются шаги. */
-  padding: 30vh 0 34vh;
+  padding: 30svh 0 34svh;
 }
 
 .step {
@@ -287,7 +287,7 @@
 
 .ctaTitle {
   max-width: 18ch;
-  font-size: clamp(2rem, 1rem + 3.6vw, 4rem);
+  font-size: clamp(min(2rem, 8.5vw), min(1rem + 3.6vw, 8dvh), 4rem);
   line-height: 1.05;
 }
 

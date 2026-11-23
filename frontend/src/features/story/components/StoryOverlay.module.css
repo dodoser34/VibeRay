@@ -5,6 +5,13 @@
   pointer-events: none;
 }
 
+/* Подписи, колонка карточек и фразы отмеряются от рамки истории (cqw, cqh), а не от экрана: на
+   ультрашироком мониторе рамка стоит по центру (adaptations/ultrawide), и подписи остаются рядом с
+   комнатой, а не у краёв экрана. На телефоне рамка — экран телефона (phone/PhoneStage). */
+.overlay[data-variant='room'] {
+  container-type: size;
+}
+
 /* Появляется позже по шкале прокрутки (и скрыто, пока шкала не построена). */
 .overlay [data-later] {
   visibility: hidden;
@@ -14,7 +21,7 @@
 .stamp {
   position: absolute;
   top: calc(var(--tabbar-height) + var(--space-6));
-  right: 6vw;
+  right: 6cqw;
   color: var(--color-text-muted);
   font-family: var(--font-display);
   font-size: var(--fs-lg);
@@ -23,9 +30,9 @@
 
 .caption {
   position: absolute;
-  left: 6vw;
-  bottom: 12vh;
-  max-width: min(32.5rem, 88vw);
+  left: 6cqw;
+  bottom: 12cqh;
+  max-width: min(32.5rem, 88cqw);
   padding: var(--space-4) var(--space-5);
   border-radius: var(--radius-md);
   background: var(--color-glass-strong);
@@ -44,7 +51,7 @@
 
 .phrase,
 .question {
-  width: min(56.25rem, 88vw);
+  width: min(56.25rem, 88cqw);
   font-family: var(--font-display);
   line-height: 1.2;
   text-align: center;
@@ -72,7 +79,7 @@
 .moodSlot {
   position: absolute;
   top: 50%;
-  right: 7vw;
+  right: 7cqw;
   transform: translateY(-50%);
 }
 
@@ -82,13 +89,13 @@
 .column {
   position: absolute;
   top: calc(var(--tabbar-height) + var(--space-6));
-  right: 5vw;
+  right: 5cqw;
   bottom: var(--space-6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: var(--space-4);
-  width: min(22.5rem, 34vw);
+  width: min(22.5rem, 34cqw);
 }
 
 .overlay[data-variant='room'] .column .caption {

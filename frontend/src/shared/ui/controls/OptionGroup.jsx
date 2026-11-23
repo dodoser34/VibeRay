@@ -17,6 +17,7 @@ export function OptionGroup({ label, options, value, onChange }) {
           key={option.code}
           type="button"
           className={styles.option}
+          data-ui="option-group-option"
           aria-pressed={option.code === value}
           onClick={() => onChange(option.code)}
         >

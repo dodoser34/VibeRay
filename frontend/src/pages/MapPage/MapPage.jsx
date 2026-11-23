@@ -3,7 +3,7 @@ import { useParams, useSearchParams } from 'react-router';
 import { useTransitionNavigate, useTransitionReady } from '@/app/transitions/useTransition';
 import { useViewport } from '@/adaptations/core';
 import { useAuth } from '@/features/auth';
-import { MapCanvas } from '@/features/map';
+import { MapCanvas, useSceneInsets } from '@/features/map';
 import { DistrictRanking, MoodPicker } from '@/features/mood';
 import { ProblemCard, ReportProblem } from '@/features/problems';
 import { CityDashboard, DistrictPanel, reportedRange } from '@/features/stats';
@@ -169,17 +169,20 @@ export function MapPage({ view = 'map' }) {
       : `${content}:${districtSlug ?? ''}:${problem?.id ?? ''}`;
   useMapPageAnimations({ pageRef, fadeRef, entered, view, detailKey });
 
-  // Боковые панели: камера снова смотрит на весь экран.
-  useEffect(() => {
-    if (!sheetLayout) mapRef.current?.setViewInset(0);
-  }, [sheetLayout]);
+  // Боковые панели: камера вписывает город в часть карты между ними.
+  useSceneInsets({
+    rootRef: pageRef,
+    mapRef,
+    enabled: !sheetLayout,
+    deps: [leftHidden, rightHidden, detailKey],
+  });
 
   const { tooltipRef, onPointerMove } = useFollowTooltip(hover);
 
   // Шторка сообщает свою видимую высоту: центр камеры и плавающие кнопки следуют за ней.
   const onSheetInset = (visible) => {
     pageRef.current?.style.setProperty('--sheet-inset', `${visible}px`);
-    mapRef.current?.setViewInset(visible);
+    mapRef.current?.setViewInsets({ top: 0, right: 0, bottom: visible, left: 0 });
   };
 
   const selectDistrict = (slug) => {

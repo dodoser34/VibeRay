@@ -1,6 +1,6 @@
 /* «О проекте»: «как это работает» на планшетах стоя и телефонах — две колонки сжали бы и карту, и
    текст до нечитаемости. Сама история здесь идёт на экране телефона в руке (features/story). */
-@media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
+@media (max-width: 1023px), (orientation: portrait) {
   :root [data-ui='guide-stats'] {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -87,7 +87,7 @@
 
 /* Низкие телефоны (iPhone SE, 8): карта над карточкой должна оставаться читаемой — текст
    карточки мельче, чипы-легенда скрыты (цвета и метки видны на самой карте). */
-@media ((max-width: 1023px) or ((orientation: portrait) and (max-width: 1199px))) and (max-height: 760px) {
+@media ((max-width: 1023px) or (orientation: portrait)) and (max-height: 760px) {
   :root [data-ui='guide-stage'] {
     gap: var(--space-3);
     padding-top: calc(var(--tabbar-height) + var(--safe-top) + var(--space-3));
@@ -108,12 +108,12 @@
   }
 }
 
-@media ((max-width: 1023px) or ((orientation: portrait) and (max-width: 1199px))) and (max-height: 700px) {
+@media ((max-width: 1023px) or (orientation: portrait)) and (max-height: 700px) {
   :root [data-ui='guide-step'] ul {
     display: none;
   }
 }
-@media ((max-width: 1023px) or ((orientation: portrait) and (max-width: 1199px))) and (prefers-reduced-motion: reduce) {
+@media ((max-width: 1023px) or (orientation: portrait)) and (prefers-reduced-motion: reduce) {
   :root [data-ui='guide-step'],
   :root [data-ui='guide-step'][data-active] {
     transform: none;

@@ -386,9 +386,7 @@ export class DistrictsLayer {
   heightOf(slug) {
     if (this.hidden) return 0;
     const item = this.items.get(slug);
-    return item
-      ? this.shownHeight(item) + this.liftOf(slug)
-      : this.baseHeight * this.proximity;
+    return item ? this.shownHeight(item) + this.liftOf(slug) : this.baseHeight * this.proximity;
   }
 
   dispose() {

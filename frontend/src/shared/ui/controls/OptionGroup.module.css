@@ -2,6 +2,10 @@
 .group {
   position: relative;
   display: inline-flex;
+  /* Не помещается в строку (узкий экран, длинный перевод) — варианты переносятся, а не распирают
+     колонку; рамка выбора меряет вариант целиком и переезжает и между строками */
+  flex-wrap: wrap;
+  max-width: 100%;
   gap: 2px;
   padding: 0.25rem;
   border-radius: var(--radius-pill);
@@ -25,7 +29,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  height: 2.25rem;
+  min-height: 2.25rem;
   padding: 0 var(--space-4) 0 var(--space-3);
   border: 1px solid transparent;
   border-radius: var(--radius-pill);

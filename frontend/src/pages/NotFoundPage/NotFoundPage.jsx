@@ -10,6 +10,7 @@ import { useLanguage } from '@/shared/hooks/useLanguage';
 import girlMap from './assets/girl-map.webp';
 import { NotFoundMap } from './components/NotFoundMap';
 import styles from './NotFoundPage.module.css';
+import { WORD_MASK } from '@/shared/animations/effects/wordMask';
 
 // Неизвестный адрес: вместо молчаливого переброса на главную — объяснение и дорога обратно.
 export function NotFoundPage() {
@@ -26,7 +27,7 @@ export function NotFoundPage() {
   useGSAP(
     () => {
       if (!entered || reduced) return;
-      const split = SplitText.create('[data-title]', { type: 'words', mask: 'words' });
+      const split = SplitText.create('[data-title]', WORD_MASK);
       gsap
         .timeline({ defaults: { ease: 'power3.out' } })
         .from('[data-panel]', {

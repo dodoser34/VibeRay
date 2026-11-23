@@ -1,4 +1,7 @@
 .attribution {
+  /* На узком телефоне длинная подпись лицензии переносится, а не уходит за край экрана */
+  max-width: calc(100% - 2 * var(--space-3));
+  overflow-wrap: anywhere;
   position: absolute;
   right: var(--space-3);
   bottom: var(--space-2);

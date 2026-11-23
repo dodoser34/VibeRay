@@ -2,6 +2,7 @@ import { SplitText } from '@/shared/animations/core/gsapSetup';
 import { format } from '@/shared/lib/i18n/format';
 import about from '@/texts/en/about.json';
 import { chapterTime, CHAPTERS } from './chapters';
+import { WORD_MASK } from '@/shared/animations/effects/wordMask';
 
 export const LIVING = CHAPTERS.findIndex((chapter) => chapter.id === 'living');
 export const FINAL = CHAPTERS.length - 1;
@@ -32,7 +33,7 @@ export function addOverlayTimeline(timeline, { select, stage, variant = 'room' }
   // Крупные фразы поднимаются по словам из-под маски (разбиение откатывается вместе с
   // контекстом).
   const words = (target, time) => {
-    const split = SplitText.create(target, { type: 'words', mask: 'words' });
+    const split = SplitText.create(target, WORD_MASK);
     timeline.set(target, { autoAlpha: 1 }, time);
     timeline.from(
       split.words,

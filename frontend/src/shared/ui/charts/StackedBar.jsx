@@ -4,6 +4,7 @@ import styles from './StackedBar.module.css';
 // Доли целого в одной скруглённой полоске: segments: [{ key, value, colorVar }]. Сегменты двигаются
 // только через transform, поэтому скругления не сплющиваются; пустые сегменты не занимают места и
 // не оставляют лишних щелей. В первом кадре части растут слева, при обновлении — плавно переезжают.
+// height — px при корне 16 px: полоска растёт вместе с масштабом интерфейса.
 export function StackedBar({ segments, label, height = 8 }) {
   const revealed = useRevealed();
   const total = segments.reduce((sum, segment) => sum + segment.value, 0);
@@ -22,7 +23,7 @@ export function StackedBar({ segments, label, height = 8 }) {
       className={styles.root}
       role="img"
       aria-label={label}
-      style={{ '--height': `${height}px` }}
+      style={{ '--height': `${height / 16}rem` }}
     >
       {parts.map((part, i) => (
         <span

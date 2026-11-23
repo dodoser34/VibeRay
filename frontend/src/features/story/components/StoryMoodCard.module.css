@@ -34,13 +34,18 @@
 .moods {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  /* Колонки строго равные (minmax(0, …)): длинная подпись не раздвигает свою колонку, и рамка
+     выбора (.picked) совпадает с лицом */
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: var(--space-2);
 }
 
 .mood {
   position: relative;
   z-index: 1;
+  min-width: 0;
+  hyphens: auto;
+  overflow-wrap: anywhere;
   display: grid;
   justify-items: center;
   gap: var(--space-1);

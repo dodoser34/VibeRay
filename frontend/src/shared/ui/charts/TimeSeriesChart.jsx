@@ -1,5 +1,5 @@
 import { useId, useRef, useState } from 'react';
-import { rootScale } from '@/adaptations/core';
+import { useRootScale } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useElementWidth } from '@/shared/hooks/useElementWidth';
 import { monotoneCurvePath, splitIntoRuns } from './monotoneCurve';
@@ -9,6 +9,35 @@ const PAD = { top: 10, right: 4, bottom: 22, left: 30 };
 const BAR_BAND = 30; // высота столбиков под линией
 const BAR_GAP = 10;
 const EDGE_TICK = 24; // подписи X у самого края прижимаются к нему, а не центрируются
+const TICK_FONT = 10; // px при корне 16 px — --fs-3xs у .xTick
+const TICK_CHAR = 0.62; // средняя ширина знака в долях кегля (цифры и строчные буквы)
+const TICK_GAP = 8; // px между соседними подписями X
+
+// Подписи оси X, которые помещаются без столкновений: из предложенных formatTick (их шаг зависит от
+// периода) остаются те, что не налезают на соседнюю, — отсчёт от последней точки, она важнее. На
+// узкой панели и на длинном языке («Сентябрь», «Қыркүйек») подписи редеют, а не сливаются.
+function fittingTicks(points, formatTick, geometry, k) {
+  const ticks = [];
+  let leftBound = Infinity;
+  for (let i = points.length - 1; i >= 0; i -= 1) {
+    const text = formatTick?.(i);
+    if (!text) continue;
+    const x = geometry.x(i);
+    const half = (text.length * TICK_CHAR * TICK_FONT * k) / 2;
+    const anchor =
+      x - geometry.plotLeft < EDGE_TICK * k
+        ? 'start'
+        : geometry.plotRight - x < EDGE_TICK * k
+          ? 'end'
+          : 'middle';
+    const left = anchor === 'start' ? x : anchor === 'end' ? x - half * 2 : x - half;
+    const right = left + half * 2;
+    if (right + TICK_GAP * k > leftBound) continue;
+    leftBound = left;
+    ticks.push({ i, text, x, anchor });
+  }
+  return ticks;
+}
 
 // k: масштаб интерфейса (2K / 4K увеличивают корневой шрифт) — отступы растут вместе с текстом.
 function layout(count, width, height, [min, max], k) {
@@ -69,7 +98,7 @@ export function TimeSeriesChart({
   const morphRef = useRef({ t: 0 });
   const gradientId = useId();
   const width = useElementWidth(rootRef);
-  const k = rootScale();
+  const k = useRootScale();
   const height = Math.round(baseHeight * k);
   const [active, setActive] = useState(null);
 
@@ -240,28 +269,17 @@ export function TimeSeriesChart({
             ))}
           </g>
 
-          {points.map((point, i) => {
-            const text = formatTick?.(i);
-            if (!text) return null;
-            const x = geometry.x(i);
-            const anchor =
-              x - geometry.plotLeft < EDGE_TICK * k
-                ? 'start'
-                : geometry.plotRight - x < EDGE_TICK * k
-                  ? 'end'
-                  : 'middle';
-            return (
-              <text
-                key={i}
-                x={anchor === 'start' ? x - 4 * k : anchor === 'end' ? x + 4 * k : x}
-                y={height - 6 * k}
-                className={styles.xTick}
-                textAnchor={anchor}
-              >
-                {text}
-              </text>
-            );
-          })}
+          {fittingTicks(points, formatTick, geometry, k).map(({ i, text, x, anchor }) => (
+            <text
+              key={i}
+              x={anchor === 'start' ? x - 4 * k : anchor === 'end' ? x + 4 * k : x}
+              y={height - 6 * k}
+              className={styles.xTick}
+              textAnchor={anchor}
+            >
+              {text}
+            </text>
+          ))}
 
           {shown !== null && (
             <g className={styles.cursor} style={{ transform: `translateX(${activeX}px)` }}>
@@ -282,7 +300,7 @@ export function TimeSeriesChart({
         <div
           className={styles.tooltip}
           data-side={activeX < width / 2 ? 'right' : 'left'}
-          style={{ '--x': `${activeX}px` }}
+          style={{ '--x': `${activeX}px`, '--width': `${width}px` }}
           role="status"
         >
           {renderTooltip(shown)}

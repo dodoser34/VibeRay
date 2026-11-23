@@ -1,6 +1,12 @@
 .root {
   display: grid;
   gap: var(--space-4);
+  /* В боковой панели карты (колонка с max-height) длинная карточка — фото, отказ, история
+     статусов — прокручивается внутри, а не уходит за низ экрана */
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .header {

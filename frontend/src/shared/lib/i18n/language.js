@@ -204,7 +204,17 @@ document.documentElement.lang = language;
 export const languageReady = loadLanguage(DEFAULT_LANGUAGE)
   .then(() => language !== DEFAULT_LANGUAGE && loadLanguage(language))
   .then(() => language !== DEFAULT_LANGUAGE && applyTexts(language))
+  .then(stretchForLayoutTest)
   .catch((error) => console.error('Language texts failed to load', error));
+
+// Псевдоязык ?pseudo=long (shared/lib/i18n/pseudoLanguage.js) — только в dev и тестовой сборке; в
+// сайт для людей модуль не попадает: условие известно при сборке, и ветка выбрасывается.
+async function stretchForLayoutTest() {
+  if (!import.meta.env.DEV && import.meta.env.VITE_LAYOUT_TEST !== '1') return;
+  if (new URLSearchParams(window.location.search).get('pseudo') !== 'long') return;
+  const { stretchTexts } = await import('./pseudoLanguage.js');
+  stretchTexts(texts);
+}
 languageReady.then(applyDocument);
 
 const listeners = createListeners();

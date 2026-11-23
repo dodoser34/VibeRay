@@ -9,7 +9,7 @@ const STEM_HEIGHT = 0.42;
 const CLUSTER_RADIUS = 70; // px на экране (при корне 16 px): метки ближе этого сливаются в кластер
 const RECLUSTER_MS = 160;
 const EASE_RATE = 9; // 1/с: как быстро метки долетают до своего места или до кластера
-const SCREEN_MARGIN = 80; // px за краем экрана, где кластеры ещё считаются
+const SCREEN_MARGIN = 80; // px (при корне 16 px) за краем экрана, где кластеры ещё считаются
 
 // Метки проблем: тонкие ножки с круглой головкой, по одному InstancedMesh на каждую часть ради
 // производительности. Метки, которые на экране оказались слишком близко, собираются в кластеры:
@@ -101,17 +101,14 @@ export class ProblemsLayer {
     this.cameraKey = key;
     this.lastCluster = now;
 
+    const margin = SCREEN_MARGIN * rootScale();
     const screen = this.homes.map((home) => {
       this.point.copy(home);
       this.group.localToWorld(this.point).project(camera);
       const x = ((this.point.x + 1) / 2) * width;
       const y = ((1 - this.point.y) / 2) * height;
       const visible =
-        this.point.z < 1 &&
-        x > -SCREEN_MARGIN &&
-        x < width + SCREEN_MARGIN &&
-        y > -SCREEN_MARGIN &&
-        y < height + SCREEN_MARGIN;
+        this.point.z < 1 && x > -margin && x < width + margin && y > -margin && y < height + margin;
       return { x, y, visible };
     });
     const order = this.problems.map((_, i) => i);

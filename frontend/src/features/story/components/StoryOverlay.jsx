@@ -43,7 +43,12 @@ export function StoryOverlay({ variant, orientation, onOpenMap }) {
     );
   };
   return (
-    <div className={styles.overlay} data-variant={variant} data-orientation={orientation}>
+    <div
+      className={styles.overlay}
+      data-ui="story-overlay"
+      data-variant={variant}
+      data-orientation={orientation}
+    >
       <p className={styles.stamp} data-story="stamp">
         {story.stamp}
       </p>

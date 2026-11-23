@@ -5,10 +5,12 @@
    доли --screen-* (стоя) и те же доли, повёрнутые, лёжа. */
 .stage {
   --ratio: calc(1274 / 785);
+  /* Не крупнее 34rem (планшет), но на высоком портретном мониторе фото занимает не меньше 70 %
+     высоты, а не жмётся маленьким к низу пустого экрана */
   --unit: min(
     108vw,
     calc((100dvh - var(--tabbar-height) - var(--safe-top) - 1rem) / var(--ratio)),
-    34rem
+    max(34rem, 70dvh / var(--ratio))
   );
 
   position: absolute;
@@ -16,11 +18,13 @@
   overflow: hidden;
 }
 
+/* Лёжа — по высоте окна, но не крупнее, чем стоя: на планшете лёжа и в низком окне ПК экран телефона
+   с карточками истории не сжимается до полоски */
 .stage[data-orientation='landscape'] {
   --unit: min(
     calc(100dvh - var(--safe-top) - var(--safe-bottom) - 1.5rem),
     calc((100vw - 4rem) / var(--ratio)),
-    26rem
+    34rem
   );
 }
 
