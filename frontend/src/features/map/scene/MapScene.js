@@ -34,7 +34,10 @@ const MAX_INSET = { top: 0.3, bottom: 0.52, side: 0.45 };
 const INSET_SETTLE_MS = 200; // шторка или панели столько стоят на месте — обзор пересчитывается
 const LABEL_CHECK_MS = 150; // как часто разбираются налезающие подписи
 const LABEL_GAP = 4; // px между двумя подписями, которые обе остаются
-const LABEL_LIFT = 8; // px: подпись под указателем приподнимается (MapCanvas.module.css)
+// Выбранная или наведённая подпись приподнимается на 6 px и растёт на 6 % (MapCanvas.module.css) —
+// запас, чтобы и она целиком оставалась в свободной части кадра
+const LABEL_LIFT = 8; // px
+const LABEL_GROW = 0.06;
 // Плиты районов — полупрозрачное стекло над общим слоем дорог: дороги читаются сквозь них
 // непрерывно, а районы хорошо различаются цветом и светлыми границами. Плотность своя у каждой темы.
 const districtOpacity = () => parseFloat(cssVar('--scene-district-opacity'));
@@ -701,11 +704,13 @@ export class MapScene {
           top: y - halfHeight,
           bottom: y + halfHeight,
         };
+        const growX = halfWidth * LABEL_GROW;
+        const growY = halfHeight * LABEL_GROW;
         const outside =
-          box.left < free.left ||
-          box.right > free.right ||
-          box.top - LABEL_LIFT < free.top ||
-          box.bottom > free.bottom;
+          box.left - growX < free.left ||
+          box.right + growX > free.right ||
+          box.top - growY - LABEL_LIFT < free.top ||
+          box.bottom + growY > free.bottom;
         const hidden =
           outside ||
           placed.some(

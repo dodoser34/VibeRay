@@ -317,7 +317,7 @@ export function TabBar({ onOverflow }) {
               <>
                 {item.avatar && <Avatar src={item.avatar} size={22} />}
                 <span
-                  className={item.key === 'me' ? styles.nickname : styles.label}
+                  className={item.key === 'me' ? styles.nickname : undefined}
                   data-ui={item.key === 'me' ? 'tabbar-nickname' : item.short && 'tabbar-label'}
                 >
                   {item.label}

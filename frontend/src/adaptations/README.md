@@ -38,11 +38,11 @@
 
 ## Три оси
 
-| Ось    | Значения                                                                   | JS (`core/breakpoints.js`)  | CSS                                        |
-| ------ | -------------------------------------------------------------------------- | --------------------------- | ------------------------------------------ |
-| ширина | `mobile` < 768, `tablet` 768–1199, `desktop`, `full-hd` ≥ 1920, `2k`, `4k` | `tierFor`                   | `min-width` / `max-width`                  |
-| форма  | портрет (высота ≥ ширины, квадрат тоже), альбом, ультраширокий (≥ 2,1 : 1) | `isPortrait`, `isUltrawide` | `orientation`, `(min-aspect-ratio: 21/10)` |
-| высота | низкое альбомное окно (< 600 px от 1024 px в ширину), сжатие по высоте     | `isShort`                   | `max-height` (`short/`, `scale.css`)       |
+| Ось    | Значения                                                                   | JS (`core/breakpoints.js`)                | CSS                                        |
+| ------ | -------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------ |
+| ширина | `mobile` < 768, `tablet` 768–1199, `desktop`, `full-hd` ≥ 1920, `2k`, `4k` | `tierFor`                                 | `min-width` / `max-width`                  |
+| форма  | портрет (высота ≥ ширины, квадрат тоже), альбом, ультраширокий (≥ 2,1 : 1) | `isPortrait` (ультраширокий — только CSS) | `orientation`, `(min-aspect-ratio: 21/10)` |
+| высота | низкое альбомное окно (< 600 px от 1024 px в ширину), сжатие по высоте     | `isShort`                                 | `max-height` (`short/`, `scale.css`)       |
 
 Из них складываются раскладки:
 
@@ -88,11 +88,11 @@ adaptations/
 ├── index.css            # подключает все файлы уровней; импортируется ПОСЛЕДНИМ в main.jsx
 ├── scale.css            # плавный корневой шрифт (масштаб интерфейса)
 ├── core/                # логика — можно импортировать из любого слоя (как shared/)
-│   ├── breakpoints.js   # пороги трёх осей: tierFor, isCompact, isStacked, isUltrawide, isShort, …
-│   ├── useViewport.js   # хук: tier, compact, stacked, portrait, ultrawide, short — для смены СТРУКТУРЫ
+│   ├── breakpoints.js   # пороги трёх осей: tierFor, isCompact, isStacked, isShort, isPhoneLandscape, …
+│   ├── useViewport.js   # хук: tier, compact, stacked, portrait, short — для смены СТРУКТУРЫ
 │   ├── placeInViewport.js # размещение плавающего элемента целиком в окне
 │   ├── renderQuality.js # качество WebGL/canvas: плотность и бюджет пикселей, частицы, детализация
-│   └── rootScale.js     # масштаб интерфейса: rootScale(), useRootScale(), subscribeRootScale()
+│   └── rootScale.js     # масштаб интерфейса: rootScale(), useRootScale()
 ├── desktop/
 │   ├── desktop.css      # 1200–1919: узкие ноутбуки
 │   └── full-hd/         # токены Full HD (панели шире)

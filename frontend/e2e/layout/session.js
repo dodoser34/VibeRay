@@ -14,13 +14,14 @@ export async function settle(page, pauseMs = 1600) {
   await page.waitForTimeout(pauseMs);
 }
 
-// Переход внутри приложения без перезагрузки: React Router слушает popstate и читает адрес.
+// Переход внутри приложения без перезагрузки: React Router слушает popstate и читает адрес. Пауза —
+// на переход «бумажная карта» и перелёт камеры к району, чтобы снимок был уже в покое.
 export async function navigateInApp(page, url) {
   await page.evaluate((target) => {
     window.history.pushState({}, '', target);
     window.dispatchEvent(new PopStateEvent('popstate'));
   }, url);
-  await settle(page, 2400);
+  await settle(page, 4000);
 }
 
 export async function scrollToFraction(page, fraction) {

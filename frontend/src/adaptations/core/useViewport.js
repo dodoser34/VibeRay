@@ -6,7 +6,6 @@ import {
   isPortrait,
   isShort,
   isStacked,
-  isUltrawide,
   tierFor,
 } from './breakpoints';
 
@@ -20,7 +19,7 @@ function subscribe(callback) {
   };
 }
 
-const FLAGS = ['compact', 'stacked', 'coarse', 'portrait', 'phoneLandscape', 'ultrawide', 'short'];
+const FLAGS = ['compact', 'stacked', 'coarse', 'portrait', 'phoneLandscape', 'short'];
 
 // Снимок-строка: React перерисовывает только при реальной смене уровня или формы окна, а не на каждый
 // пиксель ресайза.
@@ -34,7 +33,6 @@ function snapshot() {
     coarse: window.matchMedia(COARSE_POINTER).matches,
     portrait: isPortrait(width, height),
     phoneLandscape: isPhoneLandscape(width, height),
-    ultrawide: isUltrawide(width, height),
     short: isShort(width, height),
   };
   return [tierFor(width), ...FLAGS.map((flag) => (flags[flag] ? '1' : '0'))].join('|');
@@ -45,7 +43,7 @@ const SERVER_SNAPSHOT = ['desktop', ...FLAGS.map(() => '0')].join('|');
 // Уровень устройства и форма окна для компонентов, которые меняют структуру, а не только стили
 // (мобильное меню вместо таб-бара; `compact`: шторка карты вместо боковых панелей; `stacked`: главная,
 // история и текстовые страницы в одну колонку; `portrait`: экран выше, чем шире, или квадрат — по нему
-// перестраиваются кадры, рассчитанные под пропорции экрана; `ultrawide`, `short` — форма и высота).
+// перестраиваются кадры, рассчитанные под пропорции экрана; `short` — невысокое альбомное окно).
 export function useViewport() {
   const [tier, ...values] = useSyncExternalStore(subscribe, snapshot, () => SERVER_SNAPSHOT).split(
     '|',
@@ -62,7 +60,6 @@ export function useViewport() {
     stacked: flags.stacked,
     coarse: flags.coarse,
     portrait: flags.portrait,
-    ultrawide: flags.ultrawide,
     short: flags.short,
   };
 }

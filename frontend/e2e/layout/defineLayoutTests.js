@@ -3,7 +3,14 @@ import { fileURLToPath } from 'node:url';
 import { test, expect } from '@playwright/test';
 import { auditLayout } from './audit.js';
 import { login, navigateInApp, scrollToFraction, settle, urlFor } from './session.js';
-import { ELLIPSIS_ALLOWED, FLOATING, OVERLAYS, STATES, TOUCH_EXEMPT } from './states.js';
+import {
+  ELLIPSIS_ALLOWED,
+  FLOATING,
+  OVERLAYS,
+  SCENE_OBJECTS,
+  STATES,
+  TOUCH_EXEMPT,
+} from './states.js';
 import { VIEWPORTS } from './viewports.js';
 
 const OUTPUT = new URL('../output/', import.meta.url);
@@ -76,6 +83,7 @@ export function defineLayoutTests(set) {
                 floating: FLOATING,
                 touch: Boolean(viewport.touch),
                 touchExempt: TOUCH_EXEMPT,
+                sceneObjects: SCENE_OBJECTS,
                 minTarget: MIN_TARGET,
               });
               issues.push(

@@ -18,7 +18,7 @@ export function StoryMoodCard() {
   const index = SCALE.findIndex((mood) => mood.code === picked);
   return (
     <div className={styles.card} data-story="mood-card" data-later>
-      <div className={styles.person}>
+      <div className={styles.person} data-story="mood-person">
         <Avatar src="preset:1" size={40} />
         <div>
           <p className={styles.nick}>{texts.nickname}</p>

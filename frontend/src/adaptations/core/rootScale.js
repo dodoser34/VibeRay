@@ -28,7 +28,7 @@ function schedule() {
   if (!frame) frame = requestAnimationFrame(check);
 }
 
-export function subscribeRootScale(listener) {
+function subscribeRootScale(listener) {
   if (!listeners.size) {
     window.addEventListener('resize', schedule);
     window.visualViewport?.addEventListener('resize', schedule);

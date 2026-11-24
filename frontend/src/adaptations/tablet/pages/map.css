@@ -43,12 +43,13 @@
     right: auto;
     left: var(--space-3);
     bottom: calc(var(--sheet-inset, 6rem) + var(--space-2));
-    max-width: calc(100vw - 2 * var(--space-3));
+    max-width: calc(100% - 2 * var(--space-3));
     padding: 2px var(--space-2);
-    border-radius: var(--radius-pill);
-    /* Строка лежит прямо на карте: подложка отделяет её от подписей районов под ней */
+    border-radius: var(--radius-sm);
+    /* Строка лежит прямо на карте: подложка отделяет её от подписей районов под ней. На узком
+       телефоне с длинным переводом («OpenStreetMap-Mitwirkende») она переносится, а не обрезается */
     background: var(--color-glass);
-    white-space: nowrap;
+    text-wrap: balance;
   }
 
   /* Шторка закрывает карту: строка лицензии уехала бы вверх к верхним кнопкам */

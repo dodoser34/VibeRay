@@ -35,17 +35,17 @@
   position: relative;
   display: grid;
   /* Колонки строго равные (minmax(0, …)): длинная подпись не раздвигает свою колонку, и рамка
-     выбора (.picked) совпадает с лицом */
+     выбора (.picked) совпадает с лицом. На узком экране телефона зазор меньше — подписям шире */
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: var(--space-2);
+  gap: clamp(2px, 1.5cqi, var(--space-2));
 }
 
 .mood {
   position: relative;
   z-index: 1;
   min-width: 0;
+  /* Слово не рвётся посреди буквы («Керем|ет»): переносится по слогам, где язык это умеет */
   hyphens: auto;
-  overflow-wrap: anywhere;
   display: grid;
   justify-items: center;
   gap: var(--space-1);
@@ -85,11 +85,11 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: calc((100% - 4 * var(--space-2)) / 5);
+  width: calc((100% - 4 * clamp(2px, 1.5cqi, var(--space-2))) / 5);
   border: 1.5px solid var(--color-accent-bright);
   border-radius: var(--radius-sm);
   background: var(--color-accent-soft);
-  translate: calc(var(--pick) * (100% + var(--space-2))) 0;
+  translate: calc(var(--pick) * (100% + clamp(2px, 1.5cqi, var(--space-2)))) 0;
   transition: translate var(--dur-slow) var(--ease-out);
 }
 

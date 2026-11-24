@@ -10,6 +10,7 @@ export function auditLayout({
   floating,
   touch,
   touchExempt,
+  sceneObjects,
   minTarget,
 }) {
   const issues = [];
@@ -91,6 +92,7 @@ export function auditLayout({
   const elements = document.body.querySelectorAll('*');
   for (const element of elements) {
     if (element.closest('svg, script, style, noscript, canvas')) continue;
+    if (matchesAny(element, sceneObjects)) continue;
     const textNodes = ownText(element);
     if (!textNodes.length || !isShown(element)) continue;
     const style = getComputedStyle(element);
@@ -223,6 +225,10 @@ export function auditLayout({
     for (const element of targets) {
       if (!isShown(element) || element.closest('p') || element.disabled) continue;
       if (matchesAny(element, touchExempt)) continue;
+      // Значок, который сейчас исчезает (сжимается анимацией), — уже не цель
+      if (element.closest('[data-leaving="true"]')) continue;
+      // Ещё растёт анимацией появления — размер не окончательный
+      if (element.getAnimations().some((animation) => animation.playState === 'running')) continue;
       const rect = element.getBoundingClientRect();
       if (rect.width + TOLERANCE < minTarget || rect.height + TOLERANCE < minTarget) {
         push({

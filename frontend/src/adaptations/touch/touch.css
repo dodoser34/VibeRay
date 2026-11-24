@@ -80,6 +80,21 @@
     align-items: center;
   }
 
+  /* Легенда статусов на карте, подсказка прокрутки на главной, ссылки и кнопки в «Моих сообщениях» */
+  :root [data-ui='map-filters-legend'] button,
+  :root [data-ui='home-scroll-hint'],
+  :root [data-ui='settings-reports'] a,
+  :root [data-ui='settings-reports'] button {
+    display: inline-flex;
+    align-items: center;
+    min-width: var(--touch-target);
+    min-height: var(--touch-target);
+  }
+
+  :root [data-ui='settings-reports'] button {
+    justify-content: center;
+  }
+
   :root [data-ui='table-sort'],
   :root [data-ui='queue-status'] {
     min-height: var(--touch-target);

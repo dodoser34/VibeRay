@@ -2,13 +2,14 @@
 // role: guest — каждое состояние открывается заново по адресу; resident / moderator — вход один раз
 // через демо-подсказку на форме входа, дальше переходы внутри приложения (токен живёт только в памяти).
 // scrolls — доли прокрутки страницы (история «О проекте» прокручивается по главам); pause — сколько ждать
-// анимаций появления, мс (главная: передний слой, карточка входа, девушка).
+// анимаций появления, мс (главная: передний слой, карточка входа, девушка; карта: перелёт камеры к
+// району или проблеме).
 export const STATES = [
   { name: 'home-login', role: 'guest', path: '/login', pause: 6000 },
   { name: 'home-register', role: 'guest', path: '/register', pause: 6000 },
   { name: 'map', role: 'guest', path: '/map/kostanay' },
-  { name: 'map-district', role: 'guest', path: '/map/kostanay/district/center' },
-  { name: 'map-problem', role: 'guest', path: '/map/kostanay/problem/p1' },
+  { name: 'map-district', role: 'guest', path: '/map/kostanay/district/center', pause: 4000 },
+  { name: 'map-problem', role: 'guest', path: '/map/kostanay/problem/p1', pause: 4000 },
   { name: 'map-stats', role: 'guest', path: '/map/kostanay/stats' },
   { name: 'about', role: 'guest', path: '/about', scrolls: [0, 0.2, 0.45, 0.7, 0.95] },
   { name: 'support', role: 'guest', path: '/support' },
@@ -50,4 +51,12 @@ export const FLOATING = [
 export const TOUCH_EXEMPT = ['[data-ui="story-overlay"][data-variant="phone"]'];
 
 // Где многоточие — осознанное решение (пользовательские данные: никнейм, имя файла).
-export const ELLIPSIS_ALLOWED = [];
+export const ELLIPSIS_ALLOWED = [
+  '[data-ui="tabbar-nickname"]',
+  // Превью описания в очереди модератора — две строки, полностью — в карточке проблемы
+  '[data-ui="moderation-item"] p',
+];
+
+// Объекты 3D-сцены (значки кластеров): у края кадра их срезает граница холста, как и сам город, —
+// это не текст интерфейса, обрезка для них не проверяется.
+export const SCENE_OBJECTS = ['[data-ui="map-cluster"]'];

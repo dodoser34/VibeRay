@@ -9,7 +9,8 @@
 //     full-hd   1920–2559
 //     2k        2560–3839
 //     4k        ≥ 3840
-//   форма — портрет (высота ≥ ширины, квадрат тоже), альбом, ультраширокий (≥ 2,1 : 1);
+//   форма — портрет (высота ≥ ширины, квадрат тоже), альбом, ультраширокий (≥ 2,1 : 1 от 1200 px —
+//           только CSS: (min-aspect-ratio: 21/10) в adaptations/ultrawide/, структура не меняется);
 //   высота — невысокое альбомное окно (short).
 //
 // Масштаб интерфейса (корневой шрифт) уровни не задают — его считает одна формула от размеров окна
@@ -23,8 +24,6 @@ export const BREAKPOINTS = {
   uhd: 3840,
 };
 
-// Ультраширокий экран (21:9, 32:9): главная, история и текстовые страницы — в рамке по центру.
-export const ULTRAWIDE_RATIO = 2.1;
 // Невысокое окно: зум браузера 175 %, открытые DevTools, окно на половину экрана.
 export const SHORT_HEIGHT = 600;
 // Телефон лёжа: по ширине — планшет, но высоты почти нет (812 × 375, 932 × 430).
@@ -60,10 +59,6 @@ export function isStacked(width, height) {
 
 // Раскладка «рядом» для matchMedia / GSAP matchMedia — обратное условие к isStacked.
 export const WIDE_QUERY = `(min-width: ${BREAKPOINTS.tabletWide}px) and (orientation: landscape)`;
-
-export function isUltrawide(width, height) {
-  return width >= BREAKPOINTS.desktop && width / height >= ULTRAWIDE_RATIO;
-}
 
 export function isShort(width, height) {
   return width >= BREAKPOINTS.tabletWide && width > height && height < SHORT_HEIGHT;
