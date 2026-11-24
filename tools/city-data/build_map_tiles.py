@@ -16,10 +16,10 @@
 векторный кусок vector/<x>_<y>.json — линии дорог этой клетки (обрезанные по её краю), карта рисует
 их чёткими при любом приближении. Координаты куска — целые дециметры от юго-западного угла клетки.
 
-Запуск из корня репозитория (нужна Pillow — она есть в backend/requirements.txt):
+Запуск из корня репозитория (нужна Pillow из tools/city-data/requirements.txt):
 
-    python backend/scripts/build_map_tiles.py kostanay
-    python backend/scripts/build_map_tiles.py --all
+    python tools/city-data/build_map_tiles.py kostanay
+    python tools/city-data/build_map_tiles.py --all
 """
 
 import argparse

@@ -1,11 +1,11 @@
 """Проверка геоданных города против сырого OpenStreetMap: районы, вода, дороги, плитки.
 
 Сверяет готовые файлы (backend/data/cities/<slug>/, копию в демо-данных фронтенда и плитки
-frontend/public/maps/<slug>/) с ответами Overpass из backend/.osm-cache/ — теми же, по которым
+frontend/public/maps/<slug>/) с ответами Overpass из tools/city-data/.osm-cache/ — теми же, по которым
 build_districts.py и build_streets.py (--save-osm) собирали город; ответа с берегами в кеше нет —
 он скачивается. Правки чистки контуров (district_edits.geojson) ошибкой не считаются. Печатает
 таблицу «проверка — измерено — порог» и вердикт; код выхода 1, если хотя бы одна проверка не
-прошла. Сами проверки — в geodata/checks/. Нужны shapely (requirements-dev.txt) и Pillow.
+прошла. Сами проверки — в geodata/checks/. Нужны shapely и Pillow (tools/city-data/requirements.txt).
 
     D1 состав районов            D4 границы лежат на линиях OSM     R1 вершины дорог — узлы OSM
     D2 геометрия                 D5 общая граница — общие вершины   R2 дороги OSM есть на схеме
@@ -14,8 +14,8 @@ build_districts.py и build_streets.py (--save-osm) собирали город;
 
 Запуск из корня репозитория:
 
-    python backend/scripts/verify_city_data.py kostanay
-    python backend/scripts/verify_city_data.py --all
+    python tools/city-data/verify_city_data.py kostanay
+    python tools/city-data/verify_city_data.py --all
 """
 
 import argparse

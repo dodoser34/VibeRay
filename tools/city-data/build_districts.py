@@ -11,12 +11,12 @@ OSM без упрощения и сглаживания (geodata/districts/offic
 
 Названия районов берутся из текущего districts.geojson, у нового города — из тегов OSM. Пишет
 backend/data/cities/<slug>/ и копию для демо-режима фронтенда. Нужны shapely и Pillow
-(backend/requirements-dev.txt).
+(tools/city-data/requirements.txt).
 
 Запуск из корня репозитория:
 
-    python backend/scripts/build_districts.py cologne
-    python backend/scripts/build_districts.py kostanay --preview preview.png
+    python tools/city-data/build_districts.py cologne
+    python tools/city-data/build_districts.py kostanay --preview preview.png
 
 После районов пересобираются дороги и плитки: build_streets.py, затем build_map_tiles.py.
 """
@@ -146,7 +146,7 @@ def main() -> None:
     if args.preview:
         seeds = before if 'blocks' in config else None
         draw_preview(args.preview, districts, palette, water, seeds, lat0)
-    print(f'Дальше: python backend/scripts/build_streets.py {slug}, затем build_map_tiles.py')
+    print(f'Дальше: python tools/city-data/build_streets.py {slug}, затем build_map_tiles.py')
 
 
 if __name__ == '__main__':

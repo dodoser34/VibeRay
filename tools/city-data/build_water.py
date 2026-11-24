@@ -15,15 +15,15 @@
 Воду берём шире районов (MARGIN_DEG), чтобы река и залив не обрывались у края кадра. Рамку города
 скрипт берёт из city.json (bbox), а для нового города — из официальных границ районов в OSM; в этом
 случае он же записывает в city.json приблизительные center и bbox (их потом уточнит
-build_districts.py). Ответ Overpass кешируется в backend/.osm-cache/<slug>-water-areas.json.
+build_districts.py). Ответ Overpass кешируется в tools/city-data/.osm-cache/<slug>-water-areas.json.
 
 Пишет backend/data/cities/<slug>/water.geojson и копию для демо-режима фронтенда. После него —
 build_districts.py: районы вычитают воду, поэтому берег района и берег на карте совпадают.
 
 Запуск из корня репозитория:
 
-    python backend/scripts/build_water.py cologne
-    python backend/scripts/build_water.py cologne --out preview.geojson   # не трогая данные города
+    python tools/city-data/build_water.py cologne
+    python tools/city-data/build_water.py cologne --out preview.geojson   # не трогая данные города
 """
 
 import argparse
@@ -256,7 +256,7 @@ def main() -> None:
         info['bbox'] = [round(value, 5) for value in (west, south, east, north)]
         write_json(folder / 'city.json', info)
         print('city.json: записаны приблизительные center и bbox')
-    print(f'Дальше: python backend/scripts/build_districts.py {slug}')
+    print(f'Дальше: python tools/city-data/build_districts.py {slug}')
 
 
 if __name__ == '__main__':

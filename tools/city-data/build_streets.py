@@ -9,18 +9,18 @@
 _outside.geojson для дорог вне районов; старые файлы папки удаляются. Фронтенд схему не читает:
 карта рисует дороги плитками, после этого скрипта их пересобирает build_map_tiles.py.
 
-Ответ Overpass стоит сохранять (--save-osm backend/.osm-cache/<slug>-streets.json): по нему
+Ответ Overpass стоит сохранять (--save-osm tools/city-data/.osm-cache/<slug>-streets.json): по нему
 verify_city_data.py проверяет, что схема совпадает с OSM, а повторная сборка идёт без сети (--osm).
 
-Запуск из корня репозитория (<кеш> — backend/.osm-cache/<slug>-streets.json):
+Запуск из корня репозитория (<кеш> — tools/city-data/.osm-cache/<slug>-streets.json):
 
-    python backend/scripts/build_streets.py kostanay --save-osm <кеш>   # скачать и сохранить
-    python backend/scripts/build_streets.py kostanay --osm <кеш>        # пересобрать без сети
+    python tools/city-data/build_streets.py kostanay --save-osm <кеш>   # скачать и сохранить
+    python tools/city-data/build_streets.py kostanay --osm <кеш>        # пересобрать без сети
 
 Большой город грузится частями, а дворовые проезды за пределами районов не берутся (--save-osm
 нужен и здесь):
 
-    python backend/scripts/build_streets.py cologne --tiles 4 --skip-outside service
+    python tools/city-data/build_streets.py cologne --tiles 4 --skip-outside service
 """
 
 import argparse
@@ -315,7 +315,7 @@ def main() -> None:
     kinds = Counter(f['properties']['kind'] for f in features)
     files = len(list((folder / 'streets').glob('*.geojson')))
     print(f'{len(features)} линий, {size // 1024} КБ в {files} файлах: {dict(kinds)}')
-    print(f'Плитки карты: python backend/scripts/build_map_tiles.py {args.city}')
+    print(f'Плитки карты: python tools/city-data/build_map_tiles.py {args.city}')
 
 
 if __name__ == '__main__':

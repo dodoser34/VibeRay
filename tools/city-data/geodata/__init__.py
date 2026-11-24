@@ -1,4 +1,4 @@
-"""Общий код скриптов геоданных (backend/scripts/build_*.py и verify_city_data.py).
+"""Общий код скриптов геоданных (tools/city-data/build_*.py и verify_city_data.py).
 
 paths.py      где лежат данные городов, копии для фронтенда, плитки и кеш OSM
 osm.py        запросы к Overpass API, кеш ответов, разбор путей и отношений OSM
