@@ -5,13 +5,6 @@
   pointer-events: none;
 }
 
-/* Подписи, колонка карточек и фразы отмеряются от рамки истории (cqw, cqh), а не от экрана: на
-   ультрашироком мониторе рамка стоит по центру (adaptations/ultrawide), и подписи остаются рядом с
-   комнатой, а не у краёв экрана. На телефоне рамка — экран телефона (phone/PhoneStage). */
-.overlay[data-variant='room'] {
-  container-type: size;
-}
-
 /* Появляется позже по шкале прокрутки (и скрыто, пока шкала не построена). */
 .overlay [data-later] {
   visibility: hidden;
@@ -21,7 +14,7 @@
 .stamp {
   position: absolute;
   top: calc(var(--tabbar-height) + var(--space-6));
-  right: 6cqw;
+  right: 6vw;
   color: var(--color-text-muted);
   font-family: var(--font-display);
   font-size: var(--fs-lg);
@@ -30,9 +23,9 @@
 
 .caption {
   position: absolute;
-  left: 6cqw;
-  bottom: 12cqh;
-  max-width: min(32.5rem, 88cqw);
+  left: 6vw;
+  bottom: 12vh;
+  max-width: min(32.5rem, 88vw);
   padding: var(--space-4) var(--space-5);
   border-radius: var(--radius-md);
   background: var(--color-glass-strong);
@@ -51,7 +44,7 @@
 
 .phrase,
 .question {
-  width: min(56.25rem, 88cqw);
+  width: min(56.25rem, 88vw);
   font-family: var(--font-display);
   line-height: 1.2;
   text-align: center;
@@ -79,7 +72,7 @@
 .moodSlot {
   position: absolute;
   top: 50%;
-  right: 7cqw;
+  right: 7vw;
   transform: translateY(-50%);
 }
 
@@ -89,13 +82,13 @@
 .column {
   position: absolute;
   top: calc(var(--tabbar-height) + var(--space-6));
-  right: 5cqw;
+  right: 5vw;
   bottom: var(--space-6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: var(--space-4);
-  width: min(22.5rem, 34cqw);
+  width: min(22.5rem, 34vw);
 }
 
 .overlay[data-variant='room'] .column .caption {
@@ -283,12 +276,6 @@
 .overlay[data-variant='phone'][data-orientation='landscape'] [data-story='mood-card'] {
   gap: var(--space-2);
   padding-top: var(--space-5);
-  padding-bottom: var(--space-4);
-}
-
-/* Лёжа экран телефона низкий: карточка без строки «кто и где» — вопрос и лица помещаются целиком */
-.overlay[data-variant='phone'][data-orientation='landscape'] [data-story='mood-person'] {
-  display: none;
 }
 
 .overlay[data-variant='phone'][data-orientation='landscape'] [data-ui='story-ui'] {

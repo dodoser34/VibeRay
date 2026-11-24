@@ -24,5 +24,3 @@ docs/art/incoming/*.png
 docs/art/*.zip
 # Сырые ответы Overpass для сборки и проверки геоданных (backend/scripts) — скачиваются заново
 backend/.osm-cache/
-# Проверка вёрстки (Playwright): сборка, скриншоты и сводка — генерируются заново
-frontend/e2e/output/

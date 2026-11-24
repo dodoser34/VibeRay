@@ -6,7 +6,6 @@ import home from '@/texts/en/home.json';
 import { usePointerParallax } from '../hooks/usePointerParallax';
 import { ThoughtVisual } from './ThoughtVisual';
 import styles from './HeroThoughts.module.css';
-import { rootScale } from '@/adaptations/core';
 
 // Мысли жителя — пять разных видов, идут вперемешку, чтобы соседние облачка не были похожи:
 // ask — вопрос и шкала лиц настроения, по которой бежит выбор; joy — крупное лицо, которое
@@ -41,12 +40,11 @@ const DEPTH = {
   move: (px, py) => ({ x: px * 22, y: py * 14 }),
   idle: (t) => ({ x: t * 6 }),
 };
-// Отступ облачка от края сцены, px при корне 16 px.
+// Отступ облачка от края сцены, px.
 const PAD = 12;
 // Широкий экран: левее этой доли ширины — колонка с формой, облачко туда не заходит.
 const COLUMN_SHARE = 0.47;
-// Одна колонка: столько px (при корне 16 px) снизу сцены перекрывает заголовок (поднят
-// отрицательным отступом).
+// Одна колонка: столько px снизу сцены перекрывает заголовок (поднят отрицательным отступом).
 const STACKED_BOTTOM = 56;
 // Одна колонка: плавающие кнопки телефона и таб-бар планшета — облачко не поднимается выше их
 // низа (rem).
@@ -95,18 +93,18 @@ export function HeroThoughts({ ref, active, stacked = false, anchor }) {
       head.y -= root.offsetTop;
 
       const sides = stacked ? SIDES.stacked : SIDES.wide;
-      // Отступы — в масштабе интерфейса (на 4K облачко и сцена крупнее)
-      const scale = rootScale();
-      const pad = PAD * scale;
-      const minLeft = stacked ? pad : root.clientWidth * COLUMN_SHARE;
-      // Облачко не шире свободной части сцены: длинная мысль переносится, а не вылезает за край
-      bubble.style.maxWidth = `${Math.max(0, root.clientWidth - minLeft - pad)}px`;
       const bubbleWidth = bubble.offsetWidth;
       const bubbleHeight = bubble.offsetHeight;
-      const maxLeft = root.clientWidth - bubbleWidth - pad;
-      const maxTop = root.clientHeight - bubbleHeight - (stacked ? STACKED_BOTTOM * scale : pad);
+      const minLeft = stacked ? PAD : root.clientWidth * COLUMN_SHARE;
+      const maxLeft = root.clientWidth - bubbleWidth - PAD;
+      const maxTop = root.clientHeight - bubbleHeight - (stacked ? STACKED_BOTTOM : PAD);
       const rootTop = root.getBoundingClientRect().top + window.scrollY;
-      const minTop = stacked ? Math.max(pad, STACKED_TOP * 16 * scale - rootTop) : pad;
+      const minTop = stacked
+        ? Math.max(
+            PAD,
+            STACKED_TOP * parseFloat(getComputedStyle(document.documentElement).fontSize) - rootTop,
+          )
+        : PAD;
       // Место облачка для направления от головы: угол облачка, ближний к голове, — на луче, облачко
       // растёт от него наружу и не выходит за допустимую область. Цена места — насколько облачко
       // перекрывает голову (квадрат вокруг неё) и насколько его пришлось сдвинуть от луча.

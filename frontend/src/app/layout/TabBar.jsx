@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
-import { rootScale } from '@/adaptations/core';
 import { lastCity } from '@/features/map';
 import { Link } from 'react-router';
 import { useAuth } from '@/features/auth';
@@ -19,9 +18,6 @@ import { usePageNavigate, useTransitionBusy } from '../transitions/useTransition
 import nav from '@/texts/en/nav.json';
 import styles from './TabBar.module.css';
 
-// Наименьший зазор между вкладками и логотипом или правыми кнопками, px при корне 16 px
-const SIDE_GAP = 8;
-
 function activeKeyFor(pathname) {
   if (pathname.startsWith('/map')) return 'map';
   if (pathname === '/register') return 'register';
@@ -33,7 +29,7 @@ function activeKeyFor(pathname) {
   return 'login';
 }
 
-export function TabBar({ onOverflow }) {
+export function TabBar() {
   const { user, logout } = useAuth();
   const language = useLanguage();
   const pathname = usePagePath();
@@ -42,9 +38,6 @@ export function TabBar({ onOverflow }) {
   const rootRef = useRef(null);
   const navRef = useRef(null);
   const trackRef = useRef(null);
-  const logoRef = useRef(null);
-  const leadThemeRef = useRef(null);
-  const asideRef = useRef(null);
   const pillRef = useRef(null);
   const introRef = useRef(true); // подсветка ждёт, пока кнопки долетят
   const pendingRef = useRef(null); // вкладка, к которой идёт переход: подсветка уже стоит на ней
@@ -254,29 +247,6 @@ export function TabBar({ onOverflow }) {
     return () => observer.disconnect();
   }, [movePill]);
 
-  // Вкладки не помещаются между логотипом и правыми кнопками (длинный язык, модератор с шестью
-  // вкладками, узкое окно) — App переключается на меню, сообщаем ему ширину окна, при которой они
-  // поместятся. Замер — по раскладке (offset*), без сдвигов анимации появления.
-  useLayoutEffect(() => {
-    const measure = () => {
-      const navBox = navRef.current;
-      const rightOf = (element) =>
-        element?.offsetParent ? element.offsetLeft + element.offsetWidth : 0;
-      const gap = SIDE_GAP * rootScale();
-      const leftEdge = Math.max(rightOf(logoRef.current), rightOf(leadThemeRef.current)) + gap;
-      const rightEdge = asideRef.current.offsetLeft - gap;
-      const overflow = Math.max(
-        leftEdge - navBox.offsetLeft,
-        navBox.offsetLeft + navBox.offsetWidth - rightEdge,
-      );
-      if (overflow > 0) onOverflow(window.innerWidth + overflow * 2);
-    };
-    measure();
-    const observer = new ResizeObserver(measure);
-    [rootRef, trackRef, asideRef, logoRef].forEach((ref) => observer.observe(ref.current));
-    return () => observer.disconnect();
-  }, [onOverflow, language, user]);
-
   // Подсветка сразу едет к нажатой вкладке, пока играет переход. Клик во время чужого перехода
   // ничего не делает: переход всё равно его отклонит, а подсветка не должна метаться.
   const handleClick = (item) => (event) => {
@@ -295,7 +265,6 @@ export function TabBar({ onOverflow }) {
     <header ref={rootRef} className={styles.root}>
       <Link
         to={localizePath(isModerator(user) ? '/moderation' : '/')}
-        ref={logoRef}
         className={styles.logo}
         aria-label={nav.logoLabel}
         data-logo
@@ -305,7 +274,7 @@ export function TabBar({ onOverflow }) {
         <span data-ui="tabbar-brand">{nav.brand}</span>
       </Link>
       {/* На планшете стоя справа нет места — там тема встаёт рядом с логотипом (adaptations/tablet) */}
-      <div ref={leadThemeRef} className={styles.leadTheme} data-ui="tabbar-theme-lead">
+      <div className={styles.leadTheme} data-ui="tabbar-theme-lead">
         <ThemeSwitch />
       </div>
 
@@ -317,7 +286,7 @@ export function TabBar({ onOverflow }) {
               <>
                 {item.avatar && <Avatar src={item.avatar} size={22} />}
                 <span
-                  className={item.key === 'me' ? styles.nickname : undefined}
+                  className={styles.label}
                   data-ui={item.key === 'me' ? 'tabbar-nickname' : item.short && 'tabbar-label'}
                 >
                   {item.label}
@@ -362,7 +331,7 @@ export function TabBar({ onOverflow }) {
         </div>
       </nav>
 
-      <div ref={asideRef} className={styles.aside} data-ui="tabbar-aside" data-aside>
+      <div className={styles.aside} data-ui="tabbar-aside" data-aside>
         <span className={styles.asideTheme} data-ui="tabbar-theme">
           <ThemeSwitch />
         </span>

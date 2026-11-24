@@ -1,6 +1,6 @@
 /* Настройки на планшетах стоя и телефонах: одна колонка, навигация по разделам — липкая полоса
    под таб-баром, которая прокручивается вбок, если разделы не помещаются. */
-@media (max-width: 1023px), (orientation: portrait) {
+@media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
   :root [data-ui='settings-layout'] {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-4);

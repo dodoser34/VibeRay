@@ -12,7 +12,6 @@ import { ProblemQueue } from './queue/ProblemQueue';
 import { SupportInbox } from './SupportInbox';
 import texts from '@/texts/en/moderation.json';
 import styles from './ModerationCenter.module.css';
-import { WORD_MASK } from '@/shared/animations/effects/wordMask';
 
 const DEFAULT_FILTERS = { status: 'active', district: '', category: '', sort: 'newest' };
 
@@ -41,7 +40,7 @@ export function ModerationCenter({
   useGSAP(
     () => {
       if (reduced || !entered) return;
-      const split = SplitText.create('[data-title]', WORD_MASK);
+      const split = SplitText.create('[data-title]', { type: 'words', mask: 'words' });
       gsap
         .timeline({ defaults: { ease: 'power3.out' } })
         .from(split.words, { yPercent: 110, duration: 0.9, stagger: 0.08 }, 0.1)

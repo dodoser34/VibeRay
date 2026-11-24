@@ -5,12 +5,9 @@ import styles from './BottomSheet.module.css';
 const SNAPS = ['peek', 'half', 'full'];
 const FLICK = 0.45; // px/мс: быстрый взмах переводит шторку на положение дальше даже при коротком жесте
 
-// Видимая высота (px) положений шторки для окна этой высоты. Положения всегда идут по возрастанию:
-// на телефоне лёжа (375 px) высокий «peek» формы сообщения (15rem) иначе оказался бы выше «half».
+// Видимая высота (px) положений шторки для окна этой высоты.
 function snapHeights(viewport, peek, top) {
-  const full = Math.max(0, viewport - top);
-  const low = Math.min(peek, full);
-  return { peek: low, half: Math.min(full, Math.max(low, Math.round(viewport * 0.52))), full };
+  return { peek, half: Math.round(viewport * 0.52), full: viewport - top };
 }
 
 const nearest = (heights, visible) =>
@@ -81,11 +78,7 @@ export function BottomSheet({
     };
     measure();
     window.addEventListener('resize', measure);
-    window.visualViewport?.addEventListener('resize', measure);
-    return () => {
-      window.removeEventListener('resize', measure);
-      window.visualViewport?.removeEventListener('resize', measure);
-    };
+    return () => window.removeEventListener('resize', measure);
   }, [apply, heights]);
 
   useEffect(() => {
@@ -159,7 +152,6 @@ export function BottomSheet({
           type="button"
           className={styles.handle}
           data-sheet-handle
-          data-ui="sheet-handle"
           aria-label={toggleLabel}
           aria-expanded={snap !== 'peek'}
           // Только клавиатура (Enter / Space): тапы указателем обрабатываются в onPointerUp

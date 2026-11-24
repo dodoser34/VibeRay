@@ -22,11 +22,6 @@
     display: contents;
   }
 
-  /* Дашборд города — правая панель шире: строка фильтров уступает ей столько же */
-  :root :has([data-ui='map-panel-right'][data-wide]) [data-ui='map-panel-left'] {
-    max-width: calc(100% - var(--map-panel-wide) - 3 * var(--space-5));
-  }
-
   :root [data-ui='map-filters-heading'],
   :root [data-ui='map-filters-legend'],
   :root [data-ui='map-filters-height-hint'],
@@ -43,13 +38,12 @@
     right: auto;
     left: var(--space-3);
     bottom: calc(var(--sheet-inset, 6rem) + var(--space-2));
-    max-width: calc(100% - 2 * var(--space-3));
+    max-width: calc(100vw - 2 * var(--space-3));
     padding: 2px var(--space-2);
-    border-radius: var(--radius-sm);
-    /* Строка лежит прямо на карте: подложка отделяет её от подписей районов под ней. На узком
-       телефоне с длинным переводом («OpenStreetMap-Mitwirkende») она переносится, а не обрезается */
+    border-radius: var(--radius-pill);
+    /* Строка лежит прямо на карте: подложка отделяет её от подписей районов под ней */
     background: var(--color-glass);
-    text-wrap: balance;
+    white-space: nowrap;
   }
 
   /* Шторка закрывает карту: строка лицензии уехала бы вверх к верхним кнопкам */

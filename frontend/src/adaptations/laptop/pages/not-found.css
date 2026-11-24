@@ -1,0 +1,7 @@
+/* 404 на невысоких ноутбуках: размер заголовка зависел только от ширины, и на окне 1280 × 600 четыре
+   строки заголовка занимали почти весь экран — ограничиваем его ещё и высотой окна. */
+@media (min-width: 1200px) and (orientation: landscape) and (max-height: 860px) {
+  :root [data-ui='not-found-title'] {
+    font-size: min(clamp(2.3rem, 1rem + 4vw, 4.4rem), 8.5dvh);
+  }
+}

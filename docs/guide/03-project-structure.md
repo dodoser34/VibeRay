@@ -45,7 +45,7 @@ flowchart TB
 | `shared/config/` | коды настроений, категорий, статусов | `shared/config/problemStatuses.js` |
 | `texts/` | весь видимый текст на en, ru, kk, de | `texts/en/map.json` |
 | `styles/` | токены и цвета тем | `styles/themes/dark.css` |
-| `adaptations/` | масштаб интерфейса, телефон, планшет, одна колонка, ультраширокие и невысокие окна, сенсорные экраны | `adaptations/stacked/` |
+| `adaptations/` | телефон, планшет, ноутбук, 2K и 4K, сенсорные экраны | `adaptations/mobile/` |
 | `demo-data/cities/` | копия данных городов для сайта | `demo-data/cities/kostanay/districts.geojson` |
 
 ## Как устроен модуль

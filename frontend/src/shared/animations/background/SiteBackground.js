@@ -1,4 +1,4 @@
-import { isPhoneWidth, pixelRatioFor, renderQuality, rootScale } from '@/adaptations/core';
+import { pixelRatioFor, renderQuality } from '@/adaptations/core';
 import { cssVar } from '@/shared/lib/theme/cssVar';
 
 // Анимированный фон «ночной город». Один Canvas 2D: дышащий свет, дрейфующие изолинии, пыль,
@@ -12,6 +12,7 @@ const PARTICLES = 32;
 const CONTOUR_SPEED = 1;
 const RIPPLE_LIFE = 2; // с
 const MAX_RIPPLES = 3;
+const MOBILE_WIDTH = 900;
 const BACKGROUND_PIXELS = 3_700_000;
 // [значение поля, ключ цвета, прозрачность] — чередующиеся оттенки изолиний, непрозрачность 45–80 %
 const LEVELS = [
@@ -126,7 +127,6 @@ export class SiteBackground {
     this.width = 0;
     this.height = 0;
     this.pixelRatio = 1;
-    this.scale = 1;
     this.time = 0;
     this.offsetX = 0;
     this.offsetY = 0;
@@ -176,7 +176,7 @@ export class SiteBackground {
   }
 
   get isMobile() {
-    return isPhoneWidth(this.width);
+    return this.width < MOBILE_WIDTH;
   }
 
   start() {
@@ -241,15 +241,12 @@ export class SiteBackground {
     const height = this.canvas.clientHeight;
     if (!width || !height || (width === this.width && height === this.height)) return;
     // 2D-холст, перерисовываемый 30 раз в секунду: бюджет пикселей меньше, чем у WebGL (около 2K).
-    // Фон мягкий, поэтому на 4K/8K его можно рисовать в долю плотности — браузер растянет.
     this.pixelRatio = pixelRatioFor(width, height, renderQuality(width), {
       maxPixels: BACKGROUND_PIXELS,
-      min: 0.35,
+      min: 0.75,
     });
     this.width = width;
     this.height = height;
-    // Масштаб интерфейса меняется только с размером окна — читается здесь, а не в каждом кадре
-    this.scale = rootScale();
     this.canvas.width = Math.round(width * this.pixelRatio);
     this.canvas.height = Math.round(height * this.pixelRatio);
     this.initDust();
@@ -296,7 +293,7 @@ export class SiteBackground {
 
   update(elapsed) {
     this.time += elapsed;
-    const parallax = this.isMobile ? 0 : PARALLAX * this.scale;
+    const parallax = this.isMobile ? 0 : PARALLAX;
     const easing = 1 - Math.exp(-elapsed * 2.5);
     this.offsetX += (this.targetOffsetX * parallax - this.offsetX) * easing;
     this.offsetY += (this.targetOffsetY * parallax - this.offsetY) * easing;
@@ -365,8 +362,7 @@ export class SiteBackground {
   // изолиний, через которые проходят (цвет + толщина, никогда не ореол).
   drawContours(frame, still) {
     const { context, width, height, colors } = this;
-    // Клетка — в масштабе интерфейса: на 4K/8K рисунок изолиний тот же, а клеток не в 3–10 раз больше
-    const cellSize = (this.isMobile ? 26 : 16) * this.scale;
+    const cellSize = this.isMobile ? 26 : 16;
     const margin = cellSize * 2;
     const ox = frame.offsetX * 0.4;
     const oy = frame.offsetY * 0.4;

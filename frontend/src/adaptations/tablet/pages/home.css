@@ -2,7 +2,7 @@
    прокрутке. Страница читается сверху вниз — 3D-город, заголовок с «Открыть карту города»
    (главное действие в одно касание), затем вход. Бумажный передний слой — украшение только для
    широких экранов. */
-@media (max-width: 1023px), (orientation: portrait) {
+@media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
   :root [data-ui='home-page'] {
     height: auto;
   }

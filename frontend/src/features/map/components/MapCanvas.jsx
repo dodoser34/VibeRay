@@ -108,7 +108,7 @@ export function MapCanvas({
     () => ({
       flashDistrict: (slug) => sceneRef.current?.flashDistrict(slug),
       previewDistrict: (slug) => sceneRef.current?.previewDistrict(slug),
-      setViewInsets: (insets) => sceneRef.current?.setViewInsets(insets),
+      setViewInset: (bottom) => sceneRef.current?.setViewInset(bottom),
       recenter: () => sceneRef.current?.recenter(),
       focusProblem: (problem) => sceneRef.current?.focusProblem(problem),
     }),

@@ -206,19 +206,19 @@
 
 .map-fold__caption-char {
   color: var(--color-text-2);
-  font: 600 0.625rem/1 var(--map-fold-font-text);
+  font: 600 10px/1 var(--map-fold-font-text);
   letter-spacing: 0.2em;
 }
 
 .map-fold__name-char {
   color: var(--color-text);
-  font: 600 var(--map-fold-label-size, 1.5rem) / 1 var(--map-fold-font-display);
+  font: 600 var(--map-fold-label-size, 24px) / 1 var(--map-fold-font-display);
   letter-spacing: 0.06em;
 }
 
 .map-fold__origin-char {
   color: var(--color-pin);
-  font: 600 0.6875rem/1 var(--map-fold-font-text);
+  font: 600 11px/1 var(--map-fold-font-text);
   letter-spacing: 0.14em;
 }
 

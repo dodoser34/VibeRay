@@ -128,10 +128,7 @@
   color: var(--color-on-accent);
 }
 
-/* Ник — данные жителя, его длину сайт не выбирает: длинный обрезается многоточием (полностью — в
-   подсказке и aria-label вкладки). Подписи вкладок не обрезаются: не помещаются — таб-бар
-   уступает место меню (useTabBarFit). */
-.nickname {
+.label {
   max-width: 14ch;
   overflow: hidden;
   text-overflow: ellipsis;

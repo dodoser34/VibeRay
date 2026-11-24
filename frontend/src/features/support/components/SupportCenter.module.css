@@ -43,7 +43,7 @@
 }
 
 .title {
-  font-size: clamp(min(2.6rem, 10vw), min(1rem + 5.2vw, 10dvh), 5.4rem);
+  font-size: clamp(2.6rem, 1rem + 5.2vw, 5.4rem);
   line-height: 1;
   letter-spacing: -0.02em;
 }
@@ -195,7 +195,7 @@
 }
 
 .sectionTitle {
-  font-size: clamp(min(1.8rem, 7.5vw), min(1rem + 2.2vw, 6.5dvh), 2.8rem);
+  font-size: clamp(1.8rem, 1rem + 2.2vw, 2.8rem);
   line-height: 1.1;
 }
 
@@ -249,7 +249,7 @@
 
 .ctaTitle {
   max-width: 18ch;
-  font-size: clamp(min(1.8rem, 7.5vw), min(1rem + 2.4vw, 6.5dvh), 3rem);
+  font-size: clamp(1.8rem, 1rem + 2.4vw, 3rem);
   line-height: 1.08;
 }
 

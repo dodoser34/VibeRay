@@ -1,0 +1,16 @@
+/* 4K — от 3840 px в ширину и от 1800 px в высоту (4K-мониторы при масштабе 100 %). Корневой
+   шрифт 28 px (×1.75): панели, текст и 3D-подписи читаются того же физического размера, что и на
+   Full HD. WebGL-сцены держат бюджет примерно в один кадр 4K
+   (adaptations/core/renderQuality.js). */
+@media (min-width: 3840px) and (min-height: 1800px) {
+  :root {
+    font-size: 28px;
+  }
+}
+
+/* Экран шириной 4K, но высотой 2K (3840 × 1600) получает масштаб 2K. */
+@media (min-width: 3840px) and (min-height: 1200px) and (max-height: 1799px) {
+  :root {
+    font-size: 20px;
+  }
+}

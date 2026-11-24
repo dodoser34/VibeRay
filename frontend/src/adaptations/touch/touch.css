@@ -12,7 +12,7 @@
   }
 
   :root [data-ui='button-sm'] {
-    min-height: var(--touch-target);
+    height: var(--touch-target);
   }
 
   /* Ползунок высоты районов: полоса для пальца — на всю высоту тач-цели */
@@ -37,71 +37,13 @@
   }
 
   :root [data-ui='button-text'],
-  :root [data-ui='map-tour-replay'],
   :root [data-ui='help-chip'] {
     min-height: var(--touch-target);
-  }
-
-  :root [data-ui='button-text'],
-  :root [data-ui='map-tour-replay'] {
-    min-width: var(--touch-target);
-  }
-
-  /* Вкладки таб-бара, флаги языков, варианты переключателей и чипы фильтров модератора */
-  :root [data-ui='tabbar-item'],
-  :root [data-ui='language-option'],
-  :root [data-ui='option-group-option'],
-  :root [data-ui='moderation-map-filters'] button,
-  :root [data-ui='district-compare'] button {
-    min-width: var(--touch-target);
-    min-height: var(--touch-target);
-  }
-
-  /* Ручка шторки и значки кластеров на карте */
-  :root [data-ui='sheet-handle'],
-  :root [data-ui='map-cluster'] {
-    min-width: var(--touch-target);
-    min-height: var(--touch-target);
-  }
-
-  /* Списки выбора, названия районов в таблицах, ответ на обращение — строка под палец */
-  :root [data-ui='district-compare'] select,
-  :root [data-ui='moderation-selects'] select,
-  :root [data-ui='moderation-request-footer'] select,
-  :root [data-ui='moderation-request-footer'] a,
-  :root [data-ui='map-detail'] table button,
-  :root [data-ui='moderation-table'] button {
-    min-width: var(--touch-target);
-    min-height: var(--touch-target);
-  }
-
-  :root [data-ui='moderation-request-footer'] a {
-    display: inline-flex;
-    align-items: center;
-  }
-
-  /* Легенда статусов на карте, подсказка прокрутки на главной, ссылки и кнопки в «Моих сообщениях» */
-  :root [data-ui='map-filters-legend'] button,
-  :root [data-ui='home-scroll-hint'],
-  :root [data-ui='settings-reports'] a,
-  :root [data-ui='settings-reports'] button {
-    display: inline-flex;
-    align-items: center;
-    min-width: var(--touch-target);
-    min-height: var(--touch-target);
-  }
-
-  :root [data-ui='settings-reports'] button {
-    justify-content: center;
   }
 
   :root [data-ui='table-sort'],
   :root [data-ui='queue-status'] {
     min-height: var(--touch-target);
-  }
-
-  :root {
-    --remove-size: var(--touch-target);
   }
 
   /* Наведения нет — крестик «стереть уведомление» виден всегда и крупнее под палец */

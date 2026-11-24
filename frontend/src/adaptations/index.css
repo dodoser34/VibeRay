@@ -1,30 +1,27 @@
 /* Адаптации сайта под устройства. Подключаются последними в main.jsx: эти правила перекрывают
-   базовые (десктопные) стили компонентов. Порядок: масштаб → большие экраны → формы и высота окна →
-   планшеты → одна колонка → сенсор → телефоны, чтобы правило телефона побеждало правило планшета для
-   того же элемента. */
-@import './scale.css';
-
+   базовые (десктопные) стили компонентов. Порядок: большие экраны → планшеты → телефоны, чтобы
+   правило телефона побеждало правило планшета для того же элемента. */
 @import './desktop/desktop.css';
 @import './desktop/full-hd/full-hd.css';
+@import './desktop/2k/2k.css';
+@import './desktop/4k/4k.css';
+@import './desktop/pages/home.css';
 
-@import './ultrawide/pages/home.css';
-@import './ultrawide/pages/about.css';
-
-@import './short/pages/home.css';
-@import './short/pages/about.css';
+@import './laptop/laptop.css';
+@import './laptop/pages/home.css';
+@import './laptop/pages/not-found.css';
+@import './laptop/pages/about.css';
 
 @import './tablet/tablet.css';
 @import './tablet/navigation.css';
+@import './tablet/pages/home.css';
 @import './tablet/pages/map.css';
 @import './tablet/pages/stats.css';
 @import './tablet/pages/support.css';
+@import './tablet/pages/about.css';
+@import './tablet/pages/settings.css';
+@import './tablet/pages/not-found.css';
 @import './tablet/pages/moderation.css';
-
-@import './stacked/pages/home.css';
-@import './stacked/pages/about.css';
-@import './stacked/pages/support.css';
-@import './stacked/pages/settings.css';
-@import './stacked/pages/not-found.css';
 
 @import './touch/touch.css';
 

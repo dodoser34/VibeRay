@@ -1,6 +1,5 @@
 import { useId, useLayoutEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { isPhoneWidth, placeInViewport, viewportBounds } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/i18n/format';
@@ -9,6 +8,7 @@ import styles from './CoachMarks.module.css';
 
 const GAP = 16; // px между вырезом и карточкой
 const EDGE = 16; // px от краёв экрана
+const NARROW = 640; // уже этого карточка встаёт у верхнего или нижнего края во всю ширину
 
 // Первый элемент, который виден на экране (одна подсказка — разные цели на десктопе и телефоне).
 function findTarget(selector) {
@@ -32,37 +32,29 @@ function holeFor(step) {
   };
 }
 
-// Карточка — с той стороны выреза, где она помещается (снизу, сверху, справа, слева), и целиком в
-// окне (placeInViewport); на телефоне — у противоположного вырезу края во всю ширину.
+// Карточка — с той стороны выреза, где больше места; на узком экране — у противоположного края.
 function cardPosition(hole, card) {
-  const bounds = viewportBounds(EDGE);
-  if (!hole) {
-    return {
-      left: bounds.left + (bounds.width - card.width) / 2,
-      top: bounds.top + Math.max(0, (bounds.height - card.height) / 2),
-    };
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  if (!hole) return { left: (vw - card.width) / 2, top: (vh - card.height) / 2 };
+  if (vw < NARROW) {
+    const below = hole.y + hole.height / 2 < vh / 2;
+    return { left: EDGE, top: below ? vh - card.height - EDGE * 2 : EDGE * 5 };
   }
-  if (isPhoneWidth(window.innerWidth)) {
-    const below = hole.y + hole.height / 2 < bounds.top + bounds.height / 2;
-    const top = below ? bounds.bottom - card.height - EDGE : EDGE * 5;
-    return {
-      left: bounds.left,
-      top: Math.max(bounds.top, Math.min(top, bounds.bottom - card.height)),
-    };
+  const clampX = (x) => Math.min(Math.max(EDGE, x), vw - card.width - EDGE);
+  const clampY = (y) => Math.min(Math.max(EDGE, y), vh - card.height - EDGE);
+  const centerX = hole.x + hole.width / 2 - card.width / 2;
+  if (hole.y + hole.height + GAP + card.height < vh - EDGE) {
+    return { left: clampX(centerX), top: hole.y + hole.height + GAP };
   }
-  const { x, y } = placeInViewport({
-    anchor: {
-      left: hole.x,
-      top: hole.y,
-      right: hole.x + hole.width,
-      bottom: hole.y + hole.height,
-    },
-    size: card,
-    gap: GAP,
-    align: 'center',
-    bounds,
-  });
-  return { left: x, top: y };
+  if (hole.y - GAP - card.height > EDGE) {
+    return { left: clampX(centerX), top: hole.y - GAP - card.height };
+  }
+  const left =
+    hole.x + hole.width + GAP + card.width < vw - EDGE
+      ? hole.x + hole.width + GAP
+      : hole.x - GAP - card.width;
+  return { left: clampX(left), top: clampY(hole.y + hole.height / 2 - card.height / 2) };
 }
 
 // Пошаговые подсказки поверх страницы: затемнение с вырезом вокруг цели, вырез переезжает между
@@ -185,7 +177,7 @@ export function CoachMarks({ steps, labels, figure, onFinish }) {
       </svg>
 
       <div ref={cardRef} className={styles.cardSlot}>
-        <div className={styles.card} data-ui="coach-card">
+        <div className={styles.card}>
           {figure && (
             <img
               className={styles.figure}

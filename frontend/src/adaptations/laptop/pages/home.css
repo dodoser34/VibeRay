@@ -1,0 +1,18 @@
+/* Главная на самых низких ноутбуках (окно до 680 px: 1280 × 720 и 1366 × 768 при масштабе экрана):
+   даже при корне 14 px заголовок прилипал к таб-бару, а низ карточки входа уходил за край. Уступают
+   надзаголовок и пояснение под «Вход в аккаунт», отступы колонки плотнее. Правила для экранов до 820 px — в desktop/pages/home.css. */
+@media (min-width: 1200px) and (orientation: landscape) and (max-height: 680px) {
+  :root [data-ui='home-eyebrow'],
+  :root [data-ui='home-column'] [data-ui='auth-login-lead'] {
+    display: none;
+  }
+
+  :root [data-ui='home-content'] {
+    padding-top: calc(var(--tabbar-height) + var(--space-3));
+    padding-bottom: var(--space-2);
+  }
+
+  :root [data-ui='home-column'] {
+    gap: var(--space-3);
+  }
+}

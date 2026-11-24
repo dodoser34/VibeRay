@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigationInterceptor, useTransitionNavigate } from '@/app/transitions/useTransition';
-import { rootScale, useViewport, WIDE_QUERY } from '@/adaptations/core';
+import { useViewport, WIDE_QUERY } from '@/adaptations/core';
 import { AuthPanel } from '@/features/auth';
 import { FRONT_FLOW_END, FrontLayer, HeroCanvas, SHEET_FLY_SHIFT } from '@/features/hero';
 import { getCity } from '@/shared/api/endpoints/cities';
@@ -31,7 +31,7 @@ export function HomePage() {
   // Районы — для выбора своего в форме регистрации (тот же кэш, что у карты города).
   const city = useRequest(`city:${CITY}`, () => getCity(CITY));
   const entered = usePageEntered();
-  const { stacked } = useViewport();
+  const { compact } = useViewport();
 
   const pageRef = useRef(null);
   const heroRef = useRef(null);
@@ -222,12 +222,7 @@ export function HomePage() {
           pinRef.current,
           {
             keyframes: {
-              // Вершина дуги — над точками, но метка целиком остаётся в окне (низкое окно)
-              y: [
-                start.y,
-                Math.max(pinRef.current.offsetHeight, Math.min(start.y, end.y) - 180 * rootScale()),
-                end.y,
-              ],
+              y: [start.y, Math.min(start.y, end.y) - 180, end.y],
               easeEach: 'sine.inOut',
             },
             duration: 1.1,
@@ -248,7 +243,7 @@ export function HomePage() {
     <div ref={pageRef} className={styles.page} data-ui="home-page">
       <div className={styles.stage} data-ui="home-stage">
         <div ref={sceneLayerRef} className={styles.sceneLayer} data-ui="home-scene">
-          <HeroCanvas ref={heroRef} stacked={stacked} />
+          <HeroCanvas ref={heroRef} stacked={compact} />
         </div>
         <div ref={layerRef} className={styles.frontLayer} data-ui="home-front">
           <FrontLayer />
@@ -302,7 +297,7 @@ export function HomePage() {
       </div>
 
       <div ref={pinRef} className={styles.pin} aria-hidden="true">
-        <svg viewBox="0 0 48 60" className={styles.pinMark}>
+        <svg viewBox="0 0 48 60" width="48" height="60">
           <path
             d="M24 58S4 36 4 22a20 20 0 0 1 40 0c0 14-20 36-20 36z"
             className={styles.pinShape}

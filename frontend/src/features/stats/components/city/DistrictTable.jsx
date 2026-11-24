@@ -98,112 +98,110 @@ export function DistrictTable({ rows, focusSlug, onFocus, onHover, onOpen }) {
   );
 
   return (
-    <div className={styles.scroller}>
-      <table className={styles.table}>
-        <caption className={styles.caption}>{texts.table.caption}</caption>
-        <thead>
-          <tr>
-            <th scope="col" className={styles.rankHead}>
-              <span className={styles.visuallyHidden}>{texts.table.columns.rank}</span>
-            </th>
-            {header('name')}
-            {header('mood')}
-            {header('trend', 'trend')}
-            {header('problems', styles.num)}
-            {header('resolved', styles.num)}
-          </tr>
-        </thead>
-        <tbody ref={bodyRef}>
-          {sorted.map((row, i) => {
-            const hasMood = !row.mood.insufficient_data;
-            const code = hasMood ? moodCodeForScore(row.mood.score) : null;
-            const trend = trendKey(row.trend);
-            const focused = row.district === focusSlug;
-            return (
-              <tr
-                key={row.district}
-                data-flip={row.district}
-                data-focused={focused || undefined}
-                className={styles.row}
-                onMouseEnter={() => onHover(row.district)}
-                onMouseLeave={() => onHover(null)}
-                onClick={() => onFocus(row.district)}
-              >
-                <td className={styles.rank}>{i + 1}</td>
-                <th scope="row" className={styles.nameCell}>
+    <table className={styles.table}>
+      <caption className={styles.caption}>{texts.table.caption}</caption>
+      <thead>
+        <tr>
+          <th scope="col" className={styles.rankHead}>
+            <span className={styles.visuallyHidden}>{texts.table.columns.rank}</span>
+          </th>
+          {header('name')}
+          {header('mood')}
+          {header('trend', 'trend')}
+          {header('problems', styles.num)}
+          {header('resolved', styles.num)}
+        </tr>
+      </thead>
+      <tbody ref={bodyRef}>
+        {sorted.map((row, i) => {
+          const hasMood = !row.mood.insufficient_data;
+          const code = hasMood ? moodCodeForScore(row.mood.score) : null;
+          const trend = trendKey(row.trend);
+          const focused = row.district === focusSlug;
+          return (
+            <tr
+              key={row.district}
+              data-flip={row.district}
+              data-focused={focused || undefined}
+              className={styles.row}
+              onMouseEnter={() => onHover(row.district)}
+              onMouseLeave={() => onHover(null)}
+              onClick={() => onFocus(row.district)}
+            >
+              <td className={styles.rank}>{i + 1}</td>
+              <th scope="row" className={styles.nameCell}>
+                <button
+                  type="button"
+                  className={styles.name}
+                  aria-pressed={focused}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    onFocus(row.district);
+                  }}
+                >
+                  {row.name}
+                </button>
+                <span className={styles.sub}>
+                  {format(texts.table.marks, {
+                    count: formatNumber(row.mood.sample_size),
+                    marks: plural(row.mood.sample_size, texts.marks),
+                  })}
+                </span>
+                {focused && (
                   <button
                     type="button"
-                    className={styles.name}
-                    aria-pressed={focused}
+                    className={styles.open}
                     onClick={(event) => {
                       event.stopPropagation();
-                      onFocus(row.district);
+                      onOpen(row.district);
                     }}
                   >
-                    {row.name}
+                    {texts.table.open}
                   </button>
-                  <span className={styles.sub}>
-                    {format(texts.table.marks, {
-                      count: formatNumber(row.mood.sample_size),
-                      marks: plural(row.mood.sample_size, texts.marks),
-                    })}
+                )}
+              </th>
+              <td>
+                {hasMood ? (
+                  <span className={styles.mood} title={MOOD_BY_CODE[code].label}>
+                    <MoodFace mood={code} size={20} label="" />
+                    <span className={styles.score}>{formatSigned(row.mood.score)}</span>
+                    <span className={styles.diverge} aria-hidden="true">
+                      <span
+                        className={styles.divergeFill}
+                        style={{
+                          '--value': revealed ? row.mood.score / 2 : 0,
+                          background: `var(${MOOD_BY_CODE[code].colorVar})`,
+                        }}
+                      />
+                    </span>
                   </span>
-                  {focused && (
-                    <button
-                      type="button"
-                      className={styles.open}
-                      onClick={(event) => {
-                        event.stopPropagation();
-                        onOpen(row.district);
-                      }}
-                    >
-                      {texts.table.open}
-                    </button>
-                  )}
-                </th>
-                <td>
-                  {hasMood ? (
-                    <span className={styles.mood} title={MOOD_BY_CODE[code].label}>
-                      <MoodFace mood={code} size={20} label="" />
-                      <span className={styles.score}>{formatSigned(row.mood.score)}</span>
-                      <span className={styles.diverge} aria-hidden="true">
-                        <span
-                          className={styles.divergeFill}
-                          style={{
-                            '--value': revealed ? row.mood.score / 2 : 0,
-                            background: `var(${MOOD_BY_CODE[code].colorVar})`,
-                          }}
-                        />
-                      </span>
-                    </span>
-                  ) : (
-                    <span className={styles.none} title={texts.table.fewMarks}>
-                      {texts.table.noData}
-                    </span>
-                  )}
-                </td>
-                <td data-ui="district-table-trend">
-                  {trend ? (
-                    <span className={styles.trend} data-trend={trend}>
-                      {format(texts.table.trend[trend], { delta: Math.abs(row.trend).toFixed(1) })}
-                    </span>
-                  ) : (
-                    <span className={styles.none}>{texts.table.noData}</span>
-                  )}
-                </td>
-                <td className={styles.num}>{row.problems.reported}</td>
-                <td className={styles.num}>
-                  {row.problems.reported
-                    ? format(texts.share, {
-                        percent: percentOf(row.problems.resolved, row.problems.reported),
-                      })
-                    : texts.table.noData}
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
+                ) : (
+                  <span className={styles.none} title={texts.table.fewMarks}>
+                    {texts.table.noData}
+                  </span>
+                )}
+              </td>
+              <td data-ui="district-table-trend">
+                {trend ? (
+                  <span className={styles.trend} data-trend={trend}>
+                    {format(texts.table.trend[trend], { delta: Math.abs(row.trend).toFixed(1) })}
+                  </span>
+                ) : (
+                  <span className={styles.none}>{texts.table.noData}</span>
+                )}
+              </td>
+              <td className={styles.num}>{row.problems.reported}</td>
+              <td className={styles.num}>
+                {row.problems.reported
+                  ? format(texts.share, {
+                      percent: percentOf(row.problems.resolved, row.problems.reported),
+                    })
+                  : texts.table.noData}
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
   );
 }

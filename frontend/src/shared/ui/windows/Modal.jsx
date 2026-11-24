@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { BREAKPOINTS, isPhoneLandscape } from '@/adaptations/core';
+import { BREAKPOINTS } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import common from '@/texts/en/common.json';
 import styles from './Modal.module.css';
@@ -21,9 +21,7 @@ export function Modal({ title, onClose, children, width = 460 }) {
       gsap.from(rootRef.current, { autoAlpha: 0, duration: 0.3 });
       // Телефоны показывают диалог шторкой (adaptations/mobile/modal.css): он поднимается от
       // нижнего края, а не увеличивается.
-      const sheet =
-        window.innerWidth < BREAKPOINTS.tablet ||
-        isPhoneLandscape(window.innerWidth, window.innerHeight);
+      const sheet = window.innerWidth < BREAKPOINTS.tablet;
       gsap.from(panelRef.current, {
         ...(sheet ? { yPercent: 100 } : { y: 30, scale: 0.96, autoAlpha: 0 }),
         duration: sheet ? 0.45 : 0.55,

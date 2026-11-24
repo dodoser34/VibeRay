@@ -44,7 +44,6 @@
   --stage-fade: 40%;
 
   height: 70vh;
-  height: 70svh;
 }
 
 .story[data-static][data-variant='phone'] .stage {

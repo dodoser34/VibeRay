@@ -15,7 +15,6 @@ import figure from '../assets/profile-assistant.webp';
 import texts from '@/texts/en/settings.json';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SettingsCenter.module.css';
-import { WORD_MASK } from '@/shared/animations/effects/wordMask';
 
 // Модератору свои сообщения и «свой район» не нужны — у него свой интерфейс.
 const MODERATOR_SECTIONS = ['profile', 'security', 'account'];
@@ -72,7 +71,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
   useGSAP(
     (context, contextSafe) => {
       if (reduced || !entered) return undefined;
-      const split = SplitText.create('[data-title]', WORD_MASK);
+      const split = SplitText.create('[data-title]', { type: 'words', mask: 'words' });
       gsap
         .timeline({ defaults: { ease: 'power3.out' } })
         .from(split.words, { yPercent: 110, duration: 0.9, stagger: 0.08 }, 0.1)

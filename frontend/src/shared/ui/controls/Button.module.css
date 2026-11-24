@@ -6,11 +6,7 @@
   gap: var(--space-2);
   border-radius: var(--radius-pill);
   font-weight: 600;
-  /* Подпись, которой не хватает ширины (немецкий, казахский, узкая колонка), переносится на вторую
-     строку — кнопка становится выше, а не обрезает текст. Высота — минимальная, не жёсткая. */
-  line-height: 1.2;
-  text-align: center;
-  text-wrap: balance;
+  white-space: nowrap;
   /* transform и opacity кнопок анимирует GSAP (появление форм и страниц): CSS-переход на них
      тянул бы каждый кадр и подменял конечные значения. Наведение — отдельным свойством translate,
      пружину нажатия — свойством scale (shared/animations/controls/pressFeedback). */
@@ -54,20 +50,20 @@
 }
 
 .md {
-  min-height: 2.75rem;
-  padding: var(--space-2) var(--space-5);
+  height: 2.75rem;
+  padding: 0 var(--space-5);
   font-size: var(--fs-sm);
 }
 
 .sm {
-  min-height: 2.125rem;
-  padding: var(--space-1) var(--space-4);
+  height: 2.125rem;
+  padding: 0 var(--space-4);
   font-size: var(--fs-xs);
 }
 
 .lg {
-  min-height: 3.25rem;
-  padding: var(--space-2) var(--space-6);
+  height: 3.25rem;
+  padding: 0 var(--space-6);
   font-size: var(--fs-md);
 }
 
@@ -111,7 +107,7 @@
 
 /* Текстовая кнопка: вместо заливки под подписью прорисовывается черта слева направо */
 .text {
-  min-height: 0;
+  height: auto;
   padding: 0;
   color: var(--color-accent-bright);
   font-weight: 600;

@@ -5,6 +5,13 @@
   }
 }
 
+/* Две кнопки карточки района на узких телефонах встают друг под друга, чтобы не обрезать подписи */
+@media (max-width: 420px) {
+  :root [data-ui='district-actions'] {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 480px) {
   :root [data-ui='password-checks'] {
     grid-template-columns: 1fr;

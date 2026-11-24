@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { pixelRatioFor, renderQuality, watchPixelRatio } from '@/adaptations/core';
+import { pixelRatioFor, renderQuality } from '@/adaptations/core';
 import { gsap } from '@/shared/animations/core/gsapSetup';
 import { cssVar } from '@/shared/lib/theme/cssVar';
 
@@ -57,8 +57,6 @@ export class SceneRuntime {
 
     this.resizeObserver = new ResizeObserver(() => this.resize());
     this.resizeObserver.observe(container);
-    // Переезд окна на монитор с другой плотностью: размер тот же, а пикселей на холсте — нет.
-    this.stopWatchingPixelRatio = watchPixelRatio(() => this.resize());
     this.onVisibilityChange = () => (document.hidden ? this.stop() : this.start());
     document.addEventListener('visibilitychange', this.onVisibilityChange);
 
@@ -73,9 +71,6 @@ export class SceneRuntime {
   resize() {
     const { width, height } = this.size;
     if (!width || !height) return;
-    // Окно могли перетащить на другой монитор или развернуть: качество — по текущему окну
-    // (сглаживание задаётся только при создании контекста и не меняется).
-    this.quality = renderQuality();
     this.renderer.setPixelRatio(pixelRatioFor(width, height, this.quality));
     this.renderer.setSize(width, height, false);
     this.camera.aspect = width / height;
@@ -144,7 +139,6 @@ export class SceneRuntime {
   dispose() {
     this.stop();
     this.resizeObserver.disconnect();
-    this.stopWatchingPixelRatio();
     document.removeEventListener('visibilitychange', this.onVisibilityChange);
     WAKE_EVENTS.forEach((type) => this.canvas.removeEventListener(type, this.wake));
     this.tickers.clear();

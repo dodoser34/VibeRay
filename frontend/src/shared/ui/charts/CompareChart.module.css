@@ -64,9 +64,7 @@
   z-index: 1;
   display: grid;
   gap: 2px;
-  min-width: min(10rem, 100%);
-  /* Не шире графика: на узкой панели строки переносятся, а не вылезают за её край */
-  max-width: 100%;
+  min-width: 10rem;
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-sm);
   background: var(--color-glass-solid);
@@ -75,14 +73,14 @@
   color: var(--color-text-muted);
   font-size: var(--fs-2xs);
   line-height: 1.45;
+  white-space: nowrap;
   pointer-events: none;
-  /* Рядом с курсором, но в пределах графика (--width — его ширина) */
-  transform: translateX(min(calc(var(--x) + 14px), calc(var(--width) - 100%)));
+  transform: translateX(calc(var(--x) + 14px));
   transition: transform var(--dur-fast) var(--ease-out);
 }
 
 .tooltip[data-side='left'] {
-  transform: translateX(max(0px, calc(var(--x) - 100% - 14px)));
+  transform: translateX(calc(var(--x) - 100% - 14px));
 }
 
 .tooltip strong {

@@ -18,10 +18,8 @@
   --fs-sm: 0.875rem;
   --fs-md: 1rem;
   --fs-lg: 1.25rem;
-  /* Крупные размеры — от окна: на узком телефоне не меньше доли ширины (длинное слово помещается
-     в строку), в низком окне — не больше доли высоты */
-  --fs-xl: clamp(min(1.5rem, 6.5vw), 1.25rem + 0.9vw, 1.75rem);
-  --fs-2xl: clamp(min(2rem, 8.5vw), min(1.2rem + 2.6vw, 7dvh), 3.25rem);
+  --fs-xl: clamp(1.5rem, 1.25rem + 0.9vw, 1.75rem);
+  --fs-2xl: clamp(2rem, 1.2rem + 2.6vw, 3.25rem);
 
   /* Отступы */
   --space-1: 0.25rem;
@@ -59,11 +57,7 @@
   --tabbar-height: 3.5rem;
   --safe-top: env(safe-area-inset-top, 0px); /* вырезы и полосы жестов телефонов */
   --safe-bottom: env(safe-area-inset-bottom, 0px);
-  --safe-left: env(safe-area-inset-left, 0px); /* вырез телефона лёжа */
-  --safe-right: env(safe-area-inset-right, 0px);
-  /* 44 px: самый маленький элемент, в который палец попадает уверенно; при крупном масштабе
-     интерфейса растёт вместе с ним, но не меньше 44 px в невысоком окне */
-  --touch-target: max(44px, 2.75rem);
+  --touch-target: 2.75rem; /* 44 px: самый маленький элемент, в который палец попадает уверенно */
   --content-max: 73.75rem; /* 1180 px: текстовые страницы (поддержка, о проекте) */
   --map-panel-left: 18.75rem;
   --map-panel-right: 27.5rem;

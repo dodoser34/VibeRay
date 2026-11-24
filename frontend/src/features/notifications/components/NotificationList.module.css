@@ -22,8 +22,8 @@
   gap: var(--space-3);
   width: 100%;
   padding: var(--space-3);
-  /* Справа — место под крестик «стереть» (на сенсоре он размером с тач-цель, adaptations/touch) */
-  padding-right: calc(var(--space-3) + var(--remove-size, 1.75rem));
+  /* Справа — место под крестик «стереть» */
+  padding-right: calc(var(--space-3) + 1.75rem);
   border-radius: var(--radius-md);
   color: var(--color-text-muted);
   text-align: left;

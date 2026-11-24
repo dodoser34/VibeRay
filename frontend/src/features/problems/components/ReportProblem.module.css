@@ -78,7 +78,7 @@
 /* Шаг 1 — категория */
 .categories {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-2);
 }
 
@@ -95,9 +95,6 @@
   font-weight: 600;
   line-height: 1.25;
   text-align: center;
-  /* Длинное слово («Жарықтандыру», «Öffentlicher») в узкой плитке переносится по слогам */
-  hyphens: auto;
-  overflow-wrap: anywhere;
   /* transform плитки занят GSAP (появление, нажатие) — наведение двигает её свойством translate */
   transition:
     border-color var(--dur-base) var(--ease-out),

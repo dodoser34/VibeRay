@@ -1,9 +1,3 @@
-/* Обёртка таблицы: на самой узкой шторке (телефон 320 px, длинный язык) таблица прокручивается вбок,
-   а не обрезается правой колонкой. Шире — прокрутки нет, и заголовки липнут к верху дашборда. */
-.scroller {
-  min-width: 0;
-}
-
 .table {
   width: 100%;
   border-collapse: separate;
@@ -244,17 +238,5 @@
 
   .diverge {
     width: 3rem;
-  }
-}
-
-/* Самая узкая шторка: без полоски настроения, а что всё равно не влезло — прокрутка вбок */
-@container (max-width: 21rem) {
-  .scroller {
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-  }
-
-  .diverge {
-    display: none;
   }
 }

@@ -26,10 +26,6 @@
 .card {
   display: grid;
   gap: var(--space-3);
-  /* Длинный перевод в низком окне (телефон лёжа) — прокрутка внутри карточки, а не за край экрана */
-  max-height: calc(100dvh - 2rem);
-  overflow-y: auto;
-  overscroll-behavior: contain;
   padding: var(--space-5);
   border-radius: var(--radius-xl);
   background: var(--color-glass-solid);
