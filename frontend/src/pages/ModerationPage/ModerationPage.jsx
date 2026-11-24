@@ -2,16 +2,15 @@ import { useMemo } from 'react';
 import { Navigate, useSearchParams } from 'react-router';
 import { useTransitionNavigate, useTransitionReady } from '@/app/transitions/useTransition';
 import { useAuth } from '@/features/auth';
-import { ModerationCenter } from '@/features/moderation';
+import { ModerationCenter, setModerationCity, useModerationCity } from '@/features/moderation';
 import { getCity } from '@/shared/api/endpoints/cities';
 import { isModerator } from '@/shared/config/roles';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { localizePath } from '@/shared/lib/i18n/language';
 
-const CITY = 'kostanay';
-
 // Разделы модератора: очередь (/moderation, ?district= — очередь района), город и обращения.
+// Очередь и «Город» — по городу, выбранному модератором (useModerationCity: любой город VibeRay).
 // Гостя уводит на вход; житель сюда не попадает — его уводит app/routing/useRoleRoute.js.
 export function ModerationPage({ section }) {
   useLanguage();
@@ -19,15 +18,18 @@ export function ModerationPage({ section }) {
   const go = useTransitionNavigate();
   const [params] = useSearchParams();
   const allowed = isModerator(user);
-  const city = useRequest(allowed ? `city:${CITY}` : null, () => getCity(CITY));
+  const citySlug = useModerationCity();
+  const city = useRequest(allowed ? `city:${citySlug}` : null, () => getCity(citySlug));
   useTransitionReady(!allowed || Boolean(city.data));
+  // Пока грузится новый город, useRequest держит прежний — его районы не показываем.
+  const cityData = city.data?.slug === citySlug ? city.data : null;
 
   const districts = useMemo(
     () =>
-      city.data?.districts.features
+      cityData?.districts.features
         .map((feature) => ({ slug: feature.properties.slug, name: feature.properties.name }))
         .sort((a, b) => a.name.localeCompare(b.name)) ?? null,
-    [city.data],
+    [cityData],
   );
 
   if (!user) return <Navigate to={localizePath('/login')} replace />;
@@ -37,6 +39,8 @@ export function ModerationPage({ section }) {
     <ModerationCenter
       key={`${section}:${params.get('district') ?? ''}`}
       section={section}
+      city={citySlug}
+      onCityChange={setModerationCity}
       districts={districts}
       district={params.get('district') ?? ''}
       onOpenProblem={(id) => go(`/moderation/map?problem=${id}`)}

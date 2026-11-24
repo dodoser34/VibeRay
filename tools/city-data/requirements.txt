@@ -1,0 +1,11 @@
+# Зависимости скриптов геоданных (tools/city-data/). Сайту и API они не нужны.
+# Версии закреплены точно, как и у бэкенда. Python 3.12+.
+#
+#   python -m venv .venv
+#   pip install -r tools/city-data/requirements.txt
+#
+# build_map_tiles.py рисует плитки через Pillow; остальные скрипты считают геометрию через shapely
+# (numpy приходит вместе с ней).
+
+pillow==12.3.0
+shapely==2.2.0

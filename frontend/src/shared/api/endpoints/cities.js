@@ -9,7 +9,7 @@ export async function getCity(slug) {
 }
 
 // Плитки дорог и воды (карта города и история «О проекте») и векторные куски дорог (карта вблизи) —
-// статика сайта (frontend/public/maps, backend/scripts/build_map_tiles.py), одна и та же и в
+// статика сайта (frontend/public/maps, tools/city-data/build_map_tiles.py), одна и та же и в
 // демо-режиме, и с бэкендом.
 const MAPS_URL = `${import.meta.env.BASE_URL}maps`;
 const manifests = new Map(); // манифест города читают и плитки, и векторный слой — запрос один

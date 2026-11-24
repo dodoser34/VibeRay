@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { COARSE_POINTER } from '@/adaptations/core';
 
 const FEEDBACK_MS = 2200;
 
@@ -17,7 +18,7 @@ export function useShare() {
       timer.current = setTimeout(() => setState('idle'), FEEDBACK_MS);
     };
     try {
-      if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
+      if (navigator.share && window.matchMedia(COARSE_POINTER).matches) {
         await navigator.share({ url, title });
         return;
       }

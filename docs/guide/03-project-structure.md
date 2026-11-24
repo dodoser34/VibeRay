@@ -86,16 +86,30 @@ React-компонент `MapCanvas` только монтирует холст 
 
 ```
 backend/
-├── scripts/                  # геоданные: build_water, build_districts, build_streets, build_map_tiles,
-│                             #   verify_city_data; cities.py — настройки городов, geodata/ — общий код
 ├── data/cities/<город>/      # city.json, districts.geojson, water.geojson, streets/, district_edits.geojson
-├── .osm-cache/               # сырые ответы OpenStreetMap (в git не попадают)
 ├── requirements.txt          # зависимости API
-├── requirements-dev.txt      # то же плюс тесты, линтер и shapely для скриптов
+├── requirements-dev.txt      # то же плюс тесты и линтер
 └── app/                      # в планах: main.py, core/, models/, schemas/, api/v1/, services/, utils/
 ```
 
-Скрипты геоданных уже работают ([раздел 7](07-geodata-pipeline.md)), кода API пока нет.
+Кода API пока нет.
+
+## Инструменты
+
+Всё, что готовит данные, но не работает на сайте, лежит отдельно — в `tools/`. Сайт и API эти скрипты не
+импортируют и не запускают, на GitHub Pages они не попадают.
+
+```
+tools/
+└── city-data/                # сборка городов из OSM: build_water, build_districts, build_streets,
+    │                         #   build_map_tiles, verify_city_data
+    ├── cities.py             # настройки городов
+    ├── geodata/              # общий код скриптов
+    ├── requirements.txt      # shapely и Pillow
+    └── .osm-cache/           # сырые ответы OpenStreetMap (в git не попадают)
+```
+
+Как ими пользоваться — в [разделе 7](07-geodata-pipeline.md).
 
 ## Где искать
 

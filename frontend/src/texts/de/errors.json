@@ -10,6 +10,7 @@
     "invalid_credentials": "E-Mail oder Passwort ist falsch",
     "wrong_password": "Das aktuelle Passwort ist falsch",
     "city_not_found": "Stadt nicht gefunden",
+    "city_required": "Wähle deine Stadt",
     "district_not_found": "Viertel nicht gefunden",
     "invalid_mood": "Unbekannte Stimmung",
     "problem_not_found": "Problem nicht gefunden",

@@ -1,8 +1,16 @@
 import { request } from '../client';
 
-export function register({ email, password, nickname, avatarUrl, homeDistrict }) {
+// homeCity обязателен, homeDistrict — район этого города или null.
+export function register({ email, password, nickname, avatarUrl, homeCity, homeDistrict }) {
   return request('POST', '/auth/register', {
-    body: { email, password, nickname, avatar_url: avatarUrl, home_district: homeDistrict },
+    body: {
+      email,
+      password,
+      nickname,
+      avatar_url: avatarUrl,
+      home_city: homeCity,
+      home_district: homeDistrict,
+    },
   });
 }
 

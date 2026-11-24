@@ -1,10 +1,16 @@
 import { request } from '../client';
 
 // Любое поле можно не передавать: меняется только то, что пришло. avatarUrl — только пресет
-// («preset:N»); своё фото загружается через uploadAvatar.
-export function updateProfile({ nickname, avatarUrl, homeDistrict }) {
+// («preset:N»); своё фото загружается через uploadAvatar. homeDistrict — район города homeCity
+// (или прежнего города, если homeCity не передан); новый город без района сбрасывает район.
+export function updateProfile({ nickname, avatarUrl, homeCity, homeDistrict }) {
   return request('PATCH', '/users/me', {
-    body: { nickname, avatar_url: avatarUrl, home_district: homeDistrict },
+    body: {
+      nickname,
+      avatar_url: avatarUrl,
+      home_city: homeCity,
+      home_district: homeDistrict,
+    },
   });
 }
 

@@ -16,7 +16,9 @@ export class ScenePicker {
     this.downAt = null;
     this.lastHit = null;
 
+    this.lastPointer = null; // где курсор над картой (для refreshHover); null — не над ней
     this.handleMove = (event) => {
+      this.lastPointer = { clientX: event.clientX, clientY: event.clientY, buttons: event.buttons };
       const hit = this.pick(event);
       this.onMove?.(hit);
       if (hit?.key !== this.lastHit?.key) {
@@ -33,6 +35,7 @@ export class ScenePicker {
       if (moved <= CLICK_TOLERANCE_PX) this.onClick(this.pick(event));
     };
     this.handleLeave = () => {
+      this.lastPointer = null;
       this.lastHit = null;
       this.onHover(null);
     };
@@ -41,6 +44,13 @@ export class ScenePicker {
     domElement.addEventListener('pointerdown', this.handleDown);
     domElement.addEventListener('pointerup', this.handleUp);
     domElement.addEventListener('pointerleave', this.handleLeave);
+  }
+
+  // Камера сдвинулась, а курсор стоит (жест тачпада, колесо): подсветка — по тому, что теперь под
+  // ним. Во время перетаскивания этим занимается сам pointermove.
+  refreshHover() {
+    const pointer = this.lastPointer;
+    if (pointer && !pointer.buttons) this.handleMove(pointer);
   }
 
   pick(event) {

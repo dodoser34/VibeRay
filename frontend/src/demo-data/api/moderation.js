@@ -31,12 +31,13 @@ const SORTS = {
 };
 
 const ageDays = (problem, now) => (now - new Date(problem.created_at).getTime()) / DAY;
-// Демо-модератор работает с Костанаем: проблемы других городов в его очередь и сводку не попадают.
-const ownProblems = () =>
-  allProblems.filter((problem) => cityOfDistrict(problem.district) === HOME_CITY);
-const districtNames = () =>
+// Модератор работает с одним выбранным городом за раз: очередь и сводка — только по нему.
+// Геометрию города обработчик загружает до вызова (loadCity), поэтому cityBySlug здесь не пустой.
+const ownProblems = (city) =>
+  allProblems.filter((problem) => cityOfDistrict(problem.district) === city);
+const districtNames = (city) =>
   Object.fromEntries(
-    cityBySlug(HOME_CITY).districts.features.map((feature) => [
+    cityBySlug(city).districts.features.map((feature) => [
       feature.properties.slug,
       nameOf(feature.properties),
     ]),
@@ -45,13 +46,19 @@ const districtNames = () =>
 export const isQueueStatus = (code) => code in QUEUE_STATUSES;
 
 // Модератор видит и автора анонимной проблемы — чтобы отличать спам; наружу (UserPublic) он не уходит.
-export function moderationItem(problem, names = districtNames()) {
+export function moderationItem(problem, names = districtNames(cityOfDistrict(problem.district))) {
   return { ...withHistory(problem), district_name: names[problem.district] };
 }
 
-export function moderationQueue({ status = 'active', district, category, sort = 'newest' }) {
-  const names = districtNames();
-  const matching = ownProblems()
+export function moderationQueue({
+  city = HOME_CITY,
+  status = 'active',
+  district,
+  category,
+  sort = 'newest',
+}) {
+  const names = districtNames(city);
+  const matching = ownProblems(city)
     .filter(
       (problem) =>
         QUEUE_STATUSES[status].includes(problem.status) &&
@@ -66,14 +73,15 @@ export function moderationQueue({ status = 'active', district, category, sort = 
 }
 
 // Сводка для модератора: что ждёт решения, где проблемы копятся и как быстро их решают.
-export function moderationSummary(supportRequests) {
+export function moderationSummary(supportRequests, city = HOME_CITY) {
   const now = Date.now();
-  const names = districtNames();
-  const moods = cityMoods(HOME_CITY, 'week').districts;
+  const names = districtNames(city);
+  const moods = cityMoods(city, 'week').districts;
+  const cityProblems = ownProblems(city);
   const counts = Object.fromEntries([...ACTIVE, 'resolved', 'rejected'].map((code) => [code, 0]));
-  ownProblems().forEach((problem) => (counts[problem.status] += 1));
+  cityProblems.forEach((problem) => (counts[problem.status] += 1));
 
-  const resolvedRecently = ownProblems()
+  const resolvedRecently = cityProblems
     .filter((problem) => problem.status === 'resolved')
     .map((problem) => ({ problem, resolvedTime: resolvedAt(problem) }))
     .filter(({ resolvedTime }) => resolvedTime && now - resolvedTime < 30 * DAY);
@@ -81,7 +89,7 @@ export function moderationSummary(supportRequests) {
     ({ problem, resolvedTime }) => (resolvedTime - new Date(problem.created_at).getTime()) / DAY,
   );
 
-  const open = ownProblems().filter((problem) => ACTIVE.includes(problem.status));
+  const open = cityProblems.filter((problem) => ACTIVE.includes(problem.status));
   const districts = Object.keys(names)
     .map((slug) => {
       const inDistrict = open.filter((problem) => problem.district === slug);
@@ -91,7 +99,7 @@ export function moderationSummary(supportRequests) {
         name: names[slug],
         open: inDistrict.length,
         waiting: inDistrict.filter((problem) => problem.status !== 'in_progress').length,
-        new_week: ownProblems().filter(
+        new_week: cityProblems.filter(
           (problem) => problem.district === slug && ageDays(problem, now) < 7,
         ).length,
         oldest_open_days: inDistrict.length
@@ -104,7 +112,7 @@ export function moderationSummary(supportRequests) {
 
   return {
     counts,
-    new_today: ownProblems().filter((problem) => ageDays(problem, now) < 1).length,
+    new_today: cityProblems.filter((problem) => ageDays(problem, now) < 1).length,
     stale_confirmed: open.filter(
       (problem) => problem.status === 'confirmed' && ageDays(problem, now) >= STALE_DAYS,
     ).length,

@@ -6,14 +6,14 @@
   "sections": {
     "profile": "Profile",
     "reports": "My reports",
-    "district": "My district",
+    "district": "My city and district",
     "security": "Security",
     "account": "Account"
   },
   "sectionsShort": {
     "profile": "Profile",
     "reports": "Reports",
-    "district": "District",
+    "district": "City",
     "security": "Security",
     "account": "Account"
   },
@@ -65,11 +65,13 @@
     "rejectedReason": "Reason: {reason}"
   },
   "district": {
-    "lead": "The map opens on it first. Nobody else sees it.",
+    "lead": "The map opens on them first. Nobody else sees them.",
+    "cityLegend": "Your city",
     "legend": "Choose your district",
+    "districtLegend": "District in {city}",
     "none": "Not chosen",
     "loading": "Loading districts…",
-    "save": "Save district"
+    "save": "Save"
   },
   "security": {
     "lead": "The password changes immediately. Your other devices will need to sign in again.",

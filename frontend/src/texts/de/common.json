@@ -31,5 +31,14 @@
       "dark": "Dunkel",
       "light": "Hell"
     }
+  },
+  "cityPicker": {
+    "label": "Stadt",
+    "search": "Stadt finden",
+    "searchLabel": "Städte nach Name oder Land suchen",
+    "countriesLabel": "Land",
+    "allCountries": "Alle",
+    "empty": "Keine Stadt passt zu „{query}“",
+    "loading": "Städte werden geladen…"
   }
 }

@@ -6,7 +6,12 @@ import { attachTrackpadGestures } from './trackpadGestures';
 
 // Орбитальная камера с ограничениями + перелёты GSAP между обзором города и районом.
 export class CameraRig {
-  constructor(camera, domElement, { home, homeTarget = new THREE.Vector3() }) {
+  // gestureElement — где ловить жесты тачпада: весь контейнер карты, включая подписи над canvas.
+  constructor(
+    camera,
+    domElement,
+    { home, homeTarget = new THREE.Vector3(), gestureElement = domElement },
+  ) {
     this.camera = camera;
     this.home = home.clone();
     this.homeTarget = homeTarget.clone();
@@ -30,7 +35,7 @@ export class CameraRig {
     this.onUserMove = () => (this.atHome = false);
     this.controls.addEventListener('start', this.onUserMove);
     // Ноутбук: два пальца двигают карту, щипок — зум к курсору, Alt + два пальца — поворот.
-    this.detachTrackpad = attachTrackpadGestures(this.controls, domElement);
+    this.detachTrackpad = attachTrackpadGestures(this.controls, gestureElement);
   }
 
   setHome(target, position) {

@@ -1,15 +1,13 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigationInterceptor, useTransitionNavigate } from '@/app/transitions/useTransition';
 import { useViewport, WIDE_QUERY } from '@/adaptations/core';
 import { AuthPanel } from '@/features/auth';
 import { FRONT_FLOW_END, FrontLayer, HeroCanvas, SHEET_FLY_SHIFT } from '@/features/hero';
-import { getCity } from '@/shared/api/endpoints/cities';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { smoothShift } from '@/shared/animations/effects/smoothLayout';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { usePagePath } from '@/shared/hooks/usePagePath';
-import { useRequest } from '@/shared/hooks/useRequest';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
 import { isModerator } from '@/shared/config/roles';
@@ -28,8 +26,6 @@ export function HomePage() {
   const navigate = useLocalizedNavigate();
   const go = useTransitionNavigate();
   const mode = pathname === '/register' ? 'register' : 'login';
-  // Районы — для выбора своего в форме регистрации (тот же кэш, что у карты города).
-  const city = useRequest(`city:${CITY}`, () => getCity(CITY));
   const entered = usePageEntered();
   const { compact } = useViewport();
 
@@ -44,15 +40,6 @@ export function HomePage() {
   const pinRef = useRef(null);
   const leavingRef = useRef(false);
   const [pinAvatar, setPinAvatar] = useState('preset:0');
-
-  const districts = useMemo(
-    () =>
-      city.data?.districts.features.map((feature) => ({
-        slug: feature.properties.slug,
-        name: feature.properties.name,
-      })) ?? [],
-    [city.data],
-  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -189,7 +176,10 @@ export function HomePage() {
       go('/moderation');
       return;
     }
-    const slug = user.home_district ?? FALLBACK_DISTRICT;
+    // Карта открывается на своём городе и районе; без своего города — на районе главного города.
+    const target = user.home_city
+      ? `/map/${user.home_city}${user.home_district ? `/district/${user.home_district}` : ''}`
+      : `/map/${CITY}/district/${FALLBACK_DISTRICT}`;
 
     if (how === 'register') {
       // Пропуск жителя превращается в метку с аватаром и летит в руку девушке.
@@ -236,7 +226,7 @@ export function HomePage() {
       heroRef.current?.cheer();
       await gsap.to({}, { duration: 0.6 });
     }
-    go(`/map/${CITY}/district/${slug}`);
+    go(target);
   };
 
   return (
@@ -276,7 +266,6 @@ export function HomePage() {
               ref={passRef}
               mode={mode}
               onModeChange={(next) => navigate(next === 'register' ? '/register' : '/login')}
-              districts={districts}
               onDistrictPreview={() => heroRef.current?.glance()}
               onAuthenticated={celebrate}
               wideEnterDelay={FRONT_FLOW_END}

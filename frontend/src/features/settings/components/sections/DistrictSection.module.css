@@ -4,9 +4,19 @@
 }
 
 .choices {
+  display: grid;
+  gap: var(--space-3);
+  min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+.legend {
+  margin-bottom: var(--space-3);
+  padding: 0;
+  font-size: var(--fs-sm);
+  font-weight: 600;
 }
 
 .grid {

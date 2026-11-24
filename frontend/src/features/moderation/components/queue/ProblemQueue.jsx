@@ -12,13 +12,21 @@ import styles from './ProblemQueue.module.css';
 
 const SORTS = ['newest', 'oldest', 'confirmations'];
 
-// Очередь проблем с фильтрами по статусу, району и категории. После решения модератора очередь и
-// сводка перезапрашиваются, а под фильтрами коротко сказано, что произошло.
-export function ProblemQueue({ districts, filters, onFiltersChange, onChanged, onOpenProblem }) {
+// Очередь проблем города city с фильтрами по статусу, району и категории. После решения модератора
+// очередь и сводка перезапрашиваются, а под фильтрами коротко сказано, что произошло.
+export function ProblemQueue({
+  city,
+  districts,
+  filters,
+  onFiltersChange,
+  onChanged,
+  onOpenProblem,
+}) {
   const [notice, setNotice] = useState('');
-  const key = `moderation:queue:${filters.status}:${filters.district}:${filters.category}:${filters.sort}`;
+  const key = `moderation:queue:${city}:${filters.status}:${filters.district}:${filters.category}:${filters.sort}`;
   const queue = useRequest(key, () =>
     getModerationQueue({
+      city,
       status: filters.status,
       district: filters.district || undefined,
       category: filters.category || undefined,

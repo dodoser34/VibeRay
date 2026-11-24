@@ -1,3 +1,4 @@
+import { pixelRatioFor } from '@/adaptations/core';
 import transitionTexts from '@/texts/en/transition.json';
 
 // Переход между страницами «бумажная карта-оригами». Сложенная карта вылетает из точки клика,
@@ -121,7 +122,6 @@ export class MapFoldTransition {
         durationScale: 1,
         reducedMotion: 'auto',
         caption: transitionTexts.caption,
-        dprCap: 2,
       },
       options,
     );
@@ -572,7 +572,10 @@ export class MapFoldTransition {
       this._dirty = true;
       return;
     }
-    const pixelRatio = Math.min(this.opts.dprCap, devicePixelRatio || 1),
+    // Плотность пикселей — по уровню устройства и общему бюджету кадра (adaptations/core).
+    // Порог 640 — не уровень устройства, а форма сетки самого эффекта: на узком холсте 3 × 2 или
+    // 2 × 3 клетки (что ближе к квадрату), на широком — 3 ряда по 4–6 колонок.
+    const pixelRatio = pixelRatioFor(width, height),
       mobile = width < 640;
     let columnCount, rowCount;
     if (mobile) {

@@ -7,7 +7,7 @@
 
 ```mermaid
 flowchart LR
-    OSM[("OpenStreetMap<br/>Overpass API")] --> CACHE[("backend/.osm-cache/<br/>сырые ответы")]
+    OSM[("OpenStreetMap<br/>Overpass API")] --> CACHE[("tools/city-data/.osm-cache/<br/>сырые ответы")]
     CACHE --> BW["1. build_water.py<br/>вода"]
     BW --> WATER["water.geojson"]
     CACHE --> BD["2. build_districts.py<br/>районы"]
@@ -25,19 +25,19 @@ flowchart LR
 
 | Шаг | Команда | Результат |
 |---|---|---|
-| 1 | `python backend/scripts/build_water.py <город>` | вода города (нужна новому городу; у готовых уже собрана) |
-| 2 | `python backend/scripts/build_districts.py <город>` | районы, центр и рамка города, список правок чистки |
-| 3 | `python backend/scripts/build_streets.py <город>` | схема дорог по районам |
-| 4 | `python backend/scripts/build_map_tiles.py <город>` или `--all` | плитки карты и векторные куски дорог |
-| 5 | `python backend/scripts/verify_city_data.py <город>` или `--all` | таблица проверок и итог «ПРИНЯТО» |
+| 1 | `python tools/city-data/build_water.py <город>` | вода города (нужна новому городу; у готовых уже собрана) |
+| 2 | `python tools/city-data/build_districts.py <город>` | районы, центр и рамка города, список правок чистки |
+| 3 | `python tools/city-data/build_streets.py <город>` | схема дорог по районам |
+| 4 | `python tools/city-data/build_map_tiles.py <город>` или `--all` | плитки карты и векторные куски дорог |
+| 5 | `python tools/city-data/verify_city_data.py <город>` или `--all` | таблица проверок и итог «ПРИНЯТО» |
 
 Шаги идут именно в таком порядке: районы вычитают воду, плитки рисуются от центра города, а центр считается по
 районам. Поэтому после изменения воды пересобирается всё, а после изменения районов — улицы и плитки.
 
-Какие районы есть у города и откуда они берутся в OSM, записано в одном месте — `backend/scripts/cities.py`.
+Какие районы есть у города и откуда они берутся в OSM, записано в одном месте — `tools/city-data/cities.py`.
 Общий код скриптов (запросы к OSM, перевод градусов в метры, запись файлов) лежит рядом, в папке `geodata/`.
-Скриптам нужны `shapely` и Pillow, обе ставятся командой `pip install -r backend/requirements-dev.txt`. Ответы
-Overpass сохраняются в `backend/.osm-cache/` (в git эта папка не попадает), так что повторная сборка обходится
+Скриптам нужны `shapely` и Pillow, обе ставятся командой `pip install -r tools/city-data/requirements.txt`. Ответы
+Overpass сохраняются в `tools/city-data/.osm-cache/` (в git эта папка не попадает), так что повторная сборка обходится
 без интернета и даёт точно такие же файлы.
 
 ## Откуда берутся районы

@@ -118,5 +118,12 @@
     "hint": "Click a marker to open the problem with moderator actions.",
     "close": "Close",
     "loading": "Loading problems…"
+  },
+  "cityPicker": {
+    "label": "Moderated city",
+    "change": "Change city",
+    "done": "Done",
+    "districts": "{count} {forms}",
+    "districtForms": ["district", "districts", "districts"]
   }
 }

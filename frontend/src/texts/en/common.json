@@ -31,5 +31,14 @@
       "dark": "Dark",
       "light": "Light"
     }
+  },
+  "cityPicker": {
+    "label": "City",
+    "search": "Find a city",
+    "searchLabel": "Search cities by name or country",
+    "countriesLabel": "Country",
+    "allCountries": "All",
+    "empty": "No cities match “{query}”",
+    "loading": "Loading cities…"
   }
 }

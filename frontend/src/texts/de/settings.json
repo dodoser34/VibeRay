@@ -6,14 +6,14 @@
   "sections": {
     "profile": "Profil",
     "reports": "Meine Meldungen",
-    "district": "Mein Viertel",
+    "district": "Meine Stadt und mein Viertel",
     "security": "Sicherheit",
     "account": "Konto"
   },
   "sectionsShort": {
     "profile": "Profil",
     "reports": "Meldungen",
-    "district": "Viertel",
+    "district": "Stadt",
     "security": "Schutz",
     "account": "Konto"
   },
@@ -66,10 +66,12 @@
   },
   "district": {
     "lead": "Die Karte öffnet sich zuerst dort. Wird niemandem gezeigt.",
+    "cityLegend": "Deine Stadt",
     "legend": "Wähle dein Viertel",
+    "districtLegend": "Viertel in {city}",
     "none": "Nicht gewählt",
     "loading": "Viertel werden geladen…",
-    "save": "Viertel speichern"
+    "save": "Speichern"
   },
   "security": {
     "lead": "Das Passwort ändert sich sofort. Auf anderen Geräten musst du dich neu anmelden.",

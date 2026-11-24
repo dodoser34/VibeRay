@@ -7,19 +7,24 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import { ChipGroup } from '@/shared/ui/controls/ChipGroup';
 import { Icon } from '@/shared/ui/icons/Icon';
+import { ModerationCityBar } from './ModerationCityBar';
 import { QueueItem } from './queue/QueueItem';
 import texts from '@/texts/en/moderation.json';
 import styles from './ModerationMap.module.css';
 
 // Та же 3D-карта города, что у жителей, но с функциями модератора: на ней проблемы любого статуса
 // (кроме отклонённых), фильтр по статусу, а по клику на метку — панель с действиями модератора.
-// city, moods — данные города (страница грузит их сама); problemId — проблема, открытая по ссылке
-// из очереди; onReady — карта получила данные (переход между страницами ждёт этого).
-export function ModerationMap({ city, moods, problemId = null, onReady }) {
+// citySlug — выбранный модератором город, city, moods — его данные (страница грузит их сама);
+// onCityChange(slug) — другой город; problemId — проблема, открытая по ссылке из очереди;
+// onReady — карта получила данные (переход между страницами ждёт этого).
+export function ModerationMap({ citySlug, city, moods, problemId = null, onCityChange, onReady }) {
   const mapRef = useRef(null);
   const [status, setStatus] = useState('active');
   const [selectedId, setSelectedId] = useState(problemId);
-  const queue = useRequest(`moderation:map:${status}`, () => getModerationQueue({ status }));
+  const queue = useRequest(`moderation:map:${citySlug}:${status}`, () =>
+    getModerationQueue({ city: citySlug, status }),
+  );
+  const cityReady = city?.slug === citySlug;
   const items = queue.data?.items ?? null;
   const selected = items?.find((item) => item.id === selectedId) ?? null;
   const statuses = [
@@ -41,6 +46,12 @@ export function ModerationMap({ city, moods, problemId = null, onReady }) {
 
   const handleChanged = () => queue.reload();
 
+  // Другой город: открытая проблема осталась в прежнем.
+  const changeCity = (slug) => {
+    setSelectedId(null);
+    onCityChange(slug);
+  };
+
   return (
     <div className={styles.page} data-ui="moderation-map">
       <MapCanvas
@@ -57,6 +68,12 @@ export function ModerationMap({ city, moods, problemId = null, onReady }) {
         <h1 className={styles.title} data-ui="moderation-map-title">
           {texts.map.title}
         </h1>
+        <ModerationCityBar
+          city={citySlug}
+          districtCount={cityReady ? city.districts.features.length : null}
+          onChange={changeCity}
+          compact
+        />
         <ChipGroup
           label={texts.map.statusLabel}
           options={statuses}

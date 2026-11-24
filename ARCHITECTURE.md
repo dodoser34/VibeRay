@@ -311,21 +311,25 @@ VibeRay/
 │           ├── reset.css
 │           └── global.css
 │
+├── tools/                             # инструменты разработчика: в сайт и API не входят, на Pages не попадают
+│   └── city-data/                     # геоданные городов (раздел 5.3), запуск по порядку из корня:
+│       ├── build_water.py             #   1. вода из OSM → water.geojson
+│       ├── build_districts.py         #   2. районы → districts.geojson, city.json, district_edits.geojson
+│       ├── build_streets.py           #   3. схема дорог → streets/<район>.geojson (только бэкенд)
+│       ├── build_map_tiles.py         #   4. streets + water → плитки карты (frontend/public/maps), Pillow
+│       ├── verify_city_data.py        #   5. проверка готовых данных против сырого OSM
+│       ├── cities.py                  # настройки городов: запрос Overpass, районы, ручные правки границ
+│       ├── geodata/                   # общий код: paths, osm (Overpass и кеш), geometry, roads, output;
+│       │   ├── districts/             #   части сборки районов: official, blocks, tidy, finish, …
+│       │   └── checks/                #   проверки D1–D5, W1, R1–R3, T1, C1
+│       ├── requirements.txt           # shapely, Pillow (версии закреплены)
+│       └── .osm-cache/                # сырые ответы Overpass для повторной сборки без сети (в .gitignore)
+│
 └── backend/
-    ├── scripts/                       # геоданные городов (раздел 5.3), запуск по порядку:
-    │   ├── build_water.py             #   1. вода из OSM → water.geojson
-    │   ├── build_districts.py         #   2. районы → districts.geojson, city.json, district_edits.geojson
-    │   ├── build_streets.py           #   3. схема дорог → streets/<район>.geojson (только бэкенд)
-    │   ├── build_map_tiles.py         #   4. streets + water → плитки карты (frontend/public/maps), Pillow
-    │   ├── verify_city_data.py        #   5. проверка готовых данных против сырого OSM
-    │   ├── cities.py                  # настройки городов: запрос Overpass, районы, ручные правки границ
-    │   ├── geodata/                   # общий код: paths, osm (Overpass и кеш), geometry, roads, output;
-    │   │   ├── districts/             #   части сборки районов: official, blocks, tidy, finish, …
-    │   │   └── checks/                #   проверки D1–D5, W1, R1–R3, T1, C1
-    │   └── import_city.py             # (план) загрузка GeoJSON районов города в БД
-    ├── .osm-cache/                    # сырые ответы Overpass для повторной сборки без сети (в .gitignore)
+    ├── scripts/
+    │   └── import_city.py             # (план) загрузка GeoJSON районов города в БД — часть бэкенда
     ├── requirements.txt           # зависимости API (версии закреплены)
-    ├── requirements-dev.txt       # + тесты и линтер: pytest, pytest-asyncio, httpx, ruff; shapely — скриптам геоданных
+    ├── requirements-dev.txt       # + тесты и линтер: pytest, pytest-asyncio, httpx, ruff
     ├── .env.example
     ├── app/
     │   ├── main.py                    # создание FastAPI, CORS, подключение роутеров, static /media
@@ -530,8 +534,8 @@ Google Карт не копируем.
 только сам город. **Не меняй состав районов без согласия пользователя.**
 
 ### Как получаются районы
-`python backend/scripts/build_districts.py kostanay` (код — `backend/scripts/geodata/districts/blocks.py`;
-shapely; сырые ответы Overpass кешируются в `backend/.osm-cache/`, папка в `.gitignore`):
+`python tools/city-data/build_districts.py kostanay` (код — `tools/city-data/geodata/districts/blocks.py`;
+shapely; сырые ответы Overpass кешируются в `tools/city-data/.osm-cache/`, папка в `.gitignore`):
 1. **Линии резки — три уровня.** (1) магистрали (trunk…tertiary), железная дорога и берега воды из `water.geojson`;
    (2) улицы (residential, unclassified, living_street, pedestrian); (3) всё остальное из OSM: проезды, тропы,
    подъездные пути, ограды, водотоки, контуры участков (`landuse`, `natural`, `leisure`, `amenity`, `aeroway`,
@@ -554,7 +558,7 @@ shapely; сырые ответы Overpass кешируются в `backend/.osm-
    скрипте, ни на фронтенде. У соседних районов общая граница из одних и тех же вершин.
 7. **Цвета:** `palette` 1–12 → токены `--district-1…12`; прежний цвет района сохраняется, если не совпал с цветом
    соседа (соседи — ближе 150 м, в том числе через реку).
-8. **Замыкающие отрезки** (`closures` в `backend/scripts/cities.py`) — ручные прямые там, где пользователь провёл
+8. **Замыкающие отрезки** (`closures` в `tools/city-data/cities.py`) — ручные прямые там, где пользователь провёл
    границу, а линии OSM нет (2026-11-10): север Костаная-2 от дороги KP-4 через концы ж/д тупиков к
    северо-восточному углу, полоса Узкой Колеи у Привокзального, основания узких «пальцев» Достыка и Химика
    в Амангельды, дорога Химика у Амангельды, полоса КСК в Зеленстрое. Концы — узлы OSM (вершины районов)
@@ -573,7 +577,7 @@ shapely; сырые ответы Overpass кешируются в `backend/.osm-
 районов, поэтому берег района и берег на карте — одна и та же линия.
 
 ### Улицы
-`streets/` — схема дорог (`backend/scripts/build_streets.py`, данные OSM через Overpass API): от магистралей до
+`streets/` — схема дорог (`tools/city-data/build_streets.py`, данные OSM через Overpass API): от магистралей до
 дворовых проездов и железная дорога. Классы схемы (`kind`): `major` (trunk/primary), `secondary`, `tertiary`,
 `local` (residential, unclassified, living_street, pedestrian, road), `service` (все проезды — дворовые, переулки,
 подъезды — кроме парковочных рядов), `rail`. Каждая линия разрезана по районам — отрезок относится к району своей
@@ -609,10 +613,10 @@ shapely; сырые ответы Overpass кешируются в `backend/.osm-
 (`Mülheim`, `Westbury-on-Trym & Henleaze`; в немецком «&» → «und»). Slug-и районов уникальны среди всех городов
 (в демо идентификатор района — его slug). Названия хранятся в `districts.geojson`: `build_districts.py` переносит
 их из текущего файла (у нового города — берёт из тегов OSM `name:ru`, `name:en`, `name:kk`, `name:de`), список
-районов и их отношения OSM — в `backend/scripts/cities.py`.
+районов и их отношения OSM — в `tools/city-data/cities.py`.
 
-**Как получаются районы** — `python backend/scripts/build_districts.py <slug>`:
-1. Отношения районов скачиваются через Overpass (`out geom`; ответ — в `backend/.osm-cache/`), кольца собираются
+**Как получаются районы** — `python tools/city-data/build_districts.py <slug>`:
+1. Отношения районов скачиваются через Overpass (`out geom`; ответ — в `tools/city-data/.osm-cache/`), кольца собираются
    в полигоны (внешние минус внутренние; разрыв кольца до 200 м сшивается по ближайшим концам).
 2. Границы районов и контур воды (`water.geojson`) узлуются на сетке координат OSM (1e-7°), грани суши раздаются
    районам: **район = официальная территория − вода**. Вершины — как в OSM, без упрощения и сглаживания; у соседей
@@ -640,7 +644,7 @@ shapely; сырые ответы Overpass кешируются в `backend/.osm-
 частями (`--tiles N`: Бристоль — 2, Кёльн — 4, Петербург и Астана — 6; пути, попавшие в несколько частей, берутся один раз).
 За пределами районов нет только дворовых проездов (`--skip-outside service`). Линии одного класса и района,
 которые продолжают друг друга, склеиваются (`merge_runs`). Пример:
-`python backend/scripts/build_streets.py cologne --tiles 4 --skip-outside service --save-osm backend/.osm-cache/cologne-streets.json`.
+`python tools/city-data/build_streets.py cologne --tiles 4 --skip-outside service --save-osm tools/city-data/.osm-cache/cologne-streets.json`.
 
 ### Чистка контуров (все города)
 
@@ -668,7 +672,7 @@ shapely; сырые ответы Overpass кешируются в `backend/.osm-
 
 ## 5.3 Сборка и проверка геоданных
 
-Скрипты — в `backend/scripts/`, запуск из корня репозитория, строго по порядку (каждый шаг читает результат
+Скрипты — в `tools/city-data/`, запуск из корня репозитория, строго по порядку (каждый шаг читает результат
 прошлого):
 
 | Шаг | Скрипт | Что делает |
@@ -688,7 +692,7 @@ shapely; сырые ответы Overpass кешируются в `backend/.osm-
 сборки районов), `checks/` (проверки). Пересборка тем же кодом из тех же ответов OSM даёт побайтно те же файлы.
 
 **Проверка** (`verify_city_data.py`, код — `geodata/checks/`) сверяет файлы с ответами Overpass из
-`backend/.osm-cache/`, печатает таблицу «проверка — измерено — порог», код выхода 1 при ошибке:
+`tools/city-data/.osm-cache/`, печатает таблицу «проверка — измерено — порог», код выхода 1 при ошибке:
 
 | Код | Что проверяется | Порог |
 |-----|-----------------|-------|
@@ -865,10 +869,11 @@ rejected ──(модератор: восстановить)──▶ new
 ### 7.1 Демо-режим: фронтенд без бэкенда
 - Все запросы идут через `shared/api/client.js`. Пока `VITE_USE_MOCKS` не равен `false` (по умолчанию), их обслуживает фейковый API `src/demo-data/api/handler.js` прямо в браузере — с задержкой, валидацией и кодами ошибок как у настоящего API.
 - **Все демо-данные — только в `frontend/src/demo-data/`** (см. `demo-data/README.md`): снимки геоданных городов `cities/<город>/*` (копии `backend/data/cities/<город>/*`; Костанай — в основной сборке, остальные города — отдельными файлами, грузятся при первом открытии; тогда же у города появляются демо-проблемы: 40 свежих и 600 за историю), демо-пользователи `accounts.json`, демо-содержимое `content.json` (описания тестовых проблем, ники, названия сервисов), генератор статистики `api/demoHistory.js`. В компонентах, страницах и `shared/` демо-данных нет.
-- Демо-модератор работает с Костанаем: проблемы других городов не попадают в его очередь и сводку.
+- Демо-модератор работает с любым городом: город выбирается панелью «Город модерации» (поиск и страна), очередь (`GET /moderation/problems?city=`), сводка (`GET /moderation/summary?city=`) и карта модератора — по выбранному городу (по умолчанию Костанай).
+- У пользователя свой город и район (`home_city`, `home_district`): регистрация спрашивает город, затем район этого города; в настройках оба меняются (`PATCH /users/me`, новый город без района сбрасывает район).
 - Реализованы: `auth/register|login|logout`, `GET /cities`, `GET /cities/{slug}`, `GET /cities/{slug}/moods`, `GET /cities/{slug}/stats`, `GET /districts/{id}/stats`, `POST /districts/{id}/mood`, `GET /problems`, `POST /problems`, `POST /problems/{id}/confirm`, `DELETE /problems/{id}/confirm`, `DELETE /problems/{id}`, `GET /problems/{id}`, `PATCH /users/me`, `PUT /users/me/avatar`, `POST /users/me/password`, `DELETE /users/me`, `GET /users/me/problems`, `DELETE /users/me/problems/{id}`, `GET /users/me/notifications`, `POST /users/me/notifications/read`, `DELETE /users/me/notifications`, `POST /support/requests`, `GET /status` (в моках все сервисы «работают»). Идентификатор района в моках = его `slug`.
-- Демо-аккаунты: житель `emma.wilson@viberay.kz` / `Emma#Kst24`, модератор `sergey.volkov@viberay.kz` / `Sergey#Mod24`, новичок `lukas.becker@viberay.kz` / `Lukas#New24` — житель без сообщений и уведомлений, на нём видны пустые состояния (все
-  три подсказки — на форме входа). Каждая пятая демо-проблема анонимна; в разделе модератора — пять демо-обращений
+- Демо-аккаунты (два, данные на английском): пользователь `emma.wilson@viberay.kz` / `Emma#Kst24`, модератор `sergey.volkov@viberay.kz` / `Sergey#Mod24` (обе
+  подсказки — на форме входа). Каждая пятая демо-проблема анонимна; в разделе модератора — пять демо-обращений
   (`support.json`). Данные живут до перезагрузки страницы.
 - История для дашборда: город «работает» с января 2023 года; ~1 100 старых сообщений о проблемах (число растёт вместе с жителями, всё старше года решено) и 64 за последний месяц. У Аэропорта за день почти нет отметок — демонстрация порога приватности.
 - Сообщество в демо (`demo-data/api/community.js`): у демо-пользователя уже есть 6 сообщений разных статусов (одно — отклонённый дубль) (`accounts.json` → `reports`) с историей и уведомлениями; история статусов остальных проблем восстанавливается из текущего статуса. Когда вошедший отправляет новую проблему, «соседи» подтверждают её через ~25 и ~70 с — приходят уведомления, а на 3 подтверждениях статус становится «подтверждена». Если новое сообщение той же категории оказалось в 80 м от нерешённой проблемы, через ~40 с «модератор» отклоняет его как дубль со ссылкой на исходную.
@@ -959,7 +964,7 @@ rejected ──(модератор: восстановить)──▶ new
   `version` из манифеста (хеш содержимого) — после пересборки плиток старый удаляется.
 - **Подложка карты — плитки-картинки (с 2026-11-07):** дороги и вода полной карты (и у модератора) — готовые картинки,
   лежащие плоско под районами (`MapTiles.js`), а не линии из `streets/`: карта не скачивает и не разбирает
-  схему дорог (у Петербурга это 41 МБ). Плитки делает `backend/scripts/build_map_tiles.py` (Pillow) в
+  схему дорог (у Петербурга это 41 МБ). Плитки делает `tools/city-data/build_map_tiles.py` (Pillow) в
   `frontend/public/maps/<slug>/<уровень>/<x>_<y>.png` + `tiles.json`: пирамида уровней, плитка 512 px (мелкая плитка — в видеопамяти только видимое), самый детальный —
   3 м/пиксель, каждый следующий вдвое грубее, пока город не уложится в 2 × 2 плитки; сетка — в км проекции
   `createProjection` от центра города, пустые плитки и плитки за контуром города не сохраняются; линии рисуются
@@ -973,7 +978,7 @@ rejected ──(модератор: восстановить)──▶ new
   дыр нет); загрузка — до 8 плиток разом, кэш текстур по `renderQuality` (ПК 96, планшет 64, телефон 40 плиток по ~1,4 МБ
   видеопамяти, грубый уровень — всегда). Плитки — статика сайта: одинаковы в демо и с бэкендом (`getMapTiles`, `mapTileUrl` в
   `shared/api/endpoints/cities.js`). После правки `streets/*.geojson`/`water.geojson` плитки пересобираются:
-  `python backend/scripts/build_map_tiles.py <slug>` (или `--all`). `getCity` не отдаёт `streets`: схема дорог
+  `python tools/city-data/build_map_tiles.py <slug>` (или `--all`). `getCity` не отдаёт `streets`: схема дорог
   фронтенду не нужна вовсе (ни карте, ни истории) — только скрипту плиток, поэтому `streets/`
   лежит только в `backend/data/cities/` (в демо-данных фронтенда его нет). История «О проекте» берёт те же плитки (`MapTiles` с
   `scale` — план растянут до `STORY_EXTENT`) и строит дороги **волной в шейдере**: у каждого канала свой радиус от
@@ -1282,12 +1287,14 @@ rejected ──(модератор: восстановить)──▶ new
 | fastapi, uvicorn[standard] | API-сервер |
 | pydantic, pydantic-settings, email-validator | схемы, конфиг |
 | pyjwt, argon2-cffi | авторизация |
-| python-multipart, pillow | загрузка и обработка фото; Pillow же рисует плитки карты (`build_map_tiles.py`) |
+| python-multipart, pillow | загрузка и обработка фото |
 | pytest, pytest-asyncio, httpx, ruff | тесты и линтинг (dev) |
-| shapely (+ numpy, приходит вместе с ней) | геометрия в скриптах геоданных `backend/scripts/`: вода, районы, проверка (dev; в API не используется) |
+
+Скрипты геоданных (`tools/city-data/`, в API не используются): pillow — плитки карты (`build_map_tiles.py`),
+shapely (+ numpy, приходит вместе с ней) — геометрия: вода, районы, проверка.
 
 Версии бэкенда закреплены в `backend/requirements.txt` (запуск) и `backend/requirements-dev.txt` (+ тесты и
-линтер); фронтенда — в `frontend/package.json` и `package-lock.json`. Добавление любого пакета вне этих списков —
+линтер); скриптов геоданных — в `tools/city-data/requirements.txt`; фронтенда — в `frontend/package.json` и `package-lock.json`. Добавление любого пакета вне этих списков —
 только после согласования (см. CLAUDE.md, раздел 2).
 
 ---

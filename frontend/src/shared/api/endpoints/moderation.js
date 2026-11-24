@@ -2,15 +2,18 @@ import { request } from '../client';
 
 // Только для модератора (ARCHITECTURE.md 7): остальным — 403 forbidden.
 
-// Очередь проблем: status — active | new | confirmed | in_progress | resolved | rejected;
+// Очередь проблем города city: status — active | new | confirmed | in_progress | resolved | rejected;
 // sort — newest | oldest | confirmations. → { total, items } (не больше 100, с автором и историей).
-export function getModerationQueue({ status, district, category, sort } = {}) {
-  return request('GET', '/moderation/problems', { query: { status, district, category, sort } });
+export function getModerationQueue({ city, status, district, category, sort } = {}) {
+  return request('GET', '/moderation/problems', {
+    query: { city, status, district, category, sort },
+  });
 }
 
-// Сводка: счётчики по статусам, районы с открытыми проблемами, категории, скорость решения.
-export function getModerationSummary() {
-  return request('GET', '/moderation/summary');
+// Сводка по городу city: счётчики по статусам, районы с открытыми проблемами, категории, скорость
+// решения.
+export function getModerationSummary(city) {
+  return request('GET', '/moderation/summary', { query: { city } });
 }
 
 // Решение модератора: в работу, решена или отклонена (reason, для дубля — duplicateOf).

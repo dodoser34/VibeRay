@@ -57,5 +57,11 @@
     "in_progress": "In Arbeit",
     "answered": "Beantwortet",
     "closed": "Geschlossen"
+  },
+  "countries": {
+    "KZ": "Kasachstan",
+    "RU": "Russland",
+    "DE": "Deutschland",
+    "GB": "Vereinigtes Königreich"
   }
 }

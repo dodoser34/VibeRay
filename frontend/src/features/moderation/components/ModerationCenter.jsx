@@ -8,6 +8,7 @@ import { useRequest } from '@/shared/hooks/useRequest';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import figure from '../assets/moderator.webp';
 import { CityOverview } from './CityOverview';
+import { ModerationCityBar } from './ModerationCityBar';
 import { ProblemQueue } from './queue/ProblemQueue';
 import { SupportInbox } from './SupportInbox';
 import texts from '@/texts/en/moderation.json';
@@ -19,11 +20,14 @@ const DEFAULT_FILTERS = { status: 'active', district: '', category: '', sort: 'n
 // статусов и отклонение), city (где копятся проблемы) или support (обращения жителей). Плотнее,
 // чем страницы жителей: модератор работает со списками.
 // Справа в шапке всегда стоит девушка с планшетом — у рабочего места нет пустых окон.
-// districts: [{ slug, name }] или null, пока город грузится; district — район, с которым открыта
-// очередь (из раздела «Город»); onOpenProblem(id) — проблема на карте модератора;
-// onOpenDistrict(slug) — очередь района.
+// city — город, с которым работает модератор (очередь, сводка и «Город» — по нему), onCityChange(slug)
+// — выбрать другой; districts: [{ slug, name }] его районы или null, пока город грузится; district —
+// район, с которым открыта очередь (из раздела «Город»); onOpenProblem(id) — проблема на карте
+// модератора; onOpenDistrict(slug) — очередь района.
 export function ModerationCenter({
   section,
+  city,
+  onCityChange,
   districts,
   district = '',
   onOpenProblem,
@@ -34,8 +38,15 @@ export function ModerationCenter({
   const reduced = useReducedMotion();
   const entered = usePageEntered();
   const [filters, setFilters] = useState({ ...DEFAULT_FILTERS, district });
-  const summary = useRequest('moderation:summary', getModerationSummary);
+  const [filtersCity, setFiltersCity] = useState(city);
+  // Другой город: фильтр района прежнего города больше не подходит — фильтры с начала.
+  if (filtersCity !== city) {
+    setFiltersCity(city);
+    setFilters(DEFAULT_FILTERS);
+  }
+  const summary = useRequest(`moderation:summary:${city}`, () => getModerationSummary(city));
   const data = summary.data;
+  const citySection = section === 'queue' || section === 'city';
 
   useGSAP(
     () => {
@@ -93,8 +104,17 @@ export function ModerationCenter({
         ))}
       </dl>
 
+      {citySection && (
+        <ModerationCityBar
+          city={city}
+          districtCount={districts ? districts.length : null}
+          onChange={onCityChange}
+        />
+      )}
+
       {section === 'queue' && (
         <ProblemQueue
+          city={city}
           districts={districts}
           filters={filters}
           onFiltersChange={setFilters}
@@ -102,7 +122,12 @@ export function ModerationCenter({
           onOpenProblem={onOpenProblem}
         />
       )}
-      {section === 'city' && <CityOverview summary={data} onOpenDistrict={onOpenDistrict} />}
+      {section === 'city' && (
+        <CityOverview
+          summary={summary.loading ? null : data}
+          onOpenDistrict={onOpenDistrict}
+        />
+      )}
       {section === 'support' && <SupportInbox onChanged={summary.reload} />}
     </div>
   );

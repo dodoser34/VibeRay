@@ -10,6 +10,7 @@
     "invalid_credentials": "Неверный email или пароль",
     "wrong_password": "Неверный текущий пароль",
     "city_not_found": "Город не найден",
+    "city_required": "Выбери свой город",
     "district_not_found": "Район не найден",
     "invalid_mood": "Неизвестное настроение",
     "problem_not_found": "Проблема не найдена",

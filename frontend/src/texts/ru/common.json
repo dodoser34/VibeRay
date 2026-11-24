@@ -31,5 +31,14 @@
       "dark": "Тёмная",
       "light": "Светлая"
     }
+  },
+  "cityPicker": {
+    "label": "Город",
+    "search": "Найти город",
+    "searchLabel": "Поиск города по названию или стране",
+    "countriesLabel": "Страна",
+    "allCountries": "Все",
+    "empty": "Нет городов по запросу «{query}»",
+    "loading": "Загружаем города…"
   }
 }

@@ -48,31 +48,30 @@ npm run dev
 
 ### Скрипты геоданных
 
-Районы, улицы и плитки карты собираются скриптами на Python 3.12+ из данных OpenStreetMap. Для них нужно
-поставить зависимости:
+Районы, улицы и плитки карты собираются скриптами на Python 3.12+ из данных OpenStreetMap. Это инструменты,
+а не часть сайта, поэтому они лежат отдельно — в `tools/city-data/`. Для них нужно поставить зависимости:
 
 ```bash
-cd backend
 python -m venv .venv
 .venv\Scripts\activate              # Windows; на macOS и Linux: source .venv/bin/activate
-pip install -r requirements-dev.txt
+pip install -r tools/city-data/requirements.txt
 ```
 
 Скрипты запускаются из корня репозитория по порядку, вместо `kostanay` можно указать `cologne`,
 `saint-petersburg`, `bristol` или `astana`:
 
 ```bash
-python backend/scripts/build_districts.py kostanay    # районы
-python backend/scripts/build_streets.py kostanay --save-osm backend/.osm-cache/kostanay-streets.json
-python backend/scripts/build_map_tiles.py kostanay    # плитки карты
-python backend/scripts/verify_city_data.py kostanay   # проверка: итог «ПРИНЯТО»
+python tools/city-data/build_districts.py kostanay    # районы
+python tools/city-data/build_streets.py kostanay --save-osm tools/city-data/.osm-cache/kostanay-streets.json
+python tools/city-data/build_map_tiles.py kostanay    # плитки карты
+python tools/city-data/verify_city_data.py kostanay   # проверка: итог «ПРИНЯТО»
 ```
 
 Третья команда собирает схему дорог и сохраняет ответ OpenStreetMap — по нему работает проверка, а повторная
 сборка дорог идёт без сети (`--osm` вместо `--save-osm`). Остальные ответы OpenStreetMap скрипты сохраняют в
-`backend/.osm-cache/` сами (в git эта папка не попадает). Какие районы у какого города и откуда они берутся
-в OpenStreetMap, записано в `backend/scripts/cities.py`. Новый город начинается с воды:
-`python backend/scripts/build_water.py <город>` (у готовых городов вода уже собрана, и пересобирать её
+`tools/city-data/.osm-cache/` сами (в git эта папка не попадает). Какие районы у какого города и откуда они берутся
+в OpenStreetMap, записано в `tools/city-data/cities.py`. Новый город начинается с воды:
+`python tools/city-data/build_water.py <город>` (у готовых городов вода уже собрана, и пересобирать её
 без нужды не стоит — после неё пересобирается всё остальное).
 
 Как это работает, описано в [docs/guide/07-geodata-pipeline.md](docs/guide/07-geodata-pipeline.md).
@@ -110,18 +109,22 @@ python backend/scripts/verify_city_data.py kostanay   # проверка: ито
 Стили написаны на CSS Modules с CSS-переменными, без CSS-фреймворков. Цвета тем лежат в
 `src/styles/themes/`, отступы, шрифты и остальное — в `src/styles/tokens.css`.
 
-### Бэкенд и скрипты (`backend/requirements.txt`, `backend/requirements-dev.txt`)
+### Бэкенд (`backend/requirements.txt`, `backend/requirements-dev.txt`)
 
 | Библиотека | Для чего |
 |---|---|
 | fastapi, uvicorn | REST API и сервер (в планах) |
 | pydantic, pydantic-settings, email-validator | схемы запросов и ответов, настройки из `.env` |
 | pyjwt, argon2-cffi | токены входа и хеши паролей |
-| python-multipart, pillow | загрузка фото и удаление из них геометок; Pillow ещё рисует плитки карты |
-| shapely | геометрия в скриптах геоданных: вода, районы, проверка |
+| python-multipart, pillow | загрузка фото и удаление из них геометок |
 | pytest, pytest-asyncio, httpx, ruff | тесты и проверка кода |
 
-Скрипт `build_streets.py` обходится стандартной библиотекой Python.
+### Скрипты геоданных (`tools/city-data/requirements.txt`)
+
+| Библиотека | Для чего |
+|---|---|
+| pillow | рисует плитки карты |
+| shapely | геометрия: вода, районы, дороги, проверка |
 
 ### Данные
 
@@ -152,10 +155,12 @@ VibeRay/
 │       ├── texts/          # весь текст сайта на четырёх языках: ru/, kk/, en/, de/
 │       ├── demo-data/      # данные городов для сайта (cities/)
 │       └── styles/         # цвета тем, отступы, шрифты, общие стили
-└── backend/
-    ├── scripts/            # скрипты геоданных, cities.py (настройки городов), geodata/ (общий код)
-    ├── data/cities/        # районы, вода, улицы пяти городов
-    └── requirements*.txt   # библиотеки бэкенда и скриптов
+├── backend/
+│   ├── data/cities/        # районы, вода, улицы пяти городов
+│   └── requirements*.txt   # библиотеки бэкенда
+└── tools/                  # инструменты разработчика, в сайт не входят
+    └── city-data/          # сборка городов из OSM: скрипты, cities.py (настройки городов),
+                            #   geodata/ (общий код), requirements.txt
 ```
 
 ## Документация

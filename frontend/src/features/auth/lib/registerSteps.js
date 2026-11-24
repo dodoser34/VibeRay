@@ -3,12 +3,14 @@ import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import auth from '@/texts/en/auth.json';
 
 // Шаги регистрации по порядку. Подписи читаются геттером: язык меняется на лету.
-export const STEPS = ['account', 'password', 'nickname', 'avatar', 'district'].map((key) => ({
-  key,
-  get label() {
-    return auth.register.steps[key];
-  },
-}));
+export const STEPS = ['account', 'password', 'nickname', 'avatar', 'city', 'district'].map(
+  (key) => ({
+    key,
+    get label() {
+      return auth.register.steps[key];
+    },
+  }),
+);
 
 export const STEP = Object.fromEntries(STEPS.map((step, i) => [step.key, i]));
 
@@ -27,5 +29,6 @@ export function validateStep(step, values) {
   if (step === STEP.nickname && !NICKNAME_PATTERN.test(values.nickname)) {
     errors.nickname = auth.errors.nicknameInvalid;
   }
+  if (step === STEP.city && !values.city) errors.city = auth.errors.cityRequired;
   return errors;
 }

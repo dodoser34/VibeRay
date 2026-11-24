@@ -31,5 +31,14 @@
       "dark": "Қараңғы",
       "light": "Ашық"
     }
+  },
+  "cityPicker": {
+    "label": "Қала",
+    "search": "Қаланы табу",
+    "searchLabel": "Қаланы атауы не елі бойынша іздеу",
+    "countriesLabel": "Ел",
+    "allCountries": "Барлығы",
+    "empty": "«{query}» бойынша қала жоқ",
+    "loading": "Қалаларды жүктеп жатырмыз…"
   }
 }

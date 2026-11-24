@@ -95,10 +95,14 @@ export class MapScene {
     this.key.position.set(-6, 12, 8);
     scene.add(this.hemi, this.key);
 
-    this.rig = new CameraRig(camera, canvas, { home: HOME_OFFSET });
+    this.rig = new CameraRig(camera, canvas, { home: HOME_OFFSET, gestureElement: container });
     // Колесо и жесты двигают камеру прямо в обработчике событий — кадр нужен, даже если тикер уже
-    // не увидит сдвига.
-    this.rig.controls.addEventListener('change', () => this.runtime.invalidate());
+    // не увидит сдвига. Карта уехала из-под неподвижного курсора (два пальца на тачпаде, колесо) —
+    // подсветка района под ним пересчитывается в ближайшем кадре.
+    this.rig.controls.addEventListener('change', () => {
+      this.runtime.invalidate();
+      this.hoverStale = true;
+    });
 
     this.labelRenderer = new CSS2DRenderer();
     Object.assign(this.labelRenderer.domElement.style, {
@@ -134,6 +138,10 @@ export class MapScene {
     this.runtime.onTick((time, delta) => {
       let changed = this.rig.update();
       this.applyProximity();
+      if (this.hoverStale) {
+        this.hoverStale = false;
+        this.picker.refreshHover();
+      }
       const { height } = this.runtime.size;
       if (this.vectors?.update(camera, height, time * 1000)) changed = true;
       if (this.tiles?.update(camera, height, time * 1000)) changed = true;

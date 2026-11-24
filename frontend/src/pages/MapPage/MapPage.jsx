@@ -142,10 +142,13 @@ export function MapPage({ view = 'map' }) {
     mapRef.current?.focusProblem(problem);
   }, [problem]);
 
+  // Свой район пользователя — только на карте его города: в другом городе такого района нет.
+  const homeDistrict = user?.home_city === citySlug ? user.home_district : null;
+
   // Подсказки при первом визите: когда карта уже показалась, а посетитель ещё ничего не открыл.
   const { tourOpen, tourSteps, openTour, finishTour } = useMapTour({
     ready: entered && Boolean(city.data && moods.data) && !isStats && !problemId,
-    homeDistrict: user?.home_district,
+    homeDistrict,
     compact: sheetLayout,
   });
 
@@ -476,7 +479,7 @@ export function MapPage({ view = 'map' }) {
       {pickerOpen && (
         <MoodPicker
           districts={districts}
-          initialDistrict={districtSlug ?? user?.home_district}
+          initialDistrict={districtSlug ?? homeDistrict}
           onPick={handlePickMood}
           onClose={() => setPickerOpen(false)}
         />

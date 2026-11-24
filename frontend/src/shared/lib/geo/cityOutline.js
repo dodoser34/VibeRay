@@ -8,7 +8,7 @@ const MIN_MARGIN_KM = 0.6;
 // из OUTLINE_SIDES касательных к районам, отодвинутых на margin. edges — стороны в км сцены,
 // [nx, ny, h]: точка p внутри, если nx·px + ny·py ≤ h, а h − n·p — расстояние до стороны (для плавного
 // затухания подложки у края, fade — ширина полосы затухания: внутри неё районов нет). Тот же контур
-// у плиток карты (backend/scripts/build_map_tiles.py): за ним плиток нет. reach — самая дальняя от
+// у плиток карты (tools/city-data/build_map_tiles.py): за ним плиток нет. reach — самая дальняя от
 // центра точка контура (для волны проявления дорог в истории).
 export function cityOutline(districts, center) {
   const project = createProjection(center);

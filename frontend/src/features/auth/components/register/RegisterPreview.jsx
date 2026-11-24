@@ -1,10 +1,11 @@
 import { Avatar } from '@/shared/ui/avatar/Avatar';
+import { format } from '@/shared/lib/i18n/format';
 import { Icon } from '@/shared/ui/icons/Icon';
 import auth from '@/texts/en/auth.json';
 import styles from './RegisterPreview.module.css';
 
-// Живой предпросмотр публичного профиля: ровно то, что увидят другие (аватар, ник, район).
-export function RegisterPreview({ avatar, nickname, districtName }) {
+// Живой предпросмотр публичного профиля: ровно то, что увидят другие (аватар, ник, город, район).
+export function RegisterPreview({ avatar, nickname, cityName, districtName }) {
   const texts = auth.register;
   return (
     <div className={styles.preview}>
@@ -12,7 +13,7 @@ export function RegisterPreview({ avatar, nickname, districtName }) {
       <div className={styles.previewText}>
         <span className={styles.previewName}>{nickname || texts.previewNicknamePlaceholder}</span>
         <span className={styles.previewMeta}>
-          {texts.previewResident}
+          {cityName ? format(texts.previewResident, { city: cityName }) : texts.previewNewResident}
           {districtName ? ` · ${districtName}` : ''}
         </span>
       </div>

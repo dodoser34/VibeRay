@@ -6,6 +6,7 @@
       "email": "emma.wilson@viberay.kz",
       "nickname": "Emma_Wilson",
       "avatar_url": "preset:3",
+      "home_city": "kostanay",
       "home_district": "center",
       "role": "user"
     },
@@ -16,21 +17,11 @@
     "user": {
       "id": "u-moderator",
       "email": "sergey.volkov@viberay.kz",
-      "nickname": "Сергей_Волков",
+      "nickname": "Sergey_Volkov",
       "avatar_url": "preset:6",
+      "home_city": null,
       "home_district": null,
       "role": "moderator"
-    }
-  },
-  {
-    "password": "Lukas#New24",
-    "user": {
-      "id": "u-newbie",
-      "email": "lukas.becker@viberay.kz",
-      "nickname": "Lukas_Becker",
-      "avatar_url": "preset:1",
-      "home_district": "center",
-      "role": "user"
     }
   }
 ]

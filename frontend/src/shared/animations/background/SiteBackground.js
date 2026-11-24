@@ -7,12 +7,11 @@ import { cssVar } from '@/shared/lib/theme/cssVar';
 
 const TAU = Math.PI * 2;
 const FPS = 30;
-const PARALLAX = 12; // px, только на десктопе
+const PARALLAX = 12; // px, где есть мышь (renderQuality().parallax)
 const PARTICLES = 32;
 const CONTOUR_SPEED = 1;
 const RIPPLE_LIFE = 2; // с
 const MAX_RIPPLES = 3;
-const MOBILE_WIDTH = 900;
 const BACKGROUND_PIXELS = 3_700_000;
 // [значение поля, ключ цвета, прозрачность] — чередующиеся оттенки изолиний, непрозрачность 45–80 %
 const LEVELS = [
@@ -127,6 +126,8 @@ export class SiteBackground {
     this.width = 0;
     this.height = 0;
     this.pixelRatio = 1;
+    // Частицы, параллакс и крупность контуров — по уровню устройства (adaptations/core/renderQuality.js)
+    this.quality = renderQuality();
     this.time = 0;
     this.offsetX = 0;
     this.offsetY = 0;
@@ -173,10 +174,6 @@ export class SiteBackground {
 
   get isStatic() {
     return this.motionQuery.matches;
-  }
-
-  get isMobile() {
-    return this.width < MOBILE_WIDTH;
   }
 
   start() {
@@ -241,7 +238,8 @@ export class SiteBackground {
     const height = this.canvas.clientHeight;
     if (!width || !height || (width === this.width && height === this.height)) return;
     // 2D-холст, перерисовываемый 30 раз в секунду: бюджет пикселей меньше, чем у WebGL (около 2K).
-    this.pixelRatio = pixelRatioFor(width, height, renderQuality(width), {
+    this.quality = renderQuality(width);
+    this.pixelRatio = pixelRatioFor(width, height, this.quality, {
       maxPixels: BACKGROUND_PIXELS,
       min: 0.75,
     });
@@ -256,7 +254,7 @@ export class SiteBackground {
   }
 
   initDust() {
-    const count = Math.round(PARTICLES * (this.isMobile ? 0.45 : 1));
+    const count = Math.round(PARTICLES * this.quality.particles);
     this.dust = Array.from({ length: count }, () => this.spawnMote(true));
   }
 
@@ -293,7 +291,7 @@ export class SiteBackground {
 
   update(elapsed) {
     this.time += elapsed;
-    const parallax = this.isMobile ? 0 : PARALLAX;
+    const parallax = this.quality.parallax ? PARALLAX : 0;
     const easing = 1 - Math.exp(-elapsed * 2.5);
     this.offsetX += (this.targetOffsetX * parallax - this.offsetX) * easing;
     this.offsetY += (this.targetOffsetY * parallax - this.offsetY) * easing;
@@ -362,7 +360,8 @@ export class SiteBackground {
   // изолиний, через которые проходят (цвет + толщина, никогда не ореол).
   drawContours(frame, still) {
     const { context, width, height, colors } = this;
-    const cellSize = this.isMobile ? 26 : 16;
+    // На телефоне клетка крупнее: меньше отрезков на кадр, линии реже на маленьком экране
+    const cellSize = this.quality.tier === 'mobile' ? 26 : 16;
     const margin = cellSize * 2;
     const ox = frame.offsetX * 0.4;
     const oy = frame.offsetY * 0.4;

@@ -30,7 +30,8 @@ const SECTIONS = ['profile', 'reports', 'district', 'security', 'account'].map((
 }));
 
 // Страница настроек: навигация по разделам (подсвечивает раздел, который сейчас на экране)
-// и сами разделы. districts: [{ slug, name }] или null, пока город грузится.
+// и сами разделы. districts: [{ slug, name }] (названия районов в «Моих сообщениях») или null, пока
+// город грузится.
 export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
   const language = useLanguage();
   const rootRef = useRef(null);
@@ -136,7 +137,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
           {!moderator && (
             <MyReportsSection id={SECTIONS[1].id} names={names} onNavigate={onNavigate} />
           )}
-          {!moderator && <DistrictSection id={SECTIONS[2].id} districts={districts} />}
+          {!moderator && <DistrictSection id={SECTIONS[2].id} />}
           <SecuritySection id={SECTIONS[3].id} />
           <AccountSection id={SECTIONS[4].id} onLogout={onLogout} onDeleted={onDeleted} />
         </div>

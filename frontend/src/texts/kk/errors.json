@@ -10,6 +10,7 @@
     "invalid_credentials": "Email немесе құпиясөз қате",
     "wrong_password": "Ағымдағы құпиясөз қате",
     "city_not_found": "Қала табылмады",
+    "city_required": "Өз қалаңды таңда",
     "district_not_found": "Аудан табылмады",
     "invalid_mood": "Белгісіз көңіл күй",
     "problem_not_found": "Мәселе табылмады",

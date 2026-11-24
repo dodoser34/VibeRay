@@ -118,5 +118,12 @@
     "hint": "Klicke auf eine Markierung, um das Problem mit den Aktionen der Moderation zu öffnen.",
     "close": "Schließen",
     "loading": "Probleme werden geladen…"
+  },
+  "cityPicker": {
+    "label": "Moderierte Stadt",
+    "change": "Stadt wechseln",
+    "done": "Fertig",
+    "districts": "{count} {forms}",
+    "districtForms": ["Viertel", "Viertel", "Viertel"]
   }
 }

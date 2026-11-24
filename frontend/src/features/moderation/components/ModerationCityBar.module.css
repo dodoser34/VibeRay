@@ -1,0 +1,60 @@
+.bar {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-glass);
+}
+
+.current {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.current > img {
+  width: 2rem;
+  height: 1.4rem;
+}
+
+.text {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.label {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+}
+
+.meta {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+/* Узкая панель карты модератора: без своей рамки, кнопка — под названием */
+.bar[data-compact] {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.bar[data-compact] .current {
+  flex-wrap: wrap;
+}
+
+.bar[data-compact] .name {
+  font-size: var(--fs-md);
+}

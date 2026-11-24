@@ -1,0 +1,129 @@
+.picker {
+  display: grid;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2.75rem;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-glass-border);
+  background: var(--color-glass);
+  color: var(--color-text-muted);
+  transition:
+    border-color var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out);
+}
+
+.search:hover {
+  border-color: var(--color-glass-highlight);
+}
+
+.search:focus-within {
+  border-color: var(--color-accent-bright);
+  box-shadow: 0 0 0 4px var(--color-accent-soft);
+  background: var(--color-glass-strong);
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 0;
+  height: 2.5rem;
+  border: 0;
+  background: none;
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--fs-sm);
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-muted);
+}
+
+.chipLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.flag {
+  flex: none;
+  width: 1.25rem;
+  height: 0.875rem;
+  border-radius: 2px;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px var(--color-glass-border);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: var(--space-2);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 3rem;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-glass-border);
+  background: var(--color-glass);
+  cursor: pointer;
+  transition:
+    border-color var(--dur-base) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out);
+}
+
+.option:hover {
+  border-color: var(--color-glass-highlight);
+}
+
+.option:has(input:checked) {
+  border-color: var(--color-accent-bright);
+  background: var(--color-accent-soft);
+}
+
+.option:has(input:focus-visible) {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.optionText {
+  display: grid;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.cityName {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.country {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.error {
+  margin: 0;
+  color: var(--color-danger);
+  font-size: var(--fs-xs);
+}

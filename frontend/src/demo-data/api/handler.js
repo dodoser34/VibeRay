@@ -25,6 +25,7 @@ import {
 import { isModerator } from '@/shared/config/roles';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import {
+  HOME_CITY,
   addMoodMark,
   addProblem,
   cityInfos,
@@ -59,6 +60,7 @@ import { isQueueStatus, moderationItem, moderationQueue, moderationSummary } fro
 import { format } from '@/shared/lib/i18n/format';
 import demoAccounts from '../accounts.json';
 import demoSupport from '../support.json';
+import cityCountries from '../countries.json';
 import { demoContent, localizeDemo, nameOf, setResponseLanguage } from './locale';
 import errors from '@/texts/en/errors.json';
 
@@ -145,6 +147,18 @@ function findProblem(id, token) {
   return problem;
 }
 
+// Свой город и район пользователя: район должен лежать в этом городе (город без района — можно).
+// Геометрия города грузится здесь же: без неё районы другого города ещё неизвестны.
+async function checkHome(citySlug, districtSlug) {
+  if (!citySlug) {
+    if (districtSlug) fail(422, 'city_required');
+    return { home_city: null, home_district: null };
+  }
+  await cityOrFail(citySlug);
+  if (districtSlug && cityOfDistrict(districtSlug) !== citySlug) fail(404, 'district_not_found');
+  return { home_city: citySlug, home_district: districtSlug || null };
+}
+
 function checkPeriod(period) {
   if (!PERIOD_CODES.includes(period)) fail(422, 'invalid_period');
   return period;
@@ -154,7 +168,7 @@ const routes = [
   [
     'POST',
     /^\/auth\/register$/,
-    ({ body }) => {
+    async ({ body }) => {
       const email = body.email?.trim().toLowerCase();
       if (!EMAIL_PATTERN.test(email ?? '')) fail(422, 'invalid_email');
       if (!NICKNAME_PATTERN.test(body.nickname ?? '')) fail(422, 'invalid_nickname');
@@ -162,6 +176,8 @@ const routes = [
       const password = evaluatePassword(body.password ?? '', { email, nickname: body.nickname });
       if (!password.acceptable) fail(422, 'weak_password');
       if (nicknameTaken(body.nickname)) fail(409, 'nickname_taken');
+      if (!body.home_city) fail(422, 'city_required');
+      const home = await checkHome(body.home_city, body.home_district);
       accounts.set(email, {
         password: body.password,
         user: {
@@ -169,7 +185,7 @@ const routes = [
           email,
           nickname: body.nickname,
           avatar_url: body.avatar_url ?? 'preset:0',
-          home_district: isDistrict(body.home_district) ? body.home_district : null,
+          ...home,
           role: 'user',
         },
       });
@@ -197,7 +213,7 @@ const routes = [
   [
     'PATCH',
     /^\/users\/me$/,
-    ({ body, token }) => {
+    async ({ body, token }) => {
       const user = currentUser(token);
       if (body.nickname !== undefined) {
         if (!NICKNAME_PATTERN.test(body.nickname)) fail(422, 'invalid_nickname');
@@ -206,12 +222,21 @@ const routes = [
       if (body.avatar_url !== undefined && !/^preset:\d+$/.test(body.avatar_url)) {
         fail(422, 'invalid_avatar');
       }
-      if (body.home_district && !isDistrict(body.home_district)) {
-        fail(404, 'district_not_found');
-      }
+      // Новый город без района сбрасывает район: прежний лежит в другом городе.
+      const changesHome = body.home_city !== undefined || body.home_district !== undefined;
+      const home =
+        changesHome &&
+        (await checkHome(
+          body.home_city !== undefined ? body.home_city : user.home_city,
+          body.home_district !== undefined
+            ? body.home_district
+            : body.home_city !== undefined && body.home_city !== user.home_city
+              ? null
+              : user.home_district,
+        ));
       if (body.nickname !== undefined) user.nickname = body.nickname;
       if (body.avatar_url !== undefined) user.avatar_url = body.avatar_url;
-      if (body.home_district !== undefined) user.home_district = body.home_district;
+      if (home) Object.assign(user, home);
       syncAuthor(user);
       return user;
     },
@@ -290,6 +315,7 @@ const routes = [
       cityInfos().map((info) => ({
         slug: info.slug,
         name: nameOf(info),
+        country: cityCountries[info.slug] ?? null,
         center: info.center,
         bbox: info.bbox,
       })),
@@ -302,6 +328,7 @@ const routes = [
       return {
         ...city,
         name: nameOf(city),
+        country: cityCountries[city.slug] ?? null,
         districts: {
           ...city.districts,
           features: city.districts.features.map((feature) => ({
@@ -500,18 +527,20 @@ const routes = [
   [
     'GET',
     /^\/moderation\/problems$/,
-    ({ query, token }) => {
+    async ({ query, token }) => {
       requireModerator(token);
       if (!isQueueStatus(query.status ?? 'active')) fail(422, 'invalid_status_change');
-      return moderationQueue(query);
+      const city = await cityOrFail(query.city ?? HOME_CITY);
+      return moderationQueue({ ...query, city: city.slug });
     },
   ],
   [
     'GET',
     /^\/moderation\/summary$/,
-    ({ token }) => {
+    async ({ query, token }) => {
       requireModerator(token);
-      return moderationSummary(supportRequests);
+      const city = await cityOrFail(query.city ?? HOME_CITY);
+      return moderationSummary(supportRequests, city.slug);
     },
   ],
   [

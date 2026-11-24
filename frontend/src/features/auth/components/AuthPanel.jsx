@@ -18,7 +18,6 @@ export function AuthPanel({
   ref,
   mode,
   onModeChange,
-  districts,
   onDistrictPreview,
   onAuthenticated,
   wideEnterDelay = NARROW_ENTER_DELAY, // на широких экранах: когда закончится вступление страницы
@@ -97,7 +96,6 @@ export function AuthPanel({
             />
           ) : (
             <RegisterFlow
-              districts={districts}
               onDistrictPreview={onDistrictPreview}
               onSuccess={(user) => onAuthenticated(user, 'register')}
               onSwitch={() => onModeChange('login')}

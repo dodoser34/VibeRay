@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { useCities, useCityDistricts } from '@/shared/hooks/useCities';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import { Button } from '@/shared/ui/controls/Button';
 import { useAuth } from '../../model/useAuth';
@@ -8,6 +9,7 @@ import { RegisterPreview } from './RegisterPreview';
 import { RegisterProgress } from './RegisterProgress';
 import { AccountStep } from './steps/AccountStep';
 import { AvatarStep } from './steps/AvatarStep';
+import { CityStep } from './steps/CityStep';
 import { DistrictStep } from './steps/DistrictStep';
 import { NicknameStep } from './steps/NicknameStep';
 import { PasswordStep } from './steps/PasswordStep';
@@ -16,8 +18,8 @@ import form from '../AuthForm.module.css';
 import styles from './RegisterFlow.module.css';
 
 // Регистрация по шагам: здесь — значения, проверка, отправка и анимация смены шага; поля каждого
-// шага — в steps/.
-export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch }) {
+// шага — в steps/. Сначала город (список всех городов), затем район этого города.
+export function RegisterFlow({ onDistrictPreview, onSuccess, onSwitch }) {
   const { register } = useAuth();
   const texts = auth.register;
   const formRef = useRef(null);
@@ -31,11 +33,15 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
     confirm: '',
     nickname: '',
     avatar: 'preset:0',
+    city: null,
     district: null,
   });
   const [errors, setErrors] = useState({});
   const [formError, setFormError] = useState('');
   const [loading, setLoading] = useState(false);
+  const cities = useCities();
+  const districts = useCityDistricts(values.city);
+  const cityName = cities?.find((city) => city.slug === values.city)?.name;
 
   useGSAP(
     () => {
@@ -63,6 +69,13 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
   const goTo = (next) => {
     direction.current = next > step ? 1 : -1;
     setStep(next);
+  };
+
+  // Другой город — прежний район в нём не лежит.
+  const chooseCity = (slug) => {
+    if (slug === values.city) return;
+    set('city', slug);
+    set('district', null);
   };
 
   const chooseDistrict = (slug) => {
@@ -97,6 +110,7 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
         password: values.password,
         nickname: values.nickname,
         avatarUrl: values.avatar,
+        homeCity: values.city,
         homeDistrict: values.district,
       });
       onSuccess(user);
@@ -110,6 +124,9 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
       } else if (error.code === 'nickname_taken') {
         setErrors({ nickname: error.message });
         goTo(STEP.nickname);
+      } else if (error.code === 'city_required' || error.code === 'city_not_found') {
+        setErrors({ city: error.message });
+        goTo(STEP.city);
       } else {
         setFormError(error.message);
       }
@@ -130,7 +147,8 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
         <RegisterPreview
           avatar={values.avatar}
           nickname={values.nickname}
-          districtName={districts.find((district) => district.slug === values.district)?.name}
+          cityName={cityName}
+          districtName={districts?.find((district) => district.slug === values.district)?.name}
         />
       )}
 
@@ -141,6 +159,9 @@ export function RegisterFlow({ districts, onDistrictPreview, onSuccess, onSwitch
         {step === STEP.password && <PasswordStep {...fieldProps} />}
         {step === STEP.nickname && <NicknameStep {...fieldProps} />}
         {step === STEP.avatar && <AvatarStep {...fieldProps} />}
+        {step === STEP.city && (
+          <CityStep cities={cities} value={values.city} error={errors.city} onChoose={chooseCity} />
+        )}
         {step === STEP.district && (
           <DistrictStep districts={districts} value={values.district} onChoose={chooseDistrict} />
         )}
