@@ -4,6 +4,8 @@ import texts from '@/texts/en/map.json';
 
 const TOUR_KEY = 'viberay:tour:map';
 const TOUR_DELAY_MS = 3000; // после пролёта камеры и роста районов
+// Район для первой подсказки, если свой район не выбран (есть в Костанае, главном городе).
+const FALLBACK_DISTRICT = 'center';
 
 // Подсказки при первом визите: открываются, когда карта показалась (ready), и больше не
 // показываются после завершения. Шаги читают тексты при каждом рендере (язык меняется на лету).
@@ -23,7 +25,7 @@ export function useMapTour({ ready, homeDistrict, compact }) {
 
   const tourSteps = [
     {
-      target: `[data-ui="map-label"][data-slug="${homeDistrict ?? 'center'}"]`,
+      target: `[data-ui="map-label"][data-slug="${homeDistrict ?? FALLBACK_DISTRICT}"]`,
       padding: 26,
       round: true,
       ...texts.tour.district,

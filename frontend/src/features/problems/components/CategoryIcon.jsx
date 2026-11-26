@@ -1,5 +1,5 @@
-import styles from './CategoryIcon.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import styles from './CategoryIcon.module.css';
 
 // Код категории → иконка из реестра (shared/ui/icons).
 const GLYPHS = {

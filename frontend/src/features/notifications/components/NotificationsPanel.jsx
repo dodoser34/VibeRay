@@ -1,11 +1,10 @@
-import { useNotifications } from '../model/useNotifications';
-import emptyFigure from '../assets/empty-tea.webp';
-import { NotificationList } from './NotificationList';
-import texts from '@/texts/en/notifications.json';
-import styles from './NotificationsPanel.module.css';
+import { lastCity } from '@/features/map';
 import { Icon } from '@/shared/ui/icons/Icon';
-
-const CITY = 'kostanay';
+import texts from '@/texts/en/notifications.json';
+import emptyFigure from '../assets/empty-tea.webp';
+import { useNotifications } from '../model/useNotifications';
+import { NotificationList } from './NotificationList';
+import styles from './NotificationsPanel.module.css';
 
 // Содержимое уведомлений — одно и то же в выпадающей панели колокольчика и в шторке телефона.
 // onNavigate(path) уводит на страницу (с переходом); onDone закрывает панель.
@@ -16,7 +15,7 @@ export function NotificationsPanel({ onNavigate, onDone, headingId, compact = fa
   const open = (item) => {
     if (!item.read) markRead([item.id]);
     onDone();
-    onNavigate(`/map/${CITY}/problem/${item.problem_id}`);
+    onNavigate(`/map/${item.problem?.city ?? lastCity()}/problem/${item.problem_id}`);
   };
 
   return (

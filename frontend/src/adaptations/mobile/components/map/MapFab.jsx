@@ -1,14 +1,13 @@
 import { useState } from 'react';
+import { Icon } from '@/shared/ui/icons/Icon';
 import { Modal } from '@/shared/ui/windows/Modal';
 import texts from '@/texts/en/map.json';
 import styles from './MapFab.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
 
-// Плавающие кнопки над картой на телефонах и планшетах стоя, прямо над шторкой: «весь город» (после
-// щипков и поворотов город легко потерять) и главная «+», которая открывает действия — отметить
-// настроение, сообщить о проблеме — крупными строками в шторке вместо нескольких кнопок поверх
-// карты.
-// actions: [{ key, label, hint, icon, primary, onSelect }]
+// Плавающие кнопки над картой на телефонах и планшетах стоя, прямо над шторкой: «весь город»
+// (после щипков и поворотов город легко потерять) и главная «+», которая открывает действия —
+// отметить настроение, сообщить о проблеме — крупными строками в шторке.
+// actions: [{ key, label, hint, icon, primary, onSelect }].
 export function MapFab({ actions, onRecenter, hidden = false }) {
   const [open, setOpen] = useState(false);
   return (

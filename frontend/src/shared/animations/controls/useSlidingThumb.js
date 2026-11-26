@@ -3,15 +3,15 @@ import { gsap } from '@/shared/animations/core/gsapSetup';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { prefersReducedMotion } from '@/shared/hooks/useReducedMotion';
 
+const LEAD = 0.28;
+const TRAIL = 0.55;
+const SQUASH_PX = 2;
+
 // Подложка выбранного варианта в переключателе перетекает к новому варианту: передний край
 // убегает вперёд, задний догоняет, на ходу подложка чуть сплющивается — как капля. Работает и в
 // сетке вариантов (города в несколько рядов): края по вертикали ведут себя так же.
 // rootRef — контейнер вариантов (position: relative), thumbRef — подложка (position: absolute,
 // top: 0, left: 0, visibility: hidden до первой расстановки), selector — выбранный вариант.
-const LEAD = 0.28;
-const TRAIL = 0.55;
-const SQUASH_PX = 2;
-
 export function useSlidingThumb(rootRef, thumbRef, value, selector = '[aria-checked="true"]') {
   const language = useLanguage();
   const stateRef = useRef({ placed: false, timeline: null, box: null, size: null });

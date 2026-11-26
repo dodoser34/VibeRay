@@ -2,8 +2,8 @@ import { getLanguage } from '@/shared/lib/i18n/language';
 import common from '@/texts/en/common.json';
 
 // Демо-режим (по умолчанию, в том числе на GitHub Pages): запросы обслуживает фейковый API из
-// src/demo-data/api — бэкенд не нужен. С бэкендом: VITE_USE_MOCKS=false в frontend/.env, запросы идут на
-// /api/v1.
+// src/demo-data/api, бэкенд не нужен. С бэкендом — VITE_USE_MOCKS=false в frontend/.env, и запросы
+// идут на /api/v1.
 export const USE_MOCKS = import.meta.env.VITE_USE_MOCKS !== 'false';
 const API_PREFIX = '/api/v1';
 

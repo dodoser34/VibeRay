@@ -11,6 +11,7 @@ import nav from '@/texts/en/nav.json';
 import notificationTexts from '@/texts/en/notifications.json';
 import styles from './MobileMenu.module.css';
 
+const MODERATION_PREFIX = '/moderation/';
 const ICONS = {
   map: 'map',
   stats: 'chart',
@@ -31,7 +32,9 @@ function activeKey(pathname) {
   if (pathname === '/support') return 'support';
   if (pathname === '/settings') return 'settings';
   if (pathname === '/moderation') return 'moderation-queue';
-  if (pathname.startsWith('/moderation/')) return `moderation-${pathname.slice(12)}`;
+  if (pathname.startsWith(MODERATION_PREFIX)) {
+    return `moderation-${pathname.slice(MODERATION_PREFIX.length)}`;
+  }
   return null;
 }
 

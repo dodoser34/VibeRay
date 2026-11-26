@@ -1,9 +1,10 @@
 """Районы города из OpenStreetMap -> districts.geojson, city.json и журнал чистки.
 
-Санкт-Петербург, Кёльн и Бристоль — официальное деление: район = отношение OSM целиком, вершины
-OSM без упрощения и сглаживания (geodata/districts/official.py). В Костанае официальных районов
-в OSM нет: линии OSM режут город на кварталы, и каждый квартал целиком отходит району, который
-занимал его раньше (geodata/districts/blocks.py, затравка — --seed или текущий districts.geojson).
+Санкт-Петербург, Кёльн, Бристоль и Астана — официальное деление: район = отношение OSM целиком,
+вершины OSM без упрощения и сглаживания (geodata/districts/official.py). В Костанае официальных
+районов в OSM нет: линии OSM режут город на кварталы, и каждый квартал целиком отходит району,
+который занимал его раньше (geodata/districts/blocks.py, затравка — --seed или текущий
+districts.geojson).
 Из районов вырезается вода (water.geojson города, её собирает build_water.py).
 
 Дальше районы чистятся (tidy.py; все правки — в district_edits.geojson), их общие границы сводятся
@@ -25,16 +26,19 @@ import argparse
 import math
 from collections import defaultdict
 from pathlib import Path
+from typing import Any
 
+from shapely.geometry import MultiPolygon
 from shapely.ops import unary_union
 
 from cities import CITIES
 from geodata.districts.blocks import block_districts
+from geodata.districts.faces import Districts
 from geodata.districts.finish import clean, colorize, renode
 from geodata.districts.official import official_districts
 from geodata.districts.preview import draw_preview
 from geodata.districts.properties import known_properties, osm_properties
-from geodata.districts.tidy import tidy
+from geodata.districts.tidy import Edit, tidy
 from geodata.geometry import area_m2
 from geodata.output import (
     copy_to_demo,
@@ -48,7 +52,7 @@ from geodata.paths import DATA, EDITS_FILE
 COORD_DIGITS = 7  # как в OSM: вершины районов — узлы OSM
 
 
-def district_feature(properties: dict, geometry) -> dict:
+def district_feature(properties: dict[str, Any], geometry: MultiPolygon) -> dict[str, Any]:
     coordinates = [polygon_coordinates(part, COORD_DIGITS) for part in geometry.geoms]
     return {
         'type': 'Feature',
@@ -57,7 +61,7 @@ def district_feature(properties: dict, geometry) -> dict:
     }
 
 
-def edit_feature(edit: dict) -> dict:
+def edit_feature(edit: Edit) -> dict[str, Any]:
     return {
         'type': 'Feature',
         'properties': {'kind': edit['kind'], 'district': edit['district']},
@@ -68,9 +72,13 @@ def edit_feature(edit: dict) -> dict:
     }
 
 
-def with_frame(city: dict, districts: dict, note: str) -> dict:
-    """city.json с центром и рамкой по районам (рамка округлена наружу до 5 знаков)
-    и описанием источника районов."""
+def with_frame(
+    city: dict[str, Any], districts: dict[str, MultiPolygon], note: str
+) -> dict[str, Any]:
+    """city.json с центром и рамкой по районам и описанием источника районов.
+
+    Рамка округляется наружу до 5 знаков.
+    """
     union = unary_union(list(districts.values()))
     west, south, east, north = union.bounds
     city['center'] = [round(union.centroid.x, 5), round(union.centroid.y, 5)]
@@ -84,7 +92,7 @@ def with_frame(city: dict, districts: dict, note: str) -> dict:
     return city
 
 
-def print_districts(districts: dict, before: dict, lat0: float) -> None:
+def print_districts(districts: dict[str, MultiPolygon], before: Districts, lat0: float) -> None:
     print(f'{"район":28}{"исходно, км²":>14}{"стало, км²":>12}{"кусков":>8}{"вершин":>9}')
     for district, geometry in districts.items():
         rings = [ring for part in geometry.geoms for ring in (part.exterior, *part.interiors)]
@@ -94,7 +102,7 @@ def print_districts(districts: dict, before: dict, lat0: float) -> None:
         print(f'{district:28}{was:14.2f}{now:12.2f}{len(geometry.geoms):8}{vertices:9}')
 
 
-def print_edits(edits: list[dict], lat0: float) -> None:
+def print_edits(edits: list[Edit], lat0: float) -> None:
     hectares: dict[str, float] = defaultdict(float)
     for edit in edits:
         hectares[edit['kind']] += area_m2(edit['geometry'], lat0) / 1e4
@@ -129,7 +137,8 @@ def main() -> None:
     empty = [district for district, geometry in districts.items() if geometry.is_empty]
     if empty:
         raise SystemExit(f'{slug}: у районов нет территории: {empty}')
-    palette = colorize(districts, {s: p['palette'] for s, p in properties.items()})
+    previous = {district: known['palette'] for district, known in properties.items()}
+    palette = colorize(districts, previous)
 
     features = [
         district_feature({**properties[district], 'palette': palette[district]}, geometry)

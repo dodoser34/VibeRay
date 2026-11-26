@@ -1,11 +1,12 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
-// Страницы на каждом языке как отдельные HTML-файлы сборки: /ru/about/index.html и т. д. Статический
-// хостинг (GitHub Pages) отдаёт их с кодом 200, а поисковик сразу видит язык страницы, описание и
-// ссылки на переводы (hreflang) — ещё до запуска приложения. Остальные адреса открывает 404.html —
-// копия приложения без ссылок на переводы. С адресом сайта (SITE_URL) — ещё и sitemap.xml и превью
-// ссылки для мессенджеров и соцсетей (Open Graph: картинка public/og-image.jpg 1200 × 630).
+// Страницы на каждом языке как отдельные HTML-файлы сборки: /ru/about/index.html и т. д.
+// Статический хостинг (GitHub Pages) отдаёт их с кодом 200, а поисковик сразу видит язык страницы,
+// описание и ссылки на переводы (hreflang) — ещё до запуска приложения. Остальные адреса открывает
+// 404.html — копия приложения без ссылок на переводы. С адресом сайта (SITE_URL) — ещё и
+// sitemap.xml и превью ссылки для мессенджеров и соцсетей (Open Graph: картинка public/og-image.jpg
+// 1200 × 630).
 const DEFAULT_LANGUAGE = 'en';
 const STATIC_PAGES = ['', 'about', 'support', 'login', 'register'];
 

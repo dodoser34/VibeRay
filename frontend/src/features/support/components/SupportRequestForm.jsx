@@ -17,8 +17,8 @@ import { Modal } from '@/shared/ui/windows/Modal';
 import { TextField } from '@/shared/ui/controls/TextField';
 import { format } from '@/shared/lib/i18n/format';
 import supportTexts from '@/texts/en/support.json';
-import styles from './SupportRequestForm.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import styles from './SupportRequestForm.module.css';
 
 const texts = supportTexts.form;
 

@@ -51,9 +51,3 @@
 .choice[aria-checked='true'] {
   color: var(--color-text);
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .choice {
-    transition: none;
-  }
-}

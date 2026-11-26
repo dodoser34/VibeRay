@@ -9,7 +9,8 @@ VibeRay/
 ├── CLAUDE.md, AGENTS.md    # правила для ИИ-ассистентов (только локально, в .gitignore)
 ├── docs/guide/             # эта документация (тексты и images/)
 ├── frontend/               # сайт: React, Three.js, GSAP
-└── backend/                # FastAPI (в планах), данные городов, скрипты геоданных
+├── backend/                # FastAPI (в планах), данные городов
+└── tools/                  # инструменты разработчика: скрипты геоданных (city-data/)
 ```
 
 ## Слои фронтенда

@@ -2,11 +2,11 @@ import { useEffect, useId, useRef, useState } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/i18n/format';
+import texts from '@/texts/en/notifications.json';
+import { Icon } from '@/shared/ui/icons/Icon';
 import { useNotifications } from '../model/useNotifications';
 import { NotificationsPanel } from './NotificationsPanel';
-import texts from '@/texts/en/notifications.json';
 import styles from './NotificationBell.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
 
 // Колокольчик в шапке (планшет и десктоп). Новое уведомление — колокольчик качнётся, счётчик
 // подпрыгнет. Панель раскрывается под кнопкой; при закрытии увиденное отмечается прочитанным.

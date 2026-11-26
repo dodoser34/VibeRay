@@ -25,8 +25,6 @@
   background: currentColor;
 }
 
-/* Шапка */
-
 .hero {
   position: relative;
   z-index: 2;
@@ -177,8 +175,6 @@
   width: 60%;
 }
 
-/* Секции */
-
 .section {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -307,6 +303,7 @@
 
 .link {
   color: var(--color-text-muted);
+  text-decoration: none;
   font-size: var(--fs-sm);
   transition: color var(--dur-fast);
 }

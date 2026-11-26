@@ -6,24 +6,23 @@ import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useRequest } from '@/shared/hooks/useRequest';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
+import texts from '@/texts/en/moderation.json';
 import figure from '../assets/moderator.webp';
 import { CityOverview } from './CityOverview';
 import { ModerationCityBar } from './ModerationCityBar';
 import { ProblemQueue } from './queue/ProblemQueue';
 import { SupportInbox } from './SupportInbox';
-import texts from '@/texts/en/moderation.json';
 import styles from './ModerationCenter.module.css';
 
 const DEFAULT_FILTERS = { status: 'active', district: '', category: '', sort: 'newest' };
 
 // Разделы рабочего места модератора со сводкой сверху: section — queue (очередь проблем: смена
-// статусов и отклонение), city (где копятся проблемы) или support (обращения жителей). Плотнее,
-// чем страницы жителей: модератор работает со списками.
-// Справа в шапке всегда стоит девушка с планшетом — у рабочего места нет пустых окон.
-// city — город, с которым работает модератор (очередь, сводка и «Город» — по нему), onCityChange(slug)
-// — выбрать другой; districts: [{ slug, name }] его районы или null, пока город грузится; district —
-// район, с которым открыта очередь (из раздела «Город»); onOpenProblem(id) — проблема на карте
-// модератора; onOpenDistrict(slug) — очередь района.
+// статусов и отклонение), city (где копятся проблемы) или support (обращения жителей). Плотнее, чем
+// страницы жителей: модератор работает со списками. city — город, с которым работает модератор
+// (очередь, сводка и «Город» — по нему), onCityChange(slug) — выбрать другой; districts: [{ slug,
+// name }] его районы или null, пока город грузится; district — район, с которым открыта очередь (из
+// раздела «Город»); onOpenProblem(id) — проблема на карте модератора; onOpenDistrict(slug) —
+// очередь района.
 export function ModerationCenter({
   section,
   city,
@@ -123,10 +122,7 @@ export function ModerationCenter({
         />
       )}
       {section === 'city' && (
-        <CityOverview
-          summary={summary.loading ? null : data}
-          onOpenDistrict={onOpenDistrict}
-        />
+        <CityOverview summary={summary.loading ? null : data} onOpenDistrict={onOpenDistrict} />
       )}
       {section === 'support' && <SupportInbox onChanged={summary.reload} />}
     </div>

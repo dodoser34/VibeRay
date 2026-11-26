@@ -1,7 +1,6 @@
-/* Светлая тема: город днём — светлый весенне-зелёный (зелёный оттенок у фона, панелей, рамок и земли
-   карты), тот же лесной акцент. Переопределяет только цветовые токены тёмной темы (dark.css); шкала
-   настроения, цвета районов и статусов — общие, они приглушённые и читаются на обоих фонах. Без неона:
-   акцент тот же тусклый зелёный. */
+/* Светлая тема: город днём — светлый весенне-зелёный, тот же тусклый лесной акцент. Переопределяет
+   цветовые токены тёмной темы (dark.css); шкала настроения, статусы проблем и цвета сравнения —
+   общие: они приглушённые и читаются на обоих фонах. */
 [data-theme='light'] {
   color-scheme: light;
 
@@ -61,19 +60,17 @@
   --scene-light: #f6f4ee;
   --scene-light-night: #c9d0dc;
   --scene-district-edge: #eef7e8;
-  --scene-district-opacity: 0.56; /* плиты районов на полной карте: < 0,6 — дороги видны сквозь них */
+  /* Плиты районов на полной карте: меньше 0,6 — дороги видны сквозь них */
+  --scene-district-opacity: 0.56;
   --scene-road-major: #7a9f7e;
   --scene-road: #98b897;
-  --scene-road-service: #adc8a9;
-  --scene-rail: #7d8680;
-  --scene-dust: #466a52;
 
-  /* История «О проекте»: та же комната июльским днём — светлые стены, дневное небо, солнце через
-     окно (--story-sun), лампа выключена */
+  /* История «О проекте»: та же комната июльским днём — солнце через окно (--story-sun), лампа
+     выключена */
   --story-wall: #bfcfb6;
   --story-desk: #9a7a58;
   --story-monitor: #2b302d;
-  --story-monitor-frame: #d9e0d3; /* оконная рама: днём светлая */
+  --story-window-frame: #d9e0d3;
   --story-screen: #dce8d5;
   --story-sky-top: #9fc0c8;
   --story-sky: #d3e3d2;
@@ -90,23 +87,17 @@
   --story-book-a: #8a6a50;
   --story-book-b: #5b7a64;
   --story-book-c: #a08a58;
-
   --story-house-a: #e2d6bd;
-  --story-house-b: #d2d8cf;
   --story-house-c: #e3cf9f;
   --story-roof: #8e948f;
   --story-glass: #8fa9b0;
   --story-road: #6b716c;
   --story-paving: #b7b8ab;
-  --story-grass: #9cb985;
   --story-tree: #5f9160;
   --story-tree-light: #7fa86f;
   --story-birch: #e4e1d6;
   --story-trunk: #6e5a47;
   --story-lamp: #c9c6b8;
-  --story-car-a: #9a4a40;
-  --story-car-b: #4f6b8c;
-  --story-car-c: #d9d8d0;
   --story-pcb: #1f3a2a;
   --story-pc-case: #dfe3dc;
   --story-spine-titan: #e6e0cf;

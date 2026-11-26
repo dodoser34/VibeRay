@@ -1,10 +1,10 @@
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { createRandom, hashString } from '@/shared/lib/random';
-import { districtName, problems } from './demoHistory';
+import { cityOfDistrict, districtName, problems } from './demoHistory';
+import { HOUR, MINUTE } from './time';
 
 const ORDER = PROBLEM_STATUSES.map((status) => status.code);
 const AUTO_CONFIRM_THRESHOLD = 3; // ARCHITECTURE.md 6.2
-const MINUTE = 60_000;
 // Демо «соседей»: через сколько после отправки новую проблему подтверждают и сколько человек.
 const NEIGHBOURS = [
   { after: 25_000, count: 2 },
@@ -153,8 +153,8 @@ export function simulateNeighbours(problem) {
   });
 }
 
-// Демо-аккаунт уже сообщал о проблемах: берём свежие проблемы нужных статусов и восстанавливаем, какие
-// уведомления он получал (прочитаны все, кроме двух последних).
+// Демо-аккаунт уже сообщал о проблемах: берём свежие проблемы нужных статусов и восстанавливаем,
+// какие уведомления он получал (прочитаны все, кроме двух последних).
 export function seedReports(user, statuses) {
   const taken = new Set();
   statuses.forEach((status) => {
@@ -186,7 +186,7 @@ export function seedReports(user, statuses) {
           location: [original.location[0] + 0.0003, original.location[1] + 0.0002],
         });
       }
-      const time = new Date(problem.created_at).getTime() + 3 * 60 * MINUTE;
+      const time = new Date(problem.created_at).getTime() + 3 * HOUR;
       reject(problem, original ? 'duplicate' : 'spam', original, Math.min(time, Date.now()));
       return;
     }
@@ -223,6 +223,7 @@ export function notificationsOf(user) {
       problem: problem && {
         id: problem.id,
         category: problem.category,
+        city: cityOfDistrict(problem.district),
         district: problem.district,
         district_name: districtName(problem.district),
         status: problem.status,
@@ -244,8 +245,8 @@ export function removeNotifications(user, ids) {
   inbox.set(user.id, ids ? list.filter((item) => !ids.includes(item.id)) : []);
 }
 
-// Автор отозвал сообщение: оно уходит с карты, из статистики и очереди модератора, уведомления о нём
-// стираются, у дублей пропадает ссылка на него.
+// Автор отозвал сообщение: оно уходит с карты, из статистики и очереди модератора, уведомления о
+// нём стираются, у дублей пропадает ссылка на него.
 export function withdrawProblem(problem) {
   problems.splice(problems.indexOf(problem), 1);
   authors.delete(problem.id);
@@ -261,8 +262,8 @@ export function withdrawProblem(problem) {
     .forEach((duplicate) => delete duplicate.duplicate_of);
 }
 
-// Сообщение в работе или решённое автор убирает только из своего списка: на карте и в статистике оно
-// остаётся (город уже работает над ним), уведомлений о нём больше нет.
+// Сообщение в работе или решённое автор убирает только из своего списка: на карте и в статистике
+// оно остаётся (город уже работает над ним), уведомлений о нём больше нет.
 export function hideFromMine(user, problem) {
   hidden.set(user.id, (hidden.get(user.id) ?? new Set()).add(problem.id));
   inbox.set(
@@ -271,7 +272,8 @@ export function hideFromMine(user, problem) {
   );
 }
 
-// Житель снял подтверждение: счётчик уменьшается, статус назад не откатывается — переход уже в истории.
+// Житель снял подтверждение: счётчик уменьшается, статус назад не откатывается — переход уже в
+// истории.
 export function removeConfirmation(problem) {
   problem.confirmations_count = Math.max(0, problem.confirmations_count - 1);
 }
@@ -289,7 +291,11 @@ export function problemsOf(user) {
       (problem) => authors.get(problem.id) === user.id && !hidden.get(user.id)?.has(problem.id),
     )
     .sort((a, b) => b.created_at.localeCompare(a.created_at))
-    .map(withHistory);
+    .map((problem) => ({
+      ...withHistory(problem),
+      city: cityOfDistrict(problem.district),
+      district_name: districtName(problem.district),
+    }));
 }
 
 // Автор в сообщениях о проблемах — всегда актуальный публичный профиль (UserPublic).

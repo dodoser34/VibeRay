@@ -17,15 +17,6 @@
   font-weight: 600;
 }
 
-/* Телефоны: между плавающими кнопками логотипа и меню */
-@media (max-width: 767px) {
-  .chip {
-    top: calc(var(--space-3) + var(--safe-top));
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 /* Планшеты стоя: под таб-баром, слева */
 @media (min-width: 768px) {
   .chip {
@@ -34,8 +25,10 @@
   }
 }
 
-/* Телефоны лёжа (isPhoneLandscape): таб-бара нет, шапка телефонная — чип между кнопками */
-@media (orientation: landscape) and (max-width: 1023px) and (max-height: 499px) {
+/* Телефоны стоя и лёжа (isPhoneLandscape): таб-бара нет — чип между плавающими кнопками логотипа
+   и меню. Правило идёт после планшетного: телефон лёжа по ширине попадает и в него. */
+@media (max-width: 767px),
+  (orientation: landscape) and (max-width: 1023px) and (max-height: 499px) {
   .chip {
     top: calc(var(--space-3) + var(--safe-top));
     left: 50%;
@@ -52,11 +45,7 @@
 .icon,
 .caret {
   flex: none;
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .icon {

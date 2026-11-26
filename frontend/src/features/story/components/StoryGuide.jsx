@@ -7,13 +7,13 @@ import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/controls/Button';
+import about from '@/texts/en/about.json';
+import { useLanguage } from '@/shared/hooks/useLanguage';
+import { Icon } from '@/shared/ui/icons/Icon';
 import { FULL_STORY } from '../lib/chapters';
 import { STORY_CITY } from '../lib/storyCity';
 import { GuideMap } from './GuideMap';
-import about from '@/texts/en/about.json';
-import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './StoryGuide.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
 
 const texts = about.guide;
 const STEPS = texts.steps;
@@ -34,8 +34,8 @@ const ICONS = {
   photo: 'photo-off',
 };
 
-// «Как это работает» после истории: живой 2D-город истории (Костанай), который следует за шагами при прокрутке,
-// цифры продукта, обещания приватности и финальный призыв открыть карту.
+// «Как это работает» после истории: живой 2D-город истории (Костанай), который следует за шагами
+// при прокрутке, цифры продукта, обещания приватности и финальный призыв открыть карту.
 export function StoryGuide({ onOpenMap }) {
   const language = useLanguage();
   const rootRef = useRef(null);
@@ -46,7 +46,7 @@ export function StoryGuide({ onOpenMap }) {
   const { city, moods, problems } = useCityData(STORY_CITY.slug, 'week');
 
   const stats = [
-    { value: city.data?.districts.features.length ?? 18, label: texts.stats.districts },
+    { value: city.data?.districts.features.length ?? 0, label: texts.stats.districts },
     { value: MOODS.length, label: texts.stats.moods },
     { value: PROBLEM_CATEGORIES.length, label: texts.stats.categories },
     { value: PROBLEM_STATUSES.length, label: texts.stats.statuses },

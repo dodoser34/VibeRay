@@ -3,6 +3,7 @@ import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useCities, useCityDistricts } from '@/shared/hooks/useCities';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
 import { Button } from '@/shared/ui/controls/Button';
+import auth from '@/texts/en/auth.json';
 import { useAuth } from '../../model/useAuth';
 import { STEP, STEPS, validateStep } from '../../lib/registerSteps';
 import { RegisterPreview } from './RegisterPreview';
@@ -13,7 +14,6 @@ import { CityStep } from './steps/CityStep';
 import { DistrictStep } from './steps/DistrictStep';
 import { NicknameStep } from './steps/NicknameStep';
 import { PasswordStep } from './steps/PasswordStep';
-import auth from '@/texts/en/auth.json';
 import form from '../AuthForm.module.css';
 import styles from './RegisterFlow.module.css';
 

@@ -104,11 +104,7 @@
   display: inline-block;
   margin-right: var(--space-2);
   vertical-align: -3px;
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 /* «Вернуться к карте»: стрелка подаётся назад, куда ведёт кнопка */
@@ -118,11 +114,4 @@
 
 .corner > button:hover .back {
   translate: -3px 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .panel,
-  .back {
-    transition: none;
-  }
 }

@@ -62,11 +62,7 @@
 }
 
 .tool svg {
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 /* Подсказка «Ссылка скопирована» — под кнопками, поверх содержимого */
@@ -153,11 +149,7 @@
 }
 
 .count svg {
-  fill: none;
-  stroke: currentColor;
   stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .note,
@@ -262,9 +254,5 @@
 }
 
 .confirmedByMe svg {
-  fill: none;
-  stroke: currentColor;
   stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }

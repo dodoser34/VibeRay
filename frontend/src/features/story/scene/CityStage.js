@@ -33,6 +33,9 @@ const REVEAL_SOFT = 0.12;
 const FOOTPRINT_TOP = 1;
 // Кольца и дуги прозрачные: рисуются после полупрозрачных плит, иначе плиты их подкрашивают.
 const EFFECTS_ORDER = 20;
+
+// Кривые появления: перелёт с возвратом и подскок (как back.out и bounce.out в GSAP, но для
+// прогресса, которым сцена управляет сама).
 const clamp01 = (value) => Math.min(1, Math.max(0, value));
 const backOut = (t) => {
   const overshoot = 1.9;
@@ -75,8 +78,8 @@ export class CityStage {
     this.group = new THREE.Group();
     const project = createProjection(city.center);
     this.project = (lonlat) => project(lonlat).map((value) => value * scale);
-    // Та же подложка, что на карте города: земля и PNG-плитки дорог и воды (без загрузки схемы дорог),
-    // к контуру города они гаснут; вся дорожная сеть лежит на земле под полупрозрачными плитами.
+    // Та же подложка, что на карте города: земля и плитки-картинки дорог и воды, которые гаснут
+    // к контуру города; вся дорожная сеть лежит на земле под полупрозрачными плитами.
     const outlineKm = cityOutline(city.districts, city.center);
     const outline = {
       ...outlineKm,
@@ -289,7 +292,8 @@ export class CityStage {
       this.pinHeads.setMatrixAt(i, dummy.matrix);
       position.set(pin.x, base + 0.01, pin.z);
       this.pinPulses.set(i, position, pin.color);
-      this.pinPulses.setProgress(i, clamp01((t - 0.36) / 0.64)); // кольца начинаются с первого удара
+      // Кольца начинаются с первого удара.
+      this.pinPulses.setProgress(i, clamp01((t - 0.36) / 0.64));
     });
     this.pinStems.instanceMatrix.needsUpdate = true;
     this.pinHeads.instanceMatrix.needsUpdate = true;

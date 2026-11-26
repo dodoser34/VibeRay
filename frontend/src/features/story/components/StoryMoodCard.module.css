@@ -95,10 +95,3 @@
   color: var(--color-text-faint);
   font-size: var(--fs-2xs);
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .picked,
-  .face {
-    transition: none;
-  }
-}

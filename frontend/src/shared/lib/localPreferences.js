@@ -41,8 +41,8 @@ export function readValue(key) {
   }
 }
 
-// Сохранённый выбор из списка допустимых (тема, язык, режим графики); null — нет, испорчен или
-// хранилище недоступно.
+// Сохранённый выбор из списка допустимых (тема, язык); null — нет, испорчен или хранилище
+// недоступно.
 export function readChoice(key, allowed) {
   try {
     const value = window.localStorage.getItem(key);

@@ -7,6 +7,9 @@ Prettier (отступ 2, ширина строки 100): пересборка �
 import json
 import shutil
 from pathlib import Path
+from typing import Any
+
+from shapely.geometry import LinearRing, Polygon
 
 from geodata.paths import DATA, DEMO
 
@@ -14,19 +17,22 @@ PRINT_WIDTH = 100  # как printWidth в frontend/.prettierrc
 DEMO_FILES = ('districts.geojson', 'city.json', 'water.geojson')
 
 
-def read_json(path: Path) -> dict:
+def read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding='utf-8'))
 
 
-def write_json(path: Path, value: object) -> int:
-    """Записать значение в стиле Prettier. Возвращает размер файла в байтах."""
+def write_json(path: Path, value: Any) -> int:
+    """Записать значение в стиле Prettier и вернуть размер файла в байтах."""
     text = pretty(value) + '\n'
     path.write_text(text, encoding='utf-8', newline='\n')
     return len(text.encode('utf-8'))
 
 
-def pretty(value: object, indent: int = 0, prefix: int = 0) -> str:
-    """JSON как у Prettier. prefix — сколько символов в строке перед значением (ключ)."""
+def pretty(value: Any, indent: int = 0, prefix: int = 0) -> str:
+    """JSON как у Prettier.
+
+    prefix — сколько символов стоит в строке перед значением (ключ объекта).
+    """
     pad = '  ' * indent
     if isinstance(value, dict):
         if not value:
@@ -56,15 +62,15 @@ def pretty(value: object, indent: int = 0, prefix: int = 0) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
-def feature_collection(features: list[dict]) -> dict:
+def feature_collection(features: list[dict[str, Any]]) -> dict[str, Any]:
     return {'type': 'FeatureCollection', 'features': features}
 
 
-def ring_coordinates(ring, digits: int) -> list[list[float]]:
+def ring_coordinates(ring: LinearRing, digits: int) -> list[list[float]]:
     return [[round(x, digits), round(y, digits)] for x, y in ring.coords]
 
 
-def polygon_coordinates(polygon, digits: int) -> list[list[list[float]]]:
+def polygon_coordinates(polygon: Polygon, digits: int) -> list[list[list[float]]]:
     """Кольца полигона для GeoJSON: внешнее, затем дыры."""
     return [
         ring_coordinates(polygon.exterior, digits),

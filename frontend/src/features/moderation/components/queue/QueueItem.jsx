@@ -12,12 +12,12 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatRelative } from '@/shared/lib/i18n/formatDate';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
-import { RejectForm } from './RejectForm';
 import texts from '@/texts/en/moderation.json';
+import { RejectForm } from './RejectForm';
 import styles from './QueueItem.module.css';
 
-// Одна проблема в очереди: что, где, кто, сколько подтверждений — и что модератор может сделать в её
-// статусе. Подробности (полный текст, фото, история) раскрываются по кнопке; на карте модератора
+// Одна проблема в очереди: что, где, кто, сколько подтверждений — и что модератор может сделать в
+// её статусе. Подробности (полный текст, фото, история) раскрываются по кнопке; на карте модератора
 // они открыты сразу (expandedByDefault), а ссылки «На карте» нет (onOpenProblem не передан).
 export function QueueItem({ problem, onChanged, onOpenProblem, expandedByDefault = false }) {
   const [expanded, setExpanded] = useState(expandedByDefault);

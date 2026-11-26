@@ -3,9 +3,5 @@
   display: inline-block;
   margin-right: var(--space-2);
   vertical-align: -3px;
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }

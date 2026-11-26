@@ -1,27 +1,27 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { useNavigationInterceptor, useTransitionNavigate } from '@/app/transitions/useTransition';
 import { useViewport, WIDE_QUERY } from '@/adaptations/core';
+import { useNavigationInterceptor, useTransitionNavigate } from '@/app/transitions/useTransition';
 import { AuthPanel } from '@/features/auth';
 import { FRONT_FLOW_END, FrontLayer, HeroCanvas, SHEET_FLY_SHIFT } from '@/features/hero';
+import { DEFAULT_CITY, lastCity } from '@/features/map';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { smoothShift } from '@/shared/animations/effects/smoothLayout';
+import { isModerator } from '@/shared/config/roles';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { usePagePath } from '@/shared/hooks/usePagePath';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { Button } from '@/shared/ui/controls/Button';
-import { isModerator } from '@/shared/config/roles';
 import home from '@/texts/en/home.json';
-import { useLanguage } from '@/shared/hooks/useLanguage';
 import { PhoneQr } from './components/PhoneQr';
 import styles from './HomePage.module.css';
 
-const CITY = 'kostanay';
+// Район главного города, куда попадает вошедший без своего города.
 const FALLBACK_DISTRICT = 'center';
 
 export function HomePage() {
-  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
-  useLanguage();
+  useLanguage(); // при смене языка страница перерисовывается целиком
   const pathname = usePagePath();
   const navigate = useLocalizedNavigate();
   const go = useTransitionNavigate();
@@ -70,7 +70,8 @@ export function HomePage() {
   }, []);
 
   useNavigationInterceptor(
-    // В раздел модератора уходим так же, как в город: без бумажной карты поверх опускающегося листа.
+    // В раздел модератора уходим так же, как в город: без бумажной карты поверх опускающегося
+    // листа.
     useCallback(
       (to) => (to.startsWith('/map') || to.startsWith('/moderation') ? flyIntoCity() : null),
       [flyIntoCity],
@@ -84,7 +85,8 @@ export function HomePage() {
       media.add(WIDE_QUERY, () => {
         ScrollTrigger.create({
           trigger: pageRef.current,
-          start: 'top+=60 top', // маленькая случайная прокрутка (например, при фокусе на поле) ничего не делает
+          // Маленькая случайная прокрутка (например, при фокусе на поле) ничего не делает.
+          start: 'top+=60 top',
           end: 'bottom bottom',
           scrub: 0.6,
           onUpdate: ({ progress }) => {
@@ -108,7 +110,7 @@ export function HomePage() {
             gsap.to(fadeRef.current, {
               autoAlpha: 1,
               duration: 0.35,
-              onComplete: () => navigate(`/map/${CITY}`),
+              onComplete: () => navigate(`/map/${lastCity()}`),
             });
           },
         });
@@ -177,18 +179,18 @@ export function HomePage() {
       return;
     }
     // Карта открывается на своём городе и районе; без своего города — на районе главного города.
-    const target = user.home_city
+    const destination = user.home_city
       ? `/map/${user.home_city}${user.home_district ? `/district/${user.home_district}` : ''}`
-      : `/map/${CITY}/district/${FALLBACK_DISTRICT}`;
+      : `/map/${DEFAULT_CITY}/district/${FALLBACK_DISTRICT}`;
 
     if (how === 'register') {
       // Пропуск жителя превращается в метку с аватаром и летит в руку девушке.
       const card = passRef.current.getBoundingClientRect();
       const sceneRect = sceneLayerRef.current.getBoundingClientRect();
-      const target = heroRef.current?.catchPoint();
+      const catchPoint = heroRef.current?.catchPoint();
       const start = { x: card.left + card.width / 2, y: card.top + card.height / 2 };
-      const end = target
-        ? { x: target.x + sceneRect.left, y: target.y + sceneRect.top }
+      const end = catchPoint
+        ? { x: catchPoint.x + sceneRect.left, y: catchPoint.y + sceneRect.top }
         : { x: window.innerWidth * 0.7, y: window.innerHeight * 0.55 };
       setPinAvatar(user.avatar_url);
 
@@ -226,7 +228,7 @@ export function HomePage() {
       heroRef.current?.cheer();
       await gsap.to({}, { duration: 0.6 });
     }
-    go(target);
+    go(destination);
   };
 
   return (
@@ -257,7 +259,7 @@ export function HomePage() {
                 className={styles.mapCta}
                 data-ui="home-map-cta"
                 data-reveal
-                onClick={() => go(`/map/${CITY}`)}
+                onClick={() => go(`/map/${lastCity()}`)}
               >
                 {home.openMap}
               </Button>
@@ -278,7 +280,7 @@ export function HomePage() {
           type="button"
           className={styles.scrollHint}
           data-ui="home-scroll-hint"
-          onClick={() => go(`/map/${CITY}`)}
+          onClick={() => go(`/map/${lastCity()}`)}
         >
           <span className={styles.mouse} aria-hidden="true" />
           {home.scrollHint}

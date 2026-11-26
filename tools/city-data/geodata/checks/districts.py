@@ -11,10 +11,13 @@ D5  вершина района, лежащая на ребре соседа, е
 
 from collections import defaultdict
 from dataclasses import dataclass
+from itertools import pairwise
+from typing import Any
 
 import numpy as np
 import shapely
-from shapely import STRtree
+from shapely import Polygon, STRtree
+from shapely.geometry.base import BaseGeometry
 
 from geodata.checks.city import ADDED_EDITS, ALL_EDITS, REMOVED_EDITS, City
 from geodata.checks.measure import distances, rings_of, sample_along, segments, tree_of
@@ -27,19 +30,25 @@ from geodata.output import read_json
 from geodata.paths import CACHE
 from geodata.roads import kind_of
 
-ON_LINE_M = 0.5  # граница района «лежит на линии OSM»
-SAMPLE_STEP_M = 10.0  # шаг точек вдоль границ
-COVER_SHARE = 0.0001  # непокрытая суша города: доля его площади
-SHARED_VERTEX_M = 0.02  # вершина «лежит на ребре соседа»
+ON_LINE_M = 0.5  # граница района «лежит на линии OSM», если отходит от неё не дальше (м)
+SAMPLE_STEP_M = 10.0  # шаг точек вдоль границ (м)
+COVER_SHARE = 0.0001  # непокрытая суша города: не больше такой доли его площади
+SHARED_VERTEX_M = 0.02  # вершина «лежит на ребре соседа», если ближе к нему (м)
+
+# Вид линии → линии этого вида (вершины в метрах).
+LineKinds = dict[str, list[np.ndarray]]
 
 
 @dataclass
 class Territory:
-    """Территория официального города в метрах: какой она должна быть на карте (отношения OSM
-    с ручными правками cities.py — bays, fills, drops) и где правки её изменили."""
+    """Территория официального города в метрах.
 
-    area: object
-    changed: object
+    area — какой она должна быть на карте (отношения OSM с ручными правками cities.py: bays,
+    fills, drops), changed — где правки её изменили.
+    """
+
+    area: BaseGeometry
+    changed: BaseGeometry
 
 
 def check_districts(city: City, report: Report) -> None:
@@ -65,12 +74,12 @@ def check_composition(city: City, report: Report) -> None:
     extra = sorted(set(city.slugs) - set(city.expected))
     missing = sorted(set(city.expected) - set(city.slugs))
     nameless = [
-        f['properties']['slug']
-        for f in city.collection['features']
-        if not f['properties'].get('name') or not f['properties'].get('name_en')
+        feature['properties']['slug']
+        for feature in city.collection['features']
+        if not feature['properties'].get('name') or not feature['properties'].get('name_en')
     ]
-    problems = [*(f'лишний {s}' for s in extra), *(f'нет {s}' for s in missing)]
-    problems += [f'без названия {s}' for s in nameless]
+    problems = [*(f'лишний {slug}' for slug in extra), *(f'нет {slug}' for slug in missing)]
+    problems += [f'без названия {slug}' for slug in nameless]
     if len(set(city.slugs)) != len(city.slugs):
         problems.append('повторы slug')
     measured = f'{len(city.slugs)} районов' + (f' ({"; ".join(problems)})' if problems else '')
@@ -79,7 +88,7 @@ def check_composition(city: City, report: Report) -> None:
 
 def check_geometry(city: City, report: Report) -> None:
     west, south, east, north = city.info['bbox']
-    errors = []
+    errors: list[str] = []
     features = city.collection['features']
     for slug, feature, geometry in zip(city.slugs, features, city.raw, strict=True):
         if feature['geometry']['type'] != 'MultiPolygon':
@@ -90,7 +99,7 @@ def check_geometry(city: City, report: Report) -> None:
             for ring in polygon:
                 if len(ring) < 4 or ring[0] != ring[-1]:
                     errors.append(f'{slug}: кольцо не замкнуто')
-                if any(a == b for a, b in zip(ring, ring[1:], strict=False)):
+                if any(a == b for a, b in pairwise(ring)):
                     errors.append(f'{slug}: повтор вершины подряд')
                 if not all(west <= x <= east and south <= y <= north for x, y in ring):
                     errors.append(f'{slug}: вершина вне рамки города [lon, lat]')
@@ -101,13 +110,16 @@ def check_geometry(city: City, report: Report) -> None:
     report.add('D2', 'геометрия районов', f'{len(errors)} ошибок{examples}', '0 ошибок', not errors)
 
 
-def official_relations(city: City) -> dict[str, dict]:
+def official_relations(city: City) -> dict[str, dict[str, Any]]:
     osm = official_boundaries(city.slug, city.config['query'])
     return find_relations(osm, city.config['districts'])
 
 
-def check_coverage(city: City, report: Report, territory: Territory | None) -> list:
-    """Наложения и покрытие. Возвращает островки, которые по правилу сборки в районы не входят."""
+def check_coverage(city: City, report: Report, territory: Territory | None) -> list[Polygon]:
+    """Проверить наложения и покрытие.
+
+    Возвращает островки, которые по правилу сборки в районы не входят.
+    """
     tree = STRtree(city.districts)
     pairs = zip(*tree.query(city.districts, predicate='intersects'), strict=True)
     shared = [city.districts[a].intersection(city.districts[b]) for a, b in pairs if a < b]
@@ -143,17 +155,19 @@ def check_coverage(city: City, report: Report, territory: Territory | None) -> l
     report.add(
         'D3',
         f'островки и щепки суши меньше {MIN_PART_M2 / 1e4:g} га (в районы не входят)',
-        f'{len(islets)} шт., {sum(p.area for p in islets) / 1e4:.1f} га',
+        f'{len(islets)} шт., {sum(islet.area for islet in islets) / 1e4:.1f} га',
         '',
         None,
     )
     return islets
 
 
-def reference_lines(city: City) -> tuple[list[np.ndarray], dict[str, list]]:
-    """Линии, на которых должны лежать границы районов: (официальные границы OSM,
-    все линии по видам)."""
-    kinds: dict[str, list] = defaultdict(list)
+def reference_lines(city: City) -> tuple[list[np.ndarray], LineKinds]:
+    """Линии, на которых должны лежать границы районов.
+
+    Возвращает официальные границы OSM и все линии по видам.
+    """
+    kinds: LineKinds = defaultdict(list)
     official: list[np.ndarray] = []
     if city.is_official:
         for relation in official_relations(city).values():
@@ -184,7 +198,9 @@ def reference_lines(city: City) -> tuple[list[np.ndarray], dict[str, list]]:
                 kinds['контур участка, ограда, водоток'].append(line)
         closures = city.config.get('closures', [])
         if closures:
-            kinds['замыкающий отрезок (вручную)'] = [city.xy(np.array(c)) for c in closures]
+            kinds['замыкающий отрезок (вручную)'] = [
+                city.xy(np.array(closure)) for closure in closures
+            ]
     kinds['берег'] = [np.asarray(ring.coords) for ring in rings_of(city.water)]
     edits = [piece for kind in ALL_EDITS for piece in city.edits.get(kind, [])]
     if edits:
@@ -194,10 +210,14 @@ def reference_lines(city: City) -> tuple[list[np.ndarray], dict[str, list]]:
     return official, kinds
 
 
-def check_boundaries(city: City, report: Report, islets: list, territory: Territory | None) -> None:
+def check_boundaries(
+    city: City, report: Report, islets: list[Polygon], territory: Territory | None
+) -> None:
     official, kinds = reference_lines(city)
     lines = [line for group in kinds.values() for line in group]
-    outlines = [np.asarray(ring.coords) for g in city.districts for ring in rings_of(g)]
+    outlines = [
+        np.asarray(ring.coords) for district in city.districts for ring in rings_of(district)
+    ]
     points = sample_along(outlines, SAMPLE_STEP_M)
     off = distances(tree_of(lines), points)
     bad = int((off > ON_LINE_M).sum())
@@ -213,7 +233,7 @@ def check_boundaries(city: City, report: Report, islets: list, territory: Territ
         check_official_line(city, report, official, outlines, islets, territory)
 
 
-def boundary_makeup(kinds: dict[str, list], points: np.ndarray) -> str:
+def boundary_makeup(kinds: LineKinds, points: np.ndarray) -> str:
     """Из чего состоит граница: каждая точка — виду ближайшей линии."""
     best = np.full(len(points), np.inf)
     owner = np.zeros(len(points), dtype=int)
@@ -223,20 +243,23 @@ def boundary_makeup(kinds: dict[str, list], points: np.ndarray) -> str:
         closer = found < best - 1e-6
         owner[closer] = index
         best[closer] = found[closer]
-    shares = [(float((owner == i).mean()), name) for i, name in enumerate(names)]
+    shares = [(float((owner == index).mean()), name) for index, name in enumerate(names)]
     return ', '.join(f'{name} {share:.0%}' for share, name in sorted(shares, reverse=True) if share)
 
 
 def check_official_line(
     city: City,
     report: Report,
-    official: list,
-    outlines: list,
-    islets: list,
+    official: list[np.ndarray],
+    outlines: list[np.ndarray],
+    islets: list[Polygon],
     territory: Territory,
 ) -> None:
-    """Официальная граница OSM повторена районами, кроме мест, где её на карте быть не должно:
-    вода, мелкие островки, ручные правки cities.py и правки чистки контуров."""
+    """Официальная граница OSM должна быть повторена районами.
+
+    Исключения — места, где её на карте быть не должно: вода, мелкие островки, ручные правки
+    cities.py и правки чистки контуров.
+    """
     samples = sample_along(official, SAMPLE_STEP_M)
     points = shapely.points(samples)
     missed = distances(tree_of(outlines), samples) > ON_LINE_M
@@ -258,12 +281,15 @@ def check_official_line(
 def check_shared_vertices(city: City, report: Report) -> None:
     """Вершина одного района, лежащая на ребре другого, должна быть и его вершиной."""
     rings = [
-        (d, np.asarray(ring.coords)) for d, g in enumerate(city.districts) for ring in rings_of(g)
+        (index, np.asarray(ring.coords))
+        for index, district in enumerate(city.districts)
+        for ring in rings_of(district)
     ]
     edges = segments([ring for _, ring in rings])
-    edge_owner = np.concatenate([np.full(len(ring) - 1, d) for d, ring in rings])
+    edge_owner = np.concatenate([np.full(len(ring) - 1, index) for index, ring in rings])
     vertices = np.concatenate([ring[:-1] for _, ring in rings])
-    vertex_owner = np.concatenate([np.full(len(ring) - 1, d) for d, ring in rings])
+    # У кольца столько же рёбер, сколько вершин без повторённой последней.
+    vertex_owner = edge_owner
     tree = STRtree(shapely.linestrings(edges))
     vertex, edge = tree.query(
         shapely.points(vertices), predicate='dwithin', distance=SHARED_VERTEX_M

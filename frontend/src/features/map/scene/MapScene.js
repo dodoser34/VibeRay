@@ -1,19 +1,19 @@
 import * as THREE from 'three';
-import { gsap } from '@/shared/animations/core/gsapSetup';
 import { CSS2DObject, CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
+import { gsap } from '@/shared/animations/core/gsapSetup';
 import { cityOutline } from '@/shared/lib/geo/cityOutline';
 import { createProjection, createUnprojection } from '@/shared/lib/geo/geoProjection';
 import { cssVar } from '@/shared/lib/theme/cssVar';
-import { SceneRuntime } from './SceneRuntime';
-import { DistrictsLayer } from './DistrictsLayer';
-import { ProblemsLayer } from './ProblemsLayer';
+import { CameraRig } from './cameraRig';
 import { CityBackdrop } from './CityBackdrop';
+import { ClusterLabels } from './ClusterLabels';
+import { DistrictsLayer } from './DistrictsLayer';
 import { MapTiles } from './MapTiles';
 import { MapVectors } from './MapVectors';
-import { CameraRig } from './cameraRig';
-import { ClusterLabels } from './ClusterLabels';
-import { ScenePicker } from './ScenePicker';
 import { PlacementMarker } from './PlacementMarker';
+import { ProblemsLayer } from './ProblemsLayer';
+import { SceneRuntime } from './SceneRuntime';
+import { ScenePicker } from './ScenePicker';
 
 // Смещение обзорной камеры от центра города: высоко и слегка под наклоном.
 const HOME_OFFSET = new THREE.Vector3(0.3, 14.5, 11);
@@ -24,13 +24,11 @@ const CAMERA_NEAR = 0.05;
 const CAMERA_FAR = 200;
 const MAX_DISTANCE = 26;
 const FIT_MARGIN = 0.92; // доля кадра (NDC), в которую вписывается город: запас под подписи районов
+// Вершин на район для вписывания в кадр — хватает, чтобы не потерять выступы.
 const FIT_POINTS = 120;
-const INSET_SETTLE_MS = 200; // шторка столько стоит на месте — обзор пересчитывается под неё // вершин на район для вписывания в кадр — хватает, чтобы не потерять выступы
+const INSET_SETTLE_MS = 200; // шторка столько стоит на месте — обзор пересчитывается под неё
 const LABEL_CHECK_MS = 150; // как часто разбираются налезающие подписи
 const LABEL_GAP = 4; // px между двумя подписями, которые обе остаются
-// Плиты районов — полупрозрачное стекло над общим слоем дорог: дороги читаются сквозь них
-// непрерывно, а районы хорошо различаются цветом и светлыми границами. Плотность своя у каждой темы.
-const districtOpacity = () => parseFloat(cssVar('--scene-district-opacity'));
 const LABELS_FADE = 0.5;
 // Вблизи (уровень улицы) плиты районов ложатся на землю: полная высота дальше PROXIMITY_FAR км от
 // точки взгляда, ближе PROXIMITY_NEAR — почти плоские (PROXIMITY_MIN). Метки проблем уменьшаются
@@ -40,6 +38,11 @@ const PROXIMITY_FAR = 5;
 const PROXIMITY_MIN = 0.04;
 const PIN_REF_KM = 6;
 const PIN_MIN = 0.12;
+
+// Плиты районов — полупрозрачное стекло над общим слоем дорог: дороги читаются сквозь них
+// непрерывно, а районы хорошо различаются цветом и светлыми границами. Плотность своя у каждой
+// темы.
+const districtOpacity = () => parseFloat(cssVar('--scene-district-opacity'));
 
 // Полноэкранная карта города. React общается с ней только через эти публичные методы.
 export class MapScene {
@@ -57,8 +60,8 @@ export class MapScene {
       onSelectProblem,
     },
   ) {
-    // Кадр — только когда что-то меняется (камера, твины, плитки, пульсация меток): в покое карта не
-    // тратит процессор и видеокарту.
+    // Кадр — только когда что-то меняется (камера, твины, плитки, пульсация меток): в покое карта
+    // не тратит процессор и видеокарту.
     this.runtime = new SceneRuntime(canvas, container, {
       fov: 38,
       fogNear: FOG.near,
@@ -81,6 +84,7 @@ export class MapScene {
     this.started = false; // см. startIntro()
     this.placing = null; // { onPlace }, пока пользователь выбирает точку для новой проблемы
     this.districtsHidden = false; // режим «только дороги» (setDistrictsVisible)
+    this.hoverStale = false; // карта сдвинулась под неподвижным курсором
     this.marker = new PlacementMarker();
     scene.add(this.marker.group);
 
@@ -388,7 +392,8 @@ export class MapScene {
     this.flushPendingProblem();
   }
 
-  // Слои: 'districts' (цвета районов), 'mood' (цвет по настроению), 'problems' (метки сверху).
+  // Цвет плит для слоя: 'mood' — по настроению, остальные ('districts', 'problems') — цвета
+  // районов.
   colorModeFor(layer) {
     return layer === 'mood' ? 'mood' : 'districts';
   }
@@ -445,8 +450,6 @@ export class MapScene {
     return aspect < 1 ? 1.25 / Math.sqrt(aspect) : Math.max(1, 1.3 / aspect);
   }
 
-  // Предел приближения и туман двигаются вместе с обзором: иначе управление снова притянуло бы
-  // отъехавшую камеру, а туман проглотил бы город.
   // Обзор всего города: не ближе задуманного (zoomFactor), но и не уже кадра — на узком портретном
   // экране (телефон, складной) камера отъезжает, пока все углы рамки города не попадут в кадр.
   // Пробная камера — копия настоящей (те же пропорции и сдвиг центра под шторку).
@@ -479,6 +482,8 @@ export class MapScene {
     return Math.max(this.zoomFactor(), high);
   }
 
+  // Предел приближения и туман двигаются вместе с обзором: иначе управление снова притянуло бы
+  // отъехавшую камеру, а туман проглотил бы город.
   updateHome() {
     if (!this.frame) return;
     const { center, scale } = this.frame;
@@ -709,15 +714,7 @@ export class MapScene {
 
   dispose() {
     this.introTimelines?.forEach((timeline) => timeline.kill());
-    gsap.killTweensOf([
-      this.hemi,
-      this.key,
-      this.hemi.color,
-      this.key.color,
-      this.key.position,
-      this.runtime.scene.background,
-      this.runtime.scene.fog.color,
-    ]);
+    gsap.killTweensOf([...this.labels.values()].map((label) => label.element));
     clearTimeout(this.pendingSelect);
     clearTimeout(this.insetSettle);
     this.picker.dispose();

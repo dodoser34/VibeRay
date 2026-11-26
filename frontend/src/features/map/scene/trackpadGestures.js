@@ -84,7 +84,8 @@ export function attachTrackpadGestures(controls, element) {
       moveNow(() => zoomAt(step, event.clientX, event.clientY));
     } else if (!sessionIsTrackpad) {
       // Колесо мыши над значком кластера или подписью — тот же зум, что над самой картой.
-      if (controls.enableZoom) moveNow(() => controls._handleMouseWheel(controls._customWheelEvent(event)));
+      if (controls.enableZoom)
+        moveNow(() => controls._handleMouseWheel(controls._customWheelEvent(event)));
     } else if (event.altKey) {
       if (controls.enableRotate) {
         moveNow(() => {

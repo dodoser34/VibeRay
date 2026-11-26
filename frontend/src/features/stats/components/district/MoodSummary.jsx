@@ -4,13 +4,10 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatNumber, formatSigned } from '@/shared/lib/i18n/formatNumber';
 import { plural } from '@/shared/lib/i18n/plural';
 import texts from '@/texts/en/stats.json';
+import { SAME_SCORE } from '../../lib/trend';
 import styles from './MoodSummary.module.css';
 
-// Разница меньше этой читается как «так же» (оценки в диапазоне −2…+2).
-const SAME_SCORE = 0.1;
-
 // Настроение района за период: лицо, оценка, число отметок и сравнение со средним по городу.
-
 export function MoodSummary({ mood, period, cityAverage }) {
   if (mood.insufficient_data) {
     return (

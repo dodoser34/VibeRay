@@ -94,9 +94,3 @@
   align-items: center;
   gap: var(--space-3);
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .dots span {
-    transition: none;
-  }
-}

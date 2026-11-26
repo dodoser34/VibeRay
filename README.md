@@ -67,7 +67,7 @@ python tools/city-data/build_map_tiles.py kostanay    # плитки карты
 python tools/city-data/verify_city_data.py kostanay   # проверка: итог «ПРИНЯТО»
 ```
 
-Третья команда собирает схему дорог и сохраняет ответ OpenStreetMap — по нему работает проверка, а повторная
+Вторая команда собирает схему дорог и сохраняет ответ OpenStreetMap — по нему работает проверка, а повторная
 сборка дорог идёт без сети (`--osm` вместо `--save-osm`). Остальные ответы OpenStreetMap скрипты сохраняют в
 `tools/city-data/.osm-cache/` сами (в git эта папка не попадает). Какие районы у какого города и откуда они берутся
 в OpenStreetMap, записано в `tools/city-data/cities.py`. Новый город начинается с воды:

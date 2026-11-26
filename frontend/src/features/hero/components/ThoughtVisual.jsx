@@ -16,9 +16,8 @@ const DISTRICT_BAR = [
 ];
 
 // Картинка внутри облачка мысли (вид — thought.kind, см. THOUGHTS в HeroThoughts); data-атрибуты —
-// цели анимаций HeroThoughts.
-
-// Узкое облачко (одна колонка): пять лиц шкалы помещаются в строку только мельче.
+// цели анимаций HeroThoughts. stacked — узкое облачко (одна колонка): лица шкалы мельче, иначе пять
+// не помещаются в строку.
 export function ThoughtVisual({ thought, stacked }) {
   if (thought.kind === 'ask') {
     return (

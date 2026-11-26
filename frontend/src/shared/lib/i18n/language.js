@@ -1,22 +1,17 @@
-// Язык интерфейса: английский (src/texts/en/*.json — основной), русский, казахский или немецкий
-// (src/texts/{ru,kk,de}/*.json с теми же ключами). Код везде импортирует английские файлы
-// (`import texts from '@/texts/en/map.json'`), а этот модуль записывает значения нужного языка прямо
-// в эти объекты — на месте, не меняя ссылок на вложенные объекты и массивы. Все четыре языка
-// загружаются одинаково — отдельный файл на язык (translations/<язык>.js), который скачивается, только
-// когда язык нужен; английский, кроме того, встроен в сайт. Модуль импортируется первым в main.jsx, а
-// страница рисуется после languageReady — когда тексты языка из адреса на месте. Смена языка на лету —
-// applyLanguage(): перевод догружается, тексты переписываются, подписчики (useLanguage)
-// перерисовывают страницу, запросы к API повторяются на новом языке.
-// Что должно это учитывать: подписи в справочниках — геттеры (shared/config/withLabels.js), тексты не
-// копируются в константы модулей, а элементы, которые SplitText разбирает на слова, получают
-// key={language} — иначе React не сможет обновить их текст.
-// У каждого языка свой адрес (для поисковиков каждая версия — отдельная страница): английский — без
-// префикса (/map/kostanay), остальные — подкаталогом (/ru/map/kostanay). Язык берётся из адреса;
-// маршруты и ссылки работают с путями без префикса, а localizePath() добавляет его
-// (app/routing/useLanguageRoute.js держит адрес и язык согласованными).
+// Язык интерфейса: английский (основной, src/texts/en) и русский, казахский, немецкий
+// (src/texts/{ru,kk,de} с теми же ключами). Код импортирует английские JSON, а этот модуль
+// записывает в эти же объекты значения нужного языка — на месте, не меняя ссылок на вложенные
+// объекты и массивы. Перевод каждого языка — отдельный файл сборки (translations/<язык>.js), он
+// скачивается, только когда язык нужен. main.jsx импортирует модуль первым и рисует страницу после
+// languageReady.
+// Смена языка на лету — applyLanguage(): тексты переписываются, подписчики (useLanguage)
+// перерисовываются, запросы к API повторяются. Поэтому подписи справочников — геттеры
+// (shared/config/withLabels.js), тексты не копируются в константы модулей, а элементы под SplitText
+// получают key={language}, иначе React не обновит их текст.
+// У каждого языка свой адрес: английский — без префикса (/map/kostanay), остальные — с ним
+// (/ru/map/kostanay). Маршруты и ссылки работают с путями без префикса, а localizePath()
+// добавляет его (app/routing/useLanguageRoute.js держит адрес и язык согласованными).
 
-import { createListeners } from '../listeners';
-import { readChoice, writeValue } from '../localPreferences';
 import about from '@/texts/en/about.json';
 import auth from '@/texts/en/auth.json';
 import common from '@/texts/en/common.json';
@@ -34,6 +29,8 @@ import settings from '@/texts/en/settings.json';
 import stats from '@/texts/en/stats.json';
 import support from '@/texts/en/support.json';
 import transition from '@/texts/en/transition.json';
+import { createListeners } from '../listeners';
+import { readChoice, writeValue } from '../localPreferences';
 
 export const LANGUAGES = ['en', 'ru', 'kk', 'de'];
 export const DEFAULT_LANGUAGE = 'en';
@@ -43,8 +40,8 @@ const STORAGE_KEY = 'viberay.language';
 // Подпапка сайта (GitHub Pages): пути приложения — после неё.
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-// Исходные тексты — теми же импортами, что и в остальном коде (тот же экземпляр модуля и в dev после
-// правок). Новый файл в src/texts нужно добавить и сюда.
+// Исходные тексты — теми же импортами, что и в остальном коде (тот же экземпляр модуля, в том числе
+// в dev после правок). Новый файл в src/texts нужно добавить и сюда.
 const texts = {
   about,
   auth,
@@ -152,19 +149,19 @@ export function localizePath(path, code = language) {
 const isRobot = () =>
   navigator.webdriver || /bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent);
 
-// Язык браузера посетителя: первый из его списка, который есть на сайте; если ни одного — английский.
+// Язык браузера посетителя: первый из его списка, который есть на сайте, иначе — английский.
 function browserLanguage() {
   if (isRobot()) return null;
   const preferred = (navigator.languages?.length ? navigator.languages : [navigator.language])
     .filter(Boolean)
     .map((tag) => tag.slice(0, 2).toLowerCase());
   if (!preferred.length) return null;
-  return preferred.find((code) => LANGUAGES.includes(code)) ?? 'en';
+  return preferred.find((code) => LANGUAGES.includes(code)) ?? DEFAULT_LANGUAGE;
 }
 
-// Язык — из адреса. Старые ссылки с ?lang= переводятся на адрес с префиксом, старые английские с
-// префиксом /en/ — на адрес без него. Адрес без префикса — английская версия для поисковиков, а человек
-// попадает на свою: язык, который он сам выбирал раньше, иначе — язык его браузера.
+// Язык — из адреса. Старые ссылки с ?lang= переводятся на адрес с префиксом, старые английские
+// с префиксом /en/ — на адрес без него. Адрес без префикса — английская версия для поисковиков,
+// а человек попадает на свою: язык, который он выбирал раньше, иначе — язык его браузера.
 function detect() {
   const url = new URL(window.location.href);
   let path = url.pathname.startsWith(BASE) ? url.pathname.slice(BASE.length) || '/' : url.pathname;
@@ -199,12 +196,12 @@ let language = detect();
 document.documentElement.lang = language;
 
 // Тексты языка из адреса на месте — можно рисовать страницу (main.jsx). Английский загружается
-// первым, пока в общих объектах ещё английские тексты, — к нему можно вернуться после другого языка. Не
-// загрузился перевод (нет сети) — страница рисуется по-английски, а не остаётся пустой.
+// первым, пока в общих объектах ещё английские тексты: к нему можно вернуться после другого языка.
+// Не загрузился перевод (нет сети) — страница рисуется по-английски, а не остаётся пустой.
 export const languageReady = loadLanguage(DEFAULT_LANGUAGE)
   .then(() => language !== DEFAULT_LANGUAGE && loadLanguage(language))
   .then(() => language !== DEFAULT_LANGUAGE && applyTexts(language))
-  .catch((error) => console.error('Language texts failed to load', error));
+  .catch((error) => console.error('[texts] перевод не загрузился', error));
 languageReady.then(applyDocument);
 
 const listeners = createListeners();

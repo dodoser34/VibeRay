@@ -1,7 +1,6 @@
 import styles from './DashboardBlock.module.css';
 
 // Блок дашборда: заголовок и содержимое (график, таблица, разбивка).
-
 export function DashboardBlock({ title, children }) {
   return (
     <section className={styles.block}>

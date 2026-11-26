@@ -177,8 +177,6 @@
 .removeFile svg {
   width: 0.625rem;
   height: 0.625rem;
-  fill: none;
-  stroke: currentColor;
   stroke-width: 2;
 }
 
@@ -205,10 +203,7 @@
 .attach svg {
   width: 1.125rem;
   height: 1.125rem;
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.8;
-  stroke-linecap: round;
 }
 
 .note {
@@ -255,11 +250,8 @@
 .check svg {
   width: 1.875rem;
   height: 1.875rem;
-  fill: none;
   stroke: var(--color-accent-bright);
   stroke-width: 2.4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .doneTitle {

@@ -41,7 +41,8 @@ export function hideMyProblem(problemId) {
   return request('DELETE', `/users/me/problems/${problemId}`);
 }
 
-// → { unread, items: [{ id, kind: 'confirmations' | 'status', problem, status, count, created_at, read }] }
+// → { unread, items: [{ id, kind, problem, status, count, created_at, read }] },
+// kind — 'confirmations' | 'status'.
 export function getNotifications() {
   return request('GET', '/users/me/notifications');
 }

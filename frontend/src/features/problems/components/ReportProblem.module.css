@@ -23,12 +23,6 @@
   font-size: var(--fs-lg);
 }
 
-.removePhoto svg {
-  stroke: var(--color-text);
-  stroke-width: 1.8;
-  stroke-linecap: round;
-}
-
 .progress {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -350,6 +344,11 @@
   background: var(--color-overlay);
 }
 
+.removePhoto svg {
+  stroke: var(--color-text);
+  stroke-width: 1.8;
+}
+
 .addPhoto {
   display: grid;
   place-content: center;
@@ -370,18 +369,12 @@
 }
 
 .addPhoto svg {
+  stroke-width: 1.7;
   transition: scale var(--dur-base) var(--ease-out);
 }
 
 .addPhoto:hover svg {
   scale: 1.12;
-}
-
-.addPhoto svg {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.7;
-  stroke-linejoin: round;
 }
 
 .error {

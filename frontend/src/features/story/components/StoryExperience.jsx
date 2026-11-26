@@ -2,10 +2,10 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useViewport } from '@/adaptations/core';
 import { useCityData } from '@/features/map';
 import { gsap, ScrollTrigger, useGSAP } from '@/shared/animations/core/gsapSetup';
-import { useCityOutline } from '../hooks/useCityOutline';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useTheme } from '@/shared/hooks/useTheme';
+import { useCityOutline } from '../hooks/useCityOutline';
 import { CHAPTERS, story } from '../lib/chapters';
 import { planeMatrix } from '../lib/room/isometric';
 import { addPhoneTimeline } from '../lib/phoneTimeline';
@@ -30,8 +30,7 @@ import styles from './StoryExperience.module.css';
 // держит экран закрытым до этого момента (AboutPage).
 export function StoryExperience({ onOpenMap, onReady }) {
   const language = useLanguage();
-  // Тема перекрашивает 3D-город (цвета читаются при создании), язык меняет сам город — сцена
-  // создаётся заново.
+  // Цвета 3D-города читаются при создании сцены, поэтому при смене темы она создаётся заново.
   const theme = useTheme();
   const rootRef = useRef(null);
   const stageRef = useRef(null);
@@ -170,7 +169,8 @@ export function StoryExperience({ onOpenMap, onReady }) {
       // Закрепление появляется только после загрузки данных города и добавляет 900 % прокрутки:
       // триггеры ниже по странице (гид) должны пересчитать свои позиции.
       ScrollTrigger.refresh();
-      // Перестройка на месте (новые данные, смена языка): тот же кадр истории, без отскока прокрутки.
+      // Перестройка на месте (новые данные, смена языка): тот же кадр истории, без отскока
+      // прокрутки.
       if (scrollRef.current !== null) {
         window.scrollTo({ top: scrollRef.current, behavior: 'instant' });
         trigger.update();

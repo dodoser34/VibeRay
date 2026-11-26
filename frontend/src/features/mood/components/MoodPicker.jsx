@@ -4,8 +4,8 @@ import { MOODS } from '@/shared/config/moods';
 import { prefersReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Icon } from '@/shared/ui/icons/Icon';
 import { Modal } from '@/shared/ui/windows/Modal';
-import { MoodFace } from './MoodFace';
 import texts from '@/texts/en/mood.json';
+import { MoodFace } from './MoodFace';
 import styles from './MoodPicker.module.css';
 
 // Настроение для района. Район выбран заранее (открытый или свой район пользователя), и его можно

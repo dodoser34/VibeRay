@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router';
-import { useTransitionNavigate, useTransitionReady } from '@/app/transitions/useTransition';
 import { useViewport } from '@/adaptations/core';
+import { useTransitionNavigate, useTransitionReady } from '@/app/transitions/useTransition';
 import { useAuth } from '@/features/auth';
 import { MapCanvas } from '@/features/map';
 import { DistrictRanking, MoodPicker } from '@/features/mood';
@@ -10,15 +10,16 @@ import { CityDashboard, DistrictPanel, reportedRange } from '@/features/stats';
 import { postMood } from '@/shared/api/endpoints/districts';
 import { MOOD_BY_CODE } from '@/shared/config/moods';
 import { DEFAULT_STATS_PERIOD, MOOD_PERIODS, STATS_PERIODS } from '@/shared/config/periods';
-import { usePageEntered } from '@/shared/hooks/usePageEntered';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
+import { usePageEntered } from '@/shared/hooks/usePageEntered';
+import { format } from '@/shared/lib/i18n/format';
 import { Button } from '@/shared/ui/controls/Button';
 import { CoachMarks } from '@/shared/ui/windows/CoachMarks';
-import { format } from '@/shared/lib/i18n/format';
-import problemTexts from '@/texts/en/problems.json';
 import texts from '@/texts/en/map.json';
-import { useLanguage } from '@/shared/hooks/useLanguage';
-import { panelContent } from './lib/mapState';
+import problemTexts from '@/texts/en/problems.json';
+import cheerFigure from './assets/cheer.webp';
+import guideFigure from './assets/guide.webp';
 import { MapFilters } from './components/filters/MapFilters';
 import { MapPanelsLayout } from './components/layout/MapPanelsLayout';
 import { MapSheetLayout } from './components/layout/MapSheetLayout';
@@ -27,16 +28,15 @@ import { AuthRequiredModal } from './components/overlays/AuthRequiredModal';
 import { MapAttribution } from './components/overlays/MapAttribution';
 import { MapToast } from './components/overlays/MapToast';
 import { MapTooltip } from './components/overlays/MapTooltip';
-import { useFollowTooltip } from './hooks/useFollowTooltip';
 import { useDistrictsVisible } from './hooks/useDistrictsVisible';
+import { useFollowTooltip } from './hooks/useFollowTooltip';
 import { useHeightScale } from './hooks/useHeightScale';
-import { useMapTour } from './hooks/useMapTour';
-import { usePanelVisibility } from './hooks/usePanelVisibility';
 import { useMapPageAnimations } from './hooks/useMapPageAnimations';
 import { useMapPageData } from './hooks/useMapPageData';
+import { useMapTour } from './hooks/useMapTour';
+import { usePanelVisibility } from './hooks/usePanelVisibility';
 import { useToast } from './hooks/useToast';
-import cheerFigure from './assets/cheer.webp';
-import guideFigure from './assets/guide.webp';
+import { panelContent } from './lib/mapState';
 import styles from './MapPage.module.css';
 
 const TOAST_MS = 3200;
@@ -60,8 +60,7 @@ const SHEET_SNAP = {
 // на телефонах и планшетах стоя карта занимает экран — фильтры сворачиваются в чип, действия — в
 // кнопку «+», каждая панель открывается в шторке.
 export function MapPage({ view = 'map' }) {
-  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
-  useLanguage();
+  useLanguage(); // при смене языка страница перерисовывается целиком
   const { citySlug, districtSlug, problemId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useLocalizedNavigate();
@@ -163,13 +162,9 @@ export function MapPage({ view = 'map' }) {
   const sheetSnap = sheetChoice.key === contentKey ? sheetChoice.snap : SHEET_SNAP[content];
   const { leftHidden, rightHidden, toggleLeft, toggleRight } = usePanelVisibility(contentKey);
 
-  // Что в панели — без шага формы «Сообщить о проблеме» (шаги она анимирует сама) и без фокуса района
-  // на дашборде: смена ключа поднимает новое содержимое панели.
-  const detailKey = isStats
-    ? 'stats'
-    : report
-      ? 'report'
-      : `${content}:${districtSlug ?? ''}:${problem?.id ?? ''}`;
+  // Что в панели — без шага формы «Сообщить о проблеме» (шаги она анимирует сама) и без фокуса
+  // района на дашборде: смена ключа поднимает новое содержимое панели.
+  const detailKey = isStats ? 'stats' : report ? 'report' : contentKey;
   useMapPageAnimations({ pageRef, fadeRef, entered, view, detailKey });
 
   // Боковые панели: камера снова смотрит на весь экран.
@@ -193,7 +188,8 @@ export function MapPage({ view = 'map' }) {
     navigate(`/map/${citySlug}/district/${slug}`);
   };
 
-  const closeDistrict = () => navigate(`/map/${citySlug}`);
+  // Закрыть район или проблему: обратно к обзору города.
+  const backToCity = () => navigate(`/map/${citySlug}`);
 
   const openStats = () => {
     setReport(false);
@@ -230,8 +226,6 @@ export function MapPage({ view = 'map' }) {
     navigate(`/map/${citySlug}/problem/${next.id}`);
   };
 
-  const closeProblem = () => navigate(`/map/${citySlug}`);
-
   const requireAuth = (reason) => setAuthReason(reason);
 
   const openMoodPicker = () => {
@@ -255,10 +249,11 @@ export function MapPage({ view = 'map' }) {
 
   const reportProblem = () => {
     if (!user) return requireAuth(texts.authReasons.problem);
-    if (problemId) closeProblem();
+    if (problemId) backToCity();
     setPlacement(null);
     setReportStep('category');
-    setLayer('problems'); // показываем существующие метки, чтобы люди подтверждали, а не дублировали
+    // Существующие метки на виду: люди подтверждают их, а не дублируют.
+    setLayer('problems');
     setReport(true);
   };
 
@@ -309,9 +304,14 @@ export function MapPage({ view = 'map' }) {
     />
   );
 
-  const filterSummary = isStats
-    ? `${STATS_PERIODS.find((option) => option.code === statsPeriod).label} · ${texts.stats.metrics[metric]}`
-    : `${MOOD_PERIODS.find((option) => option.code === period).label} · ${texts.layers[layer]}`;
+  const filterSummary = (
+    isStats
+      ? [
+          STATS_PERIODS.find((option) => option.code === statsPeriod).label,
+          texts.stats.metrics[metric],
+        ]
+      : [MOOD_PERIODS.find((option) => option.code === period).label, texts.layers[layer]]
+  ).join(' · ');
 
   // Панель для текущего состояния — одно и то же содержимое в боковой панели или в шторке.
   let detail;
@@ -348,7 +348,7 @@ export function MapPage({ view = 'map' }) {
         title={problemTexts.card.notFoundTitle}
         note={problemTexts.card.notFound}
         action={
-          <Button variant="ghost" onClick={closeProblem}>
+          <Button variant="ghost" onClick={backToCity}>
             {problemTexts.card.backToMap}
           </Button>
         }
@@ -368,12 +368,12 @@ export function MapPage({ view = 'map' }) {
           problems.reload();
         }}
         onWithdrawn={() => {
-          closeProblem();
+          backToCity();
           problems.reload();
           stats.reload();
           setToast({ text: texts.toasts.problemWithdrawn });
         }}
-        onClose={closeProblem}
+        onClose={backToCity}
       />
     );
   } else if (district) {
@@ -385,7 +385,7 @@ export function MapPage({ view = 'map' }) {
         stats={stats.data?.district === districtSlug ? stats.data : null}
         facts={districtFacts}
         loading={stats.loading}
-        onClose={closeDistrict}
+        onClose={backToCity}
         onMarkMood={openMoodPicker}
         onReportProblem={reportProblem}
         onSelectProblem={selectProblem}

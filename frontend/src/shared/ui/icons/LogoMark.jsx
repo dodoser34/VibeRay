@@ -3,7 +3,8 @@ import styles from './LogoMark.module.css';
 
 // Буква V знака: толстые плечи, сходящиеся книзу (viewBox 40×40).
 const V_SHAPE = '6,8 13.5,8 20,23 26.5,8 34,8 23.5,33 16.5,33';
-// Буква опущена в круге: широкие плечи сверху тяжелее острого низа, без сдвига знак кажется задранным.
+// Буква опущена в круге: широкие плечи сверху тяжелее острого низа, без сдвига знак кажется
+// задранным.
 const V_OFFSET = 2;
 // Многоэтажки внутри V: левый край, ширина, верх, оттенок. Видны только сквозь букву.
 const BUILDINGS = [
@@ -18,16 +19,16 @@ const BUILDINGS = [
 const WINDOW = { width: 1.2, height: 1.3, stepX: 2.2, stepY: 2.6, inset: 1.1 };
 
 function windowsOf([left, width, top]) {
-  const cols = Math.max(1, Math.floor((width - WINDOW.inset) / WINDOW.stepX));
+  const columns = Math.max(1, Math.floor((width - WINDOW.inset) / WINDOW.stepX));
   const rows = Math.floor((33 - top - WINDOW.inset) / WINDOW.stepY);
-  return Array.from({ length: rows * cols }, (_, i) => ({
-    x: left + WINDOW.inset + (i % cols) * WINDOW.stepX,
-    y: top + WINDOW.inset + Math.floor(i / cols) * WINDOW.stepY,
+  return Array.from({ length: rows * columns }, (_, i) => ({
+    x: left + WINDOW.inset + (i % columns) * WINDOW.stepX,
+    y: top + WINDOW.inset + Math.floor(i / columns) * WINDOW.stepY,
   }));
 }
 
-// Знак VibeRay: буква V как окно в город — внутри многоэтажки с окнами на зелёном небе, в развилке —
-// точка настроения. Цвета — токены темы. framed — знак на круглой подложке (шапка сайта).
+// Знак VibeRay: буква V как окно в город — внутри многоэтажки на зелёном небе, в развилке — точка
+// настроения. framed — знак на круглой подложке (шапка сайта).
 export function LogoMark({ framed = false }) {
   const clip = `${useId()}-v`;
   return (

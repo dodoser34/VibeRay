@@ -95,9 +95,3 @@
 .root[data-full] .option {
   padding: 0 var(--space-4) 0 var(--space-2);
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .flag {
-    transition: none;
-  }
-}

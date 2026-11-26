@@ -52,7 +52,7 @@ export function DeskSet({ outline, mapBox }) {
         <IsoBox key={`${x}-${y}`} at={[x, y, 0]} size={[0.5, 0.5, 7.2]} tone="--story-metal" />
       ))}
 
-      {/* тумба с ящиками */}
+      {/* Тумба с ящиками */}
       <IsoBox at={[0.4, 5.6, 0]} size={[6, 4.2, 7.2]} tone="--story-desk" />
       <IsoPlane facing="x" at={[6.4, 9.8, 7]}>
         {[0.3, 2.6, 4.9].map((w) => (
@@ -70,7 +70,7 @@ export function DeskSet({ outline, mapBox }) {
         ))}
       </IsoPlane>
 
-      {/* системный блок на полу под столом, за передними ножками: решётка сверху, сетчатая передняя
+      {/* Системный блок на полу под столом, за передними ножками: решётка сверху, сетчатая передняя
           панель с кнопкой и портами, за стеклом — плата, башня кулера, память, видеокарта, кожух
           блока питания и три вентилятора на вдув */}
       <path className={styles.cable} d={line([1.3, 16, PC_TOP], [1, 15, 6.4], [1.4, 14.6, TOP])} />
@@ -117,7 +117,7 @@ export function DeskSet({ outline, mapBox }) {
         <IsoBox key={`${x}-${y}`} at={[x, y, 0]} size={[0.5, 0.5, 7.2]} tone="--story-metal" />
       ))}
 
-      {/* столешница с текстурой дерева */}
+      {/* Столешница с текстурой дерева */}
       <IsoBox at={[0, 5, 7.2]} size={[7, 16, 0.4]} tone="--story-desk" />
       <IsoPlane facing="z" at={[0, 5, TOP]}>
         {[1.1, 2.6, 3.9, 5.5, 6.4].map((u) => (
@@ -125,7 +125,7 @@ export function DeskSet({ outline, mapBox }) {
         ))}
       </IsoPlane>
 
-      {/* стопка книг и суккулент у стены */}
+      {/* Стопка книг и суккулент у стены */}
       <IsoBox at={[0.6, 5.5, TOP]} size={[2.4, 2.1, 0.35]} tone="--story-book-a" />
       <IsoBox at={[0.7, 5.6, TOP + 0.35]} size={[2.2, 1.9, 0.3]} tone="--story-spine-titan" />
       <IsoBox at={[0.55, 5.55, TOP + 0.65]} size={[2.3, 2, 0.4]} tone="--story-book-b" />
@@ -135,7 +135,7 @@ export function DeskSet({ outline, mapBox }) {
         d={leafTuft([1.3, 9.7, TOP + 0.55], 0.55, [-60, -30, 0, 30, 60])}
       />
 
-      {/* монитор: подставка, стойка, корпус, экран */}
+      {/* Монитор: подставка, стойка, корпус, экран */}
       <IsoBox at={[0.9, 13.1, TOP]} size={[1.8, 1.8, 0.15]} tone="--story-monitor" />
       <IsoBox at={[1.1, 13.75, TOP + 0.15]} size={[0.4, 0.5, 2.6]} tone="--story-monitor" />
       <IsoBox at={[1.4, 10.8, 9.6]} size={[0.6, 6.4, 3.8]} tone="--story-monitor" />
@@ -143,7 +143,7 @@ export function DeskSet({ outline, mapBox }) {
         <MonitorScreen outline={outline} mapBox={mapBox} />
       </IsoPlane>
 
-      {/* лампа: основание, колено, плафон; ночью — пятно света на столе */}
+      {/* Лампа: основание, колено, плафон; ночью — пятно света на столе */}
       <IsoPlane facing="z" at={[2, 17.8, TOP + 0.01]}>
         <ellipse className={styles.lampPool} cx="1.7" cy="1.6" rx="1.7" ry="1.5" />
       </IsoPlane>
@@ -157,7 +157,7 @@ export function DeskSet({ outline, mapBox }) {
         <circle className={styles.lampJoint} cx="0" cy="-10" r="3" />
       </g>
 
-      {/* клавиатура с рядами клавиш, коврик и мышь */}
+      {/* Клавиатура с рядами клавиш, коврик и мышь */}
       <IsoBox at={[3.6, 11.8, TOP]} size={[1.5, 4.4, 0.2]} tone="--story-monitor" />
       <IsoPlane facing="z" at={[3.6, 11.8, TOP + 0.2]}>
         {Array.from({ length: KEY_ROWS }, (_, row) =>
@@ -179,7 +179,7 @@ export function DeskSet({ outline, mapBox }) {
       </IsoPlane>
       <IsoBox at={[4.1, 9.3, TOP]} size={[0.9, 0.55, 0.3]} tone="--story-monitor" />
 
-      {/* блокнот на пружине под лампой, рядом — карандаш: заточенный грифель, жёлтый корпус,
+      {/* Блокнот на пружине под лампой, рядом — карандаш: заточенный грифель, жёлтый корпус,
           металлический ободок и ластик; телефон экраном вверх у края стола */}
       <IsoPlane facing="z" at={[3, 17.5, TOP + 0.02]}>
         <g transform="rotate(-6 0.9 1.25)">
@@ -213,7 +213,7 @@ export function DeskSet({ outline, mapBox }) {
         <rect className={styles.phoneScreen} width="1.2" height="0.6" rx="0.08" />
       </IsoPlane>
 
-      {/* кружка с ручкой и паром */}
+      {/* Кружка с ручкой и паром */}
       <IsoCylinder at={[5.6, 7.3, TOP]} radius={0.38} height={0.9} tone="--story-paper" open />
       <path
         className={styles.mugHandle}

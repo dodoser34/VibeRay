@@ -2,7 +2,7 @@ import { StackedBar } from '@/shared/ui/charts/StackedBar';
 import styles from './Breakdown.module.css';
 
 // Части целого: полоска из сегментов и легенда в две колонки.
-// items: [{ key, label, value, colorVar, note }]
+// items — [{ key, label, value, colorVar, note }].
 export function Breakdown({ label, items }) {
   return (
     <div className={styles.root}>

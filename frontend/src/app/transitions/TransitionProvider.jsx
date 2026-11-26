@@ -8,90 +8,82 @@ import {
 import '@/shared/animations/pageTransition/MapFoldTransition.css';
 import { useLocalizedNavigate } from '@/shared/hooks/useLocalizedNavigate';
 import { usePagePath } from '@/shared/hooks/usePagePath';
-import { TransitionContext } from './TransitionContext';
-import nav from '@/texts/en/nav.json';
 import { subscribeTheme } from '@/shared/lib/theme/theme';
+import nav from '@/texts/en/nav.json';
+import { TransitionContext } from './TransitionContext';
 
 // Главная, вход и регистрация — одна страница: переключение между ними анимирует карточку-пропуск.
 const HOME_PATHS = ['/', '/login', '/register'];
-const PAGES = [
-  {
-    test: (path) => path.startsWith('/map'),
-    get label() {
-      return nav.pageNames.map;
-    },
-    tab: 'map',
-  },
-  {
-    test: (path) => path === '/about',
-    get label() {
-      return nav.pageNames.about;
-    },
-    tab: 'about',
-  },
-  {
-    test: (path) => path === '/support',
-    get label() {
-      return nav.pageNames.support;
-    },
-    tab: 'support',
-  },
-  {
-    test: (path) => path === '/settings',
-    get label() {
-      return nav.pageNames.settings;
-    },
-    tab: 'me',
-  },
-  {
-    test: (path) => path === '/moderation/settings',
-    get label() {
-      return nav.moderator.settings;
-    },
-    tab: 'me',
-  },
-  ...['map', 'city', 'support'].map((key) => ({
-    test: (path) => path === `/moderation/${key}`,
-    get label() {
-      return nav.moderator.tabs[key].label;
-    },
-    tab: `moderation-${key}`,
-  })),
-  {
-    test: (path) => path === '/moderation',
-    get label() {
-      return nav.moderator.tabs.queue.label;
-    },
-    tab: 'moderation-queue',
-  },
-  {
-    test: (path) => path === '/login',
-    get label() {
-      return nav.pageNames.login;
-    },
-    tab: 'login',
-  },
-  {
-    test: (path) => path === '/register',
-    get label() {
-      return nav.pageNames.register;
-    },
-    tab: 'register',
-  },
-  {
-    test: () => true,
-    get label() {
-      return nav.pageNames.home;
-    },
-    tab: null,
-  },
-];
-// Якорь и параметры адреса (/settings#settings-reports) не меняют страницу назначения.
-const pageOf = (path) => PAGES.find((page) => page.test(path.split(/[?#]/)[0]));
 // Не держать карту на экране дольше этого, даже если страница зависла. С запасом на загрузку
 // 3D-комнаты «О проекте» (несколько мегабайт) при медленном соединении.
 const HOLD_LIMIT = 15000;
 const POINTER_FRESH = 800; // мс: клик не старше этого — точка, откуда вылетает сложенная карта
+
+// Страницы для подписи и вкладки перехода: первая подходящая по пути. Подпись читается при
+// обращении — язык меняется на лету.
+const entry = (test, tab, readLabel) => ({
+  test,
+  tab,
+  get label() {
+    return readLabel();
+  },
+});
+const PAGES = [
+  entry(
+    (path) => path.startsWith('/map'),
+    'map',
+    () => nav.pageNames.map,
+  ),
+  entry(
+    (path) => path === '/about',
+    'about',
+    () => nav.pageNames.about,
+  ),
+  entry(
+    (path) => path === '/support',
+    'support',
+    () => nav.pageNames.support,
+  ),
+  entry(
+    (path) => path === '/settings',
+    'me',
+    () => nav.pageNames.settings,
+  ),
+  entry(
+    (path) => path === '/moderation/settings',
+    'me',
+    () => nav.moderator.settings,
+  ),
+  ...['map', 'city', 'support'].map((key) =>
+    entry(
+      (path) => path === `/moderation/${key}`,
+      `moderation-${key}`,
+      () => nav.moderator.tabs[key].label,
+    ),
+  ),
+  entry(
+    (path) => path === '/moderation',
+    'moderation-queue',
+    () => nav.moderator.tabs.queue.label,
+  ),
+  entry(
+    (path) => path === '/login',
+    'login',
+    () => nav.pageNames.login,
+  ),
+  entry(
+    (path) => path === '/register',
+    'register',
+    () => nav.pageNames.register,
+  ),
+  entry(
+    () => true,
+    null,
+    () => nav.pageNames.home,
+  ),
+];
+// Якорь и параметры адреса (/settings#settings-reports) не меняют страницу назначения.
+const pageOf = (path) => PAGES.find((page) => page.test(path.split(/[?#]/)[0]));
 
 // Навигация с анимацией. Страница может зарегистрировать свою анимацию ухода (перехватчик —
 // например, пролёт камеры в город); иначе экран закрывает переход «бумажная карта», маршрут
@@ -111,13 +103,13 @@ export function TransitionProvider({ children }) {
     pathRef.current = pathname;
   }, [pathname]);
 
-  // Бумажная карта рисуется один раз, после загрузки страницы (её цвета берутся из стилей), и заново
-  // при смене темы.
+  // Бумажная карта создаётся один раз, после загрузки страницы: её цвета берутся из стилей.
   const ensureMap = useCallback(() => {
     mapRef.current ??= new MapFoldTransition({ gsap, zIndex: 'var(--z-transition)' });
     return mapRef.current;
   }, []);
 
+  // Сменилась тема — карта перерисовывается в новых цветах.
   useEffect(() => subscribeTheme(() => mapRef.current?.refreshTheme()), []);
 
   useEffect(() => {
@@ -183,11 +175,12 @@ export function TransitionProvider({ children }) {
         });
         // Новая страница монтируется под картой; её появление ждёт, пока карта начнёт складываться.
         holdPageEntrance();
-        // Страница могла ещё не загрузиться (маршруты ленивые): ждём её, пока карта закрывает экран.
+        // Страница могла ещё не загрузиться (маршруты ленивые): ждём её, пока карта закрывает
+        // экран.
         await navigate(to);
         window.scrollTo(0, 0);
-        // Даём новому маршруту отрисоваться и зарегистрировать ожидания, затем ждём их (с
-        // ограничением).
+        // Даём новому маршруту отрисоваться и зарегистрировать ожидания, затем ждём их не дольше
+        // HOLD_LIMIT.
         const loaded = new Promise((resolve) => {
           setTimeout(() => {
             if (!holdsRef.current.size) resolve();
@@ -201,7 +194,8 @@ export function TransitionProvider({ children }) {
           onFold: releasePageEntrance,
         });
       } finally {
-        releasePageEntrance(); // никогда не оставлять появление страницы в ожидании (например, если переход упал)
+        // Появление страницы не остаётся в ожидании, даже если переход упал.
+        releasePageEntrance();
         delete document.documentElement.dataset.transition;
         busyRef.current = false;
       }

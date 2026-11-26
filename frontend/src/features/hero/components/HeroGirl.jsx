@@ -107,22 +107,19 @@ export function HeroGirl({ ref, stacked = false, onRisen }) {
     };
   }, []);
 
+  // На широком экране девушка видна только над краем переднего листа: лист полупрозрачен, и низ
+  // картинки иначе просвечивал бы сквозь него. В одну колонку листа нет.
+  const clipStyle = stacked ? undefined : { clipPath: `url(#${clipId})` };
+
   return (
-    <div
-      ref={rootRef}
-      className={styles.root}
-      // На широком экране девушка видна только над краем переднего листа: лист полупрозрачен, и
-      // низ картинки иначе просвечивал бы сквозь него. В одну колонку листа нет.
-      style={stacked ? undefined : { clipPath: `url(#${clipId})` }}
-      aria-hidden="true"
-    >
+    <div ref={rootRef} className={styles.root} style={clipStyle} aria-hidden="true">
       <svg className={styles.clip} width="0" height="0" focusable="false">
         <clipPath id={clipId} clipPathUnits="objectBoundingBox">
           <path ref={clipRef} d={ABOVE_EDGE} />
         </clipPath>
       </svg>
-      {/* Один файл в полном разрешении на всех экранах: уменьшенная копия на ноутбуках и телефонах
-          выглядела мыльной. */}
+      {/* Один файл в полном разрешении на всех экранах: уменьшенная копия выглядит мыльной.
+          Главная картинка первого экрана грузится раньше остального (fetchPriority). */}
       <img
         ref={imageRef}
         className={styles.girl}
@@ -134,7 +131,7 @@ export function HeroGirl({ ref, stacked = false, onRisen }) {
         alt=""
         draggable="false"
         decoding="async"
-        fetchPriority="high" // главная картинка первого экрана — грузится раньше остального
+        fetchPriority="high"
       />
     </div>
   );

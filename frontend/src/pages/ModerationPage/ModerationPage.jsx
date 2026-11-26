@@ -13,7 +13,7 @@ import { localizePath } from '@/shared/lib/i18n/language';
 // Очередь и «Город» — по городу, выбранному модератором (useModerationCity: любой город VibeRay).
 // Гостя уводит на вход; житель сюда не попадает — его уводит app/routing/useRoleRoute.js.
 export function ModerationPage({ section }) {
-  useLanguage();
+  useLanguage(); // при смене языка страница перерисовывается целиком
   const { user } = useAuth();
   const go = useTransitionNavigate();
   const [params] = useSearchParams();

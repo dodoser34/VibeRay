@@ -27,7 +27,7 @@ HIGHWAY_KIND = {
 SKIP_SERVICE = {'parking_aisle'}
 
 
-def kind_of(tags: dict) -> str | None:
+def kind_of(tags: dict[str, str]) -> str | None:
     """Класс дороги по тегам пути OSM или None, если путь — не дорога."""
     if tags.get('railway') == 'rail':
         return 'rail'

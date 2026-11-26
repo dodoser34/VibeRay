@@ -2,8 +2,8 @@ import * as THREE from 'three';
 import { OUTLINE_SIDES } from '@/shared/lib/geo/cityOutline';
 
 // Плитки дорог и воды (MapTiles) плавно гаснут к контуру города (cityOutline): прозрачность
-// умножается на smoothstep расстояния от точки до ближайшей стороны контура — 0 на самом контуре, 1 в
-// глубине полосы fade. point — выражение GLSL вершинного шейдера с точкой в единицах сцены (x —
+// умножается на smoothstep расстояния от точки до ближайшей стороны контура — 0 на самом контуре, 1
+// в глубине полосы fade. point — выражение GLSL вершинного шейдера с точкой в единицах сцены (x —
 // восток, y — север); в фрагментном шейдере она доступна как vEdgePoint.
 export function injectEdgeFade(shader, { edges, fade }, point) {
   shader.uniforms.edgeFadeSides = {

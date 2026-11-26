@@ -1,7 +1,7 @@
 import dictionaries from '@/texts/en/dictionaries.json';
 import { withLabels } from './withLabels';
 
-// Коды должны совпадать с backend/app/models/enums.py (ProblemCategory).
+// Коды общие с бэкендом: перечисление ProblemCategory (будущий backend/app/models/enums.py).
 export const PROBLEM_CATEGORIES = withLabels(
   [
     { code: 'garbage' },

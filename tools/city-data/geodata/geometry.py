@@ -9,6 +9,7 @@ import math
 
 import shapely
 from shapely.geometry import Polygon
+from shapely.geometry.base import BaseGeometry
 
 METERS_PER_DEGREE = 111_320
 
@@ -18,14 +19,17 @@ def scale(lat0: float) -> tuple[float, float]:
     return math.cos(math.radians(lat0)) * METERS_PER_DEGREE, METERS_PER_DEGREE
 
 
-def area_m2(geometry, lat0: float) -> float:
+def area_m2(geometry: BaseGeometry, lat0: float) -> float:
+    """Площадь геометрии в квадратных метрах."""
     kx, ky = scale(lat0)
     return geometry.area * kx * ky
 
 
-def parts(geometry) -> list[Polygon]:
-    """Все полигоны геометрии. Линии и точки, которые оставляют вычитания и пересечения, —
-    отбрасываются."""
+def parts(geometry: BaseGeometry) -> list[Polygon]:
+    """Все полигоны геометрии.
+
+    Линии и точки, которые оставляют вычитания и пересечения, отбрасываются.
+    """
     if geometry.is_empty:
         return []
     if isinstance(geometry, Polygon):
@@ -39,8 +43,8 @@ class Projection:
     def __init__(self, lat0: float) -> None:
         self.kx, self.ky = scale(lat0)
 
-    def to_meters(self, geometry):
-        return shapely.transform(geometry, lambda c: c * [self.kx, self.ky])
+    def to_meters(self, geometry: BaseGeometry) -> BaseGeometry:
+        return shapely.transform(geometry, lambda coords: coords * [self.kx, self.ky])
 
-    def to_degrees(self, geometry):
-        return shapely.transform(geometry, lambda c: c / [self.kx, self.ky])
+    def to_degrees(self, geometry: BaseGeometry) -> BaseGeometry:
+        return shapely.transform(geometry, lambda coords: coords / [self.kx, self.ky])

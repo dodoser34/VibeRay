@@ -2,8 +2,8 @@ import { useRef } from 'react';
 import { useSlidingThumb } from '@/shared/animations/controls/useSlidingThumb';
 import styles from './OptionGroup.module.css';
 
-// Группа вариантов, из которых выбран один (настройки: тема, графика). options — [{ code, label,
-// icon? }]; рамка акцента перетекает к выбранному варианту (useSlidingThumb).
+// Группа вариантов, из которых выбран один (тема в настройках). options — [{ code, label, icon? }];
+// рамка акцента перетекает к выбранному варианту (useSlidingThumb).
 export function OptionGroup({ label, options, value, onChange }) {
   const rootRef = useRef(null);
   const thumbRef = useRef(null);

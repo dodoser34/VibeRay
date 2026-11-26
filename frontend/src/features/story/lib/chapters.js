@@ -1,8 +1,8 @@
-import about from '@/texts/en/about.json';
 import { getTheme } from '@/shared/lib/theme/theme';
+import about from '@/texts/en/about.json';
 
 // История идеи для страницы «О проекте». Одна глава = CHAPTER единиц шкалы = один экран прокрутки.
-// Тексты лежат в src/texts/{ru,en}/about.json; здесь — только порядок глав.
+// Тексты лежат в src/texts/<язык>/about.json; здесь — только порядок глав.
 const CHAPTER = 10;
 // Позиция на шкале прокрутки: глава и смещение внутри неё (в тех же единицах).
 export const chapterTime = (chapter, offset = 0) => chapter * CHAPTER + offset;
@@ -19,10 +19,11 @@ const CHAPTER_IDS = [
   'final',
 ];
 
-// Тексты глав читаются при каждом обращении: язык можно сменить на лету (shared/lib/i18n/language.js).
 // Светлая тема — та же история днём: комната при солнце, другие время и первая подпись.
 export const isDaylight = () => getTheme() === 'light';
 
+// Тексты глав читаются при каждом обращении: язык можно сменить на лету
+// (shared/lib/i18n/language.js).
 export const CHAPTERS = CHAPTER_IDS.map((id) => ({
   id,
   get text() {

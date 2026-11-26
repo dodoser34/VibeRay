@@ -6,10 +6,9 @@ import { plural } from '@/shared/lib/i18n/plural';
 import texts from '@/texts/en/stats.json';
 import styles from './CompareSummary.module.css';
 
-const t = texts.districtCompare;
+const compareTexts = texts.districtCompare;
 
 // Карточка одного района в сравнении: настроение, отметки и сообщения за период.
-
 export function CompareSummary({ side, stats, name }) {
   const mood = stats?.mood;
   const code = mood && !mood.insufficient_data ? moodCodeForScore(mood.score) : null;
@@ -19,7 +18,7 @@ export function CompareSummary({ side, stats, name }) {
       <div className={styles.cardText}>
         <span className={styles.cardName}>{name}</span>
         {!stats ? (
-          <span className={styles.cardMeta}>{t.loading}</span>
+          <span className={styles.cardMeta}>{compareTexts.loading}</span>
         ) : (
           <>
             <span className={styles.cardScore}>
@@ -27,14 +26,14 @@ export function CompareSummary({ side, stats, name }) {
               {code && <span className={styles.cardMood}>{MOOD_BY_CODE[code].label}</span>}
             </span>
             <span className={styles.cardMeta}>
-              {format(t.marks, {
+              {format(compareTexts.marks, {
                 count: formatNumber(mood.sample_size),
                 marks: plural(mood.sample_size, texts.marks),
               })}
               {' · '}
-              {format(t.reported, {
+              {format(compareTexts.reported, {
                 count: stats.problems.new_in_period,
-                problems: plural(stats.problems.new_in_period, t.problemForms),
+                problems: plural(stats.problems.new_in_period, compareTexts.problemForms),
               })}
             </span>
           </>

@@ -4,10 +4,10 @@ import { updateProfile } from '@/shared/api/endpoints/users';
 import { useCities, useCityDistricts } from '@/shared/hooks/useCities';
 import { format } from '@/shared/lib/i18n/format';
 import { CityPicker } from '@/shared/ui/cityPicker/CityPicker';
+import texts from '@/texts/en/settings.json';
 import { useSaveAction } from '../../hooks/useSaveAction';
 import { SaveBar } from '../SaveBar';
 import { SettingsSection } from '../SettingsSection';
-import texts from '@/texts/en/settings.json';
 import styles from './DistrictSection.module.css';
 
 // «Свой город и район» приватные: они только выбирают, что карта откроет первым. Город — из всех

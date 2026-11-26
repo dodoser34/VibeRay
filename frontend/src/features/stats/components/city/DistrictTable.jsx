@@ -1,17 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import { MoodFace } from '@/features/mood';
-import { useFlipList } from '@/shared/animations/effects/useFlipList';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { useFlipList } from '@/shared/animations/effects/useFlipList';
 import { MOOD_BY_CODE, moodCodeForScore } from '@/shared/config/moods';
+import { useRevealed } from '@/shared/hooks/useRevealed';
 import { format } from '@/shared/lib/i18n/format';
 import { formatNumber, formatSigned, percentOf } from '@/shared/lib/i18n/formatNumber';
 import { getLocale } from '@/shared/lib/i18n/language';
 import { plural } from '@/shared/lib/i18n/plural';
-import { useRevealed } from '@/shared/hooks/useRevealed';
 import texts from '@/texts/en/stats.json';
+import { trendDirection } from '../../lib/trend';
 import styles from './DistrictTable.module.css';
-
-const SAME_SCORE = 0.1; // меньшие изменения читаются как «без изменений» (оценки −2…+2)
 
 // Ключи сортировки: функция значения и направление сортировки по первому клику.
 const COLUMNS = {
@@ -25,27 +24,22 @@ const COLUMNS = {
   },
 };
 
-function sortRows(rows, { key, dir }) {
+function sortRows(rows, { key, direction }) {
   const get = COLUMNS[key].get;
-  const sign = dir === 'asc' ? 1 : -1;
+  const sign = direction === 'asc' ? 1 : -1;
   return [...rows].sort((a, b) => {
     const [valueA, valueB] = [get(a), get(b)];
-    if (valueA === null || valueB === null) return valueA === valueB ? 0 : valueA === null ? 1 : -1; // районы без данных — в конце
+    // Районы без данных — в конце при любом направлении.
+    if (valueA === null || valueB === null) return valueA === valueB ? 0 : valueA === null ? 1 : -1;
     if (typeof valueA === 'string') return sign * valueA.localeCompare(valueB, getLocale());
     return sign * (valueA - valueB);
   });
 }
 
-function trendKey(trend) {
-  if (trend === null) return null;
-  if (Math.abs(trend) < SAME_SCORE) return 'flat';
-  return trend > 0 ? 'up' : 'down';
-}
-
 // Все районы за период: настроение, тренд, проблемы. Сортировка по колонке переносит строки на
 // новые места; наведение на строку приподнимает район на карте, клик — перелёт к нему.
 export function DistrictTable({ rows, focusSlug, onFocus, onHover, onOpen }) {
-  const [sort, setSort] = useState({ key: 'mood', dir: 'desc' });
+  const [sort, setSort] = useState({ key: 'mood', direction: 'desc' });
   const bodyRef = useRef(null);
   const revealed = useRevealed();
   const sorted = sortRows(rows, sort);
@@ -75,15 +69,20 @@ export function DistrictTable({ rows, focusSlug, onFocus, onHover, onOpen }) {
   const sortBy = (key) =>
     setSort((current) =>
       current.key === key
-        ? { key, dir: current.dir === 'asc' ? 'desc' : 'asc' }
-        : { key, dir: COLUMNS[key].first },
+        ? { key, direction: current.direction === 'asc' ? 'desc' : 'asc' }
+        : { key, direction: COLUMNS[key].first },
     );
 
-  const header = (key, dataUi) => (
+  // dataUi — имя колонки для адаптаций (на планшете тренд прячется), className — выравнивание
+  // чисел.
+  const header = (key, { dataUi, className } = {}) => (
     <th
       scope="col"
+      className={className}
       data-ui={dataUi && `district-table-${dataUi}`}
-      aria-sort={sort.key === key ? (sort.dir === 'asc' ? 'ascending' : 'descending') : undefined}
+      aria-sort={
+        sort.key === key ? (sort.direction === 'asc' ? 'ascending' : 'descending') : undefined
+      }
     >
       <button
         type="button"
@@ -92,31 +91,34 @@ export function DistrictTable({ rows, focusSlug, onFocus, onHover, onOpen }) {
         onClick={() => sortBy(key)}
       >
         {texts.table.columns[key]}
-        <span className={styles.arrow} data-dir={sort.key === key ? sort.dir : undefined} />
+        <span
+          className={styles.arrow}
+          data-direction={sort.key === key ? sort.direction : undefined}
+        />
       </button>
     </th>
   );
 
   return (
     <table className={styles.table}>
-      <caption className={styles.caption}>{texts.table.caption}</caption>
+      <caption className="visually-hidden">{texts.table.caption}</caption>
       <thead>
         <tr>
           <th scope="col" className={styles.rankHead}>
-            <span className={styles.visuallyHidden}>{texts.table.columns.rank}</span>
+            <span className="visually-hidden">{texts.table.columns.rank}</span>
           </th>
           {header('name')}
           {header('mood')}
-          {header('trend', 'trend')}
-          {header('problems', styles.num)}
-          {header('resolved', styles.num)}
+          {header('trend', { dataUi: 'trend' })}
+          {header('problems', { className: styles.num })}
+          {header('resolved', { className: styles.num })}
         </tr>
       </thead>
       <tbody ref={bodyRef}>
         {sorted.map((row, i) => {
           const hasMood = !row.mood.insufficient_data;
           const code = hasMood ? moodCodeForScore(row.mood.score) : null;
-          const trend = trendKey(row.trend);
+          const trend = trendDirection(row.trend);
           const focused = row.district === focusSlug;
           return (
             <tr

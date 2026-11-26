@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router';
 import { gsap, SplitText, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { revealOnScroll } from '@/shared/animations/effects/revealOnScroll';
@@ -6,14 +6,14 @@ import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useAuth } from '@/features/auth';
 import { isModerator } from '@/shared/config/roles';
+import texts from '@/texts/en/settings.json';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { AccountSection } from './sections/AccountSection';
 import { DistrictSection } from './sections/DistrictSection';
 import { MyReportsSection } from './sections/MyReportsSection';
 import { ProfileSection } from './sections/ProfileSection';
 import { SecuritySection } from './sections/SecuritySection';
 import figure from '../assets/profile-assistant.webp';
-import texts from '@/texts/en/settings.json';
-import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SettingsCenter.module.css';
 
 // Модератору свои сообщения и «свой район» не нужны — у него свой интерфейс.
@@ -30,9 +30,8 @@ const SECTIONS = ['profile', 'reports', 'district', 'security', 'account'].map((
 }));
 
 // Страница настроек: навигация по разделам (подсвечивает раздел, который сейчас на экране)
-// и сами разделы. districts: [{ slug, name }] (названия районов в «Моих сообщениях») или null, пока
-// город грузится.
-export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
+// и сами разделы.
+export function SettingsCenter({ onNavigate, onLogout, onDeleted }) {
   const language = useLanguage();
   const rootRef = useRef(null);
   const reduced = useReducedMotion();
@@ -43,10 +42,6 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
     ? SECTIONS.filter(({ key }) => MODERATOR_SECTIONS.includes(key))
     : SECTIONS;
   const [active, setActive] = useState(SECTIONS[0].id);
-  const names = useMemo(
-    () => Object.fromEntries((districts ?? []).map((district) => [district.slug, district.name])),
-    [districts],
-  );
 
   const { hash } = useLocation();
 
@@ -66,7 +61,8 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
     );
     sections.forEach(({ id }) => observer.observe(document.getElementById(id)));
     return () => observer.disconnect();
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- набор разделов меняется только с ролью
+    // Набор разделов меняется только вместе с ролью.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [moderator]);
 
   useGSAP(
@@ -104,7 +100,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
         <p className={styles.lead} data-hero data-ui="settings-lead">
           {moderator ? texts.moderator.lead : texts.lead}
         </p>
-        {/* Девушка выглядывает из-за карточки раздела: нижний срез картинки — по её верхнему краю */}
+        {/* Девушка выглядывает из-за карточки раздела: нижний срез картинки — по её краю */}
         <span className={styles.figure} aria-hidden="true" data-figure data-ui="settings-figure">
           <img src={figure} width="1149" height="1368" alt="" draggable="false" decoding="async" />
         </span>
@@ -122,7 +118,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
                   onClick={jumpTo(id)}
                 >
                   <span data-ui="settings-nav-full">{label}</span>
-                  {/* Короткая подпись — для телефона, где четыре раздела должны встать в одну строку */}
+                  {/* Короткая подпись — для телефона: все разделы встают в одну строку */}
                   <span className={styles.short} data-ui="settings-nav-short" aria-hidden="true">
                     {short}
                   </span>
@@ -134,9 +130,7 @@ export function SettingsCenter({ districts, onNavigate, onLogout, onDeleted }) {
 
         <div className={styles.sections}>
           <ProfileSection id={SECTIONS[0].id} />
-          {!moderator && (
-            <MyReportsSection id={SECTIONS[1].id} names={names} onNavigate={onNavigate} />
-          )}
+          {!moderator && <MyReportsSection id={SECTIONS[1].id} onNavigate={onNavigate} />}
           {!moderator && <DistrictSection id={SECTIONS[2].id} />}
           <SecuritySection id={SECTIONS[3].id} />
           <AccountSection id={SECTIONS[4].id} onLogout={onLogout} onDeleted={onDeleted} />

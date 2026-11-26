@@ -3,8 +3,8 @@ import { createPortal } from 'react-dom';
 import { BREAKPOINTS } from '@/adaptations/core';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import common from '@/texts/en/common.json';
-import styles from './Modal.module.css';
 import { CloseButton } from '../controls/CloseButton';
+import styles from './Modal.module.css';
 
 export function Modal({ title, onClose, children, width = 460 }) {
   const titleId = useId();

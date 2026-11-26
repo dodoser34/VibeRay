@@ -4,20 +4,19 @@ import { useRiseOnLoad } from '@/shared/animations/effects/useRiseOnLoad';
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { format } from '@/shared/lib/i18n/format';
 import { percentOf } from '@/shared/lib/i18n/formatNumber';
-import { Button } from '@/shared/ui/controls/Button';
 import { AnimatedNumber } from '@/shared/ui/charts/AnimatedNumber';
 import { BarList } from '@/shared/ui/charts/BarList';
+import { Button } from '@/shared/ui/controls/Button';
+import { CloseButton } from '@/shared/ui/controls/CloseButton';
 import texts from '@/texts/en/stats.json';
+import { trendDirection } from '../../lib/trend';
 import { MoodChart } from '../common/MoodChart';
 import { MoodDistribution } from '../common/MoodDistribution';
 import { StatusBreakdown } from '../common/StatusBreakdown';
 import { MoodSummary } from './MoodSummary';
 import styles from './DistrictPanel.module.css';
-import { CloseButton } from '@/shared/ui/controls/CloseButton';
 
 const PERIOD_LABEL = texts.periods;
-// Разница меньше этой читается как «так же» (оценки в диапазоне −2…+2).
-const SAME_SCORE = 0.1;
 
 // Настроение в начале и в конце периода (среднее трёх точек с каждой стороны).
 function moodTrend(series) {
@@ -41,7 +40,7 @@ export function DistrictPanel({
   onSelectProblem,
 }) {
   const trend = stats ? moodTrend(stats.series) : 0;
-  const trendKey = Math.abs(trend) < SAME_SCORE ? 'flat' : trend > 0 ? 'up' : 'down';
+  const trendKey = trendDirection(trend);
   const problemsTotal = stats?.problems.total ?? 0;
   const bodyRef = useRef(null);
   useRiseOnLoad(bodyRef, loading);
@@ -78,7 +77,7 @@ export function DistrictPanel({
       </header>
 
       {!stats ? (
-        <div className={styles.skeleton} aria-label={texts.loading} />
+        <div className={styles.skeleton} role="status" aria-label={texts.loading} />
       ) : (
         <div ref={bodyRef} className={styles.body} data-loading={loading}>
           <MoodSummary mood={stats.mood} period={period} cityAverage={facts?.cityAverage ?? null} />

@@ -6,30 +6,34 @@
 """
 
 from pathlib import Path
+from typing import Any
 
+from cities import CityConfig
 from geodata.osm import find_relations, official_boundaries
 from geodata.output import read_json
 
 
-def known_properties(folder: Path) -> dict[str, dict]:
+def known_properties(folder: Path) -> dict[str, dict[str, Any]]:
     """Свойства районов из текущего districts.geojson (пусто, если файла ещё нет)."""
     path = folder / 'districts.geojson'
     if not path.exists():
         return {}
-    return {f['properties']['slug']: f['properties'] for f in read_json(path)['features']}
+    features = read_json(path)['features']
+    return {feature['properties']['slug']: feature['properties'] for feature in features}
 
 
-def osm_properties(slug: str, config: dict) -> dict[str, dict]:
+def osm_properties(slug: str, config: CityConfig) -> dict[str, dict[str, Any]]:
     """Свойства районов из тегов OSM: name:ru, name:en, name:kk, name:de.
 
     Если русского названия в OSM нет, остаётся местное (name) — его заменяют транслитерацией
     вручную. Казахское и немецкое пишутся, только если они есть в OSM: без них сайт покажет
-    русское и английское. Цвет (palette) назначит раскраска."""
+    русское и английское. Цвет (palette) назначит раскраска.
+    """
     relations = find_relations(official_boundaries(slug, config['query']), config['districts'])
-    result = {}
+    result: dict[str, dict[str, Any]] = {}
     for district, name in config['districts'].items():
         tags = relations[district]['tags']
-        properties = {
+        properties: dict[str, Any] = {
             'slug': district,
             'name': tags.get('name:ru', name),
             'name_en': tags.get('name:en', name),

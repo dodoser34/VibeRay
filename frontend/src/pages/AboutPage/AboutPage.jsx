@@ -4,8 +4,7 @@ import { STORY_CITY, StoryExperience, StoryGuide } from '@/features/story';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 
 export function AboutPage() {
-  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
-  useLanguage();
+  useLanguage(); // при смене языка страница перерисовывается целиком
   const go = useTransitionNavigate();
   // Карта — того же города, что в истории (Костанай).
   const openMap = () => go(`/map/${STORY_CITY.slug}`);

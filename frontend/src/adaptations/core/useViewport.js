@@ -1,52 +1,41 @@
 import { useSyncExternalStore } from 'react';
-import { COARSE_POINTER, isCompact, isPhoneLandscape, tierFor } from './breakpoints';
+import { isCompact, isPhoneLandscape, tierFor } from './breakpoints';
 
 function subscribe(callback) {
-  const coarse = window.matchMedia(COARSE_POINTER);
   window.addEventListener('resize', callback);
-  coarse.addEventListener('change', callback);
-  return () => {
-    window.removeEventListener('resize', callback);
-    coarse.removeEventListener('change', callback);
-  };
+  return () => window.removeEventListener('resize', callback);
 }
 
-// Снимок-строка: React перерисовывает только при реальной смене уровня (или типа указателя), а не
-// на каждый пиксель ресайза.
+// Снимок-строка: React перерисовывает только при реальной смене уровня, а не на каждый пиксель
+// ресайза. innerWidth включает классическую полосу прокрутки — ту же ширину используют
+// медиазапросы CSS.
 function snapshot() {
-  // innerWidth включает классическую полосу прокрутки — ту же ширину используют медиазапросы CSS.
   const width = window.innerWidth;
-  const compact = isCompact(width, window.innerHeight);
-  const coarse = window.matchMedia(COARSE_POINTER).matches;
-  const orientation = window.innerHeight > width ? 'portrait' : 'landscape';
-  const phoneLandscape = isPhoneLandscape(width, window.innerHeight);
+  const height = window.innerHeight;
   return [
     tierFor(width),
-    compact ? 'compact' : 'wide',
-    coarse ? 'coarse' : 'fine',
-    orientation,
-    phoneLandscape ? 'phone' : 'other',
+    isCompact(width, height) ? 'compact' : 'wide',
+    height > width ? 'portrait' : 'landscape',
+    isPhoneLandscape(width, height) ? 'phone' : 'other',
   ].join('|');
 }
 
 // Уровень устройства для компонентов, которые меняют структуру, а не только стили (мобильное меню
-// вместо таб-бара; `compact`: шторка вместо боковых панелей, главная в одну колонку; `portrait`:
-// экран выше, чем шире — по нему перестраиваются кадры, рассчитанные под пропорции экрана).
+// вместо таб-бара; compact — шторка вместо боковых панелей, главная в одну колонку; portrait —
+// экран выше, чем шире: по нему перестраиваются кадры, рассчитанные под пропорции экрана).
 export function useViewport() {
-  const [tier, layout, pointer, orientation, landscapePhone] = useSyncExternalStore(
+  const [tier, layout, orientation, landscapePhone] = useSyncExternalStore(
     subscribe,
     snapshot,
-    () => 'desktop|wide|fine|landscape|other',
+    () => 'desktop|wide|landscape|other',
   ).split('|');
   return {
     tier,
     isMobile: tier === 'mobile',
-    // Телефонная навигация (плавающие кнопки и меню): телефоны стоя и лёжа
+    // Телефонная навигация (плавающие кнопки и меню): телефоны стоя и лёжа.
     phoneNav: tier === 'mobile' || landscapePhone === 'phone',
-    isTablet: tier === 'tablet',
     isDesktop: tier !== 'mobile' && tier !== 'tablet',
     compact: layout === 'compact',
-    coarse: pointer === 'coarse',
     portrait: orientation === 'portrait',
   };
 }

@@ -10,17 +10,16 @@ const BAR_BAND = 30; // высота столбиков под линией
 const BAR_GAP = 10;
 const EDGE_TICK = 24; // подписи X у самого края прижимаются к нему, а не центрируются
 
-// k: масштаб интерфейса (2K / 4K увеличивают корневой шрифт) — отступы растут вместе с текстом.
-function layout(count, width, height, [min, max], k) {
-  const plotLeft = PAD.left * k;
-  const plotRight = width - PAD.right * k;
-  const top = PAD.top * k;
+// scale — масштаб интерфейса (2K / 4K увеличивают корневой шрифт): отступы растут вместе с текстом.
+function layout(count, width, height, [min, max], scale) {
+  const plotLeft = PAD.left * scale;
+  const plotRight = width - PAD.right * scale;
+  const top = PAD.top * scale;
   const band = (plotRight - plotLeft) / Math.max(1, count);
-  const barBottom = height - PAD.bottom * k;
-  const barBand = BAR_BAND * k;
-  const lineBottom = barBottom - barBand - BAR_GAP * k;
+  const barBottom = height - PAD.bottom * scale;
+  const barBand = BAR_BAND * scale;
+  const lineBottom = barBottom - barBand - BAR_GAP * scale;
   return {
-    k,
     top,
     plotLeft,
     plotRight,
@@ -28,7 +27,7 @@ function layout(count, width, height, [min, max], k) {
     barBand,
     lineBottom,
     barBottom,
-    barWidth: Math.max(2, Math.min(12 * k, band * 0.56)),
+    barWidth: Math.max(2, Math.min(12 * scale, band * 0.56)),
     x: (i) => plotLeft + band * (i + 0.5),
     y: (value) => top + ((max - value) / (max - min)) * (lineBottom - top),
   };
@@ -69,14 +68,14 @@ export function TimeSeriesChart({
   const morphRef = useRef({ t: 0 });
   const gradientId = useId();
   const width = useElementWidth(rootRef);
-  const k = rootScale();
-  const height = Math.round(baseHeight * k);
+  const scale = rootScale();
+  const height = Math.round(baseHeight * scale);
   const [active, setActive] = useState(null);
 
   const values = points.map((point) => point.value);
   const bars = points.map((point) => point.bar ?? 0);
   const maxBar = Math.max(1, ...bars);
-  const geometry = width ? layout(points.length, width, height, domain, k) : null;
+  const geometry = width ? layout(points.length, width, height, domain, scale) : null;
   const dataKey = JSON.stringify([values, bars]);
 
   useGSAP(
@@ -174,7 +173,7 @@ export function TimeSeriesChart({
           width={width}
           height={height}
           className={styles.svg}
-          role="img"
+          role="group"
           aria-label={label}
           tabIndex={0}
           onPointerMove={(event) => pickAt(event.clientX)}
@@ -203,7 +202,7 @@ export function TimeSeriesChart({
                 className={tick.value === 0 ? styles.zero : styles.grid}
               />
               <text
-                x={geometry.plotLeft - 8 * k}
+                x={geometry.plotLeft - 8 * scale}
                 y={geometry.y(tick.value)}
                 className={styles.yTick}
                 textAnchor="end"
@@ -223,8 +222,8 @@ export function TimeSeriesChart({
 
           <path ref={areaRef} fill={`url(#${gradientId})`} />
           <path ref={lineRef} className={styles.line} pathLength="1" strokeDasharray="1" />
-          {/* y и height задаёт GSAP; исходные значения нужны, чтобы при откате анимаций (смена
-              данных, размонтирование) столбик вернулся к нулевой высоте, а не к пустому атрибуту. */}
+          {/* y и height задаёт GSAP; исходные значения нужны, чтобы при откате анимаций столбик
+              вернулся к нулевой высоте, а не к пустому атрибуту. */}
           <g ref={barsRef}>
             {points.map((point, i) => (
               <rect
@@ -245,16 +244,16 @@ export function TimeSeriesChart({
             if (!text) return null;
             const x = geometry.x(i);
             const anchor =
-              x - geometry.plotLeft < EDGE_TICK * k
+              x - geometry.plotLeft < EDGE_TICK * scale
                 ? 'start'
-                : geometry.plotRight - x < EDGE_TICK * k
+                : geometry.plotRight - x < EDGE_TICK * scale
                   ? 'end'
                   : 'middle';
             return (
               <text
                 key={i}
-                x={anchor === 'start' ? x - 4 * k : anchor === 'end' ? x + 4 * k : x}
-                y={height - 6 * k}
+                x={anchor === 'start' ? x - 4 * scale : anchor === 'end' ? x + 4 * scale : x}
+                y={height - 6 * scale}
                 className={styles.xTick}
                 textAnchor={anchor}
               >
@@ -268,7 +267,7 @@ export function TimeSeriesChart({
               <line y1={geometry.top} y2={geometry.barBottom} className={styles.guide} />
               {activeValue !== null && (
                 <circle
-                  r={4.5 * k}
+                  r={4.5 * scale}
                   className={styles.dot}
                   style={{ transform: `translateY(${geometry.y(activeValue)}px)` }}
                 />

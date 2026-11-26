@@ -61,7 +61,7 @@ export function WindowWall({ daylight }) {
       <IsoCylinder at={[23.2, 0.65, z0]} radius={0.35} height={0.55} tone="--story-pot" />
       <IsoCylinder at={[23.2, 0.65, z0 + 0.55]} radius={0.22} height={1.3} tone="--story-plant" />
 
-      {/* батарея под окном: секции — вертикальные рёбра */}
+      {/* Батарея под окном: секции — вертикальные рёбра */}
       <IsoBox at={[14, 0.15, 1.4]} size={[10, 0.75, 4.8]} tone="--story-paper" />
       <IsoPlane facing="y" at={[14, 0.9, 6.2]}>
         {Array.from({ length: 16 }, (_, k) => (
@@ -69,7 +69,7 @@ export function WindowWall({ daylight }) {
         ))}
       </IsoPlane>
 
-      {/* постер с горами и часы */}
+      {/* Постер с горами и часы */}
       <IsoPlane facing="y" at={[1.2, 0.02, 17.5]}>
         <rect className={styles.posterFrame} width="5" height="6.2" />
         <rect className={styles.posterArt} x="0.35" y="0.35" width="4.3" height="5.5" />
@@ -99,7 +99,7 @@ export function WindowWall({ daylight }) {
         <path className={styles.clockHand} d="M1.2 1.2V0.4" />
       </IsoPlane>
 
-      {/* шторы на карнизе: складки — полосы тени */}
+      {/* Шторы на карнизе: складки — полосы тени */}
       <IsoBox at={[10.5, 0.9, 20.5]} size={[17, 0.2, 0.2]} tone="--story-metal" />
       {[10.4, 27.6].map((x) => {
         const [finialX, finialY] = isoToScreen(x, 1, 20.6);

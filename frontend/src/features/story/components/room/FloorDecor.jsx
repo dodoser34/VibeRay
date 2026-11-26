@@ -5,13 +5,14 @@ import styles from './IsometricRoom.module.css';
 
 const PLANT_ANGLES = [-75, -50, -28, -8, 14, 36, 58, 80];
 
-// Мелочи на полу перед столом: кресло-мешок с книгой, спящий кот на ковре и большое растение в углу. Порядок — от стены к зрителю.
+// Мелочи на полу перед столом: кресло-мешок с книгой, спящий кот на ковре и большое растение в
+// углу. Порядок — от стены к зрителю.
 export function FloorDecor() {
   const [catX, catY] = isoToScreen(17.5, 18.5, 0.05);
   const [bagX, bagY] = isoToScreen(26, 21, 0);
   return (
     <g>
-      {/* кресло-мешок: мягкий купол с вмятиной сиденья и швами, на нём раскрытая книга */}
+      {/* Кресло-мешок: мягкий купол с вмятиной сиденья и швами, на нём раскрытая книга */}
       <g transform={`translate(${bagX} ${bagY})`}>
         <ellipse className={styles.floorShadow} cx="4" cy="6" rx="84" ry="34" />
         <path
@@ -31,7 +32,7 @@ export function FloorDecor() {
         <path className={styles.bookSpine} d="M-2 -46v16" />
       </g>
 
-      {/* кот спит клубком: тело, голова, уши, хвост; дышит (CSS) */}
+      {/* Кот спит клубком: тело, голова, уши, хвост; дышит (CSS) */}
       <g transform={`translate(${catX} ${catY})`}>
         <ellipse className={styles.floorShadow} cx="2" cy="4" rx="40" ry="14" />
         <g className={styles.catBody}>
@@ -44,7 +45,7 @@ export function FloorDecor() {
         </g>
       </g>
 
-      {/* монстера в углу у стола */}
+      {/* Монстера в углу у стола */}
       <IsoCylinder at={[3, 25.6, 0]} radius={1.3} height={2.6} tone="--story-pot" />
       <path
         className={styles.leafDark}

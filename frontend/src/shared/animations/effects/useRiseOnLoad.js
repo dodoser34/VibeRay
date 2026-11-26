@@ -3,8 +3,7 @@ import { gsap, useGSAP } from '../core/gsapSetup';
 
 // Данные панели догрузились (loading: true → false — другой период, первая загрузка после
 // заглушки): блоки контейнера поднимаются по очереди. Новую панель целиком анимирует страница,
-// здесь — только обновление данных внутри открытой панели. clearProps: прозрачность и сдвиг дальше
-// снова у CSS.
+// здесь — только обновление данных внутри открытой панели.
 export function useRiseOnLoad(containerRef, loading) {
   const wasLoading = useRef(loading);
 

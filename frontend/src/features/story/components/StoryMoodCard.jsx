@@ -11,7 +11,8 @@ const SCALE = MOODS.slice(0, 5);
 const STORY_PICK = 'good';
 
 // Сцена 4: точка одного жителя становится человеком с выбором настроения. Рамку выбора показывает
-// шкала истории (data-story="mood-pick"); посетитель может нажать любое лицо — рамка переедет к нему.
+// шкала истории (data-story="mood-pick"); посетитель может нажать любое лицо — рамка переедет к
+// нему.
 export function StoryMoodCard() {
   const texts = about.story.moodCard;
   const [picked, setPicked] = useState(STORY_PICK);

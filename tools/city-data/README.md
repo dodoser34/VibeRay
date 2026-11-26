@@ -13,7 +13,7 @@ pip install -r tools/city-data/requirements.txt
 |---|---|---|
 | 1 | `python tools/city-data/build_water.py <город>` | вода (нужна новому городу; у готовых уже собрана) |
 | 2 | `python tools/city-data/build_districts.py <город>` | районы, центр и рамка города, список правок чистки |
-| 3 | `python tools/city-data/build_streets.py <город>` | схема дорог по районам |
+| 3 | `python tools/city-data/build_streets.py <город> --save-osm tools/city-data/.osm-cache/<город>-streets.json` | схема дорог по районам и сохранённый ответ Overpass |
 | 4 | `python tools/city-data/build_map_tiles.py <город>` или `--all` | плитки карты и векторные куски дорог |
 | 5 | `python tools/city-data/verify_city_data.py <город>` или `--all` | таблица проверок и итог «ПРИНЯТО» |
 
@@ -21,9 +21,12 @@ pip install -r tools/city-data/requirements.txt
 - `geodata/` — общий код: пути, Overpass и кеш, геометрия, дороги, сборка районов (`districts/`),
   проверки (`checks/`).
 - `.osm-cache/` — сырые ответы Overpass, чтобы пересобирать без сети. В git не попадает.
+  Ответ с дорогами (шаг 3) сам не сохраняется — нужен `--save-osm`: по нему `geodata/checks/streets.py`
+  сверяет схему с OSM, а повторная сборка дорог идёт без сети (`--osm` вместо `--save-osm`).
+  Большой город грузится частями: `--tiles 4 --skip-outside service` (подробно — в начале `build_streets.py`).
 
 Куда пишут скрипты:
 
 - `backend/data/cities/<город>/` — исходные данные города (их будет отдавать API);
-- `frontend/src/demo-data/cities/<город>/` — копия районов и воды для демо-режима сайта;
+- `frontend/src/demo-data/cities/<город>/` — копия районов, `city.json` и воды для демо-режима сайта;
 - `frontend/public/maps/<город>/` — плитки подложки карты.

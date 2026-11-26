@@ -22,36 +22,38 @@ function holeFor(step) {
   const element = findTarget(step.target);
   if (!element) return null;
   const box = element.getBoundingClientRect();
-  const pad = step.padding ?? 10;
+  const padding = step.padding ?? 10;
   return {
-    x: box.left - pad,
-    y: box.top - pad,
-    width: box.width + pad * 2,
-    height: box.height + pad * 2,
-    radius: step.round ? (box.height + pad * 2) / 2 : 16,
+    x: box.left - padding,
+    y: box.top - padding,
+    width: box.width + padding * 2,
+    height: box.height + padding * 2,
+    radius: step.round ? (box.height + padding * 2) / 2 : 16,
   };
 }
 
 // Карточка — с той стороны выреза, где больше места; на узком экране — у противоположного края.
 function cardPosition(hole, card) {
-  const vw = window.innerWidth;
-  const vh = window.innerHeight;
-  if (!hole) return { left: (vw - card.width) / 2, top: (vh - card.height) / 2 };
-  if (vw < NARROW) {
-    const below = hole.y + hole.height / 2 < vh / 2;
-    return { left: EDGE, top: below ? vh - card.height - EDGE * 2 : EDGE * 5 };
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
+  if (!hole) {
+    return { left: (viewportWidth - card.width) / 2, top: (viewportHeight - card.height) / 2 };
   }
-  const clampX = (x) => Math.min(Math.max(EDGE, x), vw - card.width - EDGE);
-  const clampY = (y) => Math.min(Math.max(EDGE, y), vh - card.height - EDGE);
+  if (viewportWidth < NARROW) {
+    const below = hole.y + hole.height / 2 < viewportHeight / 2;
+    return { left: EDGE, top: below ? viewportHeight - card.height - EDGE * 2 : EDGE * 5 };
+  }
+  const clampX = (x) => Math.min(Math.max(EDGE, x), viewportWidth - card.width - EDGE);
+  const clampY = (y) => Math.min(Math.max(EDGE, y), viewportHeight - card.height - EDGE);
   const centerX = hole.x + hole.width / 2 - card.width / 2;
-  if (hole.y + hole.height + GAP + card.height < vh - EDGE) {
+  if (hole.y + hole.height + GAP + card.height < viewportHeight - EDGE) {
     return { left: clampX(centerX), top: hole.y + hole.height + GAP };
   }
   if (hole.y - GAP - card.height > EDGE) {
     return { left: clampX(centerX), top: hole.y - GAP - card.height };
   }
   const left =
-    hole.x + hole.width + GAP + card.width < vw - EDGE
+    hole.x + hole.width + GAP + card.width < viewportWidth - EDGE
       ? hole.x + hole.width + GAP
       : hole.x - GAP - card.width;
   return { left: clampX(left), top: clampY(hole.y + hole.height / 2 - card.height / 2) };
@@ -86,7 +88,7 @@ export function CoachMarks({ steps, labels, figure, onFinish }) {
         height: 0,
         radius: 0,
       };
-      const attrs = {
+      const attributes = {
         x: target.x,
         y: target.y,
         width: target.width,
@@ -96,14 +98,14 @@ export function CoachMarks({ steps, labels, figure, onFinish }) {
       if (first) {
         first = false;
         gsap.to(holeRef.current, {
-          attr: attrs,
+          attr: attributes,
           duration: reduced || !currentRef.current ? 0 : 0.6,
           ease: 'power3.inOut',
           overwrite: true,
           onComplete: () => (currentRef.current = step),
         });
       } else if (currentRef.current === step) {
-        gsap.set(holeRef.current, { attr: attrs });
+        gsap.set(holeRef.current, { attr: attributes });
       }
       const card = cardRef.current.getBoundingClientRect();
       const { left, top } = cardPosition(hole, card);
@@ -142,14 +144,10 @@ export function CoachMarks({ steps, labels, figure, onFinish }) {
   const onKeyDown = (event) => {
     if (event.key === 'Tab') {
       const buttons = [...cardRef.current.querySelectorAll('button')];
-      const at = buttons.indexOf(document.activeElement);
-      const to = event.shiftKey
-        ? at <= 0
-          ? buttons.length - 1
-          : at - 1
-        : (at + 1) % buttons.length;
+      const focused = buttons.indexOf(document.activeElement);
+      const previous = focused <= 0 ? buttons.length - 1 : focused - 1;
       event.preventDefault();
-      buttons[to]?.focus();
+      buttons[event.shiftKey ? previous : (focused + 1) % buttons.length]?.focus();
     } else if (event.key === 'Escape') onFinish('skip');
     else if (event.key === 'ArrowRight') next();
     else if (event.key === 'ArrowLeft') back();

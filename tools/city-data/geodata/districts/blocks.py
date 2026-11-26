@@ -14,30 +14,43 @@
 import json
 import math
 from collections import defaultdict
+from itertools import pairwise
 from pathlib import Path
 
 import shapely
 from shapely import STRtree
 from shapely.geometry import LineString, Polygon, shape
+from shapely.geometry.base import BaseGeometry
 from shapely.ops import unary_union
 
-from geodata.districts.faces import faces_of, land_mask, load_water
+from cities import CityConfig
+from geodata.districts.faces import Districts, faces_of, land_mask, load_water
 from geodata.geometry import area_m2, parts, scale
 from geodata.osm import cached, overpass, way_points
 from geodata.paths import CACHE
 from geodata.roads import kind_of
 
-WHOLE_BLOCK_SHARE = 0.9  # квартал, который район занимал на столько, отходит ему целиком
-MIN_COVER_SHARE = 0.5  # мелкая грань входит в город, если прежние районы покрывали её половину
-ENCLOSED_SHARE = 0.9  # пустая грань, почти целиком окружённая районами и водой, — пазуха
+# Квартал, который район занимал на такую долю площади, отходит ему целиком.
+WHOLE_BLOCK_SHARE = 0.9
+# Мелкая грань входит в город, если прежние районы покрывали хотя бы такую долю её площади.
+MIN_COVER_SHARE = 0.5
+# Пазуха — пустая грань не больше ENCLOSED_MAX_M2 (м²), у которой районы и вода занимают
+# не меньше ENCLOSED_SHARE границы.
+ENCLOSED_SHARE = 0.9
 ENCLOSED_MAX_M2 = 300_000
-SPIKE_SHARE = 0.6  # мелкая грань, которая больше чем на столько граничит с чужим районом, — его
+# Зубец — грань не больше SPIKE_MAX_M2 (м²), которая не меньше чем на SPIKE_SHARE своей границы
+# касается чужого района; она отходит ему.
+SPIKE_SHARE = 0.6
 SPIKE_MAX_M2 = 30_000
-STUB_SHARE = 0.15  # грань на краю, которая касается города меньшей долей границы, — отросток
-STRIP_WIDTH_M = 60  # полоса уже этого и в STRIP_RATIO раз длиннее своей ширины — «узкая»
+# Отросток — грань на краю, которая касается города меньше чем такой долей своей границы.
+STUB_SHARE = 0.15
+# Узкая полоса — уже STRIP_WIDTH_M (м) и длиннее своей ширины больше чем в STRIP_RATIO раз.
+STRIP_WIDTH_M = 60
 STRIP_RATIO = 8
-MIN_ISLAND_M2 = 20_000  # отдельный клочок района на отшибе меньше этого в город не входит
-ENCLAVE_SHARE = 0.25  # клочок меньше этой доли района, прижатый к другому району, отходит ему
+# Отдельный клочок района на отшибе меньше этого (м²) в город не входит.
+MIN_ISLAND_M2 = 20_000
+# Клочок меньше такой доли района, прижатый к другому району, отходит ему.
+ENCLAVE_SHARE = 0.25
 SMOOTH_PASSES = 4
 
 LINES_MARGIN_DEG = 0.02
@@ -46,27 +59,36 @@ COARSE_KINDS = {'major', 'secondary', 'tertiary', 'rail'}
 SHORE = {'water', 'coastline', 'riverbank'}
 NO_DISTRICT = -1
 
+Point = tuple[float, float]
 
-def load_seeds(seed_path: Path, slugs: list[str]) -> dict:
-    """Прежние районы (затравка): slug → полигон."""
+
+def load_seeds(seed_path: Path, slugs: list[str]) -> Districts:
+    """Прежние районы (затравка)."""
     collection = json.loads(seed_path.read_text(encoding='utf-8'))
     seeds = {
-        f['properties']['slug']: shapely.make_valid(shape(f['geometry']))
-        for f in collection['features']
-        if f['properties']['slug'] in slugs
+        feature['properties']['slug']: shapely.make_valid(shape(feature['geometry']))
+        for feature in collection['features']
+        if feature['properties']['slug'] in slugs
     }
     if set(seeds) != set(slugs):
         raise SystemExit(f'в {seed_path} нет районов {sorted(set(slugs) - set(seeds))}')
     return seeds
 
 
-def block_lines(slug: str, bounds: tuple, water, closures: list) -> list[list]:
-    """Линии, по которым могут идти границы районов, тремя уровнями: магистрали, железная
-    дорога, берега и замыкающие отрезки; улицы; всё остальное (проезды, тропы, ограды, водотоки,
-    контуры участков)."""
+def block_lines(
+    slug: str,
+    bounds: tuple[float, float, float, float],
+    water: BaseGeometry,
+    closures: list[list[list[float]]],
+) -> list[list[BaseGeometry]]:
+    """Линии, по которым могут идти границы районов, тремя уровнями.
+
+    Уровни: магистрали, железная дорога, берега и замыкающие отрезки; улицы; всё остальное
+    (проезды, тропы, ограды, водотоки, контуры участков).
+    """
     west, south, east, north = bounds
-    m = LINES_MARGIN_DEG
-    area = f'{south - m},{west - m},{north + m},{east + m}'
+    margin = LINES_MARGIN_DEG
+    area = f'{south - margin},{west - margin},{north + margin},{east + margin}'
     osm = cached(
         CACHE / f'{slug}-lines.json',
         lambda: overpass(
@@ -74,7 +96,7 @@ def block_lines(slug: str, bounds: tuple, water, closures: list) -> list[list]:
         ),
     )
     # Берега — из water.geojson: тот же контур, что у воды на карте.
-    levels: list[list] = [[water.boundary, *map(LineString, closures)], [], []]
+    levels: list[list[BaseGeometry]] = [[water.boundary, *map(LineString, closures)], [], []]
     for element in osm['elements']:
         tags = element.get('tags', {})
         points = way_points(element)
@@ -90,22 +112,24 @@ def is_strip(face: Polygon, lat0: float) -> bool:
     """Узкая длинная полоса: ширина и длина — как у прямоугольника той же площади и периметра."""
     kx, ky = scale(lat0)
     area = face.area * kx * ky
-    perimeter = shapely.transform(face, lambda c: c * [kx, ky]).length
+    perimeter = shapely.transform(face, lambda coords: coords * [kx, ky]).length
     width = (perimeter - math.sqrt(max(perimeter**2 - 16 * area, 0))) / 4
     return width < STRIP_WIDTH_M and area > STRIP_RATIO * width**2
 
 
 class Blocks:
-    """Город, разрезанный линиями OSM на грани. Грани самой мелкой сети — «атомы»: кварталы
-    крупных уровней складываются из них, район — тоже."""
+    """Город, разрезанный линиями OSM на грани.
 
-    def __init__(self, levels: list[list], water, lat0: float) -> None:
+    Грани самой мелкой сети — «атомы»: кварталы крупных уровней складываются из них, район — тоже.
+    """
+
+    def __init__(self, levels: list[list[BaseGeometry]], water: BaseGeometry, lat0: float) -> None:
         self.lat0 = lat0
         self.faces = faces_of([line for level in levels for line in level])
         self.land = land_mask(self.faces, water)
         points = shapely.point_on_surface(self.faces)
         # Номер квартала каждого уровня, в который входит грань (-1 — не входит ни в один).
-        self.block_ids = []
+        self.block_ids: list[list[int]] = []
         for depth in (1, 2):
             blocks = faces_of([line for level in levels[:depth] for line in level])
             ids = [-1] * len(self.faces)
@@ -116,14 +140,16 @@ class Blocks:
         self.near = self.neighbours()
 
     def neighbours(self) -> list[dict[int, float]]:
-        """Соседи каждой грани и длина общей границы в метрах; -1 — край сети. Грани узлованы,
-        поэтому общее ребро у соседей одно и то же."""
+        """Соседи каждой грани и длина общей границы в метрах; -1 — край сети.
+
+        Грани узлованы, поэтому общее ребро у соседей одно и то же.
+        """
         kx, ky = scale(self.lat0)
-        edges: dict[tuple, list[int]] = defaultdict(list)
+        edges: dict[tuple[Point, Point], list[int]] = defaultdict(list)
         for index, face in enumerate(self.faces):
             for ring in (face.exterior, *face.interiors):
                 coords = list(ring.coords)
-                for a, b in zip(coords, coords[1:], strict=False):
+                for a, b in pairwise(coords):
                     edges[(a, b) if a < b else (b, a)].append(index)
         result: list[dict[int, float]] = [defaultdict(float) for _ in self.faces]
         for (a, b), owners in edges.items():
@@ -150,7 +176,7 @@ class Blocks:
         return by_district, wet, empty
 
 
-def seed_cover(blocks: Blocks, seed_list: list) -> list[dict[int, float]]:
+def seed_cover(blocks: Blocks, seed_list: list[BaseGeometry]) -> list[dict[int, float]]:
     """Сколько площади каждой грани-суши занимал каждый прежний район (в градусах²)."""
     cover: list[dict[int, float]] = [{} for _ in blocks.faces]
     hits = STRtree(seed_list).query(blocks.faces, predicate='intersects')
@@ -162,7 +188,7 @@ def seed_cover(blocks: Blocks, seed_list: list) -> list[dict[int, float]]:
     return cover
 
 
-def whole_blocks(blocks: Blocks, ids: list[int], cover: list[dict]) -> dict[int, int]:
+def whole_blocks(blocks: Blocks, ids: list[int], cover: list[dict[int, float]]) -> dict[int, int]:
     """Кварталы уровня, которые почти целиком занимал один район: квартал → район."""
     area: dict[int, float] = defaultdict(float)
     shares: dict[int, dict[int, float]] = defaultdict(lambda: defaultdict(float))
@@ -171,7 +197,7 @@ def whole_blocks(blocks: Blocks, ids: list[int], cover: list[dict]) -> dict[int,
             area[ids[index]] += face.area
             for district, shared in cover[index].items():
                 shares[ids[index]][district] += shared
-    result = {}
+    result: dict[int, int] = {}
     for block, by_district in shares.items():
         district, shared = max(by_district.items(), key=lambda item: item[1])
         if shared >= WHOLE_BLOCK_SHARE * area[block]:
@@ -179,7 +205,7 @@ def whole_blocks(blocks: Blocks, ids: list[int], cover: list[dict]) -> dict[int,
     return result
 
 
-def first_labels(blocks: Blocks, cover: list[dict]) -> list[int]:
+def first_labels(blocks: Blocks, cover: list[dict[int, float]]) -> list[int]:
     """Район каждой грани по затравке: сначала целые кварталы, затем отдельные грани."""
     owners = [whole_blocks(blocks, ids, cover) for ids in blocks.block_ids]
     labels = [NO_DISTRICT] * len(blocks.faces)
@@ -199,7 +225,10 @@ def first_labels(blocks: Blocks, cover: list[dict]) -> list[int]:
 
 
 def smooth(blocks: Blocks, labels: list[int]) -> None:
-    """Проходы сглаживания: каждый смотрит на районы соседей по итогам прошлого прохода."""
+    """Сгладить районы несколькими проходами.
+
+    Каждый проход смотрит на районы соседей по итогам прошлого прохода.
+    """
     for _ in range(SMOOTH_PASSES):
         previous = list(labels)
         for index, face in enumerate(blocks.faces):
@@ -225,11 +254,14 @@ def smooth(blocks: Blocks, labels: list[int]) -> None:
 
 
 def join_pieces(blocks: Blocks, labels: list[int], count: int) -> None:
-    """Район — один кусок: клочок, прижатый к другому району, отходит ему (соседу с самой длинной
-    общей границей), мелкий клочок на отшибе в город не входит."""
+    """Свести каждый район к одному куску.
+
+    Клочок, прижатый к другому району, отходит ему (соседу с самой длинной общей границей), мелкий
+    клочок на отшибе в город не входит.
+    """
     for district in range(count):
-        own = [i for i, value in enumerate(labels) if value == district]
-        pieces = parts(shapely.coverage_union_all([blocks.faces[i] for i in own]))
+        own = [index for index, value in enumerate(labels) if value == district]
+        pieces = parts(shapely.coverage_union_all([blocks.faces[index] for index in own]))
         if len(pieces) < 2:
             continue
         main = max(pieces, key=lambda piece: piece.area)
@@ -237,7 +269,11 @@ def join_pieces(blocks: Blocks, labels: list[int], count: int) -> None:
             if piece is main:
                 continue
             shapely.prepare(piece)
-            inside = [i for i in own if piece.contains(shapely.point_on_surface(blocks.faces[i]))]
+            inside = [
+                index
+                for index in own
+                if piece.contains(shapely.point_on_surface(blocks.faces[index]))
+            ]
             around: dict[int, float] = defaultdict(float)
             for index in inside:
                 for other, length in blocks.borders(index, labels)[0].items():
@@ -253,7 +289,9 @@ def join_pieces(blocks: Blocks, labels: list[int], count: int) -> None:
                 labels[index] = target
 
 
-def block_districts(slug: str, config: dict, folder: Path, seed_path: Path, lat0: float):
+def block_districts(
+    slug: str, config: CityConfig, folder: Path, seed_path: Path, lat0: float
+) -> tuple[Districts, Districts, BaseGeometry]:
     """Районы города: (районы из граней, затравка, вода)."""
     slugs = config['blocks']
     seeds = load_seeds(seed_path, slugs)
@@ -261,13 +299,13 @@ def block_districts(slug: str, config: dict, folder: Path, seed_path: Path, lat0
     water = load_water(folder, bounds)
     blocks = Blocks(block_lines(slug, bounds, water, config.get('closures', [])), water, lat0)
 
-    labels = first_labels(blocks, seed_cover(blocks, [seeds[s] for s in slugs]))
+    labels = first_labels(blocks, seed_cover(blocks, [seeds[district] for district in slugs]))
     smooth(blocks, labels)
     join_pieces(blocks, labels, len(slugs))
 
-    groups = defaultdict(list)
+    groups: dict[str, list[Polygon]] = defaultdict(list)
     for index, district in enumerate(labels):
         if district >= 0:
             groups[slugs[district]].append(blocks.faces[index])
-    districts = {s: shapely.coverage_union_all(groups[s]) for s in slugs}
+    districts = {district: shapely.coverage_union_all(groups[district]) for district in slugs}
     return districts, seeds, water

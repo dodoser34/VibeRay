@@ -1,10 +1,6 @@
 import { pixelRatioFor } from '@/adaptations/core';
 import transitionTexts from '@/texts/en/transition.json';
 
-// Переход между страницами «бумажная карта-оригами». Сложенная карта вылетает из точки клика,
-// разворачивается на весь экран, падает метка, и к следующей странице прокладывается маршрут, пока
-// она грузится; затем карта складывается и улетает к своей вкладке в таб-баре. Обычный класс поверх
-// GSAP; цвета — из CSS-переменных (MapFoldTransition.css → токены).
 const TAU = Math.PI * 2,
   DEG_TO_RAD = Math.PI / 180,
   SVG_NS = 'http://www.w3.org/2000/svg';
@@ -16,7 +12,7 @@ const createElement = (tag, className, parent) => {
   if (parent) parent.appendChild(element);
   return element;
 };
-const round1 = (number) => number.toFixed(1);
+const oneDecimal = (number) => number.toFixed(1);
 
 function mulberry32(state) {
   return () => {
@@ -109,10 +105,14 @@ const MARCHING_SQUARE_SEGMENTS = {
   14: [[3, 2]],
 };
 
+// Переход между страницами «бумажная карта-оригами». Сложенная карта вылетает из точки клика,
+// разворачивается на весь экран, падает метка, и к следующей странице прокладывается маршрут, пока
+// она грузится; затем карта складывается и улетает к своей вкладке в таб-баре. Обычный класс поверх
+// GSAP; цвета — из CSS-переменных (MapFoldTransition.css → токены).
 export class MapFoldTransition {
   constructor(options = {}) {
     this.gsap = options.gsap;
-    this.opts = Object.assign(
+    this.options = Object.assign(
       {
         container: document.body,
         zIndex: 9999,
@@ -138,19 +138,21 @@ export class MapFoldTransition {
       }, 180);
     };
     this._onVisibilityChange = () =>
-      this._timelines.forEach((t) => (document.hidden ? t.pause() : t.resume()));
+      this._timelines.forEach((timeline) =>
+        document.hidden ? timeline.pause() : timeline.resume(),
+      );
     addEventListener('resize', this._onResize);
     document.addEventListener('visibilitychange', this._onVisibilityChange);
     this._ready = this._layout();
   }
 
   get reduced() {
-    const setting = this.opts.reducedMotion;
+    const setting = this.options.reducedMotion;
     return setting === 'auto' ? this._reducedMotionQuery.matches : !!setting;
   }
 
-  // ─── Публичный API ───────────────────────────────────────
-  // Тема сменилась: бумажная карта перерисовывается в цветах новой темы (во время перехода — после).
+  // Тема сменилась: бумажная карта перерисовывается в цветах новой темы (во время перехода —
+  // после).
   refreshTheme() {
     if (this._state === 'idle') this._ready = this._layout();
     else this._dirty = true;
@@ -180,11 +182,11 @@ export class MapFoldTransition {
       this._paintFaces(false);
       this._resetRouteLayer();
       this._prepareRoute(label, fromLabel);
-      this.el.classList.add('is-active');
+      this.element.classList.add('is-active');
       if (this.reduced) return this._coverReduced();
       const gsap = this.gsap,
         flight = this.flight,
-        startScale = this.opts.packetSize / Math.max(this.cellWidth, this.cellHeight);
+        startScale = this.options.packetSize / Math.max(this.cellWidth, this.cellHeight);
       Object.assign(flight, {
         x: x ?? width / 2,
         y: y ?? height / 2,
@@ -259,8 +261,7 @@ export class MapFoldTransition {
     return results[0].value;
   }
 
-  // onFold: вызывается, когда страница начинает открываться (момент, когда должно начаться её
-  // появление).
+  // onFold вызывается, когда страница начинает открываться: в этот момент начинается её появление.
   async reveal({ page, onFold } = {}) {
     if (this._state === 'idle' || this._state === 'disposed') return;
     if (this._state === 'revealing') return this._revealPromise;
@@ -274,7 +275,7 @@ export class MapFoldTransition {
         const timeline = this._timeline();
         timeline.to(this.stage, { opacity: 0, duration: 0.2, ease: 'none' }, 0);
         timeline.to(
-          [this.routeLayer, this.labelEl, this.originEl],
+          [this.routeLayer, this.labelElement, this.originElement],
           { opacity: 0, duration: 0.2 },
           0,
         );
@@ -296,13 +297,13 @@ export class MapFoldTransition {
         .to(parts.pinBody, { y: 0, scaleX: 1, scaleY: 1, duration: 0.2, ease: 'power2.out' }, 0)
         .to(parts.pinShadow, { scale: 1, opacity: 0.45, duration: 0.2 }, 0)
         .to(this._labelChars, { opacity: 1, y: 0, scale: 1, duration: 0.2, stagger: 0.008 }, 0)
-        .to(this.ruleEl, { scaleX: 1, duration: 0.2 }, 0)
-        .to(parts.dest, { opacity: 1, duration: 0.2 }, 0)
+        .to(this.ruleElement, { scaleX: 1, duration: 0.2 }, 0)
+        .to(parts.destination, { opacity: 1, duration: 0.2 }, 0)
         .to(parts.rings, { opacity: 0, duration: 0.15 }, 0)
         .to(parts.mask, { strokeDashoffset: 0, duration: 0.28, ease: 'power2.out' }, 0);
       (this._route?.steps || []).forEach((step) =>
         settle.to(
-          this.districts[step.district].el,
+          this.districts[step.district].element,
           { opacity: 0.24, duration: 0.28, overwrite: 'auto' },
           0,
         ),
@@ -313,9 +314,9 @@ export class MapFoldTransition {
       this._paintFaces(true);
       parts.highlights.style.visibility =
         parts.route.style.visibility =
-        parts.dest.style.visibility =
-        this.labelEl.style.visibility =
-        this.originEl.style.visibility =
+        parts.destination.style.visibility =
+        this.labelElement.style.visibility =
+        this.originElement.style.visibility =
           'hidden';
       onFold?.();
       if (page) gsap.set(page, { opacity: 0, y: 16 });
@@ -325,21 +326,21 @@ export class MapFoldTransition {
       timeline
         .to(parts.pinBody, { y: -46, opacity: 0, duration: 0.2, ease: 'power2.in' }, 0)
         .to(parts.pinShadow, { opacity: 0, duration: 0.15 }, 0);
-      let t = 0.05;
-      for (let j = this.rowCount - 1; j >= 1; j--, t += 0.05)
+      let at = 0.05;
+      for (let j = this.rowCount - 1; j >= 1; j--, at += 0.05)
         timeline.to(
           this.rowHinges[j],
           { angle: j % 2 ? FOLD_ANGLE : -FOLD_ANGLE, duration: 0.18, ease: 'power3.inOut' },
-          t,
+          at,
         );
-      t = t - 0.05 + 0.15;
-      for (let i = this.columnCount - 1; i >= 1; i--, t += 0.04)
+      at = at - 0.05 + 0.15;
+      for (let i = this.columnCount - 1; i >= 1; i--, at += 0.04)
         timeline.to(
           this.columnHinges[i],
           { angle: i % 2 ? -FOLD_ANGLE : FOLD_ANGLE, duration: 0.18, ease: 'power3.inOut' },
-          t,
+          at,
         );
-      const foldEnd = t - 0.04 + 0.18;
+      const foldEnd = at - 0.04 + 0.18;
       timeline
         .to(flight, { scale: 0.62, duration: foldEnd - 0.1, ease: 'power2.inOut' }, 0.1)
         .to(flight, { shadow: 1, duration: 0.2 }, foldEnd - 0.2);
@@ -408,7 +409,7 @@ export class MapFoldTransition {
   }
 
   dispose() {
-    this._timelines.forEach((t) => t.kill());
+    this._timelines.forEach((timeline) => timeline.kill());
     this._timelines.clear();
     removeEventListener('resize', this._onResize);
     document.removeEventListener('visibilitychange', this._onVisibilityChange);
@@ -417,11 +418,10 @@ export class MapFoldTransition {
       face.canvas.width = face.canvas.height = 0;
     });
     if (this.paperCanvas) this.paperCanvas.width = this.paperCanvas.height = 0;
-    this.el.remove();
+    this.element.remove();
     this._state = 'disposed';
   }
 
-  // ─── Внутреннее ──────────────────────────────────────────
   _timeline(vars = {}) {
     let resolveDone;
     const done = new Promise((resolve) => (resolveDone = resolve));
@@ -434,7 +434,7 @@ export class MapFoldTransition {
       },
     });
     timeline._done = done;
-    timeline.timeScale(1 / (this.opts.durationScale || 1));
+    timeline.timeScale(1 / (this.options.durationScale || 1));
     this._timelines.add(timeline);
     return timeline;
   }
@@ -446,13 +446,13 @@ export class MapFoldTransition {
   }
   _stylesReady() {
     const stylesApplied =
-      getComputedStyle(this.el).visibility === 'hidden' &&
-      getComputedStyle(this.el).pointerEvents === 'none';
+      getComputedStyle(this.element).visibility === 'hidden' &&
+      getComputedStyle(this.element).pointerEvents === 'none';
     return stylesApplied ? (this._stylesSeen ? true : ((this._stylesSeen = true), false)) : true;
   }
   _minTime() {
     const waitMs =
-      this.opts.minRouteTime * 1000 * (this.opts.durationScale || 1) -
+      this.options.minRouteTime * 1000 * (this.options.durationScale || 1) -
       (performance.now() - (this._routeStart || 0));
     return new Promise((resolve) => setTimeout(resolve, Math.max(0, waitMs)));
   }
@@ -481,18 +481,20 @@ export class MapFoldTransition {
     const parts = this.parts,
       route = this._newRoute();
     gsap.set(parts.mask, { strokeDashoffset: 0 });
-    route.steps.forEach((step) => gsap.set(this.districts[step.district].el, { opacity: 0.24 }));
-    gsap.set(parts.dest, { opacity: 1 });
+    route.steps.forEach((step) =>
+      gsap.set(this.districts[step.district].element, { opacity: 0.24 }),
+    );
+    gsap.set(parts.destination, { opacity: 1 });
     gsap.set(this._labelChars, { opacity: 1, y: 0, scale: 1 });
-    gsap.set(this.ruleEl, { scaleX: 1 });
+    gsap.set(this.ruleElement, { scaleX: 1 });
     gsap.set([parts.pinBody], { y: 0, opacity: 1 });
     gsap.set(parts.pinShadow, { opacity: 0.45, scale: 1 });
-    gsap.set([this.routeLayer, this.labelEl], { opacity: 1 });
+    gsap.set([this.routeLayer, this.labelElement], { opacity: 1 });
     const timeline = this._timeline();
     timeline
       .fromTo(this.stage, { opacity: 0 }, { opacity: 1, duration: 0.2, ease: 'none' }, 0)
       .fromTo(
-        [this.routeLayer, this.labelEl, this.originEl],
+        [this.routeLayer, this.labelElement, this.originElement],
         { opacity: 0 },
         { opacity: 1, duration: 0.2, ease: 'none' },
         0,
@@ -501,27 +503,27 @@ export class MapFoldTransition {
   }
 
   _finishReveal() {
-    this.el.classList.remove('is-active');
+    this.element.classList.remove('is-active');
     this._resetRouteLayer();
     this._state = 'idle';
     if (this._dirty) this._ready = this._layout();
   }
 
   _buildRoot() {
-    this.el = createElement('div', 'map-fold');
-    this.el.setAttribute('aria-hidden', 'true');
-    this.el.style.cssText = `position:fixed;inset:0;overflow:hidden;z-index:${this.opts.zIndex}`;
-    this.stage = createElement('div', 'map-fold__stage', this.el);
+    this.element = createElement('div', 'map-fold');
+    this.element.setAttribute('aria-hidden', 'true');
+    this.element.style.cssText = `position:fixed;inset:0;overflow:hidden;z-index:${this.options.zIndex}`;
+    this.stage = createElement('div', 'map-fold__stage', this.element);
     this.flyer = createElement('div', 'map-fold__flyer', this.stage);
-    this.shadowEl = createElement('div', 'map-fold__shadow', this.flyer);
+    this.shadowElement = createElement('div', 'map-fold__shadow', this.flyer);
     this.sheet = createElement('div', 'map-fold__sheet', this.flyer);
     this.routeLayer = document.createElementNS(SVG_NS, 'svg');
     this.routeLayer.setAttribute('class', 'map-fold__route-layer');
-    this.el.appendChild(this.routeLayer);
-    this.labelEl = createElement('div', 'map-fold__label', this.el);
-    this.originEl = createElement('div', 'map-fold__label map-fold__origin', this.el);
+    this.element.appendChild(this.routeLayer);
+    this.labelElement = createElement('div', 'map-fold__label', this.element);
+    this.originElement = createElement('div', 'map-fold__label map-fold__origin', this.element);
     this.flight = { x: 0, y: 0, scale: 1, rotateZ: 0, rotateX: 0, rotateY: 0, shadow: 0 };
-    this.opts.container.appendChild(this.el);
+    this.options.container.appendChild(this.element);
   }
 
   async _loadFonts() {
@@ -538,27 +540,23 @@ export class MapFoldTransition {
     ]);
   }
 
-  // Каждый цвет — CSS-переменная на оверлее (MapFoldTransition.css связывает их с токенами).
+  // Каждый цвет — CSS-переменная на оверлее: MapFoldTransition.css связывает их с токенами.
   _readColors() {
-    const style = getComputedStyle(this.el);
+    const style = getComputedStyle(this.element);
     const cssValue = (name) => style.getPropertyValue(name).trim();
     return {
-      bg: cssValue('--color-bg'),
-      paper: cssValue('--color-paper'),
-      paper2: cssValue('--color-paper-2'),
-      border: cssValue('--color-border'),
-      isoline: cssValue('--color-isoline'),
+      paper: cssValue('--fold-paper'),
+      border: cssValue('--fold-border'),
+      isoline: cssValue('--fold-isoline'),
       street: cssValue('--color-street'),
-      accent: cssValue('--color-accent'),
-      accentHover: cssValue('--color-accent-hover'),
+      accentHover: cssValue('--fold-accent-hover'),
       text: cssValue('--color-text'),
-      text2: cssValue('--color-text-2'),
+      textMuted: cssValue('--fold-text-muted'),
       river: cssValue('--color-river'),
-      route: cssValue('--color-route'),
-      shade: cssValue('--color-shade'),
-      light: cssValue('--color-light'),
-      display: cssValue('--map-fold-font-display'),
-      textFont: cssValue('--map-fold-font-text'),
+      route: cssValue('--fold-route'),
+      shade: cssValue('--fold-shade-rgb'),
+      light: cssValue('--fold-light-rgb'),
+      display: cssValue('--fold-font-display'),
       districts: Array.from({ length: 12 }, (_, index) => cssValue(`--district-${index + 1}`)),
     };
   }
@@ -598,7 +596,7 @@ export class MapFoldTransition {
       mobile,
     });
     this.colors = this._readColors();
-    if (getComputedStyle(this.el).visibility === 'hidden') this._stylesSeen = true;
+    if (getComputedStyle(this.element).visibility === 'hidden') this._stylesSeen = true;
     this._buildMap();
     this._paintPaper();
     this._buildSheet();
@@ -608,8 +606,8 @@ export class MapFoldTransition {
 
   _buildMap() {
     const { width, height, mobile } = this,
-      random = mulberry32(this.opts.seed),
-      noise = makeNoise(this.opts.seed);
+      random = mulberry32(this.options.seed),
+      noise = makeNoise(this.options.seed);
     const riverX = width * (mobile ? 0.9 : 0.875),
       ramp = width * (mobile ? 0.028 : 0.032),
       phase = random() * TAU;
@@ -747,25 +745,25 @@ export class MapFoldTransition {
     vignette.addColorStop(1, `rgba(${colors.shade},.28)`);
     paint.fillStyle = vignette;
     paint.fillRect(0, 0, width, height);
-    // изолинии (marching squares)
+    // Изолинии рельефа (marching squares).
     const cellSize = mobile ? 8 : 10,
-      cols = Math.ceil(width / cellSize) + 1,
-      rows = Math.ceil(height / cellSize) + 1,
-      field = new Float32Array(cols * rows),
+      gridColumns = Math.ceil(width / cellSize) + 1,
+      gridRows = Math.ceil(height / cellSize) + 1,
+      field = new Float32Array(gridColumns * gridRows),
       noise = this.noise;
-    for (let y = 0; y < rows; y++)
-      for (let x = 0; x < cols; x++)
-        field[y * cols + x] = noise((x * cellSize) / 300 + 40, (y * cellSize) / 300 + 40, 3);
+    for (let y = 0; y < gridRows; y++)
+      for (let x = 0; x < gridColumns; x++)
+        field[y * gridColumns + x] = noise((x * cellSize) / 300 + 40, (y * cellSize) / 300 + 40, 3);
     paint.strokeStyle = colors.isoline;
     for (let levelIndex = 0, level = 0.28; level < 0.74; level += 0.04, levelIndex++) {
       paint.beginPath();
       paint.lineWidth = levelIndex % 4 === 0 ? 1.5 : 1;
-      for (let y = 0; y < rows - 1; y++)
-        for (let x = 0; x < cols - 1; x++) {
-          const topLeft = field[y * cols + x],
-            topRight = field[y * cols + x + 1],
-            bottomRight = field[(y + 1) * cols + x + 1],
-            bottomLeft = field[(y + 1) * cols + x];
+      for (let y = 0; y < gridRows - 1; y++)
+        for (let x = 0; x < gridColumns - 1; x++) {
+          const topLeft = field[y * gridColumns + x],
+            topRight = field[y * gridColumns + x + 1],
+            bottomRight = field[(y + 1) * gridColumns + x + 1],
+            bottomLeft = field[(y + 1) * gridColumns + x];
           const caseIndex =
             (topLeft > level ? 8 : 0) |
             (topRight > level ? 4 : 0) |
@@ -787,7 +785,7 @@ export class MapFoldTransition {
         }
       paint.stroke();
     }
-    // районы и улицы — только западный берег
+    // Районы и улицы — только на западном берегу реки.
     const westPath = new Path2D();
     this.westBankPolygon.forEach((point, k) =>
       k ? westPath.lineTo(point[0], point[1]) : westPath.moveTo(point[0], point[1]),
@@ -828,7 +826,7 @@ export class MapFoldTransition {
         paint.stroke();
       }
     paint.restore();
-    // река Тобол
+    // Река.
     const { left: leftBank, right: rightBank } = this.river,
       riverPath = new Path2D();
     leftBank.forEach((point, k) =>
@@ -845,7 +843,7 @@ export class MapFoldTransition {
     paint.lineWidth = 1;
     paint.stroke(riverPath);
     paint.globalAlpha = 1;
-    // роза ветров
+    // Роза ветров.
     const compass = this.compass;
     paint.strokeStyle = colors.border;
     paint.lineWidth = 1;
@@ -864,16 +862,16 @@ export class MapFoldTransition {
       paint.closePath();
       paint.fill();
     };
-    drawNeedle(1, 0, compass.radius * 0.8, compass.radius * 0.14, colors.text2);
-    drawNeedle(-1, 0, compass.radius * 0.8, compass.radius * 0.14, colors.text2);
-    drawNeedle(0, 1, compass.radius * 1.15, compass.radius * 0.2, colors.text2);
+    drawNeedle(1, 0, compass.radius * 0.8, compass.radius * 0.14, colors.textMuted);
+    drawNeedle(-1, 0, compass.radius * 0.8, compass.radius * 0.14, colors.textMuted);
+    drawNeedle(0, 1, compass.radius * 1.15, compass.radius * 0.2, colors.textMuted);
     drawNeedle(0, -1, compass.radius * 1.25, compass.radius * 0.2, colors.text);
     paint.fillStyle = colors.text;
     paint.font = `600 9px ${colors.display}`;
     paint.textAlign = 'center';
     paint.fillText(transitionTexts.compassNorth, compass.x, compass.y - compass.radius * 1.25 - 5);
     paint.textAlign = 'left';
-    // едва заметные линии сгибов
+    // Едва заметные линии сгибов.
     for (let i = 1; i < columnCount; i++) {
       paint.fillStyle = `rgba(${colors.shade},.32)`;
       paint.fillRect(i * cellWidth - 0.5, 0, 1, height);
@@ -886,7 +884,7 @@ export class MapFoldTransition {
       paint.fillStyle = `rgba(${colors.light},.035)`;
       paint.fillRect(0, j * cellHeight + 0.5, width, 1);
     }
-    // зерно бумаги
+    // Зерно бумаги.
     const grainCanvas = document.createElement('canvas');
     grainCanvas.width = grainCanvas.height = 128;
     const grainPaint = grainCanvas.getContext('2d'),
@@ -940,7 +938,7 @@ export class MapFoldTransition {
       }
       parent = column;
     }
-    this.shadowEl.style.cssText = `left:${-cellWidth / 2}px;top:${-cellHeight / 2}px;width:${cellWidth}px;height:${cellHeight}px`;
+    this.shadowElement.style.cssText = `left:${-cellWidth / 2}px;top:${-cellHeight / 2}px;width:${cellWidth}px;height:${cellHeight}px`;
     this.stage.style.perspective = Math.round(Math.max(width, height) * 1.35) + 'px';
     this._paintFaces(false);
   }
@@ -980,12 +978,12 @@ export class MapFoldTransition {
       getProperty = this.gsap.getProperty;
     paint.save();
     paint.clip(this._westBankPath);
-    for (const d of this.districts) {
-      const opacity = +getProperty(d.el, 'opacity');
+    for (const district of this.districts) {
+      const opacity = +getProperty(district.element, 'opacity');
       if (opacity > 0.01) {
         paint.globalAlpha = opacity;
-        paint.fillStyle = d.color;
-        paint.fill(d.path);
+        paint.fillStyle = district.color;
+        paint.fill(district.path);
       }
     }
     paint.restore();
@@ -1029,7 +1027,7 @@ export class MapFoldTransition {
     const rule = this._rule;
     if (rule) {
       paint.fillStyle = rule.color;
-      paint.fillRect(rule.x, rule.y, rule.w, rule.h);
+      paint.fillRect(rule.x, rule.y, rule.width, rule.height);
     }
   }
 
@@ -1038,12 +1036,14 @@ export class MapFoldTransition {
       idPrefix = this._svgIdPrefix;
     const westBankPathData =
       'M' +
-      this.westBankPolygon.map((point) => round1(point[0]) + ' ' + round1(point[1])).join('L') +
+      this.westBankPolygon
+        .map((point) => oneDecimal(point[0]) + ' ' + oneDecimal(point[1]))
+        .join('L') +
       'Z';
     const districtPolygons = this.districts
       .map(
         (district, i) =>
-          `<polygon class="map-fold__district-highlight" data-i="${i}" style="fill:var(--district-${district.paletteIndex + 1})" points="${district.points.map((point) => round1(point[0]) + ',' + round1(point[1])).join(' ')}"/>`,
+          `<polygon class="map-fold__district-highlight" data-i="${i}" style="fill:var(--district-${district.paletteIndex + 1})" points="${district.points.map((point) => oneDecimal(point[0]) + ',' + oneDecimal(point[1])).join(' ')}"/>`,
       )
       .join('');
     this.routeLayer.setAttribute('width', width);
@@ -1051,11 +1051,11 @@ export class MapFoldTransition {
     this.routeLayer.setAttribute('viewBox', `0 0 ${width} ${height}`);
     // Штрих маски белый намеренно: в SVG-маске это «полностью видно», а не цвет.
     this.routeLayer.innerHTML = `<defs><clipPath id="${idPrefix}-west"><path d="${westBankPathData}"/></clipPath><mask id="${idPrefix}-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="${width}" height="${height}"><path class="map-fold__mask" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></mask></defs>
-<g class="map-fold__highlights" clip-path="url(#${idPrefix}-west)">${districtPolygons}</g>
-<g class="map-fold__route" mask="url(#${idPrefix}-mask)"><path class="map-fold__route-casing"/><path class="map-fold__route-dash"/></g>
-<g class="map-fold__destination"><circle class="map-fold__destination-ring" r="7"/><circle class="map-fold__destination-dot" r="2.5"/></g>
-<g class="map-fold__rings"><ellipse class="map-fold__ring" rx="100" ry="30" vector-effect="non-scaling-stroke"/><ellipse class="map-fold__ring" rx="100" ry="30" vector-effect="non-scaling-stroke"/></g>
-<g class="map-fold__pin"><ellipse class="map-fold__pin-shadow" rx="9" ry="3"/><g class="map-fold__pin-body"><path class="map-fold__pin-head" d="M0 0C-3 -8 -13 -15 -13 -26A13 13 0 1 1 13 -26C13 -15 3 -8 0 0Z"/><circle class="map-fold__pin-eye" cx="0" cy="-26" r="5"/></g></g>`;
+    <g class="map-fold__highlights" clip-path="url(#${idPrefix}-west)">${districtPolygons}</g>
+    <g class="map-fold__route" mask="url(#${idPrefix}-mask)"><path class="map-fold__route-casing"/><path class="map-fold__route-dash"/></g>
+    <g class="map-fold__destination"><circle class="map-fold__destination-ring" r="7"/><circle class="map-fold__destination-dot" r="2.5"/></g>
+    <g class="map-fold__rings"><ellipse class="map-fold__ring" rx="100" ry="30" vector-effect="non-scaling-stroke"/><ellipse class="map-fold__ring" rx="100" ry="30" vector-effect="non-scaling-stroke"/></g>
+    <g class="map-fold__pin"><ellipse class="map-fold__pin-shadow" rx="9" ry="3"/><g class="map-fold__pin-body"><path class="map-fold__pin-head" d="M0 0C-3 -8 -13 -15 -13 -26A13 13 0 1 1 13 -26C13 -15 3 -8 0 0Z"/><circle class="map-fold__pin-eye" cx="0" cy="-26" r="5"/></g></g>`;
     const find = (selector) => this.routeLayer.querySelector(selector);
     this.parts = {
       highlights: find('.map-fold__highlights'),
@@ -1063,7 +1063,7 @@ export class MapFoldTransition {
       mask: find('.map-fold__mask'),
       routeCasing: find('.map-fold__route-casing'),
       routeDash: find('.map-fold__route-dash'),
-      dest: find('.map-fold__destination'),
+      destination: find('.map-fold__destination'),
       ringsGroup: find('.map-fold__rings'),
       rings: [...this.routeLayer.querySelectorAll('.map-fold__ring')],
       pin: find('.map-fold__pin'),
@@ -1071,9 +1071,9 @@ export class MapFoldTransition {
       pinShadow: find('.map-fold__pin-shadow'),
     };
     this.routeLayer.querySelectorAll('.map-fold__district-highlight').forEach((polygon) => {
-      this.districts[+polygon.dataset.i].el = polygon;
+      this.districts[+polygon.dataset.i].element = polygon;
     });
-    this.labelEl.style.setProperty('--map-fold-label-size', this.mobile ? '17px' : '24px');
+    this.labelElement.style.setProperty('--map-fold-label-size', this.mobile ? '17px' : '24px');
     this._resetRouteLayer();
   }
 
@@ -1083,12 +1083,12 @@ export class MapFoldTransition {
     if (!parts) return;
     parts.highlights.style.visibility =
       parts.route.style.visibility =
-      parts.dest.style.visibility =
-      this.labelEl.style.visibility =
-      this.originEl.style.visibility =
+      parts.destination.style.visibility =
+      this.labelElement.style.visibility =
+      this.originElement.style.visibility =
         '';
     gsap.set(
-      this.districts.map((district) => district.el),
+      this.districts.map((district) => district.element),
       { opacity: 0 },
     );
     // Полностью сбрасываем прошлый маршрут: пунктир маски повторяется каждые 2·L, и одного большого
@@ -1100,29 +1100,29 @@ export class MapFoldTransition {
     gsap.set(parts.rings, { opacity: 0 });
     gsap.set(parts.pinBody, { y: -2000, opacity: 1, scaleX: 1, scaleY: 1, svgOrigin: '0 0' });
     gsap.set(parts.pinShadow, { opacity: 0, scale: 0.25, svgOrigin: '0 0' });
-    gsap.set(parts.dest, { opacity: 0 });
-    gsap.set([this.routeLayer, this.labelEl, this.originEl], { opacity: 1 });
+    gsap.set(parts.destination, { opacity: 0 });
+    gsap.set([this.routeLayer, this.labelElement, this.originElement], { opacity: 1 });
     this._route = null;
   }
 
   _prepareRoute(label, from) {
     const { width, height } = this,
       gsap = this.gsap;
-    // подпись пункта назначения
-    const labelElement = this.labelEl;
+    // Подпись пункта назначения.
+    const labelElement = this.labelElement;
     labelElement.textContent = '';
-    const originElement = this.originEl;
+    const originElement = this.originElement;
     originElement.textContent = '';
     const caption = createElement('div', 'map-fold__label-caption', labelElement),
       name = createElement('div', 'map-fold__label-name', labelElement);
-    this.ruleEl = createElement('div', 'map-fold__label-rule', labelElement);
+    this.ruleElement = createElement('div', 'map-fold__label-rule', labelElement);
     const chars = (text, className, parent) =>
       [...text.toUpperCase()].map((character) => {
         const span = createElement('span', className, parent);
         span.textContent = character === ' ' ? '\u00A0' : character;
         return span;
       });
-    this._captionChars = chars(this.opts.caption, 'map-fold__caption-char', caption);
+    this._captionChars = chars(this.options.caption, 'map-fold__caption-char', caption);
     this._nameChars = chars(label || ' ', 'map-fold__name-char', name);
     const originChars = from
       ? chars(
@@ -1135,7 +1135,7 @@ export class MapFoldTransition {
     this._labelChars = [...this._captionChars, ...this._nameChars, ...originChars];
     const labelWidth = labelElement.offsetWidth,
       labelHeight = labelElement.offsetHeight;
-    // старт и пункт назначения
+    // Старт и пункт назначения.
     this._origin = this.gridPoint(0, 0);
     const originWidth = originElement.offsetWidth,
       ox =
@@ -1144,15 +1144,15 @@ export class MapFoldTransition {
           : this._origin[0] + 14;
     originElement.style.left = ox + 'px';
     originElement.style.top = this._origin[1] + 8 + 'px';
-    this._originBox = { x: ox - 6, y: this._origin[1] - 40, w: originWidth + 12, h: 60 };
+    this._originBox = { x: ox - 6, y: this._origin[1] - 40, width: originWidth + 12, height: 60 };
     const compass = this.compass,
       overlaps = (first, second) =>
-        first.x < second.x + second.w &&
-        first.x + first.w > second.x &&
-        first.y < second.y + second.h &&
-        first.y + first.h > second.y;
-    let dest = null;
-    for (let k = 0; k < 120 && !dest; k++) {
+        first.x < second.x + second.width &&
+        first.x + first.width > second.x &&
+        first.y < second.y + second.height &&
+        first.y + first.height > second.y;
+    let destination = null;
+    for (let k = 0; k < 120 && !destination; k++) {
       const angle = Math.random() * TAU,
         distance = Math.hypot(width, height) * (0.15 + Math.random() * 0.14);
       const [gridColumn, gridRow] = this.toGrid(
@@ -1170,8 +1170,8 @@ export class MapFoldTransition {
       const box = {
         x: right ? x + 18 : x - 18 - labelWidth,
         y: y - labelHeight / 2,
-        w: labelWidth,
-        h: labelHeight,
+        width: labelWidth,
+        height: labelHeight,
       };
       if (box.y < 24 || box.y + labelHeight > height - 24) continue;
       if (
@@ -1179,18 +1179,18 @@ export class MapFoldTransition {
         overlaps(box, {
           x: compass.x - compass.radius - 14,
           y: compass.y - compass.radius - 24,
-          w: compass.radius * 2 + 28,
-          h: compass.radius * 2 + 40,
+          width: compass.radius * 2 + 28,
+          height: compass.radius * 2 + 40,
         })
       )
         continue;
-      dest = { i, j, x, y, box };
+      destination = { i, j, x, y, box };
     }
-    if (!dest) {
+    if (!destination) {
       const i = 3,
         j = -2,
         [x, y] = this.gridPoint(i, j);
-      dest = {
+      destination = {
         i,
         j,
         x,
@@ -1201,28 +1201,28 @@ export class MapFoldTransition {
         },
       };
     }
-    this._destination = dest;
+    this._destination = destination;
     this._routeSignature = '';
-    labelElement.style.left = dest.box.x + 'px';
-    labelElement.style.top = dest.box.y + 'px';
+    labelElement.style.left = destination.box.x + 'px';
+    labelElement.style.top = destination.box.y + 'px';
     const parts = this.parts;
     parts.pin.setAttribute(
       'transform',
-      `translate(${round1(this._origin[0])} ${round1(this._origin[1])})`,
+      `translate(${oneDecimal(this._origin[0])} ${oneDecimal(this._origin[1])})`,
     );
     parts.ringsGroup.setAttribute(
       'transform',
-      `translate(${round1(this._origin[0])} ${round1(this._origin[1])})`,
+      `translate(${oneDecimal(this._origin[0])} ${oneDecimal(this._origin[1])})`,
     );
-    parts.dest.querySelectorAll('circle').forEach((circle) => {
-      circle.setAttribute('cx', round1(dest.x));
-      circle.setAttribute('cy', round1(dest.y));
+    parts.destination.querySelectorAll('circle').forEach((circle) => {
+      circle.setAttribute('cx', oneDecimal(destination.x));
+      circle.setAttribute('cy', oneDecimal(destination.y));
     });
-    gsap.set(parts.dest, { opacity: 0 });
+    gsap.set(parts.destination, { opacity: 0 });
     gsap.set(parts.rings, { svgOrigin: '0 0' });
     gsap.set([...this._captionChars, ...originChars], { opacity: 0 });
     gsap.set(this._nameChars, { opacity: 0, y: -6, scale: 1.25, transformOrigin: '50% 70%' });
-    gsap.set(this.ruleEl, { scaleX: 0 });
+    gsap.set(this.ruleElement, { scaleX: 0 });
   }
 
   _newRoute() {
@@ -1246,7 +1246,9 @@ export class MapFoldTransition {
           ),
       );
     const length = distances[distances.length - 1] + 2,
-      d = 'M' + screenPoints.map((point) => round1(point[0]) + ' ' + round1(point[1])).join('L');
+      d =
+        'M' +
+        screenPoints.map((point) => oneDecimal(point[0]) + ' ' + oneDecimal(point[1])).join('L');
     const steps = [];
     screenPoints.forEach((point, k) => {
       if (!this.isWestOfRiver(point[0], point[1])) return;
@@ -1301,7 +1303,7 @@ export class MapFoldTransition {
         { scale: 0.9, opacity: 0, duration: 0.9, ease: 'power2.out' },
         impact + 0.12,
       )
-      .to(parts.dest, { opacity: 1, duration: 0.3, ease: 'power2.out' }, 0.32)
+      .to(parts.destination, { opacity: 1, duration: 0.3, ease: 'power2.out' }, 0.32)
       .to(this._captionChars, { opacity: 1, duration: 0.25, stagger: 0.012, ease: 'none' }, 0.3)
       .to(
         this._originChars,
@@ -1313,7 +1315,7 @@ export class MapFoldTransition {
         { opacity: 1, y: 0, scale: 1, duration: 0.3, stagger: 0.035, ease: 'back.out(2)' },
         0.4,
       )
-      .to(this.ruleEl, { scaleX: 1, duration: 0.5, ease: 'power3.inOut' }, 0.45)
+      .to(this.ruleElement, { scaleX: 1, duration: 0.5, ease: 'power3.inOut' }, 0.45)
       .call(() => this._cycleRoute(true), null, 0.2);
     this._routeIntro = timeline;
   }
@@ -1354,7 +1356,8 @@ export class MapFoldTransition {
 
   _cycleRoute(first) {
     if (this._state !== 'covered') return;
-    // первый маршрут рисуется целиком за минимальные 0.7 с фазы
+    // Первый маршрут рисуется быстрее (drawDuration), чтобы успеть целиком за минимальную фазу
+    // перехода (options.minRouteTime).
     const gsap = this.gsap,
       parts = this.parts,
       route = this._newRoute(),
@@ -1380,7 +1383,7 @@ export class MapFoldTransition {
     );
     route.steps.forEach((step) =>
       timeline.to(
-        this.districts[step.district].el,
+        this.districts[step.district].element,
         { opacity: 0.24, duration: 0.5, ease: 'power2.out', overwrite: 'auto' },
         drawDuration * inverseEase(easeInOut, step.fraction),
       ),
@@ -1392,7 +1395,7 @@ export class MapFoldTransition {
     );
     route.steps.forEach((step) =>
       timeline.to(
-        this.districts[step.district].el,
+        this.districts[step.district].element,
         { opacity: 0, duration: 0.45, ease: 'power1.inOut', overwrite: 'auto' },
         drawDuration + holdDuration + eraseDuration * inverseEase(easeIn, step.fraction),
       ),
@@ -1415,11 +1418,11 @@ export class MapFoldTransition {
       let fontMetrics = metrics.get(font);
       if (!fontMetrics) {
         measure.font = font;
-        const t = measure.measureText('НЙg'),
+        const metrics = measure.measureText('НЙg'),
           fontSize = parseFloat(style.fontSize);
         fontMetrics = {
-          A: t.fontBoundingBoxAscent ?? fontSize * 0.8,
-          D: t.fontBoundingBoxDescent ?? fontSize * 0.2,
+          ascent: metrics.fontBoundingBoxAscent ?? fontSize * 0.8,
+          descent: metrics.fontBoundingBoxDescent ?? fontSize * 0.2,
         };
         metrics.set(font, fontMetrics);
       }
@@ -1429,17 +1432,20 @@ export class MapFoldTransition {
         font,
         color: style.color,
         x: rect.left,
-        y: rect.top + (rect.height - (fontMetrics.A + fontMetrics.D)) / 2 + fontMetrics.A,
+        y:
+          rect.top +
+          (rect.height - (fontMetrics.ascent + fontMetrics.descent)) / 2 +
+          fontMetrics.ascent,
       });
     }
-    const ruleRect = this.ruleEl.getBoundingClientRect();
+    const ruleRect = this.ruleElement.getBoundingClientRect();
     this._glyphs = glyphs;
     this._rule = {
       x: ruleRect.left,
       y: ruleRect.top,
-      w: ruleRect.width,
-      h: ruleRect.height,
-      color: getComputedStyle(this.ruleEl).backgroundColor,
+      width: ruleRect.width,
+      height: ruleRect.height,
+      color: getComputedStyle(this.ruleElement).backgroundColor,
     };
   }
 
@@ -1459,12 +1465,12 @@ export class MapFoldTransition {
       const angle = this.rowHinges[j].angle;
       ky += (1 + Math.cos(angle * DEG_TO_RAD)) / 2;
       rowAngles[j] = rowAngles[j - 1] + angle;
-      const t = `rotateX(${angle.toFixed(2)}deg)`;
-      for (let i = 0; i < columnCount; i++) this.rowElements[i][j].style.transform = t;
+      const transform = `rotateX(${angle.toFixed(2)}deg)`;
+      for (let i = 0; i < columnCount; i++) this.rowElements[i][j].style.transform = transform;
     }
     this.sheet.style.transform = `translate3d(${((-kx * cellWidth) / 2).toFixed(2)}px,${((-ky * cellHeight) / 2).toFixed(2)}px,0)`;
     this.flyer.style.transform = `translate3d(${flight.x.toFixed(2)}px,${flight.y.toFixed(2)}px,0) rotateX(${flight.rotateX.toFixed(2)}deg) rotateY(${flight.rotateY.toFixed(2)}deg) rotateZ(${flight.rotateZ.toFixed(2)}deg) scale3d(${flight.scale},${flight.scale},${flight.scale})`;
-    this.shadowEl.style.opacity = flight.shadow.toFixed(3);
+    this.shadowElement.style.opacity = flight.shadow.toFixed(3);
     for (const face of this.faces) {
       const sinColumn = Math.sin(columnAngles[face.i] * DEG_TO_RAD),
         sinRow = Math.sin(rowAngles[face.j] * DEG_TO_RAD);

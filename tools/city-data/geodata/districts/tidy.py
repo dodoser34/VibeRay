@@ -15,36 +15,68 @@
 """
 
 import math
+from collections.abc import Sequence
+from typing import TypedDict
 
 import shapely
 from shapely.geometry import Point, Polygon, box
+from shapely.geometry.base import BaseGeometry
 from shapely.ops import unary_union
 
-from geodata.districts.faces import GRID
+from geodata.districts.faces import GRID, Districts
 from geodata.geometry import Projection, parts
 
-FRAME_M = 3_000  # вокруг города: «земля вне города» для клочков и запертой суши
-FAR_BANK_M2 = 100_000  # клочок района меньше этого на чужом берегу (касается земли вне города)
-FAR_BANK_SHARE = 0.2  # …не меньше чем такой долей своей границы (остров с дамбой — не берег)
-THIN_M = 12  # полоса уже двух таких радиусов (пирс, кромка берега, лента вдоль дороги) — тонкая
+# Рамка вокруг города (м): всё в ней, что не район и не вода, — «земля вне города» для клочков
+# на чужом берегу и запертой суши.
+FRAME_M = 3_000
+# Клочок на чужом берегу: кусок района меньше FAR_BANK_M2 (м²), который касается земли вне города
+# не меньше чем долей FAR_BANK_SHARE своей границы (остров с дамбой — не чужой берег).
+FAR_BANK_M2 = 100_000
+FAR_BANK_SHARE = 0.2
+# Полоса уже 2 × THIN_M (м) — тонкая: пирс, кромка берега, лента вдоль дороги.
+THIN_M = 12
+# Полоса меньше этого не трогается: площадь (м² при радиусе THIN_M, для другого радиуса —
+# пропорционально его квадрату) и периметр (м).
 THIN_MIN_M2 = 300
 THIN_MIN_PERIMETER_M = 150
-MOVE_SHARE = 0.5  # полоса, которая на столько свободной границы касается соседа, отходит ему
-WATER_SHARE = 0.3  # широкий выступ, который касается воды меньше этого, — выступ в пустую землю
-MARKED_BUMP_M = 130  # выступ, отмеченный точкой: всё, что уже двух таких радиусов
-MARKED_REACH_M = 50  # дальше от точки выступа нет: его уже убрала прошлая сборка
-FILL_MAX_M2 = 1_000_000  # суша, запертая между районами и водой, меньше этого отходит району
-SLIT_M = 60  # щель в городе уже двух таких радиусов заполняется
+# Полоса, которая касается соседа не меньше чем этой долей своей свободной границы, отходит ему.
+MOVE_SHARE = 0.5
+# Широкий выступ, который касается воды меньше чем этой долей свободной границы, торчит в пустую
+# землю и отрезается.
+WATER_SHARE = 0.3
+# Выступ, отмеченный точкой (bumps), — ближайший к ней кусок района уже 2 × MARKED_BUMP_M (м).
+# Если такого куска нет ближе MARKED_REACH_M (м), выступ уже убрала прошлая сборка.
+MARKED_BUMP_M = 130
+MARKED_REACH_M = 50
+# Суша, запертая между районами и водой, меньше этого (м²) отходит соседнему району.
+FILL_MAX_M2 = 1_000_000
+# Щель в городе заполняется, если она уже 2 × SLIT_M (м), не меньше SLIT_MIN_M2 (м²) и длинная:
+# её площадь больше SLIT_RATIO квадратов её ширины.
+SLIT_M = 60
 SLIT_MIN_M2 = 5_000
-SLIT_RATIO = 3  # щель: площадь больше стольких квадратов её ширины
-MIN_CONTACT_M = 10  # заливку получает сосед, который касается куска хотя бы на столько
-PATCH_M = 0.02  # правка чуть шире куска: на сетке координат не остаётся волосяных щепок
+SLIT_RATIO = 3
+# Заливку получает сосед, который касается куска хотя бы на столько (м).
+MIN_CONTACT_M = 10
+# Правка чуть шире куска (м), чтобы на сетке координат не остались волосяные щепки.
+PATCH_M = 0.02
+
+
+class Edit(TypedDict):
+    """Запись журнала правок: вид правки, район и полигон правки в градусах."""
+
+    kind: str
+    district: str
+    geometry: Polygon
 
 
 def tidy(
-    districts: dict, water, lat0: float, bump_m: float = 0, marked: tuple = ()
-) -> tuple[dict, list[dict]]:
-    """Почищенные районы и журнал правок: [{kind, district, geometry (полигон в градусах)}]."""
+    districts: Districts,
+    water: BaseGeometry,
+    lat0: float,
+    bump_m: float = 0,
+    marked: Sequence[Sequence[float]] = (),
+) -> tuple[Districts, list[Edit]]:
+    """Почищенные районы и журнал правок."""
     cleanup = Cleanup(districts, water, lat0)
     cleanup.remove_far_banks()
     for radius in filter(None, (THIN_M, bump_m)):
@@ -57,23 +89,23 @@ def tidy(
     return cleanup.districts, cleanup.edits
 
 
-def opened(geometry, radius: float):
+def opened(geometry: BaseGeometry, radius: float) -> BaseGeometry:
     """Геометрия без всего, что уже двух радиусов (морфологическое открытие)."""
     shrunk = geometry.buffer(-radius, join_style='mitre')
     return shrunk.buffer(radius * 1.05, join_style='mitre')
 
 
-def solid(geometry):
+def solid(geometry: BaseGeometry) -> BaseGeometry:
     """Только полигоны: после вычитания на сетке остаются линии и точки."""
     return unary_union(parts(geometry))
 
 
-def contact(piece, other) -> float:
+def contact(piece: BaseGeometry, other: BaseGeometry) -> float:
     """Длина общей границы (м): площадь метровой каймы куска внутри соседа."""
     return piece.buffer(1.0).intersection(other).area
 
 
-def strip_width(piece) -> float:
+def strip_width(piece: BaseGeometry) -> float:
     """Ширина прямоугольника с той же площадью и периметром."""
     return (piece.length - math.sqrt(max(piece.length**2 - 16 * piece.area, 0))) / 4
 
@@ -81,28 +113,30 @@ def strip_width(piece) -> float:
 class Cleanup:
     """Районы в градусах (districts) и их копия в метрах (shapes), которые правятся вместе."""
 
-    def __init__(self, districts: dict, water, lat0: float) -> None:
+    def __init__(self, districts: Districts, water: BaseGeometry, lat0: float) -> None:
         self.projection = Projection(lat0)
         self.districts = districts
         self.water = water
         self.shapes = {slug: self.meters(geometry) for slug, geometry in districts.items()}
         self.wet = self.meters(water)
-        self.edits: list[dict] = []
-        self.removed: list = []
+        self.edits: list[Edit] = []
+        self.removed: list[BaseGeometry] = []
         self.frame = box(*self.city().bounds).buffer(FRAME_M)
 
-    def meters(self, geometry):
+    def meters(self, geometry: BaseGeometry) -> BaseGeometry:
         return self.projection.to_meters(geometry)
 
-    def degrees(self, geometry):
+    def degrees(self, geometry: BaseGeometry) -> BaseGeometry:
         return shapely.set_precision(self.projection.to_degrees(geometry), GRID)
 
-    def city(self):
+    def city(self) -> BaseGeometry:
         return unary_union(list(self.shapes.values()))
 
-    def apply(self, kind: str, slug: str, piece, target: str | None = None) -> None:
-        """Убрать кусок у района slug и отдать его району target. Без target кусок только
-        убирается, без slug — только добавляется району target."""
+    def apply(self, kind: str, slug: str, piece: BaseGeometry, target: str | None = None) -> None:
+        """Убрать кусок у района slug и отдать его району target.
+
+        Без target кусок только убирается, без slug — только добавляется району target.
+        """
         patch = solid(self.degrees(piece.buffer(PATCH_M)))
         if slug:
             remaining = shapely.difference(self.districts[slug], patch, grid_size=GRID)
@@ -120,18 +154,20 @@ class Cleanup:
         for part in parts(self.degrees(piece)):
             self.edits.append({'kind': kind, 'district': target or slug, 'geometry': part})
 
-    def set_district(self, slug: str, geometry) -> None:
+    def set_district(self, slug: str, geometry: BaseGeometry) -> None:
         self.districts[slug] = geometry
         self.shapes[slug] = self.meters(geometry)
 
-    def best_neighbour(self, piece, exclude: str | None = None) -> tuple[str, float]:
+    def best_neighbour(self, piece: BaseGeometry, exclude: str | None = None) -> tuple[str, float]:
         """Район с самой длинной общей границей с куском и длина этой границы."""
-        around = {o: contact(piece, g) for o, g in self.shapes.items() if o != exclude}
-        best = max(around, key=around.get)
+        around = {
+            slug: contact(piece, shape) for slug, shape in self.shapes.items() if slug != exclude
+        }
+        best = max(around, key=around.__getitem__)
         return best, around[best]
 
     def remove_far_banks(self) -> None:
-        """Отдельный кусок суши города, который касается земли вне города, — чужой берег."""
+        """Убрать клочки на чужом берегу: отдельные куски суши, касающиеся земли вне города."""
         outside = self.frame.difference(self.city()).difference(self.wet.buffer(0.05))
         masses = parts(self.city().buffer(0.01))
         largest = max(masses, key=lambda mass: mass.area)
@@ -146,9 +182,11 @@ class Cleanup:
                     self.apply('far_bank', slug, piece)
 
     def remove_thin(self, radius: float) -> None:
-        """Полосы уже двух радиусов: внутри чужого района — ему, у воды и на краю — убрать.
-        Широкий выступ (radius = bump_m) убирается, только если торчит в пустую землю, а не
-        в воду."""
+        """Разобрать полосы уже двух радиусов.
+
+        Полоса внутри чужого района отходит ему, у воды и на краю — убирается. Широкий выступ
+        (radius = bump_m) убирается, только если торчит в пустую землю, а не в воду.
+        """
         for slug in list(self.shapes):
             thin = self.shapes[slug].difference(opened(self.shapes[slug], radius))
             for piece in parts(thin):
@@ -164,7 +202,7 @@ class Cleanup:
                     self.apply('cut', slug, piece)
 
     def cut_marked_bump(self, lon: float, lat: float) -> None:
-        """Выступ, отмеченный пользователем точкой внутри, отсекается по самому узкому месту."""
+        """Отсечь по самому узкому месту выступ, отмеченный пользователем точкой внутри."""
         spot = Point(lon * self.projection.kx, lat * self.projection.ky)
         slug = min(self.shapes, key=lambda item: self.shapes[item].distance(spot))
         shape = self.shapes[slug]
@@ -173,9 +211,11 @@ class Cleanup:
         if lump is not None and lump.distance(spot) <= MARKED_REACH_M:
             self.apply('cut', slug, lump)
 
-    def fill_trapped_land(self, gone) -> None:
-        """Суша, запертая между районами и водой, — району с самой длинной общей границей.
-        Место, откуда чистка только что убрала кусок (gone), обратно не заполняется."""
+    def fill_trapped_land(self, gone: BaseGeometry) -> None:
+        """Отдать сушу, запертую между районами и водой, району с самой длинной общей границей.
+
+        Место, откуда чистка только что убрала кусок (gone), обратно не заполняется.
+        """
         inner_frame = self.frame.buffer(-1)
         outside = self.frame.difference(self.city()).difference(self.wet)
         for piece in parts(outside):
@@ -187,8 +227,8 @@ class Cleanup:
             if touching >= MIN_CONTACT_M:
                 self.apply('fill', '', piece, best)
 
-    def fill_slits(self, gone) -> None:
-        """Узкие длинные щели между районами — району с самой длинной общей границей."""
+    def fill_slits(self, gone: BaseGeometry) -> None:
+        """Отдать узкие длинные щели между районами району с самой длинной общей границей."""
         filled = unary_union([self.city(), self.wet])
         closed = filled.buffer(SLIT_M, join_style='mitre').buffer(-SLIT_M, join_style='mitre')
         for piece in parts(closed.difference(filled.buffer(0.05))):

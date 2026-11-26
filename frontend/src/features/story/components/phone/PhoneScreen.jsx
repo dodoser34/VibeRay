@@ -1,6 +1,6 @@
+import { useRef } from 'react';
 import { Icon } from '@/shared/ui/icons/Icon';
 import about from '@/texts/en/about.json';
-import { useRef } from 'react';
 import { useBoxSize } from '../../hooks/useBoxSize';
 import { isDaylight } from '../../lib/chapters';
 import { outlineCenter, topViewBox } from '../../lib/topView';
@@ -10,8 +10,9 @@ const IDEAS = ['shop', 'habits', 'game', 'studyNetwork', 'finance'];
 
 // Экран телефона до 3D-города: экран блокировки (время, дата, уведомление «Заметок»), затем
 // «Заметки» — список идей, которые зачёркиваются, и новая заметка, где печатается вопрос; в конце
-// экран занимает карта Костаная — в той же рамке, что первый кадр 3D-города (lib/topView.js), поэтому
-// город проявляется на месте. Сюжет общий с монитором на ПК (data-screen); слои — data-phone.
+// экран занимает карта Костаная — в той же рамке, что первый кадр 3D-города (lib/topView.js),
+// поэтому город проявляется на месте. Сюжет общий с монитором на ПК (data-screen); слои —
+// data-phone.
 export function PhoneScreen({ outline }) {
   const { phone, screen } = about;
   const time = isDaylight() ? phone.timeDaylight : phone.time;

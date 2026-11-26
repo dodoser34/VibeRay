@@ -35,8 +35,6 @@
 
 .private svg {
   flex: none;
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.6;
 }
 

@@ -4,14 +4,15 @@ import { gsap } from '@/shared/animations/core/gsapSetup';
 import { EMAIL_PATTERN } from '@/shared/config/validation';
 import { Button } from '@/shared/ui/controls/Button';
 import { TextField } from '@/shared/ui/controls/TextField';
-import { useAuth } from '../model/useAuth';
-import { PasswordField } from './password/PasswordField';
 import { DEMO_ACCOUNTS } from '@/demo-data/demoLogin';
 import auth from '@/texts/en/auth.json';
+import { useAuth } from '../model/useAuth';
+import { PasswordField } from './password/PasswordField';
 import form from './AuthForm.module.css';
 import styles from './LoginForm.module.css';
 
-// Подсказка демо-входа — только в демо-режиме (без бэкенда); список — demo-data/demoLogin.js.
+// Форма входа. Подсказка демо-входа — только в демо-режиме (без бэкенда), список —
+// demo-data/demoLogin.js.
 export function LoginForm({ onSuccess, onSwitch }) {
   const { login } = useAuth();
   const formRef = useRef(null);

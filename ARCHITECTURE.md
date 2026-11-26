@@ -105,7 +105,7 @@ VibeRay/
 │       │                              #   support.json (обращения в поддержку для раздела модератора),
 │       │                              #   api/handler.js (фейковый API), api/demoHistory.js (демо-статистика),
 │       │                              #   api/community.js (авторы, история статусов, уведомления, «соседи» и модерация в демо),
-│       │                              #   api/locale.js (язык ответа: названия районов, подписи, тексты демо-проблем),
+│       │                              #   api/locale.js (язык ответа: названия районов, подписи, тексты демо-проблем), api/time.js (единицы времени),
 │       │                              #   api/moderation.js (очередь и сводка модератора)
 │       ├── adaptations/               # адаптации под устройства (раздел 9.1, adaptations/README.md):
 │       │                              #   core/ (breakpoints.js — брейкпоинты, useViewport, качество 3D, rootScale, network — canPrefetch),
@@ -245,7 +245,7 @@ VibeRay/
 │       │       │   └── common/        #   общие блоки: MoodChart + MoodPointDetails (подсказка точки), Breakdown,
 │       │       │                      #   MoodDistribution, StatusBreakdown, MetricLegend
 │       │       ├── hooks/             # useDistrictStats, useCityStats
-│       │       └── lib/               # seriesLabels (подписи осей, группировка по годам), mapOverlay (показатель → цвет района)
+│       │       └── lib/               # seriesLabels (подписи осей, группировка по годам), mapOverlay (показатель → цвет района), trend (порог «без изменений»)
 │       ├── shared/
 │       │   ├── api/
 │       │   │   ├── client.js          # fetch, токен в памяти, ApiError, переключатель демо-режима
@@ -325,13 +325,13 @@ VibeRay/
 │       ├── requirements.txt           # shapely, Pillow (версии закреплены)
 │       └── .osm-cache/                # сырые ответы Overpass для повторной сборки без сети (в .gitignore)
 │
-└── backend/
-    ├── scripts/
-    │   └── import_city.py             # (план) загрузка GeoJSON районов города в БД — часть бэкенда
-    ├── requirements.txt           # зависимости API (версии закреплены)
-    ├── requirements-dev.txt       # + тесты и линтер: pytest, pytest-asyncio, httpx, ruff
-    ├── .env.example
-    ├── app/
+└── backend/                           # сейчас есть только requirements*.txt и data/; пометка «план» —
+    │                                  #   того, что появится вместе с API и выбором БД
+    ├── requirements.txt               # зависимости API (версии закреплены)
+    ├── requirements-dev.txt           # + тесты и линтер: pytest, pytest-asyncio, httpx, ruff
+    ├── .env.example                   # план
+    ├── import_city.py                 # план: загрузка GeoJSON районов города в БД
+    ├── app/                           # план — вся папка:
     │   ├── main.py                    # создание FastAPI, CORS, подключение роутеров, static /media
     │   ├── core/
     │   │   ├── config.py              # Settings (pydantic-settings)
@@ -373,8 +373,8 @@ VibeRay/
     │       ├── saint-petersburg/      # 18 районов Санкт-Петербурга
     │       ├── bristol/               # 34 округа Бристоля
     │       └── astana/                # 6 районов Астаны
-    ├── media/                         # загрузки (в .gitignore)
-    └── tests/
+    ├── media/                         # план: загрузки (в .gitignore)
+    └── tests/                         # план
 ```
 
 ---
@@ -460,7 +460,9 @@ VibeRay/
 
 ## 5. Перечисления (единый словарь)
 
-Коды — источник истины в `backend/app/models/enums.py`. Фронтенд дублирует их в `frontend/src/shared/config/` вместе с подписями, цветами и иконками. **Коды должны совпадать.**
+Коды будут жить в `backend/app/models/enums.py` (появится вместе с бэкендом) — это и станет источником истины.
+Пока бэкенда нет, коды задаёт фронтенд — `frontend/src/shared/config/`, вместе с подписями, цветами и иконками.
+Когда бэкенд появится, фронтенд будет дублировать его коды. **Коды должны совпадать.**
 
 ### Mood — настроение
 | Код | Подпись | Балл |
@@ -591,7 +593,7 @@ shapely; сырые ответы Overpass кешируются в `tools/city-da
 (`backend/data/cities/<slug>/`; в демо фронтенда схемы дорог нет — плитки); без сети — `--osm сохранённый_ответ.json`,
 сохранить ответ — `--save-osm`.
 
-*План:* загрузить в БД через `backend/scripts/import_city.py`.
+*План:* загрузить в БД скриптом бэкенда `backend/import_city.py` (появится вместе с БД).
 
 Лицензия ODbL — на карте обязательна подпись «© участники OpenStreetMap».
 
@@ -711,8 +713,9 @@ shapely; сырые ответы Overpass кешируются в `tools/city-da
 Состояние на 2026-11-14: Кёльн, Бристоль, Петербург, Астана — «ПРИНЯТО»; у Костаная D5 — 3 вершины на стыке трёх районов
 (Привокзальный, Аэропорт, Костанай-2) расходятся на ~2 см, на карте не видно.
 
-**Гайды для ИИ** — `.claude/skills/add-city/` (добавить город: выбор деления в OSM — `tools/find_divisions.py`,
-требования к данным — `requirements.md`, карта для путеводителя — `tools/draw_city_map.py`) и
+**Гайды для ИИ** — `.claude/skills/add-city/` (добавить город: выбор деления в OSM — `.claude/skills/add-city/tools/find_divisions.py`,
+требования к данным — `requirements.md`, карта для путеводителя — `.claude/skills/add-city/tools/draw_city_map.py`;
+это папка гайда, а не корневая `tools/`) и
 `.claude/skills/update-city-data/` (пересобрать или поправить город). Папка `.claude/` в `.gitignore`: гайды
 лежат только в рабочей копии.
 
@@ -835,9 +838,9 @@ rejected ──(модератор: восстановить)──▶ new
 | PUT | `/users/me/avatar` | авториз. | своё фото: multipart `avatar` — JPEG/PNG/WebP ≤ 10 МБ (EXIF удаляется на клиенте и повторно на сервере) → `UserPrivate` |
 | POST | `/users/me/password` | авториз. | смена пароля: `current_password`, `new_password` (правила раздела 8) → 204. Ошибки: `wrong_password` (403), `weak_password`. Сервер отзывает остальные refresh-сессии пользователя |
 | DELETE | `/users/me` | авториз. | удалить аккаунт: тело `{password}` → 204, ошибка `wrong_password` (403). Удаляются профиль и сессии; отметки настроения остаются в агрегатах без привязки к пользователю |
-| GET | `/users/me/problems` | авториз. | свои сообщения о проблемах, новые первыми, с `history` |
+| GET | `/users/me/problems` | авториз. | свои сообщения о проблемах, новые первыми, с `history`, `city` и `district_name` |
 | DELETE | `/users/me/problems/{id}` | автор | убрать своё сообщение из списка (любой статус; на карте остаётся) → 204. Ошибка: `not_author` (403) |
-| GET | `/users/me/notifications` | авториз. | `{unread, items: [{id, kind, problem_id, status, count, created_at, read, problem: {id, category, district, district_name, status}}]}`, новые первыми. Фронтенд опрашивает раз в 20 с и при возврате на вкладку |
+| GET | `/users/me/notifications` | авториз. | `{unread, items: [{id, kind, problem_id, status, count, created_at, read, problem: {id, category, city, district, district_name, status}}]}`, новые первыми. Фронтенд опрашивает раз в 20 с и при возврате на вкладку |
 | POST | `/users/me/notifications/read` | авториз. | `{ids?}` — отметить прочитанными (без `ids` — все) → 204 |
 | DELETE | `/users/me/notifications` | авториз. | `{ids?}` — стереть уведомления (без `ids` — все) → 204 |
 | GET | `/users/{nickname}` | все | `UserPublic`: только nickname + avatar_url |

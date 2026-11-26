@@ -1,5 +1,5 @@
-import { STEPS } from '../../lib/registerSteps';
 import auth from '@/texts/en/auth.json';
+import { STEPS } from '../../lib/registerSteps';
 import styles from './RegisterProgress.module.css';
 
 // Полоса шагов регистрации: пройденные, текущий и оставшиеся.

@@ -23,12 +23,13 @@ const page = (key, name, props = {}) => ({
   },
 });
 
-// Фоном подгружает остальные страницы, чтобы переходы не ждали сети (только при хорошем соединении).
+// Фоном подгружает остальные страницы, чтобы переходы не ждали сети (только при хорошем
+// соединении).
 export function prefetchPages() {
   Object.values(PAGES).forEach((load) => load());
 }
 
-// Одни и те же страницы на каждом языке: русский — без префикса, остальные — /kk, /en, /de
+// Одни и те же страницы на каждом языке: английский — без префикса, остальные — /ru, /kk, /de
 // (shared/lib/i18n/language.js). Маршруты одной глубины, поэтому при смене языка страница не
 // монтируется заново — меняются только адрес и тексты.
 const pagesFor = (prefix) => [
@@ -46,7 +47,8 @@ const pagesFor = (prefix) => [
   { path: `${prefix}/about`, ...page('about', 'AboutPage') },
   { path: `${prefix}/support`, ...page('support', 'SupportPage') },
   { path: `${prefix}/settings`, ...page('settings', 'SettingsPage') },
-  // Разделы модератора — свой интерфейс (app/routing/useRoleRoute.js); настройки — та же страница настроек.
+  // Разделы модератора — свой интерфейс (app/routing/useRoleRoute.js); настройки — та же страница
+  // настроек.
   { path: `${prefix}/moderation`, ...page('moderation', 'ModerationPage', { section: 'queue' }) },
   { path: `${prefix}/moderation/map`, ...page('moderationMap', 'ModerationMapPage') },
   {

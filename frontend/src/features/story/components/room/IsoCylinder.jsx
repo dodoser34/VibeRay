@@ -2,8 +2,8 @@ import { ISO_COS, isoToScreen, UNIT } from '../../lib/room/isometric';
 import styles from './IsometricRoom.module.css';
 
 // Вертикальный цилиндр (кружка, горшок, корзина, ножка лампы): окружность на полу в изометрии —
-// эллипс с полуосями r·√2·ISO_COS и в √3 раз меньше, поэтому цилиндр — бок с полукруглым низом и эллипс
-// сверху. open — сверху видно нутро (кружка, корзина).
+// эллипс с полуосями r·√2·ISO_COS и в √3 раз меньше, поэтому цилиндр — бок с полукруглым низом и
+// эллипс сверху. open — сверху видно нутро (кружка, корзина).
 export function IsoCylinder({ at: [x, y, z], radius, height, tone, open = false, className }) {
   const [cx, bottom] = isoToScreen(x, y, z);
   const top = bottom - height * UNIT;

@@ -31,8 +31,8 @@
   }
 }
 
-/* Раскладка со шторкой (телефоны и планшеты стоя, adaptations/mobile/sheet): строка лицензии и
-   уведомления едут над шторкой; панели заполняют её видимую часть. */
+/* Раскладка со шторкой (телефоны и планшеты стоя, adaptations/mobile/components/sheet): строка
+   лицензии и уведомления едут над шторкой; панели заполняют её видимую часть. */
 @media (max-width: 1023px), (orientation: portrait) and (max-width: 1199px) {
   :root [data-ui='map-attribution'] {
     right: auto;

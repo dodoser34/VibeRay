@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { PasswordField, PasswordStrength, useAuth } from '@/features/auth';
 import { changePassword } from '@/shared/api/endpoints/users';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
+import auth from '@/texts/en/auth.json';
+import texts from '@/texts/en/settings.json';
+import { Icon } from '@/shared/ui/icons/Icon';
 import { useSaveAction } from '../../hooks/useSaveAction';
 import { SaveBar } from '../SaveBar';
 import { SettingsSection } from '../SettingsSection';
-import auth from '@/texts/en/auth.json';
-import texts from '@/texts/en/settings.json';
 import styles from './SecuritySection.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
 
 const EMPTY = { current: '', next: '', repeat: '' };
 // Ошибки API, которые показываются у своего поля, а не под кнопкой.

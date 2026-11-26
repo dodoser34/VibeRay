@@ -3,7 +3,8 @@ import { gsap } from '@/shared/animations/core/gsapSetup';
 import styles from './BottomSheet.module.css';
 
 const SNAPS = ['peek', 'half', 'full'];
-const FLICK = 0.45; // px/мс: быстрый взмах переводит шторку на положение дальше даже при коротком жесте
+// px/мс: быстрый взмах переводит шторку на положение дальше даже при коротком жесте.
+const FLICK = 0.45;
 
 // Видимая высота (px) положений шторки для окна этой высоты.
 function snapHeights(viewport, peek, top) {
@@ -17,10 +18,9 @@ const nearest = (heights, visible) =>
 
 // Шторка у нижнего края с тремя положениями: «peek» (виден только заголовок), «half» и «full».
 // Двигается за ручку и за элементы с data-sheet-drag (заголовки панелей; их кнопки остаются
-// кликабельными). Движение — через transform; блок содержимого всегда равен видимой части, поэтому
-// панели прокручиваются внутри, а их нижние кнопки остаются на экране в любом положении.
-// onInset(px) сообщает видимую высоту во время движения (карта сдвигает по ней камеру и плавающие
-// кнопки).
+// кликабельными). Блок содержимого всегда равен видимой части, поэтому панели прокручиваются
+// внутри, а их нижние кнопки остаются на экране в любом положении. onInset(px) сообщает видимую
+// высоту во время движения: по ней карта сдвигает камеру и плавающие кнопки.
 export function BottomSheet({
   snap,
   onSnapChange,
@@ -57,13 +57,13 @@ export function BottomSheet({
   const animateTo = useCallback(
     (name, duration = 0.45) => {
       const state = stateRef.current;
-      const proxy = { v: state.visible };
+      const proxy = { visible: state.visible };
       state.tween?.kill();
       state.tween = gsap.to(proxy, {
-        v: heights()[name],
+        visible: heights()[name],
         duration,
         ease: 'expo.out',
-        onUpdate: () => apply(proxy.v),
+        onUpdate: () => apply(proxy.visible),
       });
     },
     [apply, heights],
@@ -89,6 +89,9 @@ export function BottomSheet({
 
   const next = { peek: 'half', half: 'full', full: 'peek' }[snap];
 
+  // Клик ручки с клавиатуры (Enter / Space); тапы указателем обрабатывает onPointerUp.
+  const keyboardToggle = (event) => event.detail === 0 && onSnapChange(next);
+
   const onPointerDown = (event) => {
     const onHandle = event.target.closest('[data-sheet-handle]');
     const onHeader = event.target.closest('[data-sheet-drag]');
@@ -108,7 +111,7 @@ export function BottomSheet({
     if (!drag.moved) return;
     const { peek: min, full: max } = heights();
     apply(Math.min(max, Math.max(min, drag.start - dy)));
-    drag.trail = [...drag.trail.slice(-4), { y: event.clientY, t: event.timeStamp }];
+    drag.trail = [...drag.trail.slice(-4), { y: event.clientY, time: event.timeStamp }];
   };
 
   const onPointerUp = () => {
@@ -124,7 +127,7 @@ export function BottomSheet({
     if (!drag.trail.length) return;
     const first = drag.trail[0];
     const last = drag.trail.at(-1);
-    const velocity = last.t > first.t ? (last.y - first.y) / (last.t - first.t) : 0;
+    const velocity = last.time > first.time ? (last.y - first.y) / (last.time - first.time) : 0;
     const all = heights();
     let name = nearest(all, state.visible);
     if (Math.abs(velocity) > FLICK) {
@@ -154,8 +157,7 @@ export function BottomSheet({
           data-sheet-handle
           aria-label={toggleLabel}
           aria-expanded={snap !== 'peek'}
-          // Только клавиатура (Enter / Space): тапы указателем обрабатываются в onPointerUp
-          onClick={(event) => event.detail === 0 && onSnapChange(next)}
+          onClick={keyboardToggle}
         >
           <span className={styles.grip} aria-hidden="true" />
         </button>

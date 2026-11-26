@@ -18,8 +18,8 @@ const CACHE = { mobile: 24, tablet: 36, desktop: 48 };
 const RASTER_MPP = 3;
 const DETAIL_SLACK = 1.5;
 const FADE_BAND = 1.3;
-// Классы дорог — как в build_map_tiles.py: ширина на земле (м), цвет, прозрачность. Тогда переход от
-// плитки к линиям незаметен.
+// Классы дорог — как в build_map_tiles.py: ширина на земле (м), цвет, прозрачность. Тогда переход
+// от плитки к линиям незаметен.
 const ROADS = [
   { kind: 'service', width: 3, color: '--scene-road', opacity: 0.6 },
   { kind: 'local', width: 5, color: '--scene-road', opacity: 0.95 },
@@ -32,9 +32,9 @@ const ROADS = [
 const LINE_POINT = '(position.y < 0.5 ? instanceStart : instanceEnd).xz * vec2(1.0, -1.0)';
 
 // Дороги карты вблизи (уровень улицы) — чёткие линии из векторных кусков (клетки самого детального
-// уровня плиток, build_map_tiles.py). Кусок грузится, только если клетка в кадре и камера к ней близко;
-// ближние — первыми. Толщина — в метрах на земле (worldUnits), как в плитках. mixAt(x, y) — насколько
-// линии клетки уже видны: плитка под ними гасит свои дороги (MapTiles.roadMix).
+// уровня плиток, build_map_tiles.py). Кусок грузится, только если клетка в кадре и камера к ней
+// близко; ближние — первыми. Толщина — в метрах на земле (worldUnits), как в плитках. mixAt(x, y) —
+// насколько линии клетки уже видны: плитка под ними гасит свои дороги (MapTiles.roadMix).
 export class MapVectors {
   constructor(slug, outline) {
     this.slug = slug;
@@ -47,7 +47,7 @@ export class MapVectors {
     this.lastUpdate = -Infinity;
     this.limit = CACHE[renderQuality().tier] ?? CACHE.desktop;
     this.resolution = new THREE.Vector2(1, 1);
-    this.ready = getMapTiles(slug).then((manifest) => {
+    getMapTiles(slug).then((manifest) => {
       if (this.disposed) return;
       this.cellKm = manifest.vectorCellKm;
       this.unitKm = manifest.vectorUnitM / 1000;
@@ -122,7 +122,8 @@ export class MapVectors {
     return chunk;
   }
 
-  // Загрузка — не больше MAX_LOADING кусков разом, ближние к камере первыми; уже ненужные — из очереди.
+  // Загрузка — не больше MAX_LOADING кусков разом, ближние к камере первыми; уже ненужные — из
+  // очереди.
   pump(time) {
     this.queue = this.queue.filter((chunk) => {
       const stale = time - chunk.used > STALE_MS;

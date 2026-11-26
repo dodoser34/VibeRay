@@ -1,8 +1,8 @@
 import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { formatRelative } from '@/shared/lib/i18n/formatDate';
-import { StatusChip } from './StatusChip';
 import { format } from '@/shared/lib/i18n/format';
 import texts from '@/texts/en/problems.json';
+import { StatusChip } from './StatusChip';
 import styles from './ProblemListItem.module.css';
 
 export function ProblemListItem({ problem, onSelect }) {

@@ -27,11 +27,7 @@
 }
 
 .icon {
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 /* При смене темы новая иконка выкатывается с оборотом и пружинит на место; под указателем

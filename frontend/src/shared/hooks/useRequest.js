@@ -21,7 +21,7 @@ export function useRequest(key, fetcher) {
     let cancelled = false;
     const request = fetcherRef.current().then(
       (data) => !cancelled && setState({ key, data, error: null }),
-      (error) => !cancelled && setState((prev) => ({ key, data: prev.data, error })),
+      (error) => !cancelled && setState((current) => ({ key, data: current.data, error })),
     );
     if (languageRef.current !== language) {
       languageRef.current = language;

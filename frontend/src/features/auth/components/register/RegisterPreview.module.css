@@ -39,7 +39,5 @@
 }
 
 .lock svg {
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.6;
 }

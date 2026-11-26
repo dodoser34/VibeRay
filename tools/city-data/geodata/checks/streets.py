@@ -12,6 +12,7 @@ import numpy as np
 import shapely
 from shapely import STRtree
 
+from build_streets import COORD_DIGITS, OUTSIDE
 from geodata.checks.city import City
 from geodata.checks.measure import SEED, distances, polylines, sample_along
 from geodata.checks.report import Report
@@ -19,31 +20,40 @@ from geodata.output import read_json
 from geodata.paths import CACHE
 from geodata.roads import kind_of
 
-COORD_DIGITS = 6  # координаты схемы дорог (build_streets.py)
-STREET_M = 1.5  # дорога на схеме от дороги OSM: упрощение до 1 м + округление координат
+# Дорога на схеме отходит от дороги OSM на допуск упрощения (до 1 м) и округление координат.
+STREET_M = 1.5
 STREET_SHARE = 0.999
-EDGE_M = 25.0  # у самого края района отрезок дороги может числиться за соседом или «вне районов»
-OWN_DISTRICT_M = 2.0  # дорога, по которой идёт граница, лежит на краю своего района
+# У самого края района отрезок дороги может числиться за соседом или «вне районов».
+EDGE_M = 25.0
+# Дорога, по которой идёт граница, лежит на краю своего района.
+OWN_DISTRICT_M = 2.0
 OWN_SHARE = 0.995
-SAMPLE = 200_000  # узлов OSM на проверку полноты
+# Сколько узлов OSM берётся на проверку полноты.
+SAMPLE = 200_000
 SAMPLE_STEP_M = 10.0
-OUTSIDE = '_outside'
 
-Lines = dict[
-    str, list[tuple[str | None, np.ndarray]]
-]  # класс → [(район файла, вершины в градусах)]
+# Класс дороги → [(район из имени файла, вершины в градусах)].
+Lines = dict[str, list[tuple[str | None, np.ndarray]]]
+# Класс дороги → [вершины пути OSM в градусах].
+Nodes = dict[str, list[np.ndarray]]
 
 
 @dataclass
 class Streets:
+    """Схема дорог города, прочитанная из streets/*.geojson.
+
+    files — районы, для которых есть файл; mislabeled — сколько линий лежит не в файле своего
+    района (поле district не совпало с именем файла).
+    """
+
     by_kind: Lines
-    files: set[str]  # районы, для которых есть файл
-    mislabeled: int  # линий, у которых district не совпал с именем файла
+    files: set[str]
+    mislabeled: int
 
 
 def load_streets(city: City) -> Streets:
     by_kind: Lines = defaultdict(list)
-    files = set()
+    files: set[str] = set()
     mislabeled = 0
     for path in sorted((city.folder / 'streets').glob('*.geojson')):
         owner = None if path.stem == OUTSIDE else path.stem
@@ -56,10 +66,10 @@ def load_streets(city: City) -> Streets:
     return Streets(by_kind, files, mislabeled)
 
 
-def osm_road_nodes(city: City) -> dict[str, list[np.ndarray]]:
+def osm_road_nodes(city: City) -> Nodes:
     """Пути дорог из сохранённого ответа Overpass (--save-osm): класс → [вершины в градусах]."""
     osm = read_json(CACHE / f'{city.slug}-streets.json')
-    nodes: dict[str, list[np.ndarray]] = defaultdict(list)
+    nodes: Nodes = defaultdict(list)
     for element in osm['elements']:
         kind = kind_of(element.get('tags', {}))
         geometry = element.get('geometry')
@@ -84,13 +94,16 @@ def keys(scaled: np.ndarray) -> np.ndarray:
 
 
 def node_keys(lon_lat: np.ndarray) -> np.ndarray:
-    """Узлы OSM (7 знаков) в координатах схемы (6 знаков): оба соседних значения по каждой оси —
-    округление половинок у разных программ идёт в разные стороны."""
+    """Узлы OSM (7 знаков) в координатах схемы (6 знаков).
+
+    Берутся оба соседних значения по каждой оси: округление половинок у разных программ идёт
+    в разные стороны.
+    """
     low = np.floor(lon_lat * 10**COORD_DIGITS).astype(np.int64)
     return np.concatenate([keys(low + shift) for shift in ([0, 0], [0, 1], [1, 0], [1, 1])])
 
 
-def check_vertices(streets: Streets, nodes: dict, report: Report) -> None:
+def check_vertices(streets: Streets, nodes: Nodes, report: Report) -> None:
     total = stray = 0
     for kind, lines in streets.by_kind.items():
         own = np.concatenate([line for _, line in lines])
@@ -107,7 +120,7 @@ def check_vertices(streets: Streets, nodes: dict, report: Report) -> None:
     )
 
 
-def check_completeness(city: City, streets: Streets, nodes: dict, report: Report) -> None:
+def check_completeness(city: City, streets: Streets, nodes: Nodes, report: Report) -> None:
     """Случайные узлы дорог OSM внутри районов (не у самого края) должны лежать на схеме."""
     rng = np.random.default_rng(SEED)
     inner = shapely.buffer(city.union, -EDGE_M)
@@ -139,13 +152,16 @@ def check_completeness(city: City, streets: Streets, nodes: dict, report: Report
 
 
 def check_districts(city: City, streets: Streets, report: Report) -> None:
-    """Точки вдоль линий — в районе из имени файла (или вне районов). Отрезок относится к району
-    своей середины, поэтому длинный отрезок на краю частично выходит за район — отсюда допуск."""
+    """Точки вдоль линий должны лежать в районе из имени файла (или вне районов).
+
+    Отрезок относится к району своей середины, поэтому длинный отрезок на краю частично выходит
+    за район — отсюда допуск.
+    """
     by_owner: dict[str | None, list[np.ndarray]] = defaultdict(list)
     for lines in streets.by_kind.values():
         for owner, line in lines:
             by_owner[owner].append(city.xy(line))
-    index = {slug: i for i, slug in enumerate(city.slugs)}
+    index = {slug: position for position, slug in enumerate(city.slugs)}
     count = astray = 0
     for owner, lines in by_owner.items():
         points = sample_along(lines, SAMPLE_STEP_M)

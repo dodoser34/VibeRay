@@ -1,7 +1,7 @@
 import dictionaries from '@/texts/en/dictionaries.json';
 import { withLabels } from './withLabels';
 
-// Коды должны совпадать с backend/app/models/enums.py (StatsPeriod).
+// Коды общие с бэкендом: перечисление StatsPeriod (будущий backend/app/models/enums.py).
 export const PERIOD_CODES = ['day', 'week', 'month', 'year', 'all'];
 
 const periods = (codes) =>

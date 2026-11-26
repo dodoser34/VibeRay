@@ -82,11 +82,8 @@
   right: var(--space-3);
   width: 0.875rem;
   height: 0.875rem;
-  fill: none;
   stroke: var(--color-text-muted);
   stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
   pointer-events: none;
 }
 
@@ -111,11 +108,7 @@
 }
 
 .swap svg {
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .cards {
@@ -230,12 +223,5 @@
 
   .row {
     grid-template-columns: 1.5rem minmax(0, 1fr) minmax(5rem, auto) minmax(0, 1fr) 1.5rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bar,
-  .swap {
-    transition: none;
   }
 }

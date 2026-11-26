@@ -1,49 +1,33 @@
 import { useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
+import { Link } from 'react-router';
+import { lastCity } from '@/features/map';
 import { gsap, SplitText, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { revealOnScroll } from '@/shared/animations/effects/revealOnScroll';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
+import { localizePath } from '@/shared/lib/i18n/language';
 import { Button } from '@/shared/ui/controls/Button';
+import texts from '@/texts/en/support.json';
 import assistant from '../assets/assistant.webp';
 import faqAssistant from '../assets/faq-assistant.webp';
-import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
 import { useFigurePointer } from '../hooks/useFigurePointer';
+import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
 import { searchHelp } from '../lib/searchHelp';
 import { FaqList } from './FaqList';
 import { HelpCategories } from './HelpCategories';
 import { HelpSearch } from './HelpSearch';
 import { ServiceStatus } from './ServiceStatus';
 import { SupportRequestForm } from './SupportRequestForm';
-import texts from '@/texts/en/support.json';
-import { useLanguage } from '@/shared/hooks/useLanguage';
 import styles from './SupportCenter.module.css';
 
+// Ссылки подвала: ключ подписи в texts.footer.links и путь страницы.
 const LINKS = [
-  {
-    to: '/map/kostanay',
-    get label() {
-      return texts.footer.links.map;
-    },
-  },
-  {
-    to: '/about',
-    get label() {
-      return texts.footer.links.about;
-    },
-  },
-  {
-    to: '/login',
-    get label() {
-      return texts.footer.links.login;
-    },
-  },
-  {
-    to: '/register',
-    get label() {
-      return texts.footer.links.register;
-    },
-  },
+  ['map', () => `/map/${lastCity()}`],
+  ['about', () => '/about'],
+  ['login', () => '/login'],
+  ['register', () => '/register'],
 ];
 
 // Страница поддержки: поиск → темы → ответы → «не нашли?» → статус сервисов → контакты.
@@ -235,7 +219,7 @@ export function SupportCenter({ onNavigate }) {
             openId={openId}
             onToggle={setOpenId}
           />
-          {/* Девушка показывает на вопросы, едет рядом со списком и подъезжает к открытому вопросу */}
+          {/* Девушка едет рядом со списком вопросов и подъезжает к открытому */}
           <div className={styles.faqRail} aria-hidden="true" data-ui="support-faq-rail">
             <img
               ref={faqFigureRef}
@@ -276,16 +260,22 @@ export function SupportCenter({ onNavigate }) {
           </button>
         </div>
         <nav className={styles.links} aria-label={texts.footer.linksLabel}>
-          {LINKS.map((link) => (
-            <button
-              key={link.to}
-              type="button"
-              className={styles.link}
-              onClick={() => onNavigate(link.to)}
-            >
-              {link.label}
-            </button>
-          ))}
+          {LINKS.map(([key, pathOf]) => {
+            const path = pathOf();
+            return (
+              <Link
+                key={key}
+                to={localizePath(path)}
+                className={styles.link}
+                onClick={(event) => {
+                  event.preventDefault();
+                  onNavigate(path);
+                }}
+              >
+                {texts.footer.links[key]}
+              </Link>
+            );
+          })}
         </nav>
       </footer>
 

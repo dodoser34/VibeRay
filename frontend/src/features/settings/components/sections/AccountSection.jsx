@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Button } from '@/shared/ui/controls/Button';
 import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
 import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
+import texts from '@/texts/en/settings.json';
 import { DeleteAccountDialog } from './DeleteAccountDialog';
 import { SettingsSection } from '../SettingsSection';
-import texts from '@/texts/en/settings.json';
 import styles from './AccountSection.module.css';
 
 // onLogout и onDeleted решает страница: сначала уводит с настроек, потом закрывает сессию. Без

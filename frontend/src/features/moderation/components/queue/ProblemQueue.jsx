@@ -6,8 +6,8 @@ import { useRequest } from '@/shared/hooks/useRequest';
 import { format } from '@/shared/lib/i18n/format';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import { ChipGroup } from '@/shared/ui/controls/ChipGroup';
-import { QueueItem } from './QueueItem';
 import texts from '@/texts/en/moderation.json';
+import { QueueItem } from './QueueItem';
 import styles from './ProblemQueue.module.css';
 
 const SORTS = ['newest', 'oldest', 'confirmations'];

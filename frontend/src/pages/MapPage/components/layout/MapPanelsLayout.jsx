@@ -5,8 +5,8 @@ import { PanelToggle } from './PanelToggle';
 import styles from './MapPanelsLayout.module.css';
 
 // Раскладка «панели» (десктопы, планшеты лёжа): фильтры — в левой панели, содержимое (район,
-// проблема, дашборд) — в правой, обе прячутся язычком; внизу слева — путь к дашборду и обратно, по
-// центру — действия. data-panel — цели анимации появления в MapPage.
+// проблема, дашборд) — в правой, обе прячутся язычком; внизу слева — путь к дашборду и обратно,
+// по центру — действия. data-panel — цели анимации появления (hooks/useMapPageAnimations.js).
 export function MapPanelsLayout({
   filters,
   detail,

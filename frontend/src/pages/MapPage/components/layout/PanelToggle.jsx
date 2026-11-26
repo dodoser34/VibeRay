@@ -1,5 +1,5 @@
-import styles from './PanelToggle.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import styles from './PanelToggle.module.css';
 
 // Язычок у внешнего края боковой панели: прячет её за край экрана и возвращает. Когда панель
 // спрятана, язычок остаётся у края экрана.

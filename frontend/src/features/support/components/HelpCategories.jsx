@@ -2,10 +2,10 @@ import { useRef } from 'react';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { plural } from '@/shared/lib/i18n/plural';
-import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
 import texts from '@/texts/en/support.json';
-import styles from './HelpCategories.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
+import styles from './HelpCategories.module.css';
 
 const TILT = 5; // градусов у края карточки: сильнее — иконка и текст заметно уезжают от рамки
 

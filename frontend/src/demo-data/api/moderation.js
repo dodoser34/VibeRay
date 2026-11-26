@@ -9,8 +9,8 @@ import {
 } from './demoHistory';
 import { resolvedAt, withHistory } from './community';
 import { nameOf } from './locale';
+import { DAY } from './time';
 
-const DAY = 86_400_000;
 const ACTIVE = ['new', 'confirmed', 'in_progress'];
 // Фильтр очереди → статусы; «active» — всё, что ждёт решения или работы.
 const QUEUE_STATUSES = {
@@ -45,7 +45,8 @@ const districtNames = (city) =>
 
 export const isQueueStatus = (code) => code in QUEUE_STATUSES;
 
-// Модератор видит и автора анонимной проблемы — чтобы отличать спам; наружу (UserPublic) он не уходит.
+// Модератор видит и автора анонимной проблемы — чтобы отличать спам; наружу (UserPublic) он не
+// уходит.
 export function moderationItem(problem, names = districtNames(cityOfDistrict(problem.district))) {
   return { ...withHistory(problem), district_name: names[problem.district] };
 }

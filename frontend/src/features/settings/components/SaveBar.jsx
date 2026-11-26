@@ -1,7 +1,7 @@
 import { Button } from '@/shared/ui/controls/Button';
 import texts from '@/texts/en/settings.json';
-import styles from './SaveBar.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import styles from './SaveBar.module.css';
 
 // Кнопки формы раздела и итог сохранения. Пока ничего не изменено, сохранять нечего.
 // error — ошибка, которую раздел не показал у конкретного поля.

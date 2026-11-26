@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useHref } from 'react-router';
 import { CategoryIcon, StatusTimeline } from '@/features/problems';
-import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import { withdrawProblem } from '@/shared/api/endpoints/problems';
 import { hideMyProblem } from '@/shared/api/endpoints/users';
+import { CATEGORY_BY_CODE } from '@/shared/config/problemCategories';
 import {
   REJECTION_REASON_BY_CODE,
   STATUS_BY_CODE,
@@ -14,20 +14,18 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatDate } from '@/shared/lib/i18n/formatDate';
 import { localizePath } from '@/shared/lib/i18n/language';
 import { plural } from '@/shared/lib/i18n/plural';
+import { Icon } from '@/shared/ui/icons/Icon';
 import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';
 import problemTexts from '@/texts/en/problems.json';
 import texts from '@/texts/en/settings.json';
 import styles from './ReportItem.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
-
-const CITY = 'kostanay';
 
 // Одно своё сообщение: что, где, когда, путь статусов и сколько соседей подтвердили. Корзина есть у
 // каждого: пока город не взялся за проблему, сообщение отзывается целиком; в работе и решённое —
 // только убирается из списка, на карте остаётся (onWithdrawn — после ответа сервера).
-export function ReportItem({ problem, districtName, index, onOpen, onWithdrawn }) {
+export function ReportItem({ problem, index, onOpen, onWithdrawn }) {
   const [confirming, setConfirming] = useState(false);
-  const path = `/map/${CITY}/problem/${problem.id}`;
+  const path = `/map/${problem.city}/problem/${problem.id}`;
   const href = useHref(localizePath(path));
   const { state: shareState, share } = useShare();
   const category = CATEGORY_BY_CODE[problem.category].label;
@@ -55,7 +53,7 @@ export function ReportItem({ problem, districtName, index, onOpen, onWithdrawn }
 
       <div className={styles.main}>
         <p className={styles.meta}>
-          {districtName} ·{' '}
+          {problem.district_name} ·{' '}
           <time dateTime={problem.created_at}>{formatDate(problem.created_at)}</time>
         </p>
         <h3 className={styles.title}>

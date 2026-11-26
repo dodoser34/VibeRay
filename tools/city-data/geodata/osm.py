@@ -1,7 +1,7 @@
 """OpenStreetMap: запросы к Overpass API, кеш ответов и разбор путей и отношений.
 
-Каждый ответ Overpass сохраняется в tools/city-data/.osm-cache/: повторная сборка идёт без сети и на тех же
-данных. Чтобы взять свежий OSM, файл кеша удаляют — скрипт скачает его заново.
+Каждый ответ Overpass сохраняется в tools/city-data/.osm-cache/: повторная сборка идёт без сети
+и на тех же данных. Чтобы взять свежий OSM, файл кеша удаляют — скрипт скачает его заново.
 """
 
 import json
@@ -11,8 +11,10 @@ import urllib.parse
 import urllib.request
 from collections.abc import Callable
 from pathlib import Path
+from typing import Any
 
 from shapely.geometry import LineString, Polygon
+from shapely.geometry.base import BaseGeometry
 from shapely.ops import linemerge, polygonize, polygonize_full, unary_union
 
 from geodata.geometry import scale
@@ -21,11 +23,15 @@ from geodata.paths import CACHE
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter'
 USER_AGENT = 'VibeRay/0.1 (city mood map; data build script)'
 RETRY_PAUSE_S = 30
-STITCH_M = 200  # разрыв кольца отношения OSM не длиннее этого сшивается по ближайшим концам
+# Разрыв кольца отношения OSM не длиннее этого (м) сшивается прямой по ближайшим концам.
+STITCH_M = 200
 
 
-def overpass(query: str, attempts: int = 8) -> dict:
-    """Ответ Overpass API на запрос. Сервер часто занят (429, 504) — тогда ждём и повторяем."""
+def overpass(query: str, attempts: int = 8) -> dict[str, Any]:
+    """Ответ Overpass API на запрос.
+
+    Сервер часто занят (429, 504) — тогда ждём и повторяем.
+    """
     body = urllib.parse.urlencode({'data': query}).encode()
     for attempt in range(attempts):
         request = urllib.request.Request(
@@ -40,7 +46,7 @@ def overpass(query: str, attempts: int = 8) -> dict:
     raise SystemExit('Overpass недоступен — попробуйте позже или передайте сохранённый ответ')
 
 
-def cached(path: Path, load: Callable[[], dict]) -> dict:
+def cached(path: Path, load: Callable[[], dict[str, Any]]) -> dict[str, Any]:
     """Ответ с диска, а если его нет — из сети (и сразу на диск)."""
     if path.exists():
         return json.loads(path.read_text(encoding='utf-8'))
@@ -50,7 +56,7 @@ def cached(path: Path, load: Callable[[], dict]) -> dict:
     return data
 
 
-def official_boundaries(slug: str, query: str) -> dict:
+def official_boundaries(slug: str, query: str) -> dict[str, Any]:
     """Отношения официальных районов города (запрос — CITIES[slug]['query'])."""
     return cached(
         CACHE / f'{slug}-boundaries.json',
@@ -58,15 +64,15 @@ def official_boundaries(slug: str, query: str) -> dict:
     )
 
 
-def find_relations(osm: dict, districts: dict[str, str]) -> dict[str, dict]:
+def find_relations(osm: dict[str, Any], districts: dict[str, str]) -> dict[str, dict[str, Any]]:
     """Отношение OSM каждого района: slug → отношение с тегом name из настроек города."""
-    found: dict[str, list[dict]] = {slug: [] for slug in districts}
+    found: dict[str, list[dict[str, Any]]] = {slug: [] for slug in districts}
     slug_of = {name: slug for slug, name in districts.items()}
     for element in osm['elements']:
         name = element.get('tags', {}).get('name')
         if element['type'] == 'relation' and name in slug_of:
             found[slug_of[name]].append(element)
-    result = {}
+    result: dict[str, dict[str, Any]] = {}
     for slug, relations in found.items():
         if len(relations) != 1:
             problem = 'нет' if not relations else f'{len(relations)} отношения'
@@ -75,17 +81,17 @@ def find_relations(osm: dict, districts: dict[str, str]) -> dict[str, dict]:
     return result
 
 
-def way_points(element: dict) -> list[tuple[float, float]]:
+def way_points(element: dict[str, Any]) -> list[tuple[float, float]]:
     """Вершины пути OSM (ответ с out geom): [(долгота, широта)]."""
     return [(node['lon'], node['lat']) for node in element.get('geometry') or []]
 
 
-def way_line(element: dict) -> LineString | None:
+def way_line(element: dict[str, Any]) -> LineString | None:
     points = way_points(element)
     return LineString(points) if len(points) > 1 else None
 
 
-def relation_area(relation: dict, lat0: float):
+def relation_area(relation: dict[str, Any], lat0: float) -> BaseGeometry:
     """Территория отношения OSM (мультиполигона или границы): внешние кольца минус внутренние."""
     name = relation['tags'].get('name', str(relation['id']))
     outer: list[LineString] = []
@@ -101,21 +107,24 @@ def relation_area(relation: dict, lat0: float):
 
 
 def closed_rings(lines: list[LineString], lat0: float, name: str) -> list[Polygon]:
-    """Полигоны из путей отношения. Концы путей в OSM иногда не сходятся — короткий разрыв
-    сшивается прямой между ближайшими концами, длинный считается ошибкой данных."""
+    """Полигоны из путей отношения.
+
+    Концы путей в OSM иногда не сходятся: короткий разрыв сшивается прямой между ближайшими
+    концами, длинный считается ошибкой данных.
+    """
     polygons, dangles, cuts, _ = polygonize_full(unary_union(lines))
     loose = [*dangles.geoms, *cuts.geoms]
     if not loose:
         return list(polygons.geoms)
     kx, ky = scale(lat0)
 
-    def gap_m(a: tuple, b: tuple) -> float:
+    def gap_m(a: tuple[float, float], b: tuple[float, float]) -> float:
         return math.hypot((b[0] - a[0]) * kx, (b[1] - a[1]) * ky)
 
     merged = linemerge(unary_union(loose))
     chains = [merged] if isinstance(merged, LineString) else list(merged.geoms)
     ends = [point for chain in chains for point in (chain.coords[0], chain.coords[-1])]
-    bridges = []
+    bridges: list[LineString] = []
     while ends:
         a = ends.pop()
         b = min(ends, key=lambda point: gap_m(a, point))

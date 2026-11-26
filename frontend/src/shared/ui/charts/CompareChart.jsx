@@ -22,18 +22,18 @@ export function CompareChart({
 }) {
   const rootRef = useRef(null);
   const width = useElementWidth(rootRef);
-  const k = rootScale();
-  const height = Math.round(baseHeight * k);
+  const scale = rootScale();
+  const height = Math.round(baseHeight * scale);
   const [active, setActive] = useState(null);
   const count = series[0]?.values.length ?? 0;
   const dataKey = JSON.stringify(series.map((line) => [line.key, line.values]));
 
   const geometry = width
     ? (() => {
-        const plotLeft = PAD.left * k;
-        const plotRight = width - PAD.right * k;
-        const top = PAD.top * k;
-        const bottom = height - PAD.bottom * k;
+        const plotLeft = PAD.left * scale;
+        const plotRight = width - PAD.right * scale;
+        const top = PAD.top * scale;
+        const bottom = height - PAD.bottom * scale;
         const band = (plotRight - plotLeft) / Math.max(1, count);
         const [min, max] = domain;
         return {
@@ -84,7 +84,7 @@ export function CompareChart({
           width={width}
           height={height}
           className={styles.svg}
-          role="img"
+          role="group"
           aria-label={label}
           tabIndex={0}
           onPointerMove={(event) => pickAt(event.clientX)}
@@ -104,7 +104,7 @@ export function CompareChart({
                 className={tick.value === 0 ? styles.zero : styles.grid}
               />
               <text
-                x={geometry.plotLeft - 8 * k}
+                x={geometry.plotLeft - 8 * scale}
                 y={geometry.y(tick.value)}
                 className={styles.tick}
                 textAnchor="end"
@@ -132,13 +132,19 @@ export function CompareChart({
             if (!text) return null;
             const x = geometry.x(i);
             const anchor =
-              x - geometry.plotLeft < EDGE_TICK * k
+              x - geometry.plotLeft < EDGE_TICK * scale
                 ? 'start'
-                : geometry.plotRight - x < EDGE_TICK * k
+                : geometry.plotRight - x < EDGE_TICK * scale
                   ? 'end'
                   : 'middle';
             return (
-              <text key={i} x={x} y={height - 6 * k} className={styles.tick} textAnchor={anchor}>
+              <text
+                key={i}
+                x={x}
+                y={height - 6 * scale}
+                className={styles.tick}
+                textAnchor={anchor}
+              >
                 {text}
               </text>
             );
@@ -159,7 +165,7 @@ export function CompareChart({
                     key={line.key}
                     cx={activeX}
                     cy={geometry.y(line.values[shown])}
-                    r={4.5 * k}
+                    r={4.5 * scale}
                     className={styles.dot}
                     style={{ '--line': `var(${line.colorVar})` }}
                   />

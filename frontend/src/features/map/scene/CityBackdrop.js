@@ -3,8 +3,8 @@ import { cssVar } from '@/shared/lib/theme/cssVar';
 
 const GROUND_TEXTURE_SIZE = 512;
 
-// Земля под городом — мягко освещённая плоскость, которая у краёв уходит в туман. Дороги и вода лежат
-// на ней PNG-плитками (MapTiles), районы — плитами над ними.
+// Земля под городом — мягко освещённая плоскость, которая у краёв уходит в туман. Дороги и вода
+// лежат на ней плитками-картинками (MapTiles), районы — плитами над ними.
 export class CityBackdrop {
   constructor({ size = 40 } = {}) {
     this.group = new THREE.Group();
@@ -53,7 +53,8 @@ function createGroundTexture() {
   const gradient = context.createRadialGradient(center, center, 0, center, center, center);
   gradient.addColorStop(0, cssVar('--scene-ground'));
   gradient.addColorStop(0.6, cssVar('--scene-ground'));
-  // Край гаснет в тот же цвет земли: переход к прозрачному чёрному давал тёмное кольцо вокруг города.
+  // Край гаснет в тот же цвет земли: переход к прозрачному чёрному давал тёмное кольцо вокруг
+  // города.
   gradient.addColorStop(1, `rgba(${red}, ${green}, ${blue}, 0)`);
   context.fillStyle = gradient;
   context.fillRect(0, 0, GROUND_TEXTURE_SIZE, GROUND_TEXTURE_SIZE);

@@ -79,7 +79,7 @@ export class SceneRuntime {
     this.invalidate();
   }
 
-  // Следующий кадр нужно нарисовать (и ещё ms миллисекунд после него).
+  // Следующий кадр нужно нарисовать (и ещё delayMs миллисекунд после него).
   invalidate(delayMs = 0) {
     this.dirty = true;
     this.awakeUntil = Math.max(this.awakeUntil, performance.now() + delayMs);
@@ -90,7 +90,8 @@ export class SceneRuntime {
     return () => this.tickers.delete(callback);
   }
 
-  // Вызывается сразу после отрисовки кадра (например, подписи CSS2DRenderer — только в такие кадры).
+  // Вызывается сразу после отрисовки кадра (например, подписи CSS2DRenderer — только в такие
+  // кадры).
   onRender(callback) {
     this.renderers.add(callback);
     return () => this.renderers.delete(callback);
@@ -127,13 +128,6 @@ export class SceneRuntime {
   stop() {
     if (this.frame !== null) cancelAnimationFrame(this.frame);
     this.frame = null;
-  }
-
-  // Позиция точки мира на экране (px, относительно контейнера).
-  toScreen(worldPoint) {
-    const { width, height } = this.size;
-    const ndc = worldPoint.clone().project(this.camera);
-    return { x: ((ndc.x + 1) / 2) * width, y: ((1 - ndc.y) / 2) * height };
   }
 
   dispose() {

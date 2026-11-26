@@ -6,7 +6,7 @@ const CLICK_TOLERANCE_PX = 6;
 export class ScenePicker {
   constructor(camera, domElement, { getTargets, onHover, onClick, onMove }) {
     this.camera = camera;
-    this.dom = domElement;
+    this.element = domElement;
     this.getTargets = getTargets;
     this.onHover = onHover;
     this.onClick = onClick;
@@ -23,7 +23,7 @@ export class ScenePicker {
       this.onMove?.(hit);
       if (hit?.key !== this.lastHit?.key) {
         this.lastHit = hit;
-        this.dom.style.cursor = hit ? 'pointer' : '';
+        this.element.style.cursor = hit ? 'pointer' : '';
         this.onHover(hit);
       }
     };
@@ -54,7 +54,7 @@ export class ScenePicker {
   }
 
   pick(event) {
-    const rect = this.dom.getBoundingClientRect();
+    const rect = this.element.getBoundingClientRect();
     this.pointer.set(
       ((event.clientX - rect.left) / rect.width) * 2 - 1,
       -((event.clientY - rect.top) / rect.height) * 2 + 1,
@@ -75,9 +75,9 @@ export class ScenePicker {
   }
 
   dispose() {
-    this.dom.removeEventListener('pointermove', this.handleMove);
-    this.dom.removeEventListener('pointerdown', this.handleDown);
-    this.dom.removeEventListener('pointerup', this.handleUp);
-    this.dom.removeEventListener('pointerleave', this.handleLeave);
+    this.element.removeEventListener('pointermove', this.handleMove);
+    this.element.removeEventListener('pointerdown', this.handleDown);
+    this.element.removeEventListener('pointerup', this.handleUp);
+    this.element.removeEventListener('pointerleave', this.handleLeave);
   }
 }

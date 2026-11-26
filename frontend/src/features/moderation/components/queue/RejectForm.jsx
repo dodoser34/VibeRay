@@ -4,7 +4,8 @@ import { Button } from '@/shared/ui/controls/Button';
 import texts from '@/texts/en/moderation.json';
 import styles from './RejectForm.module.css';
 
-// Отклонение: причина обязательна; для дубля — номер исходной проблемы, автор получит ссылку на неё.
+// Отклонение: причина обязательна; для дубля — номер исходной проблемы, автор получит ссылку на
+// неё.
 export function RejectForm({ loading, onSubmit, onCancel }) {
   const name = useId();
   const [reason, setReason] = useState('spam');

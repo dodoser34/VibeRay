@@ -2,7 +2,7 @@ import deFlag from '../flags/de.svg';
 import gbFlag from '../flags/gb.svg';
 import kzFlag from '../flags/kz.svg';
 import ruFlag from '../flags/ru.svg';
-import styles from './CityPicker.module.css';
+import styles from './CountryFlag.module.css';
 
 const FLAGS = { KZ: kzFlag, RU: ruFlag, DE: deFlag, GB: gbFlag };
 

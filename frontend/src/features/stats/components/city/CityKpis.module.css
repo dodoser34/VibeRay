@@ -19,7 +19,8 @@
     background-color var(--dur-base) var(--ease-out);
 }
 
-/* Плитка под указателем подсвечивается рамкой (без сдвига: верхний ряд упирается в край прокрутки) */
+/* Плитка под указателем подсвечивается рамкой (без сдвига: верхний ряд упирается в край прокрутки)
+   */
 .kpi:hover {
   border-color: var(--color-glass-highlight);
   background: var(--color-glass-strong);

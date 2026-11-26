@@ -6,7 +6,6 @@ import texts from '@/texts/en/stats.json';
 import { seriesPointTitle } from '../../lib/seriesLabels';
 
 // Подсказка к точке графика настроения: дата, настроение, отметки, новые проблемы.
-
 export function MoodPointDetails({ point, period }) {
   return (
     <>

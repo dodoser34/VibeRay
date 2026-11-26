@@ -1,0 +1,18 @@
+# Настройки ruff для скриптов геоданных: python -m ruff check . && python -m ruff format .
+line-length = 100
+target-version = "py312"
+
+[lint.isort]
+# Скрипты запускаются из этой папки, поэтому её модули — свои, а не сторонние.
+known-first-party = [
+  "build_districts",
+  "build_map_tiles",
+  "build_streets",
+  "build_water",
+  "cities",
+  "geodata",
+  "verify_city_data",
+]
+
+[format]
+quote-style = "single"

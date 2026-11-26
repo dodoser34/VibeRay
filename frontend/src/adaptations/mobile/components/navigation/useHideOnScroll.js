@@ -6,10 +6,10 @@ const HIDE_AFTER = 120;
 const SCROLL_SLACK = 6;
 
 // Страницу листают пальцем: навигация не должна висеть над текстом — вниз она уезжает, вверх
-// возвращается; scrolled — страница прокручена (под кнопками нужна подложка). Состояние относится к
-// странице, где его получили: новая страница начинает с видимых кнопок, даже если прошлую пролистали
-// вниз. Пока paused (открыто меню), навигация не прячется. Липкие элементы страниц (полоса разделов
-// настроек) поднимаются на место уехавших кнопок по html[data-nav-hidden].
+// возвращается; scrolled — страница прокручена (под кнопками нужна подложка). Состояние относится
+// к странице, где его получили: новая страница начинает с видимых кнопок. Пока paused (открыто
+// меню), навигация не прячется. Липкие элементы страниц (полоса разделов настроек) поднимаются на
+// место уехавших кнопок по html[data-nav-hidden].
 export function useHideOnScroll(pathname, { paused = false } = {}) {
   const [scroll, setScroll] = useState({ path: null, hidden: false, scrolled: false });
   const here = scroll.path === pathname;
@@ -30,9 +30,11 @@ export function useHideOnScroll(pathname, { paused = false } = {}) {
         hidden: delta > 0 && y > HIDE_AFTER,
         scrolled: y > SCROLL_SLACK,
       };
-      setScroll((prev) =>
-        prev.path === next.path && prev.hidden === next.hidden && prev.scrolled === next.scrolled
-          ? prev
+      setScroll((current) =>
+        current.path === next.path &&
+        current.hidden === next.hidden &&
+        current.scrolled === next.scrolled
+          ? current
           : next,
       );
     };

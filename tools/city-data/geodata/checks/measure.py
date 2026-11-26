@@ -6,14 +6,16 @@
 
 import numpy as np
 import shapely
-from shapely import STRtree
+from shapely import LinearRing, LineString, STRtree
+from shapely.geometry.base import BaseGeometry
 
 from geodata.geometry import parts
 
-SEED = 20261110  # случайные выборки точек повторяемы: один и тот же прогон — один и тот же итог
+# Случайные выборки точек повторяемы: один и тот же прогон даёт один и тот же итог.
+SEED = 20261110
 
 
-def rings_of(geometry) -> list:
+def rings_of(geometry: BaseGeometry) -> list[LinearRing]:
     """Все кольца полигонов геометрии: внешние и дыры."""
     return [ring for part in parts(geometry) for ring in (part.exterior, *part.interiors)]
 
@@ -42,7 +44,7 @@ def distances(tree: STRtree, points: np.ndarray) -> np.ndarray:
     return result
 
 
-def polylines(lines: list[np.ndarray]) -> list:
+def polylines(lines: list[np.ndarray]) -> list[LineString]:
     return [shapely.LineString(line) for line in lines if len(line) > 1]
 
 

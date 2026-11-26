@@ -1,15 +1,14 @@
-import homeDistricts from '../cities/kostanay/districts.geojson';
-import homeWater from '../cities/kostanay/water.geojson';
 import { MOODS, MOOD_BY_CODE } from '@/shared/config/moods';
 import { PROBLEM_CATEGORIES } from '@/shared/config/problemCategories';
 import { largestPolygon, pointInPolygon } from '@/shared/lib/geo/geoProjection';
 import { createRandom, hashString } from '@/shared/lib/random';
 import { format } from '@/shared/lib/i18n/format';
+import homeDistricts from '../cities/kostanay/districts.geojson';
+import homeWater from '../cities/kostanay/water.geojson';
 import demo from '../content.json';
 import { nameOf } from './locale';
+import { DAY, HOUR } from './time';
 
-const HOUR = 3_600_000;
-const DAY = 24 * HOUR;
 const YEAR = 365.25 * DAY;
 const MIN_SAMPLE = 5; // порог приватности, ARCHITECTURE.md 6.1
 // Демо-история: город в VibeRay с января 2023 года.
@@ -37,8 +36,8 @@ const BASE_SCORE = {
 const baseScore = (slug) =>
   BASE_SCORE[slug] ?? ((hashString(`base:${slug}`) % 200) / 100 - 1) * 0.9;
 
-// Интервалы ряда динамики (ARCHITECTURE.md 6.3) и типичное число отметок на район; для `all` — 14
-// 000 отметок на год истории.
+// Интервалы ряда динамики (ARCHITECTURE.md 6.3) и типичное число отметок на район; для `all` —
+// 14 000 отметок на год истории.
 const PERIODS = {
   // День — 8 интервалов по 3 часа: в часовом интервале тихого района почти всегда меньше 5 отметок.
   day: { unit: 3 * HOUR, points: 8, sample: 240 },
@@ -53,8 +52,8 @@ const DESCRIPTIONS = demo.ru.problemDescriptions;
 const userMarks = []; // { userId, district, mood, at }
 
 // Сведения о городах (названия, центр, рамка) лёгкие и есть сразу. Геометрия другого города —
-// отдельный файл сборки, он грузится, когда город открывают; Костанай — главный город демо (главная,
-// история, демо-жители и модератор), его данные в сборке сразу.
+// отдельный файл сборки, он грузится, когда город открывают; Костанай — главный город демо
+// (главная, история, демо-жители и модератор), его данные в сборке сразу.
 export const HOME_CITY = 'kostanay';
 // Главный город — первым в списке городов.
 const CITY_INFO = Object.values(
@@ -100,8 +99,8 @@ const districtSlugsOf = (slug) =>
   cities.get(slug).districts.features.map((feature) => feature.properties.slug);
 export const cityOfDistrict = (slug) => districtCity.get(slug) ?? null;
 
-// Город с геометрией; при первом открытии у него появляются свои демо-проблемы. null — такого города
-// нет.
+// Город с геометрией; при первом открытии у него появляются свои демо-проблемы. null — такого
+// города нет.
 export async function loadCity(slug) {
   if (cities.has(slug)) return cities.get(slug);
   const info = CITY_INFO.find((item) => item.slug === slug);
@@ -204,7 +203,8 @@ function seriesFor(slug, period) {
   const monthly = PERIODS[period].unit === 'month';
   const rand = createRandom(hashString(`series:${slug}:${period}`));
   const phase = rand() * Math.PI * 2;
-  const drift = (rand() - 0.35) * 0.3; // изменение оценки за год: большинство районов медленно улучшается
+  // Изменение оценки за год: большинство районов медленно улучшается.
+  const drift = (rand() - 0.35) * 0.3;
   // Аэропорт ночью тихий: демонстрация порога приватности за день.
   const quiet = slug === 'aeroport' && period === 'day';
   const perBucket = quiet ? 0.15 : sampleFor(period, buckets) / buckets.length;

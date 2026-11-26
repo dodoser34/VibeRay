@@ -10,7 +10,7 @@ import {
   stripLanguage,
 } from '@/shared/lib/i18n/language';
 
-// Адрес → абсолютная ссылка с подпапкой сайта, в том же виде, что у страниц сборки (/en/about/ —
+// Адрес → абсолютная ссылка с подпапкой сайта, в том же виде, что у страниц сборки (/ru/about/ —
 // plugins/languagePages.js).
 const absolute = (path) =>
   new URL(
@@ -19,7 +19,7 @@ const absolute = (path) =>
   ).href;
 
 // Ссылки на ту же страницу на других языках: поисковики показывают человеку версию на его языке и
-// не считают переводы копиями. x-default — основная, русская.
+// не считают переводы копиями. x-default — основная, английская.
 function updateAlternates(page) {
   document.head.querySelectorAll('link[data-language-link]').forEach((link) => link.remove());
   const links = [

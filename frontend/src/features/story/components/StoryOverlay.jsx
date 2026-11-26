@@ -14,9 +14,9 @@ import styles from './StoryOverlay.module.css';
 const COLUMN_CHAPTERS = new Set([MOOD, BUILD, PRODUCT]);
 
 // Всё, что идёт поверх сцены истории: подписи глав, карточка настроения, крупные фразы, план
-// проекта, панели интерфейса, финал. Анимирует addOverlayTimeline по data-story. variant: 'room' — поверх
-// изометрической комнаты на весь экран (ПК), 'phone' — внутри экрана телефона: подписи — сообщения,
-// панели и карточки — по ширине экрана; orientation — как держат телефон.
+// проекта, панели интерфейса, финал. Анимирует addOverlayTimeline по data-story. variant: 'room' —
+// поверх изометрической комнаты на весь экран (ПК), 'phone' — внутри экрана телефона: подписи —
+// сообщения, панели и карточки — по ширине экрана; orientation — как держат телефон.
 export function StoryOverlay({ variant, orientation, onOpenMap }) {
   const language = useLanguage();
   const living = CHAPTERS[LIVING];

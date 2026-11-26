@@ -35,19 +35,10 @@
 }
 
 .root svg {
-  stroke: currentColor;
   stroke-width: 1.8;
-  stroke-linecap: round;
   transition: rotate var(--dur-base) var(--ease-spring);
 }
 
 .root:hover svg {
   rotate: 90deg;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .root,
-  .root svg {
-    transition: none;
-  }
 }

@@ -77,7 +77,7 @@ export function StreetView() {
                 />
               )),
             )}
-            {/* подъезд с козырьком */}
+            {/* Подъезд с козырьком */}
             <rect className={styles.roof} x={x + width / 2 - 5} y="84" width="10" height="1.5" />
             <rect className={styles.door} x={x + width / 2 - 3} y="85.5" width="6" height="6.5" />
           </g>
@@ -104,7 +104,7 @@ export function StreetView() {
         </g>
       ))}
 
-      {/* фонарь и пятно его света на дороге (ночью) */}
+      {/* Фонарь и пятно его света на дороге (ночью) */}
       <ellipse className={styles.streetGlow} cx="66" cy="103" rx="13" ry="3.5" />
       <rect className={styles.lampPole} x="61.4" y="58" width="1.2" height="42" />
       <path className={styles.lampPole} d="M62 59q0-3 6-3h3v1.6h-3q-4.4 0-4.4 2z" />

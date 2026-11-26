@@ -4,8 +4,8 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatRelative } from '@/shared/lib/i18n/formatDate';
 import { plural } from '@/shared/lib/i18n/plural';
 import texts from '@/texts/en/notifications.json';
-import styles from './NotificationList.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import styles from './NotificationList.module.css';
 
 const ICONS = {
   confirmations: 'users-check',

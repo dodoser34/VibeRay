@@ -3,7 +3,7 @@ import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { useTheme } from '@/shared/hooks/useTheme';
-import { EDGE, SHEET_H as sheetHeight, SHEET_W as sheetWidth } from '../lib/sheetEdge';
+import { EDGE, SHEET_HEIGHT as sheetHeight, SHEET_WIDTH as sheetWidth } from '../lib/sheetEdge';
 import { createSheetTexture, TILE } from '../lib/sheetTexture';
 import styles from './FrontLayer.module.css';
 
@@ -16,11 +16,14 @@ const THICKNESS = `M 150 0 C 428 34 602 126 654 336 C 704 548 774 730 968 802 C 
 // «Водопад наоборот»: лист натекает из правого нижнего угла к левому верхнему. Фронт потока — линия
 // поперёк этой диагонали, впереди которой бегут струи.
 const LENGTH = Math.hypot(sheetWidth, sheetHeight);
-const DIR = [-sheetWidth / LENGTH, -sheetHeight / LENGTH]; // снизу справа → вверх влево
-const ACROSS = [-DIR[1], DIR[0]];
+const DIRECTION = [-sheetWidth / LENGTH, -sheetHeight / LENGTH]; // снизу справа → вверх влево
+const ACROSS = [-DIRECTION[1], DIRECTION[0]];
 const HALF_SPAN = (sheetWidth * sheetHeight) / LENGTH; // расстояние от диагонали до дальних углов
 const STREAM = 440; // насколько самые длинные струи опережают фронт
 const STEPS = 160;
+const FLOW_TIMING = { delay: 0.2, duration: 1.9 };
+// Когда лист заканчивает натекать (с момента открытия страницы): по нему ждут другие вступления.
+export const FRONT_FLOW_END = FLOW_TIMING.delay + FLOW_TIMING.duration;
 
 function flowPath(progress, time) {
   const base = progress * (LENGTH + STREAM);
@@ -38,15 +41,13 @@ function flowPath(progress, time) {
     const advance = Math.max(0, base - STREAM * (1 - lead * calm) * calm - STREAM * (1 - calm));
     const x = sheetWidth + ACROSS[0] * diagonalOffset;
     const y = sheetHeight + ACROSS[1] * diagonalOffset;
-    front.push(`${(x + DIR[0] * advance).toFixed(1)} ${(y + DIR[1] * advance).toFixed(1)}`);
-    back.unshift(`${(x - DIR[0] * 40).toFixed(1)} ${(y - DIR[1] * 40).toFixed(1)}`);
+    front.push(
+      `${(x + DIRECTION[0] * advance).toFixed(1)} ${(y + DIRECTION[1] * advance).toFixed(1)}`,
+    );
+    back.unshift(`${(x - DIRECTION[0] * 40).toFixed(1)} ${(y - DIRECTION[1] * 40).toFixed(1)}`);
   }
   return `M${front.join('L')}L${back.join('L')}Z`;
 }
-
-const FLOW_TIMING = { delay: 0.2, duration: 1.9 };
-// Когда лист заканчивает натекать (с момента открытия страницы): по нему ждут другие вступления.
-export const FRONT_FLOW_END = FLOW_TIMING.delay + FLOW_TIMING.duration;
 
 export function FrontLayer({ className = '' }) {
   const rootRef = useRef(null);

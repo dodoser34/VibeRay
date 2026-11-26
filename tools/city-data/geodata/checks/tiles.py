@@ -22,6 +22,7 @@ from geodata.paths import DEMO, MAPS
 
 TILE_SHARE = 0.995
 VECTOR_M = 0.2
+# Сколько случайных точек дорог сверяется с плитками и векторными кусками.
 TILE_SAMPLE = 2_000
 
 
@@ -42,7 +43,7 @@ def check_tiles(city: City, report: Report, streets: Streets) -> None:
     cells = {tuple(cell) for cell in manifest['vector']}
     channel_of = {kind: 'RGB'.index(channel) for kind, channel, *_ in ROADS}
     images: dict[tuple[int, int], np.ndarray] = {}
-    chunks: dict[tuple[int, int], dict] = {}
+    chunks: dict[tuple[int, int], dict[str, list[list[int]]]] = {}
     painted = traced = 0
     for kind, (x, y) in samples:
         tile = (math.floor(x / tile_km), math.floor(y / tile_km))
@@ -84,11 +85,13 @@ def check_tiles(city: City, report: Report, streets: Streets) -> None:
 
 def road_samples(center: list[float], streets: Streets) -> list[tuple[str, np.ndarray]]:
     """Середины случайных линий дорог в районах: (класс, точка в км от центра плиток).
-    Железная дорога на плитках — пунктир, точка может попасть в пробел, поэтому её нет."""
+
+    Железной дороги в выборке нет: на плитках она пунктирная, и точка может попасть в пробел.
+    """
     lon0, lat0 = center
     km_per_degree = np.array(scale(lat0)) / 1000
     channels = {kind for kind, *_ in ROADS}
-    samples = []
+    samples: list[tuple[str, np.ndarray]] = []
     for kind, lines in streets.by_kind.items():
         if kind == 'rail' or kind not in channels:
             continue

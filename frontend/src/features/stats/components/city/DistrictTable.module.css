@@ -6,16 +6,6 @@
   font-variant-numeric: tabular-nums;
 }
 
-.caption,
-.visuallyHidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
 /* Заголовки колонок остаются сверху, пока дашборд прокручивается */
 .table thead th {
   position: sticky;
@@ -64,11 +54,11 @@
     transform var(--dur-base) var(--ease-out);
 }
 
-.arrow[data-dir] {
+.arrow[data-direction] {
   opacity: 1;
 }
 
-.arrow[data-dir='asc'] {
+.arrow[data-direction='asc'] {
   transform: translateY(2px) rotate(-135deg);
 }
 

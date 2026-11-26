@@ -1,14 +1,10 @@
 import dictionaries from '@/texts/en/dictionaries.json';
 import { withLabels } from './withLabels';
 
-// Коды должны совпадать с backend/app/models/enums.py (Mood).
+// Коды общие с бэкендом: перечисление Mood (будущий backend/app/models/enums.py).
 export const MOODS = withLabels(
   [
-    {
-      code: 'excellent',
-      score: 2,
-      colorVar: '--mood-excellent',
-    },
+    { code: 'excellent', score: 2, colorVar: '--mood-excellent' },
     { code: 'good', score: 1, colorVar: '--mood-good' },
     { code: 'normal', score: 0, colorVar: '--mood-normal' },
     { code: 'anxious', score: -1, colorVar: '--mood-anxious' },

@@ -1,14 +1,14 @@
 import { useId, useState } from 'react';
 import { useViewport } from '@/adaptations/core';
-import { POPULAR_QUERIES } from '../lib/helpContent';
 import texts from '@/texts/en/support.json';
-import styles from './HelpSearch.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import { POPULAR_QUERIES } from '../lib/helpContent';
+import styles from './HelpSearch.module.css';
 
 // Большое поле поиска с мгновенными ответами из FAQ (combobox: работают стрелки и Enter).
 export function HelpSearch({ query, onQueryChange, results, onPick, onWrite }) {
   const listId = useId();
-  // В поле на телефоне помещается около 20 символов: длинный пример обрезался бы посреди слова.
+  // На телефоне в поле помещается около 20 символов — там пример в подсказке короче.
   const { isMobile } = useViewport();
   const [active, setActive] = useState(0);
   const open = query.trim().length > 0;

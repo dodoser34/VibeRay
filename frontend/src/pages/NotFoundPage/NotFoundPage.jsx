@@ -1,19 +1,19 @@
 import { useRef } from 'react';
 import { useLocation } from 'react-router';
 import { useTransitionNavigate } from '@/app/transitions/useTransition';
+import { lastCity } from '@/features/map';
 import { gsap, SplitText, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { useLanguage } from '@/shared/hooks/useLanguage';
 import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { Button } from '@/shared/ui/controls/Button';
 import texts from '@/texts/en/notFound.json';
-import { useLanguage } from '@/shared/hooks/useLanguage';
 import girlMap from './assets/girl-map.webp';
 import { NotFoundMap } from './components/NotFoundMap';
 import styles from './NotFoundPage.module.css';
 
 // Неизвестный адрес: вместо молчаливого переброса на главную — объяснение и дорога обратно.
 export function NotFoundPage() {
-  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
   const language = useLanguage();
   const rootRef = useRef(null);
   const { pathname } = useLocation();
@@ -68,7 +68,7 @@ export function NotFoundPage() {
           <code className={styles.pathValue}>{pathname}</code>
         </p>
         <div className={styles.actions} data-rise data-ui="not-found-actions">
-          <Button size="lg" onClick={() => go('/map/kostanay')}>
+          <Button size="lg" onClick={() => go(`/map/${lastCity()}`)}>
             {texts.openMap}
           </Button>
           <Button size="lg" variant="ghost" onClick={() => go('/')}>

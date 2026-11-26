@@ -4,17 +4,17 @@ import { usePageNavigate } from '@/app/transitions/useTransition';
 import { useAuth } from '@/features/auth';
 import { NotificationsPanel, useNotifications } from '@/features/notifications';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { isModerator } from '@/shared/config/roles';
 import { usePagePath } from '@/shared/hooks/usePagePath';
 import { format } from '@/shared/lib/i18n/format';
 import { localizePath } from '@/shared/lib/i18n/language';
-import { isModerator } from '@/shared/config/roles';
+import { LogoMark } from '@/shared/ui/icons/LogoMark';
 import { Modal } from '@/shared/ui/windows/Modal';
-import notificationTexts from '@/texts/en/notifications.json';
 import nav from '@/texts/en/nav.json';
+import notificationTexts from '@/texts/en/notifications.json';
 import { MobileMenu } from './MobileMenu';
 import { useHideOnScroll } from './useHideOnScroll';
 import styles from './MobileNav.module.css';
-import { LogoMark } from '@/shared/ui/icons/LogoMark';
 
 // Телефоны: вместо капсулы из пяти вкладок — две плавающие кнопки (логотип и меню), которые
 // оставляют экран странице, и полноэкранное меню (MobileMenu) с крупными строками, аккаунтом и
@@ -38,8 +38,8 @@ export function MobileNav() {
   const home = isModerator(user) ? '/moderation' : '/';
   useGSAP(
     () => {
-      // Конечные значения явно: повторный запуск (StrictMode) не примет недоигранный сдвиг за место
-      // кнопок.
+      // Конечные значения явно: повторный запуск (StrictMode) не примет недоигранный сдвиг за
+      // место кнопок.
       gsap.fromTo(
         barRef.current.children,
         { y: -16, autoAlpha: 0 },
@@ -111,8 +111,8 @@ export function MobileNav() {
   };
   const onEscape = useEffectEvent(closeMenu);
 
-  // Пока меню открыто: страница под ним не прокручивается, Escape закрывает меню, фокус начинается
-  // внутри.
+  // Пока меню открыто, страница под ним не прокручивается, Escape закрывает меню, а фокус
+  // начинается внутри.
   useEffect(() => {
     if (!open) return undefined;
     const button = buttonRef.current;

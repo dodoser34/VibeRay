@@ -1,9 +1,9 @@
-// Детерминированный ГПСЧ (mulberry32), чтобы демо-данные не менялись между перезагрузками.
+// Детерминированный ГПСЧ (mulberry32): демо-данные и иллюстрации одинаковы при каждой загрузке.
 export function createRandom(seed) {
-  let t = seed >>> 0;
+  let state = seed >>> 0;
   return () => {
-    t = (t + 0x6d2b79f5) >>> 0;
-    let mixed = Math.imul(t ^ (t >>> 15), 1 | t);
+    state = (state + 0x6d2b79f5) >>> 0;
+    let mixed = Math.imul(state ^ (state >>> 15), 1 | state);
     mixed ^= mixed + Math.imul(mixed ^ (mixed >>> 7), 61 | mixed);
     return ((mixed ^ (mixed >>> 14)) >>> 0) / 4294967296;
   };

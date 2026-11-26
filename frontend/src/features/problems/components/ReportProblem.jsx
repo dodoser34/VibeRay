@@ -11,11 +11,11 @@ import {
 import { checkPhoto, preparePhoto } from '@/shared/lib/imageTools';
 import { Button } from '@/shared/ui/controls/Button';
 import { CloseButton } from '@/shared/ui/controls/CloseButton';
-import { CategoryIcon } from './CategoryIcon';
 import { format } from '@/shared/lib/i18n/format';
 import problemTexts from '@/texts/en/problems.json';
-import styles from './ReportProblem.module.css';
 import { Icon } from '@/shared/ui/icons/Icon';
+import { CategoryIcon } from './CategoryIcon';
+import styles from './ReportProblem.module.css';
 
 const texts = problemTexts.report;
 
@@ -93,7 +93,8 @@ export function ReportProblem({ placement, districtName, onClose, onCreated, onS
   };
 
   // Выбранная плитка «нажимается» и отмечается рамкой — и только потом форма переходит к месту.
-  // Анимация — в контексте компонента: закрыли форму раньше, чем она кончилась, — перехода не будет.
+  // Анимация — в контексте компонента: закрыли форму раньше, чем она кончилась, — перехода не
+  // будет.
   const chooseCategory = (code, tile) => {
     setCategory(code);
     if (prefersReducedMotion()) {

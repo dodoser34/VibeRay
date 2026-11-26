@@ -55,8 +55,8 @@ const grad = (hash, x, y, z) => {
   return (hash & 1 ? -u : u) + (hash & 2 ? -v : v);
 };
 
-// Обозначения — как в эталонной реализации Перлина (2002): X, Y, Z — ячейка решётки, x, y, z — точка
-// внутри неё, u, v, w — сглаженные доли, A…BB — хеши углов ячейки.
+// Обозначения — как в эталонной реализации Перлина (2002): X, Y, Z — ячейка решётки, x, y, z —
+// точка внутри неё, u, v, w — сглаженные доли, A…BB — хеши углов ячейки.
 function noise3(x, y, z) {
   let X = Math.floor(x);
   let Y = Math.floor(y);
@@ -126,7 +126,8 @@ export class SiteBackground {
     this.width = 0;
     this.height = 0;
     this.pixelRatio = 1;
-    // Частицы, параллакс и крупность контуров — по уровню устройства (adaptations/core/renderQuality.js)
+    // Частицы, параллакс и крупность контуров — по уровню устройства
+    // (adaptations/core/renderQuality.js)
     this.quality = renderQuality();
     this.time = 0;
     this.offsetX = 0;

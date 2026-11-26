@@ -56,7 +56,6 @@ export function CityPicker({ cities, value, onChange, label, autoFocus = false, 
           placeholder={texts.search}
           aria-label={texts.searchLabel}
           autoComplete="off"
-          // Поиск в открывшейся панели модератора: сразу печатать название
           autoFocus={autoFocus}
           onChange={(event) => setQuery(event.target.value)}
           onKeyDown={handleKey}

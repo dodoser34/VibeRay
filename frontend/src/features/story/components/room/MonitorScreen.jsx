@@ -39,8 +39,9 @@ function layoutMenu(items, x) {
 }
 
 // Рабочий стол на мониторе (рисунок 640 × 360): меню, папки, редактор с «Идея.txt», док. Идеи
-// строками появляются в редакторе и зачёркиваются, под ними печатается вопрос, экран занимает карта города — сюжет общий с
-// телефоном (data-screen, lib/screenTimeline.js). Подписи длиннее места ужимаются (data-fit).
+// строками появляются в редакторе и зачёркиваются, под ними печатается вопрос, экран занимает карта
+// города — сюжет общий с телефоном (data-screen, lib/screenTimeline.js). Подписи длиннее места
+// ужимаются (data-fit).
 export function MonitorScreen({ outline, mapBox }) {
   const { screen } = about;
   const menu = layoutMenu(screen.menu, 30 + screen.appName.length * MENU_CHAR + 14);

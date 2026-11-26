@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 import { hoverMedia } from './plugins/hoverMedia.js';
 import { languagePages } from './plugins/languagePages.js';
 
-// Геоданные городов (.geojson) хранятся отформатированными для чтения, а в сборку попадают сжатыми —
-// как обычный JSON-модуль, без отступов.
+// Геоданные городов (.geojson) хранятся отформатированными для чтения, а в сборку попадают сжатыми
+// — как обычный JSON-модуль, без отступов.
 function geojson() {
   return {
     name: 'viberay-geojson',

@@ -4,7 +4,7 @@ import { format } from './i18n/format';
 
 const labels = auth.passwordStrength;
 
-// Проверка надёжности пароля, общая для формы и API (бэкенд повторяет те же правила).
+// Пароли из словарей перебора и очевидные для сайта слова: такой пароль не принимается.
 const COMMON_PASSWORDS = new Set([
   '123456',
   '1234567',
@@ -37,32 +37,15 @@ const COMMON_PASSWORDS = new Set([
   'viberay',
 ]);
 
-const LEVELS = [
-  {
+// Подпись уровня читается при обращении: язык меняется на лету.
+const LEVELS = ['--mood-angry', '--mood-anxious', '--mood-good', '--mood-excellent'].map(
+  (colorVar, index) => ({
     get label() {
-      return labels.levels[0];
+      return labels.levels[index];
     },
-    colorVar: '--mood-angry',
-  },
-  {
-    get label() {
-      return labels.levels[1];
-    },
-    colorVar: '--mood-anxious',
-  },
-  {
-    get label() {
-      return labels.levels[2];
-    },
-    colorVar: '--mood-good',
-  },
-  {
-    get label() {
-      return labels.levels[3];
-    },
-    colorVar: '--mood-excellent',
-  },
-];
+    colorVar,
+  }),
+);
 
 function isTrivial(password) {
   const lower = password.toLowerCase();
@@ -79,6 +62,7 @@ function containsPersonal(password, { email = '', nickname = '' }) {
   return parts.some((part) => part.length >= 3 && lower.includes(part));
 }
 
+// Надёжность пароля для формы; бэкенд повторяет те же правила.
 export function evaluatePassword(password, context = {}) {
   const checks = [
     {

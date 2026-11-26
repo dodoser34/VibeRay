@@ -18,19 +18,19 @@ import { Avatar } from '@/shared/ui/avatar/Avatar';
 import { CloseButton } from '@/shared/ui/controls/CloseButton';
 import { Button } from '@/shared/ui/controls/Button';
 import { ConfirmDialog } from '@/shared/ui/windows/ConfirmDialog';
+import problemTexts from '@/texts/en/problems.json';
+import { Icon } from '@/shared/ui/icons/Icon';
 import { CategoryIcon } from './CategoryIcon';
 import { StatusChip } from './StatusChip';
 import { StatusTimeline } from './StatusTimeline';
-import problemTexts from '@/texts/en/problems.json';
 import styles from './ProblemCard.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
 
 const texts = problemTexts.card;
 
 // Карточка проблемы на карте. У неё свой адрес (/map/:city/problem/:id) — им можно поделиться,
-// чтобы соседи подтвердили. Своё сообщение подтвердить нельзя, уже подтверждённое — второй раз тоже.
-// Отклонённое модератором сообщение открывает только автор: вместо подтверждения — причина и, для
-// дубля, ссылка на исходную проблему. Своё подтверждение можно снять, пока проблема новая; своё
+// чтобы соседи подтвердили. Своё сообщение подтвердить нельзя, уже подтверждённое — второй раз
+// тоже. Отклонённое модератором сообщение открывает только автор: вместо подтверждения — причина и,
+// для дубля, ссылка на исходную проблему. Своё подтверждение можно снять, пока проблема новая; своё
 // сообщение — отозвать, пока город за него не взялся (onWithdrawn — после удаления на сервере).
 export function ProblemCard({
   problem,

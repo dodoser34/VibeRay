@@ -1,22 +1,24 @@
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
-import { lastCity } from '@/features/map';
 import { Link } from 'react-router';
 import { useAuth } from '@/features/auth';
+import { lastCity } from '@/features/map';
 import { NotificationBell } from '@/features/notifications';
 import { gsap, useGSAP } from '@/shared/animations/core/gsapSetup';
+import { isModerator } from '@/shared/config/roles';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 import { usePagePath } from '@/shared/hooks/usePagePath';
 import { useReducedMotion } from '@/shared/hooks/useReducedMotion';
 import { format } from '@/shared/lib/i18n/format';
 import { localizePath } from '@/shared/lib/i18n/language';
-import { isModerator } from '@/shared/config/roles';
 import { Avatar } from '@/shared/ui/avatar/Avatar';
-import { LogoMark } from '@/shared/ui/icons/LogoMark';
 import { LanguageSwitch } from '@/shared/ui/controls/LanguageSwitch';
 import { ThemeSwitch } from '@/shared/ui/controls/ThemeSwitch';
-import { usePageNavigate, useTransitionBusy } from '../transitions/useTransition';
+import { LogoMark } from '@/shared/ui/icons/LogoMark';
 import nav from '@/texts/en/nav.json';
+import { usePageNavigate, useTransitionBusy } from '../transitions/useTransition';
 import styles from './TabBar.module.css';
+
+const MODERATION_PREFIX = '/moderation/';
 
 function activeKeyFor(pathname) {
   if (pathname.startsWith('/map')) return 'map';
@@ -25,7 +27,9 @@ function activeKeyFor(pathname) {
   if (pathname === '/support') return 'support';
   if (pathname === '/settings' || pathname === '/moderation/settings') return 'me';
   if (pathname === '/moderation') return 'moderation-queue';
-  if (pathname.startsWith('/moderation/')) return `moderation-${pathname.slice(12)}`;
+  if (pathname.startsWith(MODERATION_PREFIX)) {
+    return `moderation-${pathname.slice(MODERATION_PREFIX.length)}`;
+  }
   return 'login';
 }
 
@@ -90,7 +94,8 @@ export function TabBar() {
         { key: 'support', ...nav.tabs.support, to: '/support' },
       ];
 
-  // overwrite: новая цель отменяет недоехавшую анимацию, иначе старая дотягивала бы подсветку назад.
+  // overwrite: новая цель отменяет недоехавшую анимацию, иначе старая дотягивала бы подсветку
+  // назад.
   const movePill = useCallback((key, duration) => {
     const active = trackRef.current.querySelector(`[data-key="${key}"]`);
     if (!active) {
@@ -109,12 +114,11 @@ export function TabBar() {
 
   // Появление: капсула прилетает маленькой таблеткой и растягивается на всю ширину, центральная
   // кнопка выпрыгивает, затем из неё вылетают остальные — сначала ближняя пара, потом дальняя.
-  // Ближние выезжают из-под непрозрачной центральной кнопки, дальние — из-под ближних: та часть
-  // дальней кнопки, что ещё под соседом, обрезается, поэтому подписи не наезжают друг на друга, даже
-  // если вступление идёт рывками, пока грузится тяжёлая страница.
+  // Часть дальней кнопки, что ещё под ближним соседом, обрезается: подписи не наезжают друг на
+  // друга, даже если вступление идёт рывками, пока грузится тяжёлая страница.
   useGSAP(
     () => {
-      const nav = navRef.current;
+      const navElement = navRef.current;
       const buttons = [...trackRef.current.querySelectorAll('[data-key]')];
       // Центр — акцентная кнопка карты (у жителя «map», у модератора «moderation-map»)
       const accent = buttons.findIndex((button) => button.dataset.accent !== undefined);
@@ -128,7 +132,7 @@ export function TabBar() {
         return;
       }
 
-      const side = (nav.offsetWidth - nav.offsetHeight) / 2;
+      const side = (navElement.offsetWidth - navElement.offsetHeight) / 2;
       const collapsed = `inset(0px ${side}px 0px ${side}px round 999px)`;
       const centerX = buttons[center].offsetLeft + buttons[center].offsetWidth / 2;
       const offsetTo = (button) => centerX - (button.offsetLeft + button.offsetWidth / 2);
@@ -151,19 +155,19 @@ export function TabBar() {
       const outer = buttons
         .map((button, i) => ({
           button,
-          dir: Math.sign(i - center),
+          direction: Math.sign(i - center),
           near: buttons[i - Math.sign(i - center)],
         }))
         .filter((_, i) => Math.abs(i - center) >= 2);
       const clipOuter = () =>
-        outer.forEach(({ button, dir, near }) => {
+        outer.forEach(({ button, direction, near }) => {
           const own = edges(button);
           const neighbour = edges(near);
-          const overlap = dir > 0 ? neighbour.right - own.left : own.right - neighbour.left;
+          const overlap = direction > 0 ? neighbour.right - own.left : own.right - neighbour.left;
           const hidden = Math.max(0, overlap) / own.scale;
           button.style.clipPath = !hidden
             ? ''
-            : dir > 0
+            : direction > 0
               ? `inset(0px 0px 0px ${hidden}px)`
               : `inset(0px ${hidden}px 0px 0px)`;
         });
@@ -173,7 +177,7 @@ export function TabBar() {
           delay: 0.15,
           onUpdate: clipOuter,
           onComplete: () => {
-            gsap.set(nav, { clearProps: 'clipPath' });
+            gsap.set(navElement, { clearProps: 'clipPath' });
             gsap.set(buttons, { clearProps: 'zIndex,clipPath' });
             finish();
           },
@@ -182,7 +186,7 @@ export function TabBar() {
         // Непрозрачная акцентная кнопка накрывает ближние, пока они под ней.
         .set(buttons[center], { zIndex: 1 })
         .fromTo(
-          nav,
+          navElement,
           {
             y: -110,
             autoAlpha: 0,
@@ -193,7 +197,7 @@ export function TabBar() {
         // Оба конца явно: браузер отдаёт clip-path в короткой форме, которую GSAP не может
         // сопоставить.
         .fromTo(
-          nav,
+          navElement,
           { clipPath: collapsed },
           {
             clipPath: 'inset(0px 0px 0px 0px round 999px)',
@@ -273,7 +277,7 @@ export function TabBar() {
         <LogoMark framed />
         <span data-ui="tabbar-brand">{nav.brand}</span>
       </Link>
-      {/* На планшете стоя справа нет места — там тема встаёт рядом с логотипом (adaptations/tablet) */}
+      {/* На планшете стоя справа нет места — тема встаёт рядом с логотипом (adaptations/tablet) */}
       <div className={styles.leadTheme} data-ui="tabbar-theme-lead">
         <ThemeSwitch />
       </div>

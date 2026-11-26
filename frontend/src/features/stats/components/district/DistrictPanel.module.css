@@ -153,7 +153,6 @@
   font-size: var(--fs-xs);
 }
 
-/* Динамика */
 .blockHead {
   display: flex;
   align-items: baseline;

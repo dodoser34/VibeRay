@@ -10,9 +10,10 @@ import { useRequest } from '@/shared/hooks/useRequest';
 import { localizePath } from '@/shared/lib/i18n/language';
 
 // Карта модератора: выбранный модератором город (useModerationCity — любой город VibeRay), как у
-// жителей, но с очередью проблем и действиями модератора. ?problem= — проблема, открытая из очереди.
+// жителей, но с очередью проблем и действиями модератора. ?problem= — проблема, открытая из
+// очереди.
 export function ModerationMapPage() {
-  useLanguage();
+  useLanguage(); // при смене языка страница перерисовывается целиком
   const { user } = useAuth();
   const [params] = useSearchParams();
   const allowed = isModerator(user);

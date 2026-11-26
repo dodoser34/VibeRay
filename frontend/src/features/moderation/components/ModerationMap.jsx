@@ -7,9 +7,9 @@ import { format } from '@/shared/lib/i18n/format';
 import { formatNumber } from '@/shared/lib/i18n/formatNumber';
 import { ChipGroup } from '@/shared/ui/controls/ChipGroup';
 import { Icon } from '@/shared/ui/icons/Icon';
+import texts from '@/texts/en/moderation.json';
 import { ModerationCityBar } from './ModerationCityBar';
 import { QueueItem } from './queue/QueueItem';
-import texts from '@/texts/en/moderation.json';
 import styles from './ModerationMap.module.css';
 
 // Та же 3D-карта города, что у жителей, но с функциями модератора: на ней проблемы любого статуса

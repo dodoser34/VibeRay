@@ -187,10 +187,6 @@
   fill: var(--story-lamp);
 }
 
-.wheel {
-  fill: var(--story-monitor);
-}
-
 /* Окно: откосы, стекло, рама, подоконник с цветами */
 .reveal {
   fill: color-mix(in srgb, var(--story-wall) 60%, var(--story-shade));
@@ -207,7 +203,7 @@
 
 .frame,
 .handle {
-  fill: var(--story-monitor-frame);
+  fill: var(--story-window-frame);
 }
 
 .leaf {
@@ -225,7 +221,7 @@
   stroke-width: 1;
 }
 
-/* Стены: постер, часы, выключатель, шторы */
+/* Стены: постер, часы, шторы */
 .posterFrame {
   fill: var(--story-monitor);
 }
@@ -424,7 +420,7 @@
   fill: var(--color-accent);
 }
 
-/* Лампа: днём выключена, ночью — тёплое пятно на столе и луч из плафона */
+/* Лампа: днём выключена, ночью — тёплое пятно на столе */
 .lampPool {
   fill: var(--story-window-light);
   opacity: 0;

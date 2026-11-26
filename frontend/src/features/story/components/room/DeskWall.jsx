@@ -31,7 +31,7 @@ const STICKERS = [
 export function DeskWall({ outline }) {
   return (
     <g>
-      {/* полка на двух кронштейнах */}
+      {/* Полка на двух кронштейнах */}
       <IsoBox at={[0, 6.6, 15.2]} size={[1.6, 0.25, 0.8]} tone="--story-metal" />
       <IsoBox at={[0, 13.2, 15.2]} size={[1.6, 0.25, 0.8]} tone="--story-metal" />
       <IsoBox at={[0, 6, 16]} size={[2.2, 8.5, 0.35]} tone="--story-desk" />
@@ -45,7 +45,7 @@ export function DeskWall({ outline }) {
       <IsoBox at={[0.7, 13.6, 16.35]} size={[0.6, 0.5, 0.25]} tone="--story-metal" />
       <IsoCylinder at={[1, 13.85, 16.6]} radius={0.16} height={0.9} tone="--color-accent" />
 
-      {/* карта города на стене: бумага, районы, булавки */}
+      {/* Карта города на стене: бумага, районы, булавки */}
       <IsoPlane facing="x" at={[0.03, 24, 19.8]}>
         <rect className={styles.paperShadow} x="0.15" y="0.15" width="8" height="6" />
         <rect className={styles.paper} width="8" height="6" />
@@ -82,7 +82,7 @@ export function DeskWall({ outline }) {
         ))}
       </IsoPlane>
 
-      {/* календарь: месяц, сетка дней, обведённый день */}
+      {/* Календарь: месяц, сетка дней, обведённый день */}
       <IsoPlane facing="x" at={[0.03, 27.6, 15.6]}>
         <rect className={styles.paper} width="3.2" height="4.2" />
         <rect className={styles.calendarHead} width="3.2" height="1" />
@@ -102,7 +102,7 @@ export function DeskWall({ outline }) {
         <circle className={styles.calendarMark} cx={0.37 + 4 * 0.4} cy={1.43 + 2 * 0.56} r="0.28" />
       </IsoPlane>
 
-      {/* стикеры рядом с монитором */}
+      {/* Стикеры рядом с монитором */}
       <IsoPlane facing="x" at={[0.03, 20.2, 13.6]}>
         {STICKERS.map(([u, w, angle]) => (
           <g key={`${u}-${w}`} transform={`translate(${u} ${w}) rotate(${angle} 0.55 0.55)`}>

@@ -6,8 +6,8 @@ import { STATS_PERIODS } from '@/shared/config/periods';
 import { PROBLEM_STATUSES } from '@/shared/config/problemStatuses';
 import { format } from '@/shared/lib/i18n/format';
 import { formatTime } from '@/shared/lib/i18n/formatDate';
-import texts from '@/texts/en/map.json';
 import { Button } from '@/shared/ui/controls/Button';
+import texts from '@/texts/en/map.json';
 import { DistrictsVisibility } from './DistrictsVisibility';
 import { FilterChoice } from './FilterChoice';
 import { FilterGroup } from './FilterGroup';
@@ -17,11 +17,9 @@ import styles from './MapFilters.module.css';
 const LAYERS = ['districts', 'mood', 'problems'];
 const METRICS = ['mood', 'problems'];
 
-// Что показывает карта. Те же элементы живут в левой панели десктопа, в панели инструментов
-// планшета в альбомной ориентации (только переключатели) и в шторке фильтров телефона (без
-// заголовка).
-// explore: период настроения, слой, легенда слоя; stats: период дашборда, метрика на районах, её
-// цветовая шкала.
+// Что показывает карта: на виде map — период настроения, слой и его легенда, на виде stats — период
+// дашборда, показатель на районах и его цветовая шкала. Те же элементы живут в левой панели
+// десктопа, в панели планшета в альбомной ориентации и в шторке фильтров телефона (без заголовка).
 export function MapFilters({
   view,
   cityName,

@@ -3,8 +3,7 @@ import { SupportCenter } from '@/features/support';
 import { useLanguage } from '@/shared/hooks/useLanguage';
 
 export function SupportPage() {
-  // Страница — корень своей ветки: при смене языка перерисовывается вместе со всем содержимым.
-  useLanguage();
+  useLanguage(); // при смене языка страница перерисовывается целиком
   const go = useTransitionNavigate();
   return <SupportCenter onNavigate={go} />;
 }

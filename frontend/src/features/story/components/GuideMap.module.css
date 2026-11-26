@@ -182,13 +182,3 @@
 .mapFrame[data-step='3'] .trendLine {
   stroke-dashoffset: 0;
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .district,
-  .pinBody,
-  .trend,
-  .trendLine,
-  .mapLabel {
-    transition: none;
-  }
-}

@@ -169,12 +169,12 @@ export class ProblemsLayer {
     this.size = size;
   }
 
-  // Новые проблемы пульсируют, чтобы привлекать внимание; метки плавно догоняют свои цели.
+  // Метки плавно догоняют свои цели; новые проблемы пульсируют (writeMatrices).
   update(time, delta) {
-    const k = 1 - Math.exp(-delta * EASE_RATE);
+    const follow = 1 - Math.exp(-delta * EASE_RATE);
     this.positions.forEach((position, i) => {
-      position.lerp(this.targets[i], k);
-      this.scales[i] += (this.targetScales[i] - this.scales[i]) * k;
+      position.lerp(this.targets[i], follow);
+      this.scales[i] += (this.targetScales[i] - this.scales[i]) * follow;
     });
     this.writeMatrices(time);
   }

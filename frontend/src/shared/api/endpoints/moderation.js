@@ -2,8 +2,9 @@ import { request } from '../client';
 
 // Только для модератора (ARCHITECTURE.md 7): остальным — 403 forbidden.
 
-// Очередь проблем города city: status — active | new | confirmed | in_progress | resolved | rejected;
-// sort — newest | oldest | confirmations. → { total, items } (не больше 100, с автором и историей).
+// Очередь проблем города city → { total, items } (не больше 100, с автором и историей).
+// status — active | new | confirmed | in_progress | resolved | rejected;
+// sort — newest | oldest | confirmations.
 export function getModerationQueue({ city, status, district, category, sort } = {}) {
   return request('GET', '/moderation/problems', {
     query: { city, status, district, category, sort },

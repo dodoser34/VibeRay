@@ -3,8 +3,8 @@ import { usePageEntered } from '@/shared/hooks/usePageEntered';
 import { format } from '@/shared/lib/i18n/format';
 import { plural } from '@/shared/lib/i18n/plural';
 import { subscribeTheme } from '@/shared/lib/theme/theme';
-import { MapScene } from '../scene/MapScene';
 import texts from '@/texts/en/map.json';
+import { MapScene } from '../scene/MapScene';
 import styles from './MapCanvas.module.css';
 
 export function MapCanvas({

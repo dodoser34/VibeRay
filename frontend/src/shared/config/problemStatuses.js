@@ -1,8 +1,8 @@
 import dictionaries from '@/texts/en/dictionaries.json';
 import { withLabels } from './withLabels';
 
-// Коды должны совпадать с backend/app/models/enums.py (ProblemStatus, RejectionReason).
-// Путь проблемы на карте: новая → подтверждена → в работе → решена.
+// Коды общие с бэкендом: перечисления ProblemStatus и RejectionReason (будущий
+// backend/app/models/enums.py). Путь проблемы на карте: новая → подтверждена → в работе → решена.
 export const PROBLEM_STATUSES = withLabels(
   [
     { code: 'new', colorVar: '--status-new' },
@@ -13,8 +13,8 @@ export const PROBLEM_STATUSES = withLabels(
   dictionaries.problemStatuses,
 );
 
-// Отклонённое модератором сообщение (спам, дубль, не городская проблема) — вне основного пути: его нет
-// на карте и в статистике, видит только автор.
+// Отклонённое модератором сообщение (спам, дубль, не городская проблема) — вне основного пути:
+// его нет на карте и в статистике, его видит только автор.
 export const [REJECTED_STATUS] = withLabels(
   [{ code: 'rejected', colorVar: '--status-rejected' }],
   dictionaries.problemStatuses,
@@ -34,7 +34,8 @@ export const REJECTION_REASON_BY_CODE = Object.fromEntries(
 );
 
 // Что модератор может сделать с проблемой в каждом статусе (ARCHITECTURE.md 6.2): вперёд по пути,
-// подтвердить вручную, вернуть на шаг назад (ошибся, проблема вернулась) и восстановить отклонённую.
+// подтвердить вручную, вернуть на шаг назад (ошибся, проблема вернулась), восстановить
+// отклонённую.
 export const MODERATOR_TRANSITIONS = {
   new: ['confirmed', 'in_progress', 'rejected'],
   confirmed: ['in_progress', 'rejected'],

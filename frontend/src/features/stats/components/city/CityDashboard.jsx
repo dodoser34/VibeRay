@@ -6,6 +6,7 @@ import { formatFullDate } from '@/shared/lib/i18n/formatDate';
 import { percentOf } from '@/shared/lib/i18n/formatNumber';
 import { BarList } from '@/shared/ui/charts/BarList';
 import texts from '@/texts/en/stats.json';
+import { CloseButton } from '@/shared/ui/controls/CloseButton';
 import { DistrictCompare } from './DistrictCompare';
 import { DistrictTable } from './DistrictTable';
 import { MoodChart } from '../common/MoodChart';
@@ -15,9 +16,8 @@ import { YearsTable } from './YearsTable';
 import { DashboardBlock } from './DashboardBlock';
 import { CityKpis } from './CityKpis';
 import styles from './CityDashboard.module.css';
-import { CloseButton } from '@/shared/ui/controls/CloseButton';
 
-const t = texts.dashboard;
+const dashboardTexts = texts.dashboard;
 
 // Дашборд города: как жил весь город за месяц, год или все годы. Строки таблицы берут названия
 // районов из `names` (slug → название).
@@ -44,19 +44,21 @@ export function CityDashboard({
     >
       <header className={styles.header} data-sheet-drag>
         <div>
-          <p className={styles.kicker}>{format(t.kicker, { city: cityName })}</p>
+          <p className={styles.kicker}>{format(dashboardTexts.kicker, { city: cityName })}</p>
           <h2 id="city-stats-title" className={styles.title}>
-            {format(t.title, { period: texts.periods[period] })}
+            {format(dashboardTexts.title, { period: texts.periods[period] })}
           </h2>
           {stats && (
-            <p className={styles.since}>{format(t.since, { date: formatFullDate(stats.since) })}</p>
+            <p className={styles.since}>
+              {format(dashboardTexts.since, { date: formatFullDate(stats.since) })}
+            </p>
           )}
         </div>
-        {onClose && <CloseButton label={t.close} onClick={onClose} />}
+        {onClose && <CloseButton label={dashboardTexts.close} onClick={onClose} />}
       </header>
 
       {!stats ? (
-        <div className={styles.skeleton} aria-label={texts.loading} />
+        <div className={styles.skeleton} role="status" aria-label={texts.loading} />
       ) : (
         <div ref={bodyRef} className={styles.body} data-loading={loading}>
           <CityKpis stats={stats} />
@@ -72,13 +74,13 @@ export function CityDashboard({
           </DashboardBlock>
 
           {period === 'all' && (
-            <DashboardBlock title={t.yearsTitle}>
+            <DashboardBlock title={dashboardTexts.yearsTitle}>
               <YearsTable series={stats.series} />
             </DashboardBlock>
           )}
 
-          <DashboardBlock title={t.districtsTitle}>
-            <p className={styles.note}>{t.districtsHint}</p>
+          <DashboardBlock title={dashboardTexts.districtsTitle}>
+            <p className={styles.note}>{dashboardTexts.districtsHint}</p>
             <DistrictTable
               rows={stats.districts.map((row) => ({ ...row, name: names[row.district] ?? '' }))}
               focusSlug={focusSlug}
@@ -100,7 +102,7 @@ export function CityDashboard({
           )}
 
           {stats.categories.length > 0 && (
-            <DashboardBlock title={t.categoriesTitle}>
+            <DashboardBlock title={dashboardTexts.categoriesTitle}>
               <BarList
                 items={stats.categories.map(({ category, count }) => ({
                   key: category,
@@ -120,12 +122,12 @@ export function CityDashboard({
               <StatusBreakdown
                 byStatus={stats.problems.by_status}
                 total={stats.problems.reported}
-                label={t.statusesLabel}
+                label={dashboardTexts.statusesLabel}
               />
             </DashboardBlock>
           )}
 
-          <p className={styles.note}>{t.privacy}</p>
+          <p className={styles.note}>{dashboardTexts.privacy}</p>
         </div>
       )}
     </section>

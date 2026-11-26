@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { format } from '@/shared/lib/i18n/format';
+import { Icon } from '@/shared/ui/icons/Icon';
 import { Modal } from '@/shared/ui/windows/Modal';
 import texts from '@/texts/en/map.json';
 import styles from './FilterChip.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
 
 // Фильтры карты, свёрнутые в один чип над картой («День · Настроение ▾»); полные настройки
 // открываются в шторке. На телефонах чип стоит между логотипом и кнопкой меню, на планшетах стоя —

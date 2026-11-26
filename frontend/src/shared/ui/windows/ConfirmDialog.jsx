@@ -3,8 +3,8 @@ import { Button } from '../controls/Button';
 import { Modal } from './Modal';
 import styles from './ConfirmDialog.module.css';
 
-// Подтверждение необратимого действия. Тексты передаёт тот, кто открывает диалог. onConfirm — async:
-// пока он идёт, диалог не закрыть; ошибка сервера показывается здесь же, а не теряется.
+// Подтверждение необратимого действия; тексты передаёт тот, кто открывает диалог. onConfirm —
+// async: пока он идёт, диалог не закрыть; ошибка сервера показывается здесь же, а не теряется.
 export function ConfirmDialog({ title, text, confirmLabel, cancelLabel, onConfirm, onClose }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');

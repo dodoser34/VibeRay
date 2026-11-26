@@ -15,7 +15,7 @@ const RUG_BORDER = [
   ...Array.from({ length: 9 }, (_, k) => [14.35, 1.8 + k * 1.18]),
 ];
 
-// Ромб с центром (u, w) и полуосями a, b.
+// Ромб с центром (u, w) и полуосями halfWidth, halfHeight.
 const rhombus = (u, w, halfWidth, halfHeight) =>
   `M${u} ${w - halfHeight}L${u + halfWidth} ${w}L${u} ${w + halfHeight}L${u - halfWidth} ${w}Z`;
 

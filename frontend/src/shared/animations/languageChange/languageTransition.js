@@ -37,9 +37,9 @@ function unmarkText() {
 
 const nextTask = () => new Promise((resolve) => setTimeout(resolve));
 
-// Смена языка без перезагрузки: весь текст плавно размывается, меняется на новый язык (вместе с
-// названиями районов, которые сервер отдаёт заново) и проявляется. Карта, прокрутка и введённые данные
-// остаются как были.
+// Смена языка без перезагрузки: весь текст плавно размывается, меняется на новый язык (вместе
+// с названиями районов, которые сервер отдаёт заново) и проявляется. Карта, прокрутка и введённые
+// данные остаются как были.
 export async function changeLanguage(next) {
   if (running || next === getLanguage()) return;
   running = true;
@@ -66,7 +66,7 @@ export async function changeLanguage(next) {
     await gsap.to(root, { '--language-blur': '0px', duration: 0.55, ease: 'power2.out' });
   } catch (error) {
     // Перевод не скачался (нет сети) — страница остаётся на прежнем языке.
-    console.error('Language switch failed', error);
+    console.error('[texts] язык не сменился', error);
   } finally {
     unmarkText();
     root.style.removeProperty('--language-blur');

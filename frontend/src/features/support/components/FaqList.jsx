@@ -1,6 +1,6 @@
 import { ChipGroup } from '@/shared/ui/controls/ChipGroup';
-import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
 import texts from '@/texts/en/support.json';
+import { FAQ, HELP_CATEGORIES } from '../lib/helpContent';
 import styles from './FaqList.module.css';
 
 // Аккордеон ответов. `category` фильтрует список; `openId` управляется снаружи, чтобы результаты

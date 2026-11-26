@@ -4,19 +4,19 @@ import { useRevealed } from '@/shared/hooks/useRevealed';
 import { format } from '@/shared/lib/i18n/format';
 import { formatSigned } from '@/shared/lib/i18n/formatNumber';
 import { CompareChart } from '@/shared/ui/charts/CompareChart';
+import { Icon } from '@/shared/ui/icons/Icon';
 import texts from '@/texts/en/stats.json';
 import { useDistrictStats } from '../../hooks/useDistrictStats';
 import { seriesPointTitle, seriesTick } from '../../lib/seriesLabels';
+import { SAME_SCORE } from '../../lib/trend';
 import { CompareSummary } from './CompareSummary';
 import styles from './DistrictCompare.module.css';
-import { Icon } from '@/shared/ui/icons/Icon';
 
-const t = texts.districtCompare;
+const compareTexts = texts.districtCompare;
 const SIDES = [
   { key: 'a', colorVar: '--compare-a', labelKey: 'pickA' },
   { key: 'b', colorVar: '--compare-b', labelKey: 'pickB' },
 ];
-const SAME_SCORE = 0.1;
 const MAX_CATEGORIES = 6;
 const Y_TICKS = [
   { value: 2, label: '+2' },
@@ -51,10 +51,10 @@ export function DistrictCompare({ period, rows, names, onHover }) {
   const verdict = (() => {
     const [moodA, moodB] = [data.a?.mood, data.b?.mood];
     if (!moodA || !moodB) return null;
-    if (moodA.insufficient_data || moodB.insufficient_data) return t.fewMarks;
+    if (moodA.insufficient_data || moodB.insufficient_data) return compareTexts.fewMarks;
     const delta = moodA.score - moodB.score;
-    if (Math.abs(delta) < SAME_SCORE) return t.equal;
-    return format(t.better, {
+    if (Math.abs(delta) < SAME_SCORE) return compareTexts.equal;
+    return format(compareTexts.better, {
       district: names[delta > 0 ? picked.a : picked.b],
       delta: Math.abs(delta).toFixed(1),
     });
@@ -80,7 +80,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
 
   return (
     <div className={styles.root} data-ui="district-compare">
-      <p className={styles.hint}>{t.hint}</p>
+      <p className={styles.hint}>{compareTexts.hint}</p>
 
       <div className={styles.pickers}>
         {SIDES.map((side) => (
@@ -91,7 +91,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
             onPointerEnter={() => onHover?.(picked[side.key])}
             onPointerLeave={() => onHover?.(null)}
           >
-            <span className="visually-hidden">{t[side.labelKey]}</span>
+            <span className="visually-hidden">{compareTexts[side.labelKey]}</span>
             <span className={styles.swatch} aria-hidden="true" />
             <select
               className={styles.select}
@@ -116,8 +116,8 @@ export function DistrictCompare({ period, rows, names, onHover }) {
         <button
           type="button"
           className={styles.swap}
-          aria-label={t.swap}
-          title={t.swap}
+          aria-label={compareTexts.swap}
+          title={compareTexts.swap}
           onClick={() => setPicked((current) => ({ a: current.b, b: current.a }))}
         >
           <Icon name="swap" size={16} />
@@ -138,7 +138,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
 
       <section className={styles.section}>
         <h4 className={styles.sectionTitle}>
-          {format(t.chartTitle, { period: texts.periods[period] })}
+          {format(compareTexts.chartTitle, { period: texts.periods[period] })}
         </h4>
         {series ? (
           <CompareChart
@@ -149,7 +149,7 @@ export function DistrictCompare({ period, rows, names, onHover }) {
             }))}
             yTicks={Y_TICKS}
             height={180}
-            label={format(t.chartLabel, { period: texts.periods[period] })}
+            label={format(compareTexts.chartLabel, { period: texts.periods[period] })}
             formatTick={(i) => seriesTick(series[0], i, period)}
             renderTooltip={(i) => (
               <>
@@ -164,8 +164,11 @@ export function DistrictCompare({ period, rows, names, onHover }) {
                       style={{ '--tone': `var(${side.colorVar})` }}
                     >
                       {score === null
-                        ? format(t.tooltipHidden, { district })
-                        : format(t.tooltipValue, { district, score: formatSigned(score) })}
+                        ? format(compareTexts.tooltipHidden, { district })
+                        : format(compareTexts.tooltipValue, {
+                            district,
+                            score: formatSigned(score),
+                          })}
                     </span>
                   );
                 })}
@@ -173,16 +176,16 @@ export function DistrictCompare({ period, rows, names, onHover }) {
             )}
           />
         ) : (
-          <div className={styles.skeleton} aria-label={t.loading} />
+          <div className={styles.skeleton} role="status" aria-label={compareTexts.loading} />
         )}
       </section>
 
       <section className={styles.section}>
-        <h4 className={styles.sectionTitle}>{t.categoriesTitle}</h4>
+        <h4 className={styles.sectionTitle}>{compareTexts.categoriesTitle}</h4>
         {series && categories.length === 0 ? (
-          <p className={styles.hint}>{t.noProblems}</p>
+          <p className={styles.hint}>{compareTexts.noProblems}</p>
         ) : (
-          <ul className={styles.butterfly} aria-label={t.categoriesLabel}>
+          <ul className={styles.butterfly} aria-label={compareTexts.categoriesLabel}>
             {categories.map(([category, [countA, countB]]) => (
               <li key={category} className={styles.row}>
                 <span className={styles.count}>{countA}</span>

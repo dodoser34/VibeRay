@@ -27,7 +27,9 @@ import argparse
 import json
 import math
 from collections import Counter
+from itertools import pairwise
 from pathlib import Path
+from typing import Any
 
 from geodata.osm import overpass, way_points
 from geodata.output import feature_collection, read_json, write_json
@@ -56,14 +58,16 @@ Ring = list[list[float]]
 Run = tuple[str, str | None, list[Point]]  # класс дороги, район, вершины
 
 
-def fetch(bbox: list[float], tiles: int = 1) -> dict:
-    """Дороги в рамке города с запасом. Большой город с дворовыми проездами Overpass одним
-    запросом не отдаёт — рамка режется на tiles × tiles частей; путь из нескольких частей берётся
-    один раз."""
+def fetch(bbox: list[float], tiles: int = 1) -> dict[str, Any]:
+    """Дороги в рамке города с запасом.
+
+    Большой город с дворовыми проездами Overpass одним запросом не отдаёт, поэтому рамка режется
+    на tiles × tiles частей; путь из нескольких частей берётся один раз.
+    """
     west, south = bbox[0] - MARGIN_DEG, bbox[1] - MARGIN_DEG
     east, north = bbox[2] + MARGIN_DEG, bbox[3] + MARGIN_DEG
     step_x, step_y = (east - west) / tiles, (north - south) / tiles
-    elements: dict[int, dict] = {}
+    elements: dict[int, dict[str, Any]] = {}
     for row in range(tiles):
         for col in range(tiles):
             part = fetch_box(
@@ -79,7 +83,7 @@ def fetch(bbox: list[float], tiles: int = 1) -> dict:
     return {'elements': list(elements.values())}
 
 
-def fetch_box(south: float, west: float, north: float, east: float) -> dict:
+def fetch_box(south: float, west: float, north: float, east: float) -> dict[str, Any]:
     box = f'{south},{west},{north},{east}'
     highways = '|'.join(HIGHWAY_KIND)
     return overpass(
@@ -106,7 +110,7 @@ def in_ring(x: float, y: float, ring: Ring) -> bool:
 class Districts:
     """Районы города для вопроса «в каком районе точка»."""
 
-    def __init__(self, geojson: dict) -> None:
+    def __init__(self, geojson: dict[str, Any]) -> None:
         self.parts: list[tuple[str, list[Ring], tuple[float, float, float, float]]] = []
         for feature in geojson['features']:
             geometry = feature['geometry']
@@ -116,8 +120,8 @@ class Districts:
                 else [geometry['coordinates']]
             )
             for rings in polygons:
-                xs = [c[0] for c in rings[0]]
-                ys = [c[1] for c in rings[0]]
+                xs = [point[0] for point in rings[0]]
+                ys = [point[1] for point in rings[0]]
                 box = (min(xs), min(ys), max(xs), max(ys))
                 self.parts.append((feature['properties']['slug'], rings, box))
 
@@ -127,15 +131,18 @@ class Districts:
             if (
                 inside_box
                 and in_ring(x, y, rings[0])
-                and not any(in_ring(x, y, h) for h in rings[1:])
+                and not any(in_ring(x, y, hole) for hole in rings[1:])
             ):
                 return slug
         return None
 
 
-def split_by_district(osm: dict, districts: Districts) -> list[Run]:
-    """Дороги OSM, разрезанные по районам. Отрезок — району своей середины; подряд идущие отрезки
-    одного района — одна линия, чтобы на плите района лежали только его улицы."""
+def split_by_district(osm: dict[str, Any], districts: Districts) -> list[Run]:
+    """Дороги OSM, разрезанные по районам.
+
+    Отрезок относится к району своей середины; подряд идущие отрезки одного района — одна линия,
+    чтобы на плите района лежали только его улицы.
+    """
     runs: list[Run] = []
     for element in osm['elements']:
         kind = kind_of(element.get('tags', {}))
@@ -144,7 +151,7 @@ def split_by_district(osm: dict, districts: Districts) -> list[Run]:
             continue
         run: list[Point] = [points[0]]
         current: str | None = None
-        for a, b in zip(points, points[1:], strict=False):
+        for a, b in pairwise(points):
             slug = districts.at((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
             if len(run) > 1 and slug != current:
                 runs.append((kind, current, run))
@@ -157,8 +164,10 @@ def split_by_district(osm: dict, districts: Districts) -> list[Run]:
 
 
 def merge_runs(runs: list[list[Point]]) -> list[list[Point]]:
-    """Склейка линий, которые продолжают друг друга (общий конец, где сходятся ровно две линии):
-    рисунок тот же, а объектов в файле в разы меньше — у большого города это десятки мегабайт."""
+    """Линии, склеенные там, где одна продолжает другую (в общем конце сходятся ровно две).
+
+    Рисунок тот же, а объектов в файле в разы меньше — у большого города это десятки мегабайт.
+    """
     ends: dict[Point, list[int]] = {}
     for i, run in enumerate(runs):
         for point in (run[0], run[-1]):
@@ -168,15 +177,15 @@ def merge_runs(runs: list[list[Point]]) -> list[list[Point]]:
     def follow(line: list[Point], current: int) -> list[Point]:
         while True:
             tail = line[-1]
-            nxt = [j for j in ends.get(tail, []) if j != current]
-            if len(ends.get(tail, [])) != 2 or len(nxt) != 1 or used[nxt[0]]:
+            following = [j for j in ends.get(tail, []) if j != current]
+            if len(ends.get(tail, [])) != 2 or len(following) != 1 or used[following[0]]:
                 return line
-            current = nxt[0]
+            current = following[0]
             used[current] = True
             run = runs[current]
             line.extend(run[1:] if run[0] == tail else run[-2::-1])
 
-    merged = []
+    merged: list[list[Point]] = []
     for i, run in enumerate(runs):
         if used[i]:
             continue
@@ -193,19 +202,19 @@ def simplify(points: list[Point], tolerance_m: float, lat0: float) -> list[Point
         return points
     kx = math.cos(math.radians(lat0)) * SIMPLIFY_LON_M
     ky = SIMPLIFY_LAT_M
-    m = [(x * kx, y * ky) for x, y in points]
+    meters = [(x * kx, y * ky) for x, y in points]
     keep = [False] * len(points)
     keep[0] = keep[-1] = True
     stack = [(0, len(points) - 1)]
     while stack:
         start, end = stack.pop()
-        ax, ay = m[start]
-        bx, by = m[end]
+        ax, ay = meters[start]
+        bx, by = meters[end]
         dx, dy = bx - ax, by - ay
         length = math.hypot(dx, dy)
         best, index = 0.0, -1
         for i in range(start + 1, end):
-            px, py = m[i]
+            px, py = meters[i]
             # Замкнутая линия (кольцевая развязка, петля проезда): концы совпадают, прямой между
             # ними нет — расстояние считается до самой точки, иначе кольцо схлопнется и пропадёт.
             if length:
@@ -222,7 +231,7 @@ def simplify(points: list[Point], tolerance_m: float, lat0: float) -> list[Point
 
 def street_features(
     runs: list[Run], lat0: float, skip_outside: set[str], tolerance: dict[str, float]
-) -> list[dict]:
+) -> list[dict[str, Any]]:
     """Линии схемы: склеенные, упрощённые, с координатами в 6 знаков."""
     groups: dict[tuple[str, str | None], list[list[Point]]] = {}
     for kind, slug, run in runs:
@@ -230,14 +239,16 @@ def street_features(
             continue
         groups.setdefault((kind, slug), []).append(run)
 
-    features = []
+    features: list[dict[str, Any]] = []
     for (kind, slug), lines in groups.items():
         for line in merge_runs(lines):
             coords = [
                 [round(x, COORD_DIGITS), round(y, COORD_DIGITS)]
                 for x, y in simplify(line, tolerance[kind], lat0)
             ]
-            coords = [coords[0]] + [c for p, c in zip(coords, coords[1:], strict=False) if c != p]
+            coords = [coords[0]] + [
+                point for previous, point in pairwise(coords) if point != previous
+            ]
             if len(coords) < 2:
                 continue
             features.append(
@@ -250,10 +261,13 @@ def street_features(
     return features
 
 
-def write_streets(features: list[dict], folder: Path) -> int:
-    """Схема дорог по файлу на район (вне районов — _outside.geojson): огромный город в одном
-    файле тормозит в редакторе, а правка района меняет только свой файл. Возвращает размер."""
-    groups: dict[str, list[dict]] = {}
+def write_streets(features: list[dict[str, Any]], folder: Path) -> int:
+    """Записать схему дорог по файлу на район и вернуть общий размер в байтах.
+
+    Дороги вне районов идут в _outside.geojson. Огромный город в одном файле тормозит в редакторе,
+    а правка района меняет только свой файл.
+    """
+    groups: dict[str, list[dict[str, Any]]] = {}
     for feature in features:
         groups.setdefault(feature['properties']['district'] or OUTSIDE, []).append(feature)
     folder.mkdir(parents=True, exist_ok=True)
@@ -312,7 +326,7 @@ def main() -> None:
     )
     size = write_streets(features, folder / 'streets')
 
-    kinds = Counter(f['properties']['kind'] for f in features)
+    kinds = Counter(feature['properties']['kind'] for feature in features)
     files = len(list((folder / 'streets').glob('*.geojson')))
     print(f'{len(features)} линий, {size // 1024} КБ в {files} файлах: {dict(kinds)}')
     print(f'Плитки карты: python tools/city-data/build_map_tiles.py {args.city}')

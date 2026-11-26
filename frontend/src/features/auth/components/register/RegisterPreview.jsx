@@ -4,7 +4,8 @@ import { Icon } from '@/shared/ui/icons/Icon';
 import auth from '@/texts/en/auth.json';
 import styles from './RegisterPreview.module.css';
 
-// Живой предпросмотр публичного профиля: ровно то, что увидят другие (аватар, ник, город, район).
+// Живой предпросмотр профиля жителя. Другим видны только аватар и ник — об этом напоминает
+// подпись с замком; город и район видит сам житель.
 export function RegisterPreview({ avatar, nickname, cityName, districtName }) {
   const texts = auth.register;
   return (

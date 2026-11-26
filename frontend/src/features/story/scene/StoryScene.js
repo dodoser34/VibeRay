@@ -17,7 +17,8 @@ const FIT_SCALE = [0.55, 1.7];
 // значения живут в `params` и векторах камеры и меняются одной привязанной к прокрутке шкалой GSAP,
 // поэтому история играет вперёд и назад вместе с прокруткой.
 export class StoryScene {
-  // container — блок, по размеру которого рисуется сцена: вся сцена истории на ПК или экран телефона.
+  // container — блок, по размеру которого рисуется сцена: вся сцена истории на ПК или экран
+  // телефона.
   constructor(canvas, container) {
     this.runtime = new SceneRuntime(canvas, container, {
       fov: FOV,
@@ -38,8 +39,8 @@ export class StoryScene {
 
     // fit — насколько город вписан в свободное от карточек место (0 — кадр камеры как есть).
     this.params = { world: 0, fit: 0, ...CITY_PARAMS };
-    // Свободное место [слева, сверху, справа, снизу] в пикселях холста (setFreeArea); без него — без
-    // кадрирования (телефон: карточки там — шторки поверх экрана).
+    // Свободное место [слева, сверху, справа, снизу] в пикселях холста (setFreeArea); без него —
+    // без кадрирования (телефон: карточки там — шторки поверх экрана).
     this.freeArea = null;
     this.projected = new THREE.Vector3();
     this.center = new THREE.Vector3();
@@ -53,8 +54,8 @@ export class StoryScene {
   }
 
   // center — середина районов на плоской карте [x, y] (единицы истории, y — на юг): вокруг неё
-  // строятся все кадры, и первый кадр совпадает с картой на экране (lib/topView.js). scale — масштаб
-  // плана города (useCityOutline с extent), focus — район, куда «приземляется» история
+  // строятся все кадры, и первый кадр совпадает с картой на экране (lib/topView.js). scale —
+  // масштаб плана города (useCityOutline с extent), focus — район, куда «приземляется» история
   // (lib/storyCity.js).
   setCity(city, moods, problems, [cx, cy] = [0, 0], { scale = 1, focus } = {}) {
     if (this.city) return;

@@ -56,9 +56,3 @@
 .option[aria-pressed='true'] > svg {
   rotate: 360deg;
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .option > svg {
-    transition: none;
-  }
-}

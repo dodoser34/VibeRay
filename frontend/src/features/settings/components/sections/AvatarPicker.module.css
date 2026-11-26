@@ -79,10 +79,7 @@
 .upload svg {
   width: 1.25rem;
   height: 1.25rem;
-  fill: none;
-  stroke: currentColor;
   stroke-width: 1.6;
-  stroke-linejoin: round;
 }
 
 .hint,

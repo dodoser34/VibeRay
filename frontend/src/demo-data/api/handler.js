@@ -24,6 +24,8 @@ import {
 } from '@/shared/config/problemStatuses';
 import { isModerator } from '@/shared/config/roles';
 import { evaluatePassword } from '@/shared/lib/passwordStrength';
+import { format } from '@/shared/lib/i18n/format';
+import errors from '@/texts/en/errors.json';
 import {
   HOME_CITY,
   addMoodMark,
@@ -57,19 +59,17 @@ import {
   withHistory,
 } from './community';
 import { isQueueStatus, moderationItem, moderationQueue, moderationSummary } from './moderation';
-import { format } from '@/shared/lib/i18n/format';
 import demoAccounts from '../accounts.json';
 import demoSupport from '../support.json';
 import cityCountries from '../countries.json';
 import { demoContent, localizeDemo, nameOf, setResponseLanguage } from './locale';
-import errors from '@/texts/en/errors.json';
+import { DAY, HOUR } from './time';
 
 const accounts = new Map(
   demoAccounts.map(({ password, user }) => [user.email, { password, user }]),
 );
 demoAccounts.forEach(({ user, reports = [] }) => seedReports(user, reports));
 const sessions = new Map(); // токен → email
-const HOUR = 3_600_000;
 // Обращения в поддержку, новые первыми; в демо уже есть несколько от жителей.
 const supportRequests = demoSupport.map(({ hours_ago: hoursAgo, ...request }, i) => ({
   ...request,
@@ -77,11 +77,12 @@ const supportRequests = demoSupport.map(({ hours_ago: hoursAgo, ...request }, i)
   created_at: new Date(Date.now() - hoursAgo * HOUR).toISOString(),
 }));
 const confirmations = new Map(); // id проблемы → Set id пользователей
-const MAP_RECENT_MS = 30 * 24 * 3_600_000; // решённые проблемы остаются на карте 30 дней
+const MAP_RECENT_MS = 30 * DAY; // решённые проблемы остаются на карте 30 дней
 
 const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 
-// Сообщения берутся из src/texts/<язык>/errors.json по ключу (ключ — код ошибки, если не задан другой).
+// Сообщения берутся из src/texts/<язык>/errors.json по ключу (ключ — код ошибки, если не задан
+// другой).
 function fail(status, code, messageKey = code, values = {}) {
   throw new ApiError(status, code, format(errors.api[messageKey], values));
 }
@@ -133,11 +134,11 @@ function viewOf(problem, token) {
   };
 }
 
-// Отклонённое модератором сообщение существует только для автора: остальным — 404.
 async function cityOrFail(slug) {
   return (await loadCity(slug)) ?? fail(404, 'city_not_found');
 }
 
+// Отклонённое модератором сообщение существует только для автора: остальным — 404.
 function findProblem(id, token) {
   const problem = problems.find((problem) => problem.id === id);
   const email = sessions.get(token);
