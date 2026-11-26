@@ -1418,11 +1418,11 @@ export class MapFoldTransition {
       let fontMetrics = metrics.get(font);
       if (!fontMetrics) {
         measure.font = font;
-        const metrics = measure.measureText('НЙg'),
+        const textMetrics = measure.measureText('НЙg'),
           fontSize = parseFloat(style.fontSize);
         fontMetrics = {
-          ascent: metrics.fontBoundingBoxAscent ?? fontSize * 0.8,
-          descent: metrics.fontBoundingBoxDescent ?? fontSize * 0.2,
+          ascent: textMetrics.fontBoundingBoxAscent ?? fontSize * 0.8,
+          descent: textMetrics.fontBoundingBoxDescent ?? fontSize * 0.2,
         };
         metrics.set(font, fontMetrics);
       }
